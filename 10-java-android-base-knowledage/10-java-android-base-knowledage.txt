@@ -1,0 +1,21 @@
+一、static关键字
+1.1、static关键字 作用？
+1.2、类，变量，方法，代码块，使用static修饰后，执行顺序？
+
+二、近似值，四舍五入，面试题？
+2.1、自己手动强制float转化为int，结果为多少？
+	验证结果：只取整数部分。
+2.2、使用 Math.round(d)
+	round() 方法返回一个最接近的 int、long 型值，四舍五入。
+	round 表示"四舍五入"，算法为Math.floor(x+0.5) ，即将原来的数字加上 0.5 后再向下取整，所以 Math.round(11.5) 的结果为 12，Math.round(-11.5) 的结果为 -11。
+		
+	
+	testRound，d=100.675,n=101
+	testRound，d=100.5,n=101
+	testRound，d=100.0,n=100
+	testRound，d=90.0,n=90
+	testRound，d=90.1,n=90
+	testRound，d=-10.1,n=-10
+	testRound，d=-10.6,n=-11
+2.3 JAVA除法保留小数点后两位的两种方法 Java Math的 floor,round和ceil的总结
+	https://www.cnblogs.com/cmblogs/p/4500306.html

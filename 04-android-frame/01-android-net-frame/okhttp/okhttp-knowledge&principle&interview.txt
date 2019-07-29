@@ -1,0 +1,15 @@
+一、
+	1.OkHttp同样支持网络缓存，OkHttp的缓存基于DiskLruCache
+
+二、TLS，使用TLS。
+	2.1、百科简介。https://baike.baidu.com/item/TLS/2979545?fr=aladdin
+	2.2、传输层安全性协议（英语：Transport Layer Security，缩写作TLS），及其前身安全套接层（Secure Sockets Layer，缩写作SSL）是一种安全协议，目的是为互联网通信提供安全及数据完整性保障
+
+三、OkHttp使用的设计模式。
+	3.1、责任链模式。
+
+三、使用到的ConnectionPool
+	3.1、ConnectionPool原理。
+四、基本使用——OkHttp3详细使用教程
+4.1、基本使用——OkHttp3详细使用教程
+	https://blog.csdn.net/xx326664162/article/details/77714126

@@ -1,0 +1,14 @@
+一、单例模式。
+	1.1、使用volatile修饰，解决变量初始化话错乱问题。
+		static volatile EventBus defaultInstance; defaultInstance
+		public static EventBus getDefault() {
+				if (defaultInstance == null) {
+					synchronized (EventBus.class) {
+						if (defaultInstance == null) {
+							defaultInstance = new EventBus();
+						}
+					}
+				}
+				return defaultInstance;
+			}
+			

@@ -1,0 +1,80 @@
+一、数据结构
+1.HashMap、LinkedHashMap、ConcurrentHashMap，在用法和原理上有什么差异，很多公司会考HashMap原理，通过它做一些扩展，比如中国13亿人口年龄的排序问题，年龄对应桶的个数，年龄相同和hash相同问题类似。
+
+2.ArrayList和LinkedList对比，这个相对简单一点。
+
+3.平衡二叉树、二叉查找树、红黑树，这几个我也被考到。
+
+4.Set原理，这个和HashMap考得有点类似，考hash算法相关，被问到过常用hash算法。HashSet内部用到了HashMap
+
+二、关于数据结构我的疑问记录
+2.1、HashMap原理,面试题。      
+	
+2.2、HashMap 既然已经继承AbstractMap，为啥还要实现Map
+2.3、HashMap初始容量为什么是2的n次幂及扩容为什么是2倍的形式
+2.4、HashMap容量为2次幂的原因
+2.5、java中：>>>和>>区别
+	https://www.cnblogs.com/yulinfeng/p/6602902.html
+2.6、为什么面试要问hashmap 的原理
+	https://blog.csdn.net/mbshqqb/article/details/79799009
+	“你用过HashMap吗？” “什么是HashMap？你为什么用到它？”
+	　“你知道HashMap的工作原理吗？” “你知道HashMap的get()方法的工作原理吗？”
+	“当两个对象的hashcode相同会发生什么？”
+	hashCode()和equals()区别
+	string是线程安全的吗
+	https://www.cnblogs.com/651434092qq/p/11168608.html
+	“当两个对象的hashcode相同会发生什么？”
+	两个对象的hashcode相同，两个对象相同吗？为什么？
+	
+	HashMap的长度
+		https://blog.csdn.net/mbshqqb/article/details/79799009
+	
+2.7、HashMap源码深度解析。
+	java不同版本代码差异有点多，但原理是否一样呢？
+	2.7.1.HashMap深度解析(一)    	
+		https://blog.csdn.net/ghsau/article/details/16843543/
+	2.7.2.HashMap深度解析(二)    	
+		https://blog.csdn.net/ghsau/article/details/16890151
+		1. ?HashMap所有集合类视图所返回迭代器都是快速失败的(fail-fast)，在迭代器创建之后，如果从结构上对映射进行修改，除非通过迭代器自身的 remove 或 add 方法，其他任何时间任何方式的修改，迭代器都将抛出 ConcurrentModificationException。
+			至于为什么通过迭代器自身的remove或add方法就不会出现这个问题，可以参考我之前的文章List比较好玩的操作中第三个和第四个示例
+			https://blog.csdn.net/ghsau/article/details/9347357
+			【详细分析见：四、List集合】
+	
+
+三、HashMap和Hashtable区别？
+
+	这个一定要去看源码！看源码！看源码！实在看不下去的可以上网看别人的分析。简单总结有几点：
+
+	1.HashMap支持null Key和null Value；Hashtable不允许。这是因为HashMap对null进行了特殊处理，将null的hashCode值定为了0，从而将其存放在哈希表的第0个bucket。
+
+	2.HashMap是非线程安全，HashMap实现线程安全方法为Map map = Collections.synchronziedMap(new HashMap())；Hashtable是线程安全
+
+	3.HashMap默认长度是16，扩容是原先的2倍；Hashtable默认长度是11，扩容是原先的2n+1
+
+	4.HashMap继承AbstractMap；Hashtable继承了Dictionary?
+
+	扩展，HashMap 对比 ConcurrentHashMap ，HashMap 对比 SparseArray，LinkedArray对比ArrayList，ArrayList对比Vector
+	--------------------- 
+	作者：huison_ma 
+	来源：CSDN 
+	原文：https://blog.csdn.net/qq_27053103/article/details/79564062 
+	版权声明：本文为博主原创文章，转载请附上博文链接！
+四、List集合。
+	4.1、至于为什么通过迭代器自身的remove或add方法就不会出现这个问题，可以参考我之前的文章List比较好玩的操作中第三个和第四个示例
+			https://blog.csdn.net/ghsau/article/details/9347357
+		4.1.1、普通for循环与for循环增强区别，底层原理？
+			Java中的增强for循环的实现原理与坑
+			https://blog.csdn.net/john1337/article/details/79925809
+			
+			从字节码看Java中for-each循环（增强for循环）实现原理
+			https://blog.csdn.net/u011392897/article/details/54562596
+		4.1.2.for循环增强遍历，会抛出ConcurrentModificationException，原因，底层原理？
+			1.在遍历删除操作第几个元素的是否发生ConcurrentModificationException。
+		4.1.3、Iterator是工作在一个独立的线程中，并且拥有一个 mutex 锁。
+		
+五、集合中用到的锁。
+	5.1、Iterator是工作在一个独立的线程中，并且拥有一个 mutex 锁。
+	
+	
+	
+	
