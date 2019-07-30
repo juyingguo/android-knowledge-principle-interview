@@ -1,0 +1,3 @@
+一、synchronized
+	1.1、synchronized可以作用在哪些地方，区别？
+	
