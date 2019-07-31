@@ -1,3 +1,9 @@
 一、synchronized
 	1.1、synchronized可以作用在哪些地方，区别？
-	
+二、线程sleep和wait有什么区别。及延伸。
+	2.1、线程sleep和wait有什么区别
+		https://blog.csdn.net/liuzhenwen/article/details/4202967
+	2.2、sleep() 和 wait()的区别（Java面试题）
+		https://blog.csdn.net/alan_gaohaodong/article/details/85264609
+	2.3、java中sleep（）方法的解析
+		https://www.cnblogs.com/yinbiao/p/10179563.html

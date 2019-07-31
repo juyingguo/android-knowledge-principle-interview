@@ -24,7 +24,16 @@
 	3.1、通过方式取出方法，参数，修饰符等？
 	3.2、反射原理？
 四、java面试题之int和Integer的区别
-4.1、https://blog.csdn.net/bailaoshi666/article/details/82721455
-	https://blog.csdn.net/login_sonata/article/details/71001851
-	https://blog.csdn.net/weixin_36838630/article/details/79260140
-	https://blog.csdn.net/qq_24644517/article/details/82926473
+	4.1、java面试题之int和Integer的区别	
+		
+		https://blog.csdn.net/bailaoshi666/article/details/82721455
+		1、Integer是int的包装类，int则是java的一种基本数据类型 
+		2、Integer变量必须实例化后才能使用，而int变量不需要 
+		3、Integer实际是对象的引用，当new一个Integer时，实际上是生成一个指针指向此对象；而int则是直接存储数据值 
+		4、Integer的默认值是null，int的默认值是0
+		5.对于两个非new生成的Integer对象，进行比较时，如果两个变量的值在区间-128到127之间，则比较结果为true，如果两个变量的值不在此区间，则比较结果为false
+		6.记住一个原则：内存地址是否相同，进而区分。
+	4.2、
+		https://blog.csdn.net/login_sonata/article/details/71001851
+		https://blog.csdn.net/weixin_36838630/article/details/79260140
+		https://blog.csdn.net/qq_24644517/article/details/82926473
