@@ -3,6 +3,7 @@
 二、线程sleep和wait有什么区别。及延伸。
 	2.1、线程sleep和wait有什么区别
 		https://blog.csdn.net/liuzhenwen/article/details/4202967
+		https://www.cnblogs.com/loren-Yang/p/7538482.html
 	2.2、sleep() 和 wait()的区别（Java面试题）
 		https://blog.csdn.net/alan_gaohaodong/article/details/85264609
 	2.3、java中sleep（）方法的解析
