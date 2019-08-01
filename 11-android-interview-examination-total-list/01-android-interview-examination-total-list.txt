@@ -2,3 +2,9 @@
 	https://blog.csdn.net/huangqili1314/article/details/72792682
 二、2018 Android面试心得，已拿到offer
 	https://blog.csdn.net/qq_27053103/article/details/79564062
+三、Android面试重难点（更新：2019.3.28）
+	https://blog.csdn.net/z979451341/article/details/79380704
+四、Android面试题集锦（2019最新总结）
+	https://blog.csdn.net/qq_17678217/article/details/87177493
+五、面试笔试网站
+	牛客网，关于笔试用 牛客网就可以了

@@ -76,5 +76,48 @@
 	5.1、Iterator是工作在一个独立的线程中，并且拥有一个 mutex 锁。
 	
 	
+六、LinkedList
+
+	https://blog.csdn.net/gongchuangsu/article/details/51527042	?
+
+	LinkedList 是一个继承于AbstractSequentialList的双向链表。它也可以被当作堆栈、队列或双端队列进行操作。
+	LinkedList 实现 List 接口，能进行队列操作。
+	LinkedList 实现 Deque 接口，即能将LinkedList当作双端队列使用。
+	ArrayList底层是由数组支持，而LinkedList 是由双向链表实现的，其中的每个对象包含数据的同时还包含指向链表中前一个与后一个元素的引用。
+
+	--------------------- 
+	作者：键盘舞者113 
+	来源：CSDN 
+	原文：https://blog.csdn.net/z979451341/article/details/79380704 
+	版权声明：本文为博主原创文章，转载请附上博文链接！
+七、HashTable
+	https://blog.csdn.net/jinhuoxingkong/article/details/52022999
+
+	Hashtable和HashMap到底有哪些不同呢
+
+（1）基类不同：HashTable基于Dictionary类，而HashMap是基于AbstractMap。Dictionary是什么？它是任何可将键映射到相应值的类的抽象父类，而AbstractMap是基于Map接口的骨干实现，它以最大限度地减少实现此接口所需的工作。
+
+（2）null不同：HashMap可以允许存在一个为null的key和任意个为null的value，但是HashTable中的key和value都不允许为null。
+
+（3）线程安全：HashMap时单线程安全的，Hashtable是多线程安全的。
+
+（4）遍历不同：HashMap仅支持Iterator的遍历方式，Hashtable支持Iterator和Enumeration两种遍历方式。
 	
-	
+（1）Hashtable 是一个散列表，它存储的内容是键值对(key-value)映射。
+
+	（2）Hashtable?继承于Dictionary，实现了Map、Cloneable、java.io.Serializable接口。
+
+	（3）Hashtable 的函数都是同步的，这意味着它是线程安全的。它的key、value都不可以为null。
+	--------------------- 
+	作者：劲火星空 
+	来源：CSDN 
+	原文：https://blog.csdn.net/jinhuoxingkong/article/details/52022999 
+	版权声明：本文为博主原创文章，转载请附上博文链接！
+八、ConcurrentHashMap
+九、Map 与Dictionary区别，原理？
+	Map是"key-value键值对"接口，Dictionary是声明了操作"键值对"函数接口的抽象类。 
+十、Java 中的 ==, equals 与 hashCode 的区别与联系
+	https://blog.csdn.net/SongYuxinIT/article/details/81911645
+	https://blog.csdn.net/E01014165/article/details/52173927
+	https://blog.csdn.net/justloveyou_/article/details/52464440
+	https://blog.csdn.net/afgasdg/article/details/6889383
