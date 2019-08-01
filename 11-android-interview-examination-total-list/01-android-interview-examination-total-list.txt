@@ -8,3 +8,17 @@
 	https://blog.csdn.net/qq_17678217/article/details/87177493
 五、面试笔试网站
 	牛客网，关于笔试用 牛客网就可以了
+六、月薪20+的Android面试都问这些问题（含答案）
+	https://blog.csdn.net/dodod2012/article/details/89668830、
+七、2019Android高级面试题总结
+	https://blog.csdn.net/weixin_34221276/article/details/88187607
+八、2018年Android面试题含答案--适合中高级（上）
+	https://blog.csdn.net/hjl343661629/article/details/88403040
+	https://blog.csdn.net/sinat_32194985/article/details/87918026
+	
+	2018年Android面试题含答案--适合中高级（下）
+	https://blog.csdn.net/sinat_32194985/article/details/87918056
+	Android面试题整理
+	https://blog.csdn.net/sinat_32194985/article/details/80414796
+	https://blog.csdn.net/sinat_32194985/article/details/80414771
+	https://blog.csdn.net/sinat_32194985/article/details/87918026
