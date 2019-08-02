@@ -36,3 +36,8 @@
 十二、【Java并发编程】AtomicReference 原子引用
 	https://blog.csdn.net/fxkcsdn/article/details/82261972
 	
+	12.2、AtomicReference 原子引用
+	https://blog.csdn.net/chuchus/article/details/50801993
+		赋值操作不是线程安全的。若想不用锁来实现，可以用AtomicReference<V>这个类，实现对象引用的原子更新。【待验证】
+	12.3、史上最简单易懂的 AtomicReference 源码解析和使用
+		https://blog.csdn.net/weixin_42670455/article/details/83074734
