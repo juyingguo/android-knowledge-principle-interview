@@ -12,10 +12,27 @@
 		https://www.cnblogs.com/yinbiao/p/10179563.html
 三、synchronized 和volatile 关键字的区别 
 四、ReentrantLock 、synchronized和volatile比较
+
 五、谈谈对Synchronized关键字，类锁，方法锁，重入锁的理解 
 		java的对象锁和类锁：java的对象锁和类锁在锁的概念上基本上和内置锁是一致的，但是，两个锁实际是有很大的区别的，对象锁是用于对象实例方法，或者一个对象实例上的，类锁是用于类的静态方法或者一个类的class对象上的。我们知道，类的对象实例可以有很多个，但是每个类只有一个class对象，所以不同对象实例的对象锁是互不干扰的，但是每个类只有一个类锁。但是有一点必须注意的是，其实类锁只是一个概念上的东西，并不是真实存在的，它只是用来帮助我们理解锁定实例方法和静态方法的区别的
 六、详解synchronized与Lock的区别与使用
 	https://blog.csdn.net/u012403290/article/details/64910926
 七、synchronized的四种用法
 	https://blog.csdn.net/sinat_32588261/article/details/72880159
+	
+	java中synchronized用法
+	https://blog.csdn.net/luoweifu/article/details/46613015
+	
+	https://blog.csdn.net/chenguang79/article/details/677720
+	
+八、记得在《Effective Java》一书中看到过将 Foo.class和 P1.getClass()用于作同步锁还不一样，不能用P1.getClass()来达到锁这个Class的目的。P1指的是由Foo类产生的对象
+	8.1、初步验证，是一样的。【待进一步验证】
+九、ReenTrantLock可重入锁（和synchronized的区别）总结
+	https://blog.csdn.net/qq838642798/article/details/65441415
+十、java可重入锁(ReentrantLock)的实现原理
+	https://blog.csdn.net/yanyan19880509/article/details/52345422
+十一、究竟什么是可重入锁？
+	https://blog.csdn.net/rickiyeat/article/details/78314451
+十二、【Java并发编程】AtomicReference 原子引用
+	https://blog.csdn.net/fxkcsdn/article/details/82261972
 	
