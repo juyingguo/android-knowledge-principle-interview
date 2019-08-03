@@ -1,5 +1,5 @@
 一、单例模式。
-	1.1、使用volatile修饰，解决变量初始化话错乱问题。
+	1.1、使用volatile修饰，禁止指令重排序。
 		static volatile EventBus defaultInstance; defaultInstance
 		public static EventBus getDefault() {
 				if (defaultInstance == null) {
@@ -11,4 +11,5 @@
 				}
 				return defaultInstance;
 			}
-			
+	1.2、使用volatile修饰与不使用的区别？
+	
