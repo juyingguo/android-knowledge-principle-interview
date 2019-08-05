@@ -12,4 +12,3 @@
 				return defaultInstance;
 			}
 	1.2、使用volatile修饰与不使用的区别？
-	

@@ -70,3 +70,25 @@
 		https://www.cnblogs.com/dolphin0520/p/3920373.html（原文）
 		
 		
+十五、手写生产者/消费者 模式
+	13.1、https://blog.csdn.net/lettyisme/article/details/81174733
+	13.2、	Java-经典消费者和生产者代码(面试题)
+		https://blog.csdn.net/qq_33300026/article/details/83828507
+	13.3、
+		JAVA多线程之——经典面试消费者与生产者
+		https://blog.csdn.net/pengdandezhi/article/details/66475814
+	13.4、java多线程之生产者消费者经典问题
+		https://blog.csdn.net/thinkpadshi/article/details/8163751
+	13.5、秒杀多线程第十篇 生产者消费者问题
+		https://blog.csdn.net/MoreWindows/article/details/7577591
+	13.6
+		Java多线程与并发(五)之生产者与消费者案例
+		https://blog.csdn.net/u013144863/article/details/51392510
+	13.7、【Java】生产者消费者模式的实现
+		https://blog.csdn.net/u010983881/article/details/78554671
+	13.8、Java的高并发编程系列（六）生产者消费者面试题解析
+		https://blog.csdn.net/qq_34707744/article/details/79743056
+	13.9、
+		基于java的生产者和消费者三种实现方式
+		https://blog.csdn.net/qq_16622819/article/details/79907523
+
