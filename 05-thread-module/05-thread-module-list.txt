@@ -78,6 +78,7 @@
 		JAVA多线程之——经典面试消费者与生产者
 		https://blog.csdn.net/pengdandezhi/article/details/66475814
 	13.4、java多线程之生产者消费者经典问题
+		【比较全面】
 		https://blog.csdn.net/thinkpadshi/article/details/8163751
 	13.5、秒杀多线程第十篇 生产者消费者问题
 		https://blog.csdn.net/MoreWindows/article/details/7577591
