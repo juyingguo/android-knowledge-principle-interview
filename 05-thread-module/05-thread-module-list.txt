@@ -80,7 +80,7 @@
 		JAVA多线程之——经典面试消费者与生产者
 		https://blog.csdn.net/pengdandezhi/article/details/66475814
 	13.4、java多线程之生产者消费者经典问题
-		【比较全面】
+		【比较全面】，但也有问题，看评论
 		https://blog.csdn.net/thinkpadshi/article/details/8163751
 	13.5、秒杀多线程第十篇 生产者消费者问题
 		https://blog.csdn.net/MoreWindows/article/details/7577591
@@ -94,4 +94,7 @@
 	13.9、
 		基于java的生产者和消费者三种实现方式
 		https://blog.csdn.net/qq_16622819/article/details/79907523
+	13.10，java 多线程并发系列之 生产者消费者模式的两种实现
+		用了BlockingQueue
+		https://blog.csdn.net/yujin753/article/details/45723175
 
