@@ -35,7 +35,7 @@
 	https://blog.csdn.net/yanyan19880509/article/details/52345422
 十一、究竟什么是可重入锁？
 	https://blog.csdn.net/rickiyeat/article/details/78314451
-十二、【Java并发编程】AtomicReference 原子引用
+十二、【Java并发编程】AtomicReference 原子引用,Atomic系列
 	https://blog.csdn.net/fxkcsdn/article/details/82261972
 	
 	12.2、AtomicReference 原子引用
@@ -43,6 +43,8 @@
 		赋值操作不是线程安全的。若想不用锁来实现，可以用AtomicReference<V>这个类，实现对象引用的原子更新。【待验证】
 	12.3、史上最简单易懂的 AtomicReference 源码解析和使用
 		https://blog.csdn.net/weixin_42670455/article/details/83074734
+	12.4、AtomicInteger的用法，原理，
+	12.5、AtomicInteger与volatile区别？
 十三、Java并发编程三个性质：原子性、可见性、有序性
 	13.1、https://blog.csdn.net/weixin_38843156/article/details/80227084
 	
