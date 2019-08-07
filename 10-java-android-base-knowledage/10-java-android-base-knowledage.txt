@@ -42,3 +42,4 @@
 	
 	5.1、https://blog.csdn.net/dz77dz/article/details/81635250
 	5.2、https://blog.csdn.net/chaoman3171/article/details/79645999
+六、abstract与interface区别？
