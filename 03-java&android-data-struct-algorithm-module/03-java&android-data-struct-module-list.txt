@@ -114,6 +114,10 @@
 	原文：https://blog.csdn.net/jinhuoxingkong/article/details/52022999 
 	版权声明：本文为博主原创文章，转载请附上博文链接！
 八、ConcurrentHashMap
+	8.1、Java的ConcurrentHashMap的实现原理
+		Java5中的ConcurrentHashMap，线程安全，设计巧妙，用桶粒度的锁，避免了put和get中对整个map的锁定，尤其在get中，只对一个HashEntry做锁定操作，性能提升是显而易见的。
+	8.2、ConcurrentHashMap之实现细节
+		https://www.iteye.com/topic/344876
 九、Map 与Dictionary区别，原理？
 	Map是"key-value键值对"接口，Dictionary是声明了操作"键值对"函数接口的抽象类。 
 十、Java 中的 ==, equals 与 hashCode 的区别与联系
