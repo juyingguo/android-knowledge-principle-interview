@@ -1,0 +1,10 @@
+一、什么是哈希算法？
+	1.1、https://blog.csdn.net/xuhao885544/article/details/84751135
+	
+	1.2、五分钟带你了解哈希算法究竟是什么！
+		https://blog.csdn.net/xinshengdaxue000/article/details/80545146
+二、常见的hash算法及其原理
+	2.1、https://blog.csdn.net/Beyond_2016/article/details/81286360
+	
+	2.2、hash算法原理详解
+		https://blog.csdn.net/tanggao1314/article/details/51457585
