@@ -80,3 +80,21 @@
 四、设计模式总结篇
 	4.1、面试总结之——23种Java设计模式
 		http://blog.sina.com.cn/s/blog_a8c7148b0102wzuq.html
+五、工厂方法模式，抽象工程模式
+	5.1、工厂方法模式
+		https://blog.csdn.net/jason0539/article/details/23020989
+		
+	5.2、抽象工程模式
+	
+		https://blog.csdn.net/jason0539/article/details/44976775
+		
+	5.3、多态和工厂模式有啥区别？
+	
+	5.4、如何优雅的重构你的代码之--多态和工厂模式
+		https://blog.csdn.net/qq_18601953/article/details/80703674
+六、代理模式
+	6.1、彻底理解JAVA动态代理
+		https://www.cnblogs.com/flyoung2008/p/3251148.html
+	6.2、java程序员面试必备知识：java的动态代理 
+		http://mini.eastday.com/bdmip/180402210038621.html#
+		

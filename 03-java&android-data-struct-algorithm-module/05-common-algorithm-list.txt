@@ -8,3 +8,5 @@
 	
 	2.2、hash算法原理详解
 		https://blog.csdn.net/tanggao1314/article/details/51457585
+	2.3、Hash算法总结
+		https://blog.csdn.net/asdzheng/article/details/70226007

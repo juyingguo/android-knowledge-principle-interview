@@ -1,0 +1,8 @@
+一、View
+	1.1、自定义View绘制流程（面试专用）
+		https://blog.csdn.net/qq_42749901/article/details/83307629
+	1.2、自定义view - 面试题
+		https://www.jianshu.com/p/321ac00d31a6
+		
+		LinearLayout继承ViewGroup，ViewGroup继承View，在view中有 draw()，所以自定义TextView的onDraw其实调用的是 draw中的方法，draw用的是模板设计模式
+		【draw用的是模板设计模式】
