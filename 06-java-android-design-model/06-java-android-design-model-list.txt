@@ -93,8 +93,11 @@
 	5.4、如何优雅的重构你的代码之--多态和工厂模式
 		https://blog.csdn.net/qq_18601953/article/details/80703674
 六、代理模式
-	6.1、彻底理解JAVA动态代理
-		https://www.cnblogs.com/flyoung2008/p/3251148.html
+	6.1、JAVA设计模式之代理模式
+		https://blog.csdn.net/jason0539/article/details/22974405
 	6.2、java程序员面试必备知识：java的动态代理 
 		http://mini.eastday.com/bdmip/180402210038621.html#
+	6.3、彻底理解JAVA动态代理
+		https://www.cnblogs.com/flyoung2008/p/3251148.html
+	
 		
