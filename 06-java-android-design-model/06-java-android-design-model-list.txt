@@ -100,4 +100,11 @@
 	6.3、彻底理解JAVA动态代理
 		https://www.cnblogs.com/flyoung2008/p/3251148.html
 	
-		
+	6.4、java中动态代理Proxy及InvocationHandler源码剖析
+	
+	6.5、Java 动态代理机制分析及扩展，第 1 部分  
+		https://www.ibm.com/developerworks/cn/java/j-lo-proxy1/index.html
+	6.6、JDK动态代理实现原理 
+		https://rejoy.iteye.com/blog/1627405 
+	6.7、细说JDK动态代理的实现原理  
+		https://blog.csdn.net/mhmyqn/article/details/48474815

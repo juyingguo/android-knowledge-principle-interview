@@ -31,7 +31,16 @@
 	
 	3.4、Java面试题之反射  
 		https://blog.csdn.net/ys_230014/article/details/88795929
+	3.5、Java反射 简单举例 
+	
+		https://blog.csdn.net/li_2580/article/details/87888513
+		3.5.1、反射三大作用
 		
+	3.6、反射可以创建类的private构造函数吗？
+		一验证，不可以，放射也是在该类的外部调用来创建对象，是不可见的。
+	3.7、getConstructor()和getDeclaredConstructor()
+		https://www.cnblogs.com/jiangyi-uestc/p/5686264.html
+	
 四、java面试题之int和Integer的区别
 	4.1、java面试题之int和Integer的区别	
 		

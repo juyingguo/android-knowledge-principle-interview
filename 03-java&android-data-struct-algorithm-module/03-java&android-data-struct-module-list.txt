@@ -132,3 +132,5 @@
 
 十一、Hashtable和ConcurrentHashMap的区别
 	11.1、https://blog.csdn.net/weixin_39651041/article/details/79953811
+	
+十二、Queue与Deque区别

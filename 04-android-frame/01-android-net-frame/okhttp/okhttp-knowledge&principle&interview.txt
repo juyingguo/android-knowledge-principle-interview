@@ -1,8 +1,12 @@
-一、Okhttp3 总结研究 （面试）
-	1.https://blog.csdn.net/u012881042/article/details/79759203
+一、Okhttp3 总结研究 （可以用于研究及面试）
+	1.Okhttp3记录总结比较好的
+		https://blog.csdn.net/u012881042/article/details/79759203
 	2.OkHttp同样支持网络缓存，OkHttp的缓存基于DiskLruCache
 	3.《Android中高级工程师面试指南 — 网络协议和网络框架面试讲解 — OKHttp》
 		https://blog.csdn.net/jiangguangchao/article/details/78478326
+	4、  OkHttp 3.7源码分析（一）——整体架构 ，到多路复用。
+		https://yq.aliyun.com/articles/78105?spm=5176.100239.blogcont78104.10.FlPFWr
+		
 二、一些知识记录
 	2.TLS，使用TLS。
 		2.1、百科简介。https://baike.baidu.com/item/TLS/2979545?fr=aladdin
