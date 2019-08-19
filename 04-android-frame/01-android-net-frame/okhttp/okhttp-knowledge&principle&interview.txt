@@ -50,3 +50,7 @@
 四、基本使用——OkHttp3详细使用教程
 4.1、基本使用——OkHttp3详细使用教程
 	https://blog.csdn.net/xx326664162/article/details/77714126
+
+五、ConnectInterceptor 拦截器。
+	
+	5.1、tunnel链接与socket链接区别,高级课程。

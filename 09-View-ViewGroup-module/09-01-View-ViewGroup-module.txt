@@ -6,3 +6,16 @@
 		
 		LinearLayout继承ViewGroup，ViewGroup继承View，在view中有 draw()，所以自定义TextView的onDraw其实调用的是 draw中的方法，draw用的是模板设计模式
 		【draw用的是模板设计模式】
+二、自定义圆形ImageView
+	2.1、 Android 自定义圆形ImageView——史上最简洁高效的圆形ImageView
+		https://www.jianshu.com/p/6beca370fd50
+
+三、AppCompatImageView与ImageView区别
+ 
+  3.1、安卓开发中ImageView基本用法（总结） 
+	https://blog.csdn.net/lpcrazyboy/article/details/80668466
+
+四、自定义控件三部曲之绘图篇（十八）——BitmapShader与望远镜效果
+	
+	4.1、自定义控件三部曲之绘图篇（十八）——BitmapShader与望远镜效果 
+		https://blog.csdn.net/harvic880925/article/details/52039081
