@@ -9,7 +9,14 @@
 二、自定义圆形ImageView
 	2.1、 Android 自定义圆形ImageView——史上最简洁高效的圆形ImageView
 		https://www.jianshu.com/p/6beca370fd50
-
+	
+	2.2、Android BitmapShader 实战 实现圆形、圆角图片 
+		【鸿洋_】
+		https://blog.csdn.net/lmj623565791/article/details/41967509
+		
+	2.3、或者。自定义控件三部曲之绘图篇（十八）——BitmapShader与望远镜效果 
+		https://blog.csdn.net/harvic880925/article/details/52039081
+	
 三、AppCompatImageView与ImageView区别
  
   3.1、安卓开发中ImageView基本用法（总结） 
@@ -19,3 +26,22 @@
 	
 	4.1、自定义控件三部曲之绘图篇（十八）——BitmapShader与望远镜效果 
 		https://blog.csdn.net/harvic880925/article/details/52039081
+		
+	4.2、自定义控件三部曲之绘图篇（十一）——Paint之setXfermode(二)
+		
+		https://blog.csdn.net/harvic880925/article/details/51284710
+五、Android自定义View之invalidate方法和postInvalidate方法
+	
+	5.1、Android自定义View之invalidate方法和postInvalidate方法  
+		https://www.jianshu.com/p/f2b51180b705
+
+六，Matrix 在View中的使用
+	
+	6.1、Android自定义View（三） Matrix的原理解析 
+		https://blog.csdn.net/liuxingrong666/article/details/83722847
+	
+	6.2、矩阵
+		https://baike.baidu.com/item/%E7%9F%A9%E9%98%B5/18069?fr=aladdin
+	6.3、矩阵乘法怎么算？
+ 
+		https://zhidao.baidu.com/question/283998857.html
