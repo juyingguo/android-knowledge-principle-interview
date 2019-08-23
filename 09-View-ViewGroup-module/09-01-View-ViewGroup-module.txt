@@ -52,3 +52,5 @@
 	6.3、矩阵乘法怎么算？
  
 		https://zhidao.baidu.com/question/283998857.html
+七、Android ViewManger解析 从ViewRoot 源码分析invalidate 
+	1、 https://blog.csdn.net/sk719887916/article/details/48443429
