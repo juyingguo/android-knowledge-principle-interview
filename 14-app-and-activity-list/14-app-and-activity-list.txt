@@ -1,0 +1,43 @@
+一、Activity的启动过程
+
+	1.1、一张图弄清Activity的启动过程
+		此图基于9.0的Android源码
+		https://www.jianshu.com/p/f0c21f867dd9
+		
+	1.2、（Android 9.0）Activity启动流程源码分析 
+		【挺好的。】
+		https://blog.csdn.net/lj19851227/article/details/82562115
+		
+	1.3、Android源码分析-Activity的启动过程 
+		任玉刚播客
+		https://blog.csdn.net/singwhatiwanna/article/details/18154335
+		
+	1.4、Android源码解析之（十四）-->Activity启动流程 
+		https://blog.csdn.net/qq_23547831/article/details/51224992
+		
+	1.5、从应用角度看Android源码 - 是谁调用的ActivityThread的main方法  
+		4.1、https://blog.csdn.net/w1143408997/article/details/76862002
+二、instrumentation  
+	
+	2.1、Instrumentation的理解 
+		https://www.jianshu.com/p/5a7768f22b36
+	
+三、Android面试题（31）-App启动流程
+	
+	3.1、Android面试题（31）-App启动流程 
+		https://blog.csdn.net/pgg_cold/article/details/79491791
+
+四、从应用角度看Android源码 - 是谁调用的ActivityThread的main方法 
+	
+	4.1、https://blog.csdn.net/w1143408997/article/details/76862002
+
+五、Activity 生命周期，onNewIntent何时调用？
+	
+	5.1、当触发onNewIntent方法时，activity经历的生命周期 
+		https://blog.csdn.net/ToOak_And/article/details/80702187
+		
+	5.2、 Activity的onNewIntent方法执行时间
+		【详细些】
+		https://blog.csdn.net/u013398960/article/details/74496242
+	5.3、Android：onNewIntent()触发机制及注意事项 
+		https://blog.csdn.net/findsafety/article/details/9664061

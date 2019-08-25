@@ -60,3 +60,9 @@
 	5.1、https://blog.csdn.net/dz77dz/article/details/81635250
 	5.2、https://blog.csdn.net/chaoman3171/article/details/79645999
 六、abstract与interface区别？
+
+七、dp与px的转换 
+	1.https://blog.csdn.net/baidu_24743861/article/details/82977655
+		
+	2.Android中dp和px之间进行转换
+		https://blog.csdn.net/arui319/article/details/6777133

@@ -9,6 +9,8 @@
 	1.3、View体系——View的绘制流程  
 		
 		https://www.jianshu.com/p/a5ea8174d912
+	1.4、在Activity启动时，如何正确获取一个View的宽高 
+		https://www.jianshu.com/p/a5ea8174d912
 二、自定义圆形ImageView
 	2.1、 Android 自定义圆形ImageView——史上最简洁高效的圆形ImageView
 		https://www.jianshu.com/p/6beca370fd50
@@ -54,3 +56,12 @@
 		https://zhidao.baidu.com/question/283998857.html
 七、Android ViewManger解析 从ViewRoot 源码分析invalidate 
 	1、 https://blog.csdn.net/sk719887916/article/details/48443429
+
+八、LinearLayout相关？
+	8.1、面试题LinearLayout绘制过程？ 
+	
+	8.2、如何获得LinearLayout的宽度和高度（面试题） 
+		https://blog.csdn.net/dimudan2015/article/details/82312597
+		
+		Android中的基础----如何获得LinearLayout布局的高和宽
+		https://blog.csdn.net/Emira_J/article/details/51888837

@@ -1,0 +1,9 @@
+一、表student，字段classid为所属班级，写SQL语句查询每个班级学生个数？
+	
+	1.1、怎样用SQL语句表示:查询每个班级的学生人数
+		SELECT classname, COUNT(classid) FROM student GROUP BY classid;
+		https://zhidao.baidu.com/question/253158303.html
+二、sql教程 
+	
+	2.1 、 SQL 教程 W3School
+		https://www.w3school.com.cn/sql/sql_func_count.asp

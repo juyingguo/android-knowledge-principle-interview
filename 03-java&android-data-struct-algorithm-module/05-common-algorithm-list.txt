@@ -10,3 +10,7 @@
 		https://blog.csdn.net/tanggao1314/article/details/51457585
 	2.3、Hash算法总结
 		https://blog.csdn.net/asdzheng/article/details/70226007
+三、LruCache 
+	
+	3.1、 完全解析Andorid的缓存机制LruCache
+		https://www.jianshu.com/p/b0442c719525
