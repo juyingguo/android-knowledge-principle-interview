@@ -65,4 +65,15 @@
 	1.https://blog.csdn.net/baidu_24743861/article/details/82977655
 		
 	2.Android中dp和px之间进行转换
-		https://blog.csdn.net/arui319/article/details/6777133
+		https://blog.csdn.net/arui319/article/details/6777133 
+八、transient 
+	8.1、 Java transient关键字使用小记
+		https://www.cnblogs.com/lanxuezaipiao/p/3369962.html
+	8.2、 
+	
+	8.3、transient 使用，
+		高手答疑:transient关键字在何时使用? 
+		https://bbs.csdn.net/topics/10197336 
+		
+		不过个人认为《Thinking in java》上写得很清楚了！
+		

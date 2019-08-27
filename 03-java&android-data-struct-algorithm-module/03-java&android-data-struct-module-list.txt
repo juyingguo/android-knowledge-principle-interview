@@ -139,5 +139,12 @@
 	
 十四、链表
 	
-	14.1、链表基础知识总结 
+	14.1、【数据结构】链表的原理及java实现 
 		https://blog.csdn.net/u012531536/article/details/80170893
+	
+	14.2、链表基础知识总结 
+		https://blog.csdn.net/u012531536/article/details/80170893
+		
+	14.3、数据结构-线性表(顺序表与链表的基本知识 以及ArrayList 源码分析) 
+		https://cloud.tencent.com/developer/article/1334670
+		

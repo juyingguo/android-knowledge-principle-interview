@@ -126,11 +126,21 @@
 		用了BlockingQueue
 		https://blog.csdn.net/yujin753/article/details/45723175
 
-十六、线程和线程池，并发，锁等一系列问题
+十六、线程池，并发，锁等一系列问题
+	
 	16.1、这个可以扩展下 java如何自己实现一个线程池？
 		http://www.vcchar.com/thread-29098-1-1.html
 	16.2、一篇搞定 Java线程池 面试点
 		https://www.nowcoder.com/discuss/152050?type=0&order=0&pos=6&page=0
+		
+	16.3、线程池使用？
+	
+	16.4、线程池原理，源码深度剖析？
+	
+	16.5、线程池使用了哪些集合框架，设计模式
+	
+	16.6、线程池使用了哪些设计模式 
+	
 十七、Java锁，Lock
 	17.1、Java锁，Lock实现原理(底层实现)
 		https://blog.csdn.net/Luxia_24/article/details/52403033
@@ -182,3 +192,13 @@
 二十二、一个问题，如果开启10个线程，但是需要这10个线程都执行完成后，再交由主线程统一输入，如何实现
 	https://blog.csdn.net/guofangsky/article/details/82457800
 
+二十三、BlockingQueue 数据集合系列  
+	
+	23.1、BlockingQueue讲解 
+		https://blog.51cto.com/12666319/2134330?source=dra 
+		
+	23.2、Java多线程进阶（三一）—— J.U.C之collections框架：BlockingQueue接口
+		https://segmentfault.com/a/1190000016296278
+	
+	
+	
