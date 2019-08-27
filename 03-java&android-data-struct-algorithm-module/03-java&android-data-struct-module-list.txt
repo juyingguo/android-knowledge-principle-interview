@@ -142,9 +142,12 @@
 	14.1、【数据结构】链表的原理及java实现 
 		https://blog.csdn.net/u012531536/article/details/80170893
 	
-	14.2、链表基础知识总结 
+	14.2、用java简单的实现单链表的基本操作 
+		https://blog.csdn.net/tayanxunhua/article/details/11100097
+	
+	14.3、链表基础知识总结 
 		https://blog.csdn.net/u012531536/article/details/80170893
 		
-	14.3、数据结构-线性表(顺序表与链表的基本知识 以及ArrayList 源码分析) 
+	14.4、数据结构-线性表(顺序表与链表的基本知识 以及ArrayList 源码分析) 
 		https://cloud.tencent.com/developer/article/1334670
 		
