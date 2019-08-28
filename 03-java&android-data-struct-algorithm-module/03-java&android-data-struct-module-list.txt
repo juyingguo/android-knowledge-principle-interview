@@ -153,14 +153,5 @@
 	
 	14.4、链表头插法及尾插法？
 	
-十五、BlockingQueue 数据集合系列  
-	
-	23.1、BlockingQueue讲解 
-		https://blog.51cto.com/12666319/2134330?source=dra 
-		
-	23.2、Java多线程进阶（三一）—— J.U.C之collections框架：BlockingQueue接口
-		https://segmentfault.com/a/1190000016296278
-	
-	15.3、BlockingQueue深入解析－BlockingQueue看这一篇就够了 
-		https://www.cnblogs.com/WangHaiMing/p/8798709.html
+
 		
