@@ -140,7 +140,7 @@
 十四、链表
 	
 	14.1、【数据结构】链表的原理及java实现 
-		https://blog.csdn.net/u012531536/article/details/80170893
+		https://blog.csdn.net/jianyuerensheng/article/details/51200274
 	
 	14.2、用java简单的实现单链表的基本操作 
 		https://blog.csdn.net/tayanxunhua/article/details/11100097
@@ -150,4 +150,17 @@
 		
 	14.4、数据结构-线性表(顺序表与链表的基本知识 以及ArrayList 源码分析) 
 		https://cloud.tencent.com/developer/article/1334670
+	
+	14.4、链表头插法及尾插法？
+	
+十五、BlockingQueue 数据集合系列  
+	
+	23.1、BlockingQueue讲解 
+		https://blog.51cto.com/12666319/2134330?source=dra 
+		
+	23.2、Java多线程进阶（三一）—— J.U.C之collections框架：BlockingQueue接口
+		https://segmentfault.com/a/1190000016296278
+	
+	15.3、BlockingQueue深入解析－BlockingQueue看这一篇就够了 
+		https://www.cnblogs.com/WangHaiMing/p/8798709.html
 		

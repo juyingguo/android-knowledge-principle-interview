@@ -192,13 +192,17 @@
 二十二、一个问题，如果开启10个线程，但是需要这10个线程都执行完成后，再交由主线程统一输入，如何实现
 	https://blog.csdn.net/guofangsky/article/details/82457800
 
-二十三、BlockingQueue 数据集合系列  
+二十三、BlockingQueue 数据集合系列  【和线程关联密切，暂时放倒这个模块中】
 	
 	23.1、BlockingQueue讲解 
 		https://blog.51cto.com/12666319/2134330?source=dra 
 		
 	23.2、Java多线程进阶（三一）—— J.U.C之collections框架：BlockingQueue接口
 		https://segmentfault.com/a/1190000016296278
+	
+	23.3、BlockingQueue深入解析－BlockingQueue看这一篇就够了 
+		https://www.cnblogs.com/WangHaiMing/p/8798709.html 
+		
 	
 	
 	
