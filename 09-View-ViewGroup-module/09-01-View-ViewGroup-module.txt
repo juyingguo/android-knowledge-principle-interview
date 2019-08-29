@@ -10,7 +10,26 @@
 		
 		https://www.jianshu.com/p/a5ea8174d912
 	1.4、在Activity启动时，如何正确获取一个View的宽高 
+		【王亟亟的大牛之路】
 		https://www.jianshu.com/p/a5ea8174d912
+		
+	1.5、 View的invalidate方法，有带4个参数的，和不带参数有什么区别 
+	
+	1.6、requestLayout触发measure和layout，如何实现局部重新测量，避免全局重新测量问题。 
+		使用 requestFocus()方法，他只刷新你要刷新的地方。 
+		他是让我们的某一部分获取焦点，获取焦点的会导致view的重绘
+		【1.7】含有局部刷新demo
+	1.7、简单例子解释invalidate()， requestLayout() (常用还是需要知道的) 
+		https://blog.csdn.net/ddwhan0123/article/details/50601782
+		
+	1.8、Android View 深度分析requestLayout、invalidate与postInvalidate 
+		
+		【程序员的自我反思】
+		https://blog.csdn.net/a553181867/article/details/51583060
+		
+		【刘淏卿】
+		https://blog.csdn.net/pinglingying/article/details/52673888
+	
 二、自定义圆形ImageView
 	2.1、 Android 自定义圆形ImageView——史上最简洁高效的圆形ImageView
 		https://www.jianshu.com/p/6beca370fd50
@@ -65,3 +84,13 @@
 		
 		Android中的基础----如何获得LinearLayout布局的高和宽
 		https://blog.csdn.net/Emira_J/article/details/51888837
+九、Android View源码解读：浅谈DecorView与ViewRootImpl
+
+	9.1、 Android View源码解读：浅谈DecorView与ViewRootImpl
+		https://blog.csdn.net/a553181867/article/details/51477040
+十、Android View 测量流程(Measure)完全解析 
+	Android View 布局流程(Layout)完全解析 
+	Android View 绘制流程(Draw) 完全解析
+	
+	10.1、Android View 测量流程(Measure)完全解析  
+		https://blog.csdn.net/a553181867/article/details/51494058
