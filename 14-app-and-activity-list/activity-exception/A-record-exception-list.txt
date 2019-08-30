@@ -1,0 +1,4 @@
+一、继承AppCompatActivity 。
+	
+	1.1、Caused by: java.lang.IllegalStateException: You need to use a Theme.AppCompat theme (or descend
+		https://blog.csdn.net/smxueer/article/details/80675774

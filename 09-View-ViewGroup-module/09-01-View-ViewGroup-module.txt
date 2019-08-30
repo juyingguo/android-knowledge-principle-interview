@@ -20,6 +20,7 @@
 		他是让我们的某一部分获取焦点，获取焦点的会导致view的重绘
 		【1.7】含有局部刷新demo
 	1.7、简单例子解释invalidate()， requestLayout() (常用还是需要知道的) 
+		【带有案例demo参考】
 		https://blog.csdn.net/ddwhan0123/article/details/50601782
 		
 	1.8、Android View 深度分析requestLayout、invalidate与postInvalidate 
