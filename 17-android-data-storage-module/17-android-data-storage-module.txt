@@ -1,0 +1,19 @@
+一、SharedPreferences
+	
+	1.1、Android面试题-----SharedPreferences的底层实现是什么？
+	
+	1.2、SharedPreferences 如何实现线程安全？
+		
+		https://blog.csdn.net/weixin_39071173/article/details/98473408
+	1.3、SharedPreferences一个进程有一个单例。官方文档。
+	
+	1.4、SharedPreferences在同一个应用中的不同进程中操作，注意事项？
+	
+	1.5、如何获取其他应用中的SharedPreferences
+	
+	1.6、SharedPreferences是否支持多线程？ 
+		https://www.jianshu.com/p/918240c01644
+
+	
+	
+	
