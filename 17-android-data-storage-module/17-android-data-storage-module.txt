@@ -13,6 +13,9 @@
 	
 	1.6、SharedPreferences是否支持多线程？ 
 		https://www.jianshu.com/p/918240c01644
+		
+	1.7、 彻底搞懂 SharedPreferences
+		https://www.jianshu.com/p/ab0160989514
 
 	
 	
