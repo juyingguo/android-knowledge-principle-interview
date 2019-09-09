@@ -1,0 +1,10 @@
+一、service保活方法？
+	
+	1.1、Android Service保活方法总结 
+		https://blog.csdn.net/ozhuimeng123/article/details/82056278
+		
+	1.2、Android 8.0 应用保活实践 
+		https://blog.csdn.net/sinat_21118695/article/details/84727781
+		
+	1.3、深入理解JobScheduler与JobService的使用 
+		https://www.jianshu.com/p/1f2103d3d2a2

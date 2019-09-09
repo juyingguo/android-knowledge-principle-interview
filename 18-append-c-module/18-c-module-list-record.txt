@@ -1,0 +1,13 @@
+一、linux下c开发环境。
+	搞不通在linux下为什么要用devc++，在linux下有一大堆更好的，更简单，为什么偏偏要用devc++。在linux的话，新手用geany，比devc++要好用简单的多，高手用vim，快速开发可以用，codeblock，codelite。
+		
+		
+二、
+	c语言实现socket服务端/客户端通过tcp传送文件
+	
+	1.1、c语言实现socket服务端/客户端通过tcp传送文件
+		https://blog.csdn.net/arunboy/article/details/78749212
+		
+	1.2、C语言实现Socket简单通信 
+		https://blog.csdn.net/zhang___yong/article/details/78702559
+		
