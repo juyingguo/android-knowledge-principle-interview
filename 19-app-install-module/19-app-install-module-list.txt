@@ -1,0 +1,2 @@
+一、android APK应用安装过程以及默认安装路径
+	https://blog.csdn.net/vurtne_ye/article/details/
