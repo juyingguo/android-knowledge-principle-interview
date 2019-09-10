@@ -8,3 +8,6 @@
 		
 	1.3、深入理解JobScheduler与JobService的使用 
 		https://www.jianshu.com/p/1f2103d3d2a2
+		
+	1.4、Android 自用 App保活——音乐播放保活适配8.0 （贼好用） 
+		https://blog.csdn.net/xiangshiweiyu_hd/article/details/83058516
