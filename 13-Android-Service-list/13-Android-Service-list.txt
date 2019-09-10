@@ -11,3 +11,11 @@
 		
 	1.4、Android 自用 App保活——音乐播放保活适配8.0 （贼好用） 
 		https://blog.csdn.net/xiangshiweiyu_hd/article/details/83058516
+
+二、实践验证。
+	2.1、START_STICKY 
+		android 5.1杀进程后，会自动重启。
+		onStartCommand，intent:null。
+		
+		android 9该方式完全无效。
+
