@@ -8,3 +8,10 @@
 		
 	1.3、深入理解JobScheduler与JobService的使用 
 		https://www.jianshu.com/p/1f2103d3d2a2
+		
+二、实践验证。
+	2.1、START_STICKY 
+		android 5.1杀进程后，会自动重启。
+		onStartCommand，intent:null。
+		
+		android 9该方式完全无效。
