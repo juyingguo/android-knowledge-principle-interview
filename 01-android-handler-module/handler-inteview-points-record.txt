@@ -48,7 +48,8 @@ a2.1、
 	
 
 
-
+四、final 修饰的MessageQueue mQueue，如何赋值？
+	
 
 
 

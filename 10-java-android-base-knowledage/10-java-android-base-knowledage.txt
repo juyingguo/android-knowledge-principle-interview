@@ -59,6 +59,13 @@
 	
 	5.1、https://blog.csdn.net/dz77dz/article/details/81635250
 	5.2、https://blog.csdn.net/chaoman3171/article/details/79645999
+	
+	5.3、默认的(default/friendly)	 
+		如是该类型的变量。
+		不同的包中有继承关系，不可见，是否代表不能使用？		
+		不能直接访问，但通过反射可以使用使用。
+		
+		
 六、abstract与interface区别？
 
 七、dp与px的转换 
@@ -76,4 +83,7 @@
 		https://bbs.csdn.net/topics/10197336 
 		
 		不过个人认为《Thinking in java》上写得很清楚了！
+九、内部类。
+	
+	9.1、内部类 
 		
