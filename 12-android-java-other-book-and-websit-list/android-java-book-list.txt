@@ -3,3 +3,7 @@
 三、深入理解Android系列书籍资源分享更新
 	https://blog.csdn.net/Innost/article/details/43342087
 	
+四、android系列书籍。
+	《第一行代码 Android》、《疯狂Android》
+	《Android开发艺术探索》、《Android群英传》
+	《Android开发艺术探索》、《Android 源码设计模式解析与实战》、《Android内核剖析》 
