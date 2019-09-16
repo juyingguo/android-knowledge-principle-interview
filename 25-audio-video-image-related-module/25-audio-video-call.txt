@@ -1,0 +1,21 @@
+一、开发一套视频通话，需要哪些知识？
+	1.1、 Android 实现视频通话
+		https://ask.csdn.net/questions/185847 
+		
+		都是采用ffmpeg编解码的，参考http://download.csdn.net/detail/wade1000/5077891
+		
+		参考一下libjingle和webrtc吧
+		
+	1.2、最近在做android视频通话 希望和大家一起探讨一下具体的实现方法。 
+		
+		https://bbs.csdn.net/topics/370105509 
+		
+		目前我知道两个库可以实现：
+		1.linphone的liblinphone库
+		2.sipdroid的opencore库
+	
+	1.3、android视频通话实现方法，请教 
+		https://bbs.csdn.net/topics/390330900
+		
+	1.4、Android音视频聊天各种实现方式问题  
+		https://bbs.csdn.net/topics/390935295
