@@ -41,3 +41,15 @@
 		https://blog.csdn.net/u013398960/article/details/74496242
 	5.3、Android：onNewIntent()触发机制及注意事项 
 		https://blog.csdn.net/findsafety/article/details/9664061
+		
+六、activity启动模式与Intent Flag
+
+	6.1、FLAG_ACTIVITY_CLEAR_TASK 
+		https://blog.csdn.net/new_abc/article/details/13736855#
+		
+	6.2、应用a,activity-A 启动应用B的activity-B（startmode= singleTask），设置FLAG_ACTIVITY_CLEAR_TASK ，
+		结果如何。
+		栈清空，重新创建activity-B。
+		使用不同进程模拟测试。
+		
+
