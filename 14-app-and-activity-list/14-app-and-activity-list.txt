@@ -52,4 +52,9 @@
 		栈清空，重新创建activity-B。
 		使用不同进程模拟测试。
 		
-
+	6.3、关于Android的Intent.FLAG_ACTIVITY_CLEAR_TOP 	
+		https://blog.csdn.net/h3c4lenovo/article/details/17285353
+		
+		
+		Android 关闭多个视图Intent.FLAG_ACTIVITY_CLEAR_TOP用法
+		https://blog.csdn.net/LVXIANGAN/article/details/42120951
