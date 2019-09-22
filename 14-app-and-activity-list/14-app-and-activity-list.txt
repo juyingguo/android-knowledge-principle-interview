@@ -47,10 +47,10 @@
 	6.1、FLAG_ACTIVITY_CLEAR_TASK 
 		https://blog.csdn.net/new_abc/article/details/13736855#
 		
-	6.2、应用a,activity-A 启动应用B的activity-B（startmode= singleTask），设置FLAG_ACTIVITY_CLEAR_TASK ，
+	6.2、(面试题)应用a,activity-A 启动应用B的activity-B（startmode= singleTask），设置FLAG_ACTIVITY_CLEAR_TASK ，
 		结果如何。
 		栈清空，重新创建activity-B。
-		使用不同进程模拟测试。
+		
 		
 	6.3、关于Android的Intent.FLAG_ACTIVITY_CLEAR_TOP 	
 		https://blog.csdn.net/h3c4lenovo/article/details/17285353
