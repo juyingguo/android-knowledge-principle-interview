@@ -1,3 +1,9 @@
+零一、Android API与Android版本的关系 
+	0.1、 Android API与Android版本的关系  
+		https://blog.csdn.net/T_Tzz/article/details/90348873 
+		
+		https://www.jianshu.com/p/27711d61f221
+
 一、static关键字
 	1.1、static关键字 作用？
 	1.2、类，变量，方法，代码块，使用static修饰后，执行顺序？
@@ -87,3 +93,13 @@
 	
 	9.1、内部类 
 		
+十、Activity,Service,和BroadCastReceiver的ANR,无响应时长是多少? 
+	
+	10.1、 Activity,Service,和BroadCastReceiver的ANR,无响应时长是多少?  
+		1.Activity的无响应时长是5秒.
+		2.Service        20S
+		3.BroadCastReceiver   10S
+		
+	10.2、
+	
+	

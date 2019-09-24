@@ -11,6 +11,13 @@
 		
 	1.4、Android 自用 App保活——音乐播放保活适配8.0 （贼好用） 
 		https://blog.csdn.net/xiangshiweiyu_hd/article/details/83058516
+		
+	1.5、全面盘点当前Android后台保活方案的真实运行效果（截止2019年前） 
+		https://blog.csdn.net/hellojackjiang2011/article/details/85283746
+		
+	1.6、应用保活终极总结(一)：Android6.0以下的双进程守护保活实践 
+		http://www.52im.net/thread-1135-1-1.html
+		
 
 二、实践验证。
 	2.1、START_STICKY 
