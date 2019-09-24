@@ -41,3 +41,28 @@
 		https://blog.csdn.net/u013398960/article/details/74496242
 	5.3、Android：onNewIntent()触发机制及注意事项 
 		https://blog.csdn.net/findsafety/article/details/9664061
+		
+六、activity启动模式与Intent Flag
+
+	6.1、FLAG_ACTIVITY_CLEAR_TASK 
+		https://blog.csdn.net/new_abc/article/details/13736855#
+		
+		调试代码：*\AndroidJavaDemoTestForAS\app\src\main\java\com\activity\taskstack\TaskStackMainActivity
+		
+	6.2、(面试题)应用a,activity-A 启动应用B的activity-B（startmode= singleTask），设置FLAG_ACTIVITY_CLEAR_TASK ，
+		结果如何。
+		栈清空，重新创建activity-B。
+		调试代码：*\AndroidJavaDemoTestForAS\app\src\main\java\com\activity\taskstack\TaskStackActivityB
+		
+	6.3、关于Android的Intent.FLAG_ACTIVITY_CLEAR_TOP 	
+		https://blog.csdn.net/h3c4lenovo/article/details/17285353
+		
+		
+		Android 关闭多个视图Intent.FLAG_ACTIVITY_CLEAR_TOP用法
+		https://blog.csdn.net/LVXIANGAN/article/details/42120951
+		
+	6.4、taskAffinity 
+		android:taskAffinity="tatest"
+		[INSTALL_PARSE_FAILED_MANIFEST_MALFORMED]
+		android:taskAffinity="com.taskAffinity.b" 应含有com及.
+		https://www.jianshu.com/p/409c37089503
