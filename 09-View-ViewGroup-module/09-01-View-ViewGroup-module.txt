@@ -95,3 +95,25 @@
 	
 	10.1、Android View 测量流程(Measure)完全解析  
 		https://blog.csdn.net/a553181867/article/details/51494058
+		
+十一、scrollBy ，ScrollTo
+	
+	11.1、Android Scroller入门(一)之ScrollTo、ScrollBy
+		https://blog.csdn.net/wuchuang127/article/details/39472493
+十二、Android Scroller完全解析，关于Scroller你所需知道的一切 
+	
+	12.1、Android Scroller完全解析，关于Scroller你所需知道的一切 
+		https://blog.csdn.net/guolin_blog/article/details/48719871
+		
+	12.2、Scroller的用法
+		https://blog.csdn.net/m0_37988298/article/details/79852210
+		
+十三、Android开发之getX，getRawX,getWidth,getTranslationX等的区别 
+	
+	13.1、Android开发之getX，getRawX,getWidth,getTranslationX等的区别 
+		https://www.jianshu.com/p/94fffa366de6
+	
+	13.2、Android View坐标系详解（getTop()、getX、getTranslationX...） 
+		https://blog.csdn.net/u013872857/article/details/53750682
+		
+	
