@@ -1,3 +1,11 @@
 一、C++中：：的作用 
 	
 	1.1、https://blog.csdn.net/better_xiaoxuan/article/details/52957219
+	
+	1.2、c++中冒号（:）和双冒号（::）的用法 
+		https://blog.csdn.net/zimingjushi/article/details/6549390
+		
+二、C++ struct也可以继承（转载的） 
+	
+	2.1、C++ struct也可以继承（转载的） 
+		https://blog.csdn.net/luccao/article/details/84025777
