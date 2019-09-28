@@ -116,4 +116,51 @@
 	13.2、Android View坐标系详解（getTop()、getX、getTranslationX...） 
 		https://blog.csdn.net/u013872857/article/details/53750682
 		
-	
+
+十四、View的事件分发机制 
+	14.1、Android View 事件分发机制 源码解析 （上） ，
+		张hongyang
+		https://blog.csdn.net/lmj623565791/article/details/38960443
+		
+		论坛讨论
+		经过几次实验，如果继承于TextView就不会派发ACTION_UP事件，大神可否解释一下。
+		
+		
+	14.2、Android事件分发机制完全解析，带你从源码的角度彻底理解(上)
+		guolin
+		https://blog.csdn.net/guolin_blog/article/details/9097463
+		
+	14.3、Android ViewGroup事件分发机制 
+		张hongyang
+		https://blog.csdn.net/lmj623565791/article/details/39102591
+		
+		如果ViewGroup在onInterceptTouchEvent(ev) ACTION_DOWN里面直接return true了，那么子View是木有办法的捕获事件的~
+		[需要验证，子View是可以收到Down事件的。]。已验证，不能接受Down
+		
+		14.3.2、引入话题，activity与View的事件分发关系。
+			触摸MyLinearLayout是，move,up仅执行了 ViewEventDispatchTestActivity中的回调。
+			
+			09-28 16:42:41.578 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: dispatchTouchEvent ACTION_DOWN
+			09-28 16:42:41.578 29876-29876/com.sp.spmultipleapp E/MyLinearLayout: dispatchTouchEvent ACTION_DOWN
+			09-28 16:42:41.578 29876-29876/com.sp.spmultipleapp E/MyLinearLayout: onInterceptTouchEvent ACTION_DOWN
+			09-28 16:42:41.578 29876-29876/com.sp.spmultipleapp E/MyLinearLayout: onTouchEvent ACTION_DOWN
+			09-28 16:42:41.578 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: onTouchEvent ACTION_DOWN
+			09-28 16:42:41.603 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: dispatchTouchEvent ACTION_MOVE
+			09-28 16:42:41.603 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: onTouchEvent ACTION_MOVE
+			09-28 16:42:41.620 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: dispatchTouchEvent ACTION_MOVE
+			09-28 16:42:41.620 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: onTouchEvent ACTION_MOVE
+			09-28 16:42:41.637 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: dispatchTouchEvent ACTION_MOVE
+			09-28 16:42:41.637 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: onTouchEvent ACTION_MOVE
+			09-28 16:42:41.654 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: dispatchTouchEvent ACTION_MOVE
+			09-28 16:42:41.654 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: onTouchEvent ACTION_MOVE
+			09-28 16:42:41.655 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: dispatchTouchEvent ACTION_UP
+			09-28 16:42:41.655 29876-29876/com.sp.spmultipleapp E/ViewEventDispatchTestActivity: onTouchEvent ACTION_UP
+			
+			因为：MyLinearLayout 中的onTouchEvent返回了
+			boolean superOnTouchEvent = super.onTouchEvent(event);//默认为false,MyLinearLayout默认不可点击。
+			返回true就行了。查看源码。使其可以点击就行了，布局文件添加一下代码即可。
+				<!--android:focusable="true"
+				android:clickable="true"-->
+				
+			View的事件分发机制（Activity篇）
+			https://blog.csdn.net/freedom13905149949/article/details/51933621
