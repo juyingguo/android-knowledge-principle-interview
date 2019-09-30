@@ -8,3 +8,7 @@
 	2.1、 工匠若水 
 		QQ交流群: 519666583
 		Email: yanbobersky@gmail.com
+		
+三、优秀Android博客大全，整理了国内外大神博客/Github地址，是学习Android进阶的首选[转]
+	3.1、优秀Android博客大全，整理了国内外大神博客/Github地址，是学习Android进阶的首选[转]
+		https://blog.csdn.net/wuqilianga/article/details/51695154 
