@@ -116,8 +116,8 @@
 	13.2、Android View坐标系详解（getTop()、getX、getTranslationX...） 
 		https://blog.csdn.net/u013872857/article/details/53750682
 		
+十四、android所有事件分发机制汇总
 
-十四、View的事件分发机制 
 	14.1、Android View 事件分发机制 源码解析 （上） ，
 		张hongyang
 		https://blog.csdn.net/lmj623565791/article/details/38960443
@@ -126,9 +126,13 @@
 		经过几次实验，如果继承于TextView就不会派发ACTION_UP事件，大神可否解释一下。
 		
 		
-	14.2、Android事件分发机制完全解析，带你从源码的角度彻底理解(上)
+	14.2、Android事件分发机制完全解析，带你从源码的角度彻底理解(上)。View.
 		guolin
 		https://blog.csdn.net/guolin_blog/article/details/9097463
+		
+		14.2.2、Android事件分发机制完全解析，带你从源码的角度彻底理解(下)。ViewGroup.
+		
+			https://blog.csdn.net/guolin_blog/article/details/9153747
 		
 	14.3、Android ViewGroup事件分发机制 
 		张hongyang
@@ -162,7 +166,21 @@
 				<!--android:focusable="true"
 				android:clickable="true"-->
 				
-			View的事件分发机制（Activity篇）
+			
+		
+	14.4、Android触摸屏事件派发机制详解与源码分析三(Activity篇) 
+		
+		工匠若水 
+		https://blog.csdn.net/yanbober/article/details/45932123
+		
+		14.4.2、 Android触摸屏事件派发机制详解与源码分析一(View篇) 
+			工匠若水 
+			https://blog.csdn.net/yanbober/article/details/45887547 
+			
+			
+		14.4.3、 View的事件分发机制（Activity篇）
+
 			https://blog.csdn.net/freedom13905149949/article/details/51933621
-		14.4、Android事件分发机制之源码完美解析（上）
+	
+	14.5、Android事件分发机制之源码完美解析（上）
 			https://blog.csdn.net/qq_36523667/article/details/79242952
