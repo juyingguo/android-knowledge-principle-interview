@@ -164,3 +164,5 @@
 				
 			View的事件分发机制（Activity篇）
 			https://blog.csdn.net/freedom13905149949/article/details/51933621
+		14.4、Android事件分发机制之源码完美解析（上）
+			https://blog.csdn.net/qq_36523667/article/details/79242952

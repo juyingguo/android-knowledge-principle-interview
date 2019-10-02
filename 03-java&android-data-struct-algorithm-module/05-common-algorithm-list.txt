@@ -14,3 +14,7 @@
 	
 	3.1、 完全解析Andorid的缓存机制LruCache
 		https://www.jianshu.com/p/b0442c719525
+		
+	3.2、LruCache基本原理及源码解析。
+		
+		
