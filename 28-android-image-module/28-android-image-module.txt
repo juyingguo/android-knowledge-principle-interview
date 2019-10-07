@@ -11,3 +11,72 @@
 	2.2、Android DiskLruCache完全解析，硬盘缓存的最佳方案 
 		guo 
 		https://blog.csdn.net/guolin_blog/article/details/28863651
+		
+三、LruCache 
+	
+	3.1、 完全解析Andorid的缓存机制LruCache
+		https://www.jianshu.com/p/b0442c719525
+		
+	3.2、LruCache基本原理及源码解析。
+		https://www.cnblogs.com/linghu-java/p/10034284.html
+	3.3、LruCache源码解读  
+		https://blog.csdn.net/crazy__chen/article/details/45197205
+		
+	3.4、LruCache 实现原理分析 
+		https://blog.csdn.net/u012943767/article/details/51897259
+四、Android高效加载大图、多图解决方案，有效避免程序OOM
+	4.1、Android高效加载大图、多图解决方案，有效避免程序OOM 
+		guolin
+		https://blog.csdn.net/guolin_blog/article/details/9316683
+	
+		其实你的想法是对的，LRUCache本身并不一定会强制把cache的bitmap或者为其他内存对象释放，具体来说，LRUCache的直接作用压根就不是为了防止OOM，Android官网上面已经有很详细的解释了：Memory usage is kept down with components like this by recycling the child views as they move off-screen. The garbage collector also frees up your loaded bitmaps, assuming you don't keep any long lived references. This is all good and well, but in order to keep a fluid and fast-loading UI you want to avoid continually processing these images each time they come back on-screen. A memory and disk cache can often help here, allowing components to quickly reload processed images. 看到没，只是为了让UI更流畅，load更快而已。 但是为什么博主这里能ok呢？就像你说的，咱们假设一个bitmap在内存中分别被cache和一个imageview都引用了，那么就算cache取消了引用，imageview是还有的。 正确的做法应该是你需要手动检查每个view是否还需要，如果不需要了就recycle它，cache只是相当于一个提醒的作用。 具体做法可以参考这里：http://stackoverflow.com/questions/10743381/when-should-i-recycle-a-bitmap-using-lrucache
+	4.2、Android照片墙应用实现，再多的图片也不怕崩溃 
+		guolin
+		https://blog.csdn.net/guolin_blog/article/details/9526203
+		
+	4.3、Android异步从网络加载图片BitmapFactory.decodeStream 返回null的问题 
+		https://blog.csdn.net/xiejc01/article/details/17421957
+		
+五、Android四大图片缓存（Imageloader,Picasso,Glide,Fresco）原理、特性对比
+	5.1、Android四大图片缓存（Imageloader,Picasso,Glide,Fresco）原理、特性对比 
+		https://www.cnblogs.com/linghu-java/p/5741358.html#4138983
+		
+	5.2、Android-Universal-Image-Loader
+		
+		https://github.com/nostra13/Android-Universal-Image-Loader
+		5.2.1、UniversalImageLoader的用法总结 
+			月盡天明
+			https://blog.csdn.net/crazy1235/article/details/70305083
+			
+			5.2.1.2、Android-Universal-Image-Loader 图片异步加载类库的使用（超详细配置） 
+				https://blog.csdn.net/vipzjyno1/article/details/23206387
+		5.2.2、UniversalImageLoader源码解析之总体流程 
+			https://blog.csdn.net/crazy1235/article/details/70312924
+			
+		5.2.3、 UniversalImageLoader源码解析之任务处理 
+			https://blog.csdn.net/crazy1235/article/details/70471293
+		5.2.4、UniversalImageLoader源码解析之 DiskCache 
+			https://blog.csdn.net/crazy1235/article/details/70472306
+		
+		5.2.3、UniversalImageLoader源码解析之 MomoryCache 
+			https://blog.csdn.net/crazy1235/article/details/70472982
+	5.3、Android 开源框架Universal-Image-Loader完全解析---源代码解读
+		xiaanming
+		
+		5.3.1、Android 开源框架Universal-Image-Loader完全解析（一）--- 基本介绍及使用 
+			https://blog.csdn.net/xiaanming/article/details/26810303
+		5.3.2、Android 开源框架Universal-Image-Loader完全解析（二）--- 图片缓存策略详解
+			https://blog.csdn.net/xiaanming/article/details/27525741
+		5.3.3、Android 开源框架Universal-Image-Loader完全解析（三）---源代码解读
+			https://blog.csdn.net/xiaanming/article/details/39057201
+		
+六、ImageView的scaleType的属性理解
+	6.1、ImageView的scaleType的属性理解 
+		https://blog.csdn.net/qq_34902522/article/details/76682293 
+	6.2、[Android] ImageView.ScaleType设置图解 
+		https://blog.csdn.net/larryl2003/article/details/6919513
+		
+		或
+		https://blog.csdn.net/lirui0822/article/details/38423423
+		或
+		https://blog.csdn.net/ren18678213431/article/details/62236932

@@ -102,4 +102,17 @@
 		
 	10.2、
 	
-	
+十一、%s、%1$s、%d、%1$d占位符 
+	11.1、%s、%1$s、%d、%1$d占位符 
+		https://blog.csdn.net/zhanyahuiv5/article/details/82688255
+		
+	11.2、%1$s %1$d Android string
+		https://blog.csdn.net/wufen1103/article/details/7846691 
+十二、【java】Comparator
+	12.1、【java】Comparator的用法 
+		https://blog.csdn.net/u012250875/article/details/55126531
+	12.2、java comparator 升序、降序、倒序从源码角度理解 
+		https://blog.csdn.net/u013066244/article/details/78997869 
+十三、Java 之 assert （断言） 
+	13.1、Java 之 assert （断言） 
+		https://www.cnblogs.com/jpfss/p/10026877.html

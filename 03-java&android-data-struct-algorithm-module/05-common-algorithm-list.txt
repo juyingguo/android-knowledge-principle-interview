@@ -10,11 +10,14 @@
 		https://blog.csdn.net/tanggao1314/article/details/51457585
 	2.3、Hash算法总结
 		https://blog.csdn.net/asdzheng/article/details/70226007
-三、LruCache 
+三、Java常用的八种排序算法与代码实现 
+	3.1、Java常用的八种排序算法与代码实现 
+		https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&utm_medium=referral 
 	
-	3.1、 完全解析Andorid的缓存机制LruCache
-		https://www.jianshu.com/p/b0442c719525
+	3.2、Java常见排序算法详解—— 二分插入排序 
+		http://www.imooc.com/article/284891
 		
-	3.2、LruCache基本原理及源码解析。
-		
-		
+		3.2.2、java实现二分插入排序 
+			https://blog.csdn.net/u014039577/article/details/39999199
+		3.2.3、我的Java开发学习之旅------>Java经典排序算法之二分插入排序
+			https://blog.csdn.net/ouyang_peng/article/details/46621633
