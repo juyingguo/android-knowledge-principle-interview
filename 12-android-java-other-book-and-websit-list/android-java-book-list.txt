@@ -7,3 +7,11 @@
 	《第一行代码 Android》、《疯狂Android》
 	《Android开发艺术探索》、《Android群英传》
 	《Android开发艺术探索》、《Android 源码设计模式解析与实战》、《Android内核剖析》 
+五、《Android开发艺术探索》对应的网站
+	5.1、csdn博客 
+		https://blog.csdn.net/singwhatiwanna
+	5.2、github 
+		https://github.com/singwhatiwanna
+		源码地址：https://github.com/singwhatiwanna/android-art-res
+	5.3、qq:481798332
+		
