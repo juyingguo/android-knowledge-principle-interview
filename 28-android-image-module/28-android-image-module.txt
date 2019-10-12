@@ -69,6 +69,7 @@
 			https://blog.csdn.net/xiaanming/article/details/27525741
 		5.3.3、Android 开源框架Universal-Image-Loader完全解析（三）---源代码解读
 			https://blog.csdn.net/xiaanming/article/details/39057201
+			
 		
 六、ImageView的scaleType的属性理解
 	6.1、ImageView的scaleType的属性理解 
@@ -80,3 +81,13 @@
 		https://blog.csdn.net/lirui0822/article/details/38423423
 		或
 		https://blog.csdn.net/ren18678213431/article/details/62236932
+		
+七、Glide 
+
+	7.1、 Android图片加载框架最全解析（一），Glide的基本用法 
+		https://blog.csdn.net/guolin_blog/article/details/53759439
+		
+八、android加载 ，超超超大的图片，而且不压缩。 
+	
+	8.1、Android 高清加载巨图方案 拒绝压缩图片
+		https://blog.csdn.net/lmj623565791/article/details/49300989

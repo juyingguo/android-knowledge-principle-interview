@@ -66,3 +66,10 @@
 		[INSTALL_PARSE_FAILED_MANIFEST_MALFORMED]
 		android:taskAffinity="com.taskAffinity.b" 应含有com及.
 		https://www.jianshu.com/p/409c37089503
+七、Activity 与 Window、PhoneWindow、DecorView 之间的关系详解
+	
+	7.1、Activity 与 Window、PhoneWindow、DecorView 之间的关系详解 
+		https://blog.csdn.net/weixin_41101173/article/details/79685305
+	
+	
+	
