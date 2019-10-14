@@ -116,6 +116,13 @@
 	13.2、Android View坐标系详解（getTop()、getX、getTranslationX...） 
 		https://blog.csdn.net/u013872857/article/details/53750682
 		
+	13.3、Android开发之getX，getRawX,getWidth,getTranslationX等的区别 
+		【奋斗之路  博客专家。android，多个基础模块】
+		https://blog.csdn.net/dmk877/article/details/51550031
+		
+	13.4、【安卓笔记】view.getX和view.getTranslationX区别 
+		https://blog.csdn.net/chdjj/article/details/42293753
+		
 十四、android所有事件分发机制汇总
 
 	14.1、Android View 事件分发机制 源码解析 （上） ，
