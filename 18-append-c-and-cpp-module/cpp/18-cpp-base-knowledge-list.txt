@@ -9,3 +9,12 @@
 	
 	2.1、C++ struct也可以继承（转载的） 
 		https://blog.csdn.net/luccao/article/details/84025777
+		
+三、C/C++中const关键字详解 
+	
+	3.1、C/C++中const关键字详解 
+		https://www.cnblogs.com/yc_sunniwell/archive/2010/07/14/1777416.html 
+		
+	3.2、C++ const修饰函数、函数参数、函数返回值 
+		【破船不会沉】【c,c++,算法，数据结构】
+		https://blog.csdn.net/my_mao/article/details/22872149
