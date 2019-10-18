@@ -1,0 +1,10 @@
+一、Http请求返回内容有大小、长度限制吗？
+	
+	1.1、Http请求返回内容有大小、长度限制吗？
+	
+	1.2、接口返回的数据量太大很耗费带宽 
+		https://www.cnblogs.com/zhaiyt/p/11410904.html
+		
+	1.3、Http post返回数据量最大值 
+		https://zhidao.baidu.com/question/496973342667495844.html
+		

@@ -1,0 +1,6 @@
+一、Camera使用详解
+
+二、Android拍摄照片横屏问题。 
+	2.1、处理竖屏拍摄图片上传后显示为横屏的问题。
+		https://blog.csdn.net/ls15256928597/article/details/78741757
+		

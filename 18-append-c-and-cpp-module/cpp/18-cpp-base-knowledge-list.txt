@@ -18,3 +18,10 @@
 	3.2、C++ const修饰函数、函数参数、函数返回值 
 		【破船不会沉】【c,c++,算法，数据结构】
 		https://blog.csdn.net/my_mao/article/details/22872149
+		
+四、C++中的静态绑定和动态绑定 
+	4.1、C++中的静态绑定和动态绑定 
+		https://www.cnblogs.com/lizhenghn/p/3657717.html
+		
+	4.2、 深入理解C++的动态绑定和静态绑定 
+		https://blog.csdn.net/chgaowei/article/details/6427731

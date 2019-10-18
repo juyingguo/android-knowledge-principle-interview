@@ -91,3 +91,12 @@
 	
 	8.1、Android 高清加载巨图方案 拒绝压缩图片
 		https://blog.csdn.net/lmj623565791/article/details/49300989
+		
+九、compress image 
+	9.1、android bitmap compress（图片压缩） 
+		https://blog.csdn.net/luhuajcdd/article/details/8948261
+	9.2、Android Bitmap压缩图像的正确方法(compress的误区) 
+		https://blog.csdn.net/adam_ling/article/details/52346741
+		
+	
+	
