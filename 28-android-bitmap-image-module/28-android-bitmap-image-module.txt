@@ -97,6 +97,16 @@
 		https://blog.csdn.net/luhuajcdd/article/details/8948261
 	9.2、Android Bitmap压缩图像的正确方法(compress的误区) 
 		https://blog.csdn.net/adam_ling/article/details/52346741
+十、图片压缩框架。Luban鲁班压缩
+	10.1、Luban鲁班压缩
+		https://www.jianshu.com/p/632e0c585a71 
+		
+	10.2、android使用luban压缩图片 
+		https://blog.csdn.net/kongTy/article/details/76432084
+	10.3、luban 源码分析 
+	
+	10.4、Android LuBan与Compressor图片压缩方式 
+		http://www.cppcns.com/ruanjian/android/224404.html
 		
 	
 	
