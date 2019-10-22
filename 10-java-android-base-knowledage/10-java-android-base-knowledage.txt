@@ -116,3 +116,8 @@
 十三、Java 之 assert （断言） 
 	13.1、Java 之 assert （断言） 
 		https://www.cnblogs.com/jpfss/p/10026877.html
+		
+十四、异常
+	14.1、异常，调用函数发生异常，赋值语句会赋值吗？
+		a= "abc";
+		a= test();
