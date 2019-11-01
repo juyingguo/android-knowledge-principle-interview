@@ -99,7 +99,13 @@
 		https://blog.csdn.net/adam_ling/article/details/52346741
 十、图片压缩框架。
 	10.1、Luban鲁班压缩
-		https://www.jianshu.com/p/632e0c585a71 
+		github:https://github.com/Curzibn/Luban
+		使用介绍：
+		https://www.jianshu.com/p/632e0c585a71 		
+		
+		Luban算法介绍：
+		https://github.com/Curzibn/Luban/blob/master/DESCRIPTION.md
+		
 		
 	10.2、android使用luban压缩图片 
 		https://blog.csdn.net/kongTy/article/details/76432084

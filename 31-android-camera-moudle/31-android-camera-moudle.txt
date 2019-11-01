@@ -6,4 +6,11 @@
 	
 三、拍照时不同距离，照片大小不同，为什么？
 	
-	
+四、拍照4:3,16:9含义
+	4.1、拍照画幅4：3和16：9的区别是什么，
+		https://zhidao.baidu.com/question/1864334830265090707.html 
+	4.2、图像尺寸
+		https://baike.baidu.com/item/%E5%9B%BE%E5%83%8F%E5%B0%BA%E5%AF%B8
+五、Android+JNI+OpenGL开发自己的美图秀秀 
+	5.1、 Android+JNI+OpenGL开发自己的美图秀秀 
+		https://blog.csdn.net/oShunz/article/details/50537631
