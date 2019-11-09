@@ -1,0 +1,122 @@
+一、android投屏原理及流程
+
+	1.1、Android DLNA投屏-基本原理 
+			https://www.jianshu.com/p/19934892a235?tdsourcetag=s_pctim_aiomsg	
+			【文末含关联文章】
+		1.1.2、Android DLNA投屏-基于CyberGarage开发投屏功能 
+			
+	1.2、wifi display学习总结
+		Mr_55。【android，java，机器学习，设计模式】
+		https://blog.csdn.net/Mr_55/article/details/79087398
+		
+	1.3、Android Wi-Fi P2P原理与源码学习
+		https://blog.csdn.net/Mr_55/article/details/79007706
+		
+	1.4、wifi direct—深入理解Wi-Fi P2P 
+		https://blog.csdn.net/ztguang/article/details/51015976
+	
+	1.5、Android WifiDisplay分析一：相关Service的启动 
+		【多个系列】
+		https://blog.csdn.net/lilian0118/article/details/22849249
+		
+		1.5.2、Android WifiDisplay分析二：Wifi display连接过程 
+			https://blog.csdn.net/lilian0118/article/details/23168531
+	1.6、Miracast,Dlna,AirPlay区别
+		1.6.1、三种主流无线同屏技术介绍（Miracast、DLNA与AirPlay技术）
+			MingChaoSun，【Android，操作系统学习笔记，数据结构与算法，计算机视觉，等等】
+			https://blog.csdn.net/sunmc1204953974/article/details/39611357
+			
+	1.7、如何实现WiFi Display互联：我的一次WiFi Display（Miracast）功能发送端（source）和接收端（sink）的实现笔记	
+		https://blog.csdn.net/xmc281141947/article/details/60573311
+		
+	1.8、control port（用于rtsp连接） 
+		1.8.1、RTSP协议详解
+			https://www.cnblogs.com/lidabo/p/6553212.html
+			【附带，java 测试demo】
+			
+		
+二、s500,android 5.1。投屏。
+	2.1、 mCurrentFocus=Window{26646b9b u0 com.android.settings/com.android.settings.Settings} 
+	
+	2.2、
+		11-05 16:11:50.266 5805-5805/com.android.settings D/WifiDisplaySettings: >>onSwitchChanged(,,)>>isChecked:false
+	2.3、private static final int CHANGE_SETTINGS = 1 << 0;//1
+	
+	2.4、11-06 09:21:09.756 I/ActivityManager(  472): START u0 {act=android.settings.CAST_SETTINGS flg=0x14000000 cmp=com.android.settings/.Settings$WifiDisplaySettingsActivity} from uid 10009 on display 0
+
+	2.5、
+		11-06 09:21:10.293 V/SettingsProvider(  472): call(global:wifi_display_certification_on) for 0
+	2.6、
+		11-06 09:21:10.294 V/SettingsProvider(  472): call(global:wifi_display_wps_config) for 0
+		
+		WPS（Wi-Fi Protected Setup，WiFi保护设置）
+		https://baike.baidu.com/item/WPS/4810478?fr=aladdin
+	
+	2.7、连接
+		Line 29419: 11-06 09:21:18.406 I/WifiDisplayController(  472): Opened RTSP connection with Wifi display: Wecast-5e21f4
+		Line 54947: 11-06 09:21:47.250 I/WifiDisplayController(  472): Opened RTSP connection with Wifi display: Wecast-5e21f4
+		
+		//***
+		Line 27993: 11-06 09:21:16.653 I/WifiDisplayController(  472): Connected to Wifi display: Wecast-5e21f4
+		Line 53869: 11-06 09:21:46.066 I/WifiDisplayController(  472): Connected to Wifi display: Wecast-5e21f4
+		
+		
+		11-06 15:15:25.133 I/WifiDisplayController(  472): Listening for RTSP connection on 192.168.49.11:7236 from Wifi display: Wecast-5e21f4
+		
+		
+		11-06 15:15:26.825 I/WifiDisplaySource(  193): Received PLAY request.
+
+		11-06 15:15:26.825 I/WifiDisplaySource(  193): deferring PLAY request until session established.
+	2.7、处于连接状态，关闭投屏开关
+		11-06 15:39:14.686 D/WifiDisplaySettings(13009): >>onSwitchChanged(,,)>>isChecked:false
+		11-06 15:39:14.711 I/WifiDisplayController(  472): Stopped listening for RTSP connection on 192.168.49.11:7236 from Wifi display: Wecast-5e21f4
+		
+		11-06 15:39:15.315 I/WifiDisplayController(  472): Disconnecting from Wifi display: Wecast-5e21f4
+		11-06 15:39:15.397 I/wpa_supplicant(  731): p2p0: CTRL-EVENT-DISCONNECTED bssid=02:92:c6:00:d9:a2 reason=3 locally_generated=1
+		11-06 15:39:15.398 I/wpa_supplicant(  731): P2P-GROUP-REMOVED p2p0 client reason=REQUESTED
+		11-06 15:39:15.402 I/WifiDisplayController(  472): Disconnected from Wifi display: Wecast-5e21f4
+		
+	2.8、
+		/**
+		 * 自定义投屏设备连接成功广播。由com.android.server.display.WifiDisplayController发出。
+		 */
+		private final String IBOTN_CUSTOM_WIFI_P2P_CONNECTION_CHANGED_ACTION_AND_CONNECTED_TO_WIFI_DISPLAY =
+				"ibotn_custom_wifi_p2p_connection_changed_action_and_connected_to_wifi_display";
+		/**
+		 * 自定义投屏设备断连广播。由com.android.server.display.WifiDisplayController发出。
+		 */
+		private final String IBOTN_CUSTOM_WIFI_P2P_CONNECTION_CHANGED_ACTION_AND_DISCONNECTED_FROM_WIFI_DISPLAY =
+				"ibotn_custom_wifi_p2p_connection_changed_action_and_disconnected_from_wifi_display";
+			
+	2.8、断开链接方式验证
+		
+		2.8.1、断开链接方式验证之通过设置界面开关关闭
+			正常
+		2.8.2、断开链接方式验证之通过设置界面点击已连接的设备断开
+			
+		2.8.3、断开链接方式验证之通过下拉通知栏断开已连接设备
+			
+		2.8.4、断开链接方式验证之通过设置界面开关关闭
+			
+		2.8.5、断开链接方式验证之通过断开wifi
+				投屏延迟开关并没有关闭.
+				11-07 15:07:53.865 I/WifiDisplayController(  473): Disconnecting from Wifi display: Wecast-5e21f4
+				11-07 15:07:53.870 I/WifiDisplayController(  473): Failed to disconnect from Wifi display: Wecast-5e21f4, reason=2
+				11-07 15:07:53.871 I/DisplayManagerService(  473): Display device removed: DisplayDeviceInfo{"Wecast-5e21f4": uniqueId="wifi:02:92:c6:00:d9:a2", 1280 x 720, 60.0 fps, supportedRefreshRates [60.0], density 213, 213.0 x 213.0 dpi, appVsyncOff 0, presDeadline 16666666, touch EXTERNAL, rotation 0, type WIFI, address 02:92:c6:00:d9:a2, state ON, FLAG_PRESENTATION}
+		2.8.6、断开链接方式验证之通过拔掉投屏器。Unplug the projector
+				15:19 拔掉投屏器，机器与投屏器距离10m。一直不显示断开。
+				(souce与投屏器距离10米)
+				1m距离，拔掉投屏器，也会出现，一直处于连接状态。
+				
+				在投屏器附近，1分钟后显示，断开。但语音识别延迟开关没有关闭。
+				状态：【无法使用】
+				11-07 15:44:28.643 I/WifiDisplayController(  473): Disconnecting from Wifi display: Wecast-5e21f4
+				11-07 15:44:28.646 I/WifiDisplayController(  473): Failed to disconnect from Wifi display: Wecast-5e21f4, reason=2
+	2.9\ base/services/core/java/com/android/server/display/WifiDisplayController.java
+	
+		
+三、投屏开启，自动语音识别延迟.
+	3.1、投屏时语音识别延迟0.6秒就可以了。
+		600还会出现，投屏回音被识别。
+		
+	
