@@ -115,12 +115,31 @@
 		http://www.cppcns.com/ruanjian/android/224404.html
 		
 	10.5、Android图片压缩框架-Tiny 集成
+		https://github.com/Sunzxyong/Tiny
 		https://github.com/tianyingzhong/Tiny 
 		
-		https://www.cnblogs.com/lucktian/p/7009411.html
+		10.5.1、
+			https://www.cnblogs.com/lucktian/p/7009411.html
+		10.5.2、//        options.size = 2048; 
+			指定输出文件大小。
 		
 	10.6、// TODO: 2019/10/18 格式对实际图片的影响,JPEG, 使用PNG格式保存后的图片比较大 
+	
+	10.7、Compressor图片压缩框架
+		https://github.com/zetbaitsu/Compressor
 		
+	10.8、android 比较靠谱的图片压缩 
+		10.8.1、 
+			https://www.iteye.com/blog/104zz-1694762
+			
+		10.8.2、Android黑科技，图片终极压缩 
+			https://www.jianshu.com/p/ef2959ee27d4
+			
+			提取待验证点：由于png是无损压缩，所以设置quality无效（不适合作为缩略图）
+			
+	10.9、ImageCompress 
+		https://github.com/WGDrzjz/ImageCompress
+			
 十一、通过bitmap获取图片所占磁盘空间大小。	
 	
 	11.1、通过bitmap,间接获取文件大小。

@@ -1,0 +1,15 @@
+一、android ota升级流程
+
+	1.1、android ota升级流程介绍 
+		https://blog.csdn.net/liangtianmeng/article/details/86756232
+	
+	1.2、Android OTA升级原理和流程分析（一）--update.zip包的制作
+		https://blog.csdn.net/twk121109281/article/details/90712880
+	1.3、Android OTA升级原理和流程分析（零）---启动篇 
+		https://blog.csdn.net/twk121109281/article/details/90715730
+	
+二、差分包执行流程
+
+
+三、系统apk本删除，会不会导致升级失败
+	

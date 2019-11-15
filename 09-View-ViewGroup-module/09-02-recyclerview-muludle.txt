@@ -1,0 +1,30 @@
+一、recyclerView 使用
+
+二、recyclerView 使用原理
+
+三、recyclerView下拉刷新，上拉加载框架
+
+	3.1、SmartRefreshLayout官网
+		https://github.com/scwang90/SmartRefreshLayout
+		
+		3.1.2、SmartRefreshLayout使用中遇坑总结 
+			https://blog.csdn.net/mawei7510/article/details/82629722
+			
+		3.1.3、优秀的RecyclerView框架SmartRefreshLayout加下拉刷新，上拉加载
+			https://blog.csdn.net/qq_42120002/article/details/80674406
+		
+		3.1.4、使用SmartRefreshLayout完成RecyclerView上拉刷新、下拉刷新的完整例子 
+			【android，面试相关算法，android面试整理】
+			https://blog.csdn.net/cpcpcp123/article/details/82355636
+			
+	3.2、你必须了解的RecyclerView的五大开源项目-解决上拉加载、下拉刷新和添加Header、Footer等问题 
+		https://blog.csdn.net/wqbs369/article/details/79355054
+		
+	3.3、TwinklingRefreshLayout 
+		https://github.com/lcodecorex/TwinklingRefreshLayout 
+		
+	3.4、XRecyclerView 
+		https://github.com/XRecyclerView/XRecyclerView
+		
+		3.4.2、Android 之 XRecyclerview的使用 
+			https://blog.csdn.net/weixin_39460667/article/details/81814030
