@@ -191,3 +191,6 @@
 	
 	14.5、Android事件分发机制之源码完美解析（上）
 			https://blog.csdn.net/qq_36523667/article/details/79242952
+15、Android TextView中"\n"不能正常换行的问题  
+	15.1、Android TextView中"\n"不能正常换行的问题  
+		https://blog.csdn.net/u014522449/article/details/49703479
