@@ -1,0 +1,5 @@
+一、android从dialog界面上弹出Toast或者启动activity，Toast、activity被dialog覆盖  
+	
+	1.1、android从dialog界面上弹出Toast或者启动activity，Toast、activity被dialog覆盖  
+		https://zhidao.baidu.com/question/365749594462974572.html
+		https://bbs.csdn.net/topics/392272108
