@@ -1,0 +1,3 @@
+一、EditText 输入时清空
+			android EditText文本改变监听和获取到焦点的监听（欢迎留言）
+			https://blog.csdn.net/NakajimaFN/article/details/82668331

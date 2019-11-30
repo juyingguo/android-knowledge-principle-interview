@@ -71,5 +71,9 @@
 	7.1、Activity 与 Window、PhoneWindow、DecorView 之间的关系详解 
 		https://blog.csdn.net/weixin_41101173/article/details/79685305
 	
-	
+八、监听apk安装完成的广播. 
+	8.1、监听apk安装完成的广播. 
+		Android apk安装监听的几个广播 
+	8.2、Android 监听apk安装替换卸载广播 
+		https://www.cnblogs.com/rayray/p/3178403.html
 	

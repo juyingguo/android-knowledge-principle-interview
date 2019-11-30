@@ -1,0 +1,14 @@
+一、java使用日历计算两个日期相差年，月，天数。
+
+	1.1、Java 计算两个日期相差的天数
+		https://blog.csdn.net/luobing_csdn/article/details/66969265
+		
+	1.2、java计算连个日期相差几个月，天 
+		【错误方法】
+		https://www.cnblogs.com/mingforyou/p/3545174.html 
+		
+	1.3、Java 计算2个时间相差多少年，多少个月，多少天的几种方式 
+		https://www.cnblogs.com/BobXie85/p/9040662.html
+		
+		【原创】
+		https://www.sojson.com/blog/260.html
