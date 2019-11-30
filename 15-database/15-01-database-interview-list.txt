@@ -6,4 +6,4 @@
 二、sql教程 
 	
 	2.1 、 SQL 教程 W3School
-		https://www.w3school.com.cn/sql/sql_func_count.asp
+		https://www.w3school.com.cn/sql/sql_func_count.aspx
