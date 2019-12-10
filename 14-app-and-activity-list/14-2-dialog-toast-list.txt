@@ -13,3 +13,10 @@
 		WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
         lp.alpha = bgAlpha; //0.0-1.0
         activity.getWindow().setAttributes(lp);
+		
+		此时整个界面包括PopupWindow在内颜色都会变成半透明。		
+	2.3、指定背景颜色。
+		通过代码指定。
+		popupWindow.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffeb3b")));
+		
+		或直接指定布局背景颜色。
