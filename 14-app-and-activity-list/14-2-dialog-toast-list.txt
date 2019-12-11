@@ -3,3 +3,20 @@
 	1.1、android从dialog界面上弹出Toast或者启动activity，Toast、activity被dialog覆盖  
 		https://zhidao.baidu.com/question/365749594462974572.html
 		https://bbs.csdn.net/topics/392272108
+		
+二、PopupWindow 显示时，如何使背景半透明
+	
+	2.1、Android实现popupwindow弹出后屏幕背景变成半透明效果
+		https://blog.csdn.net/qq_41755832/article/details/79991371
+		
+	2.2、实现代码。
+		WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
+        lp.alpha = bgAlpha; //0.0-1.0
+        activity.getWindow().setAttributes(lp);
+		
+		此时整个界面包括PopupWindow在内颜色都会变成半透明。		
+	2.3、指定背景颜色。
+		通过代码指定。
+		popupWindow.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffeb3b")));
+		
+		或直接指定布局背景颜色。

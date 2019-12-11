@@ -19,3 +19,6 @@
 		
 	1.4、Android音视频聊天各种实现方式问题  
 		https://bbs.csdn.net/topics/390935295
+		
+	1.5、SipDroid +miniSIPServer搭建SIP局域网语音通话（一） 
+		https://www.cnblogs.com/poe-blog/p/3553888.html
