@@ -1,0 +1,14 @@
+一、 E/RetryHandler.retryRequest(L:91)( 1119): retry error, curr request is null 
+
+	1.1、 android异常-android5.0以上网络请求失败-retry error, curr request is null
+		http://www.voidcn.com/article/p-ybwskwuz-bee.html
+		
+	1.2、Android6.0加载Xutils-2.6.14.jar出现retry error, curr request is null 解决办法
+		https://blog.csdn.net/hanfengzqh/article/details/77679421
+		
+		
+		原因为混淆了。
+		-keep public class org.apache.** {*;} 
+	
+	1.3、修复android 5.0 Xutils的框架问题retry error, curr request is null 
+		https://blog.csdn.net/hongshengpeng/article/details/47662273
