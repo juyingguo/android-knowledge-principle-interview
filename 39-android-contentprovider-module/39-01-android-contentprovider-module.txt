@@ -1,1 +1,11 @@
 一、ContentResolver 
+
+二、UriMatcher 
+	2.1、UriMatcher匹配带有id的Uri，#，*
+		https://bbs.csdn.net/topics/340080402
+		
+		https://blog.csdn.net/jj520zy1314/article/details/71619083
+		
+		* may be used as a wild card for any text, and # may be used as a wild card for numbers. 但是还是不怎么懂,请举例说明匹配的URI....
+	2.2、Uri与UriMatcher 
+		https://blog.csdn.net/sjz4860402/article/details/81012677
