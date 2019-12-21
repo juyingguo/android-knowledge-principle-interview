@@ -1,0 +1,16 @@
+一、想要存储时间ms值，是long类型的。SQLite中有Long类型吗？
+	1.1、SQLite中有Long类型吗？
+		https://cloud.tencent.com/developer/ask/61930
+		
+		long是8字节INTEGER还可以保存8个字节的值，可以使用INTEGER.
+二、SQLite数据类型
+	2.1、SQLite数据类型
+		https://www.runoob.com/sqlite/sqlite-data-types.html
+		
+	2.2、时间读取后不正确。字段类型为int,但读取时要按照实际数据类型，
+		检查模板数据，根据当前日期写入数据库，是operate_time
+				1576813340490
+		但从数据库读取后的值为：operateTime=560342858。
+			operateTime=560342858
+			operateTime = c.getInt(c.getColumnIndex(ClockContract.AlarmsColumns.OPERATE_TIME));
+			使用getLong
