@@ -1,0 +1,18 @@
+一、ContentResolver 
+
+二、UriMatcher 
+	2.1、UriMatcher匹配带有id的Uri，#，*
+		https://bbs.csdn.net/topics/340080402
+		
+		https://blog.csdn.net/jj520zy1314/article/details/71619083
+		
+		* may be used as a wild card for any text, and # may be used as a wild card for numbers. 但是还是不怎么懂,请举例说明匹配的URI....
+	2.2、Uri与UriMatcher 
+		https://blog.csdn.net/sjz4860402/article/details/81012677
+三、ContentProvider启动流程。
+	3.1、以smartalarm为例，
+		12-20 10:18:38.640 13947-13947/com.android.smartalarm D/SmartAlarmApplication: attachBaseContext()>>
+		12-20 10:18:38.642 13947-13947/com.android.smartalarm D/ClockProvider: ClockProvider()>>
+		12-20 10:18:38.643 13947-13947/com.android.smartalarm D/ClockProvider: onCreate()>>
+		12-20 10:18:38.644 13947-13947/com.android.smartalarm D/ClockDatabaseHelper: ClockDatabaseHelper()
+		12-20 10:18:38.648 13947-13947/com.android.smartalarm D/SmartAlarmApplication: onCreate()>>
