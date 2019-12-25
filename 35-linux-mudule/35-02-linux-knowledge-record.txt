@@ -1,0 +1,4 @@
+一、linux内核的熵池 
+	1.1、linux内核的熵池 
+		https://www.cnblogs.com/yinheyi/p/5973584.html
+ 
