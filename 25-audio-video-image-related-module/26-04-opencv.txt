@@ -1,0 +1,4 @@
+一、opencv教程。
+	1.1、opencv教程。 【c语言中文网。】
+		http://c.biancheng.net/view/1089.html
+		

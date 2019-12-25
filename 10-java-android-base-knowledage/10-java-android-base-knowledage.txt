@@ -126,3 +126,9 @@
 	15.1、android:inputType参数类型说明 
 		https://blog.csdn.net/chaod5659/article/details/17117193
 		
+十六、Java中创建枚举并赋初值。
+	16.1、如果使用到枚举的值，只定义不赋值是很危险的。比如之前定义两个，后来有定义一个放到中间，将酿成大祸
+		https://blog.csdn.net/u013129944/article/details/70226019/
+		
+		使用的时候不要使用ordinal()，而要使用定义赋值的value
+	
