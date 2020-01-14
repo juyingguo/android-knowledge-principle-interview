@@ -1,0 +1,8 @@
+一、windows10如何将python2和python3添加到环境变量中 
+	https://www.jianshu.com/p/0a3f580dceee
+
+  1.1、参看默认安装后，添加的用户变量路径。
+	C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;//根据安装路径而定
+	再次添加到系统环境变量中.
+	测试无效。
+	重启机器生效。

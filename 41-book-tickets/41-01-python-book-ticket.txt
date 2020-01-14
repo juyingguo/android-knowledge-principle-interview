@@ -3,3 +3,6 @@
 		https://github.com/search?p=3&q=12306&ref=opensearch&type=Repositories
 		
 	1.2、https://github.com/testerSunshine/12306
+	
+	1.3、搭建github最火的12306项目
+		https://www.cnblogs.com/fdzang/p/12152807.html
