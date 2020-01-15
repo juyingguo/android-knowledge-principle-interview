@@ -1,0 +1,11 @@
+一、可惜 Vysor Pro 收费较贵，免费版广告又多，幸运的是我们又发现了一款开源免费功能相似的安卓手机屏幕画面投屏+控制软件 Scrcpy！它跨平台支持 Win、Mac、Linux，可通过 USB 数据线 (或WiFi) 	连接电脑，将手机画面投屏到电脑显示，并可使用键盘鼠标远程控制你的手机……	
+	1.1、投屏，控制手机。scrcpy 免费开源
+		https://www.iplaysoft.com/scrcpy.html
+		
+		
+	1.2、scrcpy
+		https://github.com/Genymobile/scrcpy
+	
+	1.3、QtScrcpy
+		https://github.com/barry-ran/QtScrcpy
+		
