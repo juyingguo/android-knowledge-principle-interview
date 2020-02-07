@@ -1,0 +1,6 @@
+一、几种常用的排序算法（c语言实现） 
+	1.1、几种常用的排序算法（c语言实现）
+		https://blog.csdn.net/xu__jun/article/details/78331111
+		
+	1.2、九大排序算法-C语言实现及详解   
+		https://blog.csdn.net/zhangjikuan/article/details/49095533

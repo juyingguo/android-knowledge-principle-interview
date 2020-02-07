@@ -1,0 +1,18 @@
+一、C/C++语言常用开发工具
+	1.1、C/C++语言常用开发工具
+		https://zhuanlan.zhihu.com/p/87441238
+		
+	1.2、VC++ 2010 
+		
+		1.2.1、为什么应该选择Visual C++ Express作为初学者的开发工具
+			https://zhidao.baidu.com/question/1543859497619714347.html
+		
+		1.2.2、Visual C++ 2010 Express 下载及安装教程
+			【嵌入式Linux学习记录12篇】【单片机编程13篇】【C++学习记录4篇】
+			https://blog.csdn.net/qq_38105227/article/details/81383595
+			
+		1.2.3、visualc++ 2010express激活码密钥，永久激活 
+			https://blog.csdn.net/weixin_43458720/article/details/88362863
+			
+			6VPJ7-H3CXH-HBTPT-X4T74-3YVY7
+			6VPJ7-H3CXH-HBTPT-X4T74-3YVY7

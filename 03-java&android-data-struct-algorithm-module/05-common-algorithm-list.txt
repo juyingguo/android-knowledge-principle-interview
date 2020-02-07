@@ -13,6 +13,9 @@
 三、Java常用的八种排序算法与代码实现 
 	3.1、Java常用的八种排序算法与代码实现 
 		https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&utm_medium=referral 
+		
+		3.1.2、Java常用的八种排序算法与代码实现 
+			https://blog.csdn.net/u012373815/article/details/77939896
 	
 	3.2、Java常见排序算法详解—— 二分插入排序 
 		http://www.imooc.com/article/284891
@@ -21,3 +24,20 @@
 			https://blog.csdn.net/u014039577/article/details/39999199
 		3.2.3、我的Java开发学习之旅------>Java经典排序算法之二分插入排序
 			https://blog.csdn.net/ouyang_peng/article/details/46621633
+			
+	3.3、【排序算法】希尔排序原理及Java实现 
+		https://blog.csdn.net/jianyuerensheng/article/details/51258460
+		
+		3.3.2、希尔排序算法（排序详解） 
+			https://blog.csdn.net/qq845579063/article/details/51447404
+		3.3.3、白话经典算法系列之三 希尔排序的实现 
+			https://blog.csdn.net/MoreWindows/article/details/6668714
+			
+		3.3.4、希尔排序--简单易懂图解
+			https://blog.csdn.net/qq_39207948/article/details/80006224 	
+			
+		3.3.5、希尔排序超详解及其java实现 
+			https://blog.csdn.net/zhou_438/article/details/83715455
+		3.3.6、理解希尔排序的排序过程 
+			https://blog.csdn.net/weixin_37818081/article/details/79202115
+		

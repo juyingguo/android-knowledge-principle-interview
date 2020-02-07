@@ -4,5 +4,20 @@
 		
 	1.2、https://github.com/testerSunshine/12306
 	
+		1.2.1、问题。 
+			**************************************************
+			cookie获取中
+			需要验证码
+			下载验证码...
+			下载验证码成功
+			您已设置使用云打码，但是服务器资源有限，请尽快改为本地打码
+			None
+			验证码校验失败
+			
+			打码服务器地址无法使用。
+			更换地址试试。 
+			##HOST = "120.77.154.140:8000" ## defalut sometime cannotuse 
+			HOST = "frp.fenpao.top:9999" ## 群友提供 
+	
 	1.3、搭建github最火的12306项目
 		https://www.cnblogs.com/fdzang/p/12152807.html

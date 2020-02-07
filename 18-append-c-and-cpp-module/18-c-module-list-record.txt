@@ -10,4 +10,72 @@
 		
 	1.2、C语言实现Socket简单通信 
 		https://blog.csdn.net/zhang___yong/article/details/78702559
+三、C/C++头文件的引用问题（#include使用） 
+	3.1、C/C++头文件的引用问题（#include使用） 
+		https://blog.csdn.net/vito_7474110/article/details/81911990
 		
+	3.2、C语言引用不同路径下的头文件的方法 
+		 https://www.cnblogs.com/mobius2018/p/10001961.html
+		 
+		 3.2.1、
+			#include "FindPrime.h" //位于同一个文件夹下。
+			#include "../quest12/FindPrime.h" //不同文件夹下
+		 
+四、如何自定义C语言.h头文件？
+	4.1、如何自定义C语言.h头文件？ 
+		https://blog.csdn.net/zhanshen112/article/details/80193797
+	4.2、c语言的自定义头文件 
+		https://bbs.csdn.net/topics/280025672?list=566462
+		
+		4.2.1、
+			.h相当于说明书 (一般放声明/接口)
+			.c相当于实现原理图 (一般放定义/实现)
+			.o相当于实物 (实现的二进制形式)
+五、C语言百分号加字母%d%p%o%x%u%c%s%f%e%g代表作用 
+	5.1、C语言百分号加字母%d%p%o%x%u%c%s%f%e%g代表作用 
+		https://blog.csdn.net/yangshuaionline/article/details/93714272
+		
+		5.1.1、	C语言中%d,%s,%x,%f,%.100f,%的意思
+			https://blog.csdn.net/qq_32365567/article/details/55045942
+			
+			％d整型输出，％ld长整型输出，
+
+			％o以八进制数形式输出整数，
+
+			％x以十六进制数形式输出整数，或输出字符串的地址。
+
+			％u以十进制数输出unsigned型数据(无符号数)。注意：%d与%u有无符号的数值范围，也就是极限的值，不然数值打印出来会有误。
+
+			％c用来输出一个字符，
+
+			％s用来输出一个字符串，
+
+			％f用来输出实数，以小数形式输出，默认情况下保留小数点6位。
+
+			%.100f用来输出实数，保留小数点100位。
+
+			％e以指数形式输出实数，
+
+			％g根据大小自动选f格式或e格式，且不输出无意义的零。
+			
+			%p指针变量地址，如果输出数据不够8位数，则左边补零
+六、C语言基础——字符串指针（指向字符串的指针） 
+	6.1、C语言基础——字符串指针（指向字符串的指针）
+		
+		https://blog.csdn.net/u013812502/article/details/81196367
+		
+		
+		
+七、__int64用法介绍
+	7.1、__int64用法介绍 
+		https://blog.csdn.net/angrydog1024/article/details/81608931
+		
+	7.2、C++的64位整数［原］by 赤兔 
+		http://www.cnitblog.com/cockerel/archive/2006/08/16/15356.html
+		
+		
+		
+		
+		
+		
+			
