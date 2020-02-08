@@ -1,0 +1,16 @@
+一、软件的各个版本是什么意思 
+	1.1、软件的各个版本是什么意思 
+		https://zhidao.baidu.com/question/86784040.html 
+			
+			express版本为简单快速版本，即为该软件精简部分功能，能够完成基本功能，且简单易于操作。
+		　　相关版本名称分类：
+		　　alpha ：内部测试版
+		　　beta ：外部测试版
+		　　demo ：演示版
+		　　Enhance ：增强版或者加强版 属于正式版
+		　　Free ：自由版
+		　　Full version ：完全版 属于正式版
+		　　shareware ：共享版
+		　　Release： 发行版 有时间限制
+		　　Upgrade ：升级版
+		　　Retail： 零售版

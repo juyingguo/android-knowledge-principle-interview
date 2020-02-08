@@ -59,6 +59,13 @@
 			％g根据大小自动选f格式或e格式，且不输出无意义的零。
 			
 			%p指针变量地址，如果输出数据不够8位数，则左边补零
+			
+		
+		5.1.2、数据类型输入输出标示。
+			https://www.cnblogs.com/DemonMaster/p/10904075.html 
+			
+			https://zhidao.baidu.com/question/88570366.html
+			
 六、C语言基础——字符串指针（指向字符串的指针） 
 	6.1、C语言基础——字符串指针（指向字符串的指针）
 		
@@ -73,9 +80,30 @@
 	7.2、C++的64位整数［原］by 赤兔 
 		http://www.cnitblog.com/cockerel/archive/2006/08/16/15356.html
 		
+八、 system("pause"); 的作用？
+	8.1、C++：VS控制台闪退，看不到输出结果，添加system（“pause”）；
+		【《OpenCV学习笔记》52篇】【《C++学习笔记》50篇】【《人工智能AI》10篇】【线性代数，微积分 等】【《计算机视觉CV》3篇】
+		https://blog.csdn.net/mars_xiaolei/article/details/72845145?utm_source=blogxgwz4
 		
 		
+	8.2、system("pause")危害 	
+		https://blog.csdn.net/qq_18884827/article/details/52161597
 		
+		不要用system("pause")来暂停，可以改用std::cin.get或getchar()
 		
+		为何不要用system("pause")?
+		有两个理由
+		一?：?不具可移植性
+		二?：?这东西很贵
+
+		贵在那里？让我们来看看system("pause")的流程
+		1?：?暂停你的程式
+		2?：?在sub-process中启动OS
+		3?：?寻找要执行的命令并为之分配记忆体
+		4?：?等待输入
+		5?：?回收记忆体
+		6?：?结束OS
+		7?：?继续你的程式
+		————————————————
 		
 			

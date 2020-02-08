@@ -1,0 +1,3 @@
+一、Android默认打开便携式WIFI热点
+	1.1、Android默认打开便携式WIFI热点
+		https://blog.csdn.net/zhoumushui/article/details/101427627

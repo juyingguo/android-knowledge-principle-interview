@@ -19,6 +19,7 @@ int main()
             }
         }
     }
-     printf("sum = %d\n",sum);
-    
+    printf("sum = %d\n",sum);
+    //system("pause");
+    getchar();
 }
