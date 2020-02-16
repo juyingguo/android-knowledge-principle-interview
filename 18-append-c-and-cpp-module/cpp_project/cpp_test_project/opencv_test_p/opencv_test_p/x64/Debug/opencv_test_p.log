@@ -1,0 +1,29 @@
+﻿Build started 2020/2/16 20:19:13.
+     1>Project "I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\opencv_test_p\opencv_test_p.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\opencv_test_p.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         I:\juying\soft_install\vs\vs10\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt opencv_show_img_gray_05.cpp
+         opencv_show_img_gray_05.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\opencv_test_p.exe.embed.manifest.res" x64\Debug\opencv_test_p_manifest.rc 
+       Link:
+         I:\juying\soft_install\vs\vs10\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\x64\Debug\opencv_test_p.exe" /INCREMENTAL /NOLOGO opencv_ml2411d.lib opencv_calib3d2411d.lib opencv_contrib2411d.lib opencv_core2411d.lib opencv_features2d2411d.lib opencv_flann2411d.lib opencv_gpu2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib opencv_legacy2411d.lib opencv_objdetect2411d.lib opencv_ts2411d.lib opencv_video2411d.lib opencv_nonfree2411d.lib opencv_ocl2411d.lib opencv_photo2411d.lib opencv_stitching2411d.lib opencv_superres2411d.lib opencv_videostab2411d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\opencv_test_p.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\x64\Debug\opencv_test_p.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\x64\Debug\opencv_test_p.lib" /MACHINE:X64 x64\Debug\opencv_test_p.exe.embed.manifest.res
+         x64\Debug\opencv_show_img_gray_05.obj
+         opencv_test_p.vcxproj -> I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\x64\Debug\opencv_test_p.exe
+       Manifest:
+         Deleting file "x64\Debug\opencv_test_p.exe.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"x64\Debug\opencv_test_p.exe.embed.manifest" /manifest x64\Debug\opencv_test_p.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\opencv_test_p.exe.embed.manifest.res" x64\Debug\opencv_test_p_manifest.rc 
+       LinkEmbedManifest:
+         I:\juying\soft_install\vs\vs10\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\x64\Debug\opencv_test_p.exe" /INCREMENTAL /NOLOGO opencv_ml2411d.lib opencv_calib3d2411d.lib opencv_contrib2411d.lib opencv_core2411d.lib opencv_features2d2411d.lib opencv_flann2411d.lib opencv_gpu2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib opencv_legacy2411d.lib opencv_objdetect2411d.lib opencv_ts2411d.lib opencv_video2411d.lib opencv_nonfree2411d.lib opencv_ocl2411d.lib opencv_photo2411d.lib opencv_stitching2411d.lib opencv_superres2411d.lib opencv_videostab2411d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\opencv_test_p.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\x64\Debug\opencv_test_p.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\x64\Debug\opencv_test_p.lib" /MACHINE:X64 x64\Debug\opencv_test_p.exe.embed.manifest.res
+         x64\Debug\opencv_show_img_gray_05.obj
+         opencv_test_p.vcxproj -> I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\x64\Debug\opencv_test_p.exe
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\opencv_test_p.unsuccessfulbuild".
+         Touching "x64\Debug\opencv_test_p.lastbuildstate".
+     1>Done Building Project "I:\juying\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\cpp_project\cpp_test_project\opencv_test_p\opencv_test_p\opencv_test_p.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.56

@@ -27,7 +27,7 @@ int main()
         stu[i].avargrade=(stu[i].math+stu[i].English+stu[i].C)/3;
     }
     
-    if((fp=fopen("stud","a+"))==NULL)
+    if((fp=fopen("I:\\testonly\\stud.txt","a+"))==NULL)//stud.txt 与当前程序在同一目录下。I:/testonly/stud.txt 在I盘符下 。或者 I:\\testonly\\stud.txt 
     {
         printf("error :cannot open file!\n");
         exit(0);

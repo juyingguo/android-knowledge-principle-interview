@@ -1,4 +1,10 @@
- //  Created by www.runoob.com on 15/11/9.
+/**
+题目：有两个磁盘文件A和B,各存放一行字母，要求把这两个文件中的信息合并（按字母顺序排列），输出到一个新文件C中。
+
+程序分析：你需要先创建 A.txt 与 B.txt。
+*/
+
+//  Created by www.runoob.com on 15/11/9.
 //  Copyright ? 2015年 菜鸟教程. All rights reserved.
 //
  
@@ -7,7 +13,7 @@
 #include<string.h>
 int main()
 {
-    FILE*fa,*fb,*fc;
+    FILE *fa,*fb,*fc;
     int i,j,k;
     char str[100],str1[100];
     char tem;

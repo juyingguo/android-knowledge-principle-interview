@@ -1,0 +1,135 @@
+一、opencv 
+	1.1、https://opencv.org/
+		在 OpenCV 官方网站（https://opencv.org/）可以下载最新的且完整的源码以及大部分的 release 版本源码。具体的下载链接可以通过下载页面（https://opencv.org/releases.html）访 问。
+		当然，最新的代码也会在 github（https://github.com/opencv/opencv）上进行即时更新。如果想要获取最新的高级函数功能，也可以下载和编译 open_contrib 模块（https://github.com/opencv/opencv_contrib）。
+		
+		1.1.2、opencv下载及论坛
+			https://sourceforge.net/projects/opencvlibrary/
+			
+		1.1.3、OpenCV下载驿站（解决github下载问题，解决OpenCV官网下载较慢） 
+			https://blog.csdn.net/qq_15698613/article/details/98360384
+			
+			000-Opencv各版本汇总下载
+			https://blog.csdn.net/oMoDao1/article/details/80276834
+			
+			OpenCV 下载驿站（百度云盘下载，同步更新）
+			https://blog.csdn.net/qq_15698613/article/details/98360384
+			
+	1.2、OpenCV教程：超详细的OpenCV入门教程，值得收藏！
+		http://c.biancheng.net/opencv/
+	
+	1.3、OpenCV入门指南 及系列播客
+		https://blog.csdn.net/morewindows/category_1291764.html
+		
+		
+		1.3.2、OpenCV
+			https://blog.csdn.net/qq_15698613/category_8292104.html
+		1.3.3、
+			OpenCV实践--从入门到精通
+			https://blog.csdn.net/qq_15698613/category_9292368.html
+			
+		1.3.4、Android（OpenCV）开发 
+			https://blog.csdn.net/yanzi1225627/category_9261404.html
+			https://blog.csdn.net/yanzi1225627/category_1763963.html
+			
+		1.3.5、OpenCV学习(2)——一个简单的例子 
+			https://blog.csdn.net/weixin_30907935/article/details/94921455
+			
+		1.3.6、OpenCV入门学习第一篇
+			https://blog.csdn.net/zhangfuliang123/article/details/73825817
+		
+	1.4、vc2010 express 对应opencv 哪些版本？以及如何配置
+		1.4.1、VS版本 与 VC版本 的对应关系，以及opencv 对 VC版本 的支持情况1
+			https://blog.csdn.net/yefcion/article/details/81067030
+			
+			VS版本 与 VC版本 的对应关系
+
+			Visual Studio 6 ： vc6
+			Visual Studio 2003 ： vc7
+			Visual Studio 2005 ： vc8
+			Visual Studio 2008 ： vc9
+			Visual Studio 2010 ： vc10
+			Visual Studio 2012 ： vc11
+			Visual Studio 2013 ： vc12
+			Visual Studio 2015 ： vc14
+			Visual Studio 2017 ： vc15
+
+			opencv 对 VC版本 的支持情况
+
+			opencv 2.4.10 == vc10、vc11、vc12
+			opencv2.4.11___vc10;vc11;vc12
+			opencv 2.4.13 == vc11、vc12
+			opencv 3.4.0 == vc14、vc15
+			opencv 3.4.1 == vc14、vc15
+			————————————————
+			
+		1.4.2、vs2010+opencv3.4.1 配置。【没有安装对应版本关系配置，项目会有众多问题哦】
+			https://blog.csdn.net/Mihu_Tutu/article/details/84993623
+			
+			https://blog.csdn.net/betrapped/article/details/87953477
+			
+		1.4.3、在vs2010中配置openCV2.4.11
+			 https://blog.csdn.net/qq_37939434/article/details/80653456
+			 
+			 b、【OpenCV】VS2010与OpenCV2.4.11的配置
+				https://blog.csdn.net/Taily_Duan/article/details/51004222
+ 
+		1.4.4、【OpenCV】opencv2.4.10配置vs2010软件的心得 
+			https://blog.csdn.net/u014574279/article/details/50909425
+			
+			b、OpenCV：VS2010配置OpenCV2.4.10并显示图像 
+				https://blog.csdn.net/xinjiang666/article/details/80785210
+			
+	1.5、OpenCV各版本差异与演化，从1.x到4.0 
+		https://blog.csdn.net/blogshinelee/article/details/83578053
+		
+	1.6、opcvtest test program.. 。。【环境：vs2010+opencv3.4.1】
+		
+		#include"opencv2/opencv.hpp"
+		using namespace cv;
+		int main(void)
+		{
+			Mat image=imread("?D:/allmusement/meinv.jpg"); //now ,build success but debug failed.
+			imshow("Hellow world",image);
+			waitKey(0);
+			//system("pause");
+			return 0;
+		}
+		debug tip error :
+		opencv,
+		unhandled exception at 0x00007ffa2a33908c in x.exe Microsoft c++ exception :cv Exception at memory location 0x002deca0..
+		
+		控制台命令窗口异常提示：
+		opencv(3.4.1) Error:Assertion failed (size.width >0 && size.height>0) in::imshow,file		C:\build\master_winpack-build-win64-vc14\opencv\modules\highgui\src\window.cpp,line356.
+		
+		
+		meinv.jpg 放到当前cpp 源程序同一目录下。Mat image=imread("meinv.jpg"); 
+		
+		https://bbs.csdn.net/topics/390923071
+		
+		https://blog.csdn.net/yefcion/article/details/79947025
+		
+		https://blog.csdn.net/yefcion/article/details/79947025
+		
+		
+		总结：vs2010+opencv3.4.1 配置。【没有安装对应版本关系配置，项目会有众多问题哦】
+		
+	1.7、无法启动此程序，应为计算机中丢失opencv_core2411d.dll。尝试重新安装该程序以解决此问题。
+		opencv 添加环境变量。用户变量及系统变量都添加，重启机器。
+	
+	1.8、
+		opencv Error:Assertion failed (size.width >0 && size.height>0) in::imshow,file		 					           opencv\modules\highgui\src\window.cpp,line261.
+		
+		使用其他例子程序测试就行了。以后再次测试原来程序，正常跑通了。
+		
+		隔天运行就又不行了。
+			openCV2.4.11 cvLoadImage方式能加载图片。imread不能加载图片。
+			
+二、opencv记录。
+	2.1、OpenCV之CvMat、Mat、IplImage之间相互转换实例(转)
+		https://www.cnblogs.com/hyb1/p/3929206.html
+		
+	2.2、2018-10-25【机器视觉笔录】OpenCV中的API及用法
+		https://www.jianshu.com/p/6d203b0ffa11
+
+	
