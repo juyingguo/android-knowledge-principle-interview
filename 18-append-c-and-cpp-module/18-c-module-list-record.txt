@@ -1,8 +1,14 @@
-一、linux下c开发环境。
+-1、C语言标准 C89/C90/C99/C11之间的区别 
+	-1.1、C语言标准 C89/C90/C99/C11之间的区别 
+		https://blog.csdn.net/mozart_cai/article/details/80865164 
+	-1.2、C90、C99、C11——C语言的三套标准 
+		https://blog.csdn.net/adolph58/article/details/88726621?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+
+1、linux下c开发环境。
 	搞不通在linux下为什么要用devc++，在linux下有一大堆更好的，更简单，为什么偏偏要用devc++。在linux的话，新手用geany，比devc++要好用简单的多，高手用vim，快速开发可以用，codeblock，codelite。
 		
 		
-二、
+2、
 	c语言实现socket服务端/客户端通过tcp传送文件
 	
 	1.1、c语言实现socket服务端/客户端通过tcp传送文件
@@ -10,18 +16,22 @@
 		
 	1.2、C语言实现Socket简单通信 
 		https://blog.csdn.net/zhang___yong/article/details/78702559
-三、C/C++头文件的引用问题（#include使用） 
+3、C/C++头文件
+	 
 	3.1、C/C++头文件的引用问题（#include使用） 
 		https://blog.csdn.net/vito_7474110/article/details/81911990
 		
-	3.2、C语言引用不同路径下的头文件的方法 
+		a、C语言引用不同路径下的头文件的方法 
 		 https://www.cnblogs.com/mobius2018/p/10001961.html
 		 
-		 3.2.1、
-			#include "FindPrime.h" //位于同一个文件夹下。
-			#include "../quest12/FindPrime.h" //不同文件夹下
+			
+		#include "FindPrime.h" //位于同一个文件夹下。
+		#include "../quest12/FindPrime.h" //不同文件夹下
+			
+	3.2、C/C++ .h和.hpp的区别
+		https://www.cnblogs.com/zhibei/p/12289982.html 
 		 
-四、如何自定义C语言.h头文件？
+4、如何自定义C语言.h头文件？
 	4.1、如何自定义C语言.h头文件？ 
 		https://blog.csdn.net/zhanshen112/article/details/80193797
 	4.2、c语言的自定义头文件 
@@ -31,7 +41,7 @@
 			.h相当于说明书 (一般放声明/接口)
 			.c相当于实现原理图 (一般放定义/实现)
 			.o相当于实物 (实现的二进制形式)
-五、C语言百分号加字母%d%p%o%x%u%c%s%f%e%g代表作用 
+5、C语言百分号加字母%d%p%o%x%u%c%s%f%e%g代表作用 
 	5.1、C语言百分号加字母%d%p%o%x%u%c%s%f%e%g代表作用 
 		https://blog.csdn.net/yangshuaionline/article/details/93714272
 		
@@ -73,21 +83,21 @@
 			
 			
 			
-六、C语言基础——字符串指针（指向字符串的指针） 
+6、C语言基础——字符串指针（指向字符串的指针） 
 	6.1、C语言基础——字符串指针（指向字符串的指针）
 		
 		https://blog.csdn.net/u013812502/article/details/81196367
 		
 		
 		
-七、__int64用法介绍
+7、__int64用法介绍
 	7.1、__int64用法介绍 
 		https://blog.csdn.net/angrydog1024/article/details/81608931
 		
 	7.2、C++的64位整数［原］by 赤兔 
 		http://www.cnitblog.com/cockerel/archive/2006/08/16/15356.html
 		
-八、 system("pause"); 的作用？
+8、运行控制台程序，立即闪退。用system("pause"); 的作用？
 	8.1、C++：VS控制台闪退，看不到输出结果，添加system（“pause”）；
 		【《OpenCV学习笔记》52篇】【《C++学习笔记》50篇】【《人工智能AI》10篇】【线性代数，微积分 等】【《计算机视觉CV》3篇】
 		https://blog.csdn.net/mars_xiaolei/article/details/72845145?utm_source=blogxgwz4
@@ -114,7 +124,10 @@
 		7?：?继续你的程式
 		————————————————
 		8.2.1、有时候不起作用。
-九、转义字符。
+		
+	8.3、加上getchar()的目的是为了看运行结果,VS一般运行完毕之后直接关闭这个窗口,可以选择不加  	在工具-选项-调试中去掉调试完毕关闭控制台这个选项就行
+		https://blog.csdn.net/sum7mer/article/details/79064239
+9、转义字符。
 	9.1、#C语言学习感悟# printf( )函数中的回车‘\r’与回车换行'\n'之我见。 
 		https://blog.csdn.net/ylm1521/article/details/80557866
 		
@@ -153,3 +166,37 @@
 		https://blog.csdn.net/qq_25077833/article/details/53344150
 		
 		预处理命令后面;函数头后面;花括号“{”和“}”后面
+11、"&"在C语言中主要有三种用法 
+	https://blog.csdn.net/Tu_1218/article/details/89857039
+	
+	注意在c++中。在C++中“&”还有引用的作用
+	int &a=x;
+	表示二者指向同一块内存地址,两者中的任意一个的改变都会引起另一个的改变
+	int a;
+	int& b=a;
+	a=5;
+	if(a>0){
+		b=b+2;
+	}
+	a,b 都为7。
+	
+12、typedef
+	12.1、利用typedef定义函数指针 
+		https://blog.csdn.net/weixin_41632560/article/details/80747640
+		
+		http://fouri.iteye.com/blog/483974
+		
+13、c语言数据结构。
+	13.1、链表的操作（C语言实现） 
+		13.1.1、学习心得：链表的操作（C语言实现） 
+			https://blog.csdn.net/lpp0900320123/article/details/20356143?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+		13.1.2、c语言链表详解（超详细）
+			https://blog.csdn.net/Endeavor_G/article/details/80552680?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+			
+14、c语言结构体 
+	14.1、C语言结构体初始化的四种方法 
+		https://blog.csdn.net/weixin_42445727/article/details/81191327
+		
+		14.1.2、C语言中结构体的初始化 
+			https://blog.csdn.net/chgaowei/article/details/8629819?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task

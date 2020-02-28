@@ -1,0 +1,7 @@
+1.beyondcompare eaccessviolation怎么解决 
+	1.1、beyondcompare eaccessviolation怎么解决
+		Beyond Compare（bcompare.exe）报错误“应用程序发生错误”解决方案(转)
+		
+		https://blog.csdn.net/dragoo1/article/details/86747395
+		
+		C:\Users\username\AppData\Roaming\Scooter Software\Beyond Compare 3\  文件夹删除即可。

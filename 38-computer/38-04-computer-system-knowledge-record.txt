@@ -1,0 +1,6 @@
+1.、计算机操作系统——分时系统和实时系统 
+	1.1、计算机操作系统——分时系统和实时系统 
+		https://blog.csdn.net/weixin_43165059/article/details/87879847
+		
+	1.2、实时操作系统与分时操作系统的区别 
+		https://blog.csdn.net/m0_37765662/article/details/83018523?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task

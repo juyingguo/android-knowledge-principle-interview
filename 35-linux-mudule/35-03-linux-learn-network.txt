@@ -1,0 +1,31 @@
+
+1、http://linux.linuxidc.com/
+2、linux内核源码下载地址 。及在线浏览代码
+	2.1、linux内核源码下载地址 
+		https://blog.csdn.net/u011375704/article/details/81866427?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+		官网链接：
+		https://www.kernel.org/
+
+		HTTP	https://www.kernel.org/pub/
+		GIT	https://git.kernel.org/
+		官网下载经常速度太慢，无法下载，提供另一个链接：
+
+		http://ftp.sjtu.edu.cn/sites/ftp.kernel.org/pub/linux/kernel/
+		————————————————
+		版权声明：本文为CSDN博主「diggcat」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/u011375704/article/details/81866427
+		
+	2.2、记录下linux 内核源码下载网址：
+		记录下linux 内核源码下载网址：
+		https://mirrors.edge.kernel.org/pub/linux/kernel/
+		linux 0系列版本下载网址
+		http://oldlinux.org/Linux.old/
+		
+	2.3、linux内核源码在线浏览
+		2.3.1、linux内核源码在线浏览
+			http://lxr.linux.no/
+		
+3.献给新手，如何阅读Linux源码(转) 
+	3.1、献给新手，如何阅读Linux源码(转) 
+		https://blog.csdn.net/qq_37468954/article/details/77483013?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task

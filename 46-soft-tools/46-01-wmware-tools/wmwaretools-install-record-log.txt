@@ -1,0 +1,186 @@
+eink@eink-virtual-machine:~/Downloads/vmware-tools-distrib$ sudo ./vmware-install.pl 
+[sudo] password for eink: 
+open-vm-tools packages are available from the OS vendor and VMware recommends 
+using open-vm-tools packages. See http://kb.vmware.com/kb/2073803 for more 
+information.
+Do you still want to proceed with this installation? [yes] yes
+
+A previous installation of VMware Tools has been detected.
+
+The previous installation was made by the tar installer (version 4).
+
+Keeping the tar4 installer database format.
+
+You have a version of VMware Tools installed.  Continuing this install will 
+first uninstall the currently installed version.  Do you wish to continue? 
+(yes/no) [yes] yes
+
+Uninstalling the tar installation of VMware Tools.
+
+Stopping services for VMware Tools
+
+Stopping VMware Tools services in the virtual machine:
+   Guest operating system daemon:                                      done
+   Common Agent:                                                       done
+   VGAuthService:                                                      done
+   VMware User Agent (vmware-user):                                    done
+   Blocking file system:                                               done
+   Unmounting HGFS shares:                                             done
+   Guest filesystem driver:                                            done
+
+Stopping Thinprint services in the virtual machine:
+   Stopping Virtual Printing daemon:                                   done
+
+File /etc/vmware-caf/pme/config/cafenv-appconfig is backed up to 
+/etc/vmware-caf/pme/config/cafenv-appconfig.old.0.
+
+This program previously created the directory /usr/lib/vmware-caf/pme/lib, and 
+was about to remove it. Since there are files in that directory that this 
+program did not create, it will not be removed.
+
+File /etc/pulse/default.pa is backed up to /etc/pulse/default.pa.old.1.
+
+The removal of VMware Tools 10.1.15 build-6627299 for Linux completed 
+successfully.
+
+Installing VMware Tools.
+
+In which directory do you want to install the binary files? 
+[/usr/bin] 
+
+What is the directory that contains the init directories (rc0.d/ to rc6.d/)? 
+[/etc] 
+
+What is the directory that contains the init scripts? 
+[/etc/init.d] 
+
+In which directory do you want to install the daemon files? 
+[/usr/sbin] 
+
+In which directory do you want to install the library files? 
+[/usr/lib/vmware-tools] 
+
+The path "/usr/lib/vmware-tools" does not exist currently. This program is 
+going to create it, including needed parent directories. Is this what you want?
+[yes] 
+
+In which directory do you want to install the common agent library files? 
+[/usr/lib] 
+
+In which directory do you want to install the common agent transient files? 
+[/var/lib] 
+
+In which directory do you want to install the documentation files? 
+[/usr/share/doc/vmware-tools] 
+
+The path "/usr/share/doc/vmware-tools" does not exist currently. This program 
+is going to create it, including needed parent directories. Is this what you 
+want? [yes] yes
+
+The installation of VMware Tools 10.1.15 build-6627299 for Linux completed 
+successfully. You can decide to remove this software from your system at any 
+time by invoking the following command: "/usr/bin/vmware-uninstall-tools.pl".
+
+Before running VMware Tools for the first time, you need to configure it by 
+invoking the following command: "/usr/bin/vmware-config-tools.pl". Do you want 
+this program to invoke the command for you now? [yes] yes
+
+Initializing...
+
+
+Making sure services for VMware Tools are stopped.
+
+Stopping VMware Tools services in the virtual machine:
+   Guest operating system daemon:                                      done
+   Common Agent:                                                       done
+   VGAuthService:                                                      done
+   VMware User Agent (vmware-user):                                    done
+   Blocking file system:                                               done
+   Unmounting HGFS shares:                                             done
+   Guest filesystem driver:                                            done
+Stopping Thinprint services in the virtual machine:
+   Stopping Virtual Printing daemon:                                   done
+
+
+The module vmci has already been installed on this system by another installer 
+or package and will not be modified by this installer.
+
+The module vsock has already been installed on this system by another installer
+or package and will not be modified by this installer.
+
+The module vmxnet3 has already been installed on this system by another 
+installer or package and will not be modified by this installer.
+
+The module pvscsi has already been installed on this system by another 
+installer or package and will not be modified by this installer.
+
+The module vmmemctl has already been installed on this system by another 
+installer or package and will not be modified by this installer.
+
+The VMware Host-Guest Filesystem allows for shared folders between the host OS 
+and the guest OS in a Fusion or Workstation virtual environment.  Do you wish 
+to enable this feature? [yes] yes
+
+The vmxnet driver is no longer supported on kernels 3.3 and greater. Please 
+upgrade to a newer virtual NIC. (e.g., vmxnet3 or e1000e)
+
+The vmblock enables dragging or copying files between host and guest in a 
+Fusion or Workstation virtual environment.  Do you wish to enable this feature?
+[yes] yes
+
+VMware automatic kernel modules enables automatic building and installation of
+VMware kernel modules at boot that are not already present. This feature can
+be enabled/disabled by re-running vmware-config-tools.pl.
+
+Would you like to enable VMware automatic kernel modules?
+[yes] yes
+
+Thinprint provides driver-free printing. Do you wish to enable this feature? 
+[yes] yes
+
+
+Disabling timer-based audio scheduling in pulseaudio.
+
+Do you want to enable Guest Authentication (vgauth)? Enabling vgauth is needed 
+if you want to enable Common Agent (caf). [yes] 
+
+Do you want to enable Common Agent (caf)? [yes] yes
+
+
+
+Detected X server version 1.19.6
+
+
+
+Distribution provided drivers for Xorg X server are used.
+
+Skipping X configuration because X drivers are not included.
+
+Creating a new initrd boot image for the kernel.
+update-initramfs: Generating /boot/initrd.img-4.15.0-45-generic
+
+NOTE: both /etc/vmware-tools/GuestProxyData/server/key.pem and 
+      /etc/vmware-tools/GuestProxyData/server/cert.pem already exist.
+      They are not generated again. To regenerate them by force,
+      use the "vmware-guestproxycerttool -g -f" command.
+
+The configuration of VMware Tools 10.1.15 build-6627299 for Linux for this 
+running kernel completed successfully.
+
+You must restart your X session before any mouse or graphics changes take 
+effect.
+
+You can now run VMware Tools by invoking "/usr/bin/vmware-toolbox-cmd" from the
+command line.
+
+To enable advanced X features (e.g., guest resolution fit, drag and drop, and 
+file and text copy/paste), you will need to do one (or more) of the following:
+1. Manually start /usr/bin/vmware-user
+2. Log out and log back into your desktop session
+3. Restart your X session.
+
+Enjoy,
+
+--the VMware team
+
+eink@eink-virtual-machine:~/Downloads/vmware-tools-distrib$ cd ~

@@ -1,0 +1,240 @@
+一；ubuntu16.04编译android2.3源码
+	
+	ubuntu16.04 ,jdk1.6 ,android_2.3.3
+	参考blog :
+	https://blog.csdn.net/qq_33946059/article/details/78160034
+	
+	因为要跟着罗升阳大佬学习，所以就用android2.3，更方便。 
+	环境： 
+	1. win10，虚拟机ubuntu16.04. 
+	2. 最好能访问google（遇到问题google更方便）
+
+	编译步骤 
+	1. 下载android2.3源码 
+		https://www.jianshu.com/p/657f52d08f33 
+		http://pan.baidu.com/s/1mhMNC60 密码：0fi4
+	2. 在home下解压，提示错误不用管。将解压后的文件mydroid改为android
+		cd ./android
+		sudo tar -xvf Android_Kernel.tar --exclude */.git -C android
+	3.由于编译android2.3需要gcc4.4和jdk6。 
+		下载jdk6
+		./jdk-6u45-linux-x64.bin
+		设置环境变量
+
+		 sudo cp -r jdk1.6.0_45 /usr/local
+		 sudo vi /etc/profile
+
+		 添加以下内容
+		export JAVA_HOME=/usr/local/jdk1.6.0_45 
+		export JRE_HOME=/usr/local/jdk1.6.0_45/jre  
+		export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH  
+		export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$JAVA_HOME:$PATH 
+		注销系统,查看jdk是否安装成功
+		java -version
+		javac -version
+		--------------------- 
+		作者：qq_33946059 
+		来源：CSDN 
+		原文：https://blog.csdn.net/qq_33946059/article/details/78160034 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+		
+	安装gcc4.4
+
+		sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
+		sudo apt-get update
+		sudo apt-get install gcc-4.4 g++-4.4 g++-4.4-multilib
+		sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.4 40
+		sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50
+		sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.4 40
+		sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 50
+
+		选择gcc4.4和g++4.4
+		sudo update-alternatives --config gcc
+		sudo update-alternatives --config g++
+
+		查看是否安装成功
+		g++ -v
+		gcc -v
+		--------------------- 
+		作者：qq_33946059 
+		来源：CSDN 
+		原文：https://blog.csdn.net/qq_33946059/article/details/78160034 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+	4.降级make
+		参考blog ：
+		http://www.360doc.com/content/15/0503/13/13755107_467646086.shtml
+		Ubuntu下make降级
+			https://www.jianshu.com/p/7fb126559161
+			https://www.jianshu.com/p/7fb126559161
+			
+			96  祖国花朵Code 
+			2018.09.18 17:15 字数 47 阅读 79评论 0喜欢 0
+			一、下载make压缩包
+			下载链接：http://ftp.gnu.org/gnu/make/
+
+			二、解压make，任意目录都可以。
+			$ tar -xjvf *.bz2 ///bz2格式
+			tar zxvf make-3.81.tar.gz //tar.gz 格式
+						
+			三、安装make
+			##先卸载老版本的make 
+				$ sudo apt-get remove make 
+			##进入解压后的make根目录
+				$ ./configure
+				$ build.sh //执行该文件
+				$ sudo cp make /usr/bin/make //替换make文件。
+				$ sudo make install
+			四、查看make版本
+				$ make -v
+	5、安装依赖
+
+		sudo apt-get install bison
+		sudo apt-get install zlib1g-dev
+		sudo apt-get install lib32z1-dev
+		sudo apt-get install flex
+		sudo apt-get install libncurses5-dev
+		apt-get install libncurses5-dev:i386
+		sudo apt -get install libx11-dev
+		sudo apt-get install gperf 
+		sudo apt-get install libswitch-perl 
+		sudo apt-get install libsdl1.2debian:i386
+		--------------------- 
+		作者：qq_33946059 
+		来源：CSDN 
+		原文：https://blog.csdn.net/qq_33946059/article/details/78160034 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+	编译android源码
+
+	cd ./android  //或自己解压目录
+	vi dalvik/vm/native/dalvik_system_Zygote.c
+	添加#include <sys/resource.h>
+	make
+二、我遇到编译问题记录：
+			
+	1. ubuntun 16.卸载openjdk1.7
+		sudo apt-get remove openjdk*
+	2. ubuntun 16.安装jdk 1.6 
+		https://www.cnblogs.com/hwbq123/p/8190698.html
+		https://www.cnblogs.com/hwbq123/p/8190698.html
+		
+		###################################################################################################################################################
+				１、下载JDK1.6,你可以到官网去下载，下载时请看清自己的系统版本，记得一定要下载相应的版本。
+
+			　　http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u41-oth-JPR
+
+				２、以下全是root用户下操作、root用户下操作、root用户下操作
+
+				3、将下载的文件放置到/usr/lib/java目录下(需要手动创建java目录，到/usr/lib目录下mkdir java)，并修改文件的可执行权限，如chmod 777 jdk-6u45-linux-x64.bin
+
+				(我下载了jdk-6u45-linux-x64.bin和jdk-6u45-linux-x64-rpm.bin，不会用后者，只能用前者。)
+
+				4、安装文件， ./jdk-6u45-linux-x64.bin
+
+				5、安装完毕后，则需配置系统环境   sudo vi /etc/environment，或配置用户环境变量vi /home/username/.bashrc，建立JAVAHOME,　CLASSPATH,　修改PATH变量
+
+				  具体jdk版本号进入java目下看第一个文件夹
+
+
+
+				我的jdk版本是那个文件夹的名字：   jdk1.6.0_45　　
+
+					我的设置为：
+
+				JAVAHOME=/usr/lib/java/jdk1.6.0_45
+				PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/jre/bin"
+				CLASSPATH=/usr/lib/java/jdk1.6.0_45/lib:/usr/lib/java/jdk1.6.0_45/jre/lib
+
+				6、执行命令，使配置生效。source /etc/environment　( source /home/username/.bashrc )
+
+				7、验证是否安装完毕，使用java -version或者直接使用javac，看其生效与否。
+
+
+
+				我的直接成功了，第八步也就不做了。（为什么会有水印呢？？？）
+
+				8、如果还未生效，很有可能由于ubuntu中已有默认的jdk，如openjdk，所以，为了使默认使用的是我们安装的jdk，还要进行如下工作。
+				　　sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0_41/bin/java 300
+				　　sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0_41/bin/javac 300
+				　　通过这一步将我们安装的jdk加入java选单。
+				　　然后执行：
+				　　update-alternatives --config java
+					update-alternatives --config javac
+		
+		#####################################################################################################################################
+		
+		
+		#config java jdk1.7  envirment   安装目录为：/usr/local/tools/java
+		#export JAVA_HOME=/usr/local/tools/java/jdk1.7.0_79  
+		#export JRE_HOME=${JAVA_HOME}/jre  
+		#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+		#export PATH=${JAVA_HOME}/bin:$PATH 
+		
+		#config java jdk1.6  envirment   install root dir：/usr/lib/java/jdk1.6.0_45
+		#export JAVA_HOME=/usr/lib/java/jdk1.6.0_45
+		#export JRE_HOME=${JAVA_HOME}/jre  
+		#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+		#export PATH=${JAVA_HOME}/bin:$PATH 
+		
+		修改之前 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+		
+		JAVAHOME=/usr/lib/java/jdk1.6.0_45
+		PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/jre/bin"
+		CLASSPATH=/usr/lib/java/jdk1.6.0_45/lib:/usr/lib/java/jdk1.6.0_45/jre/lib
+
+		sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0_45/bin/java 300
+	　　sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0_45/bin/javac 300
+	　　通过这一步将我们安装的jdk加入java选单。
+	　　然后执行：
+	　　update-alternatives --config java
+	　　update-alternatives --config javac
+
+		
+	3.  ubuntun 16 添加root用户 
+		https://blog.csdn.net/sunxiaoju/article/details/51993091
+	
+	4. build/core/prebuilt.mk:123: *** recipe commences before first target.  Stop.
+		原因可能是 linux make (可执行程序) 的版本不对， make -version 可查版本，尽量安装开发者要求的make 版本。比较老的如itop的板子就需要3.81版本的make。
+	5. *** Error in `make': free(): invalid next size (fast): 0x0000000007579ba0 ***
+		解决： make-3.81.tar.gz（之前安装的3.82，这个版本貌似有问题）
+		http://blog.sina.com.cn/s/blog_ab85e99501018r6z.html
+	6、make: *** [out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/noproguard.classes-with-local.dex] Killed
+		make: *** Waiting for unfinished jobs....
+		解决办法：
+		这些错误都是这些错误都是 linux的OOM killer 导致，“内存1.5G左右，硬盘25G”就可以解决，我为了保险，把make -j4改成了make.编译5个小时以上吧，out目录大小：12G。
+		博客：：
+		https://blog.csdn.net/u013541140/article/details/52027569
+	7、make打印：
+	·	root@eink-virtual-machine:/home/eink/testproject/android_2_3# make 
+		============================================
+		PLATFORM_VERSION_CODENAME=REL
+		PLATFORM_VERSION=2.3.5
+		TARGET_PRODUCT=generic
+		TARGET_BUILD_VARIANT=eng
+		TARGET_SIMULATOR=
+		TARGET_BUILD_TYPE=release
+		TARGET_BUILD_APPS=
+		TARGET_ARCH=arm
+		HOST_ARCH=x86
+		HOST_OS=linux
+		HOST_BUILD_TYPE=release
+		BUILD_ID=GINGERBREAD
+		============================================
+	8、
+		target Strip: dhcpcd (out/target/product/generic/obj/EXECUTABLES/dhcpcd_intermediates/dhcpcd)
+		build/tools/soslim/main.c(140): Input file out/target/product/generic/symbols/system/bin/dhcpcd is not in ELF format!
+		make: *** [out/target/product/generic/obj/EXECUTABLES/dhcpcd_intermediates/dhcpcd] Error 1
+	9、
+		dalvik/vm/native/dalvik_system_Zygote.c: In function ‘setrlimitsFromArray’:
+		dalvik/vm/native/dalvik_system_Zygote.c:191: error: storage size of ‘rlim’ isn’t known
+		dalvik/vm/native/dalvik_system_Zygote.c:214: warning: implicit declaration of function ‘setrlimit’
+		dalvik/vm/native/dalvik_system_Zygote.c:191: warning: unused variable ‘rlim’
+		make: *** [out/host/linux-x86/obj/SHARED_LIBRARIES/libdvm_intermediates/native/dalvik_system_Zygote.o] Error 1
+		解决办法：：
+			#include "Dalvik.h"
+			#include "native/InternalNativePriv.h"
+			#include <sys/resource.h>
+
+		https://blog.csdn.net/weixin_34217773/article/details/87571076
+三、编译问题汇总：
+	1. https://blog.csdn.net/u013541140/article/details/52027569
+	

@@ -30,8 +30,58 @@
     <ClCompile Include="opencv_show_img_04.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="opencv_show_img_gray_05.cpp">
+    <ClCompile Include="opcv_test_show_img\opencv_show_img_gray_05.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\1_HelloOpenCV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\2_ShowImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\3_ImageErode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\4_BlurImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\5_Canny.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\6_PlayVideo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\7_UseCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_02\8_CamShiftDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="meinv.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mao1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mao.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="girl05.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dog1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\1.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\1.avi" />
+    <None Include="1.avi" />
   </ItemGroup>
 </Project>

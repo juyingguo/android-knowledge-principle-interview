@@ -1,4 +1,7 @@
-一、linux内核的熵池 
+1、linux内核的熵池 
 	1.1、linux内核的熵池 
 		https://www.cnblogs.com/yinheyi/p/5973584.html
  
+2.Linux的.a、.so和.o文件及链接时的命名 
+	2.1、Linux的.a、.so和.o文件及链接时的命名 
+		https://www.cnblogs.com/wangshaowei/p/11285341.html

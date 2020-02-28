@@ -1,4 +1,4 @@
-一、《深入理解计算机系统》第三版笔记及高清PDF下载链接
+1、《深入理解计算机系统》第三版笔记及高清PDF下载链接
 	1.1、https://blog.csdn.net/jinhaijing/article/details/82999732 
 		
 		链接：https://pan.baidu.com/s/1BM9yl5hpvE1wJ7GerdmvIw 
@@ -10,3 +10,14 @@
 		https://blog.csdn.net/qq_41621362/article/details/84785929
 		
 		https://pan.baidu.com/s/15tYvzi28Z9QbYslkQyU3rA 提取码：a6al
+		
+
+2、《计算机组成原理》第五版
+	2.1、《计算机组成原理》第五版(唐朔飞考研版） 全书知识梳理
+		https://blog.csdn.net/qq_41523096/article/details/86517186?ops_request_misc=%7B%22request%5Fid%22%3A%22158270359619725211923637%22%2C%22scm%22%3A%2220140713.130056874..%22%7D&request_id=158270359619725211923637&biz_id=0&utm_source=distribute.pc_search_result.none-task
+		
+3、[免积分]计算机组成与设计（原书第5版）PDF电子书高清带标签 
+	3.1、[免积分]计算机组成与设计（原书第5版）PDF电子书高清带标签 
+		https://blog.csdn.net/salon999/article/details/88907569?ops_request_misc=%7B%22request%5Fid%22%3A%22158270458919724835845954%22%2C%22scm%22%3A%2220140713.130056874..%22%7D&request_id=158270458919724835845954&biz_id=0&utm_source=distribute.pc_search_result.none-task
+		
+		链接：https://pan.baidu.com/s/1mJfWx6mfkdcBUl2EMLMjoQ 提取码：WiK9

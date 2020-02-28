@@ -1,0 +1,193 @@
+1. 
+sudo apt-get install python
+E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+
+2.sudo apt install <selected package>
+3.repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-9.0.0_r8
+
+4.repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b  android-4.4.4_r2
+	
+	android-6.0.1_r9
+	repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-6.0.1_r9
+5、android 源码使用ubuntu下载编译需要多大的磁盘空间
+ 5.1、	6.0以后的AOSP我没编译过，不太了解需要多大空间。
+不过5.1.1我倒是编过，你可以参考一下：mac编译aosp的配置需求？ - 知乎用户的回答
+编译完了，大概占用了60G,6.0可能会更大一些。
+像你列举的250G等容量的硬盘，用来编AOSP，容量上是绰绰有余的。其实如果经济上允许，推荐你选择一个SSD，对于编译速度的提升，效果显著。
+
+	5.2、
+6、source-code-tags-and-builds
+7 .如果以后不用.repo
+	下载完源码请务必删掉 .repo 文件夹，以便备份源码，同时防止编译时磁盘空间不够用
+
+
+1.ubuntu安装和查看已安装
+
+2. vim与外部文件的粘帖复制 an
+	如果安装了vmwaretools 后就可以了
+
+https://www.cnblogs.com/xshang/p/3459179.html
+
+
+4、磁盘空间,下载android-6.0.1_r9 ， 173 G ,; 
+	下载完成后为磁盘剩余空间，86G 
+	aosp total :87 
+	.repo // 73G ,
+	aosp  project // 14G 
+	
+	120G , 90G ,20G  
+  tar -zcvf repo   12:39
+
+8\
+eink@eink-virtual-machine:~/testproject/aosp6$ ll
+total 112
+drwxrwxr-x  27 eink eink 4096 3月  29 13:52 ./
+drwxrwxr-x   4 eink eink 4096 3月  28 12:34 ../
+drwxrwxr-x   3 eink eink 4096 3月  29 09:04 abi/
+drwxrwxr-x  16 eink eink 4096 3月  29 09:04 art/
+drwxrwxr-x  12 eink eink 4096 3月  29 09:04 bionic/
+drwxrwxr-x   3 eink eink 4096 3月  29 09:04 bootable/
+drwxrwxr-x   7 eink eink 4096 3月  29 09:04 build/
+drwxrwxr-x  12 eink eink 4096 3月  29 09:04 cts/
+drwxrwxr-x  11 eink eink 4096 3月  29 09:04 dalvik/
+drwxrwxr-x   6 eink eink 4096 3月  29 09:05 developers/
+drwxrwxr-x  20 eink eink 4096 3月  29 09:05 development/
+drwxrwxr-x  11 eink eink 4096 3月  29 09:05 device/
+drwxrwxr-x   3 eink eink 4096 3月  29 09:05 docs/
+drwxrwxr-x 206 eink eink 4096 3月  29 09:10 external/
+drwxrwxr-x  18 eink eink 4096 3月  29 09:14 frameworks/
+drwxrwxr-x  14 eink eink 4096 3月  29 09:14 hardware/
+drwxrwxr-x  17 eink eink 4096 3月  29 09:14 libcore/
+drwxrwxr-x   5 eink eink 4096 3月  29 09:14 libnativehelper/
+-r--r--r--   1 eink eink   87 3月  29 09:04 Makefile
+drwxrwxr-x   8 eink eink 4096 3月  29 09:14 ndk/
+drwxrwxr-x   9 eink eink 4096 3月  29 09:16 packages/
+drwxrwxr-x   6 eink eink 4096 3月  29 09:16 pdk/
+drwxrwxr-x   6 eink eink 4096 3月  29 09:16 platform_testing/
+drwxrwxr-x  16 eink eink 4096 3月  29 09:21 prebuilts/
+drwxrwxr-x   7 eink eink 4096 3月  29 09:04 .repo/
+drwxrwxr-x  25 eink eink 4096 3月  29 09:21 sdk/
+drwxrwxr-x  11 eink eink 4096 3月  29 09:21 system/
+drwxrwxr-x   3 eink eink 4096 3月  29 09:21 tools/
+eink@eink-virtual-machine:~/testproject/aosp6$ 
+
+三 、未安装jdk 
+	eink@eink-virtual-machine:~/testproject/aosp6$ make
+/bin/bash: java: command not found
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=6.0.1
+TARGET_PRODUCT=full
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-46-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_BUILD_TYPE=release
+BUILD_ID=MMB29S
+OUT_DIR=out
+============================================
+Checking build tools versions...
+/bin/bash: java: command not found
+/bin/bash: javac: command not found
+************************************************************
+You are attempting to build with the incorrect version
+of java.
+ 
+Your version is: .
+The required version is: "1.7.x"
+ 
+Please follow the machine setup instructions at
+    https://source.android.com/source/initializing.html
+************************************************************
+build/core/main.mk:171: *** stop.  Stop.
+eink@eink-virtual-machine:~/testproject/aosp6$ 
+四、 make -j8 失败
+eink@eink-virtual-machine:~/testproject/aosp6$ make clobber
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=6.0.1
+TARGET_PRODUCT=full
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.15.0-46-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_BUILD_TYPE=release
+BUILD_ID=MMB29S
+OUT_DIR=out
+============================================
+Checking build tools versions...
+************************************************************
+You are attempting to build with the incorrect version
+of java.
+ 
+Your version is: openjdk version "1.8.0_191" OpenJDK Runtime Environment (build 1.8.0_191-8u191-b12-2ubuntu0.16.04.1-b12) OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode).
+The required version is: "1.7.x"
+ 
+Please follow the machine setup instructions at
+    https://source.android.com/source/initializing.html
+************************************************************
+build/core/main.mk:171: *** stop.  Stop.
+
+#### make failed to build some targets  ####
+
+eink@eink-virtual-machine:~/testproject/aosp6$ 
+
+
+五 、jdk 7
+export JAVA_HOME=/usr/lib/jvm/java  
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH  
+///////////
+
+
+export JAVA_HOME=/usr/local/tools/java/jdk1.7.0_79  
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH  
+
+六、sudo apt-get install openjdk-7-jdk  
+eink@eink-virtual-machine:~/testproject/aosp6$ sudo apt-get install openjdk-7-jdk 
+[sudo] password for eink: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package openjdk-7-jdk is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'openjdk-7-jdk' has no installation candidate
+///
+失败 Ubuntu16.04的安装源已经默认没有openjdk7了，所以要自己手动添加仓库，
+https://www.cnblogs.com/bluestorm/p/5677625.html
+
+
+七、  vim ~/.profil
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+八、编译是否需要同时使用linux内核，一起编译。

@@ -1,0 +1,39 @@
+1. 
+What languages, technologies, and/or frameworks is your question about?
+Tags help the right people find and answer your question.
+
+Identify your tags by completing the sentence, “My question is about…”
+
+For example:
+
+Include tags that are crucial to your question only, like c#
+Only include version numbers, like c#-4.0, when absolutely necessary
+2. android source build error of dhcpcd is not in ELF format!
+
+build android environment :
+	1. ubuntu-16.04.6-desktop-amd64.iso ,
+	2. jdk1.6 ,
+	3. android_2.3.3
+	4. ...
+
+the error bellow :
+
+target Strip: dhcpcd (out/target/product/generic/obj/EXECUTABLES/dhcpcd_intermediates/dhcpcd)
+build/tools/soslim/main.c(140): Input file out/target/product/generic/symbols/system/bin/dhcpcd is not in ELF format!
+make: *** [out/target/product/generic/obj/EXECUTABLES/dhcpcd_intermediates/dhcpcd] Error 1
+
+1. i know  ELF error ,but  I don't know how to deal with it 
+Thanks!!
+
+3. Human Verification
+Are you a human being? We apologize for the confusion, but we can't quite tell if you're a person or a script. Please don't take this personally. Bots and scripts can be remarkably lifelike these days!
+
+Check the CAPTCHA box, and we'll be out of your way.
+
+ 人类验证
+
+你是人类吗？我们为你的困惑道歉，但我们不能很清楚你是一个人还是一个剧本。请不要把这个当面看。机器人和脚本现在可以非常逼真！
+
+
+
+检查一下验证码，我们会给你让路的。

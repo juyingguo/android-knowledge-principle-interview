@@ -1,0 +1,17 @@
+一、Ubuntu 16.04 安装 VMware Tools（解决windows和Ubuntu之间不能互相复制粘贴文件的问题） 
+	1.1、Ubuntu 16.04 安装 VMware Tools（解决windows和Ubuntu之间不能互相复制粘贴文件的问题） 
+		https://www.cnblogs.com/dengyungao/p/8663436.html
+		
+		参考播客：：
+		https://blog.csdn.net/unirrrrr/article/details/81748104
+		https://www.cnblogs.com/huangjianxin/p/6343881.html
+		
+		
+	1.2、在安装之前先解决这篇文章的问题，安装 VMware Tools 时报 客户机操作系统已将 CD-ROM 门锁定，并且可能正在使用CD-ROM 见 	http://www.linuxidc.com/Linux/2016-04/130806.htm
+	
+	
+	1.3、VMware虚拟机 Ubuntu 16.04 安装 VMware Tools  
+		http://www.linuxidc.com/Linux/2016-04/130807.htm 
+	
+	
+ 

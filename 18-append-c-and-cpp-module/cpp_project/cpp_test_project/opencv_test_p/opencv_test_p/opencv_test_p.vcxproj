@@ -138,6 +138,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\1_HelloOpenCV.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\2_ShowImage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\3_ImageErode.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\4_BlurImage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\5_Canny.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\6_PlayVideo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\7_UseCamera.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_02\8_CamShiftDemo.cpp" />
     <ClCompile Include="opencv_show_img_02.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -147,13 +169,27 @@
     <ClCompile Include="opencv_show_img_04.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="opencv_show_img_gray_05.cpp" />
+    <ClCompile Include="opcv_test_show_img\opencv_show_img_gray_05.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="opencv_test_show_img.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="test_cpp.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1.avi" />
+    <None Include="1.jpg" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="dog1.jpg" />
+    <None Include="girl05.jpg" />
+    <None Include="mao.jpg" />
+    <None Include="mao1.jpg" />
+    <None Include="meinv.jpg" />
+    <None Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\1.avi" />
+    <None Include="opencv_bcrm\opencv_bcrm_for_v2\chapter_01\1.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,659 @@
+一；ubuntu16.04编译android2.3源码
+	
+	ubuntu16.04 ,jdk1.6 ,android_2.3.3
+	参考blog :
+	https://blog.csdn.net/qq_33946059/article/details/78160034
+	
+	因为要跟着罗升阳大佬学习，所以就用android2.3，更方便。 
+	环境： 
+	1. win10，虚拟机ubuntu16.04. 
+	2. 最好能访问google（遇到问题google更方便）
+
+	编译步骤 
+	1. 下载android2.3源码 
+		https://www.jianshu.com/p/657f52d08f33 
+		http://pan.baidu.com/s/1mhMNC60 密码：0fi4
+	2. 在home下解压，提示错误不用管。将解压后的文件mydroid改为android
+		cd ./android
+		sudo tar -xvf Android_Kernel.tar
+		sudo tar -xvf Android_Kernel.tar --exclude */.git -C android //忽略git , 指定解压目录
+	3.由于编译android2.3需要gcc4.4和jdk6。 
+		下载jdk6
+		./jdk-6u45-linux-x64.bin
+		设置环境变量
+
+		 sudo cp -r jdk1.6.0_45 /usr/local
+		 sudo vi /etc/profile
+
+		 添加以下内容
+		export JAVA_HOME=/usr/local/jdk1.6.0_45 
+		export JRE_HOME=/usr/local/jdk1.6.0_45/jre  
+		export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH  
+		export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$JAVA_HOME:$PATH 
+		注销系统,查看jdk是否安装成功
+		java -version
+		javac -version
+		--------------------- 
+		作者：qq_33946059 
+		来源：CSDN 
+		原文：https://blog.csdn.net/qq_33946059/article/details/78160034 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+		
+	安装gcc4.4
+
+		sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
+		sudo apt-get update
+		sudo apt-get install gcc-4.4 g++-4.4 g++-4.4-multilib
+		sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.4 40
+		sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50
+		sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.4 40
+		sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 50
+
+		选择gcc4.4和g++4.4
+		sudo update-alternatives --config gcc
+		sudo update-alternatives --config g++
+
+		查看是否安装成功
+		g++ -v
+		gcc -v
+		--------------------- 
+		作者：qq_33946059 
+		来源：CSDN 
+		原文：https://blog.csdn.net/qq_33946059/article/details/78160034 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+	4.降级make
+		参考blog ：
+		http://www.360doc.com/content/15/0503/13/13755107_467646086.shtml
+		Ubuntu下make降级
+			https://www.jianshu.com/p/7fb126559161
+			https://www.jianshu.com/p/7fb126559161
+			
+			96  祖国花朵Code 
+			2018.09.18 17:15 字数 47 阅读 79评论 0喜欢 0
+			一、下载make压缩包
+			下载链接：http://ftp.gnu.org/gnu/make/
+
+			二、解压make，任意目录都可以。
+			$ tar -xjvf *.bz2 ///bz2格式
+			tar zxvf make-3.81.tar.gz //tar.gz 格式
+						
+			三、安装make
+			##先卸载老版本的make 
+				$ sudo apt-get remove make 
+			##进入解压后的make根目录
+				$ ./configure
+				$ build.sh //执行该文件
+				$ sudo cp make /usr/bin/make //替换make文件。
+				$ sudo make install
+			四、查看make版本
+				$ make -v
+	5、安装依赖
+
+		sudo apt-get install bison
+		sudo apt-get install zlib1g-dev
+		sudo apt-get install lib32z1-dev
+		sudo apt-get install flex
+		sudo apt-get install libncurses5-dev
+		apt-get install libncurses5-dev:i386
+		sudo apt -get install libx11-dev
+		sudo apt-get install gperf 
+		sudo apt-get install libswitch-perl 
+		sudo apt-get install libsdl1.2debian:i386
+		--------------------- 
+		作者：qq_33946059 
+		来源：CSDN 
+		原文：https://blog.csdn.net/qq_33946059/article/details/78160034 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+	7.编译android源码
+
+		cd ./android  //或自己解压目录
+		vi dalvik/vm/native/dalvik_system_Zygote.c
+		添加#include <sys/resource.h>	
+		make
+		
+	8.运行模拟器
+	
+	
+		1. 设置环境变量：
+	    USER-NAME@MACHINE-NAME:~/Android$ export PATH=$PATH:~/Android/out/host/linux-x86/bin  
+	    USER-NAME@MACHINE-NAME:~/Android$ export ANDROID_PRODUCT_OUT=~/Android/out/target/product/generic
+	    其中，~/Android/out/host/linux-x86/bin有我们要执行的emulator命令，而~/Android/out/target/product/generic是Android镜像存放目录，下面执行emulator命令时会用到
+		--------------------- 
+		作者：罗升阳 
+		来源：CSDN 
+		原文：https://blog.csdn.net/Luoshengyang/article/details/6559955 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+
+		2、
+		source build/envsetup.sh
+		lunch
+		emulator
+		
+		运行模拟器。
+	    USER-NAME@MACHINE-NAME:~/Android$ emulator
+	    模拟器运行需要四个文件，分别是Linux Kernel镜像zImage和Android镜像文件system.img、userdata.img和ramdisk.img。执行emulator命令时，如果不带任何参数，则Linux Kernel镜像默认使用~/Android/prebuilt/android-arm/kernel目录下的kernel-qemu文件，而Android镜像文件则默认使用ANDROID_PRODUCT_OUT目录下的system.img、userdata.img和ramdisk.img，也就是我们刚刚编译出来的镜像问题。
+	    当然，我们也可以以指定的镜像文件来运行模拟器，即运行emulator时，即：
+	    USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system system.img -data userdata.img -ramdisk ramdisk.img
+		--------------------- 
+		作者：罗升阳 
+		来源：CSDN 
+		原文：https://blog.csdn.net/luoshengyang/article/details/6559955 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+		
+		如果出现：：
+		emulator: command not found //先执行上面的命令。
+		
+		 USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system system.img -data userdata.img -ramdisk ramdisk.img
+		错误：：
+		emulator: ERROR: Cannot find system image file: system.img//路径不对。或者先设置环境变量。		
+		
+		我使用的路径下运行模拟器
+		root@eink-virtual-machine:/home/eink/testproject/android_2_3_5# emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system ./out/target/product/generic/system.img -data ./out/target/product/generic/userdata.img -ramdisk ./out/target/product/generic/ramdisk.img 
+
+
+
+	
+二、我遇到编译问题记录：
+			
+	1. ubuntun 16.卸载openjdk1.7
+		sudo apt-get remove openjdk*
+	2. ubuntun 16.安装jdk 1.6 
+		https://www.cnblogs.com/hwbq123/p/8190698.html
+		https://www.cnblogs.com/hwbq123/p/8190698.html
+		
+		###################################################################################################################################################
+				１、下载JDK1.6,你可以到官网去下载，下载时请看清自己的系统版本，记得一定要下载相应的版本。
+
+			　　http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u41-oth-JPR
+
+				２、以下全是root用户下操作、root用户下操作、root用户下操作
+
+				3、将下载的文件放置到/usr/lib/java目录下(需要手动创建java目录，到/usr/lib目录下mkdir java)，并修改文件的可执行权限，如chmod 777 jdk-6u45-linux-x64.bin
+
+				(我下载了jdk-6u45-linux-x64.bin和jdk-6u45-linux-x64-rpm.bin，不会用后者，只能用前者。)
+
+				4、安装文件， ./jdk-6u45-linux-x64.bin
+
+				5、安装完毕后，则需配置系统环境   sudo vi /etc/environment，或配置用户环境变量vi /home/username/.bashrc，建立JAVAHOME,　CLASSPATH,　修改PATH变量
+
+				  具体jdk版本号进入java目下看第一个文件夹
+
+
+
+				我的jdk版本是那个文件夹的名字：   jdk1.6.0_45　　
+
+					我的设置为：
+
+				JAVAHOME=/usr/lib/java/jdk1.6.0_45
+				PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/jre/bin"
+				CLASSPATH=/usr/lib/java/jdk1.6.0_45/lib:/usr/lib/java/jdk1.6.0_45/jre/lib
+
+				6、执行命令，使配置生效。source /etc/environment　( source /home/username/.bashrc )
+
+				7、验证是否安装完毕，使用java -version或者直接使用javac，看其生效与否。
+
+
+
+				我的直接成功了，第八步也就不做了。（为什么会有水印呢？？？）
+
+				8、如果还未生效，很有可能由于ubuntu中已有默认的jdk，如openjdk，所以，为了使默认使用的是我们安装的jdk，还要进行如下工作。
+				　　sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0_41/bin/java 300
+				　　sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0_41/bin/javac 300
+				　　通过这一步将我们安装的jdk加入java选单。
+				　　然后执行：
+				　　update-alternatives --config java
+					update-alternatives --config javac
+		
+		#####################################################################################################################################
+		
+		
+		#config java jdk1.7  envirment   安装目录为：/usr/local/tools/java
+		#export JAVA_HOME=/usr/local/tools/java/jdk1.7.0_79  
+		#export JRE_HOME=${JAVA_HOME}/jre  
+		#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+		#export PATH=${JAVA_HOME}/bin:$PATH 
+		
+		#config java jdk1.6  envirment   install root dir：/usr/lib/java/jdk1.6.0_45
+		#export JAVA_HOME=/usr/lib/java/jdk1.6.0_45
+		#export JRE_HOME=${JAVA_HOME}/jre  
+		#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+		#export PATH=${JAVA_HOME}/bin:$PATH 
+		
+		修改之前 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+		
+		JAVAHOME=/usr/lib/java/jdk1.6.0_45
+		PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/jre/bin"
+		CLASSPATH=/usr/lib/java/jdk1.6.0_45/lib:/usr/lib/java/jdk1.6.0_45/jre/lib
+
+		sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0_45/bin/java 300
+	　　sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0_45/bin/javac 300
+	　　通过这一步将我们安装的jdk加入java选单。
+	　　然后执行：
+	　　update-alternatives --config java //选择jdk 版本
+	　　update-alternatives --config javac	//选择jre版本。
+
+		
+	3.  ubuntun 16 添加root用户 
+		https://blog.csdn.net/sunxiaoju/article/details/51993091
+		
+		sudo passwd -u root // 创建root用户
+		sudo passwd root //给root 账户设置 密码。
+		su root //进入root账户。
+				
+	
+	4. build/core/prebuilt.mk:123: *** recipe commences before first target.  Stop.
+		原因可能是 linux make (可执行程序) 的版本不对， make -version 可查版本，尽量安装开发者要求的make 版本。比较老的如itop的板子就需要3.81版本的make。
+	5. *** Error in `make': free(): invalid next size (fast): 0x0000000007579ba0 ***
+		解决： make-3.81.tar.gz（之前安装的3.82，这个版本貌似有问题）
+		http://blog.sina.com.cn/s/blog_ab85e99501018r6z.html
+	6、make: *** [out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/noproguard.classes-with-local.dex] Killed
+		make: *** Waiting for unfinished jobs....
+		解决办法：
+		这些错误都是这些错误都是 linux的OOM killer 导致，“内存1.5G左右，硬盘25G”就可以解决，我为了保险，把make -j4改成了make.编译5个小时以上吧，out目录大小：12G。
+		博客：：
+		https://blog.csdn.net/u013541140/article/details/52027569
+	7、make打印：
+	·	root@eink-virtual-machine:/home/eink/testproject/android_2_3# make 
+		============================================
+		PLATFORM_VERSION_CODENAME=REL
+		PLATFORM_VERSION=2.3.5
+		TARGET_PRODUCT=generic
+		TARGET_BUILD_VARIANT=eng
+		TARGET_SIMULATOR=
+		TARGET_BUILD_TYPE=release
+		TARGET_BUILD_APPS=
+		TARGET_ARCH=arm
+		HOST_ARCH=x86
+		HOST_OS=linux
+		HOST_BUILD_TYPE=release
+		BUILD_ID=GINGERBREAD
+		============================================
+	8、
+		target Strip: dhcpcd (out/target/product/generic/obj/EXECUTABLES/dhcpcd_intermediates/dhcpcd)
+		build/tools/soslim/main.c(140): Input file out/target/product/generic/symbols/system/bin/dhcpcd is not in ELF format!
+		make: *** [out/target/product/generic/obj/EXECUTABLES/dhcpcd_intermediates/dhcpcd] Error 1
+	9、
+		dalvik/vm/native/dalvik_system_Zygote.c: In function ‘setrlimitsFromArray’:
+		dalvik/vm/native/dalvik_system_Zygote.c:191: error: storage size of ‘rlim’ isn’t known
+		dalvik/vm/native/dalvik_system_Zygote.c:214: warning: implicit declaration of function ‘setrlimit’
+		dalvik/vm/native/dalvik_system_Zygote.c:191: warning: unused variable ‘rlim’
+		make: *** [out/host/linux-x86/obj/SHARED_LIBRARIES/libdvm_intermediates/native/dalvik_system_Zygote.o] Error 1
+		解决办法：：
+			#include "Dalvik.h"
+			#include "native/InternalNativePriv.h"
+			#include <sys/resource.h>
+
+		https://blog.csdn.net/weixin_34217773/article/details/87571076
+		
+	10、You're building on Linux
+
+		Lunch menu... pick a combo:
+			 1. generic-eng
+			 2. simulator
+			 3. full_passion-userdebug
+			 4. full_crespo4g-userdebug
+			 5. full_crespo-userdebug
+
+		Which would you like? [generic-eng]
+		
+		https://blog.csdn.net/liuhaoyutz/article/details/8485820?_t=t
+三、编译问题汇总：
+	1. https://blog.csdn.net/u013541140/article/details/52027569
+四、ubuntu16.04配置ADB调试环境
+	apt-get install android-tools-adb 来安装adb
+	
+	重启adb服务，并执行adb devices命令，如有设备则说明adb配置成功了。
+
+	adb kill-server
+
+	adb start-server
+
+	adb devices
+五、ramdisk.img system.img userdata.img 分析	
+		https://blog.csdn.net/adaptiver/article/details/53915705
+		# file ramdisk.img 　　　
+		在out/target/product/generic下生成的三个镜像文 件：ramdisk.img，system.img，userdata.img以及它们对应的目录树root，system，data。 ramdisk.img是根文件系统，system.img包括了主要的包、库等文件，userdata.img包括了一些用户数据，android加载 这3个映像文件后，会把 system和 userdata分别加载到 ramdisk文件系统中的system和 data目录。
+
+		android启动时首先加载ramdisk.img镜像，并挂载到/目录下，并进行了一系列的初始化动作，包括创建各种需要的目录，初始化console，开启服务等。System.img是在init.rc中指定一些脚本命令，通过init.c进行解析并挂载到根目录下的/system目录下的。
+
+
+
+		http://blog.csdn.net/wuye110/article/details/8463820
+
+		  Android 源码编译后，在out/target/product/generic下生成的三个镜像文 件：ramdisk.img，system.img，userdata.img以及它们对应的目录树root，system，data。 ramdisk.img是根文件系统，system.img包括了主要的包、库等文件，userdata.img包括了一些用户数据，android加载 这3个映像文件后，会把 system和 userdata分别加载到 ramdisk文件系统中的system和 data目录下。
+
+			  Ramdisk镜像是采用cpio打包，gzip压缩的。用file验证：
+
+		[plain] view plain copy
+		 
+		# file ramdisk.img 　　　  
+		输出：
+
+		[plain] view plain copy
+		 
+		# ramdisk.img: gzip compressed data, from Unix   
+		为了便于说明问题，我们将ramdisk.img拷贝到其它一个目录，然后按以下步骤将ramdisk.img还原为目录树：
+
+		[plain] view plain copy
+		 
+		  # mv ramdisk.img ramdisk.img.gz   
+		# gunzip ramdisk.img.gz   
+		# mkdir ramdisk   
+		#cd ramdisk   
+		# cpio i F ../ramdisk.img   
+		这样，就得到一个完整的ramdisk目录，与out/target/product/generic/root对比后，我们发现它们是一样的内容。 通过执行以下的操作，我们可由目录树再生成ramdisk镜像 
+		[plain] view plain copy
+		 
+		# cd ramdisk 　　# find . | cpio -o -H newc | gzip > ../ramdisk-new.img  
+				ramdisk.img其实是对root目录的打包和压缩，ramdisk根文件系统中包含一些对于启动android的很重要的文件，比如内核启动完后加载的第一个进程init、一些重要的配置文件等，总之它控制着整个android的启动。根据 init.rc,init.goldfish.rc来初始化并装载系统库、程序等直到开机完成。init.rc脚本包括了文件系统初始化、装载的许多过程。init.rc的工作主要是：
+
+				 1）设置一些环境变量
+
+				2）创建system、sdcard、data、cache等目录
+
+				3）把一些文件系统mount到一些目录去，如，mount tmpfs tmpfs /sqlite_stmt_journals
+
+				4）设置一些文件的用户群组、权限
+
+				5）设置一些线程参数
+
+			   6）设置TCP缓存大
+
+		system.img userdata.img这两个镜像都属于yaffs2文件格式，生成方式是一样的。我们就以system.img为例来说明。
+
+		System.img 生成 system目录树 所需工具unyaffs
+
+		[plain] view plain copy
+		 
+		# mkdir system   
+		# cd system   
+		# unyaffs ../system.img   
+		system目录树生成system.img 所需工具 mkyaffs2image，Android源码编译后会生成该工具，在 out/host/Linux-x86/bin 目录下。 命令格式：
+
+		[plain] view plain copy
+		 
+		# mkyaffs2image system/ system_new.img  
+		system.img文件是system目录的一个映像，类似于linux的根文件系统的映像，放着android的应用程序，配置文件，字体等
+
+				android启动时首先加载ramdisk.img镜像，并挂载到/目录下，并进行了一系列的初始化动作，包括创建各种需要的目录，初始化console，开启服务等。System.img是在init.rc中指定一些脚本命令，通过init.c进行解析并挂载到根目录下的/system目录下的。
+		对于android系统文件夹，比如out/target/prod t/smdk6410/system目录，说明如下：
+
+				system/app      这个里面主要存放的是常规下载的应用程序，可以看到都是以APK格式结尾的文件。在这个文件夹下的程序为系统默认的组件，自己安装的软件将不会出现在这里，而是/data/文件夹中。
+
+				system/bin       这个目录下的文件都是系统的本地程序，从bin文件夹名称可以看出是binary二进制的程序，里面主要是Linux系统自带的组件。 system/etc       从文件夹名称来看保存的都是系统的配置文件，比如APN接入点设置等核心配置。
+
+				 system/fonts   字体文件夹，除了标准字体和粗体、斜体外可以看到文件体积最大的可能是中文字库，或一些unicode字库。
+
+				system/framework  主要是一些核心的文件，从后缀名为jar可以看出是是系统平台框架。
+
+				 system/lib        lib目录中存放的主要是系统底层库，如平台运行时库。
+
+				 system/media  铃声音乐文件夹，除了常规的铃声外还有一些系统提示事件音
+
+				system/usr      用户文件夹，包含共享、键盘布局、时间区域文件等。 
+
+
+
+
+		http://blog.chinaunix.net/uid-11190335-id-3027498.html
+
+		http://tieba.baidu.com/p/2295325781
+六、如何单独编译Android源代码中的模块
+	mmm: command not found
+	root@eink-virtual-machine:/home/eink/testproject/android_2_3_5# mmm packages/apps/Email/
+	No command 'mmm' found, did you mean:
+	 Command 'rmm' from package 'mailutils-mh' (universe)
+	 Command 'rmm' from package 'nmh' (universe)
+	 Command 'mm' from package 'multimail' (universe)
+	 Command 'mma' from package 'mma' (universe)
+	 Command 'mmd' from package 'mtools' (main)
+	 Command 'vmm' from package 'vmm' (universe)
+	 Command 'mwm' from package 'mwm' (universe)
+	 Command 'mmv' from package 'mmv' (universe)
+	mmm: command not found
+
+	使用m、mm、mmm命令之前要在android源码目录下执行命令
+	. build/envsetup.sh
+	
+			编译完成之后，就可以在out/target/product/generic/system/app目录下看到Email.apk文件了。Android系统自带的App都放在这具目录下。另外，Android系统的一些可执行文件，例如C编译的可执行文件，放在out/target/product/generic/system/bin目录下，动态链接库文件放在out/target/product/generic/system/lib目录下，out/target/product/generic/system/lib/hw目录存放的是硬件抽象层（HAL）接口文件，后面的文章里面，我们会陆续提及到，敬请关注。
+		--------------------- 
+	3. 编译好模块后，还要重新打包一下system.img文件，这样我们把system.img运行在模拟器上时，就可以看到我们的程序了。
+		root@eink-virtual-machine:/home/eink/testproject/android_2_3_5# make snod
+七、编译内核
+	7.1 android版本与内核版本对应关系
+		https://blog.csdn.net/WuLex/article/details/83715220
+		 Android Version    |API Level  |Linux Kernel in AOSP
+		----------------------------------------------------
+		1.5   Cupcake      |3          |2.6.27
+		1.6   Donut        |4          |2.6.29
+		2.0/1 Eclair       |5-7        |2.6.29
+		2.2.x Froyo        |8          |2.6.32
+		2.3.x Gingerbread  |9, 10      |2.6.35
+		3.x.x Honeycomb    |11-13      |2.6.36
+		4.0.x Ice Cream San|14, 15     |3.0.1
+		4.1.x Jelly Bean   |16         |3.0.31
+		4.2.x Jelly Bean   |17         |3.4.0
+		4.3   Jelly Bean   |18         |3.4.39
+		4.4   Kit Kat      |19, 20     |3.10
+		5.x   Lollipop     |21, 22     |3.16.1
+		6.0   Marshmallow  |23         |3.18.10
+		7.0   Nougat       |24         |4.4.1
+		7.1   Nougat       |25         |4.4.1 (To be updated)
+	
+	7.2 下载kernel：
+		网盘地址： https://blog.csdn.net/jiangwei0910410003/article/details/37988637/ 
+			https://github.com/android/kernel_common
+			http://pan.baidu.com/s/1pQzPs
+
+		博客：：
+		https://blog.csdn.net/wukongmingjing/article/details/82116497
+		kernel 清华镜像源码地址：：
+		git clone https://aosp.tuna.tsinghua.edu.cn/kernel/goldfish.git
+		
+		上面得到的是主线上的内核源代码，现在我们需要适用于模拟器用的内核，因此，我们需要checkout goldfish版本：
+		选择android-gldfish-2.6.35：
+		USER-NAME@MACHINE-NAME:~/Android/kernel/common$ git checkout remotes/origin/archive/android-gldfish-2.6.35
+		  
+		git checkout remotes/origin/android-goldfish-2.6.29
+		Checking out files: 100% (26821/26821), done.
+		Note: checking out 'remotes/origin/android-goldfish-2.6.29'.
+
+		You are in 'detached HEAD' state. You can look around, make experimental
+		changes and commit them, and you can discard any commits you make in this
+		state without impacting any branches by performing another checkout.
+
+		If you want to create a new branch to retain commits you create, you may
+		do so (now or later) by using -b with the checkout command again. Example:
+
+		  git checkout -b <new-branch-name>
+
+		HEAD is now at 4bb8fa0... goldfish: Add encrypted SD Card support.
+		
+		博客：；
+		https://blog.csdn.net/csfreebird/article/details/7583363
+		
+		7.2.1、Git下载android-goldfish内核源码，并切换到指定所需版本的分支代码
+			https://blog.csdn.net/boyzouqs/article/details/81280277?ops_request_misc=%7B%22request%5Fid%22%3A%22158285788319195239848544%22%2C%22scm%22%3A%2220140713.130056874..%22%7D&request_id=158285788319195239848544&biz_id=0&utm_source=distribute.pc_search_result.none-task
+			
+			一、克隆国内镜像
+
+			git clone https://aosp.tuna.tsinghua.edu.cn/kernel/goldfish.git
+
+			二、查看分支
+
+			git branch -a
+
+			三、checkout android-goldfish-3.4分支 【举例3.4分支】
+
+			git checkout remotes/origin/android-goldfish-3.4
+			————————————————
+			版权声明：本文为CSDN博主「Zouqs88」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+			原文链接：https://blog.csdn.net/boyzouqs/article/details/81280277
+			
+
+	7.4. 编译内核代码。
+     	1. 导出交叉编译工具目录到$PATH环境变量中去：
+	       USER-NAME@MACHINE-NAME:~/Android/kernel/common$ export PATH=$PATH:~/Android/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin
+			我用的：
+			export PATH=$PATH:~eink/testproject/android_2_3_5/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/
+			export PATH=$PATH:/home/eink/testproject/android_2_3_5/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/
+
+    	2. 修改根目录下的Makefile文件的以下两行为：
+	      # ARCH ?= (SUBARCH)
+	      # CROSS_COMPILE?= 
+	      ARCH ?= arm  #体系结构为arm
+	      CROSS_COMPILE     ?= arm-eabi- #交叉编译工具链前缀，参考~/Android/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin目录 
+      	3. 开始编译：
+			3.1
+			root@eink-virtual-machine:/home/eink/testproject/android_2_3_5/kernel/goldfish# make goldfish_defconfig
+			arch/arm/configs/goldfish_defconfig:289:warning: override: FB_EARLYSUSPEND changes choice state
+			#
+			# configuration written to .config
+			#
+			
+			警告：覆盖：FB提前结束更改选择状态
+				
+
+		4、
+	      USER-NAME@MACHINE-NAME:~/Android/kernel/common$ make goldfish_defconfig
+	      USER-NAME@MACHINE-NAME:~/Android/kernel/common$ make
+		5、
+		6、error 
+			安装文件，  CC      kernel/itimer.o
+			  TIMEC   kernel/timeconst.h
+			Can't use 'defined(@array)' (Maybe you should just omit the defined()?) at kernel/timeconst.pl line 373.
+			make[1]: *** [kernel/timeconst.h] Error 255
+			make: *** [kernel] Error 2
+			
+			解决办法：
+				https://blog.csdn.net/thinkerleo1997/article/details/52412042
+				https://blog.csdn.net/abc87891842/article/details/55051042
+				
+				在Ubuntu 64位环境下编译Liunx内核出现 Can't use 'defined(@array)' 错误的解决办法
+				删掉了kernel/timeconst.pl 文件中 373行的
+				if (!defined(@val)) {
+				改为if (!@val) {
+		7、
+			Enable the block layer (BLOCK) [Y/?] y
+			  Support for large block devices and files (LBD) [N/y/?] (NEW) y
+			  Support for tracing block io actions (BLK_DEV_IO_TRACE) [Y/n/?] y
+			  Block layer SG support v4 (EXPERIMENTAL) (BLK_DEV_BSG) [Y/n/?] y
+			  Block layer data integrity support (BLK_DEV_INTEGRITY) [N/y/?] n
+			*
+			* System Type
+			*
+			ARM system type
+			  1. Agilent AAEC-2000 based (ARCH_AAEC2000) (NEW)
+			  2. Goldfish (ARCH_GOLDFISH) (NEW)
+			  3. ARM Ltd. Integrator family (ARCH_INTEGRATOR) (NEW)
+			  4. ARM Ltd. RealView family (ARCH_REALVIEW) (NEW)
+			> 5. ARM Ltd. Versatile family (ARCH_VERSATILE) (NEW)
+			  6. Atmel AT91 (ARCH_AT91) (NEW)
+			  7. Cirrus Logic CLPS711x/EP721x-based (ARCH_CLPS711X) (NEW)
+			  8. EBSA-110 (ARCH_EBSA110) (NEW)
+			  9. EP93xx-based (ARCH_EP93XX) (NEW)
+			  10. FootBridge (ARCH_FOOTBRIDGE) (NEW)
+			  11. Hilscher NetX based (ARCH_NETX) (NEW)
+			  12. Hynix HMS720x-based (ARCH_H720X) (NEW)
+			  13. IMX (ARCH_IMX) (NEW)
+			  14. IOP13xx-based (ARCH_IOP13XX) (NEW)
+			  15. IOP32x-based (ARCH_IOP32X) (NEW)
+			  16. IOP33x-based (ARCH_IOP33X) (NEW)
+			  17. IXP23XX-based (ARCH_IXP23XX) (NEW)
+			  18. IXP2400/2800-based (ARCH_IXP2000) (NEW)
+			  19. IXP4xx-based (ARCH_IXP4XX) (NEW)
+			  20. LinkUp-L7200 (ARCH_L7200) (NEW)
+			  21. Marvell Kirkwood (ARCH_KIRKWOOD) (NEW)
+			  22. Micrel/Kendin KS8695 (ARCH_KS8695) (NEW)
+			  23. NetSilicon NS9xxx (ARCH_NS9XXX) (NEW)
+			  24. Marvell Loki (88RC8480) (ARCH_LOKI) (NEW)
+			  25. Marvell MV78xx0 (ARCH_MV78XX0) (NEW)
+			  26. Freescale MXC/iMX-based (ARCH_MXC) (NEW)
+			  27. Marvell Orion (ARCH_ORION5X) (NEW)
+			  28. Philips Nexperia PNX4008 Mobile (ARCH_PNX4008) (NEW)
+			  29. PXA2xx/PXA3xx-based (ARCH_PXA) (NEW)
+			  30. RiscPC (ARCH_RPC) (NEW)
+			  31. SA1100-based (ARCH_SA1100) (NEW)
+			  32. Samsung S3C2410, S3C2412, S3C2413, S3C2440, S3C2442, S3C2443 (ARCH_S3C2410) (NEW)
+			  33. Samsung S3C64XX (ARCH_S3C64XX) (NEW)
+			  34. Shark (ARCH_SHARK) (NEW)
+			  35. Sharp LH7A40X (ARCH_LH7A40X) (NEW)
+			  36. TI DaVinci (ARCH_DAVINCI) (NEW)
+			  37. TI OMAP (ARCH_OMAP) (NEW)
+			  38. Qualcomm MSM (ARCH_MSM) (NEW)
+			  39. Nuvoton W90X900 CPU (ARCH_W90X900) (NEW)
+			choice[1-39]: 
+				
+				解决办法：
+						找到内核中的 ：
+					export KBUILD_BUILDHOST := $(SUBARCH)
+					ARCH            ?= $(SUBARCH)
+					CROSS_COMPILE   ?=
+
+
+					直接修改成：
+
+					ARCH            ?= arm
+					CROSS_COMPILE   ?=arm-none-linux-gnueabi-
+
+
+			     编译成功后，可看到下面两行：
+			      OBJCOPY arch/arm/boot/zImage
+			      Kernel: arch/arm/boot/zImage is ready
+			      在执行make命令前，你也可以执行make menuconfig先配置一下编译选项。
+		8、error:
+			root@eink-virtual-machine:/home/eink/testproject/android_2_3_5/kernel/goldfish# make 
+			make: arm-eabi-gcc: Command not found
+			scripts/kconfig/conf -s arch/arm/Kconfig
+			make: arm-eabi-gcc: Command not found
+			  CHK     include/linux/version.h
+			make[1]: `include/asm-arm/mach-types.h' is up to date.
+			  CHK     include/linux/utsrelease.h
+			  SYMLINK include/asm -> include/asm-arm
+			  CC      kernel/bounds.s
+			/bin/sh: 1: arm-eabi-gcc: not found
+			make[1]: *** [kernel/bounds.s] Error 127
+			make: *** [prepare0] Error 2
+			
+			ubuntu编译安卓内核时arm-eabi-gcc ：命令未找到的解决方法:
+			
+			arm-eabi-gcc -v  //命令来查看编译器的版本信息
+			env | grep PATH // 查看配置环境变量
+			
+			https://blog.csdn.net/meiyubaihe/article/details/39429475
+			https://blog.csdn.net/chenliang0224/article/details/8761326
+			https://blog.csdn.net/davidbeckham2901/article/details/7397447
+			
+		9、编译成功
+			编译成功后，可看到下面两行：
+		  OBJCOPY arch/arm/boot/zImage
+		  Kernel: arch/arm/boot/zImage is ready
+		  在执行make命令前，你也可以执行make menuconfig先配置一下编译选项。
+		  
+		  make menuconfig // 使用说明。
+		
+	10、在模拟器中运行编译好的内核。
+	     1. 在启动模拟器之前，先设置模拟器的目录到环境变量$PATH中去：
+	    	 USER-NAME@MACHINE-NAME:~/Android$ export PATH=$PATH:~/Android/out/host/linux-x86/bin
+	      2. 设置ANDROID_PRODUCT_OUT环境变量：
+	      	USER-NAME@MACHINE-NAME:~/Android$ export ANDROID_PRODUCT_OUT=~/Android/out/target/product/generic
+	      3. 在后台中指定内核文件启动模拟器：
+	    	 USER-NAME@MACHINE-NAME:~/Android$  emulator -kernel ./kernel/common/arch/arm/boot/zImage &
+			root@eink-virtual-machine:/home/eink/testproject/android_2_3_5# emulator -kernel ./kernel/goldfish/arch/arm/boot/zImage -sysdir ./out/target/product/generic -system ./out/target/product/generic/system.img -data ./out/target/product/generic/userdata.img -ramdisk ./out/target/product/generic/ramdisk.img 
+	      4. 用adb工具连接模拟器，查看内核版本信息，看看模拟器上跑的内核是不是我们刚才编译出来的内核：
+	      USER-NAME@MACHINE-NAME:~/Android$ adb shell
+	      这时候如果是第一次运行 adb shell命令，会看到以下输出，不用管它，再运行一次adb shell命令就可以了。
+	      * daemon not running. start it now on port 5037 *
+	      * daemon started successfully *
+	      error: device offline
+	      切换到proc目录：
+	      root@android:/ # cd proc
+	      root@android:/proc # cat version
+	      Linux version 2.6.29-gb0d93fb-dirty (luo@ubuntu-11-04) (gcc version 4.4.3 (GCC) ) #1 Fri Jun 3 23:17:24 HKT 2011
+	    从机器名luo@ubuntu-11-04和日期1 Fri Jun 3 23:17:24 HKT 2011可以看出，模拟器使用的内核即为刚刚编译出来的内核。
+		--------------------- 
+		作者：罗升阳 
+		来源：CSDN 
+		原文：https://blog.csdn.net/Luoshengyang/article/details/6564592 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+			

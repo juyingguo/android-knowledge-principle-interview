@@ -1,0 +1,92 @@
+
+参考：：
+https://blog.csdn.net/gengkui9897/article/details/83928542
+
+
+一；ubuntu16.04编译android2.3源码
+	
+	ubuntu16.04 ,jdk1.6 ,android_2.3.3
+	本教程采用Linux系统Ubuntu为例进行Android源码的下载
+
+一、下载环境配置
+
+1.如果你的Linux系统或虚拟机还没有安装JDK，请先安装JDK，安装命令为
+
+sudo apt-get install openjdk-8-jdk
+如果无法安装，可以先检查下网络是否可用，如果网络可用，可能是安装源没有更新，可以使用以下命令进行源更新：
+
+sudo apt-get update
+如果更新后还是无法安装，可以尝试更改源，参考这篇文章。
+
+2.安装git和curl
+
+sudo apt-get install git-core curl
+3.安装repo工具
+
+mkdir ~/bin
+PATH=~/bin:$PATH
+chmod 777 ~/bin
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+安装repo工具 并全局配置
+4.创建工作目录
+
+mkdir workspace
+cd workspace
+二、源码下载
+
+1.初始化repo
+
+repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest
+如果有提示说gerrit.googlesource.com连接失败，那么请用文本编辑器打开~/bin/repo，将REPO_URL 一行替换成：
+
+REPO_URL = 'https://gerrit-googlesource.lug.ustc.edu.cn/git-repo'
+
+		root@eink-virtual-machine:/home/eink/testproject/android_2_3# grep -rn  "REPO_URL" ~/bin/repo 
+		6:REPO_URL = os.environ.get('REPO_URL', None)
+		7:if not REPO_URL:
+		8:  REPO_URL = 'https://gerrit.googlesource.com/git-repo'
+		315:    url = REPO_URL
+		379:             "REPO_URL set correctly?" % url, file=sys.stderr)
+		829:  global REPO_URL
+		832:  REPO_URL = gitdir
+
+再执行上述命令。
+
+当然，如果我们只需要某个安卓版本，可以使用以下命令：
+
+repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest -b android-5.0.1_r1
+repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest -b android-2.3.5_r1
+2.同步源码到本地
+
+repo sync
+3.等待下载完成即可。
+--------------------- 
+作者：柚子君. 
+来源：CSDN 
+原文：https://blog.csdn.net/gengkui9897/article/details/83928542 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+
+三、命令
+	1. repo sync  看不到同步的代码
+		 repo sync  //同步完成，才能看到代码
+		 repo sync -l  // 同步代码，显示已经同步的代码
+	2. 
+		The program 'repo' can be found in the following packages:
+		 * phablet-tools
+		 * repo
+		Try: apt install <selected package>
+		
+		关机重启：ok
+
+	3 .
+		rage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+	  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+									 Dload  Upload   Total   Spent    Left  Speed
+	  0     0    0     0    0     0      0      0 --:--:--  0:00:20 --:--:--     0curl: (7) Failed to connect to storage.googleapis.com port 443: Connection refused
+		
+		关机重启：ok
+		 LogUtil.i(TAG, "storeIflySetting，slotList:" + slotList + ",defaultSlotList(size):" + (defaultSlotList != null ? defaultSlotList.size() : defaultSlotList) );
+        LogUtil.i(TAG, "storeIflySetting，slotParseIDMap:" + slotParseIDMap + ",defaultSlotIDMap(size):" + (defaultSlotIDMap != null ? defaultSlotIDMap.size() : defaultSlotIDMap) );
+四、kernel 编译
+	

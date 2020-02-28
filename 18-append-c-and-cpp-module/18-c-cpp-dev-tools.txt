@@ -33,14 +33,20 @@
 		1.2.6、VS2010到VS2019各个版本的密钥
 			https://www.cnblogs.com/xiongze520/p/11750418.html
 			
+			[Trial] Visual Studio 2010 ultimate 
 			
-			[Trial] Visual Studio 2010 Premium
+			VS2010密钥
+			Microsoft Visual Studio 2010(VS2010)正式版 CDKEY / SN:
+			YCFHQ-9DWCY-DKV88-T2TMH-G7BHP
 			
 		1.2.7、关于Visual Studio 2010与64位系统的问题 
 			https://blog.csdn.net/taifei/article/details/78091218
 			
 				相关链接：：
 				VS2010没64位版本？？ http://social.msdn.microsoft.com/Forums/zh-CN/vstudiozhchs/thread/8c6ac5d6-ce8e-44e4-b4e8-0db3359c37fd/
+				
+				下载utimate版本就可以啦，安装后配置x64编译环境就可以了。
+				
 				Visual Studio: Why is there no 64 bit version? (yet) http://blogs.msdn.com/b/ricom/archive/2009/06/10/visual-studio-why-is-there-no-64-bit-version.aspx
 				5 Tips for Developing with 64-Bit Windows http://visualstudiomagazine.com/Articles/2009/07/01/5-Tips-for-Developing-with-64-Bit-Windows.aspx
 
@@ -63,6 +69,9 @@
 			https://blog.csdn.net/qq_36957681/article/details/90781361
 			
 		1.2.9、visual basic visual c++,visual C#，Visual F# 
+		
+		1.2.10、vs目前哪个版本最好用。
+			vs目前比较好用的版本是vs2010.
 			
 	1.3、VC++ 2010  ，build problem record.创建的是【Win32 Console Application】工程
 		
@@ -115,3 +124,15 @@
 		
 		
 		2.2.3、git提交时忽略这两个文件。.sdf文件。.ipch。
+		
+	2.3、vs2010 c++ Source Files 下可以创建多个文件夹吗 
+		https://bbs.csdn.net/topics/390000488
+		
+		2.3.2、在VS中给源文件用文件夹分类/在VS中变更源文件路径 
+			https://blog.csdn.net/tomwillow/article/details/83795237
+			
+			
+			在解决方案资源管理器里，上面一排有一个“显示所有文件”的按钮，选中后所有文件以实际目录显示，之后直接移动文件即可。
+			
+	2.4、vs2010断点调试详细教程 
+		https://www.jb51.net/softjc/160533.html

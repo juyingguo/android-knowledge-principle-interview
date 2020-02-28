@@ -14,3 +14,30 @@
 五、Android+JNI+OpenGL开发自己的美图秀秀 
 	5.1、 Android+JNI+OpenGL开发自己的美图秀秀 
 		https://blog.csdn.net/oShunz/article/details/50537631
+		
+六、camera driver 
+	6.1、 "drivers/media/video/Samsung/fimc/S3c_fimc_core.c"
+		static struct platform_driver s3c_fimc_driver ={
+			.probe = s3c_fimc_driver,
+			.remove s3c_fimc_remove,
+			.suspend s3c_fimc_suspend,
+			.resume s3c_fimc_resume,
+			.driver ={
+				.name "s3c-fimc",
+				.owner =THIS_MODULE,
+			},
+		};
+		
+		6.1.1、V4L2驱动程序架构 
+			https://blog.csdn.net/fxjqzs/article/details/48010297 
+		6.1.2、linux内核结构体初始化时出现的.owner = THIS_MODULE 
+			https://blog.csdn.net/ychongx/article/details/28431687
+			
+			乍一看，这与我们之前学过的结构体初始化差距甚远。其实这就是前面所说的指定初始化在Linux设备驱动程序中的一个应用，它源自ISO C99标准。以下我摘录了C Primer Plus第五版中相关章节的内容，从而就可以很好的理解2.6版内核采用这种方式的优势就在于由此初始化不必严格按照定义时的顺序。这带来了极大的灵活 性，其更大的益处还有待大家在开发中结合自身的应用慢慢体会
+			
+	6.2、/frameworks/*/Camera.cpp
+		sp<Camera> c = new Camera(-1);sp指的什么？
+		
+		6.2.1、Android中的sp和wp指针
+			博主：：linux 专家
+			https://blog.csdn.net/DroidPhone/article/details/5799792?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task

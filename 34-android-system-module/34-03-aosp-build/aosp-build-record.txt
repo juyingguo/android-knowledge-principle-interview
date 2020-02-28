@@ -1,0 +1,21 @@
+1. 
+sudo apt-get install python
+E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+
+2.sudo apt install <selected package>
+3.repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-9.0.0_r8
+
+4.repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b  android-4.4.4_r2
+
+
+5、android 源码使用ubuntu下载编译需要多大的磁盘空间
+ 5.1、	6.0以后的AOSP我没编译过，不太了解需要多大空间。
+不过5.1.1我倒是编过，你可以参考一下：mac编译aosp的配置需求？ - 知乎用户的回答
+编译完了，大概占用了60G,6.0可能会更大一些。
+像你列举的250G等容量的硬盘，用来编AOSP，容量上是绰绰有余的。其实如果经济上允许，推荐你选择一个SSD，对于编译速度的提升，效果显著。
+
+	5.2、
+6、source-code-tags-and-builds
+7 .如果以后不用.repo
+	下载完源码请务必删掉 .repo 文件夹，以便备份源码，同时防止编译时磁盘空间不够用

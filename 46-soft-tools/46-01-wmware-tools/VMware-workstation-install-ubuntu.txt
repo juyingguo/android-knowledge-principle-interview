@@ -1,0 +1,9 @@
+1. 安装过程中无法点击按钮。
+	 alt + 鼠标 可以拖动界面。
+2. please remove the installation medium,then press ENTER 
+	medium
+	英 [?mi:di?m]   美 [?midi?m]  
+	adj.
+	中等的，中级的;普通的;平均的;半生熟的
+	n.
+	媒介物，媒质;中间，中庸，[生]培养基，培养液，颜料溶解液，[数]中数，平均，[逻]中名辞;手段，方法;中间物
