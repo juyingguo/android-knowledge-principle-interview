@@ -313,7 +313,10 @@
 	11、sudo apt-get install bison 执行命令后提示锁异常。
 		Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
 		E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
-
+		
+		11.1、关于Ubuntu中Could not get lock /var/lib/dpkg/lock解决方案
+			https://blog.csdn.net/jiangjiang_jian/article/details/80695548
+			
 三、编译问题汇总：
 	1. https://blog.csdn.net/u013541140/article/details/52027569
 四、ubuntu16.04配置ADB调试环境
