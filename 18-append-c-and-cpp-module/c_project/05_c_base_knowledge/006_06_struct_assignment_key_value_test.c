@@ -13,7 +13,8 @@ int main()
 {
  	struct Book book ={
 	 	title:"c program language.",
-	 	book_id:202
+	 	book_id:202,
+	 	price:2
 	 	
 	 };
 	struct Book book_two;

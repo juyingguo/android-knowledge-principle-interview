@@ -1,0 +1,11 @@
+1、在Android2.2.1上编译Mokoid源码 
+	1.1、  在Android2.2.1上编译Mokoid源码 
+		https://blog.csdn.net/ZFZF294990051/article/details/6573675?ops_request_misc=%7B%22request%5Fid%22%3A%22158295511319724845062220%22%2C%22scm%22%3A%2220140713.130056874..%22%7D&request_id=158295511319724845062220&biz_id=0&utm_source=distribute.pc_search_result.none-task
+		
+2、Android HAL 实例——mokoid LEDTest 
+	2.1、Android HAL 实例——mokoid LEDTest 
+		https://blog.csdn.net/Skypine_Lee/article/details/7257516?ops_request_misc=%7B%22request%5Fid%22%3A%22158295511319724845062220%22%2C%22scm%22%3A%2220140713.130056874..%22%7D&request_id=158295511319724845062220&biz_id=0&utm_source=distribute.pc_search_result.none-task
+		
+3.mokoid下载
+	3.1、https://github.com/kangear/mokoid-read-only 
+	

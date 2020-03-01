@@ -1,0 +1,22 @@
+1. 解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
+	1.1、解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
+		https://blog.csdn.net/qq_40402685/article/details/89917477
+		
+		sudo apt-get update
+		sudo apt-get install vim-gtk
+	
+	1.2、在vi/vim中输入方向键却被被转化为A B C D, 咋办？ 
+		https://blog.csdn.net/stpeace/article/details/49407857
+		
+		 1. echo "set nocp" >> ~/.vimrc    （千万要注意，是>>, 而不是>, 否则把.vimrc清空了， 丢失了之前的内容）
+
+		2. source ~/.vimrc
+		
+		
+2.ubuntu 安装vim。
+	2.1、sudo apt-get install vim 
+		sudo apt-get install vim-gtk
+		
+3、Linux下 vi vim vim-gnome vim-tiny vim-gtk vim-nox的区别 
+	3.1、Linux下 vi vim vim-gnome vim-tiny vim-gtk vim-nox的区别 
+		http://www.mamicode.com/info-detail-224890.html

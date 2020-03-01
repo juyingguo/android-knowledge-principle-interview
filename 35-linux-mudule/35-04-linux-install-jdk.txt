@@ -1,0 +1,91 @@
+1.Linux中普通用户和ROOT用户对Java JDK的配置
+	1.1、Linux中普通用户和ROOT用户对Java JDK的配置 
+		https://blog.csdn.net/MOONCOM/article/details/52683409?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+		inux中对对各种工具文件不需要想Windows中似的，还要先一步一步的安装，有的还需要配置环境变量，比如Windows对Java的安装过程。
+
+		在Linux中，使用指令：tar zxvf ?文件名（注意空格）解压完 .tar.gz 文件，或使用指令：unzip 文件名 解压完 .zip 文件，只需要在Linux中对他们进行配置，便可以使用你下载的工具了，这里介绍一下Java JDK的配置。
+
+		对Java JDK的配置分为两种情况，一种是ROOT用户进行配置，一种是普通用户进行配置。ROOT用户配置完成后，即为Linux下各用户（ROOT用户和各非ROOT用户）默认的JDK配置。而普通用户配置完后只对当前用户，也就是自己有效。
+
+		当然，根据就近原则，若ROOT用户和当前用户都对JDK进行了配置，Linux使用当前用户配置的JDK信息。
+
+		下面便分别说明ROOT和普通用户分别如何配置JDK。
+
+
+
+		ROOT用户——修改/etc/profile文件
+
+		首先，通过指令 ? ? cd ? ?/etc ?进入到配置文件所在的文件夹中。
+
+		然后，通过指令 ? ? vi ? ? profile ?用vim编辑器打开profile文件，进入后，按键盘上的【A】键进入vim编辑器的编辑状态，在文件尾部加入JDK环境变量的配置，如下所示：
+
+		export JAVA_HOME=/home/openam_jxdoe/jdk1.7.0_80
+		export PATH=$JAVA_HOME/bin:$PATH
+		export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+		其中，PATH和CLASSPATH后面的值不需要改变，读者只需要修改JAVA_HOME后面的值即可，用你的Java JDK安装的位置代替 ?/home/openam_jxdoe/jdk1.7.0_80 即可。
+
+		修改完后，按键盘上的【Esc】键退出vim编辑器的编辑状态，然后键盘输入指令 ? ? ?：wq ? ? ? 保存并退出vim编辑器。
+
+		最后，通过指令 ? ?source profile ? 使Linux应用你刚配置好的profile文件，Java JDK 在Linux上便配置好了。
+
+		（注意：在profile文件中除了上面三行代码外，最好加上 ? ? ? ??export JRE_HOME=$JAVA_HOME/jre ? ?，也就是说一共四行，因为众所周知Java包括jdk和jre，若你不配置jre，那么你便无法使用JVM，比如说，tomcat你就无法正常开启和关闭?）
+
+
+
+		本文的原作者 ??http://blog.csdn.net/mooncom/article/details/52683409 ?，支持原著，决绝盗版。
+
+
+
+		普通用户——修改当前用户目录下的 ?.bash_profile ?文件
+
+		首先，通过指令 ? cd ?~ ? ?进入到当前用户所在的文件夹下。
+
+		然后，通过指令 ? ? vi ? ? .bash_profile ? ? ?用vim编辑器打开 ?.bash_profile ? ?文件，进入后，按键盘上的【A】键进入vim编辑器的编辑状态，在文件尾部加入JDK环境变量的配置，如下所示：
+
+		export JAVA_HOME=/home/openam_jxdoe/jdk1.7.0_80
+		export PATH=$JAVA_HOME/bin:$PATH
+		export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+
+		其中，PATH和CLASSPATH后面的值不需要改变，读者只需要修改JAVA_HOME后面的值即可，用你的Java JDK安装的位置代替 ?/home/openam_jxdoe/jdk1.7.0_80 即可。
+
+		修改完后，按键盘上的【Esc】键退出vim编辑器的编辑状态，然后键盘输入指令 ? ? ?：wq ? ? ? 保存并退出vim编辑器。
+
+		最后，通过指令 ? ?source ?.bash_profile ? 使Linux应用你刚配置好的 ? .bash_profile ? ? 文件，Java JDK 在Linux上便配置好了。
+
+		（注意：在profile文件中除了上面三行代码外，最好加上 ? ? ? ?? JRE_HOME=$JAVA_HOME/jre ? ?，也就是说一共四行，因为众所周知Java包括jdk和jre，若你不配置jre，那么你便无法使用JVM，比如说，tomcat你就无法正常开启和关闭?）
+
+
+
+		好了，Java JDK的配置便结束了，强烈建议看到本篇文章的小伙伴们在配置 JAVA_HOME，PATH和CLASSPATH时，在后面加上JRE_HOME ? ，否则，你可能会在使用Java时碰到各种莫名其妙的错误。
+		————————————————
+		版权声明：本文为CSDN博主「霜月枫桥」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/MOONCOM/时article/details/52683409
+		
+		
+		1.1.1、
+			 JAVAHOME=/home/eink/soft_tools/java/jdk1.6.0_45
+			 JRE_HOME=/home/eink/soft_tools/java/jdk1.6.0_45/jre
+			 CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+			 PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
+			
+			export JAVAHOME=/home/eink/soft_tools/java/jdk1.6.0_45
+			export JRE_HOME=/home/eink/soft_tools/java/jdk1.6.0_45/jre
+			export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+			export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
+			
+	1.2、Linux下非root用户安装jdk 
+		https://blog.csdn.net/CHS007chs/article/details/86663436
+		1.设置用户环境变量vi .bash_profile   或者是  vi   ~/.bashrc
+		2.JAVA_HOME=/home/sgmm/jdk1.6.0_13  
+		　CLASSPATH=$JAVA_HOME/lib:$JAVA_HOME/jre/lib 
+		　PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin 
+		　export PATH CLASSPATH JAVA_HOME 
+
+		3.设置tomcat的环境变量export CATALINA_BASE=/home/sgmm/apache-tomcat-6.0.20 
+		　　　　　　　　　　　export CATALINA_HOME=/home/sgmm/apache-tomcat-6.0.20 
+
+4.使环境变量生效source ~/.bash_profile
+	

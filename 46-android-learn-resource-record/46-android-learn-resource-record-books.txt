@@ -1,1 +1,33 @@
-一、<>
+一、android frameworks 方面的书籍。
+	1.1、《Android应用框架原理与程序设计36技》
+		《深入理解Android》
+		《Android名师讲堂》
+		
+	1.2、<深入理解android>邓凡平 
+	
+	1.3、老罗的那本 就OK  百度搜 罗生阳 
+	
+	1.4、 
+		framework
+		https://blog.csdn.net/huaxun66/category_7203839.html
+		
+	1.5、Android FrameWork底层开发视频全套 
+		https://blog.csdn.net/dingzhou2008good/article/details/53448263?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+		AndroidFrameWork底层开发视频全套
+
+		1.
+
+		如题，下面是百度云盘链接：
+
+		链接: https://pan.baidu.com/s/1JWmAp30xIBtMUnDxf3jCeQ 密码: ggjp
+
+		免费（无解压密码），好东西要分享出来！
+		
+		另一个链接：
+
+		探索Android FrameWork底层开发视频全套
+
+		链接: https://pan.baidu.com/s/1jGQp8bGWqPIcDaVz-8r2XQ 密码: cjbk
+
+		解压密码：www.mukedaba.com_fw

@@ -5,3 +5,17 @@
 2.Linux的.a、.so和.o文件及链接时的命名 
 	2.1、Linux的.a、.so和.o文件及链接时的命名 
 		https://www.cnblogs.com/wangshaowei/p/11285341.html
+		
+3、.bash_profile和.bashrc的区别 
+	3.1、.bash_profile和.bashrc的区别 
+		https://blog.csdn.net/CHS007chs/article/details/86663436
+		
+4、linux export 的作用 
+	4.1、linux export 的作用 
+		https://blog.csdn.net/bailyzheng/article/details/7488769?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+5、什么是Linux Shell？ 
+	5.1、什么是Linux Shell？ 
+		https://blog.csdn.net/zhydream77/article/details/80079319
+	5.2、Linux中的shell到底是什么？ 
+		https://www.cnblogs.com/tjudzj/p/7088543.html
