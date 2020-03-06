@@ -1,0 +1,3 @@
+1.shell中echo命令详解 
+	1.1、shell中echo命令详解
+		https://blog.csdn.net/vip_wangsai/article/details/72592649

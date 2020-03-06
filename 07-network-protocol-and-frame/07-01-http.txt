@@ -22,3 +22,14 @@
 		
 	2.4、OkHttp3 图片上传 unexpected end of stream的解决 
 		https://blog.csdn.net/qq_36523667/article/details/79426590
+		
+3. http cache-control 指令的设置以及意义 	
+	3.1 http cache-control 指令的设置以及意义 
+		https://blog.csdn.net/cominglately/article/details/77685214?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+	3.2 Cache-Control no-cache与max-age=0的区别 
+		https://blog.csdn.net/rui0838/article/details/52727343
+		
+	3.3 Cache-Control头各个值的说明 
+		https://blog.csdn.net/alan19931103/article/details/78319422?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		

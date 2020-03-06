@@ -1,5 +1,14 @@
-一、Android权限大全
+1. Android权限大全
 	
 	1.1、https://www.cnblogs.com/diyishijian/p/5629545.html 
 	
 	1.2、https://blog.csdn.net/zhuyu19911016520/article/details/53519405?utm_source=blogxgwz7
+	
+2. Android动态请求权限的工具类（可请求多个，并且功能完善） 
+	2.1 Android动态请求权限的工具类（可请求多个，并且功能完善） 
+		https://blog.csdn.net/wenzhi20102321/article/details/80616197?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+	2.2 ActivityCompat.shouldShowRequestPermissionRationale  
+		2.2.1 Android6.0动态权限shouldShowRequestPermissionRationale的含义 
+			https://blog.csdn.net/wangpf2011/article/details/80589648
+		

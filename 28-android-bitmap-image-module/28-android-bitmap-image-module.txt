@@ -87,6 +87,18 @@
 	7.1、 Android图片加载框架最全解析（一），Glide的基本用法 
 		https://blog.csdn.net/guolin_blog/article/details/53759439
 		
+		7.1.2 Google推荐的图片加载库Glide介绍 
+			https://blog.csdn.net/fancylovejava/article/details/44747759
+		
+	7.2 Glide 设置不压缩图片 
+		https://wenwen.sogou.com/z/q630159062.htm 
+		
+		调用override方法, 参数传Target.SIZE_ORIGINAL 
+		
+	7.3 加载本地图片模糊，Glide加载网络图片却很清晰 
+		https://blog.csdn.net/weixin_33998125/article/details/91362039
+		
+		
 八、android加载 ，超超超大的图片，而且不压缩。 
 	
 	8.1、Android 高清加载巨图方案 拒绝压缩图片

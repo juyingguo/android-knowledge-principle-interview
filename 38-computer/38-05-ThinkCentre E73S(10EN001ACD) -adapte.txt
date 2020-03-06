@@ -1,0 +1,6 @@
+1.ThinkCentre E73S(10EN001ACD)  
+	1.1、ThinkCentre E73S(10EN001ACD)  最大支持内存
+		https://zhidao.baidu.com/question/1641952506970326860.html
+		
+		联想（ThinkCentre）E73S（10EN001ACD）￥3199　　屏幕尺寸：19.5英寸（1600x900）　　CPU：IntelCorei3-4160T（双核四线程，3.1GHz）　　内存：4GDDR3（最大支持2x8G）　　硬盘：500G（7200转）　　显卡：Intel®HDGraphics4400核显　　其他：键鼠　　操作系统：Win7　　评价：适合公、日常上网、娱乐，可以低特效应付LOL、逆战、CF等一般网游
+		
