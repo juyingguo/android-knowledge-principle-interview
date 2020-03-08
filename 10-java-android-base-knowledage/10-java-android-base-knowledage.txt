@@ -3,6 +3,33 @@
 		https://blog.csdn.net/T_Tzz/article/details/90348873 
 		
 		https://www.jianshu.com/p/27711d61f221
+		
+02、用命令行执行Java程序
+	02.1 [不带包名时] 用命令行执行Java程序 
+		https://blog.csdn.net/qq_42109746/article/details/88769357
+		
+		3.在命令行下输入 javac +源程序名，此时会在该目录下生成.class编译文件
+
+		4.在命令行下输入 java +源程序类名，开始运行
+	02.2 [带包名时] 用命令行执行Java程序 
+		https://blog.csdn.net/weixin_30823227/article/details/97678175
+		
+		Test.java //在D:/javaproject/目录下。
+		package com.algorithm.sorttest;
+
+		public class Test {
+
+			public static void main(String[] args) {
+				System.out.println("******** hello wolrd.");
+			}
+		}
+		D:/javaproject>javac -d . Test.java //执行后会生成Test.clas位于 D:/javaproject/com/algorithm/sorttest/Test.class
+		
+		D:/javaproject>java com.algorithm.sorttest.Test 
+		
+		或者将Test.java 放到 D:/javaproject/com/algorithm/sorttest/Test.java
+		D:/javaproject>javac  com.algorithm.sorttest.Test.java
+		D:/javaproject>java com.algorithm.sorttest.Test
 
 一、static关键字
 	1.1、static关键字 作用？
@@ -139,4 +166,6 @@
 		https://blog.csdn.net/u013129944/article/details/70226019/
 		
 		使用的时候不要使用ordinal()，而要使用定义赋值的value
+		
+
 	

@@ -1,0 +1,165 @@
+一、Ubuntu创建root用户
+	首先用快捷键crtl+alt+T 打开终端，显示的是用户名@电脑名：~$，符号$就表示现在处于普通用户权限。
+
+	然后输入：sudo passwd root
+
+	终端会显示
+
+	Enter new UNIX password:?
+
+	设置root用户密码，按Enter
+
+	终端显示
+
+	Retype new UNIX password:?
+
+	再输入一遍
+
+	3
+	确定之后终端会显示
+
+	passwd: password updated successfully
+
+	表示root用户成功创建并设置密码
+
+	4
+	验证：输入su，终端显示password，输入刚刚设置的root密码，没有错误提示，并且#即代表当前用户有root权限
+	--------------------- 
+	作者：KirioYoLo 
+	来源：CSDN 
+	原文：https://blog.csdn.net/u012154840/article/details/78045634 
+	版权声明：本文为博主原创文章，转载请附上博文链接！
+二、Ubuntu创建新用户并增加管理员权限
+		$是普通管员，#是系统管理员，在Ubuntu下，root用户默认是没有密码的，因此也就无法使用（据说是为了安全）。想用root的话，得给root用户设置一个密码：
+		sudo passwd root
+		然后登录时用户名输入root，再输入密码就行了。
+		ubuntu建用户最好用adduser，虽然adduser和useradd是一样的在别的linux糸统下，但是我在ubuntu下用useradd时，并没有创建同名的用户主目录。
+		例子：adduser user1
+		这样他就会自动创建用户主目录，创建用户同名的组。
+		root@ubuntu:~# sudo adduser linuxidc
+		[sudo] password for xx:
+		输入xx用户的密码，出现如下信息
+		正在添加用户"linuxidc"…
+		正在添加新组"linuxidc" (1006)…
+		正在添加新用户"linuxidc" (1006) 到组"linuxidc"…
+		创建主目录"/home/linuxidc"…
+		正在从"/etc/skel"复制文件…
+		输入新的 UNIX 口令：
+		重新输入新的 UNIX 口令：
+		两次输入linuxidc的初始密码，出现的信息如下
+		passwd: password updated successfully
+		Changing the user information for linuxidc
+		Enter the new value, or press ENTER for the default
+		Full Name []:
+		Room Number []:
+		Work Phone []:
+		Home Phone []:
+		Other []:
+		Full Name []:等信息一路回车
+		这个信息是否正确？ [Y/n] y
+		到此，用户添加成功。如果需要让此用户有root权限，执行命令：
+		root@ubuntu:~# sudo vim /etc/sudoers
+		修改文件如下：
+		# User privilege specification
+		root ALL=(ALL) ALL
+		linuxidc ALL=(ALL) ALL
+		保存退出，linuxidc用户就拥有了root权限。
+	2.3、ubuntu16.04中添加删除用户
+		userdel [-r][用户帐号] //-r 　删除用户登入目录以及目录中所有文件。
+三、Ubuntu安装软件
+	1、Ubuntu安装vim
+		linux 默认自带 vi, 一般使用升级版 vim
+		sudo apt install vim
+四、同linux 命令
+	(1) cd 
+		cd .. 意思是到上一级目录； 
+		cd ../.. 跳到目前目录的上上两层 :
+		cd -  意思是返回到上次的目录，类似windows返回 ； 
+		cd /  意思是回到根目录。
+		cd ~ 回到自己当前账户对应的根目录
+		croot 进入系统目录 android/android
+		
+		"~" 也表示为 home 目录 的意思
+		"." 
+		".." 则表示目前目录位置的上一层目录
+		man + 命令 // 查询命令用法。
+		
+	(2) 文件编辑
+		vi，输入i ,a, o，r进入输入模式，按下esc进入命令模式，在命令模式下按下:（英文冒号）就进入了底线命令模式,按下wq保存退出
+			注意：非正常关闭vi编辑器时会生成一个.swp文件，以后再次编辑文件会提示，可以使用复原即可
+		参考菜鸟教程：http://www.runoob.com/linux/linux-vim.html
+		
+		2.2 vim下显示行号
+			:set number 或者 :set nu 		
+			:set nonumber 或者 :set nonu  ////显示出行号之后我们怎么隐藏行号呢，敲命令
+		2.3  grep命令用于查找文件里符合条件的字符串
+			grep -rn  "hello world" ./ // 在当前目录下递归查找"hello world"，并显示行号
+				
+	(3) 文件管理
+		3.1
+			mv Linux mv命令用来为文件或目录改名、或将文件或目录移入其它位置；
+					mv [options] source dest
+					-i: 若指定目录已有同名文件，则先询问是否覆盖旧文件;
+					-f: 在mv操作要覆盖某已有的目标文件时不给任何指示;
+		3.2 
+			cat 命令用于连接文件并打印到标准输出设备上。
+		3.3
+			cp 命令主要用于复制文件或目录 cp [options] source dest
+				-a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。
+				-d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。
+				-f：覆盖已经存在的目标文件而不给出提示。
+				-i：与-f选项相反，在覆盖目标文件之前给出提示，要求用户确认是否覆盖，回答"y"时目标文件将被覆盖。
+				-p：除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。
+				-r：若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。
+				-l：不复制文件，只是生成链接文件。
+				
+				 directory `XXX'问题解决 ## 其中XXX是我要复制的文件夹名，出现该警告的原因是因为XXX目录下还存在目录，所以不能直接拷贝。 解决办法：使用递归拷贝，在cp命令后面加上-r参数，形如：
+		3.4、
+			locate file //Linux locate命令用于查找符合条件的文档，他会去保存文档和目录名称的数据库内，查找合乎范本样式条件的文档或目录。
+						一般情况我们只需要输入 locate your_file_name 即可查找指定文件。
+			locate与find 不同: find 是去硬盘找，locate 只在/var/lib/slocate资料库中找。locate的速度比find快，它并不是真的查找，而是查数据库，一般文件数据库在/var/lib/slocate/slocate.db中，所以locate的查找并不是实时的，而是以数据库的更新为准，一般是系统自己维护，也可以手工升级数据库 ，命令为：
+
+			locate -u 
+		3.5、
+			 find命令 				//find命令用来在指定目录下查找文件。任何位于参数之前的字符串都将被视为欲查找的目录名。如果使用该命令时，不设置任何参数，则find命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。
+
+
+	(4)磁盘管理
+		du //du会显示指定的目录或文件所占用的磁盘空间。
+			-a或-all 显示目录中个别文件的大小。
+			-h //-h或--human-readable 以K，M，G为单位，提高信息的可读性。
+		ls //ls命令用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。
+			ls -ahl //显示所有文件及目录,
+				-a 显示所有文件及目录 (ls内定将文件名或目录名称开头为"."的视为隐藏档，不会列出)
+				-l 除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出
+	(5)	、ubuntu 安装 vmwaretools 
+		yum -y install perl gcc make kernel-headers kernel-devel
+		yum repolist all //查看拥有的仓库
+		您可以使用 yum-config-manager --enable &lt; 仓库名&gt；来启用仓库
+		原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
+	（6）系统管理
+		6.1、
+			shutdown命令 shutdown命令可以用来进行关机程序，并且在关机以前传送讯息给所有使用者正在执行的程序，shutdown 也可以用来重开机。使用权限：系统管理者。
+				-t seconds : 设定在几秒钟之后进行关机程序。
+				-r : 关机后重新开机。
+				-c : 取消目前已经进行中的关机动作。
+				# shutdown +5 “System will shutdown after 5 minutes” //5分钟够关机并显示警告信息
+		6.2、
+		 halt命令关闭系统，否则以 shutdown 指令（加上 -h 参数）来取代。 使用权限：系统管理者。
+		 halt [-n] [-w] [-d] [-f] [-i] [-p]
+			 参数说明：
+
+			-n : 在关机前不做将记忆体资料写回硬盘的动作
+			-w : 并不会真的关机，只是把记录写到 /var/log/wtmp 档案里
+			-d : 不把记录写到 /var/log/wtmp 档案里（-n 这个参数包含了 -d） 
+			-f : 强迫关机，不呼叫 shutdown 这个指令
+			-i : 在关机之前先把所有网络相关的装置先停止
+			-p : 当关机的时候，顺便做关闭电源（poweroff）的动作
+		6.4、
+			poweroff
+			
+五、ubuntu 16.04忘记登录密码的解决办法 
+	5.1、ubuntu 16.04忘记登录密码的解决办法 
+		https://blog.csdn.net/jacke121/article/details/80456046
+	5.2、https://blog.csdn.net/qq_27182767/article/details/79660452 
+	

@@ -1,0 +1,10 @@
+1. window 创建txt,默认编码类型为ansi。设置默认生成为utf-8格式的txt
+
+	1.1 将电脑新建文本文档txt的默认编码从ANSI改为utf-8 
+		https://blog.csdn.net/chy555chy/article/details/52440366
+		
+		1、在桌面新建一个文本文档，不要写入任何问题，然后手动另存为，将此文档编码改为UTF-8，然后将文件名字改为template.txt（文件名可以随意）;
+		2、将此文件移动到C:\Windows\ShellNew这个文件夹下。
+		之所以要在别处创建文件再移动到此处，是因为次数仅允许创建文件夹。
+		3、WIN+R输入regedit,打开HKEY_CLASSES_ROOT.txt\ShellNew，然后新建字符串值FileName，双击这个名字，输入C:\Windows\ShellNew\template.txt;
+		4、最后还是右键，新建文本文档，然后打开，点击另存，就会发现编码(E)的位置已经是UTF-8了，这说明设置成功（说明一下，这里的UTF-8指的是无BOM编码的UTF-8）。

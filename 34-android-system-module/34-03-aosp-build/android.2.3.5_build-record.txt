@@ -95,8 +95,8 @@
 		sudo apt-get install lib32z1-dev
 		sudo apt-get install flex
 		sudo apt-get install libncurses5-dev
-		apt-get install libncurses5-dev:i386
-		sudo apt -get install libx11-dev
+		sudo apt-get install libncurses5-dev:i386
+		sudo apt-get install libx11-dev
 		sudo apt-get install gperf 
 		sudo apt-get install libswitch-perl 
 		sudo apt-get install libsdl1.2debian:i386
@@ -115,43 +115,43 @@
 	8.运行模拟器
 	
 	
-			1. 设置环境变量：
-		    USER-NAME@MACHINE-NAME:~/Android$ export PATH=$PATH:~/Android/out/host/linux-x86/bin  
-		    USER-NAME@MACHINE-NAME:~/Android$ export ANDROID_PRODUCT_OUT=~/Android/out/target/product/generic
-		    其中，~/Android/out/host/linux-x86/bin有我们要执行的emulator命令，而~/Android/out/target/product/generic是Android镜像存放目录，下面执行emulator命令时会用到
+		1. 设置环境变量：
+	    	USER-NAME@MACHINE-NAME:~/Android$ export PATH=$PATH:~/Android/out/host/linux-x86/bin  
+	    	USER-NAME@MACHINE-NAME:~/Android$ export ANDROID_PRODUCT_OUT=~/Android/out/target/product/generic
+		    		其中，~/Android/out/host/linux-x86/bin有我们要执行的emulator命令，而~/Android/out/target/product/generic是Android镜像存放目录，下面执行emulator命令时会用到
 			--------------------- 
 			作者：罗升阳 
 			来源：CSDN 
 			原文：https://blog.csdn.net/Luoshengyang/article/details/6559955 
 			版权声明：本文为博主原创文章，转载请附上博文链接！
 
-			2、
-			source build/envsetup.sh
-			lunch
-			emulator
-			
-			运行模拟器。
-		    USER-NAME@MACHINE-NAME:~/Android$ emulator
-		    模拟器运行需要四个文件，分别是Linux Kernel镜像zImage和Android镜像文件system.img、userdata.img和ramdisk.img。执行emulator命令时，如果不带任何参数，则Linux Kernel镜像默认使用~/Android/prebuilt/android-arm/kernel目录下的kernel-qemu文件，而Android镜像文件则默认使用ANDROID_PRODUCT_OUT目录下的system.img、userdata.img和ramdisk.img，也就是我们刚刚编译出来的镜像问题。
-		    当然，我们也可以以指定的镜像文件来运行模拟器，即运行emulator时，即：
-		    USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system system.img -data userdata.img -ramdisk ramdisk.img
-			--------------------- 
-			作者：罗升阳 
-			来源：CSDN 
-			原文：https://blog.csdn.net/luoshengyang/article/details/6559955 
-			版权声明：本文为博主原创文章，转载请附上博文链接！
-			
-			如果出现：：
-			emulator: command not found //先执行上面的命令。
-			
-			 USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system system.img -data userdata.img -ramdisk ramdisk.img
-			错误：：
-			emulator: ERROR: Cannot find system image file: system.img//路径不对。或者先设置环境变量。		
-			
-			我使用的路径下运行模拟器
-			root@eink-virtual-machine:/home/eink/testproject/android_2_3_5# emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system ./out/target/product/generic/system.img -data ./out/target/product/generic/userdata.img -ramdisk ./out/target/product/generic/ramdisk.img 
+		2、
+				source build/envsetup.sh
+				lunch
+				emulator
+				
+				运行模拟器。
+			    USER-NAME@MACHINE-NAME:~/Android$ emulator
+			    模拟器运行需要四个文件，分别是Linux 		Kernel镜像zImage和Android镜像文件system.img、userdata.img和ramdisk.img。执行emulator命令时，如果不带任何参数，则Linux Kernel镜像默认使用~/Android/prebuilt/android-arm/kernel目录下的kernel-qemu文件，而Android镜像文件则默认使用ANDROID_PRODUCT_OUT目录下的system.img、userdata.img和ramdisk.img，也就是我们刚刚编译出来的镜像问题。
+			    当然，我们也可以以指定的镜像文件来运行模拟器，即运行emulator时，即：
+			    USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system system.img -data userdata.img -ramdisk ramdisk.img
+				---------------------  
+				作者：罗升阳 
+				来源：CSDN 
+				原文：https://blog.csdn.net/luoshengyang/article/details/6559955 
+				版权声明：本文为博主原创文章，转载请附上博文链接！
+				
+				如果出现：：
+				emulator: command not found //先执行上面的命令。
+				
+				 USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system system.img -data userdata.img -ramdisk ramdisk.img
+				错误：：
+				emulator: ERROR: Cannot find system image file: system.img//路径不对。或者先设置环境变量。		
+				
+				我使用的路径下运行模拟器
+				root@eink-virtual-machine:/home/eink/testproject/android_2_3_5# emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system ./out/target/product/generic/system.img -data ./out/target/product/generic/userdata.img -ramdisk ./out/target/product/generic/ramdisk.img 
 
-
+			
 
 	
 二、我遇到编译问题记录：
@@ -194,6 +194,16 @@
 				JRE_HOME=/home/soft_tools/java/jdk1.6.0_45/jre
 				CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
 				PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+				
+				
+				******
+				/usr/lib/soft_install/jdk1.6.0_45
+				
+				JAVAHOME=/usr/lib/soft_install/jdk1.6.0_45
+				JRE_HOME=/usr/lib/soft_install/jdk1.6.0_45/jre
+				CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+				PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
+				
 				————————————————
 				版权声明：本文为CSDN博主「杯中倒影__」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 				原文链接：https://blog.csdn.net/mp295345033/article/details/78960697
@@ -316,6 +326,52 @@
 		
 		11.1、关于Ubuntu中Could not get lock /var/lib/dpkg/lock解决方案
 			https://blog.csdn.net/jiangjiang_jian/article/details/80695548
+			
+			  运行下面的命令来生成所有含有 apt 的进程列表，你可以使用ps和grep命令并用管道组合来得到含有apt或者apt-get的进程。
+
+			ps -A | grep apt
+
+			找出所有的 apt 以及 apt-get 进程
+
+			$ sudo kill -9 processnumber或者$ sudo kill -SIGKILL processnumber
+
+			比如，下面命令中的9是 SIGKILL 的信号数，它会杀掉第一个 apt 进程
+
+			$ sudo kill -9 进程ID或者$ sudo kill -SIGKILL  进程ID
+			
+		11.2  
+			apt-get install libncurses5-dev:i386
+			E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+			E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+			
+	12. make 执行提示异常。。
+		host Java: apicheck (out/host/common/obj/JAVA_LIBRARIES/apicheck_intermediates/classes)
+		/bin/bash: jar: command not found
+		make: *** [out/host/common/obj/JAVA_LIBRARIES/apicheck_intermediates/javalib.jar] Error 127
+		
+		https://blog.csdn.net/u013541140/article/details/52027569
+		
+		fix:
+		cd /usr/bin
+		必须先进入/usr/bin，下同
+		sudo ln -s -f /usr/lib/jvm/jdk1.6.0_30/bin/jar
+		我的jdk是安装在/usr/lib/jvm/jdk1.6.0_30/目录下的
+		
+		如果提示javah：commond not found，于是照葫芦画瓢，输入命令
+		cd /usr/bin
+		ln -s -f /usr/lib/jvm/jdk1.6.0_30/bin/javah
+
+
+	13 ocs droiddoc: out/target/common/docs/doc-comment-check
+		/bin/bash: line 1: javadoc: command not found
+		make: *** [out/target/common/docs/doc-comment-check-timestamp] Error 45
+		
+		参考播客： 
+		https://blog.csdn.net/u013541140/article/details/52027569
+		
+		cd /usr/bin
+		root@shepherd-VPCS134GX:/home/shepherd/Android# sudo ln -s -f /usr/lib/jvm/jdk1.6.0_34/bin/javadoc /bin/javadoc
+
 			
 三、编译问题汇总：
 	1. https://blog.csdn.net/u013541140/article/details/52027569

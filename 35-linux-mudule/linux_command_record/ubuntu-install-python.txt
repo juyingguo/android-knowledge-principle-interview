@@ -1,0 +1,24 @@
+一、Ubuntu16.04安装python3.7及相应的pip
+	1.1、Ubuntu16.04安装python3.7及相应的pip
+		https://blog.csdn.net/qq_29837161/article/details/83616364
+		
+二、Ubuntu16.04系统查看已安装的python版本，及Python2与Python3之间切换 
+	2.1、https://blog.csdn.net/wangguchao/article/details/82151372
+	
+	2.2、命令
+		python --version
+		python2 --version   #查看python2安装版本
+		python3 --version   #查看python3安装版本
+		
+		修改指向的版本
+		现在改为python3
+		echo alias python=python3 >> ~/.bashrc
+		source ~/.bashrc
+		异常：：
+		bash: /.bashrc: Permission denied
+		
+		失败。
+		
+		
+
+		

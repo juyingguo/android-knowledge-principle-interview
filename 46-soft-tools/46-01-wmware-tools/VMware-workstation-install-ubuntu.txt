@@ -7,3 +7,11 @@
 	中等的，中级的;普通的;平均的;半生熟的
 	n.
 	媒介物，媒质;中间，中庸，[生]培养基，培养液，颜料溶解液，[数]中数，平均，[逻]中名辞;手段，方法;中间物
+	
+
+3. VMware Workstation14 Pro 安装Ubuntu 16.04 
+	3.1 VMware Workstation14 Pro 安装Ubuntu 16.04 
+		https://blog.csdn.net/qq_41179817/article/details/79341951
+		
+	3.2 VMware Workstation 14 虚拟机安装Ubuntu16.04版本Linux系统 
+		https://blog.csdn.net/salmon_zhang/article/details/79468918?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task

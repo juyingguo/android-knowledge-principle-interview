@@ -76,6 +76,12 @@
 			export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
 			export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
 			
+			CLASSPATH 配置2：： make 命令执行，提示找不到javac。
+			export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+			
+			CLASSPATH 配置2：：
+			export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib
+			
 	1.2、Linux下非root用户安装jdk 
 		https://blog.csdn.net/CHS007chs/article/details/86663436
 		1.设置用户环境变量vi .bash_profile   或者是  vi   ~/.bashrc
@@ -86,6 +92,33 @@
 
 		3.设置tomcat的环境变量export CATALINA_BASE=/home/sgmm/apache-tomcat-6.0.20 
 		　　　　　　　　　　　export CATALINA_HOME=/home/sgmm/apache-tomcat-6.0.20 
+		
+	1.3 javac 命令不可用
+		You are attempting to build with the incorrect version
+		of javac.
+		 
+		Your version is: /bin/bash: javac: command not found.
+		The correct version is: 1.6.
+		 
+		Please follow the machine setup instructions at
+			http://source.android.com/download
 
-4.使环境变量生效source ~/.bash_profile
+		
+		1.3.1 执行javac时，提示command not found 
+			https://bbs.csdn.net/topics/320195233
+			
+		1.3.2 java 生效，javac没有生效的解决方法。
+			8、如果还未生效，很有可能由于ubuntu中已有默认的jdk，如openjdk，所以，为了使默认使用的是我们安装的jdk，还要进行如下工作。
+				　　sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0_41/bin/java 300
+				　　sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0_41/bin/javac 300
+				　　通过这一步将我们安装的jdk加入java选单。
+				　　然后执行：
+				　　update-alternatives --config java
+					update-alternatives --config javac
+			
+	1.4 安装在普通用户下，重启Ubuntu后，java 命令不可用了。
+		
+2. ubuntu 16.4 卸载指定版本java 1.6,1.7 
+	2.1 linux下卸载jdk1.7安装jdk1.8 
+		https://blog.csdn.net/reee112/article/details/83036449?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 	

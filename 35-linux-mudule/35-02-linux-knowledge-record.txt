@@ -19,3 +19,38 @@
 		https://blog.csdn.net/zhydream77/article/details/80079319
 	5.2、Linux中的shell到底是什么？ 
 		https://www.cnblogs.com/tjudzj/p/7088543.html
+		
+6. i386 和amd64 的意思 
+	6.1  i386 和amd64 的意思 
+		https://zhidao.baidu.com/question/70209686.html
+		
+	6.2 64位版本为什么叫amd64，而不是intel64 
+		https://baijiahao.baidu.com/s?id=1614402461283928635&wfr=spider&for=pc
+	6.3 amd64
+		https://baike.baidu.com/item/amd64/7015806?fr=aladdin
+		
+7. gcc 
+	7.1 gcc 
+		https://baike.baidu.com/item/gcc/17570?fr=aladdin
+
+8. g++ 
+	8.1 g++ 
+		https://baike.baidu.com/item/g%2B%2B
+		
+		
+9. GNU bison 
+	9.1 GNU bison 
+		https://baike.baidu.com/item/GNU%20bison/2622935?fr=aladdin
+		
+10. ncurses 
+	10.1 ncurses 
+		https://baike.baidu.com/item/ncurses/393121?fr=aladdin
+		
+11. gperf
+	11.1 gperf 
+		http://www.gnu.org/software/gperf/ 
+	
+	11.2 gperftools 
+		动态执行流程分析和性能瓶颈分析的利器——gperftools的Cpu Profiler
+		https://blog.csdn.net/breaksoftware/article/details/81315729 
+		
