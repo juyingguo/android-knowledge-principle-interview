@@ -20,3 +20,80 @@
 3、Linux下 vi vim vim-gnome vim-tiny vim-gtk vim-nox的区别 
 	3.1、Linux下 vi vim vim-gnome vim-tiny vim-gtk vim-nox的区别 
 		http://www.mamicode.com/info-detail-224890.html
+		
+4. Ubuntu16.04环境下git安装与使用 
+	4.1 Ubuntu16.04环境下git安装与使用
+		https://blog.csdn.net/vslyu/article/details/80337675
+		
+		git --version 
+		
+		git apt-get install git //安装git 
+		
+	4.2 在ubuntu16.04上安装或升级git 
+		https://blog.csdn.net/heidoutwenty/article/details/52892495
+		
+		在ubuntu16.04上默认安装了git：
+
+		# git --version
+
+		git version 2.7.4
+
+		可以使用下面命令升级git（如果不是root用户，需在命令前加sudo）：
+
+		# add-apt-repository ppa:git-core/ppa
+		# apt-get update
+		# apt-get install git
+
+		安装完成后，再查看git版本：
+		# git --version
+
+		git version 2.10.1
+		————————————————
+		
+5. Ubuntu16.04环境下编译git，并安装与使用 
+
+6. ubuntu 16.04 运行shell程序文件，报错。
+	
+	
+	6.1 运行shell脚本，错误：-bash: ./xxx.sh: /bin/bash^M: bad interpreter: No such file or directory 
+		https://blog.csdn.net/sunjiaminaini/article/details/77563637
+		
+		他报错找不到该文件或者目录，发现明明就有的啊.主要原因是 我在windows下编辑然后上传到Linux系统里执行的。.sh文件的格式为dos格式。而linux只能执行格式为unix格式的脚本。
+
+		1.首先用vi命令打开文件
+
+		2.在vi命令模式中使用 :set ff 命令。
+			fileformat=dos
+			
+		从这里可以看出文件格式是dos 
+		3.修改文件format为unix
+
+
+		方法一：使用vi修改文件format
+
+		命令：set ff=unix
+		
+		修改完成后就可以执行脚本了。
+
+		这是因为我这边是在windows下新建的文件上传到Linux上的
+		
+	6.2 ubuntu 16 shell 运行结果.sh: 4: [: 10: unexpected operator  
+		6.2.1 ubuntu 16 shell 运行结果.sh: 4: [: 10: unexpected operator 
+			https://blog.csdn.net/frank_ldw/article/details/83990948
+			
+			
+			原因：linux下能正常执行的脚本，在ubuntu系统中都会编译报错，因为二者使用的解释器不一同导致
+
+			Linux：.sh
+
+			ubuntu:.dash
+
+			因为ubuntu默认的sh是连接到dash的,又因为dash跟bash的不兼容所以出错了.执行时可以把sh换成bash文件名.sh来执行.成功.dash是什么东西,查了一下,应该也是一种shell,貌似用户对它的诟病颇多
+
+			解决办法：将Ubuntu解释器修改默认连接到bash
+
+			sudo dpkg-reconfigure dash
+			
+		
+	
+		

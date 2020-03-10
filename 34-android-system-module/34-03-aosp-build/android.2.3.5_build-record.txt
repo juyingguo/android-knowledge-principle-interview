@@ -327,22 +327,54 @@
 		11.1、关于Ubuntu中Could not get lock /var/lib/dpkg/lock解决方案
 			https://blog.csdn.net/jiangjiang_jian/article/details/80695548
 			
-			  运行下面的命令来生成所有含有 apt 的进程列表，你可以使用ps和grep命令并用管道组合来得到含有apt或者apt-get的进程。
-
-			ps -A | grep apt
-
-			找出所有的 apt 以及 apt-get 进程
-
-			$ sudo kill -9 processnumber或者$ sudo kill -SIGKILL processnumber
-
-			比如，下面命令中的9是 SIGKILL 的信号数，它会杀掉第一个 apt 进程
-
-			$ sudo kill -9 进程ID或者$ sudo kill -SIGKILL  进程ID
 			
+			1.	运行下面的命令来生成所有含有 apt 的进程列表，你可以使用ps和grep命令并用管道组合来得到含有apt或者apt-get的进程。
+
+				ps -A | grep apt
+
+				找出所有的 apt 以及 apt-get 进程
+
+				$ sudo kill -9 processnumber或者$ sudo kill -SIGKILL processnumber
+
+				比如，下面命令中的9是 SIGKILL 的信号数，它会杀掉第一个 apt 进程
+
+				$ sudo kill -9 进程ID或者$ sudo kill -SIGKILL  进程ID
+			
+			2、删除锁定文件
+
+				锁定的文件会阻止 Linux 系统中某些文件或者数据的访问，这个概念也存在于 Windows 或者其他的操作系统中。
+
+				一旦你运行了 apt-get 或者 apt 命令，锁定文件将会创建于 /var/lib/apt/lists/、/var/lib/dpkg/、/var/cache/apt/archives/ 中。
+
+				这有助于运行中的 apt-get 或者 apt 进程能够避免被其它需要使用相同文件的用户或者系统进程所打断。当该进程执行完毕后，锁定文件将会删除。
+
+				   当你没有看到 apt-get 或者 apt 进程的情况下在上面两个不同的文件夹中看到了锁定文件，这是因为进程由于某个原因被杀掉了，因此你需要删除锁定文件来避免该错误。
+
+				首先运行下面的命令来移除 /var/lib/dpkg/ 文件夹下的锁定文件：
+
+				$ sudo rm /var/lib/dpkg/lock
+
+				之后像下面这样强制重新配置软件包：
+
+				$ sudo dpkg --configure -a
+
+				也可以删除 /var/lib/apt/lists/ 以及缓存文件夹下的锁定文件：
+
+				$ sudo rm /var/lib/apt/lists/lock$ sudo rm /var/cache/apt/archives/lock
+
+				接下来，更新你的软件包源列表：
+
+				$ sudo apt update或者$ sudo apt-get update
+
+				总结一下，对于 Ubuntu（以及它的衍生版）用户在使用 apt-get 或者 apt 也叫 aptitude 命令[7]时遇到的问题，我们已经用两种方法来解决了。
 		11.2  
 			apt-get install libncurses5-dev:i386
 			E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
 			E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+		
+		11.3 查看ubuntu.
+			var/lib/dpkg/lock-frontend //图标带有X号
+			var/lib/dpkg/lock	//图标带有X号
 			
 	12. make 执行提示异常。。
 		host Java: apicheck (out/host/common/obj/JAVA_LIBRARIES/apicheck_intermediates/classes)
