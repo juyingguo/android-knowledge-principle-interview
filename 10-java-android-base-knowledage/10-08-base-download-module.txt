@@ -1,0 +1,16 @@
+1. 基于RandomAccessFile实现断点文件下载功能 
+	1.1 基于RandomAccessFile实现断点文件下载功能 
+		https://blog.csdn.net/qq_33067461/article/details/76796320
+		
+		测试代码位于：：
+		
+2. 判断URL是否支持断点续传？
+	2.1 判断URL是否支持断点续传？ 
+		https://www.cnblogs.com/dengyg200891/p/4930976.html
+		
+	2.2 HTTP断点续传（分块传输）（HTTP头格式非常清楚） 
+		https://www.cnblogs.com/findumars/p/5745345.html
+	
+	2.3 用于测试的资源url
+		2.3.1 http://www.baidu.com/img/bdlogo.gif 
+		

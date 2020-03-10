@@ -12,21 +12,41 @@
 					return new OkGoException("breakpoint file has expired!");
 				}
 			2. com.lzy.okserver.download.DownloadTask 
-				
+			
+				run方法部分代码如下：：
 				
 				public void run() {
 				//check breakpoint
 				postOnError(progress, OkGoException.BREAKPOINT_EXPIRED()); // 
 				
 				
+				//start downloading
+				RandomAccessFile randomAccessFile;
+				try {
+					randomAccessFile = new RandomAccessFile(file, "rw");
+					randomAccessFile.seek(startPosition);
+					progress.currentSize = startPosition;
+				} catch (Exception e) {
+					postOnError(progress, OkGoException.BREAKPOINT_NOT_EXIST());
+					return;
+				}
+				try {
+					download(body.byteStream(), randomAccessFile, progress);
+				} catch (IOException e) {
+					postOnError(progress, e);
+					return;
+				}
+				
 				 //check finish status
 				if (progress.status == Progress.PAUSE) {
 					postPause(progress);
 				} else if (progress.status == Progress.LOADING) {
-					if (file.length() == progress.totalSize) {
+					if (file.length() == progress.totalSize) {///调试结果file.length() == 42303165; progress.totalSize == 42303145
 						postOnFinish(progress, file);
 					} else {
-						postOnError(progress, OkGoException.BREAKPOINT_EXPIRED()); /// num line ::308 很可能是这行报的错误。进而判断，文件长度和progress.totalSize 不同。很可能是之前存在同名但内容不同的文件。
+						postOnError(progress, OkGoException.BREAKPOINT_EXPIRED()); 
+						/// num line ::308 很可能是这行报的错误。进而判断，文件长度和progress.totalSize 不同。很可能是之前存在同名但内容不同的文件。
+						//经过断点调试分析，file.length() == 42303165;
 					}
 				} else {
 					postOnError(progress, OkGoException.UNKNOWN());
@@ -38,7 +58,19 @@
 				MD5: FD2A359B21126C82CC5FDAFB576BA883
 				SHA1: 5615BE693949DEACB23AD50D15F9F78B2D6119A6
 				CRC32: 0A58AA0C
-			4. 
+				
+				而实际要下载的测试文件为：：
+				文件: ibotnNewApp_V1.0.66_20200304_release_for_test_upgrade_server.apk
+				大小: 42303165 字节
+				修改时间: 2020年3月4日, 14:21:22
+				MD5: 3448E1F75E84BA80056A56BAC8B52789
+				SHA1: E6DFEAEA8C7732D1E7FE16AC01F30AEED83D22A7
+				CRC32: F8F04126
+			4. 得出结论：：
+				randomAccessFile = new RandomAccessFile(file, "rw");
+				通过RandomAccessFile保证File，写文件。如果本地已经存在与即将新写入的文件(stream length = 1000字节，helloworld.apk)有同名但内容不同的文件(helloworld.apk，file length = 1008字节)，会概率性发生新文件写入完成后，实际本地的文件还是之前的（helloworld.apk，file length = 1008字节）。
+				
+				是okgo处理的问题，还是java类RandomAccessFile问题，或者底层文件操作问题？？，
 				
 		
 2. okgo 框架断点调试。
@@ -50,4 +82,16 @@
 	4.1 implementation 'com.lzy.net:okgo:3.0.1'
 		implementation 'com.lzy.net:okserver:2.0.1' 
 	
-	
+5. okgo  问题记录。
+	5.1 重大bug，对于不支持断点下载的url就无法下载了 
+		https://github.com/jeasonlzy/okhttp-OkGo/issues/885
+		
+		比如这个url，url不支持断点下载，用了这个库就不能正常下载了，报 breakpoint file has expired!
+		的错误。能不能在请求中根据返回的头判断，如果支持的启用断点下载，不支持的全量下载？
+		
+		可是对于不支持断点的url，头部不会返回content-length，是不知道总长度的啊。后来找了个库 OkDownload，可以支持，但是又遇到一个问题，有些url头部有Transfer-Encoding →chunked，照理说是可以分快下载的，但是每次都全量返回，OkDownload也报错了，坑真多啊
+		
+		是的，不支持断点的url，content-length是没有返回，但我们在文件列表里有返回文件的长度，所以在点击下载的时候就设置totalSize。
+		task.progress.totalSize = size.toLong()
+		自己设置下载的总长度就可以了。
+		我是这么解决的。
