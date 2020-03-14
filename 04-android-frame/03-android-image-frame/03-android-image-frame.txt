@@ -1,0 +1,18 @@
+1. Android PhotoView 
+	1.1 Android PhotoView 使用教程 
+			https://blog.csdn.net/anymyna/article/details/100547498
+			
+			implementation 'com.github.chrisbanes:PhotoView:2.3.0'// build error.  需要查看该版本支持的gradle及插件，sdk build version等适配信息。
+			implementation 'com.github.chrisbanes:PhotoView:2.1.4'// build ok.
+		
+		1.1.1 implementation 'com.github.chrisbanes:PhotoView:2.3.0'// build error.
+			Android Studio：resource android:attr/dialogCornerRadius not found 出错解决方案
+			
+			https://blog.csdn.net/weixin_43465451/article/details/83185112
+			
+			clean 项目不行的话
+			在file中找到如图 清除一下缓存 重启一下A
+			2. 
+			Unexpected lock protocol found in lock file. Expected 3, found 0.
+		
+		

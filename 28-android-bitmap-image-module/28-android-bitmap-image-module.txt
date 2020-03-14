@@ -102,7 +102,32 @@
 八、android加载 ，超超超大的图片，而且不压缩。 
 	
 	8.1、Android 高清加载巨图方案 拒绝压缩图片
+		「鸿洋_」
 		https://blog.csdn.net/lmj623565791/article/details/49300989
+		
+		参考链接
+		http://code.almeros.com/android-multitouch-gesture-detectors#.VibzzhArJXg
+		https://github.com/rharter/android-gesture-detectors
+		https://github.com/johnnylambada/WorldMap	//在实际的项目中，可能会有更多的需求，比如增加放大、缩小；增加快滑手势等等
+		————————————————
+		版权声明：本文为CSDN博主「鸿洋_」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/lmj623565791/article/details/49300989
+		
+		
+		8.1.1 滑动比较卡顿。
+			与系统的Gallery2 相册相比，比较卡顿。
+			
+			使用Scroller实现平滑滚动。
+		
+		8.1.2 该方式在原图最大化时截取Rect。首次加载时，屏幕显示的局部区域。需要移动才可以看到原图所有区域。如果图片中全是一行文字。显示效果体验需要优化。
+			能否类似Gallery2 首次加载，显示的全图缩放状态（缩放到一定大小，先能看到原图。），可以放大，可以移动。
+			
+			该方式只是实现了移动。所以只能
+			
+			
+			
+	8.2 自定义无压缩加载超清大图 
+		https://blog.csdn.net/u013132758/article/details/80878256?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
 九、compress image 
 	9.1、android bitmap compress（图片压缩） 

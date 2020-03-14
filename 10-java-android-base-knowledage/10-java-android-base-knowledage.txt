@@ -166,6 +166,70 @@
 		https://blog.csdn.net/u013129944/article/details/70226019/
 		
 		使用的时候不要使用ordinal()，而要使用定义赋值的value
+17. android 加载网络 本地 Uri assets drawable 文件的路径是 
+	17.1  android 加载网络 本地 Uri assets drawable 文件的路径是  
+		https://blog.csdn.net/a2241076850/article/details/78044310
 		
-
+		String imageUri = "http://site.com/image.png"; // from Web
+		String imageUri = "file:///mnt/sdcard/image.png"; // from SD card
+		String imageUri = "content://media/external/audio/albumart/13"; // from content provider
+		String imageUri = "assets://image.png"; // from assets
+		String imageUri = "drawable://" + R.drawable.image; // from drawables (only images, non-9patch)  
+		————————————————
+		版权声明：本文为CSDN博主「ManLikeTheWind」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/a2241076850/article/details/78044310
+		
+	17.2 https://blog.csdn.net/weixin_33826609/article/details/92713594
 	
+	17.3 android 播放assets文件里视频文件的问题
+		https://www.cnblogs.com/zhujiabin/p/4831563.html
+18.Android Scroller完全解析，关于Scroller你所需知道的一切 
+	18.1 Android Scroller完全解析，关于Scroller你所需知道的一切 
+		https://blog.csdn.net/guolin_blog/article/details/48719871
+
+19. Android中Bitmap
+	19.1 Android中Bitmap大小计算 
+		https://blog.csdn.net/qq_32671919/article/details/83862624
+		Bitmap.Config是Bitmap中的一个内部类,在Bitmap类里createBitmap(intwidth, int height, Bitmap.Config config)方法里会用到，打开个这个类一看
+
+		public static final Bitmap.Config ALPHA_8  
+
+		public static final Bitmap.Config ARGB_4444 
+
+		public static final Bitmap.Config ARGB_8888 
+
+		public static final Bitmap.Config RGB_565  
+
+		ARGB_8888、ARGB_4444、RGB_565、ALPHA_8
+		四种类型为bitmap在内存中存在的四种色彩的存储模式，他们本质区别体现在每种模式下的bitmap内部的每个像素点，在内存中的大小和组成成分的区别。
+		A->alpha（透明度）,R->red（红色）,G->green（绿色），B->blue（蓝色）
+		每种模式下的一个像素的具体存储大小： 
+		ARGB_8888：A->8bit->一个字节，R->8bit->一个字节，G->8bit->一个字节，B->8bit->一个字节，即8888，一个像素总共占四个字节，8+8+8+8=32bit=4byte
+		ARGB_4444：A->4bit->半个字节，R->4bit->半个字节，G->4bit->半个字节，B->4bit->半个字节，即4444，一个像素总共占两个字节，4+4+4+4=16bit=2byte
+		RGB_565：R->5bit->半个字节，G->6bit->半个字节，B->5bit->半个字节，即565，一个像素总共占两个字节，5+6+5=16bit=2byte
+		ALPHA_8：A->8bit->一个字节，即8，一个像素总共占一个字节，8=8bit=1byte
+		计算大小方式： 
+		一张bitmap的大小 = 有多少个像素点 * 每个像素点内存中占用的大小 = 长 * 宽 * 3中讲的各种模式下对应的像素点占用的比特位
+		例子：计算一张长宽为1000/1000，ARGB_8888格式的一张bitmap的大小： 
+		1000 * 1000 * 4byte = 4000kb = 4M
+		————————————————
+		版权声明：本文为CSDN博主「慢慢_飞」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/qq_32671919/article/details/83862624
+	19.2 Android获取bitmap图片的大小 
+		https://blog.csdn.net/linghu_java/article/details/8965112?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+		在Android API（12）之前的版本和后来的版本是不一样：
+
+               public long getBitmapsize(){
+
+                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
+          return bitmap.getByteCount();
+         }
+             // Pre HC-MR1
+        return bitmap.getRowBytes() * bitmap.getHeight();
+
+               }
+		————————————————
+		版权声明：本文为CSDN博主「linghu_java」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/linghu_java/article/details/8965112
+		

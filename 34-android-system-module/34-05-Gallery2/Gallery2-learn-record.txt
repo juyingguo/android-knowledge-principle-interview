@@ -1,0 +1,63 @@
+1. Android4.0图库Gallery2代码分析(一) 
+	1.1 Android4.0图库Gallery2代码分析(一) 
+		https://blog.csdn.net/weixin_33701617/article/details/85707397
+		
+2. 调用系统Gallery2，加载图片。
+	2.1 通过系统文件管理器，点击图片，首次使用会弹框提示文件类型，选择图片。
+	
+			C:\Windows\System32>adb shell dumpsys window |findstr mCurrent
+			mCurrentAppOrientation=-1
+			  mCurrentRotation=0
+		  mCurrentFocus=Window{26eb136b u0 com.actions.explorer/com.actions.explorer.Main}
+	
+	
+			C:\Windows\System32>adb shell dumpsys window |findstr mCurrent
+			mCurrentAppOrientation=-1
+			  mCurrentRotation=0
+		  mCurrentFocus=Window{cd4b297 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+	2.2 打开文件代码。
+		2.2.1 
+			public static void openFile(Context context,File file) {
+				if (context == null) return;
+				if (file == null || !file.isFile() ||  !file.exists()){
+					return;
+				}
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.addCategory(Intent.CATEGORY_DEFAULT);
+				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+				if (isAudioOrVideo(file.getAbsolutePath())){//音视频时，需另外设置参数
+					intent.putExtra("oneshot", 0);
+					intent.putExtra("configchange", 0);
+				}
+				String MIMEType = FileMIMEUtils.getMIMEType(file);
+				Uri uri=null;
+				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+					uri = FileProvider.getUriForFile(context, context.getPackageName() + ".fileprovider",file);
+				}else {
+					uri = Uri.fromFile(file);
+				}
+				intent.setDataAndType(uri,MIMEType);
+				if(intent.resolveActivity(context.getPackageManager()) != null){
+					context.startActivity(intent);
+				}else {
+					ToastUtils.showCustomToast(context,"请安装对应文件查看器");
+				}
+			}
+			
+			配置参数：：D/FileMIMEUtils: >>>>>>>>>getMIMEType()>>>suffixName:jpg,fileName:1-小i采蘑菇.jpg,type:image/jpeg
+			执行结果，有如下多个选项。
+			1.【移动到...】
+			2. 【查看图片1，使用uc浏览器自带图片查看，效果模糊】
+			3.【发送给好友】
+			4.【查看图片2，使用系统相册，加载模糊，且有，保存和更新选项，保存是真正保存原图后单独打开相册可以查看，更多选项是文件路径：：content://com.ibotn.newapp.fileprovider/external_files/IBOTN_DATA/teachplan/downlaod/xxx.jpg】
+			5. 【支付宝】。。。。
+			6.如果请求要开启的应用类型与手机中安装的应用匹配，也会弹出来。
+			
+		2.2.2 图片，类型直接传递"image/*"
+			效果如[2.2.1]
+			
+		
+
+		
+	

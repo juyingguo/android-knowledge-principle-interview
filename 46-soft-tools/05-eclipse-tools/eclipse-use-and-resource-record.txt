@@ -1,0 +1,17 @@
+1. eclipse 4.5.0；安装 adt-23.0.7插件异常。
+	No repository found at jar:file:/D:/juying/tools/ADT/ADT-23.0.7.zip!/.
+2. eclipse 与adt插件版本对应关系？
+	2.1 Android SDK,ADT,API 版本的对应关系 
+		https://blog.csdn.net/ONLYMETAGAIN/article/details/53191746?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		https://blog.csdn.net/ElyXiao/article/details/50728105?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+3. eclipse安装adt插件和SDK安装
+	3.1 eclipse安装adt插件和SDK安装 
+		https://wenku.baidu.com/view/051ef6cd3c1ec5da50e270b5.html
+4. eclipse 使用 Android Application. 异常。
+	4.1 Failed to get the required ADT version number from the SDK.
+		The Android Developer Toolkit may not work properly.
+	
+	4.2 The tools needs to be updated via th SDK Manager.
+		your tools installation appears to be out of date (or not yet installed).
+	4.3 项目中，类中所引用的类[ctrl + 鼠标左键]无法点击。环境有错误，先手动删除【Problems】面板中的errors。保证能点击。
+	

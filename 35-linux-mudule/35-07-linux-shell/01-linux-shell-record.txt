@@ -1,3 +1,7 @@
 1.shell中echo命令详解 
 	1.1、shell中echo命令详解
 		https://blog.csdn.net/vip_wangsai/article/details/72592649
+2. shell中expr的使用介绍 
+	2.1 shell中expr的使用介绍 
+	
+		https://blog.csdn.net/hu_wen/article/details/52930806
