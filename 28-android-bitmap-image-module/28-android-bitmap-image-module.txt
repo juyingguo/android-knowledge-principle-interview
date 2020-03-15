@@ -186,9 +186,11 @@
 		https://blog.csdn.net/Dr_abandon/article/details/82996744
 		
 		
+12. Android多点触控之ZoomImageView完全解析
+	12.1 Android多点触控之ZoomImageView完全解析
+		https://blog.csdn.net/tijjyire/article/details/73743212
 		
-		
-		
+		 
 	
 	
 	
