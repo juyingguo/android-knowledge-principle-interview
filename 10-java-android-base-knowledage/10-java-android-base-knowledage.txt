@@ -187,7 +187,7 @@
 	18.1 Android Scroller完全解析，关于Scroller你所需知道的一切 
 		https://blog.csdn.net/guolin_blog/article/details/48719871
 
-19. Android中Bitmap
+19. Android中Bitmap及相关
 	19.1 Android中Bitmap大小计算 
 		https://blog.csdn.net/qq_32671919/article/details/83862624
 		Bitmap.Config是Bitmap中的一个内部类,在Bitmap类里createBitmap(intwidth, int height, Bitmap.Config config)方法里会用到，打开个这个类一看
@@ -233,3 +233,27 @@
 		版权声明：本文为CSDN博主「linghu_java」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 		原文链接：https://blog.csdn.net/linghu_java/article/details/8965112
 		
+	19.3 Drawable
+		19.3.1 getIntrinsicWidth() 
+			
+20. android 启动模式及任务栈
+	20.1 android开启第三方应用加入自己的任务栈中 。。比如app使用系统相册打开图片。按back键正常。按下home键，再次打开app，没有处于图片预览状态。
+	
+21. android matrix 
+	21.1 android matrix 最全方法详解与进阶（完整篇） 
+		https://blog.csdn.net/cquwentao/article/details/51445269
+		
+22. canvas
+	22.1 canvas变换 
+		https://blog.csdn.net/cquwentao/article/details/51363719
+	
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	

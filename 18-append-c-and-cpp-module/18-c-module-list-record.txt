@@ -202,7 +202,9 @@
 			https://blog.csdn.net/chgaowei/article/details/8629819?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 			
 	14.2、c语言结构体中定义函数方式?
-	
+		14.2.1 c中不能,c++里可以在结构体内定义函数,用法和class定义类是一样的,说穿了struct 和 		class用法相同,但要注意的一点是,struct默认的是public类型，而class默认的是private类型的
+		
+		14.2.2 
 	
 	14.3、c语言结构体中使用union共用体。
 	
@@ -224,3 +226,5 @@
 			"ro.board.platform",
 			"ro.arch"
 		};
+17. 指针
+	17.1 函数指针

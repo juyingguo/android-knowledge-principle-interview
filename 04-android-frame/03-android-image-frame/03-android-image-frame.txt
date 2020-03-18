@@ -14,5 +14,8 @@
 			在file中找到如图 清除一下缓存 重启一下A
 			2. 
 			Unexpected lock protocol found in lock file. Expected 3, found 0.
+2. ImageViewZoom 
+	2.1 https://github.com/sephiroth74/ImageViewZoom
+	
 		
 		

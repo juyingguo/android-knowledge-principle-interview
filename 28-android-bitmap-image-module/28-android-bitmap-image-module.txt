@@ -129,6 +129,8 @@
 	8.2 自定义无压缩加载超清大图 
 		https://blog.csdn.net/u013132758/article/details/80878256?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
+	8.3 先使用Glide按照Url缓存超长巨图，再用BitmapRegionDecoder按区域裁剪加载，绕过：Bitmap too large to be uploaded into a texture exception。	https://github.com/272664150/QLongPictureView 
+		
 九、compress image 
 	9.1、android bitmap compress（图片压缩） 
 		https://blog.csdn.net/luhuajcdd/article/details/8948261
