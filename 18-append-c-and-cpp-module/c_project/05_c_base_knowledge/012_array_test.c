@@ -1,5 +1,5 @@
 #include <stdio.h>
- 
+
 int main ()
 {
    int n[ 10 ]; /* n 是一个包含 10 个整数的数组 */
