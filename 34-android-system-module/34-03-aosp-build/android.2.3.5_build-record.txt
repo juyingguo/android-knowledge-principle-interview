@@ -522,8 +522,11 @@
 
 	使用m、mm、mmm命令之前要在android源码目录下执行命令
 	. build/envsetup.sh
+	source build/envsetup.sh   
+	lunch //根据提示选择版型 
+	mm,mmm,
 	
-			编译完成之后，就可以在out/target/product/generic/system/app目录下看到Email.apk文件了。Android系统自带的App都放在这具目录下。另外，Android系统的一些可执行文件，例如C编译的可执行文件，放在out/target/product/generic/system/bin目录下，动态链接库文件放在out/target/product/generic/system/lib目录下，out/target/product/generic/system/lib/hw目录存放的是硬件抽象层（HAL）接口文件，后面的文章里面，我们会陆续提及到，敬请关注。
+	编译完成之后，就可以在out/target/product/generic/system/app目录下看到Email.apk文件了。Android系统自带的App都放在这具目录下。另外，Android系统的一些可执行文件，例如C编译的可执行文件，放在out/target/product/generic/system/bin目录下，动态链接库文件放在out/target/product/generic/system/lib目录下，out/target/product/generic/system/lib/hw目录存放的是硬件抽象层（HAL）接口文件，后面的文章里面，我们会陆续提及到，敬请关注。
 		--------------------- 
 	3. 编译好模块后，还要重新打包一下system.img文件，这样我们把system.img运行在模拟器上时，就可以看到我们的程序了。
 		root@eink-virtual-machine:/home/eink/testproject/android_2_3_5# make snod
