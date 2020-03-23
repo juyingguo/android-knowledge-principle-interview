@@ -767,3 +767,10 @@
 八、Android之Goldfish 
 	8.1、Android之Goldfish 
 		https://forum.huawei.com/enterprise/zh/thread-155675.html
+		
+9.   安装apk失败。adb: failed to install I:\juying\android\aosp-build\android2.3.3\out\Gallery.apk: Failure [INSTALL_FAILED_SHARED_USER_INCOMPATIBLE: Package couldn't b
+	e installed in /data/app/com.android.gallery-ZGCxZk05I4FQYFKyyQQKcA==: Package com.android.gallery has no signatures that match those in shared user a
+	ndroid.media; ignoring!]
+	https://blog.csdn.net/niepengpeng333/article/details/7064052
+	
+	去掉AndroidMainfest.xml文件中的“android:sharedUserId="android.uid.system”，后重新模块编译，即可。

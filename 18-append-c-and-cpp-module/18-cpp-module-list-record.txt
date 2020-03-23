@@ -27,4 +27,9 @@
 		博主：：著述《c++进阶心法》
 		https://blog.csdn.net/K346K346/article/details/52065524?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
+5. C++ struct
+	5.1 C++struct里定义函数 
+		https://blog.csdn.net/ucasliyang/article/details/52691619?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+		c++中允许在结构体当中定义函数，它的用法和类的用法很像，不过与类有一个区别在于，struct中定义的函数和变量都是默认为public的，但class中的则是默认为private。
 		

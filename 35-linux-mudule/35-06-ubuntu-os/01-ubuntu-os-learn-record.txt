@@ -94,6 +94,70 @@
 
 			sudo dpkg-reconfigure dash
 			
+7.	Ubuntu磁盘及分区模块。
+	7.1 sda, sdb, sdc, sda1, sda2在Linux中都代表什么 
+		https://blog.csdn.net/weixin_34258838/article/details/85981795
 		
-	
+		意义如下：
+
+		第一个软驱 /dev/fd0.
+
+		第二个软驱 /dev/fd1.
+
+		第一块硬盘 /dev/sda.
+
+		第二块硬盘 /dev/sdb, 以此类推.
+
+		第一个SCSI CD-ROM /dev/scd0, 可以用/dev/sr0.
+
+		sda1, sda2是sda这块硬盘上的两个分区。
+		
+		 
+		来源
+
+		===============
+
+		Device Names in Linux
+
+		https://help.ubuntu.com/lts/installation-guide/armhf/apcs04.html
+		
+	7.2 extend扩展分区，逻辑分区含义及作用。
+		
+	7.3 VMware虚拟机 Linux系统 Ubuntu 16.04 硬盘/磁盘扩容（超详细图文详解！亲测有效！）
+		https://blog.csdn.net/m0_43403238/article/details/85480314
+		
+8. ubuntu解压及压缩文件方法
+	8.1 ubuntu下7z文件的解压方法 
+		8.1.1	https://blog.csdn.net/xiaoming_zhong/article/details/52325226
+			
+			安装：apt-get install p7zip-full
+
+			解压7z：使用方法：7z x file file是你要解压的文件名。 
+
+			解压tar.bz2: sudo tar -jxvf file.tar.bz2。
+
+			解压tar: sudo tar -zxvf file.tar。
+
+		8.1.2??Ubuntu Linux 安装 .7z 解压和压缩文件
+			? https://blog.csdn.net/zqlovlg/article/details/8033456
+			sudo apt-get install p7zip
+		
+			解压文件：
+			??? 7z x manager.7z -r -o /home/xx
+			解释如下：
+			x 代表解压缩文件，并且是按原始目录解压（还有个参数 e 也是解压缩文件，但其会将所有文件都解压到根下，而不是自己原有的文件夹下）manager.7z 是压缩文件，这里大家要换成自己的。如果不在当前目录下要带上完整的目录
+			-r 表示递归所有的子文件夹
+			-o 是指定解压到的目录，这里大家要注意-o后是没有空格的直接接目录
+
+			压缩文件：
+
+			??? 7z a -t7z -r manager.7z /home/manager/*
+			解释如下：
+			a 代表添加文件／文件夹到压缩包
+			-t 是指定压缩类型 一般我们定为7z
+			-r 表示递归所有的子文件夹，manager.7z 是压缩好后的压缩包名，/home/manager/* 是要压缩的目录，＊是表示该目录下所有的文件。
+			————————————————
+			版权声明：本文为CSDN博主「zqlovlg」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+			原文链接：https://blog.csdn.net/zqlovlg/article/details/8033456
+			
 		
