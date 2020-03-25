@@ -209,6 +209,8 @@
 			https://blog.csdn.net/qq_21792169/article/details/50436089
 	
 	14.3、c语言结构体中使用union共用体。
+		14.3.1 C语言 共用体（Union）详解，结构体中包含共用体的使用
+			https://blog.csdn.net/weixin_40997830/article/details/89402974
 	
 	14.4、c语言中union共用体中有结构体。
 	

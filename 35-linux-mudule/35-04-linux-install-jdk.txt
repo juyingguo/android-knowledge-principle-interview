@@ -2,7 +2,7 @@
 	1.1、Linux中普通用户和ROOT用户对Java JDK的配置 
 		https://blog.csdn.net/MOONCOM/article/details/52683409?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
-		inux中对对各种工具文件不需要想Windows中似的，还要先一步一步的安装，有的还需要配置环境变量，比如Windows对Java的安装过程。
+		Linux中对对各种工具文件不需要想Windows中似的，还要先一步一步的安装，有的还需要配置环境变量，比如Windows对Java的安装过程。
 
 		在Linux中，使用指令：tar zxvf ?文件名（注意空格）解压完 .tar.gz 文件，或使用指令：unzip 文件名 解压完 .zip 文件，只需要在Linux中对他们进行配置，便可以使用你下载的工具了，这里介绍一下Java JDK的配置。
 
@@ -55,14 +55,14 @@
 
 		最后，通过指令 ? ?source ?.bash_profile ? 使Linux应用你刚配置好的 ? .bash_profile ? ? 文件，Java JDK 在Linux上便配置好了。
 
-		（注意：在profile文件中除了上面三行代码外，最好加上 ? ? ? ?? JRE_HOME=$JAVA_HOME/jre ? ?，也就是说一共四行，因为众所周知Java包括jdk和jre，若你不配置jre，那么你便无法使用JVM，比如说，tomcat你就无法正常开启和关闭?）
+		（注意：在profile文件中除了上面三行代码外，最好加上 ? ? ? ??export JRE_HOME=$JAVA_HOME/jre ? ?，也就是说一共四行，因为众所周知Java包括jdk和jre，若你不配置jre，那么你便无法使用JVM，比如说，tomcat你就无法正常开启和关闭?）
 
 
 
 		好了，Java JDK的配置便结束了，强烈建议看到本篇文章的小伙伴们在配置 JAVA_HOME，PATH和CLASSPATH时，在后面加上JRE_HOME ? ，否则，你可能会在使用Java时碰到各种莫名其妙的错误。
 		————————————————
 		版权声明：本文为CSDN博主「霜月枫桥」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-		原文链接：https://blog.csdn.net/MOONCOM/时article/details/52683409
+		原文链接：https://blog.csdn.net/MOONCOM/article/details/52683409
 		
 		
 		1.1.1、
@@ -118,6 +118,109 @@
 			
 	1.4 安装在普通用户下，重启Ubuntu后，java 命令不可用了。
 		
+	1.5. ubuntun 16.安装jdk 1.6 
+		https://www.cnblogs.com/hwbq123/p/8190698.html
+		https://www.cnblogs.com/hwbq123/p/8190698.html
+		
+		1.5.1、Linux中普通用户和ROOT用户对Java JDK的配置 
+			https://blog.csdn.net/MOONCOM/article/details/52683409?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		1.5.2、ubuntu 16安装jdk1.6.45
+			https://blog.csdn.net/mp295345033/article/details/78960697
+		
+			###################################################################################################################################################
+				１、下载JDK1.6,你可以到官网去下载，下载时请看清自己的系统版本，记得一定要下载相应的版本。
+
+			　　http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u41-oth-JPR
+
+				２、以下全是root用户下操作、root用户下操作、root用户下操作
+
+				3、将下载的文件放置到/usr/lib/java目录下(需要手动创建java目录，到/usr/lib目录下mkdir java)，并修改文件的可执行权限，如chmod 777 jdk-6u45-linux-x64.bin
+
+				(我下载了jdk-6u45-linux-x64.bin和jdk-6u45-linux-x64-rpm.bin，不会用后者，只能用前者。)
+
+				4、安装文件， ./jdk-6u45-linux-x64.bin
+
+				5、安装完毕后，则需配置系统环境   sudo vi /etc/environment，或配置用户环境变量vi /home/username/.bashrc，建立JAVAHOME,　CLASSPATH,　修改PATH变量
+
+				  具体jdk版本号进入java目下看第一个文件夹
+
+
+
+				我的jdk版本是那个文件夹的名字：   jdk1.6.0_45　　
+
+				我的设置为：
+
+				JAVAHOME=/home/eink/soft_tools/java/jdk1.6.0_45
+				JRE_HOME=/home/eink/soft_tools/java/jdk1.6.0_45/jre
+				CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+				PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+				
+				
+				******
+				/usr/lib/soft_install/jdk1.6.0_45
+				
+				JAVAHOME=/usr/lib/soft_install/jdk1.6.0_45
+				JRE_HOME=/usr/lib/soft_install/jdk1.6.0_45/jre
+				CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+				PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
+				
+				————————————————
+				版权声明：本文为CSDN博主「杯中倒影__」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+				原文链接：https://blog.csdn.net/mp295345033/article/details/78960697
+				
+				
+
+				6、执行命令，使配置生效。source /etc/environment　( source /home/username/.bashrc )
+
+				7、验证是否安装完毕，使用java -version或者直接使用javac，看其生效与否。
+
+
+
+				我的直接成功了，第八步也就不做了。（为什么会有水印呢？？？）
+
+				8、如果还未生效，很有可能由于ubuntu中已有默认的jdk，如openjdk，所以，为了使默认使用的是我们安装的jdk，还要进行如下工作。
+				　　sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0_41/bin/java 300
+				　　sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0_41/bin/javac 300
+				　　通过这一步将我们安装的jdk加入java选单。
+				　　然后执行：
+				　　update-alternatives --config java
+					update-alternatives --config javac
+				
+				#####################################################################################################################################
+				
+				
+				#config java jdk1.7  envirment   安装目录为：/usr/local/tools/java
+				#export JAVA_HOME=/usr/local/tools/java/jdk1.7.0_79  
+				#export JRE_HOME=${JAVA_HOME}/jre  
+				#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+				#export PATH=${JAVA_HOME}/bin:$PATH 
+				
+				#config java jdk1.6  envirment   install root dir：/usr/lib/java/jdk1.6.0_45
+				#export JAVA_HOME=/usr/lib/java/jdk1.6.0_45
+				#export JRE_HOME=${JAVA_HOME}/jre  
+				#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+				#export PATH=${JAVA_HOME}/bin:$PATH 
+				
+				修改之前 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+				
+				JAVAHOME=/usr/lib/java/jdk1.6.0_45
+				PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/jre/bin"
+				CLASSPATH=/usr/lib/java/jdk1.6.0_45/lib:/usr/lib/java/jdk1.6.0_45/jre/lib
+
+				sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0_45/bin/java 300
+			　　sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0_45/bin/javac 300
+			　　通过这一步将我们安装的jdk加入java选单。
+			　　然后执行：
+			　　update-alternatives --config java //选择jdk 版本
+			　　update-alternatives --config javac	//选择jre版本。
+	1.6 ubuntu 安装jdk1.7
+		download::
+		https://www.oracle.com/java/technologies/javase/javase7-archive-downloads.html
+		
+			 JAVAHOME=/home/eink/soft_tools/java/jdk1.7.0_80
+			 JRE_HOME=/home/eink/soft_tools/java/jdk1.7.0_80/jre
+			 CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+			 PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
 2. ubuntu 16.4 卸载指定版本java 1.6,1.7 
 	2.1 linux下卸载jdk1.7安装jdk1.8 
 		https://blog.csdn.net/reee112/article/details/83036449?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task

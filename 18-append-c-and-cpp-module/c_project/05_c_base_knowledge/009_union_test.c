@@ -5,8 +5,9 @@ union Data
 {
    int i;
    float f;
-   char  str[1];
-};
+   double d; 
+   char  str[2];
+}; 
  
 int main( )
 {
