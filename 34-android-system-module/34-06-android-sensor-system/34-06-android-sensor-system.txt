@@ -1,0 +1,13 @@
+1. Android 传感器开发详解
+	1.1 Android 传感器开发详解
+		https://blog.csdn.net/Airsaid/article/details/52902299?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+2. Android sensor 
+	2.1 Android传感器源码分析(AOSP) 
+		https://blog.csdn.net/dabenxiong666/article/details/80726022?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+	2.2 Android4.2 G-Sensor工作流程 
+		https://blog.csdn.net/myarrow/article/details/9044689
+3. Android设备中实现Orientation Sensor(图)兼谈陀螺仪 
+	3.1 Android设备中实现Orientation Sensor(图)兼谈陀螺仪 
+		https://www.cnblogs.com/exmyth/p/4685946.html
+		

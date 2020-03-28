@@ -8,3 +8,17 @@
 	2.2、source insight 工程中每一个文件名首字母大些 
 		http://www.downza.cn/xy/49194.html
 	
+3. SourceInsight 不断无响应的问题 
+	3.1 SourceInsight 不断无响应的问题
+		https://blog.csdn.net/liuming651664/article/details/84180860?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+		sourceinsight3使用过程中，如果是大工程，总是出现抽筋的现象，CPU使用、内存占用都很高，阅读android源码不断出现无响应。后发现主要是因为ss有体贴的sync机制。
+
+		处理办法：
+
+		1.去掉同步，options->perferences->general->backgroud synchronization every [ ] 前面的钩；
+
+		2.updata revoery file every[ ]改一个大参数。
+		————————————————
+		版权声明：本文为CSDN博主「liuming651664」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/liuming651664/article/details/84180860

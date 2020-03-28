@@ -34,7 +34,7 @@ int main( )
    cout << "Length of box : " << box.length <<endl;
  
    // 不使用成员函数设置宽度
-   // box.width = 10.0; // Error: 因为 width 是私有的
+    //box.width = 10.0; // Error: 因为 width 是私有的
    box.setWidth(10.0);  // 使用成员函数设置宽度
    cout << "Width of box : " << box.getWidth() <<endl;
  

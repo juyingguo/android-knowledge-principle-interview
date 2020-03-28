@@ -233,3 +233,10 @@
 17. 指针
 	17.1 函数指针
 		https://www.runoob.com/cprogramming/c-fun-pointer-callback.html
+18. C语言宏
+	18.1 C语言宏高级用法 [总结] 
+		https://www.cnblogs.com/Anker/p/3418792.html
+19 epoll 
+	19.1 epoll简介 
+		https://blog.csdn.net/dabenxiong666/article/details/80317333#comments
+	

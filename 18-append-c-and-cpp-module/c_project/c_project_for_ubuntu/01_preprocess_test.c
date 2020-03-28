@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+
+
 #define DEBUG
 
 #define  message_for(a, b)  \
@@ -15,7 +17,7 @@ int main ()
 	
 	printf("sizeof(char) %ld\n",sizeof(char));
 	
-	message_for(Carole, Debra) //不用再加分号了，宏定义中加了分号。 
+	message_for(Carole, Debra)
    return 0;
 }
 
