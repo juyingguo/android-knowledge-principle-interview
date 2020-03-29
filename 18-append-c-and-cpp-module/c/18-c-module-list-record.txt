@@ -239,4 +239,10 @@
 19 epoll 
 	19.1 epoll简介 
 		https://blog.csdn.net/dabenxiong666/article/details/80317333#comments
-	
+		
+20. c语言线程。
+	20.1 Windows下C语言线程
+		20.1.1 Windows下C语言多线程函数_beginthread简单入门应用例子
+			https://blog.csdn.net/tianzry/article/details/61933362
+			
+	 
