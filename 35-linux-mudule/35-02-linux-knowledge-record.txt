@@ -54,3 +54,7 @@
 		动态执行流程分析和性能瓶颈分析的利器——gperftools的Cpu Profiler
 		https://blog.csdn.net/breaksoftware/article/details/81315729 
 		
+12 kernel 中 sscanf和sprintf()函数使用说明
+	12.1 kernel 中 sscanf和sprintf()函数使用说明 
+		https://blog.csdn.net/zhangzhi123456789/article/details/47748081
+		

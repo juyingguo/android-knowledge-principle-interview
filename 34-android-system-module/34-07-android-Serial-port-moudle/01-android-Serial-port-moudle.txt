@@ -1,0 +1,13 @@
+1. Android使用串口
+	1.1 Android使用串口(基于android-serialport-api)
+		https://blog.csdn.net/l970859633/article/details/90239197
+	1.2 关于安卓设备上使用串口，谷歌官方在github上有提供代码实例，里面有JNI的代码和串口API的java文件，工程的地址如下： 
+		https://github.com/cepr/android-serialport-api 
+		
+2. 什么叫波特率 
+	https://zhidao.baidu.com/question/2141350358189109228.html
+	
+3. /dev/tty /dev/ttyS0 /dev/tty0区别
+	3.1 /dev/tty /dev/ttyS0 /dev/tty0区别 
+		https://blog.csdn.net/qq_19004627/article/details/79240891
+		

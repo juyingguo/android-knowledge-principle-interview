@@ -1,0 +1,6 @@
+1. AM2302p 
+	1.1 am2302稳定读取传感器数据驱动代码 
+		https://blog.csdn.net/u010023064/article/details/90111224
+		
+	1.2 
+		kernel/drivers/thermal/AM23xx/am23xx_p.c
