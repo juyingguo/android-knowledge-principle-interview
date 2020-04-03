@@ -1,0 +1,33 @@
+1.cmake
+	1.1 https://cmake.org/ 
+	
+	1.2 windows下cmake的安装教程 zip 文件方式
+		配置环境变量后，如果没有生效。需要重启电脑生效。
+	1.3 Windows下CMake安装教程 msi文件方式
+		https://blog.csdn.net/u011231598/article/details/80338941
+	
+2. android studio 使用CMAKE 
+	2.1 android studio 使用CMAKE 
+		https://blog.csdn.net/qq_25817651/article/details/53135685
+		
+		Android移植谷歌官方串口库支持校验位、数据位、停止位、流控配置
+		https://juejin.im/post/5c010a19e51d456ac27b40fc
+		
+		1.在SDK Tools中勾选安装CMake、LLDB
+		
+		2.	module-xyz/build.gradle
+			android {
+				defaultConfig {
+					externalNativeBuild{	//添加这行，解决cmake 没有配置问题。
+						cmake{
+							cppFlags ""
+						}
+					}
+				}
+				externalNativeBuild {
+					cmake {
+						path 'CMakeLists.txt'
+					}
+				}
+			}
+

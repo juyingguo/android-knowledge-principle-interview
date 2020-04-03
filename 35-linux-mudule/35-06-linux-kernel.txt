@@ -1,0 +1,12 @@
+1. Linux kernel debug技巧----开启DEBUG选项 
+	1.1 Linux kernel debug技巧----开启DEBUG选项 
+		https://blog.csdn.net/robertsong2004/article/details/53047242
+		
+2. X-016-KERNEL-串口驱动开发之驱动框架
+	2.1 http://www.wowotech.net/x_project/serial_driver_porting_1.html
+		
+	2.1  X-018-KERNEL-串口驱动开发之serial console
+		https://www.veryarm.com/65891.html
+		
+	2.2 X-017-KERNEL-串口驱动开发之uart driver框架 
+		http://www.wowotech.net/x_project/serial_driver_porting_2.html

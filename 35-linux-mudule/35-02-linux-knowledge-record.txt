@@ -58,3 +58,8 @@
 	12.1 kernel 中 sscanf和sprintf()函数使用说明 
 		https://blog.csdn.net/zhangzhi123456789/article/details/47748081
 		
+13. 一个串口和485与232选择通信方法 
+	13.1 一个串口和485与232选择通信方法
+		https://blog.csdn.net/qq_35570735/article/details/81352011
+	
+		

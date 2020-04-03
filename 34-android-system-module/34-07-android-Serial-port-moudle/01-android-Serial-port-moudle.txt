@@ -4,10 +4,72 @@
 	1.2 关于安卓设备上使用串口，谷歌官方在github上有提供代码实例，里面有JNI的代码和串口API的java文件，工程的地址如下： 
 		https://github.com/cepr/android-serialport-api 
 		
+	1.3 安卓串口
+		https://baike.baidu.com/item/%E5%AE%89%E5%8D%93%E4%B8%B2%E5%8F%A3/13787610?fr=aladdin
+		
+	1.4 Android串口通信（Android Studio）
+		https://blog.csdn.net/qq_35952946/article/details/78863871?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+	
+	1.5 Fork自Google开源的Android串口通信Demo，修改成Android Studio项目 https://code.google.com/archive/p/and… 
+		https://github.com/licheedev/Android-SerialPort-API
+	
+	1.6 Android移植谷歌官方串口库支持校验位、数据位、停止位、流控配置 
+		https://juejin.im/post/5c010a19e51d456ac27b40fc
+		https://github.com/xmaihh/Android-Serialport
+		
+	1.7 Android串口调试助手 
+		根据Android官方提供的串口API写的一个小工具， 没啥功能，基本也就用来调调控制板哪串口能用,发送一下简单的命令， 		如果没懒癌发作的话，以后可能会加点最近命令保存啥的功能。
+		https://github.com/licheedev/Android-SerialPort-Tool
 2. 什么叫波特率 
 	https://zhidao.baidu.com/question/2141350358189109228.html
 	
-3. /dev/tty /dev/ttyS0 /dev/tty0区别
+3. /dev/tty /dev/ttyS0 /dev/tty0使用及区别
 	3.1 /dev/tty /dev/ttyS0 /dev/tty0区别 
 		https://blog.csdn.net/qq_19004627/article/details/79240891
 		
+		1. 在命令行提示符下键入：echo test > /dev/ttyS1 会把单词”test”发送到连接在ttyS1(COM2)端口的设备上。
+		
+		2. 控制终端(/dev/tty) 　　
+		   如果当前进程有控制终端(Controlling Terminal)的话，那么/dev/tty就是当前进程的控制终端的设备特殊文件。可以使用命令”ps –ax”来查看进程与哪个控制终端相连。对于你登录的shell，/dev/tty就是你使用的终端，设备号是(5,0)。使用命令”tty”可以查看它具体对应哪个实际终端设备。/dev/tty有些类似于到实际所使用终端设备的一个联接。　　
+		
+	3.2 linux 串口/dev/ttyS0测试（UART0）
+		https://blog.csdn.net/QQ2010899751/article/details/81178753?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+	3.3 /dev/tty、/dev/ttyS/、/dev/ttyUSB区别 
+		https://blog.csdn.net/daha1314/article/details/84101486
+		1、/dev/tty                                                    当前控制终端Terminal
+
+		2、/dev/ttyn和/dev/console                         （虚拟）控制台终端
+
+		3、/dev/ttySn   一般为/dev/ttyS0                 串行端口终端，接串口线使用的端口设备
+
+		4、/dev/ttyUSBn   一般为/dev/ttyUSB0       USB转串口终端，接USB转串口线可用此端口设备
+		————————————————
+		版权声明：本文为CSDN博主「快乐向前321」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/daha1314/article/details/84101486
+		
+4. 使用adb调试串口 
+	4.1 使用adb调试串口 
+		https://blog.csdn.net/heabby2010/article/details/77980620
+		
+		https://blog.csdn.net/caz28/article/details/8529348?depth_1-utm_source=distribute.pc_relevant_right.none-task&utm_source=distribute.pc_relevant_right.none-task
+		
+		android adb shell  busybox microcom -t * -s * /dev/ttyS cannot input anything
+		
+5. /proc/tty/drives 文件信息，s500. for example.
+	/dev/tty             /dev/tty        5       0 system:/dev/tty
+	/dev/console         /dev/console    5       1 system:console
+	/dev/ptmx            /dev/ptmx       5       2 system
+	/dev/vc/0            /dev/vc/0       4       0 system:vtmaster
+	g_serial             /dev/ttyGS    249 0-3 serial
+	usbserial            /dev/ttyUSB   188 0-253 serial
+	acm                  /dev/ttyACM   166 0-31 serial
+	pty_slave            /dev/pts      136 0-1048575 pty:slave
+	pty_master           /dev/ptm      128 0-1048575 pty:master
+	owl_serial           /dev/ttyS     204 0-6 serial
+	unknown              /dev/tty        4 1-63 console
+	
+	g_serial,usbserial,owl_serial
+	
+6. 串口、COM口、UART口, TTL、RS-232、RS-485区别详解  
+	6.1 串口、COM口、UART口, TTL、RS-232、RS-485区别详解
+		https://blog.csdn.net/wb790238030/article/details/83502823?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
