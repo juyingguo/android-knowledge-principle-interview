@@ -15,6 +15,8 @@
 	1.5、全面盘点当前Android后台保活方案的真实运行效果（截止2019年前） 
 		https://blog.csdn.net/hellojackjiang2011/article/details/85283746
 		
+		
+		
 	1.6、应用保活终极总结(一)：Android6.0以下的双进程守护保活实践 
 		http://www.52im.net/thread-1135-1-1.html
 		
@@ -25,4 +27,11 @@
 		onStartCommand，intent:null。
 		
 		android 9该方式完全无效。
+		
+	2.2 android 9，清理进程，Service不走OnDestroy.
+		
+		
+3. Android 绑定服务 bindService 
+	3.1 
+		https://blog.csdn.net/yp_nothing/article/details/80572589
 

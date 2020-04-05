@@ -9,10 +9,10 @@ int main ()
    double d;
  
    // 声明引用变量
-   int&    r = i;
+   int &r = i;
    double& s = d;
    
-   i = 5;
+   i = 80;
    cout << "Value of i : " << i << endl;
    cout << "Value of i reference : " << r  << endl;
  

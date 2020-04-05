@@ -1,3 +1,6 @@
+(01) 参考教程：
+	01.1 https://www.runoob.com/linux/linux-comm-grep.html 
+	
 (1) cd 
 	cd .. 意思是到上一级目录； 
 	cd ../.. 跳到目前目录的上上两层 :
@@ -19,7 +22,11 @@
 		:set number 或者 :set nu 		
 		:set nonumber 或者 :set nonu  ////显示出行号之后我们怎么隐藏行号呢，敲命令
 	2.3  grep命令用于查找文件里符合条件的字符串
-		grep -rn  "hello world" ./ // 在当前目录下递归查找"hello world"，并显示行号
+		grep -irn  "hello world" ./ // 在当前目录下递归查找"hello world"，并显示行号
+		-i 或 --ignore-case : 忽略字符大小写的差别。
+		-r 或 --recursive : 此参数的效果和指定"-d recurse"参数相同。
+		-n 或 --line-number : 在显示符合样式的那一行之前，标示出该行的列数编号。
+		
 			
 (3) 文件管理
 	3.1

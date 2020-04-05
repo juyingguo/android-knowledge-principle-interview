@@ -21,7 +21,7 @@ int main ()
  
    return 0;
 }
- 
+
 // º¯Êı¶¨Òå
 void swap(int &x, int & y)
 {
