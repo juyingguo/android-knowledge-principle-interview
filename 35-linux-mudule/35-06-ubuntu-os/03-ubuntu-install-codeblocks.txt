@@ -29,3 +29,7 @@
 		sudo apt install mingw-w64
 
 		选择默认的C编译器后，可以开始使用Code Blocks编写程序。
+		
+	1.2 ubuntu 下 codeblocks 的使用 各种技巧 	
+	
+		https://blog.csdn.net/lien0906/article/details/45057043
