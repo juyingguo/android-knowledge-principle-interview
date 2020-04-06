@@ -1,0 +1,31 @@
+1. 在Ubuntu 16.04上安装Code::Blocks
+	1.1 在Ubuntu 16.04上安装Code::Blocks
+		https://blog.csdn.net/weixin_43244899/article/details/89504776
+		更新本地包索引并安装新版code::blocks。
+		输入以下三条语句：
+		sudo add-apt-repository ppa:damien-moore/codeblocks-stable
+
+		sudo apt update
+
+		sudo apt install codeblocks codeblocks-contrib
+
+		安装成功后，codeblocks只包含最基本的编译器GCC
+
+		安装编译环境，C库、C++库
+		推荐适用于Linux的流行开源C编译器有：
+		GNU C编译器 - defacto标准的开源C编译器
+		Clang - Clang比GCC快得多，使用的存储空间更少，它提供了非常清晰简洁的诊断（错误和警告消息）。
+
+		要安装gcc，请运行：
+
+		sudo apt install gcc
+
+		要安装Clang编译器：
+
+		sudo apt install clang
+
+		如果要在Linux上编译本机Windows二进制文件，则可以安装mingw-w64软件包。
+
+		sudo apt install mingw-w64
+
+		选择默认的C编译器后，可以开始使用Code Blocks编写程序。

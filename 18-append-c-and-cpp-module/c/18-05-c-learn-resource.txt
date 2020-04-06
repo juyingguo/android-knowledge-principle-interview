@@ -30,5 +30,9 @@
 			
 		2.2.2 C语言利用epoll实现高并发聊天室 
 			https://github.com/jwzh222/epoll
+			https://blog.csdn.net/Fly_as_tadpole/article/details/80388998?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158616837719724843315569%2522%252C%2522scm%2522%253A%252220140713.130056874..%2522%257D&request_id=158616837719724843315569&biz_id=0&utm_source=distribute.pc_search_result.none-task-blog-all_SOOPENSEARCH-2
+			
+			2. epoll实现高并发聊天室
+				https://blog.csdn.net/qq_31564375/article/details/51581038?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-4&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-4
 		
 	

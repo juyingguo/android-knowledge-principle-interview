@@ -108,6 +108,14 @@
 			use fast but imperfect dependency generation
 	1.6、Itanium 
 		https://baike.baidu.com/item/Itanium/7527671?fr=aladdin
+	
+	1.7  Linux 下用于 C/C++ 的最好的 IDE 
+		https://www.cnblogs.com/findumars/p/5797486.html 
+		
+		2. Qt creator也是一款十分受欢迎的IDE，也强烈推荐你使用这款软件。
+
+			另外，如果你是C/C++初学者的话，建议你安装codeblocks或者Dev-C++。这两款软件不仅有windows版本的，也有linux版本的。
+			
 		
 二、vs tools use  record .
 	2.1、VS如何在一个项目中分别运行单个cpp文件 
