@@ -25,4 +25,10 @@
 	2.2 17个C语言可以做的小案例项目 
 		https://blog.csdn.net/weixin_42743471/article/details/85109413
 		
+		2.2.1 通讯录 
+			https://github.com/oguzozturk/AddressBook
+			
+		2.2.2 C语言利用epoll实现高并发聊天室 
+			https://github.com/jwzh222/epoll
+		
 	

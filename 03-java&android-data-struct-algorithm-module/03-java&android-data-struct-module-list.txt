@@ -158,4 +158,9 @@
 	15.1、面试必备：ArrayMap源码解析 
 		https://www.jianshu.com/p/1fb660978b14
 		
+十六、ArrayList
+	16.1 阿里面试，面试官没想到一个ArrayList，我都能跟他扯半小时  
+		https://blog.csdn.net/qq_35190492/article/details/103883964?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-15&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-15 
+	
+		
 		
