@@ -1,0 +1,41 @@
+1. Java高效的bytesToHexString
+	1.1 Java高效的bytesToHexString 
+		https://blog.csdn.net/win_cy/article/details/85244380?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1
+		
+		普通的bytesToHexString：
+		利用Integer.toHexString()来实现
+		public static String bytesToHexString(byte... src) {
+			StringBuilder stringBuilder = new StringBuilder();
+			if (src == null || src.length <= 0) {
+				return null;
+			}
+			for (int i = 0; i < src.length; i++) {
+				int v = src[i] & 0xFF;
+				String hv = Integer.toHexString(v);
+				if (hv.length() < 2) {
+					stringBuilder.append(0);
+				}
+				stringBuilder.append(hv);
+			}
+			return stringBuilder.toString();
+		}
+		
+		高效的bytesToHexString：
+		通过对一个只读数组hexArray进行读取来实现
+		
+		    private final static char[] hexArray = "0123456789ABCDEF".toCharArray();
+ 
+			public static String byteArrToHex(byte... bytes) {
+				char[] hexChars = new char[bytes.length * 2];
+				for (int j = 0; j < bytes.length; j++) {
+					int v = bytes[j] & 0xFF;
+					hexChars[j * 2] = hexArray[v >>> 4];
+					hexChars[j * 2 + 1] = hexArray[v & 0x0F];
+				}
+				return new String(hexChars);
+			}
+2. 关于Java中Byte类型的取值范围是-128～127的理解 
+	2.1 关于Java中Byte类型的取值范围是-128～127的理解 
+		https://blog.csdn.net/u011601165/article/details/51658910?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4
+	2.2 【二进制基础-java中byte的取值范围-推导过程】 
+		https://www.cnblogs.com/aibeibei-beauty/p/8075112.html

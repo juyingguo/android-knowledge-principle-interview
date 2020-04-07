@@ -1,4 +1,12 @@
-1. ipconfig /all  查看ip，mac地址
+1. ipconfig
+	1.1 ipconfig /all  查看ip，mac地址 
+
+	1.2 ipconfig命令详细图解
+		https://blog.csdn.net/bcbobo21cn/article/details/51759140
+		
+	1.3 ipconfig查看帮助的命令语句为ipconfig/?
+	
+	
 2. chkdsk H:/F。 点电脑上的“开始菜单”－－“运行”－　chkdsk H:/F 　 (H:就是你的SD卡盘符，/F是修复参数。)
 3.解决cmd命令行显示中文乱码
 	cmd命令行窗口显示中文乱码，多是因为cmd命令行窗口字符编码不匹配导致。
