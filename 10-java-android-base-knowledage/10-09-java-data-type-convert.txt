@@ -34,8 +34,20 @@
 				}
 				return new String(hexChars);
 			}
-2. 关于Java中Byte类型的取值范围是-128～127的理解 
+2. 关于Java中Byte类型
 	2.1 关于Java中Byte类型的取值范围是-128～127的理解 
 		https://blog.csdn.net/u011601165/article/details/51658910?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4
 	2.2 【二进制基础-java中byte的取值范围-推导过程】 
 		https://www.cnblogs.com/aibeibei-beauty/p/8075112.html
+		
+	2.3 java 无符号byte转换 
+		https://www.cnblogs.com/king1302217/p/6134370.html
+		
+		java中的byte类型是有符号的，值得范围是-128-127 
+		做网络通讯时，接收过来的数据往往都是无符号的byte，值得范围是0-255
+		
+		计算方法就是与0xFF做一个&运算，也就是与11111111做一个&计算即可.
+3. Widening Primitive Conversion & Narrowing Primitive Conversion 
+	3.1 Widening Primitive Conversion & Narrowing Primitive Conversion 
+		https://blog.csdn.net/devilmaycc/article/details/21860363
+	

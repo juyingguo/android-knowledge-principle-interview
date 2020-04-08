@@ -1,4 +1,4 @@
-一、专业书籍，《java 并发编程的艺术》，《Effective Java》，《Java并发编程实践》
+一、java专业书籍，《java 并发编程的艺术》，《Effective Java》，《Java并发编程实践》,《Java Puzzlers》
 二、设计模式书籍：原来秦小波的《设计模式之禅》貌似挺火的，还有chjavach的《研磨设计模式》
 三、深入理解Android系列书籍资源分享更新
 	https://blog.csdn.net/Innost/article/details/43342087
