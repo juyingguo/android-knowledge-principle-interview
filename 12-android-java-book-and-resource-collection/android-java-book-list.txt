@@ -4,9 +4,15 @@
 	https://blog.csdn.net/Innost/article/details/43342087
 	
 四、android系列书籍。
-	《第一行代码 Android》、《疯狂Android》
-	《Android开发艺术探索》、《Android群英传》
-	《Android开发艺术探索》、《Android 源码设计模式解析与实战》、《Android内核剖析》 
+	4.1 《第一行代码 Android》、
+	4.2 《疯狂Android》
+	4.3《Android开发艺术探索》、
+	4.4《Android群英传》
+	4.5 《Android 源码设计模式解析与实战》、
+	4.6 《Android内核剖析》 
+	4.7 《Android内核开发：开发板选购》
+		1. https://blog.51cto.com/ticktick/category11.html
+	
 五、《Android开发艺术探索》对应的网站
 	5.1、csdn博客 
 		https://blog.csdn.net/singwhatiwanna
