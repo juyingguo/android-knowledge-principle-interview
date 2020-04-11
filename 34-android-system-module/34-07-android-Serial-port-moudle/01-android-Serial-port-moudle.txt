@@ -114,5 +114,8 @@
 9. TTL转485电路设计 
 	9.1 TTL转485电路设计 
 		https://blog.csdn.net/JAZZSOLDIER/article/details/70274506?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2
+10. RS485
+	10.1 RS485收发的3种典型电路-重点-自动收发电路
+		https://blog.csdn.net/u012351051/article/details/69223326 
 		
 		
