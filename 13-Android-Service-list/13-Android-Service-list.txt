@@ -34,4 +34,7 @@
 3. Android 绑定服务 bindService 
 	3.1 
 		https://blog.csdn.net/yp_nothing/article/details/80572589
+4. Service 生命周期 
+	4.1 Service 生命周期 
+		https://www.cnblogs.com/huihuizhang/p/7623760.html
 

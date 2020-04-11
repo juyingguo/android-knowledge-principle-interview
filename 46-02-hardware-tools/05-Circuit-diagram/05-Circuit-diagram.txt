@@ -1,0 +1,8 @@
+1. 电路图符号大全 
+	1.1 电路图符号大全 
+		https://wenku.baidu.com/view/0fca2126a5e9856a561260f3.html?sxts=1586597829528
+		
+2. VCC、VDD、VEE、VSS最详细的解释 
+	2.1  VCC、VDD、VEE、VSS最详细的解释  
+		https://wenku.baidu.com/view/6475c441a8956bec0975e395.html 
+	

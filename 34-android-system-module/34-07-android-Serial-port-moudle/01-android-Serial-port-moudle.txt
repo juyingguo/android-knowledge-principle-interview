@@ -100,3 +100,19 @@
 		https://www.cnblogs.com/downey-blog/p/10483504.html
 7. Android 开发板有哪些？如何选择？
 	https://www.zhihu.com/question/19970070
+	
+8.串口接线规则？
+	8.1 rx接rx，tx接tx?
+	8.2 rs485转TTL,tx接tx,rx接rx
+	
+	8.3 哪位老哥用过rs232转ttl RX和TX可以直接连单片机吗？
+		http://www.51hei.com/bbs/dpj-112584-1.html
+		
+		1. 单片机的TX，RX接232转TTL端的RX，TX交叉接.
+		2. 
+		
+9. TTL转485电路设计 
+	9.1 TTL转485电路设计 
+		https://blog.csdn.net/JAZZSOLDIER/article/details/70274506?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2
+		
+		
