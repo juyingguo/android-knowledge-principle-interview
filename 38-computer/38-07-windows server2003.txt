@@ -1,0 +1,10 @@
+1. Windows Server 2003是微软于2003年3月28日发布的基于Windows XP/NT5.1开发的服务器操作系统，并在同年4月底上市。相对于Windows 2000 Server做了很多改进。
+	Windows Server 2003的官方支持即已在2015年7月14日结束，Windows Server 2003的安全性不再获得保障。这意味着在 2015 年 7 月 14 日之后，运行此操作系统的所有数据中心将无法获得更新和修补程序，同时将无法满足合规性要求。 [1]  2017年5月，针对“永恒之蓝”病毒，微软向该系统推送了补丁。 [2]
+2. 服务控制管理器。在系统启动时至少有一个服务或驱动程序产生错误。详细信息，请使用事件查看器查看。
+	2.1 在系统启动时至少有一个服务或驱动程序产生错误，详细信息，请使用事件查看器查看事件日志... 
+		https://blog.csdn.net/weixin_33768481/article/details/92776211
+		
+	2.2 “在系统启动时至少有一个服务或驱动程序产生错误”，终于解决这个其实很简单又很烦人的问题 
+		https://blog.csdn.net/james05y/article/details/2357192?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5
+3. https://192.168.1.30:8443/svn/iBotn
+	https://ibotn-sz.6655.la:8443/svn/iBotn

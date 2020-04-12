@@ -12,6 +12,8 @@
 	
 	1.5 Fork自Google开源的Android串口通信Demo，修改成Android Studio项目 https://code.google.com/archive/p/and… 
 		https://github.com/licheedev/Android-SerialPort-API
+		
+		https://github.com/jzt-Tesla/GoogleSerialPort
 	
 	1.6 Android移植谷歌官方串口库支持校验位、数据位、停止位、流控配置 
 		https://juejin.im/post/5c010a19e51d456ac27b40fc
@@ -20,6 +22,22 @@
 	1.7 Android串口调试助手 
 		根据Android官方提供的串口API写的一个小工具， 没啥功能，基本也就用来调调控制板哪串口能用,发送一下简单的命令， 		如果没懒癌发作的话，以后可能会加点最近命令保存啥的功能。
 		https://github.com/licheedev/Android-SerialPort-Tool
+		
+		
+	1.8 Android串口通信：抱歉，学会它真的可以为所欲为 
+		https://blog.csdn.net/u010312949/article/details/80199018?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3
+	1.9 Android串口通信 
+		https://blog.csdn.net/q4878802/article/details/52996548
+		
+		github project ::
+		https://github.com/kongqw/AndroidSerialPort
+		
+		手机上没有这个串口， 手机的USB串口通信参考这个
+		https://github.com/kongqw/AndroidSerialPort
+		
+	1.10 Android之串口232从不会到开发功能详解
+		https://blog.csdn.net/insist_hui/article/details/76572226?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-33&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-33
+		
 2. 什么叫波特率 
 	https://zhidao.baidu.com/question/2141350358189109228.html
 	
@@ -73,3 +91,31 @@
 6. 串口、COM口、UART口, TTL、RS-232、RS-485区别详解  
 	6.1 串口、COM口、UART口, TTL、RS-232、RS-485区别详解
 		https://blog.csdn.net/wb790238030/article/details/83502823?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+	6.2 串口、COM口、TTL、RS232、RS485区别详解 
+		https://blog.csdn.net/hb69222/article/details/78800061?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-8&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-8
+		
+	6.3  什么是TTL、RS232、RS485？ 
+		https://blog.csdn.net/yanhuan136675/article/details/78268715
+	6.4  RS232、RS485和TTL电平与串行通信 
+		https://www.cnblogs.com/downey-blog/p/10483504.html
+7. Android 开发板有哪些？如何选择？
+	https://www.zhihu.com/question/19970070
+	
+8.串口接线规则？
+	8.1 rx接rx，tx接tx?
+	8.2 rs485转TTL,tx接tx,rx接rx
+	
+	8.3 哪位老哥用过rs232转ttl RX和TX可以直接连单片机吗？
+		http://www.51hei.com/bbs/dpj-112584-1.html
+		
+		1. 单片机的TX，RX接232转TTL端的RX，TX交叉接.
+		2. 
+		
+9. TTL转485电路设计 
+	9.1 TTL转485电路设计 
+		https://blog.csdn.net/JAZZSOLDIER/article/details/70274506?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2
+10. RS485
+	10.1 RS485收发的3种典型电路-重点-自动收发电路
+		https://blog.csdn.net/u012351051/article/details/69223326 
+		
+		

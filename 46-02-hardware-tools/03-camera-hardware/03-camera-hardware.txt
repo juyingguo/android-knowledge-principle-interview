@@ -1,0 +1,3 @@
+1. 摄像头成像范围，是否与焦距有关，如果有关系如何？
+	1.1 2.8 / 4 / 6 / 8 mm 焦距的镜头分别能监控多大范围？ 
+		https://blog.csdn.net/chengyq116/article/details/81557136?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4
