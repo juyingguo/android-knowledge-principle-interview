@@ -12,11 +12,14 @@ int main(int argc, char *argv[])
     int listener = socket(PF_INET, SOCK_STREAM, 0);
     if(listener < 0) { perror("listener"); exit(-1);}
     printf("listen socket created \n");
+    printf("listener = %d\n",listener);
     //绑定地址
     if( bind(listener, (struct sockaddr *)&serverAddr, sizeof(serverAddr)) < 0) {
+        printf("bind error [bind socket listener to socket address error.] \n");
         perror("bind error");
         exit(-1);
     }
+    printf("bind success \n");
     //监听
     int ret = listen(listener, 5);
     if(ret < 0) { perror("listen error"); exit(-1);}
@@ -29,7 +32,7 @@ int main(int argc, char *argv[])
     //往内核事件表里添加事件
     addfd(epfd, listener, true);
     //主循环
-    while(1)
+    while(true)
     {
         //epoll_events_count表示就绪事件的数目
         int epoll_events_count = epoll_wait(epfd, events, EPOLL_SIZE, -1);
@@ -43,12 +46,13 @@ int main(int argc, char *argv[])
         for(int i = 0; i < epoll_events_count; ++i)
         {
             int sockfd = events[i].data.fd;
+            printf("current i = %d,sockfd = %d \n",i, sockfd);
             //新用户连接
             if(sockfd == listener)
             {
                 struct sockaddr_in client_address;
-                socklen_t client_addrLength = sizeof(struct sockaddr_in);
-                int clientfd = accept( listener, ( struct sockaddr* )&client_address, &client_addrLength );
+                socklen_t client_addrLength = sizeof(struct sockaddr_in
+                int clientfd = accept( listener, ( struct sockaddr* )&client_address, &client_addrLength
 
                 printf("client connection from: %s : % d(IP : port), clientfd = %d \n",
                 inet_ntoa(client_address.sin_addr),
