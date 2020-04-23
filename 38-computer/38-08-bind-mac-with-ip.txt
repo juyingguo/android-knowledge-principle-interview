@@ -1,0 +1,2 @@
+1. 如何将电脑MAC地址与静态IP地址进行绑定
+	https://jingyan.baidu.com/article/b24f6c821ceb8d86bee5da55.html
