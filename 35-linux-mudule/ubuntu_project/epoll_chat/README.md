@@ -1,4 +1,5 @@
 # epoll
+# github source project :: https://github.com/jwzh222/epoll 
 
 相比非阻塞忙轮询这类无差别轮训，linux内核提供了epoll这样更高级的形式
 把需要处理的IO事件添加到epoll内核列表，epoll_wait来监控并提醒用户程序当IO事件发生时

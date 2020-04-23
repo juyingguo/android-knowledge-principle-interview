@@ -33,3 +33,27 @@
 	1.2 ubuntu 下 codeblocks 的使用 各种技巧 	
 	
 		https://blog.csdn.net/lien0906/article/details/45057043
+		
+	1.3 Ubuntu下安装CodeBlocks的正确姿势 
+		https://blog.csdn.net/xinyunyishui/article/details/50967395?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1
+		
+		请访问https://launchpad.net/~damien-moore/+archive/ubuntu/codeblocks-stable，找到页面上加粗的那一段英文，对了，是以“ppa:”开头，比如这次就是“ppa:damien-moore/codeblocks-stable”。一定要去页面上查一下，不同的CodeBlocks版本，不一样的。
+
+		接下来，打开终端，开始敲： 
+
+		sudo add-apt-repository ppa:damien-moore/codeblocks-stable
+
+		输入密码后，会提示你敲【Enter】继续，然后如果一切OK的话，就会安装好这个ppa源。
+
+		继续敲：
+
+		sudo apt-get update
+
+		对源进行更新，这个过程会下载一些东西，请保持网络畅通。最后，开始安装：
+
+		sudo apt-get install codeblocks
+
+		OK了，只要网络不出问题，就大功告成，CodeBlocks就会顺利安装完成！
+		————————————————
+		版权声明：本文为CSDN博主「心云意水」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/xinyunyishui/article/details/50967395
