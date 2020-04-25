@@ -115,8 +115,14 @@
 		2. Qt creator也是一款十分受欢迎的IDE，也强烈推荐你使用这款软件。
 
 			另外，如果你是C/C++初学者的话，建议你安装codeblocks或者Dev-C++。这两款软件不仅有windows版本的，也有linux版本的。
-		3. Code::Blocks 
-		
+		3. Code::Blocks ，linux ，windows版本都有的。
+			https://blog.csdn.net/whalefall/article/details/90030845
+			
+			下载地址http://www.codeblocks.org/downloads 
+			
+			linux用命令安装即可
+	1.8 MinGW-w64 - for 32 and 64 bit Windows 
+		https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/seh/
 二、vs tools use  record .
 	2.1、VS如何在一个项目中分别运行单个cpp文件 
 		https://blog.csdn.net/IT_flying625/article/details/101125588
