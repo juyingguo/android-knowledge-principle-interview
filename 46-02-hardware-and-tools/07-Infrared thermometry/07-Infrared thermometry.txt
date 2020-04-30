@@ -1,0 +1,19 @@
+1. 红外测温原理简介 
+	1.1 红外测温原理简介 
+		https://wenku.baidu.com/view/457477446d175f0e7cd184254b35eefdc9d3151e.html
+		
+	1.2 红外测温工作原理 
+		https://wenku.baidu.com/view/828d9aae767f5acfa0c7cd79.html?rec_flag=default&sxts=1587975382790
+	1.3 红外测温黑体是啥 
+		https://zhidao.baidu.com/question/398761029.html
+		
+	1.4 影响红外测温的主要因素及对策
+		https://wenku.baidu.com/view/b51bc0de5022aaea998f0fa8.html 
+2. 波长单位A 
+	
+3. 温度测量系统
+	3.1 【2019年整理】多点温度测量系统设计
+		https://wenku.baidu.com/view/95e76c7ba48da0116c175f0e7cd184254a351b3b.html
+		
+	3.2 温度测量方案对比分析
+		https://wenku.baidu.com/view/9f56b304b8d528ea81c758f5f61fb7360b4c2bcc.html?fr=search 

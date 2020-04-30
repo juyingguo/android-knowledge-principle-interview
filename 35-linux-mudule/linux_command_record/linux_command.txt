@@ -26,6 +26,7 @@
 		-i 或 --ignore-case : 忽略字符大小写的差别。
 		-r 或 --recursive : 此参数的效果和指定"-d recurse"参数相同。
 		-n 或 --line-number : 在显示符合样式的那一行之前，标示出该行的列数编号。
+		-w 或 --word-regexp : 只显示全字符合的列。
 		
 			
 (3) 文件管理

@@ -61,5 +61,11 @@
 13. 一个串口和485与232选择通信方法 
 	13.1 一个串口和485与232选择通信方法
 		https://blog.csdn.net/qq_35570735/article/details/81352011
+		
+14. linux信号量睡眠锁，与普通的Thread.sleep()区别;
+
+15. Linux-DTS基础 
+	15.1 Linux-DTS基础 
+		https://blog.csdn.net/qq_33003441/article/details/84257342
 	
 		

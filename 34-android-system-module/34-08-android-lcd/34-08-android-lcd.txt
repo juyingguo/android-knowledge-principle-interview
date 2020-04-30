@@ -1,0 +1,66 @@
+1. 
+	1.1 	LCD
+		液晶显示屏，英文简称为LCD全称是Liquid Crystal Display，是属于平面显示器的一种。用于电视机及计算机的屏幕显示。该显示屏的优点是耗电量低、体积小、辐射低。 
+		liquid
+		英 [ˈlɪkwɪd]   美 [ˈlɪkwɪd]  
+		n.
+		液体
+		adj.
+		液体的;液态的;易变为现金的;清澈的;明亮的;晶莹的
+		
+		crystal
+		英 [ˈkrɪstl]   美 [ˈkrɪstl]  
+		n.
+		结晶;晶体;水晶(如石英，用于制作珠宝饰物);水晶玻璃
+	1.2 lcd和led有什么区别
+		http://www.elecfans.com/d/1176917.html
+		
+		1、首先两者在发光原理上就是不一样的，LED采用的是发光二极管LightEmittingDiode的英文缩写，无需背景光源，每一个像素点都是发光点；相比之下LCD的屏幕需要另外的背光源，这是由于液晶本身并不发光；
+		
+		
+2. 什么是mipi接口 rgb接口 
+	1.1 什么是mipi接口 rgb接口
+		https://zhidao.baidu.com/question/648359036383176565.html
+		
+		mipi接口
+		MIPI(Mobile Industry Processor Interface)是2003年由ARM, Nokia, ST ,TI等公司成立的一个联盟，目的是把手机内部的接口如摄像头、显示屏接口、射频/基带接口等标准化，从而减少手机设计的复杂程度和增加设计灵活性。MIPI联盟下面有不同的WorkGroup，分别定义了一系列的手机内部接口标准，比如摄像头接口CSI、显示接口DSI、射频接口DigRF、麦克风/喇叭接口SLIMbus等。统一接口标准的好处是手机厂商根据需要可以从市面上灵活选择不同的芯片和模组，更改设计和功能时更加快捷方便。
+		　　其优点是；更低功耗、更高数据传输率和更小的PCB占位空间，并且专门为移动设备进行的优化，因而更适合手机和智能平板的连接。
+		rgb接口
+		rgb接口即RGB色彩模式（也翻译为“红绿蓝”，比较少用）是工业界的一种颜色标准，是通过对红(R)、绿(G)、蓝(B)三个颜色通道的变化以及它们相互之间的叠加来得到各式各样的颜色的，RGB即是代表红、绿、蓝三个通道的颜色，这个标准几乎包括了人类视力所能感知的所有颜色，是目前运用最广的颜色系统之一。所以RGB接口就是分三原色输入的视频接口 。 RGB是色差输入，专业绘图用的，不是专业显卡看不出区别来 . 
+		
+		
+	1.2 RGB_TTL、LVDS、MIPI接口液晶屏学习笔记 
+		https://blog.csdn.net/qq_24546137/article/details/81116452
+		
+	1.3 MIPI_DSI协议简要介绍 
+		https://blog.csdn.net/caihaitao2000/article/details/80224976
+		
+3. lcd rgb,mipi在android中的配置。
+	3.1 s500 ,版型，bubble_gum 。lcd 配置。
+		kernel/arch/arm/boot/dts/atm7059c_demo_86v_costdown.dts:1042:           port_type = "rgb";
+		kernel/arch/arm/boot/dts/actduino_s500_lcd_1280x800_sdboot.dts:1055:            port_type = "dsi";       
+		kernel/arch/arm/boot/dts/actduino_s500_lcd_768x1024_linux.dts:1056:             port_type = "dsi";       
+		kernel/arch/arm/boot/dts/actduino_s500_lcd_1280x800_linux.dts:1055:             port_type = "dsi";       
+		kernel/arch/arm/boot/dts/actduino_s500_lcd_768x1024.dts:1056:           port_type = "dsi";       
+		kernel/arch/arm/boot/dts/atm7059a_demo_86v.dts:1049:            port_type = "rgb";
+		kernel/arch/arm/boot/dts/actduino_lemaker_guitar_linux.dts:1073:                port_type = "lvds";
+		kernel/arch/arm/boot/dts/atm7059a_hr820ac_ap6210.dts:1049:              port_type = "lvds";
+		kernel/arch/arm/boot/dts/atm7059a_demo_86v_test.dts:1049:               port_type = "rgb";
+		kernel/arch/arm/boot/dts/atm7059a_demo_86v_costdown.dts:1051:           port_type = "rgb";
+		kernel/arch/arm/boot/dts/atm7059a_hr820ac_8723bs.dts:1041:              port_type = "lvds";
+		kernel/arch/arm/boot/dts/atm7059a_evb.dts:1041:         port_type = "lvds";
+		kernel/arch/arm/boot/dts/actduino_s500_lcd_768x1024_uvc.dts:1057:               port_type = "dsi";       
+		kernel/arch/arm/boot/dts/atm7059a_demo_86v_costdown_wvga_dpi160.dts:1051:               port_type = "rgb";
+		kernel/arch/arm/boot/dts/actduino_bubble_gum.dts:1132:          port_type = "rgb";//actduino_bubble_gum
+		kernel/arch/arm/boot/dts/atm7059a_demo_86v_costdown_wvga_dpi120.dts:1051:               port_type = "rgb";
+		kernel/arch/arm/boot/dts/actduino_bubble_gum_sdboot.dts:1149:           port_type = "dsi";       
+		kernel/arch/arm/boot/dts/actduino_lemaker_guitar.dts:1076:              port_type = "lvds";
+		kernel/arch/arm/boot/dts/actduino_s500_lcd_1280x800_uvc.dts:1056:               port_type = "dsi";       
+		kernel/arch/arm/boot/dts/actduino_s500_lcd_1280x800.dts:1054:           port_type = "dsi";       
+		kernel/arch/arm/boot/dts/actduino_s500_lcd_1280x800_sdboot_linux.dts:1055:              port_type = "dsi";       
+		kernel/arch/mips/include/asm/octeon/cvmx-mdio.h:184:            uint16_t port_type:1;
+		kernel/arch/powerpc/platforms/powermac/feature.c:2744:  int port_type = PMAC_SCC_ASYNC;
+		kernel/arch/powerpc/platforms/powermac/feature.c:2750:          port_type = PMAC_SCC_IRDA;
+		kernel/arch/powerpc/platforms/powermac/feature.c:2755:                  port_type = PMAC_SCC_IRDA;
+		
+		

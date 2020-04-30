@@ -1,0 +1,18 @@
+1. SPI、I2C、UART、I2S、GPIO、SDIO、CAN简述 
+	1.1 SPI、I2C、UART、I2S、GPIO、SDIO、CAN简述 
+		https://blog.csdn.net/u011559046/article/details/74089638?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1
+		
+2. PCB （印制电路板） 
+	2.1 PCB （印制电路板）
+		https://baike.baidu.com/item/PCB/146397?fr=aladdin
+		
+		PCB（ Printed Circuit Board），中文名称为印制电路板，又称印刷线路板，是重要的电子部件，是电子元器件的支撑体，是电子元器件电气连接的载体。由于它是采用电子印刷术制作的，故被称为“印刷”电路板。 [1]	
+		
+3.ADC
+	3.1 Analog-to-Digital Converter的缩写，指模/数转换器或者模数转换器［1］ 		。是指将连续变化的模拟信号转换为离散的数字信号的器件。真实世界的模拟信号，例如温度、压力、声音或者图像等，需要转换成更容易储存、处理和发射的数字形式。模/数转换器可以实现这个功能，在各种不同的产品中都可以找到它的身影。
+
+	　　与之相对应的DAC，Digital-to-Analog Converter，它是ADC模数转换的逆向过程。
+
+	　　ADC最早用于对无线信号向数字信号转换。如电视信号，长短播电台发接收等。 
+	
+	
