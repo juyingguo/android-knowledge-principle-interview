@@ -17,3 +17,13 @@
 		
 	3.2 温度测量方案对比分析
 		https://wenku.baidu.com/view/9f56b304b8d528ea81c758f5f61fb7360b4c2bcc.html?fr=search 
+		
+	3.3 室外人体红外测温可行性分析
+		1. 室外人体红外测温可行性分析
+		
+		2. 夏天，室外人体红外测温可行性分析
+		
+		3. 强光，大风，室外人体红外测温可行性分析
+		
+	3.4 什么是黑体 
+		https://zhidao.baidu.com/question/91356025.html
