@@ -18,7 +18,7 @@
 		1、首先两者在发光原理上就是不一样的，LED采用的是发光二极管LightEmittingDiode的英文缩写，无需背景光源，每一个像素点都是发光点；相比之下LCD的屏幕需要另外的背光源，这是由于液晶本身并不发光；
 		
 		
-2. 什么是mipi接口 rgb接口 
+2. 什么是mipi接口 rgb接口,lvds接口
 	1.1 什么是mipi接口 rgb接口
 		https://zhidao.baidu.com/question/648359036383176565.html
 		
@@ -31,9 +31,26 @@
 		
 	1.2 RGB_TTL、LVDS、MIPI接口液晶屏学习笔记 
 		https://blog.csdn.net/qq_24546137/article/details/81116452
+		1.2.1 
+			LVDS（Low Voltage Differential Signaling）即低压差分信号传输，是一种满足当今高性能数据传输应用的新型技术。由于其可使系统供电电压低至 2V，因此它还能满足未来应用的需要。
+
+			LVDS输出接口利用即低压差分信号传输。采用其输出接口，可以使得信号在差分PCB线或平衡电缆上传输，由于采用低压和低电流驱动方式，因此，实现了低噪声和低功耗。LVDS 输出接口液晶显示器。
+
+			此类LCD目前在中高端平板
+		1.2.2 
+			LVDS和MIPI主要区别：
+		　　1. LVDS接口只用于传输视频数据，MIPI DSI不仅能够传输视频数据，还能传输控制指令；
+
+		　　2. LVDS接口主要是将RGB TTL信号按照SPWG/JEIDA格式转换成LVDS信号进行传输，MIPI DSI接口则按照特定的握手顺序和指令规则传输屏幕控制所需的视频数据和控制数据。
+
+			补充说明：LCD接口类型说明：DSI，DPI（RGB接口），DBI（MCU接口，俗称80 system 接口）
 		
 	1.3 MIPI_DSI协议简要介绍 
 		https://blog.csdn.net/caihaitao2000/article/details/80224976
+		
+	1.4 MIPI屏是几Lane的，就是几组差分信号线
+	
+		
 		
 3. lcd rgb,mipi在android中的配置。
 	3.1 s500 ,版型，bubble_gum 。lcd 配置。

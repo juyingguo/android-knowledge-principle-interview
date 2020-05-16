@@ -98,13 +98,19 @@
 	yum repolist all //查看拥有的仓库
 	您可以使用 yum-config-manager --enable &lt; 仓库名&gt；来启用仓库
 	原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
-(9) 备份压缩
+(9) 备份压缩,解压文件
 
 	9.1 Linux tar命令
-		https://www.runoob.com/linux/linux-comm-tar.html
-		
-		tar -xzvf test.tar.gz //解压文件
-		tar -czvf test.tar.gz a.c   //压缩 a.c文件为test.tar.gz
+			https://www.runoob.com/linux/linux-comm-tar.html
+		9.1.1 
+			tar -xzvf test.tar.gz //解压文件
+			tar -czvf test.tar.gz a.c   //压缩 a.c文件为test.tar.gz
+		9.1.2 将当前目录压缩成backup.tar.gz  其中当前目录下的img文件夹(后面不要带有路径符号/)和upload.txt文件不压缩 
+			tar -zcvf backup.tar.gz --exclude=img  --exclude=upload.txt  ./
+		9.1.3 linux下tar命令解压到指定的目录  
+			#tar zxvf xx.tar.gz -C /xx
+			//把根目录下的xx.tar.gz解压到/xx/下，前提要保证存在/xx这个目录
+			这个和cp命令有点不同，cp命令如果不存在这个目录就会自动创建这个目录！
 (10) 账户相关。
 		https://jingyan.baidu.com/article/a17d5285eb93ea8099c8f24d.html
 	10.1  ubuntun 16 添加root用户 

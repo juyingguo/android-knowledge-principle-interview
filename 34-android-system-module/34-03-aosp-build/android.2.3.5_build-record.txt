@@ -1,3 +1,15 @@
+0、 编译相关书籍、手册、标准资料
+	1 Android编译服务器系统安装标准手册
+		https://wenku.baidu.com/view/e2a73e294a73f242336c1eb91a37f111f1850d8a.html
+	2 android编译大全 完全指南 
+		https://wenku.baidu.com/view/a64c2ceab8f67c1cfad6b8ac.html?sxts=1589589794600
+	3 Android makefile编译系统 Android.mk 文件语法规范 
+		https://wenku.baidu.com/view/e97d8cdc5022aaea998f0fc8.html?sxts=1589589869443
+	4 android 内核代码的获取,编译和使用
+		https://wenku.baidu.com/view/a007fd2f0066f5335a8121da.html?rec_flag=default&sxts=1589589916235
+	
+		
+		
 一；ubuntu16.04编译android2.3源码
 	
 	ubuntu16.04 ,jdk1.6 ,android_2.3.3
@@ -432,17 +444,17 @@
 
 			  Ramdisk镜像是采用cpio打包，gzip压缩的。用file验证：
 
-		[plain] view plain copy
+		
 		 
 		# file ramdisk.img 　　　  
 		输出：
 
-		[plain] view plain copy
+		
 		 
 		# ramdisk.img: gzip compressed data, from Unix   
 		为了便于说明问题，我们将ramdisk.img拷贝到其它一个目录，然后按以下步骤将ramdisk.img还原为目录树：
 
-		[plain] view plain copy
+		
 		 
 		  # mv ramdisk.img ramdisk.img.gz   
 		# gunzip ramdisk.img.gz   
@@ -450,9 +462,10 @@
 		#cd ramdisk   
 		# cpio i F ../ramdisk.img   
 		这样，就得到一个完整的ramdisk目录，与out/target/product/generic/root对比后，我们发现它们是一样的内容。 通过执行以下的操作，我们可由目录树再生成ramdisk镜像 
-		[plain] view plain copy
+		
 		 
 		# cd ramdisk 　　# find . | cpio -o -H newc | gzip > ../ramdisk-new.img  
+			find . | cpio -o -H newc | gzip > ../ramdisk-new.img	//重新打包生成的文件小一倍多。
 				ramdisk.img其实是对root目录的打包和压缩，ramdisk根文件系统中包含一些对于启动android的很重要的文件，比如内核启动完后加载的第一个进程init、一些重要的配置文件等，总之它控制着整个android的启动。根据 init.rc,init.goldfish.rc来初始化并装载系统库、程序等直到开机完成。init.rc脚本包括了文件系统初始化、装载的许多过程。init.rc的工作主要是：
 
 				 1）设置一些环境变量
@@ -471,14 +484,14 @@
 
 		System.img 生成 system目录树 所需工具unyaffs
 
-		[plain] view plain copy
+		
 		 
 		# mkdir system   
 		# cd system   
 		# unyaffs ../system.img   
 		system目录树生成system.img 所需工具 mkyaffs2image，Android源码编译后会生成该工具，在 out/host/Linux-x86/bin 目录下。 命令格式：
 
-		[plain] view plain copy
+		
 		 
 		# mkyaffs2image system/ system_new.img  
 		system.img文件是system目录的一个映像，类似于linux的根文件系统的映像，放着android的应用程序，配置文件，字体等
