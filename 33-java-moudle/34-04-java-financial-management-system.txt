@@ -1,0 +1,32 @@
+1. java财务管理系统(awt,java,mysql,)
+	1.1 java财务管理系统(awt,java,mysql,) 
+		https://max.book118.com/html/2016/1109/62033880.shtm
+		
+	1.2 financial management system, Java GUI
+		https://github.com/herbertgaoo/Fms 
+		
+		
+2.java财务管理系统(java,web,) 
+	石大在线—财务管理系统jsp版(带源码) web版 
+		 https://download.csdn.net/download/xiaonei123456789/1959061
+		 
+		 石大在线财务管理系统(含源码)（java,j2ee实现）
+		 https://download.csdn.net/download/wangzhi44444/1867607 
+		 
+		 石大在线—财务管理系统Version 1.0 版功能介绍：
+		 该系统由 trowa 开发给本单位财务处使用，财务管理系统Version1.0 mysql数据库。
+		主要功能有： 
+		费用管理  
+		 所有费用
+		 增加收入  
+		 增加支出 
+		 费用类型 
+		 报销人   
+		 费用统计  
+		 用户管理 
+		 增加用户 
+		 登陆信息
+		 
+	2.2 Financial-Management-and-approval-tracking-system 
+		https://github.com/NavyaManda/Financial-Management-and-approval-tracking-system 	 
+		
