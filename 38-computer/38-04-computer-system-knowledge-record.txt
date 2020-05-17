@@ -4,3 +4,5 @@
 		
 	1.2、实时操作系统与分时操作系统的区别 
 		https://blog.csdn.net/m0_37765662/article/details/83018523?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+2. LBA逻辑区块地址 
+	https://baike.baidu.com/item/%E9%80%BB%E8%BE%91%E5%8C%BA%E5%9D%97%E5%9C%B0%E5%9D%80/22660818?fromtitle=LBA&fromid=2025827&fr=aladdin

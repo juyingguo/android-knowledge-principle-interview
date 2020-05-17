@@ -1,5 +1,6 @@
 一、ContentResolver 
-
+	registerContentObserver
+	1.1 对Uri单个字段注册内容观察者。
 二、UriMatcher 
 	2.1、UriMatcher匹配带有id的Uri，#，*
 		https://bbs.csdn.net/topics/340080402

@@ -1,0 +1,8 @@
+hello.c  ----- hello.exe/helle/a.out
+
+gcc -E hello.c -o hello.i   预处理
+gcc -S hello.i -o hello.s   汇编
+gcc -c hello.s -o hello.o   编译
+gcc    hello.o -o hello     链接
+
+whereis stdio.h //搜索文件位置。linux命令。

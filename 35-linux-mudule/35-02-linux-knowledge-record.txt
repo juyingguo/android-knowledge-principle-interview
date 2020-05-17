@@ -61,5 +61,27 @@
 13. 一个串口和485与232选择通信方法 
 	13.1 一个串口和485与232选择通信方法
 		https://blog.csdn.net/qq_35570735/article/details/81352011
-	
 		
+14. linux信号量睡眠锁，与普通的Thread.sleep()区别;
+
+15. Linux-DTS基础 
+	15.1 Linux-DTS基础 
+		https://blog.csdn.net/qq_33003441/article/details/84257342
+16. linux系统中misc子系统 
+	16.1 linux系统中misc子系统 
+		https://blog.csdn.net/wang_zheng_kai/article/details/42716403
+		在linux系统中什么是misc？
+
+		在研究摄像头驱动的时候，发现摄像头驱动的路径为：/driver/misc/jz_cim/文件目录下，经过查找结果如下：
+
+		杂项设备（misc device）
+
+		杂项设备也是嵌入式系统中用得比较多的一种设备驱动。在 Linux 内核的include/linux目录下有miscdevice.h文件，要把自己定义的misc device从设备定义在这里。其实是因为这些字符设备不符合预先确定的字符设备范畴，所有这些设备采用主编号10 ，一起归于misc 		device，其实misc_register就是用主标号10调用register_chrdev()的，只不过misc是将一些字符设备存放在misc类中。换句话说，misc设备其实也就是特殊的字符设备。
+			
+17. Linux中Uboot详解 
+	17.1 Linux中Uboot详解 
+		[yyfwd]
+		https://blog.csdn.net/yyfwd/article/details/51015467
+		
+	17.2 Uboot1之什么是uboot？ 
+		https://blog.csdn.net/wangdapao12138/article/details/79561626?utm_medium=distribute.pc_relevant_right.none-task-blog-BlogCommendFromBaidu-20.nonecase&depth_1-utm_source=distribute.pc_relevant_right.none-task-blog-BlogCommendFromBaidu-20.nonecase
