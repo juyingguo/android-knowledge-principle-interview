@@ -163,3 +163,6 @@
 9. vim 编辑时。linux下Found a swap file by the name解决
 	9.1 linux下Found a swap file by the name解决 
 		https://blog.csdn.net/kenhins/article/details/50781071
+10. ctrl + alt + f1到f6字符终端。
+
+11. . 和 source 修改的环境变量会传递给父进程。 
