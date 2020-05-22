@@ -25,3 +25,7 @@
 		
 	4.2、 深入理解C++的动态绑定和静态绑定 
 		https://blog.csdn.net/chgaowei/article/details/6427731
+5. cpp泛型
+	5.1 cpp泛型中的类型后跟*
+	
+	

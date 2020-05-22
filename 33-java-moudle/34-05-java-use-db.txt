@@ -1,0 +1,11 @@
+1. JDBC连接Access数据库的几种方式 
+	1.1  JDBC连接Access数据库的几种方式 
+		https://blog.csdn.net/longyuhome/article/details/8146320?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+	
+2. JDK1.8 连接Access数据库 
+	2.1 JDK1.8 连接Access数据库 
+		https://blog.csdn.net/ljheee/article/details/51290702?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase 
+	2.2 jdk1.8版本连接Access数据库驱动包 
+		https://blog.csdn.net/qq_38486630/article/details/80777818
+		
+		使用Access 数据库的，推荐使用更好用的驱动UCanAccess-A Pure Java JDBC Driver for Access，替换Access_JDBC30.jar。 UCanAccess，支持使用druid数据库连接池(version0.2.23)。
