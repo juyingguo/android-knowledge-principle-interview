@@ -89,18 +89,24 @@
 			例如：chmod -R 777 20191122/ 
 			
 (4)磁盘管理
-	du //du会显示指定的目录或文件所占用的磁盘空间。
+	4.1 du //du会显示指定的目录或文件所占用的磁盘空间。
 		-a或-all 显示目录中个别文件的大小。
 		-h //-h或--human-readable 以K，M，G为单位，提高信息的可读性。
 		https://www.runoob.com/linux/linux-comm-du.html
-(5)	、ubuntu 安装 vmwaretools 
-	yum -y install perl gcc make kernel-headers kernel-devel
-	yum repolist all //查看拥有的仓库
-	您可以使用 yum-config-manager --enable &lt; 仓库名&gt；来启用仓库
-	原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
-(9) 备份压缩,解压文件
-
-	9.1 Linux tar命令
+		
+	4.2 Linux dd命令 
+		https://www.runoob.com/linux/linux-comm-dd.html
+		
+	4.3 Linux mount命令 
+		https://www.runoob.com/linux/linux-comm-mount.html
+		
+		将 /dev/hda1 挂在 /mnt 之下。
+		#mount /dev/hda1 /mnt
+		
+		将 /dev/hda1 用唯读模式挂在 /mnt 之下。
+		#mount -o ro /dev/hda1 /mnt
+	
+	4.4 备份压缩,解压文件 Linux tar命令
 			https://www.runoob.com/linux/linux-comm-tar.html
 		9.1.1 
 			tar -xzvf test.tar.gz //解压文件
@@ -111,6 +117,18 @@
 			#tar zxvf xx.tar.gz -C /xx
 			//把根目录下的xx.tar.gz解压到/xx/下，前提要保证存在/xx这个目录
 			这个和cp命令有点不同，cp命令如果不存在这个目录就会自动创建这个目录！
+	4.5 Exiting with failure status due to previous errors
+		Linux tar命令选项顺序不同导致"Exiting with failure status due to previous errors"
+		https://blog.csdn.net/HermitSun/article/details/94494700
+		
+		解压aosp_2_3_3时遇到该错误提示，暂时不用理会。不影响正常编译。
+(5)	、ubuntu 安装 vmwaretools 
+	yum -y install perl gcc make kernel-headers kernel-devel
+	yum repolist all //查看拥有的仓库
+	您可以使用 yum-config-manager --enable &lt; 仓库名&gt；来启用仓库
+	原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
+(9) 
+		
 (10) 账户相关。
 		https://jingyan.baidu.com/article/a17d5285eb93ea8099c8f24d.html
 	10.1  ubuntun 16 添加root用户 
@@ -169,5 +187,17 @@
 		https://www.cnblogs.com/sparkbj/p/7161669.html
 	13.2、Linux lsof命令详解
 		https://www.cnblogs.com/muchengnanfeng/p/9554993.html
+(14) make
+	14.1 Linux内核--make mrproper与make clean的区别 
+		https://blog.csdn.net/gchww/article/details/7407790
 		
+		先，这两个命令都是用于删除编译内核时产生的相关文件的。
+
+		两者的区别如下：
+
+		make mrproper命令会删除所有的编译生成文件、内核配置文件(.config文件)和各种备份文件，所以几乎只在第一次执行内核编译前才用这条命令。
+
+		make clean命令则是用于删除大多数的编译生成文件，但是会保留内核的配置文件.config，还有足够的编译支持来建立扩展模块。所以你若只想删除前一次编译过程的残留数据，只需执行make clean命令。
+
+		总而言之，make mrproper删除的范围比make clean大，实际上，make mrproper在具体执行时第一步就是调用make clean
 		

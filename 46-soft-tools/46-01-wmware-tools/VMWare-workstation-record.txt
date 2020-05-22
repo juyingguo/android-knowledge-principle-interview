@@ -1,3 +1,23 @@
 1. VMware Workstation 14中文破解版下载(附密钥)（笔记） 
 	1.1 VMware Workstation 14中文破解版下载(附密钥)（笔记） 
 		https://blog.csdn.net/zjy900507/article/details/96507185
+		
+2. VMware启动ubuntu 16.4版本虚拟机失败。	
+	无法获得 VMCI 驱动程序的版本: 句柄无效。
+
+	驱动程序“vmci.sys”的版本不正确。请尝试重新安装 VMware Workstation。
+
+	模块“DevicePowerOn”启动失败。
+
+	未能启动虚拟机。
+	
+	2.1 虚拟机vmware的一个小问题——之——驱动程序"vmci.sys"的版本不正确 
+		https://blog.csdn.net/weixin_38298363/article/details/82851118
+	2.2 PXE-E53:No boot filename received 
+		PXE-MOF:Exiting Intel PXE ROM.
+		Operating System not found.
+			
+3. VMCI概述 
+	https://blog.51cto.com/javavwv/1743468
+	
+	虚拟机交流接口VMCI(The Virtual Machine Communication Interface)是一个在一个或多个虚拟机与宿主机之间提供高速高效交流的基本组件(infrastructure)，VMCI SDK促进了使用VMCI基本组件的软件的发展。

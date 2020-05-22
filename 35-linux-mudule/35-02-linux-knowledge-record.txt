@@ -2,10 +2,28 @@
 	1.1、linux内核的熵池 
 		https://www.cnblogs.com/yinheyi/p/5973584.html
  
-2.Linux的.a、.so和.o文件及链接时的命名 
+2.Linux的 .ko,.a、.so和.o文件及链接时的命名 
 	2.1、Linux的.a、.so和.o文件及链接时的命名 
 		https://www.cnblogs.com/wangshaowei/p/11285341.html
 		
+		2.1.1 linux .o,.a,.so
+			.o,是目标文件,相当于windows中的.obj文件 
+
+		　　.so 为共享库,是shared object,用于动态连接的,相当于windows下的dll 
+
+		　　.a为静态库,是好多个.o合在一起,用于静态连接 
+	2.2 Linux下的.ko文件 
+		
+		2.2.1 https://blog.csdn.net/qq_24118527/article/details/78569578
+		
+			.so 文件是动态链接库文件，相当于 win下的 .dll 文件。
+
+			.ko 文件是内核模块文件，是内核加载的某个模块，一般是驱动程序。
+			.ko文件是kernel object文件（内核模块），该文件的意义就是把内核的一些功能移动到内核外边， 需要的时候插入内核，不需要时卸载。
+		
+		2.2.2 Linux下编写和加载 .ko 文件（驱动模块文件） 
+			https://blog.csdn.net/qq_38880380/article/details/79227760?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+	
 3、.bash_profile和.bashrc的区别 
 	3.1、.bash_profile和.bashrc的区别 
 		https://blog.csdn.net/CHS007chs/article/details/86663436
@@ -32,6 +50,9 @@
 7. gcc 
 	7.1 gcc 
 		https://baike.baidu.com/item/gcc/17570?fr=aladdin
+		
+	7.2 Linux下gcc命令详解 
+		https://blog.csdn.net/ENSHADOWER/article/details/82951131?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase
 
 8. g++ 
 	8.1 g++ 
@@ -85,3 +106,24 @@
 		
 	17.2 Uboot1之什么是uboot？ 
 		https://blog.csdn.net/wangdapao12138/article/details/79561626?utm_medium=distribute.pc_relevant_right.none-task-blog-BlogCommendFromBaidu-20.nonecase&depth_1-utm_source=distribute.pc_relevant_right.none-task-blog-BlogCommendFromBaidu-20.nonecase
+	17.2 bootloader 与 uboot的区别 
+		https://blog.csdn.net/weixin_41632560/article/details/87608972
+		
+		BootLoader是嵌入式设备中用来启动操作系统内核的一段程序。 
+		uboot（universal bootloader）是一种可以用于多种嵌入式CPU的BootLoader程序，换言之，uboot是bootloader的一个子集。 
+		uboot的核心作用就是启动操作系统内核，uboot的本质就是一段裸机程序。
+		
+	17.3 【整理】BIOS、BootLoader、uboot对比 
+		https://blog.csdn.net/conowen/article/details/7253620/?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-2
+18. linux--Makefile
+	内容比较多，单独出一个文件【35-07-Makefile-record.txt】
+	18.1 linux--Makefile概述 
+		https://blog.csdn.net/qq_38880380/article/details/79860541
+		
+	18.2 linux--Makefile学习资料汇总以及编译工具make、gmake、cmake、nmake和Dmake的区别 
+		https://blog.csdn.net/qq_38880380/article/details/79860538?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158987348419195162540691%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=158987348419195162540691&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v2~rank_v25-1-79860538.nonecase&utm_term=%E3%80%8AMakefile%E3%80%8B+%E4%BD%9C%E8%80%85+%E9%99%88%E7%9A%93%EF%BC%8C%E6%95%B4%E7%90%86+%E7%A5%9D%E5%86%AC%E5%8D%8E
+	18.3 linux和Android的Makefile和android.mk 
+		https://www.cnblogs.com/maogefff/p/7910441.html#_label1_0
+		
+		含有小demo，跟着调试。
+	

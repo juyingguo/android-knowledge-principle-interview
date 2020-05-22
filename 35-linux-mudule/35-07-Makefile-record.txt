@@ -1,0 +1,21 @@
+1.linux--Makefile概述 
+	1.	linux--Makefile概述 
+		https://blog.csdn.net/qq_38880380/article/details/79860541
+		
+	2 linux--Makefile学习资料汇总以及编译工具make、gmake、cmake、nmake和Dmake的区别 
+		https://blog.csdn.net/qq_38880380/article/details/79860538?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158987348419195162540691%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=158987348419195162540691&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v2~rank_v25-1-79860538.nonecase&utm_term=%E3%80%8AMakefile%E3%80%8B+%E4%BD%9C%E8%80%85+%E9%99%88%E7%9A%93%EF%BC%8C%E6%95%B4%E7%90%86+%E7%A5%9D%E5%86%AC%E5%8D%8E
+	18.3 linux和Android的Makefile和android.mk 
+		https://www.cnblogs.com/maogefff/p/7910441.html#_label1_0
+		
+		含有小demo，跟着调试。
+2. 资源，书籍，官网，博客
+
+	1、《Makefile》 作者 陈皓，整理 祝冬华
+
+	2、《Managing Projects with GNU Make》
+	
+	3. GNU make 官方
+		http://www.gnu.org/software/make/manual/make.html#Reading-Makefiles
+	
+	4. 跟我一起写 Makefile（一）
+		https://blog.csdn.net/haoel/article/details/2886/

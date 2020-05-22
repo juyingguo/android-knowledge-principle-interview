@@ -130,7 +130,7 @@
 		1. 设置环境变量：
 	    	USER-NAME@MACHINE-NAME:~/Android$ export PATH=$PATH:~/Android/out/host/linux-x86/bin  
 	    	USER-NAME@MACHINE-NAME:~/Android$ export ANDROID_PRODUCT_OUT=~/Android/out/target/product/generic
-		    		其中，~/Android/out/host/linux-x86/bin有我们要执行的emulator命令，而~/Android/out/target/product/generic是Android镜像存放目录，下面执行emulator命令时会用到
+		    					其中，~/Android/out/host/linux-x86/bin有我们要执行的emulator命令，而~/Android/out/target/product/generic是Android镜像存放目录，下面执行emulator命令时会用到
 			--------------------- 
 			作者：罗升阳 
 			来源：CSDN 
@@ -184,7 +184,7 @@
 
 			　　http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u41-oth-JPR
 
-				２、以下全是root用户下操作、root用户下操作、root用户下操作
+				２、root用户下操作或者自己账户下操作都行。
 
 				3、将下载的文件放置到/usr/lib/java目录下(需要手动创建java目录，到/usr/lib目录下mkdir java)，并修改文件的可执行权限，如chmod 777 jdk-6u45-linux-x64.bin
 
@@ -415,10 +415,17 @@
 		
 		cd /usr/bin
 		root@shepherd-VPCS134GX:/home/shepherd/Android# sudo ln -s -f /usr/lib/jvm/jdk1.6.0_34/bin/javadoc /bin/javadoc
-
+	14 
+		Can't locate Switch.pm in @INC (you may need to install the Switch module) (@INC contains: external/webkit/WebCore/bindings/scripts /etc/perl 	/usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/local/share/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/share/perl/5.22 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at external/webkit/WebCore/dom/make_names.pl line 38.
+		BEGIN failed--compilation aborted at external/webkit/WebCore/dom/make_names.pl line 38.
+		make: *** [out/target/product/generic/obj/STATIC_LIBRARIES/libwebcore_intermediates/WebCore/HTMLNames.h] Error 2
+		
+		
+		解决办法：：sudo apt-get install libswitch-perl 
 			
 三、编译问题汇总：
 	1. https://blog.csdn.net/u013541140/article/details/52027569
+	
 四、ubuntu16.04配置ADB调试环境
 	apt-get install android-tools-adb 来安装adb
 	
