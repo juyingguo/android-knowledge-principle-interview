@@ -1,0 +1,60 @@
+0.1 官网
+	https://www.genuitec.com/products/myeclipse/ 
+0.2 Myeclipse10导入项目，原有的项目jre为1.8。
+	但本地Myeclipse只支持1.6。新建工程，.classpath，如下
+		<?xml version="1.0" encoding="UTF-8"?>
+		<classpath>
+			<classpathentry kind="src" path="src"/>
+			<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+			<classpathentry kind="output" path="bin"/>
+		</classpath>
+		
+	将jre复制到旧的项目中即可。前提就项目同时能在jre1.6上能跑通。 
+	
+	
+1. 如何配置JDK环境 
+	1.1 https://jingyan.baidu.com/article/154b46317820c928ca8f41e3.html 
+	1.2 myeclipse设置jdk的三个地方，尽量保持一致，避免启动时异常
+		https://blog.csdn.net/dhq_blog/article/details/81106821
+	
+2.MyEclipse10 配置jdk1.8 
+	2.1 MyEclipse10 自带jdk1.6 ，且【 jdk compiler compilance level 最大1.6】
+	2.2 将【 jdk compiler compilance level 最大1.6】配置为1.8
+		当前默认可选的有最大1.6。
+		参考条目【3】。但MyEclipse10没有该直接选项，是否有相关的其它方式吗？
+		
+3. 解决MyEclipse2014只有JDK1.7问题 
+	3.1 解决MyEclipse2014只有JDK1.7问题 
+	
+		https://blog.csdn.net/tiantang_1986/article/details/81774771
+	
+		MyEclipse2014高支持编译JDK 1.7(compile compliance level)	
+		
+		myeclipse 安装项目支持JDK1.8的包在这里菜单栏help中。即【help-install from catalog】
+		在弹出的【eclipse Marketplace】-搜索java8.
+		选择搜索结果中的【java8 support for eclipse kepler SR2】安装即可。
+		
+4. myeclipse从哪个版本开始完全支持jdk1.8
+	是从myeclipse2015开始支持的
+5. 
+	5.1 MyEclipse 2015更新说明
+
+		1、JavaScript for Modern UIs
+		运用MyEclipse集成的Tern.js，你会发现用JavaScript开发Web和移动应用程序都会非常容易。和传统的基于Eclipse的JavaScript代码帮助相比，MyEclipse可以节省大量的编程时间。还有可扩展的丰富模块：
+		AngularJS, node.js, Chrome Apps和YUI。
+		2、REST技术的云端连接
+		现在很多主流的应用比如Tumblr, Location Services, Google 和 Twitter都是运用REST技术，MyEclipse也不例外。全新的REST浏览器以及REST模块带来极速体验！
+		3、更加简单易用
+		在IDE里面找东西是非常浪费时间的事情，而快速找到想要的东西可以让编程效率大幅度提升。MyEclipse 2015继续优化了资源管理器，相比传统的项目面板增加了更多的项目资源信息，并增加了一个高级搜索框，可以让你快速找到想要的资源文件。从2015开始，你还可以同时向一个app 服务器添加多个项目。
+		4、Mobile Landscape
+		跨平台移动App风头正劲，运用Java IDE MyEclipse，可以让你的跨平台开发更加轻松。运用全新的PhoneGap/Cordova混合技术，在后端开发移动app的同一批开发者也可以构建UI，并且不需要专门针对每个平台从新进行学习。
+		MyEclipse提供的Mobile模板也非常实用，即使是新手也可以很快上手。
+		5、更多后端服务控件
+		对于实用WebSphere的企业，部署的改进也帮他们大幅度提升了效率。选择了Tomcat服务器的人也有福了！新版本增加了更多服务器配置选项。
+		6、架构改进
+		MyEclipse 2015版改进了自定义服务器连接器，新增了更多控件和服务器配置。值得一提的是，TomEE 1.7 和 Pivotal tc Server 3.0这些新服务器版本也新增了连接器。
+	5.2 myeclipse 2018破解版 v2018.8
+		http://www.xue51.com/soft/8902.html
+		
+		MyEclipse 2018.12.0安装破解教程
+		https://blog.csdn.net/qq_40514842/article/details/88071216?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
