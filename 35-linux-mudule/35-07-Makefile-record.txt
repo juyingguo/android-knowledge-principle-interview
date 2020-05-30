@@ -4,10 +4,28 @@
 		
 	2 linux--Makefile学习资料汇总以及编译工具make、gmake、cmake、nmake和Dmake的区别 
 		https://blog.csdn.net/qq_38880380/article/details/79860538?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158987348419195162540691%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=158987348419195162540691&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v2~rank_v25-1-79860538.nonecase&utm_term=%E3%80%8AMakefile%E3%80%8B+%E4%BD%9C%E8%80%85+%E9%99%88%E7%9A%93%EF%BC%8C%E6%95%B4%E7%90%86+%E7%A5%9D%E5%86%AC%E5%8D%8E
-	18.3 linux和Android的Makefile和android.mk 
+	3 linux和Android的Makefile和android.mk 
 		https://www.cnblogs.com/maogefff/p/7910441.html#_label1_0
 		
 		含有小demo，跟着调试。
+		
+		3.1 
+			【错误笔记】error: only position independent executables (PIE) are supported.错误解决
+			https://blog.csdn.net/TMT123421/article/details/84885865
+			
+			1. 编译语句添加pie选项解决
+				在 编译选项中，添加 -pie -fPIE 即可；
+				最简单的例子：
+				arm-linux-androideabi-gcc -pie -fPIE test.c -o output/test
+		3.2 NDK编译可执行文件在Android L中运行显示error: only position independent executables (PIE) are supported.失败问题解决办法。 
+			https://blog.csdn.net/hxdanya/article/details/39371759?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase
+			
+			error: only position independent executables (PIE) are supported.
+			PIE这个安全机制从4.1引入，但是Android L之前的系统版本并不会去检验可执行文件是否基于PIE编译出的。因此不会报错。但是Android L已经开启验证，如果调用的可执行文件不是基于PIE方式编译的，则无法运行。解决办法非常简单，在Android.mk中加入如下flag就行。			 
+
+			LOCAL_CFLAGS += -pie -fPIE
+			LOCAL_LDFLAGS += -pie -fPIE
+				
 2. 资源，书籍，官网，博客
 
 	1、《Makefile》 作者 陈皓，整理 祝冬华

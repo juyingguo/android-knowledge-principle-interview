@@ -1,0 +1,23 @@
+1. 未填满整个屏幕宽度
+	1.1 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+		临时尝试解决办法：添加【android:minWidth="500dp"】500dp远大于屏幕宽度。
+2. Android开发中，防止EditText弹出键盘后顶起布局的两种方法 
+	2.1 	https://blog.csdn.net/u012390990/article/details/50748353?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+		方法一，在oncreate中加入
+
+		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+
+		方法二，在AndroidManifest.xml中加入
+		android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+		————————————————
+		版权声明：本文为CSDN博主「浮桥_sj」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/u012390990/article/details/50748353
+		
+		adjustResize 不行。
+	2.2 windowSoftInputMode中的stateHidden和stateAlwaysHidden
+		https://www.jianshu.com/p/1098bb3a28ee
+		
+		

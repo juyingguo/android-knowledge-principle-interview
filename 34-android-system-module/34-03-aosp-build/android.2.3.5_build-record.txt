@@ -8,7 +8,9 @@
 	4 android 内核代码的获取,编译和使用
 		https://wenku.baidu.com/view/a007fd2f0066f5335a8121da.html?rec_flag=default&sxts=1589589916235
 	
-		
+01. 不同版本编译记录
+	01.1 自己动手编译最新Android源码及SDK(Ubuntu)(Ubuntu 16.04上编译Android 6.0.x 及以上版本)
+		https://blog.csdn.net/dd864140130/article/details/51718187
 		
 一；ubuntu16.04编译android2.3源码
 	
