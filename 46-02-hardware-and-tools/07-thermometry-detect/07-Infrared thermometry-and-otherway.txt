@@ -12,7 +12,10 @@
 	1.5 红外测温产品价格。
 	
 		
-	
+	1.6 详解红外测温传感器工作原理和在耳温枪中的应用
+		
+		https://www.sensorexpert.com.cn/article/1071.html
+		
 2. 波长单位A 
 	
 3. 温度测量系统

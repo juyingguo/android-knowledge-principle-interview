@@ -7,3 +7,21 @@
 3. JDK、JRE、JVM三者间的关系 
 	3.1 JDK、JRE、JVM三者间的关系 
 		https://www.cnblogs.com/iskandar/p/8933340.html
+		
+4. 对象与字符串互转。
+	4.1 对象与字符串互转 异常。
+		List<RemoteTtsBean> mList;
+			mList = (ArrayList<RemoteTtsBean>)ObjectConvertUtils.string2Object(strList);
+		
+			System.err: java.io.StreamCorruptedException: invalid stream header: EFBFBDEF
+			System.err:     at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:808)
+			System.err:     at java.io.ObjectInputStream.<init>(ObjectInputStream.java:301)
+		
+		4.1.1 java.io.StreamCorruptedException: invalid stream header: 异常
+			https://blog.csdn.net/T_NULL/article/details/78474786?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+			
+		4.2.2 java.io.StreamCorruptedException: invalid stream header报错原因 
+			https://blog.csdn.net/wangwenjunsw/article/details/5550441?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+			
+		
+			

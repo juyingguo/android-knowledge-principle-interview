@@ -1,0 +1,52 @@
+1.Android Provision（开机向导setupwizard程序） 
+	1.1 Android Provision（开机向导setupwizard程序） 
+	
+			https://blog.csdn.net/DKBDKBDKB/article/details/96474229?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+		1.1.1 Provision 是 android 中的一个系统应用（源码位置在： packages/apps/Provision 下面）。  
+		
+		1.1.2 
+		
+	1.2 异常
+	
+		Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.provision.DefaultActivity" on path: DexPathList[[zip file "/system/app/Provision/Provision.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+		
+		Suppressed: java.io.IOException: Zip archive '/system/app/Provision/Provision.apk' doesn't contain classes.dex (error msg: Entry not found)
+		
+		aused by: java.io.IOException: Failed to open oat file from dex location '/system/app/Provision/Provision.apk'
+		
+		Caused by: java.io.IOException: Failed to open oat file from /system/app/Provision/arm/Provision.odex (error ) (no dalvik_cache availible) and relocation failed.
+		
+2. 关于Google应用SetupWizard.apk和ro.setupwizard.mode  
+	2.1 http://www.voidcn.com/article/p-sgjlwhzz-zy.html
+	
+	2.2 跳过 google的开机向导 SetupWizard 
+		https://blog.csdn.net/li_jin_shen/article/details/53101932?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.nonecase
+		
+		恢复出厂设置之前没有删除google的账号，恢复出厂设置后在开机向导界面又无法连接上google登上之前的账号，卡在开机向导。
+
+
+		解决方法：
+
+		SetupWizard完成后会把下面两个设置的值由0改为1。
+
+		USER_SETUP_COMPLETE
+
+		DEVICE_PROVISIONED
+
+		然后下次开机只要USER_SETUP_COMPLETE不为0就不会再进入SetupWizard。
+
+		所以用adb把这两个值改为1重启后就可以跳过SetupWizard。
+
+		adb shell settings put secure user_setup_complete 1
+
+		adb shell settings put global device_provisioned 1
+		或者也可以直接删除system/priv-app/SetupWizard，如果系统原来自带的app Provision没有被SetupWizard覆盖，SetupWizard被删除后Provision会把这两个值直接设为1，如果这两个值不为1开机后会影响有些功能的使用。
+
+		Provision：
+
+		// Add a persistent setting to allow other apps to know the device has been provisioned.
+		Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
+		Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
+		————————————————
+		版权声明：本文为CSDN博主「森林中饥渴的狼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/li_jin_shen/article/details/53101932
