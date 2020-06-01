@@ -14,4 +14,11 @@
 	4.2 The tools needs to be updated via th SDK Manager.
 		your tools installation appears to be out of date (or not yet installed).
 	4.3 项目中，类中所引用的类[ctrl + 鼠标左键]无法点击。环境有错误，先手动删除【Problems】面板中的errors。保证能点击。
+5. eclipse下的java工程结构
+ 
+	5.1 j2ee的web工程，.project文件中，作用 
+		https://blog.csdn.net/Ideality_hunter/article/details/53608471?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase 
+		 
+		5.1.1. eclipse项目中的.project文件 
+			https://blog.csdn.net/qq_26264237/article/details/89714823?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 	
