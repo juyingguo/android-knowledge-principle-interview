@@ -63,3 +63,10 @@
 		BIOS是英文"Basic Input Output System"的缩略词，直译过来后中文名称就是"基本输入输出系统"。在IBM PC兼容系统上，是一种业界标准的固件接口。 [1]  BIOS这个字眼是在1975年第一次由CP/M操作系统中出现。 [2]  BIOS是个人电脑启动时加载的第一个软件。
 		其实，它是一组固化到计算机内主板上一个ROM芯片上的程序，它保存着计算机最重要的基本输入输出的程序、开机后自检程序和系统自启动程序，它可从CMOS中读写系统设置的具体信息。 其主要功能是为计算机提供最底层的、最直接的硬件设置和控制。此外，BIOS还向作业系统提供一些系统参数。系统硬件的变化是由BIOS隐藏，程序使用BIOS功能而不是直接控制硬件。现代作业系统会忽略BIOS提供的抽象层并直接控制硬件组件。
 		当今，此系统已成为一些病毒木马的目标。一旦此系统被破坏，其后果不堪设想。
+11 USB设备的研究——MSC与PTP及MTP 
+	11.1 USB设备的研究——MSC与PTP及MTP 
+		https://www.anquanke.com/post/id/83155
+		
+		原文地址：http://nicoleibrahim.com/part-2-usb-device-research-msc-vs-ptp-vs-mtp/
+	11.2 MTP协议与MSC协议的全面分析对比 
+		http://www.cnki.com.cn/Article/CJFDTotal-DZZZ201321056.htm

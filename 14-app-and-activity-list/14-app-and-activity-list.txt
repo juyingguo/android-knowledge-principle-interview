@@ -79,4 +79,7 @@
 9. Android manifest
 	9.1 Android manifest文件中的各种属性在API什么位置 
 		如果你按了SDK,找到你的知SDK的文件，下面道这个就是。android-sdk-windows/docs/guide/topics/manifest/manifest-intro.html
+		
+10 moveTaskToBack(true); 
+	
 	

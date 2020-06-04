@@ -1,0 +1,19 @@
+1. Android系统之路(初识MTK) ------ 更改设备盘符名称/型号/名称/品牌/Version/Devices/Product...... 
+
+	1.1 Android系统之路(初识MTK) ------ 更改设备盘符名称/型号/名称/品牌/Version/Devices/Product...... 
+		https://blog.csdn.net/jspping/article/details/50467616
+		
+		
+		ro.build.display.id=版本号
+		ro.product.model=型号
+		ro.product.brand=品牌
+		ro.product.name=名称
+		ro.product.device=设备
+		ro.product.board=Board
+		ro.product.manufacturer=制造商
+		————————————————
+		版权声明：本文为CSDN博主「Engineer-Jsp」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/jspping/article/details/50467616
+		
+	1.2 Android如何获取手机各项信息
+		https://blog.csdn.net/u011791526/article/details/71158336

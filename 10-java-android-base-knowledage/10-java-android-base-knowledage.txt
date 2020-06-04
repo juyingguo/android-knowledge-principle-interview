@@ -33,6 +33,10 @@
 		D:/javaproject>java com.algorithm.sorttest.Test
 03 最全的Android源码目录结构详解
 	https://www.cnblogs.com/zhangkeyu/p/6647467.html 
+
+04 日志规则技巧
+	04.1 TAG 标签中添加应用的包名，便于在整个系统中定位却别。
+	
 一、static关键字
 	1.1、static关键字 作用？
 	1.2、类，变量，方法，代码块，使用static修饰后，执行顺序？

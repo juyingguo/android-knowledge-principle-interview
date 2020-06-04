@@ -28,4 +28,8 @@
 5. cpp泛型
 	5.1 cpp泛型中的类型后跟*
 	
+6. template
+
+7. inline
+	
 	
