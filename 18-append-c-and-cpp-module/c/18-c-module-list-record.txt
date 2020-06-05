@@ -247,4 +247,6 @@
 		20.1.1 Windows下C语言多线程函数_beginthread简单入门应用例子
 			https://blog.csdn.net/tianzry/article/details/61933362
 			
-	 
+21 inline 
+	21.1 C语言inline详细讲解 
+		https://www.cnblogs.com/do-your-best/p/11007435.html

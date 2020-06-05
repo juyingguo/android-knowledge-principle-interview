@@ -81,5 +81,6 @@
 		如果你按了SDK,找到你的知SDK的文件，下面道这个就是。android-sdk-windows/docs/guide/topics/manifest/manifest-intro.html
 		
 10 moveTaskToBack(true); 
-	
+	10.1 moveTaskToback退后台的用法及作用 
+		
 	
