@@ -123,6 +123,15 @@
 			linux用命令安装即可
 	1.8 MinGW-w64 - for 32 and 64 bit Windows 
 		https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/seh/
+		
+	1.9 DJGPP 
+		https://baike.baidu.com/item/DJGPP/8472133?fr=aladdin
+		
+		DJGPP可在官方网址
+		http://www.delorie.com/djgpp/
+		
+		DJGPP是GCC编译器在DOS操作系统上的一个移植版本，可以用来在DOS操作系统下编译生成32位保护模式的程序。
+	
 二、vs tools use  record .
 	2.1、VS如何在一个项目中分别运行单个cpp文件 
 		https://blog.csdn.net/IT_flying625/article/details/101125588
