@@ -5,14 +5,14 @@ T max(T a,T b,T c)
 {
 	if(b>a) a=b;
  	if(c>a) a=c;
- 	
+
 	return a;
 }
 
 int main()
 {
-	 int i1=185,i2=-76,i3=567,i;
-	 double d1=56.87,d2=90.23,d3=-3214.76,d;
+	 int i1=10,i2=20,i3=30,i;
+	 double d1=30.87,d2=90.2345789,d3=-20.76,d;
 	 long g1=67845,g2=-912456,g3=673456,g;
 	 i=max(i1,i2,i3);
 	 d=max(d1,d2,d3);
