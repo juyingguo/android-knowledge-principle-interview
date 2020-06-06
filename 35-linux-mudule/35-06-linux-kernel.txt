@@ -10,3 +10,6 @@
 		
 	2.2 X-017-KERNEL-串口驱动开发之uart driver框架 
 		http://www.wowotech.net/x_project/serial_driver_porting_2.html
+3. miscdevice、platform_device区别 (2012-11-03 10:46:21)
+	3.1 miscdevice、platform_device区别 (2012-11-03 10:46:21)
+		http://blog.sina.com.cn/s/blog_3f7213810101c62r.html 
