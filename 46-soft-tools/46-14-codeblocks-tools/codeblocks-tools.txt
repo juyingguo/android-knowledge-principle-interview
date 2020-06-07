@@ -1,0 +1,13 @@
+1. http://www.codeblocks.org/downloads
+
+	1.1 plugin 
+		http://wiki.codeblocks.org/index.php?title=Code::Blocks_Plugins
+
+2. Codeblocks实用快捷键技巧汇总 (全) 
+
+	2.1 Codeblocks shortcuts 
+		http://wiki.codeblocks.org/index.php/Keyboard_Shortcuts 
+		
+	2.2 Codeblocks实用快捷键技巧汇总 (全) 
+	
+		https://blog.csdn.net/lxt_Lucia/article/details/79572829?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase

@@ -1,6 +1,6 @@
-#include <iostream> 
+#include <iostream>
 using namespace std;
- 
+
 class Shape {
    protected:
       int width, height;
@@ -20,9 +20,9 @@ class Rectangle: public Shape{
    public:
       Rectangle( int a=0, int b=0):Shape(a, b) { }
       int area ()
-      { 
+      {
          cout << "Rectangle class area :" << (width * height) <<endl;
-         return (width * height); 
+         return (width * height);
       }
 };
 class Triangle: public Shape{
@@ -33,9 +33,9 @@ class Triangle: public Shape{
       	height = b;
 		}
       int area ()
-      { 
+      {
          cout << "Triangle class area :" << (width * height / 2 ) <<endl;
-         return (width * height / 2); 
+         return (width * height / 2);
       }
 };
 // 程序的主函数
@@ -43,23 +43,23 @@ int main( )
 {
    Shape *shape;
    Shape selfShape(20,30);
-   
+
    selfShape.area();
-   
+
    Rectangle rec(10,7);
    Triangle  tri(10,5);
- 
+
    // 存储矩形的地址
    shape = &rec;
    // 调用矩形的求面积函数 area
    shape->area();
- 
+
    // 存储三角形的地址
    shape = &tri;
    // 调用三角形的求面积函数 area
    shape->area();
-   
-   
-   
+
+
+
    return 0;
 }

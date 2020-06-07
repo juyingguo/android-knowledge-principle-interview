@@ -19,17 +19,36 @@
 		【破船不会沉】【c,c++,算法，数据结构】
 		https://blog.csdn.net/my_mao/article/details/22872149
 		
+	3.3 C++中const关键字的使用总结 
+		https://www.cnblogs.com/gklovexixi/p/5619647.html
+		
+	3.4 const_cast 作用及用法。
+	
+	  
+		
 四、C++中的静态绑定和动态绑定 
 	4.1、C++中的静态绑定和动态绑定 
 		https://www.cnblogs.com/lizhenghn/p/3657717.html
 		
 	4.2、 深入理解C++的动态绑定和静态绑定 
 		https://blog.csdn.net/chgaowei/article/details/6427731
-5. cpp泛型
+5. cpp泛型,template
 	5.1 cpp泛型中的类型后跟*
 	
-6. template
+	5.2. C++泛型基础 
+		https://blog.csdn.net/github_34965845/article/details/80540013
+		
+	5.3 template 定义泛型类。
+		该类中的模板函数所使用的泛型类型名称可以不同。没关系的。
+		函数模板生命中的泛型名称与定义时所使用的的泛型名称必须一致。 
+		
+	5.4 android 源码强指针sp使用双模板定义拷贝构造函数。
+		
+	5.5 c++模板类构造函数怎麽写
+		https://www.csdn.net/gather_2c/NtDagg4sMjgtYmxvZwO0O0OO0O0O.html
 
+6. 
+	6.1 
 7. inline
 	
 	
