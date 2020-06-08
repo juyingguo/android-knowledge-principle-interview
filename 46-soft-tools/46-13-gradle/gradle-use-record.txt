@@ -1,1 +1,49 @@
-1. Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=debug, filters=[]}} of type com.android.build.gradle.internal.api.ApkVariantOutputImpl. 
+1. 构建apk指定名称即版本号等信息。
+	Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=debug, filters=[]}} of type     com.android.build.gradle.internal.api.ApkVariantOutputImpl. 
+	
+	1.1 
+		https://blog.csdn.net/niuba123456/article/details/95907337 
+		
+		错误原因
+		Android 插件 3.0.0 引入了一些移除特定功能的 API 变更，可能会破坏您现有的构建。
+
+		output.outputFile变成了只读属性，不能再往里面写东西了;
+
+		参考：https://developer.android.google.cn/studio/build/gradle-plugin-3-0-0-migration.html#variant_api
+		
+		
+	1.2 方式1：
+		module*.gradle 下添加一下内容。
+		
+		///android节点内。添加内容如下：
+		buildTypes {
+			release {
+				minifyEnabled false
+				proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+				outFileFormat(applicationVariants, defaultConfig, "release")
+			}
+
+			debug {
+				minifyEnabled false
+			}
+		}
+		
+		///android节点外。添加内容如下：：
+		def outFileFormat(applicationVariants, defaultConfig, str) {
+			/* //old way can't load success for gradle 3.x
+			applicationVariants.all { variant ->
+				variant.outputs.each { output ->
+					def outputFile = output.outputFile
+					if (outputFile != null && outputFile.name.endsWith('.apk')) {
+						def fileName = "ibotnface_${str}_V${defaultConfig.versionName}_${releaseTime()}.apk"
+						output.outputFile = new File(outputFile.parent, fileName)
+					}
+				}
+			}*/
+
+			applicationVariants.all { variant ->
+				variant.outputs.all {
+					outputFileName = "ibotnface_I10HD_${str}_V${defaultConfig.versionName}_${releaseTime()}.apk";
+				}
+			}
+		}
