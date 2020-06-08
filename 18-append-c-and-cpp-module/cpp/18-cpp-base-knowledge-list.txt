@@ -31,5 +31,9 @@
 6. template
 
 7. inline
+
+8. static 
+	8.1 static_cast
+		
 	
 	
