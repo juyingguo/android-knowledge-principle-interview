@@ -6,7 +6,7 @@
 int main(void)
 {
    //int token34 = 40;
-   
+
    tokenpaster(34);
    return 0;
 }

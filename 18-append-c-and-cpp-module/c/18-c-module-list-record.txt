@@ -238,6 +238,10 @@
 18. C语言宏
 	18.1 C语言宏高级用法 [总结] 
 		https://www.cnblogs.com/Anker/p/3418792.html
+		
+	18.2 c语言中宏定义#和 ##的作用：
+		c语言中宏定义#和 ##的作用：
+		
 19 epoll 
 	19.1 epoll简介 
 		https://blog.csdn.net/dabenxiong666/article/details/80317333#comments
