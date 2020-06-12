@@ -1,3 +1,6 @@
+01 OKGo
+	01.1 https://github.com/jeasonlzy/okhttp-OkGo/wiki/OkGo 
+
 1. 下载完成。但是回调错误。
 	1.1 断点文件过期。
 		onProgress Progress{fraction=1.0, totalSize=42303145, currentSize=42303145, speed=0, status=4, priority=0, folder=/storage/emulated/0/download, 	filePath=/storage/emulated/0/download/i伴成长app.apk, fileName=i伴成长app.apk, tag=http://edu.ibotn.com/preview/kmsapp/apkPackage/33/i伴成长app.apk, url=http://edu.ibotn.com/preview/kmsapp/apkPackage/33/i伴成长app.apk}

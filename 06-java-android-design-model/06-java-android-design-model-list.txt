@@ -1,4 +1,16 @@
-
+01. mvp
+	01.1 Android官方MVP架构示例项目解读 
+		https://mp.weixin.qq.com/s?__biz=MzI0MjE3OTYwMg==&mid=2649547602&idx=1&sn=571db7e744c998ef4ca762ec6a1398d5&scene=21#wechat_redirect
+		
+		Google官方推荐MVP基础示例学习总结
+		https://blog.csdn.net/wqc_csdn/article/details/53364434
+		
+	01.2 Google官方示例的Git-Hub地址：Google官方示例地址
+		https://github.com/android/architecture-samples
+		
+	01.3 mvp,退出界面，取消尚未执行的任务。
+		同时需要在任务完成后，需要通过接口判断view是否已经销毁。
+		
 
 一、单例模式。
 	1.1、使用volatile修饰，禁止指令重排序。
@@ -108,3 +120,4 @@
 		https://rejoy.iteye.com/blog/1627405 
 	6.7、细说JDK动态代理的实现原理  
 		https://blog.csdn.net/mhmyqn/article/details/48474815
+		

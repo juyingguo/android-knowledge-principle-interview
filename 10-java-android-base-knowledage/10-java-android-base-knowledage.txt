@@ -36,6 +36,10 @@
 
 04 日志规则技巧
 	04.1 TAG 标签中添加应用的包名，便于在整个系统中定位却别。
+05 Android SDK PDK NDK详解 
+	05.1 Android SDK PDK NDK详解 
+		https://blog.csdn.net/ztguang/article/details/52850712
+		这个三个词应该是在软件开发领域通用的，它们的全称分别为SDK(Software Development Kit),PDK(Platform Development Kit),NDK(Native Development Kit)
 	
 一、static关键字
 	1.1、static关键字 作用？
@@ -255,6 +259,8 @@
 	
 23 ART、OAT格式介绍与dex文件提取 
 	https://www.jianshu.com/p/065e358b9599
+	
+
 		
 		
 		

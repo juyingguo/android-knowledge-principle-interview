@@ -70,3 +70,14 @@
 			
 			
 	六. Android.mk编写参考手册或书籍
+	
+	七、《Android进阶之光》
+		7.1
+			独立博客： http： //liuwangshu.cn
+			CSDN博客： http： //blog.csdn.net/itachi85
+			GitHub:https://github.com/henrymorgen
+			微信公众号： 刘望舒
+			QQ交流群： 499174415
+			源码下载
+			https://github.com/henrymorgen/android-advanced-light
+			http://www.broadview.com.cn/31530

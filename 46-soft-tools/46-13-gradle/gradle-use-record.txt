@@ -47,3 +47,7 @@
 				}
 			}
 		}
+2. .gradle 目录详解
+
+	2.1 Gradle 缓存目录结构 缓存策略
+		https://www.jianshu.com/p/acf579d8cb56
