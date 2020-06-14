@@ -11,3 +11,16 @@
 	2.2 Codeblocks实用快捷键技巧汇总 (全) 
 	
 		https://blog.csdn.net/lxt_Lucia/article/details/79572829?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+		
+3. debug 
+	3.1 Codeblocks17.12版本不能的debug问题解决方法  
+		https://blog.csdn.net/wanrxpjing/article/details/81211669?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+		1 进行调试的必须是一个project而不能是一个单一的cpp文件。
+
+		2 project的路径不能包含中文，尽量不要包含空格，不知道空格会不会有影响。
+
+		3 本身没有打开编译器的-g标志，具体：在setting->complier and debugger->global complier setting->complier flags中勾选produce debugging symbols[-g]
+		————————————————
+		版权声明：本文为CSDN博主「流星的邂逅」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/wanrxpjing/article/details/81211669

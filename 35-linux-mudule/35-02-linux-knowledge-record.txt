@@ -126,4 +126,8 @@
 		https://www.cnblogs.com/maogefff/p/7910441.html#_label1_0
 		
 		含有小demo，跟着调试。
-	
+19 __attribute__ 机制详解 
+	19.1 __attribute__ 机制详解
+		https://blog.csdn.net/weaiken/article/details/88085360?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+		https://blog.csdn.net/iteye_14514/article/details/81614037
