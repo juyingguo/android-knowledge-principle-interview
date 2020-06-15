@@ -1,13 +1,27 @@
 1. Ubuntu下编译第一个C程序的成功运行 
 	https://www.linuxidc.com/Linux/2014-05/101844.htm
 	
-	3.编译hello.c
+	1.1.编译hello.c
 
-	在终端执行  g++ hello.c -o hello 编译。
+		在终端执行  g++ hello.c -o hello 编译。
 
-	4.运行程序hello
+	1.2 运行程序hello
 
-	./hello
+		./hello
+	1.3 运行程序时传递参数。
+		./hello 10 20
+	1.4 ldd 查看程序运行依赖哪些库。
+	
+	1.5 添加动态库。
+		sudo vim /etc/ld.so.conf 
+		添加动态库位置目录 /home/eink/test_project/c_project/calculator
+		使修改生效。
+		sudo ldconfig -v
+	
+	1.6 生成连接块文件 
+		ln -s libmycalc.so.10 libmycal.so
+
+	
 2. Ubuntu下编译C程序的详解 
 	2.1
 		https://www.linuxidc.com/Linux/2012-11/73360.htm
