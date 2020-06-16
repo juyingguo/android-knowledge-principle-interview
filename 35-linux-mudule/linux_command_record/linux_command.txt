@@ -127,7 +127,8 @@
 	yum repolist all //查看拥有的仓库
 	您可以使用 yum-config-manager --enable &lt; 仓库名&gt；来启用仓库
 	原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
-(9) 
+(7) 系统管理
+	7.1 free 
 		
 (10) 账户相关。
 		https://jingyan.baidu.com/article/a17d5285eb93ea8099c8f24d.html

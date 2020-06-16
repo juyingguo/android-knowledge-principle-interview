@@ -260,7 +260,13 @@
 23 ART、OAT格式介绍与dex文件提取 
 	https://www.jianshu.com/p/065e358b9599
 	
-
+24 Android 息屏亮屏操作 
+	24.1 Android 息屏亮屏操作
+		https://blog.csdn.net/qq_27256793/article/details/86254461
+		
+		https://blog.csdn.net/u014614038/article/details/80430764?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+		https://blog.csdn.net/u011913612/article/details/77822280?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-8.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-8.nonecase
 		
 		
 		
