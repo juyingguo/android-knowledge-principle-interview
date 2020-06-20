@@ -133,14 +133,13 @@
 	
 	
 		1. 设置环境变量：
-	    	USER-NAME@MACHINE-NAME:~/Android$ export PATH=$PATH:~/Android/out/host/linux-x86/bin  
-	    	USER-NAME@MACHINE-NAME:~/Android$ export ANDROID_PRODUCT_OUT=~/Android/out/target/product/generic
-		    					其中，~/Android/out/host/linux-x86/bin有我们要执行的emulator命令，而~/Android/out/target/product/generic是Android镜像存放目录，下面执行emulator命令时会用到
-			--------------------- 
-			作者：罗升阳 
-			来源：CSDN 
-			原文：https://blog.csdn.net/Luoshengyang/article/details/6559955 
-			版权声明：本文为博主原创文章，转载请附上博文链接！
+		    	USER-NAME@MACHINE-NAME:~/Android$ export PATH=$PATH:~/Android/out/host/linux-x86/bin  
+		    	USER-NAME@MACHINE-NAME:~/Android$ export ANDROID_PRODUCT_OUT=~/Android/out/target/product/generic
+				    					其中，~/Android/out/host/linux-x86/bin有我们要执行的emulator命令，而~/Android/out/target/product/generic是Android镜像存放目录，下面执行emulator命令时会用到
+				--------------------- 
+				export PATH=$PATH:~/test_project/aosp/android2.3.3/mydroid/out/host/linux-x86/bin 
+				export ANDROID_PRODUCT_OUT=~/test_project/aosp/android2.3.3/mydroid/out/target/product/generic
+				
 
 		2、
 				source build/envsetup.sh
@@ -169,9 +168,9 @@
 				root@eink-virtual-machine:/home/eink/testproject/android_2_3_5# emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system ./out/target/product/generic/system.img -data ./out/target/product/generic/userdata.img -ramdisk ./out/target/product/generic/ramdisk.img 
 
 			
-
+			
 	
-二、我遇到编译问题记录：
+二、针对【一】中编译aosp源码我遇到编译问题记录：
 			
 	1. ubuntun 16.卸载openjdk1.7
 		sudo apt-get remove openjdk*
@@ -578,18 +577,14 @@
 		7.1   Nougat       |25         |4.4.1 (To be updated)
 	
 	7.2 下载kernel：
-		网盘地址： https://blog.csdn.net/jiangwei0910410003/article/details/37988637/ 
-			https://github.com/android/kernel_common
-			http://pan.baidu.com/s/1pQzPs
-
-		博客：：
+		博客：：清华服务器地址，包含不同平台的kernel。
 		https://blog.csdn.net/wukongmingjing/article/details/82116497
 		kernel 清华镜像源码地址：：
 		git clone https://aosp.tuna.tsinghua.edu.cn/kernel/goldfish.git
 		
 		上面得到的是主线上的内核源代码，现在我们需要适用于模拟器用的内核，因此，我们需要checkout goldfish版本：
 		选择android-gldfish-2.6.35：
-		USER-NAME@MACHINE-NAME:~/Android/kernel/common$ git checkout remotes/origin/archive/android-gldfish-2.6.35
+		USER-NAME@MACHINE-NAME:~/Android/kernel/common$ git checkout -b goldfish-2.6.29 remotes/origin/android-goldfish-2.6.29
 		  
 		git checkout remotes/origin/android-goldfish-2.6.29
 		Checking out files: 100% (26821/26821), done.
@@ -620,9 +615,8 @@
 
 			git branch -a
 
-			三、checkout android-goldfish-3.4分支 【举例3.4分支】
-
-			git checkout remotes/origin/android-goldfish-3.4
+			三、checkout android-goldfish-2.6.29分支 【举例2.6.29分支】
+				git checkout -b goldfish-2.6.29 remotes/origin/android-goldfish-2.6.29
 			————————————————
 			版权声明：本文为CSDN博主「Zouqs88」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 			原文链接：https://blog.csdn.net/boyzouqs/article/details/81280277
@@ -632,8 +626,8 @@
      	1. 导出交叉编译工具目录到$PATH环境变量中去：
 	       USER-NAME@MACHINE-NAME:~/Android/kernel/common$ export PATH=$PATH:~/Android/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin
 			我用的：
-			export PATH=$PATH:~eink/testproject/android_2_3_5/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/
-			export PATH=$PATH:/home/eink/testproject/android_2_3_5/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/
+			export PATH=$PATH:~/testproject/android_2_3_5/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/	//使用相对路径。
+			export PATH=$PATH:/home/eink/testproject/android_2_3_5/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/  //使用绝对路径
 
     	2. 修改根目录下的Makefile文件的以下两行为：
 	      # ARCH ?= (SUBARCH)
@@ -670,6 +664,31 @@
 				删掉了kernel/timeconst.pl 文件中 373行的
 				if (!defined(@val)) {
 				改为if (!@val) {
+				
+			6.1 ERROR: the symlink include/asm points to asm-x86 but asm-arm was expected
+					   set ARCH or save .config and run 'make mrproper' to fix it
+					   
+				scripts/kconfig/conf -s arch/arm/Kconfig
+				include/config/auto.conf:14:warning: symbol value 'arch/x86/configs/x86_64_defconfig' invalid for ARCH_DEFCONFIG
+				  CHK     include/linux/version.h
+				  Generating include/asm-arm/mach-types.h
+				  CHK     include/linux/utsrelease.h
+				  UPD     include/linux/utsrelease.h
+				ERROR: the symlink include/asm points to asm-x86 but asm-arm was expected
+					   set ARCH or save .config and run 'make mrproper' to fix it
+				make: *** [include/asm] Error 1
+				
+								
+				解决方法：https://blog.csdn.net/chenyu123123/article/details/8509607
+
+
+				第一种 .按提示，运行make mrproper命令				 
+
+				第二种 .将内核目录下，即include下的asm 目录删除以后，该问题可以解决 
+
+				include下的asm 文件夹是内核编译过程中创建的（在你编译之前，还没有创建，但是现在还没有编译，里面已经有了），它是一个这个目录下的asm-arm目录的链接，表明该系统的平台是arm 架构的，在编译过程中，系统会创建该链接，但此时已经有了，这样会与asm 文件夹的名字发生冲突，把它删掉就好了。
+				————————————————
+
 		7、
 			Enable the block layer (BLOCK) [Y/?] y
 			  Support for large block devices and files (LBD) [N/y/?] (NEW) y
