@@ -1,0 +1,36 @@
+11 USB设备的研究——MSC与PTP及MTP 
+	11.1 USB设备的研究——MSC与PTP及MTP 
+		https://www.anquanke.com/post/id/83155
+		
+		原文地址：http://nicoleibrahim.com/part-2-usb-device-research-msc-vs-ptp-vs-mtp/
+	11.2 MTP协议与MSC协议的全面分析对比 
+		http://www.cnki.com.cn/Article/CJFDTotal-DZZZ201321056.htm
+		
+12 OTG 
+	12.1 OTG
+		https://baike.baidu.com/item/OTG/2649844?fr=aladdin
+		
+		大家都知道自从1996年USB传输协议的诞生，并以其优势很快的风靡了所有计算机外设以及数码设备，大家都知道USB设备分为HOST（主设备）和SLAVE（从设备），只有当一台HOST与一台SLAVE连接时才能实现数据的传输，OTG设备就是我们的“EX”既能充当HOST，亦能充当SLAVE。
+		
+13 .idpin 
+	13.1 [讨论] USB_ID pin 脚的功能意义 [复制链接]
+		http://bbs.52rd.com/Thread-189482-1-1.html
+		
+		
+		只有而言支持USB OTG的设备（即可以做USB Host有可以做Slave的设备），USB_ID信号才有意义。
+		当设备检测到USB_ID信号为低时，表该设备应作为Host（主机，也称A设备）用。
+		当设备检测到USB_ID信号为高时，表示该设备作为Slave(外设，也称B设备）用。
+
+		实际的USB连接线中，是没有USB_ID这根线的。 都是在接口部分直接拉死的的。
+		对于Host端，只需将连接线的USB_ID pin和地短接即可，
+		对于Slave端，USB连接线的USB_IDpin是悬空的。（设备内部上拉）。
+14 [USB] VBUS 
+	https://blog.csdn.net/muojie/article/details/7205275
+	
+	在USB接口有四根线，分别是VBUS,D－,D＋,GND。其中VBUS线是HOST/HUB向USB设备供电的电源线。HOST/HUB每个端口通过VBUS提供的电流最大为500mA，电压范围是4.4V－5.5V，但是这并不是意味着设备可以无条件地使用VBUS向自己提供500mA的电流。
+	
+15 .USB-HID 
+	15.1 
+		https://baike.baidu.com/item/USB-HID/3074554?fr=aladdin
+		
+		是Human Interface Device的缩写，由其名称可以了解HID设备是直接与人交互的设备，例如键盘、鼠标与游戏杆等。不过HID设备并不一定要有人机接口，只要符合HID类别规范的设备都是HID设备。

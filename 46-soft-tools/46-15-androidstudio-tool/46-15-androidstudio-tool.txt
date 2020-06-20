@@ -1,0 +1,68 @@
+1. Android studio 将 Module 打包成 Jar 包,aar.
+	1.1 Android studio 将 Module 打包成 Jar 包
+		https://www.cnblogs.com/xinaixia/p/7660173.html
+		
+		1.1.1自定义生成 jar 包
+			在 build.gradle 文件中加入如下代码： 方式一：
+			在android节点外添加如下代码
+			以WheelView为例。
+			
+			def _BASENAME = "WheelViewJar";
+			def _VERSION = "_V1.3.4";
+			def _DestinationPath = "build"; //生成jar包的位置
+			//def zipFile = file('build/intermediates/bundles/default/classes.jar'); //待打包文件位置
+			def zipFile = file('build/intermediates/packaged-classes/release/classes.jar'); //待打包文件位置,as3.5对应的目录，as版本不同可能会有所不同。根据实际情况添加即可。
+			
+			注意源jar不是这个目录下面的：build\intermediates\full_jar\debug\createFullJarDebug，编译出来的jar无法使用。其它项目导入该jar包时，无法解析BuildConfig.java
+			
+			task deleteBuild(type:Delete){
+				delete _DestinationPath + _BASENAME + _VERSION + ".jar"
+			}
+
+			task makeJar(type:Jar){
+				from zipTree(zipFile)
+				from fileTree(dir:'src/main',includes:['assets/**']) //将assets目录打入jar包  
+				baseName = _BASENAME + _VERSION
+				destinationDir = file(_DestinationPath)
+			}
+
+			makeJar.dependsOn(deleteBuild, build)
+	1.2 Android Studio 编译release的aar、jar包。【好用】
+		https://blog.csdn.net/wenwins/article/details/80388361
+		
+		在 build.gradle 文件中加入如下代码： 方式一：
+			在android节点外添加如下代码
+			以WheelView为例。
+		
+		//自定义生成 jar 包
+		//task to delete the old jar
+		task deleteOldJar(type: Delete) {
+			delete 'release/WheelViewJar_V1.3.4.jar'
+		}
+		//task to export contents as jar
+		task makeJar(type: Copy) {
+			delete 'release/WheelViewJar_V1.3.4.jar' //删除之前的旧jar包
+			from('build/intermediates/packaged-classes/release/') //从这个目录下取出默认jar包
+			into('release/') //将jar包输出到指定目录下
+			include('classes.jar')
+			rename('classes.jar', 'WheelViewJar_V1.3.4.jar') //自定义jar包的名字
+		}
+		makeJar.dependsOn(build)
+		
+		点击右边的Gradle侧边栏：makeJar ,或者exportJar
+			
+2. Android Studio：unsupported class file version 52.0报错
+	2.1 Android Studio：unsupported class file version 52.0报错
+		https://blog.csdn.net/u011435933/article/details/80923285?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+3. 	ERROR: Jack is required to support java 8 language features. Either enable Jack or remove sourceCompatibility JavaVersion.VERSION_1_8.
+	Affected Modules:
+	
+	https://blog.csdn.net/u011781521/article/details/52702482
+	
+		在build.gradle文件的defaultConfig中添加一下就可以了..
+
+		jackOptions {
+			enabled true
+		}
+		
+		-source 1.7 中不支持 lambda 表达式

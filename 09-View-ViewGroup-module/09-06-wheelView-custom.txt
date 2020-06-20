@@ -1,3 +1,6 @@
 1. Android滚轮控件，基于ListView实现，可以自定义样式。 
 	1.1 Android滚轮控件，基于ListView实现，可以自定义样式。 
 		https://github.com/venshine/WheelView
+		
+		我fork的一份：
+		https://github.com/juyingguo/WheelView/tree/master/wheelview

@@ -41,3 +41,36 @@
 		6.2.1、Android中的sp和wp指针
 			博主：：linux 专家
 			https://blog.csdn.net/DroidPhone/article/details/5799792?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+			
+7. android 中camer mipi，usb接口适配开发
+	7.1 终于搞定android驱动USB摄像头了！
+		https://blog.csdn.net/mirkerson/article/details/50764314
+		
+		android usb摄像头的应用例子
+		http://brain.cc.kogakuin.ac.jp/research/usb-e.html
+		
+		simplewebcam的源码：
+		https://bitbucket.org/neuralassembly/simplewebcam/src
+	7.2 Android usb camera设备添加 
+		https://blog.csdn.net/it_fish_man/article/details/17395469?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+		
+		
+
+		
+	7.3 mipi口摄像头比USB口摄像头优越的地方 
+		1，mipi口支持的分辨率高，帧率高，500w，800w像素都是随随便便
+
+		2，原生的mipi摄像头可以直接DMA，可以过ISP，可以拿到raw数据
+
+		3，mipi的便宜，同等的USB摄像头非常贵
+	7.4 Android USBCamera，UVCCamera开发通用库，我试用了普通的USB摄像头没问题 
+		https://blog.csdn.net/qq_31939617/article/details/82347939?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-9.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-9.nonecase
+		
+	7.5 linux摄像头(mipi接口)简要说明 
+		https://blog.csdn.net/weixin_40720202/article/details/88664103?ops_request_misc=&request_id=&biz_id=102&utm_term=%20mipi%20for%20camera%20interface.&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-88664103
+		
+		
+	7.6 搜索 grep -irn "UVC input events device support","MIPI CSI",等等
+		kernel/drivers/media/usb/uvc/Kconfig:11:        bool "UVC input events device support"
+		kernel/drivers/media/platform/soc_camera/Kconfig:52:      This is a v4l2 driver for the SuperH MIPI CSI-2 Interface

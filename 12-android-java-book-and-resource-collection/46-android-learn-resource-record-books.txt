@@ -59,6 +59,7 @@
 					爱生活，爱Android
 
 				https://blog.csdn.net/luoshengyang
+		4.9 <Android多媒体应用实战开发实战详解> 王石磊
 		
 	五、《Android开发艺术探索》对应的网站
 		5.1、csdn博客 
