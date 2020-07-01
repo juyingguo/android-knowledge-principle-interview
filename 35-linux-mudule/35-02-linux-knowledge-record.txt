@@ -88,6 +88,25 @@
 15. Linux-DTS基础 
 	15.1 Linux-DTS基础 
 		https://blog.csdn.net/qq_33003441/article/details/84257342
+		
+	15.2 linux DTS介绍 
+		https://www.cnblogs.com/linux-37ge/p/11135617.html
+		
+		1.3. 相关名称缩写
+
+        <1>. DT   :Device Tree
+
+        <2>. FDT : Flattened Device Tree
+
+        <3>. OF   :Open Firmware
+
+        <4>. DTS :device tree source
+
+        <5>. DTSI:device tree source include
+
+        <6>. DTB :device tree blob
+
+        <7>. DTC :device tree compiler
 16. linux系统中misc子系统 
 	16.1 linux系统中misc子系统 
 		https://blog.csdn.net/wang_zheng_kai/article/details/42716403
@@ -131,3 +150,9 @@
 		https://blog.csdn.net/weaiken/article/details/88085360?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 		
 		https://blog.csdn.net/iteye_14514/article/details/81614037
+		
+20 占空比 
+	占空比是指在一个脉冲循环内，通电时间相对于总时间所占的比例。占空比(Duty Ratio)在电信领域中有如下含义：例如：脉冲宽度1μs，信号周期4μs的脉冲序列占空比为0.25。 [1] 
+	https://baike.baidu.com/item/%E5%8D%A0%E7%A9%BA%E6%AF%94/3652044?fr=aladdin
+	
+	外文名Duty Ratio，Duty Cycle

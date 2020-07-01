@@ -73,5 +73,20 @@
 		https://baike.baidu.com/item/uvc/3809290
 		
 		UVC全称为USB Video Class，即：USB视频类，是一种为USB视频捕获设备定义的协议标准。是Microsoft与另外几家设备厂商联合推出的为USB视频捕获设备定义的协议标准，已成为USB org标准之一。
+13 pwm 
+	http://www.elecfans.com/tags/pwm/
+	https://baike.baidu.com/item/%E8%84%89%E5%86%B2%E5%AE%BD%E5%BA%A6%E8%B0%83%E5%88%B6/10813756?fromtitle=PWM&fromid=3034961&fr=aladdin
+	
+	脉冲宽度调制（Pulse width modulation，PWM）是一种模拟控制方式，根据相应载荷的变化来调制晶体管基极或MOS管栅极的偏置，来实现晶体管或MOS管导通时间的改变，从而实现开关稳压电源输出的改变。这种方式能使电源的输出电压在工作条件变化时保持恒定，是利用微处理器的数字信号对模拟电路进行控制的一种非常有效的技术。脉冲宽度调制是利用微处理器的数字输出来对模拟电路进行控制的一种非常有效的技术，广泛应用在从测量、通信到功率控制与变换的许多领域中。
+14 ac dc 
+	14.1 https://baike.baidu.com/item/AC/DC/6338
 		
+		AC/DC（交流/直流），是指电源的规格是交流输入直流输出 [1]  ，属于开关电源分类中的一种。 
+		AC=Alternating Current.
+		DC=Direct Current.
 		
+	14.2 DC-DC电源基础知识
+		https://wenku.baidu.com/view/7827babaaa00b52acec7ca60.html
+		
+15 电源符号：VCC、VDD、VEE、VSS、VBAT各表示什么意思？ 
+	https://blog.csdn.net/weibo1230123/article/details/80372998

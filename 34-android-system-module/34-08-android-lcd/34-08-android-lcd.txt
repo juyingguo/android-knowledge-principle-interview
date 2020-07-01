@@ -45,12 +45,21 @@
 
 			补充说明：LCD接口类型说明：DSI，DPI（RGB接口），DBI（MCU接口，俗称80 system 接口）
 		
+		1.2.3 LCD接口和RGB介绍 
+			https://blog.csdn.net/juxianliyu/article/details/80421760?ops_request_misc=&request_id=&biz_id=102&utm_term=RGB%20lcd&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-80421760
+			
+			
+		
 	1.3 MIPI_DSI协议简要介绍 
 		https://blog.csdn.net/caihaitao2000/article/details/80224976
 		
 	1.4 MIPI屏是几Lane的，就是几组差分信号线
 	
+	1.5 LCD Mipi 调试方法及问题汇总 
+		https://blog.csdn.net/sdkdlwk/article/details/78698873
 		
+	1.6 lcd显示屏调试之mipi-timing 
+		https://www.temolin.com/node/323
 		
 3. lcd rgb,mipi在android中的配置。
 	3.1 s500 ,版型，bubble_gum 。lcd 配置。
@@ -80,4 +89,17 @@
 		kernel/arch/powerpc/platforms/powermac/feature.c:2750:          port_type = PMAC_SCC_IRDA;
 		kernel/arch/powerpc/platforms/powermac/feature.c:2755:                  port_type = PMAC_SCC_IRDA;
 		
-		
+4. LCD与LCM有什么区别？ 
+	https://zhidao.baidu.com/question/504445077.html
+	
+	1、字库
+
+	LCM带字库，LCD基本不带字库。bai
+
+	2、组成
+
+	LCD是液du晶显示器，一般是zhi指单独的屏幕；
+
+	LCM是液晶显示模组，它包括相应的驱动电路和控制电路，可以直接与单片机相连。
+
+	LCD是显示屏(LCD液晶屏)，LCM是包含了LCD在内以及控制LCD显示方式、内容的芯片、线路板等各种器件的集合。可以说LCD是显示内容的前台，LCM是包含了前台在内整个运作系统。

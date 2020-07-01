@@ -1,0 +1,9 @@
+1. Kconfig详解 
+	
+	1.1 Linux内核配置Kconfig语法 
+		https://blog.csdn.net/jianwen_hi/article/details/53398141?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase
+	
+	1.2 Kconfig详解 
+		https://blog.csdn.net/u011425939/article/details/80472324
+		
+		Kconfig的语法可以参考“Documentation/kbuild/kconfig-language.txt”
