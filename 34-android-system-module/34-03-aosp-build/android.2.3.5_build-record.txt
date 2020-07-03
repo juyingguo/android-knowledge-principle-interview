@@ -776,8 +776,7 @@
 			arm-eabi-gcc -v  //命令来查看编译器的版本信息
 			env | grep PATH // 查看配置环境变量
 			
-			https://blog.csdn.net/meiyubaihe/article/details/39429475
-			https://blog.csdn.net/chenliang0224/article/details/8761326
+			解决办法：：将参考【1】，将aosp/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/ 添加到环境变量中。
 			https://blog.csdn.net/davidbeckham2901/article/details/7397447
 			
 		9、编译成功

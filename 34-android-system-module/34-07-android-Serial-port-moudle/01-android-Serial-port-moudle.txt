@@ -11,9 +11,11 @@
 		https://blog.csdn.net/qq_35952946/article/details/78863871?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 	
 	1.5 Fork自Google开源的Android串口通信Demo，修改成Android Studio项目 https://code.google.com/archive/p/and… 
+		[已调试，正常运行。]
 		https://github.com/licheedev/Android-SerialPort-API
 		
 		https://github.com/jzt-Tesla/GoogleSerialPort
+		
 	
 	1.6 Android移植谷歌官方串口库支持校验位、数据位、停止位、流控配置 
 		https://juejin.im/post/5c010a19e51d456ac27b40fc

@@ -43,8 +43,15 @@
 			https://blog.csdn.net/DroidPhone/article/details/5799792?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 			
 7. android 中camer mipi，usb接口适配开发
+	
+	7.0 mipi和dsi【转】 
+		https://www.cnblogs.com/sky-heaven/p/12971279.html
+	
 	7.1 终于搞定android驱动USB摄像头了！
 		https://blog.csdn.net/mirkerson/article/details/50764314
+		
+			连接上摄像头，查看是否有设备节点。
+			shell 执行 ls -l /dev/v*
 		
 		android usb摄像头的应用例子
 		http://brain.cc.kogakuin.ac.jp/research/usb-e.html
@@ -71,6 +78,35 @@
 		https://blog.csdn.net/weixin_40720202/article/details/88664103?ops_request_misc=&request_id=&biz_id=102&utm_term=%20mipi%20for%20camera%20interface.&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-88664103
 		
 		
-	7.6 搜索 grep -irn "UVC input events device support","MIPI CSI",等等
+	7.6 搜索 grep -irn "UVC input events device support","MIPI CSI",等等。。一下仅记录通用linux,android配置。具体产品看产品
 		kernel/drivers/media/usb/uvc/Kconfig:11:        bool "UVC input events device support"
 		kernel/drivers/media/platform/soc_camera/Kconfig:52:      This is a v4l2 driver for the SuperH MIPI CSI-2 Interface
+		kernel/arch/arm/configs/(your product * )_defconfig:2062:CONFIG_USB_VIDEO_CLASS=m
+		
+		
+		
+		//VIDEO_OWL_DSI  也是生效的。系统相机，还能用。
+		kernel/drivers/video/owl/displays/dsi/Kconfig:1:config VIDEO_OWL_DSI	
+		kernel/arch/arm/configs/(your product * )_defconfig:2282:CONFIG_VIDEO_OWL_DSI=y		
+			
+		arch/arm/configs/actduino_bubble_gum_card_burn_defconfig:2281:CONFIG_VIDEO_OWL_DSI=y
+	
+		//关闭后，生效。 /dev/video1还在。 系统相机，还能用。
+		drivers/media/i2c/camera/owl_camera/Kconfig:6:config OWL7059_CAMERA 
+		arch/arm/configs/actduino_bubble_gum_card_burn_defconfig:2218:CONFIG_OWL7059_CAMERA=n
+		arch/arm/configs/actduino_bubble_gum_defconfig:2221:CONFIG_OWL7059_CAMERA=m
+		
+		//关闭【SOC_CAMERA】关闭后编译失败，可能引用地方过多
+				
+		//ACTIONS_SOC_CAMERA,关闭后编译失败，可能引用地方过多。
+		arch/arm/mach-owl/Kconfig:141:config ACTIONS_SOC_CAMERA
+		arch/arm/configs/actduino_bubble_gum_card_burn_defconfig:311:CONFIG_ACTIONS_SOC_CAMERA=y
+		arch/arm/configs/actduino_bubble_gum_defconfig:311:CONFIG_ACTIONS_SOC_CAMERA=y
+		
+8. SOC_CAMERA 
+	8.1 soc camera 子系统简介
+		[linux]
+		https://blog.csdn.net/smartvincent88/article/details/18987207
+		
+		8.1.2 soc camera 子系统之soc camera device初始化 
+			https://blog.csdn.net/smartvincent88/article/details/19037949

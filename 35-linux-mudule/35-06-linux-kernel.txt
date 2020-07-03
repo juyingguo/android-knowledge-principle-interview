@@ -13,3 +13,37 @@
 3. miscdevice、platform_device区别 (2012-11-03 10:46:21)
 	3.1 miscdevice、platform_device区别 (2012-11-03 10:46:21)
 		http://blog.sina.com.cn/s/blog_3f7213810101c62r.html 
+		
+4. 内核中defconfig
+	4.1 内核中修改和保存defconfig的方法 
+		https://blog.csdn.net/jijiagang/article/details/46861667
+		
+		4.1.2 正确地保存编译内核产生的.config文件-使用make savedefconfig
+			https://blog.csdn.net/kangear/article/details/39553337?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+			
+			
+			1. 要修改在arch/arm/configs下的文件xxx_defconfig
+			2. make xxx_defconfig 会生成.config文件。//废弃该方式。。
+			3. make menuconfig 修改配置后保存
+			4. make savedefconfig 生成defconfg文件
+			5. mv defconfig arch/arm/configs/xxx_defconfig 保存
+			
+			6. [4,5]可以合成一个步骤。 make savedefconfig & mv defconfig arch/arm/configs/xxx_defconfig
+			这样保存的defconfig文件，配置最小化。
+			————————————————
+			版权声明：本文为CSDN博主「j_j_g_a」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+			原文链接：https://blog.csdn.net/jijiagang/article/details/46861667
+		
+		
+	4.2 Linux 内核修改 xxx_defconfig 的正确方法 
+		https://blog.csdn.net/Qidi_Huang/article/details/77984575
+		
+	4.3 defconfig、 .config 、kconfig 与makefile和make menuconfig流程 
+		https://blog.csdn.net/u011570492/article/details/55803327
+		
+	4.5 android 修改编译内核源码配置选项不执行 
+		https://blog.csdn.net/zhangshaoye998/article/details/80636981?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-3
+		
+		解决方案::不使用make menuconfig来配置内核，直接修改arch/arm/configs下的x3288_defconfig 保持编译就好了
+		
+	

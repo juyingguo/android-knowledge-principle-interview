@@ -35,8 +35,10 @@ void dis32bit(int val)
         }else{
             printf("0");
         }
-        if(!(bit%4))
+        if(!(bit%4)){
             printf(" ");
+
+        }
     }
     putchar(10);
 }
@@ -50,30 +52,38 @@ int main(void)
 //    int e = -1;
 //    dis32bit(e);
 
-//    int a = 511;
+//    int a = 255;
+//    int a = 255;
 //    dis32bit(a);
 //    char b = a;
+//    printf("b = %d\n",b);
 //    dis8bit(b);
 //    printf("b = %d\n",b);
+//
+//    unsigned char c = a;
+//    printf("unsigned  char c = %d\n",c);
+//    dis8bit(c);
+//    printf("unsigned char c = %d\n",c);
 
-//    unsigned char a = 255;
-//    dis8bit(a);
-//    int b = a;
-//    dis32bit(b);
-//    printf("%d\n",b);
-
-
-    char a = -20;
+//    unsigned char a = 255;// 无符号位
+    char a = 128; // -1,255，127， 有符号位
     dis8bit(a);
-    unsigned int b = 1;
+    int b = a;
     dis32bit(b);
+    printf("%d\n",b);
 
-    unsigned int c = a + b;
-    dis32bit(c);
+
+//    char a = -20;
+//    dis8bit(a);
+//    unsigned int b = 1;
+//    dis32bit(b);
+//
+//    unsigned int c = a + b;
+//    dis32bit(c);
 
 //    printf("%u\n",c);
 
-    foo();
+//    foo();
 
     return 0;
 }

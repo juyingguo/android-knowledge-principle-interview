@@ -90,3 +90,7 @@
 		
 15 电源符号：VCC、VDD、VEE、VSS、VBAT各表示什么意思？ 
 	https://blog.csdn.net/weibo1230123/article/details/80372998
+	
+16 PCI总线 
+	16.1 PCI总线 
+		https://baike.baidu.com/item/PCI%E6%80%BB%E7%BA%BF/132135?fr=aladdin

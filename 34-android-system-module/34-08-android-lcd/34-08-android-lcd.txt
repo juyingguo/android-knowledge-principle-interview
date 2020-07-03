@@ -103,3 +103,19 @@
 	LCM是液晶显示模组，它包括相应的驱动电路和控制电路，可以直接与单片机相连。
 
 	LCD是显示屏(LCD液晶屏)，LCM是包含了LCD在内以及控制LCD显示方式、内容的芯片、线路板等各种器件的集合。可以说LCD是显示内容的前台，LCM是包含了前台在内整个运作系统。
+	
+5. otp lcd 
+	https://wenku.baidu.com/view/2299115e185f312b3169a45177232f60dccce75f.html
+	5.1 OTP与MTP && AP与BP 
+		https://blog.csdn.net/zhandoushi1982/article/details/4589980?utm_medium=distribute.pc_relevant_download.none-task-blog-BlogCommendFromBaidu-12.nonecase&depth_1-utm_source=distribute.pc_relevant_download.none-task-blog-BlogCommendFromBaidu-12.nonecas
+		
+		 OTP（One Time Programable）是MCU的一种存储器类型。MCU按其存储器类型可分为MASK(掩模)ROM、OTP(一次性可编程)ROM、FLASH ROM等类型。MASK ROM的MCU价格便宜，但程序在出厂时已经固化，适合程序固定不变的应用场合；FALSH ROM的MCU程序可以反复擦写，灵活性很强，但价格较高，适合对价格不敏感的应用场合或做开发用途；OTP ROM的MCU价格介于前两者之间，同时又拥有一次性可编程能力，适合既要求一定灵活性，又要求低成本的应用场合，尤其是功能不断翻新、需要迅速量产的电子产品。
+        对应的MTP就是multiple time programmable.可以多次编程的MCU。
+
+		 ======================================================================================
+
+		android手机一般有两个处理器，一个叫做Application Processor（AP），另一个叫做Baseband Processor（BP）。AP是ARM架构的处理器，用于运行linux+android系统；BP用于实时操作系统（RTOS），通讯协议栈运行于BP的RTOS之上。
+		————————————————
+		版权声明：本文为CSDN博主「DBOY」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/zhandoushi1982/article/details/4589980
+	
