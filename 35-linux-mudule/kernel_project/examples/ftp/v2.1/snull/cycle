@@ -1,0 +1,1 @@
+ifconfig eth1 down ; ifconfig eth2 down ; rmmod snull ; insmod snull eth=1 arp=1 ; ifconfig eth1 local0 ; ifconfig eth2 local1 ; route add -net snullnet0 eth1 ; route add -net snullnet1 eth2

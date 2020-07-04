@@ -156,3 +156,9 @@
 	https://baike.baidu.com/item/%E5%8D%A0%E7%A9%BA%E6%AF%94/3652044?fr=aladdin
 	
 	外文名Duty Ratio，Duty Cycle
+	
+21 正交概念
+	21.1 正交概念
+		https://blog.csdn.net/weixin_38130913/article/details/99798688
+	21.2 正交 （数学名词） 
+		

@@ -15,3 +15,13 @@
 		
 	3.2 VMware Workstation 14 虚拟机安装Ubuntu16.04版本Linux系统 
 		https://blog.csdn.net/salmon_zhang/article/details/79468918?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+	3.3 VMware Workstation14 Pro 安装Ubuntu 12.04 
+		无法获得VMCI驱动程序的版本：句柄无效。
+		驱动程序“vmci.sys”的版本不正确。请尝试重新安装vmware workstation.
+		模块“devicepowerOn”启动失败。
+		
+		https://blog.csdn.net/mononoke111/article/details/79010700?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+		解决办法：
+		用编辑器打开创建的虚拟机文件*.vmx，找到vmci0.present = “TRUE”一项：

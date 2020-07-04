@@ -223,5 +223,22 @@
 
 		参考：
 		https://codeday.me/bug/20190808/1617975.html
+8. Ubuntu16.10下查看linux版本，内核版本，系统位数，gcc版本 
+	8.1 Ubuntu16.10下查看linux版本，内核版本，系统位数，gcc版本 
+		https://blog.csdn.net/weixin_33828101/article/details/91953682
 		
+		查看linux版本
+		cat /etc/issue
+		
+		查看内核版本
+		cat /proc/version
+			uname命令
+			uname --help
+		
+		.查看系统位数
+			leblancs@leblancs-virtual-machine:~$ getconf WORD_BIT
+			32
+			leblancs@leblancs-virtual-machine:~$ getconf LONG_BIT
+			
+			file /bin/bash
 	

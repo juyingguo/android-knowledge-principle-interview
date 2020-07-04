@@ -1,0 +1,26 @@
+*** Makefile~	Sat Nov  2 18:49:52 1996
+--- Makefile	Sat Dec  7 18:01:02 1996
+***************
+*** 25,27 ****
+  
+! all: $(TARGET).o
+  
+--- 25,27 ----
+  
+! all: .depend $(TARGET).o
+  
+***************
+*** 35,36 ****
+  clean:
+! 	rm -f *.o *~ core
+--- 35,44 ----
+  clean:
+! 	rm -f *.o *~ core .depend
+! 
+! depend .depend dep:
+! 	$(CC) $(CFLAGS) -M *.c > $@
+! 
+! 
+! ifeq (.depend,$(wildcard .depend))
+! include .depend
+! endif

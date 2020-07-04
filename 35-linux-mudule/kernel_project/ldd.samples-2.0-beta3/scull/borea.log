@@ -1,0 +1,8 @@
+rm -f main.o pipe.o access.o scull.o
+make scull.o KERNELDIR="/usr/src/linux-2.4"
+make[1]: Entering directory `/mnt/rubini/cvs-projects/ldd.book/src/scull'
+gcc -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.4/include -O -g -DSCULL_DEBUG  -I..   -c main.c -o main.o
+cpp: main.c: Input/output error
+make[1]: *** [main.o] Error 1
+make[1]: Leaving directory `/mnt/rubini/cvs-projects/ldd.book/src/scull'
+make: *** [scull-24.o] Error 2

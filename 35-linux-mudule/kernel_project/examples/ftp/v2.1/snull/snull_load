@@ -1,0 +1,8 @@
+#!/bin/sh
+
+/sbin/insmod ./snull.o $*
+ifconfig sn0 local0
+ifconfig sn1 local1
+
+route add -net snullnet0 sn0
+route add -net snullnet1 sn1

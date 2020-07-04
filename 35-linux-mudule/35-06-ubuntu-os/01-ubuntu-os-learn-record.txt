@@ -1,3 +1,16 @@
+01 ubuntu
+	01.1  ubuntu 下载。【下载慢】
+		http://old-releases.ubuntu.com/releases/ 
+		
+		01.1.2 Ubuntu多版本下载(速度超快)
+			https://www.pianshen.com/article/3680773095/ 
+			
+			http://mirrors.163.com/ubuntu-releases/
+
+	01.2 Linux系列 | Ubuntu 各版本号和名称对照【转】
+		https://www.cnblogs.com/tinywan/p/10961376.html
+		
+
 1. 解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
 	1.1、解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
 		https://blog.csdn.net/qq_40402685/article/details/89917477
@@ -166,3 +179,10 @@
 10. ctrl + alt + f1到f6字符终端。
 
 11. . 和 source 修改的环境变量会传递给父进程。 
+
+12 ubuntu系列打开终端方法
+	12.1 ubuntu12系列打开终端方法 
+		http://blog.chinaunix.net/uid-25498312-id-3612935.html
+		
+		A:使用ctrl+alt+t（基本上用这个，别的都不用的）
+		B:ash里搜索。打开Dash,在里面搜索“gnome-terminal”,就可以找到终端应用序。 

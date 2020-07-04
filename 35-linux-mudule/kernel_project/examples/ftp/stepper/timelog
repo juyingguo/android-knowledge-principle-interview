@@ -1,0 +1,5 @@
+#!/bin/sh
+#set -v
+while true; do
+  echo T`date +%H:%M` M`cut -f 1 -d ' ' /proc/loadavg` > /dev/stepper
+  sleep 10; done

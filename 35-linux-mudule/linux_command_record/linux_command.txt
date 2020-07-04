@@ -122,6 +122,25 @@
 		https://blog.csdn.net/HermitSun/article/details/94494700
 		
 		解压aosp_2_3_3时遇到该错误提示，暂时不用理会。不影响正常编译。
+		
+	4.6 ls 
+		https://www.runoob.com/linux/linux-comm-ls.html
+		Linux ls命令用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。
+		
+		语法
+		 ls [-alrtAFR] [name...]
+		参数 :
+
+		-a 显示所有文件及目录 (ls内定将文件名或目录名称开头为"."的视为隐藏档，不会列出)
+		-l 除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出
+		-r 将文件以相反次序显示(原定依英文字母次序)
+		-t 将文件依建立时间之先后次序列出
+		-A 同 -a ，但不列出 "." (目前目录) 及 ".." (父目录)
+		-F 在列出的文件名称后加一符号；例如可执行档则加 "*", 目录则加 "/"
+		-R 若目录下有文件，则以下之文件亦皆依序列出
+		
+		
+		
 (5)	、ubuntu 安装 vmwaretools 
 	yum -y install perl gcc make kernel-headers kernel-devel
 	yum repolist all //查看拥有的仓库

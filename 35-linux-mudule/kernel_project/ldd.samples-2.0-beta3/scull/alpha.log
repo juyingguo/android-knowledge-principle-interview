@@ -1,0 +1,40 @@
+rm -f main.o pipe.o access.o scull.o
+make scull.o KERNELDIR="/usr/src/linux-2.4"
+make[1]: Entering directory `/morgana/home/rubini/cvs-projects/ldd.book/src/scull'
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.4/include -O -g -DSCULL_DEBUG  -I..   -c main.c -o main.o
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.4/include -O -g -DSCULL_DEBUG  -I..   -c pipe.c -o pipe.o
+pipe.c:434: warning: `name' defined but not used
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.4/include -O -g -DSCULL_DEBUG  -I..   -c access.c -o access.o
+ld -r main.o pipe.o access.o -o scull.o
+make[1]: Leaving directory `/morgana/home/rubini/cvs-projects/ldd.book/src/scull'
+for n in scull.o; do \
+	mv $n `echo $n | sed 's/.o$/-24.o/'`; \
+done
+rm -f main.o pipe.o access.o scull.o
+make scull.o KERNELDIR="/usr/src/linux-2.2"
+make[1]: Entering directory `/morgana/home/rubini/cvs-projects/ldd.book/src/scull'
+make[1]: *** Warning: File `/usr/src/linux-2.2/.config' has modification time in the future (1602414439 > 971695060)
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.2/include -O -g -DSCULL_DEBUG  -I..   -c main.c -o main.o
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.2/include -O -g -DSCULL_DEBUG  -I..   -c pipe.c -o pipe.o
+pipe.c:434: warning: `name' defined but not used
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.2/include -O -g -DSCULL_DEBUG  -I..   -c access.c -o access.o
+ld -r main.o pipe.o access.o -o scull.o
+make[1]: *** Warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/morgana/home/rubini/cvs-projects/ldd.book/src/scull'
+for n in scull.o; do \
+	mv $n `echo $n | sed 's/.o$/-22.o/'`; \
+done
+rm -f main.o pipe.o access.o scull.o
+make scull.o KERNELDIR="/usr/src/linux-2.0"
+make[1]: Entering directory `/morgana/home/rubini/cvs-projects/ldd.book/src/scull'
+make[1]: *** Warning: File `/usr/src/linux-2.0/.config' has modification time in the future (1596928342 > 971695115)
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.0/include -O -g -DSCULL_DEBUG  -I..   -c main.c -o main.o
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.0/include -O -g -DSCULL_DEBUG  -I..   -c pipe.c -o pipe.o
+pipe.c:434: warning: `name' defined but not used
+gcc  -pipe -mno-fp-regs -ffixed-8 -mcpu=ev4 -Wa,-mev6 -Wall -D__KERNEL__ -DMODULE -I/usr/src/linux-2.0/include -O -g -DSCULL_DEBUG  -I..   -c access.c -o access.o
+ld -r main.o pipe.o access.o -o scull.o
+make[1]: *** Warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/morgana/home/rubini/cvs-projects/ldd.book/src/scull'
+for n in scull.o; do \
+	mv $n `echo $n | sed 's/.o$/-20.o/'`; \
+done

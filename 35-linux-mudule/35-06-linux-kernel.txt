@@ -1,3 +1,58 @@
+01. Linux Device Drivers 3rd(中文版-很好)
+	01.1 为加入 Linux 内核列表, 遵照在 Linux 内核邮件列表 FAQ:
+		http://www.tux.org/lkml 中的指示.
+	01.2  例程。
+		我们和 O' Reilly 都不保留任何权利对任何的衍生的工作. 所有的程
+		序都可从 ftp://ftp.ora.com/pub/examples/linux/drivers/ 得到, 详尽的版
+		权条款在相同目录中的 LICENSE 文件里阐述
+
+		ftp://ftp.ora.com/pub/examples/linux/drivers/
+		
+02 ldd3学习笔记--环境搭建(构建linux2.6.10源码树)
+	02.1 ldd3学习笔记--环境搭建(ubuntu5.04构建linux2.6.10源码树)吧
+		ldd3学习笔记--环境搭建(ubuntu5.04构建linux2.6.10源码树)
+		https://blog.csdn.net/zjy900507/article/details/94168637
+		
+		ubuntu5.04(32bit)
+	02.2 Ubuntu 16.04 编译安装内核 【不使用】
+		https://blog.csdn.net/dongshibo12/article/details/82422658?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+	02.3 Ubuntu 12.04.1 内核编译整个过程（内核2.6.32.70） 
+		https://blog.csdn.net/Paulhappy/article/details/50762929?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase
+		
+		A:  Ubuntu 12.04.1 内核编译整个过程（内核2.6.10）
+
+		A.1 eink@ubuntu:/usr/src/linux-2.6.10$ sudo make menuconfig
+			/usr/bin/ld: cannot find -lncurses
+			collect2: ld returned 1 exit status
+			-e 
+			>> Unable to find the Ncurses libraries.
+			>>
+			>> You must install ncurses-devel in order
+			>> to use 'make menuconfig'
+
+			make[2]: *** [scripts/lxdialog/ncurses] Error 1
+			make[1]: *** [menuconfig] Error 2
+			make: *** [menuconfig] Error 2
+			
+			解决方案：；
+			sudo apt-get install libncurses5-dev 
+			
+			Package libncurses5-dev is not available, but is referred to by another package. This may mean that the package is missing, has been obsoleted, or is only available from another source
+			E: Package 'libncurses5-dev' has no installation candidate
+
+			
+			解决方案：
+				这个问题的原因是ubuntu的/etc/apt/source.list中的源比较旧了，需要更新一下，
+				更新源之后，再更新：
+				sudo apt-get -y update
+				sudo apt-get update
+				sudo apt-get upgrade
+
+		
+	02.4 基于ubuntu14.04下编译linux2.6内核 
+		https://blog.csdn.net/pleasecallmekaige/article/details/82954775?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5.nonecase
+		
 1. Linux kernel debug技巧----开启DEBUG选项 
 	1.1 Linux kernel debug技巧----开启DEBUG选项 
 		https://blog.csdn.net/robertsong2004/article/details/53047242
@@ -45,5 +100,5 @@
 		https://blog.csdn.net/zhangshaoye998/article/details/80636981?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-3
 		
 		解决方案::不使用make menuconfig来配置内核，直接修改arch/arm/configs下的x3288_defconfig 保持编译就好了
-		
+	
 	

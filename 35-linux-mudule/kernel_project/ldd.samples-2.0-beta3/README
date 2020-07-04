@@ -1,0 +1,11 @@
+
+These are the source files for the book "Linux Device Drivers".
+
+This release is an ad-interim snapshot, while I and Jonathan Corbet
+are working on the second edition of the book. Not all the sample code
+is included, but what is there is tested with versions 2.0, 2.2 and
+2.4 of the kernel (or only 2.0 and 2.2, when thus noted). Note that we
+couldn't yet do massive testing, so keep the source with a grain of
+salt.
+
+/alessandro

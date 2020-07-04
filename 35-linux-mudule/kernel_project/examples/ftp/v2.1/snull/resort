@@ -1,0 +1,12 @@
+#!/usr/bin/awk -f
+
+$1 == SAVE   {
+		for (n=2; n<=NF; n++)
+			printf "%-5s %-16s %6i\n",$1,name[n],$n;
+}
+
+$1 != SAVE {
+		for (n=2; n<=NF; n++)
+			name[n]=$n;
+		SAVE = $1
+}

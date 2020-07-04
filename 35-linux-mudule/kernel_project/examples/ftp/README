@@ -1,0 +1,17 @@
+
+These are the source files for the book "Linux Device Drivers".
+
+Here you find the complete sources that have been included in the
+book.  I have tested them as much as possible, but there might be some
+problems left, especially with 2.1.43 (it's hard to test all of them
+reliably when the underlying code base is continuously changing). In
+particular, you might find some problems with "genksyms", whose syntax
+changed between version 2.0 and 2.1 of the kernel.
+
+The module "allocator" that you find in misc-progs is different from
+the one I talk about in chapter "Mmap and DMA". The "aggressive"
+technique didn't look promising in the real world, so I turned back to
+allocating memory after "high_memory". See
+misc-modules/allocator.README for details.
+
+

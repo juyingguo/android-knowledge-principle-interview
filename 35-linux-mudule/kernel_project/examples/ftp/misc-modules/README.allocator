@@ -1,0 +1,3 @@
+The "allocator" module is in ../v2.1/allocator.c. I am using
+it in production drivers and I didn't bother to port it back to
+compile without the sysdep-2.1.h header.
