@@ -43,11 +43,14 @@
 
 			
 			解决方案：
-				这个问题的原因是ubuntu的/etc/apt/source.list中的源比较旧了，需要更新一下，
+				这个问题的原因是ubuntu的/etc/apt/source.list中的源比较旧了，需要更新一下..
 				更新源之后，再更新：
 				sudo apt-get -y update
 				sudo apt-get update
 				sudo apt-get upgrade
+				
+				如部分朋友依然有报错信息需要在执行完sudo apt-get update，sudo apt-get upgrade后再执行一下
+				sudo apt-get -f install 
 
 		
 	02.4 基于ubuntu14.04下编译linux2.6内核 

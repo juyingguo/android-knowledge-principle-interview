@@ -254,3 +254,26 @@
 21 inline 
 	21.1 C语言inline详细讲解 
 		https://www.cnblogs.com/do-your-best/p/11007435.html
+		
+22 c/c++中取余与取模区别 
+	22.1 c/c++中取余与取模区别 
+		https://blog.csdn.net/qq_33921804/article/details/50630028?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+		对于整型数a，b来说，取模运算或者求余运算的方法都是：
+		1.求 整数商： c = a/b;
+		2.计算模或者余数： r = a - c*b.
+		求模运算和求余运算在第一步不同: 取余运算在取c的值时，向0 方向舍入；而取模运算在计算c的值时，向负无穷方向舍入。
+		所谓向0方向舍入，就是以小数点为界限，直接将小数部分去掉。如（Int）-1.324=-1（亦叫截断法）；
+		而向负无穷方向舍入，就是最终结果比真实值更小。如（Int）-1.324=-2；（Int此处是强制转换数据类型）
+		注意c是指商;
+		符号：除 " / " ? ? 取余（模）“ ?% ” ? ? 转义字符“ ?\ ”
+		————————————————
+		版权声明：本文为CSDN博主「wellxin」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/qq_33921804/article/details/50630028
+23 int32_t什么意思
+	23.1 https://zhidao.baidu.com/question/553081320638718252.html
+		在baiint为4字节的系统
+		typedef int int32_t 不用变 使用int32_t则为du4字节
+		在int为2字节的系统zhi
+		typedef long int32_t 改变int为long，使用int32_t还是4字节。
+		总的来说，移植到dao2字系统只改变typedef long int32_t中的int，而不需要全部改变int32_t。

@@ -1,0 +1,44 @@
+1. linux下对/sys/class/gpio中的gpio的控制 
+	1.1 linux下对/sys/class/gpio中的gpio的控制 
+		https://blog.csdn.net/q1070292175/article/details/17307381?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+2. 关于gpio口编号的问题 
+	2.1 关于gpio口编号的问题 
+		http://dev.t-firefly.com/forum.php?mod=viewthread&tid=10746&highlight=%B1%E0%BA%C5
+		
+		num=bank*32+pin
+		比如GPIO7_C2： 7*32+18=242
+		
+		直接贴给你吧：
+		PIN={
+			'A0': 0,    'A1': 1,    'A2': 2,    'A3': 3,    'A4': 4,    'A5': 5,    'A6': 6,    'A7': 7,
+			'B0': 8,    'B1': 9,    'B2':10,    'B3':11,    'B4':12,    'B5':13,    'B6':14,    'B7':15,
+			'C0':16,    'C1':17,    'C2':18,    'C3':19,    'C4':20,    'C5':21,    'C6':22,    'C7':23,
+			'D0':24,    'D1':25,    'D2':26,    'D3':27,    'D4':28,    'D5':29,    'D6':30,    'D7':31,
+		}
+		
+	2.2 Linux系统下PORT端口引脚导出GPIO对应的序号关系 
+		https://blog.csdn.net/digcore/article/details/78490221
+		
+		PORT端口中的引脚序号与GPIOx的对应关系：
+
+		GPIOx = P*32+N
+
+		P：PORTA=0，PORTB=1，PORTC=2，...
+
+		N：PA0=0，PA1=1，...，PB0=0，PB3=3，...，PD5=5，...
+
+		例如：
+
+		PA3：x=0*32+3=3，即对应GPIO3；
+
+		PA8：x=0*32+8=8，即对应GPIO8；
+		
+		
+		
+		...
+
+		PH6：x=7*32+6=230，即对应GPIO230；
+		————————————————
+		版权声明：本文为CSDN博主「DigCore」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/digcore/article/details/78490221

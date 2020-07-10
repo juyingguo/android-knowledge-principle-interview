@@ -9,6 +9,8 @@ void foo(void)
 {
    unsigned int a = 6;
    int b = -20;
+   printf("%u + %d = %d \n",a,b,(a+b));
+   printf("%u + %d = %u \n",a,b,(a+b));
    (a+b > 6)?puts("> 6") : puts("<= 6");
 }
 
@@ -66,11 +68,11 @@ int main(void)
 //    printf("unsigned char c = %d\n",c);
 
 //    unsigned char a = 255;// 无符号位
-    char a = 128; // -1,255，127， 有符号位
-    dis8bit(a);
-    int b = a;
-    dis32bit(b);
-    printf("%d\n",b);
+//    char a = 128; // -1,255，127， 有符号位
+//    dis8bit(a);
+//    int b = a;
+//    dis32bit(b);
+//    printf("%d\n",b);
 
 
 //    char a = -20;
@@ -83,7 +85,7 @@ int main(void)
 
 //    printf("%u\n",c);
 
-//    foo();
+    foo();
 
     return 0;
 }

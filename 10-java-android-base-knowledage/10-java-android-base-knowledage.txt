@@ -268,9 +268,22 @@
 		
 		https://blog.csdn.net/u011913612/article/details/77822280?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-8.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-8.nonecase
 		
+	24.2 安卓手机双击唤醒屏幕是怎么做到的……求解答 
+		https://ask.csdn.net/questions/183394
+		
+		手机的显示屏和触摸屏实际上是两个单独工作的组件，只不过触摸屏是接近透明的，贴在显示屏上面用户看不出来。触摸屏识别手势信号，传输给处理器，显示屏只是负责显示相应的图像。传统的手机关闭显示屏时，触摸屏也是关闭的，两者都不工作。有唤醒功能的手机如LG G3 和 HTC One M8 等，在关闭显示屏，但是触摸屏还在是通电的，在黑屏的状态下用户可以随时滑动输入，当你划出特定的手势时，就相当于给出了一个开机键的信号，处理器识别以后，屏幕开启，实现双击唤醒
+		
+		这个以前有做过，双击点亮屏幕或者双击打某打电话，滑动C打开照相机等之类。这个涉及到一些底层驱动开发，一般要做这个需求的话，需要先确认下手机IC是多少，然后在对应IC文件里面修改，然后底层修改完毕后会给上层一个接口，上层的话就在framework层里面修改就行
+		
+		那是要让TP不关闭，在驱动层做的，检测到用户双击行为后唤醒屏幕
+		
+	24.3 Android6.0 亮屏灭屏流程（DisplayPowerControler、WMS）（二）亮度设置 
+		[android,linux,driver]
+		https://blog.csdn.net/kc58236582/article/details/54616756
 		
 		
-		
+	25.4 Android锁屏、重启、关机开发！简单直接 
+		https://blog.csdn.net/GodDavide/article/details/53098538?utm_source=blogxgwz5 
 		
 		
 		
