@@ -137,3 +137,4 @@
 		然后打开另一个命令行窗口，输入：
 
 		adb shell cat /dev/ttyS0
+13 查看android 设备可用的串口

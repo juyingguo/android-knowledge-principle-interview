@@ -75,17 +75,21 @@ int main(void)
 //    printf("%d\n",b);
 
 
-//    char a = -20;
-//    dis8bit(a);
-//    unsigned int b = 1;
-//    dis32bit(b);
-//
-//    unsigned int c = a + b;
-//    dis32bit(c);
+    char a = -20;
+    dis8bit(a);
+    unsigned int b = 1;
+    dis32bit(b);
 
-//    printf("%u\n",c);
+    unsigned int c = a + b;
+    dis32bit(c);
 
-    foo();
+    int d = c;
+    printf("%d\n",c);
+    printf("%u\n",c);
+    printf("%d\n",d);
+
+
+//    foo();
 
     return 0;
 }
