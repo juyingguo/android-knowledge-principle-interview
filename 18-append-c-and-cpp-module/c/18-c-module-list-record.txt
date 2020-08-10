@@ -195,6 +195,9 @@
 			https://blog.csdn.net/Endeavor_G/article/details/80552680?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 			
 14、c语言结构体 
+	
+	14.0 c语言结构体定义方式。
+		
 	14.1、C语言结构体初始化的四种方法 
 		https://blog.csdn.net/weixin_42445727/article/details/81191327
 		
@@ -277,3 +280,14 @@
 		在int为2字节的系统zhi
 		typedef long int32_t 改变int为long，使用int32_t还是4字节。
 		总的来说，移植到dao2字系统只改变typedef long int32_t中的int，而不需要全部改变int32_t。
+24， C语言中static
+	24.1 C语言中static的作用及C语言中使用静态函数有何好处 
+		https://www.cnblogs.com/fnlingnzb-learner/p/8980452.html
+25,c语言里NULL的理解 
+	25.1 c语言里NULL的理解 
+		 https://blog.csdn.net/selina8921/article/details/79176297 
+		 
+26,c语言，goto用法，goto最强使用方法 	
+	26.1 c语言，goto用法，goto最强使用方法 
+		 https://blog.csdn.net/qq_35683626/article/details/78263379
+		  
