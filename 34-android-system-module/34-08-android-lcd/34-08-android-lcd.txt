@@ -88,6 +88,12 @@
 		kernel/arch/powerpc/platforms/powermac/feature.c:2744:  int port_type = PMAC_SCC_ASYNC;
 		kernel/arch/powerpc/platforms/powermac/feature.c:2750:          port_type = PMAC_SCC_IRDA;
 		kernel/arch/powerpc/platforms/powermac/feature.c:2755:                  port_type = PMAC_SCC_IRDA;
+	3.2 屏初始化代码
+		搜索：grep -irnw "send_cmd"
+		搜索结果：kernel/drivers/video/owl/displays/dsi/dsi_cmd.c:50:void send_cmd(struct platform_device *pdev)
+		
+		u-boot中的位置：u-boot\drivers\video\owl_dsi_cmd.c
+		
 		
 4. LCD与LCM有什么区别？ 
 	https://zhidao.baidu.com/question/504445077.html
