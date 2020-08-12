@@ -283,6 +283,9 @@
 24， C语言中static
 	24.1 C语言中static的作用及C语言中使用静态函数有何好处 
 		https://www.cnblogs.com/fnlingnzb-learner/p/8980452.html
+	24.2 C语言中的static 详细分析 
+		https://blog.csdn.net/keyeagle/article/details/6708077
+		
 25,c语言里NULL的理解 
 	25.1 c语言里NULL的理解 
 		 https://blog.csdn.net/selina8921/article/details/79176297 
