@@ -41,4 +41,17 @@
 	4.3 关闭自动缩进。使用simple即可。【不起作用】
 5. unable to create the project directory file:*/*/*/ /source insight/projects/PROJECTS.DB3
 	应用程序已经打开过一个了，但还没有运行起来。再次启动该应用程序就会弹出该提示。
+	可能启动比较慢。多等一会就启动起来了。
+	
+6. Source Insight：Symbol not found
+	6.1 Source Insight：Symbol not found 
+		https://blog.csdn.net/TekinSun/article/details/50907897
+7. Source Insight的Project File搜索选项如何调出 
+	https://jingyan.baidu.com/article/63f23628fab8b84208ab3dfb.html
+	打开source insight 在顶部工具栏点击View选项
+	选择Panels->Project File List, 右侧的Project Window中即恢复了Project Files搜索选项啦
+	
+8. Source Insight去掉文件名显示的时候首字母大写 
+	https://blog.csdn.net/RomanBrickie/article/details/8756800
+	在Options->Preference->display里头，勾上Show exact case of file names
 	
