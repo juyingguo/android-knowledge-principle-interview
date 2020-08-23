@@ -8,3 +8,8 @@
 		
 	1.2 向量内积 
 		https://baike.baidu.com/item/%E7%82%B9%E7%A7%AF/9648528?fromtitle=%E5%90%91%E9%87%8F%E5%86%85%E7%A7%AF&fromid=1146743&fr=aladdin
+		
+2. 计算器中平方根如何使用 
+	2.1 计算器中平方根如何使用 
+		https://jingyan.baidu.com/article/5d368d1e177eb23f61c05757.html
+		

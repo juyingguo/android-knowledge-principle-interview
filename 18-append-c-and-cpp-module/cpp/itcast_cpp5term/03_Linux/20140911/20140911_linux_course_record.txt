@@ -42,6 +42,9 @@
 		
 		编译时使用静态库生成可执行程序。
 		gcc test_main.c /lib/libmycal.a -o app
+			如果编译失败，提示找不到头文件。
+			使用 gcc -Isrc test_main.c /lib/libmycal.a -o app
+			 
 	1.8 您已经将一个或多个符号连接复制到不支持符号链接的主机操作系统。正在取消赋值操作。
 		
 2. ssh

@@ -1,0 +1,10 @@
+1. SecureCRT配置自动记录日志 
+	1.1 SecureCRT配置自动记录日志
+		 https://www.cnblogs.com/xiegj/p/5669892.html
+		 
+2. [SecureCRT] 解决 securecrt failed to open the host key database file 的问题 
+	2.1 [SecureCRT] 解决 securecrt failed to open the host key database file 的问题 
+		https://www.cnblogs.com/ifantastic/p/3621285.html
+		
+		将 KnownHosts 目录下的 *.pub 文件和 HostKeyDB.txt 删掉，下次启动时它们会再次自动生成。
+		

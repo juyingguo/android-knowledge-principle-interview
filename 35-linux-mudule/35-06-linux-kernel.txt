@@ -103,5 +103,14 @@
 		https://blog.csdn.net/zhangshaoye998/article/details/80636981?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-3
 		
 		解决方案::不使用make menuconfig来配置内核，直接修改arch/arm/configs下的x3288_defconfig 保持编译就好了
-	
+5,EXPORT_SYMBOL 
+	5.1 Linux内核开发中EXPORT_SYMBOL的使用方法  
+		https://www.jianshu.com/p/289f10ccef2d
+6. Linux kernel debug技巧----开启DEBUG选项 
+	6.1 Linux kernel debug技巧----开启DEBUG选项 
+		http://www.wowotech.net/linux_application/kernel_debug_enable.html 
+		
+		https://blog.csdn.net/weixin_38233274/article/details/101383642 
+		
+		
 	
