@@ -284,7 +284,9 @@
 		
 	25.4 Android锁屏、重启、关机开发！简单直接 
 		https://blog.csdn.net/GodDavide/article/details/53098538?utm_source=blogxgwz5 
-		
+25,Android匿名共享内存（Ashmem）原理 
+	25.1 Android匿名共享内存（Ashmem）原理 
+		https://www.jianshu.com/p/d9bc9c668ba6
 		
 		
 	

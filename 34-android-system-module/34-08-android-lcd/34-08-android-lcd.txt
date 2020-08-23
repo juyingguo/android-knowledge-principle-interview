@@ -88,6 +88,12 @@
 		kernel/arch/powerpc/platforms/powermac/feature.c:2744:  int port_type = PMAC_SCC_ASYNC;
 		kernel/arch/powerpc/platforms/powermac/feature.c:2750:          port_type = PMAC_SCC_IRDA;
 		kernel/arch/powerpc/platforms/powermac/feature.c:2755:                  port_type = PMAC_SCC_IRDA;
+	3.2 屏初始化代码
+		搜索：grep -irnw "send_cmd"
+		搜索结果：kernel/drivers/video/owl/displays/dsi/dsi_cmd.c:50:void send_cmd(struct platform_device *pdev)
+		
+		u-boot中的位置：u-boot\drivers\video\owl_dsi_cmd.c
+		
 		
 4. LCD与LCM有什么区别？ 
 	https://zhidao.baidu.com/question/504445077.html
@@ -118,8 +124,31 @@
 		————————————————
 		版权声明：本文为CSDN博主「DBOY」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 		原文链接：https://blog.csdn.net/zhandoushi1982/article/details/4589980
+
+6.android Mipi LCD 调试开发案例参考
+	6.1 [Android6.0][RK3399] Mipi LCD 通用移植调试流程 
+		带有图
+		https://blog.csdn.net/kentyu001/article/details/78266280
+		原著不带图
+		https://blog.csdn.net/dearsq/article/details/77341120
+	
+7. 屏相关调试案例
+	7.1和菜鸟一起学android4.0.3源码之touchscreen配置+调试记录 .
+		https://www.cnblogs.com/ljf181275034/articles/3198134.html
+	7.2 触摸屏驱动开发 
+		https://www.cnblogs.com/ljf181275034/category/433125.html
 		
-6. android系统旋转方向定制问题 
-	6.1 android系统旋转方向定制问题 
+8. uboot启动时默认选择LCD屏幕显示 
+	https://c.lanmit.com/yidongkaifa/Android/23437.html
+	
+9. 基于MIPI接口的Android显示驱动设计 - 道客巴巴 
+	http://www.doc88.com/p-80616901764288.html
+	
+10.uboot开机logo
+	https://blog.csdn.net/yuyin86/article/details/8592206
+	
+11. android系统旋转方向定制问题 
+	11.1 android系统旋转方向定制问题 
 		https://blog.csdn.net/pashanhu6402/article/details/53023272?utm_source=blogxgwz9
+
 	

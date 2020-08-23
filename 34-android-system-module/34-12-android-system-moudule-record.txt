@@ -17,3 +17,9 @@
 		
 	1.2 Android如何获取手机各项信息
 		https://blog.csdn.net/u011791526/article/details/71158336
+2. Android系统启动过程-uBoot+Kernel+Android 
+	2.1 Android系统启动过程-uBoot+Kernel+Android 
+		https://www.cnblogs.com/pngcui/p/4665106.html
+3. android开机logo和动画修改
+	3.1 android开机logo和动画修改 
+		https://blog.csdn.net/liangtianmeng/article/details/83960701

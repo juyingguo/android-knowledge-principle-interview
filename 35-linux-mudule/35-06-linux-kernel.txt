@@ -111,6 +111,8 @@
 		http://www.wowotech.net/linux_application/kernel_debug_enable.html 
 		
 		https://blog.csdn.net/weixin_38233274/article/details/101383642 
-		
-		
+
+7.[驱动注册]platform_driver_register()与platform_device_register()
+	https://blog.csdn.net/ufo714/article/details/8595021
+
 	
