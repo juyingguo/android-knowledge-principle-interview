@@ -35,6 +35,7 @@
 		————————————————
 		版权声明：本文为CSDN博主「liuming651664」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 		原文链接：https://blog.csdn.net/liuming651664/article/details/84180860
+
 4. 编译aosp代码无法烧录。
 	4.1 修改编码格式为utf-8;默认已经是这个了，好像source insight 3.5不支持安装以后的修改编码格式。
 	4.2 文件格式使用linux lf，window 下的cr lf导致的。【根本原因】
@@ -54,4 +55,4 @@
 8. Source Insight去掉文件名显示的时候首字母大写 
 	https://blog.csdn.net/RomanBrickie/article/details/8756800
 	在Options->Preference->display里头，勾上Show exact case of file names
-	
+9.Unable to create the project directory file :D:\用户目录\我的文档\Source Insight\Projects\PROJECTS.DB3

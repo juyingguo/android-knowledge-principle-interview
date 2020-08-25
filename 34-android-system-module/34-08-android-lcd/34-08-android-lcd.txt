@@ -124,7 +124,7 @@
 		————————————————
 		版权声明：本文为CSDN博主「DBOY」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 		原文链接：https://blog.csdn.net/zhandoushi1982/article/details/4589980
-		
+
 6.android Mipi LCD 调试开发案例参考
 	6.1 [Android6.0][RK3399] Mipi LCD 通用移植调试流程 
 		带有图
@@ -178,3 +178,8 @@
 		android/frameworks/av/cmds/stagefright/codec.cpp:389:        SurfaceComposerClient::getDisplayInfo(display, &info);
 		android/frameworks/av/cmds/stagefright/stream.cpp:317:    SurfaceComposerClient::getDisplayInfo(display, &info);
 		
+12. android系统旋转方向定制问题 
+	12.1 android系统旋转方向定制问题 
+		https://blog.csdn.net/pashanhu6402/article/details/53023272?utm_source=blogxgwz9
+
+	

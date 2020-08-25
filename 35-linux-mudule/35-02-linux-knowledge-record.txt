@@ -107,6 +107,8 @@
         <6>. DTB :device tree blob
 
         <7>. DTC :device tree compiler
+	15.3 设备树学习（二、设备树dts/dtsi格式）
+		 https://blog.csdn.net/qq_16777851/article/details/87291146 
 16. linux系统中misc子系统 
 	16.1 linux系统中misc子系统 
 		https://blog.csdn.net/wang_zheng_kai/article/details/42716403
