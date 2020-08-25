@@ -146,3 +146,35 @@
 	
 10.uboot开机logo
 	https://blog.csdn.net/yuyin86/article/details/8592206
+	
+11,lcd 横竖屏。
+	11.1 高通平台android9.0设置开机默认横屏显示 
+		https://blog.csdn.net/u010867436/article/details/100079568
+		
+	11.2 Android默认开机横屏总结 
+		https://blog.csdn.net/q1183345443/article/details/53068526
+		
+	11.3 android5.1设置默认开机横屏
+			https://blog.csdn.net/lwz622/article/details/99471903
+	11.4 Android6.0设置开机启动默认横屏并兼顾自动旋转功能 
+		https://blog.csdn.net/wlwl0071986/article/details/81285553 
+	11.5 液晶屏 横竖屏切换 怎么修改？ 
+		https://bbs.csdn.net/topics/320237144?list=1128787
+		
+		控制器里面有一组寄存器可以设置显示的方向.自己对这数据手册改吧(软件)
+		另外,屏幕也有两跟线可以设置屏幕的扫描方向(硬件).
+	11.x1，我记录
+		juying_dai@ibotn-Aspire-TC-705:~/testproject/I10V20_std_for_newapp_test$ grep -irn "SurfaceComposerClient::getDisplayInfo("
+			android/hardware/ti/omap4-aah/test/CameraHal/camera_test_menu.cpp:873:    SurfaceComposerClient::getDisplayInfo(0, &dinfo);
+			android/hardware/ti/omap4-aah/test/CameraHal/camera_test_menu.cpp:1282:    SurfaceComposerClient::getDisplayInfo(0, &dinfo);
+			android/hardware/qcom/media/mm-video-v4l2/vidc/venc/src/video_encoder_device_v4l2.cpp:769:        SurfaceComposerClient::getDisplayInfo(display, &display_info);
+			android/frameworks/native/libs/gui/SurfaceComposerClient.cpp:646:status_t SurfaceComposerClient::getDisplayInfo(const sp<IBinder>& display,
+			android/frameworks/native/opengl/tests/lib/WindowSurface.cpp:40:    err = SurfaceComposerClient::getDisplayInfo(mainDpy, &mainDpyInfo);
+			android/frameworks/native/services/surfaceflinger/tests/Transaction_test.cpp:100:        SurfaceComposerClient::getDisplayInfo(display, &info);
+			android/frameworks/base/libs/hwui/tests/TestContext.cpp:31:    status_t status = SurfaceComposerClient::getDisplayInfo(dtoken, &gDisplay);
+			android/frameworks/base/cmds/bootanimation/BootAnimation.cpp:273:    status_t status = SurfaceComposerClient::getDisplayInfo(dtoken, &dinfo);
+		android/frameworks/av/cmds/screenrecord/screenrecord.cpp:375:                    err = SurfaceComposerClient::getDisplayInfo(mainDpy,
+		android/frameworks/av/cmds/screenrecord/screenrecord.cpp:544:    err = SurfaceComposerClient::getDisplayInfo(mainDpy, &mainDpyInfo);
+		android/frameworks/av/cmds/stagefright/codec.cpp:389:        SurfaceComposerClient::getDisplayInfo(display, &info);
+		android/frameworks/av/cmds/stagefright/stream.cpp:317:    SurfaceComposerClient::getDisplayInfo(display, &info);
+		

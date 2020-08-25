@@ -19,7 +19,9 @@
 		
 	1.6、应用保活终极总结(一)：Android6.0以下的双进程守护保活实践 
 		http://www.52im.net/thread-1135-1-1.html
-		
+	1.7 史上最强Android保活思路：深入剖析腾讯TIM的进程永生技术
+		https://site.douban.com/277207/widget/notes/191796627/note/749018107/
+		【含有一些优秀保活文章记录】
 
 二、实践验证。
 	2.1、START_STICKY 

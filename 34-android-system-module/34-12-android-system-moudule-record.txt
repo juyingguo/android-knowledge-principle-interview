@@ -23,3 +23,13 @@
 3. android开机logo和动画修改
 	3.1 android开机logo和动画修改 
 		https://blog.csdn.net/liangtianmeng/article/details/83960701
+		
+	3.2 Android定制：修改开机启动画面
+		https://www.cnblogs.com/x_wukong/p/9371521.html
+		
+		如需进一步了解，下面有几篇博文可供参考： 
+		1. Android系统的开机画面显示过程分析： 
+		http://blog.csdn.net/luoshengyang/article/details/7691321/ 
+		2. android logo：内核、android开机动画 
+		http://blog.csdn.net/xubin341719/article/details/8267282
+		
