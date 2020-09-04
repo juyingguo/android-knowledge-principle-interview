@@ -194,3 +194,38 @@
 15、Android TextView中"\n"不能正常换行的问题  
 	15.1、Android TextView中"\n"不能正常换行的问题  
 		https://blog.csdn.net/u014522449/article/details/49703479
+		
+16、LinearLayout和RelativeLayout分别内嵌SwipeRefreshLayout的效果。
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include layout="@layout/empty_view_new"/>
+
+    </RelativeLayout>
+	布局为LinearLayout时：
+	
+	if (hasData){
+            recyclerView.setVisibility(View.VISIBLE);
+            empty_view.setVisibility(View.GONE);
+        }else {
+            recyclerView.setVisibility(View.GONE);
+            empty_view.setVisibility(View.VISIBLE);
+    }
+		当hasData = false 时，空布局不能够显示出来。
+	当布局为RelativeLayout时：
+		当hasData = false 时，空布局能够显示出来。
+		
+	

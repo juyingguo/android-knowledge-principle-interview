@@ -235,6 +235,11 @@
 			"ro.board.platform",
 			"ro.arch"
 		};
+	16.2 C语言 创建动态数组的两种方法
+		https://blog.csdn.net/weixin_43760909/article/details/87953522
+		
+		16.2.1 C语言实现动态数组
+			https://blog.csdn.net/IOT2017/article/details/84102686
 17. 指针
 	17.1 函数指针
 		https://www.runoob.com/cprogramming/c-fun-pointer-callback.html
@@ -304,3 +309,7 @@
 28,C语言中函数定义使用不带参数与使用void参数的区别 
 	28.1 C语言中函数定义使用不带参数与使用void参数的区别 
 		https://www.jianshu.com/p/86d3e352810c
+29,C语言中嵌入汇编代码
+	https://blog.csdn.net/baccon/article/details/8152388#
+	GNU GCC  ：
+	《AT&T汇编语言与GCC内嵌汇编简介》
