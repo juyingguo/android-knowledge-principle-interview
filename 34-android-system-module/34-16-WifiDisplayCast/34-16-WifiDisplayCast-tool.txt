@@ -1,0 +1,31 @@
+1. 代码位置
+	C:\Windows\System32>adb shell dumpsys window | findstr mCurrent
+    mCurrentAppOrientation=-1
+      mCurrentRotation=0
+  mCurrentFocus=Window{86b38b9 u0 com.android.settings/com.android.settings.Settings$WifiDisplaySettingsActivity}
+2. 投屏状态变化。
+	2.1 确保网络连接。
+		打开开关后，发现的投屏设备状态变化，无法使用，无线显示。
+		手动点击连接设备后，状态变为：正在连接，已连接。
+		断开网络后，会断开链接，【未在附近找到设备】，列表清空。
+		手动关闭开关后，【未在附近找到设备】，列表清空。
+		
+	2.2 曾经连接过的会有设置选项，可以设置重命名，或者忽略保存。
+3. android上投射屏幕用到技术分析？
+
+4. Android Wi-Fi Display（Miracast）介绍
+	https://blog.csdn.net/Innost/article/details/8474683
+	
+	4.2 Android WifiDisplay分析一：相关Service的启动
+		https://www.cnblogs.com/senior-engineer/p/4971396.html
+		
+	4.3	Android WifiDisplay分析二：Wifi display连接过程. 
+		https://www.cnblogs.com/seven-sky/p/4875717.html
+		
+	
+	4.4 Android WifiDisplay分析三：RTSP交互以及数据传输 
+		https://www.cnblogs.com/seven-sky/p/4875721.html
+		
+	4.5 Android 4.2 Wifi Display 之 Settings 源码分析（一） 
+		https://www.cnblogs.com/seven-sky/p/4875730.html
+	
