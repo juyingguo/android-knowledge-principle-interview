@@ -60,4 +60,4 @@
 		版权声明：本文为CSDN博主「罗升阳」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 		原文链接：https://blog.csdn.net/Luoshengyang/article/details/6568411
 2. 在Ubuntu上为Android系统内置C可执行程序测试Linux内核驱动程序
-	
+	https://blog.csdn.net/luoshengyang/article/details/6571210
