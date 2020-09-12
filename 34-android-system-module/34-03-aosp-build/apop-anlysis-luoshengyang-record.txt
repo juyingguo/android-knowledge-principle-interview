@@ -1,6 +1,6 @@
 1. 在Ubuntu上为Android系统编写Linux内核驱动程序 
 	1.1 在Ubuntu上为Android系统编写Linux内核驱动程序 
-		五.在hello目录中新增Kconfig和Makefile两个文件，其中Kconfig是在编译前执行配置命令make menuconfig时用到的，而Makefile是执行编译命令make是用到的：
+	 五.在hello目录中新增Kconfig和Makefile两个文件，其中Kconfig是在编译前执行配置命令make menuconfig时用到的，而Makefile是执行编译命令make是用到的：
 
        Kconfig文件的内容
 
@@ -16,16 +16,16 @@
       六. 修改arch/arm/Kconfig和drivers/kconfig两个文件，在menu "Device Drivers"和endmenu之间添加一行：
       source "drivers/hello/Kconfig"
         这样，执行make menuconfig时，就可以配置hello模块的编译选项了。. 
-        七. 修改drivers/Makefile文件，添加一行：
+      七. 修改drivers/Makefile文件，添加一行：
         obj-$(CONFIG_HELLO) += hello/
-        八. 配置编译选项：
+      八. 配置编译选项：
         USER-NAME@MACHINE-NAME:~/Android/kernel/common$ make menuconfig
         找到"Device Drivers" => "First Android Drivers"选项，设置为y。
         注意，如果内核不支持动态加载模块，这里不能选择m，虽然我们在Kconfig文件中配置了HELLO选项为tristate。要支持动态加载模块选项，必须要在配置菜单中选择Enable loadable module support选项；在支持动态卸载模块选项，必须要在Enable loadable module support菜单项中，选择Module unloading选项。
-        九. 编译：
+      九. 编译：
         USER-NAME@MACHINE-NAME:~/Android/kernel/common$ make
         编译成功后，就可以在hello目录下看到hello.o文件了，这时候编译出来的zImage已经包含了hello驱动。
-        十. 参照在Ubuntu上下载、编译和安装Android最新内核源代码（Linux Kernel）一文所示，运行新编译的内核文件，验证hello驱动程序是否已经正常安装：
+      十. 参照在Ubuntu上下载、编译和安装Android最新内核源代码（Linux Kernel）一文所示，运行新编译的内核文件，验证hello驱动程序是否已经正常安装：
         USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel ./kernel/common/arch/arm/boot/zImage &
         USER-NAME@MACHINE-NAME:~/Android$ adb shell
         进入到dev目录，可以看到hello设备文件：
@@ -56,7 +56,8 @@
         root@android:/sys/class/hello/hello # cat val
         0
         至此，我们的hello内核驱动程序就完成了，并且验证一切正常。这里我们采用的是系统提供的方法和驱动程序进行交互，也就是通过proc文件系统和devfs文件系统的方法，下一篇文章中，我们将通过自己编译的C语言程序来访问/dev/hello文件来和hello驱动程序交互，敬请期待。
-————————————————
-版权声明：本文为CSDN博主「罗升阳」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/Luoshengyang/article/details/6568411
+		————————————————
+		版权声明：本文为CSDN博主「罗升阳」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/Luoshengyang/article/details/6568411
+2. 在Ubuntu上为Android系统内置C可执行程序测试Linux内核驱动程序
 	

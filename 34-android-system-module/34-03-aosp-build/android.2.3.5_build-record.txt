@@ -811,6 +811,11 @@
 		来源：CSDN 
 		原文：https://blog.csdn.net/Luoshengyang/article/details/6564592 
 		版权声明：本文为博主原创文章，转载请附上博文链接！
+	11、emulator: ERROR: Can't access ANDROID_PRODUCT_OUT as '/home/eink/test_project/aosp/android2.3.3/mydroid/out/debug/host/linux-x86/pr/sim'
+		You need to build the Android system before launching the emulator
+		
+		需要先配置环境变量。参考【一】-8.
+ 
 八、Android之Goldfish 
 	8.1、Android之Goldfish 
 		https://forum.huawei.com/enterprise/zh/thread-155675.html
