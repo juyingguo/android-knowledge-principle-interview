@@ -1,3 +1,9 @@
-一、irtualBox中安装Ubuntu16.04后总是弹出0x00000000错误，怎么破
-1.wolfnp： 设置-》系统-》芯片组，改成ich9，那个选项就行了！刚解决！(1年前#3楼)收起回复
+1、irtualBox中安装Ubuntu16.04后总是弹出0x00000000错误，怎么破
+	1.1 wolfnp： 设置-》系统-》芯片组，改成ich9，那个选项就行了！刚解决！(1年前#3楼)收起回复
 	但是显示都无法操作
+	
+2.VMWare下ubuntu全屏显示
+	2.1  解决VMWare下ubuntu无法全屏的问题
+		https://blog.csdn.net/renrenhappy/article/details/5735414
+		
+		ctrl+alt+enter 可以在 全屏/非全屏 直接切换

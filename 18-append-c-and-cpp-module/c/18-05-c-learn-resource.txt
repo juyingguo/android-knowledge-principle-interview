@@ -39,5 +39,22 @@
 			
 			2. epoll实现高并发聊天室
 				https://blog.csdn.net/qq_31564375/article/details/51581038?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-4&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-4
+3.c语言在不同平台下开发的区别
+	3.1 在linux和windows下做c语言的区别
+		https://blog.csdn.net/jonathan_zz/article/details/1357040
 		
+		jonathan_zz 2006-10-30 15:38:00  1649  收藏 1
+		分类专栏： 专业相关
+		版权
+		在linux和windows下做c语言的区别
+
+		 linux 入门难  精通容易 
+		是一座山,山脚比较陡,越往上越平坦
+		最后到了山顶的花园和别墅
+		免费向你开放
+
+		Windows入门容易 精通难
+		是另一座山 开始的时候比较平坦
+		越往上越陡 最后发现一个紧锁的铁门
+		上面挂着个牌子“Microsoft私有山头，非请勿入”
 	

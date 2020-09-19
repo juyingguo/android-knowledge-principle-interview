@@ -13,8 +13,66 @@
 	2.2 曾经连接过的会有设置选项，可以设置重命名，或者忽略保存。
 	
 	2.3 手动点击过连接。且连接成功过。
-		isRemembered true 
-3. android上投射屏幕用到技术分析？
+		isRemembered true
+3. 语音命令，开启投屏。
+	手动链接后，将该设备名称保存值到本地sp中.
+	
+	启动后，读取已保存的设备名称。并打开投屏开关。
+	
+	
+	3.1 当前已经是连接投屏状态，此时启动投屏界面。无需做任何事情。
+		
+		//如果更智能，可以做成后台服务。需要时间做。【暂时不做】
+		
+		//如果有设备正处于连接进行中，也无需处理
+	3.2 当前没有处于连接状态，也没有记录过，就默认什么也不做。等待用户连接，或提示用户手动链接。
+		//新增待验证是否可行：如果只有一个可以连接的设备，则自动连接。【待验证:不一定可行，因为假如没扫描到当前设备，却扫描到了外面的其它设备了，是不可以直接连的。】
+		
+		当有设备连接成功，则记录设备名称。
+	3.3 当前没有处于连接状态，但已经记录过。
+		启动投屏，扫描设备，如果有可用的设备和已保存的设备名称匹配，则主动连接。
+		
+	3.5，不管是否是通过语音开启投屏，还是通过手动点击进入投屏界面开启投屏，只要连接成功后，就记录保存所连接设备的名称。
+		也便于曾经手动连接过，首次通过语音启动投屏时，也能自动连接。
+		
+	3.6 语音开启投屏，直接打开投屏开关。
+	
+	3.7，开关控件切换技巧。如果已经是该状态，就不再切换。防止循环调用。
+	
+	3.8，通过systemui 界面中开启，投屏界面，会重新创建，旧的会销毁。看如何调用。
+		而通过语音应用开启投屏界面，旧的投屏界面不会销毁。且会重新创建。
+		默认投屏界面启动模式为标准模式。
+		<activity android:name="Settings$WifiDisplaySettingsActivity"
+                android:label="@string/wifi_display_settings_title"
+                android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.WIFI_DISPLAY_SETTINGS" />
+                <action android:name="android.settings.CAST_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.wfd.WifiDisplaySettings" />
+        </activity>
+		
+		
+       尝试设置为：：android:launchMode="singleTask" 进行验证。。
+	   
+	   3.8.2 SystemUI中，
+			调用过程。Settings.ACTION_CAST_SETTINGS
+			跟踪代码最终调用位置：
+			com.android.systemui.statusbar.phone.PhoneStatusBar.java
+			startActivityDismissingKeyguard(..){
+				intent.setFlags(
+                                    Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            mContext.startActivityAsUser(
+                                    intent, new UserHandle(UserHandle.USER_CURRENT));
+			}
+			
+			//这样写，旧的activity就会重新创建。
+			//startActivityAsUser 普通应用无法直接调用。
+			//只需要加入：Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP，且待启动的activity是standard模式。这样该activity每次就会重建。
+			
 
 4. Android Wi-Fi Display（Miracast）介绍
 	https://blog.csdn.net/Innost/article/details/8474683
@@ -37,4 +95,7 @@
 		
 	4.7 WiFi Display 
 		https://blog.csdn.net/dnfchan/article/details/8558552
+ 
+5. android上投射屏幕用到技术分析？
+
 	

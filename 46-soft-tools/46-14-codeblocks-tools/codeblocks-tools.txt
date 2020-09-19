@@ -3,6 +3,19 @@
 	1.1 plugin 
 		http://wiki.codeblocks.org/index.php?title=Code::Blocks_Plugins
 
+	1.2 Linux 系统下 CodeBlocks安装与使用
+		https://blog.csdn.net/qq_40118071/article/details/79107487
+		
+		1.安装
+		1）sudo add-apt-repository ppa:damien-moore/codeblocks-stable
+		输入密码后，会提示你敲【Enter】继续，然后如果一切OK的话，就会安装好这个ppa源。
+		继续敲：
+		2）sudo apt-get update
+		对源进行更新，这个过程会下载一些东西，请保持网络畅通。最后，开始安装：
+		3）sudo apt-get install codeblocks
+		OK了，只要网络不出问题，就大功告成，CodeBlocks就会顺利安装完成！
+
+		剩下要做的就是把快捷方式拽到启动器上方便打开就行了。
 2. Codeblocks实用快捷键技巧汇总 (全) 
 
 	2.1 Codeblocks shortcuts 
