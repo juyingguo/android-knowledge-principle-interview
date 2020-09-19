@@ -12,6 +12,8 @@
 	01.1 自己动手编译最新Android源码及SDK(Ubuntu)(Ubuntu 16.04上编译Android 6.0.x 及以上版本)
 		https://blog.csdn.net/dd864140130/article/details/51718187
 		
+	01.2 Android架构分析之Android开发环境搭建
+		https://blog.csdn.net/liuhaoyutz/article/details/8485820
 一；ubuntu16.04编译android2.3源码
 	
 	ubuntu16.04 ,jdk1.6 ,android_2.3.3
@@ -170,7 +172,7 @@
 			
 			
 	
-二、针对【一】中编译aosp源码我遇到编译问题记录：
+二、针对【一】中编译aosp2.3.5源码我遇到编译问题记录：
 			
 	1. ubuntun 16.卸载openjdk1.7
 		sudo apt-get remove openjdk*
@@ -419,17 +421,20 @@
 		
 		cd /usr/bin
 		root@shepherd-VPCS134GX:/home/shepherd/Android# sudo ln -s -f /usr/lib/jvm/jdk1.6.0_34/bin/javadoc /bin/javadoc
-	14 
+	14,
 		Can't locate Switch.pm in @INC (you may need to install the Switch module) (@INC contains: external/webkit/WebCore/bindings/scripts /etc/perl 	/usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/local/share/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/share/perl/5.22 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at external/webkit/WebCore/dom/make_names.pl line 38.
 		BEGIN failed--compilation aborted at external/webkit/WebCore/dom/make_names.pl line 38.
 		make: *** [out/target/product/generic/obj/STATIC_LIBRARIES/libwebcore_intermediates/WebCore/HTMLNames.h] Error 2
 		
 		
 		解决办法：：sudo apt-get install libswitch-perl 
+		
+	15,/usr/bin/ld: i386:x86-64 architecture of input file `out/host/linux-x86/obj/EXECUTABLES/aapt_intermediates/AaptAssets.o' is incompatible with i386 output
+		这个问题是原来在32位Linux 系统下编译的o文件残留，在64位编译时候所提示的编译错误。make clean 可以解决。也可手动删除提示的o文件，之后重新编译。
 			
 三、编译问题汇总：
 	1. https://blog.csdn.net/u013541140/article/details/52027569
-	2.https://www.csdn.net/gather_29/MtTakg4sMzA4MC1ibG9n.html
+	2. 
 	
 四、ubuntu16.04配置ADB调试环境
 	apt-get install android-tools-adb 来安装adb
@@ -811,6 +816,11 @@
 		来源：CSDN 
 		原文：https://blog.csdn.net/Luoshengyang/article/details/6564592 
 		版权声明：本文为博主原创文章，转载请附上博文链接！
+	11、emulator: ERROR: Can't access ANDROID_PRODUCT_OUT as '/home/eink/test_project/aosp/android2.3.3/mydroid/out/debug/host/linux-x86/pr/sim'
+		You need to build the Android system before launching the emulator
+		
+		需要先配置环境变量。参考【一】-8.
+ 
 八、Android之Goldfish 
 	8.1、Android之Goldfish 
 		https://forum.huawei.com/enterprise/zh/thread-155675.html

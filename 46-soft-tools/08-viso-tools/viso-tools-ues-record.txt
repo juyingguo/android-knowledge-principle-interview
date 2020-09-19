@@ -64,5 +64,25 @@
 		————————————————
 		版权声明：本文为CSDN博主「IceBear6」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 		原文链接：https://blog.csdn.net/BadMushroom/article/details/75269972
-	
+	1.4	Visio2013 64位下载安装以及破解激活教程
+		特别说明：以下教程如果未能破解激活，请在断网条件下安装破解！！！！
+
+		安装
+		Visio2013 professional版下载地址：
+		https://pan.baidu.com/s/14Ffl_bx1AqYEevAmIxQZ1A
+		密码: u7mh
+
+		安装时选择立即安装或者自定义安装位置都可以。安装完毕打开visio可以看到产品未激活，先关闭，进行下面的破解激活。
+
+		破解激活：
+		破解文件下载地址：
+		https://pan.baidu.com/s/1TVi_SacyAc95Z8JJwypvXA
+		密码: meu3
+		
+		//破解文件名。KMSpico_setup.exe
+
+		破解文件下载后直接点击安装即可。安装成功后visio已经激活。
+		打开visio软件，即可看到已激活。
+
+
 		

@@ -10,14 +10,14 @@
 int a = 0; //全局变量
 
 //自定义的函数，在新的线程中执行
-void fun1(/*void * */){//形参void * 不可省略，否则编译出错.// 不同编译器，有的需要有的不需要。 
+void fun1(/*void * */){//形参void * 不可省略，否则编译出错.// 不同编译器，有的需要有的不需要。
         while(1){
-        a++; 
-        if(a>=10) break;   
-        
+        a++;
+        if(a>=10) break;
+
         Sleep(200);
-        printf("a = %d, new thread running...\n", a); 
-    } 
+        printf("a = %d, new thread running...\n", a);
+    }
     printf("new thread end.\n\n");
     _endthread();
 }

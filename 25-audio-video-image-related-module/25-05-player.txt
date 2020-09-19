@@ -1,0 +1,8 @@
+1. 开源播放器
+	1.1 github上十二款最著名的Android播放器开源项目
+		https://blog.csdn.net/qq_24531461/article/details/73456794
+	1.2 Android中视频播放器的选择，MediaPlayer、ExoPlayer、ijkplayer简单对比 
+		https://blog.csdn.net/qq_34895720/article/details/101511876
+		
+	1.3 Android主流开源视频播放器对比 
+		https://blog.csdn.net/aa642531/article/details/93230076

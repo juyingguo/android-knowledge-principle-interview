@@ -42,6 +42,10 @@
 	5.3、Android：onNewIntent()触发机制及注意事项 
 		https://blog.csdn.net/findsafety/article/details/9664061
 		
+	5.4，使用onNewIntent 主页面的切换Fragment页面
+		【启动模式相关】
+		https://blog.csdn.net/w2316/article/details/88877922
+		
 六、activity启动模式与Intent Flag
 
 	6.1、FLAG_ACTIVITY_CLEAR_TASK 

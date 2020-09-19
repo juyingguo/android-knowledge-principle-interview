@@ -288,6 +288,8 @@
 	25.1 Android匿名共享内存（Ashmem）原理 
 		https://www.jianshu.com/p/d9bc9c668ba6
 		
-		
+25，Android学习笔记（四十）：Preference的使用 
+	25.1 Android学习笔记（四十）：Preference的使用 
+		https://blog.csdn.net/flowingflying/article/details/6671548
 	
 	
