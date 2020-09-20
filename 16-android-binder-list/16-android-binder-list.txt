@@ -7,3 +7,10 @@
 	2.1 Android Bander设计与实现 - 设计篇
 		【universus】
 		https://blog.csdn.net/universus/article/details/6211589
+3,【Android系统】binder 到底是什么？openbinder 又是什么？它是什么机制？
+	3.1 【Android系统】binder 到底是什么？openbinder 又是什么？它是什么机制？
+		https://zhuanlan.zhihu.com/p/137812696
+		
+	3.2 OpenBinder 
+		http://www.angryredplanet.com/~hackbod/openbinder/docs/html/index.html
+		http://www.angryredplanet.com/~hackbod/openbinder/docs/html/BinderIPCMechanism.html

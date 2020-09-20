@@ -14,6 +14,10 @@
 		
 	01.2 Android架构分析之Android开发环境搭建
 		https://blog.csdn.net/liuhaoyutz/article/details/8485820
+		
+02,linux内核编译相关命令记录
+	02.1 arm-eabi-gcc -v  //命令来查看编译器的版本信息
+			env | grep PATH // 查看配置环境变量
 一；ubuntu16.04编译android2.3源码
 	
 	ubuntu16.04 ,jdk1.6 ,android_2.3.3
@@ -146,9 +150,9 @@
 		2、
 				source build/envsetup.sh
 				lunch
-				emulator
 				
-				运行模拟器。
+				emulator //运行模拟器。
+				
 			    USER-NAME@MACHINE-NAME:~/Android$ emulator
 			    模拟器运行需要四个文件，分别是Linux 		Kernel镜像zImage和Android镜像文件system.img、userdata.img和ramdisk.img。执行emulator命令时，如果不带任何参数，则Linux Kernel镜像默认使用~/Android/prebuilt/android-arm/kernel目录下的kernel-qemu文件，而Android镜像文件则默认使用ANDROID_PRODUCT_OUT目录下的system.img、userdata.img和ramdisk.img，也就是我们刚刚编译出来的镜像问题。
 			    当然，我们也可以以指定的镜像文件来运行模拟器，即运行emulator时，即：
@@ -160,7 +164,7 @@
 				版权声明：本文为博主原创文章，转载请附上博文链接！
 				
 				如果出现：：
-				emulator: command not found //先执行上面的命令。
+				emulator: command not found //PATH环境变量中，加入~/Android/out/host/linux-x86/bin
 				
 				 USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel ./prebuilt/android-arm/kernel/kernel-qemu -sysdir ./out/target/product/generic -system system.img -data userdata.img -ramdisk ramdisk.img
 				错误：：
@@ -336,7 +340,7 @@
 
 		Which would you like? [generic-eng]
 		
-		https://blog.csdn.net/liuhaoyutz/article/details/8485820?_t=t
+		https://blog.csdn.net/liuhaoyutz/article/details/8485820
 		
 	11、sudo apt-get install bison 执行命令后提示锁异常。
 		Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
@@ -446,6 +450,14 @@
 	adb start-server
 
 	adb devices
+	
+	4.1 Err:1 http://cn.archive.ubuntu.com/ubuntu xenial/universe amd64 android-tools-adb amd64 5.1.1r36+git20160322-0ubuntu3
+
+	4.2 直接使用aosp编译出来的adb就行了。
+		android/out/host/linux-x86/bin/adb
+		将其加入环境变量中即可。
+		export PATH=$PATH:~/testproject/android/aosp/android_2_3_5/out/host/linux-x86/bin
+
 五、ramdisk.img system.img userdata.img 分析	
 		https://blog.csdn.net/adaptiver/article/details/53915705
 		# file ramdisk.img 　　　
@@ -816,7 +828,9 @@
 		来源：CSDN 
 		原文：https://blog.csdn.net/Luoshengyang/article/details/6564592 
 		版权声明：本文为博主原创文章，转载请附上博文链接！
-	11、emulator: ERROR: Can't access ANDROID_PRODUCT_OUT as '/home/eink/test_project/aosp/android2.3.3/mydroid/out/debug/host/linux-x86/pr/sim'
+	11、emulator -kernel ./kernel/goldfish/arch/arm/boot/zImage & 输入后报错。
+
+		emulator: ERROR: Can't access ANDROID_PRODUCT_OUT as '/home/eink/test_project/aosp/android2.3.3/mydroid/out/debug/host/linux-x86/pr/sim'
 		You need to build the Android system before launching the emulator
 		
 		需要先配置环境变量。参考【一】-8.
