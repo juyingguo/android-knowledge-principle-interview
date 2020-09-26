@@ -61,3 +61,36 @@
 		原文链接：https://blog.csdn.net/Luoshengyang/article/details/6568411
 2. 在Ubuntu上为Android系统内置C可执行程序测试Linux内核驱动程序
 	https://blog.csdn.net/luoshengyang/article/details/6571210
+	
+3. 在Ubuntu上为Android增加硬件抽象层（HAL）模块访问Linux内核驱动程序
+	https://blog.csdn.net/luoshengyang/article/details/6573809
+	
+		进入到在hardware/libhardware/include/hardware目录，新建hello.h文件.
+		进入到hardware/libhardware/modules目录，新建hello目录，并添加hello.c文件.
+		继续在hello目录下新建Android.mk文件.
+	
+	3.1 DEVICE_NAME定义为"/dev/hello"。由于设备文件是在内核驱动里面通过device_create创建的，而device_create创建的设备文件默认只有root用户可读写，而hello_device_open一般是由上层APP来调用的，这些APP一般不具有root权限，这时候就导致打开设备文件失败：
+
+      Hello Stub: failed to open /dev/hello -- Permission denied.
+      解决办法是类似于Linux的udev规则，打开Android源代码工程目录下，进入到system/core/rootdir目录，里面有一个名为ueventd.rc文件，往里面添加一行：
+      /dev/hello 0666 root root
+	  
+	3.2 *device = &(dev->common); 这个不对吧，应该是这样吧*device = dev 
+		一样的，common是dev是第一个成员变量，它们的地址是一样的。
+		
+	3.3，mkdir: cannot create directory ‘out/target/product’: Permission denied
+		eink用户，但out目录为root用户创建的。可以修改文件所属用户及用户组。
+		drwxrwxrw-  6 root root  4096 9月  16 08:31 out/
+		
+		chown -R 所有者用户名.组名 文件夹名称
+		例如：chown -R zdz.nginx KooBox
+		
+4.在Ubuntu为Android硬件抽象层（HAL）模块编写JNI方法提供Java访问硬件服务接口 
+	https://blog.csdn.net/luoshengyang/article/details/6575988
+	
+	4.1,步骤
+		4.1.1 进入到frameworks/base/services/jni目录，新建com_android_server_HelloService.cpp文件：
+			vi com_android_server_HelloService.cpp
+			在com_android_server_HelloService.cpp文件中，实现JNI方法。注意文件的命令方法，com_android_server前缀表示的是包名，表示硬件服务HelloService是放在frameworks/base/services/java目录下的com/android/server目录的，即存在一个命令为com.android.server.HelloService的类。这里，我们暂时略去HelloService类的描述，在下一篇文章中，我们将回到HelloService类来。简单地说，HelloService是一个提供Java接口的硬件访问服务类
+		
+		

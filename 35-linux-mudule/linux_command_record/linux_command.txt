@@ -88,6 +88,24 @@
 				--version : 显示版本
 			例如：chmod -R 777 20191122/ 
 			
+	3.6，chown -R 所有者用户名.组名 文件夹名称
+	
+		Linux chown（英文全拼：change ownerp）命令用于设置文件所有者和文件关联组的命令。
+		chown 需要超级用户 root 的权限才能执行此命令。
+		
+		语法：
+		chown [-cfhvR] [--help] [--version] user[:group] file...
+			
+			其中user[:group]，使用user[.group]也是可以的。 
+		例如：chown -R zdz.nginx KooBox
+		
+		将当前前目录下的所有文件与子目录的拥有者皆设为 runoob，群体的使用者 runoobgroup:
+			chown -R runoob:runoobgroup *
+		
+		把 /home/runoob 的关联组设置为 512 （关联组ID），不改变所有者：
+
+			chown :512 /home/runoob
+			
 (4)磁盘管理
 	4.1 du //du会显示指定的目录或文件所占用的磁盘空间。
 		-a或-all 显示目录中个别文件的大小。

@@ -1,0 +1,32 @@
+1. 在activity中弹出Dialog失败。
+	1.1 异常日志记录
+		android.view.WindowManager$BadTokenException: Unable to add window -- token null is not for an application
+		at android.view.ViewRootImpl.setView(ViewRootImpl.java:566)
+		at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:282)
+		at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:85)
+		at android.app.Dialog.show(Dialog.java:298)
+		at com.android.smartalarm.utils.DialogUtils.showProgressDialog(DialogUtils.java:78)
+		at com.android.smartalarm.newui.RoutineSmartMessageRemindListActivityNewUI.startProgressDialog(RoutineSmartMessageRemindListActivityNewUI.java:650)
+		at com.android.smartalarm.newui.RoutineSmartMessageRemindListActivityNewUI.access$300(RoutineSmartMessageRemindListActivityNewUI.java:61)
+		at com.android.smartalarm.newui.RoutineSmartMessageRemindListActivityNewUI$AlarmItemAdapter$4.onCheckedChanged(RoutineSmartMessageRemindListActivityNewUI.java:413)
+		at android.widget.CompoundButton.setChecked(CompoundButton.java:154)
+		at android.widget.Switch.setChecked(Switch.java:862)
+		at android.widget.Switch.toggle(Switch.java:857)
+		at android.widget.CompoundButton.performClick(CompoundButton.java:118)
+		at android.view.View$PerformClick.run(View.java:19866)
+		at android.os.Handler.handleCallback(Handler.java:739)
+		at android.os.Handler.dispatchMessage(Handler.java:95)
+		at android.os.Looper.loop(Looper.java:135)
+		at android.app.ActivityThread.main(ActivityThread.java:5258)
+		at java.lang.reflect.Method.invoke(Native Method)
+		at java.lang.reflect.Method.invoke(Method.java:372)
+		at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+		at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+		
+		1.1.1 分析原因
+			https://blog.csdn.net/u011038298/article/details/84104451
+			
+			问题原因：Dialog的context不能传入getApplicationContext()，它要依赖于activity。
+	1.2 多个场景错误使用Dialog
+		https://blog.csdn.net/u011038298/article/details/84104451
+		

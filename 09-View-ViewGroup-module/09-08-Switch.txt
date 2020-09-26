@@ -1,0 +1,4 @@
+1.防止ListView中switch 开关状态错乱
+	itemHolder.switch_item_routine_reminder.setOnCheckedChangeListener(null);//防止switch 开关状态错乱。先使用null添加监听。
+	itemHolder.switch_item_routine_reminder.setChecked(itemHolder.alarm.enabled);
+	itemHolder.switch_item_routine_reminder.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){});
