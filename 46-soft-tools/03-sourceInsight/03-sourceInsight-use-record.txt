@@ -56,3 +56,8 @@
 	https://blog.csdn.net/RomanBrickie/article/details/8756800
 	在Options->Preference->display里头，勾上Show exact case of file names
 9.Unable to create the project directory file :D:\用户目录\我的文档\Source Insight\Projects\PROJECTS.DB3
+	
+10,source insight 查看引用关系 
+	10.1 source insight 查看被调用关系
+		https://blog.csdn.net/nicholas_duan/article/details/78557737
+		
