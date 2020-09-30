@@ -6,3 +6,7 @@
 		
 	1.3 Android主流开源视频播放器对比 
 		https://blog.csdn.net/aa642531/article/details/93230076
+		
+2. mxplayer
+	2.1 https://mxplayerdownload.co/
+	

@@ -91,6 +91,85 @@
 	4.1,步骤
 		4.1.1 进入到frameworks/base/services/jni目录，新建com_android_server_HelloService.cpp文件：
 			vi com_android_server_HelloService.cpp
-			在com_android_server_HelloService.cpp文件中，实现JNI方法。注意文件的命令方法，com_android_server前缀表示的是包名，表示硬件服务HelloService是放在frameworks/base/services/java目录下的com/android/server目录的，即存在一个命令为com.android.server.HelloService的类。这里，我们暂时略去HelloService类的描述，在下一篇文章中，我们将回到HelloService类来。简单地说，HelloService是一个提供Java接口的硬件访问服务类
-		
+			在com_android_server_HelloService.cpp文件中，实现JNI方法。注意文件的命令方法，com_android_server前缀表示的是包名，表示硬件服务HelloService是放在frameworks/base/services/java目录下的com/android/server目录的，即存在一个命令为com.android.server.HelloService的类。这里，我们暂时略去HelloService类的描述，在下一篇文章中，我们将回到HelloService类来。简单地说，HelloService是一个提供Java接口的硬件访问服务类.
+			
+			注意，在hello_init函数中，通过Android硬件抽象层提供的hw_get_module方法来加载模块ID为HELLO_HARDWARE_MODULE_ID的硬件抽象层模块，其中，HELLO_HARDWARE_MODULE_ID是在<hardware/hello.h>中定义的。Android硬件抽象层会根据HELLO_HARDWARE_MODULE_ID的值在Android系统的/system/lib/hw目录中找到相应的模块，然后加载起来，并且返回hw_module_t接口给调用者使用。在jniRegisterNativeMethods函数中，第二个参数的值必须对应HelloService所在的包的路径，即com.android.server.HelloService。
+		4.1.2 修改同目录下的onload.cpp文件，首先在namespace 	android增加register_android_server_HelloService函数声明
+			namespace android {
+			  ..............................................................................................
+
+			  int register_android_server_HelloService(JNIEnv *env);
+
+			  };
+
+			  在JNI_onLoad增加register_android_server_HelloService函数调用：
+			  extern "C" jint JNI_onLoad(JavaVM* vm, void* reserved)
+			  {
+			   .................................................................................................
+			   register_android_server_HelloService(env);
+			   .................................................................................................
+			  }
+			  这样，在Android系统初始化时，就会自动加载该JNI方法调用表。
+			
+			4.1.2.1 extern "C" 含义及用法？
+		4.1.3 修改同目录下的Android.mk文件，在LOCAL_SRC_FILES变量中增加一行
+			LOCAL_SRC_FILES:= \
+			  com_android_server_AlarmManagerService.cpp \
+			  com_android_server_BatteryService.cpp \
+			  com_android_server_InputManager.cpp \
+			  com_android_server_LightsService.cpp \
+			  com_android_server_PowerManagerService.cpp \
+			  com_android_server_SystemServer.cpp \
+			  com_android_server_UsbService.cpp \
+			  com_android_server_VibratorService.cpp \
+			  com_android_server_location_GpsLocationProvider.cpp \
+			   com_android_server_HelloService.cpp /
+			  onload.cpp
+			  
+5.在Ubuntu上为Android系统的Application Frameworks层增加硬件访问服务 
+	5.1 step
+		5.1.1 
+			在Android系统中，硬件服务一般是运行在一个独立的进程中为各种应用程序提供服务。因此，调用这些硬件服务的应用程序与这些硬件服务之间的通信需要通过代理来进行。为此，我们要先定义好通信接口。进入到frameworks/base/core/java/android/os目录，新增IHelloService.aidl接口定义文件：
+		5.1.2 
+			返回到frameworks/base目录，打开Android.mk文件，修改LOCAL_SRC_FILES变量的值，增加IHelloService.aidl源文件
+		5.1.3 
+			编译IHelloService.aidl接口：
+			 USER-NAME@MACHINE-NAME:~/Android$ mmm frameworks/base
+		   这样，就会根据IHelloService.aidl生成相应的IHelloService.Stub接口。
+		   
+		5.1.4 
+			进入到frameworks/base/services/java/com/android/server目录，新增HelloService.java文件
+			
+		5.1.5 
+			修改同目录的SystemServer.java文件，在ServerThread::run函数中增加加载HelloService的代码
+			@Override
+
+			 public void run() {
+			 ....................................................................................
+
+					try {
+						  Slog.i(TAG, "DiskStats Service");
+
+						  ServiceManager.addService("diskstats", new DiskStatsService(context));
+
+					} catch (Throwable e) {
+						  Slog.e(TAG, "Failure starting DiskStats Service", e);
+
+					}
+
+					try {
+
+						  Slog.i(TAG, "Hello Service");
+
+						  ServiceManager.addService("hello", new HelloService());
+
+					} catch (Throwable e) {
+
+						  Slog.e(TAG, "Failure starting Hello Service", e);
+
+					}
+
+			 ......................................................................................
+
+			 }  
 		

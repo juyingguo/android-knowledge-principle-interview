@@ -40,4 +40,6 @@
 			https://blog.csdn.net/zhou_438/article/details/83715455
 		3.3.6、理解希尔排序的排序过程 
 			https://blog.csdn.net/weixin_37818081/article/details/79202115
-		
+4. md5
+	4.1 JAVA中获取文件MD5值的四种方法
+		https://blog.csdn.net/weixin_40129263/article/details/82837900
