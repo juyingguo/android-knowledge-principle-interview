@@ -127,6 +127,7 @@
 			  onload.cpp
 			  
 5.在Ubuntu上为Android系统的Application Frameworks层增加硬件访问服务 
+		https://blog.csdn.net/Luoshengyang/article/details/6578352
 	5.1 step
 		5.1.1 
 			在Android系统中，硬件服务一般是运行在一个独立的进程中为各种应用程序提供服务。因此，调用这些硬件服务的应用程序与这些硬件服务之间的通信需要通过代理来进行。为此，我们要先定义好通信接口。进入到frameworks/base/core/java/android/os目录，新增IHelloService.aidl接口定义文件：
