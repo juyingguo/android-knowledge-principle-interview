@@ -177,3 +177,7 @@
 	5.2 Android Binder设计与实现 – 设计篇
 		https://www.cnblogs.com/lao-liang/p/5039131.html
 		https://www.cnblogs.com/lao-liang/p/5039131.html
+		
+		albert1017
+		（原创）Android Binder设计与实现 - 实现篇（1）
+		https://www.cnblogs.com/albert1017/p/3849585.html
