@@ -327,3 +327,8 @@
 	https://blog.csdn.net/baccon/article/details/8152388#
 	GNU GCC  £∫
 	°∂AT&Tª„±‡”Ô—‘”ÎGCCƒ⁄«∂ª„±‡ºÚΩÈ°∑
+30,__cdecl
+	30.1 __cdecl 
+		https://zhidao.baidu.com/question/1731954945007730827.html
+		
+		test£∫18-append-c-and-cpp-module\c_project\05_c_base_knowledge\013_function_cdecl_test.c

@@ -60,4 +60,6 @@
 10,source insight 查看引用关系 
 	10.1 source insight 查看被调用关系
 		https://blog.csdn.net/nicholas_duan/article/details/78557737
+	10.2 source insight 如何建工程--以及快捷方式查找调用函数方法 
+		https://www.cnblogs.com/dpf-learn/p/6278314.html
 		
