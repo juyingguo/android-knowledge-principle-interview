@@ -29,3 +29,8 @@
 3.献给新手，如何阅读Linux源码(转) 
 	3.1、献给新手，如何阅读Linux源码(转) 
 		https://blog.csdn.net/qq_37468954/article/details/77483013?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+4.	
+	Linux内核源代码情景分析
+ 4.1 Linux内核源代码情景分析
+	https://blog.csdn.net/jltxgcy/category_2907797.html

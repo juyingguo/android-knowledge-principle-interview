@@ -1,3 +1,7 @@
+0 Linux 常用C函数(中文版)
+	0.1 Linux 常用C函数(中文版)
+		http://www.mysqlab.net/documents/linux_c/
+		
 1. linux c之提示format‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat 
 	http://www.voidcn.com/article/p-ukgpsqqr-kd.html
 	
@@ -8,4 +12,6 @@
 	
 2.  c/c++中取余与取模区别
 	2.1 c/c++中取余与取模区别
+		
+
 		

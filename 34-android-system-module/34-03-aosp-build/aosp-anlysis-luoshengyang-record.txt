@@ -363,3 +363,9 @@
 	5.1 Android进程间通信（IPC）机制Binder简要介绍和学习计划
 		5.1.1 Android深入浅出之Binder机制
 			https://www.cnblogs.com/innost/archive/2011/01/09/1931456.html
+	5.2 Android Binder设计与实现 – 设计篇
+		https://www.cnblogs.com/lao-liang/p/5039131.html
+		
+		5.2.2 
+			（原创）Android Binder设计与实现 - 实现篇（1）
+			https://www.cnblogs.com/albert1017/p/3849585.html
