@@ -87,6 +87,8 @@
 				--help : 显示辅助说明
 				--version : 显示版本
 			例如：chmod -R 777 20191122/ 
+					chmod 777 -R  20191122/
+				在linux上，上面写法都行。在android模拟器上，都不行，模拟器可能是没适配多种参数的原因吧。
 			
 	3.6，chown -R 所有者用户名.组名 文件夹名称
 	
@@ -123,6 +125,15 @@
 		
 		将 /dev/hda1 用唯读模式挂在 /mnt 之下。
 		#mount -o ro /dev/hda1 /mnt
+		
+		4.4 Android开发出现Read-only file system问题解决方案
+			当我们运行Android项目时，出现Read-only file system的error时，一般是模拟器中sdcard文件没有写入和修改权限，所以adb语句增加写入和修改权限.
+			
+			步骤一：打开你的模拟器
+
+			步骤二：在Doc窗口输入adb shell
+
+			步骤三：接下来显示的是Linux语法，输入mount -o remount ,rw /
 	
 	4.4 备份压缩,解压文件 Linux tar命令
 			https://www.runoob.com/linux/linux-comm-tar.html

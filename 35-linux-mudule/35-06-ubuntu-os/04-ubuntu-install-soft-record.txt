@@ -1,0 +1,36 @@
+2.ubuntu 安装vim。
+	2.1、sudo apt-get install vim 
+		sudo apt-get install vim-gtk
+		
+3、
+		
+4. Ubuntu16.04环境下git安装与使用 
+	4.1 Ubuntu16.04环境下git安装与使用
+		https://blog.csdn.net/vslyu/article/details/80337675
+		
+		git --version 
+		
+		git apt-get install git //安装git 
+		
+	4.2 在ubuntu16.04上安装或升级git 
+		https://blog.csdn.net/heidoutwenty/article/details/52892495
+		
+		在ubuntu16.04上默认安装了git：
+
+		# git --version
+
+		git version 2.7.4
+
+		可以使用下面命令升级git（如果不是root用户，需在命令前加sudo）：
+
+		# add-apt-repository ppa:git-core/ppa
+		# apt-get update
+		# apt-get install git
+
+		安装完成后，再查看git版本：
+		# git --version
+
+		git version 2.10.1
+		————————————————
+		
+5. Ubuntu16.04环境下编译git，并安装与使用 

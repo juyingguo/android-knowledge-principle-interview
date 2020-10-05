@@ -39,7 +39,7 @@
 	2. 在home下解压，提示错误不用管。将解压后的文件mydroid改为android
 		cd ./android
 		sudo tar -xvf Android_Kernel.tar
-		sudo tar -xvf Android_Kernel.tar --exclude */.git -C android //忽略git , 指定解压目录
+		sudo tar -xvf Android_Kernel.tar --exclude */.git -C android //忽略git , 指定解压目录；实际使用可以不忽略git,便于版本管理
 	3.由于编译android2.3需要gcc4.4和jdk6。 
 		3.1、下载jdk6
 			https://blog.csdn.net/qq_33946059/article/details/78160034 
@@ -435,6 +435,10 @@
 		
 	15,/usr/bin/ld: i386:x86-64 architecture of input file `out/host/linux-x86/obj/EXECUTABLES/aapt_intermediates/AaptAssets.o' is incompatible with i386 output
 		这个问题是原来在32位Linux 系统下编译的o文件残留，在64位编译时候所提示的编译错误。make clean 可以解决。也可手动删除提示的o文件，之后重新编译。
+	16，target release 1.5 conflicts with default source release 1.7
+		这个提示其实已经很明显的说明了问题出现的原因：编译需要的是jdk 1.5的版本，而当前编译环境的jdk版本是1.7。这里需要说明的是jdk1.6是兼容1.5的，而jdk1.7不兼容。Android4.4一直使用的都是jdk1.6，而到了Android5.0却需要使用jdk1.7编译，因此编译Android5.0在设置环境的时候将jdk版本切换到了1.7。因此重新编译Android4.4的时候出现了这个冲突。解决办法就是切换回jdk1.6
+		
+		切换jdk的方法：
 			
 三、编译问题汇总：
 	1. https://blog.csdn.net/u013541140/article/details/52027569

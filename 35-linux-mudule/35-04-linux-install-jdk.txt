@@ -207,6 +207,7 @@
 				PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/jre/bin"
 				CLASSPATH=/usr/lib/java/jdk1.6.0_45/lib:/usr/lib/java/jdk1.6.0_45/jre/lib
 
+				将java安装到菜单中。
 				sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk1.6.0_45/bin/java 300
 			　　sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk1.6.0_45/bin/javac 300
 			　　通过这一步将我们安装的jdk加入java选单。
@@ -224,4 +225,41 @@
 2. ubuntu 16.4 卸载指定版本java 1.6,1.7 
 	2.1 linux下卸载jdk1.7安装jdk1.8 
 		https://blog.csdn.net/reee112/article/details/83036449?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
-	
+3. linux jdk版本随时切换
+	3.1. linux jdk版本随时切换
+		https://www.cnblogs.com/fordreamxin/p/4287706.html
+		
+		3.1.1 
+			使用 which java 命令找到当前java可执行程序的位置
+			fordreamxin@compiler207:~$ which java
+			/usr/bin/java
+			 /usr/bin/目录下存放的多是用户安装的软件
+		3.1.2 
+			fordreamxin@compiler207:~$ ll /usr/bin/java
+			lrwxrwxrwx 1 root root 22 Nov 13 06:18 /usr/bin/java -> /etc/alternatives/java*
+			alternatives是一个linux下的多版本管理软件，利用它就可以实现jdk的版本切换，这点稍后再描述。先来alternatives目录地下看看有些什么东西。
+			
+			fordreamxin@compiler207:/etc/alternatives$ ll java
+			lrwxrwxrwx 1 root root 36 Nov 13 06:17 java -> /usr/lib/jvm/java-6-sun/jre/bin/java*				
+			原来该目录下放置了很多软件的版本引用，从这里可以找到当前软件版本(jdk)的实际位置
+			
+			fordreamxin@compiler207:/etc/alternatives$ ls /usr/lib/jvm/
+			java-1.7.0-openjdk-amd64  java-6-sun  java-6-sun-1.6.0.26  java-7-openjdk-amd64
+			在/usr/lib/jvm文件夹下时间存储了各个jdk版本的软件，而alternatives正是通过修改它的java引用达到版本切换的目的。
+		3.1.3. 使用alternatives实现版本切换的方法如下
+			
+			1. 查看相应的jdk是否在 ubuntu的jdk菜单里，查看：
+			update-alternatives --config java
+			update-alternatives --config javac
+
+			2.如果没有在菜单里可以如下方式添加：
+			update-alternatives --install /usr/bin/java java /usr/lib/jvm/java/jdk1.6.0_12/bin/java 300
+			update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java/jdk1.6.0_12/bin/javac 300
+			 注意：jdk1.6.0_12 版本不同会有变动
+
+			3.sudo update-alternatives --config java
+			sudo update-alternatives --config javac
+			选择序号，回车即可；
+			4.然后java -version,javac -version查看当前jdk版本
+			
+			但是使用alternatives需要sudo超级权限，也就是说这种切换是一种全局切换，同修改~/.bashrc或/etc/profile一样，一次操作，全局有效
