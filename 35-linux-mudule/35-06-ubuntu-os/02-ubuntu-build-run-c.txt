@@ -64,6 +64,31 @@
 
 		（5）、如果要生成汇编代码，使用的编译代码就是加上参数-S进行编译，比如我们要生成hello.s文件，则我们使用的编译代码是：gcc -S hello.c -o hello.s。
 		
+	2.2 在linux下使用gcc/g++编译多个.h .c 文件
+		https://www.jianshu.com/p/e5c6a255076b
+		（1）
+			main.cpp 文件是包含main函数的文件，在myinclude的文件下，包含了myhead.h 和 myhead.cpp 文件。分别是头文件的定义和实现。
+		（2）
+			zhaozheng@ubuntu:~/code/c++/test_compile/src$ g++ main.cpp -o main
+			main.cpp:2:20: fatal error: myhead.h: No such file or directory
+			compilation terminated.
+			
+			直接编译的结果就是报错了，错误的原因是 默认的include目录下面没有 myhead.h 头文件。
+		（3）
+			那么通过 -I 选项 链接上去。重新编译
+			zhaozheng@ubuntu:~/code/c++/test_compile/src$ g++ main.cpp -o main -I ../myinclude/
+			/tmp/ccH3BlLo.o: In function `main':
+			main.cpp:(.text+0x3e): undefined reference to `sum(int, int)'
+			collect2: error: ld returned 1 exit status
+			
+			有报错，错误的原因是头文件虽然找到了，但是没有提示错误，没有定义sum函数。sum函数是在myhead.cpp文件上面定义的。也就是需要把myhead.cpp文件编译一下。
+			zhaozheng@ubuntu:~/code/c++/test_compile/myinclude$ g++ -c myhead.cpp -o myhead.o
+		（4）再一次的编译：
+			zhaozheng@ubuntu:~/code/c++/test_compile/src$ g++ main.cpp -o main -I ../myinclude/    ../myinclude/myhead.o
+			
+		
+	2.3 使用Makefile配置文件编译。
+		
 3. gcc -lpthread 干什么用 
 	3.1 gcc -lpthread 干什么用 
 		http://blog.chinaunix.net/uid-26457514-id-4941671.html

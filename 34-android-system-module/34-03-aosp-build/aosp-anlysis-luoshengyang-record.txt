@@ -364,6 +364,7 @@
 		5.1.1 Android深入浅出之Binder机制
 			https://www.cnblogs.com/innost/archive/2011/01/09/1931456.html
 	5.2 Android Binder设计与实现 – 设计篇
+		https://blog.csdn.net/freshui/article/details/54926111【内含资料图片完整】
 		https://www.cnblogs.com/lao-liang/p/5039131.html
 		
 		5.2.2 

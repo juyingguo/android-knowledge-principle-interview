@@ -26,7 +26,7 @@
 		
 2. c语言项目
 	2.1 最值得学习阅读的10个C语言开源项目代码 
-		https://www.iteye.com/topic/1136158
+		https://blog.csdn.net/you_shou/article/details/69372162
 	2.2 17个C语言可以做的小案例项目 
 		https://blog.csdn.net/weixin_42743471/article/details/85109413
 		

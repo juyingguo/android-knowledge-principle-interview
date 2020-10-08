@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 #include "functions.c"
-#include "functions.h"
+//#include "functions.h"
 /*
 This is the main method
 It's the entry point of our program
@@ -21,7 +21,7 @@ int main(int argc, char* argv[]){
 		printf("The multiply of argv[1] and argv[2]: %d\n", prod(argv1, argv2));
 		printf("The divide of argv[1] and argv[2]: %d\n", divid(argv1, argv2));
 		}
-	} 
+	}
 	return 0;
 }
 

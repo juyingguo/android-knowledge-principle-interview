@@ -41,3 +41,13 @@
 	3.2 codeblocks的debug教程（超详细）
 		https://blog.csdn.net/Qi2456/article/details/88546454
 		
+	3.3 CodeBlocks下如何给main函数传递参数 
+		https://blog.csdn.net/hxh129/article/details/8522249
+		
+		首先针对的是工程而非单个文件。
+		打开CodeBlocks 界面,Project->Set programs’ arguments…
+
+		在打开的Select target 对话框中选择Debug
+
+		在Program arguments:中填 入main函数所需要的参数点击OK按钮 就可以了
+		

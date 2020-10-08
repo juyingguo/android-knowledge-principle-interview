@@ -81,7 +81,8 @@
 		5.1.3、format 标签属性是 %[flags][width][.precision][length]specifier
 			https://www.runoob.com/cprogramming/c-function-fprintf.html
 			
-			
+			%hX //参数被解释为短整型或无符号短整型（仅适用于整数说明符：i、d、o、u、x 和 X）
+			%LX
 			
 6、C语言基础——字符串指针（指向字符串的指针） 
 	6.1、C语言基础——字符串指针（指向字符串的指针）
@@ -194,7 +195,7 @@
 		13.1.2、c语言链表详解（超详细）
 			https://blog.csdn.net/Endeavor_G/article/details/80552680?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 			
-14、c语言结构体 
+14、c语言结构体及联合体
 	
 	14.0 c语言结构体定义方式。
 		
@@ -211,11 +212,23 @@
 			【优质博客】【linux,嵌入式，驱动】
 			https://blog.csdn.net/qq_21792169/article/details/50436089
 	
-	14.3、c语言结构体中使用union共用体。
+	14.3、C语言共用体（C语言union用法）详解
+		
 		14.3.1 C语言 共用体（Union）详解，结构体中包含共用体的使用
 			https://blog.csdn.net/weixin_40997830/article/details/89402974
+		14.3.2 
+			c语言中union共用体中有结构体。
+		14.3.3 C语言共用体（C语言union用法）详解
+			http://c.biancheng.net/view/2035.html
+			
+			不但验证了共用体的长度，还说明共用体成员之间会相互影响，修改一个成员的值会影响其他成员。
+			【含图表说明原理。】
+			
+			共用体的应用：
+			共用体在一般的编程中应用较少，在单片机中应用较多。对于 PC 机，经常使用到的一个实例是： 现有一张关于学生信息和教师信息的表格。学生信息包括姓名、编号、性别、职业、分数，教师的信息包括姓名、编号、性别、职业、教学科目
+			程序：android-knowledge-principle-interview\18-append-c-and-cpp-module\c_project\05_c_base_knowledge\006_09_struct_contain_union_test.c
 	
-	14.4、c语言中union共用体中有结构体。
+	14.4、
 	
 	14.5、c语言结构体声明时指定默认值？
 	
@@ -332,3 +345,7 @@
 		https://zhidao.baidu.com/question/1731954945007730827.html
 		
 		test：18-append-c-and-cpp-module\c_project\05_c_base_knowledge\013_function_cdecl_test.c
+		
+31,详解C语言中的stdin，stdout，stderr 
+	3.1 
+		https://blog.csdn.net/Crazy_Tengt/article/details/72717144
