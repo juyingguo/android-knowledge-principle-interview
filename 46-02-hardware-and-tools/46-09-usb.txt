@@ -34,3 +34,10 @@
 		https://baike.baidu.com/item/USB-HID/3074554?fr=aladdin
 		
 		是Human Interface Device的缩写，由其名称可以了解HID设备是直接与人交互的设备，例如键盘、鼠标与游戏杆等。不过HID设备并不一定要有人机接口，只要符合HID类别规范的设备都是HID设备。
+		
+16. hcd 
+	16.1 hcd
+		https://baike.baidu.com/item/hcd/5804841?fr=aladdin
+		hcd是主机控制器的驱动程序。它位于USB主机控制器与USB系统软件之间。
+		Host Controller Driver 主机控制器驱动
+		

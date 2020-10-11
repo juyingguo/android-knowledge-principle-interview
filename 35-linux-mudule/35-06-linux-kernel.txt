@@ -114,5 +114,11 @@
 
 7.[驱动注册]platform_driver_register()与platform_device_register()
 	https://blog.csdn.net/ufo714/article/details/8595021
-
+	
+8. Linux字符设备驱动
+	8. Linux字符设备驱动
+		https://blog.csdn.net/jltxgcy/article/details/29184391
+9. xHCI驱动学习(1) 核心数据结构 
+	https://blog.csdn.net/snowflurry/article/details/46635067
+	
 	
