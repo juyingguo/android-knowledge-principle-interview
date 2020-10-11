@@ -96,7 +96,7 @@ int main()
   main();
 }
 /**
-verify
+verify fgets return NULL for (only carriage return);
 */
 void listRecordVerify(){
 
@@ -107,12 +107,12 @@ void listRecordVerify(){
   puts("==   ====     ======    ========       =======");
   do
   {
-//    if(fgets(info,SIZE,AddressBook) !=  NULL){//add NULL judge ,
-//        printf("%s",info);
-//    }
+    if(fgets(info,SIZE,AddressBook) !=  NULL){//add NULL judge ,
+        printf("%s",info);
+    }
 
-    fgets(info,SIZE,AddressBook);
-    printf("%s",info);
+//    fgets(info,SIZE,AddressBook);
+//    printf("%s",info);
     num++;
   }while(!feof(AddressBook));
     printf("listRecordVerify list finish, num=%d",num);
