@@ -1,2 +1,7 @@
 1.WPS如何制作流程图
 	https://www.wps.cn/learning/course/detail/id/594.html
+	
+	
+2.WPS如何进行字数统计
+	2.1 WPS如何进行字数统计 
+		https://zhidao.baidu.com/question/420657528.html
