@@ -86,7 +86,13 @@
 		（4）再一次的编译：
 			zhaozheng@ubuntu:~/code/c++/test_compile/src$ g++ main.cpp -o main -I ../myinclude/    ../myinclude/myhead.o
 			
-		
+		（5） g++ gcc
+			g++ -c calc.c -o calc.o
+			calc.c: In function ‘int main(int, char**)’:
+			calc.c:18: error: ‘add’ was not declared in this scope
+			
+			使用gcc 就正常编译。
+
 	2.3 使用Makefile配置文件编译。
 		
 3. gcc -lpthread 干什么用 

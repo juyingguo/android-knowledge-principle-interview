@@ -1,4 +1,4 @@
-一、书籍，面试题。
+一、书籍，面试题,函数库资源。
 	1.1、C Primer Plus第五版 
 		C Primer Plus第五版/第六版和 C++ Primer第五版/第六版
 		链接：https://pan.baidu.com/s/1HZS2TnslZTHZb8SgLU-mHg
@@ -23,7 +23,13 @@
 		1.5.1 100条经典C语言笔试题目 
 			https://blog.csdn.net/jxnu_xiaobing/article/details/12561141?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-8.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-8.nonecase
 		1.5.2 C 语言面试宝典(林锐《高质量编程第三版》)。 
-		
+	
+	1.6 函数库资源 
+		1.6.1 函数库资源 
+			https://www.runoob.com/cprogramming/c-function-fgets.html
+			有详细的函数解释。对比《c函数速查》就没有解释，仅有实例。
+			下载带有详细解释的《c函数速查》或者资源网站。
+			
 2. c语言项目
 	2.1 最值得学习阅读的10个C语言开源项目代码 
 		https://blog.csdn.net/you_shou/article/details/69372162
@@ -33,6 +39,7 @@
 		2.2.1 通讯录 
 			https://github.com/oguzozturk/AddressBook
 			
+			本地项目地址：
 		2.2.2 C语言利用epoll实现高并发聊天室 
 			https://github.com/jwzh222/epoll
 			https://blog.csdn.net/Fly_as_tadpole/article/details/80388998?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158616837719724843315569%2522%252C%2522scm%2522%253A%252220140713.130056874..%2522%257D&request_id=158616837719724843315569&biz_id=0&utm_source=distribute.pc_search_result.none-task-blog-all_SOOPENSEARCH-2
