@@ -28,6 +28,9 @@
 		-n 或 --line-number : 在显示符合样式的那一行之前，标示出该行的列数编号。
 		-w 或 --word-regexp : 只显示全字符合的列。
 		
+		2.3.1 find 与 grep一起使用。
+			当前目录开始查找所有扩展名为 .in 的文本文件，并找出包含 "thermcontact" 的行：
+			find . -name "*.in" | xargs grep "thermcontact"
 			
 (3) 文件管理
 	3.1

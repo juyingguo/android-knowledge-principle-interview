@@ -6,3 +6,17 @@
 		https://blog.csdn.net/m0_37765662/article/details/83018523?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 2. LBA逻辑区块地址 
 	https://baike.baidu.com/item/%E9%80%BB%E8%BE%91%E5%8C%BA%E5%9D%97%E5%9C%B0%E5%9D%80/22660818?fromtitle=LBA&fromid=2025827&fr=aladdin
+	
+3. dsp 
+	数字信号处理
+	https://baike.baidu.com/item/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/5009?fromtitle=dsp&fromid=74514&fr=aladdin
+	
+	《数字信号处理》机械工业出版社2012年发行，杨毅明著。《数字信号处理》这门课介绍的是：将事物的运动变化转变为一串数字，并用计算的方法从中提取有用的信息，以满足我们实际应用的需求。
+	
+4. MIPS
+	https://baike.baidu.com/item/MIPS/2173143?fr=aladdin
+	
+5. EMI 
+	https://baike.baidu.com/item/EMI/16265805?fr=aladdin
+	
+	磁干扰（Electromagnetic Interference 简称EMI），直译是电磁干扰。这是合成词，我们应该分别考虑"电磁"和"干扰"。是指电磁波与电子元件作用后而产生的干扰现象，有传导干扰和辐射干扰两种。传导干扰是指通过导电介质把一个电网络上的信号耦合(干扰)到另一个电网络。辐射干扰是指干扰源通过空间把其信号耦合(干扰)到另一个电网络，在高速PCB及系统设计中，高频信号线、集成电路的引脚、各类接插件等都可能成为具有天线特性的辐射干扰源，能发射电磁波并影响其他系统或本系统内其他子系统的正常工作。

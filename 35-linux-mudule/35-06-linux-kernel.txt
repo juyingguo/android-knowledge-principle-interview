@@ -121,4 +121,9 @@
 9. xHCI驱动学习(1) 核心数据结构 
 	https://blog.csdn.net/snowflurry/article/details/46635067
 	
+10,module_init subsys_initcall与late_initcall的区别 
+	https://blog.csdn.net/Internet_t/article/details/87349224
+	module_init优先级为6，subsys_init优先级为5，late_init优先级为7.linux数值越小，优先级越高。
+	在调试过程中，probe函数在系统启动初始化加载时，优先级高的log日记打印容易丢失，为了方便调试测试，可以先调用late_init函数
+	
 	

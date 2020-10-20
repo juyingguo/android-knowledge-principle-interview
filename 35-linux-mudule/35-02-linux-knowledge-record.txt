@@ -22,7 +22,7 @@
 			.ko文件是kernel object文件（内核模块），该文件的意义就是把内核的一些功能移动到内核外边， 需要的时候插入内核，不需要时卸载。
 		
 		2.2.2 Linux下编写和加载 .ko 文件（驱动模块文件） 
-			https://blog.csdn.net/qq_38880380/article/details/79227760?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+			https://blog.csdn.net/qq_38880380/article/details/79227760.
 	
 3、.bash_profile和.bashrc的区别 
 	3.1、.bash_profile和.bashrc的区别 

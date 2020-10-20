@@ -1,0 +1,20 @@
+1.NDK接口参照：
+
+https://developer.android.google.cn/ndk/reference/group/audio
+
+使用NDK接口音频采集过程，可以参照：
+
+https://developer.android.google.cn/ndk/guides/audio/aaudio/aaudio 
+
+2. JNI和NDK的区别 
+	https://blog.csdn.net/ithomer/article/details/6828830
+	
+	参考推荐：（博文有链接。）
+
+	JNI Tutorial
+
+	Android NDK之JNI使用例子
+
+	Android 使用NDK R5开发JNI应用详解
+
+	Android NDK Hello
