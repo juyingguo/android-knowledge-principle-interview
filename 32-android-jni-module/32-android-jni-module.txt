@@ -1,4 +1,14 @@
+01. jni资源
+	01.1 音视频学习 (三) JNI 从入门到掌握
+		https://juejin.im/post/6844904041235873799
+		
+	01.2 jni官方文档
+		https://docs.oracle.com/javase/10/docs/specs/jni/index.html
+	01.3 JNI 方法大全及使用示例
+		https://blog.csdn.net/afei__/article/details/81016413
+	
 一、[Android]-图片JNI（C++\Java）高斯模糊的实现与比较
 
 	1.1、[Android]-图片JNI（C++\Java）高斯模糊的实现与比较
 		https://blog.csdn.net/qiujuer/article/details/24282047
+		

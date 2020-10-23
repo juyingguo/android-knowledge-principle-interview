@@ -1,3 +1,8 @@
+01 ndk资源
+	01.1 ndk-samples
+		https://github.com/android/ndk-samples/tree/master 
+		
+	
 1.NDK接口参照：
 
 https://developer.android.google.cn/ndk/reference/group/audio

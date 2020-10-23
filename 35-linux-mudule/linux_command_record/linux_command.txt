@@ -1,5 +1,6 @@
 (01) 参考教程：
 	01.1 https://www.runoob.com/linux/linux-comm-grep.html 
+	01.2 https://man.linuxde.net/rmmod
 	
 (1) cd 
 	cd .. 意思是到上一级目录； 
@@ -183,7 +184,22 @@
 	原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
 (7) 系统管理
 	7.1 free 
+(8) 系统设置 
+	8.1 insmod 
+		rmmod(选项)(参数)
 		
+		选项：
+		-v：显示指令执行的详细信息；
+		-f：强制移除模块，使用此选项比较危险；
+		-w：等待着，直到模块能够被除时在移除模块；
+		-s：向系统日志（syslog）发送错误信息。把信息输出至syslog常驻服务，而非终端机界面。
+		
+		参数  模块名：要移除的模块名称。
+		
+		Linux rmmod（英文全拼：remove module）命令用于删除模块。
+
+		执行 rmmod 指令，可删除不需要的模块。Linux 操作系统的核心具有模块化的特性，应此在编译核心时，务须把全部的功能都放如核心。你可以将这些功能编译成一个个单独的模块，待有需要时再分别载入它们。
+	
 (10) 账户相关。
 		https://jingyan.baidu.com/article/a17d5285eb93ea8099c8f24d.html
 	10.1  ubuntun 16 添加root用户 

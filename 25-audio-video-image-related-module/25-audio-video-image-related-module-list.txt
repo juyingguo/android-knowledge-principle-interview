@@ -122,3 +122,16 @@
 	
 10. USB Audio driver for android
 	http://www.dr-jordan-design.de/USB_audio_with_android.htm
+	
+11，Android 贴心的音视频学习指南来咯！ 
+	https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650833452&idx=1&sn=f4189964a90cc36dac1eb7213b35ae8c&chksm=80b756b2b7c0dfa44540d7c374b0f12f699b2cc91cdf35f3d16c6ad0f23c82c6107b81bb42d8&mpshare=1&scene=23&srcid=1007cTWyzkDYdHexvKZFoIf6&sharer_sharetime=1602061754728&sharer_shareid=f907dc3edbba18604206b66c083e0ad8&key=519b8bbaea533f94f83d5003756124e074373f348ae38b64b99fe58bc7a1103e451f486fa9738de576a03a813fae3d80c7d8484966850ee8685bc5446adb9e51a1bb8a0d9531206d929d672d08c312627c6c07125560e6fe1a14b33b2fe8b982fb0fcfb2fafb17659f902a453f60ed264097a58dce162adba79cb50f50803a5f&ascene=1&uin=MTE1MzAzMTUwNw%3D%3D&devicetype=Windows+7+x64&version=62090529&lang=zh_CN&exportkey=AWgd96YQanDZ0qlrnfrE1tQ%3D&pass_ticket=pzigEVdIoS1GXNLvlkd90ZA7jthBtgHrJMyFaO9RGYzlOcJScbGBT0uPU0xZg1zI&wx_header=0
+	
+	11.1 Android 音视频开发学习之路 
+		https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650826247&idx=1&sn=b25846e36cb43ba7ea8b1ce694e9690d&chksm=80b7b299b7c03b8fec61fdf33de9b8e75be4086238a1e34a8cba880bcff23aac33a6686f6481&scene=21#wechat_redirect
+		
+		或者原文地址：
+		https://www.cnblogs.com/renhui/p/7452572.html
+		
+		
+12 【原理+实战+视频+源码】抖音，快手大热背后——Android 贴心的音视频学习指南来咯！
+	https://blog.csdn.net/Android725/article/details/109135668

@@ -28,3 +28,9 @@
 		
 		3.4.2、Android 之 XRecyclerview的使用 
 			https://blog.csdn.net/weixin_39460667/article/details/81814030
+			
+4. android RecyclerView 添加默认分割线
+	4.1 Android】RecyclerView添加分割线最易懂解析 
+		https://blog.csdn.net/w855227/article/details/80973321
+	4.2 RecyclerView设置分隔线的三种方法 
+		https://blog.csdn.net/yancychas/article/details/77484659

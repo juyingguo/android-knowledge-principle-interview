@@ -39,5 +39,9 @@
 			
 	2.3 如果机器wifi连接投屏器发出的热点SSID,这时候机器是否能够连接投屏器？。
 		
-		
+3.
+	投屏开关。
+	系统中是否有设置开关地方。理论上是没有的，该开关仅供用户使用。
+	android$ grep -irn "wifi_display_on"
+	wifi_display_on
 		
