@@ -5,3 +5,28 @@
 2.WPS如何进行字数统计
 	2.1 WPS如何进行字数统计 
 		https://zhidao.baidu.com/question/420657528.html
+		
+3. word字体，宋体小四号 黑体 是 宋体 小四号 加黑？
+	3.1 https://zhidao.baidu.com/question/270048967192848405.html
+		宋体和黑体是两种字体，不存在既是宋体又是黑体的设置。应该是宋体小四号加粗之误。
+		
+	3.2 论文中宋体小四加黑什么意？ 
+		https://iask.sina.com.cn/b/1H038Gr9Ex35.html
+		
+		一般是摘要的字体要求，用宋体，小四号，然后加粗。
+		
+4. WPS格式和WORD格式有什么区别？ 
+	https://zhidao.baidu.com/question/623963236005669244.html?sort=11&rn=5&pn=0#wgt-answers
+	
+	一、支持扩展名不bai同
+
+	1、WPS格式：WPS格式支持.doc、.docx、.dot、.dotx、.wpt扩展名。
+
+	2、WORD格式：WORD格式支持.doc、.docx扩展名。
+
+	二、转换不同
+
+	1、WPS格式：WPS格式能将简体中文转换成繁体中文。
+
+	2、WORD格式：WORD格式没有简体中文转换成繁体中文功能。
+		
