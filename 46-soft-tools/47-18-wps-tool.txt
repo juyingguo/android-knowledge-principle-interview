@@ -29,4 +29,11 @@
 	1、WPS格式：WPS格式能将简体中文转换成繁体中文。
 
 	2、WORD格式：WORD格式没有简体中文转换成繁体中文功能。
+5. WPS/Word目录制作中输入省略号
+	https://jingyan.baidu.com/article/363872ec98ab9d2e4aa16f30.html
+	
+	5.1 
+		wps目录后面的省略号没有占满整个页面宽度。当时设置制表位为23
+		需要制表位43.15就行了，
+	
 		
