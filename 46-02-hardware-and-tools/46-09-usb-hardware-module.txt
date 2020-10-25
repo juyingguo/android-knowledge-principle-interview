@@ -1,11 +1,30 @@
-11 USB设备的研究——MSC与PTP及MTP 
+11 USB设备
 	11.1 USB设备的研究——MSC与PTP及MTP 
 		https://www.anquanke.com/post/id/83155
 		
 		原文地址：http://nicoleibrahim.com/part-2-usb-device-research-msc-vs-ptp-vs-mtp/
 	11.2 MTP协议与MSC协议的全面分析对比 
 		http://www.cnki.com.cn/Article/CJFDTotal-DZZZ201321056.htm
+	
+	11.3 Android中的USB中的UsbAccessory和UsbDevice的区别 
+		UsbDevice：正常的，USB的Host和USB的Device架构中的USB的Device
+		Android设备是USB的Host，外接的USB设备是USB的Device
+		所以，此时Android设备作为USB的Host，要做USB Host该干的事情：
+		给USB外接设备供电
+		负责管理USB总线
+		UsbAccessory：和标准的USB的概念相反
+		USB设备是USB的Host
+		所以，此时USB设备，也要干其作为USB的Host的事情
+		USB设备，要给作为USB的Device的Android设备供电
+		USB设备要负责管理USB总线
+		而Android设备是USB的Device
+		此时，从概念上说，相当于把Android设备，当做Accessory附件，挂在USB设备上
 		
+		11.3.1 Android下USB Accessory的实现分析 
+			https://blog.csdn.net/yingzhao80/article/details/45511351
+			
+	11.4 USB协议基本知识 
+		https://blog.csdn.net/u010142953/article/details/82627591
 12 OTG 
 	12.1 OTG
 		https://baike.baidu.com/item/OTG/2649844?fr=aladdin
@@ -34,6 +53,9 @@
 		https://baike.baidu.com/item/USB-HID/3074554?fr=aladdin
 		
 		是Human Interface Device的缩写，由其名称可以了解HID设备是直接与人交互的设备，例如键盘、鼠标与游戏杆等。不过HID设备并不一定要有人机接口，只要符合HID类别规范的设备都是HID设备。
+	15.2 USB初学（一）---USB-HID的初步认识
+		https://blog.csdn.net/qq_34870909/article/details/78928893
+		HID是一种USB通信协议，无需安装驱动就能进行交互
 		
 16. hcd 
 	16.1 hcd

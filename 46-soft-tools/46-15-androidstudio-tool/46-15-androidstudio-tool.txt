@@ -70,4 +70,11 @@
 4. Android Studio的TODO，FIXME 
 	4.1 Android Studio的TODO，FIXME 
 		https://blog.csdn.net/kaoshibuguaa/article/details/51536992 
+		
+5. 添加签名文件。
+
+6. Android Studio向项目添加C/C++原生代码教程 
+	https://www.cnblogs.com/lsdb/p/9337285.html
+	
+	
 		  

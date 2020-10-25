@@ -1,0 +1,20 @@
+一、Android驱动深度开发视频教程 
+	
+	1.1、Android驱动深度开发视频教程 
+		https://edu.csdn.net/course/detail/2430/
+		
+		uml工具：bouml 4.23 免费
+		
+2. Android 开发之 ---- 底层驱动开发系列
+	2.1 Android 开发之 ---- 底层驱动开发(一) 
+		[jmq_0000]
+		https://blog.csdn.net/jmq_0000/article/details/7372783
+		
+	2.3 Android驱动入门系列（一）
+	
+		Android驱动入门系列（一）   —— Android驱动简介及编写第一个Android驱动
+		https://blog.csdn.net/brantyou/article/details/8651385
+		
+		以下文章参考网上搜到的《Android驱动开发全过程(有图有真相)》一文，其中根据自己的实际编写情况作了部分修改，不用作商业用途
+		
+		

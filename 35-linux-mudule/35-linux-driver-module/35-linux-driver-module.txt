@@ -1,0 +1,39 @@
+00. 学习linux驱动的资源
+	00.1 韦东山老师的视频
+		韦东山嵌入式Linux
+		https://www.zhihu.com/column/c_118891916
+	00.1 「韦东山」机会总是留给有准备的人 嵌入式Linux学习经验
+		https://zhuanlan.zhihu.com/p/156885309
+01. linux 驱动加载流程。
+	0.1 linux 不同驱动加载流程是否相同。
+	0.2 linux led,lcd,camera,usb等不同驱动加载流程。
+		
+1. Linux USB driver 
+	1.1 Linux USB总线驱动框架分析 
+		https://zhuanlan.zhihu.com/p/61079354
+		
+	1.2 hub_thread 
+		https://blog.csdn.net/chenliang0224/article/details/79692057
+		
+		usb hub驱动 
+		https://blog.csdn.net/chenliang0224/article/details/79678127
+		
+	1.3 内核识别usb新设备过程 
+		http://blog.chinaunix.net/uid-26552184-id-5779948.html
+		
+		subsys_initcall
+		
+2. Linux ALSA声卡驱动
+	https://blog.csdn.net/hongzg1982/article/details/56516837 
+	
+3. Linux下LCD驱动
+	3.1 Linux下LCD驱动详细分析（一） 
+		[lwj103862095][linux]
+		https://blog.csdn.net/lwj103862095/article/details/10011349
+4. 简单字符设备驱动程序分析
+	4.1 简单字符设备驱动程序分析（一） 
+		[lwj103862095]
+		https://blog.csdn.net/lwj103862095/article/details/8539753
+		
+		4.1.1  linux字符驱动之点亮LED
+			https://blog.csdn.net/lwj103862095/article/details/17472455

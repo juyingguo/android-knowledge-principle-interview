@@ -12,8 +12,16 @@
 
 		 
 1. source insight 有些格式的文件被过滤掉了 
-	1.1 、source insight 有些格式的文件被过滤掉了 
-		http://blog.chinaunix.net/uid-25931366-id-3083203.html
+	1.1 、Source Insight中的文件过滤器
+		http://www.rosoo.net/a/201005/9430.html
+		
+		打开Source Insight，在新建工程之前，进入
+
+		Options -> Document Options... Alt-T    -> 点击Document Type的下拉框，然后选择Make File，在右边的File Filter中，在原先的*.mak后面加上一个分号，即多个不同过滤规则以分号间隔开，再加上*makefile，变成 *.mak;*makefile，并且选中Include when adding to projects,这样，以后再新建工程的时候，就可以识别makefile或Makefile了（好像此处Source Insight并不区分大小写）。
+
+		类似的原理，给其他你想要加入的不同的类型的文件，分别加入到原先的一些文件类型后面，注意要用分号隔开，或者直接新建一个文件类型，然后写上对应的顾虑规则，比如
+
+		点击 Add Type，填入新文件类型的名字Scatter File，File Filter中写上*.scf，注意再选中下面的Include when adding to projects,这样就建立了一个新的文件类型， 以后新建工程加入文件时候，系统就能够识别后缀是scf的文件了。
 		
 2、source insight常用功能的设置方法 
 	2.1、http://www.downza.cn/xy/49194.html
@@ -29,7 +37,7 @@
 
 		处理办法：
 
-		1.去掉同步，options->perferences->general->backgroud synchronization every [ ] 前面的钩；
+		1.去掉同步，options->perferences->general->backgroud synchronization every [ ] 前面的钩;这个有用。亲测只改数值无效。
 
 		2.updata revoery file every[ ]改一个大参数。
 		————————————————
@@ -66,3 +74,18 @@
 	10.3 如果工程在远程计算机上，引用及关联的类及函数调用是无法进行查看的。
 		需要将工程放到本地计算机上。
 		
+11，SourceInsight标题栏显示完整路径文件的方法
+	11.1 SourceInsight标题栏显示完整路径文件的方法 
+		https://blog.csdn.net/wzzfeitian/article/details/7797955
+		
+		options -> preferences -> Display, 去掉Trim long path names with ellipses.
+
+		这是标题栏是不是显示了完整的文件路径了呢，那些讨厌的...消失不见了
+		
+12，sourceinsight 4.0 编码乱码修改
+	12.1 https://blog.csdn.net/timebomb/article/details/72778702 
+		在4.0界面File->Reload as Encoding…->选择gb2312；但是这种只能对当前文件有效，如何一劳永逸呢？
+
+		经过尝试，在Options->Preferences->Files最下面选择默认编码方式Default Encoding即可，但是需要重建一下你的项目。[非自己的项目不要这样操作]
+		如果你一个项目，有多种编码方式，GOD BLESS YOU!
+			

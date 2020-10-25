@@ -14,3 +14,124 @@
 三、为android系统添加USB　AUDIO设备的放音和录音功能 
 	3.1 为android系统添加USB　AUDIO设备的放音和录音功能 
 		https://blog.csdn.net/adits/article/details/8242146
+		
+4. Android音频系统之USB设备通路
+	4.1 Android音频系统之USB设备通路（Android 5.1）
+		【丽萨的托马斯】【android 音频，媒体】
+		https://blog.csdn.net/achina2011jy/article/details/103504399
+		
+		【a.查看当前系统连接的声卡】：
+			cat /proc/asound/cards
+			
+		【b.查看当前声卡是否是录音或者播放】：
+			cat /proc/asound/card2/pcm0p/sub0/status
+			cat /proc/asound/card2/pcm0c/sub0/status
+			
+			根据所使用的的设备选择对应的card
+		
+	4.2  Android无驱usb音频实现
+
+		andywen0090
+		csdn:
+		https://blog.csdn.net/as929015918/article/details/78765534
+		jianshu:
+		https://www.jianshu.com/p/1cae2d57ddf4
+		
+		这些相关参数，可以根据uac协议解析判断，这里直接是抓包获取的参数，然后直接设置的。windows抓包可以用Bus Hound工具，linux驱动抓包工具可以使用usbmon
+	4.3 如何在Android平台上使用USB Audio设备 
+		[原创连接]：[DroidPhone] [linux,android]
+		https://blog.csdn.net/azloong/article/details/6764727
+		[转载连接]
+		https://blog.csdn.net/weixin_30657541/article/details/99801372
+		
+		asond.conf
+	
+	4.4 Android5.1平台USB Audio driver 驱动流程
+		4.4.1 usb audio设备驱动 
+			[有深度，广度],][转载地址]
+			https://blog.csdn.net/lininglive/article/details/7053703
+			
+			本文引用自ls.cq《usb audio设备驱动》
+			http://bbs.driverdevelop.com/read.php?tid-118579-page-1.html
+			
+			一、在总结开发经验的时候，先温习一些基础知识点做铺垫。
+			(1)音频驱动通过一个wave api manager的模块与上层应用打交道。具体结构图可参考MSDN
+			二、设备分析
+			通过将此设备接到PC上，用工具软件bushound和usbview分析出此设备的信息，它有四个接口(端点配置)如下：
+			
+			四、开发中的重点问题
+			对于USB音频设备因为是通过USBDeviceAttach动态加载的，它跳过了设备管理器
+5. Android底层开发之Audio HAL 
+	5.1 Android底层开发之Audio HAL 
+		https://blog.csdn.net/kangear/article/details/44939429
+		
+		5.1.1 在Android音频底层调试-基于tinyalsa中以「抛开Android的天生复杂，回归嵌入式Linux的本质」的方式介绍如何调试Linux内核中的音频驱动。
+		转到[5.2]
+		
+		[Android音频底层调试-基于tinyalsa]：https://blog.csdn.net/kangear/article/details/38139669
+		
+		5.1.2 
+		audio_policy.conf介绍
+		除了global_configuration，还有一个audio_hw_modules是代表不同音频硬件模块，
+		* primary是主要的处理模块；
+		* a2dp是处理蓝牙音乐传输模块；
+		* usb是处理usb声卡模块；
+		* r_submix是全称是remote submix，是处理远程音频目前主要是Miracast(基于Wi-Fi Direct的屏幕共享协议)。
+	5.2 [Android音频底层调试-基于tinyalsa]
+		：https://blog.csdn.net/kangear/article/details/38139669 
+		
+		1.编译tinyalsa配套工具
+			$ mmm external/tinyalsa/
+
+			编译完后会产生tinyplay/tinymix/tinycap等等工具。
+
+			tinymix: 查看配置混音器
+
+			tinyplay: 播放音频
+
+			tinycap: 录音
+		3.tinymix查看混响器
+			root下使用该命令。
+			root@android:/ # tinymix
+		4. 例：将输出切换到扬声器
+
+			root@android:/ # tinymix 0 SPK
+		5. 使用tinyplay播放wav音乐 
+			
+			root@android:/ # tinyplay /sdcard/0_16.wav                                     
+			Playing sample: 2 ch, 44100 hz, 16 bit
+			注：播放之前得首先使用tinymix把通道设置好，上文中已经给出了设置到扬声器中的例子;由于播放时使用的最大音量进行播放的，所以注意防止被吓到
+		
+6. Android音频系统之音频框架
+	6.1 Android音频系统之音频框架 
+		[android]
+		https://blog.csdn.net/xuesen_lin/article/details/8796492
+		
+7. Android 音视频深入 十三 OpenSL ES 制作音乐播放器，能暂停和调整音量（附源码下载） 
+	https://www.cnblogs.com/jianpanwuzhe/p/8470036.html
+
+8. Android开发之音频配置文件audio_policy.conf解析全过程 
+	https://blog.csdn.net/weixin_44991625/article/details/108071928
+		
+	
+9.Android USB AUDIO初步分析 
+	https://blog.csdn.net/u010164190/article/details/102970618
+	
+	USB-AUDIO的声卡注册过程
+	使用tinycap的录音过程
+	
+10. USB Audio driver for android
+	http://www.dr-jordan-design.de/USB_audio_with_android.htm
+	
+11，Android 贴心的音视频学习指南来咯！ 
+	https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650833452&idx=1&sn=f4189964a90cc36dac1eb7213b35ae8c&chksm=80b756b2b7c0dfa44540d7c374b0f12f699b2cc91cdf35f3d16c6ad0f23c82c6107b81bb42d8&mpshare=1&scene=23&srcid=1007cTWyzkDYdHexvKZFoIf6&sharer_sharetime=1602061754728&sharer_shareid=f907dc3edbba18604206b66c083e0ad8&key=519b8bbaea533f94f83d5003756124e074373f348ae38b64b99fe58bc7a1103e451f486fa9738de576a03a813fae3d80c7d8484966850ee8685bc5446adb9e51a1bb8a0d9531206d929d672d08c312627c6c07125560e6fe1a14b33b2fe8b982fb0fcfb2fafb17659f902a453f60ed264097a58dce162adba79cb50f50803a5f&ascene=1&uin=MTE1MzAzMTUwNw%3D%3D&devicetype=Windows+7+x64&version=62090529&lang=zh_CN&exportkey=AWgd96YQanDZ0qlrnfrE1tQ%3D&pass_ticket=pzigEVdIoS1GXNLvlkd90ZA7jthBtgHrJMyFaO9RGYzlOcJScbGBT0uPU0xZg1zI&wx_header=0
+	
+	11.1 Android 音视频开发学习之路 
+		https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650826247&idx=1&sn=b25846e36cb43ba7ea8b1ce694e9690d&chksm=80b7b299b7c03b8fec61fdf33de9b8e75be4086238a1e34a8cba880bcff23aac33a6686f6481&scene=21#wechat_redirect
+		
+		或者原文地址：
+		https://www.cnblogs.com/renhui/p/7452572.html
+		
+		
+12 【原理+实战+视频+源码】抖音，快手大热背后——Android 贴心的音视频学习指南来咯！
+	https://blog.csdn.net/Android725/article/details/109135668

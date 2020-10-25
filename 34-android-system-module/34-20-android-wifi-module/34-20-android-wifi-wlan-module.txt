@@ -1,0 +1,44 @@
+一、Android默认打开便携式WIFI热点
+	1.1、Android默认打开便携式WIFI热点
+		https://blog.csdn.net/zhoumushui/article/details/101427627
+		
+2. wpa_supplicant详解
+	2.1 wpa_supplicant详解 
+		https://blog.csdn.net/zm19930923zm/article/details/88743533
+		
+3. wifi挂掉了。
+	3.1 查看wifi服务是否正常？
+		
+	3.2 正常设备，查看驱动正常，卸载，安装都正常。
+	
+4. android wifi 设备节点在终端上如何通过命令显示是否挂载正常
+	4.1 
+	
+5. android wifi模块调试分析
+
+	5.1 android adb 卸载wifi驱动。
+	
+	5.2 wifi驱动放置目录与查看
+		/misc/modules/wlan_*.ko
+	
+		ls -l /misc/modules/
+	5.3 通过命令查看wifi驱动是否加载成功。
+		看sys/class/net/wlan0/是否创建成功。
+		
+	
+	5.3 wifi驱动可以卸载安装吗？
+		这个是模块。是可以的。
+		
+		insmod wlan_*.ko	//加载驱动。
+		rmmod wlan_*.ko //卸载驱动
+		
+6. RTL8723BU WiFi—蓝牙 模块移植 
+	https://blog.csdn.net/hktkfly6/article/details/78055990
+	
+7. WifiService相关。
+	7.1 WifiService启动流程
+	7.2 WifiService属于system_process进程
+		如何查看WifiService是否在运行
+		如何查看system_process中的系统服务是否在运行
+	
+	

@@ -1,6 +1,6 @@
 1. SPI、I2C、UART、I2S、GPIO、SDIO、CAN简述 
 	1.1 SPI、I2C、UART、I2S、GPIO、SDIO、CAN简述 
-		https://blog.csdn.net/u011559046/article/details/74089638?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1
+		https://blog.csdn.net/u011559046/article/details/74089638
 		
 2. PCB （印制电路板） 
 	2.1 PCB （印制电路板）
@@ -97,3 +97,27 @@
 	16.1 PCI总线 
 		https://baike.baidu.com/item/PCI%E6%80%BB%E7%BA%BF/132135?fr=aladdin
 		
+17 Microphone 
+	17.1 Microphone
+		https://baike.baidu.com/item/%E9%BA%A6%E5%85%8B%E9%A3%8E/1265864?fr=aladdin
+		麦克风，学名为传声器，由英语microphone（送话器）翻译而来，也称话筒，微音器。麦克风是将声音信号转换为电信号的能量转换器件。分类有动圈式、电容式、驻极体和最近新兴的硅微传声器，此外还有液体传声器和激光传声器。大多数麦克风都是驻极体电容器麦克风，其的工作原理是利用具有永久电荷隔离的聚合材料振动膜 [1]  。
+		
+	17.2 headphone 与 headset 有什么区别 
+		https://www.leiue.com/headphone-vs-headset
+		耳麦是耳机与麦克风的整合体，它不同于普通的耳机。普通耳机往往是立体声的，而耳麦多是单声道的，同时，耳麦有普通耳机所没有的麦克风。耳麦分为无线耳麦和有线耳麦。这两种耳麦有各自的特点。
+		耳麦(headset)是耳机(headphone)与麦克风(microphone)的整合体。实际上就是耳机跟麦克风整合在一起了而已。
+		
+18 EEPROM
+	18.1 https://baike.baidu.com/item/EEPROM
+		electrically erasable programmable read only memory(EEPROM)
+		电气可拭除可编程只读存储器
+		
+19 Efuse--芯片存储 
+	https://www.cnblogs.com/yuanqiangfei/p/10225138.html
+	电编程熔丝
+	fuse
+	英 [fjuːz]   美 [fjuːz]  
+	n.
+	保险丝;熔断器;导火线;导火索;引信;信管;雷管
+	v.
+	(使)融合，熔接，结合;(使)熔化;(使保险丝熔断而)停止工作

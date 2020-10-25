@@ -1,0 +1,19 @@
+1. millibel 
+	1.1 dB的理解 
+		http://blog.sina.com.cn/s/blog_778cdbcb0102yww9.html
+		
+		另外：除了dB（decibel），还有以下相关物理量：
+		B(bel)——取lg后乘以1；
+		cB(centibel)——取lg后乘以100；
+		mB(millibel)——取lg后乘以1000；
+		但dB最为常见，其他的几种几乎都不怎么用
+		
+2. 电压Vpp什么意思? 
+	https://www.zhihu.com/question/326145308 
+	
+	单解：VDD:电源电压（单极器件）；电源电压（4000系列数字电 路）；漏极电压（场效应管）VCC：电源电压（双极器件）；电源电压（74系列数字电路）；声控载波（Voice Controlled Carrier)VSS:地或电源负极VEE：负电压供电；场效应管的源极（S）VPP：编程/擦除电压。详解：在电子电路中，VCC是电路的供电电压, VDD是芯片的工作电压：VCC：C=circuit 表示电路的意思, 即接入电路的电压， D=device 表示器件的意思, 即器件内部的工作电压，在普通的电子电路中，一般Vcc>Vdd !VSS：S=series  表示公共连接的意思，也就是负极。有些IC 同时有VCC和VDD， 这种器件带有电压转换功能。在“场效应”即COMS元件中，VDD乃CMOS的漏极引脚，VSS乃CMOS的源极引脚， 这是元件引脚符号，它没有“VCC”的名称，你的问题包含3个符号，VCC / VDD /VSS， 这显然是电路符
+
+	作者：evernever
+	链接：https://www.zhihu.com/question/326145308/answer/705249383
+	来源：知乎
+	著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

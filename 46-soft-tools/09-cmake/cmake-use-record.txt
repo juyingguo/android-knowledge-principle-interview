@@ -30,4 +30,7 @@
 					}
 				}
 			}
-
+	2.2 android studio 使用Cmake问题记录
+		2.2.1 ninja: error: 'xxx.a', needed by 'xxx.so', missing and no known rule to make it 
+			https://cloud.tencent.com/developer/ask/152011
+		

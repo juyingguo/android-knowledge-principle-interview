@@ -8,8 +8,25 @@
 	1.3、Android OTA升级原理和流程分析（零）---启动篇 
 		https://blog.csdn.net/twk121109281/article/details/90715730
 	
-二、差分包执行流程
+二、差分包相关
+	2.1 差分包执行流程 
+	
+	2.2 差分包升级失败问题。
+		2.2.1 因为 ro.product.device=I10V20 不同与AD500A 而无法使用差分包升级。
+		
+	2.3 OTA升级常见问题
+		2.3.1 https://blog.csdn.net/nwpushuai/article/details/79706722
+		
+		2.3.2 中兴U930刷机出现“assert failed:getprop("ro.product.device”的解决方法
+			http://www.yzmg.com/news/show-85204.html
+			
+			1.关闭脚本验证，或者删除脚本验证（这个在recovery的高级选项中有）
+				待验证。
 
+		　　2.把Rom包的名字改为update.zip重新刷机
+
+		　　3.换一个新的Rom包，可以点击这里下载
 
 三、系统apk本删除，会不会导致升级失败
 	
+

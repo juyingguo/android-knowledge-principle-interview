@@ -1,0 +1,22 @@
+1. Android USB 外置声卡插入Audio系统没有正常识别问题梳理以及分析 
+	https://www.cnblogs.com/ouyshy/p/13555510.html
+	
+	问题排查顺序：
+
+	1、当物理设备没有被android 的Audio系统识别，首先排查android系统有没有正确识别到USB声卡插入。
+
+	android Audio HAL一般都使用alsa。是android内核中的驱动识别到了声卡物理设备接入之后，驱动程序会自动在/pro/asound 目录下创建一个目录，表明有新的物理声卡接入；
+
+	ls /proc/asound/
+	card0 cards devices hwdep modules oss PCH pcm seq timers version
+
+	然后可以通过查询devices文件中的内容，来了解物理声卡的能力；
+
+	cat /proc/asound/devices
+	
+2. 为android系统添加USB　AUDIO设备的放音和录音功能 
+	https://blog.csdn.net/adits/article/details/8242146;
+	
+3. 声卡---android USB声卡调试(播放和录音)
+	https://blog.csdn.net/wensan911/article/details/104774059/
+	
