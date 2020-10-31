@@ -135,3 +135,36 @@
 		
 12 【原理+实战+视频+源码】抖音，快手大热背后——Android 贴心的音视频学习指南来咯！
 	https://blog.csdn.net/Android725/article/details/109135668
+	
+13 基本知识
+	13.1 色三属性：色相、亮度和色度
+		http://production.xitek.com/glossary.php?a=detail&id=212
+		
+	13.2 音频的音调 
+	
+	13.3 H264中的NALU概念解析 
+		https://blog.csdn.net/pkx1993/article/details/79974858
+		
+		13.3.1 【H264/AVC 句法和语义详解】(二)：h264码流格式与NALU详解一 
+			【系列专栏】
+			https://blog.csdn.net/u011399342/article/details/80471982
+			
+		13.3.2 H264 NALU 详解 
+			https://blog.csdn.net/jiqiujia/article/details/19292259
+			
+			4. 关于H.264的协议文档
+			有的同学可能还没下载H.264的官方文档，这里我再贴一下下载地址：
+
+			全部版本，下载2017最新版：
+
+			http://www.itu.int/rec/T-REC-H.264
+
+			最新版为英文版，05年3月份有中文版：
+
+			http://www.itu.int/rec/T-REC-H.264-200503-S/en
+			
+		13.3.3 H.264中NALU、RBSP、SODB的关系 (弄清码流结构) 
+			https://www.cnblogs.com/lidabo/p/4482480.html
+			
+	13.4 雷霄骅《视音频数据处理入门：H.264视频码流解析》（代码注释版）
+		https://blog.csdn.net/u010512264/article/details/82083467

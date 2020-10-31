@@ -86,7 +86,7 @@
 		3.2.9 查找子字符串
 			查找字符 i 或 o 的位置(哪个字母先出现就计算哪个)：
 			string="runoob is a great site"
-			echo `expr index "$string" io`  # 输出 4
+			echo `expr index "$string" io`  # 输出 4 //位置不同于索引。
 			
 			注意： 以上脚本中 ` 是反引号，而不是单引号 '，不要看错了哦。
 		3.2.10 定义数组
@@ -119,6 +119,18 @@
 
 			echo ${array_name[@]}
 			
+			实例：
+			#!/bin/bash
+			# author:菜鸟教程
+			# url:www.runoob.com
+
+			my_array=(A B "C" D)
+
+			echo "第一个元素为: ${my_array[0]}"
+			echo "第二个元素为: ${my_array[1]}"
+			echo "第三个元素为: ${my_array[2]}"
+			echo "第四个元素为: ${my_array[3]}"
+			
 		3.2.12 获取数组的长度
 			获取数组长度的方法与获取字符串长度的方法相同，例如：
 			
@@ -129,7 +141,29 @@
 			# 取得数组单个元素的长度
 			lengthn=${#array_name[n]}
 			
-		3.2.13 Shell 注释
+			
+		3.2.13 获取数组中的所有元素
+				使用@ 或 * 可以获取数组中的所有元素，例如：
+
+				#!/bin/bash
+				# author:菜鸟教程
+				# url:www.runoob.com
+
+				my_array[0]=A
+				my_array[1]=B
+				my_array[2]=C
+				my_array[3]=D
+
+				echo "数组的元素为: ${my_array[*]}"
+				echo "数组的元素为: ${my_array[@]}"
+			执行脚本，输出结果如下所示：
+
+				$ chmod +x test.sh 
+				$ ./test.sh
+				数组的元素为: A B C D
+				数组的元素为: A B C D
+			
+		3.2.14 Shell 注释
 			以 # 开头的行就是注释，会被解释器忽略。
 
 			通过每一行加一个 # 号设置多行注释，
@@ -215,5 +249,122 @@
 		1
 		2
 		3
+	3.4 Shell 基本运算符 
+		3.4.1 Shell 和其他编程语言一样，支持多种运算符，包括：
+
+			算数运算符
+			关系运算符
+			布尔运算符
+			字符串运算符
+			文件测试运算符
+			原生bash不支持简单的数学运算，但是可以通过其他命令来实现，例如 awk 和 expr，expr 最常用。
+
+			expr 是一款表达式计算工具，使用它能完成表达式的求值操作。
+
+			例如，两个数相加(注意使用的是反引号 ` 而不是单引号 ')：
+			#!/bin/bash
+			val=`expr 2 + 2`
+			echo "两数之和为 : $val"
+			
+			执行脚本，输出结果如下所示：
+			两数之和为 : 4
+			
+			两点注意：
+			表达式和运算符之间要有空格，例如 2+2 是不对的，必须写成 2 + 2，这与我们熟悉的大多数编程语言不一样。
+			完整的表达式要被 ` ` 包含，注意这个字符不是常用的单引号，在 Esc 键下边。
+		3.4.2 算术运算符
+			注意：条件表达式要放在方括号之间，并且要有空格，例如: [$a==$b] 是错误的，必须写成 [ $a == $b ]。
+			注意：
+				乘号(*)前边必须加反斜杠(\)才能实现乘法运算；
+				if...then...fi 是条件语句，后续将会讲解。
+				
+		3.4.3 关系运算符 
+			关系运算符只支持数字，不支持字符串，除非字符串的值是数字。
+			https://www.runoob.com/linux/linux-shell-basic-operators.html
+			
+		3.4.4 布尔运算符
+			!	非运算，表达式为 true 则返回 false，否则返回 true。	[ ! false ] 返回 true。
+			-o	或运算，有一个表达式为 true 则返回 true。	[ $a -lt 20 -o $b -gt 100 ] 返回 true。
+			-a	与运算，两个表达式都为 true 才返回 true。	[ $a -lt 20 -a $b -gt 100 ] 返回 false。
+			
+		3.4.5 逻辑运算符 
+			&&	逻辑的 AND	[[ $a -lt 100 && $b -gt 100 ]] 返回 false
+			||	逻辑的 OR	[[ $a -lt 100 || $b -gt 100 ]] 返回 true
+			注意：逻辑运算符，需要嵌套两层[]
+			
+			android\android&knowledge&principle&interview\35-linux-mudule\shell_project\shell_base_test_project
+			
+		3.4.6 字符串运算符
+			=	检测两个字符串是否相等，相等返回 true。	[ $a = $b ] 返回 false。
+			!=	检测两个字符串是否相等，不相等返回 true。	[ $a != $b ] 返回 true。
+			-z	检测字符串长度是否为0，为0返回 true。	[ -z $a ] 返回 false。
+			-n	检测字符串长度是否不为 0，不为 0 返回 true。	[ -n "$a" ] 返回 true。
+			$	检测字符串是否为空，不为空返回 true。	[ $a ] 返回 true。
+			
+			比较两个字符串是否相等。发现有的写法为：if [ $a = $b ],而有的写法为：if $a = $b 啥区别？还是不同版本问题？
+			if [ $a = $b ]
+			then
+			   echo "$a = $b : a 等于 b"
+			else
+			   echo "$a = $b: a 不等于 b"
+			fi
+		3.4.7 文件测试运算符
+			https://www.runoob.com/linux/linux-shell-basic-operators.html
+			文件测试运算符用于检测 Unix 文件的各种属性。
+			其他检查符：
+
+			-S: 判断某文件是否 socket。
+			-L: 检测文件是否存在并且是一个符号链接。
+	3.5 Shell echo命令 
+		3.5.1.显示普通字符串:
+			echo "It is a test"
+			
+			这里的双引号完全可以省略，以下命令与上面实例效果一致：
+			echo It is a test
+		3.5.2 2.显示转义字符
+			echo "\"It is a test\""
+			结果将是:
+
+			"It is a test"
+			同样，双引号也可以省略
+		3.5.3 显示变量
+			read 命令从标准输入中读取一行,并把输入行的每个字段的值指定给 shell 变量
+
+			#!/bin/sh
+			read name 
+			echo "$name It is a test"
+			以上代码保存为 test.sh，name 接收标准输入的变量，结果将是:
+
+			[root@www ~]# sh test.sh
+			OK                     #标准输入
+			OK It is a test        #输出
+			
+		3.5.4 显示换行
+			echo -e "OK! \n" # -e 开启转义
+			echo "It is a test"
+			输出结果：
+
+			OK!
+
+			It is a test
+			
+		3.5.5 显示不换行
+			#!/bin/sh
+			echo -e "OK! \c" # -e 开启转义 \c 不换行
+			echo "It is a test"
+			输出结果：
+
+			OK! It is a test
+			
+		3.5.6 显示结果定向至文件
+			echo "It is a test" > myfile
+			
+		3.5.7 原样输出字符串，不进行转义或取变量(用单引号)
+				echo '$name\"'
+				输出结果：
+
+				$name\"
+	3.6 Shell printf 命令 
+		https://www.runoob.com/linux/linux-shell-printf.html
 4. Linux下Shell的for循环语句 
 	https://www.cnblogs.com/EasonJim/p/8315939.html

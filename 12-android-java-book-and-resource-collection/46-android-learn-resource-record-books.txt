@@ -1,5 +1,7 @@
 01	文档资源
-	
+	01.1 https://developer.android.google.cn/?hl=zh_cn
+	01.2 官网资料
+		https://developer.android.google.cn/ndk/guides/android_mk
 一、android frameworks 方面的书籍。
 	1.1、《Android应用框架原理与程序设计36技》
 		《深入理解Android》

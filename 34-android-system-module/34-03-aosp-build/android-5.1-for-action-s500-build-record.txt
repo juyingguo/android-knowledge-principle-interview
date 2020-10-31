@@ -1,0 +1,16 @@
+1.预制xxsH5Player apk失败。
+	1.1 
+		[out/target/product/bubble_gum/obj/APPS/xxxH5Player_intermediates/arm/package.odex] Aborted (core dumped)
+		[14:20:02_080]make[1]: *** Deleting file `out/target/product/bubble_gum/obj/APPS/ibotnH5Player_intermediates/arm/package.odex'
+		
+		[out/target/*/package.odex] Aborted (core dumped)
+		make[1]: *** Deleting file `out/target/*package.odex'
+		
+		1.1.1 actions s500为android5.1，api=21；
+			而该预制apk的最小sdk版本=19，目标sdk版本=29，导致的。
+			和其它预制apk一样，目标sdk版本=21或25，都是可以的。是sdk兼容范围不同导致的。
+			
+2.集成带有mp3录音功能的应用smartalarm.apk 录音失败。
+	2.1 actions s500 的cpu类型为armeabi-v7a
+		而当时给smartalarm.apk 系统编译配置lib时使用armeabi文件下的libmp3lame.so
+		libmp3lame.so是通过mp3框架库，androidstudio module生成的。apk变后缀为zip解压得到。

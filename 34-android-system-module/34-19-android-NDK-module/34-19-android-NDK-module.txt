@@ -1,7 +1,9 @@
 01 ndk资源
 	01.1 ndk-samples
 		https://github.com/android/ndk-samples/tree/master 
-		
+	01.2 ndk下载
+		https://developer.android.google.cn/ndk/downloads/
+	
 	
 1.NDK接口参照：
 

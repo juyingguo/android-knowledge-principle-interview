@@ -1,0 +1,19 @@
+1.  Android.mk文档：
+
+   1.1 Android.mk的官方文档：https://developer.android.google.cn/ndk/guides/android_mk
+   1.2 在NDK中的文档路径：ndk目录下docs中的ANDROID-MK.html文档
+   
+2. Android.mk用法详解
+	2.1 Android.mk用法详解（一） 
+		https://blog.csdn.net/niuba123456/article/details/80948186
+		
+	2.2 Android.mk用法详解 
+		https://www.cnblogs.com/reality-soul/p/6893248.html
+		
+		
+	2.3 Android.mk的用法|静态库|动态库
+		https://blog.csdn.net/stefzeus/article/details/6597143
+		
+		
+		静态库日志在什么地方看。
+	 
