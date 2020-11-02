@@ -159,3 +159,16 @@
 			
 	2.4、vs2010断点调试详细教程 
 		https://www.jb51.net/softjc/160533.html
+		
+	2.5 win8上面正常，win7上面异常。
+		Error	1	error LNK1123: failure during conversion to COFF: file invalid or corrupt	
+		
+		2.5.1 LNK1123: failure during conversion to COFF: file invalid or corrupt-问题解决办法 
+			https://blog.csdn.net/u010439482/article/details/51372700
+		
+			有效的解决方法安装补丁包。
+			Visual Studio 2010 SP1			
+			https://www.cr173.com/soft/24545.html
+3. MFC与QT区别？
+	3.1 MFC与QT区别？
+		https://blog.csdn.net/changyourmind/article/details/51778555
