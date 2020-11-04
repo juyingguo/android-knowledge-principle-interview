@@ -31,6 +31,7 @@
 		
 		insmod wlan_*.ko	//加载驱动。
 		rmmod wlan_*.ko //卸载驱动
+	
 		
 6. RTL8723BU WiFi—蓝牙 模块移植 
 	https://blog.csdn.net/hktkfly6/article/details/78055990
@@ -40,5 +41,8 @@
 	7.2 WifiService属于system_process进程
 		如何查看WifiService是否在运行
 		如何查看system_process中的系统服务是否在运行
+		
+8.wifi问题分析？
+	8.1 android5.1 wifi使用过程中突然断掉，然后也搜索不到wifi列表设备了。重新切换打开开关也不行？
 	
 	

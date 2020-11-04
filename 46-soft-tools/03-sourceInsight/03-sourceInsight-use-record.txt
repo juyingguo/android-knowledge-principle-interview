@@ -73,6 +73,9 @@
 		
 	10.3 如果工程在远程计算机上，引用及关联的类及函数调用是无法进行查看的。
 		需要将工程放到本地计算机上。
+	10.4 Lookup Reference 功能项，函数名搜索不到引用的文件。
+		Options 选择【Smart Reference Matching】
+		Search Method 选择Look Up Reference.
 		
 11，SourceInsight标题栏显示完整路径文件的方法
 	11.1 SourceInsight标题栏显示完整路径文件的方法 

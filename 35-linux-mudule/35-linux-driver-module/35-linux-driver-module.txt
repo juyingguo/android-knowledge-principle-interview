@@ -2,12 +2,62 @@
 	00.1 韦东山老师的视频
 		韦东山嵌入式Linux
 		https://www.zhihu.com/column/c_118891916
+		
+		视频教程-Linux驱动之LCD实战视频课程-嵌入式
+		https://edu.csdn.net/course/play/3749?spm=1001.2101.3001.4102&utm_source=1201366347
 	00.1 「韦东山」机会总是留给有准备的人 嵌入式Linux学习经验
 		https://zhuanlan.zhihu.com/p/156885309
-01. linux 驱动加载流程。
-	0.1 linux 不同驱动加载流程是否相同。
-	0.2 linux led,lcd,camera,usb等不同驱动加载流程。
 		
+	00.2 Linux驱动编程视频教程
+		好资源。
+		https://blog.csdn.net/santirenpc/article/details/102221971
+		链接：https://pan.baidu.com/s/1Yn5d4w9uudb4tGDTskzPrg 
+		提取码：1hus 
+		
+		 本视频教程主要介绍字符驱动、杂项设备、中断、调试驱动的基本方法以及驱动的移植等。
+		
+	00.3 linux设备驱动详解视频（宋宝华）视频下载地址，地址百度网盘，提取码都在文件里面。
+		https://download.csdn.net/download/shenyamu/8801721
+		
+		以及对应书籍：
+		linux设备驱动开发详解(第3版）pdf （宋宝华著作）
+		第三版。
+		
+		Linux设备驱动开发详解(宋宝华)资料
+		https://zhuanlan.zhihu.com/p/112208300
+		
+			全部源码：
+			链接：https://pan.baidu.com/s/1rCbRUmnDtjE4jHNB5eQ8CQ
+			提取码：t12r
+			驱动源码：
+			链接：https://pan.baidu.com/s/1lSMGxLnEFwO0aJGORqx8Og
+			提取码：bglj
+			欢迎关注我的个人网站：www.zcxbb.com
+		
+	00.4 Linux设备驱动开发入门 
+		（csdn）收费课程对比。
+			https://edu.csdn.net/course/detail/1955
+	00.5 嵌入式Linux驱动开发实战视频教程
+		（北风网原创）收费课程对比。
+		https://blog.csdn.net/ibeifengit/article/details/40040329
+		
+	00.6 linux内核驱动开发视频课程
+		（cto网原创）收费课程对比。
+		https://edu.51cto.com/course/13671.html?source=so
+		
+		
+01. linux 驱动加载流程。
+	01.1 linux 不同驱动加载流程是否相同。
+	01.2 linux led,lcd,camera,usb等不同驱动加载流程。
+	01.3 linux driver suspend/resume流程，以及卸载/加载驱动的流程
+	
+	01.4 linux驱动模块的加载和卸载
+		https://blog.csdn.net/monkea123/article/details/103905469
+		
+		有两种命令可以加载驱动模块： insmod和 modprobe。
+		insmod 命令不能解决模块的依赖关系，比如 drv.ko 依赖 first.ko 这个模块，就必须先使用insmod 命令加载 first.ko 这个模块，然后再加载 drv.ko 这个模块。但是 modprobe 就不会存在这个问题， modprobe 会分析模块的依赖关系，然后会将所有的依赖模块都加载到内核中。
+		
+		对于模块的卸载，还是推荐使用 rmmod 命令
 1. Linux USB driver 
 	1.1 Linux USB总线驱动框架分析 
 		https://zhuanlan.zhihu.com/p/61079354
@@ -30,6 +80,10 @@
 	3.1 Linux下LCD驱动详细分析（一） 
 		[lwj103862095][linux]
 		https://blog.csdn.net/lwj103862095/article/details/10011349
+	3.2 lcd驱动视频。 韦东山_嵌入式Linux_第2期_Linux高级驱动视频教程_免费试看版
+		系列视频
+		https://www.bilibili.com/video/bv1HW411L76t/?spm_id_from=333.788.b_636f6d6d656e74.27
+		
 4. 简单字符设备驱动程序分析
 	4.1 简单字符设备驱动程序分析（一） 
 		[lwj103862095]
@@ -37,3 +91,8 @@
 		
 		4.1.1  linux字符驱动之点亮LED
 			https://blog.csdn.net/lwj103862095/article/details/17472455
+			
+5. wifi driver 
+	5.1 
+		RTL 模组走标准的driver suspend/resume流程，其它模组走的是卸载/加载驱动的流程
+		

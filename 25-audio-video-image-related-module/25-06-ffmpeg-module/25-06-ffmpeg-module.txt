@@ -1,0 +1,19 @@
+1. 资源
+	1.1 官网
+		https://www.ffmpeg.org/
+	1.2 http://git.videolan.org/?p=ffmpeg.git 
+	
+	1.3 GitHub
+		https://github.com/FFmpeg/FFmpeg 
+	1.4 好例子网。
+		https://www.haolizi.net/example/view_20421.html
+		已充值下载。
+		
+	1.5
+		https://www.haolizi.net/example/tags_FFmpeg_1.html
+		
+	1.6 ffmpeg 社区
+		
+2. FFmpeg从入门到精通读书笔记（1）
+	2.1 FFmpeg从入门到精通读书笔记（1） 
+		https://blog.csdn.net/hanxiucaolss/article/details/100007475

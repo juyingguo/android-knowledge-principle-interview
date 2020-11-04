@@ -37,3 +37,11 @@
 	
 	4. 跟我一起写 Makefile（一）
 		https://blog.csdn.net/haoel/article/details/2886/
+		
+3. makefile变量定义应用到c语言
+	3.1 makefile变量定义应用到c语言 
+		https://www.cnblogs.com/embedded-linux/p/6654088.html?utm_source=itdadao&utm_medium=referral
+		
+4. linux及linux中Makefiel与*.mk是否等同
+	4.1 .mk(Makefile知识) 
+		https://blog.csdn.net/weixin_42688931/article/details/103702757
