@@ -44,11 +44,54 @@
 7. 嵌入式Linux视频教程完整视频
 	https://download.csdn.net/download/liwinder/10560976
 	
+	内容列表如下：：
+		很好的嵌入式linux视频教程
+		（进程通讯）
+		 （编程基础）
+		 （文件编程）
+		 （进程通讯）
+		 （多线程）
+		 （网络编程）
+		 进程控制）
+		 进程管理）
+		 
+		 高级字符设备驱动）
+		 字符设备驱动）
+		 内存管理子系统）
+		 内核开发基础）
+		 嵌入式Linux系统构建）
+		 U-Boot移植）
+		 硬件访问）
+		 设备模型）
+		 块设备驱动程序）
+		 网卡触摸屏）
+		 USB驱动程序开发）
+		 USB系统架构）
+		 PCI串口）
+		 LCD驱动程序）
+		 硬件访问）
+		 LINUX USB系统）
+		 时钟与定时器驱动）
+		 ARM系统开发基础）
+		 串口驱动程序设计）
+		 ADC与触摸屏驱动程序）
+		 按键与LED驱动程序设计）
+	
 8. 一些经久不衰的linux 视频教程列表
 	https://blog.csdn.net/gooogleman/article/details/6684085
 	
 	有关开发版讨论内容。
+	
 9. 讲解非常详细的LInux经典视频教程高清打包下载!
 	Linux视频教程，是韩顺平讲解的。
 	https://blog.csdn.net/forwk1990/article/details/84089657
+	
+10. linux系列专业培训介绍
+	10.1 linux专业培训介绍：华清远见。	
+		
+		第四阶段 · 嵌入式底层开发核心课程
+		ARM开发技术
+		Linux系统移植
+		Linux内核及驱动开发
+		Android移植开发
 	

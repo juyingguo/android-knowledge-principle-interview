@@ -9,19 +9,50 @@
 		https://zhuanlan.zhihu.com/p/156885309
 		
 	00.2 Linux驱动编程视频教程
-		好资源。
+		好资源。santirenpc [嵌入式Linux|视频教程]
 		https://blog.csdn.net/santirenpc/article/details/102221971
 		链接：https://pan.baidu.com/s/1Yn5d4w9uudb4tGDTskzPrg 
 		提取码：1hus 
 		
 		 本视频教程主要介绍字符驱动、杂项设备、中断、调试驱动的基本方法以及驱动的移植等。
+		 
+		
+		Linux应用开发视频教程
+		https://blog.csdn.net/santirenpc/article/details/102220410
+		链接：https://pan.baidu.com/s/1rYYy0JqHB4TFPYQSPPKArw 
+		提取码：6tap 		 
+
+		Linux系统编程电子书：
+		链接：https://pan.baidu.com/s/1HqPVW4_bE0P-Vcf-UZvUPQ 
+		提取码：6wpm
+		
+		iTop4412开发板入门视频教程
+		https://blog.csdn.net/santirenpc/article/details/102222968
+		iTop4412开发板入门视频教程:
+		链接：https://pan.baidu.com/s/1EhreTpvylCOZdcUWc37Mcw 
+		提取码：xbvo 
+
+		iTop4412开发板电子书：
+		链接：https://pan.baidu.com/s/1HqPVW4_bE0P-Vcf-UZvUPQ 
+		提取码：6wpm 
 		
 	00.3 linux设备驱动详解视频（宋宝华）视频下载地址，地址百度网盘，提取码都在文件里面。
 		https://download.csdn.net/download/shenyamu/8801721
 		
+		下载后的文件内容：链接：http://pan.baidu.com/s/1bnEsIbt 密码：1qqt
+		
 		以及对应书籍：
 		linux设备驱动开发详解(第3版）pdf （宋宝华著作）
 		第三版。
+		这本书已经出版了，因为更换了出版社，所以不能叫第三版。现在的名字叫《
+		linux设备驱动开发详解：基于最新的Linux4.0内核》，这是名副其实的第三版。
+		
+		电子书 Linux设备驱动开发详解：基于最新的Linux 4.0内核.pdf 介绍及免费下载地址。
+		https://blog.csdn.net/pdfebook/article/details/84896694
+			【备注：本书第11页，第六行链接已经失效，替换为：http://pan.baidu.com/s/1cFrl2e 密码：ezs2】
+			免费下载地址：：
+			https://306t.com/file/14299555-204231232
+			http://www.xwood.net/_site_domain_/_root/5870/5930/5932/t_c265730.html
 		
 		Linux设备驱动开发详解(宋宝华)资料
 		https://zhuanlan.zhihu.com/p/112208300
@@ -33,7 +64,21 @@
 			链接：https://pan.baidu.com/s/1lSMGxLnEFwO0aJGORqx8Og
 			提取码：bglj
 			欢迎关注我的个人网站：www.zcxbb.com
-		
+			
+		00.3.3 《Linux设备驱动开发详解(第3版)》（即《Linux设备驱动开发详解：基于最新的Linux 4.0内核》）前言
+			【宋宝华老师原创】
+			https://blog.csdn.net/21cnbao/article/details/45322629
+			
+		003.4 宋宝华老师 译有《Essential Linux Device Drivers》还有ldd,uld等。
+			http://fellow.51cto.com/art/201212/372551.htm
+			
+			2012年度十大杰出IT博客之 宋宝华
+			，整理为《C语言嵌入式系统编程修炼之道》，该组文章，今天仍在互联网上口口相传。这算是我写博的开端吧。
+
+			其后，在工作和实践中，又陆续创作了《基于嵌入式操作系统VxWorks的多任务并发程序设计》、《深入浅出MFC“文档/视图”架构》、《深入浅出Win32多线程程序设计》、《VC++动态链接库(DLL)编程》、《黑客之旅――原始套接字（Raw Socket）透析》、《Cadence 高速PCB的时序分析》等博文，都是当时研发心路的记载。至今仍时常收到读者交流其中的问题，而其中的绝大多数技术领域，我已不再从事。每一个从那个年代走过来的人，似乎都经历了VC、VxWorks的时代。青春已逝，而过去的博文，就像一位位老朋友，每次见面，可以豪饮长谈。
+			
+			您所在的位置： 首页 > 技术人 > 同行 > 人物故事 > 技术名人 >
+			http://fellow.51cto.com/col/1408/
 	00.4 Linux设备驱动开发入门 
 		（csdn）收费课程对比。
 			https://edu.csdn.net/course/detail/1955
@@ -96,3 +141,10 @@
 	5.1 
 		RTL 模组走标准的driver suspend/resume流程，其它模组走的是卸载/加载驱动的流程
 		
+6. 宋宝华-linux设备驱动开发详解-第三版。
+	6.1  网站提供内核及体系结构的下linux源代码的"cross-reference"
+		http://lxr.linux.no/ident
+		
+		ISA总线原理 - 电子常识 - 电子发烧友网
+		http://www.elecfans.com/dianzichangshi/2008120919500.html
+	
