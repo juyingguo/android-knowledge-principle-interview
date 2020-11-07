@@ -159,3 +159,6 @@
 			
 	2.4、vs2010断点调试详细教程 
 		https://www.jb51.net/softjc/160533.html
+		
+	2.5	vs2010启动图标在哪
+		 common7/IDE/devenv.exe
