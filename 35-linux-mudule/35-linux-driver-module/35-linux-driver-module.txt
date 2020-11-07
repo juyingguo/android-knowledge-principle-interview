@@ -2,12 +2,107 @@
 	00.1 韦东山老师的视频
 		韦东山嵌入式Linux
 		https://www.zhihu.com/column/c_118891916
+		
+		视频教程-Linux驱动之LCD实战视频课程-嵌入式
+		https://edu.csdn.net/course/play/3749?spm=1001.2101.3001.4102&utm_source=1201366347
 	00.1 「韦东山」机会总是留给有准备的人 嵌入式Linux学习经验
 		https://zhuanlan.zhihu.com/p/156885309
-01. linux 驱动加载流程。
-	0.1 linux 不同驱动加载流程是否相同。
-	0.2 linux led,lcd,camera,usb等不同驱动加载流程。
 		
+	00.2 Linux驱动编程视频教程
+		好资源。santirenpc [嵌入式Linux|视频教程]
+		https://blog.csdn.net/santirenpc/article/details/102221971
+		链接：https://pan.baidu.com/s/1Yn5d4w9uudb4tGDTskzPrg 
+		提取码：1hus 
+		
+		 本视频教程主要介绍字符驱动、杂项设备、中断、调试驱动的基本方法以及驱动的移植等。
+		 
+		
+		Linux应用开发视频教程
+		https://blog.csdn.net/santirenpc/article/details/102220410
+		链接：https://pan.baidu.com/s/1rYYy0JqHB4TFPYQSPPKArw 
+		提取码：6tap 		 
+
+		Linux系统编程电子书：
+		链接：https://pan.baidu.com/s/1HqPVW4_bE0P-Vcf-UZvUPQ 
+		提取码：6wpm
+		
+		iTop4412开发板入门视频教程
+		https://blog.csdn.net/santirenpc/article/details/102222968
+		iTop4412开发板入门视频教程:
+		链接：https://pan.baidu.com/s/1EhreTpvylCOZdcUWc37Mcw 
+		提取码：xbvo 
+
+		iTop4412开发板电子书：
+		链接：https://pan.baidu.com/s/1HqPVW4_bE0P-Vcf-UZvUPQ 
+		提取码：6wpm 
+		
+	00.3 linux设备驱动详解视频（宋宝华）视频下载地址，地址百度网盘，提取码都在文件里面。
+		https://download.csdn.net/download/shenyamu/8801721
+		
+		下载后的文件内容：链接：http://pan.baidu.com/s/1bnEsIbt 密码：1qqt
+		
+		以及对应书籍：
+		linux设备驱动开发详解(第3版）pdf （宋宝华著作）
+		第三版。
+		这本书已经出版了，因为更换了出版社，所以不能叫第三版。现在的名字叫《
+		linux设备驱动开发详解：基于最新的Linux4.0内核》，这是名副其实的第三版。
+		
+		电子书 Linux设备驱动开发详解：基于最新的Linux 4.0内核.pdf 介绍及免费下载地址。
+		https://blog.csdn.net/pdfebook/article/details/84896694
+			【备注：本书第11页，第六行链接已经失效，替换为：http://pan.baidu.com/s/1cFrl2e 密码：ezs2】
+			免费下载地址：：
+			https://306t.com/file/14299555-204231232
+			http://www.xwood.net/_site_domain_/_root/5870/5930/5932/t_c265730.html
+		
+		Linux设备驱动开发详解(宋宝华)资料
+		https://zhuanlan.zhihu.com/p/112208300
+		
+			全部源码：
+			链接：https://pan.baidu.com/s/1rCbRUmnDtjE4jHNB5eQ8CQ
+			提取码：t12r
+			驱动源码：
+			链接：https://pan.baidu.com/s/1lSMGxLnEFwO0aJGORqx8Og
+			提取码：bglj
+			欢迎关注我的个人网站：www.zcxbb.com
+			
+		00.3.3 《Linux设备驱动开发详解(第3版)》（即《Linux设备驱动开发详解：基于最新的Linux 4.0内核》）前言
+			【宋宝华老师原创】
+			https://blog.csdn.net/21cnbao/article/details/45322629
+			
+		003.4 宋宝华老师 译有《Essential Linux Device Drivers》还有ldd,uld等。
+			http://fellow.51cto.com/art/201212/372551.htm
+			
+			2012年度十大杰出IT博客之 宋宝华
+			，整理为《C语言嵌入式系统编程修炼之道》，该组文章，今天仍在互联网上口口相传。这算是我写博的开端吧。
+
+			其后，在工作和实践中，又陆续创作了《基于嵌入式操作系统VxWorks的多任务并发程序设计》、《深入浅出MFC“文档/视图”架构》、《深入浅出Win32多线程程序设计》、《VC++动态链接库(DLL)编程》、《黑客之旅――原始套接字（Raw Socket）透析》、《Cadence 高速PCB的时序分析》等博文，都是当时研发心路的记载。至今仍时常收到读者交流其中的问题，而其中的绝大多数技术领域，我已不再从事。每一个从那个年代走过来的人，似乎都经历了VC、VxWorks的时代。青春已逝，而过去的博文，就像一位位老朋友，每次见面，可以豪饮长谈。
+			
+			您所在的位置： 首页 > 技术人 > 同行 > 人物故事 > 技术名人 >
+			http://fellow.51cto.com/col/1408/
+	00.4 Linux设备驱动开发入门 
+		（csdn）收费课程对比。
+			https://edu.csdn.net/course/detail/1955
+	00.5 嵌入式Linux驱动开发实战视频教程
+		（北风网原创）收费课程对比。
+		https://blog.csdn.net/ibeifengit/article/details/40040329
+		
+	00.6 linux内核驱动开发视频课程
+		（cto网原创）收费课程对比。
+		https://edu.51cto.com/course/13671.html?source=so
+		
+		
+01. linux 驱动加载流程。
+	01.1 linux 不同驱动加载流程是否相同。
+	01.2 linux led,lcd,camera,usb等不同驱动加载流程。
+	01.3 linux driver suspend/resume流程，以及卸载/加载驱动的流程
+	
+	01.4 linux驱动模块的加载和卸载
+		https://blog.csdn.net/monkea123/article/details/103905469
+		
+		有两种命令可以加载驱动模块： insmod和 modprobe。
+		insmod 命令不能解决模块的依赖关系，比如 drv.ko 依赖 first.ko 这个模块，就必须先使用insmod 命令加载 first.ko 这个模块，然后再加载 drv.ko 这个模块。但是 modprobe 就不会存在这个问题， modprobe 会分析模块的依赖关系，然后会将所有的依赖模块都加载到内核中。
+		
+		对于模块的卸载，还是推荐使用 rmmod 命令
 1. Linux USB driver 
 	1.1 Linux USB总线驱动框架分析 
 		https://zhuanlan.zhihu.com/p/61079354
@@ -30,6 +125,10 @@
 	3.1 Linux下LCD驱动详细分析（一） 
 		[lwj103862095][linux]
 		https://blog.csdn.net/lwj103862095/article/details/10011349
+	3.2 lcd驱动视频。 韦东山_嵌入式Linux_第2期_Linux高级驱动视频教程_免费试看版
+		系列视频
+		https://www.bilibili.com/video/bv1HW411L76t/?spm_id_from=333.788.b_636f6d6d656e74.27
+		
 4. 简单字符设备驱动程序分析
 	4.1 简单字符设备驱动程序分析（一） 
 		[lwj103862095]
@@ -37,3 +136,15 @@
 		
 		4.1.1  linux字符驱动之点亮LED
 			https://blog.csdn.net/lwj103862095/article/details/17472455
+			
+5. wifi driver 
+	5.1 
+		RTL 模组走标准的driver suspend/resume流程，其它模组走的是卸载/加载驱动的流程
+		
+6. 宋宝华-linux设备驱动开发详解-第三版。
+	6.1  网站提供内核及体系结构的下linux源代码的"cross-reference"
+		http://lxr.linux.no/ident
+		
+		ISA总线原理 - 电子常识 - 电子发烧友网
+		http://www.elecfans.com/dianzichangshi/2008120919500.html
+	

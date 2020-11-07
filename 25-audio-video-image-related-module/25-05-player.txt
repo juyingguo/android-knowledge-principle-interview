@@ -9,4 +9,6 @@
 		
 2. mxplayer
 	2.1 https://mxplayerdownload.co/
+3. 七牛播放器
+	3.1 七牛播放器sdk,设置离线缓存，下次播放在线视频直接使用缓存文件，不再消耗流量。
 	
