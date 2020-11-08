@@ -147,4 +147,21 @@
 		
 		ISA总线原理 - 电子常识 - 电子发烧友网
 		http://www.elecfans.com/dianzichangshi/2008120919500.html
+		
+7. linux设备驱动详解视频（宋宝华）视频。笔记记录。对应【00.3】
+	7.1 check in 检查驱动代码是否符合规范。
+		./checkpatch.pl --no-tree -f test.c
+		
+		创建节点，即为对应驱动的节点,先随便指定主次设备号：
+		mknod /dev/mytest  c  240 0 
+		
+		kill -l /列出所有signal 
+		
+		查看设备：
+		cat /proc/devices 
+		
+		insmod 失败：
+		insmod: ERROR: could not insert module hello.ko: Unknown symbol in module
+
+		
 	

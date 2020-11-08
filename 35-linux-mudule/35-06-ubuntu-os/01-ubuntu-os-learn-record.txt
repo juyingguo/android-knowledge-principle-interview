@@ -10,6 +10,16 @@
 	01.2 Linux系列 | Ubuntu 各版本号和名称对照【转】
 		https://www.cnblogs.com/tinywan/p/10961376.html
 		
+	01.3 ubuntu系统根目录下各个目录用途说…
+		https://blog.csdn.net/marc07/article/details/62885874
+		1、/ 根目录--------- 所有目录挂在其下
+
+		2、/boot--------- 存放Ubuntu内核和系统启动文件。系统启动时这些文件先被装载。
+
+		3、/etc--------- 系统的配置文件目录。密码文件、设置网卡信息、环境变量的设置等都在此目录中，许多网络配置文件也在其中。具体 参见 。
+		
+		等等，见网页。
+		
 
 1. 解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
 	1.1、解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
@@ -26,7 +36,35 @@
 		2. source ~/.vimrc
 		
 		
-2.
+2.ubuntu16.04重新编译linux内核		
+
+		ubuntu16.04自带内核版本：4.15.0-122-generic
+	2.1 ubuntu16.04重新编译linux内核
+		https://blog.csdn.net/soviet1941/article/details/104630810
+		
+		编译内核：
+		sudo make mrproper
+		sudo make clean
+		sudo make menuconfig
+		
+		make mrproper及mrproper的含义：https://blog.csdn.net/uffgfbft/article/details/84001941
+		 Linux下面去编译项目之前，一般常会用make mrproper去先删除之前编译所生成的文件和配置文件，备份文件等，其中，mrproper和distclean，clean之间的区别，Linux内核源码根目录下面的makefile中，有很清晰的解释：
+
+	2.2 我在ubuntu16.04重新编译linux内核的记录。
+		2.2.1 sudo make 时遇到错误。如：·gcc: unrecognized option '-no-pie'
+			cc1: error: unrecognized command line option "-fstack-protector-strong"
+			make[1]: *** [kernel/bounds.s] Error 1
+			
+			解决参考：
+			https://blog.csdn.net/weixin_30551947/article/details/99397331
+			系统：ubuntu16.04.1
+			软件：Virtualbox-5.1
+			编译器：GCC 4.7.4
+			
+			由于我使用ubuntu16.04编译android5.0所以安装了gcc4.7版本，而不是16.04自带的gcc5.4版本
+			(‘-fstack-protector-strong’ 选项是gcc4.9以后的版本才加入的，也就是说需要安装gcc4.9以后的版本才可以编译通过)
+			后来在安装VMware的时候，只有使用gcc5.4才可以编译kernel，马上想到Virtualbox5.1是不是也是这个原因造成的，遂尝试之。
+
 		
 3、Linux下 vi vim vim-gnome vim-tiny vim-gtk vim-nox的区别 
 	3.1、Linux下 vi vim vim-gnome vim-tiny vim-gtk vim-nox的区别 

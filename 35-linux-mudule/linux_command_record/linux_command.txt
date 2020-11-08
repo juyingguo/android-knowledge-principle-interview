@@ -153,6 +153,9 @@
 			#tar -zxvf xx.tar.gz -C /xx
 			//把根目录下的xx.tar.gz解压到/xx/下，前提要保证存在/xx这个目录
 			这个和cp命令有点不同，cp命令如果不存在这个目录就会自动创建这个目录！
+			
+		9.1.4 tar.bz2文件解压
+			sudo tar -jxvf test.tar.bz2
 	4.5 Exiting with failure status due to previous errors
 		Linux tar命令选项顺序不同导致"Exiting with failure status due to previous errors"
 		https://blog.csdn.net/HermitSun/article/details/94494700
@@ -184,6 +187,12 @@
 	原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
 (7) 系统管理
 	7.1 free 
+	7.2 Linux uname 命令
+		Linux uname（英文全拼：unix name）命令用于显示系统信息。
+		uname 可显示电脑以及操作系统的相关信息。
+		uname [-amnrsv][--help][--version]
+		
+		-r或--release 　显示操作系统的发行编号。//即为内核版本。
 (8) 系统设置 
 	8.1 insmod 
 		rmmod(选项)(参数)

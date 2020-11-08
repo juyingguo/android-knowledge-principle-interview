@@ -1,3 +1,7 @@
+00，linux内核下载资源地址
+	00.1 
+		https://mirror.bjtu.edu.cn/kernel/linux/kernel/v4.x/
+	
 01. Linux Device Drivers 3rd(中文版-很好)
 	01.1 为加入 Linux 内核列表, 遵照在 Linux 内核邮件列表 FAQ:
 		http://www.tux.org/lkml 中的指示.
