@@ -13,3 +13,30 @@
 	2.1 计算器中平方根如何使用 
 		https://jingyan.baidu.com/article/5d368d1e177eb23f61c05757.html
 		
+3. lg1=0，bailg10=1。如何计算的。
+	https://zhidao.baidu.com/question/2052980544677060227.html
+	lg1=0，bailg10=1。
+
+	解答过程如下：
+
+	（1）如du果a的x次方等zhi于daoN（a>0，且a不等于1），那么数4102x叫做以a为底N的对数（1653logarithm），记作x=logaN。其中，a叫做对数的底数，N叫做真数。
+
+	（2）lg：表示以10为底的对数（常用对数）。
+
+	（3）10的0次方等于1。10的一次方等于10。所以lg1=0，lg10=1。
+
+	扩展资料：
+
+	对数的运算法则：
+
+	1、log(a) (M·N）=log(a) M+log(a) N。
+
+	2、log(a) (M÷N)=log(a) M-log(a) N。
+
+	3、log(a) M^n=nlog(a) M。
+
+	4、log(a)b*log(b)a=1。
+
+	5、log(a) b=log (c) b÷log (c) a。
+	参考资料：百度百科-LG
+		

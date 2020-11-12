@@ -43,3 +43,24 @@
 	
 	元数据被定义为：描述数据的数据，对数据及信息资源的描述性信息。
 	元数据（Metadata）是描述其它数据的数据（data about other data），或者说是用于提供某种资源的有关信息的结构数据（structured data）。元数据是描述信息资源或数据等对象的数据，其使用目的在于：识别资源；评价资源；追踪资源在使用过程中的变化；实现简单高效地管理大量网络化数据；实现信息资源的有效发现、查找、一体化组织和对使用资源的有效管理
+	
+9. CPU的核心数、线程数的关系和区别
+	9.1 CPU的核心数、线程数的关系和区别
+		https://blog.csdn.net/zengmingen/article/details/79217671
+		　在Windows中，在cmd命令中输入“wmic”，然后在出现的新窗口中输入“cpu get *”即可查看物理CPU数、CPU核心数、线程数。其中， 
+		　　Name:表示物理CPU数 
+		　　NumberOfCores：表示CPU核心数 
+		　　NumberOfLogicalProcessors：表示CPU线程数
+		
+	9.2 ubuntu下cpu数，核心数，线程数的关系
+		https://blog.csdn.net/baidu_35679960/article/details/59484069
+		
+		查看物理cpu个数
+
+		grep 'physical id' /proc/cpuinfo | sort -u	
+		查看核心数量
+		grep 'core id' /proc/cpuinfo | sort -u | wc -l 
+
+		查看线程数
+		grep 'processor' /proc/cpuinfo | sort -u | wc -l
+		

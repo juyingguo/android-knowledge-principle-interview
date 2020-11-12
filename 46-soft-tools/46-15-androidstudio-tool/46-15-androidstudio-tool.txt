@@ -72,9 +72,50 @@
 		https://blog.csdn.net/kaoshibuguaa/article/details/51536992 
 		
 5. 添加签名文件。
+	5.1 as3.5添加签名文件异常。
+		老版本是不会报错的。
+		
+		Key was created with errors:
 
+		Warning:
+		JKS 密钥库使用专用格式。建议使用 "keytool -importkeystore -srckeystore D:\juying\as1_5project\sp\AndroidJavaDemoTestForAS\sign\signature.jks -destkeystore D:\juying\as1_5project\sp\AndroidJavaDemoTestForAS\sign\signature.jks -deststoretype pkcs12" 迁移到行业标准格式 PKCS12。
+		
+		
+		解决方法参考：
+			Android APK签名 JKS 密钥库使用专用格式。建议使用 “keytool -importkeystore -srckeystore E:\xxxxxx- pkcs12“ 迁移到行业标准格式		
+			https://blog.csdn.net/xkai007/article/details/106073091
+			
+			直接在androidstudio控制台中，输入：
+			
+				keytool -genkey -alias signature -keypass 123456 -keyalg RSA -keysize 2048 -validity 36500 -keystore D:\juying\as1_5project\sp\AndroidJavaDemoTestForAS\sign\signature.keystore  -storepass 123456
+				回车后，需要继续按照提示输入相关信息，依次填写好信息后，输入 Y 确认信息即可。
+			
+			查看密钥详细输出信息：
+				keytool -list -v -keystore D:\juying\as1_5project\sp\AndroidJavaDemoTestForAS\sign\signature.keystore 
+		
 6. Android Studio向项目添加C/C++原生代码教程 
 	https://www.cnblogs.com/lsdb/p/9337285.html
+	
+7. 编译release  apk失败。
+	7.1 
+		Caused by: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
+		at com.android.builder.png.AaptProcess$NotifierProcessOutput.handleOutput(AaptProcess.java:443)
+		at com.android.builder.png.AaptProcess$NotifierProcessOutput.err(AaptProcess.java:395)
+		at com.android.builder.png.AaptProcess$ProcessOutputFacade.err(AaptProcess.java:312)
+		at com.android.utils.GrabProcessOutput$1.run(GrabProcessOutput.java:104)
+			
+		解决过程参考：
+		https://blog.csdn.net/zhouzhangfu/article/details/84789908
+			构建 App 的时候，打开 Build 窗口，点击 “Toggle View” 切换到文本输出。
+			在这种视图下，可以看清楚 gradle 的执行输出。如【7.2】错误详情。
+	7.2
+		mipmap-hdpi\katong01_200_300.png: error: failed to read PNG signature: file does not start with PNG signature.
+	
+		解决过程参考：
+			https://blog.csdn.net/qiushisoftware/article/details/92763069		
+			选中图片-右键-打开方式-画图，打开后另存为，选择png格式，删除项目中旧的logo并将最新的logo图片拷贝到项目中。
+
+重新打包，打包成功。
 	
 	
 		  

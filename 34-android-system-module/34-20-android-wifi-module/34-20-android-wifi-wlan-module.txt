@@ -1,3 +1,16 @@
+
+01. wifi概念及相关基础 
+	01.1 WIFI 之 AP、STA、SSID、BSSID 概念基础
+		https://blog.csdn.net/liwei16611/article/details/80880155
+	01.2 无线AP与无线路由器的区别解析
+		http://m.elecfans.com/article/590219.html
+	01.3 RSSI
+		1. 无线接收信号强度（RSSI）那些事儿
+			https://wuyueqian.blog.csdn.net/article/details/68924012
+		
+		2.【WIFI】RSSI接收信号强度为什么是负值？ 
+			https://blog.csdn.net/weixin_30677073/article/details/97767667
+	
 一、Android默认打开便携式WIFI热点
 	1.1、Android默认打开便携式WIFI热点
 		https://blog.csdn.net/zhoumushui/article/details/101427627
@@ -27,8 +40,7 @@
 		
 	
 	5.3 wifi驱动可以卸载安装吗？
-		这个是模块。是可以的。
-		
+		这个是模块。是可以的。		
 		insmod wlan_*.ko	//加载驱动。
 		rmmod wlan_*.ko //卸载驱动
 	
@@ -44,5 +56,6 @@
 		
 8.wifi问题分析？
 	8.1 android5.1 wifi使用过程中突然断掉，然后也搜索不到wifi列表设备了。重新切换打开开关也不行？
-	
+9. Android 5.1系统源码Wifi模块中wifiSettings源码分析
+		https://blog.csdn.net/leafact/article/details/44458105?locationNum=2&fps=1
 	
