@@ -90,7 +90,7 @@
 			fs/overlayfs/super.c:1331:30: error: ‘ovl_v1_fs_type’ undeclared (first use in this function)
 			   ret = register_filesystem(&ovl_v1_fs_type);
 
-			make menuconfig 选择文件系统里选项 " overlayfs ** " 这一项就可以了
+			make menuconfig 选择文件系统里选项" File systems " 的子选项"Overlayfs filesystem (V1) format support " 这一项就可以了
 		2.2.3 
 			scripts/sign-file.c:23:30: fatal error: openssl/opensslv.h: No such file or directory
 			compilation terminated.

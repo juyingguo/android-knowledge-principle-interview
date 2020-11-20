@@ -111,6 +111,8 @@
 	18.1 https://baike.baidu.com/item/EEPROM
 		electrically erasable programmable read only memory(EEPROM)
 		电气可拭除可编程只读存储器
+	18.2 1 ROM 、RAM、IROM、IRAM
+		https://blog.csdn.net/qq_37165278/article/details/79306530
 		
 19 Efuse--芯片存储 
 	https://www.cnblogs.com/yuanqiangfei/p/10225138.html
@@ -121,3 +123,6 @@
 	保险丝;熔断器;导火线;导火索;引信;信管;雷管
 	v.
 	(使)融合，熔接，结合;(使)熔化;(使保险丝熔断而)停止工作
+20 阻抗
+	20.1 https://baike.baidu.com/item/%E9%98%BB%E6%8A%97/332224
+		
