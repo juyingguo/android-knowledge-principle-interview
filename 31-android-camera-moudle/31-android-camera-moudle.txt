@@ -110,3 +110,6 @@
 		
 		8.1.2 soc camera 子系统之soc camera device初始化 
 			https://blog.csdn.net/smartvincent88/article/details/19037949
+			
+9. android camera开发
+	https://blog.csdn.net/zhangbijun1230/category_6500605.html

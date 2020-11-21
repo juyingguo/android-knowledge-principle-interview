@@ -168,27 +168,49 @@
 		insmod: ERROR: could not insert module hello.ko: Unknown symbol in module
 		需要下载ubuntu对应的linux内核代码，然后成功编译。将自己写的驱动放到驱动目录下编译。再安装就可以了。
 		
-8. 迅为视频教程。08-Linux驱动教程
-	8.1 视频00_01驱动理论
-		推荐看一下：“Linux驱动初探_精英版QQ群聊天记录.doc”
-	8.2 视频04_Makefile编译
-		fastboot 系列命令。烧录新的内核。
-		在*/usb_fastboot_tool/platform-tools>fastboot.exe flash kernel zImage 
-		fastboot.exe -w
-		fastboot.exe reboot
+8. 迅为视频教程。
+	08.1  
+		嵌入式学习推荐书籍及软件（第三方）
+		– Altium Designer
+		– 嵌入式ARM 推荐书籍
+		– 于博士Allegro 视频
+			
+			于博士Cadence视频教程60集全套百度网盘分享
+			https://blog.csdn.net/xqhrs232/article/details/78993406
+			
+			余博士网站www.sig007.com，上面有书对应的视频教程。
+	08.8 08-Linux驱动教程
+		8.1 视频00_01驱动理论
+			推荐看一下：“Linux驱动初探_精英版QQ群聊天记录.doc”
+		8.2 视频04_Makefile编译
+			fastboot 系列命令。烧录新的内核。
+			在*/usb_fastboot_tool/platform-tools>fastboot.exe flash kernel zImage 
+			fastboot.exe -w
+			fastboot.exe reboot
+			
+			视频06_设备注册
+				该注册方式是在平台文件中进行注册的。
+				在led基础上做。led是在后面的章节中的吧？、
+			
+		8.3 视频07_01_驱动注册
+			//将优盘挂载到开发板上
+			mount /dev/sda1 /mnt/udisk/
+			
+			8.3.2 视频07_02_以module的方式注册设备
+				//查看平台设备
+				ls /sys/devices/platform/
+		chapter-16 视频16_驱动模块传参数
+			insmod ./module_param.ko module_arg1=10 module_arg2=20
+				int_array=11,12,13,14,15,16,17,18
+			cat /sys/module/module_param/parameters/xxx 可以查询参数
 		
-		视频06_设备注册
-			该注册方式是在平台文件中进行注册的。
-			在led基础上做。led是在后面的章节中的吧？、
+9. 编译异常记录
+	9.1 ./scripts/Makefile.build:50: *** CFLAGS was changed in "/usr/src/linux-source-4.4.0/linux-source-4.4.0/test_project/module_param/Makefile". Fix it to use ccflags-y.  Stop.
+		https://blog.csdn.net/shenjin_s/article/details/79811757
 		
-	8.3 视频07_01_驱动注册
-		//将优盘挂载到开发板上
-		mount /dev/sda1 /mnt/udisk/
-		
-		8.3.2 视频07_02_以module的方式注册设备
-			//查看平台设备
-			ls /sys/devices/platform/
+		解决方法: 修改Makefile中的 CFLAGS 为 EXTRA_CFLAGS 或 ccflags-y
+	9.2 error: macro "__TIME__" might prevent reproducible builds [-Werror=date-time]
+		https://blog.csdn.net/cling60/article/details/79256462
+		1. 在编译驱动的相应 Makefile 中增加一行：CFLAGS += -Wno-error=date-time，然后保存重新 make；
 
-
-		
-	
+		2. 若 CFLAGS 不生效，将关键字替换为 EXTRA_FLAGS；
