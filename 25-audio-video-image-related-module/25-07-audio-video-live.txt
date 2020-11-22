@@ -1,0 +1,7 @@
+1.最全最常用的RTMP、RTSP、HTTP协议流常用直播流地址
+	https://blog.csdn.net/u014162133/article/details/81188410
+	
+2. 流媒体协议：互联网视频分发协议介绍（渐进式、HLS、DASH、HDS、RTMP协议）
+10月14
+
+	http://www.4u4v.net/liu-mei-ti-xie-yi-hu-lian-wang-shi-pin-fen-fa-xie-yi-jie-shao-jian-jin-shi-hlsdashhdsrtmp-xie-yi.html

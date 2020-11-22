@@ -17,3 +17,20 @@
 2. FFmpeg从入门到精通读书笔记（1）
 	2.1 FFmpeg从入门到精通读书笔记（1） 
 		https://blog.csdn.net/hanxiucaolss/article/details/100007475
+		
+3. 好例子网_FFmpeg从入门到精通_刘歧;赵文杰(著) 读书记录
+	
+	3.1.4 chapter4 
+		4.1 GOP 
+			视频编解码 GOP基本概念
+			https://blog.csdn.net/daiqiao_ios/article/details/80751322
+			
+			GOP 指的就是两个I帧之间的间隔. 比较说GOP为120,如果是720 p60 的话,那就是2s一次I帧.
+			在视频编码序列中，主要有三种编码帧：I帧、P帧、B帧，如下图所示。
+			1. I帧即Intra-coded picture（帧内编码图像帧），不参考其他图像帧，只利用本帧的信息进行编码
+			2. P帧即Predictive-codedPicture（预测编码图像帧），利用之前的I帧或P帧，采用运动预测的方式进行帧间预测编码
+			3. B帧即Bidirectionallypredicted picture（双向预测编码图像帧)，提供最高的压缩比，它既需要之前的图
+			像帧(I帧或P帧)，也需要后来的图像帧(P帧)，采用运动预测的方式进行帧间双向预测编码
+			
+			码流 / 码率 / 比特率 / 帧速率 / 分辨率 / 高清的区别
+			https://blog.csdn.net/xiangjai/article/details/44238005
