@@ -7,7 +7,7 @@
 #include <linux/moduleparam.h>
 /*定义module_param module_param_array中perm的头文件*/
 #include <linux/stat.h>
-
+#define FILE_NEME "module_param.c"
 
 MODULE_LICENSE("Dual BSD/GPL");
 /*声明是开源的，没有内核版本限制*/
@@ -29,21 +29,21 @@ static int hello_init(void)
 {
 	int i;
 	
-	printk(KERN_EMERG "[%s,%s] %s,%s module_arg1 is %d!\n",__DATE__,__TIME__,__FILE__,__func__,module_arg1);
-	printk(KERN_EMERG "[%s,%s] %s,%s module_arg2 is %d!\n",__DATE__,__TIME__,__FILE__,__func__,module_arg2);
+	printk(KERN_EMERG "[%s,%s] %s %s module_arg1 is %d!\n",__DATE__,__TIME__,FILE_NEME,__func__,module_arg1);
+	printk(KERN_EMERG "[%s,%s] %s %s module_arg2 is %d!\n",__DATE__,__TIME__,FILE_NEME,__func__,module_arg2);
 	
 	for(i=0;i<int_num;i++){
-		printk(KERN_EMERG "[%s,%s] %s,%s int_array[%d] is %d!\n",__DATE__, __TIME__,__FILE__,__func__,i,int_array[i]);
+		printk(KERN_EMERG "[%s,%s] %s %s int_array[%d] is %d!\n",__DATE__, __TIME__,FILE_NEME,__func__,i,int_array[i]);
 	}
 		
-	printk(KERN_EMERG "[%s,%s] %s,%s Hello World enter!\n",__DATE__,__TIME__,__FILE__,__func__);
+	printk(KERN_EMERG "[%s,%s] %s %s Hello World enter!\n",__DATE__,__TIME__,FILE_NEME,__func__);
 	/*打印信息，KERN_EMERG表示紧急信息*/
 	return 0;
 }
 
 static void hello_exit(void)
 {
-	printk(KERN_EMERG "[%s,%s] %s,%s Hello world exit!\n",__DATE__,__TIME__,__FILE__,__func__);
+	printk(KERN_EMERG "[%s,%s] %s %s Hello world exit!\n",__DATE__,__TIME__,FILE_NEME,__func__);
 }
 
 

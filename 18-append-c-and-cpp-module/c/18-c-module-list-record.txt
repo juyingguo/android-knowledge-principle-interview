@@ -235,7 +235,8 @@
 	14.6 c语言结构体中定义enum类型。
 		 
 			
-15、C语言中要使用sizeof()
+15、c语言中的字符串 
+	C语言中要使用sizeof()
 	15.1、C语言中要使用sizeof()应包含那个头文件?
 		https://zhidao.baidu.com/question/539860566.html 
 		
@@ -252,7 +253,11 @@
 		3、sizeof可以用类型做参数，strlen只能用char*做参数，且必须是以''\0''结尾的。
 	15.3,sizeof()计算类型，变量，数组，指针，结构体等的字节数。
 		
-		
+	15.4 C语言获取字符串长度的几种方法
+		https://blog.csdn.net/st66688/article/details/108356361
+		a,使用sizeof()运算符。会将 ‘\0’ 也计算到字符串长度中
+		b,使用strlen函数时，需要添加string.h头文件，该函数会将字符串长度计算出，不包含 ‘\0’。
+		c,编写函数。参考博文中。
 16. c语言数组
 	16.1、c语言数组指针使用？
 		static const char *variant_keys[] = {

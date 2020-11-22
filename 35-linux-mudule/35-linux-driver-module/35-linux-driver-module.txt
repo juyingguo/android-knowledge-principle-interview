@@ -205,12 +205,22 @@
 			cat /sys/module/module_param/parameters/xxx 可以查询参数
 		
 9. 编译异常记录
-	9.1 ./scripts/Makefile.build:50: *** CFLAGS was changed in "/usr/src/linux-source-4.4.0/linux-source-4.4.0/test_project/module_param/Makefile". Fix it to use ccflags-y.  Stop.
+	9.1 CFLAGS错误
+		./scripts/Makefile.build:50: *** CFLAGS was changed in "/usr/src/linux-source-4.4.0/linux-source-4.4.0/test_project/module_param/Makefile". Fix it to use ccflags-y.  Stop.
 		https://blog.csdn.net/shenjin_s/article/details/79811757
 		
 		解决方法: 修改Makefile中的 CFLAGS 为 EXTRA_CFLAGS 或 ccflags-y
 	9.2 error: macro "__TIME__" might prevent reproducible builds [-Werror=date-time]
 		https://blog.csdn.net/cling60/article/details/79256462
+		编译驱动时遇到这个错误提示，表示当前编译环境中将关于 DATE 以及 TIME 的警告也作为错误来进行处理的。有如下几种方法可以参考：
 		1. 在编译驱动的相应 Makefile 中增加一行：CFLAGS += -Wno-error=date-time，然后保存重新 make；
-
 		2. 若 CFLAGS 不生效，将关键字替换为 EXTRA_FLAGS；
+		3. 修改 /lib/modules/'uname -r'/build/Makefile 文件，找到包含 “-Werror=date-time” 这一行注释掉，然后保存退出。之后重新 make 即可
+		
+		亲测：经过[1,2]步修改后，error提示转变成warning：
+			warning: macro "__TIME__" might prevent reproducible builds [-Wdate-time]
+			printk(KERN_EMERG "[%s,%s] %s,%s Hello world exit!\n",__DATE__,__TIME__,__FILE
+		解决办法：
+			https://blog.csdn.net/mike8825/article/details/52057637	
+			EXTRA_CFLAGS +=-Wno-error=date-time (不把该行为当成错误)			
+			EXTRA_CFLAGS +=-Wno-date-time(不把该行为当成警告)

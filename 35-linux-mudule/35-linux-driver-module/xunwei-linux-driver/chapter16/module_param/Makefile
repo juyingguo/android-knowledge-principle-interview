@@ -29,6 +29,7 @@ kernel_modules:
 ##CFLAGS += -Wno-error=date-time
 ##CFLAGS 为 EXTRA_CFLAGS 或 ccflags-y
 EXTRA_CFLAGS += -Wno-error=date-time
+EXTRA_CFLAGS += -Wno-date-time 
 
 #make clean执行的操作是删除后缀为o的文件
 clean:
