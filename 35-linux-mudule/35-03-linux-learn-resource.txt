@@ -25,7 +25,12 @@
 	2.3、linux内核源码在线浏览
 		2.3.1、linux内核源码在线浏览
 			http://lxr.linux.no/
+	2.4 linux函数详细大全手册
+		2.4.1 linux函数详细大全手册
 		
+		2.4.2 linux 内核函数详细大全手册
+			通过搜官方网站找到文档地址：
+			https://www.kernel.org/doc/html/latest/core-api/kernel-api.html
 3.献给新手，如何阅读Linux源码(转) 
 	3.1、献给新手，如何阅读Linux源码(转) 
 		https://blog.csdn.net/qq_37468954/article/details/77483013?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task

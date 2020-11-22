@@ -1,3 +1,16 @@
+0.1 及时消息音视频等基础资源
+	0.1.1 
+		http://www.52im.net/thread-225-1-1.html
+	0.1.2 即时通讯网
+		http://www.52im.net/
+		
+	0.1.3 有谁知道比较好的即时通讯的软件和源码吗？
+		https://www.zhihu.com/question/20196032
+		
+		J-IM，喧喧，MobileIMSDK，基于mina或netty框架下的推送系统 CIM，跨平台、
+		全开源的即时通讯解决方案 野火IM，
+		即时通讯的聊天系统 oim-fx，等等
+		
 一、开发一套视频通话，需要哪些知识？
 	1.1、 Android 实现视频通话
 		https://ask.csdn.net/questions/185847 
@@ -22,3 +35,73 @@
 		
 	1.5、SipDroid +miniSIPServer搭建SIP局域网语音通话（一） 
 		https://www.cnblogs.com/poe-blog/p/3553888.html
+		
+	1.6 开源视频通话项目
+		1.6.1 android开源视频通话项目
+	1.7 主流视频通话开源及第三方商业SDK比较
+		1.7.1 主流视频通话SDK比较
+			https://blog.csdn.net/import_sadaharu/article/details/54345052
+			Jitsi，SIPDroid ，Linphone，Imsdroid，openfire，WebRTC
+			
+			智能会议系统（23）---移动端视频通话开源软件比较
+			https://blog.csdn.net/zhangbijun1230/article/details/81774294
+			
+				sipdroid，imsdroid，csipsimple，Linphone，webrtc
+				
+	1.8 第三方sdk公司
+		1.8.1 Agora声网
+			Agora声网这家公司的技术实力与前景如何？
+			https://www.zhihu.com/question/31329375
+			
+			将音频编解码器Agora Solo开源
+			https://github.com/AgoraIO-Community/Solo
+			
+		1.8.2 腾讯
+			微信团队分享：微信每日亿次实时音视频聊天背后的技术解密
+			【系列介绍性文章】
+			https://www.jianshu.com/p/2140ee9db98a
+			
+2. Android | WebRTC的用法（一）
+	2.1 Android | WebRTC的用法（一）
+		https://www.jianshu.com/p/2973f37a73f2
+		
+	2.2 Android WebRTC 音视频开发总结（一）
+		https://www.cnblogs.com/lingyunhu/p/3578218.html
+3. linphone
+	3.1 基于Linux开源VOIP系统LinPhone[一]
+		https://blog.csdn.net/wavemcu/article/details/8544185
+	
+	3.2 linphone-android二次开发
+		https://blog.csdn.net/xiao_nian/article/details/85623259
+		
+	3.3 基于linphone android sdk 的voip语音、视频通话 教程一、注册
+		https://blog.csdn.net/Java_lilin/article/details/80539116?utm_source=blogxgwz7
+		
+	3.4 Android上试用Linphone(Free SIP VOIP Client)
+		https://blog.csdn.net/iteye_3854/article/details/82005212
+		
+	3.5 ubuntu下linphone-android编译过程
+		https://blog.csdn.net/ddddffffggggg/article/details/79724458
+	
+	3.6 安卓Linphone探究
+		https://blog.csdn.net/u012812482/category_9266190.html
+		
+	3.7 Linphone安卓端移植和开发（1）
+		https://blog.csdn.net/u011077027/article/details/80379763
+		
+		如需要详细语音通话和视频通话，请入群：601332720
+		
+		Linphone安卓端移植和开发（2）服务器端的搭建
+			https://blog.csdn.net/u011077027/article/details/84620440
+4. CsipSimple
+	4.1 二次开发封装CsipSimple(附Demo)真的是福利
+		https://blog.csdn.net/xu404741377/article/details/78982803
+	4.1 
+	
+5. Sip服务器搭建全过程(Linphone拨号)
+	https://blog.csdn.net/qq_38631503/article/details/80005454
+	
+6.我使用的服务器是Freeswitch
+
+7. OpenMeetings是一个开源的视频会议软件。
+	https://blog.csdn.net/yufeng1108/article/details/8892215
