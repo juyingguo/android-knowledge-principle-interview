@@ -6,10 +6,25 @@
 2. node.js 安装详细步骤教程
 	https://blog.csdn.net/antma/article/details/86104068
 	
+	
+	2.2 在win7 上nodejs10.23.0可以正常安装使用。
+		在win7 上nodejs14.15.1安装提示需要win8及以上版本。
+	
 3. 问题记录
 	3.1 npm install 
 		 - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
 		 需要升级
+		 
+	3.2 ProjectRTC 下npm instal。警告。
+		added 284 packages from 219 contributors and audited 284 packages in 99.922s
+
+		30 packages are looking for funding
+		  run `npm fund` for details
+
+		found 42 vulnerabilities (14 low, 16 moderate, 11 high, 1 critical)
+		  run `npm audit fix` to fix them, or `npm audit` for details
+		  
+		node app.js 能正常启动。
 4. NPM 使用介绍
 	https://www.runoob.com/nodejs/nodejs-npm.html	
 	4.1 
