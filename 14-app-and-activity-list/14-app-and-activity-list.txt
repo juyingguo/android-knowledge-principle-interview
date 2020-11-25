@@ -86,5 +86,19 @@
 		
 10 moveTaskToBack(true); 
 	10.1 moveTaskToback退后台的用法及作用 
+	
+11 activity小知识点。
+	11.1 【Android】如何知道某个Activity是否在前台？
+		https://www.jianshu.com/p/f5fb87d99b5d
+			楼主错误：：你这是判断某一个应用是否在前台而不是某个activity是吗？因为processName就是包名
+	11.2 
+		Android 判断某个Activity 是否在前台运行
+		https://blog.csdn.net/yushulinfengprc/article/details/53431232
+		https://www.jianshu.com/p/f5fb87d99b5d
+		
+		注意看内容：官方不建议使用这种做法。//待继续研究好的方案。
+		对于一个应用内部判断自己的activity是否位于当前应用的最前台（不一定是android系统桌面的最前台，比如打开了其它应用在最前台）。
+		可以使用：Application.ActivityLifecycleCallbacks。根据onActivityResumed及相关回调方法处理即可。
+		ibotnlauncher中这两种方法都有的。
 		
 	
