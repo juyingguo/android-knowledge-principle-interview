@@ -1,0 +1,93 @@
+1. 谷歌上网助手资源
+	1.1 https://www.crx4chrome.com/crx/72437/
+	
+	1.2	谷歌上网助手资源下载
+		http://googlehelper.net/
+		
+		安装后：
+		http://google.com.h能访问
+		但code.google.com,group.google.com,developer.google.com,*.google.com等等访问不了
+		
+		进入网站主界面，选择
+		 Chrome Web Store |  Microsoft Edge Addons |  Firefox Browser ADD-ONS
+		 使用"pp访问助手-国庆70周年版本。"
+			能访问google不是香港的哦
+		 
+		 "Google学术搜索按钮"，麦殼兒 (Maikr) 待尝试。
+		
+	1.3 
+		中文网站：https://developers.google.cn/进入网站
+		外文网站：https://developers.google.com/进入网站
+		
+2. 国内无法访问Google的完美解决方案
+	2.1 国内无法访问Google的完美解决方案
+		https://jingyan.baidu.com/article/03b2f78cab65801fa237ae80.html
+		
+3. github.io无法访问问题及解决
+	3.1 解决GitHub.io无法访问的问题 
+		https://blog.csdn.net/weixin_45085810/article/details/108339662
+		
+		解决途径：修改本地hosts文件（位置：C:/windows/system32/drivers/etc/hosts）
+
+4. dns查询网站：http://tool.chinaz.com/dns
+
+5. windows下修改hosts文件，添加固定的DNS解析
+	https://blog.csdn.net/weber_chen/article/details/79249351
+	
+	添加后刷新。
+	ipconfig /flushdns
+	
+6. 网页可能暂时无法连接，或者它已永久性地移动到了新网址，三种解决方法
+	https://blog.csdn.net/qq_35458793/article/details/101015805
+	
+	二、重置你的TCP/IP和DNS配置（参考网站上别的小伙伴，我不属于这种，大家可以测一下）
+
+    1) 以管理员的方式运行命令行工具cmd.exe；
+    2) 分别执行以下各行命令，以回车结束：
+
+       ipconfig /flushdns 
+       nbtstat –r 
+       netsh int ip reset
+       netsh winsock reset 
+
+    3) 重启生效。
+	
+7. 谷歌上网助手不开时不能上外网。
+	开启时有些还是访问不了。
+	错误
+	您所请求的网址（URL）无法获取
+	当尝试取回该 URL 时遇到下面的错误：http://code.google.com/p/libjingle/
+	访问被拒绝。
+	Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.
+
+	缓存服务器的管理员 webmaster.
+8. 搭建上网无服务器
+	8.1 Vultr
+		按小时计费扣费即开即用随时停机删除，Vultr VPS服务器详细介绍
+		https://www.landiannews.com/archives/57137.html?utm_sources=footer
+		3.5刀的紧俏缺货，亚洲区被封的ip太多，好处在于按小时计费即用即删，快照免费。
+		
+		8.1.1 Vultr如何停止计费 
+			https://www.jiloc.com/44693.html
+			
+			如何删除Vultr服务器?
+			删除Vultr服务器			
+			大家在决定删除Vultr实例前，请先做好数据备份，VPS删除后所有数据都会丢失，无法恢复，切记！
+	8.2 vps
+	
+		8.2.1 按时计费的vps有哪些？
+			CloudCone官网被国内屏蔽了
+			LunaNode
+			
+			收集整理国外按小时付费VPS大全
+			https://www.138vps.com/vps/1569.html
+		8.2.2 hostswind
+			
+		
+	8.3 xyz域名购买。
+	
+	8.4
+		
+		
+	
+	
