@@ -126,3 +126,15 @@
 		
 	9.4 （一）Android camera2 实现相机预览及获取预览帧数据流
 		https://blog.csdn.net/ganfanzhou/article/details/83721750
+	9.5 android 基础一 <Camera1> 预览、拍照
+		http://www.bubuko.com/infodetail-3234319.html
+10. 调试摄像头时相关特性问题疑问记录.
+	10.1 预览后置摄像头时，但看到的画面竖的，即与实际相差90度。
+		理解 Android 相机预览方向和拍照方向。
+		https://www.jianshu.com/p/7d88ec1347b6
+		
+		参考官方api配置：camera.setDisplayOrientation(result)
+	10.2 预览明显是被拉伸了。如何正常显示预览宽高。
+		预览明显是被拉伸了的时候。
+		onSurfaceTextureAvailable回调时的宽高作为camera的预览宽高参数即parameters.setPreviewSize(width, height)
+	

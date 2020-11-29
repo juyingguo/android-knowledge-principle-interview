@@ -100,5 +100,14 @@
 		对于一个应用内部判断自己的activity是否位于当前应用的最前台（不一定是android系统桌面的最前台，比如打开了其它应用在最前台）。
 		可以使用：Application.ActivityLifecycleCallbacks。根据onActivityResumed及相关回调方法处理即可。
 		ibotnlauncher中这两种方法都有的。
+	11.3 Android开发：activity去除标题栏的方法
+		https://blog.csdn.net/android157/article/details/80774143
+		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);，现在基本就可以去除标题栏了。
+		但是如果Activity继承了AppCompatActivity，这个就失效了.
+			直接用supportrequestwindowFeature
+		
+		Android中全屏 取消标题栏，TabHost中设置NoTitleBar的三种方法
+		https://www.cnblogs.com/zdz8207/archive/2013/02/27/android-tabhost-notitlebar.html
 		
 	
