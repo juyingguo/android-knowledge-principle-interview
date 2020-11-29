@@ -68,6 +68,22 @@
 			
 			
 2. Android | WebRTC
+	2.0 WebRTC协议介绍
+		2.0.1 WebRTC协议介绍
+			https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API/Protocols
+		2.0.2 WebRTC 标准官方文档
+			https://w3c.github.io/webrtc-pc/
+			
+		2.0.3 WebRTC中文网：
+			https://www.webrtc.org.cn/
+			
+		2.0.4 WebRtc 源码
+			https://github.com/webrtc/samples/
+			
+			https://www.cnblogs.com/wanggang123/p/11280283.html
+			
+			2.0.4.2 WebRTC源码下载和编译
+				http://www.mamicode.com/info-detail-3035953.html
 	2.1 Android | WebRTC的用法（一）
 		https://www.jianshu.com/p/2973f37a73f2
 		
@@ -119,8 +135,34 @@
 		
 	2.10 WebRTC源码研究
 		2.10.1 WebRTC源码研究（1）WebRTC架构
+			孔雨露 			
 			[#WebRTC系列文章]
 			https://juejin.cn/post/6844904199684096007
+			
+				含推荐音视频连接：购买李超老师的视频点击这里。
+				https://coding.imooc.com/class/329.html	
+				
+				以及推荐项目使用。
+	2.11 WebRTC-Android 探索 - WebRTC 中名词解释
+		https://juejin.cn/post/6894901991929315335
+		
+		内部系列文章：
+		WebRTC-Android 探索 - 创建音视频通话程序的基本姿势
+		https://juejin.cn/post/6844903765649145864
+		
+	2.12 libjingle
+		2.12.1 分析webrtc AppRTCMobie 工程中的libjingle_peerconnection_so.so生成流程 -- 第二篇
+			https://blog.csdn.net/zhangkai19890929/article/details/82013381
+		2.12.2 
+			Libjingle home page is here http://code.google.com/p/libjingle/ 直接访问不了。需要**
+			
+			下面是其它网址源码：
+			https://github.com/vigsterkr/libjingle
+		
+			https://github.com/xhook/libjingle
+			
+			https://sourceforge.net/projects/libjingle/
+			
 3. linphone
 	3.1 基于Linux开源VOIP系统LinPhone[一]
 		https://blog.csdn.net/wavemcu/article/details/8544185
