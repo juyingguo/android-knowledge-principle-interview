@@ -137,4 +137,20 @@
 	10.2 预览明显是被拉伸了。如何正常显示预览宽高。
 		预览明显是被拉伸了的时候。
 		onSurfaceTextureAvailable回调时的宽高作为camera的预览宽高参数即parameters.setPreviewSize(width, height)
+11. TextureView，SurfaceView，SurfaceTexture
+	11.1 TextureView, SurfaceTexture与Surface的关系
+		https://blog.csdn.net/guanguanboy/article/details/92799114
+		
+		推荐：关于Surface系统，可以参考这篇文章：
+
+			https://blog.csdn.net/innost/article/details/47208337。
+			
+		Android图形系统之Surface、SurfaceView、SurfaceHolder及SurfaceHolder.Callback之间的联系
+		https://blog.csdn.net/topwangpeng/article/details/41045923
+		
+		Android图形系统之Surface、SurfaceView、SurfaceHolder及SurfaceHolder.Callback之间的联系 && camera的takePicture实例
+		https://blog.csdn.net/zhandoushi1982/article/details/5256132
+		
+		Surface、SurfaceView、SurfaceHolder及SurfaceHolder.Callback之间的关系
+		https://blog.csdn.net/pathuang68/article/details/7351317
 	
