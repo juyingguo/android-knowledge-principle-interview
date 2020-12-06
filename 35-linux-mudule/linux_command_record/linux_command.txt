@@ -280,4 +280,26 @@
 		make clean命令则是用于删除大多数的编译生成文件，但是会保留内核的配置文件.config，还有足够的编译支持来建立扩展模块。所以你若只想删除前一次编译过程的残留数据，只需执行make clean命令。
 
 		总而言之，make mrproper删除的范围比make clean大，实际上，make mrproper在具体执行时第一步就是调用make clean
+（15）man 命令。
+	15.1 Linux man 命令后面的数字含义及作用
+		https://blog.csdn.net/qq_21792169/article/details/50412417
+		Linux的man很强大，该手册分成很多section，使用man时可以指定不同的section来浏览，各个section意义如下： 
 		
+		1 - commands
+		2 - system calls
+		3 - library calls
+		4 - special files
+		5 - file formats and convertions
+		6 - games for linux
+		7 - macro packages and conventions
+		8 - system management commands
+		9 - 其他
+		解释一下, 
+		1是普通的命令
+		2是系统调用,如open,write之类的(通过这个，至少可以很方便的查到调用这个函数，需要加什么头文件)
+		3是库函数,如printf,fread
+		4是特殊文件,也就是/dev下的各种设备文件
+		5是指文件的格式,比如passwd, 就会说明这个文件中各个字段的含义
+		6是给游戏留的,由各个游戏自己定义
+		7是附件还有一些变量,比如向environ这种全局变量在这里就有说明
+		8是系统管理用的命令,这些命令只能由root使用,如ifconfig
