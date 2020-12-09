@@ -96,7 +96,7 @@
 6. Android Studio向项目添加C/C++原生代码教程 
 	https://www.cnblogs.com/lsdb/p/9337285.html
 	
-7. 编译release  apk失败。
+7. 编译release or debug  apk失败。
 	7.1 
 		Caused by: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
 		at com.android.builder.png.AaptProcess$NotifierProcessOutput.handleOutput(AaptProcess.java:443)
@@ -115,7 +115,29 @@
 			https://blog.csdn.net/qiushisoftware/article/details/92763069		
 			选中图片-右键-打开方式-画图，打开后另存为，选择png格式，删除项目中旧的logo并将最新的logo图片拷贝到项目中。
 
-重新打包，打包成功。
+		重新打包，打包成功。
+	7.3 使用或覆盖了已过时的 API。
+		注: 某些输入文件使用了未经检查或不安全的操作。
+		请使用 -Xlint:deprecation 重新编译。
+		请使用 -Xlint:unchecked 重新编译。
 	
+	7.4 编译release成功
+		编译debug失败
+		AGPBI: {"kind":"error","text":"UNEXPECTED TOP-LEVEL ERROR:","sources":[{}]}
+		AGPBI: {"kind":"error","text":"\tat com.android.dx.command.Main.main(Main.java:106)","sources":[{}]}
+		:transformClassesWithDexForDebug FAILED
+		
+		参考博客：https://blog.csdn.net/qq_29984105/article/details/100514691
+			最后删除掉
+			C:\Users\***\.gradle\caches \ transforms-1
+
+			才解决
+8. android studio 编译处理的apk，在设备上运行后报：couldn't find "libxxxx.so"的错误解决办法
+	https://blog.csdn.net/qq_41063141/article/details/86546113
+	
+	4.
+		如果将so库文件其放在了libs下，则需要做如下配置：
+
+		sourceSets { main { jniLibs.srcDirs = ['libs'] } }
 	
 		  
