@@ -168,7 +168,25 @@
 	chapter17
 		jobs
 		jobs;sleep 3;jobs
-	
 		time ./execute-file //detect execute speed.
 				
 		./execute-file & //后台运行 + &
+
+		
+23 linux部分函数详解
+	23.1 Linux中fork()函数详解
+		https://blog.csdn.net/kxjrzyk/article/details/81603049
+		fork入门，进阶，高阶。
+		
+24 linux 日志
+	24.1 Linux中记录终端输出到文本文件
+		https://blog.csdn.net/tengh/article/details/41823883
+		
+	24.2 Ubuntu查看和写入系统日志
+		https://www.cnblogs.com/EasonJim/p/7189491.html
+		
+		dmesg的命令显示Linux内核的消息缓冲器，其被存储在存储器中
+		常用日志目录代表的意思
+22 数据类型
+	22.1 Linux基本数据类型大小——int,char,long int,long long int
+		https://www.cnblogs.com/jikexianfeng/p/5792057.html
