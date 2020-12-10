@@ -34,3 +34,9 @@
 			
 			码流 / 码率 / 比特率 / 帧速率 / 分辨率 / 高清的区别
 			https://blog.csdn.net/xiangjai/article/details/44238005
+			
+4. FFmpeg 开源项目分析
+	
+	4.1 FFmpeg 开源项目分析
+		系列博文
+		https://www.jianshu.com/p/a7240d3fffd4
