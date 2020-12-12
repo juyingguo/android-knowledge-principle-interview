@@ -10,7 +10,7 @@ void filecopy(FILE *,char *);
 int main(void)
 {
 	FILE *fp1;
-	long int i = 10*10*1000;
+	long int i = 2;
 	char buf[] = "I want to study Linux!\n";
 	char *file1 = "data.txt";
 
@@ -20,7 +20,7 @@ int main(void)
 			printf("can't open %s\n",file1);
 	}
 	while(i--)
-	filecopy(fp1,buf);
+        filecopy(fp1,buf);
 
 	fclose(fp1);
 

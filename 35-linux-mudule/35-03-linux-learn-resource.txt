@@ -99,4 +99,13 @@
 		Linux系统移植
 		Linux内核及驱动开发
 		Android移植开发
+11. book
+	《深入分析GCC》这本书怎么样？
+	刚出的《深入分析GCC 》怎么样？和《编译系统透视：图解编译原理 》的相比有什么异同？
+	https://www.zhihu.com/question/56518730
+	
+	3、Linux+Kernel+Development中文版.pdf 
+
+	4. 《嵌入式Linux应用开发》
+ 
 	

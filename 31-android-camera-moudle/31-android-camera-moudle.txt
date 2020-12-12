@@ -114,7 +114,9 @@
 9. android camera开发
 	https://blog.csdn.net/zhangbijun1230/category_6500605.html
 	
-	9.2 
+	9.2 Android:调用系统相机实现拍照+裁切（兼容7.0以上系统）
+		https://www.jianshu.com/p/eca7335602c1
+		
 		Android: Camera相机开发详解(上) —— 知识储备
 		https://www.jianshu.com/p/f8d0d1467584
 		
@@ -124,10 +126,17 @@
 	9.3 Android 使用Camera 打开预览Demo
 		https://blog.csdn.net/jydzm/article/details/106275330
 		
+		使用TextureView。
+		//todo 分析
+		获取相机最佳预览大小、图像大小
+		
 	9.4 （一）Android camera2 实现相机预览及获取预览帧数据流
 		https://blog.csdn.net/ganfanzhou/article/details/83721750
 	9.5 android 基础一 <Camera1> 预览、拍照
 		http://www.bubuko.com/infodetail-3234319.html
+		
+	9.6 camera预览多点缩放，远景、近景。
+	
 10. 调试摄像头时相关特性问题疑问记录.
 	10.1 预览后置摄像头时，但看到的画面竖的，即与实际相差90度。
 		理解 Android 相机预览方向和拍照方向。

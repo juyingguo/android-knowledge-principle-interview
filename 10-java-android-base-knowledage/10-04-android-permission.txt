@@ -12,3 +12,12 @@
 		2.2.1 Android6.0动态权限shouldShowRequestPermissionRationale的含义 
 			https://blog.csdn.net/wangpf2011/article/details/80589648
 		
+3. 谷歌官方运行时权限框架之EasyPermissions
+	3.1 https://github.com/googlesamples/easypermissions
+		
+	3.2 谷歌官方运行时权限框架之EasyPermissions 
+		https://blog.csdn.net/bansengkwon/article/details/80851752
+		
+		https://blog.csdn.net/parade0393/article/details/103939217
+		
+		

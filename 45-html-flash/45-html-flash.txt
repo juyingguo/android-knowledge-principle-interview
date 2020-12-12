@@ -1,0 +1,11 @@
+1. 取代Flash的HTML5技术（ H5 编写游戏的优点）
+	https://blog.csdn.net/xiaokunzhang/article/details/80713744
+2. 如何在HTML中播放flash
+	https://blog.csdn.net/weixin_30552811/article/details/97115441
+	
+3.非常详细的flash游戏开发教程. 
+	https://blog.csdn.net/weixin_30892037/article/details/96531753
+	
+	
+4. Flash移动开发高级教程.pdf
+	Flash ActionScript3.0 动画教程 (高清PDF中文版)

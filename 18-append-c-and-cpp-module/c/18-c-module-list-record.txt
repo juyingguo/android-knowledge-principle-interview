@@ -391,3 +391,16 @@
 			/* 最初的内存分配 */
 		   str = (char *) malloc(1);
 		   strcpy(str, "runoobrunoobrunoob");//为啥分配一个字节，但可以写入多个字节的数据呢？
+		   
+34. C语言'\0'的含义
+	34.1 https://blog.csdn.net/dark_cy/article/details/83515270
+	
+		例如 定义char c[6]=“hello”，而在内存中字符数组 c 则是"hello\0"；
+
+		即’\0’在数组中占有空间却不被我们看到；
+
+		所以如果一个长度为10的字符串要放在字符数组里的话就应该把字符数组的长度定义为11；
+	
+		\n strlen()函数计算长度时，作为一个长度；\0，不作为一个长度。
+	34.2 0 、 '0' 、 "0" 、 ’\0’ 区别
+		https://blog.csdn.net/qnavy123/article/details/93901631

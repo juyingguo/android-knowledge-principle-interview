@@ -1,5 +1,0 @@
-一、Linux+Kernel+Development中文版.pdf 
-
-2. 《嵌入式Linux应用开发》
- 
-	

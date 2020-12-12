@@ -53,7 +53,14 @@
 		
 	7.2 Linux下gcc命令详解 
 		https://blog.csdn.net/ENSHADOWER/article/details/82951131?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase
-
+	7.3 Linux学习（C语言学习之Gcc）
+		https://blog.csdn.net/weixin_42994525/article/details/82930601
+		
+		GCC详解
+			https://blog.csdn.net/qq_35144795/article/details/77580913
+	7.4 gcc -static 命令 
+		https://blog.csdn.net/newchenxf/article/details/51743181
+		当gcc -static 用于编译一个程序时，会使此程序静态编译（把动态库的函数和所依赖的任何的东西，都编译进本程序），编译好后，文件会非常大，但是，运行时就不需要依赖任何动态库。
 8. g++ 
 	8.1 g++ 
 		https://baike.baidu.com/item/g%2B%2B
@@ -171,7 +178,13 @@
 		time ./execute-file //detect execute speed.
 				
 		./execute-file & //后台运行 + &
-
+		
+		阻塞是因为函数：open(fifo_name, open_mode);
+		参考：linux管道pipe详解
+			https://blog.csdn.net/qq_42914528/article/details/82023408
+			
+			Linux有名管道（FIFO）的阻塞和非阻塞读写
+				https://blog.csdn.net/u014285517/article/details/50479504
 		
 23 linux部分函数详解
 	23.1 Linux中fork()函数详解

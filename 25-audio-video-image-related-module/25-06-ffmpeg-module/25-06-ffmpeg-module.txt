@@ -1,6 +1,7 @@
 1. 资源
 	1.1 官网
 		https://www.ffmpeg.org/
+		http://www.ffmpeg.org/download.html
 	1.2 http://git.videolan.org/?p=ffmpeg.git 
 	
 	1.3 GitHub
@@ -34,3 +35,24 @@
 			
 			码流 / 码率 / 比特率 / 帧速率 / 分辨率 / 高清的区别
 			https://blog.csdn.net/xiangjai/article/details/44238005
+			
+4.编译FFmpeg
+	4.1 Ubuntu 16.04编译FFmpeg
+		4.1.1 Ubuntu 16.04编译FFmpeg 4.1
+			https://blog.csdn.net/xucongyoushan/article/details/85132671
+		4.1.2 Ubuntu16.04 环境下编译ffmpeg生成静态库和共享库
+			https://blog.csdn.net/u010821666/article/details/74905654
+			
+			参考官方文档
+			https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#RevertingChangesMadebyThisGuide
+	4.2 windows下编译FFmpeg
+		4.1 参考：何俊林书籍：android音视频开发
+			在编译前 ， 在源码中修改 FFmpeg 的 configure 文件。由于编译出来的动态库文件名 的版本
+			号在 .so 之后（例如“ libavcodec.so.5 .100. l 勺，而 Android 平台不能识别这样的文件名 ，所以需
+			要修改该文件名。在 configure 文件中找到下面儿行代码（ 在 3209-3212 行）：
+			
+			SLIBNAME_WITH_MAJOR='$(SLIBPREF)$(FULLNAME)-$(LIBMAJOR)$(SLIBSUF)'
+			LIB_INSTALL_EXTRA_CMD='$$(RANLIB)"$(LIBDIR)/$(LIBNAME)"'
+			SLIB_INSTALL_NAME='$(SLIBNAME_WITH_MAJOR)'
+			SLIB_INSTALL_LINKS='$(SLIBNAME)'
+			
