@@ -56,3 +56,9 @@
 			SLIB_INSTALL_NAME='$(SLIBNAME_WITH_MAJOR)'
 			SLIB_INSTALL_LINKS='$(SLIBNAME)'
 			
+5. FFmpeg 开源项目分析
+	
+	5.1 FFmpeg 开源项目分析
+		系列博文
+		https://www.jianshu.com/p/a7240d3fffd4
+		
