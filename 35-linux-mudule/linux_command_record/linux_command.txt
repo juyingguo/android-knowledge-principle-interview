@@ -139,9 +139,11 @@
 
 			步骤三：接下来显示的是Linux语法，输入mount -o remount ,rw /
 	
-	4.4 备份压缩,解压文件 Linux tar命令
+	4.4 备份压缩,解压文件命令
+			
+		9.1.1 tar
 			https://www.runoob.com/linux/linux-comm-tar.html
-		9.1.1 
+			
 			tar -xzvf test.tar.gz //解压文件
 			tar -czvf test.tar.gz a.c   //压缩 a.c文件为test.tar.gz
 		9.1.2 将当前目录压缩成backup.tar.gz  	其中当前目录下的img文件夹(后面不要带有路径符号/)和upload.txt文件不压缩 
@@ -156,6 +158,10 @@
 			
 		9.1.4 tar.bz2文件解压
 			sudo tar -jxvf test.tar.bz2
+			
+		9.1.5 Linux中zip压缩和unzip解压缩命令详解
+			https://www.cnblogs.com/wangkongming/p/4305962.html
+			https://www.runoob.com/linux/linux-comm-unzip.html
 	4.5 Exiting with failure status due to previous errors
 		Linux tar命令选项顺序不同导致"Exiting with failure status due to previous errors"
 		https://blog.csdn.net/HermitSun/article/details/94494700
