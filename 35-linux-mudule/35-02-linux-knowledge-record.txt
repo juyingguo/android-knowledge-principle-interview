@@ -38,6 +38,28 @@
 	5.2、Linux中的shell到底是什么？ 
 		https://www.cnblogs.com/tjudzj/p/7088543.html
 		
+	5.3 linux下执行shell异常 
+		/bin/sh^M: bad interpreter: No such file or directory 异常
+			https://blog.csdn.net/carolzhang8406/article/details/6104361
+			分析：这是不同系统编码格式引起的：在 windows系统中编辑的 .sh文件可能有不可见字符，所以在 Linux系统下执行会报以上异常信息。
+			
+			解决： 1）在 windows下转换：
+			利用一些编辑器如 UltraEdit或 EditPlus等工具先将脚本编码转换，再放到 Linux中执行。转换方式如下（ UltraEdit）： File-->Conversions-->DOS->UNIX即可。
+				2 ）也可在 Linux中转换：
+			首先要确保文件有可执行权限
+			#sh>chmod a+x filename
+
+			然后修改文件格式
+			#sh>vi filename
+
+			利用如下命令查看文件格式
+			:set ff 或 :set fileformat
+
+			可以看到如下信息
+			fileformat=dos 或 fileformat=unix
+
+			利用如下命令修改文件格式
+			:set ff=unix 或 :set fileformat=unix
 6. i386 和amd64 的意思 
 	6.1  i386 和amd64 的意思 
 		https://zhidao.baidu.com/question/70209686.html

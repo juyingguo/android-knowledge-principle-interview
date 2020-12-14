@@ -3,9 +3,35 @@
 2. 如何在HTML中播放flash
 	https://blog.csdn.net/weixin_30552811/article/details/97115441
 	
-3.非常详细的flash游戏开发教程. 
+3. html5 
+	3.1 25 个超棒的 HTML5 & JavaScript 游戏引擎开发库
+		https://www.runoob.com/w3cnote/25-best-game-engine-libraries-for-developers.html
+	
+	3.2 Html5-Animation-and-Game-Development
+		H5动画与游戏开发》是计算机软件及相关专业在H5动画及游戏开发方面的专业课，它是为培养掌握H5图形图像及H5游戏开发的应用型人才而开设的专业课
+		https://github.com/edu2act/course-H5-Animation-and-Game-Development
+		
+	3.3 
+		h5-game-blockBreaker
+		h5小游戏—打砖块
+		https://github.com/yangyunhe369/h5-game-blockBreaker
+4.	flash相关学习资源
+
+	Flash移动开发高级教程.pdf
+	Flash移动开发高级教程-创建Android＆iPhone应用（电子书）
+	https://download.csdn.net/download/xiyuan2016/9656475?utm_source=iteye
+	
+	Flash ActionScript3.0 动画教程 (高清PDF中文版)
+	
+	Flash+ActionScript+3.0+高级动画教程中文版+源代码
+	https://download.csdn.net/download/ljllovehome/3445990
+	
+	
+	非常详细的flash游戏开发教程. 
 	https://blog.csdn.net/weixin_30892037/article/details/96531753
 	
+	从零开始学Flash
+	https://www.bilibili.com/video/BV14J411X7uc?from=search&seid=9744206600933780454
 	
-4. Flash移动开发高级教程.pdf
-	Flash ActionScript3.0 动画教程 (高清PDF中文版)
+	Flash从入门到精通视频教程
+	https://www.bilibili.com/video/BV12E411878h?from=search&seid=1070465403875638730

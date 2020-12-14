@@ -57,11 +57,18 @@
 			SLIB_INSTALL_LINKS='$(SLIBNAME)'
 			
 			
-			android_nkd_env.sh
+			android_ndk_env.sh
 			#!/bin/sh
 			#ANDROID_NDK是ndk目录
 			export ANDROID_NDK="/home/eink/soft_tools/ndk/android-ndk-r20/"
 			export PATH=$ANDROID_NDK:$PATH
+			
+			
+			配置ffmpeg编译脚本。
+			ffmpeg_build_android.sh 
+				关于make: *** No rule to make target `clean'. Stop.这个莫名其妙问题的解决方法
+				https://www.cnblogs.com/mmix2009/p/3191596.html
+				
 			
 		4.1.4 FFmpeg移植到android平台，通过ubuntu编译ffmpeg
 			4.1.4.1 编译FFmpeg4.1.3并移植到Android app中使用（最详细的FFmpeg-Android编译教程） 
