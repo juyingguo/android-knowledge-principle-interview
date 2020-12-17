@@ -14,6 +14,14 @@
 		https://www.haolizi.net/example/tags_FFmpeg_1.html
 		
 	1.6 ffmpeg 社区
+	1.7 FFmpeg视频资源
+		1.7.1 ffmpeg-Android&iOS跨平台开发
+			https://www.bilibili.com/video/BV1eZ4y1p7ZM?from=search&seid=5283599842963896799
+	1.8 ffmpeg ./configure 的相关参数说明
+		https://blog.csdn.net/fengsh998/article/details/79443503
+		注意该文档有错误，ARCH说明有误，需要在configure文件中查看ARCH_LIST
+		ffmpeg----configure参数配置说明
+		https://blog.csdn.net/huweijian5/article/details/104369194
 		
 2. FFmpeg从入门到精通读书笔记（1）
 	2.1 FFmpeg从入门到精通读书笔记（1） 
@@ -37,6 +45,10 @@
 			https://blog.csdn.net/xiangjai/article/details/44238005
 			
 4.编译FFmpeg
+	4.0,实验发现，各种编译提示错误。但都没有按照脚本中prefix指定的存放目录来存放。
+		ffmpeg与NDK版本要配合。因为不同ndk版本，采用编译器不同，低版本ndk_r17前采用gcc,高版本采用clang；所以照着网上的文章做当然编译不起来。
+		参考：[4.1.4.5]中的文章得以理解。
+		4.0，此时看看ffmpeg及NDK官网相关内容。
 	4.1 Ubuntu 16.04编译FFmpeg
 		4.1.1 Ubuntu 16.04编译FFmpeg 4.1
 			https://blog.csdn.net/xucongyoushan/article/details/85132671
@@ -57,18 +69,29 @@
 			SLIB_INSTALL_LINKS='$(SLIBNAME)'
 			
 			
+			／etc/profile.d 下创建配置脚本
 			android_ndk_env.sh
 			#!/bin/sh
 			#ANDROID_NDK是ndk目录
-			export ANDROID_NDK="/home/eink/soft_tools/ndk/android-ndk-r20/"
+			export ANDROID_NDK="/home/eink/soft_tools/ndk/android-ndk-r20"
 			export PATH=$ANDROID_NDK:$PATH
 			
 			
 			配置ffmpeg编译脚本。
 			ffmpeg_build_android.sh 
+			注意书中，linux下编译时，脚本中--target-os=linux，应该为android.
 				关于make: *** No rule to make target `clean'. Stop.这个莫名其妙问题的解决方法
 				https://www.cnblogs.com/mmix2009/p/3191596.html
-				
+			
+			异常记录：
+			a. Unknown option "".
+			See ./configure --help for available options.
+
+			
+			b.
+				/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc is unable to create an executable file. C compiler test failed.
+
+
 			
 		4.1.4 FFmpeg移植到android平台，通过ubuntu编译ffmpeg
 			4.1.4.1 编译FFmpeg4.1.3并移植到Android app中使用（最详细的FFmpeg-Android编译教程） 
@@ -76,6 +99,15 @@
 				
 			4.1.4.2 ffmpeg开发之旅(5)：详解ffmpeg编译与在Android平台上的移植
 				https://blog.csdn.net/liu3364575/article/details/78395494
+			4.1.4.3 ubuntu14.04系统Android NDK编译ffmpeg遇到的问题 
+				https://blog.csdn.net/ameyume/article/details/87283909
+				
+			4.1.4.4 Android使用FFmpeg(一)--编译ffmpeg
+				系列博文
+				https://www.jianshu.com/p/ca7ffd2e5e68
+				
+			4.1.4.5 FFMPEG-Android利用ndk(r20)编译最新版本ffmpeg4.2.1
+				https://juejin.cn/post/6844903945496690696
 	4.2 windows下编译FFmpeg
 		4.1 
 			

@@ -214,6 +214,15 @@
 		Linux rmmod（英文全拼：remove module）命令用于删除模块。
 
 		执行 rmmod 指令，可删除不需要的模块。Linux 操作系统的核心具有模块化的特性，应此在编译核心时，务须把全部的功能都放如核心。你可以将这些功能编译成一个个单独的模块，待有需要时再分别载入它们。
+	8.2 linux export 的作用
+		https://www.runoob.com/linux/linux-comm-export.html
+		
+		【bailyzheng】
+		https://blog.csdn.net/bailyzheng/article/details/7488769
+		export [-fnp][变量名称]=[变量设置值]
+		
+		source+脚本文件 //脚本文件中可以不用export定义，在当前shell下也可以使用定义的变量。
+		文章内容：对应验证调试项目位置：android-knowledge-principle-interview\35-linux-mudule\shell_project\export_test_project
 	
 (10) 账户相关。
 		https://jingyan.baidu.com/article/a17d5285eb93ea8099c8f24d.html
