@@ -1,0 +1,7 @@
+1. scale是啥？
+	game.load.image('ground', 'assets/platform.png');
+	game = new Phaser.Game(.);
+	platforms = game.add.group();// Phaser.GameObjectFactory - Phaser.Group 
+	platforms.enableBody = true;
+	var ground = platforms.create(0, game.world.height - 64, 'ground');//DisplayObject -
+	ground.scale.setTo(2, 2);

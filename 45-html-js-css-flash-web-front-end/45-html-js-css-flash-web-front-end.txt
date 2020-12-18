@@ -73,35 +73,49 @@
 		https://www.bilibili.com/video/BV1XJ411X7Ud?from=search&seid=13728004474723567702
 		
 	3.6 主流HTML5游戏框架的分析和对比
-		https://www.cnblogs.com/tongxinyuan/p/4484691.html
-		
-		hilo
-		Phaser 是一款开源的 HTML5 游戏框
-		https://openingsource.org/1073/
-		
-		http://html5gameengine.com/ 的游戏框架排行中
-		
-		cocos-creator //cocos2d 衍生出来的h5
-			基于Cocos Creator的H5移动端小游戏
-			https://juejin.cn/post/6844903986936414216
+			https://www.cnblogs.com/tongxinyuan/p/4484691.html
 			
-			https://search.bilibili.com/all?keyword=cocos-creator
+		3.6.1 hilo
+		
+		3.6.2 		
+			Phaser 是一款开源的 HTML5 游戏框
+			https://openingsource.org/1073/
+			官网：
+			https://phaser.io/
+			API:
+			https://www.phaser-china.com/docs/Index.html
+			Phaser官网入门demo
+			https://www.phaser-china.com/tutorial-detail-1.html
 			
-			Cocos Creator 官方文档中文
-			http://docs.cocos.com/creator/manual/zh/getting-started/
+			Phaser github game demo
+			https://github.com/channingbreeze/games
+		
+		3.6.3
+			http://html5gameengine.com/ 的游戏框架排行中
 			
-			[收藏]Cocos Creator官方教程第1集：Hello World
-			https://www.bilibili.com/video/BV1c4411F75N?from=search&seid=13104966852048103373
+			cocos-creator //cocos2d 衍生出来的h5
+				基于Cocos Creator的H5移动端小游戏
+				https://juejin.cn/post/6844903986936414216
+				
+				https://search.bilibili.com/all?keyword=cocos-creator
+				
+				Cocos Creator 官方文档中文
+				http://docs.cocos.com/creator/manual/zh/getting-started/
+				
+				[收藏]Cocos Creator官方教程第1集：Hello World
+				https://www.bilibili.com/video/BV1c4411F75N?from=search&seid=13104966852048103373
+		3.6.4	
+			createjs
+			
+			http://www.createjs.cc/
+			
+			使用createjs实现复杂网页动画
+			https://www.jianshu.com/p/2b5a890d1598?utm_campaign
+			
+			WEB前端之JS框架CreateJS
+			https://www.bilibili.com/video/av77803198/
+			
 		
-		createjs
-		
-		http://www.createjs.cc/
-		
-		使用createjs实现复杂网页动画
-		https://www.jianshu.com/p/2b5a890d1598?utm_campaign
-		
-		WEB前端之JS框架CreateJS
-		https://www.bilibili.com/video/av77803198/
 		
 4.	flash相关学习资源
 
