@@ -368,3 +368,9 @@
 		https://www.runoob.com/linux/linux-shell-printf.html
 4. Linux下Shell的for循环语句 
 	https://www.cnblogs.com/EasonJim/p/8315939.html
+	
+5. linux shell 脚本命令错误后继续执行
+	5.1 linux shell 脚本命令错误后禁止继续执行
+6. Shell脚本中的分号使用
+	https://www.cnblogs.com/EasonJim/p/8315896.html
+	如果写成单行，需要用分号进行区分，如果写成块，那么则用换行符替代了分号

@@ -60,6 +60,19 @@
 
 			利用如下命令修改文件格式
 			:set ff=unix 或 :set fileformat=unix
+			
+	5.4 详解shell中source、sh、bash、./执行脚本的区别
+		https://www.jb51.net/article/128918.htm
+		结论一: ./*.sh的执行方式等价于sh ./*.sh或者bash ./*.sh，此三种执行脚本的方式都是重新启动一个子shell,在子shell中执行此脚本。
+
+		结论二: .source ./*.sh和 . ./*.sh的执行方式是等价的，即两种执行方式都是在当前shell进程中执行此脚本，而不是重新启动一个shell 而在子shell进程中执行此脚本。
+
+		验证依据：没有被export导出的变量（即非环境变量）是不能被子shell继承的
+		对应验证调试项目位置：android-knowledge-principle-interview\35-linux-mudule\shell_project\export_test_project
+	5.5 linux下查看当前shell方法。
+		含有查看当前使用的 shell ，查看当前进程
+		https://www.cnblogs.com/vigarbuaa/archive/2004/01/13/2667098.html
+		
 6. i386 和amd64 的意思 
 	6.1  i386 和amd64 的意思 
 		https://zhidao.baidu.com/question/70209686.html
