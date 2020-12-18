@@ -1,16 +1,17 @@
 #!/bin/bash
-make clean
-export NDK=$ANDROID_NDK
-export SYSROOT=$NDK/platforms/android-21/arch-arm/
-export TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64
-export CPU=arm
-export PREFIX=$(pwd)/android-static/$CPU
-export ADDI_CFLAGS="-marm"
+#make clean
+NDK=$ANDROID_NDK
+SYSROOT=$NDK/platforms/android-21/arch-arm/
+TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64
+CPU=arm
+#export PREFIX=$(pwd)/android-static/$CPU
+PREFIX=$(pwd)/android-static/$CPU
+ADDI_CFLAGS="-marm"
 ./configure --target-os=linux \
 --prefix=$PREFIX --arch=arm \
---disable-doc \ 
---disable-shared \
---enable-static \
+--disable-doc \
+--enable-shared\
+--disable-static \
 --disable-yasm \
 --disable-symver \
 --enable-gpl \
@@ -26,6 +27,6 @@ export ADDI_CFLAGS="-marm"
 --extra-cflags="-Os -fpic $ADDI_CFLAGS" \
 --extra-ldflags="$ADDI_LDFLAGS"\
 $ADDITIONAL_CONFIGURE_FLAG
-make clean
+#make clean
 make -j 2
 make install

@@ -225,3 +225,14 @@
 22 数据类型
 	22.1 Linux基本数据类型大小——int,char,long int,long long int
 		https://www.cnblogs.com/jikexianfeng/p/5792057.html
+		
+23 linux, configure --prefix=/有什么用
+	23.1 linux, configure --prefix=/有什么用
+		https://zhidao.baidu.com/question/535223201.html
+		
+		Configure是一个可执行脚本，它有很多选项，在待安装的源码路径下使用命令./configure–help输出详细的选项列表。
+		其中，prefix选项是配置安装的路径，如果不配置该选项，安装后可执行文件默认放在/usr/local/bin，
+		库文件默认放在/usr/local/lib， 配置文件默认放在/usr/local/etc，其它的资源文件放在/usr/local/share，比较凌乱。
+
+		如果配置prefix，如：
+		./configure --prefix=/usr/local/test可以把所有资源文件放在/usr/local/test的路径中，不会杂乱。

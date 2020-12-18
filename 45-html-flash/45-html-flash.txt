@@ -15,6 +15,94 @@
 		h5-game-blockBreaker
 		h5小游戏—打砖块
 		https://github.com/yangyunhe369/h5-game-blockBreaker
+		
+		直接上源码教你做经典HTML5小游戏
+		https://www.w3cschool.cn/html5/html5-game2.html
+		
+	3.4 HTML5开发工具
+		http://www.cocoachina.com/articles/13587
+		
+		10款好用的Html5开发工具
+		https://zhuanlan.zhihu.com/p/32016485
+		推荐11款程序员必备的HTML5开发工具
+		https://www.w3cschool.cn/html5/html5-tool.html
+		
+		Adobe Edge
+		
+		hbuilder
+			https://www.dcloud.io/hbuilderx.html
+
+			hbuilder是DCloud推出的一款支持HTML5的Web开发IDE。
+			快，是HBuilder的最大优势，通过完整的语法提示和代码输入法、代码块等，
+			大幅提升HTML、js、css的开发效率。
+			同时，它还包括最全面的语法库和浏览器兼容性数据。
+		notepad++
+			notepad++编写html5，css3智能提示方法
+			https://www.cnblogs.com/cnxkey/articles/7434654.html
+			使用方法如下： 勾选“ Settings-》Preferences-》Backup/Auto-Completion-》Auto-Completion” 下的复选框。 
+			·将css.xml、html.javascript.xml三个文件复制到\Notepad++\plugins\APIs 覆盖即可。
+			
+			notepad++ 支持jquery \css3 \html5代码提示
+			https://download.csdn.net/download/wang02011/3992119
+			
+		vs和vs code区别
+			https://bbs.csdn.net/topics/392276870
+			vs code
+			并针对网页开发和云端应用开发做了优化。软件跨平台支持 Win、Mac 以及 Linux。
+			如果是想做h5游戏可以用vs code
+		Sencha Architect
+			内置针对 IOS 与 Android 一键式原生打包功能
+			
+		可以使用专业的 HTML 编辑器来编辑 HTML，菜鸟教程为大家推荐几款常用的编辑器：
+
+		VS Code：https://code.visualstudio.com/
+		Sublime Text：http://www.sublimetext.com/
+	3.5 html学习资源
+		
+		https://www.w3cschool.cn/html5/html5-tool.html
+		HTML 参考手册- (HTML5 标准)
+		https://www.runoob.com/tags/html-reference.html
+		
+		《HTML5从入门到精通》中文教程电子书
+		https://www.w3cschool.cn/html5/html5-download.html
+		
+		html5星空
+		http://www.html5star.com/course/canvas/
+		
+		尚硅谷新版Web前端HTML5+CSS3全套基础教程完整版(初学者零基础入门)
+		https://www.bilibili.com/video/BV1XJ411X7Ud?from=search&seid=13728004474723567702
+		
+	3.6 主流HTML5游戏框架的分析和对比
+		https://www.cnblogs.com/tongxinyuan/p/4484691.html
+		
+		hilo
+		Phaser 是一款开源的 HTML5 游戏框
+		https://openingsource.org/1073/
+		
+		http://html5gameengine.com/ 的游戏框架排行中
+		
+		cocos-creator //cocos2d 衍生出来的h5
+			基于Cocos Creator的H5移动端小游戏
+			https://juejin.cn/post/6844903986936414216
+			
+			https://search.bilibili.com/all?keyword=cocos-creator
+			
+			Cocos Creator 官方文档中文
+			http://docs.cocos.com/creator/manual/zh/getting-started/
+			
+			[收藏]Cocos Creator官方教程第1集：Hello World
+			https://www.bilibili.com/video/BV1c4411F75N?from=search&seid=13104966852048103373
+		
+		createjs
+		
+		http://www.createjs.cc/
+		
+		使用createjs实现复杂网页动画
+		https://www.jianshu.com/p/2b5a890d1598?utm_campaign
+		
+		WEB前端之JS框架CreateJS
+		https://www.bilibili.com/video/av77803198/
+		
 4.	flash相关学习资源
 
 	Flash移动开发高级教程.pdf
@@ -35,3 +123,6 @@
 	
 	Flash从入门到精通视频教程
 	https://www.bilibili.com/video/BV12E411878h?from=search&seid=1070465403875638730
+	
+5. CSS3 教程
+	https://www.runoob.com/css3/css3-tutorial.html

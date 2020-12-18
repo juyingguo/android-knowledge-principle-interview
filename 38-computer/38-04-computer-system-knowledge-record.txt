@@ -63,4 +63,6 @@
 
 		查看线程数
 		grep 'processor' /proc/cpuinfo | sort -u | wc -l
-		
+10 MIT,GPL,APACH等协议说明
+	https://www.zhihu.com/question/25079718?sort=created
+			
