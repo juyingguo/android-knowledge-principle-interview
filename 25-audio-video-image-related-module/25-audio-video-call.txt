@@ -72,18 +72,73 @@
 		2.0.1 WebRTC协议介绍
 			https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API/Protocols
 		2.0.2 WebRTC 标准官方文档
-			https://w3c.github.io/webrtc-pc/
+						
+			官方文档:
+			https://webrtc.github.io/webrtc-org/native-code/development/ 
 			
+			
+			https://webrtc.org
+			
+			w3c出的文档
+			https://w3c.github.io/webrtc-pc/
 		2.0.3 WebRTC中文网：
 			https://www.webrtc.org.cn/
 			
 		2.0.4 WebRtc 源码
 			https://github.com/webrtc/samples/
 			
+			webrtc-mirror
+				https://github.com/ibaoger/webrtc
+			
+			//需要科学上网，可以验证哪些工具可以给力访问该网站
+			https://webrtc.googlesource.com/src/
+			
 			https://www.cnblogs.com/wanggang123/p/11280283.html
 			
 			2.0.4.2 WebRTC源码下载和编译
 				http://www.mamicode.com/info-detail-3035953.html
+				
+				WebRtc 源码下载
+				https://www.cnblogs.com/wanggang123/p/11280283.html
+				
+			gitee 仓库
+			webrtc: WebRTC官方镜像(定期更新) Clone of google's rep...
+			https://gitee.com/dreamcom/webrtc
+			
+			Webrtc代码下载
+			https://segmentfault.com/a/1190000008011038
+			
+			WebRTC 国内镜像下载及编译过程
+			待关注博主【】
+			https://blog.csdn.net/freeabc/article/details/106451174
+				替换了源。同时配合参考声网镜像文章。
+			
+			WebRTC 源码国内镜像 - 资源分享 - RTC开发者社区-WebRTC...
+			https://rtcdeveloper.com/t/topic/14914/80
+				
+				RTC开发者社区-WebRTC中文论坛|RTC实时技术论坛
+				https://rtcdeveloper.com/t/topic/14914
+			
+			Webrtc国内源码镜像地址：
+			下载编译(含android,ios，window,linux,mac多系统平台)
+			https://webrtc.org.cn/mirror/
+			
+				参考教程配置，有以下问题。
+				fatal: unable to access 'https://gitlab.agora.io/webrtc/depot_tools.git/': The requested URL returned error: 502
+				
+				论坛有网友遇到同样的问题。
+				https://rtcdeveloper.com/t/topic/14914/128
+				
+				暂且通过其他途径下载depot_tools
+				
+				depot_tools Google代码管理工具包
+				https://www.cnblogs.com/yemaomao/p/12461055.html
+				
+				或者在github，国外网友，提供google对应的镜像[Mirror of https://chromium.googlesource.com/chromium/tools/depot_tools.git]，使用github加速下。给力哦。
+				
+				
+				
+
 	2.1 Android | WebRTC的用法（一）
 		https://www.jianshu.com/p/2973f37a73f2
 		

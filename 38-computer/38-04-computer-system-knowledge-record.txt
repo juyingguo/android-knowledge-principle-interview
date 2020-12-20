@@ -65,4 +65,7 @@
 		grep 'processor' /proc/cpuinfo | sort -u | wc -l
 10 MIT,GPL,APACH等协议说明
 	https://www.zhihu.com/question/25079718?sort=created
+	
+	如何选择开源许可证？
+	http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html
 			

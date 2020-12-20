@@ -89,5 +89,24 @@
 	8.4
 		
 		
+9. https://github.com/getfotiaoqiang/fotiaoqiang	
+		
+	推荐一款免费又稳定的梯子，速度超快，看油管，刷twitter用Google非常顺畅，现在搞限时活动免费领取VIP会员，填写兑换码gnaw3o6e，可立即获得VIP会员，下载链接：http://wckoqd.xzzccd.com/88gnaw3o6e2/
+	填写兑换码gnaw3o6e，可立即获得VIP会员
+
+10 通过chrome网页能访问google,但git clone 代码却不行
+	git clone Google的代码失败的解决方法
 	
+	Git 无法Clone Google 代码仓库解决方法
+	https://blog.csdn.net/Leichelle/article/details/81106839
+	
+	设置http代理
+	git config --global https.proxy "localhost:1400"
+	取消http代理
+	git config --global --unset http.proxy
+11 GitHub加速
+
+12 git global配置文件位置
+	https://www.cnblogs.com/carriezhao/p/10775275.html
+	C:\Users\Administrator\.gitconfig
 	

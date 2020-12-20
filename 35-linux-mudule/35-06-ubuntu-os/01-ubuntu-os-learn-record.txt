@@ -101,7 +101,17 @@
 	3.1、Linux下 vi vim vim-gnome vim-tiny vim-gtk vim-nox的区别 
 		http://www.mamicode.com/info-detail-224890.html
 		
-4. 
+4. Ubuntu 修改hosts - [ubuntu]
+	https://blog.csdn.net/weixin_33979203/article/details/85462898
+	修改/etc/hosts文件，重启网络。
+	过程如下：
+	1、修改hosts
+	sudo gedit /etc/hosts
+	2、添加解析记录（ . ）
+	完整案例：127.0.0.1 localhost.localdomain localhost
+	简洁记录：127.0.0.1 localhost
+	3、保存后重启网络
+	sudo /etc/init.d/networking restart
 		
 5.
 

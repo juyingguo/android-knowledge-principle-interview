@@ -28,8 +28,8 @@ echo "Compiling FFmpeg for $CPU"
     --target-os=android \
     --arch=$ARCH \
     --cpu=$CPU \
-    --cc=$CC
-    --cxx=$CXX
+    --cc=$CC \
+    --cxx=$CXX \
     --enable-cross-compile \
     --sysroot=$SYSROOT \
     --extra-cflags="-Os -fpic $OPTIMIZE_CFLAGS" \

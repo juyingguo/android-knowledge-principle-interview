@@ -10,7 +10,7 @@
 		https://www.haolizi.net/example/view_20421.html
 		已充值下载。
 		
-	1.5
+	1.5 书下载
 		https://www.haolizi.net/example/tags_FFmpeg_1.html
 		
 	1.6 ffmpeg 社区
@@ -22,6 +22,10 @@
 		注意该文档有错误，ARCH说明有误，需要在configure文件中查看ARCH_LIST
 		ffmpeg----configure参数配置说明
 		https://blog.csdn.net/huweijian5/article/details/104369194
+		
+	1.9 ffmpeg使用参考案例：
+			https://trac.ffmpeg.org/wiki/Scaling
+			https://trac.ffmpeg.org/wiki
 		
 2. FFmpeg从入门到精通读书笔记（1）
 	2.1 FFmpeg从入门到精通读书笔记（1） 
@@ -45,10 +49,11 @@
 			https://blog.csdn.net/xiangjai/article/details/44238005
 			
 4.编译FFmpeg
-	4.0,实验发现，各种编译提示错误。但都没有按照脚本中prefix指定的存放目录来存放。
-		ffmpeg与NDK版本要配合。因为不同ndk版本，采用编译器不同，低版本ndk_r17前采用gcc,高版本采用clang；所以照着网上的文章做当然编译不起来。
-		参考：[4.1.4.5]中的文章得以理解。
-		4.0，此时看看ffmpeg及NDK官网相关内容。
+	4.0,我的实验。总结。实验及异常记录在[4.1.3]		
+		实验发现，各种编译提示错误。但都没有按照脚本中prefix指定的存放目录来存放。
+			ffmpeg与NDK版本要配合。因为不同ndk版本，采用编译器不同，低版本ndk_r17前采用gcc,高版本采用clang；所以照着网上的文章做当然编译不起来。
+			参考：[4.1.4.5]中的文章得以理解。
+		4.0.2，此时看看ffmpeg及NDK官网相关内容。
 	4.1 Ubuntu 16.04编译FFmpeg
 		4.1.1 Ubuntu 16.04编译FFmpeg 4.1
 			https://blog.csdn.net/xucongyoushan/article/details/85132671
@@ -59,40 +64,54 @@
 			https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#RevertingChangesMadebyThisGuide
 			
 		4.1.3 参考：何俊林书籍：android音视频开发
-			在编译前 ， 在源码中修改 FFmpeg 的 configure 文件。由于编译出来的动态库文件名 的版本
-			号在 .so 之后（例如“ libavcodec.so.5 .100. l 勺，而 Android 平台不能识别这样的文件名 ，所以需
-			要修改该文件名。在 configure 文件中找到下面儿行代码（ 在 3209-3212 行）：
+			4.1.3.1 实验条件
+				我在实验时，采用ubuntu16.4,nkd-r20,ffmpeg-4.2.4。
+			4.1.3.2
+				在编译前 ， 在源码中修改 FFmpeg 的 configure 文件。由于编译出来的动态库文件名 的版本
+				号在 .so 之后（例如“ libavcodec.so.5 .100. l 勺，而 Android 平台不能识别这样的文件名 ，所以需
+				要修改该文件名。在 configure 文件中找到下面儿行代码（ 在 3209-3212 行）：
 			
-			SLIBNAME_WITH_MAJOR='$(SLIBPREF)$(FULLNAME)-$(LIBMAJOR)$(SLIBSUF)'
-			LIB_INSTALL_EXTRA_CMD='$$(RANLIB)"$(LIBDIR)/$(LIBNAME)"'
-			SLIB_INSTALL_NAME='$(SLIBNAME_WITH_MAJOR)'
-			SLIB_INSTALL_LINKS='$(SLIBNAME)'
+				SLIBNAME_WITH_MAJOR='$(SLIBPREF)$(FULLNAME)-$(LIBMAJOR)$(SLIBSUF)'
+				LIB_INSTALL_EXTRA_CMD='$$(RANLIB)"$(LIBDIR)/$(LIBNAME)"'
+				SLIB_INSTALL_NAME='$(SLIBNAME_WITH_MAJOR)'
+				SLIB_INSTALL_LINKS='$(SLIBNAME)'
+				
+			4.1.3.3 
+				／etc/profile.d 下创建配置脚本
+				android_ndk_env.sh
+				#!/bin/sh
+				#ANDROID_NDK是ndk目录，替换为实际电脑上ndk路径。
+				export ANDROID_NDK="/home/eink/soft_tools/ndk/android-ndk-r20" 
+				export PATH=$ANDROID_NDK:$PATH
 			
-			
-			／etc/profile.d 下创建配置脚本
-			android_ndk_env.sh
-			#!/bin/sh
-			#ANDROID_NDK是ndk目录
-			export ANDROID_NDK="/home/eink/soft_tools/ndk/android-ndk-r20"
-			export PATH=$ANDROID_NDK:$PATH
-			
-			
-			配置ffmpeg编译脚本。
-			ffmpeg_build_android.sh 
-			注意书中，linux下编译时，脚本中--target-os=linux，应该为android.
+			4.1.3.4 
+				配置ffmpeg编译脚本。
+				ffmpeg_build_android.sh 
+				注意书中，linux下编译时，脚本中--target-os=linux，应该为android.
+			4.1.3.5 
 				关于make: *** No rule to make target `clean'. Stop.这个莫名其妙问题的解决方法
 				https://www.cnblogs.com/mmix2009/p/3191596.html
 			
-			异常记录：
-			a. Unknown option "".
-			See ./configure --help for available options.
+			4.1.3.6
+				a. Unknown option "".
+				See ./configure --help for available options.
 
-			
-			b.
-				/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc is unable to create an executable file. C compiler test failed.
-
-
-			
+			4.1.3.7
+				b.
+					/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc is unable to create an executable file. C compiler test failed.
+					
+					编译器不对，参考[4.1.4.5 ]
+			4.1.3.8 
+				参考[4.1.4.5 ]
+				./android_ffmpeg_4.2.1_android_ndk_r20.sh: line 32: --cxx=/home/eink/soft_tools/ndk/android-ndk-r20/android-ndk-r20/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang++: No such file or directory
+				./android_ffmpeg_4.2.1_android_ndk_r20.sh: line 34: --enable-cross-compile: command not found
+				
+				[4.1.4.5 ]配置作者可能漏加了。评论区有网友指出。
+				--cc=$CC
+				 --cxx=$CXX
+				后面需要添加 \
+				 --cc=$CC \
+				 --cxx=$CXX \
 		4.1.4 FFmpeg移植到android平台，通过ubuntu编译ffmpeg
 			4.1.4.1 编译FFmpeg4.1.3并移植到Android app中使用（最详细的FFmpeg-Android编译教程） 
 				https://blog.csdn.net/bobcat_kay/article/details/80889398
@@ -108,8 +127,11 @@
 				
 			4.1.4.5 FFMPEG-Android利用ndk(r20)编译最新版本ffmpeg4.2.1
 				https://juejin.cn/post/6844903945496690696
+				对于build_android.sh文件的说明
+				为什么新版本的ffmpeg搭配新版本的ndk编译很容易出错呢？其实关键点主要还是新旧版本ndk中的交叉编译工具不一样导致的。比如旧版本（r17及之前）的ndk中的编译器用的是gcc，而网上大部分的同类文章中用的也是gcc，而新版本的ndk文件已经弃用gcc编译器改用clang了，所以照着网上的文章做当然编译不起来）
+				
 	4.2 windows下编译FFmpeg
-		4.1 
+		4.1 待实验。
 			
 			
 5. FFmpeg 开源项目分析
@@ -118,3 +140,60 @@
 		系列博文
 		https://www.jianshu.com/p/a7240d3fffd4
 		
+6. ffmpeg 安装及使用过程解析
+	6.1 ffmpeg Windows下的安装及使用过程解析
+		https://www.cnblogs.com/pengpengboshi/p/12627715.html
+		
+		6.1.1 下载安装，配置环境变量见文档
+		6.1.2 使用过程记录见 [7]
+	6.2 ffmpeg linux下的安装及使用过程解析
+7. ffmpeg使用过程记录见 [7]	
+	7.0 详细的使用说明（英文）：
+		http://ffmpeg.org/ffplay.html
+		http://ffmpeg.org/ffprobe.html
+		
+		FFMPEG 参数详细说明
+		https://blog.csdn.net/z2066411585/article/details/81237583
+	
+	7.1 ffmpeg Windows下使用过程解析
+		https://www.cnblogs.com/pengpengboshi/p/12627715.html
+	
+		7.1.1 视频格式转换：ffmpeg -i num.mp4 -codec copy num2.avi
+
+			将num.mp4复制并转换为num2.avi
+			-i后表示要进行操作的文件
+		7.1.2 gif制作：ffmpeg -i num.mp4 -vframes 20 -y -f gif num3.gif
+
+			将num.mp4的前20帧制作为gif并命名为num3
+		7.1.3 视频截取：ffmpeg -i num.mp4 -ss 0 -t 3 -codec copy cut1.mp4
+
+			-ss后数字表示截取时刻，-t后数字表示截取时长
+
+			截取视频某一时刻为图片：ffmpeg -i num.mp4 -y -f image2 -ss 2 -t 0.001 -s 400x300 pic.jpg
+
+			将2s时刻截取为400x300大小的名为pic.jpg的图片（-ss后的数字为截取时刻）
+		7.1.4 每秒截取一张图片：ffmpeg -i num.mp4 -r 1 image%d.jpg
+
+			将视频num.mp4进行每秒截取一张图片，并命名为imagei.jpg（i=1，2，3...）
+
+			注：-r后的数字表示每隔多久截取一张
+			
+			//验证时，并不正确。
+		7.1.5 使用ffmpeg调整图像大小
+			https://blog.csdn.net/yz099/article/details/108082980
+			
+			指定长宽：
+			ffmpeg -i input.jpg -vf scale=320:240 output_320x240.png
+
+			指定长，高度按比例缩放：
+			ffmpeg -i input.jpg -vf scale=320:-1 output_320x240.png
+
+			缩放为之前的两倍：
+			ffmpeg -i input.jpg -vf scale=iw*2:ih input_double_width.png
+
+			缩放为之前的二分之一：
+			ffmpeg -i input.jpg -vf scale=iw*.5:ih*.5 input_half_size.png
+			ffmpeg -i input.jpg -vf scale=iw/2:ih/2 input_half_size.png
+
+			参考案例：https://trac.ffmpeg.org/wiki/Scaling
+				https://trac.ffmpeg.org/wiki
