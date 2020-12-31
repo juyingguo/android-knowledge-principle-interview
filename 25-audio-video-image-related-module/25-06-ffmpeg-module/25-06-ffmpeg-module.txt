@@ -137,8 +137,9 @@
 5. FFmpeg 开源项目分析
 	
 	5.1 FFmpeg 开源项目分析
-		系列博文
-		https://www.jianshu.com/p/a7240d3fffd4
+		系列博文。
+		https://www.jianshu.com/p/a7240d3fffd4    
+		含有ffmpeg多平台编译配置。使用函数传参指定cpu类型。
 		
 6. ffmpeg 安装及使用过程解析
 	6.1 ffmpeg Windows下的安装及使用过程解析
@@ -197,3 +198,19 @@
 
 			参考案例：https://trac.ffmpeg.org/wiki/Scaling
 				https://trac.ffmpeg.org/wiki
+				
+8. FFmpeg在基于Android上有哪些应用。
+	8.1 FFmpeg在基于Android的楼宇可视对讲程序中的应用 
+		http://www.fx361.com/page/2017/0729/2117898.shtml
+		
+		ffmpeg在楼宇可视对讲系统中的应用
+		【知网空间】，及同类文献
+		https://www.cnki.com.cn/Article/CJFDTotal-JCFH201402012.htm
+		
+		文章中有一些书籍和文献可以参考
+	8.2 Android基于Ffmpeg 的软编软解的可视对讲 
+		https://my.oschina.net/zengliubao/blog/305890
+		
+	8.3 Android系统下基于FFmpeg框架的多媒体播放器研究
+		【及同类文献】
+		https://cdmd.cnki.com.cn/Article/CDMD-11415-1016068240.htm

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<p>局部变量计数。</p>
+<button type="button" onclick="myFunction()">计数!</button>
+<p id="demo">0</p>
+<script>
+var add = (function () {
+    var counter = 0;
+    console.log("function() init self call.");
+    return function () {
+      console.log("function() call.");
+      return counter += 1;
+    }
+})();
+function myFunction(){
+    document.getElementById("demo").innerHTML = add();
+    document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+</body>
+</html>

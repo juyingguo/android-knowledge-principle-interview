@@ -37,7 +37,14 @@
 		2. android logo：内核、android开机动画 
 		http://blog.csdn.net/xubin341719/article/details/8267282
 		
-4. armeabi与armeabi-v7a等的区别
+4. Android CPU 架构详解
+	4.0 Android CPU 架构详解
+		https://blog.csdn.net/u011033906/article/details/88399771  
+			
+			博客中的. 参考链接：
+			https://blog.csdn.net/u012400885/article/details/52923765
+			重点： https://blog.csdn.net/ouyang_peng/article/details/51168072?utm_source=blogxgwz2
+
 	4.1 armeabi与armeabi-v7a的区别，绝对干货！
 		https://blog.csdn.net/jiayouwangqiuwangzi/article/details/64437485
 		

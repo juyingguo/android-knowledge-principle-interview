@@ -5,5 +5,13 @@
 	
 3.vscode插件相关。
 	
+	3.1 open in browser
+		techer.open-in-browser
+		
+	3.2 HTML Snippets
+		abusaidm.html-snippets
+	3.3 有没有js中对象引用调用关系的插件。
 	
-	
+	3.4 导航插件
+		上一次编辑修改操作的插件。
+		

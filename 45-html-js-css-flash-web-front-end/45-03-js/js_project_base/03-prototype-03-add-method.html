@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<script>
+function Students(name, height, age) {
+    this.name = name;
+    this.height = height;
+    this.age = age;
+    this.outputInfo  = function() {
+        document.write('name = ' + this.name +  '<br\>' + 'height = ' + this.height + '<br\>');
+    }
+}
+
+//增加一个新方法
+Students.prototype.newFunction = function() {
+    document.write('此方法是通过prototype继承后实现的');
+}
+
+var stu1 = new Students('zhang', 123, 12);
+stu1.outputInfo();
+stu1.newFunction();
+</script>
+</body>
+</html>

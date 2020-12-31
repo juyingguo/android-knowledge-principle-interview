@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var myObject;
+function myFunction(a, b) {
+    return a * b;
+}
+var array = [10,6];
+myObject = this.myFunction.apply(myObject, array);
+document.getElementById("demo").innerHTML = myObject; 
+</script>
+
+</body>
+</html>

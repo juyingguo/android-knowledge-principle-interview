@@ -1,0 +1,76 @@
+一、android从dialog界面上弹出Toast或者启动activity，Toast、activity被dialog覆盖  
+	
+	1.1、android从dialog界面上弹出Toast或者启动activity，Toast、activity被dialog覆盖  
+		https://zhidao.baidu.com/question/365749594462974572.html
+		https://bbs.csdn.net/topics/392272108
+		
+二、PopupWindow 显示时，如何使背景半透明
+	
+	2.1、Android实现popupwindow弹出后屏幕背景变成半透明效果
+		https://blog.csdn.net/qq_41755832/article/details/79991371
+		
+	2.2、实现代码。
+		WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
+        lp.alpha = bgAlpha; //0.0-1.0
+        activity.getWindow().setAttributes(lp);
+		
+		此时整个界面包括PopupWindow在内颜色都会变成半透明。		
+	2.3、指定背景颜色。
+		通过代码指定。
+		popupWindow.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffeb3b")));
+		
+		或直接指定布局背景颜色。
+3. popupwindow 外部可以响应点击，且popupwindow不消失。
+	查看这个函数一部分说明
+	popupWindow.setOutsideTouchable(true);
+		 This only makes sense for pop-ups that are touchable
+		 * but not focusable, which means touches outside of the window will
+		 * be delivered to the window behind. 
+    popupWindow.setFocusable(false);
+		 When focusable, the
+		 * window will grab the focus from the current focused widget if the popup
+		 * contains a focusable {@link android.view.View}
+	
+	3.2 popwindow弹出后点击外部控件响应点击事件
+		https://blog.csdn.net/JimWrong/article/details/78087094
+4. popupwindow 指定显示在屏幕任意位置
+
+	让popupwindow在某一个指定的位置显示
+	https://blog.csdn.net/weixin_41307234/article/details/79991030
+	https://blog.csdn.net/u010927932/article/details/50405907
+		int[] location = new int[2];
+		view.getLocationOnScreen(location);
+		//或者view.getLocationInWindow(location); //获取在当前窗口内的绝对坐标
+		popupWindow.showAtLocation(view, Gravity.NO_GRAVITY, location[0], location[1]-popupWindow.getHeight());
+
+	
+	分析：先获取当前activity的根布局
+		获取activity的根布局
+		https://blog.csdn.net/c_cayujie/article/details/54381008
+			((ViewGroup)findViewById(android.R.id.content)).getChildAt(0)；
+		根据根布局，可以指定显示在任意位置。
+5. SurfaceView not working inside PopupWindow
+	5.1 SurfaceView not working inside PopupWindow
+		https://stackoverflow.com/questions/20608875/surfaceview-not-working-inside-popupwindow
+		
+		PopupWindow显示camera及SurfaceView预览
+6. Dialog 外部支持点击且Dialog不消失
+	6.1 Android在弹窗不消失的情况下依然能响应外部事件
+		http://www.10qianwan.com/articledetail/744805.html
+		https://blog.csdn.net/AmazonUnicon/article/details/110538883
+		
+		验证：；
+		Android在弹窗不消失的情况下依然能响应外部事件，且能够SurfaceView能够预览camera画面。是可行的。
+		验证代码：
+		com.sp.spmultipleapp.customview.QRCodeScanDialogNotCanceled
+		
+		剖析博客：
+		最关键的代码为onCreate中的
+			setCanceledOnTouchOutside(false);
+			getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL, WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL);
+			getWindow().setFlags(WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH, WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH);
+		show方法中的代码:指定显示位置，大小，背景参数。
+			
+		通过WindowManager添加一个自定义布局：验证结果，无法使用，因为Dialog不是View不能够添加到 WindowManager
+		
+		

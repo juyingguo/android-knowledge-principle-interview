@@ -2,6 +2,7 @@
 	01.1 音视频学习 (三) JNI 从入门到掌握
 		https://juejin.im/post/6844904041235873799
 		
+		调试验证工程 my github project :MyJni
 	01.2 jni官方文档
 		https://docs.oracle.com/javase/10/docs/specs/jni/index.html
 	01.3 JNI 方法大全及使用示例

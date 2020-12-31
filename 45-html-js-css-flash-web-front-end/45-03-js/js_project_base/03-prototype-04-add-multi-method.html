@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<script>
+    function Person(){
+        this.name = "zhangSan";
+        this.sex = "男bai";
+        this.age = 88;
+    }
+     
+    Person.prototype={
+        nationality : "English",//属性也需要使用冒号
+        getSex:function(){        //这一du行提zhi示dao缺少zhuan：shu
+            return this.sex;
+        },
+        getAge:function(){
+            return this.age;
+        }
+    };
+     
+    var obj = new Person();
+    document.write(obj.getSex() + " ");
+    document.write(obj.getAge() + " nationality = " + obj.nationality);
+</script>
+</body>
+</html>

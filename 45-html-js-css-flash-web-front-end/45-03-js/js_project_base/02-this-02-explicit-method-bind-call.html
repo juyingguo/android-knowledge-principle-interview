@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<h2>JavaScript this 关键字</h2>
+<p>实例中 <strong>this</strong> 指向了 person2，即便它是 person1 的方法:</p>
+
+<p id="demo"></p>
+
+<script>
+var person1 = {
+	firstName:"tim",
+	lastName: "ano",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person2 = {
+  firstName:"John",
+  lastName: "Doe",
+}
+var x = person1.fullName.call(person2); 
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+</html>

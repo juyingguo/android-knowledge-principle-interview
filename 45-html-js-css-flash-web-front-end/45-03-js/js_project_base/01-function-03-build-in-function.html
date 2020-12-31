@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<p>局部变量计数。</p>
+<p id="demo">0</p>
+<script>
+document.getElementById("demo").innerHTML = add();
+document.getElementById("demo").innerHTML = add();
+function add() {
+  console.log("add() start.");
+	var counter = 0;
+    function plus() {
+      console.log("plus() start.");
+      counter += 1;
+    }
+    plus();    
+    // plus();    
+    // plus();    
+    return counter; 
+}
+</script>
+
+</body>
+</html>

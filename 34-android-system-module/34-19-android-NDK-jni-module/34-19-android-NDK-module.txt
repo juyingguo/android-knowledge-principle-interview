@@ -1,0 +1,112 @@
+01 ndk资源
+	01.1 ndk-samples
+		https://github.com/android/ndk-samples/tree/master 
+	01.2 ndk下载
+		https://developer.android.google.cn/ndk/downloads/
+		网站含有修订说明。
+	01.3 如需详细了解如何使用 JNI 框架，请参阅 Android JNI 提示。
+		https://developer.android.com/training/articles/perf-jni
+1.NDK接口参照：
+
+	https://developer.android.google.cn/ndk/reference/group/audio
+
+	使用NDK接口音频采集过程，可以参照：
+
+	https://developer.android.google.cn/ndk/guides/audio/aaudio/aaudio 
+
+2. JNI和NDK的区别 
+	https://blog.csdn.net/ithomer/article/details/6828830
+	
+	参考推荐：（博文有链接。）
+
+	JNI Tutorial
+
+	Android NDK之JNI使用例子
+
+	Android 使用NDK R5开发JNI应用详解
+
+	Android NDK Hello
+3. NDK开发之CMake和传统 JNI在目录结构和配置文件上的区别
+	https://blog.csdn.net/windzhang1028/article/details/80015453
+	3.1 android studio项目中CMake和NDK-build之间的区别
+		http://www.cocoachina.com/cms/wap.php?action=article&id=65368
+	
+	3.2 Android Studio 使用ndk-build构建Jni
+		3.2.1 ndk-build官网向导
+			https://developer.android.com/ndk/guides/ndk-build
+			
+		3.2.2 Android Studio 使用ndk-build构建Jni
+			https://blog.csdn.net/tongseng/article/details/82633221
+		3.2.3 Android Studio实现JNI，并编译出本地库So
+			https://blog.csdn.net/zxl1173558248/article/details/81701967
+			
+	3.3 javah命令生成.h头文件，javap生成签名文件
+		用javah命令生成.h文件：首先 cd app/build/intermediates/classes/debug 进入到debug目录，然后 javah com.chenxin.testndk.MyJni 生成.h文件
+			
+			如果使用MainActivity中添加本地方法，使用javah无法生成.h，
+				错误: 无法访问android.app.Activity
+				找不到android.app.Activity的类文件
+				
+				是打开命令终端的位置不对，应该是：\src\main\java下打开终端。在执行javah
+				
+			android  studio 配置javah
+			javas 
+			android studio external tool 自定义工具（Javah命令）
+			https://blog.csdn.net/fangyoayu2013/article/details/51094061
+				设置界面找到External Tools
+				Program: $JDKPath$\bin\javah.exe
+				Parameters: -classpath . -jni -o $ModuleFileDir$/src/main/jni/$Prompt$ $FileClass$
+				Working directory: $ModuleFileDir$\src\main\java
+				Parameters的另外一种写法 -classpath . -jni -d $ModuleFileDir$/src/main/jni $FileClass$
+				
+				配置好后，提示找不到。
+			用javap生成生成java方法的JNI签名
+				https://blog.csdn.net/jemenchen/article/details/86690390
+				
+				javap -p -s  org.jemen.test.Test          替换成自己的。若不在当前文件夹则可用-classpath指明class文件的位置。
+	3.4 Android Studio实现JNI，并编译出本地库So
+		https://blog.csdn.net/zxl1173558248/article/details/81701967  
+		
+4. 记录
+	4.1 
+		环境
+		as3.5.1，gradle 4.4,gradle plugin 3.1.3;		
+		android.useDeprecatedNdk=true
+		ndk编译异常。
+
+		Error: Flag android.useDeprecatedNdk is no longer supported and will be removed in the next version of Android Studio.  Please switch to a supported build system.
+		Consider using CMake or ndk-build integration. For more information, go to:
+		 https://d.android.com/r/studio-ui/add-native-code.html#ndkCompile
+		 To get started, you can use the sample ndk-build script the Android
+		 plugin generated for you at:
+		 D:\juying\as1_5project\jni\MyJniDemo01\app\build\intermediates\ndk\debug\Android.mk
+		Alternatively, you can use the experimental plugin:
+		 https://developer.android.com/r/tools/experimental-plugin.html
+		To continue using the deprecated NDK compile for another 60 days, set 
+		android.deprecatedNdkCompileLease=1609233712821 in gradle.properties
+		
+		
+		4.1.2 Experimental Plugin 使用向导(转)
+			https://blog.csdn.net/zwdlpyy/article/details/52778722
+			
+			实际正规文档完全引用自：http://tools.android.com/tech-docs/new-build-system/gradle-experimental?pli=1#TOC-Gradle-Requirements 
+			
+			涉及到内容：There are significant changes to the DSL of the plugin. 
+			
+			涉及到概念：DSL的概念
+			https://www.cnblogs.com/feng9exe/p/10901595.html
+				DSL 其实是 Domain Specific Language 的缩写，中文翻译为领域特定语言（下简称 DSL）
+				
+
+	4.2 
+		环境
+		as3.5.1，gradle 4.4,gradle plugin 3.1.3;		
+		ndk编译异常。
+		
+		Error: Your project contains C++ files but it is not using a supported native build system.
+		Consider using CMake or ndk-build integration. For more information, go to:
+		 https://d.android.com/r/studio-ui/add-native-code.html
+		Alternatively, you can use the experimental plugin:
+		 https://developer.android.com/r/tools/experimental-plugin.html
+
+

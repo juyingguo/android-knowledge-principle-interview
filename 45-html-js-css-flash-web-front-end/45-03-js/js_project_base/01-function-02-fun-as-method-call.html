@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<p>myObject.fullName() 返回 John Doe:</p>
+<p id="demo"></p>
+<script>
+	console.log("print init this = " ,this);
+var myObject = {
+    firstName:"John",
+    lastName: "jim",
+    fullName: function() {
+			console.log("print this = " ,this);
+			return this.firstName + " " + this.lastName;
+    }
+}
+document.getElementById("demo").innerHTML = myObject.fullName(); 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<script>
+function Person(firstname,lastname,age,eyecolor){
+    this.firstname=firstname;
+    this.lastname=lastname;
+    this.age=age;
+    this.eyecolor=eyecolor;
+    this.changeName=changeName;
+	function changeName(name){
+		this.lastname=name;
+    }
+    this.load  = load
+    function load(){
+        console.log("load()");
+    }
+    this.update = function update(){}
+}
+myMother=new Person("Sally","Rally",48,"green");
+myMother.changeName("Doe");
+document.write(myMother.lastname);
+
+var p = new Person("jim","aim",50,"blue");
+var x;
+//在对象Person上继续定义对象
+x.States = {};
+x.States.myLoad = function() {
+    console.log("p.States.myLoad = function()." + " p.firstname=" + p.firstname);
+    // p.load();
+        this.load() = function() {
+            console.log("p.States.myLoad = function()---->this.load() = function()." + " p.firstname=" + p.firstname);
+        };
+        // p.load();
+};
+x.States.myLoad();
+</script>
+
+</body>
+</html>

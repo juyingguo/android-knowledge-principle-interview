@@ -1,0 +1,6 @@
+1.js es6资源
+	1.1 es6
+		https://www.runoob.com/w3cnote/es6-tutorial.html
+2. 一些知识点
+	2.1 JS中Set、Map、WeakSet、WeakMap的用法总结及区别
+		https://blog.csdn.net/zhang1339435196/

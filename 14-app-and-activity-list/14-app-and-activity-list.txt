@@ -110,4 +110,37 @@
 		Android中全屏 取消标题栏，TabHost中设置NoTitleBar的三种方法
 		https://www.cnblogs.com/zdz8207/archive/2013/02/27/android-tabhost-notitlebar.html
 		
-	
+	11.4 activity设置透明。
+		11.4.1 如何设置一个activity透明（转）
+			https://www.cnblogs.com/softidea/p/5297751.html
+				1. 在AndroidManifest.xml文件中设置：
+				android:theme="@android:style/Theme.Translucent
+				2.以及在代码中配置。
+					代码可以和AndroidManifest.xml配置文件一起使用。
+					单独使用代码，可能效果达不到，需要调试尝试参数值
+		11.4.2 Activity全透明实现
+			https://blog.csdn.net/liu_jun_y/article/details/9178301
+				【该方式，同为为11.4.1中系统源码部分。】
+				通过设置样式改变透明度：
+				< style name="Transparent">
+
+			　　< item name="android:windowBackground">@color/transparent< /item>
+
+			　　< item name="android:windowIsTranslucent">true< /item>
+
+			　　< item name="android:windowAnimationStyle">@+android:style/Animation.Translucent< /item>
+
+			　　< /style>
+			
+		11.4.3 windowBackground，windowIsTranslucent区别？
+	11.5 Android 改变控件位置的三种方式
+		https://blog.csdn.net/qq_36188774/article/details/82715027
+		
+		方式一：改变布局参数
+				RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mGirl.getLayoutParams();
+                layoutParams.leftMargin = mGirl.getLeft()+100;
+                layoutParams.topMargin = mGirl.getTop()+100;
+				
+		11.5.2 android动态设置控件的大小和位置
+			https://blog.csdn.net/wocena/article/details/52485051
+                mGirl.setLayoutParams(layoutParams);

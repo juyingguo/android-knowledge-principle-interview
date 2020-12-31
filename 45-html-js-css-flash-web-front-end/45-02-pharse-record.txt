@@ -1,7 +1,98 @@
 1. scale是啥？
+
+	game = new Phaser.Game(.);//
+	
+	//load=Phaser.Loader，
 	game.load.image('ground', 'assets/platform.png');
-	game = new Phaser.Game(.);
-	platforms = game.add.group();// Phaser.GameObjectFactory - Phaser.Group 
+	game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
+	
+	// add = Phaser.GameObjectFactory; group() = Phaser.Group 。
+	platforms = game.add.group();
+	
 	platforms.enableBody = true;
-	var ground = platforms.create(0, game.world.height - 64, 'ground');//DisplayObject -
+	
+	//create=DisplayObject -
+	//The child that was created: will be a Phaser.Sprite unless #classType has been changed.
+	//Phaser.Sprite Extends 很多类
+	var ground = platforms.create(0, game.world.height - 64, 'ground');
+	
+	
+	
 	ground.scale.setTo(2, 2);
+	
+2.
+	player = game.add.sprite(32, game.world.height - 150, 'dude');//player => sprite(.) = Phaser.Sprite
+	
+	//physics=Phaser.Physics;arcade=Phaser.Physics.Arcade
+	game.physics.arcade.enable(player);
+	
+	// body=   	Phaser.Physics.Arcade.Body|Phaser.Physics.P2.Body|Phaser.Physics.Ninja.Body|null
+	//bounce = Phaser.Point 
+	player.body.bounce.y = 0.2;
+	
+	player.body.gravity.y = 300; // gravity = Phaser.Point 
+	player.body.collideWorldBounds = true;
+	player.animations.add('left', [0, 1, 2, 3], 10, true);//animations = Phaser.AnimationManager
+	player.animations.add('right', [5, 6, 7, 8], 10, true);
+	
+3.	
+	function update() {
+	console.log("update()");
+	game.physics.arcade.collide(player, platforms);
+	
+	player.body.velocity.x = 0;
+	    if (cursors.left.isDown)
+	    {
+					console.log("update(),cursors.left.isDown = true.");
+	        player.body.velocity.x = -10;
+	        player.animations.play('left');
+	    }
+	    else if (cursors.right.isDown)
+	    {
+					console.log("update(),cursors.right.isDown = true.");
+	        player.body.velocity.x = 10;
+	        player.animations.play('right');
+	    }
+	    else
+	    {
+	        player.animations.stop();
+	        player.frame = 4;
+	    }
+	    if (cursors.up.isDown && player.body.touching.down)
+	    {
+	        player.body.velocity.y = -350;
+	    }
+}
+
+4. 马拉松
+	* @method Phaser.StateManager#add
+	this.states[key] = newState;
+	
+		game.StatesNew.boot = function() {
+		console.log("game.StatesNew.boot = function(),this = " + this);
+		this.preload = function() {
+			console.log("game.StatesNew.boot = function(),this.preload = function(),this = " + this);
+			console.log("game.StatesNew.boot = function(),this.preload = function(),typeof(GAME) = " + typeof(GAME));
+			if (typeof(GAME) !== "undefined") {
+				this.load.baseURL = GAME + "/";
+			}
+			console.log("xzx---->game.StatesNew.boot");
+			this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+			/* scale= Phaser.ScaleManager; pageAlignHorizontally    ,源码处定义：Object.defineProperty(Phaser.ScaleManager.prototype, "pageAlignHorizontally", {...
+				如何理解。
+			*/
+			this.scale.pageAlignHorizontally = true;
+			this.scale.pageAlignVertically = true;
+			this.scale.refresh();
+		}; 
+		this.create = function() {
+			console.log("game.StatesNew.boot = function(),this.create = function(),this = " + this);
+			game.state.start('preload');
+		};
+		//20201223新增 update方法，加载时也会调用。
+		this.update = function(){
+			console.log("game.StatesNew.boot = function(),this.update = function(),this = " + this);
+		}
+	};
+	
+	

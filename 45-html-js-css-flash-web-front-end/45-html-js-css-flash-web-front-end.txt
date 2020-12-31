@@ -4,6 +4,11 @@
 	https://blog.csdn.net/weixin_30552811/article/details/97115441
 	
 3. html5 
+	3.0 
+	
+		3.0.2 书籍：
+			《HTML5 Canvas游戏开发实战》
+			《HTML5 Canvas核心技术:图形.动画与游戏开发》
 	3.1 25 个超棒的 HTML5 & JavaScript 游戏引擎开发库
 		https://www.runoob.com/w3cnote/25-best-game-engine-libraries-for-developers.html
 	
@@ -36,6 +41,8 @@
 			快，是HBuilder的最大优势，通过完整的语法提示和代码输入法、代码块等，
 			大幅提升HTML、js、css的开发效率。
 			同时，它还包括最全面的语法库和浏览器兼容性数据。
+			
+			
 		notepad++
 			notepad++编写html5，css3智能提示方法
 			https://www.cnblogs.com/cnxkey/articles/7434654.html
@@ -57,6 +64,11 @@
 
 		VS Code：https://code.visualstudio.com/
 		Sublime Text：http://www.sublimetext.com/
+		
+		对比：
+			hbuilder家长js框架文件，没有排版。也会很卡顿。ctrl + 鼠标左键，对象不能导航定位到定义处。
+			【VS Code，排版好些，卡顿轻些。】
+			
 	3.5 html学习资源
 		
 		https://www.w3cschool.cn/html5/html5-tool.html
@@ -81,15 +93,58 @@
 			Phaser 是一款开源的 HTML5 游戏框
 			https://openingsource.org/1073/
 			官网：
-			https://phaser.io/
+				https://phaser.io/
+				https://github.com/photonstorm/phaser
+				
+				中文网
+				https://www.phaser-china.com/
 			API:
-			https://www.phaser-china.com/docs/Index.html
+				
+				http://phaser.io/docs/2.6.2/index
+				
+				https://www.phaser-china.com/docs/Index.html
+				中文api
+				https://www.phaser-china.com/docs-cn/doc-game.html
 			Phaser官网入门demo
-			https://www.phaser-china.com/tutorial-detail-1.html
+				https://www.phaser-china.com/tutorial-detail-1.html		
+
+				实例
+				https://www.phaser-china.com/example.html
+				
+				Getting Started with Phaser 2
+				http://phaser.io/tutorials/getting-started-phaser2/part2
 			
 			Phaser github game demo
 			https://github.com/channingbreeze/games
-		
+				pharse2实践：
+				https://www.dazhuanlan.com/2019/12/15/5df62db64f8a7/
+					含pharse2和pharse3的资料文档案例
+			3.6.3 phaser3
+				
+				http://phaser.io/phaser3
+				
+				api 
+				http://phaser.io/phaser3/api
+				
+				doc
+				https://photonstorm.github.io/phaser3-docs/
+				
+				https://photonstorm.github.io/phaser3-docs/index.html
+			
+				[phaser3入门探坑]使用phaser3制作山寨马里奥
+					准备工作
+					doc
+						https://github.com/photonstorm/phaser3-docs
+					example 
+						https://github.com/photonstorm/phaser3-examples
+					本地服务器
+						https://www.cnblogs.com/leee/p/5502727.html
+				
+				初窥 phaser2 到phaser3 的异同
+				https://cloud.tencent.com/developer/news/447688
+				
+				Learn: Phaser 2 or Phaser 3?
+				https://www.html5gamedevs.com/topic/35934-learn-phaser-2-or-phaser-3/
 		3.6.3
 			http://html5gameengine.com/ 的游戏框架排行中
 			
@@ -115,28 +170,110 @@
 			WEB前端之JS框架CreateJS
 			https://www.bilibili.com/video/av77803198/
 			
+		3.6.5 unity3d
+	3.7 疑问
+		html5中游戏开发资源动画图时如何制作的？
+		html5中行走动作图中2个动作帧，使用什么工具制作，并排放在一张大图上
 		
+		https://www.digitaling.com/articles/20420.html
+			做一个逐帧动画必不可缺的就是需要一张等间距的“动画分解逐帧图片.png”
+			
+			https://zhidao.baidu.com/question/751466808361665292.html
+			ps也可以做，支持保存多种格式。
+			an也可以做。
+	3.8 H5混合开发二维码扫描以及调用本地摄像头
+		https://www.jianshu.com/p/c952b3a5e1d2
 		
-4.	flash相关学习资源
+		https://github.com/dcloudio/mui
+		https://github.com/zhaomenghuan/mui-demo
+		
+		h5 MUI 二维码扫描
+		https://github.com/newPersonKing/Barcode
+		
+		 mui的官方网站：http://dev.dcloud.net.cn/mui
+		
+		方案二：
+		js调用java,java层调用摄像头，启动二维码扫描（使用zxing库）。将回调结果返回给js.
+		
+	3.9 HTML5和HTML5+是什么关系？
+		https://www.zhihu.com/question/331007930/answer/1307302211
+		虽然HTML5为移动端开发带来极大的便利，但是它仍然存在一些弊端，比如说在调用底层设备如摄像头、文件系统实现不佳等，业务方面如上传下载、支付、消息推送不够完善。为了弥补这些不足，HTML5+规范应运而生。除了解决了以上HTML5中的一些不足，HTML5+规范还提供了接近原生的渲染能力以及40万原生的API，使APP的体验效果大幅提升。
+		
+		HTML5+是中国HTML5产业联盟的扩展规范
+		http://www.html5plus.org/#case#/case/id/5.html、
+		
+		HTML 5 + 开发教程
+		http://www.hcoder.net/course/info_212.html
+		
+	3.10 html5 如何打包成apk，将H5封装成android应用APK文件的几种方法
+		https://www.cnblogs.com/navysummer/p/9390661.html
+	3.11 HTML5 移动应用框架
+		3.11.1 Ionic HTML5 移动应用框架
+		
+		3.11.2 mui 
+4.	flash相关
 
-	Flash移动开发高级教程.pdf
-	Flash移动开发高级教程-创建Android＆iPhone应用（电子书）
-	https://download.csdn.net/download/xiyuan2016/9656475?utm_source=iteye
+	4.1 学习资源
+		Flash移动开发高级教程.pdf
+		Flash移动开发高级教程-创建Android＆iPhone应用（电子书）
+		https://download.csdn.net/download/xiyuan2016/9656475?utm_source=iteye
+		
+		Flash ActionScript3.0 动画教程 (高清PDF中文版)
+		
+		Flash+ActionScript+3.0+高级动画教程中文版+源代码
+		https://download.csdn.net/download/ljllovehome/3445990
+		
+		
+		非常详细的flash游戏开发教程. 
+		https://blog.csdn.net/weixin_30892037/article/details/96531753
+		
+		从零开始学Flash
+		https://www.bilibili.com/video/BV14J411X7uc?from=search&seid=9744206600933780454
+		
+		Flash从入门到精通视频教程
+		https://www.bilibili.com/video/BV12E411878h?from=search&seid=1070465403875638730
+	4.2 flash开发工具
 	
-	Flash ActionScript3.0 动画教程 (高清PDF中文版)
-	
-	Flash+ActionScript+3.0+高级动画教程中文版+源代码
-	https://download.csdn.net/download/ljllovehome/3445990
-	
-	
-	非常详细的flash游戏开发教程. 
-	https://blog.csdn.net/weixin_30892037/article/details/96531753
-	
-	从零开始学Flash
-	https://www.bilibili.com/video/BV14J411X7uc?from=search&seid=9744206600933780454
-	
-	Flash从入门到精通视频教程
-	https://www.bilibili.com/video/BV12E411878h?from=search&seid=1070465403875638730
-	
+		FlashDevelop
+			https://www.flashdevelop.org/
+			https://www.flashdevelop.org/community/viewforum.php?f=11
+				软件运行环境要求，该网站下载版本处有说明。
+				4.6.2 需要.net 2.0,.net 4.0
+				windows查看是否按照.net以及.net运行版本
+				https://jingyan.baidu.com/article/60ccbcebb3d91364cbb19755.html
+				
+				安装后提示：Getting_Started
+				https://www.flashdevelop.org/wikidocs/index.php?title=Getting_Started
+				有相关详细说明哦
+			
+			http://www.greenxf.com/soft/164596.html
+			如果你已经厌恶了用Flash IDE编写代码，而又不想买FDT编辑工具，那你就可以用用这款免费的编辑工具FlashDevelop
+		Adobe Flash CS5  
+		
+		Adobe animation
+		
+			在支持Flash SWF、AIR格式的同时，现还支持HTML5Canvas、WebGL格式
+			
+			https://www.adobe.com/cn/products/animate.html?red=a#scroll
+			网页提示要求win10以上。2018版本的也要这个要求。
+			
+			Adobe Animate CC2018最新官方版
+			http://www.3h3.com/soft/119285.html
+			an cc 2018注册机下载地址 adobe animate cc2018破解版安装教程[多图]
+			https://www.minixiazai.com/article/11864.html
+			
+			Adobe Animate CC 2018破解版 v18.0.1.115
+			http://www.32r.com/soft/35163.html
+			
+			Adobe Animate CC 2017 中文破解版
+			http://www.ddooo.com/softdown/86853.htm#dltab
+			
+		Adobe After Effects CC
+			An CC 和 AE软件制作动画它们之间区别在哪里
+			https://www.manpingou.com/footernav/czfs/30313.html
 5. CSS3 教程
 	https://www.runoob.com/css3/css3-tutorial.html
+	
+6. 小知识点
+	跨域
+	
