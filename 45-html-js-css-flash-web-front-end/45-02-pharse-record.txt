@@ -7,7 +7,7 @@
 	game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
 	
 	// add = Phaser.GameObjectFactory; group() = Phaser.Group 。
-	platforms = game.add.group();
+	platforms = game.add.group(); //platforms 为一个组，以该组为基准，创建的角色内容都在这个组内。显示位置也在这个组内
 	
 	platforms.enableBody = true;
 	
@@ -94,5 +94,9 @@
 			console.log("game.StatesNew.boot = function(),this.update = function(),this = " + this);
 		}
 	};
+	
+	game.add.button((game.width - 381) / 2, 1334 - 330, 'btn-ready', function() {
+			game.state.start('play');
+		});
 	
 	

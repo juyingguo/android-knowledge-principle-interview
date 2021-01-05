@@ -54,23 +54,34 @@
 		https://stackoverflow.com/questions/20608875/surfaceview-not-working-inside-popupwindow
 		
 		PopupWindow显示camera及SurfaceView预览
-6. Dialog 外部支持点击且Dialog不消失
-	6.1 Android在弹窗不消失的情况下依然能响应外部事件
-		http://www.10qianwan.com/articledetail/744805.html
-		https://blog.csdn.net/AmazonUnicon/article/details/110538883
-		
-		验证：；
-		Android在弹窗不消失的情况下依然能响应外部事件，且能够SurfaceView能够预览camera画面。是可行的。
-		验证代码：
-		com.sp.spmultipleapp.customview.QRCodeScanDialogNotCanceled
-		
-		剖析博客：
-		最关键的代码为onCreate中的
-			setCanceledOnTouchOutside(false);
-			getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL, WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL);
-			getWindow().setFlags(WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH, WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH);
-		show方法中的代码:指定显示位置，大小，背景参数。
+6. Dialog
+	6.1 Dialog 外部支持点击且Dialog不消失
+		6.1.1 Android在弹窗不消失的情况下依然能响应外部事件
+			http://www.10qianwan.com/articledetail/744805.html
+			https://blog.csdn.net/AmazonUnicon/article/details/110538883
 			
-		通过WindowManager添加一个自定义布局：验证结果，无法使用，因为Dialog不是View不能够添加到 WindowManager
+			验证：；
+			Android在弹窗不消失的情况下依然能响应外部事件，且能够SurfaceView能够预览camera画面。是可行的。
+			验证代码：
+			com.sp.spmultipleapp.customview.QRCodeScanDialogNotCanceled
+			
+			剖析博客：
+			最关键的代码为onCreate中的
+				setCanceledOnTouchOutside(false);
+				getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL, WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL);
+				getWindow().setFlags(WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH, WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH);
+			show方法中的代码:指定显示位置，大小，背景参数。
+				
+			通过WindowManager添加一个自定义布局：验证结果，无法使用，因为Dialog不是View不能够添加到 WindowManager
+	6.2 Dialog背景透明设置方式
+		getWindow().setDimAmount(0);//设置背景透明
 		
+		或者通过样式设置<item name="android:backgroundDimEnabled">false</item>
+	6.3 去掉标题栏
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		或者修改样式：
+		<item name="android:windowNoTitle">true</item>
+		
+	6.4 屏幕左上角显示。
+		getWindow().getAttributes().gravity = Gravity.TOP | Gravity.START;
 		

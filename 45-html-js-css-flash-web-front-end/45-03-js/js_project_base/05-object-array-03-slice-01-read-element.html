@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<p id="demo">点击按钮截取数组下标 1 到 2 的元素。</p>
+<button onclick="myFunction()">点我</button>
+<script>
+function myFunction(){
+	var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+	var citrus = fruits.slice(1,2);//负数为截取最后一个元素,-3为截取最后三个元素
+	//fruits.slice(-3,-1); // 截取倒数第三个（包含）到倒数第一个（不包含）的两个元素
+	var x=document.getElementById("demo");
+	x.innerHTML=citrus;
+}
+</script>
+
+</body>
+</html>

@@ -211,6 +211,10 @@
 		3.11.1 Ionic HTML5 移动应用框架
 		
 		3.11.2 mui 
+		
+		3.11.3 phonegap
+			phonegap调用Camera 摄像头
+			
 4.	flash相关
 
 	4.1 学习资源

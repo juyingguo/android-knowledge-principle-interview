@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<p id="demo">点击按钮截取数组下标 1 到 2 的元素。</p>
+<button onclick="myFunction()">点我</button>
+<script>
+function myFunction(){
+	var obj = {0:'hello',1:'world',length:2};
+	// var obj = {0:'hello',1:'world'};//没有length属性的对象
+	objNew = Array.prototype.slice.call(obj);//获取所有元素
+	// var objNew = Array.prototype.slice.call(obj,0);//获取从索引开始的所有元素，等同上，
+	// var objNew = Array.prototype.slice.call(obj,0，1);//0到1不包含1
+	var x=document.getElementById("demo");
+	x.innerHTML=objNew;
+}
+
+
+</script>
+
+</body>
+</html>

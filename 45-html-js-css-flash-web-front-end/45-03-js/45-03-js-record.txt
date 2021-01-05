@@ -3,8 +3,11 @@
 	
 	1.2 
 2. 一些基本知识点
-	2.1 变量声明时如果不使用 var 关键字，那么它就是一个全局变量，即便它在函数内定义。
-		https://www.runoob.com/js/js-function-closures.html
+	2.1 javascript中加var和不加var的区别
+		2.1.1 javascript中加var和不加var的区别
+			https://www.cnblogs.com/zhus/p/6306475.html
+		2.1.2 变量声明时如果不使用 var 关键字，那么它就是一个全局变量，即便它在函数内定义。
+			https://www.runoob.com/js/js-function-closures.html
 	
 	2.2 === 
 		绝对等于（值和类型均相等）
@@ -36,9 +39,23 @@
 				 Process: com.sp.spmultipleapp, PID: 14172
 				java.lang.RuntimeException: java.lang.Throwable: A WebView method was called on thread 'JavaBridge'. All WebView methods must be called on the same thread. (Expected Looper Looper (main, tid 1) {f8e5cff} called on Looper (JavaBridge, tid 416) {decfde2}, FYI main Looper is Looper (main, tid 1) {f8e5cff})
 					at android.webkit.WebView.checkThread(WebView.java:2213)
+					
+			2.4.2.4 WEBVIEW JS 与 JAVA 调用参数问题。
+				https://www.cnblogs.com/jason-blog/p/4253096.html
+				
+				js传递参数给java方法的问题，在js中需要调用java方法，改方法包含一个参数，如果js传递的参数是number类型需要注意一下，在数据比较大的情况下会转化成科学计数法表示的传递给java方法。
+				比如1000066099,会表示成1.00006e+09,那么会丢失一部分精度，从而导致数据传递错误。修改方案就是js传递的参数使用String类型，可以直接转化成字符串传递比如 （”“ + a）。
 		2.4.3 jsBridge
 		
-	2.3 JavaScript事件详解
-		2.3.1 JavaScript事件详解
+		
+		
+	2.5 JavaScript事件详解
+		2.5.1 JavaScript事件详解
 			https://blog.csdn.net/baochao95/article/details/52231385
+	2.6 对Array.prototype.slice.call()方法的理解
+		https://www.cnblogs.com/happypayne/p/7739514.html
+		
+		测试位置：js_project_base
+		
+		Array.prototype.slice.call(arguments)能将具有length属性的对象(key值为数字)转成数组
 			
