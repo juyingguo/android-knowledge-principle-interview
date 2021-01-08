@@ -51,3 +51,7 @@
 
 	2.1 Gradle 缓存目录结构 缓存策略
 		https://www.jianshu.com/p/acf579d8cb56
+		
+		2.1.1 
+			C:\Users\Administrator\.gradle\daemon\2.4
+			下的日志文件daemon-3976.out.log

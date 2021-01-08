@@ -119,6 +119,14 @@
 				pharse2实践：
 				https://www.dazhuanlan.com/2019/12/15/5df62db64f8a7/
 					含pharse2和pharse3的资料文档案例
+					
+				phaser2视频教程
+					https://www.bilibili.com/video/BV1Db411A7yw?from=search&seid=15841645637731969608
+					
+					cdn 
+					bootcdn
+				天降福运制作过程(游戏引擎：Phaser.js)
+					https://www.bilibili.com/video/BV1fb411C7dX?from=search&seid=15841645637731969608
 			3.6.3 phaser3
 				
 				http://phaser.io/phaser3
@@ -145,10 +153,15 @@
 				
 				Learn: Phaser 2 or Phaser 3?
 				https://www.html5gamedevs.com/topic/35934-learn-phaser-2-or-phaser-3/
+				
+				phaser3视频教程
+					https://www.bilibili.com/video/BV1r4411v7FN?from=search&seid=15841645637731969608
 		3.6.3
 			http://html5gameengine.com/ 的游戏框架排行中
 			
 			cocos-creator //cocos2d 衍生出来的h5
+				https://www.cocos.com/products#CocosCreator
+				
 				基于Cocos Creator的H5移动端小游戏
 				https://juejin.cn/post/6844903986936414216
 				
@@ -159,6 +172,10 @@
 				
 				[收藏]Cocos Creator官方教程第1集：Hello World
 				https://www.bilibili.com/video/BV1c4411F75N?from=search&seid=13104966852048103373
+				
+			Cocos2d-JS
+				Cocos2d-JS 是一个开源的 2D 游戏框架，包含 Cocos2d-html5 和 Cocos2d-x 的 JavaScript Bindings，支持跨平台和基于浏览器以及原生应用。你可以完全使用 JavaScript 来编写游戏，完全兼容 Cocos2d-html5 和 Cocos2d-x JavaScript Bindings. Cocos2d-html5 可以很顺畅的在支持 HTML5 的浏览器上运行。
+				跨平台
 		3.6.4	
 			createjs
 			

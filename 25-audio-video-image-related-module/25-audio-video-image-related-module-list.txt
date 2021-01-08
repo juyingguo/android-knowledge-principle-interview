@@ -168,3 +168,6 @@
 			
 	13.4 雷霄骅《视音频数据处理入门：H.264视频码流解析》（代码注释版）
 		https://blog.csdn.net/u010512264/article/details/82083467
+	13.5 CAVLC和CABAC简介
+		【h264】
+		https://blog.csdn.net/jubincn/article/details/6948334

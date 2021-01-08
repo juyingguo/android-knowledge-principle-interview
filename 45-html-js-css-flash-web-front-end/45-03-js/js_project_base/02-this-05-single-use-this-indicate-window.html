@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<h2>JavaScript <b>this</b> 关键字</h2>
+
+<p>实例中，<b>this</b> 指向了 <b>person</b> 对象。</p>
+<p>因为 person 对象是 fullName 方法的所有者。</p>
+
+<p id="demo"></p>
+
+<script>
+	
+// 创建一个对象
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName + " this = " + this;
+  }
+  
+};
+var that = this;
+
+run = function(){
+	console.log("run first,this = " + this + " run.name = " + this.run.name);
+	
+	 (function(){
+		console.log("start first. this = " + this);
+	})();
+	
+}
+
+// 显示对象的数据
+document.getElementById("demo").innerHTML = "1.that = " + that + "\n" + person.fullName();
+var runObj = run();
+</script>
+
+</body>
+</html>

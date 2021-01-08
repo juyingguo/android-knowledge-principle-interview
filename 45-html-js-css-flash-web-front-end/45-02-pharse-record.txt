@@ -1,5 +1,8 @@
 1. scale是啥？
 
+	//var game = new Phaser.Game(800, 600, Phaser.CANVAS, '', { preload: preload, create: create, update: update });
+	//The default state object. A object consisting of Phaser.State functions (preload, create, update, render) or null.
+	
 	game = new Phaser.Game(.);//
 	
 	//load=Phaser.Loader，
@@ -35,6 +38,9 @@
 	player.animations.add('left', [0, 1, 2, 3], 10, true);//animations = Phaser.AnimationManager
 	player.animations.add('right', [5, 6, 7, 8], 10, true);
 	
+	//创建星星群组
+	stars = game.add.group();
+	stars.enableBody = true;
 3.	
 	function update() {
 	console.log("update()");
@@ -98,5 +104,92 @@
 	game.add.button((game.width - 381) / 2, 1334 - 330, 'btn-ready', function() {
 			game.state.start('play');
 		});
+		
+		// DisplayObject，Phaser.Sprite，animations-> animations :Phaser.AnimationManager,
+		var badi = titleGroup.create((titleGroup.width - _Con_sprite.buddy.width) / 2, (titleGroup.height - _Con_sprite.buddy.height /* - 200 */) / 2, 'buddy');
+		badi.animations.add('move');
+		
+		
+		this.bg = game.add.tileSprite(0, 0, _Con_sprite.background.width, _Con_sprite.background.height, 'background');
+	4.2 google浏览器，声音异常提示
+		phaser-2.6.2.js:77080 The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu
+		boot @ phaser-2.6.2.js:77080
+		boot @ phaser-2.6.2.js:36005
+		Phaser.Device._readyCheck @ phaser-2.6.2.js:60824
+
+		Google浏览器不支持audio/video自动播放问题
+		https://blog.csdn.net/weixin_44198965/article/details/91402373
+		
+			或者Chrome浏览器，属性，添加，前面有空格
+			--autoplay-policy=no-user-gesture-required
+			允许从文件访问。
+			 --allow-file-access-from-files --autoplay-policy=no-user-gesture-required
+		
+		模拟点击：
+		原生js自动触发onclick事件
+		https://www.cnblogs.com/toggle/p/11887417.html
+		
+5. 一些类、函数、对象快捷记录
+	5.1 sprite(x, y, key, frame, group) → {Phaser.Sprite}
+		Create a new Sprite with specific position and sprite sheet key.
+
+		At its most basic a Sprite consists of a set of coordinates and a texture that is used when rendered.
+		They also contain additional properties allowing for physics motion (via Sprite.body), input handling (via Sprite.input),
+		events (via Sprite.events), animation (via Sprite.animations), camera culling and more. Please see the Examples for use cases.
+6.	game.state.start('thirdScene');	启动一个未定义的state(thirdScene)报错如下
+	phaser-2.6.2.js:29934 Phaser.StateManager - No state found with the key: thirdScene
+	checkState @ phaser-2.6.2.js:29934
+	start @ phaser-2.6.2.js:29764
+	(anonymous) @ main.js:368
+	execute @ phaser-2.6.2.js:30908
+	dispatch @ phaser-2.6.2.js:30713
+	Phaser.Button.onInputUpHandler @ phaser-2.6.2.js:49989
+	execute @ phaser-2.6.2.js:30908
+	dispatch @ phaser-2.6.2.js:30713
+	Phaser.Events.<computed> @ phaser-2.6.2.js:46843
+	_releasedHandler @ phaser-2.6.2.js:42154
+	callAll @ phaser-2.6.2.js:81624
+	stop @ phaser-2.6.2.js:40294
+	onMouseUp @ phaser-2.6.2.js:38155
+	_onMouseUp @ phaser-2.6.2.js:38014
+	
+7. 点击事件。
+	game.load.image("next_page",'img/test_next_page.png');
+	this.buttonPlayVoice = game.add.button(game.width - 110, 0, 'next_page', function() {
+			console.log("game.StatesNew.thirdScene -- create,buttonPlayVoice click.");
+			// that.smallSchoolBag_third_scene_voice_01.stop();
+			console.log("---->game.StatesNew.thirdScene---create,buttonPlayVoice click,thirdScenePlayVoiceIndex:" + thirdScenePlayVoiceIndex);
+	
+		});
+	7.1 点击区域宽高，即为next_page对应的图片尺寸宽高大小。
+8. 播放音频
+	8.1 监听播放完成。
+		this.smallSchoolBag_third_scene_voice_01 = game.add.sound('smallSchoolBag_third_scene_voice_01');
+		this.smallSchoolBag_third_scene_voice_01.loop = false;
+		this.smallSchoolBag_third_scene_voice_01.play();
+		//添加声音播放完成后的回调。Phaser. Sound
+		this.smallSchoolBag_third_scene_voice_01.onStop.add(function(){
+			console.log("---->game.StatesNew.thirdScene---smallSchoolBag_third_scene_voice_01 onStop");
+		});
+	8.2 分段监听。
+	
+9.放大缩小：模拟闪动动画。
+	var cartween = game.add.tween(this.mycar.scale).to( { x: 1.2, y: 1.2 }, 500, Phaser.Easing.Linear.None, true);
+	cartween.onComplete.add(this.carScaleComplete, this);
+
+	this.carScaleComplete=function(){
+		console.log("xzx----state_5--->carScaleComplete");
+		game.add.tween(this.mycar.scale).to( { x: 1, y: 1 }, 500, Phaser.Easing.Linear.None, true);
+	}
+10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
+
+	源码：this.test_bag_show_sencond_part_row01_col01.animations.add('move');
+	错误提示：
+	main.js:509 Uncaught TypeError: Cannot read property 'animations' of undefined
+    at main.js:509
+    at Phaser.SignalBinding.execute (phaser-2.6.2.js:30908)
+	
+	验证：外层定义that= this;
+	原因：上下文问题。that.test_bag_show_sencond_part_row01_col01.animations.add('move');就可以了。
 	
 	

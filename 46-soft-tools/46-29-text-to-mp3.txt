@@ -1,0 +1,36 @@
+1.balabolka
+	http://balabolka.site/cn/balabolka.htm
+	1.1 windows7,x64位
+		保存音频文件时balabolka提示请选择一个语音
+		http://www.kkx.net/wz/102.html
+		
+		
+		原因分析：
+
+		1、没有安装Microsoft Speech Platform - Runtime (Version 11)语音引擎
+
+		2、没有安装语音库
+		
+		下载微软Microsoft Speech Platform - Runtime (Version 11)语音引擎+HuiHui语音库安装后即可。
+			本语音引擎在Windows 8系统中可直接使用，可调用微软最新语音库，而在Windows XP和Windows 7系统中并没有默认安装该语音引擎
+		
+		Microsoft Speech Platform - Runtime (Version 11)
+		微软官网下载地址：https://www.microsoft.com/en-us/download/details.aspx?id=27225
+			先安装：First install the Microsoft Speech Platform - Runtime 11.0
+			在安装：
+			MSSpeech_TTS_zh-CN_HuiHui
+			都配置后，还是无法使用，即：balabolka语言栏没有出现语言包。
+			
+			安装的版本为：SpeechPlatformRuntime_x64.msi
+			虽然win7用的为64位的，但安装SpeechPlatformRuntime需要32为的，x32,x86.
+			
+			参考博客得到启发
+				:【工具使用系列】Windows 10 平台下的TTS工具 Balabolka
+				https://blog.csdn.net/mosesaaron/article/details/100107184
+				
+		或者太平洋下载：https://dl.pconline.com.cn/download/950407.html
+		
+	
+2. 知音配音 
+	在线转换或者下载软件工具。
+	

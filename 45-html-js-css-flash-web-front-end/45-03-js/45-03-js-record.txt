@@ -58,4 +58,29 @@
 		测试位置：js_project_base
 		
 		Array.prototype.slice.call(arguments)能将具有length属性的对象(key值为数字)转成数组
+	2.7 模拟自动点击事件。
+		测试位置：js_project_base/06-event-01-click-03-emulate-click-use-button.html
+		
+	2.8 this 
+		this.后面加变量。
+		2.8.1
+			https://www.runoob.com/js/js-this.html
+			JavaScript this 关键字
+			面向对象语言中 this 表示当前对象的一个引用。
+
+			但在 JavaScript 中 this 不是固定不变的，它会随着执行环境的改变而改变。
+
+			在方法中，this 表示该方法所属的对象。
+			如果单独使用，this 表示全局对象。
+			在函数中，this 表示全局对象。
+			在函数中，在严格模式下，this 是未定义的(undefined)。
+			在事件中，this 表示接收事件的元素。
+			类似 call() 和 apply() 方法可以将 this 引用到任何对象。
+		
+	2.9 javascript引用资源路径问题。
+		
+		game.load.image("background", "../../assets/images/background.jpg");
+		调试验证：javascript引用资源路径应参考js所在html为基准进行路径定位，而不是根据js文件所在的路径为基准的。
+		
+	
 			
