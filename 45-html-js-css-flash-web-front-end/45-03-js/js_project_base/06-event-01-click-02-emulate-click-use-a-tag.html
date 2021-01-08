@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<script type="text/javascript">
+// 两秒后模拟点击
+setTimeout(function() {
+    // IE
+    if(document.all) {
+        document.getElementById("clickMe").click();
+    }
+    // 其它浏览器
+    else {
+        var e = document.createEvent("MouseEvents");
+        e.initEvent("click", true, true);
+        document.getElementById("clickMe").dispatchEvent(e);
+    }
+}, 2000);
+</script>
+  
+<a href="http://www.sinmeng.net" id="clickMe" onclick="alert('clicked');">触发onclick</a>
+
+</body>
+</html>

@@ -106,8 +106,8 @@
 	git config --global https.proxy "localhost:1400"
 	取消http代理
 	git config --global --unset http.proxy
-11 GitHub加速
-
+11 
+	
 12 git global配置文件位置
 	https://www.cnblogs.com/carriezhao/p/10775275.html
 	C:\Users\Administrator\.gitconfig

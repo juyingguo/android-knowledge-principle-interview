@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+
+ <script type="text/javascript">
+/* function tip(msg){
+    alert(msg);
+} */
+// 两秒后模拟点击
+setTimeout(function() {
+	console.log("print document.all=" + document.all)
+    // IE
+    if(document.all) {
+		console.log("or ie");
+        document.getElementById("clickMe").click();
+    }
+    // 其它浏览器
+    else {
+		console.log("or other explorer");
+        var e = document.createEvent("MouseEvents");
+        e.initEvent("click", true, true);
+        document.getElementById("btn").dispatchEvent(e);
+    }
+}, 2000);
+</script>
+<button id="btn" onclick="alert('clicked');">触发onclick</button>
+
+</body>
+</html>

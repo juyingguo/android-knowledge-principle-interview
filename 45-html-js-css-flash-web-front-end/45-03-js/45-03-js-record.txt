@@ -58,4 +58,16 @@
 		测试位置：js_project_base
 		
 		Array.prototype.slice.call(arguments)能将具有length属性的对象(key值为数字)转成数组
+	2.7 模拟自动点击事件。
+		测试位置：js_project_base/06-event-01-click-03-emulate-click-use-button.html
+		
+	2.8 this 
+		this.后面加变量。
+		
+	2.9 javascript引用资源路径问题。
+		
+		game.load.image("background", "../../assets/images/background.jpg");
+		调试验证：javascript引用资源路径应参考js所在html为基准进行路径定位，而不是根据js文件所在的路径为基准的。
+		
+	
 			
