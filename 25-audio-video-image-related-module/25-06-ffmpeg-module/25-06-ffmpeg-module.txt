@@ -210,7 +210,39 @@
 		文章中有一些书籍和文献可以参考
 	8.2 Android基于Ffmpeg 的软编软解的可视对讲 
 		https://my.oschina.net/zengliubao/blog/305890
-		
+		1.没有回音消除。直接上源码（应用层）！
+		2.代码简要说明：
+
+		 * 代码是在手机上运行的，也包含一个平板上的apk(平板的ui好看点但是bug多，先开启wifi)
+		 * 对讲的两个设备应在同一个WLAN中。输入Ip后点击开始了其他的看代码吧！
+		3、代码下载地址：
+
+			http://download.csdn.net/detail/isnowflake/7807157
+			
+			调试代码移植到工程AndroidJavaDemoTestForAS中的module:videoTalk0823,as开发
+			因原有项目是ecipse adt project ,as导入时以module方式并选择这个类型导入。
+	 
 	8.3 Android系统下基于FFmpeg框架的多媒体播放器研究
 		【及同类文献】
-		https://cdmd.cnki.com.cn/Article/CDMD-11415-1016068240.htm
+		https://cdmd.cnki.com.cn/Article/CDMD-11415-1016068240.htm  
+		
+		Android多媒体平台下基于FFMPEG的音视频处理方案研究
+			https://xueshu.baidu.com/usercenter/paper/show?paperid=8dd38ffe68a0a9c817a343704cba712e&site=xueshu_se
+	8.4 基于Android平台的无线视频监控系统设计与研究
+		https://xueshu.baidu.com/usercenter/paper/show?paperid=1g2e0tr09d0t08f0g76c0090rk625442
+		
+		http://d.wanfangdata.com.cn/thesis/D01635927
+		
+		赵红超 - 河北工业大学
+		可以实际应用。
+		标题英文翻译：Design and research of wireless video surveillance system based on Android platform
+		
+		英文搜索：
+		Design of a home surveillance system based on the android platform
+			https://sci-hub.st/10.1109/FSKD.2015.7382275
+		
+	8.5 Design and implementation of video monitoring system based on Android
+		即：基于Android的视频监控系统设计与实现
+		已下载
+	8.6 Android录屏并利用FFmpeg转换成gif（一）录屏
+		https://blog.csdn.net/minghuang2017/article/details/79050563

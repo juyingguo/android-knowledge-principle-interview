@@ -13,7 +13,8 @@
 		 使用"pp访问助手-国庆70周年版本。"
 			能访问google不是香港的哦
 		 
-		 "Google学术搜索按钮"，麦殼兒 (Maikr) 待尝试。
+		 "Google学术搜索按钮"，
+		 麦殼兒 (Maikr) 待尝试。
 		1clickVPN
 		Astar VPN - Free and fast VPN for everyone
 
@@ -111,4 +112,12 @@
 12 git global配置文件位置
 	https://www.cnblogs.com/carriezhao/p/10775275.html
 	C:\Users\Administrator\.gitconfig
+	
+13 手机4G上网很快，但手机给电脑开热点,网速超慢!有什么办法可以增快网速吗?
+	测验发现，没有好办法。
+	当前使用电信手机卡，在小米手机上开启热点。电脑连接热点，但网速慢。
+	
+	用另一台中兴手机连接该热点，速度很快。电脑再次上网，速度也很快了。
+	结论1：是手机把热点个增强激活到高速了吧。
+	结论2：视频在线播放器速度快。chrome 浏览器，astar vpn开机后，有时候，就慢了。
 	
