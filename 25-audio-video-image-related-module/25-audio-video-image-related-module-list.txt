@@ -167,7 +167,11 @@
 			https://www.cnblogs.com/lidabo/p/4482480.html
 			
 	13.4 雷霄骅《视音频数据处理入门：H.264视频码流解析》（代码注释版）
+
 		https://blog.csdn.net/u010512264/article/details/82083467
 	13.5 CAVLC和CABAC简介
 		【h264】
 		https://blog.csdn.net/jubincn/article/details/6948334
+
+14 opencore
+	OpenCore是Android的多媒体核心，它是一个基于C++的实现，定义了全功能的操作系统移植层，各种基本的功能均被封装成类的形式，各层次之间的接口多使用继承等方式。 

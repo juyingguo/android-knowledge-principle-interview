@@ -63,6 +63,7 @@
 		
 	2.8 this 
 		this.后面加变量。
+<<<<<<< HEAD
 		2.8.1
 			https://www.runoob.com/js/js-this.html
 			JavaScript this 关键字
@@ -76,6 +77,8 @@
 			在函数中，在严格模式下，this 是未定义的(undefined)。
 			在事件中，this 表示接收事件的元素。
 			类似 call() 和 apply() 方法可以将 this 引用到任何对象。
+=======
+>>>>>>> 88d369a9c79b5c0911f74e8511080c2b4d0173c3
 		
 	2.9 javascript引用资源路径问题。
 		

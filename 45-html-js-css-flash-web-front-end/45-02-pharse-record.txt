@@ -192,4 +192,3 @@
 	验证：外层定义that= this;
 	原因：上下文问题。that.test_bag_show_sencond_part_row01_col01.animations.add('move');就可以了。
 	
-	
