@@ -173,14 +173,93 @@
 		});
 	8.2 分段监听。
 	
-9.放大缩小：模拟闪动动画。
-	var cartween = game.add.tween(this.mycar.scale).to( { x: 1.2, y: 1.2 }, 500, Phaser.Easing.Linear.None, true);
-	cartween.onComplete.add(this.carScaleComplete, this);
+9.动画相关
+	9.1 放大缩小：模拟闪动动画。
+		
+		//注意：需要添加使用.scale，会自动向右下角放大。否则动画向左上放大，且不会恢复原状。
+		var cartween = game.add.tween(this.mycar.scale).to( { x: 1.2, y: 1.2 }, 500, Phaser.Easing.Linear.None, true);
+		cartween.onComplete.add(this.carScaleComplete, this);
 
-	this.carScaleComplete=function(){
-		console.log("xzx----state_5--->carScaleComplete");
-		game.add.tween(this.mycar.scale).to( { x: 1, y: 1 }, 500, Phaser.Easing.Linear.None, true);
-	}
+		this.carScaleComplete=function(){
+			console.log("xzx----state_5--->carScaleComplete");
+			game.add.tween(this.mycar.scale).to( { x: 1, y: 1 }, 500, Phaser.Easing.Linear.None, true);
+		}
+		
+		闪动3次，看起来忽闪忽闪的。
+		
+		
+		bag_show_sencond_part_row01_col01Tween = game.add.tween(this.test_bag_show_sencond_part_row01_col01.scale).to( { x: 3, y: 3 }, 1000, Phaser.Easing.Linear.None, true,0,3);
+		bag_show_sencond_part_row01_col01Tween.onComplete.add(this.bagRow01Col01ScaleComplete, this);
+		this.bagRow01Col01ScaleComplete=function(){		
+			console.log("game.StatesNew.thirdScene -- --->bagRow01Col01ScaleComplete");
+			game.add.tween(this.test_bag_show_sencond_part_row01_col01.scale).to( { x: 1, y: 1 }, 500, Phaser.Easing.Linear.None, true);
+		
+		};
+		
+		调整使用一个完整动作为一次。程序手动控制执行开始结束。
+			var scaleNum = 0;
+			this.startScaleTween = function(){
+				bag_show_sencond_part_row01_col01Tween = game.add.tween(this.test_bag_show_sencond_part_row01_col01.scale).to( { x: 3, y: 3 }, 2000, Phaser.Easing.Linear.None, true);
+				bag_show_sencond_part_row01_col01Tween.onComplete.add(this.bagRow01Col01ScaleComplete, this);
+			};
+			this.bagRow01Col01ScaleComplete=function(){		
+				console.log("game.StatesNew.thirdScene -- --->bagRow01Col01ScaleComplete");
+				game.add.tween(this.test_bag_show_sencond_part_row01_col01.scale).to( { x: 1, y: 1 }, 500, Phaser.Easing.Linear.None, true);
+				scaleNum ++;
+				console.log("game.StatesNew.thirdScene -- --->bagRow01Col01ScaleComplete,scaleNum:" + scaleNum);
+				if(scaleNum <3){//只需要执行三次。
+					that.startScaleTween();
+				}
+			};
+			//还是存在问题，放大到最大后，回调完成，但是没有缩小，有继续回调完成触发。三次后，再缩小。
+			
+			封装使用参数。scaleTween.onComplete.add(this.scaleComplete(), this);
+			this.scaleComplete = function(){		
+			console.log("game.StatesNew.thirdScene -- --->bagRow01Col01ScaleComplete");
+			game.add.tween(this.test_bag_show_sencond_part_row01_col01.scale).to( { x: 1, y: 1 }, 500, Phaser.Easing.Linear.None, true);
+				
+			};
+			提示以下错误
+			
+			Error: Phaser.Signal: listener is a required param of add() and should be a Function.
+			at Phaser.Signal.validateListener (phaser-2.6.2.js:30398)
+			at Phaser.Signal.add (phaser-2.6.2.js:30538)
+			at game.StatesNew.thirdScene.executeScaleTween (main.js:495)
+			at game.StatesNew.thirdScene.create (main.js:420)
+			at Phaser.StateManager.loadComplete (phaser-2.6.2.js:30083)
+			at Phaser.Loader.finishedLoading (phaser-2.6.2.js:74233)
+			at Phaser.Loader.processLoadQueue (phaser-2.6.2.js:74190)
+			at Phaser.Loader.asyncComplete (phaser-2.6.2.js:74263)
+			at Phaser.Loader.fileComplete (phaser-2.6.2.js:75120)
+			at XMLHttpRequest.xhr.onload (phaser-2.6.2.js:74672)
+			xhr.onload @ phaser-2.6.2.js:74687
+			
+			//对于pharse可能比较特殊。回调函数，只能写函数名，函数名后不能(),也就不能带参数了。
+			//普通js是可以的。
+			 
+
+	9.2 单独帧动画是否需要加入物理系统呢
+		game.physics.arcade.enable(this.test_bag_show_sencond_part_row01_col01);
+		已验证：单独帧动画，对应"精灵"是不需要加入物理系统的。
+	9.3 tileSprite，sprite区别？
+		查看api。
+		都可以执行动画
+		this.test_bag_show_sencond_part_row01_col01 = game.add.tileSprite(100, 100,120, 150 , 'buddy'/* 'bag_show_sencond_part_row01_col01' */);//use tileSprite()
+		// this.test_bag_show_sencond_part_row01_col01 = game.add.sprite(100, 100,'buddy'/* 'bag_show_sencond_part_row01_col01' */);// use sprite() //bag_show_sencond_part_row01_col01
+		
+		tileSprite能指定大小。但和原图不一致会对应只截取所需的区域。
+		
+	9.4 问题帧动画可以指定播放次数吗？
+		涉及到播放速度，次数就不好控制了。
+		
+	9.5 对于无限循环动画，无法自动执行结束函数回调。而通过手动调用有不生效。咋解决？
+		通过调用动画对象的stop(complete)，才会自动调用完成函数。
+		查看api:
+		stop(complete) → {Phaser.Tween}
+			Stops the tween if running and flags it for deletion from the TweenManager.
+			If called directly the Tween.onComplete signal is not dispatched and no chained tweens are started unless the complete parameter is set to true.
+			If you just wish to pause a tween then use Tween.pause instead.
+		
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
 
 	源码：this.test_bag_show_sencond_part_row01_col01.animations.add('move');
@@ -191,4 +270,11 @@
 	
 	验证：外层定义that= this;
 	原因：上下文问题。that.test_bag_show_sencond_part_row01_col01.animations.add('move');就可以了。
+11 在vscode中增加phaser代码提示
+	https://blog.csdn.net/weixin_34220623/article/details/89039089
 	
+	第一步：在项目根目录增加jsconfig.json文件，里面的内容是{}空括号
+
+	第二步：在项目根目录增加defs文件夹，里面包括三个文件：p2.d.ts、phaser.comments.d.ts、pixi.d.ts
+	需要下载完整源码。
+	这三个文件在源码中phaser-2.6.2\typescript

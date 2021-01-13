@@ -404,3 +404,6 @@
 		\n strlen()函数计算长度时，作为一个长度；\0，不作为一个长度。
 	34.2 0 、 '0' 、 "0" 、 ’\0’ 区别
 		https://blog.csdn.net/qnavy123/article/details/93901631
+		
+35 
+	

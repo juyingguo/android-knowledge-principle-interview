@@ -56,6 +56,12 @@
 
 8. static 
 	8.1 static_cast
+		C/C++： C++ 中 static_cast 类型转换的含义 
+		https://blog.csdn.net/zangle260/article/details/26740269 
+		https://blog.csdn.net/moruihong/article/details/7712260
+		
+		C++-类型转换(static_cast, const_cast, reinterpret_cast)
+		https://www.cnblogs.com/hyq-lst/p/12603716.html
 		
 	
 	

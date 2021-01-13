@@ -34,3 +34,5 @@
 		2.2.1 ninja: error: 'xxx.a', needed by 'xxx.so', missing and no known rule to make it 
 			https://cloud.tencent.com/developer/ask/152011
 		
+	2.3 编译自动生成的库文件位置默认在工程编译生成目录下面。
+		MyJni\app\build\intermediates\cmake\debug\obj

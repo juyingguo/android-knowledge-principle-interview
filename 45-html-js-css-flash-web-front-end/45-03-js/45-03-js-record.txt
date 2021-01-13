@@ -63,7 +63,6 @@
 		
 	2.8 this 
 		this.后面加变量。
-<<<<<<< HEAD
 		2.8.1
 			https://www.runoob.com/js/js-this.html
 			JavaScript this 关键字
@@ -77,13 +76,42 @@
 			在函数中，在严格模式下，this 是未定义的(undefined)。
 			在事件中，this 表示接收事件的元素。
 			类似 call() 和 apply() 方法可以将 this 引用到任何对象。
-=======
->>>>>>> 88d369a9c79b5c0911f74e8511080c2b4d0173c3
-		
+	
 	2.9 javascript引用资源路径问题。
 		
 		game.load.image("background", "../../assets/images/background.jpg");
 		调试验证：javascript引用资源路径应参考js所在html为基准进行路径定位，而不是根据js文件所在的路径为基准的。
-		
+	2.10 定义函数
+		通过属性添加新的函数。使用vscode不能自动导航查看引用关系。//注意上下文this，that,正确后，也是可以的。
+		单独定义函数，是可以的。
 	
-			
+	2.11 javascript 支持函数重载吗
+		浅谈JavaScript函数重载
+		https://www.cnblogs.com/yugege/p/5539020.html
+		
+		a,验证代码：01-function-07-function-overload-01.html 
+			//这种写法是不可行的。最多参数的函数才可以正确调用。如果只需要第一个参数，其余参数也需要传递值的。
+		b，或者根据arguments.length来对应处理不同功能。
+		
+		c,JQuery之父John Resig写的《secrets of the JavaScript ninja》找到了一个绝佳巧妙的方法！那种方法充分的利用了闭包的特性！
+	2.12 通过var定义的类型，才可以用vscode提示功能
+		通过that，this，定义的就不能提示。
+		
+		即便使用var定义，不过只有在刚赋值的地方可以有提示。其它函数处就没有提示了。
+		
+	2.13 js 生成随机数
+		https://www.runoob.com/w3cnote/js-random.html 
+		ceil(x)	对数进行上舍入，即向上取整。
+		floor(x)	对 x 进行下舍入，即向下取整。
+		round(x)	四舍五入。
+		random()	返回 0 ~ 1 之间的随机数，包含 0 不包含 1。
+		
+		一些实例说明：
+
+		Math.ceil(Math.random()*10);     // 获取从 1 到 10 的随机整数，取 0 的概率极小。
+
+		Math.round(Math.random());       // 可均衡获取 0 到 1 的随机整数。
+
+		Math.floor(Math.random()*10);    // 可均衡获取 0 到 9 的随机整数。
+
+		Math.round(Math.random()*10);    // 基本均衡获取 0 到 10 的随机整数，其中获取最小值 0 和最大值 10 的几率少一半。

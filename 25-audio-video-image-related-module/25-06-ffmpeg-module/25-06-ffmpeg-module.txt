@@ -146,6 +146,11 @@
 		https://www.cnblogs.com/pengpengboshi/p/12627715.html
 		
 		6.1.1 下载安装，配置环境变量见文档
+			windows下配置环境变量：
+			如ffmpeg-4.3.1。
+			定义系统变量名称FFMPEG_HOME 为解压路径:: D:\juying\java2\ffmpeg-4.3.1-2020-11-19-full_build
+			将%FFMPEG_HOME%\bin追加到系统变量path中。前后添加英文分号。
+			
 		6.1.2 使用过程记录见 [7]
 	6.2 ffmpeg linux下的安装及使用过程解析
 7. ffmpeg使用过程记录见 [7]	
@@ -246,3 +251,26 @@
 		已下载
 	8.6 Android录屏并利用FFmpeg转换成gif（一）录屏
 		https://blog.csdn.net/minghuang2017/article/details/79050563
+		
+		8.6.1 Android录屏并利用FFmpeg转换成gif（二）交叉编译FFmpeg源码
+			https://blog.csdn.net/MingHuang2017/article/details/79112682 
+			
+			开发环境：
+
+			操作系统：Ubuntu 16.04 LTS
+			FFmpeg源码：ffmpeg-3.4.1
+			NDK版本：android-ndk-r15c
+			
+			假设既不考虑交叉编译，也不考虑裁剪，编译FFmpeg
+			~$ ./configure
+			~$ sudo make
+			~$ sudo make install
+			
+			FFmpeg所支持的所有编码器，解码器等可以用 --list-decoders , --list-encoders等参数来查看，非常多，一般是根据需要选择几种。
+			
+				注意：验证发现，在ffmpeg4.3.1 中。使用以上方式提示无效命令。
+				使用ffmpeg -h 
+				-decoders           show available decoders
+				-encoders           show available encoders
+				
+		

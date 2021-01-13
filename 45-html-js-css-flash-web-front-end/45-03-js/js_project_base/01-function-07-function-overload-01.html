@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+	
+/**
+ * 这种写法是不可行的。最多参数的函数才可以正确调用。如果只需要第一个参数，其余参数也需要传递值的。
+ */
+
+function sumTest(a) {
+    return a;
+}
+function sumTest(a, b) {
+    return a + b;
+}
+function sumTest(a, b,c) {
+	console.log("sumTest arguments.length:"+ arguments.length)
+    return a + b + c;
+}
+
+document.getElementById("demo").innerHTML = sumTest(1,9,0); 
+</script>
+
+</body>
+</html>
