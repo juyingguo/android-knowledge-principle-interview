@@ -278,3 +278,8 @@
 	第二步：在项目根目录增加defs文件夹，里面包括三个文件：p2.d.ts、phaser.comments.d.ts、pixi.d.ts
 	需要下载完整源码。
 	这三个文件在源码中phaser-2.6.2\typescript
+	
+12 点击事件。
+	button点击后如何置为不可点击。
+	destroy，kill 都会销毁，不可见。
+	先采用重新以普通精灵角色添加，不是button即可

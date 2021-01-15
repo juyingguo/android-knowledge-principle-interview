@@ -1,0 +1,6 @@
+
+Windows下启动,关闭Nginx命令
+启动
+直接点击Nginx目录下的nginx.exe    或者    cmd运行start nginx
+
+https://www.cnblogs.com/xb1223/p/10205645.html
