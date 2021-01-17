@@ -61,8 +61,9 @@
 				
 				配置好后，提示找不到。
 			用javap生成生成java方法的JNI签名
-				https://blog.csdn.net/jemenchen/article/details/86690390
+				https://blog.csdn.net/jemenchen/article/details/86690390 
 				
+				javap 要在java文件对应生成的class文件所在包的最上层目录下执行。
 				javap -p -s  org.jemen.test.Test          替换成自己的。若不在当前文件夹则可用-classpath指明class文件的位置。
 	3.4 Android Studio实现JNI，并编译出本地库So
 		https://blog.csdn.net/zxl1173558248/article/details/81701967  

@@ -1,0 +1,20 @@
+1.报错：
+		libavformat/udp.c: In function 'udp_set_multicast_sources':
+		libavformat/udp.c:290:28: error: request for member 's_addr' in something not a structure or union
+				 mreqs.imr_multiaddr.s_addr = ((struct sockaddr_in *)addr)->sin_addr.s_addr;
+									^
+		libavformat/udp.c:292:32: error: incompatible types when assigning to type '__be32' from type 'struct in_addr'
+					 mreqs.imr_interface= ((struct sockaddr_in *)local_addr)->sin_addr;
+										^
+		libavformat/udp.c:294:32: error: request for member 's_addr' in something not a structure or union
+					 mreqs.imr_interface.s_addr= INADDR_ANY;
+										^
+		libavformat/udp.c:295:29: error: request for member 's_addr' in something not a structure or union
+				 mreqs.imr_sourceaddr.s_addr = ((struct sockaddr_in *)&sources[i])->sin_addr.s_addr;
+									 ^
+		make: *** [libavformat/udp.o] Error 1
+
+	1.1 编译针对于Android平台的ffmpeg 4.1版本(最新版) 遇到问题汇总。
+		https://blog.csdn.net/qq_34902522/article/details/87879145
+		
+		

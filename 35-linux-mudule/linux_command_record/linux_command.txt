@@ -111,7 +111,8 @@
 		把 /home/runoob 的关联组设置为 512 （关联组ID），不改变所有者：
 
 			chown :512 /home/runoob
-			
+	3.7 Linux中将命令运行结果放到文件中的方法
+		https://www.cnblogs.com/shineriver/p/10922970.html
 (4)磁盘管理
 	4.1 du //du会显示指定的目录或文件所占用的磁盘空间。
 		-a或-all 显示目录中个别文件的大小。
@@ -162,6 +163,8 @@
 		9.1.5 Linux中zip压缩和unzip解压缩命令详解
 			https://www.cnblogs.com/wangkongming/p/4305962.html
 			https://www.runoob.com/linux/linux-comm-unzip.html
+			
+			-d<目录> 指定文件解压缩后所要存储的目录。
 	4.5 Exiting with failure status due to previous errors
 		Linux tar命令选项顺序不同导致"Exiting with failure status due to previous errors"
 		https://blog.csdn.net/HermitSun/article/details/94494700
