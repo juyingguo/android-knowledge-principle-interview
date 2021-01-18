@@ -1,3 +1,7 @@
+0 资源
+	0.1 androidstudio官网下载。
+		https://developer.android.com/studio/archive
+	
 1. Android studio 将 Module 打包成 Jar 包,aar.
 	1.1 Android studio 将 Module 打包成 Jar 包
 		https://www.cnblogs.com/xinaixia/p/7660173.html
@@ -141,5 +145,71 @@
 		sourceSets { main { jniLibs.srcDirs = ['libs'] } }
 9. android studio external tool 自定义工具
 	9.1 javah
+10 Android studio使用增量更新进行版本升级
+	10.1 
+		https://www.cnblogs.com/xiaoyang2009/p/5258380.html
+	
+		Current Version:3.4.2(build 183.6156.11.34.5692245)
+		upgrade to 3.5.2(build 191.8026.42.35.5977832)
+
+		windows 
+		https://dl.google.com/android/studio/patches/AI-183.6156.11.34.5692245-191.8026.42.35.5977832-patch-win.jar	  
+		（直接将这个地址复制了粘贴到浏览器就可以直接下载）
 		
-		  
+		下载完成后，将下载的.jar包放到Android studio的根目录，然后在命令行(Windows平台)或终端(linux，mac
+
+		平台)执行下面命令进行安装：
+
+		  java -classpath AI-183.6156.11.34.5692245-191.8026.42.35.5977832-patch-win.jar com.intellij.updater.Runner install .
+
+		（记住最后面有个点，意思是将这个文件解压安装到当前目录）。
+	10.2 
+		Android Studio增量包升级方法
+		https://blog.csdn.net/qq_28535319/article/details/99544768 
+		
+		参考这篇博客，解决问题了问题（3）。也正是博客中错误总结。
+		
+		下载后的安装包不要放在Android studio的安装目录，你可以随便放在一个文件夹，当然文件夹名英文不要有特殊字符，比如你放在了d盘update目录
+		
+		比如上面两个文件我都改了，因为为了可以增加as的运行速度，那有两个简单方法
+		（1） 你以前改这两个文件的时候你备份了文件，你直接把改之前的文件替换改的文件（我就没备份）
+		（2） 你把你版本的as再安装一次，在一个没用的文件夹中，然后把新安装目录中的文件复制过来替换
+		（3）如果出现得错误列表中存在很多java jdk jre之类得不能更新，那应该是因为你选择的jdk jre目录是android studio内部文件路径得，这时你需要把jdk路径改成你自己环境变量配置中得，如果没配置（应该不会）那你需要去安装并配置，因为更新需要调用jdk工具，内置得会有冲突，不能自己更新自己
+		ok了更新后，用起来真香。
+11 NDK version is UNKNOWN
+	cmake 工程同步失败，编译失败，配置了ndk,但提示未知
+	NDK Resolution Outcome: Project settings: Gradle model version=4.4, NDK version is UNKNOWN
+	
+12 Android Studio 中的 CMake使用
+	12.1 Android Studio 中的 CMakemessage打印日志以及输出位置
+		https://blog.csdn.net/wq892373445/article/details/105013054 
+		一、CMake 命令 message
+			CMake 如果要像用户展示消息需要可以使用 message() API，类似与 Android 中的 Log 输出。
+
+			message([<mode>] "message to display" ...)
+			
+			关键字，可以指定消息的类型：
+			(none)         = 重要消息
+			STATUS         = 附带消息
+			WARNING        = CMake警告，继续处理
+			AUTHOR_WARNING = CMake警告（dev），继续处理
+			SEND_ERROR     = CMake错误，继续处理，但跳过生成
+			FATAL_ERROR    = CMake错误，停止处理和生成
+			DEPRECATION    = 如果分别启用了变量CMAKE_ERROR_DEPRECATED或CMAKE_WARN_DEPRECATED，则CMake弃用错误或警告，否则无消息
+		二、点击as中右侧gradle，项目-module-Tasks-build-build执行即可。
+		三、输出内容 CMake 会保存到文本中
+			*\project\module-app\.cxx\cmake\debug\arm64-v8a\build_output.txt
+	12.2 CMake was unable to find a build program corresponding to "Ninja"
+		CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+		
+		https://blog.csdn.net/qq_15653601/article/details/88370856 
+		博主方案：事实上是需要在环境变量中Path路径上添加上上图的cmake的bin目录，重启下AS或者IDEA（否则可能还是找不到），重新编译即可
+		
+		12.3.2 参考正常正常使用cmake的编译的工程MyJni
+			gradle插件：gradle:3.5.2
+			gradle版本：gradle:5.4.1 
+			cmake:3.10
+			androidstudio:3.5.2 
+			
+			将报错的工程采用MyJni一致版本配置。
+			此时cmake编译日志可以正常打印了。【CMake was unable to find a build program corresponding to "Ninja"】错误不再提示。

@@ -130,6 +130,7 @@
 				https://juejin.cn/post/6844903945496690696 
 				对于build_android.sh文件的说明
 				为什么新版本的ffmpeg搭配新版本的ndk编译很容易出错呢？其实关键点主要还是新旧版本ndk中的交叉编译工具不一样导致的。比如旧版本（r17及之前）的ndk中的编译器用的是gcc，而网上大部分的同类文章中用的也是gcc，而新版本的ndk文件已经弃用gcc编译器改用clang了，所以照着网上的文章做当然编译不起来）
+		4.1.4 --enable-cross-compile: command not found
 				
 	4.2 windows下编译FFmpeg
 		4.1 待实验。
@@ -281,17 +282,21 @@
 			https://blog.csdn.net/MingHuang2017/article/details/79186513
 			引用文章：：
 				Android 集成 FFmpeg (二) 以命令方式调用 FFmpeg
-				王英豪
+				【王英豪】的系列文章。
 					https://www.jianshu.com/p/6e556d336b1d#comment-18266369
 				
 				Android 集成 FFmpeg (一) 基础知识及简单调用
 					https://www.jianshu.com/p/f23c62820b79
+					
+					--target-os=linux ：Android 内核为 Linux ，故在此指定为 linux ，如果要编译的目标系统为 ios ，则指定为 darwin 。
 			android studio会自动把编译好的so文件存放在app/build/intermediates/cmake/debug/obj/armeabi等几个目录下
-			
 			关联文章：费了这么大劲就是为了这个libffmpeg.so文件，其实编译这个文件也可以不在android工程中进行，因为实际上我们的工程只要引用这几个so包而已，至于怎么编译这些so包并不在本工程的职责范围内。
 			要在工程外编译请参考：https://blog.csdn.net/MingHuang2017/article/details/79000345
 			
-			
+			  I:/juying/ffmpeg/ffmpeg-3.1.11/libavutil/common.h:45:32: fatal error: libavutil/avconfig.h: No such file or directory
+			#include "libavutil/avconfig.h"
+			使用和博主一致的版本试试：I:\juying\ffmpeg\FFmpeg-3.4.1
+	
 9. ffmpeg超详细综合教程
 	【ffmpeg超详细综合教程一】
 	http://www.360doc.com/content/16/0711/20/9008018_574787603.shtml 
@@ -302,3 +307,6 @@
 	【或者csdn系列教程】
 	ffmpeg超详细综合教程（二）——为直播流添加滤镜 
 	https://blog.csdn.net/wh8_2011/article/details/73506128 
+	
+10 FFmpeg 详尽编译过程 (use ndk-build)
+	https://blog.csdn.net/junhuahouse/article/details/79236932

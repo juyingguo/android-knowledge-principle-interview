@@ -36,3 +36,8 @@
 		
 	2.3 编译自动生成的库文件位置默认在工程编译生成目录下面。
 		MyJni\app\build\intermediates\cmake\debug\obj
+	2.4 androidstudio使用Cmake
+		windows,androidstudio,cmake
+		a：local.properties添加cmake安装目录
+			cmake.dir=C\:\\java2\\as\\as1_5\\sdk\\cmake\\3.10.2.4988404
+		b:或者环境变量PATH加入cmake目录
