@@ -6,6 +6,7 @@
 	
 	1.3 GitHub
 		https://github.com/FFmpeg/FFmpeg 
+		直接点击[tag]就可以选择指定版本的下载。而无需通过下载源码后再切换分支（占用空间大，且此时的分支显示只有两位，如3.4而不是3.4.1）
 	1.4 好例子网。
 		https://www.haolizi.net/example/view_20421.html
 		已充值下载。
