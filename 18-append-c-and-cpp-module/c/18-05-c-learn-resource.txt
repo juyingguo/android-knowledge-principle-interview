@@ -51,7 +51,22 @@
 			https://blog.csdn.net/Fly_as_tadpole/article/details/80388998?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158616837719724843315569%2522%252C%2522scm%2522%253A%252220140713.130056874..%2522%257D&request_id=158616837719724843315569&biz_id=0&utm_source=distribute.pc_search_result.none-task-blog-all_SOOPENSEARCH-2
 			
 			2. epoll实现高并发聊天室
-				https://blog.csdn.net/qq_31564375/article/details/51581038?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-4&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-4
+				https://blog.csdn.net/qq_31564375/article/details/51581038?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-4&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-4 
+		2.2.3 C语言编写万年历
+			https://github.com/juyingguo/Calendar-VersionC
+			
+			C语言编写万年历(c++重写)
+			
+			参考知识：
+			C语言编写小程序——万年历
+			https://blog.csdn.net/gaobosky/article/details/81387773
+			
+			C语言实现闰年判断 
+			https://blog.csdn.net/qq_41198425/article/details/89057381 
+			首先应该如何判断是否是闰年
+
+			能被400整除或能被4整除，并且不能被100整除的是闰年
+			其余的都不是闰年
 3.c语言在不同平台下开发的区别
 	3.1 在linux和windows下做c语言的区别
 		https://blog.csdn.net/jonathan_zz/article/details/1357040
