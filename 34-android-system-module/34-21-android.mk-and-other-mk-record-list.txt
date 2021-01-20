@@ -1,6 +1,9 @@
 1.  Android.mk文档：
 
    1.1 Android.mk的官方文档：https://developer.android.google.cn/ndk/guides/android_mk
+		
+		zh-cn:
+		https://developer.android.com/ndk/guides/android_mk?hl=zh-cn
    1.2 在NDK中的文档路径：ndk目录下docs中的ANDROID-MK.html文档
    
 2. Android.mk用法详解
@@ -16,4 +19,9 @@
 		
 		
 		静态库日志在什么地方看。
-	 
+3. Application.mk
+	3.1 资源：
+		谷歌官方参考
+		https://developer.android.com/ndk/guides/application_mk?hl=zh-cn
+	3.2 
+		Application.mk可以用来指定需要生成哪些cpu类型的.so文件，或者定义引用.so的最低android api

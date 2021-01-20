@@ -19,3 +19,24 @@
 		  -cp <path>               指定查找用户类文件的位置
 		  -bootclasspath <path>    覆盖引导类文件的位置
 	1.1 javap 要在java文件对应生成的class文件所在包的最上层目录下执行。
+2. javah，javac
+	2.1 javah命令详解
+		https://blog.csdn.net/tianshuai1111/article/details/7381407  
+		javah命令主要用于在JNI开发的时，把java代码声明的JNI方法转化成C\C++头文件，以便进行JNI的C\C++端程序的开发。
+		
+		-classpath <path> Path from which to load classes
+		  -bootclasspath <path> Path from which to load bootstrap classes
+		  -d <dir> Output directory
+		  -o <file> Output file (only one of -d or -o may be used)
+		  -jni Generate JNI-style header file (default)
+		  -version Print version information
+		 -verbose Enable verbose output
+		 -force Always write output files
+		 
+		 举例：
+		 AndroidJavaDemoTestForAS\ndkBuildJni\src\main\java>javah -d jni com.example.ndkbuildjni.MyJni
+		 
+		 会创建jni目录，并生成.h文件。
+	
+		2.2.2  二，javac用法
+			  javac 工具读取用 Java 编程语言编写的类和接口定义，并将它们编译成字节码类文件。
