@@ -128,6 +128,29 @@
 		
 	8.3、加上getchar()的目的是为了看运行结果,VS一般运行完毕之后直接关闭这个窗口,可以选择不加  	在工具-选项-调试中去掉调试完毕关闭控制台这个选项就行
 		https://blog.csdn.net/sum7mer/article/details/79064239
+		
+	8.4 system("color 5f")//指定颜色值。
+		设置默认的控制台前景和背景颜色。
+
+		COLOR [attr]
+
+		  attr        指定控制台输出的颜色属性
+
+		颜色属性由两个十六进制数字指定 -- 第一个为背景，第二个则为
+		前景。每个数字可以为以下任何值之一:
+
+			0 = 黑色       8 = 灰色
+			1 = 蓝色       9 = 淡蓝色
+			2 = 绿色       A = 淡绿色
+			3 = 浅绿色     B = 淡浅绿色
+			4 = 红色       C = 淡红色
+			5 = 紫色       D = 淡紫色
+			6 = 黄色       E = 淡黄色
+			7 = 白色       F = 亮白色
+
+		如果没有给定任何参数，该命令会将颜色还原到 CMD.EXE 启动时
+		的颜色。这个值来自当前控制台窗口、/T 命令行开关或
+		DefaultColor 注册表值。
 9、转义字符。
 	9.1、#C语言学习感悟# printf( )函数中的回车‘\r’与回车换行'\n'之我见。 
 		https://blog.csdn.net/ylm1521/article/details/80557866
@@ -405,5 +428,23 @@
 	34.2 0 、 '0' 、 "0" 、 ’\0’ 区别
 		https://blog.csdn.net/qnavy123/article/details/93901631
 		
-35 
+35 C语言中，scanf与scanf_s的简单区别
+	35.1 https://www.cnblogs.com/hhjfighting/p/8483983.html 
+		scanf()不会检查输入边界，可能造成数据溢出，scanf_s()会进行边界检查。
+		如name[5]，
+
+		scanf("%s",name),如果输入abcdefgh，则会使得fgh溢出进入其他地方，造成程序错误，
+
+		容易被黑客利用；而scanf_s("%s",name),则会只会接收前5个输入，其后的无效，避免了程序的漏洞。
+		
+		初步验证：不是这样的啊。
+	35.2 scanf与scanf_s的区别
+		https://blog.csdn.net/sinat_41803693/article/details/84588787
+	scanf位于stdlib.h；
+	scanf_s：微软官网VS2015中涉及scanf_s介绍。原址https://msdn.microsoft.com/en-us/library/w40768et.aspx）
+	
+		When reading a string with scanf, always specify a width for the %s format (for example, "%32s" instead of "%s"); otherwise, improperly formatted input can easily cause a buffer overrun. Alternately, consider using scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l or fgets.
+		
+		使用scanf读取字符串时，请始终为％s格式指定宽度（例如，“％32s”而不是“％s”）； 否则，格式不正确的输入很容易导致缓冲区溢出。
+	测试代码：05_c_base_knowledge\014_stdio_07_scanf.c
 	

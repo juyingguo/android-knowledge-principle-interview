@@ -50,8 +50,14 @@
 	5.5 c++模板类构造函数怎麽写
 		https://www.csdn.net/gather_2c/NtDagg4sMjgtYmxvZwO0O0OO0O0O.html
 
-6. 
-	6.1 
+6. typedef vs #define
+	6.1  typedef vs #define
+		https://www.runoob.com/cprogramming/c-typedef.html
+		
+		#define 是 C 指令，用于为各种数据类型定义别名，与 typedef 类似，但是它们有以下几点不同：
+
+		typedef 仅限于为类型定义符号名称，#define 不仅可以为类型定义别名，也能为数值定义别名，比如您可以定义 1 为 ONE。
+		typedef 是由编译器执行解释的，#define 语句是由预编译器进行处理的。
 7. inline
 
 8. static 
