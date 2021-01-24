@@ -29,6 +29,7 @@ PNODE Create_List(void)
         printf("Create_List pHead= %x,pTail = %x\n",pHead,pTail);
 
 		pHead->pNext=NULL;
+		printf("Create_List pHead->pNext= %x \n",pHead->pNext);
 		printf("please input the length of list: ");  //需要一个指针始终指向链表的结尾
 		scanf("%d",&len);
 		for(i=0;i<len;i++)
@@ -49,6 +50,7 @@ PNODE Create_List(void)
 				pTail=p;
 			}
             printf("Create_List i=%d , pHead= %x,pTail = %x\n",i,pHead,pTail);
+            printf("Create_List pHead->pNext= %x \n",pHead->pNext);
 
 		}
 
@@ -111,6 +113,23 @@ int Length_List(PNODE pHead)
 	return len;
 
 }
+/**
+    遍历链表。打印出值。
+*/
+void print_List(PNODE pHead)
+{   int i=0;  //定义变量要记得初始化；
+    PNODE p=pHead->pNext;
+
+	while(NULL!=p)
+	{
+		i++;
+        printf("print_List current node number i=%d , p->data = %d\n",i,p->data);
+
+		p=p->pNext;
+	}
+
+
+}
 
 //对链表中的元素进行排序
 void Sort_List(PNODE pHead)
@@ -140,6 +159,20 @@ int main(void)
    PNODE list = Create_List();
    int length_list = Length_List(list);
    printf("main length_list= %d:\n",length_list);
+
+   print_List(list);
+
+   if(length_list >=2){
+        int delVal = -1;
+        printf("when length_list >=2 delete node of number 2\n");
+        Delete_List(list,2,&delVal);
+
+        length_list = Length_List(list);
+        printf("main current length_list= %d:\n",length_list);
+        printf("delete node it's value is %d\n",delVal);
+
+        print_List(list);
+   }
    return 0;
 }
 
