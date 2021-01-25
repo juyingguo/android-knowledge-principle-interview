@@ -219,6 +219,8 @@
 		13.1.1、学习心得：链表的操作（C语言实现） 
 			https://blog.csdn.net/lpp0900320123/article/details/20356143 
 			
+			链表的种类很多，有单链表、双链表、循环链表、非循环链表.
+			
 			当前未深刻理解点：头指针指向头结点，当有节点时，pHead->next指向首节点。
 				PNODE pTail=pHead;
 				
@@ -231,6 +233,9 @@
 		
 		13.1.2、c语言链表详解（超详细）
 			https://blog.csdn.net/Endeavor_G/article/details/80552680?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+			
+		13.1.3 循环单链表的实现c语言
+			https://blog.csdn.net/better_xiong/article/details/106888689
 			
 14、c语言结构体及联合体
 	
