@@ -29,6 +29,11 @@
 			https://www.runoob.com/cprogramming/c-function-fgets.html
 			有详细的函数解释。对比《c函数速查》就没有解释，仅有实例。
 			下载带有详细解释的《c函数速查》或者资源网站。
+	1.7 数据结构书籍推荐
+		《算法与数据结构》
+		《数据结构与算法分析》
+		《数据结构严蔚敏》
+			https://www.jb51.net/books/690409.html
 			
 2. c语言项目
 	2.1 最值得学习阅读的10个C语言开源项目代码 

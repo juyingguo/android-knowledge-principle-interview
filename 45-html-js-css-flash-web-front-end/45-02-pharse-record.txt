@@ -266,7 +266,8 @@
 			Stops the tween if running and flags it for deletion from the TweenManager.
 			If called directly the Tween.onComplete signal is not dispatched and no chained tweens are started unless the complete parameter is set to true.
 			If you just wish to pause a tween then use Tween.pause instead.
-		
+	9.6 //对于闪动几次自动停止的
+				// game.add.tween(that.pig_rice_transplant.scale).to( { x: 3, y: 3 }, 500).to( { x: 1, y: 1 }, 500).repeatAll(3).start();
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
 
 	源码：this.test_bag_show_sencond_part_row01_col01.animations.add('move');
