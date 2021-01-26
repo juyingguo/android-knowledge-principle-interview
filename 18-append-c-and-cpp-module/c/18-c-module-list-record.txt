@@ -210,13 +210,32 @@
 		
 		http://fouri.iteye.com/blog/483974
 		
+	12.2 对于自定义类型，typedef定义类型名称可以和类型原名称相同。
+
 13、c语言数据结构。
 	13.1、链表的操作（C语言实现） 
+		13.1.0 调试工程位置：
+			*\08_c_data_struct_base\01-linkedList-test.c
 		13.1.1、学习心得：链表的操作（C语言实现） 
 			https://blog.csdn.net/lpp0900320123/article/details/20356143 
+			
+			链表的种类很多，有单链表、双链表、循环链表、非循环链表.
+			
+			当前未深刻理解点：头指针指向头结点，当有节点时，pHead->next指向首节点。
+				PNODE pTail=pHead;
+				
+				//创建多个节点，并赋值。
+				PNODE p=(PNODE)malloc(sizeof(NODE));
+				p->data=val;
+				pTail->pNext=p;//当是第一个节点时，此时
+				p->pNext=NULL;
+				pTail=p;
 		
 		13.1.2、c语言链表详解（超详细）
 			https://blog.csdn.net/Endeavor_G/article/details/80552680?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+			
+		13.1.3 循环单链表的实现c语言
+			https://blog.csdn.net/better_xiong/article/details/106888689
 			
 14、c语言结构体及联合体
 	
@@ -361,6 +380,9 @@
 		 https://blog.csdn.net/qq_35683626/article/details/78263379
 27,C语言extern的使用以及头文件*.h的内容格式注意
 	https://www.cnblogs.com/MYJ55/p/6725612.html 
+	
+	27.2 #ifdef __cplusplus extern “C”的作用详解 
+		https://blog.csdn.net/dayou1024/article/details/107017432
 28,C语言中函数定义使用不带参数与使用void参数的区别 
 	28.1 C语言中函数定义使用不带参数与使用void参数的区别 
 		https://www.jianshu.com/p/86d3e352810c
