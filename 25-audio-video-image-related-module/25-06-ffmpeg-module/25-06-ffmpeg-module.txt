@@ -309,4 +309,8 @@
 	https://blog.csdn.net/wh8_2011/article/details/73506128 
 	
 10 FFmpeg 详尽编译过程 (use ndk-build)
-	https://blog.csdn.net/junhuahouse/article/details/79236932
+	https://blog.csdn.net/junhuahouse/article/details/79236932  
+11 基于FFmpeg+SDL的视频播放器的制作——雷霄骅
+	https://b23.tv/1EsE12?share_medium=android&share_source=qq&bbid=XYCDBB3C2CE7545ECD20C449646BAFC69881F&ts=1611667246384
+	Bibi
+	雷神的资料和视频：链接: https://pan.baidu.com/s/1hEHryIRAP8O3XPTMacd85w 密码: z8gc

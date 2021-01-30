@@ -39,4 +39,18 @@
 
 	5、log(a) b=log (c) b÷log (c) a。
 	参考资料：百度百科-LG
-		
+4. 1+2+3+4+.+n可以用什么公式来表示?
+	https://zhidao.baidu.com/question/1966444379128719260.html 
+	
+	令baia=1+2+3+……du+n
+	则a=n+……zhi+3+2+1
+	相加
+	2a=(1+n)+[2+(n-1)]+……+[(n-1)+2]+(n+1)
+	=(n+1)+(n+1)+……+(n+1)+(n+1)
+	=n(n+1)
+	所以原式=n(n+1)/2
+
+	4.1 公式∑上面是s,下面是i=1,该怎么在word里输入
+		https://zhidao.baidu.com/question/252505873.html? 
+		https://zhidao.baidu.com/question/252505873.html? 
+			

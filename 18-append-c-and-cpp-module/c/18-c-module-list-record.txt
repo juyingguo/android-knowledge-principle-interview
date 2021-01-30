@@ -230,12 +230,13 @@
 				pTail->pNext=p;//当是第一个节点时，此时
 				p->pNext=NULL;
 				pTail=p;
-		
+			测试程序：01-linkedList-01-Acyclic-single-linkedlist-test.c
 		13.1.2、c语言链表详解（超详细）
 			https://blog.csdn.net/Endeavor_G/article/details/80552680?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 			
 		13.1.3 循环单链表的实现c语言
-			https://blog.csdn.net/better_xiong/article/details/106888689
+			https://blog.csdn.net/better_xiong/article/details/106888689 
+			
 			
 14、c语言结构体及联合体
 	
@@ -468,5 +469,8 @@
 		When reading a string with scanf, always specify a width for the %s format (for example, "%32s" instead of "%s"); otherwise, improperly formatted input can easily cause a buffer overrun. Alternately, consider using scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l or fgets.
 		
 		使用scanf读取字符串时，请始终为％s格式指定宽度（例如，“％32s”而不是“％s”）； 否则，格式不正确的输入很容易导致缓冲区溢出。
-	测试代码：05_c_base_knowledge\014_stdio_07_scanf.c
+	测试代码：05_c_base_knowledge\014_stdio_07_scanf.c 
+36 浅谈C语言中的布尔（bool）类型
+	https://blog.csdn.net/hfyutdg/article/details/84026460 
+	C语言不是没有布尔类型，只能说在C99标准之前没有。现在只要在源文件中包含stdbool.h这个头文件，就可以在C语言里像C++那样使用bool类型了。
 	

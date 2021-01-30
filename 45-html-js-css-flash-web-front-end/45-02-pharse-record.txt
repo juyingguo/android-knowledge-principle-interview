@@ -167,6 +167,8 @@
 		当homeVoice定义时使用this.homeVoice。homeVoice.stop();错误提示：main.js:249 Uncaught ReferenceError: homeVoice is not defined
 		//解决方法一：homeVoice需要定义全局，定义时去掉this。此处点击事件的回调函数中使用this.homeVoice无法正常引用？
 		//解决方法二：homeVoice定义时使用this.homeVoice;同时函数定义外部定义that=this;此时就可以使用that.homeVoice.stop();
+	7.3 如何启用或禁用点击事件。
+		
 8. 播放音频
 	8.1 监听播放完成。
 		this.smallSchoolBag_third_scene_voice_01 = game.add.sound('smallSchoolBag_third_scene_voice_01');
@@ -264,7 +266,8 @@
 			Stops the tween if running and flags it for deletion from the TweenManager.
 			If called directly the Tween.onComplete signal is not dispatched and no chained tweens are started unless the complete parameter is set to true.
 			If you just wish to pause a tween then use Tween.pause instead.
-		
+	9.6 //对于闪动几次自动停止的
+				// game.add.tween(that.pig_rice_transplant.scale).to( { x: 3, y: 3 }, 500).to( { x: 1, y: 1 }, 500).repeatAll(3).start();
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
 
 	源码：this.test_bag_show_sencond_part_row01_col01.animations.add('move');
@@ -287,4 +290,7 @@
 12 点击事件。
 	button点击后如何置为不可点击。
 	destroy，kill 都会销毁，不可见。
-	先采用重新以普通精灵角色添加，只要不是button即可
+	先采用重新以普通精灵角色添加，只要不是button即可 
+13 同一个区域更换图片背景。
+	13.1 重绘一个对象。
+	13.2 不重绘一个对象，有没有方式更新背景图片。
