@@ -1,7 +1,7 @@
 0 资源
 	0.1 androidstudio官网下载。
 		https://developer.android.com/studio/archive
-	
+	0.2  http://tools.android-studio.org/ 
 1. Android studio 将 Module 打包成 Jar 包,aar.
 	1.1 Android studio 将 Module 打包成 Jar 包
 		https://www.cnblogs.com/xinaixia/p/7660173.html

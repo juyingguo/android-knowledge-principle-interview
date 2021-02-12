@@ -40,4 +40,6 @@
 		windows,androidstudio,cmake
 		a：local.properties添加cmake安装目录
 			cmake.dir=C\:\\java2\\as\\as1_5\\sdk\\cmake\\3.10.2.4988404
-		b:或者环境变量PATH加入cmake目录
+		b:或者环境变量PATH加入cmake目录 
+3. CMakeLists.txt 语法介绍与实例演练 
+	https://blog.csdn.net/afei__/article/details/81201039  

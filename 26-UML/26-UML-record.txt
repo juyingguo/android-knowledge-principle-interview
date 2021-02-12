@@ -1,4 +1,12 @@
-1.
+1.资源
+	1.1 
+	1.2 时序图绘制工具
+		visio,
+		Rational Rose,
+		powerdesigner 
+		PowerDesigner、Rational Rose、Visio三种建模工具比较  
+			https://blog.csdn.net/u014020534/article/details/71242142 
 2. 时序图
 	2.1 时序图简介（Brief introduction）
 		https://www.cnblogs.com/a311300/p/4094547.html
+		

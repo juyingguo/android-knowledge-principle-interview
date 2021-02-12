@@ -237,6 +237,29 @@
 		13.1.3 循环单链表的实现c语言
 			https://blog.csdn.net/better_xiong/article/details/106888689 
 			
+			1.循环单链表和单链表的区别在于链表中最后一个结点的指针不是指向NULL，而是指向头结点，这样链表结点就形成了一个环。循环单链表是一个环，所以在链表中任意位置插入或者删除结点时都是等价的，不需要根据所操作结点是否是尾结点分类讨论，因此简化了代码。
+			测试代码：01-linkedList-02-cyclic-single-linkedlist-test-raw.c
+			
+			2. 添加结点后，头指针和尾结点的指针域是都还是一样的吗？需要再次指向吗？
+	13.2 线性表详解（c语言版）
+		https://blog.csdn.net/wqc_CSDN/article/details/50628855 
+		测试代码:08_c_data_struct_base\02-SequenceList-01-test-raw.c 
+	13.3 详解数据结构之栈的基本操作（C语言描述）
+		13.3.1 详解数据结构之顺序栈的基本操作（C语言描述）
+			https://blog.csdn.net/qq_44614524/article/details/86647259? 
+		13.3.2 数据结构之顺序栈，C语言实现（详细）
+			
+			https://blog.csdn.net/ck8719/article/details/106336368 
+			
+			顺序栈用数组实现，链式栈使用链表实现。
+			对于顺序栈，我们是从数组的尾部进行插入与删除，以数组尾部作为栈顶。
+
+			对于链式栈，我们是从链表的表头进行插入与删除，以链表表头作为栈顶。
+			
+			测试代码：03-SequenceStack-03-use-pointer-raw.c
+		13.3.3 数据结构与算法之顺序栈C语言实现 
+			https://www.cnblogs.com/chendong-leslie/p/10190144.html 
+			测试代码：03-SequenceStack-02-use-pointer-raw.c 
 			
 14、c语言结构体及联合体
 	
@@ -315,6 +338,9 @@
 		
 		16.2.1 C语言实现动态数组
 			https://blog.csdn.net/IOT2017/article/details/84102686
+			
+	16.3 指针malloc分配空间与数组区别？	
+		https://blog.csdn.net/qq361294382/article/details/52027448
 17. 指针
 	17.1 函数指针
 		https://www.runoob.com/cprogramming/c-fun-pointer-callback.html
@@ -371,7 +397,8 @@
 		https://www.cnblogs.com/fnlingnzb-learner/p/8980452.html
 	24.2 C语言中的static 详细分析 
 		https://blog.csdn.net/keyeagle/article/details/6708077
-		
+		c语言中static关键字用法详解 
+		https://blog.csdn.net/guotianqing/article/details/79828100 
 25,c语言里NULL的理解 
 	25.1 c语言里NULL的理解 
 		 https://blog.csdn.net/selina8921/article/details/79176297 

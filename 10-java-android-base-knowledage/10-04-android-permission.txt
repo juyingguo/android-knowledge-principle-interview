@@ -18,6 +18,10 @@
 	3.2 谷歌官方运行时权限框架之EasyPermissions 
 		https://blog.csdn.net/bansengkwon/article/details/80851752
 		
-		https://blog.csdn.net/parade0393/article/details/103939217
+		https://blog.csdn.net/parade0393/article/details/103939217 
+4. 是否可以只需把targetSdkVersion设置为<=22 就不用动态代码申请权限了。
+	targetSdkVersion 29
+	就可以运行在高版本6.0及以上的手机上。
+	待进一步验证。
 		
 		

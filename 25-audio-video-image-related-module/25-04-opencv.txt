@@ -1,4 +1,5 @@
 一、opencv教程。
 	1.1、opencv教程。 【c语言中文网。】
 		http://c.biancheng.net/view/1089.html
-		
+	1.2 opencv系列播客博主。
+		csdn:Lammyzp,
