@@ -3,7 +3,10 @@
 *.sdf
 *.o
 *.exe
-/*/Debug/
-/*/obj/
-/*/bin/
+/Debug
+/*/Debug
+/obj
+/*/obj
+/bin
+/*/bin
 
