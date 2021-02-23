@@ -1,0 +1,7 @@
+1.Firefox自动跳转https解决方法
+	1.1 https://blog.csdn.net/qq_22200671/article/details/109223214 
+		1、在地bai址栏键入"about:config" 点击“我了解du此风险”；
+	3、输入首选项名称为“security.enterprise_roots.enabled”并把值设置为 true，清楚浏览器缓存并重启浏览器即可
+2. 火狐浏览器如何清除缓存记录 
+	https://jingyan.baidu.com/article/4ae03de3cc923b3eff9e6b38.html 
+	

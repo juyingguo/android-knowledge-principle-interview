@@ -1,0 +1,78 @@
+1.资源
+	1.1 http://nginx.org/en/
+	
+		Nginx github：
+		https://github.com/nginx/nginx
+	1.2  关联模块
+		rtmp：https://github.com/arut/nginx-rtmp-module
+	
+2. Windows下启动,关闭Nginx命令
+	启动
+	直接点击Nginx目录下的nginx.exe    或者    cmd运行start nginx
+
+	https://www.cnblogs.com/xb1223/p/10205645.html 
+3. nginx启动失败
+	./nginx: error while loading shared libraries: libpcre.so.1: cannot open shared object file: No such 
+	https://blog.csdn.net/weixin_44297303/article/details/89505398  
+	
+	https://blog.csdn.net/perfer258/article/details/81283656 
+	
+	https://www.cnblogs.com/achengmu/p/9093814.html 
+		一：libpcre.so.1 => not found
+
+		比如上面的是 /lib64/*,这个和下面解决问题时创建的软连接有关系
+
+		解决办法：
+
+		1、首先确认已经安装好pcre 软件（nginx 依赖该软件）
+
+		2、创建软连接
+
+		对于/lib/* 32位系统来说：查看结果显示 ： libpcre.so.1 => not found ，同时注意lib库的路径，有/lib/* 和 /lib64/* 之分。
+
+		#查看lib库
+		#  ls /lib/ |grep pcre
+		libpcre.so.0
+		libpcre.so.0.0.1
+		 
+		#添加软连接
+		# ln -s /lib/libpcre.so.0.0.1 /lib/libpcre.so.1
+		　　
+
+		ps: 也有可能 pcre lib文件在目录：/usr/local/lib/
+
+		对于/lib64/* 64位系统来说：
+
+			#查看lib库
+		#  ls /lib64/ |grep pcre
+		libpcre.so.0
+		libpcre.so.0.0.1
+		 
+		#添加软连接
+		# ln -s /lib64/libpcre.so.0.0.1 /lib64/libpcre.so.1
+		
+	我的配置验证：
+		libpcre.so.*位于/usr/local/lib/目录下
+		软链接。
+		注意::无论当前在哪个目录,都需要链接到/lib/libpcre.so.1（/lib不可少，否则依然找不到。），无论当前在哪个目录。
+		如下：：
+		eink@eink-virtual-machine:/lib$ sudo ln -s /usr/local/lib/libpcre.so.1.2.12 /lib/libpcre.so.1
+4. ubuntu下安装nginx时PCRE库、zlib库、OpenSSL库的安装 
+	4.1  https://blog.csdn.net/somanlee/article/details/69808788?
+		 apt-get install libpcre3 libpcre3-dev   
+		 sudo apt-get install zlib1g-dev 
+		 sudo apt-get install openssl libssl-dev  
+		 
+		 本文参考书目：
+		[1]. 陶辉. 深入理解Nginx 模块开发与架构解析[M]. 机械工业出版社, 2016.
+	4.2 下载各个软件的源码编译安装。	
+		一般情况执行如下命令	
+			1、./configure
+
+			2、make
+
+			3、make install 
+		
+		具体情况，配置，根据具体特性及特定要求而定。
+
+		

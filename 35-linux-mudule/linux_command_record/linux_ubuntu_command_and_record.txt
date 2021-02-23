@@ -241,4 +241,11 @@
 			leblancs@leblancs-virtual-machine:~$ getconf LONG_BIT
 			
 			file /bin/bash
+9 ubuntu 中wget (下载)命令用法
+	https://www.cnblogs.com/confessionlouis/p/9763512.html 
 	
+	1、使用wget下载单个文件 
+
+	以下的例子是从网络下载一个文件并保存在当前目录 
+
+	wget http://cn.wordpress.org/wordpress-3.1-zh_CN.zip 

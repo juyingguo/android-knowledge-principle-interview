@@ -1,3 +1,12 @@
+00.资源
+	00.1 设计模式之禅读书笔记-22个设计模式 
+		含代码：
+		https://www.cnblogs.com/floor/p/12961398.html 
+		
+		《设计模式之禅》学习笔记 
+		含代码
+			https://www.cnblogs.com/qwertWZ/p/4582265.html
+			
 01. mvp
 	01.1 Android官方MVP架构示例项目解读 
 		https://mp.weixin.qq.com/s?__biz=MzI0MjE3OTYwMg==&mid=2649547602&idx=1&sn=571db7e744c998ef4ca762ec6a1398d5&scene=21#wechat_redirect
@@ -121,3 +130,10 @@
 	6.7、细说JDK动态代理的实现原理  
 		https://blog.csdn.net/mhmyqn/article/details/48474815
 		
+7 Java 设计模式——建造者模式（Builder Pattern）
+	7.1 Java 设计模式——建造者模式（Builder Pattern）
+		参考：https://www.jianshu.com/p/47329a94f5dc 
+		调试代码：AndroidJavaDemoTestForAS\javatest\src\main\java\com\designmodel\buildmodel 
+		
+		第二种方式：
+		比第一种方式少了指挥者，主要是因为第二种方式把指挥者交给用户来操作，使得产品的创建更加简单灵活。

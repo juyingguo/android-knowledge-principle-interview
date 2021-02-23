@@ -1,3 +1,7 @@
+/**
+1. 父类中方法使用virtual
+2. 子类方继承的该方法，写与不写virtual没关系。需要再次被继承时可以写。
+*/
 #include <iostream>
 using namespace std;
 
@@ -19,7 +23,7 @@ class Shape {
 class Rectangle: public Shape{
    public:
       Rectangle( int a=0, int b=0):Shape(a, b) { }
-      int area ()
+      virtual int area ()
       {
          cout << "Rectangle class area :" << (width * height) <<endl;
          return (width * height);
@@ -32,7 +36,7 @@ class Triangle: public Shape{
       	width = a;
       	height = b;
 		}
-      int area ()
+      virtual int area ()
       {
          cout << "Triangle class area :" << (width * height / 2 ) <<endl;
          return (width * height / 2);

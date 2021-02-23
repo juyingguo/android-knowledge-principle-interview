@@ -1,0 +1,32 @@
+1.资源
+	1.1 OpenGL ES
+		file:///C:/java2/as/as1_5/sdk/docs/guide/topics/graphics/opengl.html
+	1.2. OpenGL ES应用开发实践指南  Android卷 [（美）KevinBrothaler著][机械工业出版社][2014.09][230页]@www.java1234.com
+		书中例子源码及相关资源：
+		实例代码及响应的图像和纹理：
+			http://pragprog.com/book/kbogla
+		lean opengl es 网站，作者播客教程
+			http://www.learnopengles.com
+			http://www.khronos.org
+		OpenGL ES2.0 API 快速参考卡片：
+			
+			http://www.khronos.org/opengles/sdk/docs/reference_cards/OpenGL-ES-2_0-Reference-card.pdf 
+			和
+			https://www.khronos.org/registry/OpenGL-Refpages/es2.0/  
+			
+		OpenGL ES2.0参考页：
+			https://www.khronos.org/opengles/sdk/docs/man/ 
+				网站内部调整自动连接到：上面的【OpenGL ES2.0 API 快速参考卡片】网页地址
+		OpenGL ES2.0 着色器语言参考页：
+			https://www.khronos.org/opengles/sdk/docs/manglsl/ 	
+				被合并到【OpenGL ES api参考】
+				https://www.khronos.org/registry/OpenGL-Refpages/es3.1/index.php 		
+		OpenGL ES2.0 着色器语言规范参考页：
+		
+			https://www.khronos.org/registry/gles/specs/2.0/GLSL_ES_Specification_1.0.17.pdf
+		OpenGL ES2.0 着色器语言2.0.25完整规范参考页：
+			https://www.khronos.org/registry/gles/specs/2.0/es_full_spec_2.0.25.pdf
+		OpenGL ES2.0 api注册表：
+			https://www.khronos.org/registry/egl/ 
+	1.3 《Learn OpenGL 中文》：https://learnopengl-cn.readthedocs.io/zh/latest/ 
+2. 
