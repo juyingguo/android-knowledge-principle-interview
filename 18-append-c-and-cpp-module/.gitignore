@@ -1,9 +1,9 @@
 *.ipch
-/*/ipch
+/*/ipch/
 *.sdf
 *.o
 *.exe
-/*/Debug
-/*/obj
-/*/bin
+/*/Debug/
+/*/obj/
+/*/bin/
 
