@@ -100,7 +100,7 @@
 		对于一个应用内部判断自己的activity是否位于当前应用的最前台（不一定是android系统桌面的最前台，比如打开了其它应用在最前台）。
 		可以使用：Application.ActivityLifecycleCallbacks。根据onActivityResumed及相关回调方法处理即可。
 		ibotnlauncher中这两种方法都有的。
-	11.3 Android开发：activity去除标题栏的方法
+	11.3 Android开发：activity去除标题栏的方法。
 		https://blog.csdn.net/android157/article/details/80774143
 		
 		requestWindowFeature(Window.FEATURE_NO_TITLE);，现在基本就可以去除标题栏了。
@@ -144,3 +144,17 @@
 		11.5.2 android动态设置控件的大小和位置
 			https://blog.csdn.net/wocena/article/details/52485051
                 mGirl.setLayoutParams(layoutParams);
+	11.6 全屏。
+		11.6 非完全全屏，但可能底部导航栏没有消失。
+			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		11.7 完全全屏，同时让底部导航栏也消失。标题栏也一并隐藏
+			private void hideNavigationBar(){
+			View decorView = getWindow().getDecorView();
+			decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+					| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+					| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+					| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+					| View.SYSTEM_UI_FLAG_FULLSCREEN
+					| View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+			}
+		

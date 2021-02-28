@@ -54,7 +54,8 @@
 		makeJar.dependsOn(build)
 		
 		点击右边的Gradle侧边栏：makeJar ,或者exportJar
-			
+	1.3 ANDROID STUDIO 生成AAR和引用AAR 
+		https://www.cnblogs.com/androidxiaoyang/p/5473916.html  
 2. Android Studio：unsupported class file version 52.0报错
 	2.1 Android Studio：unsupported class file version 52.0报错
 		https://blog.csdn.net/u011435933/article/details/80923285?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
