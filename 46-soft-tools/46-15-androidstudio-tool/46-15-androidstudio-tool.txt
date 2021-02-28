@@ -1,7 +1,11 @@
 0 资源
 	0.1 androidstudio官网下载。
 		https://developer.android.com/studio/archive
-	
+	0.2  http://tools.android-studio.org/ 
+	0.3 Android Gradle 插件版本说明
+		https://developer.android.google.cn/studio/releases/gradle-plugin 
+		
+		包含项：【各个 Android Gradle 插件版本所需的 Gradle 版本】
 1. Android studio 将 Module 打包成 Jar 包,aar.
 	1.1 Android studio 将 Module 打包成 Jar 包
 		https://www.cnblogs.com/xinaixia/p/7660173.html
@@ -214,3 +218,9 @@
 			
 			将报错的工程采用MyJni一致版本配置。
 			此时cmake编译日志可以正常打印了。【CMake was unable to find a build program corresponding to "Ninja"】错误不再提示。
+13 Android Studio3.6设置Gradle Offline Mode的方法 
+	android studio3.5以及之前的版本,设置方法：Settings-Build,Execution,Deployment.
+	3.6 之后同样的位置已找不到Offline的设置选项了。
+	View > Tool Windows > Gradle 
+	
+	

@@ -249,3 +249,6 @@
 
 		如果配置prefix，如：
 		./configure --prefix=/usr/local/test可以把所有资源文件放在/usr/local/test的路径中，不会杂乱。
+24 cpu
+	24.1 NEON技术粗浅认识 
+		https://blog.csdn.net/heliangbin87/article/details/79581113/ 

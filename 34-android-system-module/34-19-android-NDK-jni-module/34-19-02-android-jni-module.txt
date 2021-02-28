@@ -34,6 +34,9 @@
 		To learn more, read Add C and C++ Code to Your Project .
 		链接：向您的项目添加 C 和 C++ 代码
 		https://developer.android.com/studio/projects/add-native-code 
+	2.4 JNI 动态注册
 3. 小知识点记录。
 	3.1 ReleaseStringUTFChars调用后还是能获取到值？不是应该获取不到值吗？
-		*MyJni\app\src\main\cpp\native-lib.cpp
+		*MyJni\app\src\main\cpp\native-lib.cpp 
+4. JNI中C调用Java方法 
+	https://blog.csdn.net/chengkaizone/article/details/52512813 

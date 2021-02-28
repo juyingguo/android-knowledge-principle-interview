@@ -1,6 +1,9 @@
 01 ndk资源
 	01.1 ndk-samples
 		https://github.com/android/ndk-samples/tree/master 
+		
+		原项目地址：https://github.com/googlesamples/android-ndk
+		原说明文档：https://github.com/googlesamples/android-ndk/blob/master/README.md
 	01.2 ndk下载
 		https://developer.android.google.cn/ndk/downloads/
 		网站含有修订说明。
@@ -175,7 +178,8 @@
 		 如果是在Android Studio中，则会默认匹配main下的jniLibs目录，如果没有目录需要自己手动创建
 		
 		B:同时制定libs和jniLibs，需要进行合并保留一个即可。
-		
+7. 使用IDA反编译.so文件并修改
+	https://www.jianshu.com/p/52b91733fec1
 		
 x. 一些记录
 	x.1 

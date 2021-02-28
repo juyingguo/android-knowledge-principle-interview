@@ -1,0 +1,45 @@
+1.cmake
+	1.1 https://cmake.org/ 
+	
+	1.2 windows下cmake的安装教程 zip 文件方式
+		配置环境变量后，如果没有生效。需要重启电脑生效。
+	1.3 Windows下CMake安装教程 msi文件方式
+		https://blog.csdn.net/u011231598/article/details/80338941
+	
+2. android studio 使用CMAKE 
+	2.1 android studio 使用CMAKE 
+		https://blog.csdn.net/qq_25817651/article/details/53135685
+		
+		Android移植谷歌官方串口库支持校验位、数据位、停止位、流控配置
+		https://juejin.im/post/5c010a19e51d456ac27b40fc
+		
+		1.在SDK Tools中勾选安装CMake、LLDB
+		
+		2.	module-xyz/build.gradle
+			android {
+				defaultConfig {
+					externalNativeBuild{	//添加这行，解决cmake 没有配置问题。
+						cmake{
+							cppFlags ""
+						}
+					}
+				}
+				externalNativeBuild {
+					cmake {
+						path 'CMakeLists.txt'
+					}
+				}
+			}
+	2.2 android studio 使用Cmake问题记录
+		2.2.1 ninja: error: 'xxx.a', needed by 'xxx.so', missing and no known rule to make it 
+			https://cloud.tencent.com/developer/ask/152011
+		
+	2.3 编译自动生成的库文件位置默认在工程编译生成目录下面。
+		MyJni\app\build\intermediates\cmake\debug\obj
+	2.4 androidstudio使用Cmake
+		windows,androidstudio,cmake
+		a：local.properties添加cmake安装目录
+			cmake.dir=C\:\\java2\\as\\as1_5\\sdk\\cmake\\3.10.2.4988404
+		b:或者环境变量PATH加入cmake目录 
+3. CMakeLists.txt 语法介绍与实例演练 
+	https://blog.csdn.net/afei__/article/details/81201039  

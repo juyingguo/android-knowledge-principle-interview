@@ -1,0 +1,28 @@
+1.资源
+	1.1 官网
+		https://www.perl.org/get.html
+	1.2 教程
+		https://www.runoob.com/perl/perl-syntax.html 
+	1.3
+2. 运行perl,命令行参数如下所示
+	https://www.runoob.com/perl/perl-environment.html 
+	
+	-d[:debugger]	在调试模式下运行程序
+	-Idirectory	指定 @INC/#include 目录
+	-T	
+	允许污染检测
+
+	-t	允许污染警告
+	-U	允许不安全操作
+	-w	允许很多有用的警告
+	-W	允许所有警告
+	-X	禁用使用警告
+	-e program	执行 perl 代码
+	file	执行 perl 脚本文件
+3. Perl之my与local 
+	https://www.cnblogs.com/ssp2110/p/3797659.html 
+4. 正则表达式
+	4.1 perl中tr的用法（转载） 
+		https://www.cnblogs.com/steamed-bread/p/5558778.html 
+5. perl中pack函数的用法
+	https://blog.csdn.net/jiangzhao526/article/details/17377993  

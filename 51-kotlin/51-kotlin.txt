@@ -1,0 +1,16 @@
+1.资源
+	1.1 https://www.runoob.com/kotlin/kotlin-tutorial.html 
+		官方网站
+			https://www.kotlincn.net/ 
+		官方示例
+			https://try.kotlinlang.org/
+		官方网站 - 中文翻译
+			https://www.kotlincn.net/
+		Kotlin 官方在线工具
+			https://play.kotlinlang.org/
+		Kotlin 在线工具
+2. android studio 中配置kotlin 
+	2.1 The current Gradle version 4.4 is not compatible with the Kotlin Gradle plugin. Please use Gradle 5.3 or newer, or the previous version of the Kotlin plugin.
+		Open File
+		
+		

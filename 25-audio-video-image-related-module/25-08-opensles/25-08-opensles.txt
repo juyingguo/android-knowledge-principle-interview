@@ -1,0 +1,21 @@
+0.1 资源
+	0.1.1 OpenSL ES 
+		OpenSL ES 全称 (Open Sound Library for Embedded Systems)，嵌入式音频加速标准。
+			
+		
+		官网
+				https://www.khronos.org/opensles/
+			OpenSL_ES_Specification_1.1
+				[含api]
+				https://www.khronos.org/registry/OpenSL-ES/specs/OpenSL_ES_Specification_1.1.pdf
+		OpenSL ES for Android 	
+			https://developer.android.google.cn/ndk/guides/audio/opensl  
+	0.1.2 Android 音频 Native API OpenSL ES 简要介绍 
+		https://blog.csdn.net/liuhaitao_share/article/details/41285893?  
+		
+	0.1.3 opensles系列播客博主。
+		csdn:Lammyzp 
+	
+			
+1. OpenSLES android平台播放音频pcm 
+	https://blog.csdn.net/zhangpengzp/article/details/88962634 

@@ -4,18 +4,37 @@
 		http://wiki.codeblocks.org/index.php?title=Code::Blocks_Plugins
 
 	1.2 Linux 系统下 CodeBlocks安装与使用
-		https://blog.csdn.net/qq_40118071/article/details/79107487
+		1.2.1 
+			https://blog.csdn.net/qq_40118071/article/details/79107487
 		
-		1.安装
-		1）sudo add-apt-repository ppa:damien-moore/codeblocks-stable
-		输入密码后，会提示你敲【Enter】继续，然后如果一切OK的话，就会安装好这个ppa源。
-		继续敲：
-		2）sudo apt-get update
-		对源进行更新，这个过程会下载一些东西，请保持网络畅通。最后，开始安装：
-		3）sudo apt-get install codeblocks
-		OK了，只要网络不出问题，就大功告成，CodeBlocks就会顺利安装完成！
+			1.安装
+			1）sudo add-apt-repository ppa:damien-moore/codeblocks-stable
+			输入密码后，会提示你敲【Enter】继续，然后如果一切OK的话，就会安装好这个ppa源。
+			继续敲：
+			2）sudo apt-get update
+			对源进行更新，这个过程会下载一些东西，请保持网络畅通。最后，开始安装：
+			3）sudo apt-get install codeblocks
+			OK了，只要网络不出问题，就大功告成，CodeBlocks就会顺利安装完成！
 
-		剩下要做的就是把快捷方式拽到启动器上方便打开就行了。
+			剩下要做的就是把快捷方式拽到启动器上方便打开就行了。
+			
+			该数据源无法安装最新版本的。只能安装16版本的。
+			
+		1.2.2 如何在Ubuntu 18.04、19.10中安装Code::Blocks 20.03 
+			https://www.linuxidc.com/Linux/2020-03/162695.htm 
+			
+			1.）运行命令以添加PPA存储库：
+			运行命令以添加PPA存储库：
+			sudo add-apt-repository ppa:codeblocks-devs/release
+			如果您的系统上安装了旧版本，请通过Software Updater对其进行升级： 
+				sudo apt update
+				sudo apt install codeblocks codeblocks-contrib 
+				
+			卸载Code::Blocks 20.03
+			要删除PPA存储库，请转到“软件和更新->其他软件”，或在终端中运行命令： 
+			sudo add-apt-repository --remove ppa:codeblocks-devs/release
+			并通过命令删除Code::Blocks： 
+			sudo apt remove --autoremove codeblocks codeblocks-contrib 
 2. Codeblocks实用快捷键技巧汇总 (全) 
 
 	2.1 Codeblocks shortcuts 
@@ -50,4 +69,8 @@
 		在打开的Select target 对话框中选择Debug
 
 		在Program arguments:中填 入main函数所需要的参数点击OK按钮 就可以了
-		
+4. codeblock如何去掉下划线，波浪线
+	https://jingyan.baidu.com/article/0964eca26858b28285f536db.html
+	选择plugins中的倒数第一条：Manage plugins.会出现一个对话框。
+	找到spellcheck，并选中它 
+	选择右上方的disable。

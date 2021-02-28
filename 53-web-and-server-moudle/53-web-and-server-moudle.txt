@@ -1,0 +1,9 @@
+1.资源
+2.浅谈Tomcat 、Apache、 Nginx的区别及优缺点
+	https://www.cnblogs.com/wchwch/p/11210187.html 
+	
+3. Linux下Nginx+Tomcat整合与配置  
+	https://www.ktanx.com/blog/p/3944  
+	
+4. 为什么选择Tomcat作为首选JavaWeb应用服务器 
+	https://blog.csdn.net/chendaike/article/details/89021608 

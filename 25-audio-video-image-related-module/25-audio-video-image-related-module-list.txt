@@ -1,3 +1,10 @@
+00 资源
+	00.1 Visual c++数字图像处理典型算法及实例随书源代码 
+		https://www.haolizi.net/example/view_35872.html 
+		
+	00.2 
+		visual c++音视频编解码技术及实践的音频实现的源代码
+		相关下载链接：//download.csdn.net/download/toplovemoney/7567597?utm_source=bbsseo
 一、音频格式。
 	1.1、MP3和WAV文件有什么区别？
 		https://zhidao.baidu.com/question/510351.html
@@ -172,6 +179,9 @@
 	13.5 CAVLC和CABAC简介
 		【h264】
 		https://blog.csdn.net/jubincn/article/details/6948334
-
+	13.6 光栅化的深入理解 
+		https://blog.csdn.net/u010356727/article/details/50594401 
+	13.7 对颜色空间YUV、RGB的理解 
+		https://blog.csdn.net/asahinokawa/article/details/80596655 
 14 opencore
 	OpenCore是Android的多媒体核心，它是一个基于C++的实现，定义了全功能的操作系统移植层，各种基本的功能均被封装成类的形式，各层次之间的接口多使用继承等方式。 

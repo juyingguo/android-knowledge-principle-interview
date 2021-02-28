@@ -1,3 +1,5 @@
+0，资源
+	
 1、cpp	[Error] 'numeric_limits' was not declared in this scope
 	1.1、cpp	[Error] 'numeric_limits' was not declared in this scope
 		https://stackoverflow.com/questions/20231259/error-numeric-limits-was-not-declared-in-this-scope
@@ -32,4 +34,6 @@
 		https://blog.csdn.net/ucasliyang/article/details/52691619?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
 		c++中允许在结构体当中定义函数，它的用法和类的用法很像，不过与类有一个区别在于，struct中定义的函数和变量都是默认为public的，但class中的则是默认为private。
-		
+6. 虚函数virtual
+	6.1 析构函数加上虚函数声明，因为需要删除，删除是可能通过基类进行删除。
+		而构造函数是不需要加虚函数声明的，因为构造函数是直接调用的。

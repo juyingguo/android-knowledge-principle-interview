@@ -2,6 +2,9 @@
 	1.1 官网
 		https://www.ffmpeg.org/
 		http://www.ffmpeg.org/download.html
+		
+		1.1.2 doc
+			https://xdsnet.gitbooks.io/other-doc-cn-ffmpeg/content/ffmpeg-doc-cn-35.html 
 	1.2 http://git.videolan.org/?p=ffmpeg.git 
 	
 	1.3 GitHub
@@ -17,7 +20,40 @@
 	1.6 ffmpeg 社区
 	1.7 FFmpeg视频资源
 		1.7.1 ffmpeg-Android&iOS跨平台开发
-			https://www.bilibili.com/video/BV1eZ4y1p7ZM?from=search&seid=5283599842963896799
+			https://www.bilibili.com/video/BV1eZ4y1p7ZM?from=search&seid=5283599842963896799 
+		1.7.2 FFmpeg音视频核心技术精讲与实战
+			https://www.bilibili.com/video/BV1pC4y1W7f3?from=search&seid=17603982452678631908 
+			
+			qq学习群：806397913：
+				学习群中有老师分享的视频及代码百度网盘地址。
+			杨万里的github学习资源仓库：https://github.com/wanliyang1990/ 
+			博客地址：http://blog.csdn.net/ywl5320
+			
+			基于以下教程开发：
+				csdn:
+				ffmpeg打造android万能音频播放器
+				FFmpeg+OpenGL ES+OpenSL ES打造Android视频播放器教程
+			知识点记录以及对应该知识点扩展
+				1.7.2.1 Android studio使用ndk native c调用OpenSLES播放声音
+					https://blog.csdn.net/tom_221x/article/details/64131555
+					
+					Android 播放音频（PCM）的两种方法--AudioTrack/OpenSL ES使用简介 
+					https://blog.csdn.net/myvest/article/details/104375789? 
+		1.7.3 FFmpeg安卓流媒体播放器开发实战视频课程 -基于NDK、C++和 FFmpeg Android... 
+			https://www.bilibili.com/video/BV1aJ411Y7GK?from=search&seid=8079659670678290582 
+			淘宝也有资源卖：
+			老夏课堂：
+			http://laoxiaketang.com/  
+			
+			FFmpeg 4.2 从基础实战-多路H265监控录放开发
+			哔哩哔哩资源：
+			https://www.bilibili.com/video/BV1qV411o7zx?from=search&seid=17261540113384188918 
+			腾讯课堂资源：
+			https://ke.qq.com/course/2027387?taid=8356361387569019 
+			
+			Linux项目实战：自制视频监控系统！使用FFmpeg编辑视频全攻略 #第3课# 
+			https://www.bilibili.com/video/BV1aK4y1k7pN?from=search&seid=9468635879410232171 
+			
 	1.8 ffmpeg ./configure 的相关参数说明
 		https://blog.csdn.net/fengsh998/article/details/79443503
 		注意该文档有错误，ARCH说明有误，需要在configure文件中查看ARCH_LIST
@@ -205,6 +241,23 @@
 
 			参考案例：https://trac.ffmpeg.org/wiki/Scaling
 				https://trac.ffmpeg.org/wiki
+	7.2 提取音频、视频数据 
+		https://www.cnblogs.com/fandx/p/12121019.html 
+		https://blog.csdn.net/sxc1989/article/details/85342427 
+		
+		提取yuv原始视频数据
+			ffmpeg -i input.mp4 -an -c:v rawvideo -pix_fmt ymv420p out.yuv
+			-i : 指定视频数据
+			-an  : 去除音频
+			-c:v rawvideo : 指定视频进行重新编码，编码为原始rawvideo数据
+			-fix_fmt yuv420p :  指定视频的重新封装的像素格式
+		提取PCM原始音频数据 
+			ffmpeg -i input.mp4 -vn -ar 44100 -ac 2 -f s16le out.pcm
+			 -i : 指定视频数据
+			 -vn : 去除视频数据
+			 -ar : 音频的采样率 是441000 kb
+			 -ac2 : 音频 c是china的意思 2 是双声道
+			 -f s16le : 音频的格式s16le存储方式
 				
 8. FFmpeg在基于Android上有哪些应用。
 	8.1 FFmpeg在基于Android的楼宇可视对讲程序中的应用 
@@ -215,6 +268,14 @@
 		https://www.cnki.com.cn/Article/CJFDTotal-JCFH201402012.htm
 		
 		文章中有一些书籍和文献可以参考
+		
+		Android平台点对点音视频对讲 
+			https://www.haolizi.net/example/view_39669.html 
+		基于Android的可视对讲（转） 
+			https://blog.csdn.net/zhjfover/article/details/52983762  
+			原文地址：：http://news.eeworld.com.cn/mcu/article_2016091929533.html 
+		【转载】基于WebRTC的Android数字楼宇对讲系统回声消除 
+			https://blog.csdn.net/woaitingting1985/article/details/81938565? 
 	8.2 Android基于Ffmpeg 的软编软解的可视对讲 
 		https://my.oschina.net/zengliubao/blog/305890
 		1.没有回音消除。直接上源码（应用层）！
@@ -289,6 +350,7 @@
 					https://www.jianshu.com/p/f23c62820b79
 					
 					--target-os=linux ：Android 内核为 Linux ，故在此指定为 linux ，如果要编译的目标系统为 ios ，则指定为 darwin 。
+						//注意是老版本才用linux;3.4版本后用android，否则会发生一些找不到的错误。
 			android studio会自动把编译好的so文件存放在app/build/intermediates/cmake/debug/obj/armeabi等几个目录下
 			关联文章：费了这么大劲就是为了这个libffmpeg.so文件，其实编译这个文件也可以不在android工程中进行，因为实际上我们的工程只要引用这几个so包而已，至于怎么编译这些so包并不在本工程的职责范围内。
 			要在工程外编译请参考：https://blog.csdn.net/MingHuang2017/article/details/79000345
@@ -296,7 +358,7 @@
 			  I:/juying/ffmpeg/ffmpeg-3.1.11/libavutil/common.h:45:32: fatal error: libavutil/avconfig.h: No such file or directory
 			#include "libavutil/avconfig.h"
 			使用和博主一致的版本试试：I:\juying\ffmpeg\FFmpeg-3.4.1
-	
+	8.7 
 9. ffmpeg超详细综合教程
 	【ffmpeg超详细综合教程一】
 	http://www.360doc.com/content/16/0711/20/9008018_574787603.shtml 
@@ -313,4 +375,8 @@
 11 基于FFmpeg+SDL的视频播放器的制作——雷霄骅
 	https://b23.tv/1EsE12?share_medium=android&share_source=qq&bbid=XYCDBB3C2CE7545ECD20C449646BAFC69881F&ts=1611667246384
 	Bibi
-	雷神的资料和视频：链接: https://pan.baidu.com/s/1hEHryIRAP8O3XPTMacd85w 密码: z8gc
+	雷神的资料和视频：链接: https://pan.baidu.com/s/1hEHryIRAP8O3XPTMacd85w 密码: z8gc 
+last 技术点知识点
+	last01 FFMPEG之AVRational TimeBase成员理解 
+		https://blog.csdn.net/xiaojun111111/article/details/79701314 
+		博主，【ffmpeg,linux等多个系列文章】

@@ -21,3 +21,21 @@
 	https://blog.51cto.com/javavwv/1743468
 	
 	虚拟机交流接口VMCI(The Virtual Machine Communication Interface)是一个在一个或多个虚拟机与宿主机之间提供高速高效交流的基本组件(infrastructure)，VMCI SDK促进了使用VMCI基本组件的软件的发展。
+4. VM错误：VMware Authorization Service当前未运行 
+	https://blog.csdn.net/weixin_43795761/article/details/106811094 
+	
+	我发现每次右键用管理员方式打开就好了。。。就是这么神奇 
+	
+5. 解决VMware虚拟机报错“无法连接MKS：套接字连接尝试次数太多，正在放弃 
+	https://blog.csdn.net/qq_31638535/article/details/90384521 
+	
+	“我的电脑”->“管理”->“服务和应用程序”->“服务”
+
+		VMware Authorization Service
+		VMware DHCP Service
+		VMware NAT Service
+		VMware USB Arbitration Service
+		VMware Workstation Server
+		这几个都正常启动了，后来发现重启一下这些服务就可以了。这个我看很多博客都没有写到，在此添加一下。
+
+		以上问题解决！

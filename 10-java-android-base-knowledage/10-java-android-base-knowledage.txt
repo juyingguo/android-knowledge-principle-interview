@@ -282,7 +282,7 @@
 		https://blog.csdn.net/kc58236582/article/details/54616756
 		
 		
-	25.4 Android锁屏、重启、关机开发！简单直接 
+	24.4 Android锁屏、重启、关机开发！简单直接 
 		https://blog.csdn.net/GodDavide/article/details/53098538?utm_source=blogxgwz5 
 25,Android匿名共享内存（Ashmem）原理 
 	25.1 Android匿名共享内存（Ashmem）原理 
@@ -290,6 +290,13 @@
 		
 25，Android学习笔记（四十）：Preference的使用 
 	25.1 Android学习笔记（四十）：Preference的使用 
-		https://blog.csdn.net/flowingflying/article/details/6671548
+		https://blog.csdn.net/flowingflying/article/details/6671548 
+26 到底什么是AndroidX？ 
+	https://blog.csdn.net/guolin_blog/article/details/97142065? 
+	
+	https://blog.csdn.net/ambor16/article/details/106355537  
+	
+	AndroidX 是对support library 的一次升级：包名 从在android.support.*下面变成androidx.*下面。
+	命名规则不会再包含具体操作系统API的版本号了。
 	
 	
