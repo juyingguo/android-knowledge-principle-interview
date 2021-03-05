@@ -1,3 +1,12 @@
+0 资源
+	0.1 jar 
+		https://www.findjar.com/
+		
+		https://mvnrepository.com/
+	0.2 jdk1.6 download address
+		https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.html#jdk-6u25-oth-JPR 
+		
+		
 一、吃透java ,csdn博客。
 	1.1、吃透Java基础八：Throwable异常 
 		https://blog.csdn.net/u013277209/article/details/102834719
@@ -23,5 +32,9 @@
 		4.2.2 java.io.StreamCorruptedException: invalid stream header报错原因 
 			https://blog.csdn.net/wangwenjunsw/article/details/5550441?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 			
-		
+5.java中线程
+	5.1 
+	5.2 线程挂起，阻塞，休眠理解 
+		https://blog.csdn.net/yeyuyyy/article/details/52288900 
+	5.3 线程挂起与线程休眠 
 			

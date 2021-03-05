@@ -223,4 +223,79 @@
 	3.6 之后同样的位置已找不到Offline的设置选项了。
 	View > Tool Windows > Gradle 
 	
+14 androidstudio 使用gradle构建失败
+	下载https://maven.google.com/**/support-annotations-25.4.0.jar  
+	提示Connection timed out。
 	
+	更改仓库：顶级gradle文件
+	buildscript {
+		repositories {
+			jcenter()
+			maven {
+				url 'https://maven.google.com/'
+				name 'Google'
+			}
+		}
+	}
+
+	allprojects {
+		repositories {
+				jcenter()
+				maven {
+					url 'https://maven.google.com/'
+					name 'Google'
+				}
+		}
+	}
+	
+	内容全部更换为：
+		buildscript {
+		repositories {
+			google()
+			jcenter()
+			mavenCentral()
+
+		}
+	}
+
+	allprojects {
+		repositories {
+			google()
+			jcenter()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
+15 Project needs to be converted to androidx.* dependencies 	
+	
+	15.1 Android解决Project needs to be converted to androidx.* dependencies问题
+		https://blog.csdn.net/weixin_40420578/article/details/100582094 
+		https://blog.csdn.net/mqdxiaoxiao/article/details/108264547
+		
+		方法一：把整个项目升级到AndroidX,可参考我的另外一篇博客：https://blog.csdn.net/weixin_40420578/article/details/100132061
+	
+		android.useAndroidX=true
+		android.enableJetifier=true
+		
+
+16 使用Androidstudio编译AIDL
+
+	16.1 使用Androidstudio编译AIDL时，出现Process 'command 'D:\SDK\build-tools\27.0.3\aidl.exe'' finished with non-zero exit value 1的错误； 
+		https://blog.csdn.net/ezconn/article/details/87953991 
+		有多种情况。
+		我遇到的其中一个错误：aidl文件中导入其它aidl类的包名不正确
+17 Android Studio中怎么使用DDMS工具
+	17.1 Android Studio中怎么使用DDMS工具  
+		as3.0以下的版本适用：
+		https://www.cnblogs.com/zhichao123/p/11794491.html 
+	17.AndroidStudio 3.0中之后无法打开DDMS [Android Device Monitor] 问题
+		https://www.cnblogs.com/it-tsz/p/10810669.html 
+		
+		Dos命令
+		其实在上面的批处理文件中真正打开DMMS的是最后一行命令，当然也可以把这行命令在命令窗口执行同样可以打开DDMS；
+
+		（1）打开Window命令窗口 ：Win+R快捷键–>CMD–>Enter；复制命令： 
+		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
+
+		（2）在AndroidStudio中底部Terminal中输入： 
+		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；

@@ -1,8 +1,0 @@
-1.jar search website 
-	https://www.findjar.com/index.x
-	 
-2.jdk 
-	1.1¡¢jdk1.6 download address
-		https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.html#jdk-6u25-oth-JPR 
-		
- 
