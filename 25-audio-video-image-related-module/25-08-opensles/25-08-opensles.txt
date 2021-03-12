@@ -19,3 +19,6 @@
 			
 1. OpenSLES android平台播放音频pcm 
 	https://blog.csdn.net/zhangpengzp/article/details/88962634 
+	
+	android自带的openSL库，可用来解码音频，也可以来播放音频，以及录音。要在jni层调用：
+2.OpenSLES 能否增大音频音量。
