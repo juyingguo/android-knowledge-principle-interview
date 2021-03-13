@@ -32,7 +32,41 @@
 		https://blog.csdn.net/weixin_45085810/article/details/108339662
 		
 		解决途径：修改本地hosts文件（位置：C:/windows/system32/drivers/etc/hosts）
+	3.2  解决github无法访问的问题，亲测有效。
+		https://www.jianshu.com/p/36320f35b5b5 
+		
+		在不考虑google浏览器插件vpn能上网的情况下使用。因为此时虽然使用chrome浏览器能够访问github，但是本地git客户端依然无法访问。通过配置host也可以很好的解决。
+		
+		在C:\Windows\System32\drivers\etc中打开host文件（可以用UE等编辑工具打开），在该文件中添加如下内容。
 
+		# GitHub Start 
+		140.82.114.4 github.com
+		140.82.114.4 gist.github.com
+		185.199.108.153 assets-cdn.github.com
+		151.101.64.133 raw.githubusercontent.com
+		151.101.108.133 gist.githubusercontent.com
+		151.101.108.133 cloud.githubusercontent.com
+		151.101.108.133 camo.githubusercontent.com
+		151.101.108.133 avatars0.githubusercontent.com
+		151.101.108.133 avatars1.githubusercontent.com
+		151.101.108.133 avatars2.githubusercontent.com
+		151.101.108.133 avatars3.githubusercontent.com
+		151.101.108.133 avatars4.githubusercontent.com
+		151.101.108.133 avatars5.githubusercontent.com
+		151.101.108.133 avatars6.githubusercontent.com
+		151.101.108.133 avatars7.githubusercontent.com
+		151.101.108.133 avatars8.githubusercontent.com 
+		# GitHub End
+
+		作者：吴尼玛cs
+		链接：https://www.jianshu.com/p/36320f35b5b5
+		来源：简书
+		著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+		
+	3.3 修改本地hosts文件（位置：C:/windows/system32/drivers/etc/hosts）
+		199.232.69.194   global-ssl.fastly.Net
+
+		140.82.112.3      github.com
 4. dns查询网站：http://tool.chinaz.com/dns
 
 5. windows下修改hosts文件，添加固定的DNS解析

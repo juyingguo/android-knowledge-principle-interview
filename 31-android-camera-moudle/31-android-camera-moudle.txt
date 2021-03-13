@@ -162,4 +162,15 @@
 		
 		Surface、SurfaceView、SurfaceHolder及SurfaceHolder.Callback之间的关系
 		https://blog.csdn.net/pathuang68/article/details/7351317
+12 打开摄像头失败
+	异常日志：
+	W/CameraBase: An error occurred while connecting to camera: 0
+	W/System.err: java.lang.RuntimeException: Fail to connect to camera service
+	W/System.err:     at android.hardware.Camera.<init>(Camera.java:512)
+	W/System.err:     at android.hardware.Camera.open(Camera.java:371)
 	
+	
+	12.1 调用Camera.open打开摄像头报错 java.lang.RuntimeException: Fail to connect to camera service
+	
+		https://blog.csdn.net/bluecat333/article/details/99999258 
+		先检查AndroidManifest有没有设置权限。

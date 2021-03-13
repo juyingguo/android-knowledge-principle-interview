@@ -299,6 +299,11 @@
 	14.5、c语言结构体声明时指定默认值？
 	
 	14.6 c语言结构体中定义enum类型。
+	14.7 结构体指针。
+		typedef const struct Student_ {
+			int id;
+			char *name;
+		} * Student;
 		 
 			
 15、c语言中的字符串 
@@ -509,3 +514,5 @@
 		
 		C/C++ 中 const 修饰符用法总结 
 		https://blog.csdn.net/w6655515/article/details/82938596? 
+		
+	37.2 typedef const struct SLObjectItf_ * const * SLObjectItf; 

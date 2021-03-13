@@ -39,4 +39,14 @@
 4. Service 生命周期 
 	4.1 Service 生命周期 
 		https://www.cnblogs.com/huihuizhang/p/7623760.html
-
+5 ANDROID 使用 AIDL
+	5.1 ANDROID STUDIO 使用 AIDL（三）权限验证
+		https://www.cnblogs.com/androidxiaoyang/p/5919372.html  
+		
+		manifest下的节点permission
+		
+		service属性配置permission
+		
+		服务中onBind函数内，中进行权限判断。（这种方式目前没有调通，一直无效。）
+		
+		服务aidl接口实现类 *.Stub继承onTransact中进行权限判断。
