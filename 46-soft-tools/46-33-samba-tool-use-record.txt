@@ -1,8 +1,17 @@
 1. samba资源
 	1.1 介绍
-		Samba是开源软件，用来让Linux系统与Windows系统的SMB/CIFS网络协定做连结，实现Windows主机与Linux服务器之间的资源共享。Samba服务为两种不同的操作系统架起了一座桥梁，使Linux系统和Windows系统之间能够实现互相通信，为广泛的Linux爱好者提供了极大方便。
+		Samba是开源软件，用来让Linux系统与Windows系统的SMB/CIFS网络协定做连结， 实现Windows主机与Linux服务器之间的资源共享。
+		Samba服务为两种不同的操作系统架起了一座桥梁，使Linux系统和Windows系统之间能够实现互相通信，
+		为广泛的Linux爱好者提供了极大方便。
 	1.2 官网
 		https://www.samba.org/ 
+		
+	1.3 
+		（1）samba：这个套件主要包含了SAMBA的主要daemon档案（smbd及nmbd）,SAMBA的文档（document）,以及其它与SAMBA相关的logrotate设定文件及开机预设选项档案等。
+
+		（2）samba-common:这个套件主要提供了SAMBA得主要设定档（smb.conf）,smb.conf语法检验的测试程序(testparm)等。
+
+		（3）samba-client:这个条件则提供了当Linux做为SAMBA Client端时，所需要的工具指令，例如挂载SAMBA档案格式的执行档smbmount等。
 2. Ubuntu 16.04安装配置Samba服务
 	2.1 Ubuntu 16.04安装配置Samba服务 
 		https://www.cnblogs.com/dylancao/p/5856255.html 
@@ -10,19 +19,22 @@
 		安装Samba
 		使用apt-get安装：
 			$ sudo apt-get install samba samba-common
+			
 		如果你开启了防火墙，关闭：
 			$ sudo systemctl stop ufw
+			经验证：该方式在ubuntu16.04上面无效。
+			有效方式为：sudo ufw disable
 		 
 
 		配置Samba
 		编辑配置文件：
 			$ sudo vim /etc/samba/smb.conf
 		添加Samba共享目录：
-			[homes]
+			[homes]	//给外部显示的名称，windows下访问看到的名称。
 				comment = Home Directories
-				browseable = no
-				path = / 
-				valid users = root
+				browseable = yes #配置可以浏览 
+				path = /  ##配置目录
+				valid users = root //配置用户
 				read only = no
 		添加一个用户：
 			$ sudo smbpasswd -a root
@@ -30,11 +42,45 @@
 
 		重启samba服务生效：
 			$ sudo systemctl restart smbd
+			#启动、停止等命令：
+			Usage: /etc/init.d/samba {start|stop|reload|restart|force-reload|status}
+
 		测试：在Windows下运行窗口输入\加上IP，例如：\\192.168.1.199\root。在弹出的窗口，输入刚刚添加的用户名和密码，就可以访问Linux的文件目录了。 
 		
 		更多信息：https://www.samba.org/ 
+		
 	2.2 Ubuntu 18.04安装Samba服务器及配置 
 		https://baijiahao.baidu.com/s?id=1642490243460214285&wfr=spider&for=pc  
 		
-		Ubuntu中Samba的安装配置和使用  
-		https://www.cnblogs.com/lidabo/p/4634047.html
+		2.2.2 Ubuntu中Samba的安装配置和使用  
+			https://www.cnblogs.com/lidabo/p/4634047.html
+		
+		2.2.3 Ubuntu 16.04 samba详细配置及使用（将linux中的共享目录设置成windows中的一个映射磁盘） 
+			https://www.cnblogs.com/longsecond/p/6180133.html 
+			a.含两种配置方法。第一种方式通过samba配置。第二种方法通过共享文件夹实现。
+			b.含盘符，映射驱动器配置方法。
+			c.本播客参考一下播客：
+
+			http://blog.csdn.net/keeplingshi/article/details/52760208
+
+			http://www.linuxdiyf.com/linux/24260.html
+
+			http://www.cnblogs.com/dylancao/p/5856255.html
+
+			https://wiki.archlinux.org/index.php/Samba_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+
+			https://www.samba.org/samba/docs/
+			
+	2.3 samba 配置参数说明
+		[share]
+		comment = Share Folder require password
+		browseable = yes
+		path = /home/share
+		create mask = 0777
+		directory mask = 0777
+		valid users = share
+		force user = nobody
+		force group = nogroup
+		public = yes
+		writable = yes
+		available = yes

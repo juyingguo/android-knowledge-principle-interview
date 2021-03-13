@@ -249,3 +249,15 @@
 	以下的例子是从网络下载一个文件并保存在当前目录 
 
 	wget http://cn.wordpress.org/wordpress-3.1-zh_CN.zip 
+	
+10 ubuntu防火墙状态查看、开启和关闭 
+	10.1 https://www.cnblogs.com/wangyuxing/p/10488522.html  
+		安装方法：
+		sudo apt-get install ufw 
+		sudo ufw enable 
+		sudo ufw disable 
+		sudo ufw status 
+		
+		c 开启/禁用相应端口或服务举例
+		见播客
+	

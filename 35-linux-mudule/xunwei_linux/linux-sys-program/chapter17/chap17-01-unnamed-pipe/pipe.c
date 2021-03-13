@@ -18,7 +18,7 @@ int main(int argc,char *argv[])
 	rc = pipe(pipes);	//创建管道
 	printf("main,pipe return rc = %d.\n",rc);
 	if(rc == -1){
-		perror("\npipes\n");
+		perror("\n pipe error \n");
 		exit(1);
 	}
 
@@ -27,7 +27,7 @@ int main(int argc,char *argv[])
 
 	switch(pid){
 		case -1:
-			perror("\nfork\n");
+			perror("\n fork error. \n");
 			exit(1);
 			break;
 		case 0:
@@ -51,7 +51,7 @@ void read_data(int pipes[])
 
 	//阻塞，等待从管道读取数据
 	//int 转为 unsiged char 输出到终端
-	while( (rc = read(pipes[0],&c,1)) > 0 ){
+	while( (rc = read(pipes[0],&c,1)) >0 ){
 		putchar(c);
 	}
 
@@ -67,11 +67,10 @@ void write_data(int pipes[])
 
 	//关闭读描述字
 	close(pipes[0]);
-
 	while( (c=getchar()) > 0 ){
 		rc = write( pipes[1], &c, 1);	//写入管道
 		if( rc == -1 ){
-			perror("Parent: write");
+			perror("Parent: write error.");
 			close(pipes[1]);
 			exit(1);
 		}

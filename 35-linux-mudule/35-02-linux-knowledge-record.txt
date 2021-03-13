@@ -1,3 +1,10 @@
+0. 资源
+	0.1 
+	0.2	ubuntu与centos对比
+			https://www.linuxprobe.com/ubuntu-comparison-centos.html 
+		0.2.2 CentOS与Ubuntu命令中的不同之处 
+			https://blog.csdn.net/kwame211/article/details/78533170 
+		
 1、linux内核的熵池 
 	1.1、linux内核的熵池 
 		https://www.cnblogs.com/yinheyi/p/5973584.html
@@ -252,3 +259,15 @@
 24 cpu
 	24.1 NEON技术粗浅认识 
 		https://blog.csdn.net/heliangbin87/article/details/79581113/ 
+		
+25 TCP的socket的服务器端和客户端实例(linux下) 
+	https://blog.csdn.net/ma451152002/article/details/9066953  
+	1、服务器端步骤：
+
+	socket()->bind()->listen()->accept()->read()->write()->close()
+
+	2、客户端步骤：
+
+	socket()->connect()->write()->read()->close()
+	
+	测试程序：见播客文中。

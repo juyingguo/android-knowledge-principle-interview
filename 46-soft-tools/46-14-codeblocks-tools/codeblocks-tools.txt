@@ -1,5 +1,7 @@
 1. http://www.codeblocks.org/downloads
-
+	1.0 资源
+		1.0.1 新一代跨平台C++开发工具Code::Blocks简介 
+			https://blog.csdn.net/roger_77/article/details/696826 
 	1.1 plugin 
 		http://wiki.codeblocks.org/index.php?title=Code::Blocks_Plugins
 
