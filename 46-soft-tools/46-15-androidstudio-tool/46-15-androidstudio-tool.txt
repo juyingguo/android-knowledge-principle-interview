@@ -299,3 +299,4 @@
 
 		（2）在AndroidStudio中底部Terminal中输入： 
 		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
+	18 查看native进程。

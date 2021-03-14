@@ -245,6 +245,9 @@
 		https://www.cnblogs.com/fandx/p/12121019.html 
 		https://blog.csdn.net/sxc1989/article/details/85342427 
 		
+		ffmpeg截取mp3指定时间的内容
+		https://blog.csdn.net/weixin_36270623/article/details/97141895
+		
 		提取yuv原始视频数据
 			ffmpeg -i input.mp4 -an -c:v rawvideo -pix_fmt ymv420p out.yuv
 			-i : 指定视频数据
@@ -258,7 +261,7 @@
 			 -ar : 音频的采样率 是441000 kb
 			 -ac2 : 音频 c是china的意思 2 是双声道
 			 -f s16le : 音频的格式s16le存储方式
-				
+		
 8. FFmpeg在基于Android上有哪些应用。
 	8.1 FFmpeg在基于Android的楼宇可视对讲程序中的应用 
 		http://www.fx361.com/page/2017/0729/2117898.shtml

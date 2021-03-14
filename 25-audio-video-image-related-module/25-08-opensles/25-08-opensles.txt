@@ -21,4 +21,11 @@
 	https://blog.csdn.net/zhangpengzp/article/details/88962634 
 	
 	android自带的openSL库，可用来解码音频，也可以来播放音频，以及录音。要在jni层调用：
+	
+	1.1 播放完后，再次播放没有声音。所有流程都正常加载。但立即打印以下播放完成的日志。
+		AudioTrack: audiotrack 0x5df324a0 stop done。
+		分析：是文件已经到达结尾。
+		解决方法1：需要关闭文件，释放资源，下次播放重新打开即可。
+		
+	1.2 播放完成，本地进程如果需要退出，需要调用exit(0);	
 2.OpenSLES 能否增大音频音量。

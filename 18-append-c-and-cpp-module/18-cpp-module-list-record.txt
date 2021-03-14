@@ -1,5 +1,8 @@
 0，资源
-	
+	0.1 c++函数库查看网址
+		C++有cplusplus.com和cppreference.com这两个标准参考网站。
+		也可以查看c标准函数库
+		
 1、cpp	[Error] 'numeric_limits' was not declared in this scope
 	1.1、cpp	[Error] 'numeric_limits' was not declared in this scope
 		https://stackoverflow.com/questions/20231259/error-numeric-limits-was-not-declared-in-this-scope
