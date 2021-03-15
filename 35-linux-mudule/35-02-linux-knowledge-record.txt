@@ -227,6 +227,11 @@
 			
 			Linux有名管道（FIFO）的阻塞和非阻塞读写
 				https://blog.csdn.net/u014285517/article/details/50479504
+		17.3 消息队列
+			查看和删除消息队列消息
+			查看： ipcs -q
+
+			删除：ipcrm -q msgid 
 		
 23 linux部分函数详解
 	23.1 Linux中fork()函数详解
