@@ -1,0 +1,9 @@
+1. SSH Secure File Transfer
+	1.1 SSH Secure File Transfer -- 本地与服务器之间传送文件之工具
+		https://blog.csdn.net/qq_35865125/article/details/87868500 
+		
+		该工具可以方便地在两台电脑之间传送文件。（e.g. Windows ------ linux）
+
+		window版本下载：https://www.ohlone.edu/download-and-install-ssh-secure-shell-secure-file-transfer-client-windows-web-center  
+		已经保存到百度网盘： https://pan.baidu.com/s/1MIqu35Ls6CiTo5ObEPt8eg
+		
