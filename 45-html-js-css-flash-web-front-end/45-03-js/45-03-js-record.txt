@@ -122,4 +122,18 @@
 		或者使用javascript文件，js文件中定义函数，文件开始结束不要添加script标签。
 		
 		添加javascript，应在head中。或再其它script前面，其它script才能正常调用所添加的javascript 代码
+	2.15 js判断两字符串是否相等不区分大小写 
+		https://www.cnblogs.com/xiejn/p/12109599.html  
 		
+		 <script>
+        String.prototype.compare = function(str) {
+            //不区分大小写
+            if(this.toLowerCase() == str.toLowerCase()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        alert("ABCDefg".compare("abcdEFG"));
+        alert("abc".compare("acd"));
+		</script>
