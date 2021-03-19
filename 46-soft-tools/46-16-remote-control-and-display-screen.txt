@@ -1,0 +1,22 @@
+1. 请推荐好的远程控制软件？
+	https://www.zhihu.com/question/20780129
+
+2. TeamViewer 
+	https://dl.pconline.com.cn/html_2/1/97/id=45518&pn=0.html
+	
+3. 向日葵X远程控制软件 v10.5.0.29613 
+	3.1 向日葵X远程控制软件 v10.5.0.29613
+		http://www.downza.cn/soft/31567.html
+
+4. 同屏
+	4.1 win7系统笔记本如何快速实现投屏电视或投影仪同屏显示 
+		https://www.sohu.com/a/322630836_120118178  
+		
+		USB投屏按键,让笔记本电脑用户无线投屏操作起来,非常方便快捷 
+	4.2 Win7系统下笔记本电脑通过HDMI线外接显示器，该如何设置。 
+		https://zhidao.baidu.com/question/579204239.html  
+	4.3 Win7/Win8系统电脑HDMI高清接口连接电视及设置方法 
+		http://www.xitonghe.com/jiaocheng/windows7-4498.html 
+	
+	1.4 Transcreen(无线投屏软件) V2.4.3.3 官方版  
+		windows安装软件。
