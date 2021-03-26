@@ -1,3 +1,5 @@
 1.
 2. 二维码在线生成工具 
-	http://www.goyouhuima.com/qr/ 
+	http://www.goyouhuima.com/qr/  //图片小
+	
+	https://www.chitus.com/create.html?type=1&ref=text //图片大。
