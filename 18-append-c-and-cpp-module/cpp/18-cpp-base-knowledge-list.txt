@@ -2,6 +2,8 @@
 	0.1 c++函数库查看网址
 		C++有cplusplus.com和cppreference.com这两个标准参考网站。
 		也可以查看c标准函数库
+	0.2 cpp教程
+		https://www.runoob.com/cplusplus/cpp-tutorial.html 
 01 C++11/C++14新特性
 	01.1 C++11/C++14新特性
 		https://blog.csdn.net/aaron19890330/article/details/82898306

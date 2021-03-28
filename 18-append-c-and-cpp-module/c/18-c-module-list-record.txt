@@ -403,7 +403,10 @@
 	24.2 C语言中的static 详细分析 
 		https://blog.csdn.net/keyeagle/article/details/6708077
 		c语言中static关键字用法详解 
-		https://blog.csdn.net/guotianqing/article/details/79828100 
+		https://blog.csdn.net/guotianqing/article/details/79828100  
+		
+		static变量及其作用，C语言static变量详解
+		http://c.biancheng.net/view/301.html 
 25,c语言里NULL的理解 
 	25.1 c语言里NULL的理解 
 		 https://blog.csdn.net/selina8921/article/details/79176297 
