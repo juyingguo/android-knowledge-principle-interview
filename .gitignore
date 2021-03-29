@@ -11,3 +11,5 @@
 .idea
 *.o
 *.exe
+#qt project generate file : xxx.pro.user
+*.pro.user 
