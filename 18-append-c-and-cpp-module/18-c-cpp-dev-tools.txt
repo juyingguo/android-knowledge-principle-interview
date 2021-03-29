@@ -175,27 +175,5 @@
 3. MFC与QT区别？
 	3.1 MFC与QT区别？
 		https://blog.csdn.net/changyourmind/article/details/51778555
-4. Qt Creator下载和安装(详细教程)
-	4.1 资源
-		http://www.qt.io/download-open-source/
-		https://wiki.qt.io/Main
-		
-		https://www.qt.io/blog/2014/12/10/qt-5-4-released 
-		
-		4.1.2 Qt下载（多种下载通道+所有版本）
-			http://c.biancheng.net/view/3851.html 
-			
-			这里给大家推荐几个国内著名的 Qt 镜像网站，主要是各个高校的：
-			中国科学技术大学：http://mirrors.ustc.edu.cn/qtproject/
-			清华大学：https://mirrors.tuna.tsinghua.edu.cn/qt/
-			北京理工大学：http://mirror.bit.edu.cn/qtproject/
-			中国互联网络信息中心：https://mirrors.cnnic.cn/qt/
-			
-			含国内镜像，快速下载
-			以清华大学开源软件镜像站为例，进入 Qt 5.9.0 的下载目录（https://mirrors.tuna.tsinghua.edu.cn/qt/archive/qt/5.9/5.9.0/
-	4.2 Qt Creator下载和安装(详细教程) 
-		https://blog.csdn.net/win_turn/article/details/50465127  
-		
-		在Qt4的时候，Qt开发环境包括3个基本部分：Qt Framework（Qt库）、QtCreator（IDE）和MinGW（编译调试），都要分别下载安装并配置，比较麻烦。
-		进入Qt5之后，Qt公司将三者打包成一个安装文件，比如Qt5.4.0的离线安装包，这样方便许多
+
 	

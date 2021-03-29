@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1597129879 source:e:\juying-epan\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\c_project\05_02_c_base_knowledge_project\019_02_static_and_global_test_main.c
+1616978178 source:e:\juying-epan\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\c_project\05_02_c_base_knowledge_project\019_02_static_and_global_test_main.c
 	<stdio.h>
+	"head_test.h"
 
-1597129878 source:e:\juying-epan\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\c_project\05_02_c_base_knowledge_project\019_02_static_and_global_test_helper.c
+1616978178 source:e:\juying-epan\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\c_project\05_02_c_base_knowledge_project\019_02_static_and_global_test_helper.c
 	<stdio.h>
 	"head_test.h"
 
@@ -22,5 +23,13 @@
 	<stdio.h>
 
 1595838227 source:d:\zhuanyekeku\android-knowledge-principle-interview\18-append-c-and-cpp-module\c_project\05_02_c_base_knowledge_project\019_02_main_un_static_test.c
+	<stdio.h>
+
+1616979063 source:e:\juying-epan\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\c_project\05_02_c_base_knowledge_project\019_02_un_static_test.c
+	<stdio.h>
+
+1597129833 source:e:\juying-epan\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\c_project\05_02_c_base_knowledge_project\head_test.h
+
+1616979046 source:e:\juying-epan\android\android&knowledge&principle&interview\18-append-c-and-cpp-module\c_project\05_02_c_base_knowledge_project\019_02_main_un_static_test.c
 	<stdio.h>
 

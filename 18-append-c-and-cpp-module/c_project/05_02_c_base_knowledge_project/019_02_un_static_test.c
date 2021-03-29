@@ -3,5 +3,5 @@
 char a = 'A'; // global variable
 void msg()
 {
-    printf("Hello\n");
+    printf("msg() Hello\n");
 }

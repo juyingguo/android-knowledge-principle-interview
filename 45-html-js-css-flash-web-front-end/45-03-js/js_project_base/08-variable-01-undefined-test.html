@@ -15,14 +15,16 @@
 <script>
 	
 function myFunction() {
-	var a;
+	var a = null;
 	var c = 10;
 	console.log("myFunction","undefined" == typeof b);//"undefined"需要加引号,只使用这个写法
 	console.log("myFunction",undefined == typeof b);//undefined 没加引号，错误写法
+	console.log("myFunction",null == typeof b);//undefined 没加引号，错误写法
 	
-	console.log("myFunction",a != undefined);
-	console.log("myFunction",typeof a != undefined);
-	console.log("myFunction",c != undefined);
+	console.log("myFunction,(a != undefined) : ",a != undefined);//错误写法
+	console.log("myFunction,(a == null) : ",a == null);//判断a是否为null,写法正确;但前提是a已经定义。
+	console.log("myFunction,(typeof a != undefined) : ",typeof a != undefined);//正确写法
+	console.log("myFunction,(c != undefined):",c != undefined);//虽然运行结果为true，是因为c已经定义过了。其实也是错误写法。
 	// if("undefined" == typeof b){
 	// 	alert("b == undefined");
 		

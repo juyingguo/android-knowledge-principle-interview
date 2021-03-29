@@ -1,7 +1,9 @@
 01 android源码及kernel源码：
 	http://androidxref.com/
-	
-
+02 android新技术
+	02.1 新技又又又又又叒来了？
+		https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650836418&idx=1&sn=7c3d57dff81253ef37f633c5898b52d5&chksm=80b7595cb7c0d04a06ebee3ab775f941cc5e4fc034341f5c498edaffef079692c87bff7ebd08&mpshare=1&scene=23&srcid=032971EKPFuZh7C4sdpHA156&sharer_sharetime=1616990526408&sharer_shareid=f907dc3edbba18604206b66c083e0ad8#rd 
+		
 1. Android系统之路(初识MTK) ------ 更改设备盘符名称/型号/名称/品牌/Version/Devices/Product...... 
 
 	1.1 Android系统之路(初识MTK) ------ 更改设备盘符名称/型号/名称/品牌/Version/Devices/Product...... 
@@ -75,4 +77,4 @@
 	https://blog.csdn.net/u013360790/article/details/89511152 
 	
 	官网：
-		https://developer.android.com/guide/platform
+		https://developer.android.com/guide/platform 
