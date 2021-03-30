@@ -17,11 +17,12 @@ public:
     const char *get_s() const;
     void set_s(const char *s);
 
-
-protected:
     mystring();
     mystring(const char *s);
     mystring(const mystring &it);
+
+protected:
+
 
 };
 
