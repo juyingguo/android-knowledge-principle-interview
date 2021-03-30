@@ -31,11 +31,26 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="019_02_main_un_static_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="019_02_static_and_global_test_helper.c">
 			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="019_02_static_and_global_test_main.c">
 			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="019_02_un_static_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="019_static_test.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="head_test.h" />
 		<Extensions>
