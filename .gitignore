@@ -14,4 +14,4 @@
 #qt project generate file : xxx.pro.user
 *.pro.user 
 #qt project generate directory : build-untitled-Desktop_Qt_5_9_0_MinGW_32bit-Debug
-*.*_Qt_5_9_0_MinGW_32bit*
+*.*_Qt_5_9_0_MinGW_32bit*/
