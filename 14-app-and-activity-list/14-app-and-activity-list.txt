@@ -158,7 +158,7 @@
 					| View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 			}
 			
-		11.8 activity中弹出Dialog全屏问题。
+		11.8 activity中弹出Dialog不能全屏问题。
 			可以调用【11.7】中的函数解决。且该函数可以被多次调用。
 			该界面中如有弹出对话框时，会出现底部导航栏，此时可以继续调用该函数，隐藏底部导航栏。
 			

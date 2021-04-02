@@ -1,6 +1,9 @@
 0 资源
 	0.1 androidstudio官网下载。
-		https://developer.android.com/studio/archive
+		https://developer.android.com/studio/archive 
+		
+		http://www.android-studio.org/
+		
 	0.2  http://tools.android-studio.org/ 
 	0.3 Android Gradle 插件版本说明
 		https://developer.android.google.cn/studio/releases/gradle-plugin 
