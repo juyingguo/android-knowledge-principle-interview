@@ -44,3 +44,15 @@
 	convert h:/fs:ntfs
 	1
 	h为盘符，如你的U盘等
+6. cd 命令的使用
+	https://jingyan.baidu.com/article/c1465413c7a36a0bfcfc4cb2.html 
+	
+	cmd 里面输入: cd /? 来查看 cd 命令和参数的使用
+
+	语法:
+		  cd [/D] [drive:][path [..] [path]
+	参数:
+		   /D 强制进入其他盘符或文件目录下
+		  drive 盘符
+		  path 文件路径
+		  .. 表示父目录

@@ -14,7 +14,7 @@ int socket_send(){
     struct sockaddr_in addr;
     memset (&addr,0, sizeof (addr));//初始化结构addr;
     addr.sin_family =AF_INET;//代表要使用一个TCP/IP的地址
-    addr.sin_port - htons (8080) ;//host to net short
+    addr.sin_port =  htons (8088) ;//host to net short
     addr.sin_addr.s_addr = inet_addr("127.0.0.1");
 
 //    unsigned long laddr = inet_addr ("192.168.6.200");
@@ -24,6 +24,7 @@ int socket_send(){
     char buf[1024] ={0};
     strcpy(buf, "hello world!today is aaa.");
     size_t rc = sendto(st,buf,strlen(buf),0,(struct sockaddr *) &addr,sizeof(addr));
+    printf("socket_send(),sendto rc=%u.",rc);
     closesocket(st); //使用完socket要将其关闭
     WSACleanup();//释放win socket内部的相关资源
     return rc;
@@ -41,9 +42,7 @@ int socket_recv(){
     struct sockaddr_in addr;
     memset (&addr,0, sizeof (addr));//初始化结构addr;
     addr.sin_family =AF_INET;//代表要使用一个TCP/IP的地址
-    addr.sin_port - htons (8080) ;//host to net short
-    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
-
+    addr.sin_port = htons (8088) ;//host to net short
     addr.sin_addr.s_addr= htonl(INADDR_ANY);//做为接收方﹐不需要指定具体的IP地址
     int rc = 0;
     if(bind(st,(struct sockaddr *) &addr,sizeof (addr)) >-1)//将端口号和程序绑定
@@ -53,7 +52,9 @@ int socket_recv(){
         memset ( &sendaddr, 0, sizeof (sendaddr));
         int len = sizeof(sendaddr);
         rc = recvfrom(st, buf, sizeof(buf),0,(struct sockaddr *) &sendaddr,&len);
-        printf("socket_recv(),receive :%s",buf);
+        printf("socket_recv(),receive :%s \n",buf);
+    }else {
+        printf("socket_recv(),bind return <= -1,fail.\n");
     }
     closesocket(st); //使用完socket要将其关闭
     WSACleanup();//释放win socket内部的相关资源
