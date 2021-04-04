@@ -6,12 +6,10 @@ using namespace std;
 int main(int argc,char *args[])
 {
     if(argc >1){
-        if(args[1][0] == '1'){
-            socket_send();
-        }else {
-            socket_recv();
-        }
+        socket_send(args[1]);
+    }else {
+        socket_recv();
     }
-    cout << "Hello World!" << endl;
+    cout << "exit!" << endl;
     return 0;
 }

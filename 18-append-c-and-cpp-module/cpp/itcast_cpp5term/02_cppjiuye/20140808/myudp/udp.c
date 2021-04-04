@@ -1,7 +1,7 @@
 #include <winsock2.h>
 #include <stdio.h>
 #include <string.h>
-int socket_send(){
+int socket_send(const char *IP){
     //初始化socket
     DWORD ver;
     WSADATA wsaData;
@@ -15,7 +15,7 @@ int socket_send(){
     memset (&addr,0, sizeof (addr));//初始化结构addr;
     addr.sin_family =AF_INET;//代表要使用一个TCP/IP的地址
     addr.sin_port =  htons (8088) ;//host to net short
-    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    addr.sin_addr.s_addr = inet_addr(IP);//"127.0.0.1"
 
 //    unsigned long laddr = inet_addr ("192.168.6.200");
 //    unsigned char *p = &laddr;
@@ -28,7 +28,7 @@ int socket_send(){
         gets(buf);
         rc = sendto(st,buf,strlen(buf),0,(struct sockaddr *) &addr,sizeof(addr));
 //        printf("socket_send(),sendto rc=%u.",rc);
-        if(buf[0] == '0'){//0 则退出
+        if(strcmp(buf,"bye") == 0){//bye 则退出
             break;
         }
     }
@@ -61,9 +61,10 @@ int socket_recv(){
         while (1) {
             memset(buf,0,sizeof(buf));
             rc = recvfrom(st, buf, sizeof(buf),0,(struct sockaddr *) &sendaddr,&len);
-
             printf("socket_recv(),receive :%s \n",buf);
-            if(buf[0] == '0') break;
+            if(strcmpi(buf,"bye") == 0){//bye 则退出
+                break;
+            }
         }
     }else {
         printf("socket_recv(),bind return <= -1,fail.\n");
