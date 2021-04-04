@@ -22,9 +22,16 @@ int socket_send(){
 //    printf("%u,%u, %u, %u\n",*(p),*(p +1),*(p +2),*(p + 3));
 
     char buf[1024] ={0};
-    strcpy(buf, "hello world!today is aaa.");
-    size_t rc = sendto(st,buf,strlen(buf),0,(struct sockaddr *) &addr,sizeof(addr));
-    printf("socket_send(),sendto rc=%u.",rc);
+    size_t rc = 0;
+    while (1) {
+        memset(buf,0,sizeof(buf));
+        gets(buf);
+        rc = sendto(st,buf,strlen(buf),0,(struct sockaddr *) &addr,sizeof(addr));
+//        printf("socket_send(),sendto rc=%u.",rc);
+        if(buf[0] == '0'){//0 则退出
+            break;
+        }
+    }
     closesocket(st); //使用完socket要将其关闭
     WSACleanup();//释放win socket内部的相关资源
     return rc;
@@ -51,8 +58,13 @@ int socket_recv(){
         struct sockaddr_in sendaddr;
         memset ( &sendaddr, 0, sizeof (sendaddr));
         int len = sizeof(sendaddr);
-        rc = recvfrom(st, buf, sizeof(buf),0,(struct sockaddr *) &sendaddr,&len);
-        printf("socket_recv(),receive :%s \n",buf);
+        while (1) {
+            memset(buf,0,sizeof(buf));
+            rc = recvfrom(st, buf, sizeof(buf),0,(struct sockaddr *) &sendaddr,&len);
+
+            printf("socket_recv(),receive :%s \n",buf);
+            if(buf[0] == '0') break;
+        }
     }else {
         printf("socket_recv(),bind return <= -1,fail.\n");
     }

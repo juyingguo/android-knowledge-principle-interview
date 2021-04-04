@@ -30,3 +30,5 @@
 		进入Qt5之后，Qt公司将三者打包成一个安装文件，比如Qt5.4.0的离线安装包，这样方便许多
 5. 找不到libgcc_s_dw2-1.dll, 尝试重新安装该程序以解决问题.
 	https://blog.csdn.net/dolor_059/article/details/83051512 
+	
+	使用自带命令行工具Qt 5.9 for Desktop (MinGW 5.3.0 32 bit)
