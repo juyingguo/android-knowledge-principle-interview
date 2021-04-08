@@ -41,3 +41,6 @@
 		cmd::systeminfo
 			信息处理完之后就可以看到BIOS版本
 		WMIC BIOS get releasedate 
+8. Lenovo联想键盘关闭fn功能恢复F1-F12按键 
+	 https://jingyan.baidu.com/article/6c67b1d6a83d922787bb1eec.html 
+	 
