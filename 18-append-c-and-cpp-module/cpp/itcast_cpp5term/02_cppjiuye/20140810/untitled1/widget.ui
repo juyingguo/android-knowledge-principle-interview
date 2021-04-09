@@ -56,7 +56,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>计算结果：</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">

@@ -25,8 +25,10 @@ int main()
     cout << str3->get_s()[0] << endl;
     cout << str3->get_s()[1] << endl;
 
-    const mystring str4("hello baby");
+    /*const*/ mystring str4("hello baby");
     cout << "str4 = " << str4.get_s() << endl;
+    mystring str5 = str4;
+    cout << "str5 = " << str5.get_s() << endl;
     return 0;
 }
 

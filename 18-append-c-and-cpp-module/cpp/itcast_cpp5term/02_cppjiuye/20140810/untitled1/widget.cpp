@@ -1,5 +1,7 @@
+#include <string.h>
 #include "widget.h"
 #include "ui_widget.h"
+
 
 
 Widget::Widget(QWidget *parent) :
@@ -40,6 +42,5 @@ void Widget::on_pushButton_clicked()
         if (b != 0)
             c = a / b;
     }
-
-    ui->label->setText(QString::number(c));
+    ui->label->setText(QString::fromStdString("计算结果:").append(QString::number(c)));
 }
