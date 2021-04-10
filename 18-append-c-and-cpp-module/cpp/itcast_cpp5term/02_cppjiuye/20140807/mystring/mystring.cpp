@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string.h>
 
+using namespace  std;
 mystring *mystring::self = NULL;
 
 mystring *mystring::makestring(const char *s)
@@ -41,6 +42,8 @@ mystring::mystring(const char *s)
 
 mystring::mystring(const mystring &it)//通过拷贝构造实现深拷贝，避免成员变量指针赋值导致的错误
 {
+    cout<< "copy construct call." << endl;
+//    it.set_s("value is changed.");//当使用const 修饰it后，就不可以修改值了
     int len = strlen(it.get_s());
     this->s = new char[len + 1];
     strcpy(this->s, it.s);

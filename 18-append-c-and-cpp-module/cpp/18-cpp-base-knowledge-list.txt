@@ -28,11 +28,25 @@
 		【破船不会沉】【c,c++,算法，数据结构】
 		https://blog.csdn.net/my_mao/article/details/22872149
 		
+		c++在函数后加const的意义： 
+		https://blog.csdn.net/oykotxuyang/article/details/106142465 
+		
+		1、非静态成员函数后面加const（加到非成员函数或静态成员后面会产生编译错误）
+
+		2、表示成员函数隐含传入的this指针为const指针，决定了在该成员函数中， 任意修改它所在的类的成员的操作都是不允许的（因为隐含了对this指针的const引用）；
+
+		3、唯一的例外是对于mutable修饰的成员。加了const的成员函数可以被非const对象和const对象调用，但不加const的成员函数只能被非const对象调用
 	3.3 C++中const关键字的使用总结 
 		https://www.cnblogs.com/gklovexixi/p/5619647.html
 		
 	3.4 const_cast 作用及用法。
 	
+	3.5 C++函数前和函数后加const修饰符区别 
+		在函数前加 const 访问函数时报错。
+		调试：：*\cpp_project\02_cpp_base_knowledge\011_03_const_function_and_return_test.cpp
+		error: cannot convert 'FunctionConst::getValue' from type 'const int (FunctionConst::)()' to type 'const int'|
+		FunctionConst::getValue 没有加();
+		
 	  
 		
 四、C++中的静态绑定和动态绑定 

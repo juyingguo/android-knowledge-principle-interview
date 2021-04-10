@@ -67,6 +67,8 @@
 		199.232.69.194   global-ssl.fastly.Net
 
 		140.82.112.3      github.com
+		
+		实验现象：不能用时再配置或不配置，相互切换。
 4. dns查询网站：http://tool.chinaz.com/dns
 
 5. windows下修改hosts文件，添加固定的DNS解析
