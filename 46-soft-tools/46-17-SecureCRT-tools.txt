@@ -10,4 +10,24 @@
 		https://www.cnblogs.com/ifantastic/p/3621285.html
 		
 		将 KnownHosts 目录下的 *.pub 文件和 HostKeyDB.txt 删掉，下次启动时它们会再次自动生成。
-		
+3. SecureCRT 通过ssh协议连接ubuntu服务器 
+	3.1 https://blog.csdn.net/KK_xiaolin/article/details/80492357 
+	
+		ubuntu版本16.04，需关闭防火墙：sudo  ufw disable 
+		1.确认ubuntu安装openssh-server服务
+			service ssh status
+		2.如果没有安装,通过命令下载安装sshd：
+
+			sudo apt-get install openssh-server openssh-client
+		3.安装完成后确认ssh是否在监听22端口：netstat -nat | grep 22
+		4.然后通过CRT连接：输入服务器ip和用户名密码即可连接， 
+		5.注意sshd配置文件默认是不允许用root用户连接的，如果想用root用户连接，需要修改配置文件：
+			
+			vim  /etc/ssh/sshd_config 			
+			StrictModes=yes修改为yes即可，然后重启服务service ssh restart 
+	3.2 New host Key 第一次运行连接ip提示
+		The host key database does not contain an entry for the
+		hostname 192.168.211.100, which resolved to 192.168.211.100,port 22. If you have received this message more
+		than once for 192.168.211.100, this may mean that 192.168.211.100is an "alias" which resolves to different hosts.
+		It is recommended you verify your host key before accepting.Server's host key fingerprint (MD5 hash):
+		4b:73:e6:d2:c3:ea:9a:7b:e6:99:4c:bd:72:53:58:e6

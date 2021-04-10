@@ -279,13 +279,18 @@
 			223.6.6.6    阿里
 			180.76.76.76 百度
 			
+		5.该方式配置验证OK。
+			需要注意【1】中gateway 192.168.43.1要配置为。配置为无线局域网适配器 WLAN 下的默认网关（192.168.43.1）（根据当前实际能上网的网卡而定。比如当前使用的是WLAN上网）。			
+			
+			重启ubuntu生效。
 	13.4 
 		为VMware虚拟机内安装的Ubuntu 16.04设置静态IP地址		
 		https://www.jianshu.com/p/625de9911bfb
 		
 	13.5 VMware 虚拟机 安装ubuntu16.04配置网络NET
 		https://blog.csdn.net/ykf173/article/details/83019736
-		
+			本博客参考配置成功。
+			重启ubuntu生效。
 		(5)、设置DNS(域名解析)
 
 			使用管理员root登录root#: vi /etc/resolvconf/resolv.conf.d/head 
@@ -308,10 +313,6 @@
 		[可部分参考]
 		https://www.linuxidc.com/Linux/2017-02/140135.htm 
 	
-	13.7 综合以上配件方法总结。
-		【1】
-			以上都是在虚拟机开启的状态下，进行配置的，。也即是在vmware菜单栏【虚拟机】-【设置】中， 		设置网络适配器类型的。，配置完成后，重启等都无法联网。
-			【一直没有重启vmware,可以重启vmware试试。】
-			重启电脑，也即是重启了vmware。在【编辑虚拟机设置】中网络适配器类型任然不是NAT。所以需要从【编辑虚拟机设置】入口处设置网络适配器。【上网ok】
-			
+	13.7 windows ping ubuntu的ip不通。
+		参考【13.3】-【5】即可解决
 14 xshell连接ubuntu 		

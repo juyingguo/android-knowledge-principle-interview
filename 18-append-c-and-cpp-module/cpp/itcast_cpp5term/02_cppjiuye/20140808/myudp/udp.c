@@ -61,7 +61,8 @@ int socket_recv(){
         while (1) {
             memset(buf,0,sizeof(buf));
             rc = recvfrom(st, buf, sizeof(buf),0,(struct sockaddr *) &sendaddr,&len);
-            printf("socket_recv(),receive :%s \n",buf);
+            //inet_ntoa (sendaddr.sin_addr);//这个函数是不可重入函数
+            printf("socket_recv(),receive from ip %s :%s \n",inet_ntoa(sendaddr.sin_addr),buf);
             if(strcmpi(buf,"bye") == 0){//bye 则退出
                 break;
             }
