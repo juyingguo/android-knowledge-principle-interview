@@ -1,3 +1,6 @@
+0，资源
+	0.2  工具在百度网盘
+		dev_tools目录下
 一、C/C++语言常用开发工具
 	1.1、C/C++语言常用开发工具
 		https://zhuanlan.zhihu.com/p/87441238
@@ -177,3 +180,11 @@
 		https://blog.csdn.net/changyourmind/article/details/51778555
 
 	
+4. vs2013 安装步骤
+	
+	4.1 VS2013(Visual Studio 2013)官方中文破解旗舰版下载（含激活密钥）
+		https://blog.csdn.net/m0_37477061/article/details/83447773
+	4.2 	visual studio 2013下载及安装使用教程(内附vs2013产品密... 
+		https://www.itkaoshi.net/3906.html 
+	4.3 4.0 vs2013占用多大C盘空间 
+		VS2013总共12G左右，会占C盘大约8G左右的空间，占其他盘（安装位置）4G左右，如果觉得太大，建议可以安装精简版” VS 2013 Express for Windows Desktop。 
