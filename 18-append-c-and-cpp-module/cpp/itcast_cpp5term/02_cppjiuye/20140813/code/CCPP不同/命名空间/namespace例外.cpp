@@ -13,7 +13,7 @@ namespace
 void main()
 {
 
-	std::cout << a;
+	std::cout << a <<std::endl;
 	print();
 	getchar();
 }
