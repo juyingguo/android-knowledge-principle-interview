@@ -1,0 +1,521 @@
+-1、C语言标准 C89/C90/C99/C11之间的区别 
+	-1.1、C语言标准 C89/C90/C99/C11之间的区别 
+		https://blog.csdn.net/mozart_cai/article/details/80865164 
+	-1.2、C90、C99、C11——C语言的三套标准 
+		https://blog.csdn.net/adolph58/article/details/88726621?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+
+1、linux下c开发环境。
+	搞不通在linux下为什么要用devc++，在linux下有一大堆更好的，更简单，为什么偏偏要用devc++。在linux的话，新手用geany，比devc++要好用简单的多，高手用vim，快速开发可以用，codeblock，codelite。
+		
+		
+2、
+	c语言实现socket服务端/客户端通过tcp传送文件
+	
+	1.1、c语言实现socket服务端/客户端通过tcp传送文件
+		https://blog.csdn.net/arunboy/article/details/78749212
+		
+	1.2、C语言实现Socket简单通信 
+		https://blog.csdn.net/zhang___yong/article/details/78702559
+3、C/C++头文件
+	 
+	3.1、C/C++头文件的引用问题（#include使用） 
+		https://blog.csdn.net/vito_7474110/article/details/81911990
+		
+		a、C语言引用不同路径下的头文件的方法 
+		 https://www.cnblogs.com/mobius2018/p/10001961.html
+		 
+			
+		#include "FindPrime.h" //位于同一个文件夹下。
+		#include "../quest12/FindPrime.h" //不同文件夹下
+			
+	3.2、C/C++ .h和.hpp的区别
+		https://www.cnblogs.com/zhibei/p/12289982.html 
+		 
+4、如何自定义C语言.h头文件？
+	4.1、如何自定义C语言.h头文件？ 
+		https://blog.csdn.net/zhanshen112/article/details/80193797
+	4.2、c语言的自定义头文件 
+		https://bbs.csdn.net/topics/280025672?list=566462
+		
+		4.2.1、
+			.h相当于说明书 (一般放声明/接口)
+			.c相当于实现原理图 (一般放定义/实现)
+			.o相当于实物 (实现的二进制形式)
+5、C语言百分号加字母%d%p%o%x%u%c%s%f%e%g代表作用 
+	5.1、C语言百分号加字母%d%p%o%x%u%c%s%f%e%g代表作用 
+		https://blog.csdn.net/yangshuaionline/article/details/93714272
+		
+		5.1.1、	C语言中%d,%s,%x,%f,%.100f,%的意思
+			https://blog.csdn.net/qq_32365567/article/details/55045942
+			
+			％d整型输出，％ld长整型输出，
+
+			％o以八进制数形式输出整数，
+
+			％x以十六进制数形式输出整数，或输出字符串的地址。
+
+			％u以十进制数输出unsigned型数据(无符号数)。注意：%d与%u有无符号的数值范围，也就是极限的值，不然数值打印出来会有误。
+
+			％c用来输出一个字符，
+
+			％s用来输出一个字符串，
+
+			％f用来输出实数，以小数形式输出，默认情况下保留小数点6位。
+
+			%.100f用来输出实数，保留小数点100位。
+
+			％e以指数形式输出实数，
+
+			％g根据大小自动选f格式或e格式，且不输出无意义的零。
+			
+			%p指针变量地址，如果输出数据不够8位数，则左边补零
+			
+		
+		5.1.2、数据类型输入输出标示。
+			https://www.cnblogs.com/DemonMaster/p/10904075.html 
+			
+			https://blog.csdn.net/weixin_44633882/article/details/92794795
+			
+			https://zhidao.baidu.com/question/88570366.html
+			
+		5.1.3、format 标签属性是 %[flags][width][.precision][length]specifier
+			https://www.runoob.com/cprogramming/c-function-fprintf.html
+			
+			%hX //参数被解释为短整型或无符号短整型（仅适用于整数说明符：i、d、o、u、x 和 X）
+			%LX
+			
+6、C语言基础——字符串指针（指向字符串的指针） 
+	6.1、C语言基础——字符串指针（指向字符串的指针）
+		
+		https://blog.csdn.net/u013812502/article/details/81196367
+		
+		
+		
+7、__int64用法介绍
+	7.1、__int64用法介绍 
+		https://blog.csdn.net/angrydog1024/article/details/81608931
+		
+	7.2、C++的64位整数［原］by 赤兔 
+		http://www.cnitblog.com/cockerel/archive/2006/08/16/15356.html
+		
+8、运行控制台程序，立即闪退。用system("pause"); 的作用？
+	8.1、C++：VS控制台闪退，看不到输出结果，添加system（“pause”）；
+		【《OpenCV学习笔记》52篇】【《C++学习笔记》50篇】【《人工智能AI》10篇】【线性代数，微积分 等】【《计算机视觉CV》3篇】
+		https://blog.csdn.net/mars_xiaolei/article/details/72845145?utm_source=blogxgwz4
+		
+		
+	8.2、system("pause")危害 。。
+		
+		https://blog.csdn.net/qq_18884827/article/details/52161597
+		
+		不要用system("pause")来暂停，可以改用std::cin.get或getchar()
+		
+		为何不要用system("pause")?
+		有两个理由
+		一?：?不具可移植性
+		二?：?这东西很贵
+
+		贵在那里？让我们来看看system("pause")的流程
+		1?：?暂停你的程式
+		2?：?在sub-process中启动OS
+		3?：?寻找要执行的命令并为之分配记忆体
+		4?：?等待输入
+		5?：?回收记忆体
+		6?：?结束OS
+		7?：?继续你的程式
+		————————————————
+		8.2.1、有时候不起作用。
+		
+	8.3、加上getchar()的目的是为了看运行结果,VS一般运行完毕之后直接关闭这个窗口,可以选择不加  	在工具-选项-调试中去掉调试完毕关闭控制台这个选项就行
+		https://blog.csdn.net/sum7mer/article/details/79064239
+		
+	8.4 system("color 5f")//指定颜色值。
+		设置默认的控制台前景和背景颜色。
+
+		COLOR [attr]
+
+		  attr        指定控制台输出的颜色属性
+
+		颜色属性由两个十六进制数字指定 -- 第一个为背景，第二个则为
+		前景。每个数字可以为以下任何值之一:
+
+			0 = 黑色       8 = 灰色
+			1 = 蓝色       9 = 淡蓝色
+			2 = 绿色       A = 淡绿色
+			3 = 浅绿色     B = 淡浅绿色
+			4 = 红色       C = 淡红色
+			5 = 紫色       D = 淡紫色
+			6 = 黄色       E = 淡黄色
+			7 = 白色       F = 亮白色
+
+		如果没有给定任何参数，该命令会将颜色还原到 CMD.EXE 启动时
+		的颜色。这个值来自当前控制台窗口、/T 命令行开关或
+		DefaultColor 注册表值。
+9、转义字符。
+	9.1、#C语言学习感悟# printf( )函数中的回车‘\r’与回车换行'\n'之我见。 
+		https://blog.csdn.net/ylm1521/article/details/80557866
+		
+		http://c.biancheng.net/view/1769.html
+		
+		#转义字符#
+
+		\n????? ? 回车换行
+
+		\t????? ? 横向跳格（相当于tab）1
+
+		\v????? ? 竖向跳格（打印机专用）
+
+		\r????? ? 回车
+
+		\f????? ? 换页（打印机专用）
+
+		\b????? ? 退格（相当于backspace）
+
+		\\????? ? 反斜杠字符\
+
+		\'????? ? 单引号 '
+
+		\"????? ? 双引号“
+
+		\ddd????? ? 以八进制形式代表的ASCII字符。。最大取值是\177；
+
+		\xhh????? ? 以十六进制形式代表的ASCII字符。。最大取值是\x7f。
+
+		\0????? ? 空值
+		————————————————
+10、C语言程序里何时用分号？ 
+	10.1、C语言程序里何时用分号？ 
+		https://blog.csdn.net/dicengxiaobai0801/article/details/77002655
+	10.2、三类语句后面不能加分号“；” 
+		https://blog.csdn.net/qq_25077833/article/details/53344150
+		
+		预处理命令后面;函数头后面;花括号“{”和“}”后面
+11、"&"在C语言中主要有三种用法 
+	https://blog.csdn.net/Tu_1218/article/details/89857039
+	
+	注意在c++中。在C++中“&”还有引用的作用
+	int &a=x;
+	表示二者指向同一块内存地址,两者中的任意一个的改变都会引起另一个的改变
+	int a;
+	int& b=a;
+	a=5;
+	if(a>0){
+		b=b+2;
+	}
+	a,b 都为7。
+	
+12、typedef
+	12.1、利用typedef定义函数指针 
+		https://blog.csdn.net/weixin_41632560/article/details/80747640
+		
+		http://fouri.iteye.com/blog/483974
+		
+	12.2 对于自定义类型，typedef定义类型名称可以和类型原名称相同。
+
+13、c语言数据结构。
+	13.1、链表的操作（C语言实现） 
+		13.1.0 调试工程位置：
+			*\08_c_data_struct_base\01-linkedList-test.c
+		13.1.1、学习心得：链表的操作（C语言实现） 
+			https://blog.csdn.net/lpp0900320123/article/details/20356143 
+			
+			链表的种类很多，有单链表、双链表、循环链表、非循环链表.
+			
+			当前未深刻理解点：头指针指向头结点，当有节点时，pHead->next指向首节点。
+				PNODE pTail=pHead;
+				
+				//创建多个节点，并赋值。
+				PNODE p=(PNODE)malloc(sizeof(NODE));
+				p->data=val;
+				pTail->pNext=p;//当是第一个节点时，此时
+				p->pNext=NULL;
+				pTail=p;
+			测试程序：01-linkedList-01-Acyclic-single-linkedlist-test.c
+		13.1.2、c语言链表详解（超详细）
+			https://blog.csdn.net/Endeavor_G/article/details/80552680?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+			
+		13.1.3 循环单链表的实现c语言
+			https://blog.csdn.net/better_xiong/article/details/106888689 
+			
+			1.循环单链表和单链表的区别在于链表中最后一个结点的指针不是指向NULL，而是指向头结点，这样链表结点就形成了一个环。循环单链表是一个环，所以在链表中任意位置插入或者删除结点时都是等价的，不需要根据所操作结点是否是尾结点分类讨论，因此简化了代码。
+			测试代码：01-linkedList-02-cyclic-single-linkedlist-test-raw.c
+			
+			2. 添加结点后，头指针和尾结点的指针域是都还是一样的吗？需要再次指向吗？
+	13.2 线性表详解（c语言版）
+		https://blog.csdn.net/wqc_CSDN/article/details/50628855 
+		测试代码:08_c_data_struct_base\02-SequenceList-01-test-raw.c 
+	13.3 详解数据结构之栈的基本操作（C语言描述）
+		13.3.1 详解数据结构之顺序栈的基本操作（C语言描述）
+			https://blog.csdn.net/qq_44614524/article/details/86647259? 
+		13.3.2 数据结构之顺序栈，C语言实现（详细）
+			
+			https://blog.csdn.net/ck8719/article/details/106336368 
+			
+			顺序栈用数组实现，链式栈使用链表实现。
+			对于顺序栈，我们是从数组的尾部进行插入与删除，以数组尾部作为栈顶。
+
+			对于链式栈，我们是从链表的表头进行插入与删除，以链表表头作为栈顶。
+			
+			测试代码：03-SequenceStack-03-use-pointer-raw.c
+		13.3.3 数据结构与算法之顺序栈C语言实现 
+			https://www.cnblogs.com/chendong-leslie/p/10190144.html 
+			测试代码：03-SequenceStack-02-use-pointer-raw.c 
+			
+14、c语言结构体及联合体
+	
+	14.0 c语言结构体定义方式。
+		
+	14.1、C语言结构体初始化的四种方法 
+		https://blog.csdn.net/weixin_42445727/article/details/81191327
+		
+		14.1.2、C语言中结构体的初始化 
+			https://blog.csdn.net/chgaowei/article/details/8629819?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+			
+	14.2、c语言结构体中定义函数方式?
+		14.2.1 c中不能,c++里可以在结构体内定义函数,用法和class定义类是一样的,说穿了struct 和 		class用法相同,但要注意的一点是,struct默认的是public类型，而class默认的是private类型的
+		
+		14.2.2 C语言结构体中定义函数指针详解
+			【优质博客】【linux,嵌入式，驱动】
+			https://blog.csdn.net/qq_21792169/article/details/50436089
+	
+	14.3、C语言共用体（C语言union用法）详解
+		
+		14.3.1 C语言 共用体（Union）详解，结构体中包含共用体的使用
+			https://blog.csdn.net/weixin_40997830/article/details/89402974
+		14.3.2 
+			c语言中union共用体中有结构体。
+		14.3.3 C语言共用体（C语言union用法）详解
+			http://c.biancheng.net/view/2035.html
+			
+			不但验证了共用体的长度，还说明共用体成员之间会相互影响，修改一个成员的值会影响其他成员。
+			【含图表说明原理。】
+			
+			共用体的应用：
+			共用体在一般的编程中应用较少，在单片机中应用较多。对于 PC 机，经常使用到的一个实例是： 现有一张关于学生信息和教师信息的表格。学生信息包括姓名、编号、性别、职业、分数，教师的信息包括姓名、编号、性别、职业、教学科目
+			程序：android-knowledge-principle-interview\18-append-c-and-cpp-module\c_project\05_c_base_knowledge\006_09_struct_contain_union_test.c
+	
+	14.4、
+	
+	14.5、c语言结构体声明时指定默认值？
+	
+	14.6 c语言结构体中定义enum类型。
+	14.7 结构体指针。
+		typedef const struct Student_ {
+			int id;
+			char *name;
+		} * Student;
+		 
+			
+15、c语言中的字符串 
+	C语言中要使用sizeof()
+	15.1、C语言中要使用sizeof()应包含那个头文件?
+		https://zhidao.baidu.com/question/539860566.html 
+		
+		C语言中sizeof()是一个关键字bai,不是函数,不需要使du用头文件，补足知识：zhi
+	　　1、跟int, float关键字一样dao,编译器自动识别他们；
+	　　2、千万不要因为它长得像函数,就上它的当；
+	　　3、就像getchar()的返回值是个int型而不是char型一样,C中有很多陷阱一样。
+	15.2,sizeof与strlen区别：
+
+		1、strlen(char*)函数求的是字符串的实际长度，直到遇到第一个'\0'，然后就返回计数值，且不包括'\0'。而sizeof()函数返回的是变量声明后所占的内存数，不是实际长度。
+
+		2、数组做sizeof的参数不退化，传递给strlen就退化为指针了。
+
+		3、sizeof可以用类型做参数，strlen只能用char*做参数，且必须是以''\0''结尾的。
+	15.3,sizeof()计算类型，变量，数组，指针，结构体等的字节数。
+		
+	15.4 C语言获取字符串长度的几种方法
+		https://blog.csdn.net/st66688/article/details/108356361
+		a,使用sizeof()运算符。会将 ‘\0’ 也计算到字符串长度中
+		b,使用strlen函数时，需要添加string.h头文件，该函数会将字符串长度计算出，不包含 ‘\0’。
+		c,编写函数。参考博文中。
+16. c语言数组
+	16.1、c语言数组指针使用？
+		static const char *variant_keys[] = {
+			"ro.hardware",  /* This goes first so that it can pick up a different
+							   file on the emulator. */
+			"ro.product.board",
+			"ro.board.platform",
+			"ro.arch"
+		};
+	16.2 C语言 创建动态数组的两种方法
+		https://blog.csdn.net/weixin_43760909/article/details/87953522
+		
+		16.2.1 C语言实现动态数组
+			https://blog.csdn.net/IOT2017/article/details/84102686
+			
+	16.3 指针malloc分配空间与数组区别？	
+		https://blog.csdn.net/qq361294382/article/details/52027448
+17. 指针
+	17.1 函数指针
+		https://www.runoob.com/cprogramming/c-fun-pointer-callback.html
+18. C语言宏
+	18.1 C语言宏高级用法 [总结] 
+		https://www.cnblogs.com/Anker/p/3418792.html
+		
+	18.2 c语言中宏定义#和 ##的作用：
+		c语言中宏定义#和 ##的作用：
+	18.3 C/C++：宏定义的有效范围 
+		https://blog.csdn.net/qq_29621351/article/details/80487163
+		
+		在C/C++中，宏定义的有效范围被规定为当前文件内有效。
+
+		“当前文件内有效”分为两种情况，一种是定义在头文件中，另一种是定义在源文件中。		在头文件中的宏定义随着头文件一同被包含到源文件中时，此时宏定义在该源文件中有效，当头文件中的宏定义随着该头文件一起被包含到另一个头文件中，而这另一个头文件又被另一个源文件包含，则该宏定义在最终被包含的源文件中同样有效。
+		
+19 epoll 
+	19.1 epoll简介 
+		https://blog.csdn.net/dabenxiong666/article/details/80317333#comments
+		
+20. c语言线程。
+	20.1 Windows下C语言线程
+		20.1.1 Windows下C语言多线程函数_beginthread简单入门应用例子
+			https://blog.csdn.net/tianzry/article/details/61933362
+			
+21 inline 
+	21.1 C语言inline详细讲解 
+		https://www.cnblogs.com/do-your-best/p/11007435.html
+		
+22 c/c++中取余与取模区别 
+	22.1 c/c++中取余与取模区别 
+		https://blog.csdn.net/qq_33921804/article/details/50630028?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+		
+		对于整型数a，b来说，取模运算或者求余运算的方法都是：
+		1.求 整数商： c = a/b;
+		2.计算模或者余数： r = a - c*b.
+		求模运算和求余运算在第一步不同: 取余运算在取c的值时，向0 方向舍入；而取模运算在计算c的值时，向负无穷方向舍入。
+		所谓向0方向舍入，就是以小数点为界限，直接将小数部分去掉。如（Int）-1.324=-1（亦叫截断法）；
+		而向负无穷方向舍入，就是最终结果比真实值更小。如（Int）-1.324=-2；（Int此处是强制转换数据类型）
+		注意c是指商;
+		符号：除 " / " ? ? 取余（模）“ ?% ” ? ? 转义字符“ ?\ ”
+		————————————————
+		版权声明：本文为CSDN博主「wellxin」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/qq_33921804/article/details/50630028
+23 int32_t什么意思
+	23.1 https://zhidao.baidu.com/question/553081320638718252.html
+		在baiint为4字节的系统
+		typedef int int32_t 不用变 使用int32_t则为du4字节
+		在int为2字节的系统zhi
+		typedef long int32_t 改变int为long，使用int32_t还是4字节。
+		总的来说，移植到dao2字系统只改变typedef long int32_t中的int，而不需要全部改变int32_t。
+24， C语言中static
+	24.1 C语言中static的作用及C语言中使用静态函数有何好处 
+		https://www.cnblogs.com/fnlingnzb-learner/p/8980452.html
+	24.2 C语言中的static 详细分析 
+		https://blog.csdn.net/keyeagle/article/details/6708077
+		c语言中static关键字用法详解 
+		https://blog.csdn.net/guotianqing/article/details/79828100  
+		
+		static变量及其作用，C语言static变量详解
+		http://c.biancheng.net/view/301.html 
+25,c语言里NULL的理解 
+	25.1 c语言里NULL的理解 
+		 https://blog.csdn.net/selina8921/article/details/79176297 
+		 
+26,c语言，goto用法，goto最强使用方法 	
+	26.1 c语言，goto用法，goto最强使用方法 
+		 https://blog.csdn.net/qq_35683626/article/details/78263379
+27,C语言extern的使用以及头文件*.h的内容格式注意
+	https://www.cnblogs.com/MYJ55/p/6725612.html 
+	
+	27.2 #ifdef __cplusplus extern “C”的作用详解 
+		https://blog.csdn.net/dayou1024/article/details/107017432
+28,C语言中函数定义使用不带参数与使用void参数的区别 
+	28.1 C语言中函数定义使用不带参数与使用void参数的区别 
+		https://www.jianshu.com/p/86d3e352810c
+29,C语言中嵌入汇编代码
+	https://blog.csdn.net/baccon/article/details/8152388#
+	GNU GCC  ：
+	《AT&T汇编语言与GCC内嵌汇编简介》
+30,__cdecl
+	30.1 __cdecl 
+		https://zhidao.baidu.com/question/1731954945007730827.html
+		
+		test：18-append-c-and-cpp-module\c_project\05_c_base_knowledge\013_function_cdecl_test.c
+		
+31,详解C语言中的stdin，stdout，stderr 
+	3.1 
+		https://blog.csdn.net/Crazy_Tengt/article/details/72717144
+		
+32，文件模块
+	32.1 c语言文件模式
+		https://www.runoob.com/cprogramming/c-file-io.html
+		
+		打开文件
+		您可以使用 fopen( ) 函数来创建一个新的文件或者打开一个已有的文件，这个调用会初始化类型 FILE 的一个对象，类型 FILE 包含了所有用来控制流的必要的信息。下面是这个函数调用的原型：
+
+		FILE *fopen( const char * filename, const char * mode );
+		在这里，filename 是字符串，用来命名文件，访问模式 mode 的值可以是下列值中的一个：
+
+		模式	描述
+		r	打开一个已有的文本文件，允许读取文件。
+		w	打开一个文本文件，允许写入文件。如果文件不存在，则会创建一个新文件。在这里，您的程序会从文件的开头写入内容。如果文件存在，则该会被截断为零长度，重新写入。
+		a	打开一个文本文件，以追加模式写入文件。如果文件不存在，则会创建一个新文件。在这里，您的程序会在已有的文件内容中追加内容。
+		r+	打开一个文本文件，允许读写文件。
+		w+	打开一个文本文件，允许读写文件。如果文件已存在，则文件会被截断为零长度，如果文件不存在，则会创建一个新文件。
+		a+	打开一个文本文件，允许读写文件。如果文件不存在，则会创建一个新文件。读取会从文件的开头开始，写入则只能是追加模式。
+		
+		如果处理的是二进制文件，则需使用下面的访问模式来取代上面的访问模式：
+
+		"rb", "wb", "ab", "rb+", "r+b", "wb+", "w+b", "ab+", "a+b"
+		
+		关闭文件
+		为了关闭文件，请使用 fclose( ) 函数。函数的原型如下：
+
+		 int fclose( FILE *fp );
+		如果成功关闭文件，fclose( ) 函数返回零，如果关闭文件时发生错误，函数返回 EOF。这个函数实际上，会清空缓冲区中的数据，关闭文件，并释放用于该文件的所有内存。EOF 是一个定义在头文件 stdio.h 中的常量。
+
+		C 标准库提供了各种函数来按字符或者以固定长度字符串的形式读写文件。
+		
+33 C 标准库
+	33.1  C 标准库 - <stdlib.h>
+		33.1.1 malloc为啥分配一个字节，但可以写入多个字节的数据呢？
+			/* 最初的内存分配 */
+		   str = (char *) malloc(1);
+		   strcpy(str, "runoobrunoobrunoob");//为啥分配一个字节，但可以写入多个字节的数据呢？
+		   
+34. C语言'\0'的含义
+	34.1 https://blog.csdn.net/dark_cy/article/details/83515270
+	
+		例如 定义char c[6]=“hello”，而在内存中字符数组 c 则是"hello\0"；
+
+		即’\0’在数组中占有空间却不被我们看到；
+
+		所以如果一个长度为10的字符串要放在字符数组里的话就应该把字符数组的长度定义为11；
+	
+		\n strlen()函数计算长度时，作为一个长度；\0，不作为一个长度。
+	34.2 0 、 '0' 、 "0" 、 ’\0’ 区别
+		https://blog.csdn.net/qnavy123/article/details/93901631
+		
+35 C语言中，scanf与scanf_s的简单区别
+	35.1 https://www.cnblogs.com/hhjfighting/p/8483983.html 
+		scanf()不会检查输入边界，可能造成数据溢出，scanf_s()会进行边界检查。
+		如name[5]，
+
+		scanf("%s",name),如果输入abcdefgh，则会使得fgh溢出进入其他地方，造成程序错误，
+
+		容易被黑客利用；而scanf_s("%s",name),则会只会接收前5个输入，其后的无效，避免了程序的漏洞。
+		
+		初步验证：不是这样的啊。
+	35.2 scanf与scanf_s的区别
+		https://blog.csdn.net/sinat_41803693/article/details/84588787
+	scanf位于stdlib.h；
+	scanf_s：微软官网VS2015中涉及scanf_s介绍。原址https://msdn.microsoft.com/en-us/library/w40768et.aspx）
+	
+		When reading a string with scanf, always specify a width for the %s format (for example, "%32s" instead of "%s"); otherwise, improperly formatted input can easily cause a buffer overrun. Alternately, consider using scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l or fgets.
+		
+		使用scanf读取字符串时，请始终为％s格式指定宽度（例如，“％32s”而不是“％s”）； 否则，格式不正确的输入很容易导致缓冲区溢出。
+	测试代码：05_c_base_knowledge\014_stdio_07_scanf.c 
+36 浅谈C语言中的布尔（bool）类型
+	https://blog.csdn.net/hfyutdg/article/details/84026460 
+	C语言不是没有布尔类型，只能说在C99标准之前没有。现在只要在源文件中包含stdbool.h这个头文件，就可以在C语言里像C++那样使用bool类型了。 
+37 const
+	37.1 C语言中指针前后有const 修饰各自表达什么意思 
+		https://blog.csdn.net/qq_43647821/article/details/104573376 
+		
+		C:带有const修饰的指针解读
+		https://blog.csdn.net/av_geek/article/details/42913657? 
+		
+		C/C++ 中 const 修饰符用法总结 
+		https://blog.csdn.net/w6655515/article/details/82938596? 
+		
+	37.2 typedef const struct SLObjectItf_ * const * SLObjectItf; 

@@ -1,0 +1,5 @@
+1. service network restart
+
+2.ifconfig
+
+3.ping ip
