@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: xt12-1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS.000\TEMP\RSP4021.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/xt12-1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\C++\123光盘\习题程序\xt12\xt12-1.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS.000\TEMP\RSP4021.TMP" 
+<h3>Output Window</h3>
+Compiling...
+xt12-1.cpp
+d:\c++\123光盘\习题程序\xt12\point.cpp(8) : error C2248: 'x' : cannot access protected member declared in class 'Point'
+        d:\c++\123光盘\习题程序\xt12\point.h(11) : see declaration of 'x'
+d:\c++\123光盘\习题程序\xt12\point.cpp(8) : error C2248: 'y' : cannot access protected member declared in class 'Point'
+        d:\c++\123光盘\习题程序\xt12\point.h(11) : see declaration of 'y'
+d:\c++\123光盘\习题程序\xt12\circle.cpp(15) : error C2248: 'x' : cannot access protected member declared in class 'Point'
+        d:\c++\123光盘\习题程序\xt12\point.h(11) : see declaration of 'x'
+d:\c++\123光盘\习题程序\xt12\circle.cpp(15) : error C2248: 'y' : cannot access protected member declared in class 'Point'
+        d:\c++\123光盘\习题程序\xt12\point.h(11) : see declaration of 'y'
+d:\c++\123光盘\习题程序\xt12\circle.cpp(15) : error C2248: 'radius' : cannot access protected member declared in class 'Circle'
+        d:\c++\123光盘\习题程序\xt12\circle.h(12) : see declaration of 'radius'
+d:\c++\123光盘\习题程序\xt12\cylinder.cpp(18) : error C2248: 'x' : cannot access protected member declared in class 'Point'
+        d:\c++\123光盘\习题程序\xt12\point.h(11) : see declaration of 'x'
+d:\c++\123光盘\习题程序\xt12\cylinder.cpp(18) : error C2248: 'y' : cannot access protected member declared in class 'Point'
+        d:\c++\123光盘\习题程序\xt12\point.h(11) : see declaration of 'y'
+d:\c++\123光盘\习题程序\xt12\cylinder.cpp(18) : error C2248: 'radius' : cannot access protected member declared in class 'Circle'
+        d:\c++\123光盘\习题程序\xt12\circle.h(12) : see declaration of 'radius'
+d:\c++\123光盘\习题程序\xt12\cylinder.cpp(19) : error C2248: 'height' : cannot access protected member declared in class 'Cylinder'
+        d:\c++\123光盘\习题程序\xt12\cylinder.h(13) : see declaration of 'height'
+d:\c++\123光盘\习题程序\xt12\xt12-1.cpp(8) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+d:\c++\123光盘\习题程序\xt12\xt12-1.cpp(8) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+d:\c++\123光盘\习题程序\xt12\xt12-1.cpp(15) : error C2593: 'operator <<' is ambiguous
+d:\c++\123光盘\习题程序\xt12\xt12-1.cpp(17) : error C2593: 'operator <<' is ambiguous
+d:\c++\123光盘\习题程序\xt12\xt12-1.cpp(19) : error C2593: 'operator <<' is ambiguous
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+xt12-1.obj - 12 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

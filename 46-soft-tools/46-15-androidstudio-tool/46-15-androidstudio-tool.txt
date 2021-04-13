@@ -291,7 +291,7 @@
 	17.1 Android Studio中怎么使用DDMS工具  
 		as3.0以下的版本适用：
 		https://www.cnblogs.com/zhichao123/p/11794491.html 
-	17.2.AndroidStudio 3.0中之后无法打开DDMS [Android Device Monitor] 问题
+	17.AndroidStudio 3.0中之后无法打开DDMS [Android Device Monitor] 问题
 		https://www.cnblogs.com/it-tsz/p/10810669.html 
 		
 		Dos命令
@@ -302,7 +302,4 @@
 
 		（2）在AndroidStudio中底部Terminal中输入： 
 		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
-	17.3 查看native进程。
-18 AndroidStudio修改默认C盘配置文件夹(.android.gradle.AndroidStudio)以及修改后避免踩的坑
-	18.1 AndroidStudio修改默认C盘配置文件夹(.android.gradle.AndroidStudio)以及修改后避免踩的坑 
-		https://www.cnblogs.com/badaoliumangqizhi/p/12128623.html 
+	18 查看native进程。

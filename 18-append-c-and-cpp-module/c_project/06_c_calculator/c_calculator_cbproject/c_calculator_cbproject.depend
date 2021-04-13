@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1594892465 source:d:\zhuanyekeku\android-knowledge-principle-interview\18-append-c-and-cpp-module\c_project\06_c_calculator\c_calculator_cbproject\functions.c
+	"functions.h"
+
+1594892465 d:\zhuanyekeku\android-knowledge-principle-interview\18-append-c-and-cpp-module\c_project\06_c_calculator\c_calculator_cbproject\functions.h
+
+1602078620 source:d:\zhuanyekeku\android-knowledge-principle-interview\18-append-c-and-cpp-module\c_project\06_c_calculator\c_calculator_cbproject\calc.c
+	<stdio.h>
+	<stdlib.h>
+

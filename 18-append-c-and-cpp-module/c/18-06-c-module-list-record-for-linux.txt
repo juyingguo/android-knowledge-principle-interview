@@ -1,0 +1,17 @@
+0 Linux 常用C函数(中文版)
+	0.1 Linux 常用C函数(中文版)
+		http://www.mysqlab.net/documents/linux_c/
+		
+1. linux c之提示format‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat 
+	http://www.voidcn.com/article/p-ukgpsqqr-kd.html
+	
+	%md，m为指定的输出字段的宽度。如果数据的位数小于m，则左端补以空格，若大于m，则按实际位数输出。
+
+	%ld(%mld 也可)，输出长整型数据。
+	u格式符，用来输出unsigned型数据， 无符号数，以十进制数形式输出。格式：%u，%mu,%lu都可 希望以后不要犯下这种傻逼错误。
+	
+2.  c/c++中取余与取模区别
+	2.1 c/c++中取余与取模区别
+		
+
+		
