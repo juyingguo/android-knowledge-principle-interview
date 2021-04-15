@@ -39,11 +39,11 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="c6/c6-1.cpp" />
-		<Unit filename="c6/c6-2.cpp">
+		<Unit filename="c6/c6-1.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="c6/c6-2.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
