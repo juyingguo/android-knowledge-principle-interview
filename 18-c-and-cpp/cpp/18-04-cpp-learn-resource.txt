@@ -21,4 +21,10 @@
 		
 		https://www.haolizi.net/example/view_3422.html 
 	
-	
+	4.2 QT5 服务器和客户端之间进行文件传输
+		https://blog.csdn.net/weixin_44565518/article/details/103291274 
+		
+	4.3 QT 实现FTP客户端
+		https://blog.csdn.net/Sakuya__/article/details/86682181?
+		
+		https://github.com/sakuya0818/FTP
