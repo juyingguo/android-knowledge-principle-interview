@@ -9,3 +9,16 @@
 	3.2 C++ Primer Plus 第6版中文版
 		C++ Primer中文版（第5版）
 	3.3 Exceptional C++》《Exceptional C++ 中文版》
+	3.4 C++ Primer书籍源码  
+		https://www.haolizi.net/example/view_56764.html 
+	3.5 《c++程序设计第2版 谭浩强》 
+		配套教材：《c++程序设计题解和上机指导第2版》
+		包含《c++程序设计第2版 谭浩强》书中的例子及习题解答
+		c++程序设计第2版 谭浩强 例子源码
+		
+4. c++ tcp文件传输例子
+	4.1 c++ tcp文件传输例子源码下载(含服务器端和客户端完整源码)
+		
+		https://www.haolizi.net/example/view_3422.html 
+	
+	

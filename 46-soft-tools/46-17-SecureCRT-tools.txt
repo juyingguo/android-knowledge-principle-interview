@@ -1,6 +1,9 @@
 0.资源
 	0.1 https://www.vandyke.com/products/securecrt/windows.html
 	
+	0.2 类似功能的软件。
+		putty.
+		
 1. SecureCRT配置自动记录日志 
 	1.1 SecureCRT配置自动记录日志
 		 https://www.cnblogs.com/xiegj/p/5669892.html

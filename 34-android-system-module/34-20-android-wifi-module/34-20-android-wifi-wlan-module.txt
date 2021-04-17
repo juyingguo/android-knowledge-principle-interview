@@ -11,10 +11,12 @@
 		2.【WIFI】RSSI接收信号强度为什么是负值？ 
 			https://blog.csdn.net/weixin_30677073/article/details/97767667
 	
-一、Android默认打开便携式WIFI热点
+一、WIFI热点
+
 	1.1、Android默认打开便携式WIFI热点
-		https://blog.csdn.net/zhoumushui/article/details/101427627
-		
+		https://blog.csdn.net/zhoumushui/article/details/101427627 
+	
+	1.2 android系统下，带有wifi模块，wifi就可以开启热点，供其它设备连接。
 2. wpa_supplicant详解
 	2.1 wpa_supplicant详解 
 		https://blog.csdn.net/zm19930923zm/article/details/88743533
