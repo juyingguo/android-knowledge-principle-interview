@@ -1,0 +1,7 @@
+1. 
+	https://minigui.fmsoft.cn/
+2. mingui
+	https://blog.csdn.net/mingzznet/article/details/9328253 
+	
+3. 嵌入式GUI，你真的选对了吗？ 
+	https://zhuanlan.zhihu.com/p/62339458 
