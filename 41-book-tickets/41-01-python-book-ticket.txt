@@ -18,6 +18,16 @@
 			更换地址试试。 
 			##HOST = "120.77.154.140:8000" ## defalut sometime cannotuse 
 			HOST = "frp.fenpao.top:9999" ## 群友提供 
-	
+		1.2.2 登录失败: 验证码校验失败! 
+		
+			https://github.com/testerSunshine/12306/issues/766
+			进入官网登录看的时候好像加了滑块
+			点选匹配的图像后，接着弹出滑块滑动验证。
+			
 	1.3、搭建github最火的12306项目
-		https://www.cnblogs.com/fdzang/p/12152807.html
+		https://www.cnblogs.com/fdzang/p/12152807.html 
+		
+		1.3.2 https://zhuanlan.zhihu.com/p/84559561 
+		
+		1.3.3 【使用教程】面向回家编程-12306智能刷票，订票
+			https://blog.csdn.net/weixin_41638860/article/details/103734001 
