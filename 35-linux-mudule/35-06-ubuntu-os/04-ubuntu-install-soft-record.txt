@@ -34,3 +34,6 @@
 		————————————————
 		
 5. Ubuntu16.04环境下编译git，并安装与使用 
+
+6. 在ubuntu上搭建ftp服务器并在windows上进行访问
+	https://blog.csdn.net/wardenjohn/article/details/87271844 
