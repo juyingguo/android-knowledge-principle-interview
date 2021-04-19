@@ -1,3 +1,6 @@
+0.1 资源
+	0.1.1 https://www.runoob.com/sqlite/sqlite-intro.html
+		
 一、想要存储时间ms值，是long类型的。SQLite中有Long类型吗？
 	1.1、SQLite中有Long类型吗？
 		https://cloud.tencent.com/developer/ask/61930
@@ -14,3 +17,5 @@
 			operateTime=560342858
 			operateTime = c.getInt(c.getColumnIndex(ClockContract.AlarmsColumns.OPERATE_TIME));
 			使用getLong
+3. Android 创建与删除数据库最有效的方法
+	http://www.doczj.com/doc/ec12dd5777232f60ddcca187-2.html 

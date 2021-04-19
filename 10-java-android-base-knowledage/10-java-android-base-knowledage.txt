@@ -166,6 +166,15 @@
 	14.1、异常，调用函数发生异常，赋值语句会赋值吗？
 		a= "abc";
 		a= test();
+	14.2 捕获应用异常写入崩溃日志。
+	14.3 获取异常中的原因详细信息。
+		public void uncaughtException(Thread thread, final Throwable ex){
+			//通过分析日志，：
+			//java.lang.Thread.run(Thread.java:818)Caused by: android.database.sqlite.SQLiteException: no such //column: testcrash (code 1)
+			//发现以下方式可以获取原因：
+			ex.getCause()//注意有的有原因有无原因，但都有异常信息。保存在文件中，再读取出来即可。
+			
+		}
 		
 十五、android:inputType参数类型说明 
 	15.1、android:inputType参数类型说明 

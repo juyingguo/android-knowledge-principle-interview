@@ -47,6 +47,8 @@
 			https://www.cnblogs.com/takumicx/p/9338983.html 
 			ReentrantLock使用场景和实例 
 			https://blog.csdn.net/zhaoyunfei1/article/details/105390023 
-		
+6. java中文件操作
+	6.1 java读取文本文件内容 
+		https://www.cnblogs.com/xing-star/p/11042369.html 
 		
 			
