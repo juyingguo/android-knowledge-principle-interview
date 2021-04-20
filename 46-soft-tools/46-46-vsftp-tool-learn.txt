@@ -1,0 +1,27 @@
+1. 资源VSFTP
+	1.0 官网资源
+			https://security.appspot.com/vsftpd.html
+			配置手册说明：
+			http://vsftpd.beasts.org/vsftpd_conf.html 
+		
+		1.0.1 http://www.linuxfromscratch.org/blfs/view/svn/server/vsftpd.html
+		
+		1.0.2 install package
+			Packages Search for Linux and Unix
+			https://pkgs.org/
+			
+			https://pkgs.org/download/vsftpd
+	1.1 VSFTP
+		https://blog.csdn.net/qq_40794973/article/details/91396052
+	1.3 VSFTPD详解
+		https://www.jianshu.com/p/00049b574290 
+		
+		Vsftpd常用命令
+		关闭：sudo service vsftpd stop
+
+		启动：sudo service vsftpd start
+
+		重启：sudo service vsftpd restart
+	
+2. 在ubuntu上搭建ftp服务器并在windows上进行访问
+	https://blog.csdn.net/wardenjohn/article/details/87271844 

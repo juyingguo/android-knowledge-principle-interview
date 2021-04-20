@@ -1,11 +1,13 @@
 
-1、官网
-	http://linux.linuxidc.com/
+1、资源
+	1.1 http://linux.linuxidc.com/
 	
-	man-pages
+	1.2 man-pages
 	
-	http://www.kernel.org/doc/man-pages/
-	
+		http://www.kernel.org/doc/man-pages/
+	1.3 Packages Search for Linux and Unix
+			https://pkgs.org/
+	1.4 http://www.linuxfromscratch.org/blfs/view/svn/index.html 
 2、linux内核源码下载地址 。及在线浏览代码
 	2.1、linux内核源码下载地址 
 		https://blog.csdn.net/u011375704/article/details/81866427?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
