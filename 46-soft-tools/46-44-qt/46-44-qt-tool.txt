@@ -37,3 +37,8 @@
 		C:\java2\Qt\Qt5.9.0\Tools\QtCreator\bin
 		QT_HOME=C:\java2\Qt\Qt5.9.0
 		%QT_HOME%\5.9\mingw53_32\bin;%QT_HOME%\Tools\QtCreator\bin;;
+		
+6. qt编译项目异常，
+	6.1 'knowledge' ，'principle'不是内部或外部命令
+		目前尚无分析出原因。
+		暂时解决办法：重建项目-将原有源文件都复制一份即可。
