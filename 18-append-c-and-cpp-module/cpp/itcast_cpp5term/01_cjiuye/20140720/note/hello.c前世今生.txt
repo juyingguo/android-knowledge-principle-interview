@@ -1,6 +1,0 @@
-hello.c  ----- hello.exe/helle/a.out
-
-gcc -E hello.c -o hello.i   ‘§¥¶¿Ì
-gcc -S hello.i -o hello.s   ª„±‡
-gcc -c hello.s -o hello.o   ±‡“Î
-gcc    hello.o -o hello     ¡¥Ω”

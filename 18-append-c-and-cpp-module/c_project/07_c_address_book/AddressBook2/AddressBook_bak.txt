@@ -1,6 +1,0 @@
-1 ali yilmaz 324324444 Kadikoy/ISTANBUL
-2 ugur esgin 3245435455 AkcaPlazano:2IcerenkoyIstanbul
-3    li    ming    1310025    beijing:tongzhou:101_a
-4    ma    hai    14400110    shenzhen:futian:01
-5    zhang    ming    1370010    nanjing:yuhua:n01
-6    wang    lili    1310321    anhui-hefei

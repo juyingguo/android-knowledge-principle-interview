@@ -1,8 +1,0 @@
-#ifndef HEAD_TEST_H_INCLUDED
-#define HEAD_TEST_H_INCLUDED
-
-
-
-#endif // HEAD_TEST_H_INCLUDED
-
-#define DEVICE_NAME
