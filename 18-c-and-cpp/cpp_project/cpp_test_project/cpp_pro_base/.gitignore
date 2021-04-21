@@ -1,0 +1,9 @@
+*.ipch
+/ipch/
+*.sdf
+*.o
+*.exe
+/Debug
+/obj
+/bin
+
