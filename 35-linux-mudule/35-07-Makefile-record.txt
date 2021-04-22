@@ -59,3 +59,12 @@
 	 
 	   @echo $(CURDIR)
 	在命令行make后就显示当前路径。
+6. 在Makefile中进行宏定义-D（转） 
+	https://www.cnblogs.com/rohens-hbg/articles/5070898.html 
+	
+	在Makefile中我们可以通过宏定义来控制源程序的编译。
+	只要在Makefile中的CFLAGS中通过选项-D来指定你于定义的宏即可。
+	如: CFLAGS += -D _YUQIANG
+	在编译的时候加上此选项就可以了：
+	$(CC) $(CFLAGS) $^ -o $@ 
+	
