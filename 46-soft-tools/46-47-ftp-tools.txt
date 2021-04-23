@@ -1,0 +1,5 @@
+1.
+2. 好用免费的ftp软件工具推荐，支持中文
+	https://zhuanlan.zhihu.com/p/113752448 
+	
+	xftp

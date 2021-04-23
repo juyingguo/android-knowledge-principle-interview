@@ -45,11 +45,26 @@
 	4.4 使用c++实现一个FTP客户端(一) 
 		https://blog.csdn.net/p312011150/article/details/78729576  
 		
-		https://www.cnblogs.com/jzincnblogs/p/5213978.html
+		https://www.cnblogs.com/jzincnblogs/p/5213978.html 
 		二
 		https://blog.csdn.net/p312011150/article/details/78729581?
+		http://www.cnblogs.com/jzincnblogs/p/5213978.html 
 		三
 		https://blog.csdn.net/p312011150/article/details/78729583? 
+		https://www.cnblogs.com/jzincnblogs/p/5227747.html 
+	4.5 ftpclient and ftpserver
+		filezilla是一款高性能ftp工具
+		https://github.com/helloworldgnu/filezilla
+			https://filezilla-project.org/
+		
+		https://github.com/Wenchy/tinyFTP
+			Implementation of a tiny FTP client and server
+		
+		client::
+		https://github.com/embeddedmz/ftpclient-cpp 
+		
+		https://github.com/CCCaoke/FTPClient
+		
 一、C++中：：的作用 
 	
 	1.1、https://blog.csdn.net/better_xiaoxuan/article/details/52957219

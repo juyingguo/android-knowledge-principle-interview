@@ -26,4 +26,7 @@
 		http://www.360doc.com/content/15/0329/18/4127803_459088781.shtml  
 	3.4 photoshop CS6怎么画直线 
 		https://jingyan.baidu.com/article/4b07be3c98059748b380f392.html 
+	3.5 如何在Photoshop中使用使用”椭圆工具"绘制
+		https://jingyan.baidu.com/article/925f8cb81bf94d81dce05618.html 
+		从Photoshop工具箱中点击“椭圆工具”。如果看不见，请右键单击单击其组中任何可见的形状工具，以在下拉菜单中显示“椭圆工具”。
 		

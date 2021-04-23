@@ -294,3 +294,18 @@
 13 同一个区域更换图片背景。
 	13.1 重绘一个对象。
 	13.2 不重绘一个对象，有没有方式更新背景图片。
+14 绘制线
+	14.1 借用移动动画绘制点达到绘制线的过程
+		cat_xiaoyu_connect_line = game.add.image(100 + 100,400,'fifth_scene_pic_point');
+				//100,50 + 50 + 90
+				game.add.tween(cat_xiaoyu_connect_line).to({x:100, y: 50 + 50 + 90}, 1000, Phaser.Easing.Linear.None).onUpdateCallback(function(){
+					// console.log("xzx----state_3_1--2->this.onUpdateCallback:"+this.walk_ibotn.x);
+					game.add.image(cat_xiaoyu_connect_line.x,cat_xiaoyu_connect_line.y,"fifth_scene_pic_point");
+					// console.log(that.bw1.target   );				
+
+				},that).start();
+		
+		14.1.1 
+			通过这种绘制的线销毁也巨大麻烦。
+	14.2 同过new Phaser.Line。闪动缩放动画，也不可以。
+		需要闪动的线，通过图片代替即可。

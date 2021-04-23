@@ -229,6 +229,8 @@
 			2.在链接器->输入，添加依赖项中将lib文件的名字加进去。
 			（2）调其独立的.lib库文件。
 				看文档。
+	4.7 使用vs2013打开vs2015项目 
+		
 5. Visual Studio 各个版本之间的功能比较
 	https://blog.csdn.net/helloexp/article/details/84371799 
 	5.2 VS express和VS community有什么区别？ 
