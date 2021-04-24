@@ -1,12 +1,13 @@
-#include <winsock2.h>
 #include <stdio.h>
 #include <string.h>
+#include <sys/types.h>          /* See NOTES */
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+
+#define SOCKET int
 int socket_send(const char *IP){
-    //初始化socket
-    DWORD ver;
-    WSADATA wsaData;
-    ver = MAKEWORD(1,1);//在调用wSAstatrtup要告诉widnows﹐我用什么版本的socket
-    WSAStartup(ver,&wsaData) ; //windows要求﹐只要用socket,第一步﹐必须调用这个函数
+
     //初始化socket完成
     //建立一个socket,第一个参数是指定socket要用那个协议,AF_INET代表要用TCP/IP协议//第二个参数SoCK_DGRAM意思是要用UDP协议
     //第三个参数一般默认填0
@@ -29,23 +30,16 @@ int socket_send(const char *IP){
         //fgets包含最后输入的'\n',而gets()不包含最后输入的'\n'.
         //http://cplusplus.com/reference/cstdio/fgets/
         char *result = fgets(buf,1024,stdin);//use gets(buf), gets(buf) is deprecated
-        printf("socket_send(),fgets result =%s",result);
         rc = sendto(st,buf,strlen(buf),0,(struct sockaddr *) &addr,sizeof(addr));
 //        printf("socket_send(),sendto rc=%u.",rc);
         if(strcmp(buf,"bye\n") == 0){//bye 则退出
             break;
         }
     }
-    closesocket(st); //使用完socket要将其关闭
-    WSACleanup();//释放win socket内部的相关资源
+    close(st); //使用完socket要将其关闭
     return rc;
 }
 int socket_recv(){
-    //初始化socket
-    DWORD ver;
-    WSADATA wsaData;
-    ver = MAKEWORD(1,1);//在调用wSAstatrtup要告诉widnows﹐我用什么版本的socket
-    WSAStartup(ver,&wsaData) ; //windows要求﹐只要用socket,第一步﹐必须调用这个函数
     //初始化socket完成
     //建立一个socket,第一个参数是指定socket要用那个协议,AF_INET代表要用TCP/IP协议//第二个参数SoCK_DGRAM意思是要用UDP协议
     //第三个参数一般默认填0
@@ -61,21 +55,20 @@ int socket_recv(){
         char buf[1024] ={0};
         struct sockaddr_in sendaddr;
         memset ( &sendaddr, 0, sizeof (sendaddr));
-        int len = sizeof(sendaddr);
+        socklen_t len = sizeof(sendaddr);
         while (1) {
             memset(buf,0,sizeof(buf));
             rc = recvfrom(st, buf, sizeof(buf),0,(struct sockaddr *) &sendaddr,&len);
             //inet_ntoa (sendaddr.sin_addr);//这个函数是不可重入函数
             printf("socket_recv(),receive from ip %s :%s \n",inet_ntoa(sendaddr.sin_addr),buf);
-            if(strcmpi(buf,"bye\n") == 0){//bye 则退出
+            if(strcmp(buf,"bye\n") == 0){//bye 则退出
                 break;
             }
         }
     }else {
         printf("socket_recv(),bind return <= -1,fail.\n");
     }
-    closesocket(st); //使用完socket要将其关闭
-    WSACleanup();//释放win socket内部的相关资源
+    close(st);
     return rc;
 }
 
