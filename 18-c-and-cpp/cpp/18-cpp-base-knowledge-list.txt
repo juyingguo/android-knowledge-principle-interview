@@ -23,9 +23,12 @@
 	3.1 Essential C++ 中文版
 	3.2 C++ Primer Plus 第6版中文版
 		C++ Primer中文版（第5版）
+		
+		C++ Primer书籍源码  
+		https://www.haolizi.net/example/view_56764.html  		
+		http://www.informit.com/title/0321714113 
 	3.3 Exceptional C++》《Exceptional C++ 中文版》
-	3.4 C++ Primer书籍源码  
-		https://www.haolizi.net/example/view_56764.html 
+	3.4 
 	3.5 《c++程序设计第2版 谭浩强》 
 		配套教材：《c++程序设计题解和上机指导第2版》
 		包含《c++程序设计第2版 谭浩强》书中的例子及习题解答
@@ -138,7 +141,7 @@
 		typedef 是由编译器执行解释的，#define 语句是由预编译器进行处理的。
 7. inline
 
-8. static 
+8. cast
 	8.1 static_cast
 		C/C++： C++ 中 static_cast 类型转换的含义 
 		https://blog.csdn.net/zangle260/article/details/26740269 
@@ -146,9 +149,13 @@
 		
 		C++-类型转换(static_cast, const_cast, reinterpret_cast)
 		https://www.cnblogs.com/hyq-lst/p/12603716.html
-		
+	8.2 c++-const_cast 使用
+		https://blog.csdn.net/qq_30968657/article/details/53886737 
 
+		*\cpp_project\02_cpp_base_knowledge\033_cast_02_const_cast_02.cpp
 		
+		如果我们不想修改const变量的值，那我们又为什么要去const呢？		原因是，我们可能调用了一个参数不是const的函数，而我们要传进去的实际参数确实const的，但是我们知道这个函数是不会对参数做修改的。于是我们就需要使用const_cast去除const限定，以便函数能够接受这个实际参数。
+		应该遵从这样的原则：使用const_cast去除const限定的目的绝对不是为了修改它的内容，只是出于无奈
 9、cpp	[Error] 'numeric_limits' was not declared in this scope
 	1.1、cpp	[Error] 'numeric_limits' was not declared in this scope
 		https://stackoverflow.com/questions/20231259/error-numeric-limits-was-not-declared-in-this-scope

@@ -230,6 +230,11 @@
 			（2）调其独立的.lib库文件。
 				看文档。
 	4.7 使用vs2013打开vs2015项目 
+	
+	4.8 解决vs2013转到定义变灰，F12无法跳转问题 
+		https://blog.csdn.net/qq_36150473/article/details/73167182 
+		
+		工具–》选项–》文本编辑器–》C/C++–》高级，把禁用数据库设置为false。
 		
 5. Visual Studio 各个版本之间的功能比较
 	https://blog.csdn.net/helloexp/article/details/84371799 
