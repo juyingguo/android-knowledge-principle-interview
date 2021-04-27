@@ -22,6 +22,8 @@
 		启动：sudo service vsftpd start
 
 		重启：sudo service vsftpd restart
+	1.4 史上最详细的vsftpd配置文件详解 
+		https://www.jb51.net/article/94223.htm 
 	
 2. 在ubuntu上搭建ftp服务器并在windows上进行访问
 	https://blog.csdn.net/wardenjohn/article/details/87271844 

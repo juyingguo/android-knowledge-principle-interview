@@ -31,6 +31,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="033_cast_01_static_cast_01.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="033_cast_02_const_cast_01.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="033_cast_02_const_cast_02.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="033_cast_02_const_cast_03.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
