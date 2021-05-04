@@ -1,0 +1,6 @@
+#ads 工程忽略文件
+*_Data
+Debug
+DebugRef
+Release
+*.stg
