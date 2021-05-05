@@ -1,0 +1,10 @@
+	AREA MYADD, CODE, READONLY
+	;ENTRY
+	EXPORT myadd
+	
+myadd
+	ADD R2, R0, R1
+	MOV R0, R2
+	MOV R15, R14	;MOV PC, LR
+	
+	END

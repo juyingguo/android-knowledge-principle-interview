@@ -8,3 +8,9 @@
 		
 		解决方案：以兼容XP方式和管理员身份运行codewarrior。
 		再重新debug调试问题解决
+	2.3 ads 生成二进制.bin文件配置及下载到指定的地址上。
+		edit->DebugRef|Settings
+		->Target -> Target Settings ->Post-linker ARM from ELF
+		
+		edit->DebugRef|Settings
+		-> Linker -> ARM Linker ->Output ->Simple image ->RO Base

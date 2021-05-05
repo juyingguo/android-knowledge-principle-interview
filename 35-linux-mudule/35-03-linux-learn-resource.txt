@@ -8,6 +8,10 @@
 	1.3 Packages Search for Linux and Unix
 			https://pkgs.org/
 	1.4 http://www.linuxfromscratch.org/blfs/view/svn/index.html 
+	
+	1.5 磐实编程网 
+		http://www.panshy.com/video/201505/video-137.html 
+		可下载资源。
 2、linux内核源码下载地址 。及在线浏览代码
 	2.1、linux内核源码下载地址 
 		https://blog.csdn.net/u011375704/article/details/81866427?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
@@ -116,4 +120,22 @@
 
 	4. 《嵌入式Linux应用开发》
  
+12 最新Tiny210光盘资料
+	
+	磐实编程网:下载
+	http://www.panshy.com/downloads/201505/down-252.html 
+	
+	麦可网张凌华Sundy Android嵌入式底层视频课程
+	http://www.panshy.com/video/201505/video-137.html
+		磐实 目前共三个网站：磐实编程网(panshy.com)、源问(ask.panshy.com)、程序员云集网(bbs.panshy.com)。
+	
+	下载 ARM嵌入式开发-Linux内核篇
+	下载ARM嵌入式开发-裸板篇
+	下载Linux操作系统基础
+	下载Linux应用系统开发
+	下载Tiny210_光盘资料
+	下载从零开始认识开发板
+	下载计算机原理
+	
+	遇到有加密的文件,一般都是www.panshsoft.com  或  www.panshy.com 
 	

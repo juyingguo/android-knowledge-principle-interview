@@ -1,2 +1,16 @@
 1.百度网盘妥协了，新增免费提速功能，最高10m/s
-	https://zhuanlan.zhihu.com/p/149778105?from_voters_page=true
+	https://zhuanlan.zhihu.com/p/149778105?from_voters_page=true 
+	
+2. 【原创内容】获取百度网盘真实下载地址 
+	https://www.cnblogs.com/qixiaodui/p/8379616.html 
+	
+	推荐安装IDM下载  链接：https://pan.lanzous.com/iNjhjjq357a
+	
+	用Internet Download Manager下载百度盘资源！ 
+	https://jingyan.baidu.com/article/3c343ff7f554a80d3679634d.html 
+	
+	BaiduPan Explorer
+	https://chrome.google.com/webstore/detail/baidupan-explorer/lncbhecjekffklnelbeninpnacopebcp 
+	
+3. 3个方法解决百度网盘限速 
+	https://www.runningcheese.com/baiduyun 
