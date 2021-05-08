@@ -1,9 +1,37 @@
-01 android源码及kernel源码：
+01 资源
+	android源码及kernel源码：
 	http://androidxref.com/
+	
+	01.2 麦可网张凌华Sundy Android嵌入式底层视频课程 
+		最新Tiny210光盘资料		
+		磐实编程网:下载
+		http://www.panshy.com/downloads/201505/down-252.html 
+			只有光盘数据，没有教师教课的程序。
+		
+		
+		http://www.panshy.com/video/201505/video-137.html
+			磐实 目前共三个网站：磐实编程网(panshy.com)、源问(ask.panshy.com)、程序员云集网(bbs.panshy.com)。
+		
+		下载 ARM嵌入式开发-Linux内核篇
+		下载ARM嵌入式开发-裸板篇
+		下载Linux操作系统基础
+		下载Linux应用系统开发
+		下载Tiny210_光盘资料
+		下载从零开始认识开发板
+		下载计算机原理
+		
+		遇到有加密的文件,一般都是www.panshsoft.com  或  www.panshy.com
+		
+		3. 友善之臂。
+			官网。友善之臂210裸机开发教程 
+			官网全套DVD光盘资料。download下可以下载。
+			
+			Android FAQ ：
+				https://wiki.friendlyarm.com/wiki/index.php/Android_FAQ
 02 android新技术
 	02.1 新技又又又又又叒来了？
 		https://mp.weixin.qq.com/s?__biz=MzAxMTI4MTkwNQ==&mid=2650836418&idx=1&sn=7c3d57dff81253ef37f633c5898b52d5&chksm=80b7595cb7c0d04a06ebee3ab775f941cc5e4fc034341f5c498edaffef079692c87bff7ebd08&mpshare=1&scene=23&srcid=032971EKPFuZh7C4sdpHA156&sharer_sharetime=1616990526408&sharer_shareid=f907dc3edbba18604206b66c083e0ad8#rd 
-		
+ 
 1. Android系统之路(初识MTK) ------ 更改设备盘符名称/型号/名称/品牌/Version/Devices/Product...... 
 
 	1.1 Android系统之路(初识MTK) ------ 更改设备盘符名称/型号/名称/品牌/Version/Devices/Product...... 

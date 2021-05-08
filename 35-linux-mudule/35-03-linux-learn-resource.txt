@@ -120,12 +120,14 @@
 
 	4. 《嵌入式Linux应用开发》
  
-12 最新Tiny210光盘资料
+12 麦可网张凌华Sundy Android嵌入式底层视频课程 
+	最新Tiny210光盘资料
 	
 	磐实编程网:下载
 	http://www.panshy.com/downloads/201505/down-252.html 
+		只有光盘数据，没有教师教课的程序。
 	
-	麦可网张凌华Sundy Android嵌入式底层视频课程
+	
 	http://www.panshy.com/video/201505/video-137.html
 		磐实 目前共三个网站：磐实编程网(panshy.com)、源问(ask.panshy.com)、程序员云集网(bbs.panshy.com)。
 	
