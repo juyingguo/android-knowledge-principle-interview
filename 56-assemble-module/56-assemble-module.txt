@@ -2,3 +2,15 @@
 2. armª„±‡ bic∫Õorr÷∏¡Ó 
 	https://blog.csdn.net/qingkongyeyue/article/details/68952483?
 	https://www.cnblogs.com/schling/p/5744788.html 
+3. ARMª„±‡÷∏¡Ó-STMFD/LDMFD
+	https://www.cnblogs.com/w-smile/p/14019942.html  
+	
+	≤Œøº£∫
+
+		http://blog.chinaunix.net/uid-28458801-id-3791987.html
+
+		https://blog.csdn.net/stephenbruce/article/details/51151147
+
+		https://www.jianshu.com/p/aa4695b6bc26
+
+		https://blog.csdn.net/weiwei_xiaoyu/article/details/20563479
