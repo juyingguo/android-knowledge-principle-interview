@@ -1,0 +1,24 @@
+1.中断源使能
+GPH2CON		0XE0200C40	中断功能
+EXT_INT_2_CON	0xE0200E08	中断信号触发方式（下降沿）
+EXT_INT_2_FLTCON0	0xE0200E90	滤波去抖动
+
+EXT_INT_2_MASK	0xE0200F08	中断掩码寄存器
+EXT_INT_2_PEND	0xE020_0F48	中断悬挂寄存器
+
+2.中断控制器
+VIC0INTSELECT	0xF200000C	（16）mode触发（irq/fiq）
+VIC0INTENABLE	0xF2000010	（16）中断使能
+
+3.中断核心层
+CPSR 	I位使能
+
+interupt_init()
+{
+1中断源使能
+2中断控制器使能
+3中断核心层使能
+}
+
+	
+

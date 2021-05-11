@@ -1,4 +1,7 @@
-1.
+1.资源
+	1.1 
+	1.2 armsoc.pdf
+	
 2. arm汇编 bic和orr指令 
 	https://blog.csdn.net/qingkongyeyue/article/details/68952483?
 	https://www.cnblogs.com/schling/p/5744788.html 
