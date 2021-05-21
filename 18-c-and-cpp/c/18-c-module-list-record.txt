@@ -214,8 +214,9 @@
 
 13、c语言数据结构。
 	13.1、链表的操作（C语言实现） 
-		13.1.0 调试工程位置：
-			*\08_c_data_struct_base\01-linkedList-test.c
+		13.1.0 资源
+			13.1.0.1 郝斌的教程
+				
 		13.1.1、学习心得：链表的操作（C语言实现） 
 			https://blog.csdn.net/lpp0900320123/article/details/20356143 
 			

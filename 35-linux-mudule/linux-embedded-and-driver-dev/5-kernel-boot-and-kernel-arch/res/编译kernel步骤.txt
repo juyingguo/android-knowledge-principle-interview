@@ -1,0 +1,23 @@
+编译bootloader
+1.清除代码中已经编译出的.o文件和目标文件
+make distclean
+2.为tiny210开发板生成配置文件
+make tiny210_config
+3.编译
+make
+4.把bootloader烧写到sd卡
+#查看sd卡状态
+sudo fdisk -l
+#iflag 输入标志，dsync数据同步；sd第一个扇区存放厂商信息，第二个扇区存放有效信息。
+#seek =1跳过第一个扇区，从第二个扇区开始。
+sudo dd iflag=dsync oflag=dsync if=tiny210-uboot.bin of=/dev/sdb seek=1
+
+
+编译kernel
+1.清除代码中已经编译出的.o文件和目标文件
+make distclean
+2.打开一个配置kernel的界面，裁剪kernel，生成配置文件.config
+make menuconfig
+3.根据.config配置文件选择要编译的目录和原码
+make
+4.生成的kernel在/arch/arm/boot/zImage

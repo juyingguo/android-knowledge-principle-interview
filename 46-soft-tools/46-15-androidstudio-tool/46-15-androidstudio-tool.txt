@@ -227,48 +227,78 @@
 	View > Tool Windows > Gradle 
 	
 14 androidstudio 使用gradle构建失败
-	下载https://maven.google.com/**/support-annotations-25.4.0.jar  
-	提示Connection timed out。
-	
-	更改仓库：顶级gradle文件
-	buildscript {
-		repositories {
-			jcenter()
-			maven {
-				url 'https://maven.google.com/'
-				name 'Google'
-			}
-		}
-	}
-
-	allprojects {
-		repositories {
+	14.1 下载https://maven.google.com/**/support-annotations-25.4.0.jar  
+		提示Connection timed out。
+		
+		更改仓库：顶级gradle文件
+		buildscript {
+			repositories {
 				jcenter()
 				maven {
 					url 'https://maven.google.com/'
 					name 'Google'
 				}
+			}
 		}
-	}
-	
-	内容全部更换为：
-		buildscript {
-		repositories {
-			google()
-			jcenter()
-			mavenCentral()
 
+		allprojects {
+			repositories {
+					jcenter()
+					maven {
+						url 'https://maven.google.com/'
+						name 'Google'
+					}
+			}
 		}
-	}
+		
+		内容全部更换为：
+			buildscript {
+			repositories {
+				google()
+				jcenter()
+				mavenCentral()
 
-	allprojects {
-		repositories {
-			google()
-			jcenter()
-			maven { url 'https://jitpack.io' }
+			}
 		}
-	}
-	
+
+		allprojects {
+			repositories {
+				google()
+				jcenter()
+				maven { url 'https://jitpack.io' }
+			}
+		}
+	14.2 指定名称生成apk.
+		ERROR: Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated
+		https://www.cnblogs.com/tangZH/p/10764568.html 
+		转载请标明出处：https://www.cnblogs.com/tangZH/p/10764568.html
+		
+		Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=debug, filters=[]}} of type com.android.build.gradle.internal.api.ApkVariantOutputImpl.
+		这个在低版本的gradle是行得通的，但是高版本就不行。
+		
+		buildTypes {
+			release {
+				minifyEnabled false
+				proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+				outFileFormat(defaultConfig,"release")
+			}
+		}
+		def releaseTime() {
+			return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+		}
+		def outFileFormat(defaultConfig, str) {
+			// 自定义APK安装包名
+			android.applicationVariants.all { variant ->
+				variant.outputs.all { output ->
+					def outputFile = output.outputFile
+					if (outputFile != null && outputFile.name.endsWith('.apk')) {
+						def path = "../" + str + "/";
+						def fileName = "IbotnCamera2_${str}_V${defaultConfig.versionName}_${releaseTime()}.apk";
+						outputFileName = new File(path, fileName)
+					}
+				}
+			}
+		}
 15 Project needs to be converted to androidx.* dependencies 	
 	
 	15.1 Android解决Project needs to be converted to androidx.* dependencies问题
@@ -303,3 +333,5 @@
 		（2）在AndroidStudio中底部Terminal中输入： 
 		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
 	18 查看native进程。
+	
+	

@@ -31,7 +31,8 @@
 			
 		4.2.2 java.io.StreamCorruptedException: invalid stream header报错原因 
 			https://blog.csdn.net/wangwenjunsw/article/details/5550441?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
-			
+	4.2 String.split()遇到空字符串的几种情况 
+		https://blog.csdn.net/qqxyy99/article/details/78861109 
 5.java中线程
 	5.1 
 	5.2 线程挂起，阻塞，休眠理解 

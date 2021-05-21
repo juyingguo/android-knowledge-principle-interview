@@ -30,14 +30,14 @@ PNODE Create_List(void)
 
 		pHead->pNext=NULL;
 		printf("Create_List pHead->pNext= %x \n",pHead->pNext);
-		printf("please input the length of list: ");  //需要一个指针始终指向链表的结尾
+		printf("Create_List please input the length of list: ");  //需要一个指针始终指向链表的结尾
 		scanf("%d",&len);
 		for(i=0;i<len;i++)
 		{
 		    PNODE p=(PNODE)malloc(sizeof(NODE));
 		    if(NULL==p)
 	        {
-		        printf("Memory allocation failure");
+		        printf("Create_List Memory allocation failure");
 		        exit(-1);
 	        }
 			else
@@ -163,6 +163,54 @@ void Sort_List(PNODE pHead)
 	}
 }
 
+/**
+    求链表的中间节点。打印出值。
+*/
+void print_middle_nodes(PNODE pHead)
+{   int i=0;  //定义变量要记得初始化；
+    int len=Length_List(pHead);
+    if(len == 0) {
+
+        printf("print_middle_nodes,list is empty.");
+        return;
+    }
+    PNODE p=pHead->pNext;//p指向首节点
+    if(len == 1){
+        printf("print_middle_nodes,middle node p->data = %d\n",p->data);
+        return;
+    }
+
+    int middle_index = 0;
+    if(len%2 == 0){
+        //偶数
+        middle_index = len/2;
+        while(NULL!=p)
+        {
+            i++;
+            if(middle_index == i || (middle_index + 1) == i){
+
+                printf("print_middle_nodes middle node(even number) i=%d , p->data = %d\n",i,p->data);
+            }
+            p=p->pNext;
+        }
+    }else{
+        //奇数
+        middle_index = len/2 + 1;
+        while(NULL!=p)
+        {
+            i++;
+            if(middle_index == i){
+
+                printf("print_middle_nodes middle node(odd number) i=%d , p->data = %d\n",i,p->data);
+                break;
+            }
+            p=p->pNext;
+        }
+    }
+
+}
+
+
 int main(void)
 {
 //   PNODE list = Create_List();
@@ -189,7 +237,7 @@ int main(void)
 	printf("* 1 创建单向链表         2 任意位置插入结点*\n");
 	printf("* 3 打印单向链表个数     4 打印单向链表    *\n");
 	printf("* 5 删除某结点           6 链表排序        *\n");
-	printf("* 7                      8                 *\n");
+	printf("* 7 求链表的中间节点     8                 *\n");
 	printf("* 9                      10 退出           *\n");
 	printf("********************************************\n");
 	while(1)
@@ -238,7 +286,7 @@ int main(void)
 			}
 		case 7:
 			{
-
+                print_middle_nodes(pHead);
 				break;
 			}
 		case 8:

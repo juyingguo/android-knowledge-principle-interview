@@ -1,0 +1,9 @@
+创建设备节点。//c字符设备，250主设备号，0次设备号。
+mknod /dev/globalmem c 250 0
+insmod globalmem.ko
+rmmod globalmem
+//echo 打开设备文件，并向设备文件中写入数据。
+echo "hello nihao a" > /dev/globalmem 
+//cat 读取设备文件内容
+cat /dev/globalmem
+ls -l /dev/globalmem

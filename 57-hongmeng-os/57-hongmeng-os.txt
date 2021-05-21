@@ -1,0 +1,6 @@
+1.资源
+	1.1 
+	1.2 鸿蒙OS分布式操作系统 OpenHarmony
+		资料及官网入口。
+		多种计算机资料搜集汇总。
+		https://github.com/fenwii/OpenHarmony 
