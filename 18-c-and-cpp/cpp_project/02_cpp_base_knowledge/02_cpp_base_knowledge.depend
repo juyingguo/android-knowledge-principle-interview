@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1619229652 source:d:\zhuanyekeku\android-knowledge-principle-interview\18-c-and-cpp\cpp_project\02_cpp_base_knowledge\027_02_template_for_typename_self_define_stack.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	<string>
+	<stdexcept>
+
