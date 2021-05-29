@@ -1,3 +1,7 @@
+/* 非循环单链表。
+    1.该链表含，头指针、尾指针
+    2.添加:求链表的中间节点
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -62,20 +66,28 @@ PNODE Create_List(void)
 /**
 采用头插法：
 链表的第pos有效元素前面插入元素val，首先我们应该找到第pos个元素前面一个元素的位置；
-当链表有3个元素时，pos=4，将不会进行插入操作
+当链表有3个元素时，pos=4，将不会进行插入操作。不管链表有无元素，当pos<=0时，都不允许插入。只有个当pos>=1时才允许插入
+1.链表首节点序号为1，依次递增
 
 */
 bool Insert_List(PNODE pHead,int pos,int val)
 {
+    if(pos < 1){//可以防止用户输入错误
+        printf("Insert_List, pos < 1 can't insert.\n");
+        return false;
+    }
 	int i=0;
 	PNODE p=pHead;
-	while((NULL!=p)&&(i<pos-1)) //
+	while((NULL!=p)&&(i<pos-1))
 	{
 		p=p->pNext;
 		i++;
 	}
-	if(p==NULL||i>pos-1)  //把链表为空的情况考虑进去了；i>pos-1 可以防止用户输入错误；
+	if(p==NULL)  //把链表为空的情况考虑进去了；
+    {
+        printf("Insert_List, pos >= (list length + 2),p==NULL can't insert.\n");
 		return false;
+    }
 
 	//程序执行到这之后，i=pos-1；p指针指向链表第pos个有效节点的前驱，即指向第pos-1节点；
 	PNODE q=(PNODE)malloc(sizeof(NODE));

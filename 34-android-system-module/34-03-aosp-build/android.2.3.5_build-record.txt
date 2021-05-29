@@ -439,7 +439,22 @@
 		这个提示其实已经很明显的说明了问题出现的原因：编译需要的是jdk 1.5的版本，而当前编译环境的jdk版本是1.7。这里需要说明的是jdk1.6是兼容1.5的，而jdk1.7不兼容。Android4.4一直使用的都是jdk1.6，而到了Android5.0却需要使用jdk1.7编译，因此编译Android5.0在设置环境的时候将jdk版本切换到了1.7。因此重新编译Android4.4的时候出现了这个冲突。解决办法就是切换回jdk1.6
 		
 		切换jdk的方法：
-			
+	17 fatal error: bits/c++config.h: No such file or directory
+		参考[一：3]编译android2.3需要gcc4.4
+	
+		https://blog.csdn.net/strugglelg/article/details/39207553? 
+		sudo  apt-get  install   gcc-4.6-multilib     g++-4.6-multilib
+		或者
+
+		sudo  apt-get  install   gcc-4.4-multilib     g++-4.4-multilib 
+		根据版本号而定 
+		
+	18 prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/../../../../arm-eabi/bin/ld: fatal error: out/target/product/generic/obj/STATIC_LIBRARIES/libwebcore_intermediates/libwebcore.a: mmap offset 537665536 size 16384 failed: Operation not permitted
+		collect2: ld returned 1 exit status
+		
+		make android 时的 libwebcore.so error
+		https://blog.csdn.net/zhoukejun/article/details/4211108? 
+
 三、编译问题汇总：
 	1. https://blog.csdn.net/u013541140/article/details/52027569
 	2. 

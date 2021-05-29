@@ -31,7 +31,7 @@
 	
 	4.1、https://blog.csdn.net/w1143408997/article/details/76862002
 
-五、Activity 生命周期，onNewIntent何时调用？
+五、Activity 生命周期
 	
 	5.1、当触发onNewIntent方法时，activity经历的生命周期 
 		https://blog.csdn.net/ToOak_And/article/details/80702187
@@ -45,7 +45,11 @@
 	5.4，使用onNewIntent 主页面的切换Fragment页面
 		【启动模式相关】
 		https://blog.csdn.net/w2316/article/details/88877922
-		
+	5.5 对Activity的生命周期事件进行集中处理
+		ActivityLifecycleCallbacks 
+		https://blog.csdn.net/u011031422/article/details/74280293 
+		持续测试程序：com.sp.spmultipleapp.application.AppLifecycle 
+	
 六、activity启动模式与Intent Flag
 
 	6.1、FLAG_ACTIVITY_CLEAR_TASK 

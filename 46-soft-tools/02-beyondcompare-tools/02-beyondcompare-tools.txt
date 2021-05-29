@@ -5,3 +5,6 @@
 		https://blog.csdn.net/dragoo1/article/details/86747395
 		
 		C:\Users\username\AppData\Roaming\Scooter Software\Beyond Compare 3\  文件夹删除即可。
+2. Beyond Compare导航栏中上一个/下一个差异消失了，如何恢复。
+	2.1 查看-工具栏-搜索。
+		查看-工具栏-搜索。

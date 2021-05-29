@@ -237,7 +237,9 @@
 			运行Android模拟器：
 			USER-NAME@MACHINE-NAME:~/Android$ emulator -kernel kernel/common/arch/arm/boot/zImage &
 三、Android智能指针
-	3.1 Android智能指针——读书笔记
+	3.1 Android系统的智能指针（轻量级指针、强指针和弱指针）的实现原理分析
+		https://blog.csdn.net/Luoshengyang/article/details/6786239 
+		Android智能指针——读书笔记
 		【csdn 低调小一】
 		https://blog.csdn.net/wzy_1988/article/details/43736137
 		
