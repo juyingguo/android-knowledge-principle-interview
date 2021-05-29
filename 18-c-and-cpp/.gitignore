@@ -1,12 +1,14 @@
 *.ipch
-/*/ipch/
+ipch/
 *.sdf
 *.o
 *.exe
 /Debug
-/*/Debug
+Debug/
 /obj
-/*/obj
+obj/
 /bin
-/*/bin
-
+bin/
+#codeblocks project generate file
+*.depend
+*.layout
