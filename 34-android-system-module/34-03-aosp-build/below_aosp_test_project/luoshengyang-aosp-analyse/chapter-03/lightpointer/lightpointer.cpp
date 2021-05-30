@@ -8,12 +8,12 @@ class LightClass : public LightRefBase<LightClass>
 public:
     LightClass()
     {
-        printf("Construct LightClass Object.");
+        printf("Construct LightClass Object.\n");
     }
 
     virtual ~LightClass()
     {
-        printf("Destory LightClass Object.");
+        printf("Destory LightClass Object.\n");
     }
 };
 
@@ -28,7 +28,9 @@ int main(int argc, char** argv)
         sp<LightClass> lpInner = lpOut;
         printf("Light Ref Count:%d.\n", pLightClass->getStrongCount());
     }
-
+    printf("Light Ref Count:%d.\n", pLightClass->getStrongCount());
+    sp<LightClass> lpThird = pLightClass;
+    sp<LightClass> lpFourth = pLightClass;
     printf("Light Ref Count:%d.\n", pLightClass->getStrongCount());
 
     return 0;

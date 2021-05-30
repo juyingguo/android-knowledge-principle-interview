@@ -193,6 +193,11 @@
 14. 虚函数virtual
 	6.1 析构函数加上虚函数声明，因为需要删除，删除是可能通过基类进行删除。
 		而构造函数是不需要加虚函数声明的，因为构造函数是直接调用的。
+		
+		6.1.1 C++将析构函数定义成virtual的真正原因
+			https://blog.csdn.net/jacqueslim/article/details/6792105 
+			
+			题目中的A* d = new B();(假定A是基类，B是从A继承而来的派生类)，那么其(A类)析构函数必须是虚的，否则在delete d时，B类的析构函数将不会被调用，因而会产生内存泄漏和异常；
 15. C/C++中指针
 	15.1 C/C++中指针变量占用几个字节
 		https://blog.csdn.net/onlyTbabm/article/details/80770961 

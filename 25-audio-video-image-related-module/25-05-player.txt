@@ -21,3 +21,5 @@
 		【腾讯视频】：快进，后退，进度比较小。操作很不流畅。
 		
 		【分析】：估计是音视频同步处理问题。处理策略不同。【windows media player】更优，【腾讯视频】很差。
+5. Android 音视频播放SDK
+	https://github.com/wanliyang1990/wlmedia 

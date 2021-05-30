@@ -330,4 +330,7 @@
 		8是系统管理用的命令,这些命令只能由root使用,如ifconfig
 16,查看字符集
 	man iconv
-	iconv -l
+	iconv -l 
+17 其它命令
+	17.1 Linux下查看可执行文件、动态库的ELF头等信息
+		

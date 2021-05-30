@@ -280,7 +280,8 @@
 		【转载】基于WebRTC的Android数字楼宇对讲系统回声消除 
 			https://blog.csdn.net/woaitingting1985/article/details/81938565? 
 	8.2 Android基于Ffmpeg 的软编软解的可视对讲 
-		https://my.oschina.net/zengliubao/blog/305890
+		https://my.oschina.net/zengliubao/blog/305890 
+		https://blog.csdn.net/weixin_33888907/article/details/92538832?
 		1.没有回音消除。直接上源码（应用层）！
 		2.代码简要说明：
 
@@ -292,7 +293,21 @@
 			
 			调试代码移植到工程AndroidJavaDemoTestForAS中的module:videoTalk0823,as开发
 			因原有项目是ecipse adt project ,as导入时以module方式并选择这个类型导入。
-	 
+		8.2.1 ffmpeg摄像头采集h264编码RTP发送
+			https://www.cnblogs.com/lidabo/p/8663062.html 
+			ffmpeg综合应用示例（一）——摄像头直播
+			https://www.cnblogs.com/lidabo/p/8663043.html
+				源码：https://download.csdn.net/detail/nonmarking/9055683 
+				Hui Zhang github技术资料
+				https://github.com/zhanghuicuc
+				https://blog.csdn.net/nonmarking 
+			
+			FFMPEG 实时解码网络H264码流，RTP封装 
+			https://blog.csdn.net/fang437385323/article/details/52336680 
+			
+			rtp 实时传输视频流 ffmpeg解码显示 
+			https://www.iteye.com/blog/mjlong123-2194880 
+				我通过参考网络中的许多大神的文章后开发出的android 应用 rtp实时传输h264编码的视频流到远端设备上显示。代码共享：https://github.com/mjlong123123/RemoteCamera/
 	8.3 Android系统下基于FFmpeg框架的多媒体播放器研究
 		【及同类文献】
 		https://cdmd.cnki.com.cn/Article/CDMD-11415-1016068240.htm  
@@ -373,6 +388,22 @@
 	ffmpeg超详细综合教程（二）——为直播流添加滤镜 
 	https://blog.csdn.net/wh8_2011/article/details/73506128 
 	
+	9.3 ffmpeg综合应用示例（三）——安卓手机摄像头编码
+		博主有视频相关播客分享。
+		https://blog.csdn.net/nonmarking/article/details/48601317? 
+	9.4 开源项目-基于rtp的编解码视频流实时传输的实现，博客地址：http://blog.csdn.net/w401229755
+		https://github.com/myhouselove/jrtp-ffmpeg-camera 
+		
+		【相关开发资源可以参考】
+	9.5 ffmpeg+rtp搜索记录 
+		https://github.com/search?p=1&q=ffmpeg+rtp&type=Repositories 
+	9.6 FFmpegFrameRTPStreamer 
+		https://github.com/AdiKulkarni/FFmpegFrameRTPStreamer 
+		
+		FFmpeg based RTP video streaming over android.
+
+		##Dependencies This project depends on https://github.com/AdiKulkarni/myFFmpegX264LatestLibAndroid and https://github.com/fyhertz/libstreaming.
+		
 10 FFmpeg 详尽编译过程 (use ndk-build)
 	https://blog.csdn.net/junhuahouse/article/details/79236932  
 11 基于FFmpeg+SDL的视频播放器的制作——雷霄骅

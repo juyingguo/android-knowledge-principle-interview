@@ -107,3 +107,12 @@
 	选择plugins中的倒数第一条：Manage plugins.会出现一个对话框。
 	找到spellcheck，并选中它 
 	选择右上方的disable。
+	
+5. codeblocks项目结构文件
+	5.1 
+	5.2 gitignore可以忽略的文件。
+		'.layout'：这是相应项目中所有打开文件的列表，包含制表符和行位置。
+
+		'.depend'：项目中每个文件的依赖关系。
+
+		直接删除它们。它们在编译时生成。
