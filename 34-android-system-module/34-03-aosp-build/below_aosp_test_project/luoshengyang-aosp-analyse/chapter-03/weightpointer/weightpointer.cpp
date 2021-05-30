@@ -80,6 +80,7 @@ void testWeakClass(WeakClass* pWeakClass) {
     pWeakClass->printRefCount();
     sp<WeakClass> spOut = wpOut.promote();
     printf("testWeakClass spOut: %p.\n", spOut.get());
+    pWeakClass->printRefCount();
 }
 void testForeverClass(ForeverClass * pForeverClass){
 	wp<ForeverClass> wpOut = pForeverClass;
@@ -108,6 +109,7 @@ int main(int argc, char** argv)
 	ForeverClass* pForeverClass = new ForeverClass();
    testForeverClass(pForeverClass);
 	pForeverClass->printRefCount();
+	printf("main Test Forever Class,to delete  ForeverClass manual.\n");
 	delete pForeverClass;
     return 0;
 }
