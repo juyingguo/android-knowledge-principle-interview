@@ -42,5 +42,14 @@
 		
 		博文：
 		SwsContext、sws_scale缩放失败，或者缩放后视频乱码?
-		https://blog.csdn.net/zhangpengzp/article/details/89278513
+		https://blog.csdn.net/zhangpengzp/article/details/89278513 
+		【该博主，图像研究比较深入】值得参考学习。
+			解决方案：
+
+			1、可以将宽度设置为linesize[0]，这样就不会乱码了，但存在意外，视频1920*1080的时候太大，也无法显示。
+
+			2、缩放是根据宽度，android平台最好是64倍数，高度也是有相应的限制。为了播放器的 兼容性，最好使用opengl来渲染、或者利用 高效率libyuv 库来进行格式转换显示，libyuv高效转化git地址https://github.com/hurtnotbad/FFmpegDemo。
+
+			具体的 解决方法请参考博客：FFMpeg opengl显示解码avframe 
+				【https://blog.csdn.net/zhangpengzp/article/details/89531572】
 		
