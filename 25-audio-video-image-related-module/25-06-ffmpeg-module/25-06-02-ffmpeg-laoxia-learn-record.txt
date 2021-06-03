@@ -1,0 +1,46 @@
+0.
+0.1 testffmpeg视频播放器项目开发记录
+	0.1.1 Build command failed.
+		...
+		../../../../include\libavutil/error.h:111: error: undefined reference to 'av_strerror'
+		
+		此处保存下部分异常日志。
+		原因是没有引用某一个ffmpeg模块。
+		完整日志可以通过，故意不引用某一个ffmpeg模块来查看。
+
+4. 
+	4.4 	
+		flv 或h264格式的视频没有头部信息。
+		就无法获得总的时长。Number of elements in AVFormatContext.streams = 0;
+		
+		需要调用：avformat_find_stream_info才可以获取头信息，如时长
+		
+		4.4.2 av_seek_frame(ic,videoStream,pos,AVSEEK_FLAG_BACKWARD|AVSEEK_FLAG_FRAME )
+			pos 如何设置。根据总时长吗？(AVFormatContext)ic->duration 
+5. 
+	5.7 ffmpeg调用MediaCodec实现硬解码
+		android中硬解码部分没有实现c++接口只实现了java接口，需要c++调用java接口。
+		
+		h264_mediacodec
+		 avcodec_open2 for video failed!:Invalid argument
+		 
+		 5.7.1 ffmpeg android jni端调用mediaCodec实现硬解码
+			https://blog.csdn.net/zhangpengzp/article/details/88943867  
+			
+			这样就可以打开硬解码了，当然在编译ffmpeg的时候要支持硬解码，请参考ffmpeg 编译android so库文件 后面跟新的部分。 
+			参考博文：：
+			ffmpeg 编译android so库文件：：
+			https://blog.csdn.net/zhangpengzp/article/details/82289224 
+6. 
+	6.2 
+		解码之前可能读取不到宽高。所以在解码之后调用。
+		
+		视频重采样后，sws_scale = 0，啥原因？
+		是这个吗？char *rgb = new char[1920*1080*4];当前测试视频：1280x720
+		
+		使用课件中的1080.mp4正常视频重采样，当随便更换一个mp4视频，重采样返回h=0;
+		
+		博文：
+		SwsContext、sws_scale缩放失败，或者缩放后视频乱码?
+		https://blog.csdn.net/zhangpengzp/article/details/89278513
+		

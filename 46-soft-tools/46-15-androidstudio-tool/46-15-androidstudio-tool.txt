@@ -334,4 +334,7 @@
 		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
 	18 查看native进程。
 	
+18 androidstudio 安装apk到手机失败
+	Installation did not succeed. The application could not be installed: INSTALL_FAILED_USER_RESTRICTED
+	https://blog.csdn.net/qq_43598138/article/details/104091976
 	

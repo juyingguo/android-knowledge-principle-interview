@@ -44,6 +44,7 @@
 			淘宝也有资源卖：
 			老夏课堂：
 			http://laoxiaketang.com/  
+				【老夏课程单独记录在：25-06-02-ffmpeg-laoxia-learn-record.txt】
 			
 			FFmpeg 4.2 从基础实战-多路H265监控录放开发
 			哔哩哔哩资源：
