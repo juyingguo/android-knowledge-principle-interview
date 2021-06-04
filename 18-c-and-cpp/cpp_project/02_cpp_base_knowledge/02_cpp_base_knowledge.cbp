@@ -31,6 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="023_pointer_02_array_test.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="023_pointer_03_new_array_test.cpp" />
+		<Unit filename="023_pointer_to_array_test.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="033_cast_01_static_cast_01.cpp">
 			<Option compile="0" />
 			<Option link="0" />
@@ -43,7 +52,10 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="033_cast_02_const_cast_03.cpp" />
+		<Unit filename="033_cast_02_const_cast_03.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
