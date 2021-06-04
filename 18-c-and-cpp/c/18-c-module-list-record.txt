@@ -520,8 +520,10 @@
 	https://blog.csdn.net/hfyutdg/article/details/84026460 
 	C语言不是没有布尔类型，只能说在C99标准之前没有。现在只要在源文件中包含stdbool.h这个头文件，就可以在C语言里像C++那样使用bool类型了。 
 37 const
+	测试工程:\c_project\05_c_base_knowledge\029_const_01_test.c
 	37.1 C语言中指针前后有const 修饰各自表达什么意思 
 		https://blog.csdn.net/qq_43647821/article/details/104573376 
+			该博客内容全部错误;
 		
 		C:带有const修饰的指针解读
 		https://blog.csdn.net/av_geek/article/details/42913657? 

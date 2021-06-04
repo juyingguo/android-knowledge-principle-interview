@@ -203,4 +203,5 @@
 		https://blog.csdn.net/onlyTbabm/article/details/80770961 
 		
 		32位系统，指针长度为4，在64位操作系统下那么就都是8
-	
+16 C++ new和数组
+	https://blog.csdn.net/u010292561/article/details/77877266? 
