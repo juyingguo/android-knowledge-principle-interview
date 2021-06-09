@@ -52,4 +52,16 @@
 
 			具体的 解决方法请参考博客：FFMpeg opengl显示解码avframe 
 				【https://blog.csdn.net/zhangpengzp/article/details/89531572】
-		
+8. 
+	8.1 
+		eglCreateContext failed! 
+			
+			context 创建关联的上下文
+			const EGLint ctxAttr[] = {
+					EGL_CONTEXT_CLIENT_VERSION,1,EGL_NONE
+			};
+			EGLContext context = eglCreateContext(display,config,EGL_NO_CONTEXT,ctxAttr);
+			版本号使用1可以，可能不同平台兼容适配性问题。
+			
+			但是还有问题：
+			glCreateShader 35633 failed!  //35633  => GL_VERTEX_SHADER
