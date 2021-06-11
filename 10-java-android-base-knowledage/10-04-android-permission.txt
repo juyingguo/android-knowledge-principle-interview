@@ -19,6 +19,20 @@
 		https://blog.csdn.net/bansengkwon/article/details/80851752
 		
 		https://blog.csdn.net/parade0393/article/details/103939217 
+		
+	3.3 androidx下无法使用的问题。
+		v4包与其它包中的冲突
+		官网有说明：使用androidx版本下的easypermissions
+		https://github.com/googlesamples/easypermissions 
+		
+			dependencies {
+				// For developers using AndroidX in their applications
+				implementation 'pub.devrel:easypermissions:3.0.0'
+			 
+				// For developers using the Android Support Library
+				implementation 'pub.devrel:easypermissions:2.0.1'
+			}
+		
 4. 是否可以只需把targetSdkVersion设置为<=22 就不用动态代码申请权限了。
 	targetSdkVersion 29
 	就可以运行在高版本6.0及以上的手机上。

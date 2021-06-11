@@ -336,5 +336,8 @@
 	
 18 androidstudio 安装apk到手机失败
 	Installation did not succeed. The application could not be installed: INSTALL_FAILED_USER_RESTRICTED
-	https://blog.csdn.net/qq_43598138/article/details/104091976
+	https://blog.csdn.net/qq_43598138/article/details/104091976 
+19 avd
+	19.1 android avd设置graphic automatic hardware software gles
+	当设置为automatic启动模拟器失败。
 	
