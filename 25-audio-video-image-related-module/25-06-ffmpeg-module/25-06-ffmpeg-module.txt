@@ -250,7 +250,7 @@
 		https://blog.csdn.net/weixin_36270623/article/details/97141895
 		
 		提取yuv原始视频数据
-			ffmpeg -i input.mp4 -an -c:v rawvideo -pix_fmt ymv420p out.yuv
+			ffmpeg -i input.mp4 -an -c:v rawvideo -pix_fmt yuv420p out.yuv
 			-i : 指定视频数据
 			-an  : 去除音频
 			-c:v rawvideo : 指定视频进行重新编码，编码为原始rawvideo数据
