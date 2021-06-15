@@ -92,6 +92,20 @@
 			ffmpeg与NDK版本要配合。因为不同ndk版本，采用编译器不同，低版本ndk_r17前采用gcc,高版本采用clang；所以照着网上的文章做当然编译不起来。
 			参考：[4.1.4.5]中的文章得以理解。
 		4.0.2，此时看看ffmpeg及NDK官网相关内容。
+		
+		4.0.3 Out of tree builds are impossible with config.h in source dir 
+			http://www.voidcn.com/article/p-wsqnaflg-bbv.html 
+			
+			原因及解决办法：
+			由于之前在ffmpeg下面执行过./configure,生成config.h
+			再次执行会出现该错误。删除ffmpeg 下面的config.h。就可以再次执行脚本了。
+		4.0.4 
+			src/libavformat/udp.c:290:28: error: request for member 's_addr' in something not a structure or union
+			mreqs.imr_multiaddr.s_addr = ((struct sockaddr_in *)addr)->sin_addr.s_addr;
+	
+			论坛讨论：
+			https://blog.csdn.net/u010164190/article/details/107581146
+			
 	4.1 Ubuntu 16.04编译FFmpeg
 		4.1.1 Ubuntu 16.04编译FFmpeg 4.1
 			https://blog.csdn.net/xucongyoushan/article/details/85132671
@@ -172,7 +186,9 @@
 	4.2 windows下编译FFmpeg
 		4.1 待实验。
 			
-			
+	4.3 编译Android平台使用的FFmpeg(armeabi,armeabi-v7a,arm64-v8a,x86,x86_64)
+		https://blog.csdn.net/yuxiatongzhi/article/details/80096802 
+	
 5. FFmpeg 开源项目分析
 	
 	5.1 FFmpeg 开源项目分析

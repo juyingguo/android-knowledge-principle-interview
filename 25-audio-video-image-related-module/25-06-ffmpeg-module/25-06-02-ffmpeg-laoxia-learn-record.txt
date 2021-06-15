@@ -67,7 +67,18 @@
 			glCreateShader 35633 failed!  //35633  => GL_VERTEX_SHADER
 		q2:以上加载正常，但还是未能显示。
 			android 使用openGL_ES 真机上无法显示纹理是什么原因？
-			https://bbs.csdn.net/topics/390369747 
+			https://bbs.csdn.net/topics/390369747  
 			gpu相关设置需要打开？
+			
+			android jni调用opengl es fbo部分机型没有画面问题 
+			https://blog.csdn.net/u010302327/article/details/80339078 
+			
+			参考博客：
+			MP4视频播放问题（有声音无图像）分析与解决——FFmpeg视频处理教程
+			https://blog.csdn.net/qq_37868757/article/details/112851978
+			启发是编码格式问题。
+			原视频1080.mp4::Stream #0:0(eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1920x1080
+			paiDuiGe.mp4::  Stream #0:0(eng): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p ,1280x720
+				
 		q3 图像显示不出来
 			设置的宽高要和实际视频保持一致，否则显示花屏图像
