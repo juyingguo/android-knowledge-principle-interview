@@ -81,4 +81,7 @@
 			paiDuiGe.mp4::  Stream #0:0(eng): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p ,1280x720
 				
 		q3 图像显示不出来
-			设置的宽高要和实际视频保持一致，否则显示花屏图像
+			设置的宽高要和实际视频保持一致，否则显示花屏图像 
+9 
+10 video project chapter2
+	

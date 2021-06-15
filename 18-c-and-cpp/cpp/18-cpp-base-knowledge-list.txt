@@ -205,3 +205,12 @@
 		32位系统，指针长度为4，在64位操作系统下那么就都是8
 16 C++ new和数组
 	https://blog.csdn.net/u010292561/article/details/77877266? 
+	
+17 namespaces 
+	不要放到头文件中，会不可控的。要放到cpp文件中，因为代码自己都知道。
+18 thread
+	18.1 detach 
+		http://cplusplus.com/reference/thread/thread/detach/
+		
+		C/C++中分离（detach）线程的陷阱
+			https://blog.csdn.net/tissar/article/details/86255018 

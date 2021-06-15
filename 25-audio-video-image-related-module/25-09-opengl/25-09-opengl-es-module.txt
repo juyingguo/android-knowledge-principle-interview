@@ -1,4 +1,6 @@
 1.资源
+	1.0 
+		https://learnopengl-cn.github.io/
 	1.1 OpenGL ES
 		file:///C:/java2/as/as1_5/sdk/docs/guide/topics/graphics/opengl.html
 	1.2. OpenGL ES应用开发实践指南  Android卷 [（美）KevinBrothaler著][机械工业出版社][2014.09][230页]@www.java1234.com
@@ -43,3 +45,7 @@
 	https://www.e-learn.cn/content/qita/2810770 
 3. Android 的OpenGL ES与EGL 
 	https://blog.csdn.net/mirkerson/article/details/8301639 
+4. 库中文档记录，一些官网目前没有的，可能目前没有找对文档。
+	4.1 glTexParameteri 
+		https://baike.baidu.com/item/glTexParameteri/2087247?fr=aladdin 
+		图象从纹理图象空间映射到帧缓冲图象空间(映射需要重新构造纹理图像,这样就会造成应用到多边形上的图像失真),这时就可用glTexParmeteri()函数来确定如何把纹理象素映射成像素.
