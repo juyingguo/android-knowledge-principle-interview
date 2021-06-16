@@ -9,7 +9,7 @@ MY_DIR=ffmpeg-4.2.4
 MY_BUILD_DIR=binary
 
 
-NDK_PATH=/home/eink/tools/ndk/android-ndk-r15c
+NDK_PATH=/home/eink/tools/ndk/android-ndk-r17c
 BUILD_PLATFORM=linux-x86_64
 TOOLCHAIN_VERSION=4.9
 ANDROID_VERSION=21
@@ -68,9 +68,9 @@ build_bin() {
 		--sysroot=$SYSROOT \
 		--enable-cross-compile \
 		--cross-prefix=${CROSS_PREFIX} \
-		--extra-cflags="$CFALGS -Os -fPIC -DANDROID -Wfatal-errors -Wno-deprecated" \
+		--extra-cflags="$CFALGS -Os -fPIC -DANDROID -Wfatal-errors -Wno-deprecated -isysroot ${NDK_PATH}/sysroot -I${NDK_PATH}/sysroot/usr/include -I${NDK_PATH}/sysroot/usr/include/$4" \
 		--extra-cxxflags="-D__thumb__ -fexceptions -frtti" \
-		--extra-ldflags="-L${SYSROOT}/usr/lib" \
+		--extra-ldflags="-L${SYSROOT}/usr/lib -fPIC" \
 		--enable-shared \
 		--enable-asm \
 		--enable-neon \
@@ -100,7 +100,9 @@ build_bin() {
 		--disable-ffprobe \
 		--disable-symver \
 		--disable-debug \
-		--enable-small
+		--enable-small \
+		--disable-stripping \
+		--disable-avdevice
 
 
 	make clean
@@ -118,13 +120,13 @@ build_bin() {
 #build_bin arm armeabi arm-linux-androideabi arm-linux-androideabi "$ANDROID_ARMV5_CFLAGS"
 
 #build armeabi-v7a
-#build_bin arm armeabi-v7a arm-linux-androideabi arm-linux-androideabi "$ANDROID_ARMV7_CFLAGS"
+build_bin arm armeabi-v7a arm-linux-androideabi arm-linux-androideabi "$ANDROID_ARMV7_CFLAGS"
 
 #build arm64-v8a
 #build_bin arm64 arm64-v8a aarch64-linux-android aarch64-linux-android "$ANDROID_ARMV8_CFLAGS"
 
 #build x86
-build_bin x86 x86 x86 i686-linux-android "$ANDROID_X86_CFLAGS"
+#build_bin x86 x86 x86 i686-linux-android "$ANDROID_X86_CFLAGS"
 
 #build x86_64
 #build_bin x86_64 x86_64 x86_64 x86_64-linux-android "$ANDROID_X86_64_CFLAGS"

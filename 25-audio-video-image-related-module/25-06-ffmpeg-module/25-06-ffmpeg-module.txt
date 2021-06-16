@@ -104,8 +104,41 @@
 			mreqs.imr_multiaddr.s_addr = ((struct sockaddr_in *)addr)->sin_addr.s_addr;
 	
 			论坛讨论：
-			https://blog.csdn.net/u010164190/article/details/107581146
+			https://bbs.csdn.net/topics/392515839?list=2277494 
 			
+			参考博客：
+			https://blog.csdn.net/qq_34902522/article/details/87879145
+			
+			解决方案：升级到NDK17C版本即可，不要升级到NDK17以后版本，因为17以后版本GCC分离。
+		4.0.5 
+			ffmpeg4.2.4,nkd-r17c,
+			In file included from src/libavfilter/aeval.c:26:0:
+			src/libavutil/avassert.h:30:20: fatal error: stdlib.h: No such file or directory
+			#include <stdlib.h>
+			
+			参考博客：：
+			https://blog.csdn.net/luo0xue/article/details/80048847 
+			https://blog.csdn.net/shulianghan/article/details/104235410 
+			https://www.jianshu.com/p/e3fb667dacae 
+			
+			现这个错误是因为使用最新版的NDK造成的，最新版的NDk将头文件和库文件进行了分离，我们指定的sysroot文件夹下只有库文件，而头文件放在了NDK目录下的sysroot内，只需在--extra-cflags中添加 "-isysroot $NDK/sysroot" 即可，还有有关汇编的头文件也进行了分离，需要根据目标平台进行指定 "-I$NDK/sysroot/usr/include/arm-linux-androideabi"，将 "arm-linux-androideabi" 改为需要的平台就可以，终于可以顺利的进行编译了
+
+		4.0.6 
+			ffmpeg4.2.4,nkd-r17c;
+			/android-ndk-r17c/sysroot/usr/include/linux/types.h:21:23: fatal error: asm/types.h: No such file or directory
+			#include <asm/types.h>
+			汇编头文件和库文件也进行了分离。参考【4.0.5】及对应的博客。
+		4.0.7 Android之解决java.lang.UnsatisfiedLinkError: dlopen failed: ××××.so: has text relocations
+			https://blog.csdn.net/u011068702/article/details/79670739 
+		
+		4.0.8 
+			libavcodec/aaccoder.c: In function 'search_for_ms':
+			libavcodec/aaccoder.c:803:25: error: expected identifier or '(' before numeric constant
+								 int B0 = 0, B1 = 0;
+									 ^
+			参考【4.0.4 】博客
+
+
 	4.1 Ubuntu 16.04编译FFmpeg
 		4.1.1 Ubuntu 16.04编译FFmpeg 4.1
 			https://blog.csdn.net/xucongyoushan/article/details/85132671
@@ -188,6 +221,9 @@
 			
 	4.3 编译Android平台使用的FFmpeg(armeabi,armeabi-v7a,arm64-v8a,x86,x86_64)
 		https://blog.csdn.net/yuxiatongzhi/article/details/80096802 
+		
+		验证工程：*\25-06-ffmpeg-module\ffmpeg-multi-platform-support-config\ffmpeg-multi-platform-support-config.sh
+		
 	
 5. FFmpeg 开源项目分析
 	

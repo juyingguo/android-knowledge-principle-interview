@@ -1,4 +1,5 @@
-Toolchain options:
+1.
+2. Toolchain options:
 	--enable-cross-compile 允许交叉编译，默认不允许
 	--cross-prefix= 指定编译工具的前缀，默认不指定。
 		例如：-- --cross-prefix=$TOOLCHAIN/bin/arm-linux-androideabi- 表示所有用到的编译工具都是在 bin 目录下以 arm-linux-androideabi- 开头的相对应的工具，比如要用到c编译器的时候就使用bin目录下的arm-linux-androideabi-gcc工具来编译，gcc是默认的c编译器名字，arm-linux-androideabi-是前缀，其它工具也是类似。这是一种类似通配符的写法，这样可以不用一个个去指定所需要的编译工具。
@@ -7,3 +8,12 @@ Toolchain options:
 		//在configure文件中搜索arch可以找到支持的架构列表。
 	--sysroot=PATH
 		指定编译过程中需要引用的库，头文件所在的逻辑目录。比如编译器通常会在 /usr/include 和 /usr/lib 中搜索头文件和库，如果指定了sysroot选项则会去$PATH/usr/include 和 $PATH/usr/lib 目录中搜索。
+3. ffmpeg调试相关知识点
+	https://www.cnblogs.com/shakin/p/3963345.html
+	ffmpeg减少编译包体积技巧
+	https://blog.csdn.net/TuGeLe/article/details/86530968 
+	
+	3.1 --disable-stripping 
+	
+	3.2 --disable-postproc 
+		https://blog.csdn.net/TuGeLe/article/details/86530968 
