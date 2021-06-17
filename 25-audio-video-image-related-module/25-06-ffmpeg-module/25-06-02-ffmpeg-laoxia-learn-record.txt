@@ -52,8 +52,17 @@
 
 			具体的 解决方法请参考博客：FFMpeg opengl显示解码avframe 
 				【https://blog.csdn.net/zhangpengzp/article/details/89531572】
-8. 
+8. EGL和OpenGLES Shader显示YUV视频
 	8.1 
+		relate1:视频学习笔记：Android OpenGL渲染YUV420P图像
+			https://blog.csdn.net/lidec/article/details/73732369 
+			
+			Include GLES to CMakeLists in Android NDK
+			https://stackoverflow.com/questions/42103942/include-gles-to-cmakelists-in-android-ndk 
+		relate2:gitee中demo
+			search keyword : opengles yuv
+		relate3:ffmpeg opengles yuv
+			https://github.com/susirsusir/ffmpeg_yuv
 		q1:eglCreateContext failed! 
 			
 			context 创建关联的上下文
@@ -79,9 +88,12 @@
 			启发是编码格式问题。
 			原视频1080.mp4::Stream #0:0(eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1920x1080
 			paiDuiGe.mp4::  Stream #0:0(eng): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p ,1280x720
-				
+			
 		q3 图像显示不出来
 			设置的宽高要和实际视频保持一致，否则显示花屏图像 
+		q4 用android的native surface来显示视频画面无效
+			https://bbs.csdn.net/topics/380267218?list=25609635 
+		q5 经过以上q{n}处理，在android5.1的手机上能正常显示，但在android9的手机上就无法显示图像。
 9 
 10 video project chapter2
 	

@@ -76,6 +76,25 @@ build_bin() {
 		--enable-runtime-cpudetect \
 		--enable-asm \
 		--enable-neon \
+		--disable-encoders \
+		--enable-encoder=aac \
+		--enable-encoder=mjpeg \
+		--enable-encoder=png \
+		--disable-decoders \
+		--enable-decoder=aac \
+		--enable-decoder=aac_latm \
+		--enable-decoder=h264 \
+		--enable-decoder=mpeg4 \
+		--enable-decoder=mjpeg \
+		--enable-decoder=png \
+		--disable-demuxers \
+		--enable-demuxer=image2 \
+		--enable-demuxer=h264 \
+		--enable-demuxer=aac \
+		--disable-parsers \
+		--enable-parser=aac \
+		--enable-parser=ac3 \
+		--enable-parser=h264 \
 		--enable-gpl \
 		--disable-doc \
 		--disable-ffmpeg \
