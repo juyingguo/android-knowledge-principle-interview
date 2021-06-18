@@ -90,10 +90,12 @@
 			paiDuiGe.mp4::  Stream #0:0(eng): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p ,1280x720
 			
 		q3 图像显示不出来
-			设置的宽高要和实际视频保持一致，否则显示花屏图像 
+			设置的宽高要和实际视频保持一致，否则显示花屏图像。继续转到【q5】
 		q4 用android的native surface来显示视频画面无效
 			https://bbs.csdn.net/topics/380267218?list=25609635 
 		q5 经过以上q{n}处理，在android5.1的手机上能正常显示，但在android9的手机上就无法显示图像。
+			在android9上初步查看，当前所加的日志都正常打印。是否还有相关日志没加呢？窗口相关的日志没有加。
+			q5.1 是否和编译脚本中--sysroot所指定的android平台版本有关。android-21
 9 
 10 video project chapter2
 	
