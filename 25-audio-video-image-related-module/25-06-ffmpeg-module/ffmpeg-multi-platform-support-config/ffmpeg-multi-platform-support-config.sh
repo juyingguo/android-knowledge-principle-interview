@@ -1,7 +1,7 @@
 #!/bin/sh
 
-MY_LIBS_NAME=ffmpeg-4.2.4
-MY_DIR=ffmpeg-4.2.4
+MY_LIBS_NAME=ffmpeg-3.4.8
+MY_DIR=ffmpeg-3.4.8
 
 # cd ./${MY_DIR}
 
@@ -72,10 +72,10 @@ build_bin() {
 		--extra-cflags="$CFALGS -Os -fPIC -DANDROID -Wfatal-errors -Wno-deprecated -isysroot ${NDK_PATH}/sysroot -I${NDK_PATH}/sysroot/usr/include -I${NDK_PATH}/sysroot/usr/include/$4" \
 		--extra-cxxflags="-D__thumb__ -fexceptions -frtti" \
 		--extra-ldflags="-L${SYSROOT}/usr/lib -fPIC" \
+		--cc=$TOOLCHAIN/bin/arm-linux-androideabi-gcc \
+		--nm=$TOOLCHAIN/bin/arm-linux-androideabi-nm \
 		--enable-shared \
 		--enable-runtime-cpudetect \
-		--enable-asm \
-		--enable-neon \
 		--enable-gpl \
 		--disable-doc \
 		--disable-ffmpeg \
@@ -86,6 +86,7 @@ build_bin() {
 		--disable-static \
 		--enable-small \
 		--disable-stripping \
+		--disable-postproc \
 		--disable-avdevice
 
 

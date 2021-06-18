@@ -138,7 +138,15 @@
 									 ^
 			参考【4.0.4 】博客
 
-
+		4.0.9 
+			ffmpeg3.4.8,nkd-r17c;
+			fftools/ffserver.o:ffserver.c:function main: error: undefined reference to 'stderr'
+			fftools/ffserver.o:ffserver.c:function main: error: undefined reference to 'stdout'
+			collect2: error: ld returned 1 exit status
+			make: *** [ffserver_g] Error 1
+		4.0.10 
+			
+			
 	4.1 Ubuntu 16.04编译FFmpeg
 		4.1.1 Ubuntu 16.04编译FFmpeg 4.1
 			https://blog.csdn.net/xucongyoushan/article/details/85132671
@@ -186,6 +194,8 @@
 					/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc is unable to create an executable file. C compiler test failed.
 					
 					编译器不对，参考[4.1.4.5 ]
+					
+					https://blog.csdn.net/mr_tony/article/details/50758786
 			4.1.3.8 
 				参考[4.1.4.5 ]
 				./android_ffmpeg_4.2.1_android_ndk_r20.sh: line 32: --cxx=/home/eink/soft_tools/ndk/android-ndk-r20/android-ndk-r20/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang++: No such file or directory
