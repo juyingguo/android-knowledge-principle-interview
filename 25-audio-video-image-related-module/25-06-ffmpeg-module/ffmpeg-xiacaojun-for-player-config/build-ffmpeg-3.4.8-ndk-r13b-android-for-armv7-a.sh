@@ -1,12 +1,16 @@
 #!/bin/bash
 echo "进入编译ffmpeg脚本"
-NDK=/home/eink/tools/ndk/android-ndk-r17c
-#5.0
-PLATFORM=$NDK/platforms/android-21/arch-arm
+#android版本
+ANDROID_VERSION=24
+NDK_VERSION=r13b
+FFMPEG_VERSION=3.4.8
+
+NDK=/home/eink/soft_tools/ndk/android-ndk-r13b
+PLATFORM=$NDK/platforms/android-${ANDROID_VERSION}/arch-arm
 TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64
 CPU=armv7-a
 #输出路径
-PREFIX=./ffmpeg-build-out/$CPU
+PREFIX=./ffmpeg-build-out/ffmpeg-${FFMPEG_VERSION}-ndk-${NDK_VERSION}/android-${ANDROID_VERSION}/$CPU
 
 #--disable-ffserver:Unknown option "--disable-ffserver".
 function buildFF
@@ -33,6 +37,7 @@ function buildFF
     --disable-ffmpeg \
     --disable-ffplay \
     --disable-ffprobe \
+	--disable-ffserver \
     --disable-postproc \
     --disable-avdevice \
     --disable-symver \
@@ -59,7 +64,8 @@ function buildFF
 ###########################################################
 echo "编译不支持neon和硬解码"
 CPU=armv7-a
-PREFIX=./ffmpeg-build-out/$CPU
-CFLAG="-march=armv7-a -fPIC -DANDROID -mfpu=vfp -mfloat-abi=softfp -isysroot ${NDK}/sysroot   -I${NDK}/sysroot/usr/include/arm-linux-androideabi"
+PREFIX=./ffmpeg-build-out/ffmpeg-${FFMPEG_VERSION}-ndk-${NDK_VERSION}/android-${ANDROID_VERSION}/$CPU
+#CFLAG="-march=armv7-a -fPIC -DANDROID -mfpu=vfp -mfloat-abi=softfp -isysroot ${NDK}/sysroot   -I${NDK}/sysroot/usr/include/arm-linux-androideabi"
+CFLAG="-I$PLATFORM/usr/include -fPIC -DANDROID -mfpu=vfp -mfloat-abi=softfp"
 ADD=
 buildFF

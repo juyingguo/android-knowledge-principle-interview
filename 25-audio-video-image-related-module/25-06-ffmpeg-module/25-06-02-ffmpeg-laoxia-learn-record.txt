@@ -63,6 +63,8 @@
 			search keyword : opengles yuv
 		relate3:ffmpeg opengles yuv
 			https://github.com/susirsusir/ffmpeg_yuv
+		q0:当前程序配置选项
+			opengles 2.0
 		q1:eglCreateContext failed! 
 			
 			context 创建关联的上下文
@@ -96,6 +98,17 @@
 		q5 经过以上q{n}处理，在android5.1的手机上能正常显示，但在android9的手机上就无法显示图像。
 			在android9上初步查看，当前所加的日志都正常打印。是否还有相关日志没加呢？窗口相关的日志没有加。
 			q5.1 是否和编译脚本中--sysroot所指定的android平台版本有关。android-21
+			
+			验证：在android-24,即android版本7，模拟器，x86_64,(编译工具ffmpeg3.4.8,ndk-r13b)
+				该模拟器：emulated performance 选项中graphics:选择
+				Automatic 
+				Hardware - GLES 2.0	#ok
+				Software - GLES 1.1 #当然模拟器选择该项时，运行提示opengles api没有实现，且创建链接程序失败。
+				
+		
 9 
 10 video project chapter2
 	
+11 video project chapter3
+	q1：图像无法显示问题同【8】中记录分析解决。
+	q2,图像能正常显示后，感觉想2倍快进一样，是哪里设置出问题了吗？

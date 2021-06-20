@@ -9,37 +9,33 @@ MY_DIR=ffmpeg-3.4.8
 MY_BUILD_DIR=binary
 
 
-NDK_PATH=/home/eink/tools/ndk/android-ndk-r17c
+NDK_PATH=/home/eink/soft_tools/ndk/android-ndk-r17c
 BUILD_PLATFORM=linux-x86_64
 TOOLCHAIN_VERSION=4.9
 ANDROID_VERSION=21
 
 #ANDROID_ARMV5_CFLAGS="-march=armv5te"
-#ANDROID_ARMV7_CFLAGS="-march=armv7-a -mfloat-abi=softfp -mfpu=neon"  #-mfloat-abi=hard -mfpu=vfpv3-d16 #-mfloat-abi=hard -mfpu=vfp
+ANDROID_ARMV7_CFLAGS="-march=armv7-a -mfloat-abi=softfp -fPIC -DANDROID -mfpu=vfp"  #-mfloat-abi=hard -mfpu=vfpv3-d16 #-mfloat-abi=hard -mfpu=vfp ; -mfpu=neon
 #ANDROID_ARMV8_CFLAGS="-march=armv8-a"
-ANDROID_X86_CFLAGS="-march=i686 -mtune=intel -mssse3 -mfpmath=sse -m32"
+#ANDROID_X86_CFLAGS="-march=i686 -mtune=intel -mssse3 -mfpmath=sse -m32"
 #ANDROID_X86_64_CFLAGS="-march=x86-64 -msse4.2 -mpopcnt -m64 -mtune=intel"
 
-
+#export TMPDIR=$(pwd)/ffmpeg-3.4.8/android_export #
 # params($1:arch,$2:arch_abi,$3:host,$4:cross_prefix,$5:cflags)
+#--cc=$TOOLCHAIN/bin/arm-linux-androideabi-gcc #不指定，也会自动找到该编译器
 build_bin() {
 
 	echo "-------------------star build $2-------------------------"
-
+	
 	ARCH=$1			# arm arm64 x86 x86_64
 	ANDROID_ARCH_ABI=$2 	# armeabi armeabi-v7a x86 mips
-
 	PREFIX=$(pwd)/dist/${MY_LIBS_NAME}/${ANDROID_ARCH_ABI}/
-
 	HOST=$3
 	SYSROOT=${NDK_PATH}/platforms/android-${ANDROID_VERSION}/arch-${ARCH}
-
 	CFALGS=$5
-
-
 	TOOLCHAIN=${NDK_PATH}/toolchains/${HOST}-${TOOLCHAIN_VERSION}/prebuilt/${BUILD_PLATFORM}
 	CROSS_PREFIX=${TOOLCHAIN}/bin/$4-
-
+	
 	# build 中间件
     BUILD_DIR=./${MY_BUILD_DIR}/${ANDROID_ARCH_ABI}
 
@@ -56,23 +52,18 @@ build_bin() {
 	#echo "-------------------------按任意键继续---------------------"
 	#read -n 1
 	#echo "-------------------------继续执行-------------------------"
-
 	mkdir -p ${BUILD_DIR}   #创建当前arch_abi的编译目录,比如:binary/armeabi-v7a
     cd ${BUILD_DIR}         #此处 进了当前arch_abi的2级编译目录
-
-
 	sh ../../${MY_DIR}/configure \
 		--prefix=${PREFIX} \
 		--target-os=android \
 		--arch=${ARCH} \
-		--cpu=${ANDROID_ARCH_ABI}  \
 		--sysroot=$SYSROOT \
 		--enable-cross-compile \
 		--cross-prefix=${CROSS_PREFIX} \
 		--extra-cflags="$CFALGS -Os -fPIC -DANDROID -Wfatal-errors -Wno-deprecated -isysroot ${NDK_PATH}/sysroot -I${NDK_PATH}/sysroot/usr/include -I${NDK_PATH}/sysroot/usr/include/$4" \
 		--extra-cxxflags="-D__thumb__ -fexceptions -frtti" \
 		--extra-ldflags="-L${SYSROOT}/usr/lib -fPIC" \
-		--cc=$TOOLCHAIN/bin/arm-linux-androideabi-gcc \
 		--nm=$TOOLCHAIN/bin/arm-linux-androideabi-nm \
 		--enable-shared \
 		--enable-runtime-cpudetect \

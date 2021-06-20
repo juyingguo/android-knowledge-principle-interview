@@ -65,7 +65,6 @@ build_bin() {
 		--prefix=${PREFIX} \
 		--target-os=android \
 		--arch=${ARCH} \
-		--cpu=${ANDROID_ARCH_ABI}  \
 		--sysroot=$SYSROOT \
 		--enable-cross-compile \
 		--cross-prefix=${CROSS_PREFIX} \

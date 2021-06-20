@@ -12,7 +12,8 @@
 		
 	01.4 NDK Samples
 		01.4.1 GoogleSamples - NDK Samples
-			https://www.jianshu.com/p/05515962006c/
+			https://www.jianshu.com/p/05515962006c/ 
+			
 1.NDK接口参照：
 
 	https://developer.android.google.cn/ndk/reference/group/audio
@@ -180,7 +181,14 @@
 		B:同时制定libs和jniLibs，需要进行合并保留一个即可。
 7. 使用IDA反编译.so文件并修改
 	https://www.jianshu.com/p/52b91733fec1
-		
+
+8. 架构和 CPU
+	8.1 https://developer.android.google.cn/ndk/guides/arch.html 
+	
+	8.2 android ndk 支持的abi
+		比如：Supported ABIs are [arm64-v8a, armeabi, armeabi-v7a, mips, mips64, x86, x86_64].
+		不同于arch,cpu.
+	
 x. 一些记录
 	x.1 
 		环境

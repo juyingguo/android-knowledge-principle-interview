@@ -3,6 +3,8 @@
 		https://www.ffmpeg.org/
 		http://www.ffmpeg.org/download.html
 		
+		wiki:
+			https://trac.ffmpeg.org/search?
 		1.1.2 doc
 			https://xdsnet.gitbooks.io/other-doc-cn-ffmpeg/content/ffmpeg-doc-cn-35.html 
 	1.2 http://git.videolan.org/?p=ffmpeg.git 
@@ -128,8 +130,40 @@
 			/android-ndk-r17c/sysroot/usr/include/linux/types.h:21:23: fatal error: asm/types.h: No such file or directory
 			#include <asm/types.h>
 			汇编头文件和库文件也进行了分离。参考【4.0.5】及对应的博客。
-		4.0.7 Android之解决java.lang.UnsatisfiedLinkError: dlopen failed: ××××.so: has text relocations
+		4.0.7 Android之解决ffmpeg编译的库文件在android上运行失败，/lib/x86/libavcodec.so: has text relocations
 			https://blog.csdn.net/u011068702/article/details/79670739 
+			
+			https://www.kanzhun.com/jiaocheng/198402.html 
+			6.0之前只会产生一个警告，系统还是可以正常加载包含text relocations的共享库的，但从6.0起，即SDK Version>=23时，系统将会拒绝加载包含text relocations的共享库，同时输出错误Log，根本原因，是so动态链接库的代码并非PIC（Position independent code）			最好的办法是去修复源代码然后编译，我们这里调用别人的so,没办法了，如果是自己的so,在使用NDK编译so时配置Android.mk，增添PIC相关的配置项，这样编译出来的so文件将不再有text relocations的问题。具体配置如下：
+
+			LOCAL_LDFLAGS += -fPIC
+			
+			a,验证后：还是同样报错。
+			b,继续在cmake中的cppFlags中添加-fPIC，来验证
+				externalNativeBuild {
+					cmake {
+						cppFlags "-std=c++11 -fPIC"
+					}
+					ndk{
+						abiFilters "armeabi-v7a","x86"
+					}
+				}
+			c,是否和【编译的过程中产生的中间件的存放目录】有关，虽然配置脚本中--extra-cflags添加-fPIC。
+				全部删除中间件文件后，在重新编译。
+				结果：还是不行
+			d,ffmpeg安卓x86平台编译错误(libavcodec.so: has text relocations)
+				https://blog.csdn.net/marco_0631/article/details/73292199 
+				【官网wiki搜索关键字可以看到】
+				官方描述中，x86平台会出现此问题，而armv7-a 、x86_64都没有这样的问题，所以只需要针对x86平台解决即可。
+
+				OK，可以通过编译时添加 –disable-asm参数解决，设置参数关闭汇编后，编译后.so文件就不存在text relocations了。
+
+				可以通过以下方式检查，so文件中是否存在text relocations。
+				
+				检查so是否有has text relocations方法：
+				readelf -a libavcodec.so | grep TEXTREL 
+				
+				验证结果：是可行的。
 		
 		4.0.8 
 			libavcodec/aaccoder.c: In function 'search_for_ms':
@@ -195,7 +229,25 @@
 					
 					编译器不对，参考[4.1.4.5 ]
 					
-					https://blog.csdn.net/mr_tony/article/details/50758786
+					c,或者参考播客：
+					https://blog.csdn.net/mr_tony/article/details/50758786 
+					
+					d,或者编译器没有指定版本
+						--cc=$TOOLCHAIN/bin/arm-linux-androideabi-gcc \
+						是否需要指定--cc版本
+						TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64
+						--cc=$TOOLCHAIN/bin/arm-linux-androideabi-gcc-4.9.x \
+						验证结果：【还是不行。】
+						
+						验证去掉--cc配置工具链TOOLCHAIN以后，会自动找到--cc编译器。
+						是否为其它配置有误，简洁导致这个错误提示呢？
+						
+					e,无意中包--cpu=$CPU 配置成armeabi-v7a。会报该错误。
+						CPU=arv7-a
+						--cpu=$CPU
+						
+						注意：--cpu是不需要指定的。会自动选择。
+						正确配置核对参数参考【1.8】
 			4.1.3.8 
 				参考[4.1.4.5 ]
 				./android_ffmpeg_4.2.1_android_ndk_r20.sh: line 32: --cxx=/home/eink/soft_tools/ndk/android-ndk-r20/android-ndk-r20/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang++: No such file or directory
@@ -207,6 +259,9 @@
 				后面需要添加 \
 				 --cc=$CC \
 				 --cxx=$CXX \
+			4.1.3.9 
+				编译armv7-a正常，切换CPU=armv8-a时，shell没有任何输出，也没错误提示，各种奇怪的现象，比如获取函数参数值是传入的一半。
+				根本原因是：在window下编写，换行回车甚至的空格等等，造成在linux下运行，完全不是期望的结果，也没有错误提示等等。所以shell一定要在linux下编写，运行就不会各种莫名其妙的问题.
 		4.1.4 FFmpeg移植到android平台，通过ubuntu编译ffmpeg
 			4.1.4.1 编译FFmpeg4.1.3并移植到Android app中使用（最详细的FFmpeg-Android编译教程） 
 				https://blog.csdn.net/bobcat_kay/article/details/80889398
@@ -221,9 +276,24 @@
 				https://www.jianshu.com/p/ca7ffd2e5e68
 				
 			4.1.4.5 FFMPEG-Android利用ndk(r20)编译最新版本ffmpeg4.2.1
+				含有多个平台架构的配置说明。
 				https://juejin.cn/post/6844903945496690696 
 				对于build_android.sh文件的说明
 				为什么新版本的ffmpeg搭配新版本的ndk编译很容易出错呢？其实关键点主要还是新旧版本ndk中的交叉编译工具不一样导致的。比如旧版本（r17及之前）的ndk中的编译器用的是gcc，而网上大部分的同类文章中用的也是gcc，而新版本的ndk文件已经弃用gcc编译器改用clang了，所以照着网上的文章做当然编译不起来）
+				
+				汇总：arch,cpu;
+				#armv7-a
+				ARCH=arm
+				CPU=armv7-a
+				#armv8-a
+				ARCH=arm64
+				CPU=armv8-a
+				#x86
+				ARCH=x86
+				CPU=x86
+				#x86_64
+				ARCH=x86_64
+				CPU=x86-64
 		4.1.4 --enable-cross-compile: command not found
 				
 	4.2 windows下编译FFmpeg
@@ -232,8 +302,7 @@
 	4.3 编译Android平台使用的FFmpeg(armeabi,armeabi-v7a,arm64-v8a,x86,x86_64)
 		https://blog.csdn.net/yuxiatongzhi/article/details/80096802 
 		
-		验证工程：*\25-06-ffmpeg-module\ffmpeg-multi-platform-support-config\ffmpeg-multi-platform-support-config.sh
-		
+		验证工程：*\25-06-ffmpeg-module\ffmpeg-multi-platform-support-config\*.sh		
 	
 5. FFmpeg 开源项目分析
 	

@@ -1,3 +1,8 @@
 1. 作为一个程序员，CPU的这些硬核知识你必须会！ 
 	1.1 作为一个程序员，CPU的这些硬核知识你必须会！
-		https://blog.csdn.net/sinat_33921105/article/details/104066631?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-40&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-40
+		https://blog.csdn.net/sinat_33921105/article/details/104066631?
+		
+2. /arch 下各CPU架构简介
+	2.1
+		https://lp007819.wordpress.com/2012/02/27/arch-%E4%B8%8B%E5%90%84cpu%E6%9E%B6%E6%9E%84%E7%AE%80%E4%BB%8B/
+	
