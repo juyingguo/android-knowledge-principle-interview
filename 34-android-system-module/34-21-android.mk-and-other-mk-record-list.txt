@@ -25,3 +25,21 @@
 		https://developer.android.com/ndk/guides/application_mk?hl=zh-cn
 	3.2 
 		Application.mk可以用来指定需要生成哪些cpu类型的.so文件，或者定义引用.so的最低android api
+4. aosp 中集成Pre-built apk用到的android.mk
+	4.1 android7.1编译第三方apk到系统中的android.mk学习
+		https://blog.csdn.net/the_Sunshine_of_King/article/details/78405149 
+	4.2 LOCAL_PREBUILT_JNI_LIBS @用法含义
+		Pre-built Apk in AOSP crashes
+		https://stackoverflow.com/questions/64735430/adding-pre-built-apk-in-aosp-crashes 
+		LOCAL_PREBUILT_JNI_LIBS := \
+			@lib/arm64-v8a/liba.so \
+			@lib/arm64-v8a/libb_shared.so
+			
+		record-1:It's the path for libs inside the APK. If you omit the @ it refers to a local folder named lib in the same directory (in this case you have to put libs in there manually). 
+			
+		record-2:
+			Tip: I used this tool to generate the Android.mk automatically: https://github.com/northbright/genandroidmk
+			If that doesn't work for some reason, then unzip the libs from the APK into a local folder, and refer to the libs using relative path ( in LOCAL_PREBUILT_JNI_LIBS without the "@" sign, but only lib/arm64-v8a/libc++_shared.so )
+		
+	4.3 When are the APKs in system/app being installed?
+		https://stackoverflow.com/questions/64689472/when-are-the-apks-in-system-app-being-installed/64694422#64694422 

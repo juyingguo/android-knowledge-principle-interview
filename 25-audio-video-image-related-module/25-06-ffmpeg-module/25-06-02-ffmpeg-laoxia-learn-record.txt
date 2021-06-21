@@ -99,16 +99,25 @@
 			在android9上初步查看，当前所加的日志都正常打印。是否还有相关日志没加呢？窗口相关的日志没有加。
 			q5.1 是否和编译脚本中--sysroot所指定的android平台版本有关。android-21
 			
-			验证：在android-24,即android版本7，模拟器，x86_64,(编译工具ffmpeg3.4.8,ndk-r13b)
+			验证a：在android-24,即android版本7，模拟器，x86_64,(编译工具ffmpeg3.4.8,ndk-r13b)
 				该模拟器：emulated performance 选项中graphics:选择
-				Automatic 
+				Automatic 			#ok
 				Hardware - GLES 2.0	#ok
 				Software - GLES 1.1 #当然模拟器选择该项时，运行提示opengles api没有实现，且创建链接程序失败。
+			验证b：在android-23,即android版本6.0，模拟器，x86,(编译工具ffmpeg3.4.8,ndk-r13b)
+				该模拟器：emulated performance 选项中graphics:选择
+				Automatic 			#模拟器无法启动
+				Hardware - GLES 2.0	#模拟器无法启动
+				Software - GLES 1.1 #模拟器正常启动，且图像显示，播放速度默认也正常。
+			初步猜测结论：编译ffmpeg时选择的android api级别决定了，影响在高地版本上运行。
+				低android api版本编译处理的so,无法在高版本上运行，虽然初步日志正常，但图像不显示。尚需要进一步验证。
 				
-		
 9 
 10 video project chapter2
 	
 11 video project chapter3
 	q1：图像无法显示问题同【8】中记录分析解决。
 	q2,图像能正常显示后，感觉想2倍快进一样，是哪里设置出问题了吗？
+	11.9 
+		使用opensl播放音频，
+		也可以使用qt播放音频。
