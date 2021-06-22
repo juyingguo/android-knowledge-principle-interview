@@ -183,5 +183,11 @@
 		https://blog.csdn.net/u010356727/article/details/50594401 
 	13.7 对颜色空间YUV、RGB的理解 
 		https://blog.csdn.net/asahinokawa/article/details/80596655 
+	13.8 渲染（render）
+		https://baike.baidu.com/item/%E6%B8%B2%E6%9F%93/3662013?fr=aladdin
+		
 14 opencore
 	OpenCore是Android的多媒体核心，它是一个基于C++的实现，定义了全功能的操作系统移植层，各种基本的功能均被封装成类的形式，各层次之间的接口多使用继承等方式。 
+15 YUV420转RGB
+	15.1 YUV420转RGB 
+		https://blog.csdn.net/xiaole0313/article/details/80334211/ 
