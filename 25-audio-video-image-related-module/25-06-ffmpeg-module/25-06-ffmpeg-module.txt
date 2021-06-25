@@ -463,8 +463,13 @@
 		即：基于Android的视频监控系统设计与实现
 		已下载
 	8.6 Android录屏并利用FFmpeg转换成gif（一）录屏
-		https://blog.csdn.net/minghuang2017/article/details/79050563
 		
+		https://blog.csdn.net/minghuang2017/article/details/79050563
+		8.6.0 Android录屏并利用FFmpeg转换成gif（一）录屏
+			a,源码：
+				https://github.com/MingHuang1024/GifRecorder
+			b,如果要一个单独的录屏app源码，可以参考 https://github.com/yrom/ScreenRecorder
+			
 		8.6.1 Android录屏并利用FFmpeg转换成gif（二）交叉编译FFmpeg源码
 			https://blog.csdn.net/MingHuang2017/article/details/79112682 
 			
@@ -503,11 +508,45 @@
 						//注意是老版本才用linux;3.4版本后用android，否则会发生一些找不到的错误。
 			android studio会自动把编译好的so文件存放在app/build/intermediates/cmake/debug/obj/armeabi等几个目录下
 			关联文章：费了这么大劲就是为了这个libffmpeg.so文件，其实编译这个文件也可以不在android工程中进行，因为实际上我们的工程只要引用这几个so包而已，至于怎么编译这些so包并不在本工程的职责范围内。
-			要在工程外编译请参考：https://blog.csdn.net/MingHuang2017/article/details/79000345
+			要在工程外编译请参考：
+				在命令行下用cmake交叉编译可在android中运行的so包https://blog.csdn.net/MingHuang2017/article/details/78938852 
+				cmake使用独立工具链交叉编译可在android中运行的so包
+				https://blog.csdn.net/MingHuang2017/article/details/79000345
+				
 			
 			  I:/juying/ffmpeg/ffmpeg-3.1.11/libavutil/common.h:45:32: fatal error: libavutil/avconfig.h: No such file or directory
 			#include "libavutil/avconfig.h"
-			使用和博主一致的版本试试：I:\juying\ffmpeg\FFmpeg-3.4.1
+			使用和博主一致的版本试试：I:\juying\ffmpeg\FFmpeg-3.4.1 
+		8.6.3 
+		8.6.4 对应我的验证
+			环境：windows，android-ndk-r13b-windows-x86_64, androidstudio;
+			
+			q1 问题：
+				FFmpeg-n3.4.1/libavutil/common.h:45:32: fatal error: libavutil/avconfig.h: No such file or directory
+				FFmpeg-n3.4.1/libavutil/common.h:45:32: fatal error: libavutil/ffversion.h: No such file or directory
+				
+				GifRecord project:
+				
+				参考博客：：
+				https://blog.csdn.net/weixin_34032827/article/details/92587224
+				查看源码后的确没有...囧TT~
+
+				编辑一个avconfig.h放到libavutil目录里就解决了报错问题；avconfig.h内容如下:
+				/* Generated by ffconf */
+				#ifndef AVUTIL_AVCONFIG_H
+				#define AVUTIL_AVCONFIG_H
+				#define AV_HAVE_BIGENDIAN 0
+				#define AV_HAVE_FAST_UNALIGNED 0
+				#endif /* AVUTIL_AVCONFIG_H */
+			q2,
+				cmdutils.c:1119:39: error: expected ')' before 'FFMPEG_VERSION'
+  
+				av_log(NULL, level, "%s version " FFMPEG_VERSION, program_name);
+				
+				解决办法：添加ffversion.h
+					其余定义和其它.h文件一样。
+					#define FFMPEG_VERSION "3.4.1"
+
 	8.7 
 9. ffmpeg超详细综合教程
 	【ffmpeg超详细综合教程一】

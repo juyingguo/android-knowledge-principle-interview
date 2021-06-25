@@ -18,3 +18,15 @@
 3. 不同视频格式，文件大小对比
 	3.1 flv,2M/min
 		avi，13M/min
+		
+4.PC端有哪些比较好的录屏软件？
+	https://www.zhihu.com/question/376919735?sort=created  
+	
+	4.2 ev
+		https://www.ieway.cn/
+		
+		4.2.1 可以试下EV录屏，功能齐全，容易上手，没有捆绑。
+
+			最重要是的基础功能免费。
+	4.3 obs录制屏幕视频 
+		

@@ -188,7 +188,11 @@
 	8.2 android ndk 支持的abi
 		比如：Supported ABIs are [arm64-v8a, armeabi, armeabi-v7a, mips, mips64, x86, x86_64].
 		不同于arch,cpu.
-	
+9.ndk 不同版本差异及注意事项记录
+	9.1 ndk/21.3.6528147 GCC is no longer supported
+		https://android.googlesource.com/platform/ndk/+/master/docs/ClangMigration.md 
+		ndk-r18及以后的版本不支持GCC
+		
 x. 一些记录
 	x.1 
 		环境
