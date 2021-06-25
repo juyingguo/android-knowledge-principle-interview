@@ -427,19 +427,28 @@
 			因原有项目是ecipse adt project ,as导入时以module方式并选择这个类型导入。
 		8.2.1 ffmpeg摄像头采集h264编码RTP发送
 			https://www.cnblogs.com/lidabo/p/8663062.html 
-			ffmpeg综合应用示例（一）——摄像头直播
+			a,ffmpeg综合应用示例（一）——摄像头直播
 			https://www.cnblogs.com/lidabo/p/8663043.html
 				源码：https://download.csdn.net/detail/nonmarking/9055683 
 				Hui Zhang github技术资料
 				https://github.com/zhanghuicuc
 				https://blog.csdn.net/nonmarking 
 			
-			FFMPEG 实时解码网络H264码流，RTP封装 
+			b,FFMPEG 实时解码网络H264码流，RTP封装 
 			https://blog.csdn.net/fang437385323/article/details/52336680 
 			
-			rtp 实时传输视频流 ffmpeg解码显示 
+			c,rtp 实时传输视频流 ffmpeg解码显示 
 			https://www.iteye.com/blog/mjlong123-2194880 
-				我通过参考网络中的许多大神的文章后开发出的android 应用 rtp实时传输h264编码的视频流到远端设备上显示。代码共享：https://github.com/mjlong123123/RemoteCamera/
+				我通过参考网络中的许多大神的文章后开发出的android 应用 rtp实时传输h264编码的视频流到远端设备上显示。代码共享：https://github.com/mjlong123123/RemoteCamera/ 
+			d,使用FFMPEG+H264实现RTP传输数据
+				http://www.voidcn.com/article/p-xhnnzsnr-bgm.html 
+				【及其关联文章参考】
+				
+				如何使用FFMPEG+H264实现RTP传输数据
+				http://www.javashuo.com/article/p-wuvyxxnr-z.html 
+			e,利用ffmpeg进行摄像头提取视频编码为h264通过RTP发送数据到指定的rtp地址
+				https://blog.csdn.net/chinabinlang/article/details/70210022? 
+			
 	8.3 Android系统下基于FFmpeg框架的多媒体播放器研究
 		【及同类文献】
 		https://cdmd.cnki.com.cn/Article/CDMD-11415-1016068240.htm  
