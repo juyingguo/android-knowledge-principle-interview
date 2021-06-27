@@ -3,3 +3,7 @@
 		http://c.biancheng.net/view/1089.html
 	1.2 opencv系列播客博主。
 		csdn:Lammyzp,
+		
+2.使用opencv调用摄像头然后录制视频和保存文件 
+	2.1 使用opencv调用摄像头然后录制视频和保存文件
+		https://blog.csdn.net/zhoubotong2012/article/details/103180987 

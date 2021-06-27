@@ -66,6 +66,7 @@
 	1.9 ffmpeg使用参考案例：
 			https://trac.ffmpeg.org/wiki/Scaling
 			https://trac.ffmpeg.org/wiki
+	
 		
 2. FFmpeg从入门到精通读书笔记（1）
 	2.1 FFmpeg从入门到精通读书笔记（1） 
@@ -435,11 +436,15 @@
 				https://blog.csdn.net/nonmarking 
 			
 			b,FFMPEG 实时解码网络H264码流，RTP封装 
-			https://blog.csdn.net/fang437385323/article/details/52336680 
-			
+				https://blog.csdn.net/fang437385323/article/details/52336680 
+				b1,FFMPEG实时解码网络视频流（回调方式）
+					https://blog.csdn.net/fang437385323/article/details/71247065 
 			c,rtp 实时传输视频流 ffmpeg解码显示 
-			https://www.iteye.com/blog/mjlong123-2194880 
+				https://www.iteye.com/blog/mjlong123-2194880 
+				c1
 				我通过参考网络中的许多大神的文章后开发出的android 应用 rtp实时传输h264编码的视频流到远端设备上显示。代码共享：https://github.com/mjlong123123/RemoteCamera/ 
+				c2 含有RTP头定义
+					
 			d,使用FFMPEG+H264实现RTP传输数据
 				http://www.voidcn.com/article/p-xhnnzsnr-bgm.html 
 				【及其关联文章参考】
@@ -448,7 +453,23 @@
 				http://www.javashuo.com/article/p-wuvyxxnr-z.html 
 			e,利用ffmpeg进行摄像头提取视频编码为h264通过RTP发送数据到指定的rtp地址
 				https://blog.csdn.net/chinabinlang/article/details/70210022? 
-			
+			f，如何发送和接收RTP封包的H264，用FFmpeg解码 
+				https://blog.csdn.net/zhoubotong2012/article/details/86510032 
+				
+				f1【博主有系列ffmpeg及其它相关领域的知识。】
+				f2 如何用FFmpeg API采集摄像头视频和麦克风音频，并实现录制文件的功能 
+					https://blog.csdn.net/zhoubotong2012/article/details/79338093 
+				f3 使用FFmpeg命令行进行UDP、RTP推流（H264、TS），ffplay接收
+					https://blog.csdn.net/zhoubotong2012/article/details/86711097 
+				
+				f4 使用FFmpeg命令行进行UDP、RTP推流（H264、TS），ffplay接收 
+					https://blog.csdn.net/zhoubotong2012/article/details/86711097 
+		8.2.2 FFMPEG实现RTSP中H264数据流解码 并且实时播放
+			a，FFMPEG实现RTSP中H264数据流解码 并且实时播放
+				【博主有ffmpeg系列课程】
+				https://blog.csdn.net/yunge812/article/details/79709307 
+				
+				
 	8.3 Android系统下基于FFmpeg框架的多媒体播放器研究
 		【及同类文献】
 		https://cdmd.cnki.com.cn/Article/CDMD-11415-1016068240.htm  
@@ -586,10 +607,14 @@
 		
 10 FFmpeg 详尽编译过程 (use ndk-build)
 	https://blog.csdn.net/junhuahouse/article/details/79236932  
-11 基于FFmpeg+SDL的视频播放器的制作——雷霄骅
-	https://b23.tv/1EsE12?share_medium=android&share_source=qq&bbid=XYCDBB3C2CE7545ECD20C449646BAFC69881F&ts=1611667246384
-	Bibi
-	雷神的资料和视频：链接: https://pan.baidu.com/s/1hEHryIRAP8O3XPTMacd85w 密码: z8gc 
+11 FFMPEG之雷霄骅学习记录
+	11.1 基于FFmpeg+SDL的视频播放器的制作——雷霄骅
+		https://b23.tv/1EsE12?share_medium=android&share_source=qq&bbid=XYCDBB3C2CE7545ECD20C449646BAFC69881F&ts=1611667246384
+		Bibi
+		雷神的资料和视频：链接: https://pan.baidu.com/s/1hEHryIRAP8O3XPTMacd85w 密码: z8gc 
+	
+	11.2 [总结]FFMPEG视音频编解码零基础学习方法
+		https://blog.csdn.net/leixiaohua1020/article/details/15811977 
 last 技术点知识点
 	last01 FFMPEG之AVRational TimeBase成员理解 
 		https://blog.csdn.net/xiaojun111111/article/details/79701314 
