@@ -242,9 +242,27 @@
 		工具–》选项–》文本编辑器–》C/C++–》高级，把禁用数据库设置为false。
 		
 	4.9 如何解决错误     error LNK1104: 无法打开文件“nafxcwd.lib”   
-		https://blog.csdn.net/weixin_44223188/article/details/111058782 
+		https://bbs.csdn.net/topics/360228801 
+	4.10 
+		错误	11	error LNK1104: 无法打开文件“mfc120.lib”	
+		https://blog.csdn.net/qq_42095701/article/details/90412056
+		添加VC++库目录：：
+		C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\x64;
+		C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib\amd64;
+		C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib\amd64;
 		
-		我无意中发现其实只需要更改：右击项目，选择属性->配置属性->常规->字符集->选择：使用unicode字符集? ?即可完成，错误将不再出现。具体多元字符集与unicode字符集的差别见下文链接：https://blog.csdn.net/sarahzhang0104/article/details/51346999 
+		或者安装：
+
+		只需要安装Multibyte MFC Library for Visual Studio 2013就可以解决了。下载地址：
+
+		http://www.microsoft.com/zh-CN/download/confirmation.aspx?id=40770
+	4.11 
+		vs2013 错误	2	error LNK1112: 模块计算机类型“x64”与目标计算机类型“X86”冲突	*\src\mfcs120.lib(nolib.obj)
+		参考【4.10】添加VC++库目录，三个目录改为32位的即可 
+	4.12 
+		vs2013 错误	error LNK2026: 模块对于 SAFESEH 映像是不安全的。	ffmpeg\avutil.lib(daoos00242.o)
+		
+		https://blog.csdn.net/ppt060984/article/details/46004497 
 5. Visual Studio 各个版本之间的功能比较
 	https://blog.csdn.net/helloexp/article/details/84371799 
 	5.2 VS express和VS community有什么区别？ 

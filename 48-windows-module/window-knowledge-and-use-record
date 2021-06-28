@@ -43,4 +43,6 @@
 		WMIC BIOS get releasedate 
 8. Lenovo联想键盘关闭fn功能恢复F1-F12按键 
 	 https://jingyan.baidu.com/article/6c67b1d6a83d922787bb1eec.html 
+9. windows动态链接库[DLL]与Linux共享库[SO]技术浅析 
+	https://www.cnblogs.com/darling131499/p/4609097.html 
 	 
