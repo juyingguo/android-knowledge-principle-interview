@@ -1,82 +1,82 @@
-0£¬×ÊÔ´
-	0.2  ¹¤¾ßÔÚ°Ù¶ÈÍøÅÌ
-		dev_toolsÄ¿Â¼ÏÂ
-Ò»¡¢C/C++ÓïÑÔ³£ÓÃ¿ª·¢¹¤¾ß
-	1.1¡¢C/C++ÓïÑÔ³£ÓÃ¿ª·¢¹¤¾ß
+0ï¼Œèµ„æº
+	0.2  å·¥å…·åœ¨ç™¾åº¦ç½‘ç›˜
+		dev_toolsç›®å½•ä¸‹
+ä¸€ã€C/C++è¯­è¨€å¸¸ç”¨å¼€å‘å·¥å…·
+	1.1ã€C/C++è¯­è¨€å¸¸ç”¨å¼€å‘å·¥å…·
 		https://zhuanlan.zhihu.com/p/87441238
 		
 				
-	1.2¡¢VC++£¬vs, Vs2010 express 
+	1.2ã€VC++ï¼Œvs, Vs2010 express 
 		
-		1.2.1¡¢ÎªÊ²Ã´Ó¦¸ÃÑ¡ÔñVisual C++ Express×÷Îª³õÑ§ÕßµÄ¿ª·¢¹¤¾ß
+		1.2.1ã€ä¸ºä»€ä¹ˆåº”è¯¥é€‰æ‹©Visual C++ Expressä½œä¸ºåˆå­¦è€…çš„å¼€å‘å·¥å…·
 			https://zhidao.baidu.com/question/1543859497619714347.html
 		
-		1.2.2¡¢Visual C++ 2010 Express ÏÂÔØ¼°°²×°½Ì³Ì
-			¡¾Ç¶ÈëÊ½LinuxÑ§Ï°¼ÇÂ¼12Æª¡¿¡¾µ¥Æ¬»ú±à³Ì13Æª¡¿¡¾C++Ñ§Ï°¼ÇÂ¼4Æª¡¿
+		1.2.2ã€Visual C++ 2010 Express ä¸‹è½½åŠå®‰è£…æ•™ç¨‹
+			ã€åµŒå…¥å¼Linuxå­¦ä¹ è®°å½•12ç¯‡ã€‘ã€å•ç‰‡æœºç¼–ç¨‹13ç¯‡ã€‘ã€C++å­¦ä¹ è®°å½•4ç¯‡ã€‘
 			https://blog.csdn.net/qq_38105227/article/details/81383595
 			
-		1.2.3¡¢visualc++ 2010express¼¤»îÂëÃÜÔ¿£¬ÓÀ¾Ã¼¤»î 
+		1.2.3ã€visualc++ 2010expressæ¿€æ´»ç å¯†é’¥ï¼Œæ°¸ä¹…æ¿€æ´» 
 			https://blog.csdn.net/weixin_43458720/article/details/88362863
 			
 			6VPJ7-H3CXH-HBTPT-X4T74-3YVY7
 			6VPJ7-H3CXH-HBTPT-X4T74-3YVY7
-		1.2.4¡¢VC 2010 Õı°æÏÂÔØ
+		1.2.4ã€VC 2010 æ­£ç‰ˆä¸‹è½½
 			https://jingyan.baidu.com/article/a3a3f8113b801d8da2eb8ae4.html
 			
-			Î¢Èí¹ÙÍøÃâ·ÑÏÂÔØ
+			å¾®è½¯å®˜ç½‘å…è´¹ä¸‹è½½
 			https://www.microsoft.com/zh-cn/
 			
-		1.2.5¡¢vc++2010 expressÕâÖÖ°æ±¾ÊÇ·ñÎÊÌâºÜ¶à£¿
+		1.2.5ã€vc++2010 expressè¿™ç§ç‰ˆæœ¬æ˜¯å¦é—®é¢˜å¾ˆå¤šï¼Ÿ
 			https://zhidao.baidu.com/question/136369272.html
 			
-			Express°æÃ»ÓĞMFC¿â£¬²»°üº¬Itanium±àÒëÆ÷£¬Ã»ÓĞ¸½´øx64±àÒëÆ÷¡­¡­£¬
+			Expressç‰ˆæ²¡æœ‰MFCåº“ï¼Œä¸åŒ…å«Itaniumç¼–è¯‘å™¨ï¼Œæ²¡æœ‰é™„å¸¦x64ç¼–è¯‘å™¨â€¦â€¦ï¼Œ
 			
 			
 		
-		1.2.6¡¢VS2010µ½VS2019¸÷¸ö°æ±¾µÄÃÜÔ¿
+		1.2.6ã€VS2010åˆ°VS2019å„ä¸ªç‰ˆæœ¬çš„å¯†é’¥
 			https://www.cnblogs.com/xiongze520/p/11750418.html
 			
 			[Trial] Visual Studio 2010 ultimate 
 			
-			VS2010ÃÜÔ¿
-			Microsoft Visual Studio 2010(VS2010)ÕıÊ½°æ CDKEY / SN:
+			VS2010å¯†é’¥
+			Microsoft Visual Studio 2010(VS2010)æ­£å¼ç‰ˆ CDKEY / SN:
 			YCFHQ-9DWCY-DKV88-T2TMH-G7BHP
 			
-		1.2.7¡¢¹ØÓÚVisual Studio 2010Óë64Î»ÏµÍ³µÄÎÊÌâ 
+		1.2.7ã€å…³äºVisual Studio 2010ä¸64ä½ç³»ç»Ÿçš„é—®é¢˜ 
 			https://blog.csdn.net/taifei/article/details/78091218
 			
-				Ïà¹ØÁ´½Ó£º£º
-				VS2010Ã»64Î»°æ±¾£¿£¿ http://social.msdn.microsoft.com/Forums/zh-CN/vstudiozhchs/thread/8c6ac5d6-ce8e-44e4-b4e8-0db3359c37fd/
+				ç›¸å…³é“¾æ¥ï¼šï¼š
+				VS2010æ²¡64ä½ç‰ˆæœ¬ï¼Ÿï¼Ÿ http://social.msdn.microsoft.com/Forums/zh-CN/vstudiozhchs/thread/8c6ac5d6-ce8e-44e4-b4e8-0db3359c37fd/
 				
-				ÏÂÔØutimate°æ±¾¾Í¿ÉÒÔÀ²£¬°²×°ºóÅäÖÃx64±àÒë»·¾³¾Í¿ÉÒÔÁË¡£
+				ä¸‹è½½utimateç‰ˆæœ¬å°±å¯ä»¥å•¦ï¼Œå®‰è£…åé…ç½®x64ç¼–è¯‘ç¯å¢ƒå°±å¯ä»¥äº†ã€‚
 				
 				Visual Studio: Why is there no 64 bit version? (yet) http://blogs.msdn.com/b/ricom/archive/2009/06/10/visual-studio-why-is-there-no-64-bit-version.aspx
 				5 Tips for Developing with 64-Bit Windows http://visualstudiomagazine.com/Articles/2009/07/01/5-Tips-for-Developing-with-64-Bit-Windows.aspx
 
-			1.2.7.2¡¢ÈçºÎÊ¹ÓÃVisualc++2010 Express±àÒë64Î»Ó¦ÓÃ³ÌĞò£¿
+			1.2.7.2ã€å¦‚ä½•ä½¿ç”¨Visualc++2010 Expressç¼–è¯‘64ä½åº”ç”¨ç¨‹åºï¼Ÿ
 				https://cloud.tencent.com/developer/ask/66315
 				
-				Ê¹ÓÃvisual studio 2010 ultimate °æ±¾°²×°Ê±Ñ¡Ôñ¾ÍĞĞÁË¡£
+				ä½¿ç”¨visual studio 2010 ultimate ç‰ˆæœ¬å®‰è£…æ—¶é€‰æ‹©å°±è¡Œäº†ã€‚
 			
-			1.2.7.3¡¢Visual Studio 2010 express Îª¹şÃ»ÓĞ64Î»µÄ£¿ 
-				Ğ¶ÔØÊ±£¬ÌáÊ¾Ñ¡ÏîÖĞÓĞÖØĞÂ°²×°£¬
+			1.2.7.3ã€Visual Studio 2010 express ä¸ºå“ˆæ²¡æœ‰64ä½çš„ï¼Ÿ 
+				å¸è½½æ—¶ï¼Œæç¤ºé€‰é¡¹ä¸­æœ‰é‡æ–°å®‰è£…ï¼Œ
 				microsoft visual studio 2010 express prerequisites x64
 				microsoft  visual c++ express 
 				
-				ÖØĞÂ°²×°ºóÒÀÈ»Ã»ÓĞx64ÅäÖÃ¿ÉÒÔÊ¹ÓÃ
-		1.2.7¡¢vs²»Í¬°æ±¾£¬Õ¼ÓÃµÄ´ÅÅÌ¿Õ¼ä¡£
+				é‡æ–°å®‰è£…åä¾ç„¶æ²¡æœ‰x64é…ç½®å¯ä»¥ä½¿ç”¨
+		1.2.7ã€vsä¸åŒç‰ˆæœ¬ï¼Œå ç”¨çš„ç£ç›˜ç©ºé—´ã€‚
 			vc++2010 800m
-			vs2015£¬Ä¬ÈÏ8G£¬¿É×Ô¶¨Òå×î´ó£¬40G;
+			vs2015ï¼Œé»˜è®¤8Gï¼Œå¯è‡ªå®šä¹‰æœ€å¤§ï¼Œ40G;
 		
-		1.2.8¡¢Visual Studio ÓëVisual Studio Code µÄÇø±ğ 
+		1.2.8ã€Visual Studio ä¸Visual Studio Code çš„åŒºåˆ« 
 			https://blog.csdn.net/qq_36957681/article/details/90781361
 			
-		1.2.9¡¢visual basic visual c++,visual C#£¬Visual F# 
+		1.2.9ã€visual basic visual c++,visual C#ï¼ŒVisual F# 
 		
-		1.2.10¡¢vsÄ¿Ç°ÄÄ¸ö°æ±¾×îºÃÓÃ¡£
-			vsÄ¿Ç°±È½ÏºÃÓÃµÄ°æ±¾ÊÇvs2010.
+		1.2.10ã€vsç›®å‰å“ªä¸ªç‰ˆæœ¬æœ€å¥½ç”¨ã€‚
+			vsç›®å‰æ¯”è¾ƒå¥½ç”¨çš„ç‰ˆæœ¬æ˜¯vs2010.
 			
-	1.3¡¢VC++ 2010  £¬build problem record.´´½¨µÄÊÇ¡¾Win32 Console Application¡¿¹¤³Ì
+	1.3ã€VC++ 2010  ï¼Œbuild problem record.åˆ›å»ºçš„æ˜¯ã€Win32 Console Applicationã€‘å·¥ç¨‹
 		
 		'cpp_pro_base.exe': Loaded 'C:\Windows\SysWOW64\ntdll.dll', Cannot find or open the PDB file
 		'cpp_pro_base.exe': Loaded 'C:\Windows\SysWOW64\kernel32.dll', Cannot find or open the PDB file
@@ -88,155 +88,190 @@
 		Win32 Console Application
 		Loaded 'C:\Windows\SysWOW64\ntdll.dll,kernel32.dll,KernelBase.dll,msvcp100d.dll,msvcr100d.dll', Cannot find or open the PDB file
 		
-		1.3.1 ¡¢visual studio µ÷ÊÔÊ±ÌáÊ¾ ÒÑ¼ÓÔØ¡°C:\Windows\SysWOW64\ntdll.dll¡±¡£ÎŞ·¨²éÕÒ»ò´ò¿ª PDB ÎÄ¼ş¡£
+		1.3.1 ã€visual studio è°ƒè¯•æ—¶æç¤º å·²åŠ è½½â€œC:\Windows\SysWOW64\ntdll.dllâ€ã€‚æ— æ³•æŸ¥æ‰¾æˆ–æ‰“å¼€ PDB æ–‡ä»¶ã€‚
 			https://blog.csdn.net/win_turn/article/details/50468115
 		
-		1.4.2¡¢c++³ÌĞòÄ©Î²ÇÒÔÚreturnÇ°Ìí¼ÓÕâĞĞ´úÂë system("pause"); 
-			»òÕß¡¾ÓÃctrl+f5 µ÷ÊÔ¡¿ ²»ÒªÖ±½ÓµãÄÇ¸öµ÷ÊÔ°´Å¥
+		1.4.2ã€c++ç¨‹åºæœ«å°¾ä¸”åœ¨returnå‰æ·»åŠ è¿™è¡Œä»£ç  system("pause"); 
+			æˆ–è€…ã€ç”¨ctrl+f5 è°ƒè¯•ã€‘ ä¸è¦ç›´æ¥ç‚¹é‚£ä¸ªè°ƒè¯•æŒ‰é’®
 			
-	1.4¡¢VC++ 2010 express ´´½¨¹¤³ÌÏîÄ¿¼°±àÒëÔËĞĞ
-		1.4.1¡¢Visual C++2010ÈçºÎ±àĞ´²¢ÔËĞĞC++³ÌĞò 
+	1.4ã€VC++ 2010 express åˆ›å»ºå·¥ç¨‹é¡¹ç›®åŠç¼–è¯‘è¿è¡Œ
+		1.4.1ã€Visual C++2010å¦‚ä½•ç¼–å†™å¹¶è¿è¡ŒC++ç¨‹åº 
 			https://jingyan.baidu.com/article/6b97984d97c3f11ca2b0bf12.html
 			
-	1.5¡¢devc++ ÏÂÔØ
+	1.5ã€devc++ ä¸‹è½½
 		
 			http://dev-c-plus-plus-c4.www.software112.com/
 			
-			http://sourceforge.net/projects/orwelldevcpp/¹Ù·½ÏÂÔØµØÖ·£¨free)		
-		1.5.1¡¢devc++µ÷ÊÔ·½·¨¡£¡¾°æ±¾5.11¡¢ÖĞÎÄ¡¿¡£¿ÉÒÔ²Î¿¼¼´¿É¡£
+			http://sourceforge.net/projects/orwelldevcpp/å®˜æ–¹ä¸‹è½½åœ°å€ï¼ˆfree)		
+		1.5.1ã€devc++è°ƒè¯•æ–¹æ³•ã€‚ã€ç‰ˆæœ¬5.11ã€ä¸­æ–‡ã€‘ã€‚å¯ä»¥å‚è€ƒå³å¯ã€‚
 			https://blog.csdn.net/hz18790581821/article/details/78418648
 			
 			enable a delay in milliseconds if make complains about the timestamp the makefile
 			
 			use fast but imperfect dependency generation
-	1.6¡¢Itanium 
+	1.6ã€Itanium 
 		https://baike.baidu.com/item/Itanium/7527671?fr=aladdin
 	
-	1.7  Linux ÏÂÓÃÓÚ C/C++ µÄ×îºÃµÄ IDE 
+	1.7  Linux ä¸‹ç”¨äº C/C++ çš„æœ€å¥½çš„ IDE 
 		https://www.cnblogs.com/findumars/p/5797486.html 
 		
-		2. Qt creatorÒ²ÊÇÒ»¿îÊ®·ÖÊÜ»¶Ó­µÄIDE£¬Ò²Ç¿ÁÒÍÆ¼öÄãÊ¹ÓÃÕâ¿îÈí¼ş¡£
+		2. Qt creatorä¹Ÿæ˜¯ä¸€æ¬¾ååˆ†å—æ¬¢è¿çš„IDEï¼Œä¹Ÿå¼ºçƒˆæ¨èä½ ä½¿ç”¨è¿™æ¬¾è½¯ä»¶ã€‚
 
-			ÁíÍâ£¬Èç¹ûÄãÊÇC/C++³õÑ§ÕßµÄ»°£¬½¨ÒéÄã°²×°codeblocks»òÕßDev-C++¡£ÕâÁ½¿îÈí¼ş²»½öÓĞwindows°æ±¾µÄ£¬Ò²ÓĞlinux°æ±¾µÄ¡£
-		3. Code::Blocks £¬linux £¬windows°æ±¾¶¼ÓĞµÄ¡£
+			å¦å¤–ï¼Œå¦‚æœä½ æ˜¯C/C++åˆå­¦è€…çš„è¯ï¼Œå»ºè®®ä½ å®‰è£…codeblocksæˆ–è€…Dev-C++ã€‚è¿™ä¸¤æ¬¾è½¯ä»¶ä¸ä»…æœ‰windowsç‰ˆæœ¬çš„ï¼Œä¹Ÿæœ‰linuxç‰ˆæœ¬çš„ã€‚
+		3. Code::Blocks ï¼Œlinux ï¼Œwindowsç‰ˆæœ¬éƒ½æœ‰çš„ã€‚
 			https://blog.csdn.net/whalefall/article/details/90030845
 			
-			ÏÂÔØµØÖ·http://www.codeblocks.org/downloads 
+			ä¸‹è½½åœ°å€http://www.codeblocks.org/downloads 
 			
-			linuxÓÃÃüÁî°²×°¼´¿É
+			linuxç”¨å‘½ä»¤å®‰è£…å³å¯
 	1.8 MinGW-w64 - for 32 and 64 bit Windows 
 		https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/seh/
 		
 	1.9 DJGPP 
 		https://baike.baidu.com/item/DJGPP/8472133?fr=aladdin
 		
-		DJGPP¿ÉÔÚ¹Ù·½ÍøÖ·
+		DJGPPå¯åœ¨å®˜æ–¹ç½‘å€
 		http://www.delorie.com/djgpp/
 		
-		DJGPPÊÇGCC±àÒëÆ÷ÔÚDOS²Ù×÷ÏµÍ³ÉÏµÄÒ»¸öÒÆÖ²°æ±¾£¬¿ÉÒÔÓÃÀ´ÔÚDOS²Ù×÷ÏµÍ³ÏÂ±àÒëÉú³É32Î»±£»¤Ä£Ê½µÄ³ÌĞò¡£
+		DJGPPæ˜¯GCCç¼–è¯‘å™¨åœ¨DOSæ“ä½œç³»ç»Ÿä¸Šçš„ä¸€ä¸ªç§»æ¤ç‰ˆæœ¬ï¼Œå¯ä»¥ç”¨æ¥åœ¨DOSæ“ä½œç³»ç»Ÿä¸‹ç¼–è¯‘ç”Ÿæˆ32ä½ä¿æŠ¤æ¨¡å¼çš„ç¨‹åºã€‚
 	
-¶ş¡¢vs tools use  record .
-	2.1¡¢VSÈçºÎÔÚÒ»¸öÏîÄ¿ÖĞ·Ö±ğÔËĞĞµ¥¸öcppÎÄ¼ş 
+äºŒã€vs tools use  record .
+	2.1ã€VSå¦‚ä½•åœ¨ä¸€ä¸ªé¡¹ç›®ä¸­åˆ†åˆ«è¿è¡Œå•ä¸ªcppæ–‡ä»¶ 
 		https://blog.csdn.net/IT_flying625/article/details/101125588
 		
-		a¡¢¶ÔcppÎÄ¼ş½øĞĞ½ûÓÃ£¬µ¥»÷ÓÒ¼üÊôĞÔ£¬´ÓbuildÖĞÅÅ³ıÑ¡ÏîÖĞ£¬Ñ¡Ôñyes¡£
+		aã€å¯¹cppæ–‡ä»¶è¿›è¡Œç¦ç”¨ï¼Œå•å‡»å³é”®å±æ€§ï¼Œä»buildä¸­æ’é™¤é€‰é¡¹ä¸­ï¼Œé€‰æ‹©yesã€‚
 			
-	2.2¡¢ÇáËÉ¸ã¶¨VSÉú³ÉsdfºÍipchÎÄ¼şÌ«´óÕ¼ÓÃ¿Õ¼äÎÊÌâ 
-		ĞÂ´´½¨Ê¹ÓÃ£¬·¢ÏÖsdf£¬30m£»ipch,55m£»Ì«Õ¼¿Õ¼äÁË¡£
+	2.2ã€è½»æ¾æå®šVSç”Ÿæˆsdfå’Œipchæ–‡ä»¶å¤ªå¤§å ç”¨ç©ºé—´é—®é¢˜ 
+		æ–°åˆ›å»ºä½¿ç”¨ï¼Œå‘ç°sdfï¼Œ30mï¼›ipch,55mï¼›å¤ªå ç©ºé—´äº†ã€‚
 		https://blog.csdn.net/songyi160/article/details/51612716
 		
-		2.2.2¡¢ipchÎÄ¼ş¼ĞºÍ.sdfÎÄ¼şÊÇÊ²Ã´£¿
+		2.2.2ã€ipchæ–‡ä»¶å¤¹å’Œ.sdfæ–‡ä»¶æ˜¯ä»€ä¹ˆï¼Ÿ
 			https://blog.csdn.net/Niteip/article/details/14697677
 		
 		
-		2.2.3¡¢gitÌá½»Ê±ºöÂÔÕâÁ½¸öÎÄ¼ş¡£.sdfÎÄ¼ş¡£.ipch¡£
+		2.2.3ã€gitæäº¤æ—¶å¿½ç•¥è¿™ä¸¤ä¸ªæ–‡ä»¶ã€‚.sdfæ–‡ä»¶ã€‚.ipchã€‚
 		
-	2.3¡¢vs2010 c++ Source Files ÏÂ¿ÉÒÔ´´½¨¶à¸öÎÄ¼ş¼ĞÂğ 
+	2.3ã€vs2010 c++ Source Files ä¸‹å¯ä»¥åˆ›å»ºå¤šä¸ªæ–‡ä»¶å¤¹å— 
 		https://bbs.csdn.net/topics/390000488
 		
-		2.3.2¡¢ÔÚVSÖĞ¸øÔ´ÎÄ¼şÓÃÎÄ¼ş¼Ğ·ÖÀà/ÔÚVSÖĞ±ä¸üÔ´ÎÄ¼şÂ·¾¶ 
+		2.3.2ã€åœ¨VSä¸­ç»™æºæ–‡ä»¶ç”¨æ–‡ä»¶å¤¹åˆ†ç±»/åœ¨VSä¸­å˜æ›´æºæ–‡ä»¶è·¯å¾„ 
 			https://blog.csdn.net/tomwillow/article/details/83795237
 			
 			
-			ÔÚ½â¾ö·½°¸×ÊÔ´¹ÜÀíÆ÷Àï£¬ÉÏÃæÒ»ÅÅÓĞÒ»¸ö¡°ÏÔÊ¾ËùÓĞÎÄ¼ş¡±µÄ°´Å¥£¬Ñ¡ÖĞºóËùÓĞÎÄ¼şÒÔÊµ¼ÊÄ¿Â¼ÏÔÊ¾£¬Ö®ºóÖ±½ÓÒÆ¶¯ÎÄ¼ş¼´¿É¡£
+			åœ¨è§£å†³æ–¹æ¡ˆèµ„æºç®¡ç†å™¨é‡Œï¼Œä¸Šé¢ä¸€æ’æœ‰ä¸€ä¸ªâ€œæ˜¾ç¤ºæ‰€æœ‰æ–‡ä»¶â€çš„æŒ‰é’®ï¼Œé€‰ä¸­åæ‰€æœ‰æ–‡ä»¶ä»¥å®é™…ç›®å½•æ˜¾ç¤ºï¼Œä¹‹åç›´æ¥ç§»åŠ¨æ–‡ä»¶å³å¯ã€‚
 			
-	2.4¡¢vs2010¶Ïµãµ÷ÊÔÏêÏ¸½Ì³Ì 
+	2.4ã€vs2010æ–­ç‚¹è°ƒè¯•è¯¦ç»†æ•™ç¨‹ 
 		https://www.jb51.net/softjc/160533.html
 
-	2.5 win8ÉÏÃæÕı³££¬win7ÉÏÃæÒì³£¡£
+	2.5 win8ä¸Šé¢æ­£å¸¸ï¼Œwin7ä¸Šé¢å¼‚å¸¸ã€‚
 		Error	1	error LNK1123: failure during conversion to COFF: file invalid or corrupt	
 		
-		2.5.1 LNK1123: failure during conversion to COFF: file invalid or corrupt-ÎÊÌâ½â¾ö°ì·¨ 
+		2.5.1 LNK1123: failure during conversion to COFF: file invalid or corrupt-é—®é¢˜è§£å†³åŠæ³• 
 			https://blog.csdn.net/u010439482/article/details/51372700
 		
-			ÓĞĞ§µÄ½â¾ö·½·¨°²×°²¹¶¡°ü¡£
+			æœ‰æ•ˆçš„è§£å†³æ–¹æ³•å®‰è£…è¡¥ä¸åŒ…ã€‚
 			Visual Studio 2010 SP1			
 			https://www.cr173.com/soft/24545.html
 			
-	2.6	vs2010Æô¶¯Í¼±êÔÚÄÄ
-		 common7/IDE/devenv.exe
-3. MFCÓëQTÇø±ğ£¿
-	3.1 MFCÓëQTÇø±ğ£¿
+	2.6	vs2010å¯åŠ¨å›¾æ ‡åœ¨å“ª
+		 common7/IDE/devenv.exe 
+	2.7 VS2013ç”Ÿæˆã€ä½¿ç”¨dllï¼Œlibæ–‡ä»¶ 
+		https://www.cnblogs.com/qinguoyi/p/7257353.html 
+3. MFCä¸QTåŒºåˆ«ï¼Ÿ
+	3.1 MFCä¸QTåŒºåˆ«ï¼Ÿ
 		https://blog.csdn.net/changyourmind/article/details/51778555
 
 	
 4. vs2013 
 	
-	4.0 vs2013 °²×°²½Öè
-	4.1 VS2013(Visual Studio 2013)¹Ù·½ÖĞÎÄÆÆ½âÆì½¢°æÏÂÔØ£¨º¬¼¤»îÃÜÔ¿£©
+	4.0 vs2013 äº§å“ç§˜é’¥
+		https://blog.csdn.net/qq_33753161/article/details/82730248 
+		Visual Studio Ultimate 2013 KEYï¼ˆå¯†é’¥ï¼‰ï¼šBWG7X-J98B3-W34RT-33B3R-JVYW9
+		Visual Studio Premium 2013 KEYï¼ˆå¯†é’¥ï¼‰ï¼šFBJVC-3CMTX-D8DVP-RTQCT-92494
+		Visual Studio Professional 2013  KEYï¼ˆå¯†é’¥ï¼‰ï¼š XDM3T-W3T3V-MGJWK-8BFVD-GVPKY
+		Team Foundation Server 2013 KEYï¼ˆå¯†é’¥ï¼‰ï¼šMHG9J-HHHX9-WWPQP-D8T7H-7KCQG
+	4.1 VS2013(Visual Studio 2013)å®˜æ–¹ä¸­æ–‡ç ´è§£æ——èˆ°ç‰ˆä¸‹è½½ï¼ˆå«æ¿€æ´»å¯†é’¥ï¼‰
 		https://blog.csdn.net/m0_37477061/article/details/83447773
-	4.2 	visual studio 2013ÏÂÔØ¼°°²×°Ê¹ÓÃ½Ì³Ì(ÄÚ¸½vs2013²úÆ·ÃÜ... 
+	4.2 	visual studio 2013ä¸‹è½½åŠå®‰è£…ä½¿ç”¨æ•™ç¨‹(å†…é™„vs2013äº§å“å¯†... 
 		https://www.itkaoshi.net/3906.html 
-	4.3 4.0 vs2013Õ¼ÓÃ¶à´óCÅÌ¿Õ¼ä 
-		VS2013×Ü¹²12G×óÓÒ£¬»áÕ¼CÅÌ´óÔ¼8G×óÓÒµÄ¿Õ¼ä£¬Õ¼ÆäËûÅÌ£¨°²×°Î»ÖÃ£©4G×óÓÒ£¬Èç¹û¾õµÃÌ«´ó£¬½¨Òé¿ÉÒÔ°²×°¾«¼ò°æ¡± VS 2013 Express for Windows Desktop¡£ 
-	4.4 Visual Studio µÄÏîÄ¿Ç¨ÒÆºÍÉı¼¶²Î¿¼ 
+	4.3 4.0 vs2013å ç”¨å¤šå¤§Cç›˜ç©ºé—´ 
+		VS2013æ€»å…±12Gå·¦å³ï¼Œä¼šå Cç›˜å¤§çº¦8Gå·¦å³çš„ç©ºé—´ï¼Œå å…¶ä»–ç›˜ï¼ˆå®‰è£…ä½ç½®ï¼‰4Gå·¦å³ï¼Œå¦‚æœè§‰å¾—å¤ªå¤§ï¼Œå»ºè®®å¯ä»¥å®‰è£…ç²¾ç®€ç‰ˆâ€ VS 2013 Express for Windows Desktopã€‚ 
+	4.4 Visual Studio çš„é¡¹ç›®è¿ç§»å’Œå‡çº§å‚è€ƒ 
 		https://docs.microsoft.com/zh-cn/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2019 
 		
 		
-		´íÎó	1	error MSB8031: Building an MFC project for a non-Unicode character set is deprecated. You must change the project property to Unicode or download an additional library. See http://go.microsoft.com/fwlink/p/?LinkId=286820 for more information.	C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets	376	5	FileTransferClient
-		4.4.1 ½â¾ö VS2013error MSB8031: Building an MFC project for a non-Unicode character set is deprecated
+		é”™è¯¯	1	error MSB8031: Building an MFC project for a non-Unicode character set is deprecated. You must change the project property to Unicode or download an additional library. See http://go.microsoft.com/fwlink/p/?LinkId=286820 for more information.	C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets	376	5	FileTransferClient
+		4.4.1 è§£å†³ VS2013error MSB8031: Building an MFC project for a non-Unicode character set is deprecated
 			https://www.cnblogs.com/depend-wind/articles/11084525.html
-	4.5 VS2013 ipchºÍsdfÎÄ¼ş
-		4.5.1 VS2013½ûÖ¹Éú³ÉipchºÍsdfÎÄ¼ş
+	4.5 VS2013 ipchå’Œsdfæ–‡ä»¶
+		4.5.1 VS2013ç¦æ­¢ç”Ÿæˆipchå’Œsdfæ–‡ä»¶
 			https://blog.csdn.net/ppt060984/article/details/46004391 
-			ÏîÄ¿Ä¿Â¼ÏÂÄ¬ÈÏ»áÉú³ÉµÄsdf ºÍ ipchÎÄ¼ş£¬²¢ÇÒÌå»ıÅÓ´ó¡£
+			é¡¹ç›®ç›®å½•ä¸‹é»˜è®¤ä¼šç”Ÿæˆçš„sdf å’Œ ipchæ–‡ä»¶ï¼Œå¹¶ä¸”ä½“ç§¯åºå¤§ã€‚
 
-			ÕâÁ½¸öÎÄ¼şÓëVS2013Ìá¹©µÄÖÇÄÜ¸ĞÖª¡¢´úÂë»Ö¸´¡¢ÍÅ¶Ó±¾µØ²Ö¿â¹¦ÄÜÓĞ¹Ø£¬Èç¹û²»ĞèÒª£¬¿ÉÒÔ½ûÖ¹£¬ ½ûÓÃÖ®ºóÏîÄ¿¼ÓÔØËÙ¶ÈÒ²»áºÜ¿ì¡£
+			è¿™ä¸¤ä¸ªæ–‡ä»¶ä¸VS2013æä¾›çš„æ™ºèƒ½æ„ŸçŸ¥ã€ä»£ç æ¢å¤ã€å›¢é˜Ÿæœ¬åœ°ä»“åº“åŠŸèƒ½æœ‰å…³ï¼Œå¦‚æœä¸éœ€è¦ï¼Œå¯ä»¥ç¦æ­¢ï¼Œ ç¦ç”¨ä¹‹åé¡¹ç›®åŠ è½½é€Ÿåº¦ä¹Ÿä¼šå¾ˆå¿«ã€‚
 
-			·½·¨ÈçÏÂ£º
+			æ–¹æ³•å¦‚ä¸‹ï¼š
 
-			ÉèÖÃ·½·¨£º¹¤¾ß--¡·Ñ¡Ïî--¡·ÎÄ±¾±à¼­Æ÷--¡·C/C++--¡·¸ß¼¶£¬°Ñ½ûÓÃÊı¾İ¿âÉèÖÃÎªtrue 
+			è®¾ç½®æ–¹æ³•ï¼šå·¥å…·--ã€‹é€‰é¡¹--ã€‹æ–‡æœ¬ç¼–è¾‘å™¨--ã€‹C/C++--ã€‹é«˜çº§ï¼ŒæŠŠç¦ç”¨æ•°æ®åº“è®¾ç½®ä¸ºtrue 
 	4.6 
-		´íÎó error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°mfc120d.lib¡±	 
+		é”™è¯¯ error LNK1104: æ— æ³•æ‰“å¼€æ–‡ä»¶â€œmfc120d.libâ€	 
 		*\FileTransfer-1.6\Src\FileTransferClient\LINK	FileTransferClient
 		
-		vs2013´íÎó£ºÕÒ²»×Åmfc120.lib»òmfc120d.libÕ¦°ì 
+		vs2013é”™è¯¯ï¼šæ‰¾ä¸ç€mfc120.libæˆ–mfc120d.libå’‹åŠ 
 		https://blog.csdn.net/qq_30236169/article/details/93030422? 
 		
 		
-		Ìí¼ÓVC++¿âÄ¿Â¼£º
+		æ·»åŠ VC++åº“ç›®å½•ï¼š
 
 		C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\x64
-
 		C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib
 		C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib\amd64
 		
-		Ìí¼Ó·½Ê½²Î¿¼£ºVisual studioÖĞÌí¼Ó¿âÎÄ¼ş.lib
+		æ·»åŠ æ–¹å¼å‚è€ƒï¼šVisual studioä¸­æ·»åŠ åº“æ–‡ä»¶.lib
 			https://blog.csdn.net/qq_28093585/article/details/78351665 
 			
-			µ½ÏîÄ¿ÊôĞÔ½çÃæ²Ù×÷¡£
-			1.ÔÚÏîÄ¿->ÊôĞÔÀï£¬VC++Ä¿Â¼ÖĞµÄ"¿âÎÄ¼ş"ÖĞ¼ÓÈë¿âÎÄ¼şµÄÂ·¾¶£»"¿ÉÖ´ĞĞÎÄ¼şÄ¿Â¼"ÖĞ¼ÓÈëbinÎÄ¼ş¼ĞÂ·¾¶£»"°üº¬Ä¿Â¼"ÖĞ¼ÓÈëinclude¡¢include\opencv¡¢include\opencv2µÈ°üº¬.hÍ·ÎÄ¼şµÄÎÄ¼ş¼ĞÂ·¾¶¡£
-			2.ÔÚÁ´½ÓÆ÷->ÊäÈë£¬Ìí¼ÓÒÀÀµÏîÖĞ½«libÎÄ¼şµÄÃû×Ö¼Ó½øÈ¥¡£
-			£¨2£©µ÷Æä¶ÀÁ¢µÄ.lib¿âÎÄ¼ş¡£
-				¿´ÎÄµµ¡£
-	4.7 Ê¹ÓÃvs2013´ò¿ªvs2015ÏîÄ¿ 
+			åˆ°é¡¹ç›®å±æ€§ç•Œé¢æ“ä½œã€‚
+			1.åœ¨é¡¹ç›®->å±æ€§é‡Œï¼ŒVC++ç›®å½•ä¸­çš„"åº“æ–‡ä»¶"ä¸­åŠ å…¥åº“æ–‡ä»¶çš„è·¯å¾„ï¼›"å¯æ‰§è¡Œæ–‡ä»¶ç›®å½•"ä¸­åŠ å…¥binæ–‡ä»¶å¤¹è·¯å¾„ï¼›"åŒ…å«ç›®å½•"ä¸­åŠ å…¥includeã€include\opencvã€include\opencv2ç­‰åŒ…å«.hå¤´æ–‡ä»¶çš„æ–‡ä»¶å¤¹è·¯å¾„ã€‚
+			2.åœ¨é“¾æ¥å™¨->è¾“å…¥ï¼Œæ·»åŠ ä¾èµ–é¡¹ä¸­å°†libæ–‡ä»¶çš„åå­—åŠ è¿›å»ã€‚
+			ï¼ˆ2ï¼‰è°ƒå…¶ç‹¬ç«‹çš„.libåº“æ–‡ä»¶ã€‚
+				çœ‹æ–‡æ¡£ã€‚
+	4.7 ä½¿ç”¨vs2013æ‰“å¼€vs2015é¡¹ç›® 
 	
-	4.8 ½â¾övs2013×ªµ½¶¨Òå±ä»Ò£¬F12ÎŞ·¨Ìø×ªÎÊÌâ 
+	4.8 è§£å†³vs2013è½¬åˆ°å®šä¹‰å˜ç°ï¼ŒF12æ— æ³•è·³è½¬é—®é¢˜ 
 		https://blog.csdn.net/qq_36150473/article/details/73167182 
 		
-		¹¤¾ß¨C¡·Ñ¡Ïî¨C¡·ÎÄ±¾±à¼­Æ÷¨C¡·C/C++¨C¡·¸ß¼¶£¬°Ñ½ûÓÃÊı¾İ¿âÉèÖÃÎªfalse¡£
+		å·¥å…·â€“ã€‹é€‰é¡¹â€“ã€‹æ–‡æœ¬ç¼–è¾‘å™¨â€“ã€‹C/C++â€“ã€‹é«˜çº§ï¼ŒæŠŠç¦ç”¨æ•°æ®åº“è®¾ç½®ä¸ºfalseã€‚
 		
-5. Visual Studio ¸÷¸ö°æ±¾Ö®¼äµÄ¹¦ÄÜ±È½Ï
+	4.9 å¦‚ä½•è§£å†³é”™è¯¯     error LNK1104: æ— æ³•æ‰“å¼€æ–‡ä»¶â€œnafxcwd.libâ€   
+		https://bbs.csdn.net/topics/360228801 
+	4.10 
+		é”™è¯¯	11	error LNK1104: æ— æ³•æ‰“å¼€æ–‡ä»¶â€œmfc120.libâ€	
+		https://blog.csdn.net/qq_42095701/article/details/90412056
+		æ·»åŠ VC++åº“ç›®å½•ï¼šï¼š
+		C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib\x64;
+		C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib\amd64;
+		æˆ–è€…æ ¹æ®éœ€è¦æ·»åŠ 32ä½çš„ç›®å½•
+		
+		æˆ–è€…å®‰è£…ï¼š
+
+		åªéœ€è¦å®‰è£…Multibyte MFC Library for Visual Studio 2013å°±å¯ä»¥è§£å†³äº†ã€‚ä¸‹è½½åœ°å€ï¼š
+
+		http://www.microsoft.com/zh-CN/download/confirmation.aspx?id=40770
+	4.11 
+		vs2013 é”™è¯¯	2	error LNK1112: æ¨¡å—è®¡ç®—æœºç±»å‹â€œx64â€ä¸ç›®æ ‡è®¡ç®—æœºç±»å‹â€œX86â€å†²çª	*\src\mfcs120.lib(nolib.obj)
+		å‚è€ƒã€4.10ã€‘æ·»åŠ VC++åº“ç›®å½•ï¼Œä¸‰ä¸ªç›®å½•æ”¹ä¸º32ä½çš„å³å¯ 
+	4.12 
+		vs2013 é”™è¯¯	error LNK2026: æ¨¡å—å¯¹äº SAFESEH æ˜ åƒæ˜¯ä¸å®‰å…¨çš„ã€‚	ffmpeg\avutil.lib(daoos00242.o)
+		
+		https://blog.csdn.net/ppt060984/article/details/46004497 
+		è§£å†³æ–¹æ³•ï¼š
+		1.é¡¹ç›®çš„â€œå±æ€§é¡µâ€- â€œé“¾æ¥å™¨â€ -â€œå‘½ä»¤è¡Œâ€- å°† /SAFESEH:NO é”®å…¥â€œé™„åŠ é€‰é¡¹â€æ¡†ä¸­
+	4.13 vs2013  error LNK1104: æ— æ³•æ‰“å¼€æ–‡ä»¶â€œnafxcwd.libâ€ 
+		  https://blog.csdn.net/weixin_44223188/article/details/111058782 
+	4.14 VS2013ä¸­ç¼–è¯‘å‡ºç°libcmt.libé‡å®šä¹‰é”™è¯¯
+		https://blog.csdn.net/hk52222/article/details/81301371 
+		  
+5. Visual Studio å„ä¸ªç‰ˆæœ¬ä¹‹é—´çš„åŠŸèƒ½æ¯”è¾ƒ
 	https://blog.csdn.net/helloexp/article/details/84371799 
-	5.2 VS expressºÍVS communityÓĞÊ²Ã´Çø±ğ£¿ 
+	5.2 VS expresså’ŒVS communityæœ‰ä»€ä¹ˆåŒºåˆ«ï¼Ÿ 
 		https://www.zhihu.com/question/39750908 

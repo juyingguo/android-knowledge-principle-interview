@@ -459,6 +459,12 @@
 				f1【博主有系列ffmpeg及其它相关领域的知识。】
 				f2 如何用FFmpeg API采集摄像头视频和麦克风音频，并实现录制文件的功能 
 					https://blog.csdn.net/zhoubotong2012/article/details/79338093 
+					
+					f2.1 下载地址：https://download.csdn.net/download/zhoubotong2012/10252187
+						找对应积分少的资源。
+					f2.2 对应在其它平台中的实现
+						android实现
+						qt实现。				
 				f3 使用FFmpeg命令行进行UDP、RTP推流（H264、TS），ffplay接收
 					https://blog.csdn.net/zhoubotong2012/article/details/86711097 
 				
