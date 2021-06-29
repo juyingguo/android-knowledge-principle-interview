@@ -263,6 +263,9 @@
 		vs2013 错误	error LNK2026: 模块对于 SAFESEH 映像是不安全的。	ffmpeg\avutil.lib(daoos00242.o)
 		
 		https://blog.csdn.net/ppt060984/article/details/46004497 
+	4.13 vs2013  error LNK1104: 无法打开文件“nafxcwd.lib” 
+		  https://blog.csdn.net/weixin_44223188/article/details/111058782 
+		  
 5. Visual Studio 各个版本之间的功能比较
 	https://blog.csdn.net/helloexp/article/details/84371799 
 	5.2 VS express和VS community有什么区别？ 
