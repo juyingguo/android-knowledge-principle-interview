@@ -270,7 +270,19 @@
 		  https://blog.csdn.net/weixin_44223188/article/details/111058782 
 	4.14 VS2013中编译出现libcmt.lib重定义错误
 		https://blog.csdn.net/hk52222/article/details/81301371 
-		  
+	4.15 运行VS2013编译成功后出现：无法启动程序“.exe” 系统找不到指定文件的问题的解决方法 
+		https://blog.csdn.net/wwwlyj123321/article/details/79202752? 
+		
+		编译完成后在项目 project*\src\.\Debug\AVCaptureStream.exe 并没有该exe。而是在上层目录Bin下。
+		
+		原有：
+		项目属性-配置属性-常规：.\Debug\
+		项目属性-配置属性-链接器：..\Bin\$(ProjectName).exe
+		改为一致即可
+	4.16 VS 工程项目设置printf输出到Console窗口 
+		1、在vs中打开你的解决方案。
+		2、项目-属性-生成事件-后期生成事件。
+		3、在命令行的右边空白处添加 editbin /SUBSYSTEM:CONSOLE $(OUTDIR)$(ProjectName).exe ，点击确定。
 5. Visual Studio 各个版本之间的功能比较
 	https://blog.csdn.net/helloexp/article/details/84371799 
 	5.2 VS express和VS community有什么区别？ 
