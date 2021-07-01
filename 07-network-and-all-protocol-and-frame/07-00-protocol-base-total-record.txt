@@ -15,4 +15,7 @@
 	http://www.rosoo.net/a/201108/14896.html
 	
 2. UDP/IP¥´ ‰–≠“È
-	https://blog.csdn.net/weixin_40877615/article/details/94206693
+	https://blog.csdn.net/weixin_40877615/article/details/94206693 
+3. ssh
+	https://baike.baidu.com/item/ssh/10407?fr=aladdin
+	
