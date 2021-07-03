@@ -1,0 +1,33 @@
+1.
+
+2.  android自动化测试框架：
+	Monkey    --无法自定义事件，只适合做压力测试和稳定性测试（pass）
+	 https://blog.csdn.net/a10703060237/article/details/106425669/
+	monkeyrunner    --环境搭建：jdk、android sdk、python编译器；以及python编写脚本，并且必须数据线连接手机运行（pass）
+	 https://www.cnblogs.com/zhangyublogs/p/13863184.html
+	Instrumentation  --适合开发中的单元测试，不适合做模拟操作（pass）
+	 https://blog.csdn.net/o279642707/article/details/54576307
+	Uiautomator    --UI自动化测试工具，是开发过程中编写测试脚本的（pass）
+	 https://blog.csdn.net/xct841990555/article/details/82887383
+
+	重点考虑以下3个：
+	UiAutomator2   --基于Uiautomator，python脚本，
+	 https://www.cnblogs.com/theshy1103/p/14717146.html
+	 https://blog.csdn.net/xct841990555/article/details/82887383
+	 https://zhuanlan.zhihu.com/p/128058291
+	 https://blog.csdn.net/daihuimaozideren/article/details/78331673
+
+	appium,     --开发中编写脚本？？？
+	 https://www.jianshu.com/p/497f9ed26189 
+
+	Auto.js    ---需要安装Auto的apk(开源的android源码)，然后再编写js脚本放到手机，最后用该apk执行这个脚本即可
+	 https://zhuanlan.zhihu.com/p/90065914 
+3. 几款Android 应用自动化测试工具 
+	https://blog.csdn.net/hebbely/article/details/78901466 
+	
+4 appium	
+	4.1 python+appium+android实现自动化测试
+		https://blog.csdn.net/zha6476003/article/details/80783932 
+		
+		Appium自动化测试Android 
+		https://blog.csdn.net/damnivictory/article/details/54629305? 

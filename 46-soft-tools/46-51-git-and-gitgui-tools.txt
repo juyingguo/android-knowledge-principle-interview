@@ -27,4 +27,123 @@
 		https://git-scm.com/downloads 
 		
 		Git Gui的使用 
-		https://blog.csdn.net/wordwarwordwar/article/details/87281338 
+		https://blog.csdn.net/wordwarwordwar/article/details/87281338  
+3. git（Gui的使用、Ssh key 介绍及使用、Idea配置使用并使用git）
+	https://blog.csdn.net/weixin_45174537/article/details/102941957 
+	
+	第一步：本地电脑配置
+	   右键空白处，选择Git Bash Here打开相关命令窗口   
+	   1.配置用户名和邮箱（如果已经配置，就跳过）
+		 git config --global user.name "username"
+		 git config --global user.email "email"
+		 之后就会在C:\Users\Administrator下创建一个.gitconfig文件，内容为
+		 [user]
+		 name = xxx
+		 email = xxx@xxx.com
+		 
+		 注1：username和email即github的登陆帐号和注册邮箱
+		 注2：git config命令的–global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置
+
+	   2.检查下自己之前有没有已经生成ssh
+		 cd ~/.ssh
+		 ls
+
+		 注1：当cd ~/.ssh命令执行后窗口返回“no such file or directory”的时候，表示我们的电脑并没有ssh key，所以需要我们创建ssh key
+		 注2：~表示当前用户的目录，比如我的是：C:\Users\Administrator
+		 注3：ls命令执行后，如果本地有ssh秘钥的话会有id_rsa.pub，config，known_hosts等文件
+
+	   3.生成(或删除)秘钥
+		 ssh-keygen -t rsa -C "xxx@xx.com"//这里的邮箱要换成自己注册时的邮箱
+		 接着按3个回车即可。
+	  
+		 注1：如果本地有ssh，执行以上命令会出现正面的提示，这里选择y，表示覆盖本地的ssh key，其实也就是ssh秘钥删除的意思
+		 注2：为什么要删除秘钥，创建SSH的时候设置过密码，那就很有可能git操作时出现忘记密码的尴尬情况，
+			  不要想着怎么重新修改密码了，选择重新创建一个ssh秘钥  
+		 注3：创建ssh key不要输入密码了，不然操作起来太累~~~~~~~ 
+	 
+	   4.执行命令完成后,默认会在window的C:\Users\Administrator\.ssh下面生成如下两个名称的文件: 
+		 C:\Users\Administrator\.ssh
+		   id_rsa(私钥，不能泄露出去)
+		   id_rsa.pub(公钥)
+		   known_hosts(不用管) 
+	第二步：远程github仓库配置
+	 
+		 gitbub,点击右上角的倒立小三角形。选择 settings
+		   2.选择SSH and GPG keys
+		   3.点击右边的New SSH key
+		   4.随意填入一个title，然后 key 中粘贴刚才复制的id_rsa.pub文本，点击 Add key 这样就大功告成
+		   5.github官网有时候会要你输入登陆密码才能添加ssh key。输入密码即可
+	 第三步：修改你本地的ssh remote url. 不用https协议，改用git 协议
+		   1.git remote -v 查看你当前的remote url
+		 git remote -v
+		 
+		 ## 如何显示如下内容，则表示Git仓库是使用https协议进行访问的。
+		 origin  https://github.com/lixiao12/test224.git (fetch)
+		 origin  https://github.com/lixiao12/test224.git (push)
+
+		   2.使用浏览器登陆github，找到仓库ssh协议相应的url。类似如下：
+			 git@github.com:lixiao12/test224.git
+
+		   3.使用 git remote set-url 来调整你的url。
+			 git remote set-url origin git@github.com:lixiao12/test224.git
+
+		   4.最后再用 git remote -v 查看一下。协议已改变
+	第四步：测试SSH连接 
+			ssh -T git@github.com
+		
+		 ssh -T git@github.com
+			git@github.com: Permission denied (publickey).
+			
+			使用命令重新生成的会有该问题。使用原有根据电脑好生成的，在github 配置，就正常了。
+4. github.io无法访问问题及解决
+	3.1 解决GitHub.io无法访问的问题 
+		https://blog.csdn.net/weixin_45085810/article/details/108339662
+		
+		解决途径：修改本地hosts文件（位置：C:/windows/system32/drivers/etc/hosts）
+	3.2  解决github无法访问的问题，亲测有效。
+		https://www.jianshu.com/p/36320f35b5b5 
+		
+		在不考虑google浏览器插件vpn能上网的情况下使用。因为此时虽然使用chrome浏览器能够访问github，但是本地git客户端依然无法访问。通过配置host也可以很好的解决。
+		
+		在C:\Windows\System32\drivers\etc中打开host文件（可以用UE等编辑工具打开），在该文件中添加如下内容。
+
+		# GitHub Start 
+		140.82.114.4 github.com
+		140.82.114.4 gist.github.com
+		185.199.108.153 assets-cdn.github.com
+		151.101.64.133 raw.githubusercontent.com
+		151.101.108.133 gist.githubusercontent.com
+		151.101.108.133 cloud.githubusercontent.com
+		151.101.108.133 camo.githubusercontent.com
+		151.101.108.133 avatars0.githubusercontent.com
+		151.101.108.133 avatars1.githubusercontent.com
+		151.101.108.133 avatars2.githubusercontent.com
+		151.101.108.133 avatars3.githubusercontent.com
+		151.101.108.133 avatars4.githubusercontent.com
+		151.101.108.133 avatars5.githubusercontent.com
+		151.101.108.133 avatars6.githubusercontent.com
+		151.101.108.133 avatars7.githubusercontent.com
+		151.101.108.133 avatars8.githubusercontent.com 
+		# GitHub End
+
+		作者：吴尼玛cs
+		链接：https://www.jianshu.com/p/36320f35b5b5
+		来源：简书
+		著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+		
+	3.3 修改本地hosts文件（位置：C:/windows/system32/drivers/etc/hosts）
+		199.232.69.194   global-ssl.fastly.Net
+
+		140.82.112.3      github.com
+		
+		实验现象：不能用时再配置或不配置，相互切换。
+		
+	3.4 
+		更换协议https to ssh试试。
+		
+		初步验证：ok
+5  fotiaoqiang vpn
+	https://github.com/getfotiaoqiang/fotiaoqiang	
+		
+	推荐一款免费又稳定的梯子，速度超快，看油管，刷twitter用Google非常顺畅，现在搞限时活动免费领取VIP会员，填写兑换码gnaw3o6e，可立即获得VIP会员，下载链接：http://wckoqd.xzzccd.com/88gnaw3o6e2/
+	填写兑换码gnaw3o6e，可立即获得VIP会员
