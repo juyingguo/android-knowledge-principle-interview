@@ -283,7 +283,33 @@
 		1、在vs中打开你的解决方案。
 		2、项目-属性-生成事件-后期生成事件。
 		3、在命令行的右边空白处添加 editbin /SUBSYSTEM:CONSOLE $(OUTDIR)$(ProjectName).exe ，点击确定。
+		
+	4.17 Building an MFC project for a non-Unicode character set is deprecated. 
+		You must change the project property to Unicode or download an additional library.
+		See http://go.microsoft.com/fwlink/p/?LinkId=286820 for more information.
+	
+	4.18 afxver.h  之系统文件错误提示。
+		#if defined(_AFXDLL) && !defined(_DLL)
+		//#error Please use the /MD switch for _AFXDLL builds
+		#endif
+		暂时注释掉错误行，待以后解决。
+	4.19 错误 x error LNK1104: 无法打开文件“E:\xxxx\Debug\xxxx.exe”
+		https://www.cnblogs.com/love-zf/p/5093909.html
+		
+		第一:查看那个exe文件是否存在,
+		第二:查看那个文件或者那个文件所在的文件夹是否打开或者改名字等等操作占用着这个文件.
+		第三:重新清理并生成解决方案
+		第二条可能性最大.
 5. Visual Studio 各个版本之间的功能比较
 	https://blog.csdn.net/helloexp/article/details/84371799 
 	5.2 VS express和VS community有什么区别？ 
 		https://www.zhihu.com/question/39750908 
+		
+6. Visual Studio更改编码格式为“UTF-8”
+	https://www.bbsmax.com/A/GBJr2gNaJ0/ 
+	
+	文件-高级保存选项-选择编码格式
+	
+7. vs2013 启动调试不可点击 
+	https://bbs.csdn.net/topics/392095224 
+	右键解决方案》设置启动项目 

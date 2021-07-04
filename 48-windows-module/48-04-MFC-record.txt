@@ -3,5 +3,7 @@
 	https://blog.csdn.net/DFSAE/article/details/78706773 
 	
 	http://c.biancheng.net/cpp/mfc/ 
+3. [MFC]DECLARE_MESSAGE_MAP() 的理解
+	https://blog.csdn.net/clayruan/article/details/8194292 
 	
 	

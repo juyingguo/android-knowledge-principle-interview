@@ -67,7 +67,9 @@
 			https://trac.ffmpeg.org/wiki/Scaling
 			https://trac.ffmpeg.org/wiki
 	
-		
+	1.10 ffmpeg 源代码简单分析
+		https://blog.csdn.net/leixiaohua1020/article/details/12678577 
+	
 2. FFmpeg从入门到精通读书笔记（1）
 	2.1 FFmpeg从入门到精通读书笔记（1） 
 		https://blog.csdn.net/hanxiucaolss/article/details/100007475
@@ -464,7 +466,11 @@
 						找对应积分少的资源。
 					f2.2 对应在其它平台中的实现
 						android实现
-						qt实现。				
+						qt实现。
+					f2.3 本文论坛讨论
+						应该在加一个配置，是否推到rtmp的服务地址，即把采集的数据推流，不一定要保存为文件。
+						把摄像头数据和麦克风数据保存成文件，为啥先要 avcodec_decode_video2 然后又avcodec_encode_video2啊？
+							其实这里不是一定需要这样写，如果输出的就是YUV420格式的图像，直接送给编码器就行了
 				f3 使用FFmpeg命令行进行UDP、RTP推流（H264、TS），ffplay接收
 					https://blog.csdn.net/zhoubotong2012/article/details/86711097 
 				
@@ -583,7 +589,35 @@
 					其余定义和其它.h文件一样。
 					#define FFMPEG_VERSION "3.4.1"
 
-	8.7 
+	8.7 Android移动端音视频监控系统(源码+数据库+文档) 
+		https://www.haolizi.net/example/view_203735.html 
+		
+	8.8 Android平台点对点音视频对讲  
+		https://www.haolizi.net/example/view_39669.html  
+		
+	8.9 Android录制视频源码  
+		https://www.haolizi.net/example/view_3788.html 
+		
+	8.10 C++音视频即时通讯源代码 
+		https://www.haolizi.net/example/view_121556.html 
+	8.11 Visual C++音视频编解码技术及实践（全）  
+		https://www.haolizi.net/example/view_163511.html 
+	8.12 android 仿微视 视频录制播放源码  
+		https://www.haolizi.net/example/view_4125.html 
+	8.13 android语音、视频通话源码包（完美无回声） 
+		https://www.haolizi.net/example/view_7824.html 
+	8.14 基于Qt、FFMpeg的音视频播放器 
+		https://www.haolizi.net/example/view_21723.html 
+		
+		我的博客https://blog.csdn.net/hfuu1504011020/article/details/82588399（环境准备），程序中有很详细的代码注释，我的博客也对其每个部分进行了详细的解释说明。
+	8.15 计算机图形学（何援军） 
+		https://www.haolizi.net/example/view_91386.html 
+	8.16 视频网站开发（仿土豆网 ）  
+		https://www.haolizi.net/example/view_118660.html 
+	8.17 Android视频采集+RTSP 
+		https://www.haolizi.net/example/view_100402.html 
+	8.18 android h263硬编码rtp打包  
+		https://www.haolizi.net/example/view_3636.html 
 9. ffmpeg超详细综合教程
 	【ffmpeg超详细综合教程一】
 	http://www.360doc.com/content/16/0711/20/9008018_574787603.shtml 
