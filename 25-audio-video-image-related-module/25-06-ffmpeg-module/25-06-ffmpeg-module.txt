@@ -69,7 +69,11 @@
 	
 	1.10 ffmpeg 源代码简单分析
 		https://blog.csdn.net/leixiaohua1020/article/details/12678577 
-	
+	1.11 FFMPEG使用参数详解 
+		https://blog.csdn.net/axdc_qa_team/article/details/4204358 
+		
+		https://ffmpeg.org/ffmpeg-all.html 
+		
 2. FFmpeg从入门到精通读书笔记（1）
 	2.1 FFmpeg从入门到精通读书笔记（1） 
 		https://blog.csdn.net/hanxiucaolss/article/details/100007475
@@ -396,7 +400,8 @@
 			 -ar : 音频的采样率 是441000 kb
 			 -ac2 : 音频 c是china的意思 2 是双声道
 			 -f s16le : 音频的格式s16le存储方式
-		
+	7.3 ffmpeg命令高级进阶 
+		https://blog.csdn.net/bsmmaoshenbo/article/details/94401931 
 8. FFmpeg在基于Android上有哪些应用。
 	8.1 FFmpeg在基于Android的楼宇可视对讲程序中的应用 
 		http://www.fx361.com/page/2017/0729/2117898.shtml
