@@ -1,4 +1,11 @@
 一、新手入门一篇就够：从零开发移动端IM
 
 	1.1、新手入门一篇就够：从零开发移动端IM 
-	 	http://www.52im.net/thread-464-1-1.html
+	 	http://www.52im.net/thread-464-1-1.html 
+	1.2 目前全球的即时通讯软件大全 
+		http://www.360doc.com/content/10/0714/17/1332348_38989245.shtml 
+2. 关于QQ使用协议的那点事
+	https://blog.csdn.net/qq_41321905/article/details/105670258  
+	
+	2.1 qq使用的网络协议 
+		https://blog.csdn.net/jiajianhui/article/details/5430306 

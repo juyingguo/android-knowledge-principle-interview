@@ -4,6 +4,9 @@
 	1.2 教程 
 		Qt是什么？Qt简介（非常全面）
 		http://c.biancheng.net/view/1792.html
+	1.3 qt 百科汇总介绍
+		https://baike.baidu.com/item/Qt/451743?fr=aladdin
+		
 2. qt QPainter  setBrush 参数为QBrush，直接写枚举颜色Qt::color也行
 	测试工程：:06_QT\01\QT0718\T07Painter 
 	T08Draw:待进一步研究。当有button时。外面画线，再在按钮中点击画线，会和上一条线结束位置相连接。
