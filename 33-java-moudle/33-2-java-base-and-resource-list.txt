@@ -52,4 +52,14 @@
 	6.1 java读取文本文件内容 
 		https://www.cnblogs.com/xing-star/p/11042369.html 
 		
-			
+7. Java生成和操作Excel文件
+	7.1 Java生成和操作Excel文件 
+		https://www.cnblogs.com/mingforyou/p/3282922.html 
+8 java对json处理的常用jar包
+	https://www.cnblogs.com/liyuanhong/articles/13680631.html 
+	
+	Java中并没有内置JSON的解析，因此使用JSON需要借助第三方类库。
+
+	Gson：https://github.com/google/gson  【谷歌开发的 JSON 库，功能十分全面】
+	FastJson：https://github.com/alibaba/fastjson  【阿里巴巴开发的 JSON 库，性能十分优秀】
+	Jackson：https://github.com/FasterXML/jackson  【社区十分活跃且更新速度很快】
