@@ -609,6 +609,12 @@
 		https://www.haolizi.net/example/view_163511.html 
 	8.12 android 仿微视 视频录制播放源码  
 		https://www.haolizi.net/example/view_4125.html 
+		
+		github:https://github.com/panzhoutao/VideoRecorder-master 
+		gradle project：https://github.com/qdrzwd/VideoRecorder
+		有参考价值：原项目描述见README
+		该项目调试工程位置：
+		
 	8.13 android语音、视频通话源码包（完美无回声） 
 		https://www.haolizi.net/example/view_7824.html 
 	8.14 基于Qt、FFMpeg的音视频播放器 
@@ -634,6 +640,10 @@
 		https://www.haolizi.net/example/view_89444.html 
 	8.21 H264编解码rtp发送 
 		https://www.haolizi.net/example/view_131259.html 
+		
+	8.22 
+		https://github.com/wuhaoyu1990/MagicCamera 
+		https://github.com/spex66/RTSP-Camera-for-Android 
 9. ffmpeg超详细综合教程
 	【ffmpeg超详细综合教程一】
 	http://www.360doc.com/content/16/0711/20/9008018_574787603.shtml 
