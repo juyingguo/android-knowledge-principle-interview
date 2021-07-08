@@ -1,6 +1,12 @@
 01	文档资源
 	01.1 https://developer.android.google.cn/?hl=zh_cn
+		api:
+			http://www.android-doc.com/guide/topics/media/camera.html
+		api及训练资源	
+			https://developer.android.google.cn/training/camera/videobasics?hl=zh-cn
+		
 	01.2 官网资料
+		android mk
 		https://developer.android.google.cn/ndk/guides/android_mk
 		
 	01.3 android一系列资源。
@@ -98,7 +104,9 @@
 	9. 在EDBurnette所写的《Hello, Android》里，
 			
 			
-			
+5. 新技术
+	5.1 未来，不会JetPack的Android开发连面试机会都没有
+		https://blog.csdn.net/weixin_44339238/article/details/113394946 
 			
 			
 			

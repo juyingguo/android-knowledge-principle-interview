@@ -308,4 +308,10 @@
 	AndroidX 是对support library 的一次升级：包名 从在android.support.*下面变成androidx.*下面。
 	命名规则不会再包含具体操作系统API的版本号了。
 	
+27 Android 5.0 如何正确启用isLoggable(一)__使用详解 
+	27.1 Android 5.0 如何正确启用isLoggable(一)__使用详解
+		https://blog.csdn.net/yihongyuelan/article/details/46409389 
+28 //保存图片后发送广播通知更新数据库
+	Uri uri = Uri.fromFile(new File(newPath));
+	context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri));
 	

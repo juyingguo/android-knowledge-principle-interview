@@ -6,6 +6,9 @@
 	0.2 jdk1.6 download address
 		https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.html#jdk-6u25-oth-JPR 
 		
+	0.3 android官方文档
+		https://developer.android.google.cn/training/camera/photobasics?hl=zh-cn
+	
 		
 一、吃透java ,csdn博客。
 	1.1、吃透Java基础八：Throwable异常 
