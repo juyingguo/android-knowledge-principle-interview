@@ -1,0 +1,14 @@
+1.
+2.wav文件格式分析与详解
+	https://www.cnblogs.com/ranson7zop/p/7657874.html 
+	
+	Wav数据格式的44个字节头部信息汇总 
+	https://blog.51cto.com/ikinglai/1224481  
+	
+	PCM转WAV格式 Wav数据格式的44个字节头部信息汇总 
+		https://blog.csdn.net/jeffasd/article/details/72466302 
+3. Android 手机录制wav格式音频文件实现 
+	https://blog.csdn.net/top_code/article/details/44651313 
+	
+	参考链接：http://stackoverflow.com/questions/17192256/recording-wav-with-android-audiorecorder 
+	

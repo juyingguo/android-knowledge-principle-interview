@@ -103,11 +103,16 @@
 			https://blog.csdn.net/innost/article/details/47208337
 	9. 在EDBurnette所写的《Hello, Android》里，
 			
+	10,音视频类书籍
+		10.1 音视频开发进阶指南：基于Android与iOS平台的实践.pdf
+			http://www.music-video.cn/ 
+			https://github.com/zhanxiaokai 		
 			
 5. 新技术
 	5.1 未来，不会JetPack的Android开发连面试机会都没有
 		https://blog.csdn.net/weixin_44339238/article/details/113394946 
 			
+
 			
 			
 		

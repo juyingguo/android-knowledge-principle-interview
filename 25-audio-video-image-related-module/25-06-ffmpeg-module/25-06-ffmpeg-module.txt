@@ -7,6 +7,13 @@
 			https://trac.ffmpeg.org/search?
 		1.1.2 doc
 			https://xdsnet.gitbooks.io/other-doc-cn-ffmpeg/content/ffmpeg-doc-cn-35.html 
+			
+			doc all:
+			https://www.ffmpeg.org/documentation.html
+			
+			ffmpeg-all doc:
+			https://www.ffmpeg.org/ffmpeg-all.html 
+			
 	1.2 http://git.videolan.org/?p=ffmpeg.git 
 	
 	1.3 GitHub
