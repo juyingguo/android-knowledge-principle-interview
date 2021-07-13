@@ -12,3 +12,4 @@
 	
 	参考链接：http://stackoverflow.com/questions/17192256/recording-wav-with-android-audiorecorder 
 	
+	验证试验程序:com.sp.spmultipleapp.activity.AudioRecordWavActivity

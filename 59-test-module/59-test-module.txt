@@ -24,10 +24,47 @@
 	 https://zhuanlan.zhihu.com/p/90065914 
 3. 几款Android 应用自动化测试工具 
 	https://blog.csdn.net/hebbely/article/details/78901466 
+	Android 手机自动化测试工具有哪几种？ 
+		几款测试工具分析
+	https://www.zhihu.com/question/19716849/answer/899200480 
+	
+	android app自动化测试工具有哪些？ 
+	https://www.zhihu.com/question/20983684 
+	
+	3.2 能打包成APK在手机上脱离电脑执行
+		uiautomator2.0+脱离PC运行（apk启动uiautomator2.0+）的实现方案 
+		https://blog.csdn.net/cxq234843654/article/details/52605441/  
+		
+		Android+uiautomator2.0实现离线运行UI测试 
+		https://blog.csdn.net/Tracy_Yuan2014/article/details/115415573? 
+			
+			参考：
+			1、https://blog.csdn.net/cxq234843654/article/details/52605441/ 
+			2、https://blog.csdn.net/pgz100/article/details/82971699
+			3、https://blog.csdn.net/cxq234843654/article/details/51557025
+			4、https://zhuanlan.zhihu.com/p/148448688 
+		
+		Appium UIAutomator 程序打包成独立 apk 脱离 pc 连接在真机上独立运行 
+		https://testerhome.com/topics/2471 
 	
 4 appium	
+	4.0 
+		https://github.com/appium/appium
+	
 	4.1 python+appium+android实现自动化测试
 		https://blog.csdn.net/zha6476003/article/details/80783932 
 		
 		Appium自动化测试Android 
 		https://blog.csdn.net/damnivictory/article/details/54629305? 
+5 UiAutomator2 
+	5.1 https://github.com/openatx/uiautomator2 
+	5.2 UIAutomator2.0详解
+		 UIAutomator2.0详解（入门篇） 
+		https://blog.csdn.net/daihuimaozideren/article/details/78331673 
+		
+		Android SDK提供了UIAutomatorView工具，用于获取APP的布局信息，间接辅助测试。关于工具的使用，可以参照之前的博文http://m.blog.csdn.net/daihuimaozideren/article/details/78226810 
+	5.3 实践
+		5.3.1 INSTRUMENTATION_STATUS: Error=Unable to find instrumentation info的一种解决方法
+			https://blog.csdn.net/qq_32368213/article/details/78248153 
+6. Espresso 
+	
