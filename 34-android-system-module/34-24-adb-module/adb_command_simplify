@@ -1,0 +1,39 @@
+一、adb 命令
+
+Android Debug Bridge，我们一般简称为adb，主要存放在sdk安装目录下的platform-tools文件夹中，它是一个非常强大的命令行工具，通过这个工具你能够与你的android设备进行交互
+
+	1.1 logcat //查看日志
+		adb logcat -v time 
+		adb logcat -c  清除adb logcat缓存
+	1.2 通过wifi adb 方式连接设备device。// 该方式不用数据线，是无线连接，只有特殊设备采用。一般不用
+		adb connect ip:port  // 
+		adb disconnect ip:port 
+		
+	1.3 adb -s "" 切换不同设备
+	
+	1.4 如连接手机，直接使用usb 数据线，手机打开usb调试模式即可。
+二、adb shell 下的命令
+	
+	2.10、删除系统应用（仅用来操作系统级别的应用），如IbotnLauncher
+		adb root 
+		adb remount
+		adb shell 
+		cd /system/app/ 
+		rm -rf IbotnLauncher 
+	
+三、android抓log
+	1.adb logcat –v time >d:/logcat.txt
+	2、kernal log:
+		(2.1) adb shell cat /proc/kmsg > d:/log_kmsg.txt  //直接保存在电脑中
+		(2.2) adb shell ///第一步
+				cat /proc/kmsg > /sdcard/log_kmsg.txt  //第二步骤，保存着设备中
+				
+四、一些自动生成的log
+	1.	/data/sysytem/dropbox/
+	
+五、adb install 安装应用
+	5.1 安装用户级别的
+		adb install apk文件在电脑上的完整路径
+		adb uninstall apk的包名（如com.ibotn.ibotnphone）
+	5.2 安装系统级别的应用
+		adb install -r apk文件在电脑上的完整路径

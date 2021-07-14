@@ -1,0 +1,243 @@
+001. adb 相关学习资源，网站等
+	001.1 https://adbshell.com
+	
+	001.2 https://github.com/mzlogin/awesome-adb#%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8-%E8%B0%83%E8%B5%B7-activity 
+		
+
+一、adb 命令
+	1.1 logcat
+		adb logcat -v time 
+		adb logcat -c  清除adb logcat缓存
+	1.2 device
+		adb connect ip:port 
+		adb disconnect ip:port 
+	1.3 adb -s "" 切换不同设备
+二、adb shell 下的命令
+	(2.1)am相关
+		am start 
+		am start -n com.android.music/com.android.music.MusicBrowserActivity 开启activity
+	(2.2)pm系列命令。
+		2.2.1 清除应用的缓存
+			pm clear package_name 
+			pm clear [--user USER_ID] PACKAGE
+		2.2.2 pm查看包名
+			pm list packages
+			pm list packages -f   //应用对应的apk文件在手机上的安装位置
+	
+	(2.3)内存
+		procrank 
+				 VSS - Virtual Set Size 虚拟耗用内存（包含共享库占用的内存）
+				 RSS - Resident Set Size 实际使用物理内存（包含共享库占用的内存）
+				 PSS - Proportional Set Size 实际使用的物理内存（比例分配共享库占用的内存）
+				 USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占用的内存）
+		getprop | grep dalvik.vm.heapgrowthlimit java进程申请的java空间阈值	与 Runtime.getRuntime().maxMemory()得到的一样
+		cat /proc/meminfo 查看RAM使用情况	
+		
+		dumpsys meminfo $package or $pid // 查看某一应用内存使用情况 或者 adb shell dumpsys meminfo $package_name com.android.music
+			dumpsys meminfo $package com.android.music 
+		
+	
+	(2.4)cpu	
+	
+		top -m 10 查看内存排行前10位的进程
+			PID:      进程在系统中的ID
+
+			CPU% - 当前瞬时所以使用CPU占用率
+
+			#THR - 程序当前所用的线程数
+
+			UID - 运行当前进程的用户id
+
+			Name - 程序名称org.xmpp.app
+
+			VSS - Virtual Set Size 虚拟耗用内存（包含共享库占用的内存）
+			RSS - Resident Set Size 实际使用物理内存（包含共享库占用的内存）
+			PSS - Proportional Set Size 实际使用的物理内存（比例分配共享库占用的内存）
+			USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占用的内存）
+		
+		top  -n 1 | grep pid|package_name  获取指定进程的cpu信息	grep后直接跟上进程id或包名
+		dumpsys cpuinfo 得到每个进程使用cpu的详细信息 
+			 2.7% 468/system_server: 2.2% user + 0.5% kernel / faults: 73 minor  
+		adb 查看cpu几核		
+			Android系统proc下查看cpuinfo的参数信息
+			cat  /proc/cpuinfo
+				Processor       : ARMv7 Processor rev 1 (v7l)
+				processor       : 0
+				model name      : ARMv7 Processor rev 1 (v7l)
+				BogoMIPS        : 1835.17
+				Features        : swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls
+				CPU implementer : 0x41
+				CPU architecture: 7
+				CPU variant     : 0x4
+				CPU part        : 0xc09
+				CPU revision    : 1
+				
+				Hardware        : gs705a
+				Revision        : 0000
+				Serial          : 0c0b461950030c32
+	(2.5) 截屏 及录屏
+		1. /system/bin/screencap -p /sdcard/screenshot.png 截屏 
+		2. adb 截屏和录屏命令
+			https://www.jianshu.com/p/cebb7778df7b
+			
+			adb shell screenrecord /sdcard/demo.mp4 //录屏			
+			
+			adb shell screenrecord  --time-limit 10 /sdcard/demo.mp4 //限制录制时间:
+			
+			adb shell screenrecord --size 1280*720 /sdcard/demo.mp4 // 指定视频分辨率大小
+			adb shell screenrecord --bit-rate 6000000 /sdcard/demo.mp4 // 指定视频的比特率
+				说明:指定视频的比特率为6Mbps,如果不指定,默认为4Mbps. 你可以增加比特率以提高视频质量或为了让文件更小而降低比特率
+			adb shell screenrecord --time-limit 10 --verbose /sdcard/demo.mp4 // 在命令行显示log
+	
+	(2.6) dumpsys 系列命令
+		参考https://www.cnblogs.com/JianXu/p/5376642.html 
+			https://www.tuicool.com/articles/EBZjmer
+		dumpsys activity -h  	
+		dumpsys activity -p(包名) 查看当前包下的进程情况  
+		dumpsys activity s com.sina.weibo  查询某个App所有的Service状态 s为 services 的缩写
+		dumpsys package com.android.music 查看包的信息。版本号，权限等
+		
+		adb shell dumpsys window | findstr mCurrentFocus  ///adb获取当前打开的app的包名
+		adb shell dumpsys window  | findstr mCurrent  ///获得当前活动窗口的信息，包名以及活动窗体： linux 下使用 grep
+		adb shell dumpsys window windows ///可以查看window所有参考数，
+		dumpsys activity s -p com.sp.spmultipleapp //查看应用中的服务 
+		
+		adb shell dumpsys window displays //adb shell 命令查看屏幕尺寸
+		
+		adb shell dumpsys activity activities  //activity堆栈状态 
+		
+		2.6.2 
+			如果直接运行adb shell 		dumpsys，将会获得所有的系统服务信息，那是非常多的，为了更容易管理输出，可以指定你想要检查的服务，例如：
+			adb shell dumpsys –l
+
+			adb shell service list 系统服务查询 
+			
+		2.6.3查看系统wifi服务。并保存到文件中。
+			adb shell dumpsys wifi -l >d:/1.txt
+		
+	2.7、
+		df 查看磁盘空间使用情况
+	2.8、查看进程
+		ps
+	2.9、du ：查询档案或目录的磁盘使用空间
+		du  [-H] [-L] [-P] [-a] [-d depth] [-s] [-cghikmnrx] [file...]
+		b：大小用bytes来表示 (默认值为k bytes) （仅为linux命令，非android）
+		-k ：以 KBytes 的容量显示各文件系统
+		-m ：以 MBytes 的容量显示各文件系统；
+		-h ：以人们较易阅读的 GBytes, MBytes, KBytes 等格式自行显示；
+		a：显示全部目录和其次目录下的每个档案所占的磁盘空间 
+		-H ：以 M=1000K 取代 M=1024K 的进位方式；
+		c：最后再加上总计 (默认值)  
+		s：只显示各档案大小的总合 (summarize) 
+		x：只计算同属同一个档案系统的档案
+		L：计算所有的档案大小 
+		du /etc | sort -nr | more sort 的参数 -nr 表示要以数字排序法进行反向排序，因为我们要对目录大小做排序，所以不可以使用 human-readable 的大小输出，不然目录大小中会有 K、M 等字样，会造成排序不正确。
+	2.9 修改sdcard读写权限
+		 mount [-r] [-w] [-o options] [-t type] device directory		 
+		 mount -o remount rw  device directory ///-o remount：将一个已经挂下的档案系统重新用不同的方式挂上。例如原先是唯读的系统，现在用可读写的模式重新挂上。
+		 adb reboot //重启生效 
+	2.10、删除系统应用，如IbotnLauncher
+		adb root 
+		adb remount
+		adb shell 
+		cd /system/app/ 
+		rm -rf IbotnLauncher 
+	2.11 操作数据库
+		/data/data/com.android.providers.settings/databases
+		qlite3  settings.db 
+		sqlite> .tables
+		
+三、android抓log
+	1.adb logcat –v time >d:/logcat.txt
+	2、kernal log:
+		(2.1) adb shell cat /proc/kmsg > d:/log_kmsg.txt  //直接保存在电脑中
+		(2.2) adb shell ///第一步
+				cat /proc/kmsg > /sdcard/log_kmsg.txt  //第二步骤，保存着设备中
+	3. recovery 
+		adb devices //显示如下。
+		0123456789ABCDEF        recovery
+		3.1 recovery 模式下如何抓取日志。应用logcat及内核日志
+		
+		
+四、一些自动生成的log
+	1.	/data/sysytem/dropbox/
+	
+五、adb install 安装应用
+	Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
+	2018年09月07日 09:37:18 hpp_1225 阅读数：933
+	小米note3 真机测试的时候，安装apk总是报这个错
+
+	 Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
+	用adb -r (取代已经安装的application) 命令装也不行，
+
+	解决：除了要打开开发者选项，USB调试，还有打开USB安装选项
+	
+六、Android ADB无线连接 调试
+	具体步骤如下
+
+	1、先借助adb命令在手机上开启无线连接的服务： 
+	使用数据线通过USB接口将手机与电脑连接，在cmd中执行如下命令： 
+	adb tcpip 5555（PS：5555是端口号，可以随意地指定） 
+	执行该命令后如下图所示： 
+	 
+	注意：命令执行完后，要拔掉数据线断开电脑和手机的连接。
+	2、在电脑端执行连接命令： 
+	首先要查找到手机的IP地址，比如我的是192.168.1.41，然后执行连接命令： 
+	adb connect 192.168.1.41:5555 
+	命令执行完后就已连接成功，可以在cmd中执行adb shell命令测试一下啦！
+	--------------------- 
+	作者：Geek-Boy 
+	来源：CSDN 
+	原文：https://blog.csdn.net/YSSJZ960427031/article/details/50864903 
+	版权声明：本文为博主原创文章，转载请附上博文链接！
+	参考：：
+	https://blog.csdn.net/qq_36327203/article/details/79469576
+
+7、java基于adb命令对android手机的操作
+		6.1、用Java实现adb命令的各种方式
+			https://blog.csdn.net/qq_37217804/article/details/79639083
+			
+		6.2、java基于adb命令对android手机的操作
+			【adb install -r 通过代码实现。】
+			http://www.codexiu.cn/android/blog/14599/
+			
+		7.3 android代码执行adb shell终端命令（linux命令）并返回执行结果 
+			https://blog.csdn.net/qq_27512671/article/details/78099015 
+8. adb exception record .
+	8.1 C:\WINDOWS\system32>adb devices
+		adb server version (39) doesn't match this client (41); killing...
+		could not read ok from ADB Server
+		* failed to start daemon
+		adb.exe: failed to check server version: cannot connect to daemon
+		
+		8.1.1 解决：adb 提示adb server version(31) doesn't match this client（41） 解决办法 
+			https://blog.csdn.net/gufenchen/article/details/91383397
+			
+			解决方法参考博主：
+			http://stackoverflow.com/questions/5092542/adb-server-is-out-of-date
+			把genymotion的adb设置为自己的adb之后，问题解决了。
+
+			Genymotion默认用的是第一个选项，现改为custom，然后选择自己的sdk文件夹
+			
+			修改后，不报异常了。但是adb devices 没有显示设备列表。
+		8.1.2 ADB找不到Genymotion虚拟机
+			https://blog.csdn.net/DeMonliuhui/article/details/89312569?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+			
+			Android Studio 找不到虚拟机和真机的解决办法
+			adb下载地址： http://adbshell.com/downloads
+9. adb pull命令介绍：
+	adb pull 拷贝文件保持源文件的时间属性
+	https://blog.csdn.net/isyanye/article/details/84984644
+	
+	在adb shell环境下，输入adb 可以查看命令帮助说明的。
+	
+	adb pull [-p] [-a] <remote> [<local>]命令:从设备中复制一个文件/目录出来（[]表示可有可无的参数）
+
+	-p 参数指定，显示传输进度
+
+	-a 指复制的时间戳和模式。
+
+	当我们从手机中复制文件到电脑中时，不希望改变文件的“修改时间”等信息时，可以加上“-p”，这样复制的文件的“修改时间”就是源文件的“修改时间”，而不是创建时的时间了。
+
+	格式：adb pull -a <remote> [<local>]
+			

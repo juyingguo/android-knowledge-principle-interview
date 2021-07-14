@@ -21,7 +21,10 @@
 	 https://www.jianshu.com/p/497f9ed26189 
 
 	Auto.js    ---需要安装Auto的apk(开源的android源码)，然后再编写js脚本放到手机，最后用该apk执行这个脚本即可
-	 https://zhuanlan.zhihu.com/p/90065914 
+	 https://zhuanlan.zhihu.com/p/90065914  
+	 
+	类似于auto.js的自动化测试 
+		https://blog.csdn.net/m0_48342140/article/details/108531821 
 3. 几款Android 应用自动化测试工具 
 	https://blog.csdn.net/hebbely/article/details/78901466 
 	Android 手机自动化测试工具有哪几种？ 
@@ -32,20 +35,8 @@
 	https://www.zhihu.com/question/20983684 
 	
 	3.2 能打包成APK在手机上脱离电脑执行
-		uiautomator2.0+脱离PC运行（apk启动uiautomator2.0+）的实现方案 
-		https://blog.csdn.net/cxq234843654/article/details/52605441/  
-		
-		Android+uiautomator2.0实现离线运行UI测试 
-		https://blog.csdn.net/Tracy_Yuan2014/article/details/115415573? 
-			
-			参考：
-			1、https://blog.csdn.net/cxq234843654/article/details/52605441/ 
-			2、https://blog.csdn.net/pgz100/article/details/82971699
-			3、https://blog.csdn.net/cxq234843654/article/details/51557025
-			4、https://zhuanlan.zhihu.com/p/148448688 
-		
-		Appium UIAutomator 程序打包成独立 apk 脱离 pc 连接在真机上独立运行 
-		https://testerhome.com/topics/2471 
+		3.2.1 uiautomator2.0+脱离PC运行（apk启动uiautomator2.0+）的实现方案 
+			具体全部记录在条目[5]中.
 	
 4 appium	
 	4.0 
@@ -63,8 +54,71 @@
 		https://blog.csdn.net/daihuimaozideren/article/details/78331673 
 		
 		Android SDK提供了UIAutomatorView工具，用于获取APP的布局信息，间接辅助测试。关于工具的使用，可以参照之前的博文http://m.blog.csdn.net/daihuimaozideren/article/details/78226810 
-	5.3 实践
-		5.3.1 INSTRUMENTATION_STATUS: Error=Unable to find instrumentation info的一种解决方法
-			https://blog.csdn.net/qq_32368213/article/details/78248153 
+	5.3 
+			
+	5.4 uiautomator2.0+脱离PC运行（apk启动uiautomator2.0+）的实现方案 
+		
+		https://blog.csdn.net/cxq234843654/article/details/52605441/  
+		
+		Android+uiautomator2.0实现离线运行UI测试 
+		https://blog.csdn.net/Tracy_Yuan2014/article/details/115415573? 
+			
+			参考：
+			1、https://blog.csdn.net/cxq234843654/article/details/52605441/ 
+			2、https://blog.csdn.net/pgz100/article/details/82971699
+			3、https://blog.csdn.net/cxq234843654/article/details/51557025
+			4、https://zhuanlan.zhihu.com/p/148448688 
+		
+		Appium UIAutomator 程序打包成独立 apk 脱离 pc 连接在真机上独立运行 
+		https://testerhome.com/topics/2471 	
+		
+	5.5 实践
+		5.4.1 INSTRUMENTATION_STATUS: Error=Unable to find instrumentation info的一种解决方法
+			https://blog.csdn.net/qq_32368213/article/details/78248153  
+			
+			实际同[5.4.3 ]
+		5.4.2 cutils-trace: Error opening trace file: Permission denied (13)
+			原因：没有root权限。或者没有使用所运行手机设备的系统签名。
+		5.4.3 
+			system_process W/ActivityManager: Unable to find instrumentation info for: ComponentInfo{com.demo.uiautomator2testcase.test/android.support.test.runner.AndroidJUnitRunner}
+			
+			对比： # pm list instrumentation 
+			打印结果：
+			instrumentation:com.demo.uiautomator2testcase.test/androidx.test.runner.AndroidJUnitRunner (target=com.demo.uiautomator2testcase)
+			
+			分析：
+				1. androidx下的test,android support下的不一致，找不到。
+				2. 项目module下的gradle文件中的节点defaultConfig配置testInstrumentationRunner为：
+					testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+				3. 在命令行调用脚本的时候配置的为：
+					**/* + ".test/android.support.test.runner.AndroidJUnitRunner"
+					因此会找不到。将此处改为与gradle中testInstrumentationRunner对应就可以了。
+		5.4.4 是否需要单独建立一个用于写测试脚本的项目module
+			验证结论：不需要。任意module下面的src下面都有androidTest文件夹用于测试。
+		5.4.5 
+			system_process W/ActivityManager: Permission Denial: startInstrumentation asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL 
+			
+			https://blog.csdn.net/qq_36771588/article/details/106626488 
+			如下图添加  --user 0  0和-2代表用户ID，0是root过的用户，-2是随机用户（可能不是一个人，可能是出于内部原因而使用的假帐户）-n貌似也能修改但是不知道修改的意义是什么
+
+			am start --user 0 -n com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity
+
+			
 6. Espresso 
+7. 请问如何防止被xx.js类的软件薅羊毛？
+	https://www.zhihu.com/question/466089229 
 	
+	7.1 如果只是防 auto.js 的话，活动页做成 H5 的就可以了。 
+	
+8. Auto.js的优雅使用(如何正确薅羊毛)
+	https://zhuanlan.zhihu.com/p/279156643 
+9 如何如何评价网易开源的Airtest？
+	https://www.zhihu.com/question/269270386 
+10. 不需要Root权限的JavaScript自动化软件 
+	10.1 一触即发免root自动化脚本工具
+		https://www.136.la/jingpin/show-40994.html 
+	10.2 Hamibot
+		和Auto.js一样，Hamibot也是利用无障碍模式「偷鸡」的全自动工具。
+		这也就意味着我们无需任何ROOT权限就能实现以往许多梦寐以求的功能。
+
+		Hamibot是一款自动点击脚本工具，它基于Auto.js制作(语法互通)，免费、自由、开源。Hamibot在电脑(控制台)上安装脚本，在手机(机器人)上运行。		
