@@ -110,8 +110,17 @@
 	
 	7.1 如果只是防 auto.js 的话，活动页做成 H5 的就可以了。 
 	
-8. Auto.js的优雅使用(如何正确薅羊毛)
-	https://zhuanlan.zhihu.com/p/279156643 
+8. Auto.js
+	8.1 
+		a,Auto.js是一款无需root权限的JavaScript自动化软件。但是需要对该应用开启无障碍模式，开启后才可以进行屏幕点击等操作
+		
+	8.2 Auto.js的优雅使用(如何正确薅羊毛)
+		https://zhuanlan.zhihu.com/p/279156643  
+	8.3  https://zhuanlan.zhihu.com/p/90065914  
+	
+	8.x. 
+		AS 3.5 The given artifact contains a string literal with a package reference 'android.support.v4.con
+		https://blog.csdn.net/weixin_39069034/article/details/100600155 
 9 如何如何评价网易开源的Airtest？
 	https://www.zhihu.com/question/269270386 
 10. 不需要Root权限的JavaScript自动化软件 

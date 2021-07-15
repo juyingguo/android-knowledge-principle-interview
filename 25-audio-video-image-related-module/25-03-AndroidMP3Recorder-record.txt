@@ -23,3 +23,12 @@
 		录音时文件路径，不但只有路径，如果对应文件不存在，此时如果手动先创建出来文件（导致录音失败。）。
 		
 		所以在录音启动之前，如果文件已经存在，录音启动后就会覆盖内容。如果文件不存在，只需指定绝对路径，保证父目录文件夹存在即可。
+2. 音视频开发【2】--使用LAME库转换pcm文件到mp3
+	https://www.jianshu.com/p/edab7934ec34 
+	
+	**这里借用《音视频开发进阶指南：基于Android与Ios的实践》一书里对各种音频编码的介绍**
+	原作者项目：https://github.com/zhanxiaokai/Android-Mp3Encoder 
+	2.1 
+		其次是Encode方法的实现，函数主体是一个循环，每次都会读取一段bufferSize大小的PCM数据buffer，然后再编码该buffer，但是在编码buffer之前得把该buffer的左右声道拆分开，再送入到LAME编码器，最后将编码之后的数据写入MP3文件中。
+		
+		疑问a：编码buffer之前，为啥要把左右声道分开。

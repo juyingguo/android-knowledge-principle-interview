@@ -11,6 +11,16 @@
 	直接点击Nginx目录下的nginx.exe    或者    cmd运行start nginx
 
 	https://www.cnblogs.com/xb1223/p/10205645.html 
+	
+	nginx -s stop    或者    nginx -s quit
+
+	stop表示立即停止nginx,不保存相关信息
+
+	quit表示正常退出nginx,并保存相关信息
+
+	重启(因为改变了配置,需要重启)
+
+	nginx -s reload
 3. nginx启动失败
 	./nginx: error while loading shared libraries: libpcre.so.1: cannot open shared object file: No such 
 	https://blog.csdn.net/weixin_44297303/article/details/89505398  
