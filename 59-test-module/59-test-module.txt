@@ -111,13 +111,35 @@
 	7.1 如果只是防 auto.js 的话，活动页做成 H5 的就可以了。 
 	
 8. Auto.js
+	8.0 
+		github:
+		https://github.com/hyb1996/Auto.js/
+		https://github.com/hyb1996/Auto.js/blob/master/Readme-cn.md
+		doc:
+		https://pro.autojs.org/docs/#/zh-cn/
+		
 	8.1 
-		a,Auto.js是一款无需root权限的JavaScript自动化软件。但是需要对该应用开启无障碍模式，开启后才可以进行屏幕点击等操作
+		a,Auto.js是一款无需root权限的JavaScript自动化软件。
+		b,但是需要对该应用开启无障碍模式，开启后才可以进行屏幕点击等操作.
+		c,Auto.js是一款安卓手机应用，和微信一样，安装在手机上使用
+		d,Auto.js的脚本需要使用JavaScript编写 
+		e,手机安装auto.js后，需要打开无障碍模式（为了脚本能执行）和悬浮框（为了查看控件信息）
+
 		
 	8.2 Auto.js的优雅使用(如何正确薅羊毛)
 		https://zhuanlan.zhihu.com/p/279156643  
-	8.3  https://zhuanlan.zhihu.com/p/90065914  
-	
+	8.3  Auto.js快速入门实战教程
+		https://zhuanlan.zhihu.com/p/90065914  
+		
+		Auto.js脚本编写教程 （一）
+		https://blog.csdn.net/RIDER_hjf/article/details/102911545 
+		
+	8.4 vscode 下编写auto.js脚本文件。
+		a,https://github.com/hyb1996/Auto.js-VSCode-Extension
+		b,
+			在vscode上写脚本，写好后发给手机，在Auto.js应用中加载运行
+			在vscode上写脚本，电脑与手机在同一局域网，通过安装auto.js的vscode插件，实现在vscode上运行，手机就会相应执行脚本
+			在手机的Auto.js应用中直接码代码（不提倡）
 	8.x. 
 		AS 3.5 The given artifact contains a string literal with a package reference 'android.support.v4.con
 		https://blog.csdn.net/weixin_39069034/article/details/100600155 

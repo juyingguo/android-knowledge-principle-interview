@@ -340,4 +340,11 @@
 19 avd
 	19.1 android avd设置graphic automatic hardware software gles
 	当设置为automatic启动模拟器失败。
-	
+20 android studio启动时默认加载的工程设置
+	20.1 【Android Studio】修改默认打开上个项目的设置 
+		https://www.jianshu.com/p/44288b0be8c3 
+		
+		Preference-> Appearance & Behavior -> System Settings 里面
+21 内存设置
+	21.1 RAM set:such as the core IDE or Gradle daemon
+		File | Settings | Appearance & Behavior | System Settings | Memory Settings
