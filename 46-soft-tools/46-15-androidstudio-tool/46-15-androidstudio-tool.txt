@@ -348,3 +348,29 @@
 21 内存设置
 	21.1 RAM set:such as the core IDE or Gradle daemon
 		File | Settings | Appearance & Behavior | System Settings | Memory Settings
+
+22. Android studio导入eclipse项目
+	22.1 Android studio导入eclipse项目（亲测）
+		https://www.cnblogs.com/stars-one/p/7536284.html 
+	22.2 Android Studio 导入 Eclipse 项目问题 
+		https://blog.csdn.net/doris_d/article/details/79466926 
+		
+		a,目录结构问题
+			Android Studio 项目的目录结构与 Eclipse 不一致，若想在导入项目后仍可在 Eclipse 中开发，则不能更改目录结构，那么只需要在 Module 的 build.gradle 的 android 领域中进行配置。
+			sourceSets {
+				main {
+					java.srcDirs = ['src']
+					res.srcDirs = ['res']
+					assets.srcDirs = ['assets']
+					jni.srcDirs = ['jni']
+					jniLibs.srcDirs = ['libs']
+					manifest.srcFile 'AndroidManifest.xml'
+				}
+			}
+		b,编码问题,等多个问题记录。
+23 androidstuido ndk-build 配置ndk只编译一种abi
+		https://blog.csdn.net/leunging/article/details/111593353 
+		
+24
+ 
+ 

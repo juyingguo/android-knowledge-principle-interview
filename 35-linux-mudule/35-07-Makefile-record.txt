@@ -25,7 +25,7 @@
 
 			LOCAL_CFLAGS += -pie -fPIE
 			LOCAL_LDFLAGS += -pie -fPIE
-				
+	
 2. 资源，书籍，官网，博客
 
 	1、《Makefile》 作者 陈皓，整理 祝冬华

@@ -32,3 +32,56 @@
 		其次是Encode方法的实现，函数主体是一个循环，每次都会读取一段bufferSize大小的PCM数据buffer，然后再编码该buffer，但是在编码buffer之前得把该buffer的左右声道拆分开，再送入到LAME编码器，最后将编码之后的数据写入MP3文件中。
 		
 		疑问a：编码buffer之前，为啥要把左右声道分开。
+		
+	2.2 和工具等相关使用配置错误
+	使用as ndk-build 时的警告及错误.
+		Android NDK: WARNING:src/main/jni/Android.mk:audioencoder: non-system libraries in linker flags: -lmp3lame src/main/jni/3rdparty/lame/lib/libmp3lame.a    
+		Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+		Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+		Android NDK:     current module    
+		[arm64-v8a] SharedLibrary  : libaudioencoder.so
+		src/main/jni/3rdparty/lame/lib/libmp3lame.a: error adding symbols: File in wrong format
+		clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+		make: *** [build/intermediates/ndk/obj/local/arm64-v8a/libaudioencoder.so] Error 1
+
+		FAILURE: Build failed with an exception.
+
+		* What went wrong:
+		Execution failed for task ':Mp3Encoder:ndkBuild'.
+		> Process 'command 'D:\java2\ndk\android-ndk-r13\ndk-build.cmd'' finished with non-zero exit value 2
+
+		* Try:
+		Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+		* Get more help at https://help.gradle.org
+
+		BUILD FAILED in 2s
+		
+		A,为啥有[arm64-v8a]，明明过滤掉了？
+			分析gradle中配置了NDK_APPLCATION_MK=src/main/jni/Application.mk，Application.mk配置了过滤abi，没有[arm64-v8a],编译日志却有这个编译输出，为啥？
+			
+			参考【2.3】，发现NDK_APPLCATION_MK写错了，应该为：NDK_APPLICATION_MK
+			没有报错，确实很难发现。
+			而故意吧APP_BUILD_SCRIPT写错，立即有对应错误提示。
+		
+	2.3 [ndk]Android NDK: Your APP_BUILD_SCRIPT points to an unknown file/Please define the NDK_PROJECT_PATH
+		https://blog.csdn.net/qq_14997169/article/details/77145616 
+		
+		NDK_PROJECT_PATH， APP_BUILD_SCRIPT， NDK_APPLICATION_MK 这几个名字字符串别写错了，以及对应的值填写正确即可。
+	2.4 androidstuido ndk-build  libmp3lame.a: error adding symbols: File in wrong format clang++.exe
+		https://stackoverflow.com/questions/30647594/ndk-build-outputs-error-adding-symbols-file-in-wrong-format 
+		
+	2.5 process_begin: CreateProcess(NULL, D:/java2/ndk/android-ndk-r13/build//../toolchains/arm-linux-androideabi-4.8/prebuilt/windows-x86_64/bin/arm-linux-androideabi-g++ -MMD -MP -MF build/intermediates/ndk/obj/local/armeabi-v7a/objs/audioencoder/./mp3_encoder/jni/AudioEncoder.o.d -fno-exceptions -fno-rtti -Isrc/main/jni/3rdparty/lame/include -ID:/java2/ndk/android-ndk-r13/build//../sources/cxx-stl/gnu-libstdc++/4.9/include -ID:/java2/ndk/android-ndk-r13/build//../sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -ID:/java2/ndk/android-ndk-r13/build//../sources/cxx-stl/gnu-libstdc++/4.9/include/backward -Isrc/main/jni -DANDROID -D__STDC_CONSTANT_MACROS -Wa,--noexecstack -Wformat -Werror=format-security -std=gnu++11 -fexceptions -D__STDC_LIMIT_MACROS -isystem D:/java2/ndk/android-ndk-r13/build//../platforms/android-9/arch-arm/usr/include -c src/main/jni/./mp3_encoder/jni/AudioEncoder.cpp -o build/intermediates/ndk/obj/local/armeabi-v7a/objs/audioencoder/./mp3_encoder/jni/AudioEncoder.o, ...) failed.
+
+		make: *** [build/intermediates/ndk/obj/local/armeabi-v7a/objs/audioencoder/./mp3_encoder/jni/AudioEncoder.o] Error 2
+		
+		分析：Application.mk配置了NDK_TOOLCHAIN_VERSION = 4.8，而当前使用的windows ndk r13b中没有4.8，有4.9。
+			修改为4.9后再次编译，ok。
+			
+	2.6 com.phuket.tour.mp3encoder A/libc: Fatal signal 11 (SIGSEGV), code 1, fault addr 0x30 in tid 12958 (tour.mp3encoder)
+		https://blog.csdn.net/qq_35624156/article/details/85159692 
+		
+		a，猜测，编译ndk版本不同引起的，这是是否为原因呢？
+		
+		b,分析日志。
+			so日志分析：见【34-19-android-NDK-module.txt】so动态库调试
