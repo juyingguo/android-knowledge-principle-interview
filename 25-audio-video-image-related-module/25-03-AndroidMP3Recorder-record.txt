@@ -28,6 +28,15 @@
 	
 	**这里借用《音视频开发进阶指南：基于Android与Ios的实践》一书里对各种音频编码的介绍**
 	原作者项目：https://github.com/zhanxiaokai/Android-Mp3Encoder 
+	
+	2.0 
+		a,编译LAME库
+		android studio3.0+ 默认使用CMake编译native源文件，网上好多文章不合适，这里推荐两篇使用CMake编译LAME库的博客，介绍的都很详细。
+
+		Android移植lame库(采用CMake)
+			https://blog.csdn.net/javine/article/details/73277816
+		Android studio3.0+ 编译Lame库（CMake方式）
+			https://blog.csdn.net/u012150124/article/details/82053206 
 	2.1 
 		其次是Encode方法的实现，函数主体是一个循环，每次都会读取一段bufferSize大小的PCM数据buffer，然后再编码该buffer，但是在编码buffer之前得把该buffer的左右声道拆分开，再送入到LAME编码器，最后将编码之后的数据写入MP3文件中。
 		

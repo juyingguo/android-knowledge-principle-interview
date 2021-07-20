@@ -22,12 +22,17 @@
 		
 		
 		静态库日志在什么地方看。
+	2.4 Android: NDK中的Android.mk和Application.mk
+		https://www.cnblogs.com/yongdaimi/p/12061298.html 
 3. Application.mk
 	3.1 资源：
 		谷歌官方参考
 		https://developer.android.com/ndk/guides/application_mk?hl=zh-cn
 	3.2 
 		Application.mk可以用来指定需要生成哪些cpu类型的.so文件，或者定义引用.so的最低android api
+		
+	3.3 NDK编译——Application.mk 
+		https://blog.csdn.net/suningning/article/details/74509053 
 4. aosp 中集成Pre-built apk用到的android.mk
 	4.1 android7.1编译第三方apk到系统中的android.mk学习
 		https://blog.csdn.net/the_Sunshine_of_King/article/details/78405149 

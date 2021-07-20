@@ -208,7 +208,36 @@
 			adb logcat | ndk-stack -sym D:\workplace\****\obj\local\armeabi-v7a
 		2. 启动app，运行至崩溃地方
 
-		3.如果NDK崩溃即可在终端打印 堆栈信息，进行分析即可
+		3.如果NDK崩溃即可在终端打印 堆栈信息，进行分析即可 
+		
+11.Android Studio使用gradle-experimental构建NDK工程(无需Android.mk、Application.mk文件)
+	https://blog.csdn.net/w958796636/article/details/56892384 
+	
+	文章中的写法，位置，格式需要对应灵活调整。
+	我的实验实验环境：android studio3.5.2,gradle plugin :3.5.2,gradle:gradle-5.4.1,nkd-r13。
+	工程位置：\av-learn-zhanxiaokai-pro\Android-Mp3Encoder_as
+	实际现象：Android.mk是必须的；Application.mk写了，当前尚且不知道如何添加
+	a,Android.mk配置位置如下：	
+		externalNativeBuild {
+			ndkBuild {
+				path file('src/main/jni/Android.mk') ///指定编译Android.mk目录
+				///path file('src/main/jni/Application.mk') ///指定编译Application.mk目录,这样指定无效。
+			}
+		}
+		这样配置，还能有cpp代码自动补全功能。
+	b,Application.mk写了，当前尚且不知道如何添加。其内容可以通过以下方式代替，写法对应调整。
+		android子节点defaultConfig下配置如下：
+		ndk {
+            moduleName "libaudioencoder"
+            abiFilters 'armeabi-v7a' // armeabi arm64-v8a、armeabi-v7a、x86_64、x86 中的一个或多个
+
+            //Other ndk flags configurable here are
+             cFlags "-fno-rtti"
+             cFlags "-fno-exceptions"
+             ldLibs("android", "log")
+             stl "system"
+        }
+		
 x. 一些记录
 	x.1 
 		环境

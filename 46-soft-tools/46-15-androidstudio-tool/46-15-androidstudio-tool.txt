@@ -371,6 +371,32 @@
 23 androidstuido ndk-build 配置ndk只编译一种abi
 		https://blog.csdn.net/leunging/article/details/111593353 
 		
-24
+24 android studio 下ndk项目cpp自动补全,使用ndk-build编译Android.mk项目。
+	24.1 AndroidStudio现有项目添加NDK支持（ndk-build编译） 
+		https://niubashaoye.blog.csdn.net/article/details/81050052 
+		
+		项目添加C/C++引用到Grade中
+		切换到Android视图，项目名右键->Link C++ Project with Gradle->选择ndk-build->然后选择Android.mk的项目路径； 
+		
+		b,配置还有问题
+			androidstudio so,  More than one file was found with OS independent path 'lib/armeabi-v7a/xxx.so
+			
+			全部删除，重新编译即可。该方式编译成功后，直接打包apk,apk就自动包含so了。如果将*.so拷贝到(src/main/jniLibs)目录下，需要禁用编译jni编译。否则还会提示这个重复so错误。
+			
+		c,More than one file was found with OS independent path 'lib/armeabi/xxxx.so'解决方法
+			在build.gradle(Module: app)里面，加上一句：
+			packagingOptions {
+				exclude 'lib/armeabi/xxx.so'
+			}
+			exclude后面跟的内容就填写你的错误的path里的内容即可，记得sync.
+			如果exclude后path里面仍然是相同的值，可以尝试一下Build->Clean Project.
+			
+			该方式不可取。参考b就行。
+		d,在ndkbuild完成后把生成的so文件复制到jniLibs
+			https://blog.csdn.net/qwer492915298/article/details/88424922 
+			
+25 android studio 打包多个so库(Android.mk 和Application.mk)
+	https://blog.csdn.net/qwer492915298/article/details/88424922 
+
  
  
