@@ -1,0 +1,13 @@
+1.
+2. 方舟编译器学习笔记67 clang-tidy的检查规则解析
+	https://blog.csdn.net/snsn1984/article/details/104857233? 
+3. 深入研究Clang（一）Clang和LLVM的关系及整体架构 
+	https://llvm-cn.blog.csdn.net/article/details/17716261 
+4. Clang
+	4.1 Clang的doxygen的地址是：
+		http://clang.llvm.org/doxygen/index.html 
+5. LLVM 
+	5.1
+		llvm.org 
+	5.2 LLVM每日谈之一 LLVM是什么
+		https://llvm-cn.blog.csdn.net/article/details/8036032 

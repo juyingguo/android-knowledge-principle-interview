@@ -399,4 +399,11 @@
 	https://blog.csdn.net/qwer492915298/article/details/88424922 
 
  
- 
+26 Unable to execute Clang-Tidy.cCannot create propert=Diagnostcs for JavaBean=comjetorains.cdr.ang,.daemon.clang.tidy.ClangTidyYamlLoadersSYamlData@
+	
+	26.1 NDK issues with Studio 3.5.2 on Ubuntu
+		https://stackoverflow.com/questions/59888112/ndk-issues-with-studio-3-5-2-on-ubuntu 
+		
+		a,This is a known issue. The clang-tidy integration in AS 3.5 is not compatible with NDK r21. It's fixed in 4.0. 
+	26.2 unable to execute clang-tidy 
+		https://blog.csdn.net/jacke121/article/details/114683665 
