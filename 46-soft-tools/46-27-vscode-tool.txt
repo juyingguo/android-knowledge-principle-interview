@@ -1,4 +1,7 @@
 1.vscode 
+	1.1 官网
+		https://code.visualstudio.com/Download 
+	
 2.vscode设置相关
 	2.1 VSCode默认主题怎么更换? VSCode更换背景色的教程
 		https://www.jb51.net/softjc/682878.html
@@ -14,4 +17,6 @@
 	
 	3.4 导航插件
 		上一次编辑修改操作的插件。
+4. User Installer   System Installer 
+	4.4 Visual studio Code User Installer(用户安装程序)和System Installer(系统安装程式)的区别
 		

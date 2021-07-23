@@ -1,3 +1,9 @@
+0	资源
+	0.a https://lame.sourceforge.io/ 
+		lame api
+		https://github.com/VFR-maniac/lame/blob/master/API
+	0.b http://www.mp3-tech.org/
+	0.c 
 一、Android MP3录音实现 
 
 	1.1、Android MP3录音实现 

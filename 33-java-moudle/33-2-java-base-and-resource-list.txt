@@ -69,3 +69,9 @@
 	
 9. java中的this::
 	https://blog.csdn.net/weixin_33875839/article/details/92415798 
+	
+10. Java8新特性
+	10.0 	https://www.runoob.com/java/java8-new-features.html
+	10.1 Java Lambda 表达式
+		https://www.runoob.com/java/java8-lambda-expressions.html 
+	
