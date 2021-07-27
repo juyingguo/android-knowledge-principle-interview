@@ -124,12 +124,14 @@
 		c,Auto.js是一款安卓手机应用，和微信一样，安装在手机上使用
 		d,Auto.js的脚本需要使用JavaScript编写 
 		e,手机安装auto.js后，需要打开无障碍模式（为了脚本能执行）和悬浮框（为了查看控件信息）
-
+		f,Auto.js中基于坐标的操作，类似于触摸精灵、按键精灵等，通过屏幕坐标实现点击、长按的模拟操作。例如：click(200, 400), press(200, 400, 1000)等。
 		
 	8.2 Auto.js的优雅使用(如何正确薅羊毛)
 		https://zhuanlan.zhihu.com/p/279156643  
 	8.3  Auto.js快速入门实战教程
 		https://zhuanlan.zhihu.com/p/90065914  
+		
+		https://baijiahao.baidu.com/s?
 		
 		Auto.js脚本编写教程 （一）
 		https://blog.csdn.net/RIDER_hjf/article/details/102911545 
