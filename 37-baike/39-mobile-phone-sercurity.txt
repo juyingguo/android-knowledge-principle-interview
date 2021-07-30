@@ -1,6 +1,10 @@
 1. 手机SIM卡的PIN码是什么
 	https://baijiahao.baidu.com/s?id=1618918421398671742&wfr=spider&for=pc
 	
-	
+2.小米红米手机
+	2.1 红米手机更新时下载固件包在哪里 
+		https://zhidao.baidu.com/question/694000462191479324.html 
+		
+		红米手机系统安装包在手机内部储存【downloaded-rom】文件夹
 		
 	
