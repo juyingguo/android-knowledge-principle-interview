@@ -18,6 +18,8 @@
 		4. 《Learn OpenGL 中文》：https://learnopengl-cn.readthedocs.io/zh/latest/
 		5. 《Android Graphic 架构》：https://source.android.com/devices/graphics/
 		
+	2.3 什么是音频重采样
+		https://blog.csdn.net/oTianLe1234/article/details/115830917 
 三、为android系统添加USB　AUDIO设备的放音和录音功能 
 	3.1 为android系统添加USB　AUDIO设备的放音和录音功能 
 		https://blog.csdn.net/adits/article/details/8242146
