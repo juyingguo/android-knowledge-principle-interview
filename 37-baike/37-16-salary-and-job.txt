@@ -3,3 +3,4 @@
 	https://www.zhihu.com/question/27108669?sort=created 
 3. 在华为做研发是怎样的一种体验？  
 	https://www.sohu.com/a/126979918_468735 
+4. https://github.com/android-cn/android-jobs

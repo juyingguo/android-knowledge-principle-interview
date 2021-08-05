@@ -8,7 +8,9 @@
 		
 	0.3 android官方文档
 		https://developer.android.google.cn/training/camera/photobasics?hl=zh-cn
-	
+	0.4 java教程
+		菜鸟教程：
+		https://www.runoob.com/java/java-tutorial.html
 		
 一、吃透java ,csdn博客。
 	1.1、吃透Java基础八：Throwable异常 
@@ -74,4 +76,17 @@
 	10.0 	https://www.runoob.com/java/java8-new-features.html
 	10.1 Java Lambda 表达式
 		https://www.runoob.com/java/java8-lambda-expressions.html 
+11. java 泛型
+	11.1 https://www.runoob.com/java/java-generics.html 
+
+	11.2 java泛型中使用T,E等的区别
+		https://blog.csdn.net/chenlycly/article/details/25561029 
+		
+		E - Element (在集合中使用，因为集合中存放的是元素)
+		 T - Type（Java 类）
+		 K - Key（键）
+		 V - Value（值）
+		 N - Number（数值类型）
+		？ -  表示不确定的java类型 
+		：：这几个本质上没什么区别，只不过是一个约定好的代码，也就是说 使用大写字母A,B,C,D......X,Y,Z定义的，就都是泛型，把T换成A也一样，这里T只是名字上的意义而已
 	

@@ -314,4 +314,16 @@
 28 //保存图片后发送广播通知更新数据库
 	Uri uri = Uri.fromFile(new File(newPath));
 	context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri));
+29 应用保活及持续优化
+	29.1 参考service模块
+	29.2 android-job
+		Android Jobscheduler使用
+		https://www.jianshu.com/p/9fb882cae239 
+		
+		a,Android应用进程防杀指南3-JobService
+			https://www.imooc.com/article/details/id/24440 
+		b,认识 android-job
+			https://zhuanlan.zhihu.com/p/26093468 
+			
+			https://github.com/evernote/android-job 
 	

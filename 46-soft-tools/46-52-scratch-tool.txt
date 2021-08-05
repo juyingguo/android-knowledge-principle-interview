@@ -1,0 +1,18 @@
+1.
+	1.1 官网
+		https://en.scratch-wiki.info/wiki/Scratch_3.0
+			含下载链接。
+	1.2 下载
+		win7下运行
+		scratch3.3或者scratch3.4 
+		
+2.	百科简介：
+	https://baike.baidu.com/item/Scratch/15493636?fr=aladdin 
+3. 教程
+	【Scratch3入门经典】Scratch3从入门到精通全套视频教程 
+	https://www.bilibili.com/read/cv4722663/ 
+	
+	https://www.bilibili.com/video/BV12J411X7tY?from=search&seid=16282947525672434164 
+4. 米加盒子团队结合Steam教育,基于Scratch 3集成更多的硬件,一个编程环境实现编程、机器人、创客的完美结合,体验不一样的编程乐趣。
+
+	http://www.winwin7.com/soft/8276.html 

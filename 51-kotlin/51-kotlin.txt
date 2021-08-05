@@ -39,4 +39,6 @@
 		分析原因为：没有配置kotlin-stdlib依赖库。
 			https://blog.csdn.net/qq_33143459/article/details/103989807
 			https://jingyan.baidu.com/article/48206aeae9891e606ad6b395.html
+4. Kotlin实战指南十二：data class
+	4.1 https://blog.csdn.net/zhaoyanjun6/article/details/94649274 
 		
