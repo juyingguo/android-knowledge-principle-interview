@@ -24,6 +24,15 @@
 		静态库日志在什么地方看。
 	2.4 Android: NDK中的Android.mk和Application.mk
 		https://www.cnblogs.com/yongdaimi/p/12061298.html 
+		
+	2.5 Android.mk中打印输出信息
+		https://blog.csdn.net/earbao/article/details/38702311? 
+		
+		$(warning "log start.")  
+		$(warning $(LOCAL_PATH))
+		$(info $(TARGET_PLATFORM))
+	2.6 Android.mk中call all-subdir-makefiles和call all-makefiles-under,$(LOCAL_PATH)的区别
+		https://blog.csdn.net/jackyu613/article/details/5949324 
 3. Application.mk
 	3.1 资源：
 		谷歌官方参考
