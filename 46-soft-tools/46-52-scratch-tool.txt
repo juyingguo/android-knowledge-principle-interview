@@ -2,10 +2,19 @@
 	1.1 官网
 		https://en.scratch-wiki.info/wiki/Scratch_3.0
 			含下载链接。
-	1.2 下载
-		win7下运行
-		scratch3.3或者scratch3.4 
 		
+	1.2 下载
+		a,原官网写的3.0以上，需要win10环境。
+			国内经过修改，可以在win7上运行
+		b,win7下运行
+			scratch3.3或者scratch3.4 
+		
+		c，Scratch V3.4.0 官方版 / Scratch3.4中文版下载  
+			【可以在win7上运行】
+			http://www.downxia.com/downinfo/284139.html 
+			含windows，android,mac os对应版本的。
+			
+			
 2.	百科简介：
 	https://baike.baidu.com/item/Scratch/15493636?fr=aladdin 
 3. 教程

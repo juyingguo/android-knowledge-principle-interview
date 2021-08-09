@@ -18,4 +18,8 @@
 	Chrome 定制浏览器：https://runningcheese.lanzous.com/b0ufru1i（已更新）
 4.推荐安装IDM下载  链接：https://pan.lanzous.com/iNjhjjq357a
 	提示无权下载。是因为同时使用了浏览器下载。停掉浏览器下载任务。idm就正常下载了。
+5. 阿里云盘
+	阿里云盘 网页版 
+	https://www.aliyundrive.com/sign/in
+	
 	
