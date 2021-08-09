@@ -16,3 +16,16 @@
 4. 米加盒子团队结合Steam教育,基于Scratch 3集成更多的硬件,一个编程环境实现编程、机器人、创客的完美结合,体验不一样的编程乐趣。
 
 	http://www.winwin7.com/soft/8276.html 
+	
+5.Scratch被禁,现在国内最好的少儿编程软件是什么? 
+	http://www.360doc.com/content/20/0825/10/65292548_932091215.shtml 
+	
+6. mind+
+	http://mindplus.cc/ 
+	
+7. scratch设计数学题
+	7.1 
+		小学四年级数学经典习题及答案
+		https://wenku.baidu.com/view/e4e2cab9a88271fe910ef12d2af90242a995abeb.html  
+	7.2 scratch编写小学4年级数学题 
+		https://jingyan.baidu.com/article/ca00d56c046474e99febcf6b.html 
