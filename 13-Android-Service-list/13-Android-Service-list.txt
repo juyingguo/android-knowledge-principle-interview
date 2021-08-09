@@ -29,6 +29,24 @@
 		1,2,3篇文章.
 	1.9 gyf-dev/Cactus 
 		https://github.com/gyf-dev/Cactus
+	1.10 应用保活终极总结(一)：Android6.0以下的双进程守护保活实践
+		a,http://www.52im.net/thread-1135-1-1.html 
+			原文链接：探讨一种新型的双进程守护应用保活
+				https://blog.csdn.net/andrexpert/article/details/53485360 
+			项目工程：*\android-keepalive-app\KeepAliveOneLuChiBaoApp
+			调试记录：
+			a1,Permission Denial: Accessing service ComponentInfo{com.demo.keepaliveoneassistanta/com.demo.keepaliveoneassistanta.AssistantAService} from pid=13906, uid=10133 that is not exported from uid 10134
+				解决办法：
+				我们可以在AndroidManifest.xml的<manifest ../>标签内添加android:sharedUserId，只要保证每个关联启动的android:sharedUserId的值是一致的，然后都使用同一个密钥进行签名即可无需“关联启动”权限。
+			a2,强制停止，在android5.1上，service的onDestroy当前在日志中没有看到。
+				强制停止应用，绑定服务的发起方，会收到onServiceDisconnected，onUnbind回调。
+			a3,android5.1 验证：
+				对于单个应用内多进程守护。设置-应用管理-已下载-选择应用-强制停止，杀掉了。
+				设置-应用管理-已下载-选择应用-强制停止，杀掉了。(qq,应用宝，等同样被kill)
+				设置-应用管理-正在运行-选择应用-停止，kill不了。
+			
+				对于单个应用内多进程守护。一键加速，杀掉了。
+					独立进程的服务，提高进程优先级。
 二、实践验证。
 	2.1、START_STICKY 
 		android 5.1杀进程后，会自动重启。
