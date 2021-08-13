@@ -23,3 +23,8 @@
 			https://blog.csdn.net/weixin_42227141/article/details/80528790
 			
 		1.1.4 LTS是长期支持(Long Term Support)的缩写
+2. Project Review
+	 PR是项目评审的意思 
+	 https://zhidao.baidu.com/question/578187853.html
+	 
+	 还有其它含义的缩写。

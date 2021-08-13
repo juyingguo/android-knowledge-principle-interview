@@ -1,0 +1,84 @@
+1.dart
+	1.1 
+		https://www.dartcn.com/
+2.flutter
+	2.1 
+		https://flutterchina.club/ 
+		
+		《Flutter实战》电子书:
+			https://book.flutterchina.club/#缘起
+			
+			笔者在大学时读过候捷（真名侯俊杰）写的一些C++相关书籍，在他的《深入浅出MFC》一书中，有一句话我印象像非常深 “唯有深入，方能浅出”。我非常认同这句话，对于一门技术，只有了解的深入，才能用最浅显、通俗的话语描述出。
+3. flutter开发环境配置
+	3.1 起步:安装Flutter
+		https://flutterchina.club/get-started/install/ 
+		
+		Flutter github项目下去下载安装包 ：
+		https://github.com/flutter/flutter/releases 		
+		
+	3.2 android studio sdk配置_在 Windows 操作系统上安装和配置 Flutter 开发环境
+		a,https://blog.csdn.net/weixin_40001805/article/details/111163780 
+		
+		b,flutter环境配置及Android studio下载补丁
+		https://www.jianshu.com/p/b80b60dd5feb 
+		
+		c,Flutter开发环境（Window）配置及踩坑记录
+			https://www.cnblogs.com/zengfp/p/9927860.html  
+			
+			c1，如果你不是通过flutter_console.bat进入的终端进行flutter doctor安装依赖，而是直接在git下直接使用命令flutter doctor安装依赖，
+				就会出现报错，会提示Unknown operating system. Cannot install Dart SDK。
+				你会看到flutter/bin/cache/dart-sdk文件下为空，没有安装成功。所以需要通过flutter_console.bat进入进行安装，这样才会成功。
+	3.x 环境配置记录
+		a,window flutter_console.bat 输入flutter doctor就自动退出
+			将信息输出到文件中以便查看。
+			打开flutter_console.bat 输入：flutter doctor >D:/1.txt
+			信息如下：
+			Error: The Flutter directory is not a clone of the GitHub project.
+		   The flutter tool requires Git in order to operate properly;
+		   to set up Flutter, run the following command:
+		   git clone -b stable https://github.com/flutter/flutter.git 
+		b,a完成后，再次运行。有以下问题。
+			无法将“Unblock-File”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查
+			名称的拼写，如果包括路径，请确保路径正确，然后重试。
+			所在位置 行:1 字符: 13
+			+ Unblock-File <<<<  -Path 'D:\juying\java2\Flutter-SDK\flutter\bin\internal\up
+			date_dart_sdk.ps1'; & 'D:\juying\java2\Flutter-SDK\flutter\bin\internal\update_
+			dart_sdk.ps1'; exit $LASTEXITCODE;
+				+ CategoryInfo          : ObjectNotFound: (Unblock-File:String) [], Comman 
+			   dNotFoundException
+				+ FullyQualifiedErrorId : CommandNotFoundException
+			 
+			Flutter requires PowerShell 5.0 or newer.
+			See https://flutter.dev/docs/get-started/install/windows for more.
+			Current version is 2.
+			
+			b1,解决办法：参考博客
+				https://www.it610.com/article/1282642857932374016.htm 
+				https://juejin.cn/post/6844903935522635784 
+				https://www.jianshu.com/p/daee8423dc64 
+			b2，对应PowerShell下载地址：
+				PowerShell：
+				http://download.microsoft.com/download/6/F/5/6F5FF66C-6775-42B0-86C4-47D41F2DA187/Win7AndW2K8R2-KB3191566-x64.zip 
+				https://www.microsoft.com/en-us/download/confirmation.aspx?id=54616 
+		c,b完成后，flutter doctor 运行成功后。
+			[!] Android toolchain - develop for Android devices (Android SDK version 28.0.3)
+			X cmdline-tools component is missing
+			  Run `path/to/sdkmanager --install "cmdline-tools;latest"`
+			  See https://developer.android.com/studio/command-line for more details.
+			X Android license status unknown.
+			  Run `flutter doctor --android-licenses` to accept the SDK licenses.
+			  See https://flutter.dev/docs/get-started/install/windows#android-setup for more details.
+		d,flutter环境搭建出现的问题
+			> NDK at D:\juying\java2\sdk\ndk-bundle did not have a source.properties file
+			参考一下博客：
+			https://www.jianshu.com/p/921048d2cf9c 
+			https://blog.csdn.net/qq_37710798/article/details/111319691 
+			
+			博客仅供参考，领过调整。
+			分析：查看D:\juying\java2\sdk\ndk-bundle下确实没有source.properties。
+				单独指定含有source.properties 的ndk:\flutter_app_startup_namer\android\gradle.properties中添加如：ndk.dir=D\:\\juying\\java2\\ndk\\android-ndk-r13。
+				
+				
+			
+4.【Flutter】Flutter 应用创建运行 ( Android Studio 创建 / 运行 Flutter 应用 | 命令行创建 / 运行 Flutter 应用 )
+	https://blog.csdn.net/shulianghan/article/details/104834482/ 

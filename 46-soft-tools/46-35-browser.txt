@@ -6,9 +6,17 @@
 	https://jingyan.baidu.com/article/4ae03de3cc923b3eff9e6b38.html 
 	
 3. chrome浏览器
+	3.0 
+		google商店：
+		https://chrome.google.com/webstore 
 	3.1 浏览器全屏方法
 		方法/步骤
 		1.首先,打开任意一个网页,进入界面。
 		2.然后,按下键盘上的”F11“键。
 		3.即可出现全屏浏览的网页效果,浏览器进入了全屏模式。
 		4.再次点击F11,即可退出浏览器全屏模式了。
+	3.2 推荐两个超好用的 Chrome 网页视频嗅探下载插件
+		https://www.cnblogs.com/zhangxuetao/p/13825976.html 
+		Stream Video Downloader 和 Flash Video Downloader。 
+		
+		Video Downloader

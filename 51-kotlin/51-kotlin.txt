@@ -1,5 +1,5 @@
 1.资源
-	1.1 https://www.runoob.com/kotlin/kotlin-tutorial.html 
+	1.1 
 		官方网站
 			https://www.kotlincn.net/ 
 		官方示例
@@ -11,6 +11,13 @@
 			
 			JetBrains may use cookies and my IP address to collect individual statistics and to provide me with personalized offers and ads subject to the Privacy Policy and the Terms of Use. JetBrains may use third-party services for this purpose. I can revoke my consent at any time by visiting the Opt-Out page.
 		Kotlin 在线工具
+	1.2 kotlin教程。
+		https://www.runoob.com/kotlin/kotlin-tutorial.html  
+		
+		https://blog.csdn.net/u013064109/article/details/89199478 
+			知识点链接。
+		
+		kotlincn.net/docs/reference/object-declarations.html#伴生对象 
 2. android studio 中配置kotlin 
 	2.1 The current Gradle version 4.4 is not compatible with the Kotlin Gradle plugin. Please use Gradle 5.3 or newer, or the previous version of the Kotlin plugin.
 		Open File
@@ -42,3 +49,16 @@
 4. Kotlin实战指南十二：data class
 	4.1 https://blog.csdn.net/zhaoyanjun6/article/details/94649274 
 		
+5. [译] Kotlin中关于Companion Object的那些事
+	https://blog.csdn.net/u013064109/article/details/89199478 
+	
+	Kotlin中的object 与companion object的区别 
+	https://www.jianshu.com/p/14db81e1576a? 
+	Kotlin中常量和静态方法 
+	https://www.jianshu.com/p/e8752c880088  
+6. Kotlin下的设计模式模式
+	6.1 Kotlin下的5种单例模式
+		https://www.jianshu.com/p/5797b3d0ebd0 
+		
+		当Kotlin完美邂逅设计模式之单例模式(一)
+			https://zhuanlan.zhihu.com/p/61667789 

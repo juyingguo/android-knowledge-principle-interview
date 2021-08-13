@@ -28,4 +28,8 @@
 	
 十. 2017-2020字节跳动Android面试历年真题解析
 	
-	https://zhuanlan.zhihu.com/p/111943184
+	https://zhuanlan.zhihu.com/p/111943184 
+11，消失了一年，我都干了些什么?
+	【 熊喵先生】
+	https://youkmi.blog.csdn.net/article/details/113790101 
+	含面试，及技术。
