@@ -62,3 +62,7 @@
 		
 		当Kotlin完美邂逅设计模式之单例模式(一)
 			https://zhuanlan.zhihu.com/p/61667789 
+			
+7.Kotlin数据结构
+	7.1 Kotlin数组（Array）
+		https://www.runoob.com/kotlin/kotlin-basic-syntax.html 
