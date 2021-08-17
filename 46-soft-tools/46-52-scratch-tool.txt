@@ -22,6 +22,9 @@
 	https://www.bilibili.com/read/cv4722663/ 
 	
 	https://www.bilibili.com/video/BV12J411X7tY? 
+	
+	3.3 scratch 广播使用 
+		https://wenku.baidu.com/view/bd113989961ea76e58fafab069dc5022abea4608.html 
 4. 米加盒子团队结合Steam教育,基于Scratch 3集成更多的硬件,一个编程环境实现编程、机器人、创客的完美结合,体验不一样的编程乐趣。
 
 	http://www.winwin7.com/soft/8276.html 
@@ -42,5 +45,11 @@
 		五年级下册数学：全套1~8单元测试题（附答案），很有练习必要！
 		https://baijiahao.baidu.com/s?id=1660767104745064713&wfr=spider&for=pc 
 8. Scratch现场赛试题(小学组)小学生Scratch现场编程比赛
-	https://wenku.baidu.com/view/2c01dff249d7c1c708a1284ac850ad02de8007a8.html
+	https://wenku.baidu.com/view/2c01dff249d7c1c708a1284ac850ad02de8007a8.html 
+9	Scratch二次开发
+	9.1 	Scratch二次开发1：搭建开发环境
+		https://blog.csdn.net/bailee/article/details/107125148 
+	
+	9.2 
+		https://www.cnblogs.com/jingridong/p/11194678.html 
 	
