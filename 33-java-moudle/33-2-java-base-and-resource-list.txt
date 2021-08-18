@@ -76,6 +76,11 @@
 	10.0 	https://www.runoob.com/java/java8-new-features.html
 	10.1 Java Lambda 表达式
 		https://www.runoob.com/java/java8-lambda-expressions.html 
+		
+		https://blog.csdn.net/weixin_37766087/article/details/94999833 
+		
+		10.1.1 Java-Function接口函数使用
+			https://blog.csdn.net/qq_37465368/article/details/83862469 
 11. java 泛型
 	11.1 https://www.runoob.com/java/java-generics.html 
 

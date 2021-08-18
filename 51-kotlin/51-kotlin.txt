@@ -13,9 +13,15 @@
 		Kotlin 在线工具
 		
 		kotlin 官方文档翻译 
-		https://github.com/huanglizhuo/kotlin-in-chinese 
+			教程及api
+		https://github.com/huanglizhuo/kotlin-in-chinese  
+		
+		官方论坛：
+		https://discuss.kotlinlang.org/ 
 	1.2 kotlin教程。
-		https://www.runoob.com/kotlin/kotlin-tutorial.html  
+		https://www.runoob.com/kotlin/kotlin-tutorial.html 
+
+		https://github.com/huanglizhuo/kotlin-in-chinese  		
 		
 		https://blog.csdn.net/u013064109/article/details/89199478 
 			知识点链接。
@@ -89,3 +95,12 @@
 7.Kotlin数据结构
 	7.1 Kotlin数组（Array）
 		https://www.runoob.com/kotlin/kotlin-basic-syntax.html 
+8. Kotlin系列之let、with、run、apply、also函数的使用
+	https://youkmi.blog.csdn.net/article/details/78786646? 
+	
+	8.2 ?.let vs if not null 
+		https://discuss.kotlinlang.org/t/let-vs-if-not-null/3542 
+9. Kotlin的inline noinline crossinline笔记
+	https://www.jianshu.com/p/1d7374349a00 
+10. Kotlin系列之Lambda表达式完全解析 
+	https://blog.csdn.net/u013064109/article/details/80088158 
