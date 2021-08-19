@@ -331,3 +331,6 @@
 			
 			https://github.com/evernote/android-job 
 	
+30 Android Jetpack
+	30.1 Android Jetpack架构组件Lifecycle+ViewModel+ LiveData
+		https://www.jianshu.com/p/7fbc9cb72a5b 
