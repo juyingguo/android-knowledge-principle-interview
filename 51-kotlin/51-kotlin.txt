@@ -104,3 +104,9 @@
 	https://www.jianshu.com/p/1d7374349a00 
 10. Kotlin系列之Lambda表达式完全解析 
 	https://blog.csdn.net/u013064109/article/details/80088158 
+11 Kotlin基础之lateinit关键字（五）
+	https://www.jianshu.com/p/fab1799314df 
+	lateinit的作用：延迟初始化
+	具体来讲，这个关键字告诉编译器，我无法声明的时候就初始化，但是我保证我在使用前一定会初始化，你就别给我检查了。
+12 关于Kotlin中SAM转换的那些事 
+	https://www.jb51.net/article/195649.htm 
