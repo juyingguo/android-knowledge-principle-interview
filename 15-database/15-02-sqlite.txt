@@ -1,6 +1,8 @@
 0.1 资源
 	0.1.1 https://www.runoob.com/sqlite/sqlite-intro.html
-		
+	
+	0.1.2 Android—Room数据库（介绍） 
+		https://www.jianshu.com/p/cfde3535233d 
 一、想要存储时间ms值，是long类型的。SQLite中有Long类型吗？
 	1.1、SQLite中有Long类型吗？
 		https://cloud.tencent.com/developer/ask/61930
