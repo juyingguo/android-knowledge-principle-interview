@@ -5,3 +5,5 @@
 	1. 请求接口（GET,POST）：
 
 	/outGetIpInfo?ip=[ip地址字串]&accessKey=[访问密匙]
+	
+	举例：https://ip.taobao.com/outGetIpInfo?ip=39.155.184.147

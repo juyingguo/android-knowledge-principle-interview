@@ -6,4 +6,7 @@
 	
 	比如，我们以前用MFC做界面开发，做UI美化往往用到很多复杂的控件技术并且效果不好，但后来出了QT（跨平台）和开源的Duilib（支持Windows系统），迎来DirectUI的设计理念，实现用XML模板定义UI，能够轻松实现各种控件的自定义和贴图美化，大大方便了程序员开发界面。还有做视频技术开发的，程序员除了要掌握FFmpeg，SDL，DirectX、OpenGL/OpenES等这些基本技术，还需要了解RTSP、RTP、RTMP、HLS等流媒体协议，更深入一点还要学习OpenCV，了解神经网络（主要用于视频分析）。。。，技术只有更深、没有最深。
 	
+3. “全栈”？ 别逗了 
+	https://www.sohu.com/a/206399700_250298 
 	
+	https://www.zhihu.com/question/27486227 

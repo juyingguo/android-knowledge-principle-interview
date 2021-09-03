@@ -407,3 +407,29 @@
 		a,This is a known issue. The clang-tidy integration in AS 3.5 is not compatible with NDK r21. It's fixed in 4.0. 
 	26.2 unable to execute clang-tidy 
 		https://blog.csdn.net/jacke121/article/details/114683665 
+27 编译apk失败：Cause: duplicate entry: META-INF/MANIFEST.MF
+	27.1 详细错误信息：
+		【Could not resolve all files for configuration ':app:releaseCompileClasspath'.
+		   > Failed to transform artifact 'support-v4.aar (com.android.support:support-v4:23.1.1)' to match attributes {artifactType=android-classes, org.gradle.usage=java-api}.
+			  > Execution failed for AarToClassTransform: C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.android.support\support-v4\23.1.1\353820becdd80e136db280bd76725e67a7ddc053\support-v4-23.1.1.aar.
+			 > duplicate entry: META-INF/MANIFEST.MF】
+	27.2 Android编译异常` Cause: duplicate entry: META-INF/MANIFEST.MF` 
+		https://blog.csdn.net/mp624183768/article/details/103356348/ 
+		博主方案更换gradle插件及版本。【仅供参考，我倒觉得无需这样做】
+	27.3 尝试分析解决
+		A:删除对应目录下的support-v4.aar，编译时会立即出现该文件。[无效]
+		B:直接指定v4包：implementation 'com.android.support:support-v4:28.0.0'
+			[有效]，但同时产生错误【28】
+	
+28 如何使用-Xlint:deprecation重新编译(How to recompile with -Xlint:deprecation)
+	https://www.it1352.com/1558583.html 
+	需要在项目级build.gradle文件中添加以下内容:
+	allprojects {
+		...
+
+		gradle.projectsEvaluated {
+			tasks.withType(JavaCompile) {
+				options.compilerArgs << "-Xlint:deprecation"
+			}
+		}   
+	}

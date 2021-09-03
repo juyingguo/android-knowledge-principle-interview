@@ -8,6 +8,7 @@
 		
 		第4期Android视频 FrameWork HAL 蓝牙 音频 输入系统 显示系统 Binder等
 		是国内唯一一套比较翔实讲解Android FrameWork &HAL 难点的视频课程
+		[韦东山-b站视频]
 		https://www.bilibili.com/video/bv15W411L7Lc/?spm_id_from=333.788.b_636f6d6d656e74.8
 		
 		第1期(裸机开发)：BV1EW411L7RE	//linux	
