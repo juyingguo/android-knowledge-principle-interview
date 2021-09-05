@@ -338,4 +338,10 @@
 		学习demo
 		https://github.com/VcStrong/JetpackDemo
 	30.2 Android Jetpack架构组件Lifecycle+ViewModel+ LiveData
-		https://www.jianshu.com/p/7fbc9cb72a5b 
+		https://www.jianshu.com/p/7fbc9cb72a5b  
+	30.3 Jetpack（三）：ViewModel学习记录
+		https://www.jianshu.com/p/67624746a241 
+		
+		调试工程：*\JetpackDemo\*\RotationTestActivity.java
+	30.4 Android Jetpack系列--1.Lifecycle使用及源码解析 
+		https://www.jianshu.com/p/373fa1a25e3b 
