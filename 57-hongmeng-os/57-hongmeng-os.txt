@@ -5,3 +5,5 @@
 		资料及官网入口。
 		多种计算机资料搜集汇总。
 		https://github.com/fenwii/OpenHarmony 
+	1.3 百文网鸿蒙学习
+		https://www.100ask.net/detail/p_5fcf586ae4b04db7c0939c82/8

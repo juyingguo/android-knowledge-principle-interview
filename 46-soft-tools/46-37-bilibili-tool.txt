@@ -4,4 +4,10 @@
 	
 	2.2 在网页端怎么下载B站中的视频 
 		https://jingyan.baidu.com/article/b87fe19e8155ee13183568b4.html
-		
+	2.3 【总结】如何下载 B 站视频的五种方法
+		https://zhuanlan.zhihu.com/p/124293184?utm_oi=726821836322533376 
+	2.4 
+		在网址中bilibili后面加jj
+		网页版不在支持下载。提示用客户单下载jijidown 。
+		http://client.jijidown.com/ 
+	

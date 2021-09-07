@@ -342,6 +342,9 @@
 	30.3 Jetpack（三）：ViewModel学习记录
 		https://www.jianshu.com/p/67624746a241 
 		
-		调试工程：*\JetpackDemo\*\RotationTestActivity.java
+		调试工程：*\JetpackDemo\*\RotationTestActivity.java 
+		
+		A,Android之ViewModel的使用
+			https://www.jianshu.com/p/5fbde7a2189e 
 	30.4 Android Jetpack系列--1.Lifecycle使用及源码解析 
 		https://www.jianshu.com/p/373fa1a25e3b 
