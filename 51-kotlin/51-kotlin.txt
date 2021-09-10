@@ -114,3 +114,14 @@
 	https://www.jb51.net/article/195649.htm 
 13 Kotlin笔记36——open、final和abstract修饰符
 	https://blog.csdn.net/chengxu_kuangrexintu/article/details/100702819 
+14 kotlin在android中的使用
+	14.1 
+		kotlinx.android.synthetic.** 坑点
+		https://blog.csdn.net/chf1142152101/article/details/78284950 
+		
+		kotlin-android为基本支持android 开发插件,kotlin-android-extensions就是省去我们频繁找id的插件了
+	14.2 【译】迁移被废弃的Kotlin Android Extensions插件 
+		https://weilu.blog.csdn.net/article/details/109557820 
+		
+		包含原文：Migrating the deprecated Kotlin Android Extensions compiler plugin
+	

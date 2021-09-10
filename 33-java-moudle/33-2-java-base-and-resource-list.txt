@@ -96,4 +96,8 @@
 		：：这几个本质上没什么区别，只不过是一个约定好的代码，也就是说 使用大写字母A,B,C,D......X,Y,Z定义的，就都是泛型，把T换成A也一样，这里T只是名字上的意义而已
 12 java注解-最通俗易懂的讲解
 	https://blog.csdn.net/qq1404510094/article/details/80577555 
-	原文：https://www.cnblogs.com/Tanyboye/p/9138412.html
+	原文：https://www.cnblogs.com/Tanyboye/p/9138412.html 
+13 enum
+	13.1
+	13.2 Java中自定义枚举（Enum）项的值,可设置为指定的值
+		https://blog.csdn.net/funnyfu0101/article/details/53366359 

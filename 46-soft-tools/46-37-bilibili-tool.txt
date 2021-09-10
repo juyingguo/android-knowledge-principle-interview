@@ -10,4 +10,5 @@
 		在网址中bilibili后面加jj
 		网页版不在支持下载。提示用客户单下载jijidown 。
 		http://client.jijidown.com/ 
-	
+		
+		[好用]

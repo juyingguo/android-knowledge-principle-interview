@@ -348,3 +348,8 @@
 			https://www.jianshu.com/p/5fbde7a2189e 
 	30.4 Android Jetpack系列--1.Lifecycle使用及源码解析 
 		https://www.jianshu.com/p/373fa1a25e3b 
+31 android Button设置text属性为字母时，字母自动变成大写
+	https://blog.csdn.net/zhang106209/article/details/100574157 
+	
+	在布局中增加  android:textAllCaps="false" 就可以了 .
+	因为5.1及以后[*\styles_material.xml]包含android:textAllCaps="true"
