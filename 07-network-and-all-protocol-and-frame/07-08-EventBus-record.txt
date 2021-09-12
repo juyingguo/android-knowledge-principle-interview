@@ -3,14 +3,16 @@
 	2.1 java.lang.Class#isAssignableFrom
 	
 	2.2 org.greenrobot.eventbus.SubscriberMethodFinder.FindState#checkAdd
-		a,FirstActivity
-			showMessage(MessageEvent);
-			showCommonMessage(MessageEvent);
-			
-		b,SecondActivity
-			showMessage(MessageEvent);
-			showCommonMessage(MessageEvent);
-			
-			同时含有a
-		c,SecondActivity继承FirstActivity
+		
+		2.2.1 需要验证：不同注册类中订阅函数及参数类完全相同就不会重复添加吗。
+			a,FirstActivity
+				showMessage(MessageEvent);
+				showCommonMessage(MessageEvent);
+				
+			b,SecondActivity
+				showMessage(MessageEvent);
+				showCommonMessage(MessageEvent);
+				
+				同时含有a
+			c,SecondActivity继承FirstActivity
 			
