@@ -1,0 +1,16 @@
+1.
+2. 涉及到知识点记录
+	2.1 java.lang.Class#isAssignableFrom
+	
+	2.2 org.greenrobot.eventbus.SubscriberMethodFinder.FindState#checkAdd
+		a,FirstActivity
+			showMessage(MessageEvent);
+			showCommonMessage(MessageEvent);
+			
+		b,SecondActivity
+			showMessage(MessageEvent);
+			showCommonMessage(MessageEvent);
+			
+			同时含有a
+		c,SecondActivity继承FirstActivity
+			
