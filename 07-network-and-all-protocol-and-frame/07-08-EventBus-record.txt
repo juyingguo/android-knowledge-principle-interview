@@ -1,4 +1,8 @@
 1.
+	1.1 EventBus
+		https://github.com/greenrobot/EventBus 
+	1.2 类似框架
+		https://github.com/hehonghui/AndroidEventBus
 2. 涉及到知识点记录
 	2.1 java.lang.Class#isAssignableFrom
 	
@@ -14,3 +18,5 @@
 			同时含有a
 		c,SecondActivity继承FirstActivity
 			
+			
+		d,在纯java中验证是可以的。
