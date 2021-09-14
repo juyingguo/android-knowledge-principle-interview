@@ -9,6 +9,8 @@
 			https://book.flutterchina.club/#缘起
 			
 			笔者在大学时读过候捷（真名侯俊杰）写的一些C++相关书籍，在他的《深入浅出MFC》一书中，有一句话我印象像非常深 “唯有深入，方能浅出”。我非常认同这句话，对于一门技术，只有了解的深入，才能用最浅显、通俗的话语描述出。
+	2.2 Flutter开发第一步-Dart编程语言入门 
+		https://www.imooc.com/learn/1035
 3. flutter开发环境配置
 	3.1 起步:安装Flutter
 		https://flutterchina.club/get-started/install/ 
