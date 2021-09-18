@@ -1,9 +1,12 @@
 1.
 	1.1 EventBus
 		https://github.com/greenrobot/EventBus 
-	1.2 ���ƿ��
+		
+		fork后调试开发
+		
+	1.2 类似框架
 		https://github.com/hehonghui/AndroidEventBus
-2. �漰��֪ʶ���¼
+2. EventBus涉及到知识点记录
 	2.1 java.lang.Class#isAssignableFrom
 	
 	2.2 org.greenrobot.eventbus.SubscriberMethodFinder.FindState#checkAdd
@@ -15,8 +18,16 @@
 			showMessage(MessageEvent);
 			showCommonMessage(MessageEvent);
 			
-			ͬʱ����a
-		c,SecondActivity�̳�FirstActivity
+			同时含有a
+		c,SecondActivity继承FirstActivity
 			
 			
-		d,�ڴ�java����֤�ǿ��Եġ�
+		d,在纯java中验证是可以的。
+	2.3 一个类中，同一个事件多个订阅者。验证源码。
+		测试用例：
+		org.greenrobot.eventbus.EventBusBasicTest#testMultipleSubscribeMethodsForEvent 
+		
+		没有订阅方法会抛出异常：
+		org.greenrobot.eventbus.SubscriberMethodFinder#findSubscriberMethods 
+	2.4 eventbus 非粘性订阅者可以接受粘性事件吗？
+		
