@@ -1,18 +1,32 @@
 1.
-2. Éæ¼°µ½ÖªÊ¶µã¼ÇÂ¼
+	1.1 EventBus
+		https://github.com/greenrobot/EventBus 
+		
+		forkåè°ƒè¯•å¼€å‘
+		
+	1.2 ç±»ä¼¼æ¡†æ¶
+		https://github.com/hehonghui/AndroidEventBus
+2. EventBusæ¶‰åŠåˆ°çŸ¥è¯†ç‚¹è®°å½•
 	2.1 java.lang.Class#isAssignableFrom
 	
 	2.2 org.greenrobot.eventbus.SubscriberMethodFinder.FindState#checkAdd
-		
-		2.2.1 ĞèÒªÑéÖ¤£º²»Í¬×¢²áÀàÖĞ¶©ÔÄº¯Êı¼°²ÎÊıÀàÍêÈ«ÏàÍ¬¾Í²»»áÖØ¸´Ìí¼ÓÂğ¡£
-			a,FirstActivity
-				showMessage(MessageEvent);
-				showCommonMessage(MessageEvent);
-				
-			b,SecondActivity
-				showMessage(MessageEvent);
-				showCommonMessage(MessageEvent);
-				
-				Í¬Ê±º¬ÓĞa
-			c,SecondActivity¼Ì³ĞFirstActivity
+		a,FirstActivity
+			showMessage(MessageEvent);
+			showCommonMessage(MessageEvent);
 			
+		b,SecondActivity
+			showMessage(MessageEvent);
+			showCommonMessage(MessageEvent);
+			
+			åŒæ—¶å«æœ‰a
+		c,SecondActivityç»§æ‰¿FirstActivity
+			
+			
+		d,åœ¨çº¯javaä¸­éªŒè¯æ˜¯å¯ä»¥çš„ã€‚
+	2.3 ä¸€ä¸ªç±»ä¸­ï¼ŒåŒä¸€ä¸ªäº‹ä»¶å¤šä¸ªè®¢é˜…è€…ã€‚éªŒè¯æºç ã€‚
+		æµ‹è¯•ç”¨ä¾‹ï¼š
+		org.greenrobot.eventbus.EventBusBasicTest#testMultipleSubscribeMethodsForEvent 
+		
+		æ²¡æœ‰è®¢é˜…æ–¹æ³•ä¼šæŠ›å‡ºå¼‚å¸¸ï¼š
+		org.greenrobot.eventbus.SubscriberMethodFinder#findSubscriberMethods 
+	2.4 eventbus éç²˜æ€§è®¢é˜…è€…å¯ä»¥æ¥å—ç²˜æ€§äº‹ä»¶å—ï¼Ÿ
