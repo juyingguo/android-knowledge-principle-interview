@@ -56,7 +56,11 @@
 	5.5 Java中的ThreadLocal详解 
 		[testcode:AndroidJavaDemoTestForAS\javatest\com.threadtest.threadlocaltest]
 		https://www.cnblogs.com/fsmly/p/11020641.html
-		
+	5.6 面试-----手写生产者消费者
+		https://blog.csdn.net/lettyisme/article/details/81174733 
+		project:AndroidJavaDemoTestForAS\javatest\src\main\java\com\threadtest\producerconsumer
+	5.7 [Java 并发]源码级分析 ThreadPoolExecutor 是如何做到线程复用的
+		https://blog.csdn.net/zll_0405/article/details/106721581 
 6. java中文件操作
 	6.1 java读取文本文件内容 
 		https://www.cnblogs.com/xing-star/p/11042369.html 
@@ -105,3 +109,10 @@
 	13.1
 	13.2 Java中自定义枚举（Enum）项的值,可设置为指定的值
 		https://blog.csdn.net/funnyfu0101/article/details/53366359 
+14 Java中break retry，continue retry的使用
+	https://blog.csdn.net/zzti_erlie/article/details/90728898 
+	
+15 进制
+	15.1 二进制
+		两个负数的二进制补码是怎么相加的？
+		http://bbs.bccn.net/thread-372226-1-1.html 
