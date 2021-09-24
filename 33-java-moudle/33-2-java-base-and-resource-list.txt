@@ -109,6 +109,8 @@
 	13.1
 	13.2 Java中自定义枚举（Enum）项的值,可设置为指定的值
 		https://blog.csdn.net/funnyfu0101/article/details/53366359 
+		
+		参考：okhttp3.Protocol
 14 Java中break retry，continue retry的使用
 	https://blog.csdn.net/zzti_erlie/article/details/90728898 
 	
