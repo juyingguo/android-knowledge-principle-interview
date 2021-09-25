@@ -118,3 +118,10 @@
 	15.1 二进制
 		两个负数的二进制补码是怎么相加的？
 		http://bbs.bccn.net/thread-372226-1-1.html 
+16 反射
+	16.1 clazz.getDeclaredMethods()
+		测试用例验证：不包含继承方法
+		clazz.getMethods()
+		包含继承方法。
+		
+		均不包含，构造函数。
