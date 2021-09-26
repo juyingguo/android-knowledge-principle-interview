@@ -11,7 +11,12 @@
 	0.4 java教程
 		菜鸟教程：
 		https://www.runoob.com/java/java-tutorial.html
-		
+	0.5 java.lang.Object#wait(long);
+		doc ref:
+		For more information on this topic, see Section 3.2.3 in Doug Lea's
+		"Concurrent Programming in Java (Second Edition)" (Addison-Wesley,
+		 2000), or Item 50 in Joshua Bloch's "Effective Java Programming
+		Language Guide" (Addison-Wesley, 2001).
 一、吃透java ,csdn博客。
 	1.1、吃透Java基础八：Throwable异常 
 		https://blog.csdn.net/u013277209/article/details/102834719
