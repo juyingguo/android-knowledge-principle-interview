@@ -17,6 +17,8 @@
 		"Concurrent Programming in Java (Second Edition)" (Addison-Wesley,
 		 2000), or Item 50 in Joshua Bloch's "Effective Java Programming
 		Language Guide" (Addison-Wesley, 2001).
+	0.6 《Java Concurrency in Practice》
+		
 一、吃透java ,csdn博客。
 	1.1、吃透Java基础八：Throwable异常 
 		https://blog.csdn.net/u013277209/article/details/102834719
@@ -123,3 +125,11 @@
 	15.1 二进制
 		两个负数的二进制补码是怎么相加的？
 		http://bbs.bccn.net/thread-372226-1-1.html 
+16 Java 代码中看到数字中间带下划线的，如 1000_000 这种形式的数字的理解
+	https://blog.csdn.net/coderder/article/details/84030703 
+	
+17 Java中Volatile关键字详解
+	https://www.cnblogs.com/zhengbin/p/5654805.html 
+	
+18 DiskLruCache
+	18.1 ref:okhttp3.internal.cache.DiskLruCache

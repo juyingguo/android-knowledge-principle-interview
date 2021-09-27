@@ -5,7 +5,37 @@
 	2.1 http原理浅谈：导入okhttp的源码到Android Studio并对框架进行定制 
 		https://www.jianshu.com/p/fb6e9c99f800 
 		
-	
-	
+		测试验证：
+		验证工程位置：*\Okhttp390Test
+		框架版本：okhttp-3.9.0;okio-1.13.0;
+		a,okhttp3.internal.Version;提示找不到
+			这个okhttp源码项目编译出来的，可以从编译好的。androidstudio gradle下载好的对应版本的okhttp-3.9.0-sources.jar中拷贝过来用。
+		b,org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement 错误: 程序包org.codehaus.mojo.animal_sniffer不存在 
+			android studio使用中遇见的错误 
+			https://www.tqwba.com/x_d/jishu/203926.html 
+			http://stackoverflow.com/questions/29886882/android-studio-1-2-rc-proguard-warnings-on-squares-okio-library-reference
+		
+			查看：okio下的pom.xml
+				<dependency>
+				  <groupId>com.google.code.findbugs</groupId>
+				  <artifactId>jsr305</artifactId>
+				  <scope>provided</scope>
+				</dependency>
+				<dependency>
+				  <groupId>org.codehaus.mojo</groupId>
+				  <artifactId>animal-sniffer-annotations</artifactId>
+				  <optional>true</optional>
+				</dependency>
+				
+				版本：
+				<version>1.1</version>
+				
+				gradle配置这个依赖库即可：
+					implementation 'org.codehaus.mojo:animal-sniffer-annotations:1.1'
+				属于maven仓库的jar，添加mavenCentral()仓库。
+				
 3. OKHTTP3（一）源码分析
 	https://www.freesion.com/article/2734906565/ 
+4. 进阶之光。
+	测试适配：android-advanced-light\chapter_5\MoonOkHttp3
+		程序转到测试项目目录（用java程序就行）：com.demo.okhttp390test.andvancelighttest 
