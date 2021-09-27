@@ -132,4 +132,11 @@
 	https://www.cnblogs.com/zhengbin/p/5654805.html 
 	
 18 DiskLruCache
-	18.1 ref:okhttp3.internal.cache.DiskLruCache
+	18.1 ref:okhttp3.internal.cache.DiskLruCache 
+19 反射
+	16.1 clazz.getDeclaredMethods()
+		测试用例验证：不包含继承方法
+		clazz.getMethods()
+		包含继承方法。
+		
+		均不包含，构造函数。
