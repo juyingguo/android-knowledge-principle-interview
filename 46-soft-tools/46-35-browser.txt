@@ -19,4 +19,8 @@
 		https://www.cnblogs.com/zhangxuetao/p/13825976.html 
 		Stream Video Downloader 和 Flash Video Downloader。 
 		
-		Video Downloader
+		Video Downloader 
+	3.3 chrome android 版各个历史版本下载
+	
+		http://www.oldversion.cn/android/com-android-chrome/ 
+		

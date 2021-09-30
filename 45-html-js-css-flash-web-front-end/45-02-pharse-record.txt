@@ -268,6 +268,10 @@
 			If you just wish to pause a tween then use Tween.pause instead.
 	9.6 //对于闪动几次自动停止的
 				// game.add.tween(that.pig_rice_transplant.scale).to( { x: 3, y: 3 }, 500).to( { x: 1, y: 1 }, 500).repeatAll(3).start();
+	9.7 动画缩放，默认是坐标左上角开始向右下角缩放。
+		是否可以从图片中间缩放
+	9.8 Phaser 中动画（ tween ）的使用
+		http://www.swjxzy.com/a/jsyjxyj/phaser/2016/0614/1204.html 
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
 
 	源码：this.test_bag_show_sencond_part_row01_col01.animations.add('move');
@@ -309,3 +313,10 @@
 			通过这种绘制的线销毁也巨大麻烦。
 	14.2 同过new Phaser.Line。闪动缩放动画，也不可以。
 		需要闪动的线，通过图片代替即可。
+		
+15 加载视频
+	15.1 
+	15.2 在
+		09-29 09:59:40.534 2852-2943/com.sp.spmultipleapp D/MediaResourceGetter: resource has video
+		09-29 09:59:40.536 2852-2943/com.sp.spmultipleapp D/MediaResourceGetter: extracted valid metadata: MediaMetadata[durationInMilliseconds=13013, width=640, height=480, success=true]
+		09-29 09:59:40.994 2852-2962/com.sp.spmultipleapp E/chromium: [ERROR:gles2_cmd_decoder.cc(10216)] [.Compositor-Offscreen-main-thread-0xa26f2dd0]GL ERROR :GL_INVALID_OPERATION : glConsumeTextureCHROMIUM: invalid mailbox name
