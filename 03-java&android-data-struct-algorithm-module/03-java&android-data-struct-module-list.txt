@@ -75,7 +75,7 @@
 		4.1.2.for循环增强遍历，会抛出ConcurrentModificationException，原因，底层原理？
 			1.在遍历删除操作第几个元素的是否发生ConcurrentModificationException。
 		4.1.3、Iterator是工作在一个独立的线程中，并且拥有一个 mutex 锁。
-		
+	
 五、集合中用到的锁。
 	5.1、Iterator是工作在一个独立的线程中，并且拥有一个 mutex 锁。
 	
@@ -166,6 +166,10 @@
 十六、ArrayList
 	16.1 阿里面试，面试官没想到一个ArrayList，我都能跟他扯半小时  
 		https://blog.csdn.net/qq_35190492/article/details/103883964?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-15&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-15 
-	
+	16.2 ArrayList循环遍历并删除元素的几种情况 
+		https://www.cnblogs.com/51life/p/10406662.html 
+		
+		ArrayList循环遍历并删除元素的常见陷阱
+		https://www.cnblogs.com/huangjinyong/p/9455163.html 
 		
 		
