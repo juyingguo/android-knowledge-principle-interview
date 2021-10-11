@@ -269,7 +269,8 @@
 	9.6 //对于闪动几次自动停止的
 				// game.add.tween(that.pig_rice_transplant.scale).to( { x: 3, y: 3 }, 500).to( { x: 1, y: 1 }, 500).repeatAll(3).start();
 	9.7 动画缩放，默认是坐标左上角开始向右下角缩放。
-		是否可以从图片中间缩放
+		是否可以从图片中间缩放.
+		通过控件的属性anchor来设置。anchor.x=0.5；anchor.y=0.5;
 	9.8 Phaser 中动画（ tween ）的使用
 		http://www.swjxzy.com/a/jsyjxyj/phaser/2016/0614/1204.html 
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
@@ -283,14 +284,16 @@
 	验证：外层定义that= this;
 	原因：上下文问题。that.test_bag_show_sencond_part_row01_col01.animations.add('move');就可以了。
 11 在vscode中增加phaser代码提示
-	https://blog.csdn.net/weixin_34220623/article/details/89039089
+	11.1 https://blog.csdn.net/weixin_34220623/article/details/89039089
 	
-	第一步：在项目根目录增加jsconfig.json文件，里面的内容是{}空括号
+		第一步：在项目根目录增加jsconfig.json文件，里面的内容是{}空括号
 
-	第二步：在项目根目录增加defs文件夹，里面包括三个文件：p2.d.ts、phaser.comments.d.ts、pixi.d.ts
-	需要下载完整源码。
-	这三个文件在源码中phaser-2.6.2\typescript
+		第二步：在项目根目录增加defs文件夹，里面包括三个文件：p2.d.ts、phaser.comments.d.ts、pixi.d.ts
+		需要下载完整源码。
+		这三个文件在源码中phaser-2.6.2\typescript
 	
+	11.2 按照[11.1] 配置后，如果直接在html中代码块中script写js是不能提示的。
+		需要写到单独的.js文件中，就有提示了。
 12 点击事件。
 	button点击后如何置为不可点击。
 	destroy，kill 都会销毁，不可见。
@@ -320,3 +323,5 @@
 		09-29 09:59:40.534 2852-2943/com.sp.spmultipleapp D/MediaResourceGetter: resource has video
 		09-29 09:59:40.536 2852-2943/com.sp.spmultipleapp D/MediaResourceGetter: extracted valid metadata: MediaMetadata[durationInMilliseconds=13013, width=640, height=480, success=true]
 		09-29 09:59:40.994 2852-2962/com.sp.spmultipleapp E/chromium: [ERROR:gles2_cmd_decoder.cc(10216)] [.Compositor-Offscreen-main-thread-0xa26f2dd0]GL ERROR :GL_INVALID_OPERATION : glConsumeTextureCHROMIUM: invalid mailbox name
+16 Phaser.State functions (preload, create, update, render)
+	16.1 update, rende会自动调用。不管是否有加载资源或创建对象。
