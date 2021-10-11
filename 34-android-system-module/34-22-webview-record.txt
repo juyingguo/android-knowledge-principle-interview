@@ -5,4 +5,20 @@
 	https://blog.csdn.net/lowprofile_coding/article/details/77928614
 	
 3. Android升级webview内核
-	https://www.jianshu.com/p/e4133fb82532
+	https://www.jianshu.com/p/e4133fb82532 
+	
+4. webview播放视频失败，通过phaser框架。
+	4.1 
+		chromium: [INFO:SkUtilsArm.cpp(179)] Device supports ARM NEON instructions!
+	/com.sp.spmultipleapp I/chromium: [INFO:CONSOLE(36103)] "%c %c %c Phaser v2.6.2 | Pixi.js | Canvas | WebAudio  %c %c %c http://phaser.io %c♥%c♥%c♥", source: file:///android_asset/web/phaser2/phaser-2.6.2.js (36103)
+	/com.sp.spmultipleapp D/MediaResourceGetter: resource has video
+	/com.sp.spmultipleapp D/MediaResourceGetter: extracted valid metadata: MediaMetadata[durationInMilliseconds=13013, width=640, height=480, success=true]
+	/com.sp.spmultipleapp E/chromium: [ERROR:gles2_cmd_decoder.cc(10216)] [.Compositor-Offscreen-main-thread-0xa26d2820]GL ERROR :GL_INVALID_OPERATION : glConsumeTextureCHROMIUM: invalid mailbox name
+	/com.sp.spmultipleapp E/chromium: [ERROR:gles2_cmd_decoder.cc(9904)] [.Compositor-Offscreen-main-thread-0xa26d2820]GL ERROR :GL_INVALID_VALUE : glCopyTextureChromium: source texture has no level 0
+	
+	
+	4.2 参考
+		https://bugs.chromium.org/p/chromium/issues/detail?id=446512 
+		https://girellinigirellini.blogspot.com/2011/09/android-draw-video-frames-onto-canvas.html 
+		
+	4.3 对比html5播放视频是可以的。

@@ -323,5 +323,8 @@
 		09-29 09:59:40.534 2852-2943/com.sp.spmultipleapp D/MediaResourceGetter: resource has video
 		09-29 09:59:40.536 2852-2943/com.sp.spmultipleapp D/MediaResourceGetter: extracted valid metadata: MediaMetadata[durationInMilliseconds=13013, width=640, height=480, success=true]
 		09-29 09:59:40.994 2852-2962/com.sp.spmultipleapp E/chromium: [ERROR:gles2_cmd_decoder.cc(10216)] [.Compositor-Offscreen-main-thread-0xa26f2dd0]GL ERROR :GL_INVALID_OPERATION : glConsumeTextureCHROMIUM: invalid mailbox name
+		
+	15.3 单独html5播放视频正常。
+		*\AndroidJavaDemoTestForAS\app\src\main\assets\web\html5\01-html5-video.html
 16 Phaser.State functions (preload, create, update, render)
 	16.1 update, rende会自动调用。不管是否有加载资源或创建对象。
