@@ -34,3 +34,8 @@
 		than once for 192.168.211.100, this may mean that 192.168.211.100is an "alias" which resolves to different hosts.
 		It is recommended you verify your host key before accepting.Server's host key fingerprint (MD5 hash):
 		4b:73:e6:d2:c3:ea:9a:7b:e6:99:4c:bd:72:53:58:e6
+4. 修改背景色。
+	黑色背景下，文件夹，蓝色文字很不好看清楚。
+	修改：
+	Session options
+	-Terminal -Emulation - 勾选 ANSI color 和 Use color scheme

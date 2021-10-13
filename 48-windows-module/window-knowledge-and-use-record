@@ -45,4 +45,16 @@
 	 https://jingyan.baidu.com/article/6c67b1d6a83d922787bb1eec.html 
 9. windows动态链接库[DLL]与Linux共享库[SO]技术浅析 
 	https://www.cnblogs.com/darling131499/p/4609097.html 
-	 
+10. 教你怎么用WIN7系统自带工具调整硬盘分区
+	
+	10.1 https://jingyan.baidu.com/article/fd8044fae86fb55031137ae5.html 
+		
+	10.2 win7系统下如何把未分配的空间转给其他盘 
+		https://jingyan.baidu.com/article/fd8044fa2667fb5031137aed.html 
+	10.3 分区软件
+		a,分区助手。
+			https://www.disktool.cn/download.html 
+			分区教程：https://www.disktool.cn/jiaocheng/index.html?paproinst
+		b,键盘按下组合键WIN+R，输入“diskmgmt.msc”
+			单击 Win+R 并在运行框中键入“diskpart” 
+			https://www.disktool.cn/jiaocheng/extend-c-drive.html

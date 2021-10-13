@@ -1,3 +1,6 @@
+0
+	0.1 https://webkit.org/
+	0.2 http://www.chromium.org/ 
 1. Android-WebView中加载本地html的方法
 	1.1 Android-WebView中加载本地html的方法
 		https://www.jianshu.com/p/6c796944a19f
@@ -5,8 +8,102 @@
 	https://blog.csdn.net/lowprofile_coding/article/details/77928614
 	
 3. Android升级webview内核
-	https://www.jianshu.com/p/e4133fb82532 
-	
+	3.0 android-system-webview download url:
+		
+		https://www.apkmirror.com/uploads/?q=android-system-webview  
+		https://apkbog.com/en/apk/android-system-webview  //下载快，无需vpn
+		faq:
+		https://www.apkmirror.com/faq/ 
+		
+		How can I find out my device’s DPI, architecture, screen size, and other specs?
+		After trying numerous system info apps, we are currently recommending Droid Hardware Info:http://www.apkmirror.com/apk/inkwired/droid-hardware-info/droid-hardware-info-1-0-3-release/
+		
+		using-android-system-webview-instead-of-aosp：
+			https://stackoverflow.com/questions/62019315/using-android-system-webview-instead-of-aosp
+		
+	3.1 https://www.jianshu.com/p/e4133fb82532 
+		系统内置的webview内核大多很老旧，性能低下，而最新的chrome内核更新非常快。
+
+		1、下载最新的chrome内核版本 https://www.apkmirror.com/uploads/?q=android-system-webview 
+
+		2、替换原来的webview.apk ,external\chromium-webview\prebuilt\arm64。
+
+		3、修改默认的包名：\frameworks\base\core\res\res\xml\config_webview_packages.xml ：从com.android.webview 修改成com.google.android.webview.
+			验证发现aosp5.1没有这个文件。
+			全局搜索：com.android.webview
+			find . -iname "*.xml" | xargs grep -irnw "com.android.webview"
+			
+			./frameworks/webview/chromium/AndroidManifest.xml:18:    package="com.android.webview">
+			./frameworks/base/core/res/res/values/config.xml:1917:    <string name="config_webViewPackageName" translatable="false">com.android.webview</string>
+			
+	3.2 更新android系统自带webview
+		https://blog.csdn.net/s290717997/article/details/85129735 
+		
+		查看版本号；
+		adb shell am start -a android.intent.action.VIEW -d  https://liulanmi.com/labs/core.html
+	3.4 内置webview升级全过程记录
+		3.4.0 环境aosp5.1,Android_System_WebView-94.0.4606.71.apk 
+			默认为webview内核：37
+		3.4.1 
+			a,更换配置包名 ./frameworks/base/core/res/res/values/config.xml
+			b,禁用默认内置的webview源码编译。
+				参考配置：device.mk中的webview配置：
+				$(call inherit-product-if-exists, frameworks/webview/chromium/chromium.mk)
+				即将chromium.mk重命名为chromium.mk_bak，该模块就不会编译了。
+				
+		3.4.2 编译失败
+			Fatal signal 6 (SIGABRT), code -6 (SI_TKILL)
+			[18:41:40_816]dex2oatd F 22763 22763 art/runtime/runtime_linux.cc:299] OS: Linux 3.19.0-25-generic (x86_64)
+			[18:41:40_816]dex2oatd F 22763 22763 art/runtime/runtime_linux.cc:299] Cmdline: out/host/linux-x86/bin/dex2oatd --runtime-arg -Xms64m --runtime-arg -Xmx512m --boot-image=out/target/product/bubble_gum/dex_bootjars/system/framework/boot.art --dex-file=device/actions/common/prebuilt/apk/thirdparty/Android_System_WebView/app/Android_System_WebView-94.0.4606.71.apk --dex-location=/system/app/Android_System_WebView/Android_System_WebView.apk --oat-file=out/target/product/bubble_gum/obj/APPS/Android_System_WebView_intermediates/arm/package.odex --android-root=out/target/product/bubble_gum/system --instruction-set=arm --instruction-set-features=default --include-patch-information --runtime-arg -Xnorelocate --no-include-debug-symbols
+			
+			
+			分析参考：
+			Android编译预制过高版本app导致编译错误解决
+			https://blog.csdn.net/lb5761311/article/details/90294373 
+			
+				指名了错误的原因:
+				原因是apk要预置进源码的时候，会对apk进行一个解析，好形成odex文件加速apk的运行，但是基于高版本的sdk开发的apk里面的一些资源是无法被低版本正确的解析的，解决办法就是，在mk文件里面禁止对该apk进行odex的处理。
+				1、LOCAL_DEX_PREOPT := false
+				2、让应用降低sdk版本与我们当前使用Android设备版本一致
+		3.4.3 aosp镜像包烧录好后。
+			设置-应用：Android System WebView显示大小为0；
+			重新整编译（android下删除out）后的固件包，大小显示正常
+			但webview还是无法运行。
+			报错如下：
+				com.android.browser E/WebViewFactory: error instantiating provider
+				java.lang.RuntimeException: Invalid reflection
+					at jD0.<init>(chromium-SystemWebViewGoogle.aab-stable-460607100:17)
+					at com.android.webview.chromium.WebViewChromiumFactoryProvider.<init>(chromium-SystemWebViewGoogle.aab-stable-460607100:5)
+					at java.lang.reflect.Constructor.newInstance(Native Method)
+					at java.lang.Class.newInstance(Class.java:1606)
+					at android.webkit.WebViewFactory.getProvider(WebViewFactory.java:124)
+					...
+					
+			a,验证。
+				保留frameworks/webview/chromium/chromium.mk编译进系统。因为这个chromium是webview的底层内核。
+				同时把Android_System_WebView-94.0.4606.71.apk 内置进入系统。
+				
+				检测内核版本号已经变为：94.0.4606.71 。验证成功。
+		3.4.4 相关论坛文章参考：
+			Update Android System WebView on SDK Emulator
+			https://stackoverflow.com/questions/30785197/update-android-system-webview-on-sdk-emulator 
+			
+			a，You can even build WebView AOSP yourself. Although, this will require a beefy Linux machine to pull out.
+				https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/build-instructions.md  
+			b,AOSP Browser based on Android System WebView without root: Where can I find??
+				https://forum.xda-developers.com/t/aosp-browser-based-on-android-system-webview-without-root-where-can-i-find.4069747/ 
+				
+			c，在AOSP Android 6.0上更新WebView(Updating WebView on AOSP Android 6.0)
+				https://www.it1352.com/1918598.html 
+				
+				需要系统签名？
+				How to sign Android app with system signature?
+				https://stackoverflow.com/questions/3635101/how-to-sign-android-app-with-system-signature 
+				
+				LOCAL_CERTIFICATE作用 
+				https://blog.csdn.net/jamikabin/article/details/85852973 
+				
+				LOCAL_CERTIFICATE := PRESIGNED表示APK签名使用原来签名，即第三方签名，若要使用系统签名，则可以改为LOCAL_CERTIFICATE := platform系统前面，可以使apk获得系统权限。
 4. webview播放视频失败，通过phaser框架。
 	4.1 
 		chromium: [INFO:SkUtilsArm.cpp(179)] Device supports ARM NEON instructions!
@@ -22,3 +119,11 @@
 		https://girellinigirellini.blogspot.com/2011/09/android-draw-video-frames-onto-canvas.html 
 		
 	4.3 对比html5播放视频是可以的。
+5. Android WebView加载Chromium动态库的过程分析
+	https://blog.csdn.net/luoshengyang/article/details/53209199/ 
+6. AOSP和Chromium的Android WebViewTest
+	https://blog.csdn.net/hursing/article/details/18792529 
+7. WebView差异
+	https://www.cnblogs.com/gcczhongduan/p/4237959.html 
+	
+	在Android 4.4以下(不包括4.4)系统WebView底层实现是採用WebKit(http://www.webkit.org/)内核，而在Android 4.4及其以上Google 採用了chromium(http://www.chromium.org/)作为系统WebView的底层内核支持。 

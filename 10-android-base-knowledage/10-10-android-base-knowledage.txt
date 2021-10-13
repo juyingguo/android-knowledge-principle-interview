@@ -273,6 +273,13 @@
 23 ART、OAT格式介绍与dex文件提取 
 	https://www.jianshu.com/p/065e358b9599
 	
+	23.1 Android中什么是Dex文件
+		https://www.jianshu.com/p/795b4f01e7c8 
+	23.2 android之oat文件介绍
+		https://www.jianshu.com/p/b20950cc1b7c 
+		
+		Android运行时ART加载OAT文件的过程分析 
+		https://blog.csdn.net/luoshengyang/article/details/39307813 
 24 Android 息屏亮屏操作 
 	24.1 Android 息屏亮屏操作
 		https://blog.csdn.net/qq_27256793/article/details/86254461
