@@ -1,7 +1,0 @@
-1.资源
-	1.1 
-		https://www.wireshark.org/download.html
-	1.2 类似功能的软件
-		tcpview
-		
-2. 
