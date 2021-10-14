@@ -17,8 +17,6 @@
 			
 		1.4.3 Proxifier+Fiddler 抓取PC客户端数据包
 			https://blog.csdn.net/yyws2039725/article/details/111282731 
-						
-			https://baike.baidu.com/item/proxifier/10859305?fr=aladdin
 			
 			指定不解析的主机：
 			配置文件-名称解析-DNS 名称列表。添加如下：
@@ -34,5 +32,11 @@
 			
 			分析：proxifier配置证书吗？
 			或者测试直接使用http地址。
-
+	1.5 Proxifier:
+			https://www.onlinedown.net/soft/971579.htm 			
+			
+			https://baike.baidu.com/item/proxifier/10859305?fr=aladdin
+			
+			汉化：
+			http://www.hanzify.org/software/13717.html 
 2. 
