@@ -127,3 +127,7 @@
 	https://www.cnblogs.com/gcczhongduan/p/4237959.html 
 	
 	在Android 4.4以下(不包括4.4)系统WebView底层实现是採用WebKit(http://www.webkit.org/)内核，而在Android 4.4及其以上Google 採用了chromium(http://www.chromium.org/)作为系统WebView的底层内核支持。 
+8. Chromium
+	8.1 Android4.4系统浏览器Chromium实现的加载模块与流程
+		https://blog.csdn.net/hursing/article/details/38727119 
+	

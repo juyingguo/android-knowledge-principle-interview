@@ -359,4 +359,42 @@
 	https://blog.csdn.net/zhang106209/article/details/100574157 
 	
 	在布局中增加  android:textAllCaps="false" 就可以了 .
-	因为5.1及以后[*\styles_material.xml]包含android:textAllCaps="true"
+	因为5.1及以后[*\styles_material.xml]包含android:textAllCaps="true" 
+32 对 url 中含有的中文系列问题。
+	32.a
+		问题引入：中文url,以下代码通不过。
+		Patterns.WEB_URL.matcher(url).matches();
+	32.b 对 url 中含有的中文进行转码操作
+		https://www.cnblogs.com/ljmatlight/p/8472666.html  
+		验证程序：AndroidJavaDemoTestForAS\javatest:urltest\StringWithUrlTest.java
+		
+		关键点：
+			// 排除这两个特殊字符的编码
+			dontNeedEncoding.set(':');
+			dontNeedEncoding.set('/');
+		在android中无法使用import sun.security.action.GetPropertyAction;
+		解决办法将java源码拷贝过来。
+		
+	32.1 Android url带有中文、空格处理 
+		https://www.jianshu.com/p/3734ece83400 
+		
+		
+		关键点：
+			空格是会被转义成“+”，而不是%20。
+			增加replace("\\+", "%20")替换“+” 
+		注意：博主代码错误，不过提供了很好的思路。
+			应为：replace("+", "%20")
+		
+	32.2 Android 播放视频，视频的URL中包含中文，导致无法播放的解决办法。
+		https://blog.csdn.net/qinwendou/article/details/82590151 
+		
+		解决办法就是将后面的带有中文的进行转码。
+		例如：/upload/video/jc/郭顶-水星记(标清).mp4
+		将郭顶-水星记(标清).mp4进行转码。
+		String videoUrl = “郭顶-水星记(标清).mp4”;
+		try {
+			String encode = URLEncoder.encode(videoUrl, "UTF-8");
+			String URL5 = ServerUrlUtils.SERVER_URL+"/upload/video/jc/"+encode;
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
