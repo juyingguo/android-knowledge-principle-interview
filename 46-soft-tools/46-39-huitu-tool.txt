@@ -29,4 +29,25 @@
 	3.5 如何在Photoshop中使用使用”椭圆工具"绘制
 		https://jingyan.baidu.com/article/925f8cb81bf94d81dce05618.html 
 		从Photoshop工具箱中点击“椭圆工具”。如果看不见，请右键单击单击其组中任何可见的形状工具，以在下拉菜单中显示“椭圆工具”。
+	3.6 ps怎么将psd文件中的图层导出为图片
+		https://jingyan.baidu.com/article/380abd0abb83c05d90192c80.html 
 		
+4. Photoshop CC
+	4.1 a,
+			adobe photoshop cc 2019中文破解版 附安装教程 
+			http://www.ddooo.com/softdown/132267.htm#dltab 
+	
+	
+		b,
+			http://www.xz7.com/downinfo/494145.html 
+			软件已经离线破解，解压后双击photoshop.exe即可打开 
+	4.2 photoshop cc 像素图层属性宽高为英寸
+		https://zhidao.baidu.com/question/207788723.html 
+		
+		启动ps软件，进入ps界面以后，点击“编辑”菜单，在下拉列表里选择“首选项”，再在展开的列表里选择“单位与标尺”
+	4.3 photoshop cc 点击图自动定位到哪个图层 
+		点选择工具
+
+		在自动选择打钩
+		
+		不同版本有差别。

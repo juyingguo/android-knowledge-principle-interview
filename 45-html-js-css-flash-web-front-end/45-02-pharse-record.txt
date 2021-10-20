@@ -269,8 +269,10 @@
 	9.6 //对于闪动几次自动停止的
 				// game.add.tween(that.pig_rice_transplant.scale).to( { x: 3, y: 3 }, 500).to( { x: 1, y: 1 }, 500).repeatAll(3).start();
 	9.7 动画缩放，默认是坐标左上角开始向右下角缩放。
-		是否可以从图片中间缩放.
-		通过控件的属性anchor来设置。anchor.x=0.5；anchor.y=0.5;
+		a,是否可以从图片中间缩放.
+			通过控件的属性anchor来设置。anchor.x=0.5；anchor.y=0.5;
+		b,设置锚点后，注意坐标会对应比例平移变化，需要对应重新调整。
+		
 	9.8 Phaser 中动画（ tween ）的使用
 		http://www.swjxzy.com/a/jsyjxyj/phaser/2016/0614/1204.html 
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。

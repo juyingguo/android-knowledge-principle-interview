@@ -1,17 +1,19 @@
-1. ����������ˣ���ô��ͻȻ�������ˡ�
+1. 曾经优秀的人，怎么就突然不优秀了。
 	https://blog.csdn.net/caoz/article/details/103884073? 
 	
-2. �������Ա��ι滮�Լ���ְҵ��·�������������� 
+2. 年轻程序员如何规划自己的职业道路，不断提升能力 
 	https://blog.csdn.net/zhoubotong2012/article/details/102890573 
 	
-	���磬������ǰ��MFC�����濪������UI���������õ��ܶิ�ӵĿؼ���������Ч�����ã�����������QT����ƽ̨���Ϳ�Դ��Duilib��֧��Windowsϵͳ����ӭ��DirectUI��������ʵ����XMLģ�嶨��UI���ܹ�����ʵ�ָ��ֿؼ����Զ������ͼ��������󷽱��˳���Ա�������档��������Ƶ���������ģ�����Ա����Ҫ����FFmpeg��SDL��DirectX��OpenGL/OpenES����Щ��������������Ҫ�˽�RTSP��RTP��RTMP��HLS����ý��Э�飬������һ�㻹ҪѧϰOpenCV���˽������磨��Ҫ������Ƶ������������������ֻ�и��û�����
+	比如，我们以前用MFC做界面开发，做UI美化往往用到很多复杂的控件技术并且效果不好，但后来出了QT（跨平台）和开源的Duilib（支持Windows系统），迎来DirectUI的设计理念，实现用XML模板定义UI，能够轻松实现各种控件的自定义和贴图美化，大大方便了程序员开发界面。还有做视频技术开发的，程序员除了要掌握FFmpeg，SDL，DirectX、OpenGL/OpenES等这些基本技术，还需要了解RTSP、RTP、RTMP、HLS等流媒体协议，更深入一点还要学习OpenCV，了解神经网络（主要用于视频分析）。。。，技术只有更深、没有最深。
 	
-3. ��ȫջ���� ���� 
+3. “全栈”？ 别逗了 
 	https://www.sohu.com/a/206399700_250298 
 	
 	https://www.zhihu.com/question/27486227 
-4.��������Ϊʲô������Ա? 
+4.我在美国为什么做程序员? 
 		https://www.bilibili.com/video/av287535605 
-	4.1 Ϊʲô��������Ա�������й�����Ա�������ɡ��Ӱ��٣� 
+	4.1 为什么美国程序员工作比中国程序员工作轻松、加班少？ 
 		https://zhuanlan.zhihu.com/p/57265705
 		
+5. 总结移动开发入行十周年
+	https://hursing.blog.csdn.net/article/details/118660034#comments_18387453 
