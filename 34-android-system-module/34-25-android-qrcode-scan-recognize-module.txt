@@ -1,4 +1,12 @@
 1.
+	1.1 zxing
+		官方下载zxing的源码：
+			http://code.google.com/p/zxing/downloads/list。
+			
+			https://github.com/zxing/zxing 
+			
+		To get started, please visit:
+			https://github.com/zxing/zxing/wiki/Getting-Started-Developing
 2. zxing,android
 	2.0 验证工程：com.sp.spmultipleapp.activity.CaptureActivityNew
 	2.1 二维码识别不灵敏
