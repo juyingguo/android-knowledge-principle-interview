@@ -330,3 +330,6 @@
 		*\AndroidJavaDemoTestForAS\app\src\main\assets\web\html5\01-html5-video.html
 16 Phaser.State functions (preload, create, update, render)
 	16.1 update, rende会自动调用。不管是否有加载资源或创建对象。
+	
+17 控制点击。
+	bag_show_sencond_part_row01_col02_heart_response_click = false;//控制控件是否执行点击后的操作，有效防止没有按照事件顺序点击的时候，误操作。且能控制正确响应事件后，再次点击不响应点击后的操作。

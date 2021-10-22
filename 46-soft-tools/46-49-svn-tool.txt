@@ -1,4 +1,11 @@
 1.
+	1.1 Apache Subversion
+		http://subversion.apache.org/ 
+		
+	1.2 SVN 服务器配置：安装SVN服务器 
+		https://wenku.baidu.com/view/b0d5421ba76e58fafab00337.html?st=1
 2.SVN常用命令
 	https://blog.csdn.net/ithomer/article/details/6187464 
 	
+3. svn客户端操作。经常漏提交新增的文件。
+	应先add,再提交。

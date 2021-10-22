@@ -1,0 +1,83 @@
+1.
+2. zxing,android
+	2.0 验证工程：com.sp.spmultipleapp.activity.CaptureActivityNew
+	2.1 二维码识别不灵敏
+	2.1 设置识别区域大小。
+	2.3 经过验证，
+		a,和大小，位置无关
+		b,和宽高比要与屏幕的宽高比一致。需要居中扫描。
+		
+		c,需要进一步验证2.1
+3. Android二维码ZXing扫描区域大小的调整，提高扫描速度
+	https://blog.csdn.net/wangshihui512/article/details/50883963?_t=t 
+	
+	3.0 
+		1024*3/4 = 768
+		552 *3/4 = 414
+		
+		(1024 - 768)/2 = 256 / 2 = 128;
+		(552 - 480)*2/5 = 72 *2/5 = 28;
+		3.0.2	异常
+			com.zxing.android.camera.CameraManager#getFramingRect
+			
+			int leftOffset = (screenResolution.x - width) / 2;
+			//			int leftOffset = 361;
+			//			int leftOffset = 0;
+						int topOffset = (screenResolution.y - height) * 2 / 5;
+			//			int topOffset = 150;
+			//			int topOffset = 0;
+			没有使用动态计算偏移量时，异常：
+				10-22 11:44:28.590 24777-24892/com.ibotn.izlcoursexbnt I/CameraConfiguration: Screen resolution: Point(1024, 552)
+				10-22 11:44:28.591 24777-24892/com.ibotn.izlcoursexbnt I/CameraConfiguration: Camera resolution: Point(1280, 720)
+				10-22 11:44:29.597 24777-24918/com.ibotn.izlcoursexbnt D/CameraManager: getFramingRect(),after refactor,width: 768,height: 480
+				10-22 11:44:29.597 24777-24918/com.ibotn.izlcoursexbnt D/CameraManager: getFramingRect(),Calculated framing rect: Rect(361, 150 - 1129, 630)
+				10-22 11:44:29.597 24777-24918/com.ibotn.izlcoursexbnt D/CameraManager: getFramingRectInPreview rect: Rect(451, 195 - 1411, 821)
+				10-22 11:44:29.613 24777-24918/com.ibotn.izlcoursexbnt E/AndroidRuntime: FATAL EXCEPTION: Thread-280
+					Process: com.ibotn.izlcoursexbnt, PID: 24777
+					java.lang.IllegalArgumentException: Crop rectangle does not fit within image data.
+						at com.zxing.android.camera.PlanarYUVLuminanceSource.<init>(PlanarYUVLuminanceSource.java:46)
+						at com.zxing.android.camera.CameraManager.buildLuminanceSource(CameraManager.java:329)
+						at com.zxing.android.decoding.BaseDecodeHandler.decode(BaseDecodeHandler.java:94)
+						at com.zxing.android.decoding.BaseDecodeHandler.handleMessage(BaseDecodeHandler.java:58)
+						at android.os.Handler.dispatchMessage(Handler.java:102)
+						at android.os.Looper.loop(Looper.java:135)
+						at com.zxing.android.decoding.BaseDecodeThread.run(BaseDecodeThread.java:101)
+			
+	3.1 
+	private static final int ADD= 0;
+	private static final int MIN_FRAME_WIDTH = 720 + ADD;
+	private static final int MIN_FRAME_HEIGHT = 480 + ADD;
+	private static final int MAX_FRAME_WIDTH = 1024 + ADD;
+	private static final int MAX_FRAME_HEIGHT = 600 + ADD;
+	
+	result:
+	10-22 10:20:52.757 25761-25761/com.sp.spmultipleapp I/CameraConfiguration: Screen resolution: Point(1024, 552)
+	10-22 10:20:52.758 25761-25761/com.sp.spmultipleapp I/CameraConfiguration: Camera resolution: Point(1280, 720)
+	getFramingRect(),after refactor,width: 768,width: 768
+	10-22 10:20:53.064 25761-25761/com.sp.spmultipleapp D/CameraManager: getFramingRect(),Calculated framing rect: Rect(128, 28 - 896, 508)
+	10-22 10:20:53.147 25761-25874/com.sp.spmultipleapp D/CameraManager: getFramingRectInPreview rect: Rect(160, 36 - 1120, 662)
+	
+	
+	3.2 
+		private static final int ADD= 0;
+		private static final int MIN_FRAME_WIDTH = 480 + ADD;
+		private static final int MIN_FRAME_HEIGHT = 480 + ADD;
+		private static final int MAX_FRAME_WIDTH = 960 + ADD;
+		private static final int MAX_FRAME_HEIGHT = 720 + ADD;
+		
+		
+		result:
+		
+		10-22 11:07:02.654 11126-11126/com.sp.spmultipleapp D/CameraManager: getFramingRect(),after refactor,width: 768,height: 480
+		10-22 11:07:02.654 11126-11126/com.sp.spmultipleapp D/CameraManager: getFramingRect(),Calculated framing rect: Rect(128, 28 - 896, 508)
+		10-22 11:07:02.738 11126-11249/com.sp.spmultipleapp D/CameraManager: getFramingRectInPreview rect: Rect(160, 36 - 1120, 662)
+	3.3 
+		10-22 11:34:21.517 21455-21590/com.ibotn.izlcoursexbnt I/CameraConfiguration: Screen resolution: Point(1024, 552)
+		10-22 11:34:21.543 21455-21590/com.ibotn.izlcoursexbnt I/CameraConfiguration: Camera resolution: Point(1280, 720)
+		10-22 11:34:22.326 21455-21617/com.ibotn.izlcoursexbnt D/CameraManager: getFramingRect(),after refactor,width: 768,height: 480
+		10-22 11:34:22.326 21455-21617/com.ibotn.izlcoursexbnt D/CameraManager: getFramingRect(),Calculated framing rect: Rect(128, 28 - 896, 508)
+		10-22 11:34:22.327 21455-21617/com.ibotn.izlcoursexbnt D/CameraManager: getFramingRectInPreview rect: Rect(160, 36 - 1120, 662)
+4. Android项目实战（二十八）：Zxing二维码实现及优化
+	https://blog.csdn.net/weixin_34163741/article/details/85832795? 
+	
+	

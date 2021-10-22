@@ -136,4 +136,26 @@
         }
         alert("ABCDefg".compare("abcdEFG"));
         alert("abc".compare("acd"));
+		</script> 
+	2.16 js如何在指定页面跳转到另一指定页面
+		https://www.cnblogs.com/sharpest/p/8665641.html 
+		第一种：(跳转到b.html)
+		<script language="javascript" type="text/javascript">
+		window.location.href="b.html";
+		</script>
+		第二种：（返回上一页面）
+		<script language="javascript">
+		window.history.back(-1);
+		</script>
+		第三种：
+		<script language="javascript">
+		window.navigate("b.html");
+		</script>
+		第四种：
+		<script language="JavaScript">
+		self.location=’b.html’;
+		</script>
+		第五种：
+		<script language="javascript">
+		top.location=’b.html’;
 		</script>
