@@ -4,6 +4,13 @@
 		
 	1.2 SVN 服务器配置：安装SVN服务器 
 		https://wenku.baidu.com/view/b0d5421ba76e58fafab00337.html?st=1
+		
+	2.3 TortoiseSVN doc
+		TortoiseSVN-1.9.7-zh_CN.pdf
+		download from：
+		https://tortoisesvn.net/downloads.html
+		
+		安装目录下也有，是英文版本的。
 2.SVN常用命令
 	https://blog.csdn.net/ithomer/article/details/6187464 
 	
