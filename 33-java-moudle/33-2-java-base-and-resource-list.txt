@@ -18,7 +18,20 @@
 		 2000), or Item 50 in Joshua Bloch's "Effective Java Programming
 		Language Guide" (Addison-Wesley, 2001).
 	0.6 《Java Concurrency in Practice》
-		
+	0.7 Java Documentation
+			https://docs.oracle.com/en/java/ 
+		a,api doc online:
+			https://docs.oracle.com/en/java/javase/index.html 
+			
+			1.7:
+			https://docs.oracle.com/javase/7/docs/api/ 
+			
+			1.5:
+			https://docs.oracle.com/javase/1.5.0/docs/api/
+		b,
+			https://www.elastic.co/guide/en/elasticsearch/client/java-api/5.5/index.html
+	0.8 使用Java API的5个技巧
+		https://blog.csdn.net/qq_37267015/article/details/78770860 
 一、吃透java ,csdn博客。
 	1.1、吃透Java基础八：Throwable异常 
 		https://blog.csdn.net/u013277209/article/details/102834719
@@ -140,3 +153,6 @@
 		包含继承方法。
 		
 		均不包含，构造函数。
+20 Exception
+	20.1 Java异常（异常体系 、try catch finally 、Exception ) Exception和RuntimeException区别 
+		https://blog.csdn.net/sophia__yu/article/details/83586487 

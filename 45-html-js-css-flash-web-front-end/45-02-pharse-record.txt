@@ -1,3 +1,73 @@
+0.
+	0.1 Phaser 是一款开源的 HTML5 游戏框
+		https://openingsource.org/1073/
+		官网：
+			https://phaser.io/
+			https://github.com/photonstorm/phaser
+			
+			中文网
+			https://www.phaser-china.com/
+		API:
+			
+			http://phaser.io/docs/2.6.2/index
+			
+			https://www.phaser-china.com/docs/Index.html
+			中文api
+			https://www.phaser-china.com/docs-cn/doc-game.html
+		Phaser官网入门demo
+			https://www.phaser-china.com/tutorial-detail-1.html		
+
+			实例
+			https://www.phaser-china.com/example.html
+			
+			Getting Started with Phaser 2
+			http://phaser.io/tutorials/getting-started-phaser2/part2
+		
+		Phaser github game demo
+		https://github.com/channingbreeze/games
+			pharse2实践：
+			https://www.dazhuanlan.com/2019/12/15/5df62db64f8a7/
+				含pharse2和pharse3的资料文档案例
+				
+			phaser2视频教程
+				https://www.bilibili.com/video/BV1Db411A7yw?from=search&seid=15841645637731969608
+				
+				cdn 
+				bootcdn
+			天降福运制作过程(游戏引擎：Phaser.js)
+				https://www.bilibili.com/video/BV1fb411C7dX?from=search&seid=15841645637731969608
+		c, pixijs 
+			http://www.pixijs.com/
+			https://github.com/pixijs/pixijs
+	0.2  phaser3
+		
+		http://phaser.io/phaser3
+		
+		api 
+		http://phaser.io/phaser3/api
+		
+		doc
+		https://photonstorm.github.io/phaser3-docs/
+		
+		https://photonstorm.github.io/phaser3-docs/index.html
+	
+		[phaser3入门探坑]使用phaser3制作山寨马里奥
+			准备工作
+			doc
+				https://github.com/photonstorm/phaser3-docs
+			example 
+				https://github.com/photonstorm/phaser3-examples
+			本地服务器
+				https://www.cnblogs.com/leee/p/5502727.html
+		
+		初窥 phaser2 到phaser3 的异同
+		https://cloud.tencent.com/developer/news/447688
+		
+		Learn: Phaser 2 or Phaser 3?
+		https://www.html5gamedevs.com/topic/35934-learn-phaser-2-or-phaser-3/
+		
+		phaser3视频教程
+				https://www.bilibili.com/video/BV1r4411v7FN?from=search&seid=15841645637731969608
 1. scale是啥？
 
 	//var game = new Phaser.Game(800, 600, Phaser.CANVAS, '', { preload: preload, create: create, update: update });
@@ -275,6 +345,11 @@
 		
 	9.8 Phaser 中动画（ tween ）的使用
 		http://www.swjxzy.com/a/jsyjxyj/phaser/2016/0614/1204.html 
+		
+		a,比较好
+			Phaser.Easing.Bounce.Out 
+			Phaser.Easing.Cubic.Out
+
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
 
 	源码：this.test_bag_show_sencond_part_row01_col01.animations.add('move');
@@ -333,3 +408,12 @@
 	
 17 控制点击。
 	bag_show_sencond_part_row01_col02_heart_response_click = false;//控制控件是否执行点击后的操作，有效防止没有按照事件顺序点击的时候，误操作。且能控制正确响应事件后，再次点击不响应点击后的操作。
+	
+	preload中不能延迟放到函数中加载，导致图片资源不可用。如下：
+	phaser.min.js:20 Phaser.Cache.getImage: Key "bag_show_sencond_part_row01_col01" not found in Cache.
+18 加载资源多时黑屏。
+	preload时先show一个背景图。做一个进度提示。随后程序中加载资源。
+	
+	https://blog.csdn.net/qq_21506881/article/details/86562465
+19 场景切换，动画形式切换。
+	

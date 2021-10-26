@@ -90,72 +90,8 @@
 		3.6.1 hilo
 		
 		3.6.2 		
-			Phaser 是一款开源的 HTML5 游戏框
-			https://openingsource.org/1073/
-			官网：
-				https://phaser.io/
-				https://github.com/photonstorm/phaser
-				
-				中文网
-				https://www.phaser-china.com/
-			API:
-				
-				http://phaser.io/docs/2.6.2/index
-				
-				https://www.phaser-china.com/docs/Index.html
-				中文api
-				https://www.phaser-china.com/docs-cn/doc-game.html
-			Phaser官网入门demo
-				https://www.phaser-china.com/tutorial-detail-1.html		
-
-				实例
-				https://www.phaser-china.com/example.html
-				
-				Getting Started with Phaser 2
-				http://phaser.io/tutorials/getting-started-phaser2/part2
-			
-			Phaser github game demo
-			https://github.com/channingbreeze/games
-				pharse2实践：
-				https://www.dazhuanlan.com/2019/12/15/5df62db64f8a7/
-					含pharse2和pharse3的资料文档案例
-					
-				phaser2视频教程
-					https://www.bilibili.com/video/BV1Db411A7yw?from=search&seid=15841645637731969608
-					
-					cdn 
-					bootcdn
-				天降福运制作过程(游戏引擎：Phaser.js)
-					https://www.bilibili.com/video/BV1fb411C7dX?from=search&seid=15841645637731969608
-			3.6.3 phaser3
-				
-				http://phaser.io/phaser3
-				
-				api 
-				http://phaser.io/phaser3/api
-				
-				doc
-				https://photonstorm.github.io/phaser3-docs/
-				
-				https://photonstorm.github.io/phaser3-docs/index.html
-			
-				[phaser3入门探坑]使用phaser3制作山寨马里奥
-					准备工作
-					doc
-						https://github.com/photonstorm/phaser3-docs
-					example 
-						https://github.com/photonstorm/phaser3-examples
-					本地服务器
-						https://www.cnblogs.com/leee/p/5502727.html
-				
-				初窥 phaser2 到phaser3 的异同
-				https://cloud.tencent.com/developer/news/447688
-				
-				Learn: Phaser 2 or Phaser 3?
-				https://www.html5gamedevs.com/topic/35934-learn-phaser-2-or-phaser-3/
-				
-				phaser3视频教程
-					https://www.bilibili.com/video/BV1r4411v7FN?from=search&seid=15841645637731969608
+			phaser switch to:
+			[45-02-pharse-record.txt]
 		3.6.3
 			http://html5gameengine.com/ 的游戏框架排行中
 			

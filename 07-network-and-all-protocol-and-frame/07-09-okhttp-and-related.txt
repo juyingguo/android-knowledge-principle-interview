@@ -36,6 +36,8 @@
 				
 3. OKHTTP3（一）源码分析
 	https://www.freesion.com/article/2734906565/ 
+	3.1 Okhttp3源码分析
+		https://www.jianshu.com/p/b0353ed71151 
 4. 进阶之光。
 	测试适配：android-advanced-light\chapter_5\MoonOkHttp3
 		程序转到测试项目目录（用java程序就行）：com.demo.okhttp390test.andvancelighttest 
