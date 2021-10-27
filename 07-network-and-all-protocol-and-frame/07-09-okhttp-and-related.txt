@@ -1,4 +1,11 @@
 1.
+	1.1 https://square.github.io/okhttp/
+		
+	1.2 okHttp各个module介绍
+		https://blog.csdn.net/wei7017406/article/details/73189197 
+	1.3 
+		okHttp 是maven项目
+		使用IntelliJ IDEA打开工程。
 2.关于OKHTTP3（一）源码编译
 	https://www.freesion.com/article/88181387287/ 
 	
@@ -41,6 +48,15 @@
 	
 	3.2 深入理解OkHttp源码及设计思想
 		https://www.jianshu.com/p/fa0dcbfe05cd 
+	3.x. 
+		java.net.Proxy.Type 
+		DIRECT,
+        HTTP,
+        SOCKS;
+		三种类型的区别。
+		
 4. 进阶之光。
 	测试适配：android-advanced-light\chapter_5\MoonOkHttp3
 		程序转到测试项目目录（用java程序就行）：com.demo.okhttp390test.andvancelighttest 
+5. okhttp源码导入及Maven构建文件pom.xml的格式
+	https://blog.csdn.net/kcstrong/article/details/82189733 
