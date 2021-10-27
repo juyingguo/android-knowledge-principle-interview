@@ -159,6 +159,8 @@
 		<script language="javascript">
 		top.location=’b.html’;
 		</script>
+	2.17 javascript中的&& ||
+		https://www.cnblogs.com/alsf/p/7726344.html 
 3. javascript 休眠几秒
 	https://www.cnblogs.com/linliu/p/13042391.html
 	https://www.jb51.net/article/52105.htm 
