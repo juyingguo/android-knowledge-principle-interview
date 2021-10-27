@@ -18,25 +18,49 @@
 		1.4.3 Proxifier+Fiddler 抓取PC客户端数据包
 			https://blog.csdn.net/yyws2039725/article/details/111282731 
 			
-			指定不解析的主机：
-			配置文件-名称解析-DNS 名称列表。添加如下：
-			www.cnblogs.com;
+			a,指定不解析的主机：
+				配置文件-名称解析-DNS 名称列表。添加如下：
+				www.cnblogs.com;
+				
+				重启该应用生效。
 			
-			重启该应用生效。
-			
-			对于部分https请求。
-			java测试：com.demo.okhttp390test.andvancelighttest.OkHttpBaseDemoTest#postAsynHttp
-			
-			异常：
-			onFailure,call.isCanceled():false IOException:javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target。
-			
-			分析：proxifier配置证书吗？
-			或者测试直接使用http地址。
+			b,对于部分https请求。
+				java测试：com.demo.okhttp390test.andvancelighttest.OkHttpBaseDemoTest#postAsynHttp
+				
+				异常：
+				onFailure,call.isCanceled():false IOException:javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target。
+				
+				b1,分析：proxifier配置证书吗？
+					b1.1 完美解决异常javax.net.ssl.SSLHandshakeException: sun.security.validator.
+						https://blog.csdn.net/Mr_Susy/article/details/106811162 
+						https://blog.csdn.net/w36680130/article/details/111906541 
+				b2,或者测试直接使用http地址测试。
+			c,博文中注册码
+				5EZ8G-C3WL5-B56YG-SCXM9-6QZAP
+		1.5 Fiddler抓包使用教程-过滤
+			https://blog.csdn.net/zhaoyanjun6/article/details/72929800 
 	1.5 Proxifier:
+		1.5.1
+			Proxifier - The Most Advanced Proxy Client
+			http://www.proxifier.com/
+			download：
+			https://www.filehorse.com/download-proxifier/download/
+			
 			https://www.onlinedown.net/soft/971579.htm 			
 			
 			https://baike.baidu.com/item/proxifier/10859305?fr=aladdin
 			
 			汉化：
 			http://www.hanzify.org/software/13717.html 
-2. 
+			
+			Proxifier使用教程
+				https://www.cnblogs.com/nul1/p/13952992.html
+				
+			Proxifier全局配置和部分配置
+				https://blog.csdn.net/thinbug/article/details/82755010
+				配置软件是否通过通过SSr
+		1.5.2 proxifier配置后，浏览器中很多服务器地址无法访问。
+			Proxifier-Profile-Proxification Rules
+			添加的规则中选项-Action选择了Proxy Https 127.0.0.1造成的。可以配置为Direct.
+2. Proxy (代理)、Direct (直连)、Block (阻止)的含义
+	https://baiyunju.cc/7242 
