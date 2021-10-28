@@ -3,7 +3,9 @@
 		https://blog.csdn.net/mozart_cai/article/details/80865164 
 	-1.2、C90、C99、C11——C语言的三套标准 
 		https://blog.csdn.net/adolph58/article/details/88726621?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
-
+-2，编码
+	UniCode编码表 
+	https://www.cnblogs.com/csguo/p/7401874.html 
 1、linux下c开发环境。
 	搞不通在linux下为什么要用devc++，在linux下有一大堆更好的，更简单，为什么偏偏要用devc++。在linux的话，新手用geany，比devc++要好用简单的多，高手用vim，快速开发可以用，codeblock，codelite。
 		
