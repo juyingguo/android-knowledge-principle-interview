@@ -48,6 +48,24 @@
 	
 	3.2 深入理解OkHttp源码及设计思想
 		https://www.jianshu.com/p/fa0dcbfe05cd 
+	3.3 
+		okhttp3.mockwebserver.MockWebServerTest#regularResponseAndDisconnect
+		
+		"GET / HTTP/1.1" 在哪设置的？
+		assertEquals("GET / HTTP/1.1", request.getRequestLine())
+	3.4 使用OkHttp中的MockWebServer进行接口模拟测试
+		https://blog.csdn.net/Mr_Tony/article/details/116562455 
+		a，OkHttp3系列（二）MockWebServer使用
+			https://www.cnblogs.com/weegee/p/13410049.html 
+	3.5 okhttp-urlconnection
+		okhttp3.OkUrlFactoryTest#testURLFilterRedirect
+		怎么理解。
+	3.6 okhttp-tests
+		3.6.1,okhttp3.CallTest#getReturns500
+			executeSynchronously("/");//换成其它地址就不行。为啥呢?
+			通过【okhttp3.CallTest#executeSynchronously(java.lang.String, java.lang.String...)】添加打印url；
+			是自动通过serverSocket获取的服务端的主机和端口。如：http://127.0.0.1:29937/，其中/就追加在地址后面
+		
 	3.x. 
 		java.net.Proxy.Type 
 		DIRECT,

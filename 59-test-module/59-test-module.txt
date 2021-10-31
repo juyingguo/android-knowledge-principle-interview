@@ -122,3 +122,10 @@
 		这也就意味着我们无需任何ROOT权限就能实现以往许多梦寐以求的功能。
 
 		Hamibot是一款自动点击脚本工具，它基于Auto.js制作(语法互通)，免费、自由、开源。Hamibot在电脑(控制台)上安装脚本，在手机(机器人)上运行。		
+11,junit
+	11.1 Junit Rule的使用
+			从程序中[okhttp3.mockwebserver.MockWebServer]看到这个使用。
+		a,Junit Rule的使用
+			https://blog.csdn.net/kingmax54212008/article/details/89003076 
+		b,Junit External Resource @Rule Order 
+			https://stackoverflow.com/questions/19175356/junit-external-resource-rule-order 
