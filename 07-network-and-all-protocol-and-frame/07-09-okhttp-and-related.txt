@@ -7,6 +7,8 @@
 		okHttp 是maven项目
 		使用IntelliJ IDEA打开工程。
 		转到【3】
+	1.4 Android网络框架对比
+		https://www.jianshu.com/p/3842b63c69c6 
 2.关于OKHTTP3（一）源码编译
 	https://www.freesion.com/article/88181387287/ 
 	
@@ -55,6 +57,30 @@
 		3.3.1 add unicode use
 			okhttp3.RequestTest#unicodeTest
 			
+		okhttp3.mockwebserver.MockWebServerTest#regularResponseAndDisconnect
+		
+		"GET / HTTP/1.1" 在哪设置的？
+		assertEquals("GET / HTTP/1.1", request.getRequestLine())
+	3.4 使用OkHttp中的MockWebServer进行接口模拟测试
+		https://blog.csdn.net/Mr_Tony/article/details/116562455 
+		a，OkHttp3系列（二）MockWebServer使用
+			https://www.cnblogs.com/weegee/p/13410049.html 
+	3.5 okhttp-urlconnection
+		okhttp3.OkUrlFactoryTest#testURLFilterRedirect
+		怎么理解。
+	3.6 okhttp-tests
+		3.6.1,okhttp3.CallTest#getReturns500
+			executeSynchronously("/");//换成其它地址就不行。为啥呢?
+			通过【okhttp3.CallTest#executeSynchronously(java.lang.String, java.lang.String...)】添加打印url；
+			是自动通过serverSocket获取的服务端的主机和端口。如：http://127.0.0.1:29937/，其中/就追加在地址后面
+		3.6.2 okhttp3.CallTest#postBodyRetransmittedAfterAuthorizationFail()
+			responded: HTTP/1.1 401 Client Error //如何理解？
+			[部分参考]：【07-01-http-and-tools.txt;01.1】a,Http 401错误重现实验及解决办法
+		3.6.3 okhttp3.CallTest#recoverWhenRetryOnConnectionFailureIsTrue
+			a,有没有【server.enqueue(new MockResponse().setSocketPolicy(SocketPolicy.DISCONNECT_AFTER_REQUEST));】效果，原理？
+				对比日志见：okhttp-parent-3.9.0工程的平级目录【temp-log-analyse-file】
+			b,与okhttp3.OkHttpClient#retryOnConnectionFailure相关处有哪些？
+			c,与okhttp3.internal.http.RetryAndFollowUpInterceptor相关处有哪些？
 	3.x. 
 		java.net.Proxy.Type 
 		DIRECT,
@@ -67,3 +93,5 @@
 		程序转到测试项目目录（用java程序就行）：com.demo.okhttp390test.andvancelighttest 
 5. okhttp源码导入及Maven构建文件pom.xml的格式
 	https://blog.csdn.net/kcstrong/article/details/82189733 
+6.面试还没搞懂OkHttp原理？看完这篇文章全明白了
+	https://www.cnblogs.com/Android-Alvin/p/12530226.html 

@@ -1,5 +1,9 @@
 01 
-	01.1 通过淘宝IP地址库获取IP位置 
+	01.1 http协议对状态码的定义 
+		https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+		a,Http 401错误重现实验及解决办法
+			https://blog.csdn.net/directionofear/article/details/8042755 
+	01.2 通过淘宝IP地址库获取IP位置 
 		https://blog.csdn.net/codeeer/article/details/7497403?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 		
 		1. 请求接口（GET）：

@@ -1,0 +1,9 @@
+1.
+2. tls
+	2.1 
+	2.2 
+		https://baike.baidu.com/item/TLS/2979545?fr=aladdin 
+	2.3 
+		安全传输层协议（TLS）用于在两个通信应用程序之间提供保密性和数据完整性。
+		该协议由两层组成： TLS 记录协议（TLS Record）和 TLS 握手协议（TLS Handshake）。
+	

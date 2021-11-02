@@ -33,6 +33,8 @@
 			https://developer.android.google.cn/kotlin
 		1.2.4 《Kotlin实战》
 		
+		1.2.5 Kotlin学习系列文章Overview
+			https://juejin.cn/post/6844903917428424712 
 	1.3 kotlin探讨
 		1.3.1 Kotlin语言现在怎么不火了?
 			https://www.zhihu.com/question/461471019 
