@@ -33,3 +33,6 @@
 	【 熊喵先生】
 	https://youkmi.blog.csdn.net/article/details/113790101 
 	含面试，及技术。
+12,okhtttp相关技术及面试题见【07-09-okhttp-and-related.txt】
+13 https://www.cnblogs.com/Android-Alvin/tag/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/
+	各种面试总结

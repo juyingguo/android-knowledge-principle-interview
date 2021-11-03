@@ -93,5 +93,15 @@
 		程序转到测试项目目录（用java程序就行）：com.demo.okhttp390test.andvancelighttest 
 5. okhttp源码导入及Maven构建文件pom.xml的格式
 	https://blog.csdn.net/kcstrong/article/details/82189733 
-6.面试还没搞懂OkHttp原理？看完这篇文章全明白了
-	https://www.cnblogs.com/Android-Alvin/p/12530226.html 
+6.OkHttp面试总结搜集。
+	6.1 面试还没搞懂OkHttp原理？看完这篇文章全明白了
+		https://www.cnblogs.com/Android-Alvin/p/12530226.html 
+	6.2 腾讯被面Okhttp3 惨挂，我总结了一套学习心得
+		https://www.cnblogs.com/Android-Alvin/p/13353754.html 
+	6.3 谈谈OKHttp的几道面试题
+		https://www.jianshu.com/p/7cb9300c6d71 
+7. OKHTTP好文推荐
+	https://juejin.cn/post/6844903525034491918 
+8.Android  okHttp封装
+	8.1 Android 一个改善的okHttp封装库
+		https://blog.csdn.net/lmj623565791/article/details/49734867 
