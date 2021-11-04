@@ -36,3 +36,6 @@
 12,okhtttp相关技术及面试题见【07-09-okhttp-and-related.txt】
 13 https://www.cnblogs.com/Android-Alvin/tag/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/
 	各种面试总结
+	
+	13.2 
+		上述资源在开源项目：https://github.com/Android-Alvin/Android-LearningNotes 中已提供下载方式，里面包含不同方向的自学编程路线、面试题集合/面经、及系列技术文章等，资源持续更新中…
