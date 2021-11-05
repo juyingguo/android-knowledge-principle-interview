@@ -46,11 +46,21 @@ a2.1、
 	3.1、Handler的正确使用,使用静态内部类+弱引用,解决内存泄漏，举例说明在使用ProgressBar时的Handler类的静态内部类实现。
 		https://blog.csdn.net/qingxixiansheng/article/details/81381376
 	
-
+	3.3 如果handler是在子线程中创建的，还能使用软引用，弱引用吗？又怎么解决handler的内存泄漏？
 
 四、final 修饰的MessageQueue mQueue，如何赋值？
 	
+5. Handler原理—Android最高频被面内容源码
+	https://ke.qq.com/course/341933?taid=9303882710988717
 
+6.享学堂
+	6.1 synchronized:安全性
+		handler delay 的消失,时间准确吗? 【基本准确，考察同步锁知识。】
+		
+		
+		synchronized:方法，静态方法，代码块 （object)代码块(this
+
+		aba :
 
 
 
