@@ -11,3 +11,12 @@
 	
 	在美帝当码农薪资待遇怎么样？ 
 		https://www.zhihu.com/question/267313533
+6. 2020 国内互联网公司的Android工程师薪酬排名！看看你是什么水平 
+	https://blog.51cto.com/u_15391267/4520486 
+7.2020互联网大厂薪资大揭秘！你是什么水平？ 
+	https://www.sohu.com/a/442263277_609133
+8. 2020 年 4月全国程序员工资出炉！
+	https://www.cnblogs.com/javastack/p/12631264.html 
+	
+9. 2020 年 5 月所有 Java 后端平均工资来了，你被平均了吗？
+	https://blog.csdn.net/qq_37217713/article/details/106205229 

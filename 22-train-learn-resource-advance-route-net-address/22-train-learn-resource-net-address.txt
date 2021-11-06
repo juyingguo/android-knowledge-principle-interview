@@ -1,0 +1,46 @@
+一、程序员学习视频教程汇总 
+	
+	1.1 、程序员学习视频教程汇总 
+		https://blog.csdn.net/lowprofile_coding/article/details/51059080
+		
+	1.2 编程学习，有哪些不错的视频网站可以推荐?
+		https://learnku.com/articles/40117
+		http://www.360doc.com/content/16/0510/10/1497364_557790245.shtml
+		
+		极客学院， 哔哩哔哩，思否编程
+2.腾讯课堂
+	2.1 享学课堂-腾讯课堂下属。
+		领取资料前可以关注下我们在腾讯课堂的Android高级进阶技术课嘛？
+		
+		2.2.1 Android移动互联网架构开发/音视频/Kotlin/Jetpack/Flutter/Java 
+			【含录播，直播，带授课标题】
+			https://ke.qq.com/course/341933 
+		2.2.2 
+			Android移动互联网架构开发（VIP班）【享学课堂】
+			【7800元】
+			https://ke.qq.com/course/347420
+3.享学课堂
+	qq群已添加。
+	资料：
+		
+		Android进阶高级学习资料：
+		https://pan.baidu.com/s/1yAkxJJn4ZR7XtHjMnyDoig 
+		提取码：opp3
+		https://pan.baidu.com/s/1vJXWOVQxhwBfGGKmPwTAbQ 
+		提取码：p32d
+		
+		已保存云盘。
+4. android学习进阶路线
+	一、android学习进阶路线。
+	
+		1.1、Android学习路线总结，绝对干货
+			https://blog.csdn.net/lowprofile_coding/article/details/51252781 
+		
+		1.2、 Android学习路线指南 
+			https://blog.csdn.net/singwhatiwanna/article/details/49560409 
+			
+	二，成为Android高手必须掌握的28大项内容和10个建议
+		https://www.cnblogs.com/hnrainll/archive/2012/01/17/2325064.html
+		
+	3. 学习android和linux大讨论
+		3.1 买android开发版，还是先买linux开发版
