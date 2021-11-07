@@ -172,4 +172,12 @@
 		ArrayList循环遍历并删除元素的常见陷阱
 		https://www.cnblogs.com/huangjinyong/p/9455163.html 
 		
+17 LinkedHashMap
+	17.0 test project in:
+		com.datastructtest.LinkedHashMapTest
+	17.1 的accessOrder的作用
+		https://blog.csdn.net/weixin_34248118/article/details/92523099
 		
+	17.2 java.util.LinkedHashMap#afterNodeAccess(Node<K,V> e)中，传递参数的e的before,after是否有值。
+		java.util.LinkedHashMap#get //调用者。
+		根据三个集合中三个数据节点。先根据不同位置，模拟分析。【当前初步判断，可以进一步验证】是有值的。具体值是否为null，是根据e在集合中的位置而定。

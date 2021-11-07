@@ -59,28 +59,7 @@
 	4.2 String.split()遇到空字符串的几种情况 
 		https://blog.csdn.net/qqxyy99/article/details/78861109 
 5.java中线程
-	5.1 
-	5.2 线程挂起，阻塞，休眠理解 
-		https://blog.csdn.net/yeyuyyy/article/details/52288900 
-	5.3 线程挂起与线程休眠 
-	5.4 ReentrantLock 重入锁(互斥锁)
-		5.4.1 ReentrantLock 重入锁(互斥锁) 
-			https://blog.csdn.net/lm1060891265/article/details/81747275 
-			
-		5.4.2 ReentranLock的底层实现(源码解析)
-			参考博客：https://blog.csdn.net/jiangjiajian2008/article/details/52226189 
-		5.4.3 ReentrantLock(重入锁)功能详解和应用演示
-			https://www.cnblogs.com/takumicx/p/9338983.html 
-			ReentrantLock使用场景和实例 
-			https://blog.csdn.net/zhaoyunfei1/article/details/105390023 
-	5.5 Java中的ThreadLocal详解 
-		[testcode:AndroidJavaDemoTestForAS\javatest\com.threadtest.threadlocaltest]
-		https://www.cnblogs.com/fsmly/p/11020641.html
-	5.6 面试-----手写生产者消费者
-		https://blog.csdn.net/lettyisme/article/details/81174733 
-		project:AndroidJavaDemoTestForAS\javatest\src\main\java\com\threadtest\producerconsumer
-	5.7 [Java 并发]源码级分析 ThreadPoolExecutor 是如何做到线程复用的
-		https://blog.csdn.net/zll_0405/article/details/106721581 
+	该模块独立到【33-08-java-thread-module.txt】
 6. java中文件操作
 	6.1 java读取文本文件内容 
 		https://www.cnblogs.com/xing-star/p/11042369.html 

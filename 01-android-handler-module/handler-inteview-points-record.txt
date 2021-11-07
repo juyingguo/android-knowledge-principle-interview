@@ -3,7 +3,11 @@
 	这个考得非常常见。一定要看源码，代码不多。带着几个问题去看：
 
 	1.为什么一个线程只有一个Looper、只有一个MessageQueue？
-
+		android.os.Looper#prepare(boolean)
+		thread.threadLocals = new ThreadLocalMap(this, firstValue);//this是ThreadLocal，value是new Looper(quitAllowed)
+		本事是Thread.threadLocals是否为空。
+		
+		只有一个MessageQueue？是因为其在Looper构造时唯一创建的。
 	2.如何获取当前线程的Looper？是怎么实现的？（理解ThreadLocal）
 
 	3.是不是任何线程都可以实例化Handler？有没有什么约束条件？
@@ -53,17 +57,37 @@ a2.1、
 5. Handler原理—Android最高频被面内容源码
 	https://ke.qq.com/course/341933?taid=9303882710988717
 
-6.享学堂
-	6.1 synchronized:安全性
+6.享学课堂	
+	
+	Handler面试那些事
+	
+	6.1 :一个线程有几个 Handler?
+	
+	6.2 :一个线程有几个Looper?如何保证?
+	
+	6.3: Handler内存泄漏原因?为什么其他的内部类没有说过有这个问题?
+	
+	6.4:为何主线程可以new Handler?如果想要在子线程中new Handler 要做些什么准备?
+	
+	6.5:子线程中维护的Looper，消息队列无消息的时候的处理方案是什么?有什么用?
+		quit
+	6.6:既然可以存在多个 Handler往 MessageQueue中添加数据(发消息时各个Handler可能处于不同线程)，那它内部是如何确保线程安全的?
+	6.7∶我们使用Message时应该如何创建它?
+		
+	6.8:使用Handler的postDelay后消息队列会有什么变化?
+	
+	9: Looper死循环为什么不会导致应用卡死
+		a,睡眠，正常休眠。
+		
+		b，卡死是anr,是另外一个问题。
+		
+	6.x synchronized:安全性
 		handler delay 的消失,时间准确吗? 【基本准确，考察同步锁知识。】
 		
 		
-		synchronized:方法，静态方法，代码块 （object)代码块(this
+		synchronized:方法，静态方法，代码块 （object)代码块(this)
 
 		aba :
-
-
-
 
 
 

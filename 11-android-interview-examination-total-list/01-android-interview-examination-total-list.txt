@@ -39,3 +39,7 @@
 	
 	13.2 
 		上述资源在开源项目：https://github.com/Android-Alvin/Android-LearningNotes 中已提供下载方式，里面包含不同方向的自学编程路线、面试题集合/面经、及系列技术文章等，资源持续更新中…
+		
+14 面试题
+	https://blog.csdn.net/alexlee1986/category_9765276.html
+			
