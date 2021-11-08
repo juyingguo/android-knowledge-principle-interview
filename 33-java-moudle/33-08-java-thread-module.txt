@@ -1,0 +1,84 @@
+5.1 
+	5.2 线程挂起，阻塞，休眠理解 
+		https://blog.csdn.net/yeyuyyy/article/details/52288900 
+	5.3 线程挂起与线程休眠 
+	5.4 ReentrantLock 重入锁(互斥锁)
+		5.4.1 ReentrantLock 重入锁(互斥锁) 
+			https://blog.csdn.net/lm1060891265/article/details/81747275 
+			
+		5.4.2 ReentranLock的底层实现(源码解析)
+			参考博客：https://blog.csdn.net/jiangjiajian2008/article/details/52226189 
+		5.4.3 ReentrantLock(重入锁)功能详解和应用演示
+			https://www.cnblogs.com/takumicx/p/9338983.html 
+			ReentrantLock使用场景和实例 
+			https://blog.csdn.net/zhaoyunfei1/article/details/105390023 
+	5.5 Java中的ThreadLocal详解 
+		[testcode:AndroidJavaDemoTestForAS\javatest\com.threadtest.threadlocaltest]
+		https://www.cnblogs.com/fsmly/p/11020641.html
+	5.6 面试-----手写生产者消费者
+		https://blog.csdn.net/lettyisme/article/details/81174733 
+		project:AndroidJavaDemoTestForAS\javatest\src\main\java\com\threadtest\producerconsumer
+	5.7 [Java 并发]源码级分析 ThreadPoolExecutor 是如何做到线程复用的
+		https://blog.csdn.net/zll_0405/article/details/106721581 
+	5.8 synchronized
+		5.8.1 synchronized:方法，静态方法，代码块 （object)代码块(this)
+			啥区别？
+			参考：
+			https://blog.csdn.net/Alexlee1986/article/details/81219111
+		
+		5.8.2 java synchronized用法详解
+			https://blog.csdn.net/weixin_36372879/article/details/91899653 
+		5.8.x Synchronized实现原理与常见面试题
+			https://www.cnblogs.com/jojop/p/14022029.html 
+			
+			参考资料#
+			《Java并发编程的艺术》
+			synchronized四种锁状态的升级。//http://www.jetchen.cn/synchronized-status/
+			java并发笔记四之synchronized 锁的膨胀过程（锁的升级过程）深入剖析。//https://www.cnblogs.com/yuhangwang/p/11295940.html
+			
+			synchronized锁住的是什么？
+
+			synchronized本身并不是锁，锁本身是一个对象，synchronized最多相当于“加锁”操作，所以synchronized并不是锁住代码块。Java中的每一个对象都可以作为锁。具体表示有三种形式，当修饰普通同步方法，锁是当前实例对象；当修饰静态同步方法，锁是synchronized括号里配置的对象。
+
+			synchronized锁升级的过程？
+
+			当没有竞争出现时，默认使用偏向锁。JVM会利用CAS操作，在对象头上的Mark Word部分设置线程ID，以表示这个对象偏向于当前线程，所以并不涉及真正的互斥锁。这样做的假设是基于在很多应用场景中，大部分对象生命周期中最多会被一个线程锁定，使用偏向锁可以降低无竞争开销。
+
+			如果有另外的线程试图锁定某个已经被偏向过的对象，JVM就需要撤销（revoke）偏向锁，并切换到轻量级锁实现。轻量级锁依赖 CAS 操作Mark Word来试图获取锁，如果重试成功，就使用轻量级锁；否则在自旋一定次数后进一步升级为重量级锁。
+
+			为什么说Synchronized是非公平锁，这样的优缺点是什么？
+
+			非公平主要表现在获取锁的行为上，并非是按照申请锁的时间前后给等待线程分配锁的，每当锁被释放后，任何一个线程都有机会竞争到锁，这样做的目的是为了提高执行性能，缺点是可能产生线程饥饿现象。
+
+			为什么说synchronized是一个悲观锁？乐观锁的实现原理又是什么？什么是CAS，它有什么特性？
+
+			Synchronized显然是一个悲观锁，因为它的并发策略是悲观的：不管是否会产生竞争，任何的数据都必须加锁、用户态核心态转换、维护锁计数器和检查是否有被阻塞的线程需要被唤醒等操作。
+
+			随着硬件指令集的发展，我们可以使用基于冲突检测的乐观并发策略。先进行操作，如果没有任何其他线程征用数据，那操作就成功了；
+
+			如果共享数据有征用，产生了冲突，那就再进行其他的补偿措施。这种乐观的并发策略的许多实现不需要线程挂起，所以被称为非阻塞同步。
+
+			乐观锁的核心算法是CAS（Compared And Swap，比较并交换），它涉及到三个操作数：内存值、预期值、新值。当且仅当预期值和内存值相等时才将内存指修改为新值。
+
+			这样处理的逻辑是，首先检查某块内存的值是否跟之前读取时的一样，如不一样则表示期间此期望值已经被别的线程更改过，舍弃本次操作，反之则说明期间没有其他线程对此内存进行操作，可以把新值设置给此块内存。
+
+			CAS具有原子性，它的原子性由CPU硬件指令实现保证，即使用JNI调用Native方法调用由C++编写的硬件级别指令，JDK中提供了Unsafe类执行这些操作。
+
+			跟Synchronized相比，可重入锁ReenterLock其实现原理有什么不同？
+
+			其实，锁的实现原理基本都是为了达到一个目的：让所有线程都能看到某种标记。
+
+			Synchronized通过在对象头中设置标志实现这一个目的，是一种JVM原生的锁实现方式；而ReenterLock以及所有基于Lock接口的实现类，都是通过一个volatile修饰的int型变量，并保证每个线程都能拥有对该int值的可见性和原子修改，其本质基于AQS框架实现的。
+
+			尽可能详细地对比下Synchronized和ReenterLock的异同。
+
+			ReennterLock是Lock的实现类，是一个互斥的同步锁。从功能角度，ReenterLock比Synchronized的同步操作更精细（因为可以像普通对象一样使用），甚至实现Synchronized没有的高级功能，如：
+
+			等待可中断：当持有锁的线程长期不释放锁的时候，正在等待的线程可以选择放弃等待，对处理执行时间非常长的同步块很有用。
+			带超时的获取锁尝试：在指定的时间范围内获取锁，如果时间到了仍然无法获取则返回。
+			可以判断是否有线程在排队等待获取锁。
+			可以响应中断请求：与Synchronized不同，当获取到锁的线程被中断时，能够响应中断，中断异常将会被抛出，同时锁会被释放。
+			可以实现公平锁。
+			从锁释放的角度，Synchronized在JVM层面上实现的，不但可以通过一些监控工具监控Synchronized的锁定，而且在代码执行出现异常时，JVM会自动释放锁定；但是使用Lock则不行，Lock是通过代码实现的，要保证锁一定会被释放，就必须将unLock()放到finall{}中。
+			
+			

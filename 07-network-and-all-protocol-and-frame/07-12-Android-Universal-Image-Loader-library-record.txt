@@ -1,0 +1,17 @@
+1.
+2.Android 开源框架Universal-Image-Loader完全解析（一）--- 基本介绍及使用
+	2.1 https://blog.csdn.net/xiaanming/article/details/26810303/ 
+	【博主：xiaanming。分析这个框架的系列文章。】
+		2.1.1 评论区
+			String drawableUrl = Scheme.DRAWABLE.wrap("R.drawable.image"); 这样写有歧义 String drawableUrl = Scheme.DRAWABLE.wrap("图片对应R文件的id"); 
+			这是对的 String drawableUrl = "drawable://"+R.drawable.banner
+	2.2 Android 开源框架Universal-Image-Loader完全解析（二）--- 图片缓存策略详解
+	https://blog.csdn.net/xiaanming/article/details/27525741
+	
+3.UniversalImageLoader的用法总结
+	https://blog.csdn.net/crazy1235/article/details/70305083
+
+4.source MemoryCache
+	com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache#LruMemoryCache
+	java.util.LinkedHashMap#LinkedHashMap(int, float, boolean),accessOrder的作用？
+	
