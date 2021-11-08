@@ -1,19 +1,22 @@
-Ò»¡¢È¤Ñ§Ëã·¨ PDF pdf ÏÂÔØ ³ÂĞ¡Óñ°æ
+ä¸€ã€è¶£å­¦ç®—æ³• PDF pdf ä¸‹è½½ é™ˆå°ç‰ç‰ˆ
 	https://blog.csdn.net/qq_41785863/article/details/81143538?ops_request_misc=%7B%22request%5Fid%22%3A%22158267896119724811849693%22%2C%22scm%22%3A%2220140713.130056874..%22%7D&request_id=158267896119724811849693&biz_id=0&utm_source=distribute.pc_search_result.none-task
 
-	1.2¡¢ÌôÕ½³ÌĞòÉè¼ÆµÚ¶ş°æPDF¸ßÇåÍêÕû°æÃâ·ÑÏÂÔØ 
+	1.2ã€æŒ‘æˆ˜ç¨‹åºè®¾è®¡ç¬¬äºŒç‰ˆPDFé«˜æ¸…å®Œæ•´ç‰ˆå…è´¹ä¸‹è½½ 
 		https://blog.csdn.net/qq_41785863/article/details/82695799
-	1.3¡¢´ó»°Êı¾İ½á¹¹pdf¸ßÇå°æÏÂÔØ
+	1.3ã€å¤§è¯æ•°æ®ç»“æ„pdfé«˜æ¸…ç‰ˆä¸‹è½½
 		https://blog.csdn.net/weixin_30509393/article/details/99539153?ops_request_misc=%7B%22request%5Fid%22%3A%22158267948219724846411432%22%2C%22scm%22%3A%2220140713.130056874..%22%7D&request_id=158267948219724846411432&biz_id=0&utm_source=distribute.pc_search_result.none-task
 		
 2.
 3. LruCache
-	
-	3.2 AndroidÕÕÆ¬Ç½ÍêÕû°æ£¬ÍêÃÀ½áºÏLruCacheºÍDiskLruCache
+	3.1 test project
+		com.algorithm.lrutest.LRUCacheTest
+	3.2 Androidç…§ç‰‡å¢™å®Œæ•´ç‰ˆï¼Œå®Œç¾ç»“åˆLruCacheå’ŒDiskLruCache
 		https://guolin.blog.csdn.net/article/details/34093441 
 		
-	3.3 :LRUËã·¨ÃæÊÔ¡£
+	3.3 :LRUç®—æ³•é¢è¯•ã€‚
 		
-		3.3.1 ´ó³§ÃæÊÔ±Ø±¸:LRUËã·¨-É¾³ı×î½ü×îÎ´ÉÙÊ¹ÓÃËã·¨(ÏêÏ¸¸½Ô´´úÂë)
+		3.3.1 å¤§å‚é¢è¯•å¿…å¤‡:LRUç®—æ³•-åˆ é™¤æœ€è¿‘æœ€æœªå°‘ä½¿ç”¨ç®—æ³•(è¯¦ç»†é™„æºä»£ç )
 			https://blog.csdn.net/qq_41066066/article/details/106982229? 
 		
+4. é¡µé¢ç½®æ¢ç®—æ³•OPT,FIFO,LRU,LFU
+	https://blog.csdn.net/qq_38945163/article/details/103534360? 

@@ -137,3 +137,6 @@
 		
 		第二种方式：
 		比第一种方式少了指挥者，主要是因为第二种方式把指挥者交给用户来操作，使得产品的创建更加简单灵活。
+8 享元模式
+	8.1 test project:
+		com.designmodel.flyweight.flyweighttwo
