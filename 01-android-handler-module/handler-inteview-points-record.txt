@@ -61,6 +61,9 @@ a2.1、
 		synchronized:方法，静态方法，代码块 （object)代码块(this
 
 		aba :
+	6.2 Message使用方式。
+		链表。
+		享元设计模式。
 
 
 
