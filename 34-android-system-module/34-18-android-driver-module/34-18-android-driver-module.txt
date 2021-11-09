@@ -1,3 +1,6 @@
+0
+	0.1 《Android驱动开发全过程(有图有真相)》
+		有这本书吗？
 一、Android驱动深度开发视频教程 
 	
 	1.1、Android驱动深度开发视频教程 
@@ -27,6 +30,30 @@
 		1.1.2 韦东山视频百文网资源。
 			https://www.100ask.net/detail/p_5e67739303ee7_RtpjrvZ2/8
 		
+		1.1.3 第4期之-第4期(Android FrameWork HAL深度开发)：BV15W411L7Lc	//android
+			使用说明。
+			根据网盘资料。资料中如果没有看到源码。可能该部分源码在单独的文档中记录了另外的下载地址。
+			如：01_Android FrameWork HAL深度开发视频教程(已更新193节)\第2部分_C++快速入门(共25节)\02_源码下载方法20160722.TXT
+				[源码保存在 github 上]
+				c++视频:
+				所有源码: git clone https://github.com/weidongshan/cpp_projects.git 
+		1.1.4 
+			【第4期】Android系统开发视频教程 包含：
+			Android FrameWork HAL深度开发
+			下载方式1：百度云网盘 链接：https://pan.baidu.com/s/1pASC1DcO7QyEB5s2QXrdKg 密码：root
+			下载方式2：微力同步 密钥：B3ANKT4LQHFUTASLL6VGQRPPRIF3KP56V52CPFR2NX77G3QHPZFFVHW
+			
+			韦东山Android显示系统专题视频
+			链接：https://eyun.baidu.com/s/3i7eKy2p
+			密码：askO
+			
+			韦东山Android蓝牙专题视频
+			链接：https://eyun.baidu.com/s/3pMSwNKB
+			密码：SSm9
+
+			韦东山Android音频专题
+			链接：https://eyun.baidu.com/s/3dG5GCPN
+			密码：A65a
 2. Android 开发之 ---- 底层驱动开发系列
 	2.1 Android 开发之 ---- 底层驱动开发(一) 
 		[jmq_0000]
@@ -38,7 +65,7 @@
 		https://blog.csdn.net/brantyou/article/details/8651385
 		
 		以下文章参考网上搜到的《Android驱动开发全过程(有图有真相)》一文，其中根据自己的实际编写情况作了部分修改，不用作商业用途
-		
+	2.4 
 3.韦东山详细记录。
 	1.
 		mmm ./ showcommands //查看编译命令 

@@ -6,7 +6,8 @@
 		《设计模式之禅》学习笔记 
 		含代码
 			https://www.cnblogs.com/qwertWZ/p/4582265.html
-			
+	00.2 Android 中涉及的设计模式
+		https://blog.csdn.net/yaozhifeng123456/article/details/48350493? 
 01. mvp
 	01.1 Android官方MVP架构示例项目解读 
 		https://mp.weixin.qq.com/s?__biz=MzI0MjE3OTYwMg==&mid=2649547602&idx=1&sn=571db7e744c998ef4ca762ec6a1398d5&scene=21#wechat_redirect

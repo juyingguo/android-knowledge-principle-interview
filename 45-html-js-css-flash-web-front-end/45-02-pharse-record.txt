@@ -349,6 +349,8 @@
 		a,比较好
 			Phaser.Easing.Bounce.Out 
 			Phaser.Easing.Cubic.Out
+	9.9 Tween中repeatAll函数深入理解？
+		条件：A tween (A) with 3 children (B,C,D) with a repeatAll value of 2 would play as: ABCDABCD before completing.
 
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
 

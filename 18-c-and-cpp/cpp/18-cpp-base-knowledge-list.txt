@@ -203,6 +203,14 @@
 		https://blog.csdn.net/onlyTbabm/article/details/80770961 
 		
 		32位系统，指针长度为4，在64位操作系统下那么就都是8
+	15.2 c++中的类的对象与类的指针
+			https://www.cnblogs.com/yinheyi/p/5980372.html 
+			a,在应用时:   
+			a1.引用成员:   对象用"   .   "操作符;   指针用"   ->   "操作符.   
+			a2.生命期:     若是成员变量,则是类的析构函数来释放空间;若是函数中的临时变量,则作用域是该函数体内.而指针,则需利用delete 	在相应的地方释放分配的内存块.      注意:用new   ,一定要delete.. 
+			类的对象:用的是内存栈,是个局部的临时变量.   
+			类的指针:用的是内存堆,是个永久变量,除非你释放它.
+		15.2.1 
 16 C++ new和数组
 	https://blog.csdn.net/u010292561/article/details/77877266? 
 	
@@ -214,3 +222,8 @@
 		
 		C/C++中分离（detach）线程的陷阱
 			https://blog.csdn.net/tissar/article/details/86255018 
+19 c++引用
+	19.1 c++中临时变量不能作为非const的引用参数
+		https://blog.csdn.net/kongying168/article/details/3864756 
+		
+		问题启发于【cpp_projects_weids\cpp_projects\19th_smartpointer\person4.cpp】
