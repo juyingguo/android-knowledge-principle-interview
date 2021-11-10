@@ -168,11 +168,20 @@ public:
     inline void incStrong(__attribute__((unused)) const void* id) const {
         __sync_fetch_and_add(&mCount, 1);
     }
+    //decStrong backup
     inline void decStrong(__attribute__((unused)) const void* id) const {
         if (__sync_fetch_and_sub(&mCount, 1) == 1) {
             delete static_cast<const T*>(this);
         }
     }
+    //decStrong add print old_value log
+//    inline void decStrong(__attribute__((unused)) const void* id) const {
+//        int old_value = __sync_fetch_and_sub(&mCount, 1);
+//        printf("decStrong after __sync_fetch_and_sub old_value = %d\n", old_value);
+//        if (old_value == 1) {
+//            delete static_cast<const T*>(this);
+//        }
+//    }
     //! DEBUGGING ONLY: Get current strong ref count.
     inline int32_t getStrongCount() const {
         return mCount;

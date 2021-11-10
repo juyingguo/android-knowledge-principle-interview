@@ -79,7 +79,7 @@ void test_func()
 	 * "="被重载, 它会再次增加该Person对象的引用计数
 	 * 所以father对应的Person对象的引用计数增加为2
 	 */
-	son->setFather(father);
+//	son->setFather(father);
 
 
 	/* 当test_func执行完时, father和son被析构
