@@ -211,6 +211,19 @@
 			类的对象:用的是内存栈,是个局部的临时变量.   
 			类的指针:用的是内存堆,是个永久变量,除非你释放它.
 		15.2.1 
+	15.3 cpp中智能指针
+		15.3.1 project:
+			cpp_projects_weids\cpp_projects\20th_light_smartpointer\*
+			也存在弊端：两个对象，相互引用时，无法删除销毁。
+		15.3.2 GCC 提供的原子操作-__sync_fetch_and_add系列
+			https://blog.csdn.net/qq_14898543/article/details/49888831 
+		15.3.3
+			cpp_project\cpp_projects_weids\cpp_projects\21th_strongpointer_weakpointer\01th\person9.cpp
+			虽然使用sp。但关闭其中son->setFather(father);最后两个Person都被销毁了。为何呢？son.person count=2，-1后为1。
+		15.3.4 strongpointer_weakpointer 
+			a,老师深入分析：构造和析构完整顺序，引用计数完整分析。
+			b,\cpp_projects_weids\cpp_projects\21th_strongpointer_weakpointer\01th\person9.cpp 
+			
 16 C++ new和数组
 	https://blog.csdn.net/u010292561/article/details/77877266? 
 	

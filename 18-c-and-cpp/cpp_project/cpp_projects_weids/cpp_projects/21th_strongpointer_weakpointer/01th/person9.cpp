@@ -34,7 +34,7 @@ public:
 	{
 		this->son = son;
 	}
-	
+
 	void printInfo(void)
 	{
 		cout<<"just a test function"<<endl;
@@ -91,7 +91,7 @@ void test_func()
 }
 
 int main(int argc, char **argv)
-{	
+{
 	test_func();
 	return 0;
 }

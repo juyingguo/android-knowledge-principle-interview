@@ -45,7 +45,26 @@
 	2.2 Codeblocks实用快捷键技巧汇总 (全) 
 	
 		https://blog.csdn.net/lxt_Lucia/article/details/79572829?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+	2.3 codeblocks---常用快捷键，折叠所有函数
+		https://www.cnblogs.com/lxzbky/p/12661071.html 
 		
+		折叠所有函数　　shift+F12
+
+		行剪切　　ctrl+L
+
+		行删除　　ctrl+shift+L
+
+		行复制　　ctrl+shift+T
+
+		当前行与前一行交换　　ctrl+T
+
+		向下复制当前行　　ctrl+D
+
+		另外还有F2　　关闭或打开下面的窗口
+
+		shift+F2　　关闭或打开侧面的窗口
+	2.4 codeblocks查看c++原文件有哪些函数的快捷键
+		文件编辑区域上部的下拉列表中可以查看。
 3. debug 
 	3.1 Codeblocks17.12版本不能的debug问题解决方法  
 		https://blog.csdn.net/wanrxpjing/article/details/81211669?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
