@@ -15,6 +15,7 @@ private:
 public:
     ~Singleton(){
         std::cout<<"destructor called!"<<std::endl;
+//        m_instance_ptr = nullptr;
     }
     static Singleton* get_instance(){
         if(m_instance_ptr==nullptr){
@@ -22,7 +23,7 @@ public:
         }
         return m_instance_ptr;
     }
-    void use() const { std::cout << "in use" << std::endl; }
+    void use() const { std::cout << "in use current object address:"<< this << std::endl; }
 };
 
 Singleton* Singleton::m_instance_ptr = nullptr;
@@ -31,7 +32,14 @@ int main(){
     Singleton* instance = Singleton::get_instance();
     Singleton* instance_2 = Singleton::get_instance();
 
+    instance->use();
     instance_2->use();
+    delete instance;
+    instance = nullptr;
+    std::cout<<"&instance_2 = "<<instance_2<<std::endl;
+//    if(instance_2 != nullptr)
+//        delete instance_2;
+
 //    Singleton s1;//实际调用Singleton::Singleton()，如果还私有类型，会提示错误的。
     return 0;
 }

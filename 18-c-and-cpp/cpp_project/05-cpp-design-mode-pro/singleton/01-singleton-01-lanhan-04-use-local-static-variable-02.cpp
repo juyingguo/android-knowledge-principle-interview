@@ -28,7 +28,9 @@ private:
 int main(int argc, char *argv[])
 {
     Singleton *instance_1 = Singleton::get_instance();
-//    delete instance_1;
+    std::cout<<"instance_1="<< instance_1<<std::endl;
+    delete instance_1;
     Singleton * instance_2 = Singleton::get_instance();
+    std::cout<<"instance_1="<< instance_1<<std::endl;
     return 0;
 }

@@ -31,17 +31,61 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="cpp_projects/20th_light_smartpointer/RefBase.h" />
-		<Unit filename="cpp_projects/20th_light_smartpointer/StrongPointer.h" />
-		<Unit filename="cpp_projects/20th_light_smartpointer/TypeHelpers.h" />
-		<Unit filename="cpp_projects/20th_light_smartpointer/person9.cpp">
+		<Unit filename="cpp_projects/19th_smartpointer/person.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person2.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person3.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person4.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person5.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person6.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person7.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person8.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person9.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person9_father_son_ref_eachother.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/19th_smartpointer/person_1_pointer_with_delete.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/20th_light_smartpointer/RefBase.h" />
+		<Unit filename="cpp_projects/20th_light_smartpointer/StrongPointer.h" />
+		<Unit filename="cpp_projects/20th_light_smartpointer/TypeHelpers.h" />
+		<Unit filename="cpp_projects/20th_light_smartpointer/person9.cpp" />
 		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/01th/RefBase.h" />
 		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/01th/StrongPointer.h" />
 		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/01th/TypeHelpers.h" />
-		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/01th/person9.cpp" />
+		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/01th/person9.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/02th/RefBase.cpp">
 			<Option compile="0" />
 			<Option link="0" />
