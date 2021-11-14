@@ -10,13 +10,15 @@
 	2.1 C++的三种单例模式-----深度解析 
 		https://blog.csdn.net/zhanghuaichao/article/details/79459130 
 		
-		C++ 单例模式总结与剖析
-		https://www.cnblogs.com/sunchaothu/p/10389842.html 
+		2.1.1 C++ 单例模式总结与剖析
+			https://www.cnblogs.com/sunchaothu/p/10389842.html 
 			测试代码：*\01-singleton-01-lanhan-02.cpp及相关系列。
 			
 			其中一个单例模式：
 			Meyers' SingletonMeyer's的单例， 是著名的写出《Effective C++》系列书籍的作者 Meyers 提出的。
 			
+			a,Singleton(Singleton&)=delete;是什么意思？
+			b,Singleton& operator=(const Singleton&)=delete;是什么意思？
 3. 设计模式之观察者模式（c++） 
 	3.1 https://www.cnblogs.com/carsonzhu/p/5770253.html 
 	3.2 将观察者和主题写在通同一个类中。

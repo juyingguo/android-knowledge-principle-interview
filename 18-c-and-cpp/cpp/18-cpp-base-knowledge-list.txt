@@ -4,6 +4,10 @@
 		也可以查看c标准函数库
 	0.2 cpp教程
 		https://www.runoob.com/cplusplus/cpp-tutorial.html 
+		
+		0.2.2 C++日记
+			【博主系列日记】转到【21】
+			https://blog.csdn.net/weixin_38278993/article/details/104459267 
 	0.3 c运行库、c标准库、windows API的区别和联系 
 		https://www.cnblogs.com/renyuan/p/5031100.html 
 	0.4 windows 下cpp文档
@@ -34,6 +38,7 @@
 		包含《c++程序设计第2版 谭浩强》书中的例子及习题解答
 		c++程序设计第2版 谭浩强 例子源码
 	3.6 《Effective C++》
+	3.7 《C++ Weekly -Ep 107》
 04 c++ tcp文件传输例子
 	4.1 c++ tcp文件传输例子源码下载(含服务器端和客户端完整源码)
 		
@@ -140,6 +145,8 @@
 
 		typedef 仅限于为类型定义符号名称，#define 不仅可以为类型定义别名，也能为数值定义别名，比如您可以定义 1 为 ONE。
 		typedef 是由编译器执行解释的，#define 语句是由预编译器进行处理的。
+	6.2 C/C++ typedef用法详解（真的很详细）
+		https://www.cnblogs.com/wen-ge/articles/5807509.html 
 7. inline
 
 8. cast
@@ -237,7 +244,8 @@
 		举例：
 		\android\system\core\include\utils\RefBase.h
 		weakref_impl* const mRefs;
-		
+	15.5 c/cpp函数指针
+		https://blog.csdn.net/qq754772661/article/details/106996329/ 
 16 C++ new和数组
 	https://blog.csdn.net/u010292561/article/details/77877266? 
 	
@@ -249,6 +257,9 @@
 		
 		C/C++中分离（detach）线程的陷阱
 			https://blog.csdn.net/tissar/article/details/86255018 
+	18.2 带线程的cpp文件编译的时候，添加-lpthread
+		因为不添加提示：undefined reference to 'pthread create'
+		如：g++ -o out threa_test.cpp -lpthread
 19 c++引用
 	19.1 c++中临时变量不能作为非const的引用参数
 		https://blog.csdn.net/kongying168/article/details/3864756 
@@ -278,4 +289,17 @@
 		继承对象，先析构派生类，再析构父类 
 
 		对象成员，先析构类对象，再析构对象成员
-	
+	20.2 C++中的默认函数与default和delete用法
+		https://blog.csdn.net/u012333003/article/details/25299939? 
+		
+		test:02_cpp_base_knowledge\014_constructor_03_with_delete_test.cpp
+		
+		b,C++中 =defaule 和 =delete 使用
+			https://blog.csdn.net/lmb1612977696/article/details/80035487? 
+		c，C++11中=delete的巧妙用法
+			https://blog.csdn.net/whahu1989/article/details/90648536? 
+			
+21 C++日记
+	【博主系列日记】
+	21.1 C++日记——Day10：类内初始化、默认构造函数、=default、=delete、拷贝构造函数
+		https://blog.csdn.net/weixin_38278993/article/details/104459267 
