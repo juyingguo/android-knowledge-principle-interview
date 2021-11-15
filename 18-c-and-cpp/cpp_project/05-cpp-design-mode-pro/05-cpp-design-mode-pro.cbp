@@ -62,7 +62,10 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="builder-mode-04/builder-mode-04-unuse-director-02.cpp" />
+		<Unit filename="builder-mode-04/builder-mode-04-unuse-director-02.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="builder-mode-04/builder-mode-04-unuse-director.cpp">
 			<Option compile="0" />
 			<Option link="0" />
@@ -94,6 +97,24 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="singleton/01-singleton-01-lanhan-02.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="singleton/01-singleton-01-lanhan-03-threadsafe-smartpointer.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="singleton/01-singleton-01-lanhan-04-use-local-static-variable-02.cpp" />
+		<Unit filename="singleton/01-singleton-01-lanhan-04-use-local-static-variable.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="singleton/01-singleton-01-lanhan.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="singleton/Singleton_lanhan.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
