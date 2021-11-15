@@ -139,3 +139,10 @@
 	通过任务管理器-应用程序-结束任务，无法结束。
 	通过任务管理器-应用程序-转到进程-结束进程，可以结束。
 	
+7. code blocks指定c++编译版本为c++11
+	7.1 https://jingyan.baidu.com/article/29697b91543184ab20de3c24.html 
+		a,在settings选项中，选中子菜单中的compiler选项。compiler中文意思是编译器。
+		b,在该界面中的右边的菜单中，选中compiler settings--->compiler flags选项。
+		c,勾选上数下第二个Have g++ follow the C++11 ISO C++ language standard选项。
+		
+	7.2 	

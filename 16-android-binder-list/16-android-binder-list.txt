@@ -14,3 +14,70 @@
 	3.2 OpenBinder 
 		http://www.angryredplanet.com/~hackbod/openbinder/docs/html/index.html
 		http://www.angryredplanet.com/~hackbod/openbinder/docs/html/BinderIPCMechanism.html
+4. 
+	IPC : Inter-Process Communication,进程间通信
+	RPC : Remote Procedure call，远程过程调用
+5.weidongshan binder
+	5.1 
+		查看编译，引用哪些头文件
+		book@book-virtual-machine:/ work/android-5.0.2/frameworks/native/ cmds/servicemanager$ mnm ./ showcomm
+		
+		
+		mmm ./ showcommands //查看编译命令 
+		
+		vim test.c +60 #打开文件，定位到指定行数
+		
+		binder_call分析
+		源码下载方法第一次: 
+		binder_call分析
+		源码下载方法第一次:
+		git clone https://github.com/weidongshan/APP_0003_Binder_C_App.git
+		更新:
+		git pull origin取出指定版本:
+		git checkout vll l v1,未查错,不能编译
+		git checkout v2l/ v2，可以编译了，未验证是否能正常运行
+		
+		make zImage
+		c. mount nfs，运行service_manager,test_server,test_client
+		mount -t nfs -o nolock 192.168.1.123:/ work /mnt
+		./ service_manager &
+		./ test_server &
+		./ test_client hello
+		./ test_client hello weidongshan
+
+	2. 
+		资料在：008_【第4期】Android FrameWork HAL深度开发(已更新193节)	链接：https://eyun.baidu.com/s/3mjaulAS 密码：askH 
+		
+	3. 烧写工具	minitools
+	
+	4.挂载。mount -t nfs -o nolock 192.168.1.123 :/work /mnt
+	
+	kill指定的所有的进程
+	#killall service_manager test_server
+	
+	5.我的编译验证：
+		老师的环境：aosp5.1及对应的版本linux内核；
+		我当前的这一个测试环境：aosp2.3.5及对应的版本自带linux内核；
+		binder: driver version differs from user space
+		failed to open binder driver
+		
+		Android : Binder 驱动情景分析 
+		https://www.jianshu.com/p/75ddda327bb3
+		
+		framework 学习笔记8. binder_ioctl 和服务的添加(驱动层) 
+		https://www.jianshu.com/p/7c47d5008bae 
+		
+		6. BINDER_CURRENT_PROTOCOL_VERSION 
+			driver/staging/android/binder.h 中定义。
+			
+			APP_0003_Binder_C_App\include\linux\binder.h 也有说明
+			#ifdef BINDER_IPC_32BIT
+			/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+			#define BINDER_CURRENT_PROTOCOL_VERSION 7
+			#else
+			#define BINDER_CURRENT_PROTOCOL_VERSION 8
+			#endif
+			
+			Android.mk中添加这个编译选项后，编译后安装到模拟器，不再提示该错误，但会提示如下失败信息。
+			 ./test_server //运行对应请求添加hello服务
+			failed to publish hello service

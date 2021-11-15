@@ -97,15 +97,15 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="singleton/01-singleton-01-lanhan-02.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-		</Unit>
+		<Unit filename="singleton/01-singleton-01-lanhan-02.cpp" />
 		<Unit filename="singleton/01-singleton-01-lanhan-03-threadsafe-smartpointer.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="singleton/01-singleton-01-lanhan-04-use-local-static-variable-02.cpp" />
+		<Unit filename="singleton/01-singleton-01-lanhan-04-use-local-static-variable-02.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="singleton/01-singleton-01-lanhan-04-use-local-static-variable.cpp">
 			<Option compile="0" />
 			<Option link="0" />

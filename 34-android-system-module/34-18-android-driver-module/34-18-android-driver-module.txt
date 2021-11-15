@@ -67,31 +67,5 @@
 		以下文章参考网上搜到的《Android驱动开发全过程(有图有真相)》一文，其中根据自己的实际编写情况作了部分修改，不用作商业用途
 	2.4 
 3.韦东山详细记录。
-	1.
-		mmm ./ showcommands //查看编译命令 
-		
-		vim test.c +60 #打开文件，定位到指定行数
-		
-		binder_call分析
-		源码下载方法第一次: 
-		binder_call分析
-		源码下载方法第一次:
-		git clone https:/ / github.com/weidongshan/APP_0003_Binder_C_App.git
-		更新:
-		git pull origin取出指定版本:
-		git checkout vll l v1,未查错,不能编译
-		git checkout v2l/ v2，可以编译了，未验证是否能正常运行
-		
-		make zImage
-		c. mount nfs，运行service_manager,test_server,test_client
-		mount -t nfs -o nolock 192.168.1.123:/ work /mnt
-		./ service_manager &
-		./ test_server &
-		./ test_client hello
-		./ test_client hello weidongshan
-
-	2. 
-		资料在：008_【第4期】Android FrameWork HAL深度开发(已更新193节)	链接：https://eyun.baidu.com/s/3mjaulAS 密码：askH 
-		
-		minitools
+	
 	

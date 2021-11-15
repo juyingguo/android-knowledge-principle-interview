@@ -106,3 +106,8 @@
 	
 	官网：
 		https://developer.android.com/guide/platform 
+7. Android与Linux内核的对应关系
+	https://www.cnblogs.com/hellokitty2/p/10768528.html 
+	
+	含： Android各个大版本主要解决问题
+		

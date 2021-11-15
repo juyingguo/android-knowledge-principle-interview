@@ -25,7 +25,6 @@ public:
     }
     void use() const { std::cout << "in use current object address:"<< this << std::endl; }
 };
-
 Singleton* Singleton::m_instance_ptr = nullptr;
 
 int main(){
@@ -34,8 +33,10 @@ int main(){
 
     instance->use();
     instance_2->use();
-    delete instance;
-    instance = nullptr;
+//    delete instance;
+//    instance = nullptr;
+
+//    Singleton Singleton3(instance);
     std::cout<<"&instance_2 = "<<instance_2<<std::endl;
 //    if(instance_2 != nullptr)
 //        delete instance_2;
