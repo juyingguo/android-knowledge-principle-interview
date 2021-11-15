@@ -35,6 +35,11 @@
 一、吃透java ,csdn博客。
 	1.1、吃透Java基础八：Throwable异常 
 		https://blog.csdn.net/u013277209/article/details/102834719
+		
+		1.1.2 javaeye,iteye
+	1.2 java专业书籍，
+		java专业书籍，《java 并发编程的艺术》，《Effective Java》，《Java并发编程实践》,《Java Puzzlers》
+		
 二、从ReentrantLock的实现看AQS的原理及应用 
 	https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html
 	

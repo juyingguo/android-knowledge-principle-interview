@@ -45,16 +45,16 @@
 		链接: https://pan.baidu.com/s/1jGQp8bGWqPIcDaVz-8r2XQ 密码: cjbk
 
 		解压密码：www.mukedaba.com_fw
-		
+	1.6 1《android框架揭秘》
 2. resource 
 	2.1 大学四年自学走来，这些私藏的实用工具/学习网站我贡献出来了 
 		https://blog.csdn.net/m0_37907797/article/details/102781027?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40
 		
 3. 技术网站
-	javaeye,iteye
+	
 	
 4. 书籍
-	一、java专业书籍，《java 并发编程的艺术》，《Effective Java》，《Java并发编程实践》,《Java Puzzlers》
+	一、
 	二、设计模式书籍：原来秦小波的《设计模式之禅》貌似挺火的，还有chjavach的《研磨设计模式》
 	三、深入理解Android系列书籍资源分享更新
 		https://blog.csdn.net/Innost/article/details/43342087
@@ -107,7 +107,7 @@
 		10.1 音视频开发进阶指南：基于Android与iOS平台的实践.pdf
 			http://www.music-video.cn/ 
 			https://github.com/zhanxiaokai 		
-			
+	
 5. 新技术
 	5.1 未来，不会JetPack的Android开发连面试机会都没有
 		https://blog.csdn.net/weixin_44339238/article/details/113394946 

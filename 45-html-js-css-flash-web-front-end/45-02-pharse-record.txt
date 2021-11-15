@@ -422,4 +422,13 @@
 20 绘制图片。
 	20.1 绘制先后顺序。
 		经实际使用发现，虽然没有遮挡，但后绘制的在上面。
+21 Cannot read property 'getFrameIndexes' of null     at c.AnimationManager.add (phaser.min.js:19)
+	原因：配置的资源图片宽高与加载资源传递的值的不一样。
+	buddy: {
+			height: 270,
+			width: 171,
+			frameNumber: 1,
+			type: "spritesheet"
+		}
+	game.load.spritesheet
 		
