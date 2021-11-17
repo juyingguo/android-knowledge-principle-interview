@@ -1,115 +1,118 @@
-01	ÎÄµµ×ÊÔ´
+01	æ–‡æ¡£èµ„æº
 	01.1 https://developer.android.google.cn/?hl=zh_cn
 		api:
 			http://www.android-doc.com/guide/topics/media/camera.html
-		api¼°ÑµÁ·×ÊÔ´	
+		apiåŠè®­ç»ƒèµ„æº	
 			https://developer.android.google.cn/training/camera/videobasics?hl=zh-cn
 		
-	01.2 ¹ÙÍø×ÊÁÏ
+	01.2 å®˜ç½‘èµ„æ–™
 		android mk
 		https://developer.android.google.cn/ndk/guides/android_mk
 		
-	01.3 androidÒ»ÏµÁĞ×ÊÔ´¡£
+	01.3 androidä¸€ç³»åˆ—èµ„æºã€‚
 		https://www.androiddevtools.cn/ 
 		
-Ò»¡¢android frameworks ·½ÃæµÄÊé¼®¡£
-	1.1¡¢¡¶AndroidÓ¦ÓÃ¿ò¼ÜÔ­ÀíÓë³ÌĞòÉè¼Æ36¼¼¡·
-		¡¶ÉîÈëÀí½âAndroid¡·
-		¡¶AndroidÃûÊ¦½²ÌÃ¡·
+ä¸€ã€android frameworks æ–¹é¢çš„ä¹¦ç±ã€‚
+	1.1ã€ã€ŠAndroidåº”ç”¨æ¡†æ¶åŸç†ä¸ç¨‹åºè®¾è®¡36æŠ€ã€‹
+		ã€Šæ·±å…¥ç†è§£Androidã€‹
+		ã€ŠAndroidåå¸ˆè®²å ‚ã€‹
 		
-	1.2¡¢<ÉîÈëÀí½âandroid>µË·²Æ½ 
+	1.2ã€<æ·±å…¥ç†è§£android>é‚“å‡¡å¹³ 
 	
-	1.3¡¢ÀÏÂŞµÄÄÇ±¾ ¾ÍOK  °Ù¶ÈËÑ ÂŞÉúÑô 
+	1.3ã€è€ç½—çš„é‚£æœ¬ å°±OK  ç™¾åº¦æœ ç½—ç”Ÿé˜³ 
 	
-	1.4¡¢ 
+	1.4ã€ 
 		framework
 		https://blog.csdn.net/huaxun66/category_7203839.html
 		
-	1.5¡¢Android FrameWorkµ×²ã¿ª·¢ÊÓÆµÈ«Ì× 
+	1.5ã€Android FrameWorkåº•å±‚å¼€å‘è§†é¢‘å…¨å¥— 
 		https://blog.csdn.net/dingzhou2008good/article/details/53448263?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
-		AndroidFrameWorkµ×²ã¿ª·¢ÊÓÆµÈ«Ì×
+		AndroidFrameWorkåº•å±‚å¼€å‘è§†é¢‘å…¨å¥—
 
 		1.
 
-		ÈçÌâ£¬ÏÂÃæÊÇ°Ù¶ÈÔÆÅÌÁ´½Ó£º
+		å¦‚é¢˜ï¼Œä¸‹é¢æ˜¯ç™¾åº¦äº‘ç›˜é“¾æ¥ï¼š
 
-		Á´½Ó: https://pan.baidu.com/s/1JWmAp30xIBtMUnDxf3jCeQ ÃÜÂë: ggjp
+		é“¾æ¥: https://pan.baidu.com/s/1JWmAp30xIBtMUnDxf3jCeQ å¯†ç : ggjp
 
-		Ãâ·Ñ£¨ÎŞ½âÑ¹ÃÜÂë£©£¬ºÃ¶«Î÷Òª·ÖÏí³öÀ´£¡
+		å…è´¹ï¼ˆæ— è§£å‹å¯†ç ï¼‰ï¼Œå¥½ä¸œè¥¿è¦åˆ†äº«å‡ºæ¥ï¼
 		
-		ÁíÒ»¸öÁ´½Ó£º
+		å¦ä¸€ä¸ªé“¾æ¥ï¼š
 
-		Ì½Ë÷Android FrameWorkµ×²ã¿ª·¢ÊÓÆµÈ«Ì×
+		æ¢ç´¢Android FrameWorkåº•å±‚å¼€å‘è§†é¢‘å…¨å¥—
 
-		Á´½Ó: https://pan.baidu.com/s/1jGQp8bGWqPIcDaVz-8r2XQ ÃÜÂë: cjbk
+		é“¾æ¥: https://pan.baidu.com/s/1jGQp8bGWqPIcDaVz-8r2XQ å¯†ç : cjbk
 
-		½âÑ¹ÃÜÂë£ºwww.mukedaba.com_fw
-	1.6 1¡¶android¿ò¼Ü½ÒÃØ¡·
+		è§£å‹å¯†ç ï¼šwww.mukedaba.com_fw
+		
+		1.5.2 è¯¦ç»†è®°å½•è§ï¼š34-12-android-system-moudule-record.txt 
+		
+	1.6 1ã€Šandroidæ¡†æ¶æ­ç§˜ã€‹
 2. resource 
-	2.1 ´óÑ§ËÄÄê×ÔÑ§×ßÀ´£¬ÕâĞ©Ë½²ØµÄÊµÓÃ¹¤¾ß/Ñ§Ï°ÍøÕ¾ÎÒ¹±Ï×³öÀ´ÁË 
+	2.1 å¤§å­¦å››å¹´è‡ªå­¦èµ°æ¥ï¼Œè¿™äº›ç§è—çš„å®ç”¨å·¥å…·/å­¦ä¹ ç½‘ç«™æˆ‘è´¡çŒ®å‡ºæ¥äº† 
 		https://blog.csdn.net/m0_37907797/article/details/102781027?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40
 		
-3. ¼¼ÊõÍøÕ¾
+3. æŠ€æœ¯ç½‘ç«™
 	
 	
-4. Êé¼®
-	Ò»¡¢
-	¶ş¡¢Éè¼ÆÄ£Ê½Êé¼®£ºÔ­À´ÇØĞ¡²¨µÄ¡¶Éè¼ÆÄ£Ê½Ö®ìø¡·Ã²ËÆÍ¦»ğµÄ£¬»¹ÓĞchjavachµÄ¡¶ÑĞÄ¥Éè¼ÆÄ£Ê½¡·
-	Èı¡¢ÉîÈëÀí½âAndroidÏµÁĞÊé¼®×ÊÔ´·ÖÏí¸üĞÂ
+4. ä¹¦ç±
+	ä¸€ã€
+	äºŒã€è®¾è®¡æ¨¡å¼ä¹¦ç±ï¼šåŸæ¥ç§¦å°æ³¢çš„ã€Šè®¾è®¡æ¨¡å¼ä¹‹ç¦…ã€‹è²Œä¼¼æŒºç«çš„ï¼Œè¿˜æœ‰chjavachçš„ã€Šç ”ç£¨è®¾è®¡æ¨¡å¼ã€‹
+	ä¸‰ã€æ·±å…¥ç†è§£Androidç³»åˆ—ä¹¦ç±èµ„æºåˆ†äº«æ›´æ–°
 		https://blog.csdn.net/Innost/article/details/43342087
 		
-	ËÄ¡¢androidÏµÁĞÊé¼®¡£
-		4.1 ¡¶µÚÒ»ĞĞ´úÂë Android¡·¡¢
-		4.2 ¡¶·è¿ñAndroid¡·
-		4.3¡¶Android¿ª·¢ÒÕÊõÌ½Ë÷¡·¡¢
-		4.4¡¶AndroidÈºÓ¢´«¡·
-		4.5 ¡¶Android Ô´ÂëÉè¼ÆÄ£Ê½½âÎöÓëÊµÕ½¡·¡¢
-		4.6 ¡¶AndroidÄÚºËÆÊÎö¡· 
-		4.7 ¡¶AndroidÄÚºË¿ª·¢£º¿ª·¢°åÑ¡¹º¡·
+	å››ã€androidç³»åˆ—ä¹¦ç±ã€‚
+		4.1 ã€Šç¬¬ä¸€è¡Œä»£ç  Androidã€‹ã€
+		4.2 ã€Šç–¯ç‹‚Androidã€‹
+		4.3ã€ŠAndroidå¼€å‘è‰ºæœ¯æ¢ç´¢ã€‹ã€
+		4.4ã€ŠAndroidç¾¤è‹±ä¼ ã€‹
+		4.5 ã€ŠAndroid æºç è®¾è®¡æ¨¡å¼è§£æä¸å®æˆ˜ã€‹ã€
+		4.6 ã€ŠAndroidå†…æ ¸å‰–æã€‹ 
+		4.7 ã€ŠAndroidå†…æ ¸å¼€å‘ï¼šå¼€å‘æ¿é€‰è´­ã€‹
 			1. https://blog.51cto.com/ticktick/category11.html
-		4.8 androidÏµÍ³Ô´´úÂëÇé¾°·ÖÎö-ÂŞÉıÑô¡£
-			4.8.1. ÀÏÂŞµÄAndroidÖ®ÂÃ
-					°®Éú»î£¬°®Android
+		4.8 androidç³»ç»Ÿæºä»£ç æƒ…æ™¯åˆ†æ-ç½—å‡é˜³ã€‚
+			4.8.1. è€ç½—çš„Androidä¹‹æ—…
+					çˆ±ç”Ÿæ´»ï¼Œçˆ±Android
 
 				https://blog.csdn.net/luoshengyang
-		4.9 <Android¶àÃ½ÌåÓ¦ÓÃÊµÕ½¿ª·¢ÊµÕ½Ïê½â> ÍõÊ¯ÀÚ
+		4.9 <Androidå¤šåª’ä½“åº”ç”¨å®æˆ˜å¼€å‘å®æˆ˜è¯¦è§£> ç‹çŸ³ç£Š
 		
-	Îå¡¢¡¶Android¿ª·¢ÒÕÊõÌ½Ë÷¡·¶ÔÓ¦µÄÍøÕ¾
-		5.1¡¢csdn²©¿Í 
+	äº”ã€ã€ŠAndroidå¼€å‘è‰ºæœ¯æ¢ç´¢ã€‹å¯¹åº”çš„ç½‘ç«™
+		5.1ã€csdnåšå®¢ 
 			https://blog.csdn.net/singwhatiwanna
-		5.2¡¢github 
+		5.2ã€github 
 			https://github.com/singwhatiwanna
-			Ô´ÂëµØÖ·£ºhttps://github.com/singwhatiwanna/android-art-res
-		5.3¡¢qq:481798332
+			æºç åœ°å€ï¼šhttps://github.com/singwhatiwanna/android-art-res
+		5.3ã€qq:481798332
 			
 			
-	Áù. Android.mk±àĞ´²Î¿¼ÊÖ²á»òÊé¼®
+	å…­. Android.mkç¼–å†™å‚è€ƒæ‰‹å†Œæˆ–ä¹¦ç±
 	
-	Æß¡¢¡¶Android½ø½×Ö®¹â¡·
+	ä¸ƒã€ã€ŠAndroidè¿›é˜¶ä¹‹å…‰ã€‹
 		7.1
-			¶ÀÁ¢²©¿Í£º http£º //liuwangshu.cn
-			CSDN²©¿Í£º http£º //blog.csdn.net/itachi85
+			ç‹¬ç«‹åšå®¢ï¼š httpï¼š //liuwangshu.cn
+			CSDNåšå®¢ï¼š httpï¼š //blog.csdn.net/itachi85
 			GitHub:https://github.com/henrymorgen
-			Î¢ĞÅ¹«ÖÚºÅ£º ÁõÍûÊæ
-			QQ½»Á÷Èº£º 499174415
-			Ô´ÂëÏÂÔØ
+			å¾®ä¿¡å…¬ä¼—å·ï¼š åˆ˜æœ›èˆ’
+			QQäº¤æµç¾¤ï¼š 499174415
+			æºç ä¸‹è½½
 			https://github.com/henrymorgen/android-advanced-light
 			http://www.broadview.com.cn/31530
 			
-	8. [ÉîÈëÀí½âAndroid¾íÒ»]
-		8.1 Êé¼°²©¿ÍÈ«ÎÄ
-			[ÉîÈëÀí½âAndroid¾íÒ»È«ÎÄ-µÚ°ËÕÂ]ÉîÈëÀí½âSurfaceÏµÍ³
+	8. [æ·±å…¥ç†è§£Androidå·ä¸€]
+		8.1 ä¹¦åŠåšå®¢å…¨æ–‡
+			[æ·±å…¥ç†è§£Androidå·ä¸€å…¨æ–‡-ç¬¬å…«ç« ]æ·±å…¥ç†è§£Surfaceç³»ç»Ÿ
 			https://blog.csdn.net/innost/article/details/47208337
-	9. ÔÚEDBurnetteËùĞ´µÄ¡¶Hello, Android¡·Àï£¬
+	9. åœ¨EDBurnetteæ‰€å†™çš„ã€ŠHello, Androidã€‹é‡Œï¼Œ
 			
-	10,ÒôÊÓÆµÀàÊé¼®
-		10.1 ÒôÊÓÆµ¿ª·¢½ø½×Ö¸ÄÏ£º»ùÓÚAndroidÓëiOSÆ½Ì¨µÄÊµ¼ù.pdf
+	10,éŸ³è§†é¢‘ç±»ä¹¦ç±
+		10.1 éŸ³è§†é¢‘å¼€å‘è¿›é˜¶æŒ‡å—ï¼šåŸºäºAndroidä¸iOSå¹³å°çš„å®è·µ.pdf
 			http://www.music-video.cn/ 
 			https://github.com/zhanxiaokai 		
 	
-5. ĞÂ¼¼Êõ
-	5.1 Î´À´£¬²»»áJetPackµÄAndroid¿ª·¢Á¬ÃæÊÔ»ú»á¶¼Ã»ÓĞ
+5. æ–°æŠ€æœ¯
+	5.1 æœªæ¥ï¼Œä¸ä¼šJetPackçš„Androidå¼€å‘è¿é¢è¯•æœºä¼šéƒ½æ²¡æœ‰
 		https://blog.csdn.net/weixin_44339238/article/details/113394946 
 			
 

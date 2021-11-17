@@ -25,6 +25,7 @@
 		3. 友善之臂。
 			官网。友善之臂210裸机开发教程 
 			官网全套DVD光盘资料。download下可以下载。
+			http://www.friendlyarm.net/products/mini2440
 			
 			Android FAQ ：
 				https://wiki.friendlyarm.com/wiki/index.php/Android_FAQ
@@ -110,4 +111,7 @@
 	https://www.cnblogs.com/hellokitty2/p/10768528.html 
 	
 	含： Android各个大版本主要解决问题
-		
+8. Android FrameWork底层开发视频全套 
+	8.1 来源：46-android-learn-resource-record-books.txt
+		vim 下再次打开其它文件。
+		:sp hello.txt

@@ -31,13 +31,13 @@ int main(){
  printf("%d, %d\n", sizeof(a), sizeof(union data) );
 
  a.n = 0x40;
- printf("%X, %c, %hX\n", a.n, a.ch, a.m);
+ printf("%X, %c, %hX,%ld\n", a.n, a.ch, a.m,a.ls);
 
  a.ch = '9';
- printf("%X, %c, %hX\n", a.n, a.ch, a.m);
+ printf("%X, %c, %hX,%ld\n", a.n, a.ch, a.m,a.ls);
 
  a.m = 0x2059;
- printf("%X, %c, %hX\n", a.n, a.ch, a.m);
+ printf("%X, %c, %hX,%ld\n", a.n, a.ch, a.m,a.ls);
  a.n = 0x3E25AD54;
  printf("%X, %c, %hX\n", a.n, a.ch, a.m);
  printf("%X, %c, %lX\n", a.n, a.ch, a.ls);

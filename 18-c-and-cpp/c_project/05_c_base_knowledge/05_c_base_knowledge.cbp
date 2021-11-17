@@ -31,6 +31,24 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="009_02_union_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="009_union_assign_one_variable_at_same_time_test.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="009_union_assign_test.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="009_union_test.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="028_pointer_01_test.c">
 			<Option compilerVar="CC" />
 			<Option compile="0" />
@@ -43,6 +61,8 @@
 		</Unit>
 		<Unit filename="029_const_02_test.c">
 			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="029_const_03_test.c">
 			<Option compilerVar="CC" />
