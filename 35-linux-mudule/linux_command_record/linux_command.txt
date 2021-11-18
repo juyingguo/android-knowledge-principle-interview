@@ -71,6 +71,7 @@
 				
 				https://jingyan.baidu.com/article/11c17a2cffd0eaf447e39d5a.html
 				
+						
 	3.5
 		 chmod命令
 				参数说明
@@ -112,7 +113,9 @@
 
 			chown :512 /home/runoob
 	3.7 Linux中将命令运行结果放到文件中的方法
-		https://www.cnblogs.com/shineriver/p/10922970.html
+		https://www.cnblogs.com/shineriver/p/10922970.html 
+	3.8 mkdir
+		3.8.2 mkdir include/private -p //创建多级目录
 (4)磁盘管理
 	4.1 du //du会显示指定的目录或文件所占用的磁盘空间。
 		-a或-all 显示目录中个别文件的大小。

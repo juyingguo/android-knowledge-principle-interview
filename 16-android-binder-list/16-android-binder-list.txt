@@ -1,44 +1,44 @@
-Ò»¡¢androidÃæÊÔ£¨6£©-Binder»úÖÆ
-	1.1¡¢androidÃæÊÔ£¨6£©-Binder»úÖÆ
+ä¸€ã€androidé¢è¯•ï¼ˆ6ï¼‰-Binderæœºåˆ¶
+	1.1ã€androidé¢è¯•ï¼ˆ6ï¼‰-Binderæœºåˆ¶
 		https://blog.csdn.net/pgg_cold/article/details/79393839
 
-¶ş¡¢ Android BanderÉè¼ÆÓëÊµÏÖ - Éè¼ÆÆª
+äºŒã€ Android Banderè®¾è®¡ä¸å®ç° - è®¾è®¡ç¯‡
 	
-	2.1 Android BanderÉè¼ÆÓëÊµÏÖ - Éè¼ÆÆª
-		¡¾universus¡¿
+	2.1 Android Banderè®¾è®¡ä¸å®ç° - è®¾è®¡ç¯‡
+		ã€universusã€‘
 		https://blog.csdn.net/universus/article/details/6211589
-3,¡¾AndroidÏµÍ³¡¿binder µ½µ×ÊÇÊ²Ã´£¿openbinder ÓÖÊÇÊ²Ã´£¿ËüÊÇÊ²Ã´»úÖÆ£¿
-	3.1 ¡¾AndroidÏµÍ³¡¿binder µ½µ×ÊÇÊ²Ã´£¿openbinder ÓÖÊÇÊ²Ã´£¿ËüÊÇÊ²Ã´»úÖÆ£¿
+3,ã€Androidç³»ç»Ÿã€‘binder åˆ°åº•æ˜¯ä»€ä¹ˆï¼Ÿopenbinder åˆæ˜¯ä»€ä¹ˆï¼Ÿå®ƒæ˜¯ä»€ä¹ˆæœºåˆ¶ï¼Ÿ
+	3.1 ã€Androidç³»ç»Ÿã€‘binder åˆ°åº•æ˜¯ä»€ä¹ˆï¼Ÿopenbinder åˆæ˜¯ä»€ä¹ˆï¼Ÿå®ƒæ˜¯ä»€ä¹ˆæœºåˆ¶ï¼Ÿ
 		https://zhuanlan.zhihu.com/p/137812696
 		
 	3.2 OpenBinder 
 		http://www.angryredplanet.com/~hackbod/openbinder/docs/html/index.html
 		http://www.angryredplanet.com/~hackbod/openbinder/docs/html/BinderIPCMechanism.html
 4. 
-	IPC : Inter-Process Communication,½ø³Ì¼äÍ¨ĞÅ
-	RPC : Remote Procedure call£¬Ô¶³Ì¹ı³Ìµ÷ÓÃ
+	IPC : Inter-Process Communication,è¿›ç¨‹é—´é€šä¿¡
+	RPC : Remote Procedure callï¼Œè¿œç¨‹è¿‡ç¨‹è°ƒç”¨
 5.weidongshan binder
 	5.1 
-		²é¿´±àÒë£¬ÒıÓÃÄÄĞ©Í·ÎÄ¼ş
+		æŸ¥çœ‹ç¼–è¯‘ï¼Œå¼•ç”¨å“ªäº›å¤´æ–‡ä»¶
 		book@book-virtual-machine:/ work/android-5.0.2/frameworks/native/ cmds/servicemanager$ mnm ./ showcomm
 		
 		
-		mmm ./ showcommands //²é¿´±àÒëÃüÁî 
+		mmm ./ showcommands //æŸ¥çœ‹ç¼–è¯‘å‘½ä»¤ 
 		
-		vim test.c +60 #´ò¿ªÎÄ¼ş£¬¶¨Î»µ½Ö¸¶¨ĞĞÊı
+		vim test.c +60 #æ‰“å¼€æ–‡ä»¶ï¼Œå®šä½åˆ°æŒ‡å®šè¡Œæ•°
 		
-		binder_call·ÖÎö
-		Ô´ÂëÏÂÔØ·½·¨µÚÒ»´Î: 
-		binder_call·ÖÎö
-		Ô´ÂëÏÂÔØ·½·¨µÚÒ»´Î:
+		binder_callåˆ†æ
+		æºç ä¸‹è½½æ–¹æ³•ç¬¬ä¸€æ¬¡: 
+		binder_callåˆ†æ
+		æºç ä¸‹è½½æ–¹æ³•ç¬¬ä¸€æ¬¡:
 		git clone https://github.com/weidongshan/APP_0003_Binder_C_App.git
-		¸üĞÂ:
-		git pull originÈ¡³öÖ¸¶¨°æ±¾:
-		git checkout vll l v1,Î´²é´í,²»ÄÜ±àÒë
-		git checkout v2l/ v2£¬¿ÉÒÔ±àÒëÁË£¬Î´ÑéÖ¤ÊÇ·ñÄÜÕı³£ÔËĞĞ
+		æ›´æ–°:
+		git pull originå–å‡ºæŒ‡å®šç‰ˆæœ¬:
+		git checkout vll l v1,æœªæŸ¥é”™,ä¸èƒ½ç¼–è¯‘
+		git checkout v2l/ v2ï¼Œå¯ä»¥ç¼–è¯‘äº†ï¼ŒæœªéªŒè¯æ˜¯å¦èƒ½æ­£å¸¸è¿è¡Œ
 		
 		make zImage
-		c. mount nfs£¬ÔËĞĞservice_manager,test_server,test_client
+		c. mount nfsï¼Œè¿è¡Œservice_manager,test_server,test_client
 		mount -t nfs -o nolock 192.168.1.123:/ work /mnt
 		./ service_manager &
 		./ test_server &
@@ -46,31 +46,31 @@
 		./ test_client hello weidongshan
 
 	2. 
-		×ÊÁÏÔÚ£º008_¡¾µÚ4ÆÚ¡¿Android FrameWork HALÉî¶È¿ª·¢(ÒÑ¸üĞÂ193½Ú)	Á´½Ó£ºhttps://eyun.baidu.com/s/3mjaulAS ÃÜÂë£ºaskH 
+		èµ„æ–™åœ¨ï¼š008_ã€ç¬¬4æœŸã€‘Android FrameWork HALæ·±åº¦å¼€å‘(å·²æ›´æ–°193èŠ‚)	é“¾æ¥ï¼šhttps://eyun.baidu.com/s/3mjaulAS å¯†ç ï¼šaskH 
 		
-	3. ÉÕĞ´¹¤¾ß	minitools
+	3. çƒ§å†™å·¥å…·	minitools
 	
-	4.¹ÒÔØ¡£mount -t nfs -o nolock 192.168.1.123 :/work /mnt
+	4.æŒ‚è½½ã€‚mount -t nfs -o nolock 192.168.1.123 :/work /mnt
 	
-	killÖ¸¶¨µÄËùÓĞµÄ½ø³Ì
+	killæŒ‡å®šçš„æ‰€æœ‰çš„è¿›ç¨‹
 	#killall service_manager test_server
 	
-	5.ÎÒµÄ±àÒëÑéÖ¤£º
-		ÀÏÊ¦µÄ»·¾³£ºaosp5.1¼°¶ÔÓ¦µÄ°æ±¾linuxÄÚºË£»
-		ÎÒµ±Ç°µÄÕâÒ»¸ö²âÊÔ»·¾³£ºaosp2.3.5¼°¶ÔÓ¦µÄ°æ±¾×Ô´ølinuxÄÚºË£»
+	5.æˆ‘çš„ç¼–è¯‘éªŒè¯ï¼š
+		è€å¸ˆçš„ç¯å¢ƒï¼šaosp5.1åŠå¯¹åº”çš„ç‰ˆæœ¬linuxå†…æ ¸ï¼›
+		æˆ‘å½“å‰çš„è¿™ä¸€ä¸ªæµ‹è¯•ç¯å¢ƒï¼šaosp2.3.5åŠå¯¹åº”çš„ç‰ˆæœ¬è‡ªå¸¦linuxå†…æ ¸ï¼›
 		binder: driver version differs from user space
 		failed to open binder driver
 		
-		Android : Binder Çı¶¯Çé¾°·ÖÎö 
+		Android : Binder é©±åŠ¨æƒ…æ™¯åˆ†æ 
 		https://www.jianshu.com/p/75ddda327bb3
 		
-		framework Ñ§Ï°±Ê¼Ç8. binder_ioctl ºÍ·şÎñµÄÌí¼Ó(Çı¶¯²ã) 
+		framework å­¦ä¹ ç¬”è®°8. binder_ioctl å’ŒæœåŠ¡çš„æ·»åŠ (é©±åŠ¨å±‚) 
 		https://www.jianshu.com/p/7c47d5008bae 
 		
 		6. BINDER_CURRENT_PROTOCOL_VERSION 
-			driver/staging/android/binder.h ÖĞ¶¨Òå¡£
+			driver/staging/android/binder.h ä¸­å®šä¹‰ã€‚
 			
-			APP_0003_Binder_C_App\include\linux\binder.h Ò²ÓĞËµÃ÷
+			APP_0003_Binder_C_App\include\linux\binder.h ä¹Ÿæœ‰è¯´æ˜
 			#ifdef BINDER_IPC_32BIT
 			/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 			#define BINDER_CURRENT_PROTOCOL_VERSION 7
@@ -78,6 +78,8 @@
 			#define BINDER_CURRENT_PROTOCOL_VERSION 8
 			#endif
 			
-			Android.mkÖĞÌí¼ÓÕâ¸ö±àÒëÑ¡Ïîºó£¬±àÒëºó°²×°µ½Ä£ÄâÆ÷£¬²»ÔÙÌáÊ¾¸Ã´íÎó£¬µ«»áÌáÊ¾ÈçÏÂÊ§°ÜĞÅÏ¢¡£
-			 ./test_server //ÔËĞĞ¶ÔÓ¦ÇëÇóÌí¼Óhello·şÎñ
+			Android.mkä¸­æ·»åŠ è¿™ä¸ªç¼–è¯‘é€‰é¡¹åï¼Œç¼–è¯‘åå®‰è£…åˆ°æ¨¡æ‹Ÿå™¨ï¼Œä¸å†æç¤ºè¯¥é”™è¯¯ï¼Œä½†ä¼šæç¤ºå¦‚ä¸‹å¤±è´¥ä¿¡æ¯ã€‚
+			 ./test_server //è¿è¡Œå¯¹åº”è¯·æ±‚æ·»åŠ helloæœåŠ¡
 			failed to publish hello service
+6. Binderå­¦ä¹ ç¬”è®°ï¼ˆåäºŒï¼‰â€”â€” binder_transaction(...)éƒ½å¹²äº†ä»€ä¹ˆï¼Ÿ
+	https://www.cnblogs.com/palance/p/5768748.html 
