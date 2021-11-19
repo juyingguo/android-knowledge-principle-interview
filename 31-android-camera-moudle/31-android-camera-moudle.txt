@@ -173,4 +173,17 @@
 	12.1 调用Camera.open打开摄像头报错 java.lang.RuntimeException: Fail to connect to camera service
 	
 		https://blog.csdn.net/bluecat333/article/details/99999258 
-		先检查AndroidManifest有没有设置权限。
+		先检查AndroidManifest有没有设置权限。 
+13.android camera 圆形预览 SurfaceView
+	13.0 test project
+		\as-some-sample-project-to-github\camera-video-record-play
+	13.1 
+		https://www.cnblogs.com/fuyaozhishang/p/10044836.html
+	13.2 android 圆形相机预览拍照_Android Camera SurfaceView 预览拍照
+		https://blog.csdn.net/weixin_39603132/article/details/111843180
+		
+	13.3 android相机圆形框拍照，自定义拍照界面
+		https://www.haolizi.net/example/view_88375.html 
+		
+		已使用工程：\as-some-sample-project-to-github\camera-video-record-play
+	

@@ -1,0 +1,2692 @@
+视频课程和源码的对应关系、下载方法请看"源码下载方法xxxxx.TXT"
+
+视频和源码的对应关系:
+视频                                                  源码
+第1课第1节_编写第1个Android应用程序实现按钮和复选框   APP_0001_LEDDemo v1,v2,v3
+第1课第2节_让Android应用程序访问C库                   APP_0001_LEDDemo v4,v5;    HAL_0001_LED v1,v2
+第1课第3节_Android程序操作LED"                        APP_0001_LEDDemo v6;       HAL_0001_LED v3;    DRV_0001_LEDS v1
+
+第2课第1节_Android硬件访问服务框架
+第2课第2节_Android硬件访问服务编写系统代码          SYS_0001_LEDDemo v1
+第2课第3节_Android硬件访问服务编写APP代码           APP_0001_LEDDemo v7;
+第2课第4节_Android硬件访问服务编写HAL代码           APP_0001_LEDDemo v7;       SYS_0001_LEDDemo v2,v3
+第2课第5节_Android硬件访问服务使用反射	            APP_0001_LEDDemo v8;       SYS_0001_LEDDemo v2,v3
+
+
+第0课 工具
+1. 使用Android Studio来阅读Android源码
+mmm development/tools/idegen/
+mv ./out/target/product/tiny4412/obj/GYP/shared_intermediates/res.java ./out/target/product/tiny4412/obj/GYP/shared_intermediates/res.j
+sh ./development/tools/idegen/idegen.sh
+
+
+参考文章
+使用Android Studio查看Android Lollipop源码
+http://www.jianshu.com/p/c85984cf99e2
+
+
+如何使用Android Studio开发/调试Android源码
+http://www.cnblogs.com/Lefter/p/4176991.html
+
+
+
+2. UML工具: bouml
+4.23
+
+查看 servicemanager的类图
+L:\android_projects\android_system_code\frameworks\native\include\binder
+L:\android_projects\android_system_code\frameworks\native\libs\binder
+L:\android_projects\android_system_code\frameworks\rs\server
+
+UML中关联，聚合，组合的区别及C++实现
+http://www.cnblogs.com/cy163/archive/0001/01/01/1528208.html
+
+学习UML实现、泛化、依赖、关联、聚合、组合
+http://blog.chinaunix.net/uid-26111972-id-3326225.html
+
+aggregation/composition vs directional aggregation/composition?
+http://stackoverflow.com/questions/34416267/aggregation-composition-vs-directional-aggregation-composition
+
+
+3. 使用bouml制作时序图
+http://www.cnblogs.com/ywqu/archive/2009/12/22/1629426.html
+http://blog.csdn.net/pashanhuxp/article/details/41982285
+
+A()
+{
+   B();
+   C();
+}
+
+B()
+{
+  D();
+}
+
+A
+    B
+       D()
+    C
+
+
+第1部分 Android驱动
+
+一. 第1个Android应用程序
+
+1. 第1个Android app
+	
+	源码下载方法
+	
+	第一次:
+	git clone https://github.com/weidongshan/APP_0001_LEDDemo.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // 系统生成
+	git checkout v2  // 添加了button, checkbox
+	git checkout v3  // 添加了button, checkbox的点击方法
+	git checkout v4  // add jni
+	git checkout v5  // 调用了ledOpen, ledCtrl
+	git checkout v6  // 可以操作LED
+	
+	
+2. 在Android app里访问C库 : JNI
+
+
+	第一次:
+	git clone https://github.com/weidongshan/HAL_0001_LED.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // 空函数
+	git checkout v2  // 添加打印
+	git checkout v3  // 可以操作LED
+	
+
+3. 编写LED驱动、完善C库
+
+	第一次:
+	git clone https://github.com/weidongshan/DRV_0001_LEDS.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // open, ioctl
+
+
+二. 硬件访问服务
+
+1 框架
+server提供service
+服务器提供某种服务
+
+2 编写系统代码
+
+	源码下载方法
+	第一次:
+	git clone https://github.com/weidongshan/SYS_0001_LEDDemo.git
+	更新:
+	git pull origin
+	取出指定版本:
+	git checkout v1  // 有JNI没有HAL
+	
+3 编写APP代码
+a. 包含什么
+out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes.jar
+
+How do I build the Android SDK with hidden and internal APIs available?
+http://stackoverflow.com/questions/7888191/how-do-i-build-the-android-sdk-with-hidden-and-internal-apis-available
+
+b. 怎么包含
+Creating a module library and adding it to module dependencies
+https://www.jetbrains.com/idea/help/configuring-module-dependencies-and-libraries.html
+
+编译错误
+a. java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+Android Studio Google jar causing GC overhead limit exceeded error
+http://stackoverflow.com/questions/25013638/android-studio-google-jar-causing-gc-overhead-limit-exceeded-error
+
+b. Too many field references
+
+Building Apps with Over 65K Methods
+https://developer.android.com/tools/building/multidex.html
+
+
+	源码下载方法
+	
+	第一次:
+	git clone https://github.com/weidongshan/APP_0001_LEDDemo.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v7  // 使用硬件访问服务
+
+
+4 编写HAL代码
+
+	源码下载方法
+	第一次:
+	git clone https://github.com/weidongshan/SYS_0001_LEDDemo.git
+	更新:
+	git pull origin
+	取出指定版本:
+	git checkout v1  // 有JNI没有HAL
+	git checkout v2  // 有JNI,HAL
+	git checkout v3  // add MODULE TAG, DEVICE TAG
+
+
+JNI 向上提供本地函数, 向下加载HAL文件并调用HAL的函数
+HAL 负责访问驱动程序执行硬件操作
+
+dlopen
+
+external\chromium_org\third_party\hwcplus\src\hardware.c
+hw_get_module("led")
+
+		1. 模块名==>文件名
+		hw_get_module_by_class("led", NULL)
+			name = "led"
+				property_get     xxx是某个属性
+				hw_module_exists 判断是否存在led.xxx.so
+				
+			
+
+		2. 加载
+				load
+						dlopen(filename)
+						dlsym("HMI") 从SO文件中获得名为HMI的hw_module_t结构体
+						strcmp(id, hmi->id) 判断名字是否一致(hmi->id, "led")
+						
+
+JNI 怎么使用 HAL
+a. hw_get_module 获得一个hw_module_t结构体
+b. 调用 module->methods->open(module, device_name, &device) 
+   获得一个hw_device_t结构体
+   并且把hw_device_t结构体转换为设备自定义的结构体
+   
+
+HAL 怎么写
+a. 实现一个名为HMI的hw_module_t结构体
+b. 实现一个open函数, 它会根据name返回一个设备自定义的结构体
+   这个设备自定义的结构体的第1个成员是 hw_device_t结构体
+   还可以定义设备相关的成员
+   
+   
+   
+
+hw_module_exists(char *path, size_t path_len, const char *name,
+                            const char *subname)
+
+led.tiny4412.so
+led.exynos4.so
+led.default.so
+                           
+它用来判断"name"."subname".so文件是否存在
+查找的目录：
+a. HAL_LIBRARY_PATH 环境变量
+b. /vendor/lib/hw
+c. /system/lib/hw
+
+
+property_get : 属性系统
+属性<键,值> <name, value>
+
+
+
+打印信息简介：
+a. 有三类打印信息: app, system, radio
+   程序里使用 ALOGx, SLOGx, RLOGx来打印
+b. x表示6种打印级别，有:
+  V    Verbose
+  D    Debug
+  I    Info
+  W    Warn
+  E    Error
+  F    Fatal
+
+比如: 
+#define LOG_TAG "LedHal"
+ALOGI("led_open : %d", fd);
+
+c. 打印出来的格式为:
+      I/LedHal  ( 1987): led_open : 65
+ (级别) LOG_TAG  进程号   打印信息  
+
+d. 使用 logcat 命令查看  
+   logcat LedHal:I *:S
+   
+
+5 使用反射访问硬件服务
+
+Android app
+	
+	源码下载方法
+	
+	第一次:
+	git clone https://github.com/weidongshan/APP_0001_LEDDemo.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v8  // 使用反射Reflect
+
+
+三. 必备的相关知识
+1. Android消息处理机制: Handler, MessageQueue, Looper, Thread
+
+线程概念   : 一个应用程序运行时它的主体被称为进程，
+             一个进程内部可以有多个线程，
+             线程共享进程的资源
+线程间通信
+
+a. 创建MessageQueue: Looper.prepare()
+b. 使用Handler构造、发送Message
+b.1 new Handler
+b.2 Handler.sendMessage, sendEmptyMessageAtTime, sendMessageDelayed
+
+c. 使用Looper循环处理消息:
+c.1 从MessageQueue中取出Message
+c.2 执行它的处理函数: msg.target.dispatchMessage
+
+
+	源码下载方法
+	
+	第一次:
+	git clone https://github.com/weidongshan/APP_Addons_0001_Message.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // 基本版本,支持按钮 
+	git checkout v2  // create thread
+	git checkout v3  // support Message
+	git checkout v4  // use HandlerThread
+
+2. ArrayMap
+
+
+四. Android灯光系统
+
+1. 框架分析
+
+
+2. Linux的led class驱动
+android-5.0.2\hardware\libhardware\include\hardware\lights.h
+
+echo 255 > /sys/class/leds/led1/brightness
+cat /sys/class/leds/led1/brightness
+cat /sys/class/leds/led1/max_brightness
+
+闪烁
+echo timer > /sys/class/leds/led1/trigger
+echo 100 > /sys/class/leds/led1/delay_on
+echo 200 > /sys/class/leds/led1/delay_off
+
+关闭
+echo 0 > /sys/class/leds/led1/delay_on
+或
+echo 0 > /sys/class/leds/led1/brightness
+
+
+分析闪烁功能:
+echo timer > /sys/class/leds/led1/trigger  // timer对应 ledtrig-timer.c
+
+led_trigger_store // 1. 从trigger_list找出名为"timer"的trigger
+	list_for_each_entry(trig, &trigger_list, next_trig) {
+		if (!strcmp(trigger_name, trig->name)) {
+		    // 2. 调用
+		    led_trigger_set(led_cdev, trig);
+		        // 3. 把trigger放入led_classdev的trig_list链表里
+		        list_add_tail(&led_cdev->trig_list, &trigger->led_cdevs);
+		        led_cdev->trigger = trigger;
+		        // 4. 
+		        trigger->activate(led_cdev);
+		           // 5. 对于"timer"
+		           timer_trig_activate
+		               // 6. 创建2个文件: delay_on, delay_off
+		               device_create_file
+		               device_create_file
+		               led_blink_set // 让LED闪烁
+		               		led_set_software_blink
+		               				
+		               
+		}
+	}
+
+
+echo 100 > /sys/class/leds/led1/delay_on
+led_delay_on_store
+  state = simple_strtoul(buf, &after, 10);
+	led_blink_set  // // 让LED闪烁
+	led_cdev->blink_delay_on = state;
+
+echo 200 > /sys/class/leds/led1/delay_off
+led_delay_off_store
+	state = simple_strtoul(buf, &after, 10);
+	led_blink_set // 让LED闪烁
+	led_cdev->blink_delay_off = state;
+
+
+
+
+
+怎么写驱动：
+a1. 分配led_classdev
+a2. 设置 ： 
+led_cdev->max_brightness
+led_cdev->brightness_set
+led_cdev->flags
+led_cdev->brightness
+led_cdev->name
+
+
+a3. 注册 : led_classdev_register
+
+
+把 leds_4412.c 放到drivers/leds
+修改 drivers/leds/Makefile:
+obj-y += leds_4412.o
+
+make menuconfig
+
+CONFIG_LEDS_CLASS
+CONFIG_LEDS_TRIGGERS
+CONFIG_LEDS_TRIGGER_TIMER
+
+-> Device Drivers
+  -> LED Support
+   [*]   LED Class Support    
+   [*]   LED Trigger support
+   <*>   LED Timer Trigger
+
+make zImage
+
+
+	源码下载方法
+	
+	第一次:
+	git clone https://github.com/weidongshan/DRV_0001_LEDS.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v2  // use led class
+
+3. 编写android灯光系统的hal程序
+
+
+Java: frameworks/base/services/core/java/com/android/server/lights/LightsService.java
+JNI:  frameworks/base/services/core/jni/com_android_server_lights_LightsService.cpp
+Hal:  lights.c
+
+默认配色：frameworks/base/core/res/res/values/config.xml
+电池灯：frameworks/base/services/core/java/com/android/server/BatteryService.java
+通知灯：frameworks/base/services/core/java/com/android/server/notification/NotificationManagerService.java
+
+怎么写LIGHTS HAL
+a. 实现一个名为HMI的hw_module_t结构体
+b. 实现一个open函数, 它会根据name返回一个light_device_t结构体
+c. 实现多个light_device_t结构体，每一个对应一个DEVICE
+   light_device_t结构体里第1个成员是hw_device_t结构体, 紧接着一个set_light函数
+
+   
+   
+设置LED状态：
+struct light_state_t {
+    /**
+     * The color of the LED in ARGB.
+     *
+     * Do your best here.
+     *   - If your light can only do red or green, if they ask for blue,
+     *     you should do green.
+     *   - If you can only do a brightness ramp, then use this formula:
+     *      unsigned char brightness = ((77*((color>>16)&0x00ff))
+     *              + (150*((color>>8)&0x00ff)) + (29*(color&0x00ff))) >> 8;
+     *   - If you can only do on or off, 0 is off, anything else is on.
+     *
+     * The high byte should be ignored.  Callers will set it to 0xff (which
+     * would correspond to 255 alpha).
+     */
+    unsigned int color;  // 把灯设为什么颜色, 或 把LCD的亮度设为什么
+
+    /**
+     * See the LIGHT_FLASH_* constants
+     */
+    int flashMode; // 是否闪烁, LIGHT_FLASH_NONE表示不闪
+    int flashOnMS; // 亮的时间
+    int flashOffMS;// 灭的时间
+
+    /**
+     * Policy used by the framework to manage the light's brightness.
+     * Currently the values are BRIGHTNESS_MODE_USER and BRIGHTNESS_MODE_SENSOR.
+     */
+    int brightnessMode;  // 表示LCD的背光亮度模式
+};
+
+
+
+	源码下载方法
+	第一次:
+	git clone https://github.com/weidongshan/SYS_0002_Lights.git
+	更新:
+	git pull origin
+	取出指定版本:
+	git checkout v1  
+
+
+Android灯光系统的源码分析与使用
+4. 电池灯
+a. batteryPropertiesRegistrar.registerListener(new BatteryListener());
+b. sendIntentLocked();
+c. mLed.updateLightsLocked();
+d.
+    // Register for broadcasts from other components of the system.
+    IntentFilter filter = new IntentFilter();
+    filter.addAction(Intent.ACTION_BATTERY_CHANGED);
+    filter.setPriority(IntentFilter.SYSTEM_HIGH_PRIORITY);
+    mContext.registerReceiver(new BatteryReceiver(), filter, null, mHandler);
+
+e.
+onReceive
+	handleBatteryStateChangedLocked
+		updatePowerStateLocked
+
+参考文章
+Android4.4电池管理 
+http://blog.csdn.net/wlwl0071986/article/details/38778897
+
+5. 通知灯
+
+参考文章
+how to use the LED with Android phone
+http://androidblogger.blogspot.jp/2009/09/tutorial-how-to-use-led-with-android.html
+
+下载方法:
+	第一次:
+  git clone https://github.com/weidongshan/APP_0002_LIGHTDemo.git
+	更新:
+	git pull origin
+	取出指定版本:
+	git checkout v1  //v1, LIGHTDemo for notification light
+
+
+通知灯使用过程:
+a. SystemServer.java : 注册Notification服务
+b. app的上下文context里有静态块，它会注册服务: registerService(NOTIFICATION_SERVICE)
+c. app: nm = getSystemService
+d. 构造Notification
+e. 设置参数: 通知类型、颜色、时间
+f. nm.notify
+   f.1  getService 得到的是 "SystemServer注册的Notification服务"
+   f.2 最终判断通知类型进而调用到通知灯的JNI函数
+   
+
+
+
+6. 背光灯
+
+Change system screen brightness, using android.provider.Settings.System.SCREEN_BRIGHTNESS
+android-er.blogspot.com/2011/02/change-system-screen-brightness-using.html
+
+Android 系统设置中显示设置之亮度调节篇 - 尹君子 - 博客园.htm
+http://www.cnblogs.com/yinhaojun/p/3876132.html
+
+Android中内容观察者的使用---- ContentObserver类详解 （转）
+http://www.cnblogs.com/slider/archive/2012/02/14/2351702.html
+
+【Android开发经验】与屏幕亮度调节相关的各种方法整理 - 赵凯强 - 博客频道 - CSDN.NET.htm
+http://blog.csdn.net/zhaokaiqiang1992/article/details/35814785
+
+
+下载方法:
+	第一次:
+  git clone https://github.com/weidongshan/APP_0002_LIGHTDemo.git
+	更新:
+	git pull origin
+	取出指定版本:
+	git checkout v2  //v2, control backlight
+	
+
+	
+	
+	Setting -> Dispaly -> Brightness level : BrightnessDialog.java
+
+
+
+
+五. Binder系统的C程序使用示例
+IPC : Inter-Process Communication, 进程间通信
+RPC : Remote Procedure Call, 远程过程调用
+
+frameworks\native\cmds\servicemanager
+service_manager.c :
+a. binder_open
+b. binder_become_context_manager
+c. binder_loop(bs, svcmgr_handler);
+   c.1 res = ioctl(bs->fd, BINDER_WRITE_READ, &bwr);
+   c.2 binder_parse
+          // 解析
+          // 处理  : svcmgr_handler
+                       SVC_MGR_GET_SERVICE/SVC_MGR_CHECK_SERVICE : 获取服务
+                       SVC_MGR_ADD_SERVICE : 注册服务          
+          // 回复          
+
+bctest.c
+注册服务的过程:
+a. binder_open
+b. binder_call(bs, &msg, &reply, 0, SVC_MGR_ADD_SERVICE)
+                   // 含有服务的名字
+                         // 它会含有servicemanager回复的数据 
+                                 // 0表示servicemanager
+                                    // code: 表示要调用servicemanager中的"addservice函数"
+
+
+获取服务的过程:
+a. binder_open
+b. binder_call(bs, &msg, &reply, target, SVC_MGR_CHECK_SERVICE)
+                   // 含有服务的名字
+                         // 它会含有servicemanager回复的数据, 表示提供服务的进程 
+                                 // 0表示servicemanager
+                                    // code: 表示要调用servicemanager中的"getservice函数"
+                                    
+
+binder.c (封装好的C函数)
+
+binder_call分析
+
+
+	源码下载方法
+	
+	第一次:
+	git clone https://github.com/weidongshan/APP_0003_Binder_C_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // v1, 未查错, 不能编译
+	git checkout v2  // v2, 可以编译了, 未验证是否能正常运行
+	git checkout v3  // OK
+
+
+上机测试:
+a. 烧写非android系统, 比如QT
+b. 重新编译内核让它支持NFS, 更新板上内核
+make menuconfig
+   File systems  ---> 
+     [*] Network File Systems  --->
+          <*>   NFS client support                                                                             
+              [*]     NFS client support for NFS version 3                                           
+              [*]       NFS client support for the NFSv3 ACL protocol extension                      
+              [*]     NFS client support for NFS version 4                                           
+              [*]       NFS client support for NFSv4.1 (EXPERIMENTAL)                                
+              [*]   Root file system on NFS                                                          
+              [*]   Use the legacy NFS DNS resolver                                                  
+              [*]   Use the new idmapper upcall routine                                              
+
+make zImage
+
+c. mount nfs, 运行service_manager, test_server, test_client
+
+mount -t nfs -o nolock 192.168.1.123:/work /mnt
+./service_manager &
+./test_server &
+./test_client hello
+./test_client hello weidongshan
+
+
+六. Binder驱动情景分析
+1. 几个重要结构体的引入
+给test_server添加一个goodbye服务, 由此引入以下概念:
+
+binder_ref
+binder_node
+binder_proc
+binder_thread
+binder_buffer
+
+	源码下载方法
+	
+	第一次:
+	git clone https://github.com/weidongshan/APP_0003_Binder_C_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v4  // 添加了goodbye服务
+	git checkout v5  // 改进
+
+2. IPC数据交互过程
+	源码下载方法
+	
+	第一次:
+	git clone https://github.com/weidongshan/DRV_0003_Binder.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // 添加打印信息
+
+
+
+3. 服务注册过程
+
+可以阅读下面文章以了解BC_XXX, BR_XXX
+Android Bander设计与实现 
+http://blog.csdn.net/universus/article/details/6211589
+
+
+4. 服务获取过程
+
+
+5. 服务使用过程
+
+6. transaction_stack机制
+
+参考文章:
+http://www.cnblogs.com/samchen2009/p/3316001.html
+
+7. binder server的多线程支持
+
+	第一次:
+	git clone https://github.com/weidongshan/DRV_0003_Binder.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v2  // 完善打印信息
+
+
+
+	第一次:
+	git clone https://github.com/weidongshan/APP_0003_Binder_C_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v6  // test_server支持多线程
+
+	
+
+
+七. Binder系统之服务的c++实现
+1. 编写代码
+参考文件:
+frameworks\av\include\media\IMediaPlayerService.h     (IMediaPlayerService,BnMediaPlayerService)
+frameworks\av\media\libmedia\IMediaPlayerService.cpp                      (BpMediaPlayerService)
+frameworks\av\media\libmediaplayerservice\MediaPlayerService.h
+frameworks\av\media\libmediaplayerservice\MediaPlayerService.cpp
+frameworks\av\media\mediaserver\Main_mediaserver.cpp   (server, addService)
+
+
+	第一次:
+	git clone https://github.com/weidongshan/APP_0004_Binder_CPP_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // 初始版本, 未调试
+
+2. 编译测试
+
+参考frameworks\av\media\mediaserver\Android.mk
+
+编译:
+a. 文件放入frameworks/testing/APP_0004_Binder_CPP_App
+b. cd /work/android-5.0.2/
+   . setenv
+   lunch //选择23. full_tiny4412-eng
+c. cd frameworks/testing/APP_0004_Binder_CPP_App
+   mmm .   
+
+测试:
+a. 重新编译内核让它支持NFS
+make menuconfig
+<*>   NFS client support                                                        | |
+[*]     NFS client support for NFS version 3                                    | |
+[*]       NFS client support for the NFSv3 ACL protocol extension               | |
+[*]     NFS client support for NFS version 4                                    | |
+[*]       NFS client support for NFSv4.1 (EXPERIMENTAL) 
+
+make zImage, 并使用新的zImage启动单板
+
+b. mount nfs
+   su
+   ifconfig eth0 192.168.1.100
+   busybox mount -t nfs -o nolock,vers=2 192.168.1.123:/work/nfs_root /mnt
+   
+
+c. 执行 test_server, test_client
+
+   ./test_server &
+   logcat HelloService:* *:S &
+   ./test_client hello
+   ./test_client hello weidongshan
+   
+
+	第一次:
+	git clone https://github.com/weidongshan/APP_0004_Binder_CPP_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v2  // 可运行
+	
+
+3. 内部机制_回顾binder框架关键点
+server注册服务时, 对每个服务都提供不同的ptr/cookie,
+在驱动程序里对每个服务都构造一个binder_node, 它也含有ptr/cookie
+
+client使用服务前要先getService：会在驱动程序里对该服务构造一个binder_ref, 
+binder_ref含有desc, node成员, desc是整数, node指向对应服务的binder_node
+
+使用服务时, client构造数据，调用ioctl：数据里含有handle
+
+驱动程序根据handle找到binder_ref(desc==handle), 找到binder_node, 再找到server,
+从binder_node取出ptr/cookie连同那些数据发给server
+
+server根据ptr/cookie知道要调用哪一个服务，．．．．
+
+最核心函数: ioctl
+client的最核心数据是：handle
+server的最核心数据是：ptr/cookie
+
+
+4. 内部机制_代理类分析: BpServiceManager和BpHelloService
+4.1 获得BpServiceManager对象的过程:
+    defaultServiceManager构造了一个BpServiceManager对象，
+    其中它的mRemote = new BpBinder(0); // mRemote->mHandle=0
+
+defaultServiceManager // IServiceManager.cpp
+                           // 把BpBinder(mHandle=0)对象转换为IServiceManager接口(BpServiceManager)                           
+	gDefaultServiceManager = interface_cast<IServiceManager>(
+                ProcessState::self()->getContextObject(NULL));
+分析:
+ProcessState::self()->getContextObject(NULL)
+	getStrongProxyForHandle(0); 
+		b = new BpBinder(handle);   // mHandle=handle=0
+
+
+interface_cast<IServiceManager>(new BpBinder(0))  // IInterface.h
+	IServiceManager::asInterface(obj);
+			return new BpServiceManager(obj); // mRemote=obj=new BpBinder(0);
+
+
+4.2 获得BpHelloService对象的过程:
+    调用BpServiceManager的getService函数获得一个flat_binder_object，
+    从中取出handle, 创建一个BpBinder(handle),
+    然后使用interface_cast使用这个BpBinder创建一个BpHelloService对象
+
+// binder是BpBinder对象, 里面含有HelloService的handle
+sp<IBinder> binder =
+        sm->getService(String16("hello")); // IServiceManager.cpp
+        			// 构造数据: 数据中肯定含有"hello"
+        			// 发送数据: 给handle 0, 即 service_manager进程
+        			// 从收到的回复中取出HelloService的handle
+        					 return reply.readStrongBinder();
+        					 						unflatten_binder(ProcessState::self(), *this, &val);
+        					 								*out = proc->getStrongProxyForHandle(flat->handle);
+        					 													new BpBinder(handle); 
+        
+                            // 把binder转换为IHelloService接口(BpHelloService对象)
+                            // binder是BpBinder对象, 里面含有HelloService的handle
+sp<IHelloService> service = interface_cast<IHelloService>(binder);
+
+
+4.3 代理类如何发送数据: ioctl, 数据里含有handle, 含有其他构造的参数
+        构造好数据之后，调用：
+        remote()->transact(...)
+             IPCThreadState::self()->transact(mHandle, code, data, reply, flags);
+
+5. 内部机制_数据传输: ProcessState和IPCThreadState
+
+5.1 addService
+    对于不同服务，构造flat_binder_object结构体，里面的.binder/.cookie对于不同的服务它的值不一样
+														
+sm->addService(String16("hello"), new BnHelloService());
+			data.writeStrongBinder(service);  // service = new BnHelloService();
+							flatten_binder(ProcessState::self(), val, this); // val = service = new BnHelloService();
+									flat_binder_object obj;  // 参数 binder = val = service = new BnHelloService();
+									IBinder *local = binder->localBinder(); // =this = new BnHelloService();
+			            obj.type = BINDER_TYPE_BINDER;
+			            obj.binder = reinterpret_cast<uintptr_t>(local->getWeakRefs());
+			            obj.cookie = reinterpret_cast<uintptr_t>(local);  // new BnHelloService();
+									
+									
+
+5.2 server如何分辨client想使用哪一个服务
+    server收到数据里含有flat_binder_object结构体,
+    它可以根据.binder/.cookie分析client想使用哪一个服务
+    
+    把.cookie转换为BnXXXX对象，然后调用它的函数:
+    		
+    		// 根据cookie构造了一个BBinder指针, 实际上是指向某个BnXXX对象
+    		sp<BBinder> b((BBinder*)tr.cookie);
+    		
+    		// 然后调用它的transact函数
+    		error = b->transact(tr.code, buffer, &reply, tr.flags);
+    									err = onTransact(code, data, reply, flags);  // 就会调用到BnXXX里实现的onTransact
+                            // 它就会根据code值来调用不同的函数  
+
+5.3 怎么调用到HelloService所提供的函数
+
+
+6. 添加一个Goodbye服务
+
+获取源码:
+	第一次:
+	git clone https://github.com/weidongshan/APP_0004_Binder_CPP_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v3  // 增加了Goodbye服务
+
+
+编译:
+a. 文件放入frameworks/testing/APP_0004_Binder_CPP_App
+b. cd /work/android-5.0.2/
+   . setenv
+   lunch //选择23. full_tiny4412-eng
+c. cd frameworks/testing/APP_0004_Binder_CPP_App
+   mmm .   
+
+测试:
+busybox mount -t nfs -o nolock,vers=2 192.168.1.123:/work/nfs_root /mnt
+logcat HelloService:* GoodbyeService:* TestService:* *:S &
+./test_server &
+./test_client hello 
+./test_client hello 100ask.taobao.com
+./test_client hello weidongshan@qq.com
+./test_client goodbye
+./test_client goodbye wds
+
+
+
+八. Binder系统之服务的JAVA实现
+
+1. 在Android上编译启动java程序
+
+dalvikvm 
+达尔维克
+
+CLASSPATH=...  app_process [java-options] cmd-dir start-class-name [options]
+
+
+Java源码: 01th_hello
+javac Hello.java
+dx --dex --output=Hello.jar Hello.class
+PC:
+java Hello
+Android:
+dalvikvm -cp /mnt/Android_fs/Hello.jar Hello
+CLASSPATH=/mnt/android_fs/Hello.jar app_process /mnt/android_fs Hello
+
+Java源码: 11th_package/01
+javac -d . Pack.java
+dx --dex --output=pack.jar ./
+PC:      
+java a.b.c.d.Pack
+Android:
+dalvikvm -cp /mnt/android_fs/pack.jar a.b.c.d.Pack 
+CLASSPATH=/mnt/android_fs/pack.jar app_process /mnt/android_fs a.b.c.d.Pack
+
+Java源码: 11th_package/02
+javac -d . lisi/Math.java
+javac -d . zhangsan/Math.java
+javac -d . zhangsan/Print.java
+dx --dex --output=pack.jar ./
+javac Pack.java
+PC:
+java Pack
+Android:
+dalvikvm -cp /mnt/android_fs/pack.jar Pack 
+CLASSPATH=/mnt/android_fs/pack.jar app_process /mnt/android_fs Pack
+
+
+把代码放到android源码中编译:
+添加Androd.mk，内容类似:  // 参考frameworks/base/cmds/am/Android.mk
+
+LOCAL_PATH:= $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := $(call all-subdir-java-files)
+LOCAL_MODULE := pack
+include $(BUILD_JAVA_LIBRARY)
+
+启动方式的差别:
+dalvikvm
+app_process ：会创建2个binder线程: Binder_1, Binder_2
+
+
+2. 用java实现hello服务_编程
+怎么做?
+2.1 定义接口:
+    写IHelloService.aidl文件, 上传, 编译, 得到IHelloService.java
+    里面有Stub  : onTransact, 它会分辨收到数据然后调用sayhello, sayhello_to
+          Proxy : 提供有sayhello, sayhello_to两个函数, 它们会构造数据然后发送给server
+
+2.2 实现服务类: HelloService.java
+    在里面定义sayhello, sayhello_to
+
+2.3 实现APP: TestServer, TestClient    
+    TestServer : addService, 循环
+    TestCliet  : getService, 调用sayhello,sayhello_to(来自Proxy)
+
+
+	第一次:
+	git clone https://github.com/weidongshan/APP_0005_Binder_JAVA_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // 初始版本, 未调试
+
+3. 用java实现hello服务_测试
+
+logcat TestServer:* TestClient:* HelloService:* *:S &
+CLASSPATH=/mnt/android_fs/TestServer.jar app_process / TestServer &
+CLASSPATH=/mnt/android_fs/TestClient.jar app_process / TestClient hello
+CLASSPATH=/mnt/android_fs/TestClient.jar app_process / TestClient hello weidongshan
+
+	第一次:
+	git clone https://github.com/weidongshan/APP_0005_Binder_JAVA_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v2  // hello service is ok
+
+课后作业:
+a. 用java实现goodbye服务
+b. 修改 APP_0003_Binder_C_App, APP_0004_Binder_CPP_App
+   让binder的C,C++,JAVA程序互相兼容
+
+
+4. Binder系统的分层
+
+5. Binder系统JAVA实现_内部机制_Client端实现
+5.1 ServiceManagerProxy中mRemote的构造 (用于addService/getService)
+猜测：使用0直接构造出一个java BinderProxy对象
+getIServiceManager().addService  / getIServiceManager().getService
+
+
+getIServiceManager()
+		return ServiceManagerNative.asInterface(BinderInternal.getContextObject())
+
+a. BinderInternal.getContextObject()  // 得到了一个Java BinderProxy对象, 其中mObject指向new BpBinder(0);
+   它是一个JNI调用，对应 android_os_BinderInternal_getContextObject // android_util_Binder.cpp
+   
+   android_os_BinderInternal_getContextObject
+   		sp<IBinder> b = ProcessState::self()->getContextObject(NULL);
+   																							getStrongProxyForHandle(0);
+   																									b = new BpBinder(handle);  // mHandle = 0
+			return javaObjectForIBinder(env, b);		// b = new BpBinder(0), mHandle = 0
+			
+									// 使用c代码调用NewObject来创建JAVA BinderProxy对象
+									object = env->NewObject(gBinderProxyOffsets.mClass, gBinderProxyOffsets.mConstructor);
+									
+									// 设置该对象的mObject = val.get = b = new BpBinder(0)
+									env->SetLongField(object, gBinderProxyOffsets.mObject, (jlong)val.get());
+									
+									return object;
+
+b. ServiceManagerNative.asInterface
+			new ServiceManagerProxy(obj); // obj = BinderProxy对象
+							mRemote = obj = BinderProxy对象, 其中mObject指向new BpBinder(0);
+
+5.2 hello服务里的mRemote如何构造
+a. IBinder binder = ServiceManager.getService("hello");
+猜测: 它的返回值就是一个java BinderProxy对象, 其中的mObject=new BpBinder(handle) 
+new ServiceManagerProxy().getService("hello")
+			....
+			IBinder binder = reply.readStrongBinder();
+																nativeReadStrongBinder  // Parcel.java
+
+nativeReadStrongBinder是一个JNI调用, 对应的代码是 android_os_Parcel_readStrongBinder																
+android_os_Parcel_readStrongBinder	
+	  // 把java Parce对象转换为c++ Parcel对象
+	  // client程序向sevice_manager发出getService请求，
+	  // 得到一个回复reply, 它里面含有flat_binder_object
+	  // 它被封装成一个c++ Parcel对象
+		Parcel* parcel = reinterpret_cast<Parcel*>(nativePtr);
+		
+		/* parcel->readStrongBinder()应该是一个 new BpBinder(handle)
+		 *             unflatten_binder(ProcessState::self(), *this, &val);
+		 *                  *out = proc->getStrongProxyForHandle(flat->handle);
+		 *                                  b = new BpBinder(handle); 
+		 */
+		
+  	// 它会创建一个java BinderProxy对象, 其中的mObject=new BpBinder(handle)对象
+		return javaObjectForIBinder(env, parcel->readStrongBinder());
+
+b. IHelloService svr = IHelloService.Stub.asInterface(binder);
+														new IHelloService.Stub.Proxy(obj);  // obj = 步骤a得到的binder
+																		mRemote = remote;		
+
+5.3 现在知道了：mRemote就是一个java BinderProxy 对象
+    看一下mRemote.transact()
+    								transactNative(code, data, reply, flags);
+    								它是一个JNI调用，对应android_os_BinderProxy_transact
+
+android_os_BinderProxy_transact
+  // 从java BinderProxy对象中把mObject取出, 它就是一个BpBinder对象
+	IBinder* target = (IBinder*)env->GetLongField(obj, gBinderProxyOffsets.mObject);    								
+	
+	// 然后调用BpBinder的transact
+	status_t err = target->transact(code, *data, reply, flags);
+    
+
+6. Binder系统JAVA实现_内部机制_Server端实现
+
+logcat TestServer:* TestClient:* HelloService:* *:S &
+CLASSPATH=/mnt/android_fs/TestServer.jar app_process / TestServer &
+CLASSPATH=/mnt/android_fs/TestClient.jar app_process / TestClient hello
+CLASSPATH=/mnt/android_fs/TestClient.jar app_process / TestClient hello weidongshan
+
+
+app_process: frameworks\base\cmds\app_process\app_main.cpp
+
+6.1 server如何读取数据
+使用app_process来启动server进程,
+它会先创建子线程:
+AppRuntime::onStarted()
+		proc->startThreadPool();
+						spawnPooledThread(true);
+								sp<Thread> t = new PoolThread(isMain);
+								t->run(name.string());
+										// 它会创建子线程, 并执行threadLoop
+										   IPCThreadState::self()->joinThreadPool(mIsMain);
+										   {
+													do {
+																	result = getAndExecuteCommand();
+																							result = talkWithDriver();
+																							result = executeCommand(cmd);
+																													对于BR_TRANSACTION数据,
+																													sp<BBinder> b((BBinder*)tr.cookie);
+																													error = b->transact(tr.code, buffer, &reply, tr.flags);
+										   	  } while(...)
+										   }
+
+
+6.2 server读到数据后怎么调用服务PRC层的onTransact函数
+a. 在addService时设置.ptr/.cookie
+ServiceManager.addService("hello", new HelloService());
+分析：
+a.1 new HelloService()是JAVA对象
+a.2 处理数据时把.cookie转换成BBinder对象, 它是c++对象
+所以: addService中肯定会把JAVA对象转换成一个BBinder派生类对象，存在.cookie里
+
+结论:
+a.1 addService会通过JNI调用c++函数:
+        创建一个BBinder派生类JavaBBinder对象,
+            它的.mObject指向JAVA对象: new HelloService()
+            它含有onTransact函数
+        把这个对象存入.cookie(最终存入binder驱动中该服务对应的binder_node.cookie)
+
+a.2 server进程从驱动中读到数据，里面含有.cookie
+    把它转换为BBinder对象，
+    调用它的transact函数 
+    它会调用到派生类JavaBBinder中定义的onTransact函数
+
+a.3 JavaBBinder中定义的onTransact函数(c++)
+    它通过JNI调用java Binder的execTransact方法，
+    然后调用Binder派生类IHelloService.Stub中定义的onTransact函数(JAVA)
+
+a.4 IHelloService.Stub中定义的onTransact函数(JAVA):
+        分析数据
+        调用sayhello/sayhello_to
+
+源码阅读：
+a.1 ServiceManager.addService("hello", new HelloService());
+    ServiceManagerProxy.addService:
+    		// Parcel.java
+    		data.writeStrongBinder(service);
+    						nativeWriteStrongBinder(mNativePtr, val); // val = service = new HelloService()
+    						它是一个JNI调用，对应android_os_Parcel_writeStrongBinder(c++)
+
+a.2 android_os_Parcel_writeStrongBinder(c++)
+    它会构造一个JavaBBinder对象(c++)，.mObject=new HelloService() JAVA对象
+    然后让.cookie=JavaBBinder对象(c++)
+    
+    // 把Java Parcel转换为c++ Parcel
+    Parcel* parcel = reinterpret_cast<Parcel*>(nativePtr);
+    
+    // .cookie = ibinderForJavaObject(env, object)得到一个JavaBBinder对象
+    parcel->writeStrongBinder(ibinderForJavaObject(env, object))
+
+a.3 ibinderForJavaObject(env, object) //object = new HelloService() 
+    把一个Java对象(new HelloService())转换为c++ IBinder对象
+    
+    JavaBBinderHolder* jbh = (JavaBBinderHolder*)env->GetLongField(obj, gBinderOffsets.mObject);
+    return jbh != NULL ? jbh->get(env, obj) : NULL;
+    											     b = new JavaBBinder(env, obj); // obj = new HelloService() 
+    											                 mObject = new HelloService() 
+
+
+a.4 从驱动中得过了.cookie, 它是一个JavaBBinder对象
+    调用它的transact函数，导致JavaBBinder对象的onTransact被调用
+    
+    JavaBBinder::onTransact (调用java里的某个函数)
+    
+    		// mObject指向 HelloService对象
+    		// gBinderOffsets.mExecTransact指向: java Binder类中的execTransact方法
+    		// 调用HelloService(派生自Binder)对象中的execTransact方法
+        jboolean res = env->CallBooleanMethod(mObject, gBinderOffsets.mExecTransact,
+            code, reinterpret_cast<jlong>(&data), reinterpret_cast<jlong>(reply), flags);
+
+a.5 java Binder execTransact:  
+				res = onTransact(code, data, reply, flags);
+									调用HelloService中的onTransact方法(来自IHelloService.Stube)
+									    分辨数据
+									    调用sayhello/sayhello_to
+		
+7. 回看SystemServer_硬件访问服务及课后作业
+
+课后作业:
+a. 用java实现goodbye服务
+b. 修改 APP_0003_Binder_C_App, APP_0004_Binder_CPP_App
+   让binder的C,C++,JAVA程序互相兼容
+
+su
+ifconfig eth0 192.168.1.100
+busybox mount -t nfs -o nolock,vers=2 192.168.1.123:/work/nfs_root /mnt
+
+java server <==> c++ client
+logcat  TestService:* TestServer:* TestClient:* HelloService:* GoodbyeService:* *:S &
+CLASSPATH=/mnt/android_fs/TestServer.jar app_process / TestServer &
+./test_client hello 
+./test_client hello 100ask.taobao.com
+
+./test_client goodbye 
+./test_client goodbye 100ask.taobao.com
+
+
+c++ server <==> java client
+logcat  TestService:* TestServer:* TestClient:* HelloService:* GoodbyeService:* *:S &
+./test_server &
+CLASSPATH=/mnt/android_fs/TestClient.jar app_process / TestClient hello
+CLASSPATH=/mnt/android_fs/TestClient.jar app_process / TestClient hello weidongshan
+
+CLASSPATH=/mnt/android_fs/TestClient.jar app_process / TestClient goodbye
+CLASSPATH=/mnt/android_fs/TestClient.jar app_process / TestClient goodbye weidongshan
+
+保证数据一致:
+sayhello_to
+client ==> server
+0
+IHelloService
+name
+
+server ==> client
+0 /* no exception */
+cnt
+
+
+
+	第一次:
+	git clone https://github.com/weidongshan/APP_0005_Binder_JAVA_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v3  // 增加goodbye服务
+
+
+	第一次:
+	git clone https://github.com/weidongshan/APP_0003_Binder_C_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v7  // 兼容APP_0005_Binder_JAVA_App
+
+
+	第一次:
+	git clone https://github.com/weidongshan/APP_0004_Binder_CPP_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v4  // 兼容APP_0005_Binder_JAVA_App
+
+
+输入系统
+九. 输入系统_必备Linux编程知识
+
+1. inotify和epoll
+参考代码:
+frameworks\native\services\inputflinger\EventHub.cpp
+
+参考文章:
+《深入理解Android 卷III》第五章 深入理解Android输入系统 
+http://blog.csdn.net/innost/article/details/47660387
+
+
+inotify.c
+gcc -o inotify inotify.c
+mkdir tmp
+./inotify tmp &
+
+echo > tmp/1
+echo > tmp/2
+rm tmp/1 tmp/2
+
+
+epoll , fifo : 
+http://stackoverflow.com/questions/15055065/o-rdwr-on-named-pipes-with-poll
+
+使用fifo是, 我们的epoll程序是reader
+echo aa > tmp/1 是writer
+a.
+如果reader以 O_RDONLY|O_NONBLOCK打开FIFO文件,
+当writer写入数据时, epoll_wait会立刻返回;
+当writer关闭FIFO之后, reader再次调用epoll_wait, 它也会立刻返回(原因是EPPLLHUP, 描述符被挂断)
+b. 
+如果reader以 O_RDWR打开FIFO文件
+当writer写入数据时, epoll_wait会立刻返回;
+当writer关闭FIFO之后, reader再次调用epoll_wait, 它并不会立刻返回, 而是继续等待有数据
+
+epoll.c
+gcc -o epoll epoll.c
+mkdir tmp
+mkfifo  tmp/1 tmp/2 tmp/3
+./epoll tmp/1 tmp/2 tmp/3 &
+echo aaa > tmp/1
+echo bbb > tmp/2
+
+
+
+课后作业:
+编写 inotify_epoll.c, 用它来监测tmp/目录: 有文件被创建/删除, 有文件可读出数据
+a. 当在tmp/下创建文件时, 会立刻监测到，并且使用epoll监测该文件
+b. 当文件有数据时，读出数据
+c. 当tmp/下文件被删除时，会立刻监测到，并且把它从epoll中移除不再监测
+
+inotify_epoll.c
+gcc -o inotify_epoll inotify_epoll.c
+mkdir tmp
+./inotify_epoll tmp/ &
+mkfifo  tmp/1 tmp/2 tmp/3
+echo aaa > tmp/1
+echo bbb > tmp/2
+rm tmp/3
+
+从GIT上获取源码:
+	第一次:
+	git clone https://github.com/weidongshan/APP_0006_inotify_epoll.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  
+
+2. 双向通信(socketpair)
+
+参考代码:
+frameworks\native\libs\input\InputTransport.cpp  (socketpair)
+调用过程
+WindowManagerService.java
+    InputChannel.openInputChannelPair(name)
+        nativeOpenInputChannelPair(name);
+            android_view_InputChannel_nativeOpenInputChannelPair
+                InputChannel::openInputChannelPair (InputTransport.cpp)
+
+测试:
+gcc -o socketpair socketpair.c -lpthread
+./socketpair
+
+从GIT上获取源码:
+	第一次:
+	git clone https://github.com/weidongshan/APP_0007_socketpair_binder.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  
+
+
+3. 任意进程间通信(socketpair_binder)
+取出APP_0004_Binder_CPP_App V4来修改:
+	第一次:
+	git clone https://github.com/weidongshan/APP_0004_Binder_CPP_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v4  // 兼容APP_0005_Binder_JAVA_App
+	
+
+	
+
+
+
+
+参考代码:
+frameworks\base\core\jni\android_view_InputChannel.cpp (用binder传文件句柄)
+server端写fd: android_view_InputChannel_nativeWriteToParcel
+                    parcel->writeDupFileDescriptor
+client端读fd: android_view_InputChannel_nativeReadFromParcel
+                    int rawFd = parcel->readFileDescriptor();
+                    int dupFd = dup(rawFd);               
+          
+frameworks\native\libs\binder\Parcel.cpp
+
+
+支持传输文件句柄的程序 v5:
+	第一次:
+	git clone https://github.com/weidongshan/APP_0004_Binder_CPP_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v5  // v5, use binder to transfer file descriptor
+
+
+编译:
+把 APP_0004_Binder_CPP_App 放入 /work/android-5.0.2/frameworks/testing
+
+cd /work/android-5.0.2/
+. setenv
+lunch //选择单板
+mmm frameworks/testing/APP_0004_Binder_CPP_App
+cp /work/android-5.0.2/out/target/product/tiny4412/system/bin/test_* /work/nfs_root/android_fs/
+
+
+测试:
+su
+busybox mount -t nfs -o nolock,vers=2 192.168.1.123:/work/nfs_root /mnt
+logcat HelloService:* GoodbyeService:* TestService:* *:S &
+echo asfsdfasdf > 1.txt
+./test_server 1.txt &
+./test_client readfile
+
+课后作业：
+在APP_0004_Binder_CPP_App v5的基础上使用binder传输socketpair的一个文件句柄，
+实现test_server和test_client双向通信
+
+课后作业: 支持双向通信的程序 v6
+	第一次:
+	git clone https://github.com/weidongshan/APP_0004_Binder_CPP_App.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v6  // v6, use binder and socketpair for bidirectional transfer
+
+编译命令与v5相同
+测试:
+su
+busybox mount -t nfs -o nolock,vers=2 192.168.1.123:/work/nfs_root /mnt
+logcat HelloService:* GoodbyeService:* TestService:* *:S &
+./test_server &
+./test_client readfile &
+
+
+十. 输入系统深入分析
+
+1. 输入系统框架
+
+android输入系统官方文档 // 需翻墙
+http://source.android.com/devices/input/index.html
+
+《深入理解Android 卷III》第五章 深入理解Android输入系统   // 主要讲EventHub
+http://blog.csdn.net/innost/article/details/47660387
+
+图解Android - Android GUI 系统 (5) - Android的Event Input System - 漫天尘沙 - 博客园.htm  // 关注里面的Dispatcher处理流程
+http://www.cnblogs.com/samchen2009/p/3368158.html
+
+
+2. 编写一个万能模拟输入驱动程序
+测试方法:
+                               
+sendevent /dev/input/event5 1 2 1  // 1 2 1 : EV_KEY, KEY_1, down
+sendevent /dev/input/event5 1 2 0  // 1 2 0 : EV_KEY, KEY_1, up
+sendevent /dev/input/event5 0 0 0  // sync
+
+sendevent /dev/input/event5 1 3 1 
+sendevent /dev/input/event5 1 3 0 
+sendevent /dev/input/event5 0 0 0 
+
+
+源码下载
+	第一次:
+	git clone https://github.com/weidongshan/DRV_0004_InputEmulator.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // v1, emulator driver for keyboard
+
+
+3. reader/dispatcher线程启动过程源码分析
+涉及使用bouml制作时序图，先看 第0课第3节：使用bouml制作时序图
+uml_tmp_file.rar
+
+
+4. Reader线程_使用EventHub读取事件
+
+5. Reader线程_核心类及配置文件_实验
+
+实验：
+
+kl文件格式：
+key 17                 W
+    内核中的code值     AKEYCODE_W
+
+创建:
+su
+mkdir -p /data/system/devices/keylayout/
+cp /system/usr/keylayout/Generic.kl /data/system/devices/keylayout/InputEmulatorFrom100ask_net.kl
+修改 /data/system/devices/keylayout/InputEmulatorFrom100ask_net.kl
+添加这2行:
+key  227  STAR
+key  228  POUND
+     scancode ===> android keycode 只是表示按下了某个键，
+修改权限:
+busybox chmod 777 /data/system/devices -R
+
+重启
+
+insmod InputEmulator.ko
+
+发送*键
+sendevent /dev/input/event5 1 227 1 
+sendevent /dev/input/event5 1 227 0 
+sendevent /dev/input/event5 0 0 0 
+
+发送#键
+sendevent /dev/input/event5 1 228 1 
+sendevent /dev/input/event5 1 228 0 
+sendevent /dev/input/event5 0 0 0 
+
+
+kcm文件格式：
+key B {
+    label:                              'B'  # 印在按键上的文字                        
+    base:                               'b'  # 如果没有其他按键(shift, ctrl等)同时按下，此按键对应的字符是'b'                      
+    shift, capslock:                    'B'                               
+}     
+
+B 表示 AKEYCODE_B
+
+实验:
+mkdir -p /data/system/devices/keychars
+cp /system/usr/keychars/Generic.kcm /data/system/devices/keychars/InputEmulatorFrom100ask_net.kcm
+修改:
+key STAR {
+    label:                              '*'
+#    base:                               '*'                                           
+    base:                               '1'
+}                                                                                         
+                                                                                          
+key POUND {                                                             
+    label:                              '#'
+#    base:                               '#'
+    base:                               '2'
+}         
+
+busybox chmod 777 /data/system/devices -R
+
+重启
+
+insmod InputEmulator.ko
+
+发送*键, 得到1
+sendevent /dev/input/event5 1 227 1 
+sendevent /dev/input/event5 1 227 0 
+sendevent /dev/input/event5 0 0 0 
+
+发送#键, 得到2
+sendevent /dev/input/event5 1 228 1 
+sendevent /dev/input/event5 1 228 0 
+sendevent /dev/input/event5 0 0 0 
+
+
+
+keylayout: 只是用来表示驱动上报的scancode对应哪一个android按键(AKEYCODE_x)
+           只是表示按键被按下
+           它对应哪一个字符，由kcm文件决定
+kcm: 用来表示android按键(AKEYCODE_x)对应哪一个字符
+     表示同时按下其他按键后，对应哪个字符
+
+
+也可以用组合键
+sendevent /dev/input/event5 1 42 1 
+sendevent /dev/input/event5 1 9 1 
+sendevent /dev/input/event5 1 9 0
+sendevent /dev/input/event5 1 42 0 
+sendevent /dev/input/event5 0 0 0 
+
+sendevent /dev/input/event5 1 42 1 
+sendevent /dev/input/event5 1 4 1 
+sendevent /dev/input/event5 1 4 0
+sendevent /dev/input/event5 1 42 0 
+sendevent /dev/input/event5 0 0 0 
+
+6. Reader线程_核心类及配置文件_分析
+
+7. Reader线程_简单处理
+
+8. Dispatcher线程_总体框架
+图解Android - Android GUI 系统 (5) - Android的Event Input System - 漫天尘沙 - 博客园.htm  // 关注里面的Dispatcher处理流程
+http://www.cnblogs.com/samchen2009/p/3368158.html
+
+
+9. Dispatcher线程情景分析_Reader线程传递事件
+global key:
+按下按键，启动某个APP
+可以自己指定，修改frameworks\base\core\res\res\xml\Global_keys.xml
+假设它是AKEYCODE_TV
+
+system key:
+比如音量键 AKEYCODE_VOLUME_DOWN
+
+user key:
+其他按键，比如ABCD
+AKEYCODE_A
+
+reader线程把驱动上报的scancode根据.kl文件转换成keycode
+
+
+android_system_code\frameworks\base\core\res\res\xml\Global_keys.xml
+     A global key will NOT go to the foreground application and instead only ever be sent via targeted
+     broadcast to the specified component. The action of the intent will be
+     android.intent.action.GLOBAL_BUTTON and the KeyEvent will be included in the intent as
+     android.intent.extra.KEY_EVENT.
+
+10. Dispatcher线程情景分析_dispatch前处理
+
+11. 实战_使用GlobalKey一键启动程序
+参考文章:
+Android 两种注册、发送广播的区别
+http://www.jianshu.com/p/ea5e233d9f43
+
+【Android】动态注册广播接收器 
+http://blog.csdn.net/etzmico/article/details/7317528
+
+Android初学习 - 在BroadcastReceiver中启动Activity的问题 
+http://blog.csdn.net/cnmilan/article/details/50617802
+
+a. 对于global key, 系统会根据global_keys.xml发送消息给某个组件
+<key keyCode="KEYCODE_TV" component="com.thisway.app_0001_leddemo/.MyBroadcastReceiver" />
+
+修改 /work/android-5.0.2/frameworks/base/core/res/res/xml/global_keys.xml
+
+编译:
+mmm frameworks/base/core/res
+它会生成 framework-res.apk, 复制到单板/system/framework/
+
+b. APP应该注册广播消息的接收者
+b.1 编写BroadcastReceiver派生类, 实现消息处理函数
+b.2 注册派生类: 修改 AndroidManifest.xml
+c. 然后在该组件中启动app
+
+
+	源码下载方法
+	第一次:
+	git clone https://github.com/weidongshan/APP_0001_LEDDemo.git
+		
+	取出v3版本，在它的基础上修改
+	git checkout v3  // 添加了button, checkbox的点击方法
+
+
+实验:
+a. 手工发广播
+am broadcast -a android.intent.action.GLOBAL_BUTTON -n com.thisway.app_0001_leddemo/.MyBroadcastReceiver
+
+b. 用按键触发
+修改 /work/android-5.0.2/frameworks/base/core/res/res/xml/global_keys.xml
+添加:
+<key keyCode="KEYCODE_TV" component="com.thisway.app_0001_leddemo/.MyBroadcastReceiver" />
+
+编译:
+mmm frameworks/base/core/res
+它会生成 framework-res.apk ( out/target/product/tiny4412/system/framework/framework-res.apk)
+
+把framework-res.apk放到单板上：
+先以rw方式remount /system, 才能复制:
+su
+mount -o remount,rw /system
+
+ifconfig eth0 192.168.1.100
+busybox mount -t nfs -o nolock,vers=2 192.168.1.123:/work/nfs_root /data/nfs
+
+cp framework-res.apk /system/framework/  
+
+修改驱动程序对应的kl文件(对于TV键不需要修改, scancode 377就对应TV键)
+cp /system/usr/keylayout/Generic.kl /data/system/devices/keylayout/InputEmulatorFrom100ask_net.kl
+
+insmod InputEmulator.ko
+
+模拟上报按键:
+sendevent /dev/input/event5 1 377 1
+sendevent /dev/input/event5 1 377 0
+sendevent /dev/input/event5 0 0 0
+
+也可以不使用驱动而使用以下命令模拟按键:
+input keyevent TV     
+
+
+	源码下载方法
+	第一次:
+	git clone https://github.com/weidongshan/APP_0001_LEDDemo.git
+		
+	取出v9版本
+	git checkout v9  // add BroadcastReceiver to start itself
+
+
+12. 输入系统_APP跟输入系统建立联系_InputChannel和Connection
+核心: socketpair  // 第9课第3节_输入系统_必备Linux编程知识_任意进程双向通信(scoketpair+binder)
+
+
+13. 输入系统_Dispatcher线程_分发dispatch
+
+
+14. 输入系统_APP获得并处理输入事件流程
+
+15. 输入系统_补充知识_activity_window_decor_view关系
+android里:
+1个application, 有1个或多个activity
+1个activity, 有1个window
+1个window, 有1个decor
+1个decor, 有多个viewgroup/layout
+viewgroup/layout中, 有多个view
+
+
+16. 输入系统_补充知识_activity_window_decor_view关系_实验
+    在APP_0001_LEDDemo v3的基础上修改
+	git clone https://github.com/weidongshan/APP_0001_LEDDemo.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v3  // 添加了button, checkbox的点击方法
+
+
+    获取本节视频最终源码:
+	git clone https://github.com/weidongshan/APP_0008_ViewHierarchy.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // print view hierarchy
+
+
+17. 输入系统_InputStage_理论
+
+18. 输入系统_InputStage_实验_截取输入事件
+
+    在 APP_0008_ViewHierarchy v1的基础上修改
+    
+    获取源码:
+	git clone https://github.com/weidongshan/APP_0008_ViewHierarchy.git
+	或
+	git clone https://git.coding.net/weidongshan/APP_0008_ViewHierarchy.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // print view hierarchy
+
+目的：
+a. 在输入法之前添加自己的处理函数
+给某个控件重写onKeyPreIme
+b. 在输入法之后添加自己的处理函数
+b.1 在显示字符之前添加处理函数
+b.2 在显示字符之后添加处理函数
+
+给某个控件注册: setOnKeyListener
+或重写它的onKeyDown, onKeyUp函数
+
+c. 添加善后处理函数(如果所有的View控件无法处理按键, 由Activity来处理)   
+重写Activity的onKeyDown, onKeyUp函数
+
+
+
+    获取本节视频最终源码:
+	git clone https://github.com/weidongshan/APP_0009_InputStage.git
+	或
+	git clone https://git.coding.net/weidongshan/APP_0009_InputStage.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // override onKeyPreIme/onKeyDown/onKeyUp, and setOnKeyListener
+	
+
+19. 多点触摸_电容屏驱动程序_理论框架
+
+20. 多点触摸_电容屏驱动程序_编写框架
+参考:
+drivers\input\touchscreen\ft5x06_ts.c
+
+	第一次:
+	git clone https://github.com/weidongshan/DRV_0005_MultiTouchPanel.git
+	或
+	git clone https://git.coding.net/weidongshan/DRV_0005_MultiTouchPanel.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // Demo driver for multi touch panel, it is only a Framework
+	git checkout v2  // There are some errors in v1
+
+视频堪误:
+a. 要设置input_dev的name, android根据这个name找到配置文件
+b. 完全松开触摸屏后要上报: input_mt_sync, input_sync
+c. input_set_abs_params(ts_dev, ABS_MT_TRACKING_ID, 0, 最大ID值, 0, 0);
+   其中的最大ID值没有限制，是设备自身定义的值，最大值一般由触摸屏控制IC决定。
+   一般电容屏最多支持10点触摸，但是ID值跟"N点触摸"无关
+ 
+21. 多点触摸_电容屏驱动程序_实践_tiny4412
+
+tiny4412触摸屏: 分辨率为800 x 480
+http://wiki.friendlyarm.com/wiki/index.php/LCD-S702/zh
+
+测试:
+a. 先把原有的ft5x06_ts.c 驱动程序去掉
+   I2C驱动有i2c_driver, i2c_device，ft5x06_ts.c只是i2c_driver
+   修改同目录下的Makefile：
+obj-$(CONFIG_TOUCHSCREEN_FT5X0X)                += ft5x06_ts.o
+改为:
+obj-$(CONFIG_TOUCHSCREEN_FT5X0X)                += mtp_input.o
+   
+
+b. 修改 arch/arm/mach-exynos/mach-tiny4412.c
+   去掉:
+   i2c_register_board_info(1, i2c_devs1, ARRAY_SIZE(i2c_devs1));
+   不去掉也可以，需要修改mtp_input.c:
+   static const struct i2c_device_id mtp_id_table[] = {
+	{ "100ask_mtp", 0 },
+	{ "ft5x0x_ts", 0},  // 添加这句
+	{}
+};
+
+   
+c. make zImage
+
+
+
+注册i2c driver时，
+a. 它会首先判断能否支持系统中现有的I2C DEVICE，
+   假设该I2C DEVICE位于第n条I2C总线，地址为A
+
+b. 再去各个I2C BUS上，使用address_list中的addr去探测是否存在能支持的设备
+   但是, 会忽略第n条I2C总线，地址为A的设备
+   
+
+	第一次:
+	git clone https://github.com/weidongshan/DRV_0005_MultiTouchPanel.git
+	或
+	git clone https://git.coding.net/weidongshan/DRV_0005_MultiTouchPanel.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v3  // FT5x06 driver for tiny4412
+
+
+22. Andriod系统使用多点触摸屏流程_idc配置文件
+/system/usr/idc/ft5x0x_ts.idc
+/data/system/devices/idc/ft5x0x_ts.idc
+
+https://source.android.com/devices/input/touch-devices
+
+最重要一项:
+touch.deviceType = touchScreen | touchPad | pointer | default
+触摸设备的类型:
+touchScreen : 触摸屏, 覆盖在显示器上, 可以直接操作各种图标
+touchPad    : 触摸板, 不是覆盖在显示器上, 需要在LCD上显示一个光标以便定位
+pointer     : 跟touchPad类似, 多一些手势功能("Indirect Multi-touch Pointer Gestures")
+default     : 由系统自己确定
+
+
+Indirect Multi-touch Pointer Gestures
+A. Single finger tap: click. (单手指点击: 点击)
+B. Single finger motion: move the pointer. (单手指移动: 移动)
+c. Single finger motion plus button presses: drag the pointer. (按键+单指移动: 拖拽pointer)
+D. Two finger motion both fingers moving in the same direction: drag the area under the pointer in that direction. The pointer itself does not move.
+   (两手指同方向移动: 拖拽pointer所在区域,但是pointer不动)
+E. Two finger motion both fingers moving towards each other or apart in different directions: pan/scale/rotate the area surrounding the pointer. The pointer itself does not move.
+   (两手指往对方移动, 或往不同方向移动: pan/scale/rotate, 移动、放大缩小、旋转, pointer不动)
+F. Multiple finger motion: freeform gesture.
+              
+	第一次:
+	git clone https://github.com/weidongshan/DRV_0005_MultiTouchPanel.git
+	或
+	git clone https://git.coding.net/weidongshan/DRV_0005_MultiTouchPanel.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v4  // don't need .idc file again
+
+23. Andriod系统使用多点触摸屏流程_Reader线程
+
+24. Andriod系统使用多点触摸屏流程_InputStage
+
+    在APP_0009_InputStage v1基础上修改, 如下获取v1代码:
+	git clone https://github.com/weidongshan/APP_0009_InputStage.git
+	或
+	git clone https://git.coding.net/weidongshan/APP_0009_InputStage.git
+	
+	更新:
+	git pull origin
+	
+	取出指定版本:
+	git checkout v1  // override onKeyPreIme/onKeyDown/onKeyUp, and setOnKeyListener
+    
+    本节源码:
+    git checkout v2  // print StackTraceString for touch event
+
+触摸事件处理过程:
+
+Activity.dispatchTouchEvent--->Windows--->Decor--->...--->某个控件.dispatchTouchEvent
+
+控件对触摸操作的处理过程如下(入口是View.dispatchTouchEvent):
+a. 如果事先使用 setOnTouchListener设置了监听器, 
+   调用监听器的 onTouch 函数: li.mOnTouchListener.onTouch(this, event) 
+b. 接着调用View.onTouchEvent(event)
+c. 最后, 对于松开的事件, 如果事件使用setOnClickListener设置了监听器, 
+   调用监听器的 onClick 函数: li.mOnClickListener.onClick(this)
+
+注意到用户可以设置2个监听器: setOnTouchListener, setOnClickListener
+前者可以处理所有触摸事件(按下/松开/滑动等), 后者只能处理松开事件
+
+怎么编程?
+a. 如果想在所有控件之前处理触摸事件, 可以重写Activity的dispatchTouchEvent函数, 
+   它最先被调用
+b. 对于某个控件, 使用setOnTouchListener设置监听器处理所有类型的触摸事件
+                 使用setOnClickListener设置监听器处理松开的触摸事件
+c. 也可以重写控件的onTouchEvent函数(不推荐)
+
+
+
+
+
+
+Android触摸屏事件派发机制详解与源码分析一(View篇) - 工匠若水 - 博客频道 - CSDN.NET.htm
+http://blog.csdn.net/yanbober/article/details/45887547/
+
+Android触摸屏事件派发机制详解与源码分析二(ViewGroup篇) 
+http://blog.csdn.net/yanbober/article/details/45912661
+
+八大排序算法 
+http://blog.csdn.net/hguisu/article/details/7776068/
+
+24. 输入法
+
+在android上使用鼠标
+http://www.pocketmagic.net/android-overlay-cursor/
+
+
+按键事件在activity中的流程 
+http://blog.csdn.net/mountains2001/article/details/47018455
+ 
+ Android中将布局文件/View添加至窗口过程分析 
+http://blog.csdn.net/qinjuning/article/details/7226787/
+
+
+19. 典型应用场景实现
+使用自制键盘
+实现功能键: 一键启动某个APP
+实现红外遥控
+
+开发特殊功能的输入法
+https://developer.android.com/guide/topics/text/creating-input-method.html
+http://blog.csdn.net/itleaks/article/details/28384045
+
+uml_input_dispatcher更正
+发件人：18219112329 <18219112329@163.com>
+
+
+su
+ifconfig eth0 192.168.1.100
+busybox mount -t nfs -o nolock,vers=2 192.168.1.123:/work/nfs_root /data/nfs
+
+
+
+
+Android 5.0(Lollipop)事件输入系统(Input System)-android100学习网.htm
+http://www.android100.org/html/201502/14/118879.html
+
+(1)Android?Input?Framework(一)_fe工作室_新浪博客.htm
+http://blog.sina.com.cn/s/blog_89f592f50101394l.html
+
+Android输入输出机制之来龙去脉
+http://daojin.iteye.com/blog/1267855
+
+Window与WMS通信过程 
+http://blog.csdn.net/huachao1001/article/details/52035510
+
+Android 应用程序建立与WMS服务之间的通信过程 
+http://blog.csdn.net/yangwen123/article/details/18733631
+
+从Android代码中来记忆23种设计模式 - huachao1001的专栏 - 博客频道 - CSDN.NET.htm
+http://blog.csdn.net/huachao1001/article/details/51536074
+
+Android中与ViewRoot相关的一些概念
+http://blog.csdn.net/android_jiangjun/article/details/45798221
+
+Window与WMS通信过程 
+http://blog.csdn.net/huachao1001/article/details/52035510
+
+图解Android - Android GUI 系统 (5) - Android的Event Input System - 漫天尘沙 - 博客园.htm
+http://www.cnblogs.com/samchen2009/p/3368158.html
+
+
+Android4.1输入子系统框架介绍和性能分析 
+http://blog.csdn.net/wlwl0071986/article/details/8351964
+
+
+su
+ifconfig eth0 192.168.1.100
+busybox mount -t nfs -o nolock,vers=2 192.168.1.123:/work/nfs_root /mnt
+
+
+
+Android Bander设计与实现 
+http://blog.csdn.net/universus/article/details/6211589
+
+Android Binder设计与实现 - 实现篇（1）
+http://www.cnblogs.com/albert1017/p/3849585.html
+
+Android深入浅出之Binder机制
+http://www.cnblogs.com/innost/archive/2011/01/09/1931456.html
+
+图解Android - Binder 和 Service
+http://www.cnblogs.com/samchen2009/p/3316001.html
+
+红茶一杯话Binder（初始篇） - 悠然红茶的个人页面 - 开源中国社区.htm
+http://my.oschina.net/youranhongcha/blog/149575
+
+红茶一杯话Binder（传输机制篇_上）
+http://my.oschina.net/youranhongcha/blog/152233
+
+红茶一杯话Binder（传输机制篇_中）
+http://my.oschina.net/youranhongcha/blog/152963
+
+红茶一杯话Binder（传输机制篇_下） - 悠然红茶的个人页面 - 开源中国社区.htm
+http://my.oschina.net/youranhongcha/blog/167314
+
+OpenBinder  Binder IPC Mechanism.htm
+http://www.angryredplanet.com/~hackbod/openbinder/docs/html/BinderIPCMechanism.html
+
+Android进程间通信（IPC）机制Binder简要介绍和学习计划 
+http://blog.csdn.net/luoshengyang/article/details/6618363
+
+《Android深入透析》之常用设计模式经验谈
+http://my.oschina.net/u/2249934/blog/343441
+
+Android设计模式系列
+http://www.cnblogs.com/qianxudetianxia/tag/Android%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%B3%BB%E5%88%97/
+
+Android源码设计模式分析开源项目
+https://github.com/simple-android-framework/android_design_patterns_analysis
+
+mcr_Android-HelloWorldService · GitHub.htm
+https://github.com/mcr/Android-HelloWorldService
+
+
+
+可以直接查看各版本LINUX内核的源文件的网站
+http://lxr.free-electrons.com
+
+Linux/drivers/staging/android/: binder.c, binder.h, binder_trace.h
+
+
+sudo apt-get source linux-image-`uname -r`
+sudo apt-get build-dep linux-image-$(uname -r)
+
+
+
+https://sourceforge.net/projects/strace
+xz -d strace-4.12.tar.xz
+tar xf strace-4.12.tar
+
+
+
+好文章: 
+Android4.4电池管理 
+http://blog.csdn.net/wlwl0071986/article/details/38778897
+
+how to use the LED with Android phone
+http://androidblogger.blogspot.jp/2009/09/tutorial-how-to-use-led-with-android.html
+
+Android应用程序窗口设计框架介绍 - Android移动开发技术文章_手机开发 - 红黑联盟.htm
+http://www.2cto.com/kf/201407/313429.html
+
+Android 系统设置中显示设置之亮度调节篇 - 尹君子 - 博客园.htm
+http://www.cnblogs.com/yinhaojun/p/3876132.html
+
+Android中内容观察者的使用---- ContentObserver类详解 （转）
+http://www.cnblogs.com/slider/archive/2012/02/14/2351702.html
+
+【Android开发经验】与屏幕亮度调节相关的各种方法整理 - 赵凯强 - 博客频道 - CSDN.NET.htm
+
+
+【Android】Android输入子系统 - Leo.cheng - 博客园.htm
+http://www.cnblogs.com/lcw/p/3506110.html
+
+
+可以通过VNC实现在PC端上远程控制Android手机，具体可以参考：
+http://bbs.gfan.com/android-116468-1-1.html
+
+深入理解Activity启动流程(三)–Activity启动的详细流程2 - 为程序员服务.htm
+http://ju.outofmemory.cn/entry/169878
+
+图解Android - 如何看Android的UML 图？
+http://www.cnblogs.com/samchen2009/p/3315999.html
+
+看懂UML类图和时序图
+http://www.cnblogs.com/me115/p/4092632.html
+http://www.cnblogs.com/langtianya/p/3825764.html
+
+Android VNC Server 
+http://blog.csdn.net/mirkerson/article/details/19824747
+
+android源码查找命令：
+grep --exclude-dir={out,prebuilts,external} "LIGHT_ID_BUTTON" * -nR
+grep --exclude-dir={out,prebuilts,external} "NOTIFICATION_SERVICE" * -nR
+grep --exclude-dir={out,prebuilts,external} "BrightnessController" * -nR
+grep --exclude-dir={out,prebuilts,external} "Brightness\ level" * -nR
+grep --exclude-dir={out,prebuilts,external} "config_screenBrightnessSettingMinimum" * -nR
+grep --exclude-dir={out,prebuilts,external} "Settings\.System\.SCREEN_BRIGHTNESS" * -nR
+grep --exclude-dir={out,prebuilts,external} "Context\.NOTIFICATION_SERVICE" * -nR
+grep --exclude-dir={out,prebuilts,external} "batteryproperties" * -nR
+
+
+getService("power")
+
+
+好文章：
+
+SystemServer进程启动过程源码分析
+http://blog.csdn.net/yangwen123/article/details/17258089
+
+Android应用程序启动Binder线程源码分析
+http://blog.csdn.net/yangwen123/article/details/9254827
+
+如何在Android中启动JAVA程序 
+http://blog.csdn.net/hudashi/article/details/7753701
+
+基本Dalvik VM调用  
+http://hubingforever.blog.163.com/blog/static/17104057920126178427815/
+中文原文： http://hi.baidu.com/seucrcr/item/ebd1b34879a168086cc2f078
+英文原文：http://www.netmite.com/android/mydroid/2.0/dalvik/docs/hello-world.html
+
+% echo 'class Foo {'\
+> 'public static void main(String[] args) {'\
+> 'System.out.println("Hello, world"); }}' > Foo.java
+% javac Foo.java
+% dx --dex --output=foo.jar Foo.class
+% adb push foo.jar /sdcard
+% adb shell dalvikvm -cp /sdcard/foo.jar Foo
+Hello, world 
+
+或:
+CLASSPATH=/mnt/android_fs/foo.jar app_process /system/bin Foo
+
+用app_process就会创建binder线程!!!!
+CLASSPATH=/mnt/android_fs/TestServer.jar app_process /system/bin TestServer
+
+logcat JavaTestService:* JavaHelloService:* TestService:* *:S 
+
+Android Binder设计与实现 - 设计篇 
+http://blog.csdn.net/universus/article/details/6211589
+ 
+Android系统介绍与框架 
+http://blog.csdn.net/byxdaz/article/details/9457371
+	
+
+
+Android系统的Binder机制
+http://www.linuxidc.com/Linux/2011-12/49832.htm
+
+图解Android - Binder 和 Service
+http://www.cnblogs.com/samchen2009/p/3316001.html
+
+
+Binder会启动隐藏线程
+http://www.tuicool.com/articles/FRNFFj
+
+
+service_manager.c : 只有add_service, get_service 功能
+
+
+
+Android 系統程式觀念入門
+https://www.mokoversity.com/course/android/android-system-concepts
+
+http://doc.qkzz.net/article/9b60914b-8b75-41a8-83ed-c376e1ceb5cc.htm
+
+
+
+
+
+
+使用Android Studio查看Android Lollipop源码
+http://www.jianshu.com/p/c85984cf99e2
+
+
+如何使用Android Studio开发/调试Android源码
+http://www.cnblogs.com/Lefter/p/4176991.html
+
+
+
+
+
+
+
+
+
+
+解决Android 开发文档打开慢问题
+http://www.cnblogs.com/lawdong/archive/2013/03/05/2945197.html
+用IE，firefox脱机浏览
+
+Gradle文档
+http://gradle.org/documentation/
+https://docs.gradle.org/current/userguide/userguide
+
+Android Studio快捷键：
+
+CTRL + N    : 快速查找类
+
+CTRL + 空格 : 补全功能，还可以在定义成员时提供建议的名字
+CTRL + SHIFT + 空格 ：分析当前表达式，列出很可能要写的函数名、变量名
+TAB         ：如果要使用当前列出的、高亮显示的补全代码，按TAB键
+
+
+ALT + F7    ：选中某内容后按快捷键，在工程中找出引用了该内容的所有位置
+CTRL + Q    ：快速查看文档(简单版本)
+Shift+F1     ：用浏览器快速打开文档
+前提：
+File | Settings | Web Browsers 设置浏览器
+File | Project Structure...    设置文档路径
+
+
+CTRL + B    ：跳到定义的位置
+按CTRL的同时用鼠标点击: 跳到定义的位置
+CTRL + F12  ：列出当前类的成员
+Shift+ F6   ：快速重命名
+
+CTRL + O, CTRL + I ：覆写类/接口
+
+
+ALT + INSERT ：快速生成getter、setter代码
+ Ctrl+Alt+T  ：生成捕获异常的代码
+ 
+Ctrl+斜杠 and Ctrl+Shift+斜杠 ：添加注释
+
+
+Ctrl+Shift+Backspace ：回到文档的上一个地方
+Ctrl+Shift+F7 ：在当前文件中高亮显示所选文本，用F3 或 Shift+F3 在这些高亮文本间移动
+
+Code | Reformat Code  ：重排代码
+
+Alt+向上箭头 and Alt+向下箭头 ：移动到上一个/下一个方法
+
+Ctrl+H  浏览当前类的继承关系
+
+
+vi vendor/friendly-arm/tiny4412/device-tiny4412.mk 
+
+ls -l out/target/product/tiny4412/system/lib/hw/led.tiny4412.so
+
+drivers/leds/led-class.c
+
+grep --exclude-dir={out,prebuilts,external} "LIGHT_ID_BUTTON" * -nR
+
+android.os.IServiceManager
+
+./bctest publish hello &
+
+    bio_put_uint32(&msg, 0);  // strict mode header
+    bio_put_string16_x(&msg, SVC_MGR_NAME);
+    bio_put_string16_x(&msg, name);
+    bio_put_obj(&msg, ptr);
+
+0000: 00 . 00 . 00 . 00 . 1a . 00 . 00 . 00 . 61 a 00 . 6e n 00 . 64 d 00 . 72 r 00 .
+      bio_put_uint32(&msg, 0) 
+                          len of SVC_MGR_NAME android.os.IServiceManager
+                          
+0016: 6f o 00 . 69 i 00 . 64 d 00 . 2e . 00 . 6f o 00 . 73 s 00 . 2e . 00 . 49 I 00 .
+0032: 53 S 00 . 65 e 00 . 72 r 00 . 76 v 00 . 69 i 00 . 63 c 00 . 65 e 00 . 4d M 00 .
+0048: 61 a 00 . 6e n 00 . 61 a 00 . 67 g 00 . 65 e 00 . 72 r 00 . 00 . 00 . 00 . 00 .
+
+0064: 05 . 00 . 00 . 00 . 68 h 00 . 65 e 00 . 6c l 00 . 6c l 00 . 6f o 00 . 00 . 00 .
+      len of "hello"      hello
+0080: 85 . 2a * 62 b 73 s 7f . 01 . 00 . 00 . 70 p 30 0 01 . 00 . 00 . 00 . 00 . 00 .
+      struct flat_binder_object
+      BINDER_TYPE_BINDER  obj->flags = 0x7f | FLAT_BINDER_FLAG_ACCEPTS_FDS;
+                                              obj->binder = (uintptr_t)ptr;
+                                                                  obj->cookie = 0;
+struct flat_binder_object {
+	/* 8 bytes for large_flat_header. */
+	unsigned long		type;   
+	unsigned long		flags;
+
+	/* 8 bytes of data. */
+	union {
+		void		*binder;	/* local object */
+		signed long	handle;		/* remote object */
+	};
+
+	/* extra data associated with local object */
+	void			*cookie;
+};
+
+binder_call(bs, &msg,       &reply, target, SVC_MGR_ADD_SERVICE)
+                内容见上            0       code 
+
+
+struct binder_write_read {
+	signed long	write_size;	/* bytes to write */
+	signed long	write_consumed;	/* bytes consumed by driver */
+	unsigned long	write_buffer;
+	signed long	read_size;	/* bytes to read */
+	signed long	read_consumed;	/* bytes consumed by driver */
+	unsigned long	read_buffer;
+};
+
+struct {
+    uint32_t cmd;
+    struct binder_transaction_data txn;
+} __attribute__((packed)) writebuf;
+
+
+writebuf.cmd = BC_TRANSACTION;
+writebuf.txn.target.handle = target;
+writebuf.txn.code = code;
+writebuf.txn.flags = 0;
+writebuf.txn.data_size = msg->data - msg->data0;
+writebuf.txn.offsets_size = ((char*) msg->offs) - ((char*) msg->offs0);
+writebuf.txn.data.ptr.buffer = (uintptr_t)msg->data0;
+writebuf.txn.data.ptr.offsets = (uintptr_t)msg->offs0;
+
+msg类型为binder_io : 数据存放方法 ?
+
+
+
+
+      
+BR_NOOP:
+BR_TRANSACTION:
+  target 0000000000000000  cookie 0000000000000000  code 00000003  flags 00000000
+  pid     1489  uid        0  data 96  offs 4
+0000: 00 . 00 . 00 . 00 . 1a . 00 . 00 . 00 . 61 a 00 . 6e n 00 . 64 d 00 . 72 r 00 .
+0016: 6f o 00 . 69 i 00 . 64 d 00 . 2e . 00 . 6f o 00 . 73 s 00 . 2e . 00 . 49 I 00 .
+0032: 53 S 00 . 65 e 00 . 72 r 00 . 76 v 00 . 69 i 00 . 63 c 00 . 65 e 00 . 4d M 00 .
+0048: 61 a 00 . 6e n 00 . 61 a 00 . 67 g 00 . 65 e 00 . 72 r 00 . 00 . 00 . 00 . 00 .
+0064: 05 . 00 . 00 . 00 . 68 h 00 . 65 e 00 . 6c l 00 . 6c l 00 . 6f o 00 . 00 . 00 .
+0080: 85 . 2a * 68 h 73 s 7f . 01 . 00 . 00 . 01 . 00 . 00 . 00 . 00 . 00 . 00 . 00 .
+  - type 73682a85  flags 0000017f  ptr 0000000000000001  cookie 0000000000000000
+BR_NOOP:
+BR_TRANSACTION_COMPLETE:
+BR_NOOP:
+BR_INCREFS:
+  0xbec80910, 0xbec80914
+BR_ACQUIRE:
+  0xbec8091c, 0xbec80920
+BR_TRANSACTION_COMPLETE:
+BR_REPLY:
+  target 0000000000000000  cookie 0000000000000000  code 00000000  flags 00000000
+  pid        0  uid        0  data 4  offs 0
+0000: 00 . 00 . 00 . 00 .
+Publish service hello : 0
+Publish exit ...
+BR_NOOP:
+BR_DEAD_BINDER:
+svcmgr: service 'hello' died
+
+
+./service_manager &
+service_manager(1377): binder_write : cmd : BC_ENTER_LOOPER
+./bctest publish hello &
+bctest(1378): Enter binder_call
+bctest(1378): binder_dump_txn : 
+  target 0000000000000000  cookie 0000000000000004  code 00000003  flags 00000000
+  pid -1097778628  uid -1097778692  data 96  offs 4
+0000: 00 . 00 . 00 . 00 . 1a . 00 . 00 . 00 . 61 a 00 . 6e n 00 . 64 d 00 . 72 r 00 .
+0016: 6f o 00 . 69 i 00 . 64 d 00 . 2e . 00 . 6f o 00 . 73 s 00 . 2e . 00 . 49 I 00 .
+0032: 53 S 00 . 65 e 00 . 72 r 00 . 76 v 00 . 69 i 00 . 63 c 00 . 65 e 00 . 4d M 00 .
+0048: 61 a 00 . 6e n 00 . 61 a 00 . 67 g 00 . 65 e 00 . 72 r 00 . 00 . 00 . 00 . 00 .
+0064: 05 . 00 . 00 . 00 . 68 h 00 . 65 e 00 . 6c l 00 . 6c l 00 . 6f o 00 . 00 . 00 .
+0080: 85 . 2a * 62 b 73 s 7f . 01 . 00 . 00 . 88 . 40 @ 01 . 00 . 00 . 00 . 00 . 00 .
+  - type 73622a85  flags 0000017f  ptr 0000000000014088  cookie 0000000000000000
+bctest(1378): End of binder_dump_txn
+service_manager(1377): Enter binder_parse ...
+BR_NOOP:
+BR_TRANSACTION:
+service_manager(1377): binder_dump_txn : 
+  target 0000000000000000  cookie 0000000000000000  code 00000003  flags 00000000
+  pid     1378  uid        0  data 96  offs 4
+0000: 00 . 00 . 00 . 00 . 1a . 00 . 00 . 00 . 61 a 00 . 6e n 00 . 64 d 00 . 72 r 00 .
+0016: 6f o 00 . 69 i 00 . 64 d 00 . 2e . 00 . 6f o 00 . 73 s 00 . 2e . 00 . 49 I 00 .
+0032: 53 S 00 . 65 e 00 . 72 r 00 . 76 v 00 . 69 i 00 . 63 c 00 . 65 e 00 . 4d M 00 .
+0048: 61 a 00 . 6e n 00 . 61 a 00 . 67 g 00 . 65 e 00 . 72 r 00 . 00 . 00 . 00 . 00 .
+0064: 05 . 00 . 00 . 00 . 68 h 00 . 65 e 00 . 6c l 00 . 6c l 00 . 6f o 00 . 00 . 00 .
+0080: 85 . 2a * 68 h 73 s 7f . 01 . 00 . 00 . 01 . 00 . 00 . 00 . 00 . 00 . 00 . 00 .
+  - type 73682a85  flags 0000017f  ptr 0000000000000001  cookie 0000000000000000
+service_manager(1377): End of binder_dump_txn
+svcmgr: target=0 code=3 pid=1378 uid=0
+svcmgr: add_service('hello',1,!allow_isolated) uid=0
+service_manager(1377): binder_write : cmd : BC_ACQUIRE
+service_manager(1377): binder_write : cmd : BC_REQUEST_DEATH_NOTIFICATION
+service_manager(1377): binder_write : cmd : BC_FREE_BUFFER
+service_manager(1377): Exit binder_parse ...
+service_manager(1377): Enter binder_parse ...
+BR_NOOP:
+BR_TRANSACTION_COMPLETE:
+service_manager(1377): Exit binder_parse ...
+bctest(1378): Enter binder_parse ...
+BR_NOOP:
+BR_INCREFS:
+  0xbe913930, 0xbe913934
+BR_ACQUIRE:
+  0xbe91393c, 0xbe913940
+BR_TRANSACTION_COMPLETE:
+BR_REPLY:
+bctest(1378): binder_dump_txn : 
+  target 0000000000000000  cookie 0000000000000000  code 00000000  flags 00000000
+  pid        0  uid        0  data 4  offs 0
+0000: 00 . 00 . 00 . 00 .
+bctest(1378): End of binder_dump_txn
+bctest(1378): Exit binder_parse ...
+bctest(1378): Exit binder_call
+bctest(1378): Enter binder_done
+bctest(1378): binder_write : cmd : BC_FREE_BUFFER
+bctest(1378): Exit binder_done
+Publish service hello : 0
+Publish exit ...
+service_manager(1377): Enter binder_parse ...
+BR_NOOP:
+BR_DEAD_BINDER:
+svcmgr: service 'hello' died
+service_manager(1377): binder_write : cmd : BC_RELEASE
+service_manager(1377): Exit binder_parse ...
+
+bctest:
+binder_ioctl：
+	cmd == BINDER_WRITE_READ;
+	struct binder_write_read bwr;
+	copy_from_user(&bwr, ubuf, sizeof(bwr))
+	binder_thread_write(proc, thread, (void __user *)bwr.write_buffer, bwr.write_size, &bwr.write_consumed);
+			if (get_user(cmd, (uint32_t __user *)ptr))  // cmd = BC_TRANSACTION;
+				return -EFAULT;
+	
+			struct binder_transaction_data tr;          // 
+			if (copy_from_user(&tr, ptr, sizeof(tr)))
+				return -EFAULT;
+			binder_transaction(proc, thread, &tr, cmd == BC_REPLY);
+				struct binder_transaction *t;
+				t = kzalloc(sizeof(*t), GFP_KERNEL);
+				t->from = thread;
+				t->sender_euid = proc->tsk->cred->euid;
+				t->to_proc = target_proc;
+				t->to_thread = target_thread;
+				t->code = tr->code;   // 3
+				t->flags = tr->flags; // 0
+				t->priority = task_nice(current);
+				t->buffer = binder_alloc_buf(target_proc, tr->data_size, tr->offsets_size, !reply && (t->flags & TF_ONE_WAY));
+				t->buffer->allow_user_free = 0;
+				t->buffer->debug_id = t->debug_id;
+				t->buffer->transaction = t;
+				t->buffer->target_node = target_node;
+				
+				offp = (size_t *)(t->buffer->data + ALIGN(tr->data_size, sizeof(void *)));
+				copy_from_user(t->buffer->data, tr->data.ptr.buffer, tr->data_size)				
+				copy_from_user(offp, tr->data.ptr.offsets, tr->offsets_size)
+				
+				t->need_reply = 1;
+				t->from_parent = thread->transaction_stack;
+				thread->transaction_stack = t;
+				
+				t->work.type = BINDER_WORK_TRANSACTION;
+				list_add_tail(&t->work.entry, target_list); // target_list = &target_thread->todo or target_list = &target_proc->todo;
+				wake_up_interruptible(target_wait);
+				
+
+				
+service_manager:
+binder_ioctl：
+	cmd == BINDER_WRITE_READ;
+	struct binder_write_read bwr;
+	copy_from_user(&bwr, ubuf, sizeof(bwr))
+	ret = binder_thread_read(proc, thread, (void __user *)bwr.read_buffer, bwr.read_size, &bwr.read_consumed, filp->f_flags & O_NONBLOCK);
+	
+	if (*consumed == 0)
+	put_user(BR_NOOP, (uint32_t __user *)ptr)
+
+	// 等待被唤醒
+	
+	uint32_t cmd;
+	struct binder_transaction_data tr;
+	struct binder_work *w;
+	struct binder_transaction *t = NULL;
+
+	// 取出数据	
+	if (!list_empty(&thread->todo))
+		w = list_first_entry(&thread->todo, struct binder_work, entry);
+	else if (!list_empty(&proc->todo) && wait_for_proc_work)
+		w = list_first_entry(&proc->todo, struct binder_work, entry);
+	
+	struct binder_transaction *t = NULL;
+	
+	t = container_of(w, struct binder_transaction, work);
+
+	if (t->buffer->target_node) {
+		struct binder_node *target_node = t->buffer->target_node;
+		tr.target.ptr = target_node->ptr;
+		tr.cookie =  target_node->cookie;
+		t->saved_priority = task_nice(current);
+		if (t->priority < target_node->min_priority &&
+		    !(t->flags & TF_ONE_WAY))
+			binder_set_nice(t->priority);
+		else if (!(t->flags & TF_ONE_WAY) ||
+			 t->saved_priority > target_node->min_priority)
+			binder_set_nice(target_node->min_priority);
+		cmd = BR_TRANSACTION;   // *************************************
+	} else {
+		tr.target.ptr = NULL;
+		tr.cookie = NULL;
+		cmd = BR_REPLY;         // *************************************
+	}
+	tr.code = t->code;
+	tr.flags = t->flags;
+
+	tr.data_size = t->buffer->data_size;
+	tr.offsets_size = t->buffer->offsets_size;
+	
+	// 真正的数据不需要再次复制，只需要计明出地址，APP可以直接使用(因为曾经mmap过)
+	tr.data.ptr.buffer = (void *)t->buffer->data +
+				proc->user_buffer_offset;
+	tr.data.ptr.offsets = tr.data.ptr.buffer +
+				ALIGN(t->buffer->data_size,
+				    sizeof(void *));
+	
+	put_user(cmd, (uint32_t __user *)ptr)
+	ptr += sizeof(uint32_t);
+	
+	copy_to_user(ptr, &tr, sizeof(tr))
+
+  list_del(&t->work.entry);
+  t->buffer->allow_user_free = 1;
+
+	if (cmd == BR_TRANSACTION && !(t->flags & TF_ONE_WAY)) {
+	  // 放入事务栈
+		t->to_parent = thread->transaction_stack;
+		t->to_thread = thread;
+		thread->transaction_stack = t;
+	} else {
+		t->buffer->transaction = NULL;
+		kfree(t);
+		binder_stats_deleted(BINDER_STAT_TRANSACTION);
+	}
+  
+service_manager 收到如下数据(跟bctest发出来的完全一样):
+BR_NOOP:
+BR_TRANSACTION:
+struct binder_transaction_data *txn = (struct binder_transaction_data *) ptr;
+
+// 把binder_transaction_data交入bio
+unsigned rdata[256/4];
+struct binder_io msg;
+struct binder_io reply;
+int res;
+bio_init(&reply, rdata, sizeof(rdata), 4);
+bio_init_from_txn(&msg, txn);
+
+// 处理
+res = func(bs, txn, &msg, &reply);  // svcmgr_handler
+																						strict_policy = bio_get_uint32(msg);
+																						s = bio_get_string16(msg, &len);  // s必须等于svcmgr_id
+																						
+																						switch(txn->code) {
+																						   case SVC_MGR_ADD_SERVICE:
+																						   				s = bio_get_string16(msg, &len);  // "hello"
+																						   				handle = bio_get_ref(msg);        // 0
+																						   				do_add_service(bs, s, len, handle, txn->sender_euid, allow_isolated, txn->sender_pid)
+																						   						// 记录service： 构造一个svcinfo(只是记录name, handle)并放入链表
+																						   				 		binder_acquire
+																						   				 			binder_write(BC_ACQUIRE) // binder_inc_ref(ref, 1, NULL);
+																						   				 			binder_link_to_death(bs, handle, &si->death);
+																						   				 			
+
+// 回应
+binder_send_reply(bs, &reply, txn->data.ptr.buffer, res);
+
+
+
+
+
+
+
+
+./bctest publish hello &
+[root@FriendlyARM system]# bctest(1373): Enter binder_call
+bctest(1373): binder_dump_txn : 
+[   59.565600] binder: 1373:1373 write 44 at bef3d9a8, read 128 at bef3d928
+[   59.565751] binder: 1366:1366 wrote 0 of 0, read return 48 of 128
+[   59.567703] binder: 1366:1366 write 8 at becb4998, read 0 at 00000000
+[   59.567794] binder: 1366:1366 wrote 8 of 8, read return 0 of 0
+[   59.572313] binder: 1373:1373 wrote 44 of 44, read return 32 of 128
+[   59.578525] binder: 1366:1366 write 12 at becb4994, read 0 at 00000000
+[   59.585338] binder: 1366:1366 wrote 12 of 12, read return 0 of 0
+[   59.590969] binder: 1373:1373 write 44 at bef3d9a8, read 128 at bef3d928
+[   59.597716] binder: 1366:1366 write 52 at becb49ec, read 0 at 00000000
+[   59.604196] binder: 1366:1366 wrote 52 of 52, read return 0 of 0
+[   59.610223] binder: 1373:1373 wrote 44 of 44, read return 48 of 128
+[   59.622698] binder: 1366:1366 write 0 at 00000000, read 128 at becb4bbc
+[   59.629567] binder: 1373:1373 write 8 at bef3d9f0, read 0 at 00000000
+[   59.635598] binder: 1373:1373 wrote 8 of 8, read return 0 of 0
+[   59.642848] binder: 1366:1366 wrote 0 of 0, read return 8 of 128
+[   59.647615] binder: 1366:1366 write 0 at 00000000, read 128 at becb4bbc
+
+  target 0000000000000000  cookie 0000000000000004  code 00000003  flags 00000000
+  pid -1091315140  uid -1091315204  data 96  offs 4
+0000: 00 . 00 . 00 . 00 . 1a . 00 . 00 . 00 . 61 a 00 . 6e n 00 . 64 d 00 . 72 r 00 .
+0016: 6f o 00 . 69 i 00 . 64 d 00 . 2e . 00 . 6f o 00 . 73 s 00 . 2e . 00 . 49 I 00 .
+0032: 53 S 00 . 65 e 00 . 72 r 00 . 76 v 00 . 69 i 00 . 63 c 00 . 65 e 00 . 4d M 00 .
+0048: 61 a 00 . 6e n 00 . 61 a 00 . 67 g 00 . 65 e 00 . 72 r 00 . 00 . 00 . 00 . 00 .
+0064: 05 . 00 . 00 . 00 . 68 h 00 . 65 e 00 . 6c l 00 . 6c l 00 . 6f o 00 . 00 . 00 .
+0080: 85 . 2a * 62 b 73 s 7f . 01 . 00 . 00 . 88 . 30 0 01 . 00 . 00 . 00 . 00 . 00 .
+  - type 73622a85  flags 0000017f  ptr 0000000000013088  cookie 0000000000000000
+bctest(1373): End of binder_dump_txn
+service_manager(1366): Enter binder_parse ...
+BR_NOOP:
+BR_TRANSACTION:
+service_manager(1366): binder_dump_txn : 
+  target 0000000000000000  cookie 0000000000000000  code 00000003  flags 00000000
+  pid     1373  uid        0  data 96  offs 4
+0000: 00 . 00 . 00 . 00 . 1a . 00 . 00 . 00 . 61 a 00 . 6e n 00 . 64 d 00 . 72 r 00 .
+0016: 6f o 00 . 69 i 00 . 64 d 00 . 2e . 00 . 6f o 00 . 73 s 00 . 2e . 00 . 49 I 00 .
+0032: 53 S 00 . 65 e 00 . 72 r 00 . 76 v 00 . 69 i 00 . 63 c 00 . 65 e 00 . 4d M 00 .
+0048: 61 a 00 . 6e n 00 . 61 a 00 . 67 g 00 . 65 e 00 . 72 r 00 . 00 . 00 . 00 . 00 .
+0064: 05 . 00 . 00 . 00 . 68 h 00 . 65 e 00 . 6c l 00 . 6c l 00 . 6f o 00 . 00 . 00 .
+0080: 85 . 2a * 68 h 73 s 7f . 01 . 00 . 00 . 01 . 00 . 00 . 00 . 00 . 00 . 00 . 00 .
+  - type 73682a85  flags 0000017f  ptr 0000000000000001  cookie 0000000000000000
+service_manager(1366): End of binder_dump_txn
+svcmgr: target=0 code=3 pid=1373 uid=0
+svcmgr: add_service('hello',1,!allow_isolated) uid=0
+bctest(1373): Enter binder_parse ...
+BR_NOOP:
+BR_INCREFS:
+  0xbef3d930, 0xbef3d934
+BR_ACQUIRE:
+  0xbef3d93c, 0xbef3d940
+BR_TRANSACTION_COMPLETE:
+bctest(1373): Exit binder_parse ...
+bctest(1373): Exit binder_call
+service_manager(1366): Exit binder_parse ...
+bctest(1373): Enter binder_parse ...
+BR_NOOP:
+BR_REPLY:
+bctest(1373): binder_dump_txn : 
+  target 0000000000000000  cookie 0000000000000000  code 00000000  flags 00000000
+  pid        0  uid        0  data 4  offs 0
+0000: 00 . 00 . 00 . 00 .
+bctest(1373): End of binder_dump_txn
+bctest(1373): Exit binder_parse ...
+bctest(1373): Exit binder_call
+bctest(1373): Enter binder_done
+service_manager(1366): Enter binder_parse ...
+bctest(1373): Exit binder_done
+BR_NOOP:
+Publish service hello : 0
+BR_TRANSACTION_COMPLETE:
+service_manager(1366): Exit binder_parse ...
+[   64.481629] failed to copy MFC F/W during init
+Publish exit ...
+[   89.649019] binder: 1366:1366 wrote 0 of 0, read return 12 of 128
+[   89.649817] binder: 1366:1366 write 8 at becb49f8, read 0 at 00000000
+[   89.649980] binder: 1366:1366 wrote 8 of 8, read return 0 of 0
+[   89.650620] binder: 1366:1366 write 0 at 00000000, read 128 at becb4bbc
+service_manager(1366): Enter binder_parse ...
+BR_NOOP:
+BR_DEAD_BINDER:
+svcmgr: service 'hello' died
+service_manager(1366): Exit binder_parse ...
+
+
+
+
+对内核的修改：配置了NFS、修改binder.c使能调试信息

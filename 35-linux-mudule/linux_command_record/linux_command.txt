@@ -217,6 +217,11 @@
 		uname [-amnrsv][--help][--version]
 		
 		-r或--release 　显示操作系统的发行编号。//即为内核版本。
+	7.3 kill
+		kill [-s <信息名称或编号>][程序]　或　kill [-l <信息编号>] 
+		1 (HUP)：重新加载进程。
+		9 (KILL)：杀死一个进程。
+		15 (TERM)：正常停止一个进程。
 (8) 系统设置 
 	8.1 insmod 
 		rmmod(选项)(参数)

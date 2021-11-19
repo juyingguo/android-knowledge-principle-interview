@@ -1,0 +1,47 @@
+
+ ./service_manager &
+[   32.566620] service_manager (1362, 1362), binder_thread_write : BC_ENTER_LOOPER
+[   32.566712] service_manager (1362, 1362), binder_thread_read : BR_NOOP
+
+./test_server &
+[   38.320197] test_server (1363, 1363), binder_thread_write : BC_TRANSACTION
+[   38.320284] binder: 1363:1363 BC_TRANSACTION 2 -> 1362 - node 1, data beca6a5c-beca6a4c size 96-4
+[   38.320383] test_server (1363, 1363), binder_transaction , print data :
+[   38.320454] 0000: 00 . 00 . 00 . 00 . 1a . 00 . 00 . 00 . 61 a 00 . 6e n 00 . 64 d 00 . 72 r 00 .
+[   38.329064] 0016: 6f o 00 . 69 i 00 . 64 d 00 . 2e . 00 . 6f o 00 . 73 s 00 . 2e . 00 . 49 I 00 .
+[   38.337917] 0032: 53 S 00 . 65 e 00 . 72 r 00 . 76 v 00 . 69 i 00 . 63 c 00 . 65 e 00 . 4d M 00 .
+[   38.346771] 0048: 61 a 00 . 6e n 00 . 61 a 00 . 67 g 00 . 65 e 00 . 72 r 00 . 00 . 00 . 00 . 00 .
+[   38.355646] 0064: 05 . 00 . 00 . 00 . 68 h 00 . 65 e 00 . 6c l 00 . 6c l 00 . 6f o 00 . 00 . 00 .
+[   38.364475] 0080: 85 . 2a * 62 b 73 s 7f . 01 . 00 . 00 . e0 . 88 . 00 . 00 . 00 . 00 . 00 . 00 .
+[   38.373350] test_server (1363, 1363), binder_thread_read : BR_NOOP
+[   38.379521] service_manager (1362, 1362), binder_thread_read : BR_TRANSACTION
+[   38.386633] service_manager (1362, 1362), binder_thread_read , print data :
+[   38.393567] 0000: 00 . 00 . 00 . 00 . 1a . 00 . 00 . 00 . 61 a 00 . 6e n 00 . 64 d 00 . 72 r 00 .
+[   38.402410] 0016: 6f o 00 . 69 i 00 . 64 d 00 . 2e . 00 . 6f o 00 . 73 s 00 . 2e . 00 . 49 I 00 .
+[   38.411263] 0032: 53 S 00 . 65 e 00 . 72 r 00 . 76 v 00 . 69 i 00 . 63 c 00 . 65 e 00 . 4d M 00 .
+[   38.420127] 0048: 61 a 00 . 6e n 00 . 61 a 00 . 67 g 00 . 65 e 00 . 72 r 00 . 00 . 00 . 00 . 00 .
+[   38.428971] 0064: 05 . 00 . 00 . 00 . 68 h 00 . 65 e 00 . 6c l 00 . 6c l 00 . 6f o 00 . 00 . 00 .
+[   38.437824] 0080: 85 . 2a * 68 h 73 s 7f . 01 . 00 . 00 . 01 . 00 . 00 . 00 . 00 . 00 . 00 . 00 .
+[   38.447188] test_server (1363, 1363), binder_thread_read : BR_INCREFS
+[   38.453114] test_server (1363, 1363), binder_thread_read : BR_ACQUIRE
+[   38.459748] test_server (1363, 1363), binder_thread_read : BR_TRANSACTION_COMPLETE
+[   38.467270] service_manager (1362, 1362), binder_thread_write : BC_ACQUIRE
+[   38.474004] test_server (1363, 1363), binder_thread_read : BR_NOOP
+[   38.480122] service_manager (1362, 1362), binder_thread_write : BC_REQUEST_DEATH_NOTIFICATION
+[   38.488626] service_manager (1362, 1362), binder_thread_write : BC_FREE_BUFFER
+[   38.495828] service_manager (1362, 1362), binder_thread_write : BC_REPLY
+[   38.502538] binder: 1362:1362 BC_REPLY 5 -> 1363:1363, data bed9fa4c-bed9fa3c size 4-0
+[   38.510404] service_manager (1362, 1362), binder_transaction , print data :
+[   38.517345] 0000: 00 . 00 . 00 . 00 .
+[   38.520994] test_server (1363, 1363), binder_thread_read : BR_REPLY
+[   38.527250] test_server (1363, 1363), binder_thread_read , print data :
+[   38.540003] 0000: 00 . 00 . 00 . 00 .
+[   38.543642] service_manager (1362, 1362), binder_thread_read : BR_NOOP
+[   38.550253] test_server (1363, 1363), binder_thread_write : BC_FREE_BUFFER
+[   38.557063] service_manager (1362, 1362), binder_thread_read : BR_TRANSACTION_COMPLETE
+[   38.566481] service_manager (1362, 1362), binder_thread_read : BR_NOOP
+[   38.571459] test_server (1363, 1363), binder_thread_write : BC_ENTER_LOOPER
+[   38.578368] test_server (1363, 1363), binder_thread_read : BR_NOOP
+svcmgr: add_service('hello'), handle = 1
+
+
