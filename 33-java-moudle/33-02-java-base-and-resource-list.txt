@@ -1,4 +1,7 @@
 0 资源
+	0.0 国内镜像网站
+		https://mirrors.tuna.tsinghua.edu.cn/ 
+		https://mirrors.ustc.edu.cn/ 
 	0.1 jar 
 		https://www.findjar.com/
 		
@@ -32,6 +35,21 @@
 			https://www.elastic.co/guide/en/elasticsearch/client/java-api/5.5/index.html
 	0.8 使用Java API的5个技巧
 		https://blog.csdn.net/qq_37267015/article/details/78770860 
+	0.9 openjdk
+		http://openjdk.java.net/install/
+		
+		OpenJDK6,7,8,9,10,11下载链接 
+		【源码】
+		https://blog.csdn.net/qq_23091073/article/details/83178848? 
+		
+		OpenJDK各平台版本下载
+		https://blog.csdn.net/lwqldsyzx/article/details/108023451 
+		【openjdk 1.8及以上版本】
+		https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/ 
+		
+		可用的下载网站
+		http://hg.openjdk.java.net/jdk7/modules/jdk/
+		
 一、吃透java ,csdn博客。
 	1.1、吃透Java基础八：Throwable异常 
 		https://blog.csdn.net/u013277209/article/details/102834719

@@ -222,6 +222,31 @@
 			 JRE_HOME=/home/eink/soft_tools/java/jdk1.7.0_80/jre
 			 CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
 			 PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
+	1.7 
+		ubuntu16 安装openjdk java1.7
+		https://win9zz.blog.csdn.net/article/details/78252150? 
+		
+		sudo add-apt-repository ppa:openjdk-r/ppa  
+		sudo apt-get update  
+		sudo apt-get install openjdk-7-jdk 
+		1
+		2
+		3
+		如果ubuntu版本为16.10或其他：
+		参考 http://blog.csdn.net/qq_33160790/article/details/77523618，使用openjdk java 7来安装。
+		附上openjdk java 7下载地址：
+		https://pan.baidu.com/s/1dEZ9F1Z 
+		
+		b,配置	b1,sudo vi /etc/environment (/home/username/.bashrc)
+				
+				b2,
+				JAVAHOME=/home/eink/soft_tools/java/java-7-openjdk-amd64
+				JRE_HOME=/home/eink/soft_tools/java/java-7-openjdk-amd64/jre
+				CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+				PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+				
+				b3,source /etc/environment (/home/username/.bashrc)
+				
 2. ubuntu 16.4 卸载指定版本java 1.6,1.7 
 	2.1 linux下卸载jdk1.7安装jdk1.8 
 		https://blog.csdn.net/reee112/article/details/83036449?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
@@ -249,15 +274,16 @@
 		3.1.3. 使用alternatives实现版本切换的方法如下
 			
 			1. 查看相应的jdk是否在 ubuntu的jdk菜单里，查看：
-			update-alternatives --config java
-			update-alternatives --config javac
+			sudo update-alternatives --config java
+			sudo update-alternatives --config javac
 
 			2.如果没有在菜单里可以如下方式添加：
-			update-alternatives --install /usr/bin/java java /usr/lib/jvm/java/jdk1.6.0_12/bin/java 300
-			update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java/jdk1.6.0_12/bin/javac 300
+			sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java/jdk1.6.0_12/bin/java 300  //第二个路径为jdk安装路径
+			sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java/jdk1.6.0_12/bin/javac 300 //第二个路径为jdk安装路径
 			 注意：jdk1.6.0_12 版本不同会有变动
 
-			3.sudo update-alternatives --config java
+			3.
+			sudo update-alternatives --config java
 			sudo update-alternatives --config javac
 			选择序号，回车即可；
 			4.然后java -version,javac -version查看当前jdk版本

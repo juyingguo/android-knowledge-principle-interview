@@ -91,4 +91,23 @@
 
 		经过尝试，在Options->Preferences->Files最下面选择默认编码方式Default Encoding即可，但是需要重建一下你的项目。[非自己的项目不要这样操作]
 		如果你一个项目，有多种编码方式，GOD BLESS YOU!
-			
+13 source insight 3.5 乱码问题
+	3.1 Source Insight 3.X 插件支持utf8，完美解决中文乱码，另附优美的配置文件一份
+		https://blog.csdn.net/nyist327/article/details/39935379 
+		http://files.cnblogs.com/Red_angelX/siplus.zip
+		
+		安装说明:
+
+		解压msimg32.dll sihook.dll siutf8.dll 到Source Insight 3.X安装目录
+
+		msimg32.dll 引导程序(*)
+		sihook.dll 标签插件(M)
+		siutf8.dll utf8插件(M)
+
+		功能说明:
+
+		1,增加SI多标签功能
+
+		2,修复SI当光标在中文字符上按CTRL+F时崩溃的问题.(感谢看雪的封心锁爱)
+
+		3,utf8编码支持.

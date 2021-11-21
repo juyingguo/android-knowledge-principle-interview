@@ -259,9 +259,11 @@
 			ifcae ens33 inet static
             address 192.168.211.135
             netmask 255.255.255.0
-            gateway 192.168.211.1
+            gateway 192.168.211.2
 			
-			
+			1.1 在linux下把网卡IP配置成和VMnet8一个网段的IP：192.168.X.Z/255.255.255.0（我的配置是192.168.137.200/255.255.255.0）。
+				网关配置成刚才查看的VMnet8那个IP192.168.X.2（我的是192.168.137.2）。
+				在linux下DNS和windows主机的相同。
 		2.设置DNS文件：sudo vi /etc/resolv.conf
 			nameserver 192.168.1.1（临时的，每次开机此文件被清零，要想解决此问题，需要修改开机自启动脚本，设置方法见后面“注意”内容）
 		3. 重启配置文件：sudo /etc/init.d/networking restart
@@ -281,7 +283,7 @@
 			
 		5.该方式配置验证OK。
 			需要注意【1】中gateway 192.168.43.1要配置为。配置为无线局域网适配器 WLAN 下的默认网关（192.168.43.1）（根据当前实际能上网的网卡而定。比如当前使用的是WLAN上网）。			
-			
+							比如当前配置的192.168.211.2。【13.3中1.1】
 			重启ubuntu生效。
 	13.4 
 		为VMware虚拟机内安装的Ubuntu 16.04设置静态IP地址		
@@ -316,3 +318,6 @@
 	13.7 windows ping ubuntu的ip不通。
 		参考【13.3】-【5】即可解决
 14 xshell连接ubuntu 		
+
+15 ld.gold使用指南
+	https://blog.csdn.net/ayu_ag/article/details/78552801 

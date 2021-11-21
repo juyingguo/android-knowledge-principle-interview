@@ -566,6 +566,7 @@ http://blog.csdn.net/zhaokaiqiang1992/article/details/35814785
 
 
 五. Binder系统的C程序使用示例
+	[韦东山老师当前使用环境：aosp-android-5.0.2,及linux-kernel-3.0.86]
 IPC : Inter-Process Communication, 进程间通信
 RPC : Remote Procedure Call, 远程过程调用
 
@@ -645,7 +646,10 @@ mount -t nfs -o nolock 192.168.1.123:/work /mnt
 ./test_client hello
 ./test_client hello weidongshan
 
-
+补充：
+system/coreinclude/private/android_filesystem_config.h
+./bionic/iibc/kernel/uapi/iinux/binder.h
+ 
 六. Binder驱动情景分析
 1. 几个重要结构体的引入
 给test_server添加一个goodbye服务, 由此引入以下概念:
@@ -856,7 +860,7 @@ sp<IHelloService> service = interface_cast<IHelloService>(binder);
              IPCThreadState::self()->transact(mHandle, code, data, reply, flags);
 
 5. 内部机制_数据传输: ProcessState和IPCThreadState
-
+	ls proc/pid/task //查看进程pid下有多少个线程
 5.1 addService
     对于不同服务，构造flat_binder_object结构体，里面的.binder/.cookie对于不同的服务它的值不一样
 														

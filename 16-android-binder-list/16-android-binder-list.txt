@@ -1,4 +1,4 @@
-一、android面试（6）-Binder机制
+﻿一、android面试（6）-Binder机制
 	1.1、android面试（6）-Binder机制
 		https://blog.csdn.net/pgg_cold/article/details/79393839
 
@@ -83,3 +83,5 @@
 			failed to publish hello service
 6. Binder学习笔记（十二）—— binder_transaction(...)都干了什么？
 	https://www.cnblogs.com/palance/p/5768748.html 
+7. Android进程间通信（IPC）机制Binder简要介绍和学习计划
+	https://blog.csdn.net/Luoshengyang/article/details/6618363 

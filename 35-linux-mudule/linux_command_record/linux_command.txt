@@ -179,7 +179,19 @@
 		9.1.6 *.gz 文件	
 			gunzip FileName.gz    //第一种 *.gz 解压
 			gzip -d FileName.gz    //第二种 *.gz 解压
-		
+		9.1.7 linux下7z文件的解压方法
+			https://blog.csdn.net/xujiamin0022016/article/details/88789290 
+			linux下安装7z命令及7z命令的使用
+			https://www.cnblogs.com/wo316885741/p/12161657.html
+			
+			a,ubuntu下7z文件的解压方法
+			安装：apt-get install p7zip-full
+
+			解压7z：使用方法：7z x file.7z 
+
+			解压出来就是文件夹.
+			
+			b,centos
 	4.5 Exiting with failure status due to previous errors
 		Linux tar命令选项顺序不同导致"Exiting with failure status due to previous errors"
 		https://blog.csdn.net/HermitSun/article/details/94494700
