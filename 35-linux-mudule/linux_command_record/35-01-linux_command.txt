@@ -166,16 +166,22 @@
 			sudo tar -jxvf test.tar.bz2
 			
 		9.1.5 
-			Linux中zip压缩和unzip解压缩命令详解
-			https://www.cnblogs.com/wangkongming/p/4305962.html
-			https://www.runoob.com/linux/linux-comm-unzip.html
-			
-			-d<目录> 指定文件解压缩后所要存储的目录。
-			
-			zip -r mydata.zip mydata #压缩mydata目录
-			#zip文件解压到制定目录
-			unzip -n nerdtree.zip -d nerdtree 
-			
+			a,Linux中zip压缩和unzip解压缩命令详解
+				https://www.cnblogs.com/wangkongming/p/4305962.html
+				https://www.runoob.com/linux/linux-comm-unzip.html
+				
+				-d<目录> 指定文件解压缩后所要存储的目录。
+				
+			b,zip -r mydata.zip mydata #压缩mydata目录
+				#zip文件解压到制定目录
+				unzip -n nerdtree.zip -d nerdtree  
+			b,linux unzip 解压后文件名乱码
+				https://www.cnblogs.com/10087622blog/p/7763070.html 
+				
+				b,.确定windows上的默认字符集
+				在Windows平台下，直接在命令行中，输入：chcp.
+				b2,linux机器上，解压的时候，使用unzip -O CPxxx 对应的zip文件，其中xxx就是刚才在windows上看到的数字.
+					unzip -O CP936 x.zip
 		9.1.6 *.gz 文件	
 			gunzip FileName.gz    //第一种 *.gz 解压
 			gzip -d FileName.gz    //第二种 *.gz 解压
