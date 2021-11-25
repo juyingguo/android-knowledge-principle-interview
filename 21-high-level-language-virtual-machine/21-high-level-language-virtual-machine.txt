@@ -1,0 +1,4 @@
+﻿1.高级语言虚拟机（HLL VM）的设计与实现
+	https://my.oschina.net/yygh/blog/598187 
+	
+	Harissa
