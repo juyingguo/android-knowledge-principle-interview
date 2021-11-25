@@ -1,0 +1,367 @@
+(01) 参考教程：
+	01.1 https://www.runoob.com/linux/linux-comm-grep.html 
+	01.2 https://man.linuxde.net/rmmod
+	
+(1) cd 
+	cd .. 意思是到上一级目录； 
+	cd ../.. 跳到目前目录的上上两层 :
+	cd -  意思是返回到上次的目录，类似windows返回 ； 
+	cd /  意思是回到根目录。
+	cd ~ 回到自己当前账户对应的根目录
+	croot 进入系统目录 android/android
+	
+	"~" 也表示为 home 目录 的意思
+	"." 
+	".." 则表示目前目录位置的上一层目录
+	
+(2) 文件编辑
+	vi，输入i ,a, o，r进入输入模式，按下esc进入命令模式，在命令模式下按下:（英文冒号）就进入了底线命令模式,按下wq保存退出
+		注意：非正常关闭vi编辑器时会生成一个.swp文件，以后再次编辑文件会提示，可以使用复原即可
+	参考菜鸟教程：http://www.runoob.com/linux/linux-vim.html
+	
+	2.2 vim下显示行号
+		:set number 或者 :set nu 		
+		:set nonumber 或者 :set nonu  ////显示出行号之后我们怎么隐藏行号呢，敲命令
+	2.3  grep命令用于查找文件里符合条件的字符串
+		grep -irn  "hello world" ./ // 在当前目录下递归查找"hello world"，并显示行号
+		-i 或 --ignore-case : 忽略字符大小写的差别。
+		-r 或 --recursive : 此参数的效果和指定"-d recurse"参数相同。
+		-n 或 --line-number : 在显示符合样式的那一行之前，标示出该行的列数编号。
+		-w 或 --word-regexp : 只显示全字符合的列。
+		
+		2.3.1 find 与 grep一起使用。
+			当前目录开始查找所有扩展名为 .in 的文本文件，并找出包含 "thermcontact" 的行：
+			find . -name "*.in" | xargs grep -irnw "thermcontact"
+			
+(3) 文件管理
+	3.1
+		mv Linux mv命令用来为文件或目录改名、或将文件或目录移入其它位置；
+			mv [options] source dest
+			-i: 若指定目录已有同名文件，则先询问是否覆盖旧文件;
+			-f: 在mv操作要覆盖某已有的目标文件时不给任何指示;
+	3.2
+		cat 命令用于连接文件并打印到标准输出设备上。
+	3.3
+		cp 命令主要用于复制文件或目录 cp [options] source dest
+			-a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。
+			-d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。
+			-f：覆盖已经存在的目标文件而不给出提示。
+			-i：与-f选项相反，在覆盖目标文件之前给出提示，要求用户确认是否覆盖，回答"y"时目标文件将被覆盖。
+			-p：除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。
+			-r：若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。
+			-l：不复制文件，只是生成链接文件。
+			
+			问题：：
+			cp: omitting directory ‘/home/
+			directory `XXX'问题解决 ## 其中XXX是我要复制的文件夹名，出现该警告的原因是因为XXX目录下还存在目录，所以不能直接拷贝。 解决办法：使用递归拷贝，在cp命令后面加上-r参数，形如：
+		 
+		 
+	3.4	 
+		Linux find命令
+			Linux find命令用来在指定目录下查找文件。任何位于参数之前的字符串都将被视为欲查找的目录名。
+			如果使用该命令时，不设置任何参数，则find命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。
+
+			语法
+			find   path   -option   [   -print ]   [ -exec   -ok   command ]   {} \;
+			# find . -name "*.c" //将目前目录及其子目录下所有延伸档名是 c 的文件列出来。
+			## find . -iname "aA" -type d // 查找当前及子目录下，文件夹为aA，忽略大小写。
+			###find  -iname "aA" -type d // 查找当前及子目录下，文件夹为aA，忽略大小写。//如果使用该命令时，不设置任何参数，则find命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。
+				
+				https://www.cnblogs.com/jiftle/p/9707518.html
+				
+				https://jingyan.baidu.com/article/11c17a2cffd0eaf447e39d5a.html
+				
+						
+	3.5
+		 chmod命令
+				参数说明
+				mode : 权限设定字串，格式如下 :
+
+				[ugoa...][[+-=][rwxX]...][,...]
+				其中：
+
+				u 表示该文件的拥有者，g 表示与该文件的拥有者属于同一个群体(group)者，o 表示其他以外的人，a 表示这三者皆是。
+				+ 表示增加权限、- 表示取消权限、= 表示唯一设定权限。
+				r 表示可读取，w 表示可写入，x 表示可执行，X 表示只有当该文件是个子目录或者该文件已经被设定过为可执行。
+				其他参数说明：
+
+				-c : 若该文件权限确实已经更改，才显示其更改动作
+				-f : 若该文件权限无法被更改也不要显示错误讯息
+				-v : 显示权限变更的详细资料
+				-R : 对目前目录下的所有文件与子目录进行相同的权限变更(即以递回的方式逐个变更)
+				--help : 显示辅助说明
+				--version : 显示版本
+			例如：chmod -R 777 20191122/ 
+					chmod 777 -R  20191122/
+				在linux上，上面写法都行。在android模拟器上，都不行，模拟器可能是没适配多种参数的原因吧。
+			
+	3.6，chown -R 所有者用户名.组名 文件夹名称
+	
+		Linux chown（英文全拼：change ownerp）命令用于设置文件所有者和文件关联组的命令。
+		chown 需要超级用户 root 的权限才能执行此命令。
+		
+		语法：
+		chown [-cfhvR] [--help] [--version] user[:group] file...
+			
+			其中user[:group]，使用user[.group]也是可以的。 
+		例如：chown -R zdz.nginx KooBox
+		
+		将当前前目录下的所有文件与子目录的拥有者皆设为 runoob，群体的使用者 runoobgroup:
+			chown -R runoob:runoobgroup *
+		
+		把 /home/runoob 的关联组设置为 512 （关联组ID），不改变所有者：
+
+			chown :512 /home/runoob
+	3.7 Linux中将命令运行结果放到文件中的方法
+		https://www.cnblogs.com/shineriver/p/10922970.html 
+	3.8 mkdir
+		3.8.2 mkdir include/private -p //创建多级目录
+(4)磁盘管理
+	4.1 du //du会显示指定的目录或文件所占用的磁盘空间。
+		-a或-all 显示目录中个别文件的大小。
+		-h //-h或--human-readable 以K，M，G为单位，提高信息的可读性。
+		https://www.runoob.com/linux/linux-comm-du.html
+		
+	4.2 Linux dd命令 
+		https://www.runoob.com/linux/linux-comm-dd.html
+		
+	4.3 Linux mount命令 
+		https://www.runoob.com/linux/linux-comm-mount.html
+		
+		将 /dev/hda1 挂在 /mnt 之下。
+		#mount /dev/hda1 /mnt
+		
+		将 /dev/hda1 用唯读模式挂在 /mnt 之下。
+		#mount -o ro /dev/hda1 /mnt
+		
+		4.4 Android开发出现Read-only file system问题解决方案
+			当我们运行Android项目时，出现Read-only file system的error时，一般是模拟器中sdcard文件没有写入和修改权限，所以adb语句增加写入和修改权限.
+			
+			步骤一：打开你的模拟器
+
+			步骤二：在Doc窗口输入adb shell
+
+			步骤三：接下来显示的是Linux语法，输入mount -o remount ,rw /
+	
+	4.4 备份压缩,解压文件命令
+		资料参考：
+			Linux/Ubuntu 解压命令（.tar、.gz、.tar.gz、.bz2、.tar.bz2、.zip、.rar等） 
+			https://www.cnblogs.com/anno-ymy/p/10429396.html
+		9.1.1 tar
+			https://www.runoob.com/linux/linux-comm-tar.html
+			
+			tar -xzvf test.tar.gz //解压文件
+			tar -czvf test.tar.gz a.c   //压缩 a.c文件为test.tar.gz
+		9.1.2 将当前目录压缩成backup.tar.gz  	其中当前目录下的img文件夹(后面不要带有路径符号/)和upload.txt文件不压缩 
+			tar -zcvf backup.tar.gz --exclude=img  --exclude=upload.txt  ./
+			
+			img整个文件夹都会忽略。如果带了/,如img/则该目录下的所有文件及子文件夹或文件都不会忽略。
+			或者img/*也可以忽略掉该文件夹内部的所有文件及文件夹。但img文件夹不会被忽略。
+		9.1.3 linux下tar命令解压到指定的目录  
+			#tar -zxvf xx.tar.gz -C /xx
+			//把根目录下的xx.tar.gz解压到/xx/下，前提要保证存在/xx这个目录
+			这个和cp命令有点不同，cp命令如果不存在这个目录就会自动创建这个目录！
+			
+		9.1.4 tar.bz2文件解压
+			sudo tar -jxvf test.tar.bz2
+			
+		9.1.5 
+			a,Linux中zip压缩和unzip解压缩命令详解
+				https://www.cnblogs.com/wangkongming/p/4305962.html
+				https://www.runoob.com/linux/linux-comm-unzip.html
+				
+				-d<目录> 指定文件解压缩后所要存储的目录。
+				
+			b,zip -r mydata.zip mydata #压缩mydata目录
+				#zip文件解压到制定目录
+				unzip -n nerdtree.zip -d nerdtree  
+			b,linux unzip 解压后文件名乱码
+				https://www.cnblogs.com/10087622blog/p/7763070.html 
+				
+				b,.确定windows上的默认字符集
+				在Windows平台下，直接在命令行中，输入：chcp.
+				b2,linux机器上，解压的时候，使用unzip -O CPxxx 对应的zip文件，其中xxx就是刚才在windows上看到的数字.
+					unzip -O CP936 x.zip
+		9.1.6 *.gz 文件	
+			gunzip FileName.gz    //第一种 *.gz 解压
+			gzip -d FileName.gz    //第二种 *.gz 解压
+		9.1.7 linux下7z文件的解压方法
+			https://blog.csdn.net/xujiamin0022016/article/details/88789290 
+			linux下安装7z命令及7z命令的使用
+			https://www.cnblogs.com/wo316885741/p/12161657.html
+			
+			a,ubuntu下7z文件的解压方法
+			安装：apt-get install p7zip-full
+
+			解压7z：使用方法：7z x file.7z 
+
+			解压出来就是文件夹.
+			
+			b,centos
+	4.5 Exiting with failure status due to previous errors
+		Linux tar命令选项顺序不同导致"Exiting with failure status due to previous errors"
+		https://blog.csdn.net/HermitSun/article/details/94494700
+		
+		解压aosp_2_3_3时遇到该错误提示，暂时不用理会。不影响正常编译。
+		
+	4.6 ls 
+		https://www.runoob.com/linux/linux-comm-ls.html
+		Linux ls命令用于显示指定工作目录下之内容（列出目前工作目录所含之文件及子目录)。
+		
+		语法
+		 ls [-alrtAFR] [name...]
+		参数 :
+
+		-a 显示所有文件及目录 (ls内定将文件名或目录名称开头为"."的视为隐藏档，不会列出)
+		-l 除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出
+		-r 将文件以相反次序显示(原定依英文字母次序)
+		-t 将文件依建立时间之先后次序列出
+		-A 同 -a ，但不列出 "." (目前目录) 及 ".." (父目录)
+		-F 在列出的文件名称后加一符号；例如可执行档则加 "*", 目录则加 "/"
+		-R 若目录下有文件，则以下之文件亦皆依序列出
+		
+		
+		
+(5)	、ubuntu 安装 vmwaretools 
+	yum -y install perl gcc make kernel-headers kernel-devel
+	yum repolist all //查看拥有的仓库
+	您可以使用 yum-config-manager --enable &lt; 仓库名&gt；来启用仓库
+	原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
+(7) 系统管理
+	7.1 free 
+	7.2 Linux uname 命令
+		Linux uname（英文全拼：unix name）命令用于显示系统信息。
+		uname 可显示电脑以及操作系统的相关信息。
+		uname [-amnrsv][--help][--version]
+		
+		-r或--release 　显示操作系统的发行编号。//即为内核版本。
+	7.3 kill
+		kill [-s <信息名称或编号>][程序]　或　kill [-l <信息编号>] 
+		1 (HUP)：重新加载进程。
+		9 (KILL)：杀死一个进程。
+		15 (TERM)：正常停止一个进程。
+(8) 系统设置 
+	8.1 insmod 
+		rmmod(选项)(参数)
+		
+		选项：
+		-v：显示指令执行的详细信息；
+		-f：强制移除模块，使用此选项比较危险；
+		-w：等待着，直到模块能够被除时在移除模块；
+		-s：向系统日志（syslog）发送错误信息。把信息输出至syslog常驻服务，而非终端机界面。
+		
+		参数  模块名：要移除的模块名称。
+		
+		Linux rmmod（英文全拼：remove module）命令用于删除模块。
+
+		执行 rmmod 指令，可删除不需要的模块。Linux 操作系统的核心具有模块化的特性，应此在编译核心时，务须把全部的功能都放如核心。你可以将这些功能编译成一个个单独的模块，待有需要时再分别载入它们。
+	8.2 linux export 的作用
+		https://www.runoob.com/linux/linux-comm-export.html
+		
+		【bailyzheng】
+		https://blog.csdn.net/bailyzheng/article/details/7488769
+		export [-fnp][变量名称]=[变量设置值]
+		
+		source+脚本文件 //脚本文件中可以不用export定义，在当前shell下也可以使用定义的变量。
+		文章内容：对应验证调试项目位置：android-knowledge-principle-interview\35-linux-mudule\shell_project\export_test_project
+	
+(10) 账户相关。
+		https://jingyan.baidu.com/article/a17d5285eb93ea8099c8f24d.html
+	10.1  ubuntun 16 添加root用户 
+		https://blog.csdn.net/sunxiaoju/article/details/51993091
+		
+		sudo passwd -u root // 创建root用户
+		sudo passwd root //给root 账户设置 密码。
+		su root //进入root账户。
+	10.2 $表示普通用户
+		#表示超级用户，也就是root用户
+	10.3 切换用户
+		su username //切换用户的命令为：
+		sudo su //从普通用户切换到root用户，还可以使用该命令，此时只需要输入当前用户的密码就可以切换到root用户了。
+		su root //从普通用户切换到root用户
+		exit // ctrl+d  在终端输入exit或logout或使用快捷方式ctrl+d，可以退回到原来用户，其实ctrl+d也是执行的exit命令
+(11) Linux中.swp 文件的产生与解决方法
+			https://blog.csdn.net/qq_42200183/article/details/81531422
+(12) rm 删除数据恢复。
+	12.1、test.txt
+		lsof  | grep test.txt
+		lsof: WARNING: can't stat() fuse.gvfsd-fuse file system /run/user/112/gvfs
+			Output information may be incomplete.
+			有警告没关系，但是没有列出文件。
+			需要root权限，验证root用户下，也是这个提示。
+			如：https://www.jianshu.com/p/e5b9225d4ca9
+				
+			lsof: WARNING: can't stat() fuse.gvfsd-fuse file system
+			
+			参考资料：https://unix.stackexchange.com/questions/171519/lsof-warning-cant-stat-fuse-gvfsd-fuse-file-system
+			
+		
+		
+	12.2、Linux下用rm删除的文件的恢复方法
+		a、https://www.cnblogs.com/rgqancy/p/10169054.html
+		
+		
+		b、Linux恢复误删除的文件或者目录
+		https://www.jianshu.com/p/662293f12a47
+		
+		Linux下用rm删除的文件的恢复方法
+		
+	12.3、lsof 需要root权限吗 
+	
+		
+	12.4、FUSE filesystem
+		1.FUSE简介（译）
+			https://blog.csdn.net/coroutines/article/details/39497601
+		
+		2.FUSE简介(原文)
+			http://www.linux.org/threads/fuse.6211/
+		
+		3.FUSE项目位于http://fuse.sourceforge.net/，是一个开源项目
+		
+(13) linux lsof命令详解 
+	13.1、Linux lsof命令详解
+		https://www.cnblogs.com/sparkbj/p/7161669.html
+	13.2、Linux lsof命令详解
+		https://www.cnblogs.com/muchengnanfeng/p/9554993.html
+(14) make
+	14.1 Linux内核--make mrproper与make clean的区别 
+		https://blog.csdn.net/gchww/article/details/7407790
+		
+		先，这两个命令都是用于删除编译内核时产生的相关文件的。
+
+		两者的区别如下：
+
+		make mrproper命令会删除所有的编译生成文件、内核配置文件(.config文件)和各种备份文件，所以几乎只在第一次执行内核编译前才用这条命令。
+
+		make clean命令则是用于删除大多数的编译生成文件，但是会保留内核的配置文件.config，还有足够的编译支持来建立扩展模块。所以你若只想删除前一次编译过程的残留数据，只需执行make clean命令。
+
+		总而言之，make mrproper删除的范围比make clean大，实际上，make mrproper在具体执行时第一步就是调用make clean
+（15）man 命令。
+	15.1 Linux man 命令后面的数字含义及作用
+		https://blog.csdn.net/qq_21792169/article/details/50412417
+		Linux的man很强大，该手册分成很多section，使用man时可以指定不同的section来浏览，各个section意义如下： 
+		
+		1 - commands
+		2 - system calls
+		3 - library calls
+		4 - special files
+		5 - file formats and convertions
+		6 - games for linux
+		7 - macro packages and conventions
+		8 - system management commands
+		9 - 其他
+		解释一下, 
+		1是普通的命令
+		2是系统调用,如open,write之类的(通过这个，至少可以很方便的查到调用这个函数，需要加什么头文件)
+		3是库函数,如printf,fread
+		4是特殊文件,也就是/dev下的各种设备文件
+		5是指文件的格式,比如passwd, 就会说明这个文件中各个字段的含义
+		6是给游戏留的,由各个游戏自己定义
+		7是附件还有一些变量,比如向environ这种全局变量在这里就有说明
+		8是系统管理用的命令,这些命令只能由root使用,如ifconfig
+16,查看字符集
+	man iconv
+	iconv -l 
+17 其它命令
+	17.1 Linux下查看可执行文件、动态库的ELF头等信息
+		

@@ -1,6 +1,25 @@
 01 资源
-	android源码及kernel源码：
+	android源码及kernel源码在线查看：
+	
 	http://androidxref.com/
+	
+	Android 源码，在线阅读更方便！！！
+	https://blog.csdn.net/plokmju88/article/details/103355021 
+	AndroidXRef 提供了 Android 源码的交叉索引，可以快速的搜索符合特定条件的 Android 源码，后台是基于 OpenGrok 引擎，OpenGrok 是一个快速的，便于使用的源码搜索引擎对对照引擎，它能够帮助我们快速的搜索、定位以及对照代码树。
+		高级搜索，参考文档：
+		http://androidxref.com/7.1.1_r6/help.jsp
+		
+	GrepCode
+	【Csdn 7月21日消息】GrepCode在http://grepcode.com网站上发布了一款Java源代码搜索引擎。与现有的搜索引擎相比，GrepCode将代码搜索提高到了一个全新的水平。
+
+	除了语法高亮（highlight）和Java文档翻译，GrepCode不仅为开发者提供给了大纲视图和Java类型层级视图，更提供了更加友好的用户界面。用户可以非常快速地找到某一特定项目版本的相关内容。GrepCode也允许用户从调用函数（caller function）中浏览函数内容。堆栈跟踪（Stack trace）搜索让程序员无需下载安装源文件到第三方库中，即可快速找到代码。
+	
+	使用Android Studio阅读整个Android源码
+	https://blog.csdn.net/dj0379/article/details/45303509/? 
+	https://blog.csdn.net/fengxingzhe001/article/details/78200446
+	
+	使用AndroidStudio查看并调试Android源码
+	https://blog.csdn.net/cfy137000/article/details/83718735? 
 	
 	01.2 麦可网张凌华Sundy Android嵌入式底层视频课程 
 		最新Tiny210光盘资料		

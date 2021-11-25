@@ -403,4 +403,16 @@
 		com.sp.spmultipleapp.activity.AnimationTestActivity
 	33.1 android imageview围绕中心旋转动画
 		https://blog.csdn.net/weixin_33858336/article/details/92999995 
-	
+34 日志及计时
+	34.1 android.util.TimingsTraceLog
+		分析该类。
+		阅读系统源码发现这个用法。
+35 BitmapShader 用法详解
+	35.1 BitmapShader 用法详解
+		https://my.oschina.net/ososchina/blog/356066  
+		
+		使用BitmapShader-实现圆角和圆形Bitmap
+		https://www.jianshu.com/p/e116d8f69058
+		
+		BitmapShader的简单应用
+		https://blog.csdn.net/t1623183652/article/details/53008673

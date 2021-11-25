@@ -431,4 +431,31 @@
 			type: "spritesheet"
 		}
 	game.load.spritesheet
+22 广播
+	function startScanQrByType(type){
+		console.log("game.StatesNew.fifthScene -- startScanQrByType call,type:" + type);
+
+		var signal = new Phaser.Signal();
+		signal.add(that.typeCallback,this,1,type);
 		
+		signal.dispatch(1);
+	};
+	
+	this.typeCallback = function(){
+		console.log("game.StatesNew.fifthScene -- typeCallback,arguments:" + arguments);
+		
+		if(arguments.length >=2){
+			console.log("game.StatesNew.fifthScene -- typeCallback,arguments[0]:" + arguments[0]);
+			console.log("game.StatesNew.fifthScene -- typeCallback,arguments[1]:" + arguments[1]);
+			if("elephant" == arguments[1]){
+				if(1 == arguments[0]){
+					game.add.image(100 + 5,100 + 5,'fifth_scene_elephant');
+					elephantSelectedRight = true;				
+
+				}else{
+					elephantSelectedRight = false;
+				}
+				that.currentSceneVoicePlay();				
+			}
+		}			
+	};
