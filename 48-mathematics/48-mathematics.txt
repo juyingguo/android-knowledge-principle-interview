@@ -1,3 +1,17 @@
+0.
+	0.10 
+		用数学画图软件
+		用数学画图软件——Graph绘制函数图形
+		https://jingyan.baidu.com/article/ab0b5630ea750f815afa7dc6.html 
+		https://www.zhihu.com/question/22173683
+		
+		a,Sketchpad 
+			http://www.kxdw.com/soft/23820.html
+		b,viso
+			转到：【viso工具模块】
+		c,Maplesoft中国
+			
+		
 1. 正交 （数学名词） 
 	https://baike.baidu.com/item/%E6%AD%A3%E4%BA%A4/36310?fr=aladdin
 	
