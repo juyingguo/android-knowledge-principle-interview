@@ -264,7 +264,7 @@
 		
 		source+脚本文件 //脚本文件中可以不用export定义，在当前shell下也可以使用定义的变量。
 		文章内容：对应验证调试项目位置：android-knowledge-principle-interview\35-linux-mudule\shell_project\export_test_project
-	
+		
 (10) 账户相关。
 		https://jingyan.baidu.com/article/a17d5285eb93ea8099c8f24d.html
 	10.1  ubuntun 16 添加root用户 
@@ -364,4 +364,6 @@
 	iconv -l 
 17 其它命令
 	17.1 Linux下查看可执行文件、动态库的ELF头等信息
+18 ubuntu16.04 查看系统可用内存
+	https://blog.csdn.net/weixin_30826095/article/details/99188548
 		

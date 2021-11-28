@@ -9,11 +9,16 @@
 	1.3 UBUNTU16.04编译ANDROID源码系列二—— ANDROID 5.1和ANDROID 6.0及踩坑
 		https://www.freesion.com/article/705929676/ 
 		
+	1.4 这里要注意编译之前可能一些工具安装不完整，
+		官网要求：
+		https://source.android.com/source/initializing.html  参考官网配置 
+	1.5 Ubuntu16.04编译Android源码系列二—— android 5.1和android 6.0及踩坑
+		https://blog.csdn.net/u012195899/article/details/93315489 
 2. https://blog.csdn.net/weixin_30915951/article/details/95101684  
 	
-	1、安装jdk7
+	2.1、安装jdk7
 		参考：35-04-linux-install-jdk.txt
-	2、安装编译所需的依赖
+	2.2、安装编译所需的依赖
 
 		以下提到的编译需要依赖的程序，请务必确认每个都安装成功：
 
@@ -30,7 +35,8 @@
 		sudo apt-get install lib32z-dev ccache 
 		sudo apt-get install libgl1-mesa-dev libxml2-utils xsltproc unzip m4
 		
-	3. 异常
+		
+	2.3. 异常
 		3.1 a,
 				host SharedLib: libnativehelper_32 (out/host/linux-x86/obj32/lib/libnativehelper.so)
 				prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6//x86_64-linux/bin/ld: 
@@ -74,3 +80,180 @@
 			setp3: 执行make update-api后继续编译就正常了。
 			
 			3.1.2 ld.gold 是什么。转到[01-ubuntu-os-learn-record.txt]
+		3.2 
+			prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6//x86_64-linux/bin/ld: error: out/host/linux-x86/obj32/SHARED_LIBRARIES/libjavacore_intermediates/luni/src/main/native/android_system_OsConstants.o: file is empty
+			libcore/luni/src/main/native/Register.cpp:36: error: undefined reference to 'register_android_system_OsConstants(_JNIEnv*)'
+			clang: error: linker command failed with exit code 1 (use -v to see invocation)
+			make: *** [out/host/linux-x86/obj32/lib/libjavacore.so] Error 1
+			make: *** Waiting for unfinished jobs.... 
+			
+			3.2.1 编译android5.1 源码 遇到错误undefined reference to 'register_android_system_OsConstants(_JNIEnv*)'
+				https://blog.csdn.net/besidemyself/article/details/51006549 
+				
+				a,是因为 在编译android_system_OsConstants.P 时，由于某种原因Ubuntu 卡住了，而多数是因为用户强制结束编译再启动编译而编译出来的却是android_system_OsConstants.d 不完整导致，直接删除 android_system_OsConstants.d 获取清除之前编译的，再次编译即可。这里要注意编译之前可能一些工具安装不完整，官网要求：https://source.android.com/source/initializing.html  参考官网配置。
+				b,sudo find . -iname "*android_system_OsConstants.d*"
+					./out/host/linux-x86/obj32/SHARED_LIBRARIES/libjavacore_intermediates/luni/src/main/native/android_system_OsConstants.d
+			
+			3.2.2 
+				make: *** [out/host/linux-x86/obj32/SHARED_LIBRARIES/libjavacore_intermediates/luni/src/main/native/
+				https://blog.csdn.net/dreamxiang68/article/details/89084350 
+				
+				解决方法：
+
+				方法1：把虚拟机的内存调节到6G。
+
+				方法2：加大交换分区，步骤如下：
+					统一转到:[01-ubuntu-os-learn-record.txt]
+			3.2.3 'register_android_system_OsConstants (_JNIEnv *)' solution
+				https://titanwolf.org/Network/Articles/Article?AID=ef5db2c0-b699-48bd-834c-92ea1db58583 
+				
+				The easiest way to add include to environment variables: JAVA_HOME/include
+				my config is error:JAVA_HOME not JAVAHOME
+			3.2.4 Building AOSP for Nexus 5, clang error
+				https://stackoverflow.com/questions/42304796/building-aosp-for-nexus-5-clang-error 
+				
+				In build/Android.common_build.mk, the line
+
+				ART_HOST_CLANG := true 
+				turns on clang build support by default.
+
+				Turn it off by simply commenting out the line. Or, if you want, make the condition ifneq ($(WITHOUT_HOST_CLANG),true) return false to skip the clause.
+				
+			3.2.5 [摘要：編譯5.1的時間碰到 undefined reference to 'register_android_system_OsConstants(_JNIEnv*)' 
+				log以下： host SharedLib: libJavacore_32 (out/host/linux-x86/obj32/li]
+				https://www.itread01.com/articles/1478136325.html 
+				
+				是因為 在編譯android_system_OsConstants.P 時，由於某種原因ubuntu 卡住了，
+				而多數是因為用戶強制結束編譯再啟動編譯而編譯出來的卻是android_system_OsConstants.d 不完整導致，
+				直接刪除 android_system_OsConstants.d 
+				獲取清除之前編譯的，再次編譯即可。
+		3.3 Segmentation fault (core dumped)
+		
+		3.4 ubuntu16.04 编译android 源码出现的错误
+			https://blog.csdn.net/love_xiaozhao/article/details/51701334 
+		3.5 
+			File "../../base/android/jni_generator/jni_generator.py", line 996, in GenerateJNIHeader
+				jni_from_javap = JNIFromJavaP.CreateFromClass(input_file, namespace)
+			  File "../../base/android/jni_generator/jni_generator.py", line 507, in CreateFromClass
+				stderr=subprocess.PIPE)
+			  File "/usr/lib/python2.7/subprocess.py", line 679, in __init__
+				errread, errwrite)
+			  File "/usr/lib/python2.7/subprocess.py", line 1259, in _execute_child
+				raise child_exception
+			OSError: [Errno 2] No such file or directory
+			
+			引用：
+			Android4.4/CM11编译常见错误及解决方法！
+			https://www.it610.com/article/1292379991459307520.htm 
+			少装了javap工具
+			update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.6.0_45/bin/java 1
+	2.4 aosp5.1 编译生成的自带Kernel镜像位置。
+		a,参考aosp2.3.x 编译生成的自带Kernel镜像位置。参考[android.2.3.5_build-record.txt]。
+		b,android-5.1.1_r1$ find . -iname "*kernel-qemu*"
+			./prebuilts/qemu-kernel/x86/kernel-qemu
+			./prebuilts/qemu-kernel/x86/2.6/kernel-qemu
+			./prebuilts/qemu-kernel/arm64/kernel-qemu
+			./prebuilts/qemu-kernel/mips/kernel-qemu
+			./prebuilts/qemu-kernel/mips/2.6/kernel-qemu
+			./prebuilts/qemu-kernel/arm/kernel-qemu
+			./prebuilts/qemu-kernel/arm/kernel-qemu-armv7
+			./prebuilts/qemu-kernel/arm/2.6/kernel-qemu
+			./prebuilts/qemu-kernel/arm/2.6/kernel-qemu-armv7
+			./prebuilts/qemu-kernel/x86_64/kernel-qemu
+	2.5 
+		a,
+			eink@eink-virtual-machine:~/testproject/android/aosp/android-5.1.1_r1# emulator -kernel ./prebuilts/qemu-kernel/arm/kernel-qemu -sysdir ./out/target/product/generic -system ./out/target/product/generic/system.img -data ./out/target/product/generic/userdata.img -ramdisk ./out/target/product/generic/ramdisk.img 
+		
+			emulator: WARNING: system partition size adjusted to match image file (550 MB > 200 MB)
+
+			emulator: WARNING: data partition size adjusted to match image file (550 MB > 200 MB)
+
+			WARNING: userdata image already in use, changes will not persist!
+			Creating filesystem with parameters:
+				Size: 576716800
+				Block size: 4096
+				Blocks per group: 32768
+				Inodes per group: 7040
+				Inode size: 256
+				Journal blocks: 2200
+				Label: 
+				Blocks: 140800
+				Block groups: 5
+				Reserved block group size: 39
+			Created filesystem with 11/35200 inodes and 4536/140800 blocks
+			WARNING: cache image already in use, changes will not persist!
+			Creating filesystem with parameters:
+				Size: 69206016
+				Block size: 4096
+				Blocks per group: 32768
+				Inodes per group: 4224
+				Inode size: 256
+				Journal blocks: 1024
+				Label: 
+				Blocks: 16896
+				Block groups: 1
+				Reserved block group size: 7
+			Created filesystem with 11/4224 inodes and 1302/16896 blocks
+			a1,没有启动aosp5.1的模拟器。感觉还是之前aosp2.3的模拟器。是emolator配置路径问题吧？
+			a2,
+				https://blog.csdn.net/m0_37655835/article/details/59680479?
+				只需要在emulator后面加跟参数：emulator -partition-size 1024 即可
+	2.6 如何加快编译速度
+		参考：【深入解析安卓5.0系统】2.2.4
+	2.6 如何创建sdcard
+		参考：Android驱动开发与移植实战详解.pdf 【3.8】
+		
+		android模拟器中SDCard创建全解析 
+		https://www.cnblogs.com/tankaixiong/archive/2010/10/25/1860864.html 
+		https://blog.csdn.net/q394895302/article/details/46964847? 
+		
+		windows上创建：
+		sdk\tools>mksdcard 100M D:\sdcard-100m.img
+		 //复制都ubuntu上sdcard/sdcard-100m.img，再加载
+		emulator  -sdcard sdcard/sdcard-100m.img -partition-size 2048 
+		
+		2.6.2 在此sdcard上无法执行可执行文件。
+			root@generic:/sdcard/testbinder # ./test_server                                
+			/system/bin/sh: ./test_server: can't execute: Permission denied
+			
+			移动到data下可以执行了。
+			root@generic:/data/testbinder # ./test_server &                                
+			[1] 1669
+
+
+	2.7 aosp5.1 mmm ./ 模块编译时，把之前编译的镜像都删除了。
+		*** rm -rf out/target/product/generic/data/* out/target/product/generic/data-qemu/* out/target/product/generic/userdata-qemu.img out/host/linux-x86/obj/NOTICE_FILES out/host/linux-x86/sdk out/target/product/generic/*.img out/target/product/generic/*.ini out/target/product/generic/*.txt out/target/product/generic/*.xlb out/target/product/generic/*.zip out/target/product/generic/kernel out/target/product/generic/data out/target/product/generic/skin out/target/product/generic/obj/APPS out/target/product/generic/obj/NOTICE_FILES out/target/product/generic/obj/PACKAGING out/target/product/generic/recovery out/target/product/generic/root out/target/product/generic/system out/target/product/generic/vendor out/target/product/generic/oem out/target/product/generic/dex_bootjars out/target/product/generic/obj/JAVA_LIBRARIES out/target/product/generic/obj/FAKE out/target/product/generic/obj/EXECUTABLES/adbd_intermediates out/target/product/generic/obj/STATIC_LIBRARIES/libfs_mgr_intermediates out/target/product/generic/obj/EXECUTABLES/init_intermediates out/target/product/generic/obj/ETC/mac_permissions.xml_intermediates out/target/product/generic/obj/ETC/sepolicy_intermediates out/target/product/generic/obj/ETC/init.environ.rc_intermediates
+		*** Done with the cleaning, now starting the real build.
+		make: Entering directory `/home/eink/testproject/android/aosp/android-5.1.1_r1'
+		Import includes file: out/target/product/generic/obj/EXECUTABLES/test_client_intermediates/import_includes
+		target thumb C: test_client <= external/APP_0003_Binder_C_App/./test_client.c
+		target thumb C: test_client <= external/APP_0003_Binder_C_App/./binder.c
+		target Executable: test_client (out/target/product/generic/obj/EXECUTABLES/test_client_intermediates/LINKED/test_client)
+		target Symbolic: test_client (out/target/product/generic/symbols/system/bin/test_client)
+		Export includes file: external/APP_0003_Binder_C_App/./Android.mk -- out/target/product/generic/obj/EXECUTABLES/test_client_intermediates/export_includes
+		target Strip: test_client (out/target/product/generic/obj/EXECUTABLES/test_client_intermediates/test_client)
+		Install: out/target/product/generic/system/bin/test_client
+		Import includes file: out/target/product/generic/obj/EXECUTABLES/test_server_intermediates/import_includes
+		target thumb C: test_server <= external/APP_0003_Binder_C_App/./test_server.c
+		external/APP_0003_Binder_C_App/./test_server.c: In function 'hello_service_handler':
+		external/APP_0003_Binder_C_App/./test_server.c:94:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+		   for (i = 0; i < len; i++)
+						 ^
+		target thumb C: test_server <= external/APP_0003_Binder_C_App/./binder.c
+		target Executable: test_server (out/target/product/generic/obj/EXECUTABLES/test_server_intermediates/LINKED/test_server)
+		target Symbolic: test_server (out/target/product/generic/symbols/system/bin/test_server)
+		Export includes file: external/APP_0003_Binder_C_App/./Android.mk -- out/target/product/generic/obj/EXECUTABLES/test_server_intermediates/export_includes
+		target Strip: test_server (out/target/product/generic/obj/EXECUTABLES/test_server_intermediates/test_server)
+		Install: out/target/product/generic/system/bin/test_server
+		make: Leaving directory `/home/eink/testproject/android/aosp/android-5.1.1_r1'
+
+		#### make completed successfully (39 seconds) ####
+		
+		
+		分析：是用户不同引发的吗？
+			编译时使用eink用户，执行命令:sudo make -j3
+			模块编译使用su切换到root用户。再执行mmm。
+			
+			根据在不同用户下root和eink用户。执行source build/envsetup.sh,及lunch对应的默认配置不同。
+			如果在root下执行那两个命令选择combo,则再使用sudo make -j3编译时，选择的配置并不是root用户下配置的版型信息，而是eink用户下默认配置的版型信息。
+			

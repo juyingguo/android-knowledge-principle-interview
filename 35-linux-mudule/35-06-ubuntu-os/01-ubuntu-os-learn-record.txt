@@ -187,8 +187,27 @@
 	7.2 extend扩展分区，逻辑分区含义及作用。
 		
 	7.3 VMware虚拟机 Linux系统 Ubuntu 16.04 硬盘/磁盘扩容（超详细图文详解！亲测有效！）
-		https://blog.csdn.net/m0_43403238/article/details/85480314
+		https://blog.csdn.net/m0_43403238/article/details/85480314 
 		
+	7.4 Ubuntu 增加swap空间大小
+		a,加大交换分区，步骤如下：
+
+		sudo fallocate -l 4G /swapfile
+		sudo chmod 600 /swapfile
+		sudo mkswap /swapfile
+		sudo swapon /swapfile
+		开机自动挂载swap：
+		使用 vi 或 nano 在 /etc/fstab 文件底部添加如下内容：
+		/swapfile none swap sw 0 0
+		————————————————
+				
+		b,Ubuntu 增加swap空间大小
+			
+			https://www.cnblogs.com/magicpig666/articles/9772003.html 
+		c，【Ubuntu16.04 扩大内存空间 设置虚拟内存 史上最详细 】
+			http://www.xiaoheidiannao.com/220015.html
+	7.5 Linux swap分区及作用详解
+		http://c.biancheng.net/view/907.html
 8. ubuntu解压及压缩文件方法
 	8.1 ubuntu下7z文件的解压方法 
 		8.1.1	https://blog.csdn.net/xiaoming_zhong/article/details/52325226
@@ -256,11 +275,17 @@
 		1. 设置IP地址：sudo vi /etc/network/interfaces
 			或者：sudo gedit /etc/network/interfaces
 			auto ens33			
-			ifcae ens33 inet static
+			iface ens33 inet static
             address 192.168.211.135
             netmask 255.255.255.0
             gateway 192.168.211.2
-			
+			或者：
+			auto ens33
+			iface ens33 inet static
+			address 192.168.137.155
+			netmask 255.255.255.0
+			gateway 192.168.137.1
+			————————————————
 			1.1 在linux下把网卡IP配置成和VMnet8一个网段的IP：192.168.X.Z/255.255.255.0（我的配置是192.168.137.200/255.255.255.0）。
 				网关配置成刚才查看的VMnet8那个IP192.168.X.2（我的是192.168.137.2）。
 				在linux下DNS和windows主机的相同。
@@ -287,10 +312,11 @@
 			重启ubuntu生效。
 	13.4 
 		为VMware虚拟机内安装的Ubuntu 16.04设置静态IP地址		
-		https://www.jianshu.com/p/625de9911bfb
+		https://www.jianshu.com/p/625de9911bfb 
 		
 	13.5 VMware 虚拟机 安装ubuntu16.04配置网络NET
-		https://blog.csdn.net/ykf173/article/details/83019736
+		https://blog.csdn.net/ykf173/article/details/83019736 
+		https://blog.csdn.net/ykf173/article/details/83019736 
 			本博客参考配置成功。
 			重启ubuntu生效。
 		(5)、设置DNS(域名解析)

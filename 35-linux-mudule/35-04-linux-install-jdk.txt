@@ -1,4 +1,7 @@
 1.Linux中普通用户和ROOT用户对Java JDK的配置
+	1.0 
+		sudo apt-get install openjdk-8-jdk //这种方式安装后的目录位于：如下
+		 ls /usr/lib/jvm/java-1.8.0-openjdk-amd64/
 	1.1、Linux中普通用户和ROOT用户对Java JDK的配置 
 		https://blog.csdn.net/MOONCOM/article/details/52683409?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
@@ -66,12 +69,12 @@
 		
 		
 		1.1.1、
-			 JAVAHOME=/home/eink/soft_tools/java/jdk1.6.0_45
+			 JAVA_HOME=/home/eink/soft_tools/java/jdk1.6.0_45
 			 JRE_HOME=/home/eink/soft_tools/java/jdk1.6.0_45/jre
 			 CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
 			 PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
 			
-			export JAVAHOME=/home/eink/soft_tools/java/jdk1.6.0_45
+			export JAVA_HOME=/home/eink/soft_tools/java/jdk1.6.0_45
 			export JRE_HOME=/home/eink/soft_tools/java/jdk1.6.0_45/jre
 			export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
 			export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
@@ -246,7 +249,13 @@
 				PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 				
 				b3,source /etc/environment (/home/username/.bashrc)
-				
+		c,
+			sudo update-alternatives --install /usr/bin/javap javap /home/eink/soft_tools/java/java-7-openjdk-amd64/bin/javap 300
+			sudo update-alternatives --install /usr/bin/javah javah /home/eink/soft_tools/java/java-7-openjdk-amd64/bin/javah 300
+			sudo update-alternatives --install /usr/bin/javadoc javadoc /home/eink/soft_tools/java/java-7-openjdk-amd64/bin/javadoc 300
+			sudo update-alternatives --install /usr/bin/jar jar /home/eink/soft_tools/java/java-7-openjdk-amd64/bin/jar 300
+			sudo update-alternatives --install /usr/bin/jarsigner jarsigner /home/eink/soft_tools/java/java-7-openjdk-amd64/bin/jarsigner 300
+
 2. ubuntu 16.4 卸载指定版本java 1.6,1.7 
 	2.1 linux下卸载jdk1.7安装jdk1.8 
 		https://blog.csdn.net/reee112/article/details/83036449?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task

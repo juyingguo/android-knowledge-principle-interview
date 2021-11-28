@@ -242,6 +242,9 @@
 	24.1 Linux中记录终端输出到文本文件
 		https://blog.csdn.net/tengh/article/details/41823883
 		
+		b,将linux编译过程中的日志输出到文件
+		https://blog.csdn.net/qq_25623355/article/details/89760962
+		
 	24.2 Ubuntu查看和写入系统日志
 		https://www.cnblogs.com/EasonJim/p/7189491.html
 		
