@@ -9,6 +9,35 @@
 		https://developer.android.google.cn/studio/releases/gradle-plugin 
 		
 		包含项：【各个 Android Gradle 插件版本所需的 Gradle 版本】
+	0.4 使用Android Studio来阅读Android源码
+		mmm development/tools/idegen/
+		mv ./out/target/product/tiny4412/obj/GYP/shared_intermediates/res.java ./out/target/product/tiny4412/obj/GYP/shared_intermediates/res.j
+		sh ./development/tools/idegen/idegen.sh
+
+
+		参考文章
+		使用Android Studio查看Android Lollipop源码
+		http://www.jianshu.com/p/c85984cf99e2
+
+
+		如何使用Android Studio开发/调试Android源码
+		http://www.cnblogs.com/Lefter/p/4176991.html
+		
+		使用Android Studio阅读整个Android源码
+		https://blog.csdn.net/dj0379/article/details/45303509/? 
+		https://blog.csdn.net/fengxingzhe001/article/details/78200446 
+		
+		使用AndroidStudio查看并调试Android源码
+		https://blog.csdn.net/cfy137000/article/details/83718735? 
+		
+		b,但是我相信很多看源码的人是不需要编译的，所以只要一个idegen.jar:
+			http://download.csdn.net/download/zoulu1/9436609 
+			把这个文件copy到out/host/linux-x86/framework/目录下：
+			1
+			$ cp idegen.jar ../cyanogenmod/out/host/linux-x86/framework/idegen.jar 
+			
+			就可以执行命令：
+			 . development/tools/idegen/idegen.sh
 1. Android studio 将 Module 打包成 Jar 包,aar.
 	1.1 Android studio 将 Module 打包成 Jar 包
 		https://www.cnblogs.com/xinaixia/p/7660173.html

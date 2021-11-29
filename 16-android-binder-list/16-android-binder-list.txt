@@ -85,3 +85,4 @@
 	https://www.cnblogs.com/palance/p/5768748.html 
 7. Android进程间通信（IPC）机制Binder简要介绍和学习计划
 	https://blog.csdn.net/Luoshengyang/article/details/6618363 
+8. 定义aidl时，oneway的含义及用法？
