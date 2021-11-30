@@ -256,4 +256,18 @@
 			
 			根据在不同用户下root和eink用户。执行source build/envsetup.sh,及lunch对应的默认配置不同。
 			如果在root下执行那两个命令选择combo,则再使用sudo make -j3编译时，选择的配置并不是root用户下配置的版型信息，而是eink用户下默认配置的版型信息。
-			
+	2.8 TARGET_PRODUCT=aosp_x86
+		emulator  -sdcard sdcard/sdcard-100m.img -partition-size 1024
+		emulator: ERROR: x86 emulation currently requires hardware acceleration!
+		Please ensure KVM is properly installed and usable.
+		CPU acceleration status: KVM is not installed on this machine (/dev/kvm is missing).
+		
+		https://blog.csdn.net/qq_36348823/article/details/81365160 
+		
+		https://blog.csdn.net/mvp_Dawn/article/details/107678057 
+		
+		先关闭虚拟机，选择处理器，勾选虚拟化Intel VT-x/EPT和AMD-V/RVI(V)，启动虚拟机，重新执行source build/envsetup.sh 和lunch命令，接下来就能正常启动虚拟机了
+		
+		https://www.it610.com/article/1294503479578009600.htm 
+		StackOverflow中的解决方案是sudo chmod -R 777 /dev/kvm
+		
