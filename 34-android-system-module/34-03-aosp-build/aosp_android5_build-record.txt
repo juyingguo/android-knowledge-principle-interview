@@ -271,3 +271,15 @@
 		https://www.it610.com/article/1294503479578009600.htm 
 		StackOverflow中的解决方案是sudo chmod -R 777 /dev/kvm
 		
+		2.8.2 
+			not executable ：32-bit ELF file的解决方案（Androidstudio环境下图解）
+			https://blog.csdn.net/Baron_wu/article/details/83997155 
+			Android.mk中使用的是arm的ABI 
+			生成的可执行文件:
+			aosp-eng:
+			out/target/product/generic/system/bin/test_server
+			
+			aosp-x86:
+			out/target/product/generic_x86/system/bin/test_server
+
+			
