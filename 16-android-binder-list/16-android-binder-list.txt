@@ -86,3 +86,20 @@
 7. Android进程间通信（IPC）机制Binder简要介绍和学习计划
 	https://blog.csdn.net/Luoshengyang/article/details/6618363 
 8. 定义aidl时，oneway的含义及用法？
+
+7. 深入解析Android5.0系统(刘超).
+	
+	4.
+	4.3
+		4.3.5 p112
+			a，Binder的init方法对应的native方法中，obj是谁？
+			static , void android_os_Binder_init(JNIEnv* env,jobject obj)
+			
+			b,JavaBBinderHolder中get函数参数obj指的是谁？
+			sp<JavaBBinder> get (JNIEnv* env,jobject obj) //该函数第一调用传递obj，第一次是什么什么时候？
+			
+			c,使用了，jni下的反射技术。
+				如：env->setIntField();
+	4.5 
+		4.5.5 ,p137
+			调用线程和当前线程如何区别？

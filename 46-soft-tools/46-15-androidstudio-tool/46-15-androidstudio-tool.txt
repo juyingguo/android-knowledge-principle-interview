@@ -37,7 +37,10 @@
 			$ cp idegen.jar ../cyanogenmod/out/host/linux-x86/framework/idegen.jar 
 			
 			就可以执行命令：
-			 . development/tools/idegen/idegen.sh
+			 . development/tools/idegen/idegen.sh 
+		c,androidstudio idegen 在配置no libraries 的jdk时提示。
+			Please specify a different SDK name
+			
 1. Android studio 将 Module 打包成 Jar 包,aar.
 	1.1 Android studio 将 Module 打包成 Jar 包
 		https://www.cnblogs.com/xinaixia/p/7660173.html
