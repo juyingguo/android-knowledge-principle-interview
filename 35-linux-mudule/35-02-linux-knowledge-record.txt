@@ -282,4 +282,5 @@
 26 chroot
 	26.1 chroot的作用及详解
 		https://blog.csdn.net/hao707822882/article/details/39500549  
-	
+27 Linux ELF文件格式分析
+	https://blog.csdn.net/xj178926426/article/details/72825630 
