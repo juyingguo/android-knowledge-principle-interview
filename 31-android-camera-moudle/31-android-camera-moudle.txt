@@ -187,3 +187,8 @@
 		
 		已使用工程：\as-some-sample-project-to-github\camera-video-record-play
 	
+14 Android 模拟器下使用虚拟摄像头
+	https://blog.csdn.net/sun_28/article/details/79228027 
+	
+	14.2 用AS自带模拟器实现虚拟摄像头
+		https://zhuanlan.zhihu.com/p/141618924?jdyscene=chat 

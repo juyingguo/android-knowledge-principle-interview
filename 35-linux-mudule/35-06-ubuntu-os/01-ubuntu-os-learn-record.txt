@@ -187,23 +187,42 @@
 	7.2 extend扩展分区，逻辑分区含义及作用。
 		
 	7.3 VMware虚拟机 Linux系统 Ubuntu 16.04 硬盘/磁盘扩容（超详细图文详解！亲测有效！）
-		https://blog.csdn.net/m0_43403238/article/details/85480314 
+		https://blog.csdn.net/m0_43403238/article/details/85480314? 
 		
 	7.4 Ubuntu 增加swap空间大小
 		a,加大交换分区，步骤如下：
 
-		sudo fallocate -l 4G /swapfile
-		sudo chmod 600 /swapfile
-		sudo mkswap /swapfile
-		sudo swapon /swapfile
-		开机自动挂载swap：
-		使用 vi 或 nano 在 /etc/fstab 文件底部添加如下内容：
-		/swapfile none swap sw 0 0
-		————————————————
+			sudo fallocate -l 4G /swapfile
+			sudo chmod 600 /swapfile
+			sudo mkswap /swapfile
+			sudo swapon /swapfile
+			开机自动挂载swap：
+			使用 vi 或 nano 在 /etc/fstab 文件底部添加如下内容：
+			/swapfile none swap sw 0 0
+			————————————————
 				
 		b,Ubuntu 增加swap空间大小
 			
 			https://www.cnblogs.com/magicpig666/articles/9772003.html 
+			
+			1. create a 1G file for the swap.
+			　　sudo fallocate -l 1G /swapfile
+			　　we can verify that the correct amount of space was reserved by typing:
+			　　ls -lh /swapfile
+			2. Enabling the Swap File.
+			　　1.Make the file only accessible by typing:
+			　　　　sudo chmod 600 /swapfile.
+				   2.Make the file as swap space by typing:
+			　　　　sudo mkswap /swapfile
+			　　3.Enabling the swap file and allow our system to start utilizing it .
+			　　　　sudo swapon /swapfile.
+			　　4.Now you can find that the swap space was added by typing:
+			　　　　free -h / (sudo swapon --show)
+			3. Delete the Swap File.
+			　　1.Disabling the swap file
+			　　　　sudo swapoff /swapfile
+			　　2.Remove the swap file
+			　　　　sudo rm -rf  /swapfile
 		c，【Ubuntu16.04 扩大内存空间 设置虚拟内存 史上最详细 】
 			http://www.xiaoheidiannao.com/220015.html
 	7.5 Linux swap分区及作用详解

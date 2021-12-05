@@ -92,7 +92,8 @@
 		（cto网原创）收费课程对比。
 		https://edu.51cto.com/course/13671.html?source=so
 		
-		
+	00.7 
+		http://lxr.linux.no/ident
 01. linux 驱动加载流程。
 	01.1 linux 不同驱动加载流程是否相同。
 	01.2 linux led,lcd,camera,usb等不同驱动加载流程。

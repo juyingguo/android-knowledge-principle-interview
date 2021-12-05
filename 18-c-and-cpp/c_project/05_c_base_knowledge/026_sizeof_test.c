@@ -21,8 +21,10 @@ int main()
    printf("sizeof(int) = %d\n.",sizeof(int));
    printf("sizeof(*n) = %d\n.",sizeof(*n));
    printf("sizeof(n) = %d\n.",sizeof(n));
+    printf("******************\n");
 
-
+    unsigned iodata[512/4];
+    printf("sizeof(iodata) = %d\n.",sizeof(iodata));
 
    free(str);
 
