@@ -69,3 +69,12 @@
 		https://zhidao.baidu.com/question/252505873.html? 
 5 加权平均值
 	https://baike.baidu.com/item/%E5%8A%A0%E6%9D%83%E5%B9%B3%E5%9D%87%E5%80%BC/7688373?fr=aladdin 
+6. 等比数列
+	6.1
+	6.2 等比数列求和公式
+		https://baike.baidu.com/item/%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97%E6%B1%82%E5%92%8C%E5%85%AC%E5%BC%8F/7527367?fr=aladdin 
+		an = a1*q^(n-1)
+		
+		Sn = a1*(1-q^n)/1-q
+		
+		总结：可以使用等比数列公式的。如果少或多一些数据，可以使用Sn减去或添加这些数据，达到能够使用求和公式的目的。
