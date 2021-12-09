@@ -34,3 +34,10 @@
 	
 
 	有重复数据的，写程序设计下？
+	
+	删除操作.
+		child是啥？
+		需要配合下面代码,pp的左右节点指向child
+		if (pp == null) tree = child; //删除的是根节点
+		else if (pp.left == p) pp.left = child;
+		else pp.right = child;
