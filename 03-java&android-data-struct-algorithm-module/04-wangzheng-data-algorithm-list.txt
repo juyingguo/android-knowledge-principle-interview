@@ -41,3 +41,18 @@
 		if (pp == null) tree = child; //删除的是根节点
 		else if (pp.left == p) pp.left = child;
 		else pp.right = child;
+	24.4.二叉查找树的其他操作	
+		a,除了插入、删除、查找操作之外，二叉查找树中还可以支持快速地查找最大节点和最小节点、前驱节点和后继节点。
+		自己实现。
+		b，
+		c,支持重复数据的二叉查找树
+			举例中，插入值相同的节点18,位置不对吧？
+			
+		课后思考
+		今天我讲了二叉树高度的理论分析方法，给出了粗略的数量级。如何通过编程，求出一棵给定二叉树的确切高度呢？
+		
+		node
+		node.left node.right
+		if(node.left != null) 
+		
+		if(node.right != null)
