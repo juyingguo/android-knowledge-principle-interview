@@ -11,7 +11,7 @@ void Person::setName(char *name)
 
 int Person::setAge(int age)
 {
-	if (age < 0 || age > 150)
+	if (age < 0 || age > 180)
 	{
 		this->age = 0;
 		return -1;
@@ -22,7 +22,7 @@ int Person::setAge(int age)
 
 void Person::printInfo(void)
 {
-	printf("name = %s, age = %d, work = %s\n", name, age, work); 
+	printf("name = %s, age = %d, work = %s\n", name, age, work);
 }
 
 void printVersion(void)
