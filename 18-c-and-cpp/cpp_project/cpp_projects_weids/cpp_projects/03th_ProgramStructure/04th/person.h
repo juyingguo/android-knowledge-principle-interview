@@ -7,7 +7,7 @@ class Person {
 private:
 	char *name;
 	int age;
-	char *work;
+	char *work = nullptr;
 
 public:
 	void setName(char *name);

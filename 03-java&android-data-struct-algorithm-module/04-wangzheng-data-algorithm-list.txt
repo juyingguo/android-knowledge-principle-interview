@@ -1,5 +1,8 @@
 0.1	
-	https://github.com/wangzheng0822/algo
+	https://github.com/wangzheng0822/algo 
+	
+	0.1.2使用的大文件资源放到阿里云对应目录下。
+		resource
 一、什么是 RPC 框架
 1.https://blog.csdn.net/b1303110335/article/details/79557292
 二、什么是代码时间复杂度，空间复杂度？
@@ -23,7 +26,12 @@
 				https://blog.csdn.net/weixin_30952103/article/details/97729052 
 			c4 课后思考评论。
 	08.2 参考：数据结构与算法之美学习笔记：第八讲 
-		https://www.icode9.com/content-1-550522.html
+		https://www.icode9.com/content-1-550522.html 
+09 队列：队列在线程池等有限资源池中的应用
+	9.1 
+		队列的应用也非常广泛，特别是一些具有某些额外特性的队列，比如循环队列、
+		阻塞队列、并发队列。它们在很多偏底层系统、框架、中间件的开发中，起着关键性的作用。比如高性能队列Disruptor、 Linux环形缓存，都用到了循环并发队
+		列； Java concurrent并发包利用ArrayBlockingQueue来实现公平锁等。
 23.数据结构与算法之美学习笔记：第二十三讲 
 	23.0 
 		test project:com.algorithm.binarytree.FloorLevelTreeTest
