@@ -31,6 +31,45 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="cpp_projects/03th_ProgramStructure/01th/person.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/03th/dog.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/03th/person.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/04th/dog.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/04th/dog.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/04th/main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/04th/person.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/04th/person.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/05th/dog.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/05th/dog.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/05th/main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/05th/person.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/05th/person.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/06th/dog.cpp" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/06th/dog.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/06th/main.cpp" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/06th/person.cpp" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/06th/person.h" />
 		<Unit filename="cpp_projects/19th_smartpointer/person.cpp">
 			<Option compile="0" />
 			<Option link="0" />
@@ -78,7 +117,10 @@
 		<Unit filename="cpp_projects/20th_light_smartpointer/RefBase.h" />
 		<Unit filename="cpp_projects/20th_light_smartpointer/StrongPointer.h" />
 		<Unit filename="cpp_projects/20th_light_smartpointer/TypeHelpers.h" />
-		<Unit filename="cpp_projects/20th_light_smartpointer/person9.cpp" />
+		<Unit filename="cpp_projects/20th_light_smartpointer/person9.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/01th/RefBase.h" />
 		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/01th/StrongPointer.h" />
 		<Unit filename="cpp_projects/21th_strongpointer_weakpointer/01th/TypeHelpers.h" />

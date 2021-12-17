@@ -126,7 +126,29 @@
 	https://www.cnblogs.com/hellokitty2/p/10768528.html 
 	
 	含： Android各个大版本主要解决问题
-8. Android FrameWork底层开发视频全套 
-	8.1 来源：46-android-learn-resource-record-books.txt
+8. 探索Android FrameWork底层开发视频全套_解密 
+	8.1 来源：12-android-learn-resource-record-books.txt
 		vim 下再次打开其它文件。
 		:sp hello.txt
+		
+		:fg 
+	8.6.Android.mk学习2
+		#指定目录下所有的c文件
+		LOCAL_C_ALL_FILES :=s(call all-c-files-under)
+		LOCAL_MODULE_PATH :=$(LOCAL PATH)/bin #指定输出路径
+		touch修改文件。引起全部编译
+		
+		编译动态库：
+		编译类型修改为 BUILD_SHARED_LIBRARY
+		
+		编译静态库：
+		编译类型修改为 BUILD_STATIC_LIBRARY
+	8.11 
+		ps | grep "netd"
+		
+		kill pid 
+		
+		stop netd
+		start netd
+		
+

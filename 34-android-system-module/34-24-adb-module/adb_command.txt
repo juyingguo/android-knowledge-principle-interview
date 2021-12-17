@@ -240,4 +240,48 @@
 	当我们从手机中复制文件到电脑中时，不希望改变文件的“修改时间”等信息时，可以加上“-p”，这样复制的文件的“修改时间”就是源文件的“修改时间”，而不是创建时的时间了。
 
 	格式：adb pull -a <remote> [<local>]
-			
+10 解决adb进程占用,adb一直重启
+	10.1/////////////解决adb进程占用,adb一直重启////////////
+		adb kill-server
+		adb start-server
+		adb nodaemon server
+		netstat -ano | findstr "5037"
+
+		发现6540占用了 5037端口，继续查看6540的task，发现是wandoujia .如下所示
+
+		tasklist|findstr "6540"
+
+		wandoujia_daemon.exe 6540 Console 1 4,276 K
+
+		接下来问题就好解决了，在任务管理器kill掉wandoujia_daemon.exe ，运行android程序，ok .
+
+		1.关闭豌豆荚进程
+	
+	10.2 解决adb进程占用 
+		5037为adb默认端口 查看该端口情况如下：
+
+		1、查看adb 的进程端口号是什么，输入命令 adb nodaemon server 显示端口号
+
+		2、查看端口号对应的进程pid ,输入命令 netstat -ano 查看对应的端口号的进程号
+
+		netstat -aon|findstr "5037"
+
+		TCP 127.0.0.1:5037 0.0.0.0:0 LISTENING 6540
+
+		发现6540占用了 5037端口，继续查看6540的task，发现是wandoujia .如下所示
+
+		tasklist|findstr "6540"
+
+		wandoujia_daemon.exe 6540 Console 1 4,276 K
+
+		接下来问题就好解决了，在任务管理器kill掉wandoujia_daemon.exe ，运行android程序，ok .
+
+		1.关闭豌豆荚进程
+
+		2.adb kill-server
+
+		3.adb start-server
+
+		4.重启Eclipse
+
+		OK
