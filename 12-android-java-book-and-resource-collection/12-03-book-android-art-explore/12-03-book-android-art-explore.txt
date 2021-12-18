@@ -1,0 +1,15 @@
+00	文档资源
+	00.1 Google I/O 大会总结系列 - Dalvik开发者: Dan Bornstein
+		https://www.it610.com/article/2311014.htm
+1.chapter_1
+2.chapter_2
+	2.5.1 
+		
+3.chapter_3
+	3.4.2 
+9.chapter_9
+	9.2 
+		p326 
+		com.android.server.am.ActivityStackSupervisor#realStartActivityLocked
+			app.thread.scheduleLaunchActivity
+			app.thread来源或如何传递的？
