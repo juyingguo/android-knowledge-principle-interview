@@ -127,11 +127,14 @@
 	
 	含： Android各个大版本主要解决问题
 8. 探索Android FrameWork底层开发视频全套_解密 
+	8.0 学习记录。
+		android4.4;
 	8.1 来源：12-android-learn-resource-record-books.txt
 		vim 下再次打开其它文件。
 		:sp hello.txt
 		
 		:fg 
+		vim用法转到:[35-01-linux_command.txt]
 	8.6.Android.mk学习2
 		#指定目录下所有的c文件
 		LOCAL_C_ALL_FILES :=s(call all-c-files-under)
@@ -144,11 +147,35 @@
 		编译静态库：
 		编译类型修改为 BUILD_STATIC_LIBRARY
 	8.11 
-		ps | grep "netd"
 		
 		kill pid 
 		
 		stop netd
 		start netd
 		
-
+	8.13.init脚本执行和进程守护(1)
+		system/core/init/init.c
+		system/core/rootdir/init.rc
+	8.14.init脚本执行和进程守护(2)
+		system/core/init/property_service.c
+		
+		stop netd
+		start netd
+		
+		ps | grep "netd" #查看指定进程的pid
+		
+		getprop 
+	8.16.Zygote剖析与system_server启动
+		frameworks/base/core/java/com/android/internal/os/RuntimeInit.java
+		frameworks/base/core/java/com/android/internal/os/ZygoteInit.java
+		frameworks/base/core/jni/AndroidRuntime.cpp
+		libcore/dalvik/src/main/java/dalvik/system/Zygote.java
+		dalvik/vm/native/dalvik_system_Zygote.cpp
+	8.18.zygote_load系统资源分析及优化
+		frameworks/base/core/java/com/android/internal/os/ZygoteInit.java 
+		preloadClasses 
+		preloadResources
+			com.android.internal.R.array.preloaded_drawables 
+			frameworks/base/core/res/res/values/arrays.xml
+			
+		logcat | grep "...preloaded"

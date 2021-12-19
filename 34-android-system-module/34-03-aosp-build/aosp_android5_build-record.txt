@@ -256,6 +256,11 @@
 			
 			根据在不同用户下root和eink用户。执行source build/envsetup.sh,及lunch对应的默认配置不同。
 			如果在root下执行那两个命令选择combo,则再使用sudo make -j3编译时，选择的配置并不是root用户下配置的版型信息，而是eink用户下默认配置的版型信息。
+			
+			结论处理：统一使用eink登录后，su切换到root用户下。选择版型combo【5. aosp_x86-eng】
+			
+		2.7.2 如何编译多个平台的模拟器镜像文件？
+		
 	2.8 TARGET_PRODUCT=aosp_x86
 		emulator  -sdcard sdcard/sdcard-100m.img -partition-size 1024
 		emulator: ERROR: x86 emulation currently requires hardware acceleration!
