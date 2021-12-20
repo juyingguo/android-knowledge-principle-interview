@@ -83,4 +83,6 @@
 		force group = nogroup
 		public = yes
 		writable = yes
-		available = yes
+		available = yes 
+3. SambaÔ´Âë·ÖÎöÓëÒÆÖ²
+	https://blog.csdn.net/stone_kingnet/article/details/2997499 

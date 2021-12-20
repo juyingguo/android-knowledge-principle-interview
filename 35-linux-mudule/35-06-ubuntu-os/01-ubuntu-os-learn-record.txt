@@ -19,8 +19,13 @@
 		3、/etc--------- 系统的配置文件目录。密码文件、设置网卡信息、环境变量的设置等都在此目录中，许多网络配置文件也在其中。具体 参见 。
 		
 		等等，见网页。
-		
+	01.4
+		Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-142-generic x86_64)
 
+		 * Documentation:  https://help.ubuntu.com
+		 * Management:     https://landscape.canonical.com
+		 * Support:        https://ubuntu.com/advantage	
+	
 1. 解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
 	1.1、解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
 		https://blog.csdn.net/qq_40402685/article/details/89917477
@@ -335,10 +340,21 @@
 		
 	13.5 VMware 虚拟机 安装ubuntu16.04配置网络NET
 		https://blog.csdn.net/ykf173/article/details/83019736 
-		https://blog.csdn.net/ykf173/article/details/83019736 
+		https://blog.csdn.net/ykf173/article/details/83019736 		
+		
 			本博客参考配置成功。
 			重启ubuntu生效。
-		(5)、设置DNS(域名解析)
+			本博客参考：
+			https://www.linuxidc.com/Linux/2017-02/140135.htm 
+		
+		13.5.4 查看你的网卡名字(ip a 命令)，本人的是ens33
+			auto ens33
+			iface ens33 inet static #配置为静态网址
+			address 192.168.137.155#在之前查看的网段内
+			netmask 255.255.255.0#子网掩码
+			gateway 192.168.137.1#网关，是本机为VMnaet8分配的地址
+		13.5.5
+			设置DNS(域名解析)
 
 			使用管理员root登录root#: vi /etc/resolvconf/resolv.conf.d/head 
 
@@ -356,6 +372,14 @@
 
 			/etc/resolv.conf会自动添加你添加的nameserver
 		
+		13.5.6、最后一步，重启网络服务
+
+			root@#: /etc/init.d/networking restart 
+			
+			a,[可能都配置正确，但还是无法使用。比如通过ifconfig 查看到的ip是192.168.211.135,而实际配置的为192.168.137.155。重启ubuntu即可。]
+			b,断网后再联网，ip又变成192.168.211.135。
+				经过排查发现：设置-network-Options-IPv4 Settings-Address中添加了该ip.
+				在此处添加【192.168.137.155】，与通过【 /etc/network/interfaces】配置的ip一样就不会再变化了
 	13.6 Ubuntu 16.04 VMware虚拟机 NAT模式 配置静态ip 
 		[可部分参考]
 		https://www.linuxidc.com/Linux/2017-02/140135.htm 
@@ -366,3 +390,5 @@
 
 15 ld.gold使用指南
 	https://blog.csdn.net/ayu_ag/article/details/78552801 
+16 ubuntu下复制粘贴
+	都用鼠标滚动键。
