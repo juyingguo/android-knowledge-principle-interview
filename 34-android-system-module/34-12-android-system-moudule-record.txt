@@ -150,5 +150,5 @@
 		
 		stop netd
 		start netd
-		
-
+	8.19.开机界面分析
+		#pri kind tag 搜索
