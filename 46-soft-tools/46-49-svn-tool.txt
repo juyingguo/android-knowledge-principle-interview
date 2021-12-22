@@ -11,8 +11,11 @@
 		https://tortoisesvn.net/downloads.html
 		
 		安装目录下也有，是英文版本的。
-2.SVN常用命令
+2.SVN常用命令或操作
 	https://blog.csdn.net/ithomer/article/details/6187464 
+	
+	2.2 svn 修改的文件还未未提交，需要还原为未修改时的状态。
+		revert 
 	
 3. svn客户端操作。经常漏提交新增的文件。
 	应先add,再提交。

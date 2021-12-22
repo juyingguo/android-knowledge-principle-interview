@@ -164,4 +164,6 @@
 3. javascript 休眠几秒
 	https://www.cnblogs.com/linliu/p/13042391.html
 	https://www.jb51.net/article/52105.htm 
+4. javascript多行注释中换行
+	查看js其它框架源码。如phaser,直接空一行就行。
 	

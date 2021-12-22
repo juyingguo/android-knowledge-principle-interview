@@ -180,4 +180,11 @@
 			
 		logcat | grep "...preloaded"
 	8.19.开机界面分析
-			#pri kind tag 搜索
+		#pri kind tag 搜索。ctag
+		
+		system/core/libutils/Threads.cpp
+		frameworks/base/cmds/bootanimation/bootanimation_main.cpp 
+		
+		bootanimation.zip:
+		/system/media/bootanimation.zip
+		

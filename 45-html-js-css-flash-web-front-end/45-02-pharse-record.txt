@@ -254,9 +254,11 @@
 	8.2 分段监听。
 	
 9.动画相关
-	9.1 放大缩小：模拟闪动动画。
+	9.1 放大缩小：模拟闪动动画。（播放完成需要处理恢复原状）
 		
 		//注意：需要添加使用.scale，会自动向右下角放大。否则动画向左上放大，且不会恢复原状。
+		//可以添加回调函数，再恢复原图，也是执行动画。
+		//播放时停止动画，同样需要处理恢复原状
 		var cartween = game.add.tween(this.mycar.scale).to( { x: 1.2, y: 1.2 }, 500, Phaser.Easing.Linear.None, true);
 		cartween.onComplete.add(this.carScaleComplete, this);
 
@@ -333,12 +335,17 @@
 		涉及到播放速度，次数就不好控制了。
 		
 	9.5 对于无限循环动画，无法自动执行结束函数回调。而通过手动调用有不生效。咋解决？
-		通过调用动画对象的stop(complete)，才会自动调用完成函数。
+		a,通过调用动画对象的stop(complete)，才会自动调用完成函数。
+		b,停止动画，stop()不带参数，或参数为false,就不会触发完成回调函数
+		c,
 		查看api:
 		stop(complete) → {Phaser.Tween}
 			Stops the tween if running and flags it for deletion from the TweenManager.
 			If called directly the Tween.onComplete signal is not dispatched and no chained tweens are started unless the complete parameter is set to true.
 			If you just wish to pause a tween then use Tween.pause instead.
+			
+		d,无限循环的缩放（虽然带有链式还原动画）大小动画，调用stop(false)停止后，还需要再次执行动画恢复原图。	
+			固定次数循环的缩放（带有链式还原动画），自动停止后，是可以恢复原图的。
 	9.6 //对于闪动几次自动停止的
 				// game.add.tween(that.pig_rice_transplant.scale).to( { x: 3, y: 3 }, 500).to( { x: 1, y: 1 }, 500).repeatAll(3).start();
 	9.7 动画缩放，默认是坐标左上角开始向右下角缩放。
@@ -354,7 +361,23 @@
 			Phaser.Easing.Cubic.Out
 	9.9 Tween中repeatAll函数深入理解？
 		条件：A tween (A) with 3 children (B,C,D) with a repeatAll value of 2 would play as: ABCDABCD before completing.
-
+	9.10 重复动画api理解
+		@param repeat — Should the tween automatically restart once complete? If you want it to run forever set as -1. This only effects this individual tween, not any chained tweens.
+		not any chained tweens？如何理解使用？
+		
+		
+		/** 执行tween动画3次.动画执行完成后自动恢复到动画前的状态。 */
+		this.executeScaleTweenFixCount = function(objectParm){
+			try {
+				return game.add.tween(objectParm.scale).to( { x: 1.2, y: 1.2 }, 700,Phaser.Easing.Bounce.Out).to({x:1,y:1},700).repeatAll(3).start();
+			} catch (error) {        
+			}
+		};
+		repeatAll(3)//实际验证共执行4次。可能本身一次，再加上这个设置的3。所以设置可以减少一次即可。
+	9.11 动画回调函数触发问题。
+		同一个对象，执行动画，添加回调。停止后，该对象再次添加动画并执行，以前添加的回调还会执行。
+		js\phaser-util.js#stopScaleTweenAndAgainToBig
+		
 10 单独函数中，音乐播放完成后。播放动画提示没有animations属性。
 
 	源码：this.test_bag_show_sencond_part_row01_col01.animations.add('move');
@@ -377,9 +400,12 @@
 	11.2 按照[11.1] 配置后，如果直接在html中代码块中script写js是不能提示的。
 		需要写到单独的.js文件中，就有提示了。
 12 点击事件。
-	button点击后如何置为不可点击。
-	destroy，kill 都会销毁，不可见。
-	先采用重新以普通精灵角色添加，只要不是button即可 
+	12.1 button点击后如何置为不可点击。
+		destroy，kill 都会销毁，不可见。
+		先采用重新以普通精灵角色添加，只要不是button即可 
+	12.2 对于透明图片覆盖在普通图片上，普通图片是否可以点击。
+		验证有的可以点击。
+		普通图片可以相互叠加，当前点击过图片的设置标志不再响应点击。
 13 同一个区域更换图片背景。
 	13.1 重绘一个对象。
 	13.2 不重绘一个对象，有没有方式更新背景图片。
@@ -417,9 +443,25 @@
 	preload中不能延迟放到函数中加载，导致图片资源不可用。如下：
 	phaser.min.js:20 Phaser.Cache.getImage: Key "bag_show_sencond_part_row01_col01" not found in Cache.
 18 加载资源多时黑屏。
-	preload时先show一个背景图。做一个进度提示。随后程序中加载资源。
+	18.1 preload时先show一个背景图。做一个进度提示。随后程序中加载资源。
 	
-	https://blog.csdn.net/qq_21506881/article/details/86562465
+		https://blog.csdn.net/qq_21506881/article/details/86562465
+		
+		var preloadSprite = game.add.sprite(10, game.height/2, 'loading');    //资源加载进度条
+    	game.load.setPreloadSprite(preloadSprite);
+		
+	18.2 统一加载资源
+		game.StatesNew.firstScene = function() {
+			this.preload = function() {
+				game.StatesNew.firstScene.preload_for_first_scene();
+			};
+			/** 加载资源。给本场景对象添加方法的方式，便于在本场景对象外部统一调用 */
+			game.StatesNew.firstScene.preload_for_first_scene = function() {
+				game.load.audio('first_scene_sound_1', 'sound/first_scene_sound_1.mp3');
+			};
+			...
+		}
+	
 19 场景切换，动画形式切换。
 	
 20 绘制图片。
