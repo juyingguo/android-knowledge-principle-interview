@@ -187,4 +187,7 @@
 		
 		bootanimation.zip:
 		/system/media/bootanimation.zip
+	8.25.SensorManger分析
+		base/core/java/android/hardware/SystemSensorManager.java
+		frameworks/base/core/jni/android_hardware_SensorManager.cpp
 		

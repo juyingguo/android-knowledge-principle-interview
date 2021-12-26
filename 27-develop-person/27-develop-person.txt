@@ -6,6 +6,11 @@
 	1.4、罗升阳
 		1.4.1、那两年炼就的Android内功修养 。【含读书记录】
 			https://blog.csdn.net/luoshengyang/article/details/8923485
+	1.5、强子播客。
+		https://www.lqnb.xyz/
+		
+		springboot搭建个人博客（前后端分离,附源码）
+		https://www.lqnb.xyz/article/1565349095 
 二、csdn 
 	2.1、 工匠若水 
 		QQ交流群: 519666583

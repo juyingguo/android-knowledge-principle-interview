@@ -7,16 +7,7 @@
 		https://blog.csdn.net/weixin_30509393/article/details/99539153?ops_request_misc=%7B%22request%5Fid%22%3A%22158267948219724846411432%22%2C%22scm%22%3A%2220140713.130056874..%22%7D&request_id=158267948219724846411432&biz_id=0&utm_source=distribute.pc_search_result.none-task
 		
 2.
-3. LruCache
-	3.1 test project
-		com.algorithm.lrutest.LRUCacheTest
-	3.2 Android照片墙完整版，完美结合LruCache和DiskLruCache
-		https://guolin.blog.csdn.net/article/details/34093441 
-		
-	3.3 :LRU算法面试。
-		
-		3.3.1 大厂面试必备:LRU算法-删除最近最未少使用算法(详细附源代码)
-			https://blog.csdn.net/qq_41066066/article/details/106982229? 
+3. 
 		
 4. 页面置换算法OPT,FIFO,LRU,LFU
 	https://blog.csdn.net/qq_38945163/article/details/103534360? 

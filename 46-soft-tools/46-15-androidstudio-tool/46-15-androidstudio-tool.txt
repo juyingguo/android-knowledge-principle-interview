@@ -371,7 +371,25 @@
 	https://blog.csdn.net/qq_43598138/article/details/104091976 
 19 avd
 	19.1 android avd设置graphic automatic hardware software gles
-	当设置为automatic启动模拟器失败。
+		当设置为automatic启动模拟器失败。
+	19.2 利用Android Studio自带的模拟器联网
+		https://blog.csdn.net/qq_36157085/article/details/86595442?
+		https://blog.csdn.net/weixin_42306122/article/details/82563925?
+		
+		a,Android Studio自带的模拟器本身默认是不能上网的，因为默认DNS为10.0.2.3，使用这个DNS是不能上网的
+		b,进入到cmd后，需要输入adb root 将模拟器root一下，才能更改DNS
+		c,
+			接下来输入getprop获取模拟器系统属性。找到[net.eth0.dns1]这一项，发现后面为10.0.2.3，接下来我们输入setprop net.eth0.dns1 192.168.1.1.后面的ip也可为其他，不过我没尝试。（没有[net.eth0.dns1]的话因为系统是Android9.0及以上，建议换到8.0及以下）
+
+			网上很多帖子是[net.dns1]，不过我的模拟器上面dns1前面有eth0，这个大家根据自己的模拟器情况决定。
+
+			然后打开模拟器的数据连接。即可使用模拟器的谷歌浏览器上网。
+			————————————————
+	
+		d,经过以上操作。还是不能上网。
+			模拟器wifi状态为[connected no internet]。
+			重启后，变为[connected]。可以正常上网了。
+		e,配置dns用的ip为192.168.1.1，能否电脑的其它地址。
 20 android studio启动时默认加载的工程设置
 	20.1 【Android Studio】修改默认打开上个项目的设置 
 		https://www.jianshu.com/p/44288b0be8c3 

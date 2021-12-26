@@ -58,3 +58,28 @@
 		b,键盘按下组合键WIN+R，输入“diskmgmt.msc”
 			单击 Win+R 并在运行框中键入“diskpart” 
 			https://www.disktool.cn/jiaocheng/extend-c-drive.html
+11 win8.1中文版安装gpedit.msc
+	11.1 家庭版之类的，好象是没有，除非升级到专业版，或更高的企业版之类的试试。
+	11.2 在其他win8 电脑 上复制 组策略文件 在你电脑上 就好
+	11.3 Group Policy Editor 的缩写，就是组策略编辑器
+		https://zhidao.baidu.com/question/573867264.html
+	11.4 win8系统找不到文件gpedit.msc的设置办法
+		https://www.shenduwin8.com/xtgz/12145.html 
+		https://www.shenduwin8.com/sdjsnew/39185.html
+		
+		搜索或找到名为“gpedit.msc”的文件，将此文件传输到自己的电脑“C:/windows/system32”目录下即可
+	11.5 gpedit.msc win8.1 最新免费版 / gpedit.msc win8下载
+		http://www.downxia.com/downinfo/364075.html
+		
+		修改注册表时。找不到MMC。
+		但是有的朋友按照以上方法却找不到MMC，这时我们就要新建一个文本文档了，然后将以下内容复制到记事本。
+
+		　　Windows Registry Editor Version 5.00〔HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Group Policy Objects\LocalUser\Software\Policies\Microsoft\MMC〕〔-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Group Policy Objects\LocalUser\Software\Policies\Microsoft\MMC\{8FC0B734-A0E1-11D1-A7D3-0000F87571E3}〕“Restrict_Run”=dword:00000000〔HKEY_CURRENT_USER\Software\Policies\Microsoft\MMC〕〔-HKEY_CURRENT_USER\Software\Policies\Microsoft\MMC\{8FC0B734-A0E1-11D1-A7D3-0000F87571E3}〕“Restrict_Run”=dword:00000000〔HKEY_CURRENT_USER\Software\Policies\Microsoft\MMC〕“RestrictToPermittedSnapins”=dword:00000000
+
+
+		复制粘贴以后，将文件后缀名更改为.reg，点击运行以后就可以找到了，重启电脑以后再次输入gpedit.msc命令就可以打开组策略了
+		
+		当前验证结果：经过以上操作，注册表中，mmc还是没有。
+			使用下载后的gpedit.msc，运行它，还是提示，mmc无法创建管理单元
+
+		
