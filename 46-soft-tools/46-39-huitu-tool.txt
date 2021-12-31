@@ -4,6 +4,9 @@
 		https://www.uupoop.com/
 
 		https://www.tuyitu.com/photoshop/
+	1.3 
+		texturePacker
+		http://www.pc6.com/softview/SoftView_452182.html
 2. 在线制作透明背景图片 
 	2.1 https://jingyan.baidu.com/article/7082dc1cadcb33a50a89bdad.html 
 3. ps cs6
@@ -70,4 +73,36 @@
 	https://jingyan.baidu.com/article/6f2f55a18ec198b5b93e6c33.html 
 	
 	解决办法：选择不带@的字体，文字自动翻转过来了！
-	
+7.Photoshop CS6怎么将多张图片合成一张长图？
+	7.1 https://jingyan.baidu.com/article/e3c78d649c58dd3c4c85f530.html
+		a,首先打开PS6 软件，按下Ctrl + O ,打开文件夹中需要拼接的所有图片。PS：我这里以4张图片为例子。
+		b,点击文件-新建，弹出一个窗口，根据自己实际需要调整高度和宽度，再点击确定。
+		c,点击图片名为1的界面，这里我们看到这个图片是背景，我们复制一下，成为一个图层。（如果已经有图层就不用重复操作了）
+		d，然后将背景--副本直接用光标移动到新建的空白图像中去。
+			用光标移动是，直接鼠标拖动图层。
+		e,时候看到尺寸跟画布大小相差很多，可以先按住Ctrl+T，再按住alt+shift用鼠标拉对角，等比例调整大小。
+			如果预先创建的空白图像宽或高和单张图一致，就就不用调整了。
+	7.2 合成的效果不够精确。解决办法为：
+		gif分出来的图片大小是一致的，重新创建一个画板，高度就是单个图片高度，每张图片y坐标0，x坐标从0开始，每个图片x坐标增加一个图片宽度，以此类推
+
+		如果图片宽度是有变化的，就统一讲一个宽度底板，让后将图片放在底板上面就可以了
+
+8.【TexturePacker】
+	8.1 http://www.xitongzhijia.net/soft/103197.html 
+		
+		win7安装失败。
+		TexturePacker；
+		
+		Failed to create OpenGL context for formatQSurfaceFormat(version 2.0, options
+		QFlags<QSurfaceFormat:FormatOption=0, depthBufferSize 24,redBufferSize -1, greenBufferSize -1, blueBufferSize -1,
+		alphaBufferSize -1, stencilBufferSize 8, samples -1, swapBehaviorQSurfaceFormatDoubleBuffer, swapInterval 1, colorSpace
+		QSurfaceFormatDefaultColorSpace, profile
+		QSurfaceFormat::NoProfile) .
+		This is most likely caused by not having the necessary graphicsdrivers installed.
+		Install a driver providing OpenGL 2.0 or higher, or, if this is notpossible, make sure the ANGLE Open GL ES 2.0 emulationlibraries (libEGL.dll, libGLESv2.dll and d3dcompiler_*.dll) areavailable in the application executable's directory or in a locationlisted in PATH.
+
+		参考：
+		https://bbs.csdn.net/topics/390857096
+		https://www.cnblogs.com/leocc325/p/14246068.html
+
+		升级显卡驱动。使用驱动精灵。
