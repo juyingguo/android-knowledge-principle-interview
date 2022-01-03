@@ -54,7 +54,12 @@
 				【详细分析见：四、List集合】
 		2.7.3 java.util.HashMap.TreeNode剖析。
 			static final class TreeNode<K,V> extends LinkedHashMap.Entry<K,V>
-			
+		2.7.4 
+			JDK 1.8 对HashMap和ConcurrentHashMap的底层数据结构做了修改
+			原来 HashMap 的是采用 数组 + 链表，新的HashMap 是 位桶(数组) + 红黑树
+		2.7.5 HashMap深度分析 
+			https://www.sohu.com/a/153083221_714863?
+			https://blog.csdn.net/weixin_34355715/article/details/92253259?
 	2.8、举例，key不同，hash相同的情况，
 		参考【2.6.5】中的举例。经过计算处理过的hash相同。
 	2.9、10分钟拿下 HashMap
