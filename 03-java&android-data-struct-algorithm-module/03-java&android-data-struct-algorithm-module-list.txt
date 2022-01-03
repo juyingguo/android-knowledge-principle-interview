@@ -19,7 +19,7 @@
 	2.5、java中：>>>和>>区别
 		https://www.cnblogs.com/yulinfeng/p/6602902.html
 	2.6、为什么面试要问hashmap 的原理
-		https://blog.csdn.net/mbshqqb/article/details/79799009
+		https://blog.csdn.net/mbshqqb/article/details/79799009? 
 		“你用过HashMap吗？” “什么是HashMap？你为什么用到它？”
 		　“你知道HashMap的工作原理吗？” “你知道HashMap的get()方法的工作原理吗？”
 		“当两个对象的hashcode相同会发生什么？”
@@ -31,25 +31,44 @@
 		
 		HashMap的长度
 			https://blog.csdn.net/mbshqqb/article/details/79799009
-		
+		2.6.5 真正搞懂hashCode和hash算法
+			https://blog.csdn.net/qq_33709582/article/details/113337405 
 	2.7、HashMap源码深度解析。
 		java不同版本代码差异有点多，但原理是否一样呢？
 		2.7.1.HashMap深度解析(一)    	
 			https://blog.csdn.net/ghsau/article/details/16843543/
+			
+			a,情景3。bucketindex位置已经存在元素,也就是hashCode相同.但对象或equals不同时，也会将这个新元素放到这个位置，
+				通过一个单链表来维护这种关系
+				放在链表表头还是表尾，如何存放？
+				分析：根据jdk源码：java.util.HashMap#putVal
+				是放在链表尾部，本质是通过Node的【Node<K,V> next;】指向新的节点。
+			b,java.util.HashMap#TREEIFY_THRESHOLD
+				注释：
+				The value must be greater  than 2 and should be at least 8 to mesh with assumptions in  tree removal about conversion back to plain bins upon  shrinkage.
 		2.7.2.HashMap深度解析(二)    	
-			https://blog.csdn.net/ghsau/article/details/16890151
+			https://blog.csdn.net/ghsau/article/details/16890151?
 			1. ?HashMap所有集合类视图所返回迭代器都是快速失败的(fail-fast)，在迭代器创建之后，如果从结构上对映射进行修改，除非通过迭代器自身的 remove 或 add 方法，其他任何时间任何方式的修改，迭代器都将抛出 ConcurrentModificationException。
 				至于为什么通过迭代器自身的remove或add方法就不会出现这个问题，可以参考我之前的文章List比较好玩的操作中第三个和第四个示例
 				https://blog.csdn.net/ghsau/article/details/9347357
 				【详细分析见：四、List集合】
-		
+		2.7.3 java.util.HashMap.TreeNode剖析。
+			static final class TreeNode<K,V> extends LinkedHashMap.Entry<K,V>
+			
 	2.8、举例，key不同，hash相同的情况，
-	
+		参考【2.6.5】中的举例。经过计算处理过的hash相同。
 	2.9、10分钟拿下 HashMap
 		https://blog.csdn.net/weixin_35586546/article/details/81153793
 	2.10，为啥HashMap查找和删除元素时最快的？
 		
-		
+	2.11 java.util.HashMap#transfer
+		这个函数内部代码一下子理解不了。
+	2.12 java.util.HashMap#getNode
+		if (first.hash == hash && // always check first node
+                ((k = first.key) == key || (key != null && key.equals(k))))
+                return first;
+				如何理解(k = first.key) == key || (key != null && key.equals(k)))？
+				||两端操作不同？
 三、HashMap和Hashtable区别？
 
 	这个一定要去看源码！看源码！看源码！实在看不下去的可以上网看别人的分析。简单总结有几点：
@@ -188,6 +207,8 @@
 		根据三个集合中三个数据节点。先根据不同位置，模拟分析。【当前初步判断，可以进一步验证】是有值的。具体值是否为null，是根据e在集合中的位置而定。
 	17.3 理解LinkedHashMap
 		https://www.cnblogs.com/children/archive/2012/10/02/2710624.html 
+		
+		讲解对应android-25源码
 18 LruCache
 	3.1 test project all:
 		com.algorithm.lrutest.LRUCacheTest
