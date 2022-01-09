@@ -145,8 +145,15 @@
 				j = 1;j | highBit = 1
 		2.14.2 
 			android-sdk25,jdk8
-			java.util.HashMap#resize
+			a,java.util.HashMap#resize
+			b,java.util.HashMap#transfer
+			c,重新计算索引int i = indexFor(e.hash, newCapacity);//h & (length-1);
+				索引会变,但会对应在新的数组中的下标。举例：oldCapacity = 8;newCapacity = 16	
+				hash:10111010&0111 = 10
+				hash:10111010&01111 = 1010
+			d,画图分析，便于理解。
 				
+			
 三、HashMap和Hashtable区别？
 
 	这个一定要去看源码！看源码！看源码！实在看不下去的可以上网看别人的分析。简单总结有几点：
