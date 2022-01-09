@@ -252,6 +252,21 @@
 			console.log("---->game.StatesNew.thirdScene---smallSchoolBag_third_scene_voice_01 onStop");
 		});
 	8.2 分段监听。
+	8.3 判断phaser音频是否正在播放。同时将其正在播放标志作为其它控件是否允许处理响应的控制条件？。
+		/**
+		 * 判断phaser音频是否正在播放。true is playing。经验证，该方法实时性不是特别准确，可能是内部处理。控制条件最好使用变量控制。
+		 */
+		function soundIsPlaying(current_scene_sound){    
+			try {
+				if("undefined" != typeof current_scene_sound){
+					if(current_scene_sound.isPlaying){
+						return true;
+					}	
+				}		 
+			} catch (error) {        
+			}	
+			return false; 
+		}
 	
 9.动画相关
 	9.1 放大缩小：模拟闪动动画。（播放完成需要处理恢复原状）
