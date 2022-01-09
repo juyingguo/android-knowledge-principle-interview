@@ -38,19 +38,21 @@
 		2.7.1.HashMap深度解析(一)    	
 			https://blog.csdn.net/ghsau/article/details/16843543/
 			
-			a,情景3。bucketindex位置已经存在元素,也就是hashCode相同.但对象或equals不同时，也会将这个新元素放到这个位置，
+			a,情景3。bucketindex位置已经存在元素,也就是hash相同.但对象或equals不同时，也会将这个新元素放到这个位置，
 				通过一个单链表来维护这种关系
 				放在链表表头还是表尾，如何存放？
-				分析：根据jdk源码：java.util.HashMap#putVal
-				是放在链表尾部，本质是通过Node的【Node<K,V> next;】指向新的节点。
-			b,java.util.HashMap#TREEIFY_THRESHOLD
+				分析：根据jdk8源码：java.util.HashMap#putVal
+					是放在链表尾部，本质是通过Node的【Node<K,V> next;】指向新的节点。
+					根据jdk6源码：java.util.HashMap#put放在表头.即为作为表头,同时next节点指向原数组节点。
+			b,hash相同key不同时，这样的节点数据个数达到设定的门限值时就会从将链表转化为树。
+				java.util.HashMap#TREEIFY_THRESHOLD
 				注释：
 				The value must be greater  than 2 and should be at least 8 to mesh with assumptions in  tree removal about conversion back to plain bins upon  shrinkage.
 		2.7.2.HashMap深度解析(二)    	
 			https://blog.csdn.net/ghsau/article/details/16890151?
 			1. ?HashMap所有集合类视图所返回迭代器都是快速失败的(fail-fast)，在迭代器创建之后，如果从结构上对映射进行修改，除非通过迭代器自身的 remove 或 add 方法，其他任何时间任何方式的修改，迭代器都将抛出 ConcurrentModificationException。
 				至于为什么通过迭代器自身的remove或add方法就不会出现这个问题，可以参考我之前的文章List比较好玩的操作中第三个和第四个示例
-				https://blog.csdn.net/ghsau/article/details/9347357
+				https://blog.csdn.net/ghsau/article/details/9347357?
 				【详细分析见：四、List集合】
 		2.7.3 java.util.HashMap.TreeNode剖析。
 			static final class TreeNode<K,V> extends LinkedHashMap.Entry<K,V>
@@ -60,10 +62,23 @@
 		2.7.5 HashMap深度分析 
 			https://www.sohu.com/a/153083221_714863?
 			https://blog.csdn.net/weixin_34355715/article/details/92253259?
+			
+		2.7.6 根据Hash值，要找到对应的数组啊，所以对Entry[]的长度length求余，得到的就是Entry数组的index。
+			 length为2的n次幂。	
+			 static final int hash(Object key) {
+				int h;
+				return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+			 }
+			 
+			 计算数组索引即bucketIndex = i = (n - 1) & hash
+			 
 	2.8、举例，key不同，hash相同的情况，
 		参考【2.6.5】中的举例。经过计算处理过的hash相同。
 	2.9、10分钟拿下 HashMap
-		https://blog.csdn.net/weixin_35586546/article/details/81153793
+		https://blog.csdn.net/weixin_35586546/article/details/81153793? 
+		
+		需要注意的是，每次扩容之后，都要重新计算原来的 Entry 在新数组中的位置，为什么数组扩容了，Entry 在数组中的位置发生变化了呢？所以我们会想到计算位置的 indexFor 方法，为什么呢？
+		由源码得知，元素所在位置是和数组长度是有关系的，既然扩容后数组长度发生了变化，那么元素位置肯定是要发生变化了
 	2.10，为啥HashMap查找和删除元素时最快的？
 		
 	2.11 java.util.HashMap#transfer
@@ -74,6 +89,64 @@
                 return first;
 				如何理解(k = first.key) == key || (key != null && key.equals(k)))？
 				||两端操作不同？
+	2.13 Why hashcode 31? 
+		https://blog.csdn.net/ghsau/article/details/21328203? 
+		31首先是一个素数，与素数相乘运算后，能降低hashcode碰撞的概率；31其次是一个特殊的值(32-1)，32的二进制是100000，31的二进制是011111，31*N = N << 5 - N，运算速度会快。
+		3<<<5-3
+		11<<<5 - 11
+		1100000 
+			11
+		10111101
+		
+		64 + 16 +1
+		
+		300
+		-71
+		229
+	2.14 resize
+		不同版本的jdk版本名称叫法有差异。
+		
+		2.14.1 
+			jdk6为：java.util.HashMap#doubleCapacity
+			int highBit = e.hash & oldCapacity;
+			假如：oldCapacity = 2^4 = 16
+				int newCapacity = oldCapacity * 2 = 2^4 * 2= 2^5 = 16*2 = 32
+				int highBit = e.hash & oldCapacity;//e.hash&10000 ,这样的话得到的值重复会很多的。为1或0
+				newTable[j | highBit] = e;//
+				if = highBit = 0;
+				if = highBit = 1;
+				j = 0,1,10,11,100,101,110,111...
+				j = 0;j | highBit = 0或1
+				j = 1;j | highBit = 1
+				j = 10;j | highBit = 10或11
+				j = 11;j | highBit = 11
+				j = 100;j | highBit = 100或101
+				j = 101;j | highBit = 101
+				j = 110;j | highBit = 110或111
+				j = 111;j | highBit = 111
+				
+				初步猜测规律：最多index两个两个相同。
+				
+				随后判断e对应的链表。
+				j = 0;j | highBit = 0或1
+				highBit = 0
+					nextHighBit = n.hash & oldCapacity;// 0或1
+					if nextHighBit = 0;
+						highBit = nextHighBit
+					if nextHighBit = 1;
+						highBit != nextHighBit
+							
+						if (broken == null)
+							newTable[j | nextHighBit] = n;//j | nextHighBit = 1
+						else
+							broken.next = n;
+				highBit = 1
+				
+				j = 1;j | highBit = 1
+		2.14.2 
+			android-sdk25,jdk8
+			java.util.HashMap#resize
+				
 三、HashMap和Hashtable区别？
 
 	这个一定要去看源码！看源码！看源码！实在看不下去的可以上网看别人的分析。简单总结有几点：
