@@ -127,7 +127,7 @@
 	
 	含： Android各个大版本主要解决问题
 8. 探索Android FrameWork底层开发视频全套_解密 
-	8.0 学习记录。
+	8.0 课程配套环境。
 		android4.4;
 	8.1 来源：12-android-learn-resource-record-books.txt
 		vim 下再次打开其它文件。
@@ -187,7 +187,24 @@
 		
 		bootanimation.zip:
 		/system/media/bootanimation.zip
+	8.24.Android_Sensor框架
+		1:初始化并连接SensorServer
+			SensorServer由SystemServer初始化的。
+			SensorManger负责连接SystemServer。
+		2:对应用层提供接口，获取sensor类型和sensor数据
+		3:处理sensor传感器数据，转化成android可以识别的数据格式
+
 	8.25.SensorManger分析
 		base/core/java/android/hardware/SystemSensorManager.java
 		frameworks/base/core/jni/android_hardware_SensorManager.cpp
+	26.SensorService分析
+		SystemServer.java
+		Systemserver.cpp
+	27.SensorHal分析
+		相关文件：hardware/libhardware/hardware.c
+			hardware/invensense/65xx/libsensors_iio/sensors_mpl.cpp
+		27.1 使用readelf -s sensors.default.so 可以查看动态库符号信息，找到HMI符号。
+	28.Android_input分析(1)
+		frameworks/base/services/java/com/android/server/SystemServer.java
+		
 		

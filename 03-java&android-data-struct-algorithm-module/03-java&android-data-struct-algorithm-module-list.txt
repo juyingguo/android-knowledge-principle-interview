@@ -104,7 +104,7 @@
 		-71
 		229
 	2.14 resize
-		不同版本的jdk版本名称叫法有差异。
+		不同版本的jdk版本名称叫法有差异。实现方法原理也有差别。
 		
 		2.14.1 
 			jdk6为：java.util.HashMap#doubleCapacity
