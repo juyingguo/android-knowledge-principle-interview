@@ -65,7 +65,14 @@
 			1024*576 =97k(jpg),1024*576 =800k(png).
 			
 			同样保存为jpg格式。Photoshop制作出的比PicosmosToolsX64大几百k不等。
-			
+	4.6 ps cc画圆，背景透明。
+		参考：PS怎么画圆环？PS画圆环方法
+			https://jingyan.baidu.com/article/2f9b480de7a7b041ca6cc250.html
+		a,我们打开PS，新建一空白文件，背景选择透明。
+		b,选择椭圆选框工具
+		c，按住shift+鼠标移动，画一个圆形选区
+		d,新建一个图层
+		e，按alt+delete组合键填充颜色 
 5. PicosmosToolsX64.exe - 快捷方式
 	图片工厂是一个覆盖图片全功能的软件,包含特效,浏览,编辑,排版,分割,合并和屏幕录像截图等功能,只需安装它一个就足够应付几乎所有情况。 
 	

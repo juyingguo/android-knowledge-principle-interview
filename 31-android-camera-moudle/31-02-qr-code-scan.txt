@@ -1,5 +1,6 @@
 1. 资源
 	1.1 
+	1.2 验证调试工程：AndroidJavaDemoTestForAS\app\src\main\java\com\zxing
 2. 设置扫描区域。
 	
 	预览区域与扫描区域。
@@ -14,7 +15,17 @@
 		
 		
 		和
-5. 识别不灵敏，是否和扫描区域大小设置有关？ 
+5. 识别不灵敏，是否和扫描区域大小设置有关？
 	和二维码清晰度、大小有关。
-6. Point(1024, 552)
- Point(1280, 720)
+6. 
+	环境：屏幕横屏1024*600，摄像头分辨率：1280*720
+	工程：com.sp.spmultipleapp.activity.CaptureActivity
+	摄像头及屏幕分辨率.
+	CameraConfiguration: Screen resolution: Point(1024, 552)
+	CameraConfiguration: Camera resolution: Point(1280, 720)
+	
+	CameraManager: getFramingRect(),after refactor,width: 768,height: 480
+	CameraManager: getFramingRect(),Calculated framing rect: Rect(128, 28 - 896, 508)
+	CameraHal: device/actions/common/hardware/libcamera/CameraHWCaps.cpp:147 isHwVceSupport - vce sw:1280, sh:720, sf:0, dw:1280, dh:720, df:0
+	
+	CameraManager: getFramingRectInPreview rect: Rect(160, 36 - 1120, 662)
