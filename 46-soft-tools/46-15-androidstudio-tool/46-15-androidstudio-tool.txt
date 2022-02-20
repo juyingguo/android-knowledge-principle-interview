@@ -17,11 +17,11 @@
 
 		参考文章
 		使用Android Studio查看Android Lollipop源码
-		http://www.jianshu.com/p/c85984cf99e2
+		http://www.jianshu.com/p/c85984cf99e2?
 
 
 		如何使用Android Studio开发/调试Android源码
-		http://www.cnblogs.com/Lefter/p/4176991.html
+		http://www.cnblogs.com/Lefter/p/4176991.html?
 		
 		使用Android Studio阅读整个Android源码
 		https://blog.csdn.net/dj0379/article/details/45303509/? 
@@ -40,7 +40,31 @@
 			 . development/tools/idegen/idegen.sh 
 		c,androidstudio idegen 在配置no libraries 的jdk时提示。
 			Please specify a different SDK name
+		0.4.3 Windows下使用android_studio查看android源码	
+			https://www.jianshu.com/p/1ec01aedd5f7? 
+		0.4.4 导入系统源码两种方式:Source Insight和Android Studio
+			https://blog.csdn.net/haoxuhong/article/details/89351195? 
 			
+			a,				如果你是在VirtualBox中下载的系统源码，那么将VirtualBox中的系统源码拷贝到共享文件夹中，这样源码就会自动到Windows或者Mac上
+			b,源码是在vmvare虚拟机ubuntu中创建的。
+				在window下的androidstudio中查看源码。需要创建共享文件夹或使用samba
+		0.4.5 
+			导入源码前后占用磁盘空间对比。
+			可以在windows 下的git bash下：
+			$ df -h
+			Filesystem                        Size  Used Avail Use% Mounted on
+			D:/java2/git-client/git-2.32/Git  264G  241G   23G  92% /
+			C:                                187G  165G   22G  89% /c
+			F:                                4.6T  392G  4.2T   9% /f
+			I:                                932G  683G  249G  74% /i
+			Z:                                254G  171G   84G  68% /z
+
+		0.4.6 导入 工程配置提示。
+			Migrate Project to Gradle?
+				This project does not use the Gradle build system. We recommend that you migrate to using the Gradle build system.
+				More Information about migrating to Gradle
+				[https://developer.android.com/studio/intro/migrate.html]
+		0.4.7 可以在windows上，创建共享文件夹，aosp代码放入其中，供vmvare 下ubuntu编译。同时也可以用android studio和sourceinsight使用编辑。
 1. Android studio 将 Module 打包成 Jar 包,aar.
 	1.1 Android studio 将 Module 打包成 Jar 包
 		https://www.cnblogs.com/xinaixia/p/7660173.html

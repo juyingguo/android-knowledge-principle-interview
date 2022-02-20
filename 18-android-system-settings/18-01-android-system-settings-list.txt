@@ -1,0 +1,19 @@
+一、android-system-settings
+	
+	1.1、Android5.1源码分析系列（一）Settings源码分析
+		https://blog.csdn.net/endlesstwo000/article/details/51788798?
+2. android.preference.PreferenceGroup
+	<div class="special reference">
+	 * <h3>Developer Guides</h3>
+	 * <p>For information about building a settings UI with Preferences,
+	 * read the <a href="{@docRoot}guide/topics/ui/settings.html">Settings</a>
+	 * guide.</p>
+	 * </div>
+3. aosp5.1.1 Settings 
+	3.1 packages/apps/Settings
+	3.2 Android.mk
+		LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common
+		
+		3.2.1 BouncyCastle
+			https://www.bouncycastle.org/latest_releases.html?
+			BouncyCastle就是一个提供了很多哈希算法和加密算法的第三方库。它提供了Java标准库没有的一些算法，例如，RipeMD160哈希算法

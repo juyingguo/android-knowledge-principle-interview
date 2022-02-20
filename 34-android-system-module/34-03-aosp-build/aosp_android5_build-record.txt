@@ -261,7 +261,10 @@
 			
 		2.7.2 如何编译多个平台的模拟器镜像文件？
 		
-	2.8 TARGET_PRODUCT=aosp_x86
+	2.8 
+		验证编译配置项之：aosp,x86-eng。普通用户登录ubuntu后再su切换到root用户下操作。
+		TARGET_PRODUCT=aosp_x86.
+		
 		emulator  -sdcard sdcard/sdcard-100m.img -partition-size 1024
 		emulator: ERROR: x86 emulation currently requires hardware acceleration!
 		Please ensure KVM is properly installed and usable.
@@ -286,5 +289,5 @@
 			
 			aosp-x86:
 			out/target/product/generic_x86/system/bin/test_server
-
+	2.9 
 			

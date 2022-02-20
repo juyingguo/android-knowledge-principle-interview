@@ -44,6 +44,8 @@
 				分析：根据jdk8源码：java.util.HashMap#putVal
 					是放在链表尾部，本质是通过Node的【Node<K,V> next;】指向新的节点。
 					根据jdk6源码：java.util.HashMap#put放在表头.即为作为表头,同时next节点指向原数组节点。
+						java.util.HashMap#addNewEntry
+						table[index] = new HashMapEntry<K, V>(key, value, hash, table[index]);
 			b,hash相同key不同时，这样的节点数据个数达到设定的门限值时就会从将链表转化为树。
 				java.util.HashMap#TREEIFY_THRESHOLD
 				注释：
@@ -103,7 +105,7 @@
 		300
 		-71
 		229
-	2.14 resize
+	2.14 HashMap扩容方法resize
 		不同版本的jdk版本名称叫法有差异。实现方法原理也有差别。
 		
 		2.14.1 
@@ -143,6 +145,9 @@
 				highBit = 1
 				
 				j = 1;j | highBit = 1
+				
+				该方法不好理解，需要画图及添加数据分析。
+				
 		2.14.2 
 			android-sdk25,jdk8
 			a,java.util.HashMap#resize
@@ -152,8 +157,37 @@
 				hash:10111010&0111 = 10
 				hash:10111010&01111 = 1010
 			d,画图分析，便于理解。
-				
-			
+				存放在文档对应的resource目录下/hashmap-resize-move-to-new-array.jpg
+	2.15 HashMap如何计算hash值得。	
+		2.15.1 android-sdk19,jdk6
+			static int secondaryHash(Object key) {
+				int hash = key.hashCode();
+				hash ^= (hash >>> 20) ^ (hash >>> 12);
+				hash ^= (hash >>> 7) ^ (hash >>> 4);
+				return hash;
+			}
+		2.15.2 jdk8
+			static final int hash(Object key) {
+				int h;
+				return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+			}
+		2.15.3 android-sdk25
+			int hash = sun.misc.Hashing.singleWordWangJenkinsHash(key);
+			而Hashing类在aosp2.3中为：
+			  /*
+			   * This method was written by Doug Lea with assistance from members of JCP
+			   * JSR-166 Expert Group and released to the public domain, as explained at
+			   * http://creativecommons.org/licenses/publicdomain
+			   */
+			  static int smear(int hashCode) {
+				hashCode ^= (hashCode >>> 20) ^ (hashCode >>> 12);
+				return hashCode ^ (hashCode >>> 7) ^ (hashCode >>> 4);
+			  }
+		 2.15.4 android-sdk26及以上版本中
+			 static final int hash(Object key) {
+				int h;
+				return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+			}
 三、HashMap和Hashtable区别？
 
 	这个一定要去看源码！看源码！看源码！实在看不下去的可以上网看别人的分析。简单总结有几点：

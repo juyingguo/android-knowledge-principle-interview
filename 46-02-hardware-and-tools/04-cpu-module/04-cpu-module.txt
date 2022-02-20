@@ -5,4 +5,5 @@
 2. /arch 下各CPU架构简介
 	2.1
 		https://lp007819.wordpress.com/2012/02/27/arch-%E4%B8%8B%E5%90%84cpu%E6%9E%B6%E6%9E%84%E7%AE%80%E4%BB%8B/
-	
+3. cpu主频和最大睿频都是什么意思？
+	https://zhidao.baidu.com/question/525166174866684685.html 

@@ -68,4 +68,39 @@
 	
 	如何选择开源许可证？
 	http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html
+11 深入理解计算机系统（第二版）
+	11.0 序言
+		a,C是一个较小的语言，在Brian Kernighan和 Dennis Ritchie经典的“K&R”文献
+		b,所有的源程序代码都可以从CS:APP的主页(csapp.cs.cmu.edu)上获取。
+			https://csapp.cs.cmu.edu/2e/home.html
+			https://csapp.cs.cmu.edu/3e/home.html
 			
+			网站推荐的好的书籍：Linux Reference Books：
+				The Linux Programming Interface
+				《Linux 编程接口》https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200/ref=sr_1_1?ie=UTF8&s=books&qid=1297870334&sr=8-1
+		c,《计算机系统导论》(Introduction to Computer Systems，ICS)
+
+	11.1 chapter1
+		1.3了解编译系统如何工作是大有益处的
+			a,优化程序性能。
+			包含一些举例。再详细查看。
+			b,理解链接时出现的错误。
+				包含一些举例。再详细查看。[第7章有答案]
+			c,避免安全漏洞。多年来，缓冲区溢出错误是造成大多数网络和Internet服务器上安全漏洞的主要原因。存在这些错误是因为很少有人能理解限制他们从不受信任的站点接收数据的数量和格式的重要性。
+			【第3章中描述堆栈原理和缓冲区溢出错误】
+		1.x 
+			参考文献说明
+			
+			. 		Ritchie写了关于早期C和Unix的有趣的第一手资料[87，88]。Ritchie和Thompson提供了最早出版的Unix资料[89]。Silberschatz、Gavin和Gagne[98]提供了关于Unix不同版本的详尽历史。GNU (www.gnu.org）和Linux ( www.linux.org)的网站上有大量的当前信息和历史资料。Posix标准可以在线获得（ www.unix.org)。
+	11.2 
+		C编程语言的演变
+
+		Brian Kernighan和DennisRichie在著作的第2版[58]中描述了ANSI C，这本书至今仍然被公认为是关于C语言最好的参考手册之一。
+		指定编译选项：
+		unix> gcc -std=c99 prog.c
+		-std=gnu99 #以后这个会是标准
+		2.1.5 
+			Aside: Generating an ASCII table.
+			You can display a table showing the ASCII character code by executing the command man ascii. End Aside.
+		2.1.6表示代码
+			暂时不理解。

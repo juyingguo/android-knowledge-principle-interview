@@ -192,3 +192,72 @@
 	
 	14.2 用AS自带模拟器实现虚拟摄像头
 		https://zhuanlan.zhihu.com/p/141618924?jdyscene=chat 
+15 aosp5.1.1 camera 
+	15.1 packages/apps/LegacyCamera
+	15.2 前后摄像头切换
+		A view for switching the front/back camera.
+		com.android.camera.ui.CameraPicker
+		R.drawable.ic_switch_photo_facing_holo_light->
+		CameraPicker.setImageResourceId(R.drawable.ic_switch_photo_facing_holo_light);
+			->: com.android.camera.Camera#initializeIndicatorControl
+		mCameraPicker = new CameraPicker(getContext());	
+			->: com.android.camera.ui.IndicatorControl#initializeCameraPicker
+			->: com.android.camera.ui.IndicatorControlBar#initialize
+			->: com.android.camera.ui.IndicatorControlBarContainer#initialize
+		点击切换前后摄像头方法：com.android.camera.ui.CameraPicker#onClick
+		点击事件函数中，获取cameraId相关的代码，和配置文件camera_preferences.xml中定义的不同？
+		即entryValues没有配置，如何有值的呢？
+		根据配置文件对应的com.android.camera.IconListPreference的到EntryValues = new CharSequence[0]只有一个元素的空值。
+		查看com.android.camera.CameraSettings#buildCameraId
+			entryValues创建和赋值后，再设置给IconListPreference:
+			preference.setEntryValues(entryValues);
+		
+		com.android.camera.Camera#onSharedPreferenceChanged
+		该方法中获取cameraId的方式为：
+		int cameraId = CameraSettings.readPreferredCameraId(mPreferences);
+	15.3 android.hardware.Camera#reconnect
+	15.4 源码下编译后安装失败。
+		安装apk时出现错误Failure [INSTALL_FAILED_DEXOPT]问题解决的方法
+		https://www.cnblogs.com/senior-engineer/p/4571783.html 
+		
+		编译输出：
+			Install: out/target/product/generic/system/app/xxx.apk
+
+		这样安装apk时，就会缺少dex文件，导致报错[INSTALL_FAILED_DEXOPT]。
+
+		-->解决办法：
+
+		找到未优化过的apk，即在out/target/product/generic/obj/APPS/下找到对应的APP：
+		
+		或者在Android.mk中添加：
+			LOCAL_DEX_PREOPT := false
+	15.5 onCreate中使用threa.wait()等待camera初始化。
+		a,借此验证，长时间wait()是否会引起anr,或则应用卡死。
+			测试方法：可以使用启动的线程中休眠25s在调用notify()方法。
+	15.6 com.android.camera.PreferenceInflater#newPreference
+		(CameraPreference) constructor.newInstance(args)
+		IconListPreference继承CameraPreference是可以强转的。
+		
+		而PreferenceGroup怎么可以强转为CameraPreference呢？
+		
+		com.android.camera.PreferenceInflater#inflate(org.xmlpull.v1.XmlPullParser)中添加打印：
+		根元素是PreferenceGroup,虽然调用了CameraPreference但是打印的还是PreferenceGroup
+		PreferenceInflater: inflate pref.getClass().getName()=com.android.camera.PreferenceGroup
+		PreferenceInflater: inflate parser.getName()=PreferenceGroup parser.getDepth()=1 list.size()=0
+		
+		经过查看源码：PreferenceGroup有两个
+			一个为LegacyCamera应用内自定义类com.android.camera.PreferenceGroup
+			一个为framework下的系统类android.preference.PreferenceGroup 
+	15.7 主界面Camera在清单文件中的配置分析
+		android:name="com.android.camera.Camera"
+		android:configChanges="orientation|screenSize|keyboardHidden"
+		android:clearTaskOnLaunch="true"
+		android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+	15.8 该应用运行在模拟器android-api22-x86模拟器上，前置摄像头拍照没图像，后置摄像头拍照正常，后置是模拟图像。
+		a,在真机器上使用该应用验证下。
+			比如中兴机器，原摄像头应用为：com.zte.camera/com.zte.camera.CameraActivity}
+16 手机摄像头如何自动对焦？
+	https://www.zhihu.com/question/306734472?
+	
+	16.2 手机摄像头对焦原理是怎么样的？
+		https://www.zhihu.com/question/21992503?

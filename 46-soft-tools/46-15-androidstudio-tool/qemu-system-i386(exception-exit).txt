@@ -1,0 +1,29 @@
+1.问题签名:
+	  问题事件名称:	BEX64
+	  应用程序名:	qemu-system-i386.exe
+	  应用程序版本:	0.0.0.0
+	  应用程序时间戳:	292b4b78
+	  故障模块名称:	ig8icd64.dll
+	  故障模块版本:	10.18.14.4385
+	  故障模块时间戳:	56b90608
+	  异常偏移:	000000000055d140
+	  异常代码:	c0000409
+	  异常数据:	0000000000000007
+	  OS 版本:	6.3.9600.2.0.0.768.99
+	  区域设置 ID:	2052
+	  其他信息 1:	ba9e
+	  其他信息 2:	ba9e8217948f544419ff72dbe23f7a68
+	  其他信息 3:	ad23
+	  其他信息 4:	ad23e1e4de5d71e3cd0dcd90fbf19663
+
+	联机阅读隐私声明:
+	  http://go.microsoft.com/fwlink/?linkid=280262
+
+	如果无法获取联机隐私声明，请脱机阅读我们的隐私声明:
+	  C:\WINDOWS\system32\zh-CN\erofflps.txt
+	1.1 Android Studio 虚拟机启动出现qemu-system-i386.exe 已停止运行问题解决办法
+		https://blog.csdn.net/baidu_33634330/article/details/78799278 
+		
+		a,在配置AVD （android virtual device）时候，里面有个emulated performance 。里面三个选项，有一个是自动，一个硬件，一个是软件。默认的是自动。
+		
+		出现qemu-system-i386.exe 停止工作主要的原因就是在于自动了。因为每台电脑的配置不同，而android studio 是使用intel IDE的，所以出现和AMD不兼容的情形。导致BIOS打开了虚拟技术也没有用。所以在这里直接改成 “软件”  就没有问题了.  软件是用过算法来运行的。
