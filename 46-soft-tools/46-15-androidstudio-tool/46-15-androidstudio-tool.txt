@@ -65,6 +65,17 @@
 				More Information about migrating to Gradle
 				[https://developer.android.com/studio/intro/migrate.html]
 		0.4.7 可以在windows上，创建共享文件夹，aosp代码放入其中，供vmvare 下ubuntu编译。同时也可以用android studio和sourceinsight使用编辑。
+		
+		0.4.8 在源码的根目录下生成android.ipr和android.iml两个IntelliJ IDEA(AS是基于IntelliJ IDEA社区版开发的)的配置文件
+			as打开对应目录下的ipr文件，就导入工程了。（如果将自动生成的android.ipr和android.iml放到aosp源码的其它目录，导入工程后，会有一些无法跳转的错误，实质是导入工程不完整或异常）
+		0.4.9 
+			AS在导入代码时比较慢，建议先修改android.iml，将自己用不到的代码exclude出去.可以仿照过滤.repo文件夹的语法,如:
+
+			<excludeFolder url="file://$MODULE_DIR$/.repo" />
+			<excludeFolder url="file://$MODULE_DIR$/abi" />
+			<excludeFolder url="file://$MODULE_DIR$/art" />
+		0.4.10 修改android.iml，可以去到暂时不要的jar，便于快速导入工程，如果后期需要查看，可以再次导入。
+			
 1. Android studio 将 Module 打包成 Jar 包,aar.
 	1.1 Android studio 将 Module 打包成 Jar 包
 		https://www.cnblogs.com/xinaixia/p/7660173.html

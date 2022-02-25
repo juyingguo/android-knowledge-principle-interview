@@ -1,157 +1,157 @@
-Ò»¡¢ActivityµÄÆô¶¯¹ı³Ì
+ä¸€ã€Activityçš„å¯åŠ¨è¿‡ç¨‹
 
-	1.1¡¢Ò»ÕÅÍ¼ÅªÇåActivityµÄÆô¶¯¹ı³Ì
-		´ËÍ¼»ùÓÚ9.0µÄAndroidÔ´Âë
+	1.1ã€ä¸€å¼ å›¾å¼„æ¸…Activityçš„å¯åŠ¨è¿‡ç¨‹
+		æ­¤å›¾åŸºäº9.0çš„Androidæºç 
 		https://www.jianshu.com/p/f0c21f867dd9
 		
-	1.2¡¢£¨Android 9.0£©ActivityÆô¶¯Á÷³ÌÔ´Âë·ÖÎö 
-		¡¾Í¦ºÃµÄ¡£¡¿
+	1.2ã€ï¼ˆAndroid 9.0ï¼‰Activityå¯åŠ¨æµç¨‹æºç åˆ†æ 
+		ã€æŒºå¥½çš„ã€‚ã€‘
 		https://blog.csdn.net/lj19851227/article/details/82562115
 		
-	1.3¡¢AndroidÔ´Âë·ÖÎö-ActivityµÄÆô¶¯¹ı³Ì 
-		ÈÎÓñ¸Õ²¥¿Í
+	1.3ã€Androidæºç åˆ†æ-Activityçš„å¯åŠ¨è¿‡ç¨‹ 
+		ä»»ç‰åˆšæ’­å®¢
 		https://blog.csdn.net/singwhatiwanna/article/details/18154335
 		
-	1.4¡¢AndroidÔ´Âë½âÎöÖ®£¨Ê®ËÄ£©-->ActivityÆô¶¯Á÷³Ì 
+	1.4ã€Androidæºç è§£æä¹‹ï¼ˆåå››ï¼‰-->Activityå¯åŠ¨æµç¨‹ 
 		https://blog.csdn.net/qq_23547831/article/details/51224992
 		
-	1.5¡¢´ÓÓ¦ÓÃ½Ç¶È¿´AndroidÔ´Âë - ÊÇË­µ÷ÓÃµÄActivityThreadµÄmain·½·¨  
-		4.1¡¢https://blog.csdn.net/w1143408997/article/details/76862002
-¶ş¡¢instrumentation  
+	1.5ã€ä»åº”ç”¨è§’åº¦çœ‹Androidæºç  - æ˜¯è°è°ƒç”¨çš„ActivityThreadçš„mainæ–¹æ³•  
+		4.1ã€https://blog.csdn.net/w1143408997/article/details/76862002
+äºŒã€instrumentation  
 	
-	2.1¡¢InstrumentationµÄÀí½â 
+	2.1ã€Instrumentationçš„ç†è§£ 
 		https://www.jianshu.com/p/5a7768f22b36
 	
-Èı¡¢AndroidÃæÊÔÌâ£¨31£©-AppÆô¶¯Á÷³Ì
+ä¸‰ã€Androidé¢è¯•é¢˜ï¼ˆ31ï¼‰-Appå¯åŠ¨æµç¨‹
 	
-	3.1¡¢AndroidÃæÊÔÌâ£¨31£©-AppÆô¶¯Á÷³Ì 
+	3.1ã€Androidé¢è¯•é¢˜ï¼ˆ31ï¼‰-Appå¯åŠ¨æµç¨‹ 
 		https://blog.csdn.net/pgg_cold/article/details/79491791
 
-ËÄ¡¢´ÓÓ¦ÓÃ½Ç¶È¿´AndroidÔ´Âë - ÊÇË­µ÷ÓÃµÄActivityThreadµÄmain·½·¨ 
+å››ã€ä»åº”ç”¨è§’åº¦çœ‹Androidæºç  - æ˜¯è°è°ƒç”¨çš„ActivityThreadçš„mainæ–¹æ³• 
 	
-	4.1¡¢https://blog.csdn.net/w1143408997/article/details/76862002
+	4.1ã€https://blog.csdn.net/w1143408997/article/details/76862002
 
-Îå¡¢Activity ÉúÃüÖÜÆÚ
+äº”ã€Activity ç”Ÿå‘½å‘¨æœŸ
 	
-	5.1¡¢µ±´¥·¢onNewIntent·½·¨Ê±£¬activity¾­ÀúµÄÉúÃüÖÜÆÚ 
+	5.1ã€å½“è§¦å‘onNewIntentæ–¹æ³•æ—¶ï¼Œactivityç»å†çš„ç”Ÿå‘½å‘¨æœŸ 
 		https://blog.csdn.net/ToOak_And/article/details/80702187
 		
-	5.2¡¢ ActivityµÄonNewIntent·½·¨Ö´ĞĞÊ±¼ä
-		¡¾ÏêÏ¸Ğ©¡¿
+	5.2ã€ Activityçš„onNewIntentæ–¹æ³•æ‰§è¡Œæ—¶é—´
+		ã€è¯¦ç»†äº›ã€‘
 		https://blog.csdn.net/u013398960/article/details/74496242
-	5.3¡¢Android£ºonNewIntent()´¥·¢»úÖÆ¼°×¢ÒâÊÂÏî 
+	5.3ã€Androidï¼šonNewIntent()è§¦å‘æœºåˆ¶åŠæ³¨æ„äº‹é¡¹ 
 		https://blog.csdn.net/findsafety/article/details/9664061
 		
-	5.4£¬Ê¹ÓÃonNewIntent Ö÷Ò³ÃæµÄÇĞ»»FragmentÒ³Ãæ
-		¡¾Æô¶¯Ä£Ê½Ïà¹Ø¡¿
+	5.4ï¼Œä½¿ç”¨onNewIntent ä¸»é¡µé¢çš„åˆ‡æ¢Fragmenté¡µé¢
+		ã€å¯åŠ¨æ¨¡å¼ç›¸å…³ã€‘
 		https://blog.csdn.net/w2316/article/details/88877922
-	5.5 ¶ÔActivityµÄÉúÃüÖÜÆÚÊÂ¼ş½øĞĞ¼¯ÖĞ´¦Àí
+	5.5 å¯¹Activityçš„ç”Ÿå‘½å‘¨æœŸäº‹ä»¶è¿›è¡Œé›†ä¸­å¤„ç†
 		ActivityLifecycleCallbacks 
 		https://blog.csdn.net/u011031422/article/details/74280293 
-		³ÖĞø²âÊÔ³ÌĞò£ºcom.sp.spmultipleapp.application.AppLifecycle 
+		æŒç»­æµ‹è¯•ç¨‹åºï¼šcom.sp.spmultipleapp.application.AppLifecycle 
 	
-Áù¡¢activityÆô¶¯Ä£Ê½ÓëIntent Flag
+å…­ã€activityå¯åŠ¨æ¨¡å¼ä¸Intent Flag
 
-	6.1¡¢FLAG_ACTIVITY_CLEAR_TASK 
+	6.1ã€FLAG_ACTIVITY_CLEAR_TASK 
 		https://blog.csdn.net/new_abc/article/details/13736855#
 		
-		µ÷ÊÔ´úÂë£º*\AndroidJavaDemoTestForAS\app\src\main\java\com\activity\taskstack\TaskStackMainActivity
+		è°ƒè¯•ä»£ç ï¼š*\AndroidJavaDemoTestForAS\app\src\main\java\com\activity\taskstack\TaskStackMainActivity
 		
-	6.2¡¢(ÃæÊÔÌâ)Ó¦ÓÃa,activity-A Æô¶¯Ó¦ÓÃBµÄactivity-B£¨startmode= singleTask£©£¬ÉèÖÃFLAG_ACTIVITY_CLEAR_TASK £¬
-		½á¹ûÈçºÎ¡£
-		Õ»Çå¿Õ£¬ÖØĞÂ´´½¨activity-B¡£
-		µ÷ÊÔ´úÂë£º*\AndroidJavaDemoTestForAS\app\src\main\java\com\activity\taskstack\TaskStackActivityB
+	6.2ã€(é¢è¯•é¢˜)åº”ç”¨a,activity-A å¯åŠ¨åº”ç”¨Bçš„activity-Bï¼ˆstartmode= singleTaskï¼‰ï¼Œè®¾ç½®FLAG_ACTIVITY_CLEAR_TASK ï¼Œ
+		ç»“æœå¦‚ä½•ã€‚
+		æ ˆæ¸…ç©ºï¼Œé‡æ–°åˆ›å»ºactivity-Bã€‚
+		è°ƒè¯•ä»£ç ï¼š*\AndroidJavaDemoTestForAS\app\src\main\java\com\activity\taskstack\TaskStackActivityB
 		
-	6.3¡¢¹ØÓÚAndroidµÄIntent.FLAG_ACTIVITY_CLEAR_TOP 	
+	6.3ã€å…³äºAndroidçš„Intent.FLAG_ACTIVITY_CLEAR_TOP 	
 		https://blog.csdn.net/h3c4lenovo/article/details/17285353
 		
 		
-		Android ¹Ø±Õ¶à¸öÊÓÍ¼Intent.FLAG_ACTIVITY_CLEAR_TOPÓÃ·¨
+		Android å…³é—­å¤šä¸ªè§†å›¾Intent.FLAG_ACTIVITY_CLEAR_TOPç”¨æ³•
 		https://blog.csdn.net/LVXIANGAN/article/details/42120951
 		
-	6.4¡¢taskAffinity 
+	6.4ã€taskAffinity 
 		android:taskAffinity="tatest"
 		[INSTALL_PARSE_FAILED_MANIFEST_MALFORMED]
-		android:taskAffinity="com.taskAffinity.b" Ó¦º¬ÓĞcom¼°.
+		android:taskAffinity="com.taskAffinity.b" åº”å«æœ‰comåŠ.
 		https://www.jianshu.com/p/409c37089503
-Æß¡¢Activity Óë Window¡¢PhoneWindow¡¢DecorView Ö®¼äµÄ¹ØÏµÏê½â
+ä¸ƒã€Activity ä¸ Windowã€PhoneWindowã€DecorView ä¹‹é—´çš„å…³ç³»è¯¦è§£
 	
-	7.1¡¢Activity Óë Window¡¢PhoneWindow¡¢DecorView Ö®¼äµÄ¹ØÏµÏê½â 
+	7.1ã€Activity ä¸ Windowã€PhoneWindowã€DecorView ä¹‹é—´çš„å…³ç³»è¯¦è§£ 
 		https://blog.csdn.net/weixin_41101173/article/details/79685305
 	
-°Ë¡¢¼àÌıapk°²×°Íê³ÉµÄ¹ã²¥. 
-	8.1¡¢¼àÌıapk°²×°Íê³ÉµÄ¹ã²¥. 
-		Android apk°²×°¼àÌıµÄ¼¸¸ö¹ã²¥ 
-	8.2¡¢Android ¼àÌıapk°²×°Ìæ»»Ğ¶ÔØ¹ã²¥ 
+å…«ã€ç›‘å¬apkå®‰è£…å®Œæˆçš„å¹¿æ’­. 
+	8.1ã€ç›‘å¬apkå®‰è£…å®Œæˆçš„å¹¿æ’­. 
+		Android apkå®‰è£…ç›‘å¬çš„å‡ ä¸ªå¹¿æ’­ 
+	8.2ã€Android ç›‘å¬apkå®‰è£…æ›¿æ¢å¸è½½å¹¿æ’­ 
 		https://www.cnblogs.com/rayray/p/3178403.html
 9. Android manifest
-	9.1 Android manifestÎÄ¼şÖĞµÄ¸÷ÖÖÊôĞÔÔÚAPIÊ²Ã´Î»ÖÃ 
-		Èç¹ûÄã°´ÁËSDK,ÕÒµ½ÄãµÄÖªSDKµÄÎÄ¼ş£¬ÏÂÃæµÀÕâ¸ö¾ÍÊÇ¡£android-sdk-windows/docs/guide/topics/manifest/manifest-intro.html
+	9.1 Android manifestæ–‡ä»¶ä¸­çš„å„ç§å±æ€§åœ¨APIä»€ä¹ˆä½ç½® 
+		å¦‚æœä½ æŒ‰äº†SDK,æ‰¾åˆ°ä½ çš„çŸ¥SDKçš„æ–‡ä»¶ï¼Œä¸‹é¢é“è¿™ä¸ªå°±æ˜¯ã€‚android-sdk-windows/docs/guide/topics/manifest/manifest-intro.html
 		
 10 moveTaskToBack(true); 
-	10.1 moveTaskTobackÍËºóÌ¨µÄÓÃ·¨¼°×÷ÓÃ 
+	10.1 moveTaskTobacké€€åå°çš„ç”¨æ³•åŠä½œç”¨ 
 	
-11 activityĞ¡ÖªÊ¶µã¡£
-	11.1 ¡¾Android¡¿ÈçºÎÖªµÀÄ³¸öActivityÊÇ·ñÔÚÇ°Ì¨£¿
+11 activityå°çŸ¥è¯†ç‚¹ã€‚
+	11.1 ã€Androidã€‘å¦‚ä½•çŸ¥é“æŸä¸ªActivityæ˜¯å¦åœ¨å‰å°ï¼Ÿ
 		https://www.jianshu.com/p/f5fb87d99b5d
-			Â¥Ö÷´íÎó£º£ºÄãÕâÊÇÅĞ¶ÏÄ³Ò»¸öÓ¦ÓÃÊÇ·ñÔÚÇ°Ì¨¶ø²»ÊÇÄ³¸öactivityÊÇÂğ£¿ÒòÎªprocessName¾ÍÊÇ°üÃû
+			æ¥¼ä¸»é”™è¯¯ï¼šï¼šä½ è¿™æ˜¯åˆ¤æ–­æŸä¸€ä¸ªåº”ç”¨æ˜¯å¦åœ¨å‰å°è€Œä¸æ˜¯æŸä¸ªactivityæ˜¯å—ï¼Ÿå› ä¸ºprocessNameå°±æ˜¯åŒ…å
 	11.2 
-		Android ÅĞ¶ÏÄ³¸öActivity ÊÇ·ñÔÚÇ°Ì¨ÔËĞĞ
+		Android åˆ¤æ–­æŸä¸ªActivity æ˜¯å¦åœ¨å‰å°è¿è¡Œ
 		https://blog.csdn.net/yushulinfengprc/article/details/53431232
 		https://www.jianshu.com/p/f5fb87d99b5d
 		
-		×¢Òâ¿´ÄÚÈİ£º¹Ù·½²»½¨ÒéÊ¹ÓÃÕâÖÖ×ö·¨¡£//´ı¼ÌĞøÑĞ¾¿ºÃµÄ·½°¸¡£
-		¶ÔÓÚÒ»¸öÓ¦ÓÃÄÚ²¿ÅĞ¶Ï×Ô¼ºµÄactivityÊÇ·ñÎ»ÓÚµ±Ç°Ó¦ÓÃµÄ×îÇ°Ì¨£¨²»Ò»¶¨ÊÇandroidÏµÍ³×ÀÃæµÄ×îÇ°Ì¨£¬±ÈÈç´ò¿ªÁËÆäËüÓ¦ÓÃÔÚ×îÇ°Ì¨£©¡£
-		¿ÉÒÔÊ¹ÓÃ£ºApplication.ActivityLifecycleCallbacks¡£¸ù¾İonActivityResumed¼°Ïà¹Ø»Øµ÷·½·¨´¦Àí¼´¿É¡£
-		ibotnlauncherÖĞÕâÁ½ÖÖ·½·¨¶¼ÓĞµÄ¡£
-	11.3 Android¿ª·¢£ºactivityÈ¥³ı±êÌâÀ¸µÄ·½·¨¡£
+		æ³¨æ„çœ‹å†…å®¹ï¼šå®˜æ–¹ä¸å»ºè®®ä½¿ç”¨è¿™ç§åšæ³•ã€‚//å¾…ç»§ç»­ç ”ç©¶å¥½çš„æ–¹æ¡ˆã€‚
+		å¯¹äºä¸€ä¸ªåº”ç”¨å†…éƒ¨åˆ¤æ–­è‡ªå·±çš„activityæ˜¯å¦ä½äºå½“å‰åº”ç”¨çš„æœ€å‰å°ï¼ˆä¸ä¸€å®šæ˜¯androidç³»ç»Ÿæ¡Œé¢çš„æœ€å‰å°ï¼Œæ¯”å¦‚æ‰“å¼€äº†å…¶å®ƒåº”ç”¨åœ¨æœ€å‰å°ï¼‰ã€‚
+		å¯ä»¥ä½¿ç”¨ï¼šApplication.ActivityLifecycleCallbacksã€‚æ ¹æ®onActivityResumedåŠç›¸å…³å›è°ƒæ–¹æ³•å¤„ç†å³å¯ã€‚
+		ibotnlauncherä¸­è¿™ä¸¤ç§æ–¹æ³•éƒ½æœ‰çš„ã€‚
+	11.3 Androidå¼€å‘ï¼šactivityå»é™¤æ ‡é¢˜æ çš„æ–¹æ³•ã€‚
 		https://blog.csdn.net/android157/article/details/80774143
 		
-		requestWindowFeature(Window.FEATURE_NO_TITLE);£¬ÏÖÔÚ»ù±¾¾Í¿ÉÒÔÈ¥³ı±êÌâÀ¸ÁË¡£
-		µ«ÊÇÈç¹ûActivity¼Ì³ĞÁËAppCompatActivity£¬Õâ¸ö¾ÍÊ§Ğ§ÁË.
-			Ö±½ÓÓÃsupportrequestwindowFeature
+		requestWindowFeature(Window.FEATURE_NO_TITLE);ï¼Œç°åœ¨åŸºæœ¬å°±å¯ä»¥å»é™¤æ ‡é¢˜æ äº†ã€‚
+		ä½†æ˜¯å¦‚æœActivityç»§æ‰¿äº†AppCompatActivityï¼Œè¿™ä¸ªå°±å¤±æ•ˆäº†.
+			ç›´æ¥ç”¨supportrequestwindowFeature
 		
-		AndroidÖĞÈ«ÆÁ È¡Ïû±êÌâÀ¸£¬TabHostÖĞÉèÖÃNoTitleBarµÄÈıÖÖ·½·¨
+		Androidä¸­å…¨å± å–æ¶ˆæ ‡é¢˜æ ï¼ŒTabHostä¸­è®¾ç½®NoTitleBarçš„ä¸‰ç§æ–¹æ³•
 		https://www.cnblogs.com/zdz8207/archive/2013/02/27/android-tabhost-notitlebar.html
 		
-	11.4 activityÉèÖÃÍ¸Ã÷¡£
-		11.4.1 ÈçºÎÉèÖÃÒ»¸öactivityÍ¸Ã÷£¨×ª£©
+	11.4 activityè®¾ç½®é€æ˜ã€‚
+		11.4.1 å¦‚ä½•è®¾ç½®ä¸€ä¸ªactivityé€æ˜ï¼ˆè½¬ï¼‰
 			https://www.cnblogs.com/softidea/p/5297751.html
-				1. ÔÚAndroidManifest.xmlÎÄ¼şÖĞÉèÖÃ£º
+				1. åœ¨AndroidManifest.xmlæ–‡ä»¶ä¸­è®¾ç½®ï¼š
 				android:theme="@android:style/Theme.Translucent
-				2.ÒÔ¼°ÔÚ´úÂëÖĞÅäÖÃ¡£
-					´úÂë¿ÉÒÔºÍAndroidManifest.xmlÅäÖÃÎÄ¼şÒ»ÆğÊ¹ÓÃ¡£
-					µ¥¶ÀÊ¹ÓÃ´úÂë£¬¿ÉÄÜĞ§¹û´ï²»µ½£¬ĞèÒªµ÷ÊÔ³¢ÊÔ²ÎÊıÖµ
-		11.4.2 ActivityÈ«Í¸Ã÷ÊµÏÖ
+				2.ä»¥åŠåœ¨ä»£ç ä¸­é…ç½®ã€‚
+					ä»£ç å¯ä»¥å’ŒAndroidManifest.xmlé…ç½®æ–‡ä»¶ä¸€èµ·ä½¿ç”¨ã€‚
+					å•ç‹¬ä½¿ç”¨ä»£ç ï¼Œå¯èƒ½æ•ˆæœè¾¾ä¸åˆ°ï¼Œéœ€è¦è°ƒè¯•å°è¯•å‚æ•°å€¼
+		11.4.2 Activityå…¨é€æ˜å®ç°
 			https://blog.csdn.net/liu_jun_y/article/details/9178301
-				¡¾¸Ã·½Ê½£¬Í¬ÎªÎª11.4.1ÖĞÏµÍ³Ô´Âë²¿·Ö¡£¡¿
-				Í¨¹ıÉèÖÃÑùÊ½¸Ä±äÍ¸Ã÷¶È£º
+				ã€è¯¥æ–¹å¼ï¼ŒåŒä¸ºä¸º11.4.1ä¸­ç³»ç»Ÿæºç éƒ¨åˆ†ã€‚ã€‘
+				é€šè¿‡è®¾ç½®æ ·å¼æ”¹å˜é€æ˜åº¦ï¼š
 				< style name="Transparent">
 
-			¡¡¡¡< item name="android:windowBackground">@color/transparent< /item>
+			ã€€ã€€< item name="android:windowBackground">@color/transparent< /item>
 
-			¡¡¡¡< item name="android:windowIsTranslucent">true< /item>
+			ã€€ã€€< item name="android:windowIsTranslucent">true< /item>
 
-			¡¡¡¡< item name="android:windowAnimationStyle">@+android:style/Animation.Translucent< /item>
+			ã€€ã€€< item name="android:windowAnimationStyle">@+android:style/Animation.Translucent< /item>
 
-			¡¡¡¡< /style>
+			ã€€ã€€< /style>
 			
-		11.4.3 windowBackground£¬windowIsTranslucentÇø±ğ£¿
-	11.5 Android ¸Ä±ä¿Ø¼şÎ»ÖÃµÄÈıÖÖ·½Ê½
+		11.4.3 windowBackgroundï¼ŒwindowIsTranslucentåŒºåˆ«ï¼Ÿ
+	11.5 Android æ”¹å˜æ§ä»¶ä½ç½®çš„ä¸‰ç§æ–¹å¼
 		https://blog.csdn.net/qq_36188774/article/details/82715027
 		
-		·½Ê½Ò»£º¸Ä±ä²¼¾Ö²ÎÊı
+		æ–¹å¼ä¸€ï¼šæ”¹å˜å¸ƒå±€å‚æ•°
 				RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mGirl.getLayoutParams();
                 layoutParams.leftMargin = mGirl.getLeft()+100;
                 layoutParams.topMargin = mGirl.getTop()+100;
 				
-		11.5.2 android¶¯Ì¬ÉèÖÃ¿Ø¼şµÄ´óĞ¡ºÍÎ»ÖÃ
+		11.5.2 androidåŠ¨æ€è®¾ç½®æ§ä»¶çš„å¤§å°å’Œä½ç½®
 			https://blog.csdn.net/wocena/article/details/52485051
                 mGirl.setLayoutParams(layoutParams);
-	11.6 È«ÆÁ¡£
-		11.6 ·ÇÍêÈ«È«ÆÁ£¬µ«¿ÉÄÜµ×²¿µ¼º½À¸Ã»ÓĞÏûÊ§¡£
+	11.6 å…¨å±ã€‚
+		11.6 éå®Œå…¨å…¨å±ï¼Œä½†å¯èƒ½åº•éƒ¨å¯¼èˆªæ æ²¡æœ‰æ¶ˆå¤±ã€‚
 			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		11.7 ÍêÈ«È«ÆÁ£¬Í¬Ê±ÈÃµ×²¿µ¼º½À¸Ò²ÏûÊ§¡£±êÌâÀ¸Ò²Ò»²¢Òş²Ø
+		11.7 å®Œå…¨å…¨å±ï¼ŒåŒæ—¶è®©åº•éƒ¨å¯¼èˆªæ ä¹Ÿæ¶ˆå¤±ã€‚æ ‡é¢˜æ ä¹Ÿä¸€å¹¶éšè—
 			private void hideNavigationBar(){
 			View decorView = getWindow().getDecorView();
 			decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -162,8 +162,38 @@
 					| View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 			}
 			
-		11.8 activityÖĞµ¯³öDialog²»ÄÜÈ«ÆÁÎÊÌâ¡£
-			¿ÉÒÔµ÷ÓÃ¡¾11.7¡¿ÖĞµÄº¯Êı½â¾ö¡£ÇÒ¸Ãº¯Êı¿ÉÒÔ±»¶à´Îµ÷ÓÃ¡£
-			¸Ã½çÃæÖĞÈçÓĞµ¯³ö¶Ô»°¿òÊ±£¬»á³öÏÖµ×²¿µ¼º½À¸£¬´ËÊ±¿ÉÒÔ¼ÌĞøµ÷ÓÃ¸Ãº¯Êı£¬Òş²Øµ×²¿µ¼º½À¸¡£
+		11.8 activityä¸­å¼¹å‡ºDialogä¸èƒ½å…¨å±é—®é¢˜ã€‚
+			å¯ä»¥è°ƒç”¨ã€11.7ã€‘ä¸­çš„å‡½æ•°è§£å†³ã€‚ä¸”è¯¥å‡½æ•°å¯ä»¥è¢«å¤šæ¬¡è°ƒç”¨ã€‚
+			è¯¥ç•Œé¢ä¸­å¦‚æœ‰å¼¹å‡ºå¯¹è¯æ¡†æ—¶ï¼Œä¼šå‡ºç°åº•éƒ¨å¯¼èˆªæ ï¼Œæ­¤æ—¶å¯ä»¥ç»§ç»­è°ƒç”¨è¯¥å‡½æ•°ï¼Œéšè—åº•éƒ¨å¯¼èˆªæ ã€‚
 			
+	11.7 åˆ¤æ–­Activityæ˜¯å¦å­˜åœ¨
+		https://blog.csdn.net/weixin_42305041/article/details/117623959? 
 		
+		Intent intent = new Intent();
+		intent.setClassName("åŒ…å", "ç±»å");
+
+		æ–¹æ³•ä¸€ï¼š
+
+		if (getPackageManager().resolveActivity(intent, 0) == null) {undefined
+
+		// è¯´æ˜ç³»ç»Ÿä¸­ä¸å­˜åœ¨è¿™ä¸ªactivity
+
+		}
+
+		æ–¹æ³•äºŒï¼š
+
+		if(intent.resolveActivity(getPackageManager()) == null) {undefined
+
+		// è¯´æ˜ç³»ç»Ÿä¸­ä¸å­˜åœ¨è¿™ä¸ªactivity
+
+		}
+
+		æ–¹æ³•ä¸‰ï¼š
+
+		List list = getPackageManager().queryIntentActivities(intent, 0);
+
+		if (list.size() == 0) {undefined
+
+		// è¯´æ˜ç³»ç»Ÿä¸­ä¸å­˜åœ¨è¿™ä¸ªactivity
+
+		}
