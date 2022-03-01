@@ -17,3 +17,29 @@
 		3.2.1 BouncyCastle
 			https://www.bouncycastle.org/latest_releases.html?
 			BouncyCastle就是一个提供了很多哈希算法和加密算法的第三方库。它提供了Java标准库没有的一些算法，例如，RipeMD160哈希算法
+			
+	3.4 关于本机模块分析
+		3.4.1 
+			com.android.settings.DeviceInfoSettings
+				com.android.settings.SettingsPreferenceFragment
+					android.preference.PreferenceFragment
+						android.app.Fragment
+			
+			ListView 来自哪里？
+				android.preference.PreferenceFragment#getListView
+					android.app.Fragment#getView
+						android.app.Fragment#onCreateView	#由子类实现
+							android.preference.PreferenceFragment#onCreateView #实现者
+			
+			android.preference.PreferenceFragment#onCreateView #实现者
+			mLayoutResId = a.getResourceId(com.android.internal.R.styleable.PreferenceFragment_layout,
+                mLayoutResId);
+			frameworks/base/core/res/res/values/attrs.xml
+				<declare-styleable name="PreferenceFragment">
+					<!-- The layout for the PreferenceFragment. This should rarely need to be changed. -->
+					<attr name="layout" />
+				</declare-styleable>
+			frameworks/base/core/res/res/values/styles.xml
+				<item name="layout">@layout/preference_list_fragment</item>
+	3.5 Android APP：Preference使用详解和实例（附源码）
+		https://blog.csdn.net/qq_37858386/article/details/103806336?
