@@ -1,88 +1,134 @@
-1. Visio��Կ 
-	1.1 Visio2013 Professionalרҵ����Կ 
+1. Visio密钥 
+	1.1 Visio2013 Professional专业版密钥 
 		https://blog.csdn.net/qq_35868412/article/details/86616541?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
-		Visio2013��Կ רҵ�棺
+		Visio2013密钥 专业版：
 
 
-		Visio 2013���²�Ʒ��Կ�������ڰ�װʱ����ʹ��������Կ��
+		Visio 2013最新产品密钥分享，在安装时可以使用以下密钥：
 
-	����2NYF6-QG2CY-9F8XC-GWMBW-29VV8
+	　　2NYF6-QG2CY-9F8XC-GWMBW-29VV8
 
-	����FJ2N7-W8TXC-JB8KB-DCQ7Q-7T7V3
+	　　FJ2N7-W8TXC-JB8KB-DCQ7Q-7T7V3
 
-	����VXX6C-DN3HQ-3CRXG-RF4KT-YG7V3
+	　　VXX6C-DN3HQ-3CRXG-RF4KT-YG7V3
 
-	����B3C7Q-D6NH2-2VRFW-HHWDG-FVQB6
+	　　B3C7Q-D6NH2-2VRFW-HHWDG-FVQB6
 
-	����TCWJK-N6GFH-82BP9-HV7YQ-T6KMQ
+	　　TCWJK-N6GFH-82BP9-HV7YQ-T6KMQ
 
-	����KD8CP-DN968-RGQM6-PMFMK-M96YQ
+	　　KD8CP-DN968-RGQM6-PMFMK-M96YQ
 
-	����QQ4NR-2Q67B-X9C6R-4B8CH-HXJRD
+	　　QQ4NR-2Q67B-X9C6R-4B8CH-HXJRD
 
-	����PBRNH-MY4D4-67BQK-WGM4P-XTKMQ
+	　　PBRNH-MY4D4-67BQK-WGM4P-XTKMQ
 
-	����66DNF-28W69-W4PPV-W3VYT-TJDBQ
+	　　66DNF-28W69-W4PPV-W3VYT-TJDBQ
 
-	����N4M7D-PD46X-TJ2HQ-RPDD7-T28P9
+	　　N4M7D-PD46X-TJ2HQ-RPDD7-T28P9
 
-	����ND3G9-KQHY4-8P3W2-VGXVY-B4D73
+	　　ND3G9-KQHY4-8P3W2-VGXVY-B4D73
 
-	����K6NC7-KMX7G-TC6RR-FDM23-8K6YQ
+	　　K6NC7-KMX7G-TC6RR-FDM23-8K6YQ
 
-	����FN8TT-7WMH6-2D4X9-M337T-2342K
+	　　FN8TT-7WMH6-2D4X9-M337T-2342K
 
-	����36N9R-JH27W-F27B7-293T9-6CMFX
+	　　36N9R-JH27W-F27B7-293T9-6CMFX
 
-	����NWFJR-2PDJV-H98XG-XMVFP-PGWM9
+	　　NWFJR-2PDJV-H98XG-XMVFP-PGWM9
 
-	����68N6Q-G8BK4-B4G8D-3XK82-V8PB9
+	　　68N6Q-G8BK4-B4G8D-3XK82-V8PB9
 
-	����GJYNC-WYT8F-2Q4DD-FR9YF-YTBFX
+	　　GJYNC-WYT8F-2Q4DD-FR9YF-YTBFX
 	
-	1.2 ��������microsoft visio 2013���������ƵĲ�Ʒ��Կ 
+	1.2 怎样更改microsoft visio 2013简体中文破的产品密钥 
 		1. https://zhidao.baidu.com/question/242060400641111844.html
-			���������->����͹��ܣ�����ж�������ĵط������Ҽ���Visio2013��->����->���Ĳ�Ʒ��Կ��֮�������ʾ�㵽�ס�
+			到控制面板->程序和功能（可以卸载软件的地方），右键“Visio2013”->更改->更改产品密钥，之后根据提示点到底。
 			
-			����Ч��
-			����ɾ��������ע�����������ٰ�װ��
+			都无效。
+			彻底删除，包括注册表清除，后再安装。
 		
-		2. ���ע������Ȳ�ж��Ӧ�ã�ֱ�����ٴ�ʹ��29�졣
+		2. 清除注册表后，先不卸载应用，直接能再次使用29天。
 		
-	1.3 visio ע������ 
-		office 2013 ɾ��ע��� 
+	1.3 visio 注册表清除 
+		office 2013 删除注册表 
 		https://blog.csdn.net/BadMushroom/article/details/75269972
 		
-		1 .���Բ˵�-���У�win+r��������regedit���س�����
+		1 .电脑菜单-运行（win+r），输入regedit按回车键。
 
-		2 .�ҵ�����ע�����ֵ���Ҽ�ɾ����ɾ�����ļ��´���visio�������ļ����ļ���Ŷ��
+		2 .找到下列注册表键值并右键删除：删除子文件下带有visio字样的文件或文件夹哦。
 		HKEY_CURRENT_USER\Software\Microsoft\Office\**visio
 		HKEY_LOCAL_MACHINE\Software\Microsoft\Office\**visio?
 
-		��ע������ٶȰٿƣ���ע�����windows����ϵͳ�е�һ���������ݿ⣬���д���Ÿ��ֲ�����ֱ�ӿ�����windows��������Ӳ�����������װ���Լ�һЩwindowsӦ�ó�������У��Ӷ�������ϵͳ�����ź������á���Щ���ð���������Ӳ����������ú�״̬��Ϣ������ע����б�����Ӧ�ó������Դ��������ǵĳ�ʼ��������ѡ���ж�����ݵȣ����������������ϵͳ�����ú͸������ɣ��ļ���չ����Ӧ�ó���Ĺ�����Ӳ��������������״̬�����ԣ����ܼ�¼�������ײ��ϵͳ״̬��Ϣ���Լ��������ݵȡ���
-		��������������������������������
-		��Ȩ����������ΪCSDN������IceBear6����ԭ�����£���ѭ CC 4.0 BY-SA ��ȨЭ�飬ת���븽��ԭ�ĳ������Ӽ���������
-		ԭ�����ӣ�https://blog.csdn.net/BadMushroom/article/details/75269972
-	1.4	Visio2013 64λ���ذ�װ�Լ��ƽ⼤��̳�
-		�ر�˵�������½̳����δ���ƽ⼤����ڶ��������°�װ�ƽ⣡������
+		【注册表（百度百科）：注册表是windows操作系统中的一个核心数据库，其中存放着各种参数，直接控制着windows的启动、硬件驱动程序的装载以及一些windows应用程序的运行，从而在整个系统中起着核心作用。这些作用包括了软、硬件的相关配置和状态信息，比如注册表中保存有应用程序和资源管理器外壳的初始条件、首选项和卸载数据等，联网计算机的整个系统的设置和各种许可，文件扩展名与应用程序的关联，硬件部件的描述、状态和属性，性能记录和其他底层的系统状态信息，以及其他数据等。】
+		————————————————
+		版权声明：本文为CSDN博主「IceBear6」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/BadMushroom/article/details/75269972
+	1.4	Visio2013 64位下载安装以及破解激活教程
+		特别说明：以下教程如果未能破解激活，请在断网条件下安装破解！！！！
 
-		��װ
-		Visio2013 professional�����ص�ַ��
+		安装
+		Visio2013 professional版下载地址：
 		https://pan.baidu.com/s/14Ffl_bx1AqYEevAmIxQZ1A
-		����: u7mh
+		密码: u7mh
 
-		��װʱѡ��������װ�����Զ��尲װλ�ö����ԡ���װ��ϴ�visio���Կ�����Ʒδ����ȹرգ�����������ƽ⼤�
+		安装时选择立即安装或者自定义安装位置都可以。安装完毕打开visio可以看到产品未激活，先关闭，进行下面的破解激活。
 
-		�ƽ⼤�
-		�ƽ��ļ����ص�ַ��
+		破解激活：
+		破解文件下载地址：
 		https://pan.baidu.com/s/1TVi_SacyAc95Z8JJwypvXA
-		����: meu3
+		密码: meu3
 		
-		//�ƽ��ļ�����KMSpico_setup.exe
+		//破解文件名。KMSpico_setup.exe
 
-		�ƽ��ļ����غ�ֱ�ӵ����װ���ɡ���װ�ɹ���visio�Ѿ����
-		��visio���������ɿ����Ѽ��
+		破解文件下载后直接点击安装即可。安装成功后visio已经激活。
+		打开visio软件，即可看到已激活。
+2. 如何使用visio画出思维导图 
+	https://blog.csdn.net/gui951753/article/details/79198006?
+	
+	一直有个想法，用图片的形式来展示所学的知识，用了各种脑图，都是以一幅幅图片的形式保存下来的。今天发现visio 也可以画脑图，用visio 有个好处，兼容word，使用起来非常的方便。
 
+
+	Visio绘制思维导图具体操作步骤如下:
+
+	1、打开visio; 依次选择 “文件”-》“新建”-》“商务”-》“灵感触发图”；
+
+	\	 
+
+	2、将 左侧“形状”窗口内 “灵感触发形状” 拖拉到绘图区；双击 重写入主题文字为 “脑图”；右击主标题，选择 “更改标题形状...”，更改为矩形；
+
+	\	 
+
+	3、右击主标题，选择 “添加多个副标题...”；并依次添加“什么是？”“有啥用？”“怎么用？”三个副标题；
+
+	\	 
+
+	4、右击其中一个副标题，选择“更改标题形状...”；依次更改标题形状；
+
+	\	 
+
+	5、依次为“什么是？”副标题添加各个副标题；具体标题如下：
+
+	 分类化、系统化、形象化、辐射状、心脏血管、大脑分支；
+
+	\	 
+
+	6、选择“视图”-》“工具栏”；可依次调出需要的工具栏；如调出墨迹工具栏；
+
+	\	 
+
+	7、由调出的工具为“什么是？”的各个分支标题个性化自定义标识，以方便理解和记忆；涉及到的工具栏有“图片”“墨迹”“设置文字格式”“设置形状格式等”；
+
+	\	 
+
+	8、按上一个步骤，依次为“有啥用？”和“怎么用？”添加详细分支标题；具体标题如下：
+
+	有啥用？：发散问题、作计划、读书笔记、作演示；
+
+	怎么用？：关键字、层次、手绘、工具（VISIO、XMind、MindManager）；
+
+	\	 
+
+	9、可仿照以上过程，画出自己需要的脑图；
 
 		

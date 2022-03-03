@@ -11,6 +11,8 @@
 	 * </div>
 3. aosp5.1.1 Settings 
 	3.1 packages/apps/Settings
+		3.1.1 docRoot
+			sdk/docs/guide/topics/ui/settings.html
 	3.2 Android.mk
 		LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common
 		
@@ -43,3 +45,11 @@
 				<item name="layout">@layout/preference_list_fragment</item>
 	3.5 Android APP：Preference使用详解和实例（附源码）
 		https://blog.csdn.net/qq_37858386/article/details/103806336?
+		
+		3.5.1 test project:
+			com.sp.spmultipleapp.PreferenceTestActivity
+4 Preference
+	4.1 如何修改文本颜色
+		CheckBoxPreference 设置颜色无效
+	4.2 Building a Custom Preference.
+		file:///D:/juying/java2/sdk/docs/guide/topics/ui/settings.html#Custom
