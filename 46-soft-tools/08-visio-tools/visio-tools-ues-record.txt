@@ -83,6 +83,8 @@
 
 		破解文件下载后直接点击安装即可。安装成功后visio已经激活。
 		打开visio软件，即可看到已激活。
+	1.5 iso文件怎么安装？iso文件用什么打开？
+		https://product.pconline.com.cn/itbk/software/wjgs/1306/3362743.html?
 2. 如何使用visio画出思维导图 
 	https://blog.csdn.net/gui951753/article/details/79198006?
 	
