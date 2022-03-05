@@ -17,3 +17,12 @@
 		3.2.1 BouncyCastle
 			https://www.bouncycastle.org/latest_releases.html?
 			BouncyCastle就是一个提供了很多哈希算法和加密算法的第三方库。它提供了Java标准库没有的一些算法，例如，RipeMD160哈希算法
+	3.3 com.android.settings.dashboard.DashboardTileView
+		packages/apps/Settings/res/layout/dashboard_tile.xml
+		android:background="?android:attr/dividerVertical" 含义？
+		
+		3.3.1 Android 样式系统 | 常见的主题背景属性
+			https://blog.csdn.net/jILRvRTrc/article/details/107293316?
+			
+		3.3.2 闲谈 Android 中的 @ 和 ？符号的引用区别 
+			https://blog.csdn.net/growing_tree/article/details/106618212?
