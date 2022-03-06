@@ -9,7 +9,24 @@
 
 		Date="2019-09-16 00:00:00"    //开始试用的时间。最多试用3个月所以 这个日期三个之内需要重新修改
 		Expiration="2030-05-16"          //结束时间
+	01.3 source insight4.0激活码,注册号,序列号免费分享
+		https://www.ruanfujia.com/10320287/
+		
+		2.点击下一步，输入名称、公司或组织名称、邮箱信息，申请30天的试用。
 
+		输入完成后，点击下一步，直到安装完成。
+
+		3.修改sourceinsight4.exe
+
+		用16进制编辑器（sublime text）打开sourceinsight4.exe文件，找到c800 0000 742a 83bc 2408 这一段，修改74 为 eb。
+		修改后的为：c800 0000 eb2a 83bc 2408
+		修改license文件
+
+		打开 C:\ProgramData\Source Insight\4.0\si4.lic
+
+		将Expiration=”2017-XX-XX”中的2017修改为2030。
+
+		注意：过一段时间提示过期后，把Date=”2019-10-24 00:00:00″，改成前一天的，又能继续使用。
 		 
 1. source insight 有些格式的文件被过滤掉了 
 	1.1 、Source Insight中的文件过滤器

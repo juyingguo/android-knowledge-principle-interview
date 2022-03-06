@@ -11,6 +11,11 @@
 	 * </div>
 3. aosp5.1.1 Settings 
 	3.1 packages/apps/Settings
+		3.1.1 docRoot
+			sdk/docs/guide/topics/ui/settings.html
+			
+			文档模块：Initializing the current value
+			待验证
 	3.2 Android.mk
 		LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common
 		
@@ -26,3 +31,37 @@
 			
 		3.3.2 闲谈 Android 中的 @ 和 ？符号的引用区别 
 			https://blog.csdn.net/growing_tree/article/details/106618212?
+			
+	3.4 关于本机模块分析
+		3.4.1 
+			com.android.settings.DeviceInfoSettings
+				com.android.settings.SettingsPreferenceFragment
+					android.preference.PreferenceFragment
+						android.app.Fragment
+			
+			ListView 来自哪里？
+				android.preference.PreferenceFragment#getListView
+					android.app.Fragment#getView
+						android.app.Fragment#onCreateView	#由子类实现
+							android.preference.PreferenceFragment#onCreateView #实现者
+			
+			android.preference.PreferenceFragment#onCreateView #实现者
+			mLayoutResId = a.getResourceId(com.android.internal.R.styleable.PreferenceFragment_layout,
+                mLayoutResId);
+			frameworks/base/core/res/res/values/attrs.xml
+				<declare-styleable name="PreferenceFragment">
+					<!-- The layout for the PreferenceFragment. This should rarely need to be changed. -->
+					<attr name="layout" />
+				</declare-styleable>
+			frameworks/base/core/res/res/values/styles.xml
+				<item name="layout">@layout/preference_list_fragment</item>
+	3.5 Android APP：Preference使用详解和实例（附源码）
+		https://blog.csdn.net/qq_37858386/article/details/103806336?
+		
+		3.5.1 test project:
+			com.sp.spmultipleapp.PreferenceTestActivity
+4 Preference
+	4.1 如何修改文本颜色
+		CheckBoxPreference 设置颜色无效
+	4.2 Building a Custom Preference.
+		file:///D:/juying/java2/sdk/docs/guide/topics/ui/settings.html#Custom
