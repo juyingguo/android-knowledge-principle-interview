@@ -211,5 +211,15 @@
 		27.1 使用readelf -s sensors.default.so 可以查看动态库符号信息，找到HMI符号。
 	28.Android_input分析(1)
 		frameworks/base/services/java/com/android/server/SystemServer.java
+	31.Anroid获取Input事件
+		adb shell 
+		getevent 
+		getevent -l
 		
-		
+	33.Android浏览器简介
+		Android浏览器代码目录:
+		1:应用APP: packages/apps/Browser/
+		2: framework相关:
+		frameworks/base/core/java/android/webkit/
+		frameworks/webview/chromium/java/com/android/webview/
+		3: chromeium代码: external/chromium_org/
