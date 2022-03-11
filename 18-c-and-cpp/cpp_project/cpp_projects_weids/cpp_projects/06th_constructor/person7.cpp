@@ -17,7 +17,7 @@ public:
 		name = NULL;
 		work = NULL;
 	}
-	Person(char *name) 
+	Person(char *name)
 	{
 		//cout <<"Pserson(char *)"<<endl;
 		this->name = new char[strlen(name) + 1];
@@ -25,7 +25,7 @@ public:
 		this->work = NULL;
 	}
 
-	Person(char *name, int age, char *work = "none") 
+	Person(char *name, int age, char *work = "none")
 	{
 		//cout <<"Pserson(char*, int)"<<endl;
 		this->age = age;
@@ -66,7 +66,7 @@ public:
 	}
 	void printInfo(void)
 	{
-		//printf("name = %s, age = %d, work = %s\n", name, age, work); 
+		//printf("name = %s, age = %d, work = %s\n", name, age, work);
 		//cout<<"name = "<<name<<", age = "<<age<<", work = "<<work<<endl;
 	}
 };
@@ -76,7 +76,7 @@ void test_fun()
 	Person per("zhangsan", 16);
 
 	Person *per7 = new Person("lisi", 18, "student");
-	//delete per7;
+	delete per7;
 
 }
 

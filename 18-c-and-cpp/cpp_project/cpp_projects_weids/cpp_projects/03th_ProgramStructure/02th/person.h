@@ -10,6 +10,7 @@ private:
 public:
 	void setName(char *name);
 	int setAge(int age);
+	void setWork(char * work);
 	void printInfo(void);
 };
 

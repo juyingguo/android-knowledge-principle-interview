@@ -5,7 +5,7 @@ class Person {
 private:
 	char *name;
 	int age;
-	char *work;
+	char *work = NULL;
 
 public:
 	void setName(char *name)
@@ -24,7 +24,7 @@ public:
 	}
 	void printInfo(void)
 	{
-		printf("name = %s, age = %d, work = %s\n", name, age, work); 
+		printf("name = %s, age = %d, work = %s\n", name, age, work);
 	}
 };
 
@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	per.setName("zhangsan");
 	per.setAge(200);
 	per.printInfo();
-	
+
 	return 0;
 }
 

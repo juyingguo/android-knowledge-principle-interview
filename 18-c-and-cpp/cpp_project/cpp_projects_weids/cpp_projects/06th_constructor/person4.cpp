@@ -13,14 +13,14 @@ private:
 public:
 
 	Person() {cout <<"Pserson()"<<endl;}
-	Person(char *name) 
+	Person(char *name)
 	{
-		cout <<"Pserson(char *)"<<endl;
+		cout <<"Pserson(char *),strlen(name)="<<strlen(name)<<endl;
 		this->name = new char[strlen(name) + 1];
 		strcpy(this->name, name);
 	}
 
-	Person(char *name, int age, char *work = "none") 
+	Person(char *name, int age, char *work = "none")
 	{
 		cout <<"Pserson(char*, int)"<<endl;
 		this->age = age;
@@ -32,7 +32,7 @@ public:
 		strcpy(this->work, work);
 	}
 
-	
+
 	void setName(char *n)
 	{
 		name = n;
@@ -49,13 +49,14 @@ public:
 	}
 	void printInfo(void)
 	{
-		//printf("name = %s, age = %d, work = %s\n", name, age, work); 
+		//printf("name = %s, age = %d, work = %s\n", name, age, work);
 		cout<<"name = "<<name<<", age = "<<age<<", work = "<<work<<endl;
 	}
 };
 
 int main(int argc, char **argv)
 {
+    Person p("zhangsan");
 	Person per("zhangsan", 16);
 	Person per2;   /* 调用无参构造函数 */
 	Person per3(); /* int fun(); */

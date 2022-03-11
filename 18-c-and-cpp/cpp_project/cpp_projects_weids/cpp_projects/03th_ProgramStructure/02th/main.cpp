@@ -9,8 +9,9 @@ int main(int argc, char **argv)
 	//per.name = "zhangsan";
 	per.setName("zhangsan");
 	per.setAge(200);
+	per.setWork("student");
 	per.printInfo();
-	
+
 	return 0;
 }
 

@@ -17,9 +17,13 @@ int Person::setAge(int age)
 	this->age = age;
 	return 0;
 }
+void Person::setWork(char *work)
+{
+	this->work = work;
+}
 
 void Person::printInfo(void)
 {
-	printf("name = %s, age = %d, work = %s\n", name, age, work); 
+	printf("name = %s, age = %d, work = %s\n", name, age, work);
 }
 

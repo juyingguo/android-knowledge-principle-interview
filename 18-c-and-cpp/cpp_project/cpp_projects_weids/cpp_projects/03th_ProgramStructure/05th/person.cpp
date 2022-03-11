@@ -22,12 +22,12 @@ int Person::setAge(int age)
 
 void Person::printInfo(void)
 {
-	printf("name = %s, age = %d, work = %s\n", name, age, work); 
+	printf("name = %s, age = %d, work = %s\n", name, age, work);
 }
 
 void printVersion(void)
 {
-	printf("Person v1, by weidongshan\n");
+	printf("Person v2, by weidongshan\n");
 }
 
 }

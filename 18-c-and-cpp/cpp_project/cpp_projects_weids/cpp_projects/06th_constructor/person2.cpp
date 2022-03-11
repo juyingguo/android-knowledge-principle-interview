@@ -11,13 +11,13 @@ private:
 public:
 
 	Person() {cout <<"Pserson()"<<endl;}
-	Person(char *name) 
+	Person(char *name)
 	{
 		cout <<"Pserson(char *)"<<endl;
 		this->name = name;
 	}
 
-	Person(char *name, int age, char *work = "none") 
+	Person(char *name, int age, char *work = "none")
 	{
 		cout <<"Pserson(char*, int)"<<endl;
 		this->name = name;
@@ -25,7 +25,7 @@ public:
 		this->work = work;
 	}
 
-	
+
 	void setName(char *n)
 	{
 		name = n;
@@ -42,7 +42,7 @@ public:
 	}
 	void printInfo(void)
 	{
-		//printf("name = %s, age = %d, work = %s\n", name, age, work); 
+		//printf("name = %s, age = %d, work = %s\n", name, age, work);
 		cout<<"name = "<<name<<", age = "<<age<<", work = "<<work<<endl;
 	}
 };
