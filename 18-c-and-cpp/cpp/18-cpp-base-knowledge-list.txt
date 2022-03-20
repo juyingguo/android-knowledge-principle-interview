@@ -303,3 +303,9 @@
 	【博主系列日记】
 	21.1 C++日记——Day10：类内初始化、默认构造函数、=default、=delete、拷贝构造函数
 		https://blog.csdn.net/weixin_38278993/article/details/104459267 
+22 c++关键字static
+	22.1,'static' can only be specified inside the class definition
+		'static' 只能在类定义中指定
+		在类的内部声明时可以使用，定义时也可以使用。声明和定义作为一体时，也可以使用。
+		如果在类的外部再实现类的函数时，不能使用static。
+			

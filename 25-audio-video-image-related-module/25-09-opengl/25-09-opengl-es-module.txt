@@ -3,6 +3,9 @@
 		https://learnopengl-cn.github.io/
 	1.1 OpenGL ES
 		file:///C:/java2/as/as1_5/sdk/docs/guide/topics/graphics/opengl.html
+		
+		Android OpenGL ES相关说明：
+		https://source.android.google.cn/devices/graphics/arch-egl-opengl?hl=zh-cn
 	1.2. OpenGL ES应用开发实践指南  Android卷 [（美）KevinBrothaler著][机械工业出版社][2014.09][230页]@www.java1234.com
 		书中例子源码及相关资源：
 		实例代码及响应的图像和纹理：
@@ -44,7 +47,11 @@
 	Android学习之-------OpenGLES详解
 	https://www.e-learn.cn/content/qita/2810770 
 3. Android 的OpenGL ES与EGL 
-	https://blog.csdn.net/mirkerson/article/details/8301639 
+	https://blog.csdn.net/mirkerson/article/details/8301639?
+	
+	3.1 egl官方网址：https://www.khronos.org/registry/EGL/
+		egl api:
+			https://www.khronos.org/registry/EGL/sdk/docs/man/
 4. 库中文档记录，一些官网目前没有的，可能目前没有找对文档。
 	4.1 glTexParameteri 
 		https://baike.baidu.com/item/glTexParameteri/2087247?fr=aladdin 

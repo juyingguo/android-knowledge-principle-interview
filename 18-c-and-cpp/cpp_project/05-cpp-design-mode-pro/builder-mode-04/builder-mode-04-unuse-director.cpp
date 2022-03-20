@@ -35,7 +35,7 @@ class AssembleCarA : public Assemble
 public:
     AssembleCarA(){ _carA = new Car();}
     virtual void assembleEngine( ){ _carA->setEngine("engineA");};
-    virtual void assembleWheel( ){ _carA->setWheel("whellA");}
+    virtual void assembleWheel( ){ _carA->setWheel("wheelA");}
     virtual void assembleBody( ){ _carA->setBody("bodyA");};
     virtual Car* buildCar()
     {

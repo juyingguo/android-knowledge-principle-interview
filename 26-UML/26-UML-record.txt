@@ -6,7 +6,17 @@
 		powerdesigner 
 		PowerDesigner、Rational Rose、Visio三种建模工具比较  
 			https://blog.csdn.net/u014020534/article/details/71242142 
+		starUML
 2. 时序图
 	2.1 时序图简介（Brief introduction）
 		https://www.cnblogs.com/a311300/p/4094547.html
 		
+3. UML类图详解_关联关系
+	3.1 UML类图详解_关联关系_一对多
+		https://www.cnblogs.com/abc-begin/p/7749738.html
+	
+	3.2 UML类图详解_关联关系_多对多
+		https://www.cnblogs.com/abc-begin/p/7749814.html
+4. StarUML
+	4.1 史上最全的StarUML使用教程
+		https://blog.csdn.net/csdn_20150804/article/details/105004375?
