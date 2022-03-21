@@ -111,13 +111,102 @@
 				Software - GLES 1.1 #模拟器正常启动，且图像显示，播放速度默认也正常。
 			初步猜测结论：编译ffmpeg时选择的android api级别决定了，影响在高地版本上运行。
 				低android api版本编译处理的so,无法在高版本上运行，虽然初步日志正常，但图像不显示。尚需要进一步验证。
-				
-9 
-10 video project chapter2
-	
+	8.x
+		EGL是显示用的。
+9. 视频播放器项目实战一 需求和设计模式
+10. 视频播放器项目实战二 音视频解码解封装
+	10.1 项目创建权限ABI和CMake相关库和头文件配置~1【程序员教程吧 www.cxyjc8.com】
+		android 库是获取窗口句柄的。
+	10.3 FFDemux的Open实现打开媒体文件~1【程序员教程吧 www.cxyjc8.com】
+	10.5. 完成XThread线程类IDemux继承后在线程中读取帧数据~1【程序员教程吧 www.cxyjc8.com】
+		using namespace std;//不要放在头文件中，要放在cpp实现文件中，应为头文件可能会被其它头文件引用（可能重复等），头文件不可控，而cpp是可控的、自己写的。
+	10.7. 观察者Observer模式的代码实现并使用IDemux进行测试~1【程序员教程吧 www.cxyjc8.com】
+		c++11 中 vector size()每次调用，会遍历一遍，效率比较低
+	10.11. 封装FFDecode解码的Send和Recv接口~1【程序员教程吧 www.cxyjc8.com】
+		a,早期ffmpeg版本,音频视频解码是分开的。现在的是在一起的
+		 现在使用future模型，同生产者消费者模型。
+		b，AVCodecContext 多线程解码
+			codec->thread_count = 8;//多线程解码
 11 video project chapter3
 	q1：图像无法显示问题同【8】中记录分析解决。
 	q2,图像能正常显示后，感觉想2倍快进一样，是哪里设置出问题了吗？
+	11.1. IVideoView显示模块架构讲解和代码创建~1
+		显示部分要与解码部分独立开，独立初始化.
+		a，eglChooseConfig
+			part api doc:
+			If this value is zero, color buffers with the smallest blue component size are preferred. Otherwise, color buffers with the largest blue component of at least the specified size are preferred.
+			如何理解？
+			google翻译如下：
+			如果此值为零，则首选具有最小蓝色分量大小的颜色缓冲区。否则，具有至少指定大小的最大蓝色分量的颜色缓冲区是首选。
+	11.3. XShader基于yuv420p的初始化Init代码完成并测试~1
+		如果做多路视频，需要多个XShader，不能做单例模式了。但可以将多路视频写到同一个egl中。
+		
+	11.8 完成了IAudioPlay和SLAudioPlay的音频播放环境初始化~1
+		a,SLAudioPlay::StartPlay
+			定义pcm时，sample_rate *1000是否正确？
+			验证：FFDemux::GetAPara sample_rate=44100 #打印值
+					而OpenSLES.h中定义的 SL_SAMPLINGRATE_44_1为44100000。保持一致需要乘以1000
+		b,音频为什么需要重采样？
+			也有不需要重采样。
+			当前使用ffmpeg时，采用了重采样，ffmeng定义的音频
 	11.9 
 		使用opensl播放音频，
 		也可以使用qt播放音频。
+	11.11. 完成硬解码并完成NV21和NV12格式的shader显示编写~1
+		a，硬解码部分和软解码部分的shader不一致
+		
+		b,查看视频像素格式
+			ffmpeg中：
+			libavutil/pixfmt.h AVPixelFormat
+		c,硬解码要注册
+			JNI_OnLoad(JavaVM *vm,void *res)
+				FFDecode::InitHard(vm);
+					av_jni_set_java_vm(vm,0);
+		d,targetSdkVersion 21 #指定为21暂且不需要配置动态权限申请代码。
+	11.12. 解决android8.0下opengles不能播放的问题和音频播放的回音问题~1
+		a，android8.0下画面不能显示问题的解决
+			//android 8.0 需要设置
+			setRenderer( this );
+		b,声音出现了重音
+			在以下函数中调用了两次代码
+			Java_xplay_xplay_MainActivity_stringFromJNI
+			抽取到JNI_OnLoad函数中，保证调用一次即可解决当前问题
+			
+12. 视频播放器项目实战四 完成架构解决同步和seek
+	12.1. 完成facade模式的IPlayer并实现Open接口.~1
+		a,IPlay对象可能有多个，如果开放为多窗口播放的话。
+		b,第二次打开IPlay时，上一次的是清理掉，还是获取上一次的内容
+		c,使用[门面模式]就是内部的元素不要用户知道，用户只知道IPlay。好处是，细节更换，用户代码不需要调整。
+	12.2. 完成Iplayer开始播放和窗口初始化接口~1
+		音频先启动，先开启播放；音频先于视频，因为视频可以快进或后退，音频对用于而言是高度敏感的。
+	12.
+		a，使用建造者模式。
+		b,如果要移植到到qt平台，更换IAudioPlay的具体qt实现即可。
+	12.4. 完成IPlayerProxy代理模式并进行测试架构搭建完成~1
+		a,IPlayer中的函数都要在代理类IPlayerProxy中实现。
+		a2，以后二者之一有添加函数，对应的另一个也需要添加。
+		a3,代理类继承主题接口类
+		a4，当有多个窗口IPlayer时,还是通过一个IPlayerProxy代理管理处理。【视频多路处理。】
+	12.5. 统一换算pts为毫秒使用IPlayer完成音视频同步播放~1
+		a,	音视频同步
+			.设定基准事件音视频同步 #只针对多路视频
+			·视频同步音频	#采用该方案。视频可以快进或后退
+			·音频同步视频	#音频高度敏感，无法控制。
+		a2,用IPlayer中间者控制同步，避免音频、视频代码耦合
+			在独立的线程中处理同步。
+		a3，音频和视频的时间单位基数是不一致的，需要换算为一致的时间基数
+		a4,要在IDecode中对视频同步音频处理
+			同时要尽可能在接口类中完成通过处理。
+		a5,配置好后，观看播放字幕，并没有同步。
+			打印：
+			IDecode::Main() enter,current synPts = 67964,pts = 0
+			视频的pts为0.
+			分析：是{IDecode::Main()中获取解码后数据的函数{RecvFrame()}之后未对pts赋值}
+	12.6. IDemux&FFdemux线程安全和Close清理函数编写~1
+		a,FFDemux对成员共享变量{AVFormatContext *ic}加锁。
+		b,FFDemux添加Close清理函数，每次Open时都先调用该清理函数。
+	12.7. FFdecode和FFResample线程安全处理和Close清理函数编写~1
+		锁使用原则：近晚调用，尽早释放。
+x,新增待实现内容
+	x1,字幕如何显示
+	

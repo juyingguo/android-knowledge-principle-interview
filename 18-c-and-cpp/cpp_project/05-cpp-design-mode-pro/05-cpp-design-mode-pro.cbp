@@ -35,10 +35,7 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="builder-mode-02/builder-mode-02.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-		</Unit>
+		<Unit filename="builder-mode-02/builder-mode-02.cpp" />
 		<Unit filename="builder-mode-03/Builder.cpp">
 			<Option compile="0" />
 			<Option link="0" />
@@ -97,7 +94,10 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="singleton/01-singleton-01-lanhan-02.cpp" />
+		<Unit filename="singleton/01-singleton-01-lanhan-02.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="singleton/01-singleton-01-lanhan-03-threadsafe-smartpointer.cpp">
 			<Option compile="0" />
 			<Option link="0" />

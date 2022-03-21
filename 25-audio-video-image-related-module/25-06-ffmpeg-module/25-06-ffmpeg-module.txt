@@ -56,13 +56,13 @@
 				【老夏课程单独记录在：25-06-02-ffmpeg-laoxia-learn-record.txt】
 			
 			FFmpeg 4.2 从基础实战-多路H265监控录放开发
-			哔哩哔哩资源：
-			https://www.bilibili.com/video/BV1qV411o7zx?from=search&seid=17261540113384188918 
-			腾讯课堂资源：
-			https://ke.qq.com/course/2027387?taid=8356361387569019 
-			
-			Linux项目实战：自制视频监控系统！使用FFmpeg编辑视频全攻略 #第3课# 
-			https://www.bilibili.com/video/BV1aK4y1k7pN?from=search&seid=9468635879410232171 
+				哔哩哔哩资源：
+				https://www.bilibili.com/video/BV1qV411o7zx?from=search&seid=17261540113384188918 
+				腾讯课堂资源：
+				https://ke.qq.com/course/2027387?taid=8356361387569019 
+				
+				Linux项目实战：自制视频监控系统！使用FFmpeg编辑视频全攻略 #第3课# 
+				https://www.bilibili.com/video/BV1aK4y1k7pN?from=search&seid=9468635879410232171 
 			
 	1.8 ffmpeg ./configure 的相关参数说明
 		https://blog.csdn.net/fengsh998/article/details/79443503
