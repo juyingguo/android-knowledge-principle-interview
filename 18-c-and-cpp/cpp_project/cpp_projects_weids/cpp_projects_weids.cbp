@@ -31,11 +31,68 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="cpp_projects/01th_oop/person.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/01th_oop/person2.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/01th_oop/person3.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/01th_oop/person4.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/01th_oop/person5.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/01th_oop/person6.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/02th_accesscontrol/person.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/02th_accesscontrol/person2.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="cpp_projects/03th_ProgramStructure/01th/person.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/02th/main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/02th/person.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/02th/person.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/03th/dog.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="cpp_projects/03th_ProgramStructure/03th/dog.h" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/03th/main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/03th/person.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="cpp_projects/03th_ProgramStructure/03th/person.h" />
 		<Unit filename="cpp_projects/03th_ProgramStructure/04th/dog.cpp">
 			<Option compile="0" />
@@ -65,11 +122,69 @@
 			<Option link="0" />
 		</Unit>
 		<Unit filename="cpp_projects/03th_ProgramStructure/05th/person.h" />
-		<Unit filename="cpp_projects/03th_ProgramStructure/06th/dog.cpp" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/06th/dog.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="cpp_projects/03th_ProgramStructure/06th/dog.h" />
-		<Unit filename="cpp_projects/03th_ProgramStructure/06th/main.cpp" />
-		<Unit filename="cpp_projects/03th_ProgramStructure/06th/person.cpp" />
+		<Unit filename="cpp_projects/03th_ProgramStructure/06th/main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/03th_ProgramStructure/06th/person.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="cpp_projects/03th_ProgramStructure/06th/person.h" />
+		<Unit filename="cpp_projects/04th_overload/main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/05th_pointer_reference/main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person10.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person11.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person2.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person3.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person4.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person5.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person6.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person7.cpp" />
+		<Unit filename="cpp_projects/06th_constructor/person8.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cpp_projects/06th_constructor/person9.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="cpp_projects/19th_smartpointer/person.cpp">
 			<Option compile="0" />
 			<Option link="0" />
