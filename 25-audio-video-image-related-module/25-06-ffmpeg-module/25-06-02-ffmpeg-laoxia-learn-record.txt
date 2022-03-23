@@ -18,14 +18,19 @@
 		4.4.2 av_seek_frame(ic,videoStream,pos,AVSEEK_FLAG_BACKWARD|AVSEEK_FLAG_FRAME )
 			pos 如何设置。根据总时长吗？(AVFormatContext)ic->duration 
 5. 
-	5.7 ffmpeg调用MediaCodec实现硬解码
-		android中硬解码部分没有实现c++接口只实现了java接口，需要c++调用java接口。
-		
-		h264_mediacodec
-		 avcodec_open2 for video failed!:Invalid argument
-		 
-		 5.7.1 ffmpeg android jni端调用mediaCodec实现硬解码
-			https://blog.csdn.net/zhangpengzp/article/details/88943867  
+	5.7 ffmpeg调用MediaCodec实现硬解码			
+			硬解码，用的是cpu上面固化的一段芯片，专门用来处理音视频的，硬解码不会大量占用cpu 也不会占用gpu,但解码的帧率是固化的。
+			android中硬解码部分没有实现c++接口只实现了java接口，需要c++调用java接口。
+		5.7.0 h264_mediacodec
+			a，
+				avcodec_open2 for video failed!:Invalid argument
+			b,开启视频硬解码时，运行在真机设备上,报错：
+				avcodec_find_decoder 13 failed!  1 
+				#13为codec_id，1为硬解码变量值
+				
+			分析：同【5.7.1】
+		5.7.1 ffmpeg android jni端调用mediaCodec实现硬解码
+			https://blog.csdn.net/zhangpengzp/article/details/88943867?
 			
 			这样就可以打开硬解码了，当然在编译ffmpeg的时候要支持硬解码，请参考ffmpeg 编译android so库文件 后面跟新的部分。 
 			参考博文：：
@@ -111,6 +116,25 @@
 				Software - GLES 1.1 #模拟器正常启动，且图像显示，播放速度默认也正常。
 			初步猜测结论：编译ffmpeg时选择的android api级别决定了，影响在高地版本上运行。
 				低android api版本编译处理的so,无法在高版本上运行，虽然初步日志正常，但图像不显示。尚需要进一步验证。
+				
+			Hardware - GLES 2.0:在模拟器上失败：
+			ERROR: Could not initialize OpenglES emulation, use '-gpu off' to disable it.
+			Emulator: Process finished with exit code -1073741819 (0xC0000005)
+			
+			androidstudio3.5创建avd时，没有‘-gpu off’选项。
+				选项中graphics只要不使用Hardware - GLES*就可以
+				
+			打印：
+			reqGlEsVersion = 20000
+			OpenGLRenderer: Initialized EGL, version 1.4
+			同样的值但在s500上【eglCreateContext failed! error:12293】
+			
+			eglCreateContext failed! error:12293
+			对应错误码（/EGL/egl.h）：EGL_BAD_CONFIG			0x3005
+			对应在线文档：
+				EGL_BAD_CONFIG：
+				An EGLConfig argument does not name a valid EGL frame buffer configuration.
+			#XEGL.cpp
 	8.x
 		EGL是显示用的。
 9. 视频播放器项目实战一 需求和设计模式
@@ -209,4 +233,7 @@
 		锁使用原则：近晚调用，尽早释放。
 x,新增待实现内容
 	x1,字幕如何显示
+y,运行在真机s500（android5.1）上失败。
+	y1,XLOGE("eglCreateContext failed!");
+		同【8.1 - q5】问题
 	

@@ -522,3 +522,14 @@
 	https://www.zhihu.com/question/27763224 
 30 如何通过Android Studio发布library到jCenter和Maven Central
 	https://blog.csdn.net/wxx614817/article/details/52755558 
+31 新发的日常小问题——修改AndroidStudio的AVD下载路径
+	https://blog.csdn.net/linxinfa/article/details/109278581 
+	
+	a，搬移.android文件夹
+	在D盘新建一个avd文件夹
+	如：D:\software\AndroidStudio\avd。
+	把刚刚C盘的.avd文件夹剪切过来。
+	然后修改C盘中的.ini文件中avd文件路径
+	
+	b,设置环境变量
+	如果你还没下载过AVD，那么设置环境变量ANDROID_SDK_HOME，这样AndroidStudio就会把AVD下载到环境变量ANDROID_SDK_HOME对应的目录了，而不会默认下到C盘中。
