@@ -231,6 +231,10 @@
 		b,FFDemux添加Close清理函数，每次Open时都先调用该清理函数。
 	12.7. FFdecode和FFResample线程安全处理和Close清理函数编写~1
 		锁使用原则：近晚调用，尽早释放。
+	12.11. XTexture和GLVideoView的线程安全和清理函数编写~1
+		a,清理对象的原则，对象由谁创建，就由谁来清理。
+			如：XTexture::Create
+		b,析构函数要放到virtual 函数指针中，通过父类指针才可以调用到子类的析构函数。
 x,新增待实现内容
 	x1,字幕如何显示
 y,运行在真机s500（android5.1）上失败。
