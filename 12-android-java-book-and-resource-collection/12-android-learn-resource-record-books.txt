@@ -53,8 +53,10 @@
 	2.1 大学四年自学走来，这些私藏的实用工具/学习网站我贡献出来了 
 		https://blog.csdn.net/m0_37907797/article/details/102781027?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40
 		
-3. 技术网站
-	
+3. 技术网站，技术课堂
+	3.1 [享学课堂-腾讯课堂]
+		Android安卓移动互联网架构开发/音视频/Kotlin/Jetpack/Flutter		
+		https://ke.qq.com/course/341933?flowToken=1038555&taid=12886877573298093
 	
 4. 书籍
 	一、
