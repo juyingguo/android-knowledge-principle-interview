@@ -27,7 +27,11 @@
 	2.1 国内无法访问Google的完美解决方案
 		https://jingyan.baidu.com/article/03b2f78cab65801fa237ae80.html
 		
-3. 
+3. IE浏览器
+	3.1 无法上网，根据提示，进入-Internet选项-连接-局域网(LAN)设置-取消【使用自动配置脚本】
+	3.2 Chrome浏览器无法上网。
+		经过3.1操作后，也可以上网了。
+	
 		
 4. dns查询网站：http://tool.chinaz.com/dns
 

@@ -12,3 +12,21 @@
 		http://client.jijidown.com/ 
 		
 		[好用]
+3. 如何在PC上下载腾讯课堂视频(真正的方法!!)？
+	https://www.zhihu.com/question/379397682?
+	https://zhuanlan.zhihu.com/p/259826922?
+	3.1. chrome 网上应用店:
+		M3U8 finder and HLS player
+		M3U8 Downloader
+		
+		插件：视频下载器 - CoCoCut
+			商店下载失败
+			单独下载：
+			https://www.crx4chrome.com/crx/193864/
+			使用其它网站下载：
+			https://www.jb51.net/softs/747918.html
+	3.2 用N_m3u8DL-CL下载
+		软件下载：https://wwd.lanzoub.com/iAEJB01sr0gd
+		密码:3ny5
+		使用方法：
+		复制地址，设置下载目录，勾选合并后删除分片点go即可下载

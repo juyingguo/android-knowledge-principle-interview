@@ -235,7 +235,15 @@
 		a,清理对象的原则，对象由谁创建，就由谁来清理。
 			如：XTexture::Create
 		b,析构函数要放到virtual 函数指针中，通过父类指针才可以调用到子类的析构函数。
-x,新增待实现内容
+	12.12. IPlayer完成Close清理函数编写并完成多次打开视频文件的测试~1
+		a,Close时候一定要Clear(),而Clear时不一定要把所有资源全关闭掉。Clear可能只需要清理一些缓存数据。
+		b,功能出现问题及解决
+			播放时，先出声音，画面是黑色的，过一会才出现画面。
+			解决方法：
+			IPlayer::Start中调整为：先启动音频播放器，再依次启动视频解码，音频解码，解封装。
+13，egl是如何显示的呢？
+	通过调用 eglSwapBuffers(display,surface);就可以达到显示的目的吗？
+x1,新增待实现内容
 	x1,字幕如何显示
 y,运行在真机s500（android5.1）上失败。
 	y1,XLOGE("eglCreateContext failed!");
