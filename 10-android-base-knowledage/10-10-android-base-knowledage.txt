@@ -417,3 +417,6 @@
 		
 		BitmapShader的简单应用
 		https://blog.csdn.net/t1623183652/article/details/53008673
+36 布局
+	36.1 约束布局ConstraintLayout看这一篇就够了
+		https://www.jianshu.com/p/17ec9bd6ca8a?
