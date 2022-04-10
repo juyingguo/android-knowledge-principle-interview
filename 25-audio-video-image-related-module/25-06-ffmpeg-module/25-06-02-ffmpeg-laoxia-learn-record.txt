@@ -241,6 +241,44 @@
 			播放时，先出声音，画面是黑色的，过一会才出现画面。
 			解决方法：
 			IPlayer::Start中调整为：先启动音频播放器，再依次启动视频解码，音频解码，解封装。
+		c,多次打开视频文件,失败。
+			因为打开文件，立即关闭，可能不同平台音频实现方式或视频渲染方式出错。
+	12.15. 完成通过界面多次打开视频文件，修正了多次打开显示出现的bug~1
+		a，异常同【12.12，c】
+		a1,日志分析，暂没看出来。待进一步分析。
+		a2,判断：是Close出现问题。注释掉。播放本地就正常了。逐步排查，音频或视频关闭或清理出现问题。
+		a3，debug,初步定位到，Close函数处，就卡死了。
+	
+	12.17. 完成了播放进度的显示并修正了硬解码参数传递错误~1
+	
+		播放进度空指针异常
+		Java_xplay_xplay_MainActivity_PlayPos
+		03-30 11:05:56.442 F/DEBUG   (22712): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+		03-30 11:05:56.442 F/DEBUG   (22712): Build fingerprint: 'xiaomi/cereus/cereus:9/PPR1.180610.011/9.8.22:user/release-keys'
+		03-30 11:05:56.442 F/DEBUG   (22712): Revision: '0'
+		03-30 11:05:56.442 F/DEBUG   (22712): ABI: 'arm'
+		03-30 11:05:56.442 F/DEBUG   (22712): pid: 22658, tid: 22709, name: Thread-3  >>> xplay.xplay <<<
+		03-30 11:05:56.442 F/DEBUG   (22712): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 0x919543f0
+		03-30 11:05:56.442 F/DEBUG   (22712):     r0  6bb25ed3  r1  3fc6f5ed  r2  00000000  r3  00000000
+		03-30 11:05:56.443 F/DEBUG   (22712):     r4  ab7681e4  r5  00000001  r6  00000001  r7  8bf7ef78
+		03-30 11:05:56.443 F/DEBUG   (22712):     r8  00000000  r9  8db44600  r10 8bf7f080  r11 8bf7f00c
+		03-30 11:05:56.443 F/DEBUG   (22712):     ip  919747b0  sp  8bf7ef58  lr  91954f5d  pc  919543f0
+		03-30 11:05:56.455 W/Looper  (22658): Slow Looper main: Long Msg: seq=3 plan=11:05:55.218  late=55ms wall=1170ms running=0ms h=android.app.ActivityThread$H w=159
+		03-30 11:05:56.468 F/DEBUG   (22712): 
+		03-30 11:05:56.468 F/DEBUG   (22712): backtrace:
+		03-30 11:05:56.468 F/DEBUG   (22712):     #00 pc 000113f0  /data/app/xplay.xplay--Lo08DaDkYpqKvaIChwLrg==/lib/arm/libnative-lib.so (Java_xplay_xplay_MainActivity_PlayPos+32)
+		03-30 11:05:56.468 F/DEBUG   (22712):     #01 pc 0000910b  /data/app/xplay.xplay--Lo08DaDkYpqKvaIChwLrg==/oat/arm/base.odex (offset 0x9000) (xplay.xplay.MainActivity.PlayPos+74)
+	12.18. 滑动条拖动Seek视频开发策略详细分析~1
+		
+		. lDemux seek关键帧问题多线程暂停
+		· lDecode解码缓冲多线程暂停
+		. IAudioPlay音频缓冲多线程暂停
+		. lPlayer控制Seek
+
+		ffmeg解码，内部也有缓冲。
+		显示和重采样，不是独立的操作，是跟随解码
+	12.19. 完成了IDemux的Seek和界面SeekBar的事件响应~1
+		往后跳转，是进度条左边。
 13，egl是如何显示的呢？
 	通过调用 eglSwapBuffers(display,surface);就可以达到显示的目的吗？
 x1,新增待实现内容

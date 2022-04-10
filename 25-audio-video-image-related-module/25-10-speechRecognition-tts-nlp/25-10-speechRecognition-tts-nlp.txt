@@ -7,4 +7,5 @@
 	4.1 薄言豆豆
 		http://api.doudoubot.cn/rsvpbot/general/chat?appid=rsvpupR18lm6q8i0&token=HD8Mn045gGzZ8foc&userid=123456&question=%E6%B7%B1%E5%9C%B3%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F%E3%80%82
 	
- 
+5.语音端点检测（Voice Activity Detection,VAD）
+	https://www.cnblogs.com/dream-and-truth/p/10683684.html 
