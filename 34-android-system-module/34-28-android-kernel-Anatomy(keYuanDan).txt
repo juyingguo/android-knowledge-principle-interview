@@ -5,3 +5,22 @@
 		Instrumentation创建流程。
 		10.1.3.2  startActivityLocked	
 			（7） 步骤详细情况待分析。
+		
+		10.1.3.3  目标B进程不存在的时候创建进程位置
+			ActivityStack.java -> startActivityLocked
+				->resumeTopActivityLocked
+				
+					if (next.app != null && next.app.thread != null) {
+						...
+					}else{
+						...
+						startSpecificActivityLocked(next, true, true);
+					}
+				->startSpecificActivityLocked
+				
+					if (app != null && app.thread != null) {
+						...
+					}
+					mService.startProcessLocked(r.processName, r.info.applicationInfo, true, 0,
+						"activity", r.intent.getComponent(), false);
+			
