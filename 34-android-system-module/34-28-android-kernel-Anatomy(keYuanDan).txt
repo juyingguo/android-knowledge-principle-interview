@@ -23,4 +23,28 @@
 					}
 					mService.startProcessLocked(r.processName, r.info.applicationInfo, true, 0,
 						"activity", r.intent.getComponent(), false);
-			
+		10.1.3.4  
+			(11)．应用进程launch指定的Activity
+				ActivityThread->main()
+					{
+						 ActivityThread thread = new ActivityThread();
+						thread.attach(false);
+					}
+				-> attach()
+				{
+					mgr.attachApplication(mAppThread);
+				}
+				->ActivityManagerService
+					->attachApplication()
+					->attachApplicationLocked()
+						{
+							thread.bindApplication();
+							...
+							mMainStack.realStartActivityLocked(hr, app, true, true)
+						}
+					
+				->ActivityStack
+					->realStartActivityLocked()
+					{
+						app.thread.scheduleLaunchActivity()
+					}
