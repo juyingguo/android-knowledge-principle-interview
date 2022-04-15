@@ -48,3 +48,17 @@
 					{
 						app.thread.scheduleLaunchActivity()
 					}
+	10.1.6 按“Back”键回到上一个Activity
+		在AmS端的finishActivity的执行过程如附图3所示。
+		1调用requsetFinishActivityLocked()。
+		2判断该Activity是不是最后一个Activity，判断的方法如以下代码所示:
+		if (!p.finishing && p != r) {
+                lastActivity = false;
+                break;
+            }
+		
+		疑问：p.finishing是什么时候赋值的。
+			搜索发现有这些：
+				ActivityRecord创建时。
+				finishActivityLocked(...)函数内部。
+
