@@ -1,3 +1,7 @@
+0. 
+	书中提及“附图”请到:
+	http://www.broadview.com.cn/14398下载!
+
 1.
 10.第10章  AmS内部原理
 	10.1.3 
@@ -61,4 +65,37 @@
 			搜索发现有这些：
 				ActivityRecord创建时。
 				finishActivityLocked(...)函数内部。
+13.第13章  View工作原理
+	13.6 导致View树重新遍历的时机
+		13.6.9 invalidate()
+			
+			ViewGroup.java 
+				->invalidateChild(){
+					final boolean drawAnimation = (child.mPrivateFlags & DRAW_ANIMATION) == DRAW_ANIMATION;
 
+					// Check whether the child that requests the invalidate is fully opaque
+					final boolean isOpaque = child.isOpaque() && !drawAnimation &&
+								child.getAnimation() != null;								
+					
+				}
+				判断条件自相矛盾吗？
+				!drawAnimation &&
+								child.getAnimation() != null;	
+		
+				看api也无法理解，通过demo验证？
+	13.7遍历View树performTraversals()的执行过程
+		a，host.fitSystemWindows(mAttachInfo.mContentInsets);
+			protected boolean fitSystemWindows(Rect insets) {
+				if ((mViewFlags & FITS_SYSTEM_WINDOWS) == FITS_SYSTEM_WINDOWS) {
+					mPaddingLeft = insets.left;
+					mPaddingTop = insets.top;
+					mPaddingRight = insets.right;
+					mPaddingBottom = insets.bottom;
+					...
+				}
+				...
+			}
+			代码含义?
+		b,ViewRoot.java 可以参考OpenGl使用情况。
+			initializeGL
+			
