@@ -105,3 +105,9 @@
 		附加资料：
 			ViewGroup分配剪切区思路
 			https://www.jianshu.com/p/31f31e4d70b7?
+14.第14章  Wms工作原理
+	14.5.4 从A到B的切换
+		p388
+		并调用WmS中的setFocusedApp()将新的AppWindowToken设为焦点窗口，然而此时由于真正的窗口还没有就绪，所以焦点窗口被调整为Null。
+		对应代码位置？
+		
