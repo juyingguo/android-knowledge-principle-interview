@@ -99,3 +99,9 @@
 		b,ViewRoot.java 可以参考OpenGl使用情况。
 			initializeGL
 			
+	13.10.5 ViewGroup类中绘制子视图dispatchDraw()内部流程	
+		ViewGroup剪切区域是啥？
+		
+		附加资料：
+			ViewGroup分配剪切区思路
+			https://www.jianshu.com/p/31f31e4d70b7?
