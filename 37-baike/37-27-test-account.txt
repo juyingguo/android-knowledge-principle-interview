@@ -1,0 +1,7 @@
+1.mysql
+	root
+	root
+	
+2.my computer:
+	work:sw05
+	myself:juying
