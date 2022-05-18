@@ -1,0 +1,6 @@
+1.
+
+2. MySQL 教程
+	https://www.runoob.com/mysql/mysql-data-types.html
+3. mysql int(10)和int(11)区别
+	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j

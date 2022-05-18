@@ -1,5 +1,14 @@
 1.
+	https://tomcat.apache.org/
+	
+	Tomcat下载安装
+	https://blog.csdn.net/weixin_43356538/article/details/113354202?
+	注：Apache网页改动，Tomcat下载链接更新为：https://downloads.apache.org/tomcat/
+	
 2. tomcat上部署CGI
 	2.1 https://blog.csdn.net/sunshoupo211/article/details/34432503 
 	
 		<Context reloadable="true" privileged="true"> 
+3.Apache Tomcat各个版本区别
+	https://www.csdn.net/tags/MtTaEgzsMTgwMzgwLWJsb2cO0O0O.html
+	
