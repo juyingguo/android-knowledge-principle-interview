@@ -1,6 +1,18 @@
 1.
+	1.1 For information about MySQL products and services, visit:
+		   http://www.mysql.com/
+		For developer information, including the MySQL Reference Manual, visit:
+		   http://dev.mysql.com/
+		To buy MySQL Enterprise support, training, or other products, visit:
+		   https://shop.mysql.com/
 
-2. MySQL �̳�
+2. MySQL 教程
 	https://www.runoob.com/mysql/mysql-data-types.html
-3. mysql int(10)��int(11)����
+3. MySQL 安装
+	https://www.runoob.com/mysql/mysql-install.html
+	https://m.php.cn/article/362657.html
+4.mysql int(10)和int(11)区别
 	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j
+5.MySQL中主键是否需要设置为自增？
+	https://baijiahao.baidu.com/s?id=1646824561203668947&wfr=spider&for=pc
+	5.1 一般都可以自增长

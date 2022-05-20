@@ -1,0 +1,4 @@
+1.sqlyog
+	1.1
+	1.2 The backup of Session Savepoint is created at
+		C\Users\AdministratorVAppData\Roaming\SQLyogkconnrestore_backup.ysav
