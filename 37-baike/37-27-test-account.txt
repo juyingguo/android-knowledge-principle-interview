@@ -1,7 +1,10 @@
 1.mysql
 	root
 	root
-	
+	1.1 mysql local
+		root
+		root
+
 2.my computer:
 	work:sw05
 	myself:juying
