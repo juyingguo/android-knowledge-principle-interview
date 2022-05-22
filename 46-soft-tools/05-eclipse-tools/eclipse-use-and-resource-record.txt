@@ -1,3 +1,20 @@
+0. 
+	https://www.eclipse.org/
+	
+	如何官网下载Eclipse历史版本
+	https://blog.csdn.net/ba_wang_mao/article/details/111653440?
+	
+	eclipse 历史版本名称与版本号对应关系
+		https://blog.csdn.net/mghs_0318/article/details/119903934
+		http://wiki.eclipse.org/Older_Versions_Of_Eclipse
+		
+	Eclipse  2022.3 官方版
+	https://www.onlinedown.net/soft/32289.htm 
+	
+	0.3 Eclipse和MyEclipse哪个更好？
+		https://blog.csdn.net/weixin_42286276/article/details/82860502?
+		现在java开发工具 用Eclipse多还是MyEclipse多，还是Idea多？
+		https://www.zhihu.com/question/66307137
 1. eclipse 4.5.0；安装 adt-23.0.7插件异常。
 	No repository found at jar:file:/D:/juying/tools/ADT/ADT-23.0.7.zip!/.
 2. eclipse 与adt插件版本对应关系？
@@ -21,4 +38,34 @@
 		 
 		5.1.1. eclipse项目中的.project文件 
 			https://blog.csdn.net/qq_26264237/article/details/89714823?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+6. 启动失败
+	The Eclipse executable launcher was unable to locate its companion shared library.
 	
+	https://blog.csdn.net/baidu_32739019/article/details/89513474?
+7. Eclipse tomcat web JSP插件安装(图)
+	https://blog.csdn.net/b275518834/article/details/12445815?
+	1：打开eclipse 上面的选项卡help--》选择install New software
+
+		在Install的对话框中work width中输入“JSP - http://download.eclipse.org/releases/juno”
+
+		如下图选择打钩选项     “Web,XML,JAVA EE and OSGi Enterprise DeveLopment; ”
+	
+		1.1 Unable to read repository at http://download.eclipse.org/releases/juno.
+8.超详细Eclipse配置Tomcat配置教程
+	8.1 超详细Eclipse配置Tomcat配置教程
+		https://blog.csdn.net/qq_45344586/article/details/123976839?
+	8.2 Eclipse4.7(Oxygen)安装tomcat插件
+		https://blog.csdn.net/I_am_a_Beginner/article/details/78773419?
+		https://jingyan.baidu.com/article/6fb756ec7a3329241958fb6f.html
+		
+		Eclipse4.7(Oxygen)不像之前的旧版的Eclipse那样，直接解压tomcat插件压缩包，把jar包放到eclipse的plugin目录下，再重启eclipse就可以看见三只小猫了！
+		
+		tomcat插件下载地址https://sourceforge.net/projects/tomcatplugin/files/latest/download?source=files
+		或者在http://note.youdao.com/share/?id=df855cdfbab7a0ca555398ff6bc3cdf0&type=note#/ 
+		
+		下载完插件之后不是放到plugin文件夹下,而是先解压
+		打开Eclipse,找到Help--->install new software
+		点击add,然后在点击local选择刚才解压的文件夹
+		完成以后重启一下Eclipse就可以了
+9.Eclipse乱码问题最全解决方案
+	https://blog.csdn.net/weixin_49698247/article/details/118730169 

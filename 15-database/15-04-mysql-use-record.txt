@@ -1,0 +1,31 @@
+1.
+	1.1 For information about MySQL products and services, visit:
+		   http://www.mysql.com/
+		For developer information, including the MySQL Reference Manual, visit:
+		   http://dev.mysql.com/
+		To buy MySQL Enterprise support, training, or other products, visit:
+		   https://shop.mysql.com/
+
+2. MySQL 教程
+	https://www.runoob.com/mysql/mysql-data-types.html
+3. MySQL 安装
+	https://www.runoob.com/mysql/mysql-install.html
+	https://m.php.cn/article/362657.html
+4.mysql int(10)和int(11)区别
+	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j
+5.MySQL中主键是否需要设置为自增？
+	https://baijiahao.baidu.com/s?id=1646824561203668947&wfr=spider&for=pc
+	5.1 一般都可以自增长
+6. MySQL DELETE 语句
+	6.1 如果没有指定 WHERE 子句，MySQL 表中的所有记录将被删除。
+	6.2 删除数据使用条件WHERE 1=1，会把整个表数据删除吗
+		DELETE FROM tbcategory WHERE 1=1;
+		会全部删除的。
+7.mysql表名称大小写问题
+	mysql表名大小写设置
+	https://blog.csdn.net/bobozai86/article/details/107215917
+	
+	综合分析，对比：
+	为了避免大小写引发的问题，一种推荐的命名规则是：在定义数据库、表、列的时候全部采用小写字母加下划线的方式，不使用任何大写字母
+8. mysql怎么去掉重复的数据
+	https://m.php.cn/article/487033.html
