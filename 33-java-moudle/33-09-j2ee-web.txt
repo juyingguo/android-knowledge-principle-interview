@@ -16,3 +16,11 @@
 4. 微服务架构与SpringCloud的简介
 	https://zhuanlan.zhihu.com/p/369180021
 	https://blog.csdn.net/xushiyu1996818/article/details/104518706
+5. Spring
+	5.1 Spring常用注解——@Repository
+		https://blog.csdn.net/m0_67393593/article/details/124444064
+	5.2 Spring常用注解
+		https://www.cnblogs.com/xdp-gacl/p/3495887.html
+		
+		5.2.3 @Scope
+			spring 默认scope 是单例模式(scope="singleton")，这样只会创建一个Action对象，每次访问都是同一Action对象，数据不安全，struts2 是要求每次次访问都对应不同的Action，scope="prototype" 可以保证当有请求的时候都创建一个Action对象

@@ -1,6 +1,10 @@
 1.
 	https://www.jetbrains.com/idea/download/#section=windows
 	
+	官网地址：https://www.jetbrains.com/idea/
+
+	历史版本下载：https://www.jetbrains.com/idea/download/other.html
+	
 2. idea 试用30天“无限续费”（亲测有效）idea破解 
 	https://www.bilibili.com/read/cv12523396 
 	
@@ -17,5 +21,19 @@
 			http://www.cxyroad.com/1835.html 
 	2.2 jetbrains全家桶注册码
 		http://idea.cxyroad.com/ 
+	2.3 永久破解IDEA（亲测可用）（免费激活至 2100 年）
+		http://www.itmind.net/15276.html
 3. Intellij-idea 如何编译maven工程
 	https://www.cnblogs.com/twoheads/p/9838398.html 
+4. idea破解版下载
+	4.1 https://www.32r.com/soft/108145.html
+	
+		https://pan.baidu.com/s/1MJC5TEATKiGD4vnHkjlaKw
+		提取码【j64e】
+		
+5.Jetbrains官方6种免费获取 IntelliJ IDEA 激活码的方式
+	https://www.jianshu.com/p/4f74ac56a800?ivk_sa=1024320u
+6.怎么将IDEA汉化后从中文调回英文？
+	（1）先打开File->Settings->Plugins
+
+（2）取消勾选（可以在搜索框中输入chinese检索）
