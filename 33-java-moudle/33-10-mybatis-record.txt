@@ -1,0 +1,10 @@
+1.
+2. Mybatis使用useGeneratedKeys获取自增主键的方法
+	https://www.jb51.net/article/169560.htm
+	
+	批量insertOrUpdate
+	不能依赖useGeneratedKey返回主键。
+	2.1 深入浅出mybatis之useGeneratedKeys参数用法
+		https://www.bbsmax.com/A/8Bz8890Ozx/
+	2.3 Mybatis 参数 useGeneratedKeys ，keyColumn，keyProperty作用和用法
+		https://blog.csdn.net/qq_19007335/article/details/88627366
