@@ -39,3 +39,10 @@
 	修改：
 	Session options
 	-Terminal -Emulation - 勾选 ANSI color 和 Use color scheme
+5. xhell
+	5.1 https://www.jb51.net/softs/732916.html(测试版已过期)
+		http://www.downxia.com/downinfo/356033.html
+		Xshell 7(SSH远程终端工具) v7.0.0109 官方中文正式版(附文件+安装教程)
+	5.2
+		链接：https://pan.baidu.com/s/1gqz4PJEnLNvS20ZIi1-Gkw 
+		提取码：cebr

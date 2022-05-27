@@ -16,6 +16,11 @@
 4. 微服务架构与SpringCloud的简介
 	https://zhuanlan.zhihu.com/p/369180021
 	https://blog.csdn.net/xushiyu1996818/article/details/104518706
+
+	4.1外行人都能看懂的SpringCloud，错过了血亏！
+		https://mp.weixin.qq.com/s/MJrahcDXwxgDr5zBdO3XWw
+	4.2 分布式、集群、微服务、SOA 之间的区别
+		https://blog.csdn.net/heatdeath/article/details/79038795
 5. Spring
 	5.1 Spring常用注解——@Repository
 		https://blog.csdn.net/m0_67393593/article/details/124444064
@@ -23,4 +28,16 @@
 		https://www.cnblogs.com/xdp-gacl/p/3495887.html
 		
 		5.2.3 @Scope
-			spring 默认scope 是单例模式(scope="singleton")，这样只会创建一个Action对象，每次访问都是同一Action对象，数据不安全，struts2 是要求每次次访问都对应不同的Action，scope="prototype" 可以保证当有请求的时候都创建一个Action对象
+			spring 默认scope 是单例模式(scope="singleton")，这样只会创建一个Action对象，每次访问都是同一Action对象，数据不安全，
+			struts2 是要求每次次访问都对应不同的Action，scope="prototype" 可以保证当有请求的时候都创建一个Action对象
+			
+6. GitHub上最火的7个spring cloud开源项目，对新手太友好了
+	https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
+	
+	6.2 5个优秀的SpringCloud开源项目 （收藏）
+		https://blog.csdn.net/youngpeople_/article/details/121289907
+	
+	6.3 推荐：12 个优秀的 Spring Cloud 开源项目
+		https://www.136.la/jingpin/show-96772.html
+7. 12个优秀开源的 Spring Boot 学习项目，建议收藏
+	https://zhuanlan.zhihu.com/p/454001666
