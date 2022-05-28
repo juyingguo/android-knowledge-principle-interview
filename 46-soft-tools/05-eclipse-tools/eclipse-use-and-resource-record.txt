@@ -51,6 +51,10 @@
 		如下图选择打钩选项     “Web,XML,JAVA EE and OSGi Enterprise DeveLopment; ”
 	
 		1.1 Unable to read repository at http://download.eclipse.org/releases/juno.
+		
+		1.2 旧版本的eclispe访问不到插件，如eclipse4.5,4.8。
+		1.3 新版本eclipse202203R，会根据工程自动检查需要的插件，提示安装。
+			地址为：http://download.eclipse.org/releases/latest
 8.超详细Eclipse配置Tomcat配置教程
 	8.1 超详细Eclipse配置Tomcat配置教程
 		https://blog.csdn.net/qq_45344586/article/details/123976839?
