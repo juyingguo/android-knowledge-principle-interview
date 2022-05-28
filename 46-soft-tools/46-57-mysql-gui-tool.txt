@@ -40,3 +40,5 @@
 		然后我在修改后的库中 将该表种这个字段重新创建了，然后中文可以正常插入并且显示
 3. sqlyog使用教程
 	https://wenku.baidu.com/view/9b61895b1411cc7931b765ce05087632311274c8.html 
+4 sqlyog vs navicat
+	https://blog.csdn.net/weixin_43965055/article/details/120624179

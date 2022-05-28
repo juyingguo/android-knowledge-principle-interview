@@ -1,0 +1,13 @@
+1.
+2.如何查看CentOS操作系统版本
+	
+	1、如何查看已安装的CentOS版本信息：
+
+	第一种方式：cat /proc/version
+	第二种方式：uname -a
+	第三种方式：uname -r
+	2.、如何查看linux版本：
+
+	第一种方式使用这个命令查看 lsb_release -a
+	第二种方式使用这个命令查看cat /etc/issue（仅适用于linux）
+	第三种方式使用这个命令查看 执行cat /etc/redhat-release

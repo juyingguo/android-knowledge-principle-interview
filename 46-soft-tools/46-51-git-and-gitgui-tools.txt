@@ -95,12 +95,23 @@
 			git@github.com: Permission denied (publickey).
 			
 			使用命令重新生成的会有该问题。使用原有根据电脑好生成的，在github 配置，就正常了。
+	
+	3.5 2022.05
+		连接异常
+		ssh: connect to host github.com port 22: Connection refused
+		fatal: Could not read from remote repository.
+		3.5.1 
+			解决ssh: connect to host github.com port 22: Connection refused
+			https://blog.csdn.net/qq_34258344/article/details/124674209
+			[验证无效] 
+				会继续报433错误
+	3.6 参考【4.3解决】
 4. github.io无法访问问题及解决
-	3.1 解决GitHub.io无法访问的问题 
+	4.1 解决GitHub.io无法访问的问题 
 		https://blog.csdn.net/weixin_45085810/article/details/108339662
 		
 		解决途径：修改本地hosts文件（位置：C:/windows/system32/drivers/etc/hosts）
-	3.2  解决github无法访问的问题，亲测有效。
+	4.2  解决github无法访问的问题，亲测有效。
 		https://www.jianshu.com/p/36320f35b5b5 
 		
 		在不考虑google浏览器插件vpn能上网的情况下使用。因为此时虽然使用chrome浏览器能够访问github，但是本地git客户端依然无法访问。通过配置host也可以很好的解决。
@@ -131,14 +142,14 @@
 		来源：简书
 		著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 		
-	3.3 修改本地hosts文件（位置：C:/windows/system32/drivers/etc/hosts）
+	4.3 修改本地hosts文件（位置：C:/windows/system32/drivers/etc/hosts）
 		199.232.69.194   global-ssl.fastly.Net
 
 		140.82.112.3      github.com
 		
 		实验现象：不能用时再配置或不配置，相互切换。
 		
-	3.4 
+	4.4 
 		更换协议https to ssh试试。
 		
 		初步验证：ok
@@ -147,3 +158,5 @@
 		
 	推荐一款免费又稳定的梯子，速度超快，看油管，刷twitter用Google非常顺畅，现在搞限时活动免费领取VIP会员，填写兑换码gnaw3o6e，可立即获得VIP会员，下载链接：http://wckoqd.xzzccd.com/88gnaw3o6e2/
 	填写兑换码gnaw3o6e，可立即获得VIP会员
+6. 设置代理解决github被墙
+	https://zhuanlan.zhihu.com/p/481574024 
