@@ -1,0 +1,11 @@
+1.
+	相关资源
+	Redis 官网：https://redis.io/
+
+	源码地址：https://github.com/redis/redis
+
+	Redis 在线测试：http://try.redis.io/
+
+	Redis 命令参考：http://doc.redisfans.com/
+2.Redis 教程
+	https://www.runoob.com/redis/redis-lists.html

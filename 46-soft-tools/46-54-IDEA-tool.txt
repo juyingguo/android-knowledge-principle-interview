@@ -38,17 +38,17 @@
 		https://www.yuque.com/docs/share/536caa57-c440-493b-bcde-efcd87269049	
 		工具：idea20213.3激活破解包.zip
 		
-		注意事项
+		a,注意事项
 		1. 本教程适用于 JetBrains 全系列产品，包括IDEA、Pycharm、WebStorm、PhpStorm、AppCode 等
 		2. 本教程支持最新版IDEA 2021.3.1；同样适用于2018、2019、2020、2021等其他各版本
 		3. 本教程适用于 Windows/Mac/Linux，本文通过windows进行操作演示，其他系统类似；
-		已过试用期
+		b,已过试用期
 		30天试用期已经用完，无法打开工具的朋友看这里，能正常启动或者老司机请跳过
 		打开资料包中 reset_script目录，会看到如下脚本：
 		mac/Linux对应：reset_jetbrains_eval_mac_linux.sh
 		windows对应：reset_jetbrains_eval_windows.vbs
 		
-		安装插件
+		c,安装插件
 		● 第一步，下载并保存插件
 		将下载完的插件包保存在一个没有中文的路径并解压，解压后的每个文件都重要，所以不要随意移动任何文件；
 		
@@ -57,6 +57,15 @@
 		请根据自己的实际存放的路径配置，比如我放在下图的位置，即可添加如下配置项
 		请务必确保路径无误且jar包名称正确，否则可能导致IDEA无法正常启动,例如：-javaagent:D:\software\JetBrains\ja-netfilter\ja-netfilter.jar 
 		注意，不支持拖拽配安装，需要手动添加配置记录；配置好之后，不要删除！
+		
+		d，试用期已过，无法打开软件
+		解决方式一：使用资料包中临时激活码激活
+		解决方式二：重装工具
+		解决方式三：运行资料包目录 reset_script中的脚本，再启动
+		
+		d.1 使用注册的的账户，过期后，如果是退出登录后再次登录也是不行的。
+		d.2 重新注册的账户，就可以了。
+			idea64.exe.vmoptions可以直接编辑，添加上面的jar对应自己电脑解压后的路径。
 5.Jetbrains官方6种免费获取 IntelliJ IDEA 激活码的方式
 	https://www.jianshu.com/p/4f74ac56a800?ivk_sa=1024320u
 6.怎么将IDEA汉化后从中文调回英文？
