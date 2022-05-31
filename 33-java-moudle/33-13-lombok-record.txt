@@ -1,0 +1,11 @@
+1.
+	lombok的官方地址：https://projectlombok.org/
+	lombok的Github地址：https://github.com/rzwitserloot/lombok
+2. Lombok全面详细讲解
+		https://baijiahao.baidu.com/s?id=1663718812859963066&wfr=spider&for=pc
+		
+		Lombok plugin 插件
+	2.2 Intellij idea 使用Lombok需要安装插件
+		Lombok plugin: Preferences —> Plugins —> 搜索 Lombok plugin — > Install
+
+		同时设置 Preferences -> Compiler -> Annotation Processors -> Enable annotation processing勾选。

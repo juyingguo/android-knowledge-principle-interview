@@ -160,3 +160,5 @@
 	填写兑换码gnaw3o6e，可立即获得VIP会员
 6. 设置代理解决github被墙
 	https://zhuanlan.zhihu.com/p/481574024 
+7. Git Gitee
+	https://www.runoob.com/git/git-gitee.html

@@ -1,0 +1,10 @@
+1.
+	Downloading Apache Maven
+	https://maven.apache.org/download.cgi
+	
+	通常情况下，绝大部分依赖的 Maven 坐标都能在 https://mvnrepository.com/ 中获取
+2. Maven教程
+	http://c.biancheng.net/maven2/profile.html
+	
+	2.2 
+		除了中央仓库和私服外，还有很多其他公共仓库，例如 JBoss Maven 库，Java.net Maven 库等等。

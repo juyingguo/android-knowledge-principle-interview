@@ -1,0 +1,15 @@
+1.
+	
+2. 
+	2.7 
+	2.8 git私有仓库：http://47.112.198.104:10078/user/sign_up_my_eink
+	2.9 测试服放开下8897端口
+	2.10
+	 https://note.youdao.com/s/AbyFZ4kQmyeink  这是基于若依分离版整出来的服务端工程相关简陋说明。
+	后面不论是用若依的分离版还是微服务版，相关技术选型及编程规约都是一样的  
+	后端的小伙伴们可以先看下 实际开发技术链是基于java8 + springboot + mybatis + mysql开展
+	
+	2.11 若依管理系统
+		http://www.ruoyi.vip/
+3. test code myeink2
+	name and price 8-8 = 0;-
