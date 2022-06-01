@@ -1,6 +1,6 @@
 1.
 	
-2. 
+2. server
 	2.7 
 	2.8 git私有仓库：http://47.112.198.104:10078/user/sign_up_my_eink
 	2.9 测试服放开下8897端口
@@ -11,5 +11,20 @@
 	
 	2.11 若依管理系统
 		http://www.ruoyi.vip/
+	2.12 https://www.showdoc.com.cn/user/login
+	
+	2.13 svn 文档
+		https://192.168.1.30:8443/svn/iBotn/KINDMGR
+	2.14 https://note.youdao.com/s/boGduIGl 这是mysql相关规范约定
+	
 3. test code myeink2
 	name and price 8-8 = 0;-
+	
+4. 前端-小程序
+	小程序端
+	https://www.xiaopiu.com/h5/byId?type=project&id=5ef15313d564a944962d402d
+	
+	微信小程序登录code凭证接口API文档 
+	 http://47.112.198.104:8899/doc.html#/default/%E7%99%BB%E5%BD%95%E7%AE%A1%E7%90%86/wxMiniAppLoginUsingPOST 
+5.前端-电脑端
+	

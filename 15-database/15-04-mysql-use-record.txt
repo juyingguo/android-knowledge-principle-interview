@@ -29,3 +29,10 @@
 	为了避免大小写引发的问题，一种推荐的命名规则是：在定义数据库、表、列的时候全部采用小写字母加下划线的方式，不使用任何大写字母
 8. mysql怎么去掉重复的数据
 	https://m.php.cn/article/487033.html
+	
+9.mysql规约
+	https://note.youdao.com/ynoteshare/index.html?
+	
+	integer长度10
+10.子查询
+	https://baijiahao.baidu.com/s?id=1722343334112251850&wfr=spider&for=pc

@@ -32,11 +32,17 @@
 	4.3 nacos-server-1.4.1使用
 		
 5. Spring
-	5.0 
+	5.0
+		https://spring.io/
+		
 		Spring框架教程（非常详细）
 		http://c.biancheng.net/spring/
 		Spring基础知识汇总 Java开发必看
 		https://www.runoob.com/w3cnote/basic-knowledge-summary-of-spring.html
+		
+		5.0.3 Spring、SpringFramework、SpringBoot、SpringCloud的区别
+			https://wenku.baidu.com/view/610dd076f31dc281e53a580216fc700abb6852aa.html
+			含[相关文档集]
 	5.1 Spring常用注解——@Repository
 		https://blog.csdn.net/m0_67393593/article/details/124444064
 	5.2 Spring常用注解
@@ -46,6 +52,7 @@
 			spring 默认scope 是单例模式(scope="singleton")，这样只会创建一个Action对象，每次访问都是同一Action对象，数据不安全，
 			struts2 是要求每次次访问都对应不同的Action，scope="prototype" 可以保证当有请求的时候都创建一个Action对象
 			
+	
 6. GitHub上最火的7个spring cloud开源项目，对新手太友好了
 	https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
 	
@@ -92,4 +99,22 @@
 
 	xmlns:xsi是指web.xml遵守xml规范。
 
-	xsi:schemaLocation是指具体用到的schema资源。 
+	xsi:schemaLocation是指具体用到的schema资源。
+	
+13 spring-framework
+	13.1 
+		https://spring.io/projects/spring-framework
+		
+			official Spring Framework wiki page
+			https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions
+			
+	13.2 Spring framework（一）概述
+		https://blog.csdn.net/lj15559275886/article/details/121598440
+		
+14 spring security
+	14.1 springsecurity详解
+		https://blog.csdn.net/baidu_37366055/article/details/109994460
+		
+		初识 Spring Security
+		https://www.w3cschool.cn/springsecurity/
+	
