@@ -7,5 +7,45 @@
 	Redis 在线测试：http://try.redis.io/
 
 	Redis 命令参考：http://doc.redisfans.com/
-2.Redis 教程
+2.Redis 文档教程
 	https://www.runoob.com/redis/redis-lists.html
+	
+	2.1 安装目录下的README.txt
+3. window下redis操作
+	3.0 cmd 控制台，打字容易黑屏。
+		在文件夹下，鼠标右键在此处打开命令行，输入命令会有提示。
+	3.1 redis-server.exe 
+	3.2 登录
+		windows系统下启动redis命令
+		https://blog.csdn.net/m0_67401920/article/details/123705899
+		
+		(无密码)redis-cli -h 127.0.0.1 -p 6379
+		
+		(有密码)auth [password]
+		查看当前密码
+
+		config get requirepass
+
+		修改密码
+
+		config set requirepass
+
+		（这种方式重启服务后密码就重置为原来的密码了，推荐使用下面的方法）
+		
+		修改配置文件
+
+		在redis.(.*).conf文件中，找到requirepass，修改密码即可。
+		
+		修改配置文件，密码不生效。
+		
+		查看服务启动提示：
+		redis-server.exe
+		14.197 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+		14.198 # Redis version=5.0.14.1, bits=64, commit=ec77f72d, modified=0, pid=8892, just started
+		14.199 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server.exe /path/to/redis.conf
+		
+		
+		redis-server.exe redis**.conf
+		
+		
+		

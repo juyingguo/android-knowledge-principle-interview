@@ -46,4 +46,6 @@
 	4.2 输入npm install 之后都干了啥
 		https://blog.csdn.net/Alive_tree/article/details/101014999
 		https://blog.csdn.net/dengNDSC/article/details/90643172
-		
+5. node使用
+	5.1 查看版本
+		node --version

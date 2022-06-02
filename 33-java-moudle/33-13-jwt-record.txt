@@ -1,0 +1,6 @@
+1.
+	官网地址：https://jwt.io/
+2. JWT详解
+	https://blog.csdn.net/weixin_45070175/article/details/118559272
+	
+	而JWT就是上述流程当中token的一种具体实现方式，其全称是JSON Web Token，官网地址：https://jwt.io/

@@ -11,6 +11,17 @@
 3. MySQL 安装
 	https://www.runoob.com/mysql/mysql-install.html
 	https://m.php.cn/article/362657.html
+	
+	下载需要的版本，选择存档:Archived
+	
+	https://downloads.mysql.com/archives/community/
+	有选择位数入口。（community版）
+	
+	进入官网找到自己所需的安装包：
+		https://dev.mysql.com/  ，路径：DOWNLOAD-->MYSQL Community Edition(GRL)-->MYSQL on Windows (Installer & Tool)
+	
+	Windows10 MYSQL Installer 安装（mysql-installer-community-5.7.19.0.msi）
+	https://www.runoob.com/w3cnote/windows10-mysql-installer.html
 4.mysql int(10)和int(11)区别
 	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j
 5.MySQL中主键是否需要设置为自增？

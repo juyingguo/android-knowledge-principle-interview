@@ -17,8 +17,16 @@
 		https://192.168.1.30:8443/svn/iBotn/KINDMGR
 	2.14 https://note.youdao.com/s/boGduIGl 这是mysql相关规范约定
 	
+	2.15 
+		本地运行，接口文档
+		http://localhost:8080/doc.html
+		
+	2.16 测试环境
+		120.78.254.91    root    Qazxdr!@!*myeink
+		
+	2.17 kind.ibotn.com 后端开发机域名
 3. test code myeink2
-	name and price 8-8 = 0;-
+	name and all price 8-8 = 0;-
 	
 4. 前端-小程序
 	小程序端
@@ -26,5 +34,10 @@
 	
 	微信小程序登录code凭证接口API文档 
 	 http://47.112.198.104:8899/doc.html#/default/%E7%99%BB%E5%BD%95%E7%AE%A1%E7%90%86/wxMiniAppLoginUsingPOST 
+
+	微信小程序需要https协议的
+	https://ibotn.itway.top
+	 
 5.前端-电脑端
 	
+	https://www.xiaopiu.com/web/byId?type=project&id=5ef1535ad564a944962d4047

@@ -13,8 +13,13 @@
 	
 	官网：https://spring.io/projects/spring-boot
 	
-	2.5 
+	2.5 springboot博客学习教程
 		https://blog.csdn.net/weixin_50594210/article/details/121728149?
+	2.6 IDEA创建Maven项目（使用springboot框架）
+		https://blog.csdn.net/qq_20411471/article/details/111352095
+	
+	2.6 springboot中使用jwt
+		
 3. 服务？
 	3.1 到底什么是微服务？
 		https://zhuanlan.zhihu.com/p/176975985
