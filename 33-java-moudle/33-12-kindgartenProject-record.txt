@@ -25,6 +25,9 @@
 		120.78.254.91    root    Qazxdr!@!*myeink
 		
 	2.17 kind.ibotn.com 后端开发机域名
+	
+	2.18 
+		http://47.112.198.104:10078/zellen/ibotn-cloud.git
 3. test code myeink2
 	name and all price 8-8 = 0;-
 	
