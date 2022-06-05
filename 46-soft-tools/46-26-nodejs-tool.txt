@@ -3,6 +3,8 @@
 	
 	1.1 nodejs教程
 		https://www.runoob.com/nodejs/nodejs-npm.html
+		
+		https://www.w3cschool.cn/nodejs/
 2. node.js 安装详细步骤教程
 	https://blog.csdn.net/antma/article/details/86104068
 	

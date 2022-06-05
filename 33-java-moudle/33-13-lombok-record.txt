@@ -9,3 +9,8 @@
 		Lombok plugin: Preferences —> Plugins —> 搜索 Lombok plugin — > Install
 
 		同时设置 Preferences -> Compiler -> Annotation Processors -> Enable annotation processing勾选。
+3. lombok 基础注解之 @AllArgsConstructor
+	https://blog.csdn.net/qq_39249094/article/details/120860162
+	
+	最全的 lombok 注解详情（随着版本不定时更新）
+	https://blog.csdn.net/qq_39249094/article/details/107313582

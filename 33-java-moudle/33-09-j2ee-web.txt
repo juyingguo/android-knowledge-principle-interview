@@ -35,13 +35,20 @@
 		https://blog.csdn.net/heatdeath/article/details/79038795
 		
 	4.3 nacos-server-1.4.1使用
+		4.3.1 https://baijiahao.baidu.com/s?id=1703155613536850849&wfr=spider&for=pc	
 		
 5. Spring
 	5.0
 		https://spring.io/
 		
+		源码官方下载
+		https://repo.spring.io/ui/native/release/org/springframework/spring/
+		
 		Spring框架教程（非常详细）
-		http://c.biancheng.net/spring/
+		http://c.biancheng.net/spring/		
+		https://www.w3cschool.cn/wkspring/
+		https://www.nhooo.com/spring/spring-tutorial.html
+		
 		Spring基础知识汇总 Java开发必看
 		https://www.runoob.com/w3cnote/basic-knowledge-summary-of-spring.html
 		
@@ -50,6 +57,9 @@
 			含[相关文档集]
 	5.1 Spring常用注解——@Repository
 		https://blog.csdn.net/m0_67393593/article/details/124444064
+		
+		Spring注解@Component、@Repository、@Service、@Controller区别
+		https://blog.csdn.net/zhang854429783/article/details/6785574
 	5.2 Spring常用注解
 		https://www.cnblogs.com/xdp-gacl/p/3495887.html
 		
@@ -57,7 +67,16 @@
 			spring 默认scope 是单例模式(scope="singleton")，这样只会创建一个Action对象，每次访问都是同一Action对象，数据不安全，
 			struts2 是要求每次次访问都对应不同的Action，scope="prototype" 可以保证当有请求的时候都创建一个Action对象
 			
-	
+		5.2.4 @RestController 和 @Controller 的区别
+			https://blog.csdn.net/nimoyaoww/article/details/82999057
+			https://blog.csdn.net/gg12365gg/article/details/51345601?
+				@RestController注解，相当于@Controller+@ResponseBody两个注解的结合，返回json数据不需要在方法前面加@ResponseBody注解了，但使用@RestController这个注解，就不能返回jsp,html页面，视图解析器无法解析jsp,html页面
+		5.2.5 @PathVariable是什么？详情及用法解析
+			https://blog.csdn.net/ckc_666/article/details/79239974
+			
+			含【REST】讲解
+			含【使得支持 GET、POST、PUT 与DELETE 请求】讲解
+			
 6. GitHub上最火的7个spring cloud开源项目，对新手太友好了
 	https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
 	
@@ -66,6 +85,11 @@
 	
 	6.3 推荐：12 个优秀的 Spring Cloud 开源项目
 		https://www.136.la/jingpin/show-96772.html
+	6.4 
+		youlai-mall是基于Spring Boot 2.6、Spring Cloud & Alibaba 、vue3、element-plus、uni-app 构建的开源全栈微服务商城项目。
+		
+		https://www.youlai.tech/
+		
 7. 12个优秀开源的 Spring Boot 学习项目，建议收藏
 	https://zhuanlan.zhihu.com/p/454001666
 8. j2ee相关播客学习
@@ -84,6 +108,34 @@
 			https://gitee.com/coderdlg/adminex
 	10.3 我们需要根据项目中 Spring Boot 的版本来决定 Spring Cloud 版本
 		https://start.spring.io/actuator/info
+	10.4 Nacos
+		Nacos官方网站：https://nacos.io/zh-cn/
+		
+	10.5 SpringCloud Alibaba实战（6：nacos-server服务搭建）
+		https://cloud.tencent.com/developer/article/1838014
+		
+		参考：【网址中含连接】
+
+		【1】：Nacos 文档
+
+		【2】：什么是Nacos？Nacos注册配置中心介绍
+
+		【3】：Spring Cloud实战 | 第一篇：Windows搭建Nacos服务    
+				https://www.cnblogs.com/haoxianrui/p/13581881.html
+				
+				**随笔分类 - Spring Cloud**
+				https://www.cnblogs.com/haoxianrui/category/1841845.html
+				
+				Spring Cloud实战 | 第六篇：Spring Cloud Gateway + Spring Security OAuth2 + JWT实现微服务统一认证授权鉴权
+					https://www.cnblogs.com/haoxianrui/p/13719356.html
+						JWT签名
+						原理部分请参考这篇的文章:RSA加密、解密、签名、验签的原理及方法
+							https://www.cnblogs.com/pcheng/p/9629621.html
+		【4】：nacos 实战（史上最全）
+
+		【5】：Nacos部署环境
+	
+		
 11，j2ee前后端分离，前端代码和后端代码分别运行、部署在服务器上的方法。
 	11.1 参考[9.2] Spring Boot定制Spring MVC
 		

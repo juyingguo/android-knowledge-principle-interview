@@ -1,0 +1,6 @@
+1.
+2. oAuth/
+	https://baike.baidu.com/item/oAuth/7153134?fr=aladdin
+	
+	2.2 oauth2
+		https://www.ruanyifeng.com/blog/2019/04/oauth_design.html

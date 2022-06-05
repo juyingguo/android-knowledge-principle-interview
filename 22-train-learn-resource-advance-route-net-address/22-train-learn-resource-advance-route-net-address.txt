@@ -46,3 +46,10 @@
 		3.1 买android开发版，还是先买linux开发版
 5. w3cschool
 	https://www.w3cschool.cn/tutorial
+6. 学习基础教程
+	http://www.verydoc.net/java/
+	
+	在线编程，真题
+	https://www.nowcoder.com/exam/oj?
+	
+	https://www.w3cschool.cn/tutorial

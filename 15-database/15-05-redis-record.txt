@@ -11,6 +11,8 @@
 	https://www.runoob.com/redis/redis-lists.html
 	
 	2.1 安装目录下的README.txt
+	2.2 Windows 下安装
+		下载地址：https://github.com/tporadowski/redis/releases。
 3. window下redis操作
 	3.0 cmd 控制台，打字容易黑屏。
 		在文件夹下，鼠标右键在此处打开命令行，输入命令会有提示。

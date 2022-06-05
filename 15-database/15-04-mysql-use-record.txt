@@ -8,6 +8,9 @@
 
 2. MySQL 教程
 	https://www.runoob.com/mysql/mysql-data-types.html
+	
+	2.2 MySQL数据库-进阶教程-在线学习-牛客网
+		https://www.nowcoder.com/exam/oj?
 3. MySQL 安装
 	https://www.runoob.com/mysql/mysql-install.html
 	https://m.php.cn/article/362657.html
@@ -47,3 +50,18 @@
 	integer长度10
 10.子查询
 	https://baijiahao.baidu.com/s?id=1722343334112251850&wfr=spider&for=pc
+	
+11 mysql导出导入数据库
+	2、source 命令导入
+		source 命令导入数据库需要先登录到数库终端：
+
+		mysql> create database abc;      # 创建数据库
+		mysql> use abc;                  # 使用已创建的数据库 
+		mysql> set names utf8;           # 设置编码
+		mysql> source /home/abc/abc.sql  # 导入备份数据库
+12 MySQL怎么查看当前数据库
+	https://www.yisu.com/zixun/262834.html
+	
+	mysql> select database();
+	mysql> show tables;
+	mysql> status;
