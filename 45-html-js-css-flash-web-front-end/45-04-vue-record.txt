@@ -1,0 +1,23 @@
+1.
+	Webpack 入门教程：http://www.runoob.com/w3cnote/webpack-tutorial.html
+
+	官方文档：http://vuejs.org/v2/guide/syntax.html
+
+	中文文档: https://cn.vuejs.org/v2/guide/syntax.html
+2.	从零开始搭建Vue开发环境（windows）
+	https://blog.csdn.net/m0_46309087/article/details/108685832?
+3. 写vuejs用什么ide工具
+	https://www.php.cn/website-design-ask-482598.html
+4. vue做前后端分离两种方式实现数据交互，路径如何跳转的？
+5. vue前后端分离的主界面
+	
+6. 查看项目中vue版本
+	https://www.csdn.net/tags/OtTagg1sNDM2NDgtYmxvZwO0O0OO0O0O.html
+	
+	npm list vue   或者进入项目中package.json文件直接查看
+	查看Vue-cli版本
+
+	vue -V   或者 vue  --version
+7. 启动服务
+	npm run server
+	

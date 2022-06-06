@@ -76,6 +76,11 @@
 			
 			含【REST】讲解
 			含【使得支持 GET、POST、PUT 与DELETE 请求】讲解
+		5.2.6 Spring中Bean及@Bean的理解
+			https://blog.csdn.net/u010142437/article/details/80395739
+			@Bean是放在方法的注释上了，因为它很明确地告诉被注释的方法，你给我产生一个Bean，然后交给Spring容器
+		5.2.7 @Autowired与@Resource区别
+			https://blog.csdn.net/JokerLJG/article/details/123971153?
 			
 6. GitHub上最火的7个spring cloud开源项目，对新手太友好了
 	https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
@@ -89,9 +94,33 @@
 		youlai-mall是基于Spring Boot 2.6、Spring Cloud & Alibaba 、vue3、element-plus、uni-app 构建的开源全栈微服务商城项目。
 		
 		https://www.youlai.tech/
+	6.5 SpringCloud+Vue项目实战——社交项目
+		https://www.bilibili.com/video/BV1n4411S7Rv?spm_id_from=333.337.search-card.all.click
 		
 7. 12个优秀开源的 Spring Boot 学习项目，建议收藏
 	https://zhuanlan.zhihu.com/p/454001666
+	
+	7.2 教程参考
+		Vue、Spring Boot开发的Web前后端分离项目实战
+		https://edu.51cto.com/course/23368.html
+		
+		【Java】springboot + vue前后端分离后台管理系统(一)
+			https://www.h5w3.com/97749.html
+			
+		SpringBoot+VUE的前后端分离项目---《运动平台》
+		
+			https://www.bilibili.com/video/BV1q5411s7wH?p=41
+		
+		【2020版】4小时学会Spring Boot+Vue前后端分离开发
+		https://www.bilibili.com/video/BV137411B7vB/?spm_id_from=333.788.recommend_more_video.1
+			{
+				加楠哥微信：nnsouthwind，免费获取海量学习资源、技术答疑。
+				笔记、源码链接: https://pan.baidu.com/s/1PSiiqtRY_JrrDAZPB5zNNQ 提取码: kmy3
+			}
+		7.3 springboot注解
+			7.3.1 @ConfigurationProperties 注解使用姿势，这一篇就够了
+				https://blog.csdn.net/yusimiao/article/details/97622666
+			
 8. j2ee相关播客学习
 	https://blog.csdn.net/weixin_50594210/article/details/121733878?
 9. Spring MVC
@@ -111,6 +140,19 @@
 	10.4 Nacos
 		Nacos官方网站：https://nacos.io/zh-cn/
 		
+		10.5 Nacos 修改单机模式或集群模式
+			https://blog.csdn.net/langyan122/article/details/122779389
+			
+			修改Nacos默认启动方式的方法很简单，即修改安装目录./bin目录下面的startup.sh（macos/linux系统）、startup.cmd（windows系统）文件即可。
+
+			export MODE="standalone"
+			或者set MODE="standalone"
+			
+			然后双击startup.cmd启动。
+			或者命令行启动时指定启动模式，startup.cmd -m standalone
+			
+			网页运行：
+			http://localhost:8848/nacos
 	10.5 SpringCloud Alibaba实战（6：nacos-server服务搭建）
 		https://cloud.tencent.com/developer/article/1838014
 		

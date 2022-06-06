@@ -3,6 +3,12 @@
 2. server
 	2.7 
 	2.8 git私有仓库：http://47.112.198.104:10078/user/sign_up_my_eink
+	
+		git 私服公司账号。
+		私服地址浏览器打不开，使用firfox浏览器，network.security.ports.banned.override。
+			firfox 在地址栏输入,about:config 回车输入。
+		谷歌浏览器：属性-目标-添加：--explicitly-allowed-ports=10080。
+		
 	2.9 测试服放开下8897端口
 	2.10
 	 https://note.youdao.com/s/AbyFZ4kQmyeink  这是基于若依分离版整出来的服务端工程相关简陋说明。
@@ -12,7 +18,6 @@
 	2.11 若依管理系统
 		http://www.ruoyi.vip/
 	2.12 https://www.showdoc.com.cn/user/login
-	
 	2.13 svn 文档
 		https://192.168.1.30:8443/svn/iBotn/KINDMGR
 	2.14 https://note.youdao.com/s/boGduIGl 这是mysql相关规范约定

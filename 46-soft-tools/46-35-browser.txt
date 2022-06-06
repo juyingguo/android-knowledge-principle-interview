@@ -23,4 +23,8 @@
 	3.3 chrome android 版各个历史版本下载
 	
 		http://www.oldversion.cn/android/com-android-chrome/ 
+4. 用Chrome开发者工具查看HTTP请求与响应
+	4.1 用Chrome开发者工具查看HTTP请求与响应
+		https://blog.csdn.net/didi1663478999/article/details/119063993
 		
+	4.2 用Chrome开发者工具HTTP抓包

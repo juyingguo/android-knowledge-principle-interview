@@ -65,3 +65,8 @@
 	mysql> select database();
 	mysql> show tables;
 	mysql> status;
+13 mysql数据库collation作用
+	https://blog.csdn.net/weixin_41926301/article/details/100564919
+	
+	mysql的字符序遵从命名惯例。以_ci(表示大小写不敏感)，以_cs(表示大小写敏感)，以_bin(表示用编码值进行比较).
+	如果对字符大小敏感的话，最好将数据库中默认的utf8_general_ci设置为utf8_bin。
