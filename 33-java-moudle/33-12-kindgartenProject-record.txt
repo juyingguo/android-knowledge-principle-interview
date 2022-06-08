@@ -35,8 +35,30 @@
 	2.18 管理系统
 		单体前后端分离：http://47.112.198.104:10078/NLFD/kindergartenProj.git
 		cloud版： http://47.112.198.104:10078/zellen/ibotn-cloud.git
+		
+	2.19 redis数据库
+		47.112.198.104
+		密码：redis!123myeink
+		
+	2.20 新项目mysql数据库 
+		IP：47.112.198.104 
+		端口：3304  
+		账密：root  rootmyeink
+	
+	2.21 nacos
+		启动地址：http://localhost:8848/
+		{ibotn-auth.yml} 
+			spring: 
+			  redis:
+				host: 47.112.198.104
+				port: 9736
+				password: redis!123
+		2.21.2 要保证正常本地使用nacos访问
+			配置列表中，所有redis及mysql数据库要么全部使用本地的。要么全部使用线上服务器上的。
+			【否则无法使用】
+
 3. test code myeink2
-	name and all price 8-8 = 0;-
+	name and all price 8-8 = 0;=2-2=0；
 	
 4. 前端-小程序
 	小程序端

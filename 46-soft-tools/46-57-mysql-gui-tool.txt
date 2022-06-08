@@ -42,3 +42,11 @@
 	https://wenku.baidu.com/view/9b61895b1411cc7931b765ce05087632311274c8.html 
 4 sqlyog vs navicat
 	https://blog.csdn.net/weixin_43965055/article/details/120624179
+
+5. navicat
+	5.1 
+		
+	5.2 跨数据表整行复制
+			{选中行，普通复制、粘贴即可}
+		跨数据库表复制
+			{选中表，普通复制、粘贴即可}

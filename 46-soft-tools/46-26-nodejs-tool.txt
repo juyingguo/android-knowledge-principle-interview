@@ -51,3 +51,5 @@
 5. node使用
 	5.1 查看版本
 		node --version
+6. 不同工程生成node_modules能不能共用
+	
