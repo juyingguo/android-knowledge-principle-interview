@@ -26,6 +26,8 @@
 	2.15 
 		本地运行，接口文档
 		http://localhost:8080/doc.html
+		微服务版：需要开启网关服务，通过网关端口8080自动转到对应应用模块端口
+			只启动应用服务，可以直接访问http://localhost:{modulePort}/doc.html
 		
 	2.16 测试环境
 		120.78.254.93    root    Qazxdr!@!*myeink
@@ -56,7 +58,14 @@
 		2.21.2 要保证正常本地使用nacos访问
 			配置列表中，所有redis及mysql数据库要么全部使用本地的。要么全部使用线上服务器上的。
 			【否则无法使用】
-
+	2.22 生成代码
+		生成代码：http://47.112.198.104/login  账号 dev 密码 123456
+		
+	2.23 
+		swagger : http://127.0.0.1:9204/swagger-ui/index.html
+		端口号是
+	2.24 配置的接口文档
+		http://47.112.198.104:8080/doc.html 登录模块相关接口API文档说明
 3. test code myeink2
 	name and all price 8-8 = 0;=2-2=0；
 	
@@ -73,5 +82,6 @@
 5.前端-电脑端
 	PC端原型稿地址:
 	https://www.xiaopiu.com/web/byId?type=project&id=5ef1535ad564a944962d4047
+	
 6. 幼儿园管理系统开发进度
 	https://docs.qq.com/sheet/DQmVJSEtOS3hVekVm

@@ -8,3 +8,7 @@
 		https://www.bbsmax.com/A/8Bz8890Ozx/
 	2.3 Mybatis 参数 useGeneratedKeys ，keyColumn，keyProperty作用和用法
 		https://blog.csdn.net/qq_19007335/article/details/88627366
+		
+3. resultMap 使用
+	type为返回类型全限定名
+	或者使用typeAliases来起别名。

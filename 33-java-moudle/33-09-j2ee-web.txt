@@ -81,7 +81,13 @@
 			@Bean是放在方法的注释上了，因为它很明确地告诉被注释的方法，你给我产生一个Bean，然后交给Spring容器
 		5.2.7 @Autowired与@Resource区别
 			https://blog.csdn.net/JokerLJG/article/details/123971153?
+		5.2.8 @GetMapping,@PostMapping,@PutMapping注解无value值时的情况
+			https://blog.csdn.net/dalei9243/article/details/108817787
+			https://blog.csdn.net/yijianqingyu/article/details/88994774
 			
+			{
+				如果请求方式不一样是可以多个的，但是每种请求方法也只能有一个不写value值。
+			}
 6. GitHub上最火的7个spring cloud开源项目，对新手太友好了
 	https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
 	
@@ -154,29 +160,56 @@
 			网页运行：
 			http://localhost:8848/nacos
 	10.5 SpringCloud Alibaba实战（6：nacos-server服务搭建）
-		https://cloud.tencent.com/developer/article/1838014
+			https://cloud.tencent.com/developer/article/1838014
+				{
+					SpringCloud Alibaba入门之Nacos(SCA)
+					https://www.bbsmax.com/A/B0zqoxRr5v/
+					SpringCloud Alibaba实战（2：电商系统业务分析）
+					https://www.bbsmax.com/A/gAJGN6e1zZ/
+					SpringCloud Alibaba实战（3：存储设计与基础架构设计）
+					https://cloud.tencent.com/developer/article/1834454
+					
+					SpringCloud Alibaba实战（4：基本开发框架搭建）
+					https://www.bbsmax.com/A/qVdeo8AnJP/
+					
+					 
+					SpringCloud Alibaba实战（5：子模块基本业务开发）
+					https://www.bbsmax.com/A/6pdDN1ZXJw/
+					
+					SpringCloud Alibaba实战（7：nacos注册中心管理微服务）
+					https://www.bbsmax.com/A/kPzONYxadx/
+					SpringCloud Alibaba实战（8：使用OpenFeign服务调用）
+					https://www.bbsmax.com/A/8Bz8Ng7k5x/
+					
+					SpringCloud Alibaba实战（10：分布式配置中心）
+					https://www.bbsmax.com/A/E35p0Moy5v/
+				}
+			
+			参考：【网址中含连接】
+
+			【1】：Nacos 文档
+
+			【2】：什么是Nacos？Nacos注册配置中心介绍
+
+			【3】：Spring Cloud实战 | 第一篇：Windows搭建Nacos服务    
+					https://www.cnblogs.com/haoxianrui/p/13581881.html
+					
+					**随笔分类 - Spring Cloud**
+					https://www.cnblogs.com/haoxianrui/category/1841845.html
+					
+					Spring Cloud实战 | 第六篇：Spring Cloud Gateway + Spring Security OAuth2 + JWT实现微服务统一认证授权鉴权
+						https://www.cnblogs.com/haoxianrui/p/13719356.html
+							JWT签名
+							原理部分请参考这篇的文章:RSA加密、解密、签名、验签的原理及方法
+								https://www.cnblogs.com/pcheng/p/9629621.html
+			【4】：nacos 实战（史上最全）
+
+			【5】：Nacos部署环境
 		
-		参考：【网址中含连接】
-
-		【1】：Nacos 文档
-
-		【2】：什么是Nacos？Nacos注册配置中心介绍
-
-		【3】：Spring Cloud实战 | 第一篇：Windows搭建Nacos服务    
-				https://www.cnblogs.com/haoxianrui/p/13581881.html
-				
-				**随笔分类 - Spring Cloud**
-				https://www.cnblogs.com/haoxianrui/category/1841845.html
-				
-				Spring Cloud实战 | 第六篇：Spring Cloud Gateway + Spring Security OAuth2 + JWT实现微服务统一认证授权鉴权
-					https://www.cnblogs.com/haoxianrui/p/13719356.html
-						JWT签名
-						原理部分请参考这篇的文章:RSA加密、解密、签名、验签的原理及方法
-							https://www.cnblogs.com/pcheng/p/9629621.html
-		【4】：nacos 实战（史上最全）
-
-		【5】：Nacos部署环境
-	
+		10.5.2 SpringCloudAlibaba实战
+			https://blog.csdn.net/weixin_43738764/article/details/121970870
+	10.6 idea创建spring cloud 项目完整过程
+		https://blog.csdn.net/iijik55/article/details/123707729
 		
 11，j2ee前后端分离，前端代码和后端代码分别运行、部署在服务器上的方法。
 	11.1 参考[9.2] Spring Boot定制Spring MVC
@@ -216,4 +249,8 @@
 		
 		初识 Spring Security
 		https://www.w3cschool.cn/springsecurity/
+		
+15，若依管理系统-前后端分离版
+	15.1 部门管理
+		
 	

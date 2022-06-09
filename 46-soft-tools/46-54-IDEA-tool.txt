@@ -72,8 +72,12 @@
 	（1）先打开File->Settings->Plugins
 
 （2）取消勾选（可以在搜索框中输入chinese检索）
-7. Idea导入Eclipse的Maven项目
-	https://blog.csdn.net/dwh19992018/article/details/123572624
-	
+7. idea
+	7.1 Idea导入Eclipse的Maven项目
+		https://blog.csdn.net/dwh19992018/article/details/123572624	
+		
 8. IDEA设置项目编码
 	https://blog.csdn.net/weixin_53107227/article/details/122215687
+	
+9. IDEA修改背景颜色大全（护眼绿等）
+	https://blog.csdn.net/happydecai/article/details/114097560?

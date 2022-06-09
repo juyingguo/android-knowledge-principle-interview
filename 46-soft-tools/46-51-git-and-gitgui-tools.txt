@@ -4,10 +4,13 @@
 	https://www.cnblogs.com/ups216/p/5603199.html 
 		https://www.zhihu.com/question/22932048?sort=created 
 		
-		一、Git GUI 客户端 
-		二、Git IDE 插件
-		三、Git 浏览器插件
-		四、在线 Git 代码托管平台 
+		{
+			一、Git GUI 客户端 
+			二、Git IDE 插件
+			三、Git 浏览器插件
+			四、在线 Git 代码托管平台 
+		}
+		
 	2.1 GitHub for Desktop
 		
 	2.2 Source Tree 
@@ -162,3 +165,10 @@
 	https://zhuanlan.zhihu.com/p/481574024 
 7. Git Gitee
 	https://www.runoob.com/git/git-gitee.html
+8. tortoisegit
+	https://tortoisegit.org/download/
+	
+	功能很全，基本上命令行里有的功能在GUI上都有对应，而且设计的位置很合理。
+	有许多人性化的设计，比如说自动转换CRLF，Windows下选错换行符类型就提交是一场灾难；。
+	再比如说所有需要输入分支名或者commit的地方都能从相应的对话框当中选。
+	查看和编辑conflict很方便，不会把带着>>> <<<的文件就那么提交上去了。
