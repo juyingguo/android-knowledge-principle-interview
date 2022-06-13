@@ -1,0 +1,9 @@
+1.
+	
+2. fastjson
+	2.1 
+	2.2 fastJson中的@JsonProperty(value = "")与@JSONField(name = "")注解
+		https://blog.csdn.net/Danny1992/article/details/105865140
+		
+	2.3 Jackson注解 @JsonProperty设置序列化与反序列化时参数名 @JsonIgnore忽略序列化
+		https://blog.csdn.net/weixin_44728369/article/details/119916026

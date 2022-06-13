@@ -28,6 +28,22 @@
 		http://localhost:8080/doc.html
 		微服务版：需要开启网关服务，通过网关端口8080自动转到对应应用模块端口
 			只启动应用服务，可以直接访问http://localhost:{modulePort}/doc.html
+		配置增强，格式比直接swagger默认规范些。
+			 module_yaml配置
+			 {
+				# 开启增强模式
+				knife4j:
+					enable: true
+			 }
+			 # 开启增强模式
+				knife4j:
+					enable: true
+		2.15  
+			swagger : http://127.0.0.1:9204/swagger-ui/index.html
+			端口号是模块端口.
+			{
+				无授权的情况下可以独立访问。
+			}
 		
 	2.16 测试环境
 		120.78.254.93    root    Qazxdr!@!*myeink
@@ -61,9 +77,7 @@
 	2.22 生成代码
 		生成代码：http://47.112.198.104/login  账号 dev 密码 123456
 		
-	2.23 
-		swagger : http://127.0.0.1:9204/swagger-ui/index.html
-		端口号是
+	2.23
 	2.24 配置的接口文档
 		http://47.112.198.104:8080/doc.html 登录模块相关接口API文档说明
 3. test code myeink2
@@ -85,3 +99,6 @@
 	
 6. 幼儿园管理系统开发进度
 	https://docs.qq.com/sheet/DQmVJSEtOS3hVekVm
+	
+7. 解决org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)问题
+	https://blog.csdn.net/qq_39997939/article/details/122279782
