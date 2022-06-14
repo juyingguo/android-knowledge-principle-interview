@@ -7,3 +7,9 @@
 		
 	2.3 Jackson注解 @JsonProperty设置序列化与反序列化时参数名 @JsonIgnore忽略序列化
 		https://blog.csdn.net/weixin_44728369/article/details/119916026
+		
+		{
+			access = JsonProperty.Access
+		}
+	2.4 @JsonFormat(pattern = "yyyy-MM-dd")
+		传递日期格式需要对应才可以使用

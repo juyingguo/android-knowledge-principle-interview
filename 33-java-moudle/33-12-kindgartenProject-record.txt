@@ -26,8 +26,14 @@
 	2.15 
 		本地运行，接口文档
 		http://localhost:8080/doc.html
-		微服务版：需要开启网关服务，通过网关端口8080自动转到对应应用模块端口
+		微服务版：8080端口,需要开启网关服务，通过网关端口8080自动转到对应应用模块端口。
+		同时也需要开启权限服务。
 			只启动应用服务，可以直接访问http://localhost:{modulePort}/doc.html
+			{
+				如果提示Authorization不能为空。开启认证，网关服务，从总端口8080进入后，获取该值，保存使用。
+				
+				http://localhost:9204/doc.html
+			}
 		配置增强，格式比直接swagger默认规范些。
 			 module_yaml配置
 			 {
@@ -102,3 +108,5 @@
 	
 7. 解决org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)问题
 	https://blog.csdn.net/qq_39997939/article/details/122279782
+8. 实体bean中有很多属性，但查询的时候，只使用一部分属性。
+	单独抽出实体类（请求体），只供查询用，方便前端查看这些。

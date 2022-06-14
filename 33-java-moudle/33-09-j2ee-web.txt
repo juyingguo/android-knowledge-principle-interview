@@ -1,24 +1,6 @@
 1.
 2.Spring Boot
-	https://baike.baidu.com/item/Spring%20Boot/20249767?fr=aladdin
-	
-	Spring Boot官网
-	https://spring.io/projects/spring-boot
-	
-	Spring Boot框架入门教程（快速学习版）
-	http://c.biancheng.net/spring_boot/
-	
-	Spring Boot 中文索引
-	http://springboot.fun/
-	
-	官网：https://spring.io/projects/spring-boot
-	
-	2.5 springboot博客学习教程
-		https://blog.csdn.net/weixin_50594210/article/details/121728149?
-	2.6 IDEA创建Maven项目（使用springboot框架）
-		https://blog.csdn.net/qq_20411471/article/details/111352095
-	
-	2.6 springboot中使用jwt
+	to see {33-18-springboot-record.txt}
 		
 3. 服务？
 	3.1 到底什么是微服务？
@@ -103,29 +85,7 @@
 	6.5 SpringCloud+Vue项目实战——社交项目
 		https://www.bilibili.com/video/BV1n4411S7Rv?spm_id_from=333.337.search-card.all.click
 		
-7. 12个优秀开源的 Spring Boot 学习项目，建议收藏
-	https://zhuanlan.zhihu.com/p/454001666
-	
-	7.2 教程参考
-		Vue、Spring Boot开发的Web前后端分离项目实战
-		https://edu.51cto.com/course/23368.html
-		
-		【Java】springboot + vue前后端分离后台管理系统(一)
-			https://www.h5w3.com/97749.html
-			
-		SpringBoot+VUE的前后端分离项目---《运动平台》
-		
-			https://www.bilibili.com/video/BV1q5411s7wH?p=41
-		
-		【2020版】4小时学会Spring Boot+Vue前后端分离开发
-		https://www.bilibili.com/video/BV137411B7vB/?spm_id_from=333.788.recommend_more_video.1
-			{
-				加楠哥微信：nnsouthwind，免费获取海量学习资源、技术答疑。
-				笔记、源码链接: https://pan.baidu.com/s/1PSiiqtRY_JrrDAZPB5zNNQ 提取码: kmy3
-			}
-		7.3 springboot注解
-			7.3.1 @ConfigurationProperties 注解使用姿势，这一篇就够了
-				https://blog.csdn.net/yusimiao/article/details/97622666
+7
 			
 8. j2ee相关播客学习
 	https://blog.csdn.net/weixin_50594210/article/details/121733878?

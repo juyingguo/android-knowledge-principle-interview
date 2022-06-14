@@ -5,9 +5,21 @@
 		   http://dev.mysql.com/
 		To buy MySQL Enterprise support, training, or other products, visit:
 		   https://shop.mysql.com/
-
+	1.2 
+		https://dev.mysql.com/doc/refman/5.7/en/json-functions.html
 2. MySQL 教程
+	sql教程
+	https://www.runoob.com/sql/sql-func-count.html
+	
 	https://www.runoob.com/mysql/mysql-data-types.html
+	c语言中文网
+		sql教程
+	http://c.biancheng.net/sql/like.html
+	MySQL 教程
+	http://c.biancheng.net/mysql/
+	
+	MySQL函数大全，MySQL常用函数汇总
+	http://c.biancheng.net/mysql/function/
 	
 	2.2 MySQL数据库-进阶教程-在线学习-牛客网
 		https://www.nowcoder.com/exam/oj?
@@ -70,3 +82,14 @@
 	
 	mysql的字符序遵从命名惯例。以_ci(表示大小写不敏感)，以_cs(表示大小写敏感)，以_bin(表示用编码值进行比较).
 	如果对字符大小敏感的话，最好将数据库中默认的utf8_general_ci设置为utf8_bin。
+14 数据类型
+	
+	14.2 MySQL数据库的JSON数据类型详解
+		https://blog.csdn.net/liaowenxiong/article/details/124315045
+	
+	
+			参考资料
+		1.https://dev.mysql.com/doc/refman/5.7/en/json-functions.html
+		2.https://zhuanlan.zhihu.com/p/31823258
+		3.https://dasini.net/blog/2018/07/23/30-mins-with-mysql-json-functions/
+		————————————————
