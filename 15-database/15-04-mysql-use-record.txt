@@ -10,6 +10,8 @@
 2. MySQL 教程
 	sql教程
 	https://www.runoob.com/sql/sql-func-count.html
+	sql教程(w3school)
+	https://www.w3school.com.cn/sql/sql_insert.asp
 	
 	https://www.runoob.com/mysql/mysql-data-types.html
 	c语言中文网
@@ -93,3 +95,6 @@
 		2.https://zhuanlan.zhihu.com/p/31823258
 		3.https://dasini.net/blog/2018/07/23/30-mins-with-mysql-json-functions/
 		————————————————
+15 sql 语句跨数据表查询
+	15.1 两个数据库在同一个服务器上。
+		SELECT * FROM i_user_relation t1  INNER JOIN `ibotn-sys`.sys_user t2 ON t1.user_id = t2.user_id

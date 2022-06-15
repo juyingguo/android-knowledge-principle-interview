@@ -51,7 +51,17 @@
 
 			# 配置slq打印日志
 			mybatis-plus:
+				#配置mybatis sql日志
 			  configuration:
 				log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+		}
+		
+	8.2 数据库字段为json类型，如mysql5.7及以上版本
+		项目运行异常。类型异常。
+		模块的配置文件中添加如下代码：
+		{
+			mybatis:
+				#配置支持json数据库字段类型
+				typeHandlersPackage: com.ibotn.common.core.utils.json
 		}
 	

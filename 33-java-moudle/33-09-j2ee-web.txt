@@ -170,7 +170,11 @@
 			https://blog.csdn.net/weixin_43738764/article/details/121970870
 	10.6 idea创建spring cloud 项目完整过程
 		https://blog.csdn.net/iijik55/article/details/123707729
+	11 SpringCloud openfeign跨库查询
+		https://blog.csdn.net/qq_43751489/article/details/123833696
 		
+		Springcloud 多数库 多数据源整合,查询动态切换数据库
+			https://blog.csdn.net/hekf2010/article/details/81155778/
 11，j2ee前后端分离，前端代码和后端代码分别运行、部署在服务器上的方法。
 	11.1 参考[9.2] Spring Boot定制Spring MVC
 		
