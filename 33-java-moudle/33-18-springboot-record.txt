@@ -65,3 +65,17 @@
 				typeHandlersPackage: com.ibotn.common.core.utils.json
 		}
 	
+	8.3 mybatis-plus配置
+		{
+			# mybatis-plus配置
+			mybatis-plus:
+				# 搜索指定包别名
+				typeAliasesPackage: com.ibotn.child
+				# 配置mapper的扫描，找到所有的mapper.xml映射文件
+				mapperLocations: classpath:mapper/**/*.xml
+				#配置支持json数据库字段类型
+				typeHandlersPackage: com.ibotn.common.core.utils.json
+				#配置mybatis sql日志
+				configuration:
+				  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+		}
