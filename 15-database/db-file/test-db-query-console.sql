@@ -121,3 +121,13 @@ SELECT SYSDATE() as currentDateAndTime;
 SELECT SYSDATE()  + 0 as currentDateAndTime0;
 SELECT NOW() as currentDateAndTime;
 
+select 'My' 'S' "ql";
+
+SET @dolphin:='海豚';
+SELECT LENGTH(@dolphin), CHAR_LENGTH(@dolphin),@dolphin;
+/*FIND_IN_SET*/
+SELECT FIND_IN_SET('b','a,b,c,d');
+SELECT FIND_IN_SET('ab','ab,b,abc,d');
+SELECT FIND_IN_SET('ab','ab,b,abc,d');
+
+
