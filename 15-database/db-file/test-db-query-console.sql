@@ -107,4 +107,17 @@ LEFT JOIN (
 	WHERE
 		y.id = 3
 ) AS b ON a.user_id = b.id;
+/* limit*/
+SELECT * FROM tb_category WHERE `name` = '电器' LIMIT 2;
+
+SELECT * FROM tb_category WHERE id >=3 LIMIT 2;
+
+SELECT * FROM tb_category WHERE `name` = '电器' LIMIT 0,2;
+/* limit 0,-1 无法运行*/
+SELECT * FROM tb_category LIMIT 0,-1;
+
+/* date SYSDATE()*/
+SELECT SYSDATE() as currentDateAndTime;
+SELECT SYSDATE()  + 0 as currentDateAndTime0;
+SELECT NOW() as currentDateAndTime;
 

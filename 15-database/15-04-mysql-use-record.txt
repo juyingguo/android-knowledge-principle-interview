@@ -5,8 +5,10 @@
 		   http://dev.mysql.com/
 		To buy MySQL Enterprise support, training, or other products, visit:
 		   https://shop.mysql.com/
-	1.2 
+	1.2 doc
 		https://dev.mysql.com/doc/refman/5.7/en/json-functions.html
+		
+		https://dev.mysql.com/doc/refman/5.7/en/functions.html
 2. MySQL 教程
 	sql教程
 	https://www.runoob.com/sql/sql-func-count.html
@@ -98,3 +100,18 @@
 15 sql 语句跨数据表查询
 	15.1 两个数据库在同一个服务器上。
 		SELECT * FROM i_user_relation t1  INNER JOIN `ibotn-sys`.sys_user t2 ON t1.user_id = t2.user_id
+		
+16 mysql中了limit_Mysql中limit的用法详解 (转)
+	https://blog.csdn.net/zhqingyun163/article/details/5053579
+	验证见{test db}
+	
+	16.1 limit的offset(偏移量)用于记录较多的时候，记录较少时偏移offset较小，直接使用limit较优。offset越大，后者越优。
+18 mysql日期相关
+		验证见{test db}
+	18.1 MySQL SYSDATE()用法及代码示例
+		https://vimsky.com/examples/usage/sysdate-function-in-mysql.html
+		{
+			使用SYSDATE函数获取当前日期和时间。
+			SELECT SYSDATE() as CurrentDateAndTime ;
+		}
+	18.2 NOW();

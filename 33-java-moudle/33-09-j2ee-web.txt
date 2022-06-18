@@ -216,5 +216,17 @@
 		
 15，若依管理系统-前后端分离版
 	15.1 部门管理
+	15.3 分页
+		http://localhost/dev-api/system/post/list?pageNum=1&pageSize=10
+		{
+			com.github.pagehelper
+		}
+		
+		PageHelper详解
+		https://blog.csdn.net/qq_45578181/article/details/119987379
+		如何使用 PageHelper 一篇博客就够了
+		https://blog.csdn.net/nanhuaibeian/article/details/106649936?
+		MyBatis之分页插件(PageHelper)工作原理
+		https://blog.csdn.net/weixin_44259233/article/details/111226599
 		
 	
