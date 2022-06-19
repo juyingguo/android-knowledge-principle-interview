@@ -41,6 +41,11 @@
 	
 	Windows10 MYSQL Installer 安装（mysql-installer-community-5.7.19.0.msi）
 	https://www.runoob.com/w3cnote/windows10-mysql-installer.html
+	
+	3.5 在windows上安装不同(两个)版本的Mysql数据库的教程详解
+		https://www.runoob.com/mysql/mysql-install.html
+		https://blog.csdn.net/MissRen920/article/details/120061906
+		https://cloud.tencent.com/developer/article/1867460
 4.mysql int(10)和int(11)区别
 	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j
 5.MySQL中主键是否需要设置为自增？
