@@ -130,4 +130,9 @@ SELECT FIND_IN_SET('b','a,b,c,d');
 SELECT FIND_IN_SET('ab','ab,b,abc,d');
 SELECT FIND_IN_SET('ab','ab,b,abc,d');
 
+/* 6. is */
+SELECT * FROM tb_user where 1=1 and avatar is not NULL;
+SELECT * FROM tb_user where 1=1 and avatar is NULL;
+/* 7. insert 插入多条数据。 */
+INSERT INTO tb_user(avatar) VALUES('t.png'),('m.png');
 

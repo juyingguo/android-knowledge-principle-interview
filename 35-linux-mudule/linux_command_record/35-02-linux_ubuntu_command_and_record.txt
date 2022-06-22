@@ -227,6 +227,8 @@
 	8.1 Ubuntu16.10下查看linux版本，内核版本，系统位数，gcc版本 
 		https://blog.csdn.net/weixin_33828101/article/details/91953682
 		
+		https://blog.csdn.net/qq_40309341/article/details/121354666
+		
 		查看linux版本
 		cat /etc/issue
 		

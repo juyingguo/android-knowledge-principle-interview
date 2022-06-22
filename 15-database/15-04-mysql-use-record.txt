@@ -120,3 +120,6 @@
 			SELECT SYSDATE() as CurrentDateAndTime ;
 		}
 	18.2 NOW();
+19 MySQL 流程控制函数
+	18.1 MySQL中IF()、IFNULL()、NULLIF()、ISNULL()函数的使用
+		https://blog.csdn.net/pan_junbiao/article/details/85928004?

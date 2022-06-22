@@ -1,4 +1,8 @@
 1.
+	https://github.com/mybatis/mybatis-3
+	
+	doc
+		https://mybatis.org/mybatis-3/
 2. Mybatis使用useGeneratedKeys获取自增主键的方法
 	https://www.jb51.net/article/169560.htm
 	
@@ -12,3 +16,9 @@
 3. resultMap 使用
 	type为返回类型全限定名
 	或者使用typeAliases来起别名。
+	
+4. 动态Sql
+	4.1 mybatis中的when，then,end的用法
+		【Mybatis】Mybatis中的逻辑分路：case-when-then-else-end和hoose-when-otherwise
+		https://blog.csdn.net/zalan01408980/article/details/108469080
+		

@@ -11,3 +11,6 @@
 	第一种方式使用这个命令查看 lsb_release -a
 	第二种方式使用这个命令查看cat /etc/issue（仅适用于linux）
 	第三种方式使用这个命令查看 执行cat /etc/redhat-release
+	
+	3. centos-release专属查看版本
+		cat /etc/centos-release

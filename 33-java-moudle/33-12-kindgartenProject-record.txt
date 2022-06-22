@@ -54,6 +54,11 @@
 	2.16 测试环境
 		120.78.254.93    root    Qazxdr!@!*myeink
 		
+		ibotn aliyun 新服务器地址：
+		47.112.198.104   root  Qazxdr!@!*
+		
+		测试项目云端地址：
+		http://kind.ibotn.com/login?redirect=%2Findex
 	2.17 kind.ibotn.com 后端开发机域名
 	
 	2.18 管理系统
@@ -64,11 +69,20 @@
 		47.112.198.104
 		密码：redis!123myeink
 		
-	2.20 新项目mysql数据库 
-		IP：47.112.198.104 
-		端口：3304  
-		账密：root  rootmyeink
-	
+	2.20 新项目kind mysql数据库 
+		2.20.1 
+			IP：47.112.198.104 
+			端口：3304  
+			账密：root  rootmyeink
+			使用docker管理mysql
+			docker exec -it mysql /bin/bash
+		
+		2.20.1 
+
+			ibotn edu使用的阿里云测试服务器
+			120.78.254.93
+			root   Qazxdr!@!*myeink
+			mysql -h120.78.254.93 -uroot -pds#ibotn@2017myeink
 	2.21 nacos
 		启动地址：http://localhost:8848/
 		{ibotn-auth.yml} 
@@ -84,7 +98,7 @@
 	2.22 生成代码
 		生成代码：http://47.112.198.104/login  账号 dev 密码 123456
 		
-	2.23
+	2.23 
 	2.24 配置的接口文档
 		http://47.112.198.104:8080/doc.html 登录模块相关接口API文档说明
 3. test code myeink2

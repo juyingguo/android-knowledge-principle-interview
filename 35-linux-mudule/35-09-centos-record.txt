@@ -1,0 +1,13 @@
+﻿1.
+2.Linux 安装之centos
+			https://www.runoob.com/linux/linux-install.html
+			
+			centos下载
+			{最新版}
+			https://www.centos.org/download/
+			{centos旧版}
+			https://wiki.centos.org/Download
+			
+3.超详细VMware安装CentOs图文教程
+	https://blog.csdn.net/weixin_44175418/article/details/123592684
+	
