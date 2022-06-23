@@ -79,3 +79,25 @@
 				configuration:
 				  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 		}
+9.SpringBoot实现权限控制
+	9.1.SpringBoot整合SpringSecurity实现权限控制（一）
+		https://blog.csdn.net/jpgzhu/article/details/119870279
+		{博主系列文章}
+		{
+			《SpringBoot整合SpringSecurity实现权限控制（二）：权限数据基本模型设计》
+			《SpringBoot整合SpringSecurity实现权限控制（三）：前端动态装载路由与菜单》
+			...
+			SpringBoot整合SpringSecurity实现权限控制（九）：快速实现页面缓存
+		}
+	9.2 SpringBoot基础-权限管理1
+		https://blog.csdn.net/weixin_46899412/article/details/123699326
+		{
+			源码是本仓库中的demo0326文件
+			https://gitee.com/AGi_R/interceptor
+			{fork}
+			https://gitee.com/einkee/interceptor.git
+		}
+		9.2.2 SpringBoot基础-权限管理2
+			https://blog.csdn.net/weixin_46899412/article/details/123732794?
+	9.3 springboot 实现权限管理（一）
+		https://blog.csdn.net/qq_44654974/article/details/122638550

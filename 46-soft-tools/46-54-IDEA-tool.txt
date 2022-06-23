@@ -81,3 +81,10 @@
 	
 9. IDEA修改背景颜色大全（护眼绿等）
 	https://blog.csdn.net/happydecai/article/details/114097560?
+10.idea中关联本地源码与取消
+	https://blog.csdn.net/SKNXPython/article/details/121410497
+	
+	{
+		1.编辑区选择select source
+		2.File-Project Structure - Libraries {增减关联库}
+	}

@@ -101,6 +101,8 @@
 		1.https://dev.mysql.com/doc/refman/5.7/en/json-functions.html
 		2.https://zhuanlan.zhihu.com/p/31823258
 		3.https://dasini.net/blog/2018/07/23/30-mins-with-mysql-json-functions/
+	14.3 utf8与utf8mb4有什么区别
+		https://www.yisu.com/zixun/145533.html
 		————————————————
 15 sql 语句跨数据表查询
 	15.1 两个数据库在同一个服务器上。
