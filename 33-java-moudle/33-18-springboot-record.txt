@@ -89,6 +89,15 @@
 			...
 			SpringBoot整合SpringSecurity实现权限控制（九）：快速实现页面缓存
 		}
+		{
+			前端
+				https://gitee.com/zhuhuix/startup-frontend
+			后端
+				https://gitee.com/zhuhuix/startup-backend
+				{forked:
+					https://gitee.com/einkee/startup-backend.git
+				}
+		}
 	9.2 SpringBoot基础-权限管理1
 		https://blog.csdn.net/weixin_46899412/article/details/123699326
 		{

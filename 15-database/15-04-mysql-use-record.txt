@@ -125,3 +125,6 @@
 19 MySQL 流程控制函数
 	18.1 MySQL中IF()、IFNULL()、NULLIF()、ISNULL()函数的使用
 		https://blog.csdn.net/pan_junbiao/article/details/85928004?
+		
+20 Mysql 8.0版本导出的sql文件在Mysql 5.5中运行出错
+	https://www.10qianwan.com/articledetail/543921.html
