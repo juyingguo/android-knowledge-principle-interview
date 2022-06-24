@@ -28,24 +28,129 @@
 	2.2 MySQL数据库-进阶教程-在线学习-牛客网
 		https://www.nowcoder.com/exam/oj?
 3. MySQL 安装
-	https://www.runoob.com/mysql/mysql-install.html
-	https://m.php.cn/article/362657.html
-	
-	下载需要的版本，选择存档:Archived
-	
-	https://downloads.mysql.com/archives/community/
-	有选择位数入口。（community版）
-	
-	进入官网找到自己所需的安装包：
-		https://dev.mysql.com/  ，路径：DOWNLOAD-->MYSQL Community Edition(GRL)-->MYSQL on Windows (Installer & Tool)
-	
-	Windows10 MYSQL Installer 安装（mysql-installer-community-5.7.19.0.msi）
-	https://www.runoob.com/w3cnote/windows10-mysql-installer.html
-	
+	3.1
+		https://www.runoob.com/mysql/mysql-install.html
+		https://m.php.cn/article/362657.html
+		
+		下载需要的版本，选择存档:Archived
+		
+		https://downloads.mysql.com/archives/community/
+		{有选择位数入口,msi,zip版本}。（community版）
+		{	mysql（msi）安装教程
+			https://blog.csdn.net/qq_41444073/article/details/99943567?
+		}
+		
+		进入官网找到自己所需的安装包：
+			https://dev.mysql.com/  ，路径：DOWNLOAD-->MYSQL Community Edition(GRL)-->MYSQL on Windows (Installer & Tool)
+		
+		Windows10 MYSQL Installer 安装（mysql-installer-community-5.7.19.0.msi）
+		https://www.runoob.com/w3cnote/windows10-mysql-installer.html
+		
+		msi版本（全部版本都是msi版）：
+			https://dev.mysql.com/downloads/mysql/
+			{在界面中找到
+				windows (x86,32 & 64-bit),MySQL Installer MSI [Go to Download Page] >
+				点击进入[Go to Download Page]
+			}
+			
+		zip版:
+		{
+			在下载主界面顶部导航栏中中找到{Archives}
+		}
 	3.5 在windows上安装不同(两个)版本的Mysql数据库的教程详解
 		https://www.runoob.com/mysql/mysql-install.html
 		https://blog.csdn.net/MissRen920/article/details/120061906
 		https://cloud.tencent.com/developer/article/1867460
+		
+		3.5.2 已有mysql-5.0.27,mysql-5.7.37,再mysql-8.0.28安装
+			{
+				a1，先把已经运行的其它版本的mysql服务关掉。
+				
+				a2,win+R 输入regedit 之后找到路径计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+					修改ImagePath,把值改成（如下，根据自己电脑路径填写）：
+
+					"D:\juying\java2\mysql-8.0.28-winx64\bin\mysqld" mysqld --defaults-file=D:\juying\java2\mysql-8.0.28-winx64\my-mysql-8.0.28.ini  --initialize --console
+					
+					"D:\softLoad\mysql_sql57\mysql-5.7.35-winx64\bin\mysqld" mysqld --defaults-file=D:\juying\java2\mysql-5.7.37-win32\my.ini  --initialize --console
+				a3,mysql如何修改root用户的密码
+					https://blog.csdn.net/m0_67402026/article/details/123786803
+					{
+						多种方法：
+						f1:set password for root@localhost = password('root');
+					}
+				a4,执行：
+					mysqld --defaults-file=D:\juying\java2\mysql-8.0.28-winx64\my-mysql-8.0.28.ini  --initialize --console
+					
+					{error:
+						{
+							[ERROR] [MY-010338] [Server] Can't find error-message file 'D:\juying\java2\mysql-8.0.28-win64\share\errmsg.sys'.
+							Check error-message file location and 'lc-messages-dir' configuration directive.
+						}
+						{参考：
+							解决MySQL安装Can not find error-message file
+							https://blog.csdn.net/u012970976/article/details/106764484
+							https://blog.csdn.net/weixin_45051095/article/details/121187410
+								{在my.ini文件中吧路径改成双斜线\就行了}{不是根本原因，不换也行，只要能正常访问即可}
+							
+						}
+						{根本原因是：ini文件中basedir路径配置错误了。
+							配置正确后，datadir及lc-messages-dir是不需要配置的。
+						}
+					}
+				
+				a5，确保a4正确执行后再创建服务
+					
+				a6，彻底删除mysql服务的方法
+					https://www.yisu.com/zixun/171261.html
+					https://blog.csdn.net/piupiu78/article/details/122482377
+				a7, 启动服务
+					>net start MYSQL8028
+					The service is not responding to the control function.
+					More help is available by typing NET HELPMSG 2186.
+					
+					{启动服务失败}
+					{参考分析：
+						解决MySQL8 ZIP发行版安装服务时报“服务没有响应控制功能”的错误
+						https://blog.csdn.net/chszs/article/details/108889979
+						{
+							解决方法：访问https://cn.dll-files.com/vcruntime140_1.dll.html，
+							下载VCRUNTIME140_1.DLL最新的版本：14.26.28804.1，下载后将此文件直接放入MySQL的bin子目录下即可。
+						}
+					}
+			}
+		3.5.3 win7 上安装mysql-8.0.28
+			{
+				mysqld.exe -系统错误
+				×
+				无法启动此程序，因为计算机中丢失VCRUNTIME140_1.dll。尝试重
+				新安装该程序以解决此问题。
+				确定
+				
+				{解决参考：}
+					{https://blog.csdn.net/weixin_51484460/article/details/124300674
+						{两种方法}
+						{方法一直接下载dll：https://www.66rjz.com/pcsoft/142483.html
+							{及详细介绍}
+							{
+								通过下载 VCRUNTIME140_1.dll文件后直接复制到系统盘下即可。即路径为：C:\Windows\SysWOW64 的路径下即可（64位电脑），如果是32位直接放在C:\Windows\System32下即可。
+
+								放上下载链接：https://www.66rjz.com/pcsoft/142483.html
+
+								然后输入快捷键 win+R，输入regsvr32 vcruntime140_1.dll，按Enter即可解决。
+							}
+						}
+					}
+					
+			}
+	3.6 MySQL.官网5.7的MSI文件只提供32位版本
+		如果32位软件可以在64位系统上使用，本地就可以使用32位软件，节省资源。{云端实际环境，可以使用64位软件，可以使用更多资源和内存}
+	3.7 MySQL详细安装教程，关于msi版和zip版详解
+		[Debug][Release][三种安装方法介绍]
+		https://zhuanlan.zhihu.com/p/404519626
+		
+		{zip方式安装，博主只是针对电脑上只安装当前一个mysql的情况}
+		{不同版本的mysql同时存在安装参考{3.5}}
+	3.8 官网下载慢。复制链接地址使用迅雷下载。下载后校验md5。
 4.mysql int(10)和int(11)区别
 	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j
 5.MySQL中主键是否需要设置为自增？

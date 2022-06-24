@@ -104,3 +104,5 @@
 			You can display a table showing the ASCII character code by executing the command man ascii. End Aside.
 		2.1.6表示代码
 			暂时不理解。
+12 32位和64位哪个好 区别的对比分析
+	https://www.csdn.net/tags/NtzaEgxsNzYwOTMtYmxvZwO0O0OO0O0O.html
