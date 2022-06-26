@@ -31,3 +31,6 @@
 		【Mybatis】Mybatis中的逻辑分路：case-when-then-else-end和hoose-when-otherwise
 		https://blog.csdn.net/zalan01408980/article/details/108469080
 		
+5. SpringBoot 系列教程 MybatisPlus 整合篇
+	https://my.oschina.net/u/566591/blog/3154198
+		
