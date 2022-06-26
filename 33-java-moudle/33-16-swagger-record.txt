@@ -1,8 +1,16 @@
 1.
 	swagger
 	官网：https://swagger.io/
+	
 2.swagger使用教程——快速使用swagger
 	https://blog.csdn.net/YR_112233/article/details/122630446
 	
 	Swagger入门教程(一)
 	http://www.360doc.com/content/22/0505/18/79520218_1029899951.shtml
+3.【SpringBoot之旅】手把手教你Swagger接口文档神器使用
+	https://blog.csdn.net/Mind_programmonkey/article/details/122639457
+	
+	3.2 查看swagger
+		http://localhost:8000/swagger-ui.html#/
+		
+		接口需要Authorization，该值是登录，其它再次请求的Request Headers字段Authorization值。

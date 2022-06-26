@@ -13,3 +13,9 @@
 		}
 	2.4 @JsonFormat(pattern = "yyyy-MM-dd")
 		传递日期格式需要对应才可以使用
+		
+	2.5 Json解析工具 @JsonIgnore 注解的使用
+		http://www.javashuo.com/article/p-mckzxaqe-bg.html
+		
+		https://blog.csdn.net/m0_46069861/article/details/108848223?
+		{注解@JsonIgnoreProperties,@JsonProperty,@JsonSerialize,@JsonDeserialize}

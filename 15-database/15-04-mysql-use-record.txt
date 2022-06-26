@@ -28,6 +28,11 @@
 	2.2 MySQL数据库-进阶教程-在线学习-牛客网
 		https://www.nowcoder.com/exam/oj?
 3. MySQL 安装
+	3.0 
+		Mysql8 和mysql 5.7 的区别
+		官网这两个版本的更新时间相差不大。
+		https://blog.csdn.net/m0_67266585/article/details/124004720
+		https://blog.csdn.net/CN_mengxin/article/details/81518800?
 	3.1
 		https://www.runoob.com/mysql/mysql-install.html
 		https://m.php.cn/article/362657.html
@@ -68,20 +73,62 @@
 				
 				a2,win+R 输入regedit 之后找到路径计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
 					修改ImagePath,把值改成（如下，根据自己电脑路径填写）：
-
-					"D:\juying\java2\mysql-8.0.28-winx64\bin\mysqld" mysqld --defaults-file=D:\juying\java2\mysql-8.0.28-winx64\my-mysql-8.0.28.ini  --initialize --console
+	
+					"D:\juying\java2\mysql-8.0.28-winx64\bin\mysqld" mysqld --defaults-file=D:\juying\java2\mysql-8.0.28-winx64\my-mysql-8.0.28.ini  MYSQL8028
 					
-					"D:\softLoad\mysql_sql57\mysql-5.7.35-winx64\bin\mysqld" mysqld --defaults-file=D:\juying\java2\mysql-5.7.37-win32\my.ini  --initialize --console
-				a3,mysql如何修改root用户的密码
-					https://blog.csdn.net/m0_67402026/article/details/123786803
-					{
-						多种方法：
-						f1:set password for root@localhost = password('root');
+					"D:\softLoad\mysql_sql57\mysql-5.7.35-winx64\bin\mysqld" mysqld --defaults-file=D:\juying\java2\mysql-5.7.37-win32\my-mysql-5.7.37.ini MYSQL7
+					
+					[以上是错误的]。
+					{参考已有的mysql配置（mysql-5.5）：
+						"C:\Program Files\MySQL\MySQL Server 5.5\bin\mysqld" --defaults-file="C:\Program Files\MySQL\MySQL Server 5.5\my.ini" MySQL
+						
+						{配置mysql5.7,mysql8.0.28多了mysqld，--defaults-file后面的配置没有加双引号}
+						{正确如下：
+							"D:\softs-install\mysql-5.7.37-winx64\bin\mysqld" --defaults-file="D:\softs-install\mysql-5.7.37-winx64\my-mysql-5.7.37.ini" MYSQL7
+						}
 					}
+				a3, 登录mysql（命令行输入mysql -uroot -P3307 -p +刚生成的那个root的初始密码登录，-P后面是端口）
+					
+					a3.2 mysql如何修改root用户的密码
+						https://blog.csdn.net/m0_67402026/article/details/123786803
+						{
+							a3.2.1多种方法：
+							f1:set password for root@localhost = password('root');#mysql5.7可以使用，mysql8.0.28使用这个方法报错：
+							
+							a3.2.2 用UPDATE直接编辑user表
+							use mysql提示：
+							ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.
+							
+							{解决办法：> alter user 'root'@'localhost' identified by '123456';}修改成功.
+							{参考播客：https://blog.csdn.net/weixin_41783910/article/details/119569995}
+						}
+						{
+							密码修改成功后。
+							Navicat 连接 mysql，连接时出现问题：
+							1251-Client does not support authentication protocol requested by server;consider upgrading MySQL client;
+							{参考：【MySql】Navicat 连接数据库出现1251 - Client does not support authentication protocol ...... 问题的解决方法
+								https://blog.csdn.net/piupiu78/article/details/122468163
+								{
+									把下面的两条指令逐条复制粘贴到控制台就可以了 ( 'password’为你的数据库登录密码 )。
+
+									alter user 'root'@'localhost' identified with mysql_native_password by 'password';
+									
+									flush privileges;
+									
+									{更换密码验证插件为mysql_native_password后可以访问了}
+								}
+								{
+									plugin说明：
+									caching_sha2_password
+									mysql_native_password
+								}
+							}
+						}
+						
 				a4,执行：
 					mysqld --defaults-file=D:\juying\java2\mysql-8.0.28-winx64\my-mysql-8.0.28.ini  --initialize --console
 					
-					{error:
+					{a4-error1:
 						{
 							[ERROR] [MY-010338] [Server] Can't find error-message file 'D:\juying\java2\mysql-8.0.28-win64\share\errmsg.sys'.
 							Check error-message file location and 'lc-messages-dir' configuration directive.
@@ -97,9 +144,27 @@
 							配置正确后，datadir及lc-messages-dir是不需要配置的。
 						}
 					}
+					{
+						a4-error2:
+						win8.1,安装mysql8执行该命令时也会提示【计算机中丢失VCRUNTIME140_1.dll】
+						放到mysql8对应的bin目录下。
+						如果ini文件配置datadir也会引发a4-error1。默认不配置即可,操作系统不同，也会不同。。
+					}
+					
+					{	a4-error3:
+						【完整记录见：mysql-install-cmd-record-config-zip-type-server.txt】
+						2022-06-25T02:51:12.497208Z 0 [ERROR] [MY-010338] [Server] Can't find error-message file 'D: ofts-install\mysql-8.0.28-winx64 hare\english\errmsg.sys'
+						. Check error-message file location and 'lc-messages-dir' configuration directive.
+						出现乱码,分析时ini文件编码格式，及ini中basedir等配置路径中'\'与‘/’有区别，或者对应值没有加引号。
+						{要想不出错，可以使用msi版本的软件安装。或者参考通过已有的msi方式安装mysql生成的my.ini文件来编写。
+							不同window系统，参考当前所使用的系统。
+						}
+					
+					}
 				
 				a5，确保a4正确执行后再创建服务
-					
+					mysqld --install MYSQL8028 #服务名称
+					再根据a2修改
 				a6，彻底删除mysql服务的方法
 					https://www.yisu.com/zixun/171261.html
 					https://blog.csdn.net/piupiu78/article/details/122482377
@@ -116,6 +181,10 @@
 							解决方法：访问https://cn.dll-files.com/vcruntime140_1.dll.html，
 							下载VCRUNTIME140_1.DLL最新的版本：14.26.28804.1，下载后将此文件直接放入MySQL的bin子目录下即可。
 						}
+					}
+					{
+						mysql7提示这个错误。
+						参考[3.5.2,a2]是配置错误引起的提示。并不是缺少vcruntime140_1.dll引起的。
 					}
 			}
 		3.5.3 win7 上安装mysql-8.0.28

@@ -1,0 +1,17 @@
+1.
+2.QQ邮箱的smtp服务器地址和端口是什么?
+	2.1 注意：
+		1、SMTP服务器需要身份验证。
+		2、如果是设置SMTP的SSL加密方式，则SMTP服务器端口为465或587。
+	
+	2.2 https://ask.zol.com.cn/x/5311608.html
+		QQ邮箱POP3的端口号995,SMTP的端口号是465或587
+		
+3. 新浪免费邮箱服务器的端口是什么
+	免费 邮箱： 发件： pop3.sina.com.cn 默认端口110 2.收件： smtp.sina.com.cn 默认端口25。
+	
+	POP3 服务器地址:pop3.sina.com.cn(端口：110)
+	SMTP 服务器地址:smtp.sina.com.cn(端口：25)
+4. 常用邮箱 SMTP 服务器地址大全
+	https://blog.51cto.com/aiyc/5153900
+	

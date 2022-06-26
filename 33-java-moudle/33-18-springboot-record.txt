@@ -80,14 +80,24 @@
 				  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 		}
 9.SpringBoot实现权限控制
-	9.1.SpringBoot整合SpringSecurity实现权限控制（一）
-		https://blog.csdn.net/jpgzhu/article/details/119870279
+	9.1.SpringBoot整合SpringSecurity实现权限控制
 		{博主系列文章}
 		{
+			《SpringBoot整合SpringSecurity实现权限控制（一）》
+				https://blog.csdn.net/jpgzhu/article/details/119870279
+				{重要关联连接：
+					《手把手教你通过SpringBoot实现邮箱注册码验证》
+						https://zhuhuix.blog.csdn.net/article/details/119533833
+					《Vue+SpringBoot 实现用户头像上传（附前后端源码）》	
+						https://zhuhuix.blog.csdn.net/article/details/119796747					
+				}
 			《SpringBoot整合SpringSecurity实现权限控制（二）：权限数据基本模型设计》
+				{https://zhuhuix.blog.csdn.net/article/details/119885703?}
 			《SpringBoot整合SpringSecurity实现权限控制（三）：前端动态装载路由与菜单》
+				{https://zhuhuix.blog.csdn.net/article/details/119991687?}
 			...
 			SpringBoot整合SpringSecurity实现权限控制（九）：快速实现页面缓存
+				https://zhuhuix.blog.csdn.net/article/details/121372033
 		}
 		{
 			前端
