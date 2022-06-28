@@ -43,3 +43,6 @@
 4. md5
 	4.1 JAVA中获取文件MD5值的四种方法
 		https://blog.csdn.net/weixin_40129263/article/details/82837900
+		
+8. ASC加密解密（笔记）
+	https://blog.csdn.net/qq_31362105/article/details/82629182

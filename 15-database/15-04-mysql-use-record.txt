@@ -82,9 +82,13 @@
 					{参考已有的mysql配置（mysql-5.5）：
 						"C:\Program Files\MySQL\MySQL Server 5.5\bin\mysqld" --defaults-file="C:\Program Files\MySQL\MySQL Server 5.5\my.ini" MySQL
 						
-						{配置mysql5.7,mysql8.0.28多了mysqld，--defaults-file后面的配置没有加双引号}
+						{配置mysql-5.7,mysql-8.0.28多了mysqld，--defaults-file后面的配置没有加双引号。参考msi方式安装产生的msi}
 						{正确如下：
 							"D:\softs-install\mysql-5.7.37-winx64\bin\mysqld" --defaults-file="D:\softs-install\mysql-5.7.37-winx64\my-mysql-5.7.37.ini" MYSQL7
+						}
+						{
+							问题总结。
+							路径/或\，路径值是否带""，只有能正常访问，都没关系。根本原因还是配置参数问题，如多了[mysqld],多了[ --initialize --console]，少了服务名MYSQL7。
 						}
 					}
 				a3, 登录mysql（命令行输入mysql -uroot -P3307 -p +刚生成的那个root的初始密码登录，-P后面是端口）

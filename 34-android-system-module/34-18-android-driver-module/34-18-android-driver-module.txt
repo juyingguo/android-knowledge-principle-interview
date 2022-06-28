@@ -67,5 +67,7 @@
 		以下文章参考网上搜到的《Android驱动开发全过程(有图有真相)》一文，其中根据自己的实际编写情况作了部分修改，不用作商业用途
 	2.4 
 3.韦东山详细记录。
-	
+4. android驱动开发
+	https://blog.csdn.net/chen_2008_good/category_6949636.html
+	{csdn 博客。}
 	

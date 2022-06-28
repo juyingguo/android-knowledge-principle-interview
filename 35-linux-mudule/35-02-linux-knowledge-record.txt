@@ -1,90 +1,90 @@
-0. ×ÊÔ´
+0. èµ„æº
 	0.1 
-	0.2	ubuntuÓëcentos¶Ô±È
+	0.2	ubuntuä¸centoså¯¹æ¯”
 			https://www.linuxprobe.com/ubuntu-comparison-centos.html 
-		0.2.2 CentOSÓëUbuntuÃüÁîÖĞµÄ²»Í¬Ö®´¦ 
+		0.2.2 CentOSä¸Ubuntuå‘½ä»¤ä¸­çš„ä¸åŒä¹‹å¤„ 
 			https://blog.csdn.net/kwame211/article/details/78533170 
 					
-1¡¢linuxÄÚºËµÄìØ³Ø 
-	1.1¡¢linuxÄÚºËµÄìØ³Ø 
+1ã€linuxå†…æ ¸çš„ç†µæ±  
+	1.1ã€linuxå†…æ ¸çš„ç†µæ±  
 		https://www.cnblogs.com/yinheyi/p/5973584.html
  
-2.LinuxµÄ .ko,.a¡¢.soºÍ.oÎÄ¼ş¼°Á´½ÓÊ±µÄÃüÃû 
-	2.1¡¢LinuxµÄ.a¡¢.soºÍ.oÎÄ¼ş¼°Á´½ÓÊ±µÄÃüÃû 
+2.Linuxçš„ .ko,.aã€.soå’Œ.oæ–‡ä»¶åŠé“¾æ¥æ—¶çš„å‘½å 
+	2.1ã€Linuxçš„.aã€.soå’Œ.oæ–‡ä»¶åŠé“¾æ¥æ—¶çš„å‘½å 
 		https://www.cnblogs.com/wangshaowei/p/11285341.html
 		
 		2.1.1 linux .o,.a,.so
-			.o,ÊÇÄ¿±êÎÄ¼ş,Ïàµ±ÓÚwindowsÖĞµÄ.objÎÄ¼ş 
+			.o,æ˜¯ç›®æ ‡æ–‡ä»¶,ç›¸å½“äºwindowsä¸­çš„.objæ–‡ä»¶ 
 
-		¡¡¡¡.so Îª¹²Ïí¿â,ÊÇshared object,ÓÃÓÚ¶¯Ì¬Á¬½ÓµÄ,Ïàµ±ÓÚwindowsÏÂµÄdll 
+		ã€€ã€€.so ä¸ºå…±äº«åº“,æ˜¯shared object,ç”¨äºåŠ¨æ€è¿æ¥çš„,ç›¸å½“äºwindowsä¸‹çš„dll 
 
-		¡¡¡¡.aÎª¾²Ì¬¿â,ÊÇºÃ¶à¸ö.oºÏÔÚÒ»Æğ,ÓÃÓÚ¾²Ì¬Á¬½Ó 
-	2.2 LinuxÏÂµÄ.koÎÄ¼ş 
+		ã€€ã€€.aä¸ºé™æ€åº“,æ˜¯å¥½å¤šä¸ª.oåˆåœ¨ä¸€èµ·,ç”¨äºé™æ€è¿æ¥ 
+	2.2 Linuxä¸‹çš„.koæ–‡ä»¶ 
 		
 		2.2.1 https://blog.csdn.net/qq_24118527/article/details/78569578
 		
-			.so ÎÄ¼şÊÇ¶¯Ì¬Á´½Ó¿âÎÄ¼ş£¬Ïàµ±ÓÚ winÏÂµÄ .dll ÎÄ¼ş¡£
+			.so æ–‡ä»¶æ˜¯åŠ¨æ€é“¾æ¥åº“æ–‡ä»¶ï¼Œç›¸å½“äº winä¸‹çš„ .dll æ–‡ä»¶ã€‚
 
-			.ko ÎÄ¼şÊÇÄÚºËÄ£¿éÎÄ¼ş£¬ÊÇÄÚºË¼ÓÔØµÄÄ³¸öÄ£¿é£¬Ò»°ãÊÇÇı¶¯³ÌĞò¡£
-			.koÎÄ¼şÊÇkernel objectÎÄ¼ş£¨ÄÚºËÄ£¿é£©£¬¸ÃÎÄ¼şµÄÒâÒå¾ÍÊÇ°ÑÄÚºËµÄÒ»Ğ©¹¦ÄÜÒÆ¶¯µ½ÄÚºËÍâ±ß£¬ ĞèÒªµÄÊ±ºò²åÈëÄÚºË£¬²»ĞèÒªÊ±Ğ¶ÔØ¡£
+			.ko æ–‡ä»¶æ˜¯å†…æ ¸æ¨¡å—æ–‡ä»¶ï¼Œæ˜¯å†…æ ¸åŠ è½½çš„æŸä¸ªæ¨¡å—ï¼Œä¸€èˆ¬æ˜¯é©±åŠ¨ç¨‹åºã€‚
+			.koæ–‡ä»¶æ˜¯kernel objectæ–‡ä»¶ï¼ˆå†…æ ¸æ¨¡å—ï¼‰ï¼Œè¯¥æ–‡ä»¶çš„æ„ä¹‰å°±æ˜¯æŠŠå†…æ ¸çš„ä¸€äº›åŠŸèƒ½ç§»åŠ¨åˆ°å†…æ ¸å¤–è¾¹ï¼Œ éœ€è¦çš„æ—¶å€™æ’å…¥å†…æ ¸ï¼Œä¸éœ€è¦æ—¶å¸è½½ã€‚
 		
-		2.2.2 LinuxÏÂ±àĞ´ºÍ¼ÓÔØ .ko ÎÄ¼ş£¨Çı¶¯Ä£¿éÎÄ¼ş£© 
+		2.2.2 Linuxä¸‹ç¼–å†™å’ŒåŠ è½½ .ko æ–‡ä»¶ï¼ˆé©±åŠ¨æ¨¡å—æ–‡ä»¶ï¼‰ 
 			https://blog.csdn.net/qq_38880380/article/details/79227760.
 	
-3¡¢.bash_profileºÍ.bashrcµÄÇø±ğ 
-	3.1¡¢.bash_profileºÍ.bashrcµÄÇø±ğ 
+3ã€.bash_profileå’Œ.bashrcçš„åŒºåˆ« 
+	3.1ã€.bash_profileå’Œ.bashrcçš„åŒºåˆ« 
 		https://blog.csdn.net/CHS007chs/article/details/86663436
 		
-4¡¢linux export µÄ×÷ÓÃ 
-	4.1¡¢linux export µÄ×÷ÓÃ 
+4ã€linux export çš„ä½œç”¨ 
+	4.1ã€linux export çš„ä½œç”¨ 
 		https://blog.csdn.net/bailyzheng/article/details/7488769?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
-5¡¢Ê²Ã´ÊÇLinux Shell£¿ 
-	5.1¡¢Ê²Ã´ÊÇLinux Shell£¿ 
+5ã€ä»€ä¹ˆæ˜¯Linux Shellï¼Ÿ 
+	5.1ã€ä»€ä¹ˆæ˜¯Linux Shellï¼Ÿ 
 		https://blog.csdn.net/zhydream77/article/details/80079319
-	5.2¡¢LinuxÖĞµÄshellµ½µ×ÊÇÊ²Ã´£¿ 
+	5.2ã€Linuxä¸­çš„shellåˆ°åº•æ˜¯ä»€ä¹ˆï¼Ÿ 
 		https://www.cnblogs.com/tjudzj/p/7088543.html
 		
-	5.3 linuxÏÂÖ´ĞĞshellÒì³£ 
-		/bin/sh^M: bad interpreter: No such file or directory Òì³£
+	5.3 linuxä¸‹æ‰§è¡Œshellå¼‚å¸¸ 
+		/bin/sh^M: bad interpreter: No such file or directory å¼‚å¸¸
 			https://blog.csdn.net/carolzhang8406/article/details/6104361
-			·ÖÎö£ºÕâÊÇ²»Í¬ÏµÍ³±àÂë¸ñÊ½ÒıÆğµÄ£ºÔÚ windowsÏµÍ³ÖĞ±à¼­µÄ .shÎÄ¼ş¿ÉÄÜÓĞ²»¿É¼û×Ö·û£¬ËùÒÔÔÚ LinuxÏµÍ³ÏÂÖ´ĞĞ»á±¨ÒÔÉÏÒì³£ĞÅÏ¢¡£
+			åˆ†æï¼šè¿™æ˜¯ä¸åŒç³»ç»Ÿç¼–ç æ ¼å¼å¼•èµ·çš„ï¼šåœ¨ windowsç³»ç»Ÿä¸­ç¼–è¾‘çš„ .shæ–‡ä»¶å¯èƒ½æœ‰ä¸å¯è§å­—ç¬¦ï¼Œæ‰€ä»¥åœ¨ Linuxç³»ç»Ÿä¸‹æ‰§è¡Œä¼šæŠ¥ä»¥ä¸Šå¼‚å¸¸ä¿¡æ¯ã€‚
 			
-			½â¾ö£º 1£©ÔÚ windowsÏÂ×ª»»£º
-			ÀûÓÃÒ»Ğ©±à¼­Æ÷Èç UltraEdit»ò EditPlusµÈ¹¤¾ßÏÈ½«½Å±¾±àÂë×ª»»£¬ÔÙ·Åµ½ LinuxÖĞÖ´ĞĞ¡£×ª»»·½Ê½ÈçÏÂ£¨ UltraEdit£©£º File-->Conversions-->DOS->UNIX¼´¿É¡£
-				2 £©Ò²¿ÉÔÚ LinuxÖĞ×ª»»£º
-			Ê×ÏÈÒªÈ·±£ÎÄ¼şÓĞ¿ÉÖ´ĞĞÈ¨ÏŞ
+			è§£å†³ï¼š 1ï¼‰åœ¨ windowsä¸‹è½¬æ¢ï¼š
+			åˆ©ç”¨ä¸€äº›ç¼–è¾‘å™¨å¦‚ UltraEditæˆ– EditPlusç­‰å·¥å…·å…ˆå°†è„šæœ¬ç¼–ç è½¬æ¢ï¼Œå†æ”¾åˆ° Linuxä¸­æ‰§è¡Œã€‚è½¬æ¢æ–¹å¼å¦‚ä¸‹ï¼ˆ UltraEditï¼‰ï¼š File-->Conversions-->DOS->UNIXå³å¯ã€‚
+				2 ï¼‰ä¹Ÿå¯åœ¨ Linuxä¸­è½¬æ¢ï¼š
+			é¦–å…ˆè¦ç¡®ä¿æ–‡ä»¶æœ‰å¯æ‰§è¡Œæƒé™
 			#sh>chmod a+x filename
 
-			È»ºóĞŞ¸ÄÎÄ¼ş¸ñÊ½
+			ç„¶åä¿®æ”¹æ–‡ä»¶æ ¼å¼
 			#sh>vi filename
 
-			ÀûÓÃÈçÏÂÃüÁî²é¿´ÎÄ¼ş¸ñÊ½
-			:set ff »ò :set fileformat
+			åˆ©ç”¨å¦‚ä¸‹å‘½ä»¤æŸ¥çœ‹æ–‡ä»¶æ ¼å¼
+			:set ff æˆ– :set fileformat
 
-			¿ÉÒÔ¿´µ½ÈçÏÂĞÅÏ¢
-			fileformat=dos »ò fileformat=unix
+			å¯ä»¥çœ‹åˆ°å¦‚ä¸‹ä¿¡æ¯
+			fileformat=dos æˆ– fileformat=unix
 
-			ÀûÓÃÈçÏÂÃüÁîĞŞ¸ÄÎÄ¼ş¸ñÊ½
-			:set ff=unix »ò :set fileformat=unix
+			åˆ©ç”¨å¦‚ä¸‹å‘½ä»¤ä¿®æ”¹æ–‡ä»¶æ ¼å¼
+			:set ff=unix æˆ– :set fileformat=unix
 			
-	5.4 Ïê½âshellÖĞsource¡¢sh¡¢bash¡¢./Ö´ĞĞ½Å±¾µÄÇø±ğ
+	5.4 è¯¦è§£shellä¸­sourceã€shã€bashã€./æ‰§è¡Œè„šæœ¬çš„åŒºåˆ«
 		https://www.jb51.net/article/128918.htm
-		½áÂÛÒ»: ./*.shµÄÖ´ĞĞ·½Ê½µÈ¼ÛÓÚsh ./*.sh»òÕßbash ./*.sh£¬´ËÈıÖÖÖ´ĞĞ½Å±¾µÄ·½Ê½¶¼ÊÇÖØĞÂÆô¶¯Ò»¸ö×Óshell,ÔÚ×ÓshellÖĞÖ´ĞĞ´Ë½Å±¾¡£
+		ç»“è®ºä¸€: ./*.shçš„æ‰§è¡Œæ–¹å¼ç­‰ä»·äºsh ./*.shæˆ–è€…bash ./*.shï¼Œæ­¤ä¸‰ç§æ‰§è¡Œè„šæœ¬çš„æ–¹å¼éƒ½æ˜¯é‡æ–°å¯åŠ¨ä¸€ä¸ªå­shell,åœ¨å­shellä¸­æ‰§è¡Œæ­¤è„šæœ¬ã€‚
 
-		½áÂÛ¶ş: .source ./*.shºÍ . ./*.shµÄÖ´ĞĞ·½Ê½ÊÇµÈ¼ÛµÄ£¬¼´Á½ÖÖÖ´ĞĞ·½Ê½¶¼ÊÇÔÚµ±Ç°shell½ø³ÌÖĞÖ´ĞĞ´Ë½Å±¾£¬¶ø²»ÊÇÖØĞÂÆô¶¯Ò»¸öshell ¶øÔÚ×Óshell½ø³ÌÖĞÖ´ĞĞ´Ë½Å±¾¡£
+		ç»“è®ºäºŒ: .source ./*.shå’Œ . ./*.shçš„æ‰§è¡Œæ–¹å¼æ˜¯ç­‰ä»·çš„ï¼Œå³ä¸¤ç§æ‰§è¡Œæ–¹å¼éƒ½æ˜¯åœ¨å½“å‰shellè¿›ç¨‹ä¸­æ‰§è¡Œæ­¤è„šæœ¬ï¼Œè€Œä¸æ˜¯é‡æ–°å¯åŠ¨ä¸€ä¸ªshell è€Œåœ¨å­shellè¿›ç¨‹ä¸­æ‰§è¡Œæ­¤è„šæœ¬ã€‚
 
-		ÑéÖ¤ÒÀ¾İ£ºÃ»ÓĞ±»exportµ¼³öµÄ±äÁ¿£¨¼´·Ç»·¾³±äÁ¿£©ÊÇ²»ÄÜ±»×Óshell¼Ì³ĞµÄ
-		¶ÔÓ¦ÑéÖ¤µ÷ÊÔÏîÄ¿Î»ÖÃ£ºandroid-knowledge-principle-interview\35-linux-mudule\shell_project\export_test_project
-	5.5 linuxÏÂ²é¿´µ±Ç°shell·½·¨¡£
-		º¬ÓĞ²é¿´µ±Ç°Ê¹ÓÃµÄ shell £¬²é¿´µ±Ç°½ø³Ì
+		éªŒè¯ä¾æ®ï¼šæ²¡æœ‰è¢«exportå¯¼å‡ºçš„å˜é‡ï¼ˆå³éç¯å¢ƒå˜é‡ï¼‰æ˜¯ä¸èƒ½è¢«å­shellç»§æ‰¿çš„
+		å¯¹åº”éªŒè¯è°ƒè¯•é¡¹ç›®ä½ç½®ï¼šandroid-knowledge-principle-interview\35-linux-mudule\shell_project\export_test_project
+	5.5 linuxä¸‹æŸ¥çœ‹å½“å‰shellæ–¹æ³•ã€‚
+		å«æœ‰æŸ¥çœ‹å½“å‰ä½¿ç”¨çš„ shell ï¼ŒæŸ¥çœ‹å½“å‰è¿›ç¨‹
 		https://www.cnblogs.com/vigarbuaa/archive/2004/01/13/2667098.html
 		
-6. i386 ºÍamd64 µÄÒâË¼ 
-	6.1  i386 ºÍamd64 µÄÒâË¼ 
+6. i386 å’Œamd64 çš„æ„æ€ 
+	6.1  i386 å’Œamd64 çš„æ„æ€ 
 		https://zhidao.baidu.com/question/70209686.html
 		
-	6.2 64Î»°æ±¾ÎªÊ²Ã´½Ğamd64£¬¶ø²»ÊÇintel64 
+	6.2 64ä½ç‰ˆæœ¬ä¸ºä»€ä¹ˆå«amd64ï¼Œè€Œä¸æ˜¯intel64 
 		https://baijiahao.baidu.com/s?id=1614402461283928635&wfr=spider&for=pc
 	6.3 amd64
 		https://baike.baidu.com/item/amd64/7015806?fr=aladdin
@@ -93,16 +93,16 @@
 	7.1 gcc 
 		https://baike.baidu.com/item/gcc/17570?fr=aladdin
 		
-	7.2 LinuxÏÂgccÃüÁîÏê½â 
+	7.2 Linuxä¸‹gccå‘½ä»¤è¯¦è§£ 
 		https://blog.csdn.net/ENSHADOWER/article/details/82951131?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase
-	7.3 LinuxÑ§Ï°£¨CÓïÑÔÑ§Ï°Ö®Gcc£©
+	7.3 Linuxå­¦ä¹ ï¼ˆCè¯­è¨€å­¦ä¹ ä¹‹Gccï¼‰
 		https://blog.csdn.net/weixin_42994525/article/details/82930601
 		
-		GCCÏê½â
+		GCCè¯¦è§£
 			https://blog.csdn.net/qq_35144795/article/details/77580913
-	7.4 gcc -static ÃüÁî 
+	7.4 gcc -static å‘½ä»¤ 
 		https://blog.csdn.net/newchenxf/article/details/51743181
-		µ±gcc -static ÓÃÓÚ±àÒëÒ»¸ö³ÌĞòÊ±£¬»áÊ¹´Ë³ÌĞò¾²Ì¬±àÒë£¨°Ñ¶¯Ì¬¿âµÄº¯ÊıºÍËùÒÀÀµµÄÈÎºÎµÄ¶«Î÷£¬¶¼±àÒë½ø±¾³ÌĞò£©£¬±àÒëºÃºó£¬ÎÄ¼ş»á·Ç³£´ó£¬µ«ÊÇ£¬ÔËĞĞÊ±¾Í²»ĞèÒªÒÀÀµÈÎºÎ¶¯Ì¬¿â¡£
+		å½“gcc -static ç”¨äºç¼–è¯‘ä¸€ä¸ªç¨‹åºæ—¶ï¼Œä¼šä½¿æ­¤ç¨‹åºé™æ€ç¼–è¯‘ï¼ˆæŠŠåŠ¨æ€åº“çš„å‡½æ•°å’Œæ‰€ä¾èµ–çš„ä»»ä½•çš„ä¸œè¥¿ï¼Œéƒ½ç¼–è¯‘è¿›æœ¬ç¨‹åºï¼‰ï¼Œç¼–è¯‘å¥½åï¼Œæ–‡ä»¶ä¼šéå¸¸å¤§ï¼Œä½†æ˜¯ï¼Œè¿è¡Œæ—¶å°±ä¸éœ€è¦ä¾èµ–ä»»ä½•åŠ¨æ€åº“ã€‚
 8. g++ 
 	8.1 g++ 
 		https://baike.baidu.com/item/g%2B%2B
@@ -121,27 +121,27 @@
 		http://www.gnu.org/software/gperf/ 
 	
 	11.2 gperftools 
-		¶¯Ì¬Ö´ĞĞÁ÷³Ì·ÖÎöºÍĞÔÄÜÆ¿¾±·ÖÎöµÄÀûÆ÷¡ª¡ªgperftoolsµÄCpu Profiler
+		åŠ¨æ€æ‰§è¡Œæµç¨‹åˆ†æå’Œæ€§èƒ½ç“¶é¢ˆåˆ†æçš„åˆ©å™¨â€”â€”gperftoolsçš„Cpu Profiler
 		https://blog.csdn.net/breaksoftware/article/details/81315729 
 		
-12 kernel ÖĞ sscanfºÍsprintf()º¯ÊıÊ¹ÓÃËµÃ÷
-	12.1 kernel ÖĞ sscanfºÍsprintf()º¯ÊıÊ¹ÓÃËµÃ÷ 
+12 kernel ä¸­ sscanfå’Œsprintf()å‡½æ•°ä½¿ç”¨è¯´æ˜
+	12.1 kernel ä¸­ sscanfå’Œsprintf()å‡½æ•°ä½¿ç”¨è¯´æ˜ 
 		https://blog.csdn.net/zhangzhi123456789/article/details/47748081
 		
-13. Ò»¸ö´®¿ÚºÍ485Óë232Ñ¡ÔñÍ¨ĞÅ·½·¨ 
-	13.1 Ò»¸ö´®¿ÚºÍ485Óë232Ñ¡ÔñÍ¨ĞÅ·½·¨
+13. ä¸€ä¸ªä¸²å£å’Œ485ä¸232é€‰æ‹©é€šä¿¡æ–¹æ³• 
+	13.1 ä¸€ä¸ªä¸²å£å’Œ485ä¸232é€‰æ‹©é€šä¿¡æ–¹æ³•
 		https://blog.csdn.net/qq_35570735/article/details/81352011
 		
-14. linuxĞÅºÅÁ¿Ë¯ÃßËø£¬ÓëÆÕÍ¨µÄThread.sleep()Çø±ğ;
+14. linuxä¿¡å·é‡ç¡çœ é”ï¼Œä¸æ™®é€šçš„Thread.sleep()åŒºåˆ«;
 
-15. Linux-DTS»ù´¡ 
-	15.1 Linux-DTS»ù´¡ 
+15. Linux-DTSåŸºç¡€ 
+	15.1 Linux-DTSåŸºç¡€ 
 		https://blog.csdn.net/qq_33003441/article/details/84257342
 		
-	15.2 linux DTS½éÉÜ 
+	15.2 linux DTSä»‹ç» 
 		https://www.cnblogs.com/linux-37ge/p/11135617.html
 		
-		1.3. Ïà¹ØÃû³ÆËõĞ´
+		1.3. ç›¸å…³åç§°ç¼©å†™
 
         <1>. DT   :Device Tree
 
@@ -156,131 +156,210 @@
         <6>. DTB :device tree blob
 
         <7>. DTC :device tree compiler
-	15.3 Éè±¸Ê÷Ñ§Ï°£¨¶ş¡¢Éè±¸Ê÷dts/dtsi¸ñÊ½£©
+	15.3 è®¾å¤‡æ ‘å­¦ä¹ ï¼ˆäºŒã€è®¾å¤‡æ ‘dts/dtsiæ ¼å¼ï¼‰
 		 https://blog.csdn.net/qq_16777851/article/details/87291146 
-16. linuxÏµÍ³ÖĞmisc×ÓÏµÍ³ 
-	16.1 linuxÏµÍ³ÖĞmisc×ÓÏµÍ³ 
+16. linuxç³»ç»Ÿä¸­miscå­ç³»ç»Ÿ 
+	16.1 linuxç³»ç»Ÿä¸­miscå­ç³»ç»Ÿ 
 		https://blog.csdn.net/wang_zheng_kai/article/details/42716403
-		ÔÚlinuxÏµÍ³ÖĞÊ²Ã´ÊÇmisc£¿
+		åœ¨linuxç³»ç»Ÿä¸­ä»€ä¹ˆæ˜¯miscï¼Ÿ
 
-		ÔÚÑĞ¾¿ÉãÏñÍ·Çı¶¯µÄÊ±ºò£¬·¢ÏÖÉãÏñÍ·Çı¶¯µÄÂ·¾¶Îª£º/driver/misc/jz_cim/ÎÄ¼şÄ¿Â¼ÏÂ£¬¾­¹ı²éÕÒ½á¹ûÈçÏÂ£º
+		åœ¨ç ”ç©¶æ‘„åƒå¤´é©±åŠ¨çš„æ—¶å€™ï¼Œå‘ç°æ‘„åƒå¤´é©±åŠ¨çš„è·¯å¾„ä¸ºï¼š/driver/misc/jz_cim/æ–‡ä»¶ç›®å½•ä¸‹ï¼Œç»è¿‡æŸ¥æ‰¾ç»“æœå¦‚ä¸‹ï¼š
 
-		ÔÓÏîÉè±¸£¨misc device£©
+		æ‚é¡¹è®¾å¤‡ï¼ˆmisc deviceï¼‰
 
-		ÔÓÏîÉè±¸Ò²ÊÇÇ¶ÈëÊ½ÏµÍ³ÖĞÓÃµÃ±È½Ï¶àµÄÒ»ÖÖÉè±¸Çı¶¯¡£ÔÚ Linux ÄÚºËµÄinclude/linuxÄ¿Â¼ÏÂÓĞmiscdevice.hÎÄ¼ş£¬Òª°Ñ×Ô¼º¶¨ÒåµÄmisc device´ÓÉè±¸¶¨ÒåÔÚÕâÀï¡£ÆäÊµÊÇÒòÎªÕâĞ©×Ö·ûÉè±¸²»·ûºÏÔ¤ÏÈÈ·¶¨µÄ×Ö·ûÉè±¸·¶³ë£¬ËùÓĞÕâĞ©Éè±¸²ÉÓÃÖ÷±àºÅ10 £¬Ò»Æğ¹éÓÚmisc 		device£¬ÆäÊµmisc_register¾ÍÊÇÓÃÖ÷±êºÅ10µ÷ÓÃregister_chrdev()µÄ£¬Ö»²»¹ımiscÊÇ½«Ò»Ğ©×Ö·ûÉè±¸´æ·ÅÔÚmiscÀàÖĞ¡£»»¾ä»°Ëµ£¬miscÉè±¸ÆäÊµÒ²¾ÍÊÇÌØÊâµÄ×Ö·ûÉè±¸¡£
+		æ‚é¡¹è®¾å¤‡ä¹Ÿæ˜¯åµŒå…¥å¼ç³»ç»Ÿä¸­ç”¨å¾—æ¯”è¾ƒå¤šçš„ä¸€ç§è®¾å¤‡é©±åŠ¨ã€‚åœ¨ Linux å†…æ ¸çš„include/linuxç›®å½•ä¸‹æœ‰miscdevice.hæ–‡ä»¶ï¼Œè¦æŠŠè‡ªå·±å®šä¹‰çš„misc deviceä»è®¾å¤‡å®šä¹‰åœ¨è¿™é‡Œã€‚å…¶å®æ˜¯å› ä¸ºè¿™äº›å­—ç¬¦è®¾å¤‡ä¸ç¬¦åˆé¢„å…ˆç¡®å®šçš„å­—ç¬¦è®¾å¤‡èŒƒç•´ï¼Œæ‰€æœ‰è¿™äº›è®¾å¤‡é‡‡ç”¨ä¸»ç¼–å·10 ï¼Œä¸€èµ·å½’äºmisc 		deviceï¼Œå…¶å®misc_registerå°±æ˜¯ç”¨ä¸»æ ‡å·10è°ƒç”¨register_chrdev()çš„ï¼Œåªä¸è¿‡miscæ˜¯å°†ä¸€äº›å­—ç¬¦è®¾å¤‡å­˜æ”¾åœ¨miscç±»ä¸­ã€‚æ¢å¥è¯è¯´ï¼Œmiscè®¾å¤‡å…¶å®ä¹Ÿå°±æ˜¯ç‰¹æ®Šçš„å­—ç¬¦è®¾å¤‡ã€‚
 			
-17. LinuxÖĞUbootÏê½â 
-	17.1 LinuxÖĞUbootÏê½â 
+17. Linuxä¸­Ubootè¯¦è§£ 
+	17.1 Linuxä¸­Ubootè¯¦è§£ 
 		[yyfwd]
 		https://blog.csdn.net/yyfwd/article/details/51015467
 		
-	17.2 Uboot1Ö®Ê²Ã´ÊÇuboot£¿ 
+	17.2 Uboot1ä¹‹ä»€ä¹ˆæ˜¯ubootï¼Ÿ 
 		https://blog.csdn.net/wangdapao12138/article/details/79561626?utm_medium=distribute.pc_relevant_right.none-task-blog-BlogCommendFromBaidu-20.nonecase&depth_1-utm_source=distribute.pc_relevant_right.none-task-blog-BlogCommendFromBaidu-20.nonecase
-	17.2 bootloader Óë ubootµÄÇø±ğ 
+	17.2 bootloader ä¸ ubootçš„åŒºåˆ« 
 		https://blog.csdn.net/weixin_41632560/article/details/87608972
 		
-		BootLoaderÊÇÇ¶ÈëÊ½Éè±¸ÖĞÓÃÀ´Æô¶¯²Ù×÷ÏµÍ³ÄÚºËµÄÒ»¶Î³ÌĞò¡£ 
-		uboot£¨universal bootloader£©ÊÇÒ»ÖÖ¿ÉÒÔÓÃÓÚ¶àÖÖÇ¶ÈëÊ½CPUµÄBootLoader³ÌĞò£¬»»ÑÔÖ®£¬ubootÊÇbootloaderµÄÒ»¸ö×Ó¼¯¡£ 
-		ubootµÄºËĞÄ×÷ÓÃ¾ÍÊÇÆô¶¯²Ù×÷ÏµÍ³ÄÚºË£¬ubootµÄ±¾ÖÊ¾ÍÊÇÒ»¶ÎÂã»ú³ÌĞò¡£
+		BootLoaderæ˜¯åµŒå…¥å¼è®¾å¤‡ä¸­ç”¨æ¥å¯åŠ¨æ“ä½œç³»ç»Ÿå†…æ ¸çš„ä¸€æ®µç¨‹åºã€‚ 
+		ubootï¼ˆuniversal bootloaderï¼‰æ˜¯ä¸€ç§å¯ä»¥ç”¨äºå¤šç§åµŒå…¥å¼CPUçš„BootLoaderç¨‹åºï¼Œæ¢è¨€ä¹‹ï¼Œubootæ˜¯bootloaderçš„ä¸€ä¸ªå­é›†ã€‚ 
+		ubootçš„æ ¸å¿ƒä½œç”¨å°±æ˜¯å¯åŠ¨æ“ä½œç³»ç»Ÿå†…æ ¸ï¼Œubootçš„æœ¬è´¨å°±æ˜¯ä¸€æ®µè£¸æœºç¨‹åºã€‚
 		
-	17.3 ¡¾ÕûÀí¡¿BIOS¡¢BootLoader¡¢uboot¶Ô±È 
+	17.3 ã€æ•´ç†ã€‘BIOSã€BootLoaderã€ubootå¯¹æ¯” 
 		https://blog.csdn.net/conowen/article/details/7253620/?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-2
 18. linux--Makefile
-	ÄÚÈİ±È½Ï¶à£¬µ¥¶À³öÒ»¸öÎÄ¼ş¡¾35-07-Makefile-record.txt¡¿
-	18.1 linux--Makefile¸ÅÊö 
+	å†…å®¹æ¯”è¾ƒå¤šï¼Œå•ç‹¬å‡ºä¸€ä¸ªæ–‡ä»¶ã€35-07-Makefile-record.txtã€‘
+	18.1 linux--Makefileæ¦‚è¿° 
 		https://blog.csdn.net/qq_38880380/article/details/79860541
 		
-	18.2 linux--MakefileÑ§Ï°×ÊÁÏ»ã×ÜÒÔ¼°±àÒë¹¤¾ßmake¡¢gmake¡¢cmake¡¢nmakeºÍDmakeµÄÇø±ğ 
+	18.2 linux--Makefileå­¦ä¹ èµ„æ–™æ±‡æ€»ä»¥åŠç¼–è¯‘å·¥å…·makeã€gmakeã€cmakeã€nmakeå’ŒDmakeçš„åŒºåˆ« 
 		https://blog.csdn.net/qq_38880380/article/details/79860538?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158987348419195162540691%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=158987348419195162540691&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v2~rank_v25-1-79860538.nonecase&utm_term=%E3%80%8AMakefile%E3%80%8B+%E4%BD%9C%E8%80%85+%E9%99%88%E7%9A%93%EF%BC%8C%E6%95%B4%E7%90%86+%E7%A5%9D%E5%86%AC%E5%8D%8E
-	18.3 linuxºÍAndroidµÄMakefileºÍandroid.mk 
+	18.3 linuxå’ŒAndroidçš„Makefileå’Œandroid.mk 
 		https://www.cnblogs.com/maogefff/p/7910441.html#_label1_0
 		
-		º¬ÓĞĞ¡demo£¬¸ú×Åµ÷ÊÔ¡£
-19 __attribute__ »úÖÆÏê½â 
-	19.1 __attribute__ »úÖÆÏê½â
+		å«æœ‰å°demoï¼Œè·Ÿç€è°ƒè¯•ã€‚
+19 __attribute__ æœºåˆ¶è¯¦è§£ 
+	19.1 __attribute__ æœºåˆ¶è¯¦è§£
 		https://blog.csdn.net/weaiken/article/details/88085360?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 		
 		https://blog.csdn.net/iteye_14514/article/details/81614037
 		
-20 Õ¼¿Õ±È 
-	Õ¼¿Õ±ÈÊÇÖ¸ÔÚÒ»¸öÂö³åÑ­»·ÄÚ£¬Í¨µçÊ±¼äÏà¶ÔÓÚ×ÜÊ±¼äËùÕ¼µÄ±ÈÀı¡£Õ¼¿Õ±È(Duty Ratio)ÔÚµçĞÅÁìÓòÖĞÓĞÈçÏÂº¬Òå£ºÀıÈç£ºÂö³å¿í¶È1¦Ìs£¬ĞÅºÅÖÜÆÚ4¦ÌsµÄÂö³åĞòÁĞÕ¼¿Õ±ÈÎª0.25¡£ [1] 
+20 å ç©ºæ¯” 
+	å ç©ºæ¯”æ˜¯æŒ‡åœ¨ä¸€ä¸ªè„‰å†²å¾ªç¯å†…ï¼Œé€šç”µæ—¶é—´ç›¸å¯¹äºæ€»æ—¶é—´æ‰€å çš„æ¯”ä¾‹ã€‚å ç©ºæ¯”(Duty Ratio)åœ¨ç”µä¿¡é¢†åŸŸä¸­æœ‰å¦‚ä¸‹å«ä¹‰ï¼šä¾‹å¦‚ï¼šè„‰å†²å®½åº¦1Î¼sï¼Œä¿¡å·å‘¨æœŸ4Î¼sçš„è„‰å†²åºåˆ—å ç©ºæ¯”ä¸º0.25ã€‚ [1] 
 	https://baike.baidu.com/item/%E5%8D%A0%E7%A9%BA%E6%AF%94/3652044?fr=aladdin
 	
-	ÍâÎÄÃûDuty Ratio£¬Duty Cycle
+	å¤–æ–‡åDuty Ratioï¼ŒDuty Cycle
 	
-21 Õı½»¸ÅÄî
-	21.1 Õı½»¸ÅÄî
+21 æ­£äº¤æ¦‚å¿µ
+	21.1 æ­£äº¤æ¦‚å¿µ
 		https://blog.csdn.net/weixin_38130913/article/details/99798688
 		
-22,Ñ¸ÎªlinuxÏµÍ³±à³Ì
+22,è¿…ä¸ºlinuxç³»ç»Ÿç¼–ç¨‹
 	
 	chapter17
 		jobs
 		jobs;sleep 3;jobs
 		time ./execute-file //detect execute speed.
 				
-		./execute-file & //ºóÌ¨ÔËĞĞ + &
+		./execute-file & //åå°è¿è¡Œ + &
 		
-		×èÈûÊÇÒòÎªº¯Êı£ºopen(fifo_name, open_mode);
-		²Î¿¼£ºlinux¹ÜµÀpipeÏê½â
+		é˜»å¡æ˜¯å› ä¸ºå‡½æ•°ï¼šopen(fifo_name, open_mode);
+		å‚è€ƒï¼šlinuxç®¡é“pipeè¯¦è§£
 			https://blog.csdn.net/qq_42914528/article/details/82023408
 			
-			LinuxÓĞÃû¹ÜµÀ£¨FIFO£©µÄ×èÈûºÍ·Ç×èÈû¶ÁĞ´
+			Linuxæœ‰åç®¡é“ï¼ˆFIFOï¼‰çš„é˜»å¡å’Œéé˜»å¡è¯»å†™
 				https://blog.csdn.net/u014285517/article/details/50479504
-		17.3 ÏûÏ¢¶ÓÁĞ
-			²é¿´ºÍÉ¾³ıÏûÏ¢¶ÓÁĞÏûÏ¢
-			²é¿´£º ipcs -q
+		17.3 æ¶ˆæ¯é˜Ÿåˆ—
+			æŸ¥çœ‹å’Œåˆ é™¤æ¶ˆæ¯é˜Ÿåˆ—æ¶ˆæ¯
+			æŸ¥çœ‹ï¼š ipcs -q
 
-			É¾³ı£ºipcrm -q msgid 
+			åˆ é™¤ï¼šipcrm -q msgid 
 		
-23 linux²¿·Öº¯ÊıÏê½â
-	23.1 LinuxÖĞfork()º¯ÊıÏê½â
+23 linuxéƒ¨åˆ†å‡½æ•°è¯¦è§£
+	23.1 Linuxä¸­fork()å‡½æ•°è¯¦è§£
 		https://blog.csdn.net/kxjrzyk/article/details/81603049
-		forkÈëÃÅ£¬½ø½×£¬¸ß½×¡£
+		forkå…¥é—¨ï¼Œè¿›é˜¶ï¼Œé«˜é˜¶ã€‚
 		
-24 linux ÈÕÖ¾
-	24.1 LinuxÖĞ¼ÇÂ¼ÖÕ¶ËÊä³öµ½ÎÄ±¾ÎÄ¼ş
+24 linux æ—¥å¿—
+	24.1 Linuxä¸­è®°å½•ç»ˆç«¯è¾“å‡ºåˆ°æ–‡æœ¬æ–‡ä»¶
 		https://blog.csdn.net/tengh/article/details/41823883
 		
-		b,½«linux±àÒë¹ı³ÌÖĞµÄÈÕÖ¾Êä³öµ½ÎÄ¼ş
+		b,å°†linuxç¼–è¯‘è¿‡ç¨‹ä¸­çš„æ—¥å¿—è¾“å‡ºåˆ°æ–‡ä»¶
 		https://blog.csdn.net/qq_25623355/article/details/89760962
 		
-	24.2 Ubuntu²é¿´ºÍĞ´ÈëÏµÍ³ÈÕÖ¾
+	24.2 UbuntuæŸ¥çœ‹å’Œå†™å…¥ç³»ç»Ÿæ—¥å¿—
 		https://www.cnblogs.com/EasonJim/p/7189491.html
 		
-		dmesgµÄÃüÁîÏÔÊ¾LinuxÄÚºËµÄÏûÏ¢»º³åÆ÷£¬Æä±»´æ´¢ÔÚ´æ´¢Æ÷ÖĞ
-		³£ÓÃÈÕÖ¾Ä¿Â¼´ú±íµÄÒâË¼
-22 Êı¾İÀàĞÍ
-	22.1 Linux»ù±¾Êı¾İÀàĞÍ´óĞ¡¡ª¡ªint,char,long int,long long int
+		dmesgçš„å‘½ä»¤æ˜¾ç¤ºLinuxå†…æ ¸çš„æ¶ˆæ¯ç¼“å†²å™¨ï¼Œå…¶è¢«å­˜å‚¨åœ¨å­˜å‚¨å™¨ä¸­
+		å¸¸ç”¨æ—¥å¿—ç›®å½•ä»£è¡¨çš„æ„æ€
+22 æ•°æ®ç±»å‹
+	22.1 LinuxåŸºæœ¬æ•°æ®ç±»å‹å¤§å°â€”â€”int,char,long int,long long int
 		https://www.cnblogs.com/jikexianfeng/p/5792057.html
 		
-23 linux, configure --prefix=/ÓĞÊ²Ã´ÓÃ
-	23.1 linux, configure --prefix=/ÓĞÊ²Ã´ÓÃ
+23 linux, configure --prefix=/æœ‰ä»€ä¹ˆç”¨
+	23.1 linux, configure --prefix=/æœ‰ä»€ä¹ˆç”¨
 		https://zhidao.baidu.com/question/535223201.html
 		
-		ConfigureÊÇÒ»¸ö¿ÉÖ´ĞĞ½Å±¾£¬ËüÓĞºÜ¶àÑ¡Ïî£¬ÔÚ´ı°²×°µÄÔ´ÂëÂ·¾¶ÏÂÊ¹ÓÃÃüÁî./configure¨ChelpÊä³öÏêÏ¸µÄÑ¡ÏîÁĞ±í¡£
-		ÆäÖĞ£¬prefixÑ¡ÏîÊÇÅäÖÃ°²×°µÄÂ·¾¶£¬Èç¹û²»ÅäÖÃ¸ÃÑ¡Ïî£¬°²×°ºó¿ÉÖ´ĞĞÎÄ¼şÄ¬ÈÏ·ÅÔÚ/usr/local/bin£¬
-		¿âÎÄ¼şÄ¬ÈÏ·ÅÔÚ/usr/local/lib£¬ ÅäÖÃÎÄ¼şÄ¬ÈÏ·ÅÔÚ/usr/local/etc£¬ÆäËüµÄ×ÊÔ´ÎÄ¼ş·ÅÔÚ/usr/local/share£¬±È½ÏÁèÂÒ¡£
+		Configureæ˜¯ä¸€ä¸ªå¯æ‰§è¡Œè„šæœ¬ï¼Œå®ƒæœ‰å¾ˆå¤šé€‰é¡¹ï¼Œåœ¨å¾…å®‰è£…çš„æºç è·¯å¾„ä¸‹ä½¿ç”¨å‘½ä»¤./configureâ€“helpè¾“å‡ºè¯¦ç»†çš„é€‰é¡¹åˆ—è¡¨ã€‚
+		å…¶ä¸­ï¼Œprefixé€‰é¡¹æ˜¯é…ç½®å®‰è£…çš„è·¯å¾„ï¼Œå¦‚æœä¸é…ç½®è¯¥é€‰é¡¹ï¼Œå®‰è£…åå¯æ‰§è¡Œæ–‡ä»¶é»˜è®¤æ”¾åœ¨/usr/local/binï¼Œ
+		åº“æ–‡ä»¶é»˜è®¤æ”¾åœ¨/usr/local/libï¼Œ é…ç½®æ–‡ä»¶é»˜è®¤æ”¾åœ¨/usr/local/etcï¼Œå…¶å®ƒçš„èµ„æºæ–‡ä»¶æ”¾åœ¨/usr/local/shareï¼Œæ¯”è¾ƒå‡Œä¹±ã€‚
 
-		Èç¹ûÅäÖÃprefix£¬Èç£º
-		./configure --prefix=/usr/local/test¿ÉÒÔ°ÑËùÓĞ×ÊÔ´ÎÄ¼ş·ÅÔÚ/usr/local/testµÄÂ·¾¶ÖĞ£¬²»»áÔÓÂÒ¡£
+		å¦‚æœé…ç½®prefixï¼Œå¦‚ï¼š
+		./configure --prefix=/usr/local/testå¯ä»¥æŠŠæ‰€æœ‰èµ„æºæ–‡ä»¶æ”¾åœ¨/usr/local/testçš„è·¯å¾„ä¸­ï¼Œä¸ä¼šæ‚ä¹±ã€‚
 24 cpu
-	24.1 NEON¼¼Êõ´ÖÇ³ÈÏÊ¶ 
+	24.1 NEONæŠ€æœ¯ç²—æµ…è®¤è¯† 
 		https://blog.csdn.net/heliangbin87/article/details/79581113/ 
 		
-25 TCPµÄsocketµÄ·şÎñÆ÷¶ËºÍ¿Í»§¶ËÊµÀı(linuxÏÂ) 
+25 TCPçš„socketçš„æœåŠ¡å™¨ç«¯å’Œå®¢æˆ·ç«¯å®ä¾‹(linuxä¸‹) 
 	https://blog.csdn.net/ma451152002/article/details/9066953  
-	1¡¢·şÎñÆ÷¶Ë²½Öè£º
+	1ã€æœåŠ¡å™¨ç«¯æ­¥éª¤ï¼š
 
 	socket()->bind()->listen()->accept()->read()->write()->close()
 
-	2¡¢¿Í»§¶Ë²½Öè£º
+	2ã€å®¢æˆ·ç«¯æ­¥éª¤ï¼š
 
 	socket()->connect()->write()->read()->close()
 	
-	²âÊÔ³ÌĞò£º¼û²¥¿ÍÎÄÖĞ¡£
+	æµ‹è¯•ç¨‹åºï¼šè§æ’­å®¢æ–‡ä¸­ã€‚
 26 chroot
-	26.1 chrootµÄ×÷ÓÃ¼°Ïê½â
+	26.1 chrootçš„ä½œç”¨åŠè¯¦è§£
 		https://blog.csdn.net/hao707822882/article/details/39500549  
-27 Linux ELFÎÄ¼ş¸ñÊ½·ÖÎö
+27 Linux ELFæ–‡ä»¶æ ¼å¼åˆ†æ
 	https://blog.csdn.net/xj178926426/article/details/72825630 
+28 LinuxæŸ¥çœ‹CPUä¿¡æ¯ï¼ˆCPUä¸ªæ•°ã€æ ¸å¿ƒæ•°ã€CPUä½¿ç”¨ç‡ã€è¿è¡Œä½æ•°ï¼‰
+	
+	28.1 https://blog.csdn.net/plpldog/article/details/122682418
+	{
+		1ã€æŸ¥çœ‹cpuçš„æ–¹æ³•
+
+		cat /proc/cpuinfo 
+
+		2ã€æŸ¥çœ‹å†…å­˜ä½¿ç”¨
+
+		free -m
+		3ã€æŸ¥çœ‹cpuå’Œå†…å­˜çš„ä½¿ç”¨ç‡
+
+		åœ¨è¾“å…¥ top å‘½ä»¤ä¹‹åï¼Œå›è½¦
+			{å„è¡Œå‚æ•°ä¿¡æ¯ï¼Œå«ä¹‰è§åšå®¢}
+
+		4ã€æŸ¥çœ‹ç¡¬ç›˜å¤§å°
+
+		df -h
+	}
+	
+	28.2 linuxæ€ä¹ˆæŸ¥çœ‹æœ‰å‡ ä¸ªcpu
+		https://www.php.cn/linux-489704.html
+	{
+		1ã€æŸ¥çœ‹ç‰©ç†CPUçš„ä¸ªæ•°
+
+		cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l
+
+		2ã€æŸ¥çœ‹é€»è¾‘CPUçš„ä¸ªæ•°(çº¿ç¨‹æ•°)
+
+		cat /proc/cpuinfo |grep "processor"|wc -l
+
+		3ã€æŸ¥çœ‹CPUæ˜¯å‡ æ ¸
+
+		cat /proc/cpuinfo |grep "cores"|uniq
+
+		4ã€æŸ¥çœ‹CPUçš„ä¸»é¢‘
+
+		cat /proc/cpuinfo |grep MHz|uniq
+
+		æ‰©å±•çŸ¥è¯†ï¼š
+
+		uname -a
+
+		Linux euis1 2.6.9-55.ELsmp #1 SMP Fri Apr 20 17:03:35 EDT 2007 i686 i686 i386 GNU/Linux
+
+		(æŸ¥çœ‹å½“å‰æ“ä½œç³»ç»Ÿå†…æ ¸ä¿¡æ¯)
+
+		cat /etc/issue | grep Linux
+
+		Red Hat Enterprise Linux AS release 4 (Nahant Update 5)
+
+		(æŸ¥çœ‹å½“å‰æ“ä½œç³»ç»Ÿå‘è¡Œç‰ˆä¿¡æ¯)
+
+		cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+
+			  8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz
+
+		(çœ‹åˆ°æœ‰8ä¸ªé€»è¾‘CPU, ä¹ŸçŸ¥é“äº†CPUå‹å·)
+
+		cat /proc/cpuinfo | grep physical | uniq -c
+
+			  4 physical id      : 0
+
+			  4 physical id      : 1
+
+		(è¯´æ˜å®é™…ä¸Šæ˜¯ä¸¤é¢—4æ ¸çš„CPU)
+
+		getconf LONG_BIT
+		32
+
+		(è¯´æ˜å½“å‰CPUè¿è¡Œåœ¨32bitæ¨¡å¼ä¸‹, ä½†ä¸ä»£è¡¨CPUä¸æ”¯æŒ64bit)
+
+		cat /proc/cpuinfo | grep flags | grep ' lm ' | wc -l
+
+		8
+
+		(ç»“æœå¤§äº0, è¯´æ˜æ”¯æŒ64bitè®¡ç®—. lmæŒ‡long mode, æ”¯æŒlmåˆ™æ˜¯64bit)
+	}

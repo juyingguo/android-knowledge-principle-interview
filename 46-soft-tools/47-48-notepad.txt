@@ -1,7 +1,0 @@
-1.
-2.notepad++以16进制查看文件 
-	https://blog.csdn.net/hongshuling1996/article/details/77430783/?
-	
-	下载地址：https://sourceforge.net/projects/npp-plugins/files/Hex%20Editor/Hex%20Editor%20Plugin%20v0.9.5/HexEditor_0_9_5_UNI_dll.zip/download?use_mirror=nchc
-
-	2、以Hex Editor为例， 下载插件后，解压缩后把HexEditor.dll文件复制到安装目录（如C:\Program Files\Notepad++\plugins），退出NotePad++重新打开即可！需要以十六进制显示时，点击菜单的：【插件】－【Hex-Editor】－【View in Hex】即可	

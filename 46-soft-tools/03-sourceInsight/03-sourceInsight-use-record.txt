@@ -1,130 +1,149 @@
-01��Source Insight 4.00.0096 ����
+00 
+	https://www.sourceinsight.com/
+	
+	download:
+		https://www.sourceinsight.com/download/
+01，Source Insight 4.00.0096 下载
 	01.1 https://www.onlinedown.net/soft/15056.htm 
 	
-	01.2 Source Insight 4.0 �������� 
+	01.2 Source Insight 4.0 无限试用 
 		https://blog.csdn.net/weixin_30321709/article/details/102210997
 		C:\ProgramData\Source Insight\4.0\si4.lis
 
-		�޸�
+		修改
 
-		Date="2019-09-16 00:00:00"    //��ʼ���õ�ʱ�䡣�������3�������� �����������֮����Ҫ�����޸�
-		Expiration="2030-05-16"          //����ʱ��
-	01.3 source insight4.0������,ע���,���к���ѷ���
-		https://www.ruanfujia.com/10320287/
+		Date="2019-09-16 00:00:00"    //开始试用的时间。最多试用3个月所以 这个日期三个之内需要重新修改
+		Expiration="2030-05-16"          //结束时间
+	01.3 source insight4.0激活码,注册号,序列号免费分享
+		{
 		
-		2.�����һ�����������ơ���˾����֯���ơ�������Ϣ������30������á�
+			https://www.ruanfujia.com/10320287/
+		
+			2.点击下一步，输入名称、公司或组织名称、邮箱信息，申请30天的试用。
 
-		������ɺ󣬵����һ����ֱ����װ��ɡ�
+				输入完成后，点击下一步，直到安装完成。
 
-		3.�޸�sourceinsight4.exe
+			3.修改sourceinsight4.exe
 
-		��16���Ʊ༭����sublime text����sourceinsight4.exe�ļ����ҵ�c800 0000 742a 83bc 2408 ��һ�Σ��޸�74 Ϊ eb��
-		�޸ĺ��Ϊ��c800 0000 eb2a 83bc 2408
-		�޸�license�ļ�
+				用16进制编辑器（sublime text）(或者用notepad++ 下载插件，查看{47-48-notepad.txt}
+								{或者winhex，试用版提示无法打开保存大于200k的文件})打开sourceinsight4.exe文件，找到c800 0000 742a 83bc 2408 这一段，修改74 为 eb。
+				修改后的为：c800 0000 eb2a 83bc 2408
+				{win7上修改后00为啥变成00，使用notepad++无法修改正确}{c8 20 20 20 eb 2a 83 bc 24 08}
+				{c8 00 00 00 74 2a 83 bc 24 08}
+				修改license文件
 
-		�� C:\ProgramData\Source Insight\4.0\si4.lic
+				打开 C:\ProgramData\Source Insight\4.0\si4.lic
 
-		��Expiration=��2017-XX-XX���е�2017�޸�Ϊ2030��
+				将Expiration=”2017-XX-XX”中的2017修改为2030。
 
-		ע�⣺��һ��ʱ����ʾ���ں󣬰�Date=��2019-10-24 00:00:00�壬�ĳ�ǰһ��ģ����ܼ���ʹ�á�
-		 
-1. source insight ��Щ��ʽ���ļ������˵��� 
-	1.1 ��Source Insight�е��ļ�������
+			4.注意：过一段时间提示过期后，把Date=”2019-10-24 00:00:00″，改成前一天的，又能继续使用。
+			
+		}
+		{
+			5 	Source Insight 4.x完美激活破解安装图文教程(附替换文件+授权文件)
+			http://www.cqyy.net/360/2022/0316/106114.html
+			
+			含禁止联网设置。{可以对比下。}
+		}		
+			
+1. source insight 有些格式的文件被过滤掉了 
+	1.1 、Source Insight中的文件过滤器
 		http://www.rosoo.net/a/201005/9430.html
 		
-		��Source Insight�����½�����֮ǰ������
+		打开Source Insight，在新建工程之前，进入
 
-		Options -> Document Options... Alt-T    -> ���Document Type��������Ȼ��ѡ��Make File�����ұߵ�File Filter�У���ԭ�ȵ�*.mak�������һ���ֺţ��������ͬ���˹����Էֺż�������ټ���*makefile����� *.mak;*makefile������ѡ��Include when adding to projects,�������Ժ����½����̵�ʱ�򣬾Ϳ���ʶ��makefile��Makefile�ˣ�����˴�Source Insight�������ִ�Сд����
+		Options -> Document Options... Alt-T    -> 点击Document Type的下拉框，然后选择Make File，在右边的File Filter中，在原先的*.mak后面加上一个分号，即多个不同过滤规则以分号间隔开，再加上*makefile，变成 *.mak;*makefile，并且选中Include when adding to projects,这样，以后再新建工程的时候，就可以识别makefile或Makefile了（好像此处Source Insight并不区分大小写）。
 
-		���Ƶ�ԭ��������������Ҫ����Ĳ�ͬ�����͵��ļ����ֱ���뵽ԭ�ȵ�һЩ�ļ����ͺ��棬ע��Ҫ�÷ֺŸ���������ֱ���½�һ���ļ����ͣ�Ȼ��д�϶�Ӧ�Ĺ��ǹ��򣬱���
+		类似的原理，给其他你想要加入的不同的类型的文件，分别加入到原先的一些文件类型后面，注意要用分号隔开，或者直接新建一个文件类型，然后写上对应的顾虑规则，比如
 
-		��� Add Type���������ļ����͵�����Scatter File��File Filter��д��*.scf��ע����ѡ�������Include when adding to projects,�����ͽ�����һ���µ��ļ����ͣ� �Ժ��½����̼����ļ�ʱ��ϵͳ���ܹ�ʶ���׺��scf���ļ��ˡ�
+		点击 Add Type，填入新文件类型的名字Scatter File，File Filter中写上*.scf，注意再选中下面的Include when adding to projects,这样就建立了一个新的文件类型， 以后新建工程加入文件时候，系统就能够识别后缀是scf的文件了。
 		
-2��source insight���ù��ܵ����÷��� 
-	2.1��http://www.downza.cn/xy/49194.html
+2、source insight常用功能的设置方法 
+	2.1、http://www.downza.cn/xy/49194.html
 	
-	2.2��source insight ������ÿһ���ļ�������ĸ��Щ 
+	2.2、source insight 工程中每一个文件名首字母大些 
 		http://www.downza.cn/xy/49194.html
 	
-3. SourceInsight ��������Ӧ������ 
-	3.1 SourceInsight ��������Ӧ������
+3. SourceInsight 不断无响应的问题 
+	3.1 SourceInsight 不断无响应的问题
 		https://blog.csdn.net/liuming651664/article/details/84180860?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
-		sourceinsight3ʹ�ù����У�����Ǵ󹤳̣����ǳ��ֳ�������CPUʹ�á��ڴ�ռ�ö��ܸߣ��Ķ�androidԴ�벻�ϳ�������Ӧ��������Ҫ����Ϊss��������sync���ơ�
+		sourceinsight3使用过程中，如果是大工程，总是出现抽筋的现象，CPU使用、内存占用都很高，阅读android源码不断出现无响应。后发现主要是因为ss有体贴的sync机制。
 
-		�����취��
+		处理办法：
 
-		1.ȥ��ͬ����options->perferences->general->backgroud synchronization every [ ] ǰ��Ĺ�;������á��ײ�ֻ����ֵ��Ч��
+		1.去掉同步，options->perferences->general->backgroud synchronization every [ ] 前面的钩;这个有用。亲测只改数值无效。
 
-		2.updata revoery file every[ ]��һ���������
-		��������������������������������
-		��Ȩ����������ΪCSDN������liuming651664����ԭ�����£���ѭ CC 4.0 BY-SA ��ȨЭ�飬ת���븽��ԭ�ĳ������Ӽ���������
-		ԭ�����ӣ�https://blog.csdn.net/liuming651664/article/details/84180860
+		2.updata revoery file every[ ]改一个大参数。
+		————————————————
+		版权声明：本文为CSDN博主「liuming651664」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/liuming651664/article/details/84180860
 
-4. ����aosp�����޷���¼��
-	4.1 �޸ı����ʽΪutf-8;Ĭ���Ѿ�������ˣ�����source insight 3.5��֧�ְ�װ�Ժ���޸ı����ʽ��
-	4.2 �ļ���ʽʹ��linux lf��window �µ�cr lf���µġ�������ԭ��
-	4.3 �ر��Զ�������ʹ��simple���ɡ����������á�
+4. 编译aosp代码无法烧录。
+	4.1 修改编码格式为utf-8;默认已经是这个了，好像source insight 3.5不支持安装以后的修改编码格式。
+	4.2 文件格式使用linux lf，window 下的cr lf导致的。【根本原因】
+	4.3 关闭自动缩进。使用simple即可。【不起作用】
 5. unable to create the project directory file:*/*/*/ /source insight/projects/PROJECTS.DB3
-	Ӧ�ó����Ѿ��򿪹�һ���ˣ�����û�������������ٴ�������Ӧ�ó���ͻᵯ������ʾ��
-	���������Ƚ��������һ������������ˡ�
+	应用程序已经打开过一个了，但还没有运行起来。再次启动该应用程序就会弹出该提示。
+	可能启动比较慢。多等一会就启动起来了。
 	
-6. Source Insight��Symbol not found
-	6.1 Source Insight��Symbol not found 
+6. Source Insight：Symbol not found
+	6.1 Source Insight：Symbol not found 
 		https://blog.csdn.net/TekinSun/article/details/50907897
-7. Source Insight��Project File����ѡ����ε��� 
+7. Source Insight的Project File搜索选项如何调出 
 	https://jingyan.baidu.com/article/63f23628fab8b84208ab3dfb.html
-	��source insight �ڶ������������Viewѡ��
-	ѡ��Panels->Project File List, �Ҳ��Project Window�м��ָ���Project Files����ѡ����
+	打开source insight 在顶部工具栏点击View选项
+	选择Panels->Project File List, 右侧的Project Window中即恢复了Project Files搜索选项啦
 	
-8. Source Insightȥ���ļ�����ʾ��ʱ������ĸ��д 
+8. Source Insight去掉文件名显示的时候首字母大写 
 	https://blog.csdn.net/RomanBrickie/article/details/8756800
-	��Options->Preference->display��ͷ������Show exact case of file names
-9.Unable to create the project directory file :D:\�û�Ŀ¼\�ҵ��ĵ�\Source Insight\Projects\PROJECTS.DB3
+	在Options->Preference->display里头，勾上Show exact case of file names
+9.Unable to create the project directory file :D:\用户目录\我的文档\Source Insight\Projects\PROJECTS.DB3
 	
-10,source insight �鿴���ù�ϵ 
-	10.1 source insight �鿴�����ù�ϵ
+10,source insight 查看引用关系 
+	10.1 source insight 查看被调用关系
 		https://blog.csdn.net/nicholas_duan/article/details/78557737
-	10.2 source insight ��ν�����--�Լ���ݷ�ʽ���ҵ��ú������� 
+	10.2 source insight 如何建工程--以及快捷方式查找调用函数方法 
 		https://www.cnblogs.com/dpf-learn/p/6278314.html
 		
-	10.3 ���������Զ�̼�����ϣ����ü��������༰�����������޷����в鿴�ġ�
-		��Ҫ�����̷ŵ����ؼ�����ϡ�
-	10.4 Lookup Reference ����������������������õ��ļ���
-		Options ѡ��Smart Reference Matching��
-		Search Method ѡ��Look Up Reference.
+	10.3 如果工程在远程计算机上，引用及关联的类及函数调用是无法进行查看的。
+		需要将工程放到本地计算机上。
+	10.4 Lookup Reference 功能项，函数名搜索不到引用的文件。
+		Options 选择【Smart Reference Matching】
+		Search Method 选择Look Up Reference.
 		
-11��SourceInsight��������ʾ����·���ļ��ķ���
-	11.1 SourceInsight��������ʾ����·���ļ��ķ��� 
+11，SourceInsight标题栏显示完整路径文件的方法
+	11.1 SourceInsight标题栏显示完整路径文件的方法 
 		https://blog.csdn.net/wzzfeitian/article/details/7797955
 		
-		options -> preferences -> Display, ȥ��Trim long path names with ellipses.
+		options -> preferences -> Display, 去掉Trim long path names with ellipses.
 
-		���Ǳ������ǲ�����ʾ���������ļ�·�����أ���Щ�����...��ʧ������
+		这是标题栏是不是显示了完整的文件路径了呢，那些讨厌的...消失不见了
 		
-12��sourceinsight 4.0 ���������޸�
+12，sourceinsight 4.0 编码乱码修改
 	12.1 https://blog.csdn.net/timebomb/article/details/72778702 
-		��4.0����File->Reload as Encoding��->ѡ��gb2312����������ֻ�ܶԵ�ǰ�ļ���Ч�����һ�������أ�
+		在4.0界面File->Reload as Encoding…->选择gb2312；但是这种只能对当前文件有效，如何一劳永逸呢？
 
-		�������ԣ���Options->Preferences->Files������ѡ��Ĭ�ϱ��뷽ʽDefault Encoding���ɣ�������Ҫ�ؽ�һ�������Ŀ��[���Լ�����Ŀ��Ҫ��������]
-		�����һ����Ŀ���ж��ֱ��뷽ʽ��GOD BLESS YOU!
-13 source insight 3.5 ��������
-	3.1 Source Insight 3.X ���֧��utf8����������������룬���������������ļ�һ��
+		经过尝试，在Options->Preferences->Files最下面选择默认编码方式Default Encoding即可，但是需要重建一下你的项目。[非自己的项目不要这样操作]
+		如果你一个项目，有多种编码方式，GOD BLESS YOU!
+13 source insight 3.5 乱码问题（utf8编码）
+	3.1 Source Insight 3.X 插件支持utf8，完美解决中文乱码，另附优美的配置文件一份
 		https://blog.csdn.net/nyist327/article/details/39935379 
 		http://files.cnblogs.com/Red_angelX/siplus.zip
 		
-		��װ˵��:
+		安装说明:
 
-		��ѹmsimg32.dll sihook.dll siutf8.dll ��Source Insight 3.X��װĿ¼
+		解压msimg32.dll sihook.dll siutf8.dll 到Source Insight 3.X安装目录
 
-		msimg32.dll ��������(*)
-		sihook.dll ��ǩ���(M)
-		siutf8.dll utf8���(M)
+		msimg32.dll 引导程序(*)
+		sihook.dll 标签插件(M)
+		siutf8.dll utf8插件(M)
 
-		����˵��:
+		功能说明:
 
-		1,����SI���ǩ����
+		1,增加SI多标签功能
 
-		2,�޸�SI������������ַ��ϰ�CTRL+Fʱ����������.(��л��ѩ�ķ�������)
+		2,修复SI当光标在中文字符上按CTRL+F时崩溃的问题.(感谢看雪的封心锁爱)
 
-		3,utf8����֧��.
+		3,utf8编码支持.
+	3.2 source insight 4默认支持utf8编码

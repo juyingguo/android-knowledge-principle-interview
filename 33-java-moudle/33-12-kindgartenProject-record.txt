@@ -2,7 +2,7 @@
 	
 2. server
 	2.7 
-	2.8 git私有仓库：http://47.112.198.104:10078/user/sign_up_my_eink
+	2.8 git私有仓库：http://47.112.198.102:10078/user/sign_up_my_eink
 	
 		git 私服公司账号。
 		私服地址浏览器打不开，使用firfox浏览器，network.security.ports.banned.override。
@@ -52,43 +52,47 @@
 			}
 		
 	2.16 测试环境
-		120.78.254.93    root    Qazxdr!@!*myeink
+		测试环境（kindmanager）：120.78.254.91    root    Qazxdr!@!*myeink
 		
-		ibotn aliyun 新服务器地址：
-		47.112.198.104   root  Qazxdr!@!*
+		ibotn aliyun 开发新服务器地址：
+		47.112.198.102   root  Qazxdr!@!*myeink
 		
-		测试项目云端地址：
+		kindmanager项目开发环境地址：
 		http://kind.ibotn.com/login?redirect=%2Findex
+		
+		kindmanager项目测试环境地址：
+		http://test.ibotn.com
 	2.17 kind.ibotn.com 后端开发机域名
 	
 	2.18 管理系统
-		单体前后端分离：http://47.112.198.104:10078/NLFD/kindergartenProj.git
-		cloud版： http://47.112.198.104:10078/zellen/ibotn-cloud.git
+		单体前后端分离：http://47.112.198.102:10078/NLFD/kindergartenProj.git
+		cloud版： http://47.112.198.102:10078/zellen/ibotn-cloud.git
 		
 	2.19 redis数据库
-		47.112.198.104
+		47.112.198.102
 		密码：redis!123myeink
 		
-	2.20 新项目kind mysql数据库 
-		2.20.1 
-			IP：47.112.198.104 
+	2.20 新项目mysql数据库 
+		2.20.1 新项目kind mysql数据库 
+			IP：47.112.198.102 
 			端口：3304  
 			账密：root  rootmyeink
 			使用docker管理mysql
 			docker exec -it mysql /bin/bash
-		
-		2.20.1 
+			
+			20220628：mysql端口更换为：13306端口
+		2.20.2
 
-			ibotn edu使用的阿里云测试服务器
-			120.78.254.93
+			ibotn edu项目使用的阿里云测试服务器
+			120.78.254.91
 			root   Qazxdr!@!*myeink
-			mysql -h120.78.254.93 -uroot -pds#ibotn@2017myeink
+			mysql -h120.78.254.91 -uroot -pds#ibotn@2017myeink
 	2.21 nacos
 		启动地址：http://localhost:8848/
 		{ibotn-auth.yml} 
 			spring: 
 			  redis:
-				host: 47.112.198.104
+				host: 47.112.198.102
 				port: 9736
 				password: redis!123
 		2.21.2 要保证正常本地使用nacos访问
@@ -96,11 +100,11 @@
 			【否则无法使用】
 		2.21.3 在浏览器输入: http://localhost:8848/nacos 用户名和密码 都是 nacos/nacos
 	2.22 生成代码
-		生成代码：http://47.112.198.104/login  账号 dev 密码 123456
+		生成代码：http://47.112.198.102/login  账号 dev 密码 123456
 		
 	2.23 
 	2.24 配置的接口文档
-		http://47.112.198.104:8080/doc.html 登录模块相关接口API文档说明
+		http://47.112.198.102:8080/doc.html 登录模块相关接口API文档说明
 3. test code myeink2
 	name and all price 8-8 = 0;=2-2=0；
 	
@@ -109,7 +113,7 @@
 	https://www.xiaopiu.com/h5/byId?type=project&id=5ef15313d564a944962d402d
 	
 	微信小程序登录code凭证接口API文档 
-	 http://47.112.198.104:8899/doc.html#/default/%E7%99%BB%E5%BD%95%E7%AE%A1%E7%90%86/wxMiniAppLoginUsingPOST 
+	 http://47.112.198.102:8899/doc.html#/default/%E7%99%BB%E5%BD%95%E7%AE%A1%E7%90%86/wxMiniAppLoginUsingPOST 
 
 	微信小程序需要https协议的
 	https://ibotn.itway.top

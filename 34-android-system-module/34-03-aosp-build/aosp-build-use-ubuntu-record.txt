@@ -32,3 +32,9 @@
 				 4. full_crespo-userdebug
 				
 				https://blog.csdn.net/zmnqazqaz/article/details/37559177
+				
+4. AOSP清华源同步报错问题
+	Get https://aosp.tuna.tsinghua.edu.cn/android/git-repo
+	fatal: unable to access 'https://aosp.tuna.tsinghua.edu.cn/android/git-repo/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+	
+	{git config --global http.sslverify false}

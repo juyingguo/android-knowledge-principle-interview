@@ -41,7 +41,8 @@
 		6.2.1、Android中的sp和wp指针
 			博主：：linux 专家
 			https://blog.csdn.net/DroidPhone/article/details/5799792?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
-			
+	6.3 《整理MTK平台的Camera底层驱动流程》
+		https://blog.csdn.net/chen_2008_good/article/details/121875569
 7. android 中camer mipi，usb接口适配开发
 	
 	7.0 mipi和dsi【转】 
