@@ -105,6 +105,9 @@
 	2.23 
 	2.24 配置的接口文档
 		http://47.112.198.102:8080/doc.html 登录模块相关接口API文档说明
+	2.25 外网访问禅道
+		http://km.ibotn.com:88
+		
 3. test code myeink2
 	name and all price 8-8 = 0;=2-2=0；
 	

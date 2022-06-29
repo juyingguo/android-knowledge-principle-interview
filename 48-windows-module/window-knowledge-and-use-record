@@ -84,14 +84,85 @@
 12 port0:hgst hts541010b7e610
 	https://zhidao.baidu.com/question/2144326122539983388.html 
 13 windows系统下载
-	http://win.jjxnwl.com/win10.html
-	http://www.win10.biz/
-	http://www.ylmfeng.com/
+	13.0 
+		a1,下载【带有制作好的激活工具】，方便不用再找激活工具。
+		a2,带有md5，sha1等校验码。
+	13.1 win7
+		系统之家下载win7。
+		【已经带有制作好的激活工具。】
+		{
+			如果您安装的WIN7已经激活了，可以删除桌面这个快捷文件夹，程序目录在开始菜单—
+			所有程序——实用工具里。
+		}
+		
+		{
+			https://www.win7zhijia.cn/
+			{含win7,win10,...}
+		}
 	
-	13.1 win10专业版和旗舰版的区别哪个更好_系统堂
-		http://www.xitongtang.com/class/win10/18585.html
+	13.2 win10专业版和旗舰版的区别哪个更好_系统堂	
+		13.2.1 win10装机版和纯净版哪个好
+			https://www.win7zhijia.cn/win10jc/win10_44280.html
+			
+			{
+				win10专业版和旗舰版的区别哪个更好
+				http://www.xitongtang.com/class/win10/18585.html
+				装机版6.6G,纯净版4.2G
+			}
+		{系统之家}
+			{
+				http://win.jjxnwl.com/win10.html		
+			
+			{			
+				
+				https://windows.xnayw.cn/win1064.html
+				{已下载}{网站上的校验码：}
+				{
+					MD5: 71BC83AC7EC42C01B21147480FF6A291
+					SHA1: 49754018FEE741094326DA786D01E626B74FEE58
+					CRC32: 58F6E73D
+				}
+				含有功能{U盘启动制作}
+			}
+			{
+				win10免激活版下载
+				https://www.xitongzhijia.net/win10/202109/228458.html
+				
+				{
+					Win10 64位激活专业版 V2022.06 
+					[自带激活]
+					https://www.xitongzhijia.net/win10/202112/235312.html
+					{
+						系统文件信息
+						小贴士：光盘经过检测安全无毒，PE中的部分破解软件可能会被个别杀毒软件误报，请放心使用。
+						文件包名称：G_WIN10_X64_V9.iso
+						文件大小：5452857344 字节
+						系统格式：NTFS
+						系统类型：64位
+						CRC32：8FE6E501
+						MD5：294EB318CB27A0F2380568675B86FF8C
+						SHA1：5F9A8FAF68F4C56E705646287622461057A5CF55
+					}
+				}			
+				
+			}
+		}
+		http://www.win10.biz/
+		http://www.ylmfeng.com/
+		{{系统堂}
+			http://www.xitongtang.com/class/win10/18585.html
+		}
+		{{W10专业版永久激活}
+			W10系统下载|W10专业版永久激活 [64位]最新版v2022
+			{http://www.winwin7.com/Win10/Gwin10-14113.html}
+		}
+		
 14 大白菜制作u盘装机工具
 	http://dbc.vhwkcl.cn/udisk.html
 15 操作系统和各类编辑器的豆沙绿设置
 	修改windows所有编辑器的颜色
 	https://blog.csdn.net/u012060033/article/details/107561706
+	
+16 电脑ghost是什么意思
+	https://www.php.cn/faq/472416.html
+	
