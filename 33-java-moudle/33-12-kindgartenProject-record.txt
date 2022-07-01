@@ -24,27 +24,35 @@
 		https://note.youdao.com/s/boGduIGl 		
 	
 	2.15 
-		本地运行，接口文档
-		http://localhost:8080/doc.html
-		微服务版：8080端口,需要开启网关服务，通过网关端口8080自动转到对应应用模块端口。
-		同时也需要开启权限服务。
-			只启动应用服务，可以直接访问http://localhost:{modulePort}/doc.html
+		2.15.1 本地运行，接口文档
 			{
-				如果提示Authorization不能为空。开启认证，网关服务，从总端口8080进入后，获取该值，保存使用。
-				
-				http://localhost:9204/doc.html
+				http://localhost:8080/doc.html
+				{含有登录相关}
+				{已经加入密码加密，本地服务，需要使用线上环境登录查看对应加密后的密码}
+				{同时将请求地址，加入网关配置的白名单中}如{- /auth/chooseLogin}
+				{登录返回的access_token作为其它接口请求头Authorization的值使用}
 			}
-		配置增强，格式比直接swagger默认规范些。
-			 module_yaml配置
-			 {
-				# 开启增强模式
-				knife4j:
+		
+		2.15.2 
+			微服务版：8080端口,需要开启网关服务，通过网关端口8080自动转到对应应用模块端口。
+			同时也需要开启权限服务。
+				只启动应用服务，可以直接访问http://localhost:{modulePort}/doc.html
+				{
+					如果提示Authorization不能为空。开启认证，网关服务，从总端口8080进入后，获取该值，保存使用。【2.15.1】
+					
+					http://localhost:9204/doc.html
+				}
+			配置增强，格式比直接swagger默认规范些。
+				 module_yaml配置
+				 {
+					# 开启增强模式
+					knife4j:
+						enable: true
+				 }
+				 # 开启增强模式
+					knife4j:
 					enable: true
-			 }
-			 # 开启增强模式
-				knife4j:
-					enable: true
-		2.15  
+		2.15.3  
 			swagger : http://127.0.0.1:9204/swagger-ui/index.html
 			端口号是模块端口.
 			{
@@ -68,6 +76,9 @@
 		单体前后端分离：http://47.112.198.102:10078/NLFD/kindergartenProj.git
 		cloud版： http://47.112.198.102:10078/zellen/ibotn-cloud.git
 		
+		front ui ：
+			http://47.112.198.102:10078/zhonhai/kinderGardenAdmin
+
 	2.19 redis数据库
 		47.112.198.102
 		密码：redis!123myeink
@@ -132,3 +143,17 @@
 	https://blog.csdn.net/qq_39997939/article/details/122279782
 8. 实体bean中有很多属性，但查询的时候，只使用一部分属性。
 	单独抽出实体类（请求体），只供查询用，方便前端查看这些。
+	
+9.后勤管理-厨房-食谱
+	
+	分析：以下字段无需前端上传，后端根据登录用户保存的信息自行赋值。
+	发布人，发布人id(发布人id,预留字段（登录返回的用户id,获取发布人头像等信息）),园所id。
+	
+	用户id通过{com.ibotn.common.security.utils.SecurityUtils#getUserId}获取不到
+		使用{com.ibotn.common.security.utils.SecurityUtils#getLoginUser}来获取。
+		
+	0和null的处理。Long。
+	0不同于null
+	
+	列表倒叙排列
+	
