@@ -1,11 +1,20 @@
 1.
 	https://git-scm.com/downloads 
 2. 几款Git GUI客户端工具 
+	2.0.0
+		关于客户端需要具备以下重要特性
+		a1:自动转换CRLF
+		a2:合并冲突向导
+	2.0.1
 	https://www.cnblogs.com/ups216/p/5603199.html 
 		https://www.zhihu.com/question/22932048?sort=created 
 		
 		{
 			一、Git GUI 客户端 
+				{GUI Clients 
+					官网提供各种客户端介绍
+				https://git-scm.com/downloads/guis/
+				}
 			二、Git IDE 插件
 			三、Git 浏览器插件
 			四、在线 Git 代码托管平台 
@@ -25,12 +34,26 @@
 			SourceTree的基本使用
 			https://www.cnblogs.com/tian-xie/p/6264104.html 
 	2.3 TortoiseGit 
-	
+		{有许多人性化的设计，比如说自动转换CRLF，Windows下选错换行符类型就提交是一场灾难；
+		再比如说所有需要输入分支名或者commit的地方都能从相应的对话框当中选
+		}
+		{官网：https://tortoisegit.org/}
+		{tortoisegit下载包及语言包
+			https://tortoisegit.org/download/
+			捐赠：
+			https://tortoisegit.org/donate/
+		}
+		{ Authentication
+			ssh,or http/https
+			查看程序中手册：2.1.5. Authentication
+		}
 	2.4 Git and gitgui
 		https://git-scm.com/downloads 
 		
 		Git Gui的使用 
-		https://blog.csdn.net/wordwarwordwar/article/details/87281338  
+		https://blog.csdn.net/wordwarwordwar/article/details/87281338 	
+	2.5 https://gitforwindows.org/
+		
 3. git（Gui的使用、Ssh key 介绍及使用、Idea配置使用并使用git）
 	https://blog.csdn.net/weixin_45174537/article/details/102941957 
 	
