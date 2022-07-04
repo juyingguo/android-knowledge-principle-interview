@@ -399,4 +399,3 @@
 	17.1 Linux下查看可执行文件、动态库的ELF头等信息
 18 ubuntu16.04 查看系统可用内存
 	https://blog.csdn.net/weixin_30826095/article/details/99188548
-		

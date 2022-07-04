@@ -50,6 +50,17 @@
 		{小乌龟(TortoiseGit)配置SSH
 			https://blog.csdn.net/weixin_44480167/article/details/119178116
 			https://blog.csdn.net/yjianlu/article/details/123541833
+			
+			a1:公钥配置服务上，私钥配置客户端上。
+			a2:公钥配置在github时提示错误
+				a2.1 Key is invalid. You must supply a key in OpenSSH public key format
+					https://blog.csdn.net/u012643122/article/details/98951147
+					配置个数如下：
+					{
+						ssh-rsa 公钥文件有效内容						
+					}
+				a2.2 https://blog.csdn.net/weixin_46566957/article/details/109319324
+					{博主使用在linux上用xsel查看；查看结果带有ssh-rsa 加上内容。因此只需加上ssh-rsa即可}
 		}
 	2.4 Git and gitgui
 		https://git-scm.com/downloads 
@@ -199,6 +210,3 @@
 	有许多人性化的设计，比如说自动转换CRLF，Windows下选错换行符类型就提交是一场灾难；。
 	再比如说所有需要输入分支名或者commit的地方都能从相应的对话框当中选。
 	查看和编辑conflict很方便，不会把带着>>> <<<的文件就那么提交上去了。
-9.对于新增的文件，尚未加入版本之前
-	Git Gui{会直接连同修改，新增的一并显示在"Unstaged Changes"中，不能反勾选不需要加入版本库的文件}
-	Idea的插件git就比较智能，能反勾选不需要的文件。

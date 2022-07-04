@@ -40,9 +40,43 @@
 				加楠哥微信：nnsouthwind，免费获取海量学习资源、技术答疑。
 				笔记、源码链接: https://pan.baidu.com/s/1PSiiqtRY_JrrDAZPB5zNNQ 提取码: kmy3
 			}
-		7.3 springboot注解
+	7.3 springboot注解
 			7.3.1 @ConfigurationProperties 注解使用姿势，这一篇就够了
 				https://blog.csdn.net/yusimiao/article/details/97622666
+	7.4 SpringBoot实现OA自动化办公管理系统源码+详细讲解教程+开发文档
+		7.4.0 搜索关键字：[springboot oa][oasys]
+		https://www.bilibili.com/read/cv14011798
+		
+		https://blog.csdn.net/m0_68850571/article/details/124866317
+			[拷贝了7.4.5]
+		https://download.csdn.net/download/xiaohua1992/14041562?
+			[拷贝了7.4.5]
+		https://github.com/doudoutangs/oa_system
+			
+		7.4.5 https://github.com/misstt123/oasys
+			【开源，完整】
+			
+		7.4.6 https://github.com/memoryoverflow/OA
+		
+		https://github.com/weizhiqiang1995/skyeye
+			{智能办公OA系统[SpringBoot2-快速开发平台]，适用于医院，学校，中小型企业等机构的管理}
+		https://github.com/18121259693/projectoa
+			{华理网院本科毕业设计 - 企业OA后台管理系统 基于springboot amazeui等 开发于2018年，仅为学习使用}
+			
+		https://github.com/citrucn/OASys
+			{基于 SpringCloud 和 Vue3 的OA系统}
+		https://github.com/pandafa/OASystem
+			{OA管理系统。流程审批、用户管理、文件上传下载、消息处理。SpringMVC+MyBatis}
+			
+		https://github.com/yintenaite/OASystem
+			OA系统部分功能：登录、部门、权限。(ssh、jQuery)
+			
+		https://github.com/huoqibin/OASystem
+			{SpringBoot+Activiti+Bootstrap实现的办公自动化系统}
+	7.5 SpringBoot 2.3.x oauth2 server, SSO 单点登录
+		https://github.com/jobmission/oauth2-server
+		https://github.com/githubzengzhifeng/springboot-security-oauth2
+		https://github.com/odenktools/springboot-oauth2-jwt
 8. Springboot配置mybatis
 	8.1 Springboot配置mybatis打印sql日志
 		https://blog.csdn.net/m0_54853503/article/details/124422818

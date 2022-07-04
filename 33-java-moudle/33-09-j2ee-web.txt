@@ -71,8 +71,8 @@
 				如果请求方式不一样是可以多个的，但是每种请求方法也只能有一个不写value值。
 			}
 6. GitHub上最火的7个spring cloud开源项目，对新手太友好了
-	https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
-	
+	6.1 https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
+		【含优秀的多个spring cloud,spring boot项目】
 	6.2 5个优秀的SpringCloud开源项目 （收藏）
 		https://blog.csdn.net/youngpeople_/article/details/121289907
 	
