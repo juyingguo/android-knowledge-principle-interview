@@ -310,4 +310,6 @@
 	20.2 不同mysql版本导出导入的不兼容
 		如5.7.38 导出后{Target Server Version : 50738}
 		导入到5.7.37报错（5.7.38 中数据库使用了不兼容5.7.37的语法）。
+21 SQL JOIN 中 on 与 where 的区别
+	https://www.runoob.com/w3cnote/sql-join-the-different-of-on-and-where.html
 		

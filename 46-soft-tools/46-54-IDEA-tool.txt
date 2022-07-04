@@ -32,7 +32,7 @@
 	
 		https://pan.baidu.com/s/1MJC5TEATKiGD4vnHkjlaKw
 		提取码【j64e】
-		已经破解过的
+		已经破解过的。{默认中文。要使用英文版，去掉中文插件即可。}
 	4.2 根据工件手动操作破解
 		Jetbrains全家桶永久激活破解教程、正版注册码
 		https://www.yuque.com/docs/share/536caa57-c440-493b-bcde-efcd87269049	
@@ -66,6 +66,30 @@
 		d.1 使用注册的的账户，过期后，如果是退出登录后再次登录也是不行的。
 		d.2 重新注册的账户，就可以了。
 			idea64.exe.vmoptions可以直接编辑，添加上面的jar对应自己电脑解压后的路径。
+		d.3 [使用博主提供的临时激活码，已用可以激活]{已保存百度云盘}
+		4.2.10 Jetbrains全家桶永久激活破解教程、正版注册码
+			https://www.yuque.com/docs/share/00ac48ff-070b-4a96-b063-8c015376512b?
+			{扫码关注下方公众号Java技术迷，后台回复关键词【12345】即可免费获取[博主提供的完整资料]}
+			4.2.10.1{
+				免费获取网盘地址：
+				链接：https://pan.baidu.com/s/1zEGXbq4v2RNPzBMIdQBwGw 
+				提取码：2115 
+			}
+			4.2.10.2{ 附最新教程：
+				2021.3.1及以下版本
+				参考教程：https://www.yuque.com/docs/share/536caa57-c440-493b-bcde-efcd87269049?#
+				参考教程：https://www.yuque.com/docs/share/b996d27e-c888-45f2-bb1e-f6db5efe2485?#
+					{含以前的方法链接：以前老方法：https://www.jb51.net/article/198343.htm}
+				声明
+				本文中资源全部收集整理于网络并无偿提供，仅可用于个人学习交流；请勿转载、售卖或商用；侵权联删！
+				教程中的资料未在任何平台售卖过，请留意！谨防上当受骗！
+				若资金允许，请点击 https://www.jetbrains.com/idea/buy/ 购买正版，谢谢合作！
+				学生凭学生证可免费申请 https://sales.jetbrains.com/hc/zh-cn/articles/207154369-学生授权申请方式 正版授权！
+				创业公司可5折购买 https://www.jetbrains.com/shop/eform/startup 正版授权！
+			}
+			临时激活码
+			https://pan.baidu.com/s/1UOillIVS30T_Z-IH24AKeQ 
+				提取码：2114 
 5.Jetbrains官方6种免费获取 IntelliJ IDEA 激活码的方式
 	https://www.jianshu.com/p/4f74ac56a800?ivk_sa=1024320u
 6.怎么将IDEA汉化后从中文调回英文？
