@@ -47,6 +47,10 @@
 			ssh,or http/https
 			查看程序中手册：2.1.5. Authentication
 		}
+		{小乌龟(TortoiseGit)配置SSH
+			https://blog.csdn.net/weixin_44480167/article/details/119178116
+			https://blog.csdn.net/yjianlu/article/details/123541833
+		}
 	2.4 Git and gitgui
 		https://git-scm.com/downloads 
 		
