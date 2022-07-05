@@ -11,4 +11,10 @@
 		<Context reloadable="true" privileged="true"> 
 3.Apache Tomcat各个版本区别
 	https://www.csdn.net/tags/MtTaEgzsMTgwMzgwLWJsb2cO0O0O.html
+4. tomcat 安装tomcat时 运行 startup.bat时控制台上面为乱码
+	https://blog.csdn.net/m0_52221033/article/details/123298737
+	{这是因为cmd识别的字符集是gbk ,而tomcat默认的是UTF-8 格式。进入tomcat的安装目录下，在conf目录中找到logging.properties文件。}
+5. eclipse启动tomcat
+	5.1 当启动tomcat时出现tomcat setting should be set in tomcat preference page
+		https://blog.csdn.net/withyou_wy/article/details/53081800
 	

@@ -1,0 +1,31 @@
+
+9. Spring MVC
+	9.1
+	9.2 Spring MVC框架入门教程
+		http://c.biancheng.net/spring_mvc/
+10 OA管理系统
+	10.1 https://github.com/pandafa/OASystem
+		{OA管理系统。流程审批、用户管理、文件上传下载、消息处理。SpringMVC+MyBatis}
+		{访问地址
+		http://localhost:8080/OA%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/}
+		{博主没有上传jar,eclipse启动该项目后异常如下}
+		{Failed to read candidate component class: file [D:\juying\java2\apache-tomcat-8.5.78\webapps\OA管理系统\WEB-INF\classes\action\AjaxAction.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [D:\juying\java2\apache-tomcat-8.5.78\webapps\OA管理系统\WEB-INF\classes\action\AjaxAction.class]; 
+		nested exception is java.lang.IllegalArgumentException}
+	10.2 搜索：https://github.com/search?q=springmvc+oa
+		
+		https://github.com/huangxianyuan/hxyFrame
+		https://gitee.com/soEasyCode/hxyFrame
+			[有评论]
+		{hxyFrame是一个OA办公系统，采用流行的框架springMvc+spring+mybatis+shiro+ehcache开发,还集成了权限管理（菜单权限、数据权限），
+		完善的代码生成器，solr全文搜索引擎，activiti工作流…}
+		{项目开发文档：https://pan.baidu.com/s/1i5oymod}
+	10.3 https://github.com/zhaoml529/SpringMVC-Activiti5.16-Shiro
+		{
+		框架版本
+			Activiti 5.16
+			Spring-4.0.0.RELEASE
+			Shiro-all-1.2.3
+			Hibernate-4.2.2.Final
+			Hibernate-validator-5.1.3.Final
+			Validation-api-1.1.0.GA
+		}

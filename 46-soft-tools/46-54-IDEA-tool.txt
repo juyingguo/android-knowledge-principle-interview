@@ -112,3 +112,36 @@
 		1.编辑区选择select source
 		2.File-Project Structure - Libraries {增减关联库}
 	}
+11 idea配置tomcat的方法
+	https://blog.csdn.net/weixin_45494262/article/details/121274104
+	https://blog.csdn.net/LT_1029/article/details/87972919
+	【支持热部署】{	
+		https://blog.csdn.net/k393393/article/details/125163054
+	}
+	
+	11.2 idea配置tomcat中文乱码
+		a1,https://blog.csdn.net/shuux666/article/details/124128295
+		{
+			要去idea-》Help-》Edit Custom VM Options这里面去设置
+			-Dfile.encoding=UTF-8
+			{结论：不生效}
+		}
+		a2:
+		https://blog.csdn.net/qq_60689149/article/details/123243308
+		
+		a3：参考【53-03-tomcat.txt，4】【ok】
+		
+	11.3 idea配置tomcat有叉号
+		解决idea配置tomcat左上角出现红叉
+		https://blog.csdn.net/m0_62525300/article/details/120980048?
+	11.4 idea中tomcat 启动按钮是灰色的
+		重启idea.
+	11.5 idea中tomcat 启动提示
+		error,Error running 'Tomcat':startup script is not specified
+		
+	11.6 idea tomcat 启动后，http://localhost:8080/ 404
+		【解决问题】idea启动本地tomcat访问localhost:8080报404错误
+		{
+			把tomcat安装目录下webapp下的的ROOT文件夹配置到idea{Tomcat Server -> Deployment -> + ->External source}中
+			并且将/ROOT修改application context为 /
+		}

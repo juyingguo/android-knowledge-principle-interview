@@ -65,12 +65,10 @@
 			
 		https://github.com/citrucn/OASys
 			{基于 SpringCloud 和 Vue3 的OA系统}
-		https://github.com/pandafa/OASystem
-			{OA管理系统。流程审批、用户管理、文件上传下载、消息处理。SpringMVC+MyBatis}
-			
+		
 		https://github.com/yintenaite/OASystem
 			OA系统部分功能：登录、部门、权限。(ssh、jQuery)
-			
+			OA系统部分功能：登录、部门、权限。使用struts,hibernate,spring完成，前端使用现成模板，js,jQuery完成。与后端交互部分用ajax(jQuery)。
 		https://github.com/huoqibin/OASystem
 			{SpringBoot+Activiti+Bootstrap实现的办公自动化系统}
 	7.5 SpringBoot 2.3.x oauth2 server, SSO 单点登录

@@ -85,14 +85,56 @@
 	6.5 SpringCloud+Vue项目实战——社交项目
 		https://www.bilibili.com/video/BV1n4411S7Rv?spm_id_from=333.337.search-card.all.click
 		
-7
-			
+7. 7个开源好用的管理系统，建议收藏加转载
+	https://www.icode9.com/content-4-779266.html
+	7.1 GitHub地址:https://gitee.com/y_project/RuoYi
+	7.2 GitHub地址:https://gitee.com/aun/Timo
+	7.3 Shiro-Action
+		GitHub地址:https://github.com/docsifyjs/docsify/
+		{
+			本项目使用 Spring Boot 搭建，前端用的layui, 用于加深对 Spring Boot 与 Shiro 的学习, 项目特色是支持
+			restful 风格权限控制, 支持对同一 URL, 不同 HTTP Mehtod 的权限控制, 适用于更多的场景.
+		}
+	7.4 kvf-admin
+		GitHub地址:https://github.com/kalvinGit/kvf-admin
+		{
+			演示地址：http://kvfadmin.kalvinbg.cn
+
+			账号密码：test/123456
+		}
+	7.5 Guns
+		Guns基于Spring Boot 2，致力于做更简洁的后台管理系统，完美整合springmvc + shiro +
+			mybatis-plus +
+		{
+			项目演示
+			演示地址：http://demo.stylefeng.cn
+
+			账号密码：admin/111111
+
+			GitHub地址:https://gitee.com/stylefeng/guns-separation
+		}
+	7.6 XMall
+		基于SOA架构的分布式电商购物商城前后端分离 前台商城:Vue全家桶后台管理系统。包含前台商城和后台管理系统。前台商城:Vue全家桶
+		后台管理系统:Dubbo/SSM/Elasticsearch/Redis/MySQL/ActiveMQ/Shiro/Zookeeper等
+		{
+		 项目已部署，在线Demo
+			前台商城：http://xmall.exrick.cn/
+
+			后台管理系统：http://xmadmin.exrick.cn/
+
+			Git地址:https://gitee.com/Exrick/xmall
+		}
+	7.7 hxyFrame
+		hxyFrame是后台管理系统，采用流行的框架springMvc+spring+mybatis+shiro+redis+ehcache开发,
+		实现了权限管理（菜单权限、数据权限），solr全文搜索引擎，activiti工作流程引擎，cas单点登陆等功能，完善的代码生成器
+		后期还会考虑改造成模块微服务化,做到模块的相对独立，使用更加灵活，努力做到快速开发OA办公系统。
+		
+		https://github.com/huangxianyuan/hxyFrame
 8. j2ee相关播客学习
 	https://blog.csdn.net/weixin_50594210/article/details/121733878?
 9. Spring MVC
-	9.1
-	9.2 Spring MVC框架入门教程
-		http://c.biancheng.net/spring_mvc/
+	
+	see[33-19-springmvc-record.txt]
 10 Spring Cloud
 	10.1
 		http://spring.io/projects/spring-cloud
