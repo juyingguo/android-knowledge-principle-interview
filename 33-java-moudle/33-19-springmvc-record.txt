@@ -7,10 +7,11 @@
 	10.1 https://github.com/pandafa/OASystem
 		{OA管理系统。流程审批、用户管理、文件上传下载、消息处理。SpringMVC+MyBatis}
 		{访问地址
-		http://localhost:8080/OA%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/}
-		{博主没有上传jar,eclipse启动该项目后异常如下}
-		{Failed to read candidate component class: file [D:\juying\java2\apache-tomcat-8.5.78\webapps\OA管理系统\WEB-INF\classes\action\AjaxAction.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [D:\juying\java2\apache-tomcat-8.5.78\webapps\OA管理系统\WEB-INF\classes\action\AjaxAction.class]; 
-		nested exception is java.lang.IllegalArgumentException}
+		http://localhost:8080/OA管理系统/}
+		{问题1：博主没有上传jar,eclipse启动该项目后异常如下:
+		 Failed to read candidate component class: file [D:\juying\java2\apache-tomcat-8.5.78\webapps\OA管理系统\WEB-INF\classes\action\AjaxAction.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [D:\juying\java2\apache-tomcat-8.5.78\webapps\OA管理系统\WEB-INF\classes\action\AjaxAction.class]; 
+		 nested exception is java.lang.IllegalArgumentException
+		}
 	10.2 搜索：https://github.com/search?q=springmvc+oa
 		
 		https://github.com/huangxianyuan/hxyFrame
@@ -29,3 +30,35 @@
 			Hibernate-validator-5.1.3.Final
 			Validation-api-1.1.0.GA
 		}
+	10.4 https://github.com/nnkwrik/NOA
+		{NOA是一款基于spring+springmvc+mybatis的Web端OA系统.有打卡,统计出勤状况,公告,邮件,团队任务功能.能根据部门,岗位进行相关的操作. 
+		通过Shiro进行权限管理,使用多表格(员工表,员工-岗位表,岗位-权限表,权限表)的管理方式.}
+	10.5 https://github.com/CD4356/OA
+		{    OA( Office Automation System)办公自动化系统是一个企业用来管理日常事务的系统，它一般用来管理各种流程（报销、请假. . .）审批，通讯录、日程、文件管理、通知、公告等功能。
+		OA系统可以实现更加简单、规范、高效地管理，提高企业的整体管理水平。}
+		{
+			技术:
+			    后端：spring + springmvc + mybatis
+			    前端：bootstrap
+			    数据库：mysql
+
+			开发环境:
+			   idea2018.25、jdk8、tomcat9、mysql5.7
+		}
+		10.5.2 二次开发
+			添加员工，实体与jsp表单如何对应？
+		10.5.3 体验后：待完善
+			登录，使用ajax方式验证。
+			修改密码
+			添加员工，工号不能相同。
+			工号相同异常如下：
+			#Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: 
+			#Duplicate entry 'z1001' for key 'PRIMARY'
+			
+			日志记录，只有个人模块吗？
+			com.cd.oa.global.LogAdvice
+			修改员工加入日志记录中。
+			
+			
+	10.6 https://github.com/luokangyuan/OA
+		{OA协同办公与管理系统（毕业设计）Spring+SpringMVC+Mybatis+Shiro+JqueryEasyUI}

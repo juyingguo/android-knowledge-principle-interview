@@ -145,3 +145,12 @@
 			把tomcat安装目录下webapp下的的ROOT文件夹配置到idea{Tomcat Server -> Deployment -> + ->External source}中
 			并且将/ROOT修改application context为 /
 		}
+	11.7 Error java 错误 不支持发行版本5 ( 完美解决版）
+		https://blog.csdn.net/F_qiu/article/details/124102258
+		1. 原因
+			是因为ideal中默认配置中有几个地方的jdk版本与实际不一致
+		2.解决方案
+			Project Settings -> Project 
+			Project Settings -> Modules->Sources (Language level:选择对应的版本)
+			然后去File里找Settings打开，在打开的页面中找到Build开头的那一串，接着找它下面Compiler下的java compiler,右侧还要修改成自己所使用的java版本
+				

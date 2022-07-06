@@ -136,6 +136,10 @@
 	PC端原型稿地址:
 	https://www.xiaopiu.com/web/byId?type=project&id=5ef1535ad564a944962d4047
 	
+	5.2 设计稿
+		小程序设计稿：https://js.design/f/JdYkR5?p=wxhbvo_WVB
+		
+		PC端设计稿：https://js.design/f/SPe765?p=QsOJfBVmt4
 6. 幼儿园管理系统开发进度
 	https://docs.qq.com/sheet/DQmVJSEtOS3hVekVm
 	
@@ -158,5 +162,19 @@
 	列表倒叙排列
 		按照日期字段。
 	新增时，日期字段
-	startTime="Invalid Date"。后台报错。【后台进行日期格式校验】
-	
+	startTime="Invalid Date"。后台报错。【后台进行日期格式校验】【或者前端处理】
+	{代码：
+		@Pattern(regexp = "\\d{4}(\\-|\\/|.)\\d{1,2}\\1\\d{1,2}",message = "日期格式不正确")
+		@JsonFormat(pattern = "yyyy-MM-dd")
+		@Excel(name = "食谱开始时间", width = 30, dateFormat = "yyyy-MM-dd")
+		private Date startTime;
+	}
+	{报错：	
+		HV000030: No validator could be found for constraint 'javax.validation.constraints.Pattern' validating type 'java.util.Date'.
+	}
+	{参考：
+		No validator could be found for constraint ‘javax.validation.constraints.Pattern‘ validating type ‘j
+		https://blog.csdn.net/wangxuelei036/article/details/107079783/	
+		
+		原因是：Pattern只能用于String类型。
+	}
