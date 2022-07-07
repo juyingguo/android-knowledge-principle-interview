@@ -59,6 +59,27 @@
 			com.cd.oa.global.LogAdvice
 			修改员工加入日志记录中。
 			
+			修复【报销单详情中，报销单处理中，关联查询处理人错误】
+			报销单详情-处理流程，状态应该使用报销处理流程表中的状态。
+			
+			时间格式与数据库不一致：
+				【数据库为：2022-07-07 15:56:23，前台显示为2022-07-07 03:56】
+				{<spring:eval expression="record.dealTime"/></div>}默认12小时格式显示
+				【待处理】
 			
 	10.6 https://github.com/luokangyuan/OA
 		{OA协同办公与管理系统（毕业设计）Spring+SpringMVC+Mybatis+Shiro+JqueryEasyUI}
+		
+11 Spring MVC代码实例系列-05：Spring MVC配置Log4j以及 log4j.properties 属性详解介绍
+	springMVC打印mybatis 中的SQL
+	https://blog.csdn.net/qq_40661115/article/details/106359077
+	
+	http://logging.apache.org/log4j/1.2/faq.html#noconfig
+	
+	SpringMVC学习（三）——SpringMVC+Slf4j+Log4j+Logback日志集成实战分享
+	https://blog.csdn.net/u011047968/article/details/104241012
+	
+	11.2 扩展
+		slf4j-api、slf4j-log4j12以及log4j三者之间是什么关系？
+		https://blog.csdn.net/flqljh/article/details/49834731
+		https://blog.csdn.net/weixin_38004638/article/details/98658569

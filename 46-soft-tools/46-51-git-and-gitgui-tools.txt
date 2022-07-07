@@ -47,7 +47,7 @@
 			ssh,or http/https
 			查看程序中手册：2.1.5. Authentication
 		}
-		{小乌龟(TortoiseGit)配置SSH
+		2.3.2{小乌龟(TortoiseGit)配置SSH
 			https://blog.csdn.net/weixin_44480167/article/details/119178116
 			https://blog.csdn.net/yjianlu/article/details/123541833
 			
@@ -62,6 +62,9 @@
 				a2.2 https://blog.csdn.net/weixin_46566957/article/details/109319324
 					{博主使用在linux上用xsel查看；查看结果带有ssh-rsa 加上内容。因此只需加上ssh-rsa即可}
 		}
+		2.3.3 初体验和发现：{在与git scm ,bash 共同使用的时候，会影响.gitignore文件的忽略配置。
+				
+				比如使用TortoiseGit clone项目。}
 	2.4 Git and gitgui
 		https://git-scm.com/downloads 
 		
@@ -210,3 +213,205 @@
 	有许多人性化的设计，比如说自动转换CRLF，Windows下选错换行符类型就提交是一场灾难；。
 	再比如说所有需要输入分支名或者commit的地方都能从相应的对话框当中选。
 	查看和编辑conflict很方便，不会把带着>>> <<<的文件就那么提交上去了。
+*****
+0.资源
+	0.1 官网
+		https://git-scm.com/download/win 
+	
+1. git教程
+	1.1 廖雪峰的git教程
+		https://www.liaoxuefeng.com/wiki/896043488029600/896067074338496
+	1.2 图形化介绍GIT的网站：https://learngitbranching.js.org/?demo=&locale=zh_CN
+	
+	1.3 https://www.runoob.com/git/git-tutorial.html
+2.  ! [rejected]        master     -> master  (non-fast-forward)
+	 git push origin master : master //错误，":" 两边不能有空格。否则引发该错误。
+	 
+3. git合并时冲突
+	3.1 git合并时冲突<<<<<<< HEAD
+		https://www.cnblogs.com/ziye/p/11175988.html
+		
+		<<<<<<< HEAD
+		本地代码
+		=======
+		拉下来的代码
+		>>>>>>>
+	3.2 git 本地代码没有修改 却有很多合并冲突
+		Git工作流问题-大量未更改文件的合并冲突
+		https://www.5axxw.com/questions/content/yd30lq
+	
+4. GitHub加速
+	4.1 Chrome 应用商店，安装插件。
+		仓库处会显示加速地址
+	4.2 GitHub加速及重新关联远端地址
+		https://blog.csdn.net/wangshuaiwsws95/article/details/104730741
+			博主使用的是码云。
+			这时候克隆到本地的项目关联的是码云Gitee的地址，已经和原来的GitHub项目完全脱离了，是另外一个副本。需要重新关联。
+		重新关联远端地址
+		用文本编辑器打开.git文件夹中的config配置文件
+		[remote "origin"].url字段重新关联到原来位于GitHub上的GitHub项目地址
+	4.3 提高国内访问Github速度 
+		https://blog.csdn.net/codinglover5/article/details/107826097
+		1. GitHub 镜像访问
+		这里提供两个最常用的镜像地址：
+
+		https://github.com.cnpmjs.org
+
+		https://hub.fastgit.org
+		也就是说上面的镜像就是一个克隆版的Github，你可以访问上面的镜像网站，网站的内容跟Github是完整同步的镜像，然后在这个网站里面进行下载克隆等操作。
+		2.
+		3.
+		...
+		博文中有8种方式可以参考
+		
+	4.4 git pull 拉去代码很慢解决方法
+		参考【4.1】【4.2】更改配置文件config中的url。拉去完成后再把url更改回去。保证提交时是自己的原始仓库地址哦。
+	
+5. 在原有仓库主分支上创建分支后提交到github服务器上。
+	
+	Administrator@USER-20190225WN MINGW64 /d/juying/workspace/hbuilder-workspace/games (debug_add_log_and_feature)
+	$ git push origin debug_add_log_and_feature:debug_add_log_and_feature #执行的新分支提交命令。
+	
+	Username for 'https://github.com': juyingguo
+	Total 0 (delta 0), reused 0 (delta 0)
+	remote:
+	remote: Create a pull request for 'debug_add_log_and_feature' on GitHub by visiting:
+	remote:      https://github.com/juyingguo/games/pull/new/debug_add_log_and_feature
+	remote:
+	To https://github.com/juyingguo/games.git
+	 * [new branch]      debug_add_log_and_feature -> debug_add_log_and_feature
+
+	分析：
+	提交非常快，1s中就完成了，好像并没有提交该分支代码到服务器，服务器端也创建分支成功了。
+	原理是什么？待分析。
+	
+6. 【Git】如何更新或取消GitHub上fork的Repository
+	https://blog.csdn.net/hongwei15732623364/article/details/80148376 
+	
+	6.2 github上fork了别人的项目后，再同步更新别人的提交
+		https://blog.csdn.net/qq1332479771/article/details/56087333 
+	 
+7. git中tag与release的创建以及两者的区别
+	7.1 https://www.jianshu.com/p/79ecf4fe5079 
+		创建lightweight类型的tag：
+
+		$ git tag v1.4-lw
+		创建annotated类型的tag：
+
+		$ git tag -a v1.4 -m "my version 1.4"
+		
+		$ git push origin v1.4 //提交
+	7.2 创建 Releases 
+		https://www.jianshu.com/p/b6e7c6b851ae 
+
+	7.3 git checkout tag 提示信息
+		git checkout v3
+		Note: switching to 'v3'.
+
+		You are in 'detached HEAD' state. You can look around, make experimental
+		changes and commit them, and you can discard any commits you make in this
+		state without impacting any branches by switching back to a branch.
+
+		If you want to create a new branch to retain commits you create, you may
+		do so (now or later) by using -c with the switch command. Example:
+
+		  git switch -c <new-branch-name>
+
+		Or undo this operation with:
+
+		  git switch -
+
+		Turn off this advice by setting config variable advice.detachedHead to false
+
+		HEAD is now at 371c79c OK, can run
+
+		
+	7.4 git基于某个Tag修改提交
+		https://blog.csdn.net/adojayfan/article/details/88808731 
+		https://www.cnblogs.com/steven158/p/15118011.html#_label0_1 
+		git tag版本代码快速修复
+		https://blog.csdn.net/zixiao217/article/details/73655633? 
+		[可以部分参考]
+		
+		如果要在某个tag的基础上做修改，直接切换到tab，修改后是无法提交的。
+
+		因为这时HEAD指向了一个具体的commit id，而没有处在一个分支中。
+		
+		先根据这个tag新建一个分支
+		git checkout -b 新分支 tag名
+
+		$ git checkout -b newbranch tag1.1
+			或者使用 git switch -c newbranch v3 //-c --create;
+		1
+		然后在这个新分支上修改后，提交代码
+	7.5 git tag和分支的区别_一文讲透 Git 底层数据结构和原理
+		https://blog.csdn.net/weixin_39777019/article/details/110660950 
+		
+8. 工具系列 | git checkout 可替换命令 git switch 和 git restore
+	https://blog.csdn.net/qq756684177/article/details/104454371 
+9. 仓库中包含子仓库。
+	异常提示：
+	username@mypc MINGW64 /i/juying/android/android-source/android-5.1.1_r1/packages (master)
+	$ git add .
+	warning: adding embedded git repository: apps/BasicSmsReceiver
+	hint: You've added another git repository inside your current repository.
+	hint: Clones of the outer repository will not contain the contents of
+	hint: the embedded repository and will not know how to obtain it.
+	hint: If you meant to add a submodule, use:
+	hint:
+	hint:   git submodule add <url> apps/BasicSmsReceiver
+	hint:
+	hint: If you added this path by mistake, you can remove it from the
+	hint: index with:
+	hint:
+	hint:   git rm --cached apps/BasicSmsReceiver
+	hint:
+	hint: See "git help submodule" for more information.
+	warning: adding embedded git repository: apps/Bluetooth
+	warning: adding embedded git repository: apps/Browser
+
+10. git 配置全局和局部邮箱和用户名
+	10.1 用户信息
+		a,配置个人的用户名称和电子邮件地址：
+
+			$ git config --global user.name "runoob"
+			$ git config --global user.email test@runoob.com
+			如果用了 --global 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。
+
+			如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 --global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。
+		b，全局配置文件如：
+			C:\Users\Administrator\.gitconfig
+			
+11 clone 仓库报错
+	解决github unable to access 'https://github.com/...: Failed to connect to github.com port 443.
+	https://blog.csdn.net/a_dreaming_fish/article/details/50474363
+	
+	经过查阅资料，这是由于没有指定用户密码导致的问题，在这种情况下，我们可以修改下载的仓库的URL地址，
+	格式就是https://username:passwords@github.com/username/repository.git
+	
+	$ git push origin master 报错
+		[协议为：https]
+		问题提取：【关于Support for password authentication was removed on August 13, 2021报错的解决方案 - 知乎
+					https://zhuanlan.zhihu.com/p/414028184
+				   】			
+		【描述】
+		remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+		remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+		fatal: Authentication failed for 'https://github.com/juyingguo/OA.git/'
+		[处理方法：使用token方式访问https的github]
+		
+		{
+			生成token后，记得把你的token保存下来，以便进行后面的操作。把token直接添加远程仓库链接中，这样就可以避免同一个仓库每次提交代码都要输入token了。
+
+			git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
+			<your_token>：换成你自己得到的token
+			<USERNAME>：是你自己github的用户名
+			<REPO>：是你的仓库名称
+			下面是一个实例：
+			git remote set-url origin https://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@github.com/shliang0603/Yolov4_DeepSocial.git/
+		}
+		
+	git pull origin master
+	fatal: unable to access 'https://github.com/juyingguo/OA.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+		{同时参考4，配置github 主机地址。如果不能访问切换使用和关闭后}
+	

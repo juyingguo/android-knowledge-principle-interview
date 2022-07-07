@@ -72,7 +72,108 @@
 			}
 6. GitHub上最火的7个spring cloud开源项目，对新手太友好了
 	6.1 https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
-		【含优秀的多个spring cloud,spring boot项目】
+		【含优秀的多个spring cloud,spring boot项目】【参考作者搜集，每一个项目自己可以搜集】
+		【百度，Java俱乐部】
+		{
+			geek_qi-cloud-platform-master.zip 2021/7/1 14:29
+			
+			JeeHuangBingGui-jeeSpringCloud-m...2021/7/1 14:29
+			
+			light-reading-cloud-client-master.zip 2021/7/1 14:27
+			
+			light-reading-cloud-master.zip 2021/7/1 14:27
+			
+			Online Examination Java Project code.. 2021/5/1919:18
+			
+			OnlineTaxi-master.zip
+			2021/7/1 14:29
+			
+			piggymetrics-master.zip
+			2021/7/1 14:24
+			
+			smallc-SpringBlade-master.zip
+			2021/7/114:28
+			
+			spring-cloud-shop-master.zip
+			2021/7/1 14:26
+			
+			【除了spring cloud项目之外，我也整理了许多经典的spring boot项目源码】
+			ERP系统.zip
+			2021/5/26 16:14
+			
+			MarkdownEditors-master.zip
+			2021/5/2114:42
+			
+			MyBatis-Spring-Boot-master.zip
+			2021/5/21 14:43
+			
+			OA自动化办公系统.zip
+			2021/5/20 20:27
+			
+			shopping-management-system-mast... 2021/5/2114:43
+			
+			spring-boot-api-project-seed-master.  2021/5/21 14:42
+			
+			webporter-master.zip
+			2021/5/21 14:43
+			
+			艾斯医疗系统.zip
+			2021/5/2813:10
+			
+			博客系统.zip
+			2021/5/2114:42
+			
+			仓库管理.zip 2021/6/614:50
+				[搜索关键字：warehouseManager]
+				[https://gitee.com/yangshare/warehouseManager
+					springmvc ...
+				]
+				[https://github.com/qiuqingyun/warehouseManager
+				 gradle，springboot
+				]
+				{https://blog.csdn.net/m0_64177501/article/details/124294399
+					springboot，springmvc
+				}
+				{http://www.taoydm.com/#/index/goods/2bace2b5-79e5-4c2e-b521-ae9200f1b9cb
+					SpringBoot+Vue物流仓储管理系统源码
+				}
+			
+			电商系统.zip
+			2021/5/2114:40
+			
+			会议系统.zip
+			2021/5/2114:43
+			
+			]记账系统.zip
+			2021/6/10 13:08
+			
+			家庭理财系统.zip
+			2021/5/26 16:14
+			
+			酒店管理系统.zip
+			2021/5/2616:13
+			
+			秒杀系统设计.zip
+			2021/5/2114:40
+			
+			停车场管理系统.zip
+			2021/5/20 20:26
+			
+			图灵商城笔记,代码和资料.zip
+			2021/5/1913:27
+			
+			微人事管理系统.zip
+			2021/5/21 14:42
+			
+			物流管理系统.zip
+			2021/5/26 16:13
+			
+			学生信息管理.zip
+			2021/6/8 14:35
+			
+			转发+关注+私信【资料】即可领取我整理好的这些项目源码与文档哦!
+
+		}
 	6.2 5个优秀的SpringCloud开源项目 （收藏）
 		https://blog.csdn.net/youngpeople_/article/details/121289907
 	
