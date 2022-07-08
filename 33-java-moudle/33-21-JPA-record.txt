@@ -1,0 +1,5 @@
+1.
+	JPA教程-易百教程
+	https://www.yiibai.com/jpa/jpa-introduction.html
+2.Spring Data JPA系列3：JPA项目中核心场景与进阶用法介绍
+	https://baijiahao.baidu.com/s?id=1736504078620963929&wfr=spider&for=pc

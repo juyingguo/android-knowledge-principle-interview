@@ -371,5 +371,14 @@
 		https://blog.csdn.net/nanhuaibeian/article/details/106649936?
 		MyBatis之分页插件(PageHelper)工作原理
 		https://blog.csdn.net/weixin_44259233/article/details/111226599
-		
+16，springcloud版本的oa系统
+	https://github.com/citrucn/OASys
+			{基于 SpringCloud 和 Vue3 的OA系统}
+			
+	https://gitee.com/zero-awei/zero-one-oasys
+		{zero-one-oasys是一个OA办公自动化系统，使用Maven进行项目管理，基于Spring Cloud Alibaba生态开发的微服务项目，MySQL底层数据库，前端采用
+
+		Vue3全家桶JavaScript框架，Element+作为前端UI框架，另外支持C++开源服务框架集成。}
+		{Java后端核心技术栈
+			版本匹配参考：https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E}
 	

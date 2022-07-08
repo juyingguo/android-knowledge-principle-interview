@@ -4,6 +4,7 @@
 	9.2 Spring MVC框架入门教程
 		http://c.biancheng.net/spring_mvc/
 10 OA管理系统
+	10.0 参考【33-18-springboot-record.txt，7.4 的oa系统】
 	10.1 https://github.com/pandafa/OASystem
 		{OA管理系统。流程审批、用户管理、文件上传下载、消息处理。SpringMVC+MyBatis}
 		{访问地址
@@ -66,7 +67,7 @@
 				【数据库为：2022-07-07 15:56:23，前台显示为2022-07-07 03:56】
 				{<spring:eval expression="record.dealTime"/></div>}默认12小时格式显示
 				【待处理】
-			
+			【报销单详情中，处理流程，超过3条，显示就不正确。】
 	10.6 https://github.com/luokangyuan/OA
 		{OA协同办公与管理系统（毕业设计）Spring+SpringMVC+Mybatis+Shiro+JqueryEasyUI}
 		

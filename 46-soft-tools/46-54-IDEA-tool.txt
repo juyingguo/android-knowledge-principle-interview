@@ -140,11 +140,13 @@
 		error,Error running 'Tomcat':startup script is not specified
 		
 	11.6 idea tomcat 启动后，http://localhost:8080/ 404
-		【解决问题】idea启动本地tomcat访问localhost:8080报404错误
-		{
-			把tomcat安装目录下webapp下的的ROOT文件夹配置到idea{Tomcat Server -> Deployment -> + ->External source}中
-			并且将/ROOT修改application context为 /
-		}
+		11.6.1【解决问题】idea启动本地tomcat访问localhost:8080报404错误
+			{
+				把tomcat安装目录下webapp下的的ROOT文件夹配置到idea{Tomcat Server -> Deployment -> + ->External source}中
+				并且将/ROOT修改application context为 /
+				
+				#该方式仅用来访问tomcat主页。
+			}
 	11.7 Error java 错误 不支持发行版本5 ( 完美解决版）
 		https://blog.csdn.net/F_qiu/article/details/124102258
 		1. 原因
@@ -153,4 +155,15 @@
 			Project Settings -> Project 
 			Project Settings -> Modules->Sources (Language level:选择对应的版本)
 			然后去File里找Settings打开，在打开的页面中找到Build开头的那一串，接着找它下面Compiler下的java compiler,右侧还要修改成自己所使用的java版本
-				
+	11.8 IDEA打包JavaWeb的War包并部署到Tomcat
+		https://blog.csdn.net/weixin_39190897/article/details/119891021
+		
+		
+		11.8.2 如要启动tomcat并同时部署项目、访问项目。总结。
+			需要配置的如下：
+			{Tomcat Server -> Server -> URL:http://localhost:8080/}
+			{Tomcat Server -> Deployment -> + ->Artifact}
+			{Project Settings -> Facets ;; Artifacts}
+12 IDEA项目发布中，Web Application:Exploded和Web Application:Archive的详细解释
+	【含应用部署到tomcat】
+	https://blog.csdn.net/ejiao1233/article/details/80444845

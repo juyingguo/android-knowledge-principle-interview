@@ -55,6 +55,11 @@
 			
 		7.4.5 https://github.com/misstt123/oasys
 			【开源，完整】
+			【oasys是一个OA办公自动化系统，使用Maven进行项目管理，
+				基于springboot框架开发的项目，mysql底层数据库，
+				前端采用freemarker模板引擎，Bootstrap作为前端UI框架，集成了jpa、mybatis等框架。】
+			
+			https://gitee.com/aaluoxiang/oa_system
 			
 		7.4.6 https://github.com/memoryoverflow/OA
 		
@@ -75,6 +80,10 @@
 		https://github.com/jobmission/oauth2-server
 		https://github.com/githubzengzhifeng/springboot-security-oauth2
 		https://github.com/odenktools/springboot-oauth2-jwt
+		
+	7.6 https://gitee.com/aaluoxiang/GarbageSort
+		【垃圾识别精灵 是一个 基于 uni-app 开发 微信小程序，
+		使用 SpringBoot2 搭建后端服务，使用 Swagger2 构建 Restful 接口文档，实现了 文字查询、语音识别、图像识别其垃圾分类的功能。】
 8. Springboot配置mybatis
 	8.1 Springboot配置mybatis打印sql日志
 		https://blog.csdn.net/m0_54853503/article/details/124422818
