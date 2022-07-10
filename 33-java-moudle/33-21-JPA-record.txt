@@ -3,3 +3,14 @@
 	https://www.yiibai.com/jpa/jpa-introduction.html
 2.Spring Data JPA系列3：JPA项目中核心场景与进阶用法介绍
 	https://baijiahao.baidu.com/s?id=1736504078620963929&wfr=spider&for=pc
+3. 最详细的Spring-data-jpa入门（一）
+	https://blog.csdn.net/qq_42495847/article/details/107991361
+	
+	spring boot 中使用 jpa以及jpa介绍
+	https://blog.csdn.net/wujiaqi0921/article/details/78789087?
+	
+	Spring-data-jpa详解
+	https://blog.csdn.net/heijunwei/article/details/113815282
+	
+	
+	看了孙卫琴老师的《精通Spring:JavaWeb开发技术详解》还有《精通JPA与Hibernate:Java对象持久化技术详解》

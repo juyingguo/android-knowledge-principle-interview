@@ -68,6 +68,27 @@
 				{<spring:eval expression="record.dealTime"/></div>}默认12小时格式显示
 				【待处理】
 			【报销单详情中，处理流程，超过3条，显示就不正确。】
+			
+		10.5.4 项目启动异常：
+			[环境：windows8.1,idea2021.2.3,tomcat-8]
+			【org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring-controller.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring-controller.xml] cannot be opened because it does not exist】
+			
+			a,参考【异常解决 java.io.FileNotFoundException: class path resource [spring/applicationContext_*.xml]】
+				https://blog.csdn.net/hanxueyu666/article/details/72919406
+				
+				a1,尝试解决方法：
+					[spring-controller.xml]中引用xml报红，根据提示，添加classpath，如下（结果还是失败）
+					<import resource="classpath:spring-service.xml"/>
+				a2,编译不成功，导致文件不存在
+					首先去项目的编译目录查看资源文件和class文件是否编译成功.
+					发现没有oa_web\target\classes下没有[spring-controller.xml]
+					
+					clean project 后重新编译都没有生成。
+					Build ->ReBuild Project;
+					Build ->Build Artifacts - > ... ->clean ,rebuild ;都不成功
+				a3,直接复制[spring-controller.xml]到oa_web\target\classes下，运行tomcat，启动ok。内部跳转还是失败。
+				a4,oa_web下的资源包名写错了。oa_web\src\main\resource写错了,应为oa_web\src\main\resources
+				a5,参考【46-54-IDEA-tool.txt，13】
 	10.6 https://github.com/luokangyuan/OA
 		{OA协同办公与管理系统（毕业设计）Spring+SpringMVC+Mybatis+Shiro+JqueryEasyUI}
 		

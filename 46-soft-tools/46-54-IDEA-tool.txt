@@ -167,3 +167,29 @@
 12 IDEA项目发布中，Web Application:Exploded和Web Application:Archive的详细解释
 	【含应用部署到tomcat】
 	https://blog.csdn.net/ejiao1233/article/details/80444845
+13 解决IDEA不能编译XML文件
+	https://blog.csdn.net/weixin_43942304/article/details/107432191
+	
+	//不添加idea默认也是可以自动编译的。
+    <build>
+        <resources>
+            <!--idea默认只编译src/main/resources下的文件，这里是让它也能编译src/main/java下的xml文件-->
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+
+        </resources>
+    </build>

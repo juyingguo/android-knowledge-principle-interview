@@ -71,5 +71,7 @@
 		打开Eclipse,找到Help--->install new software
 		点击add,然后在点击local选择刚才解压的文件夹
 		完成以后重启一下Eclipse就可以了
+	8.3 改造继续之eclipse集成tomcat开发spring mvc项目配置一览
+		http://t.zoukankan.com/huangxincheng-p-7441221.html
 9.Eclipse乱码问题最全解决方案
 	https://blog.csdn.net/weixin_49698247/article/details/118730169 
