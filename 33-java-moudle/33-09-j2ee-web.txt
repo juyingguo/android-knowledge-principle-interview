@@ -98,8 +98,12 @@
 			2021/7/1 14:26
 			
 			【除了spring cloud项目之外，我也整理了许多经典的spring boot项目源码】
-			ERP系统.zip
-			2021/5/26 16:14
+			ERP系统.zip 2021/5/26 16:14
+				{搜索erp}
+				{星云/星云ERP:https://gitee.com/lframework/xingyun?_from=gitee_search}
+				{宏之博软件/宏之博HZB教务系统-教培行业ERP:
+				是一套纯springboot+mysql+vue+uniapp微服务项目}
+				{季圣华 / 华夏ERP:https://gitee.com/jishenghua/JSH_ERP}
 			
 			MarkdownEditors-master.zip
 			2021/5/2114:42

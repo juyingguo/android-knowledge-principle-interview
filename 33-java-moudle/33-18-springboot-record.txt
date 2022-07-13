@@ -58,8 +58,11 @@
 			【oasys是一个OA办公自动化系统，使用Maven进行项目管理，
 				基于springboot框架开发的项目，mysql底层数据库，
 				前端采用freemarker模板引擎，Bootstrap作为前端UI框架，集成了jpa、mybatis等框架。】
+				
+				添加用户薪水是空字符串报错，[salary=, imgPath=null]
 			
-			https://gitee.com/aaluoxiang/oa_system
+			7.4.5.2 
+				https://gitee.com/aaluoxiang/oa_system
 			
 		7.4.6 https://github.com/memoryoverflow/OA
 		
@@ -161,3 +164,33 @@
 			https://blog.csdn.net/weixin_46899412/article/details/123732794?
 	9.3 springboot 实现权限管理（一）
 		https://blog.csdn.net/qq_44654974/article/details/122638550
+		
+10 Springboot+JPA打印SQL日志
+	https://blog.csdn.net/tiantang_1986/article/details/124627785
+
+11 运行启动SpringBoot项目报错：
+	11.1 运行启动SpringBoot项目报错
+		Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+		2022-07-13 08:30:40.468 ERROR 13900 --- [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+		***************************
+		APPLICATION FAILED TO START
+		***************************
+
+		Description:
+
+		The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+		Action:
+
+		Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+		
+		a,解决
+			第一种，修改端口号，不使用80端口，而使用其他端口号，比如使用81端口，修改springboot的配置文件application.yml即可.
+		b,第二种，但我们一定要使用80端口怎么办，杀死占用了80端口的进程。
+
+			打开DOS窗口，执行[netstat -aon|findstr 80]命令查看是什么占用了80端口，蓝色框内就是占用进程的ID号
+			
+			如果关闭该进程失败，解决可以参考：nginx: [emerg] bind() to 0.0.0.0:80 failed;[https://blog.csdn.net/cnds123321/article/details/113309358?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162359643716780271531330%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=162359643716780271531330&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v2~rank_v29-4-113309358.pc_v2_rank_blog_default&utm_term=%E6%97%A0%E6%B3%95%E7%BB%88%E6%AD%A2+PID+%E4%B8%BA+4+%E7%9A%84%E8%BF%9B%E7%A8%8B%E3%80%82%E3%80%81&spm=1018.2226.3001.4450]
+			
+			然后执行taskkill /pid 4 /f关闭这个进程，其中4就是上面的进程ID
