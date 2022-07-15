@@ -193,3 +193,7 @@
 
         </resources>
     </build>
+14 IDEA新版中Java Flight Recorder程序性能监视工具的使用
+	https://blog.csdn.net/qq_37552993/article/details/102545780/
+	
+	Error: To use 'FlightRecorder', first unlock using -XX:+UnlockCommercialFeatures.

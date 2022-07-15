@@ -149,6 +149,16 @@
 	
 7. 解决org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)问题
 	https://blog.csdn.net/qq_39997939/article/details/122279782
+	
+	解决办法：{
+	本项目下的ibotn-child.yml修改如下：
+		mybatis:
+		# 搜索指定包别名
+		typeAliasesPackage: com.ibotn.child.**.domain
+		# 配置mapper的扫描，找到所有的mapper.xml映射文件
+		mapperLocations: classpath:mapper/**/*.xml
+	}
+	
 8. 实体bean中有很多属性，但查询的时候，只使用一部分属性。
 	单独抽出实体类（请求体），只供查询用，方便前端查看这些。
 	
@@ -182,3 +192,6 @@
 		
 		原因是：Pattern只能用于String类型。
 	}
+	
+	查询食谱，按照月份查询。而日历中，每一个月份的7天星期是不固定的。此时只需要判断月份即可。
+	

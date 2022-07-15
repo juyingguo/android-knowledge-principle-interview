@@ -102,7 +102,7 @@
 				{搜索erp}
 				{星云/星云ERP:https://gitee.com/lframework/xingyun?_from=gitee_search}
 				{宏之博软件/宏之博HZB教务系统-教培行业ERP:
-				是一套纯springboot+mysql+vue+uniapp微服务项目}
+				 是一套纯springboot+mysql+vue+uniapp微服务项目}
 				{季圣华 / 华夏ERP:https://gitee.com/jishenghua/JSH_ERP}
 			
 			MarkdownEditors-master.zip
@@ -157,9 +157,28 @@
 			酒店管理系统.zip
 			2021/5/2616:13
 			
-			秒杀系统设计.zip
-			2021/5/2114:40
-			
+			秒杀系统设计.zip 2021/5/2114:40
+				{码云：搜索：秒杀系统，大部分都是商城的子模块}
+				{小柒2012 / spring-boot-seckill:
+					https://gitee.com/52itstyle/spring-boot-seckill.git}
+				{yshop意象商城系统:
+					https://gitee.com/guchengwuyue/yshopmall.git}
+				{miaosha：
+					https://gitee.com/1028125449/miaosha?}
+				{微同商城：
+					https://gitee.com/fuyang_lipengjun/platform
+					开源微信小程序商城（前后端开源：uniapp+Java），拼团、秒杀、优惠券、积分购物、直播卖货、分销等功能。
+					快速搭建一个属于自己的微信小程序商城。}
+				{老花生 / Open-Shop:
+					https://gitee.com/old-peanut/wechat_applet__open_source
+					免费完整开源：基于MIT协议，源代码完全开源，无商业限制,51工作室开发团队承诺
+					}
+				{三河市峰颖软件技术有限公司 / ShopTNT：
+					https://gitee.com/shoptnt/shop?_from=gitee_search}
+				{newbee-ltd / newbee-mall：
+					https://gitee.com/newbee-ltd/newbee-mall?}
+				{高并发秒杀系统：
+					https://gitee.com/ljy_open/seckill?}
 			停车场管理系统.zip
 			2021/5/20 20:26
 			
@@ -174,6 +193,9 @@
 			
 			学生信息管理.zip
 			2021/6/8 14:35
+				{student-manager：https://gitee.com/wlgc1801lzh/student-manager}
+				{https://gitee.com/dejan_wang/student-manager-system
+					学生信息管理系统，Web开发，采用Vue+SpringMVC+Mysql 前后端分离开发。}
 			
 			转发+关注+私信【资料】即可领取我整理好的这些项目源码与文档哦!
 
