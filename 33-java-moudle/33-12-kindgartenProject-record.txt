@@ -195,3 +195,20 @@
 	
 	查询食谱，按照月份查询。而日历中，每一个月份的7天星期是不固定的。此时只需要判断月份即可。
 	
+	9.10 查询食谱异常；
+		通过接口文档查看正常。通过前端ui访问时异常。
+		{
+			### Error querying database. Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AS t1 LEFT JOIN ( SELECT * FROM i_user_relation AS ty ' at line 20 
+			### The error may exist in file [D:\workspace\web-server\ibotn-cloud\ibotn-modules\ibotn-child\target\classes\mapper\logistics\LogisticsRecipeMapper.xml] 
+			### The error may involve com.ibotn.child.logistics.mapper.LogisticsRecipeMapper.selectLogisticsRecipeList-Inline ### The error occurred while setting parameters
+			### SQL: select count(0) from ( /*含扩展信息的列表*/ select t1.recipe_id, t2.relation_name as publishBy,/*发布人使用关联表获取*/ t1.publish_id, t1.dept_id, t1.publish_date, t1.recipe_attach, t1.start_time, t1.end_time, t1.create_by, t1.create_time, t1.update_by, t1.update_time ,t2.avatar FROM ( SELECT * FROM i_logistics_recipe AS tx WHERE /*查询食谱，按照月份查询。而日历中，每一个月份的7天星期是不固定的。此时只需要判断月份即可。*/ ) AS t1 LEFT JOIN ( SELECT * FROM i_user_relation AS ty ) AS t2 ON t1.publish_id = t2.user_id ORDER BY t1.publish_date DESC ) tmp_count 
+			### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AS t1 LEFT JOIN ( SELECT * FROM i_user_relation AS ty ' at line 20 ; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AS t1 LEFT JOIN ( SELECT * FROM i_user_relation AS ty ' at line 20
+		
+		}
+		{验证对比分析：
+			是idea注释/**/问题。全部换成<!-- -->
+			/*查询食谱，按照月份查询。而日历中，每一个月份的7天星期是不固定的。此时只需要判断月份即可。*/
+			
+			idea在代码警告区域生成的注释块为： /* */  。该方式在sql内部，会有异常。
+			idea在代码正常区域生成的注释块为： <!-- -->。该方式在sql内部，一切正常
+		}

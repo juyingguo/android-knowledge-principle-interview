@@ -1,6 +1,13 @@
-0
+0	
 0.1 Enjoy LeetCode
 	https://blog.csdn.net/foreverling/category_9264622.html 
+	
+0.2 md5、sha1等全球通用公开的加密算法进行反向查询
+	https://www.cmd5.com/
+	
+	http://md5.ttcha.net/
+	{天天查询网：http://www.ttcha.net/
+		各类查询}
 一、数据结构
 1.HashMap、LinkedHashMap、ConcurrentHashMap，在用法和原理上有什么差异，很多公司会考HashMap原理，通过它做一些扩展，比如中国13亿人口年龄的排序问题，年龄对应桶的个数，年龄相同和hash相同问题类似。
 

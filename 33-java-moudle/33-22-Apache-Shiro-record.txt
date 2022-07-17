@@ -1,0 +1,18 @@
+1.
+	https://shiro.apache.org/
+2.什么是 Apache Shiro
+	https://blog.csdn.net/cuierdan/article/details/105100034
+	
+	Apache Shiro（认证，授权）基本介绍
+	https://blog.csdn.net/qq_45305209/article/details/117935545
+	
+3. 在Spring MVC中使用Apache Shiro安全框架
+	https://blog.csdn.net/javarrr/article/details/82390530
+	
+	springmvc集成shiro（java安全框架）
+	https://blog.csdn.net/AdminGuan/article/details/100504376?
+	
+	shiro（一）:springMVC与shiro整合，实现简单登录
+		https://blog.csdn.net/coolwindd/article/details/84637487?
+		{一，二，三}
+	搜索：【springmvcshiro】

@@ -414,4 +414,9 @@
 	git pull origin master
 	fatal: unable to access 'https://github.com/juyingguo/OA.git/': OpenSSL SSL_read: Connection was reset, errno 10054
 		{同时参考4，配置github 主机地址。如果不能访问切换使用和关闭后}
-	
+12 TLS certificate 警告
+	git pull 操作http仓库时。
+	warning: ----------------- SECURITY WARNING ----------------
+	warning: | TLS certificate verification has been disabled! |
+	warning: ---------------------------------------------------
+	warning: HTTPS connections may not be secure. See https://aka.ms/gcmcore-tlsverify for more information.

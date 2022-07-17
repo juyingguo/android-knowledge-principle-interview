@@ -1,0 +1,22 @@
+1.
+	官网：
+		https://jquery.com/
+		
+	下载 jQuery
+		有两个版本的 jQuery 可供下载：
+		Production version - 用于实际的网站中，已被精简和压缩。
+		Development version - 用于测试和开发（未压缩，是可读的代码）
+2.jQuery 教程
+		https://www.runoob.com/jquery/jquery-tutorial.html
+	2.1 jQuery 实例
+		https://www.runoob.com/jquery/jquery-examples.html
+	2.2 jQuery 测验
+		在菜鸟教程上测试你的 jQuery 技能!
+
+		jQuery 测验
+		https://www.runoob.com/quiz/jquery-quiz.html
+	2.3 jQuery 参考手册
+		https://www.runoob.com/jquery/jquery-ref-selectors.html
+		
+		jQuery API 手册
+		https://www.runoob.com/manual/jquery/
