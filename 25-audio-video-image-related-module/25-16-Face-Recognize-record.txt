@@ -1,0 +1,92 @@
+1.
+2.人脸识别各家对比及虹软人脸识别系统DEMO案例
+	2.0 https://www.freesion.com/article/1363443695/
+	
+		比较好的开源人脸识别软件有哪些？
+		https://www.zhihu.com/question/19561362
+		
+		Face++、百度、阿里的人脸识别API要求简要对比
+		https://blog.csdn.net/qq_28117589/article/details/121741535
+		
+	2.1 {
+		1.1 虹软
+			{基于虹软的JAVA人脸识别
+			https://github.com/xinzhfiu/ArcSoftFaceDemo
+			整个人脸识别功能的大致流程图如下:
+				https://www.freesion.com/images/730/ed5080570f4d185760b295f54087d942.png}
+				
+			ArcFaceGo:
+				[人脸识别应用套件]
+		1.2 Face++旷视
+			{
+				https://www.faceplusplus.com.cn/
+				
+				
+				Android移动开发-在Android项目里集成face++人脸识别的实现
+					https://blog.csdn.net/fukaimei/article/details/78513447					
+					https://github.com/fukaimei/FaceRecognition
+			}
+		1.3 云脉
+		1.4 腾讯AI
+		1.5 1MB轻量级人脸检测模型
+			{Gitee地址：https://gitee.com/Linzai/Ultra-Light-Fast-Generic-Face-Detector-1MB}
+		1.6 SeetaFace-科院计算机所开源项目
+			{
+				http://www.seetatech.com/
+				
+				[Configuration Documentation.]
+				https://github.com/seetaface/SeetaFaceEngine/blob/master/SeetaFace_config.docx
+				
+				GitHub地址：https://github.com/seetafaceengine/SeetaFace2
+				
+				https://github.com/seetafaceengine/SeetaFace2
+					{5.2 已使用本项目的其它项目
+						FaceRecognizer: https://github.com/KangLin/FaceRecognizer
+						SeetaFace2AndroidDemo: https://github.com/xiaoxiaoazhang/SeetaFace2AndroidDemo}
+				
+				羡民 / SeetaFaceDemo4Android:
+					https://gitee.com/li_yu_jiang/SeetaFaceDemo4Android?_from=gitee_search
+				
+				如何安装并使用SeetaFace 开源人脸识别代码【中科院计算机所山世光老师团队研发】
+				https://blog.csdn.net/weixin_35770067/article/details/104538493
+				
+				开源人脸识别seetaface入门教程(一)
+				https://bbs.huaweicloud.com/blogs/147757
+			}
+		1.7 skybiometry
+			https://skybiometry.com/demo/
+		1.8 Luxand
+			
+	}
+3. 6个高可用的开源人脸识别项目！哪个识别率最高？
+	https://zhuanlan.zhihu.com/p/440446038
+	
+	{
+		https://github.com/exadel-inc/CompreFace
+		[ use lib: FaceNet and InsightFace]
+		
+		
+		Face Recognition:
+			搜索【Face Recognition】
+			[ dlib]
+			[https://github.com/ageitgey/face_recognition]
+			[https://github.com/Lauszus/FaceRecognitionApp]
+			https://zhuanlan.zhihu.com/p/502557392
+			[该项目采用的是Dlib是基于现代C++的一个跨平台通用的框架，
+				缘起于实现了2014年一篇著名CVPR论文的算法：“用回归树，一毫秒搞定人脸对齐。”每个人脸标定 68 个关键点]
+			face_recognition_py:
+				https://link.zhihu.com/?target=https%3A//github.com/winterssy/face_recognition_py
+		
+		facenet:
+		[https://github.com/davidsandberg/facenet]
+		
+		insightface:
+			[https://github.com/deepinsight/insightface]
+			[基于 PyTorch 和 MXNet 实现，采用先进的 ArcFace 人脸识别方法]
+		Ultra-Light-Fast-Generic-Face-Detector-1MB:
+			[https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB]
+			[1MB 大小的轻量级人脸检测模型。该模型是针对边缘计算设备，基于 libfacedetection 替换压缩网络设计实现]
+	}
+4. android 上用的人脸识别
+	https://github.com/Sumtudou/Face-recognition-for-android/tree/master/face_new
+	[安卓端的人脸识别app，支持从手机上传和即时拍照打卡，并带有SQLite数据库，可以保存打卡信息。]
