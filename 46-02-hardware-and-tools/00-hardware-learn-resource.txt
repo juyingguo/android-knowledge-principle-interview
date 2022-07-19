@@ -1,3 +1,35 @@
 0.1 硬件相关资源网站
 	0.1.1 我爱研发网。
 		http://www.52rd.com/
+1. 电子工程师高端PCB设计工具：20种完全免费的PCB设计必备工具
+	https://blog.csdn.net/weixin_52046744/article/details/118092667
+	
+	10个免费又好用的电路设计软件！
+	https://zhuanlan.zhihu.com/p/441581074
+	
+	pcb文件打开工具：
+	https://m.elecfans.com/article/1089150.html
+	{	Protel:
+		Altium:	还可以用Altium软件来打开，该软件是protel软件的30年来N次进化后的最新版本
+		
+		PADS:
+			http://www.winwin7.com/soft/44281.html
+			[通过网盘下载后需要解压密码。但没有]
+			
+			PADS安装教程（超详细）
+			https://blog.csdn.net/qq_42057393/article/details/119605215
+		Cadence Allegro:
+			https://www.6188.net/app/90581.html
+		Mentor，和Cadence Allegro
+		
+		AutoCAD:
+		
+		Cam软件:只能读pcb文件的软件：Cam软件
+	}
+2. PADS简介及使用流程
+	https://blog.csdn.net/chenhuanqiangnihao/article/details/112544220、
+	
+	PADS Layout图文入门教程（实战：如何用PADS画PCB?）
+	https://zhuanlan.zhihu.com/p/388645671
+	
+	https://max.book118.com/html/2021/0923/6112223231004011.shtm

@@ -9,3 +9,38 @@
 	
 5.语音端点检测（Voice Activity Detection,VAD）
 	https://www.cnblogs.com/dream-and-truth/p/10683684.html 
+	
+6. 麦克风阵列
+	6.0 
+		麦克风阵列(Microphone Array)
+		
+		揭秘语音系统里的麦克风阵列
+		https://www.it610.com/article/1383872473883299840.htm
+		
+	6.1 麦克风阵列应用场景
+	6.2 麦克风阵列实现方法
+	6.3 科大讯飞麦克风阵列方案
+	6.4 麦克风阵列和麦克风区别
+		https://baijiahao.baidu.com/s?id=1729507379423828889&wfr=spider&for=pc
+		
+		https://www.51dongshi.com/eedfsvcasc.html
+		
+		笔记本电脑里有麦克风阵列和外部麦克风，这两个有什么区别？
+		https://zhidao.baidu.com/question/1439621290218220259.html?sort=11&rn=5&pn=5#wgt-answers
+	6.5 方案商
+		深圳蝙蝠声学科技有限公司
+		http://www.batsound.cn/
+		
+		[公司产品线包括声纹采集系统（采集仪与采集软件）、声纹库建库、阵列麦克风等产品]
+	6.6 特点
+		普通的没有内置芯片算法,而阵列麦克风有回音消除。
+7. 回声消除
+	7.1 echo cancellation
+	7.2 麦克风采用硬件回声消除
+	7.3 麦克风采用软件回声消除
+8. 模态降噪
+	8.1 抗干扰。
+
+9. 语音增强技术
+10. 声源定位
+		
