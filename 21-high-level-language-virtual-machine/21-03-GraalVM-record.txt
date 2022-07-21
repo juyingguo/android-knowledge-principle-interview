@@ -1,0 +1,28 @@
+﻿1.
+2. GraalVM（一）：GraalVM介绍
+		https://blog.csdn.net/jiangbb8686/article/details/103244133
+		
+	GraalVM参考文档
+	入门
+		https://www.graalvm.org/docs/getting-started/
+	示例
+		https://www.graalvm.org/docs/examples/
+	兼容性
+		https://www.graalvm.org/docs/reference-manual/compatibility/
+	参考文章
+		https://www.graalvm.org/docs/reference-manual/
+	GraalVM作为平台
+		https://www.graalvm.org/docs/graalvm-as-a-platform/
+	FAQ
+		https://www.graalvm.org/docs/faq/
+		
+		
+	原文请见链接：https://www.graalvm.org/docs/
+	
+3.GraalVM入门到精通
+	https://blog.csdn.net/qq_16093119/article/details/122160901?
+	
+	{GraalVM可以把java应用程序直接转换为本地应用，运行时不再依赖JVM，并且最终的成品还比JLink更小，是个相当不错的工具。}
+	{JLink}
+4.GraalVM在Facebook大量使用，性能提升显著！
+	https://blog.csdn.net/huangmingleiluo/article/details/119321222

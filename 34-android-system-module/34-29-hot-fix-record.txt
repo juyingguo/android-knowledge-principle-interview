@@ -1,0 +1,11 @@
+1.
+2. 
+	https://github.com/Tencent/tinker
+
+	https://github.com/typ0520/tinker-manager
+		[微信tinker补丁管理，后端代码+客户端sdk]
+		
+	https://github.com/phhusson/treble_experimentations
+		[Notes about tinkering with Android Project Treble]
+3.Robust
+	https://github.com/Meituan-Dianping/Robust

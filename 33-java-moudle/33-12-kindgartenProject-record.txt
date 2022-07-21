@@ -134,7 +134,8 @@
 	
 	4.3 小程序端需求修订记录：
 		https://xiaopiu.com/prd/5ef15313d564a944962d402d
-	 
+	4.4 手机app，家庭版，新ui:
+		https://www.xiaopiu.com/h5/byId?type=project&id=5c933748deb42e757f28b4c6
 5.前端-电脑端
 	PC端原型稿地址:
 	https://www.xiaopiu.com/web/byId?type=project&id=5ef1535ad564a944962d4047
@@ -143,7 +144,8 @@
 		小程序设计稿：https://js.design/f/JdYkR5?p=wxhbvo_WVB
 		
 		PC端设计稿：https://js.design/f/SPe765?p=QsOJfBVmt4
-	
+	5.3 PC端导入导出说明
+		https://docs.qq.com/sheet/DZHBTellTbXZVZlps
 6. 幼儿园管理系统开发进度
 	https://docs.qq.com/sheet/DQmVJSEtOS3hVekVm
 	
