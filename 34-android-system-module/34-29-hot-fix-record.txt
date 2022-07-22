@@ -9,3 +9,6 @@
 		[Notes about tinkering with Android Project Treble]
 3.Robust
 	https://github.com/Meituan-Dianping/Robust
+	
+4. Android 基于Proxy/Delegate 实现bug热修复
+	https://blog.csdn.net/l2show/article/details/46914881?

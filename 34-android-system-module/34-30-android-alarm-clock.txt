@@ -1,0 +1,15 @@
+1.
+2.源码android6.0 系统应用时钟--详细的闹钟分析
+	http://www.javashuo.com/article/p-kjmwplkr-cz.html
+3.Android源码之DeskClock (一)
+	android4.4源码
+	https://blog.csdn.net/l2show/article/details/46709863?
+	
+	官方直接git clone代码下来(当然需要翻墙)https://android.googlesource.com/platform/packages/apps/DeskClock,懒得翻墙的童鞋也可以从博主这里下载,博主是从官网clone的代码,然后摘的kitkat-release分支,从下图可以看到这个节点上打了所有4.4版本的tag
+	————————————————
+	
+	Android源码之DeskClock (二)
+	https://blog.csdn.net/l2show/article/details/46722999
+	
+	Android源码之DeskClock (三) Proxy/Delegate Application 框架应用
+	https://blog.csdn.net/l2show/article/details/46914881?

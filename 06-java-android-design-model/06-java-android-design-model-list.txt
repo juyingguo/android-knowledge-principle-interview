@@ -20,7 +20,8 @@
 		
 	01.3 mvp,退出界面，取消尚未执行的任务。
 		同时需要在任务完成后，需要通过接口判断view是否已经销毁。
-		
+	01.4 Android设计模式之浅谈MVP
+		https://blog.csdn.net/l2show/article/details/46659027
 
 一、单例模式。
 	1.1、使用volatile修饰，禁止指令重排序。

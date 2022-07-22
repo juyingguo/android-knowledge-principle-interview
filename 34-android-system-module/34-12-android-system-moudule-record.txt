@@ -22,6 +22,26 @@
 	使用Android Studio阅读整个Android源码
 	转到【46-15-androidstudio-tool.txt】
 	
+	android-googlesource
+	简介
+	Git repositories on android
+
+	Android上的Git存储库
+
+	下载地址：https://mirrors.aliyun.com/android.googlesource.com/
+
+	相关链接
+	官方主页：https://android.googlesource.com/
+		https://source.android.com/
+		https://opensource.google/
+	
+	https://android-review.googlesource.com/q/status:open+-is:wip
+	
+	AOSP 项目之packages:
+		https://android.googlesource.com/platform/packages/
+	AOSP 项目之frameworks:
+		https://android.googlesource.com/platform/frameworks/support/
+	
 	01.2 麦可网张凌华Sundy Android嵌入式底层视频课程 
 		最新Tiny210光盘资料		
 		磐实编程网:下载
