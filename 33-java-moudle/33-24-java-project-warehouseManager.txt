@@ -1,0 +1,26 @@
+1.
+	账户和密码
+	1001,123456
+	厂库管理员，密码：和账号相同。#通过跟踪添加过程，就可以知晓。
+2.warehouseManager
+	2.1 goodsManagement.jsp
+	
+		// 分页查询参数
+		function queryParams(params) {
+			var temp = {
+				limit : params.limit,
+				offset : params.offset,
+				searchType : search_type_goods,
+				keyWord : search_keyWord
+			}
+			return temp;
+		}
+		params中limit，offset如何赋值的？
+		{bootstrap-table 控制器的传入参数limit和offset是从哪里传过来的？
+			https://q.cnblogs.com/q/82763/
+		}
+	2.2 RepositoryAdminManageHandler添加仓库管理员时，故意给这个用户设置一个无效的角色，有异常，但数据却正确存入数据库中了？
+		com.ken.wms.common.service.Impl.RepositoryAdminManageServiceImpl#addRepositoryAdmin
+			##userInfo.setRole(new ArrayList<>(Collections.singletonList("commonsAdmin3")));//commonsAdmin3故意写错。
+	解决办法，待加入事务。
+	

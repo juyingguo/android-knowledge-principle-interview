@@ -131,6 +131,7 @@
 				[搜索关键字：warehouseManager]
 				[https://gitee.com/yangshare/warehouseManager
 					springmvc ...
+					{学习记录见：}
 				]
 				[https://github.com/qiuqingyun/warehouseManager
 				 gradle，springboot
