@@ -65,6 +65,9 @@
 			}
 		1.6.4 26款 网络会议/视频会议开源软件
 			https://blog.csdn.net/real_myth/article/details/113263679
+		1.6.5 VideoCalling
+				https://github.com/xmtggh/VideoCalling
+		1.6.6 https://github.com/liuqm/Android-VideoChat-master
 	1.7 主流视频通话开源及第三方商业SDK比较
 		1.7.1 主流视频通话SDK比较
 			https://blog.csdn.net/import_sadaharu/article/details/54345052
