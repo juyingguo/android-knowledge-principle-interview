@@ -533,3 +533,74 @@
 	
 	b,设置环境变量
 	如果你还没下载过AVD，那么设置环境变量ANDROID_SDK_HOME，这样AndroidStudio就会把AVD下载到环境变量ANDROID_SDK_HOME对应的目录了，而不会默认下到C盘中。
+	
+32. androidstudio gradle github上的依赖，下载失败
+	
+	compile 'com.github.smart-fun:XmlToJson:1.3.5'
+	{
+		Could not download RoundCornersView.aar (com.github.smart-fun:XmlToJson:1.3.5): Skipped due to earlier error
+	}
+	ide提示下载失败。但实际是下载下来了。但因为工具错误。编译apk是不能进行的。
+	
+	试试：
+		 
+	github的依赖下载不了
+	https://www.csdn.net/tags/OtDacg3sOTkzMDEtYmxvZwO0O0OO0O0O.html
+		git config --global url."https://".insteadOf git://
+		npm cache clean --force
+		【不行】
+		
+	或者试试：
+		FLIE--Sync Project with Gradle Files能够解决。【不行】
+	
+	androidstudio android project download Dependent library or jar from github ,download fail
+	
+	jitpack.io failed to resolve github repo
+	https://stackoverflow.com/questions/33058358/jitpack-io-failed-to-resolve-github-repo
+	
+	Guide to publishing libraries
+	https://jitpack.io/docs/BUILDING/#gradle-projects
+	Publish an Android library
+		https://jitpack.io/docs/ANDROID/
+	
+33. The specified Gradle distribution 'https://services.gradle.org/distributions/gradle-4.6-all.zip' 
+	does not appear to contain a Gradle distribution.
+34.
+	ERROR: android-apt plugin is incompatible with the Android Gradle plugin.  
+	Please use 'annotationProcessor' configuration instead.
+	
+	https://blog.csdn.net/pkandroid/article/details/78391096
+35. 
+	INFO: The following project options are deprecated and have been removed: 
+	android.useDeprecatedNdk
+	NdkCompile is no longer supported
+	
+	警告:gradle.properties中useDeprecatedNdk标志启用的不推荐的NDK集成将很快从Android Gradle插件中删除.
+36. Android Studio添加aar依赖的两种方式
+	http://t.zoukankan.com/tc310-p-10024441.html
+37. ERROR: Project module: Only Jar-type local dependencies are supported.
+	【androidstudio android project添加aar方式。】
+	
+	https://www.shuzhiduo.com/A/RnJWOZ7RJq/
+	{
+		compile fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+
+		老老实实写成 compile fileTree(include: ['*.jar'], dir: 'libs') 就没事了，不要加什么aar
+	}
+	{
+		另一种添加aar的方式：
+
+		File -> New -> New Module -> Import JAR/AAR Package,选择路径并命名，然后把新加的module添加到工程的Dependencies（依赖）里面去。
+
+		具体操作是 File -> Project Structure -> 左边找到app ->  右边点tab切换到Dependencies，最右边有一个小+号，然后选最下面的，Module dependency 然后不说了。
+	}
+38. caused by: java.lang.RuntimeException: com.android.build.api.transform.TransformException: 
+	java.util.zip.ZipException: duplicate entry: com/example/sdk2/BuildConfig.class
+39. AndroidStudio一步步教你修改项目包名（最详细，最易懂）
+	http://t.zoukankan.com/jpfss-p-9875582.html
+	
+	rename package;
+	注意文本字符串中包含的包名，对应替换掉。
+	如：Uri apkUri = FileProvider.getUriForFile(context, "com.ibotn.newapp.fileprovider", file);
+		以及：private static final String NOTIFICATION_CHANNEL = "com.ibotn.newapp";
+		
