@@ -38,6 +38,36 @@
 		
 	1.6 开源视频通话项目
 		1.6.1 android开源视频通话项目
+		1.6.2 android视频聊天源码(使用RTP协议,ffmpeg解码)
+			https://download.csdn.net/download/qq6105164/6822673?
+		rtp 实时传输视频流 ffmpeg解码显示
+			https://download.csdn.net/download/weixin_38669628/11503315?
+			https://mjlong123.iteye.com/blog/2194880
+			{我通过参考网络中的许多大神的文章后开发出的android 应用 	rtp实时传输h264编码的视频流到远端设备上显示。代码共享：https://github.com/mjlong123123/RemoteCamera/
+			}
+		1.6.3 webrtc_android
+			https://github.com/ddssingsong/webrtc_android
+			{
+				借鉴
+				https://github.com/LingyuCoder/SkyRTC
+
+				服务端和网页端的实现基于此修改
+
+				https://webrtc.org/
+
+				webrtc网站
+
+				https://webrtc.googlesource.com/src/+/master/examples
+
+				google git demo
+
+				webrtc源码编译时间：2019年4月
+			}
+		1.6.4 26款 网络会议/视频会议开源软件
+			https://blog.csdn.net/real_myth/article/details/113263679
+		1.6.5 VideoCalling
+				https://github.com/xmtggh/VideoCalling
+		1.6.6 https://github.com/liuqm/Android-VideoChat-master
 	1.7 主流视频通话开源及第三方商业SDK比较
 		1.7.1 主流视频通话SDK比较
 			https://blog.csdn.net/import_sadaharu/article/details/54345052
