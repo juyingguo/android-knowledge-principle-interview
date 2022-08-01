@@ -604,3 +604,16 @@
 	如：Uri apkUri = FileProvider.getUriForFile(context, "com.ibotn.newapp.fileprovider", file);
 		以及：private static final String NOTIFICATION_CHANNEL = "com.ibotn.newapp";
 		
+40,	Unknown host 'dl.google.com'. You may need to adjust the proxy settings in Gradle.
+	Enable Gradle 'offline mode' and sync project
+	Learn about configuring HTTP proxies in Gradle
+	
+	[参考]
+	https://www.jianshu.com/p/7afefac0ad30
+	{
+		一般host文件保存在C:\Windows\System32\drivers\etc这个路径下
+		203.208.40.36 dl.google.com 然后保存就可以
+	}
+41,运行旧工程遇到 提示不能下载gradle3.5.5.jar ....No cached version available for offline mode 报错
+	https://blog.csdn.net/loveseal518/article/details/125652708
+	
