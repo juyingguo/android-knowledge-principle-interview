@@ -259,6 +259,10 @@
 		
 	19.3 Drawable
 		19.3.1 getIntrinsicWidth() 
+		
+		19.3.2 根据资源图片id获取Drawable
+			Drawable drawable = ContextCompat.getDrawable(this, R.drawable.ic_unsubscribe);		//ContextCompat兼容包下
+			getContext().getDrawable(R.drawable.shape_bg_yellow_fillet_rectangle);//api 21才可以用
 			
 20. android 启动模式及任务栈
 	20.1 android开启第三方应用加入自己的任务栈中 。。比如app使用系统相册打开图片。按back键正常。按下home键，再次打开app，没有处于图片预览状态。
@@ -420,3 +424,6 @@
 36 布局
 	36.1 约束布局ConstraintLayout看这一篇就够了
 		https://www.jianshu.com/p/17ec9bd6ca8a?
+		
+37 android用shape画一条横线
+	https://blog.csdn.net/qq_38373150/article/details/79941019

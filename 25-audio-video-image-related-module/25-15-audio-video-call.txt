@@ -181,6 +181,7 @@
 		参考链接：
 			Android WebRTC简介
 			https://blog.csdn.net/Charon_Chui/article/details/80510945
+			
 			国内免费可用的STUN服务器(webrtc 必备）
 			https://www.jianshu.com/p/0943038b51de
 			WebRTC 的 Android 2 Android 实现
@@ -238,8 +239,15 @@
 	2.12 libjingle
 		2.12.1 分析webrtc AppRTCMobie 工程中的libjingle_peerconnection_so.so生成流程 -- 第二篇
 			https://blog.csdn.net/zhangkai19890929/article/details/82013381
+				[失效]
+			
+			https://gitee.com/sinsyet/AppRTCMobile/
 		2.12.2 
 			Libjingle home page is here http://code.google.com/p/libjingle/ 直接访问不了。需要**
+			
+			http://www.cppblog.com/peakflys/archive/2013/01/30/197629.html
+			
+			库的SVN路径：http://libjingle.googlecode.com/svn/trunk/talk
 			
 			下面是其它网址源码：
 			https://github.com/vigsterkr/libjingle
@@ -286,3 +294,6 @@
 
 7. OpenMeetings是一个开源的视频会议软件。
 	https://blog.csdn.net/yufeng1108/article/details/8892215
+	
+8. VoIP
+	https://baike.baidu.com/item/VoIP/110300?fr=aladdin
