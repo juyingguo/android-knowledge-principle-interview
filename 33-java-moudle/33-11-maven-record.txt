@@ -8,3 +8,17 @@
 	
 	2.2 
 		除了中央仓库和私服外，还有很多其他公共仓库，例如 JBoss Maven 库，Java.net Maven 库等等。
+	2.3 Maven工程打jar包的N种方式
+		https://blog.csdn.net/Hugh_Guan/article/details/110224621
+		{
+		一、IDEA自带打包插件
+		二、maven插件打包
+		2.1 制作瘦包（直接打包，不打包依赖包）
+		2.2 制作瘦包和依赖包（相互分离）
+		2.3 制作胖包（项目依赖包和项目打为一个包）
+		2.4 制作胖包（transform部分自定义）
+		三、SpringBoot项目打包
+		四、Scala项目打包
+		五、groovy项目打包
+		————————————————
+		原文链接：https://blog.csdn.net/Hugh_Guan/article/details/110224621}
