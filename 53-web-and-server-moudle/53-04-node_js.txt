@@ -1,0 +1,10 @@
+1.
+	1.2 https://www.runoob.com/nodejs/nodejs-http-server.html
+		
+2.# 安装依赖
+	npm install
+
+	# 强烈建议不要用直接使用 cnpm 安装，会有各种诡异的 bug，可以通过重新指定 registry 来解决 npm 安装速度慢的问题。
+	npm install --registry=https://registry.npmmirror.com
+	
+	

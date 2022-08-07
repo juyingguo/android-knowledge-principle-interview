@@ -12,7 +12,17 @@
 			https://developer.aliyun.com/mvn/guide
 			[含新旧源。以及原始仓库地址。]
 		}		
-		
+		{
+			http://www.mvnrepository.com/
+
+			http://mvnrepository.com/
+
+			http://findjar.com
+
+			http://sourceforge.net/
+
+			原文 ：https://blog.csdn.net/weixin_44977185/article/details/97820773
+		}
 	0.2 jdk1.6 download address
 		https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.html#jdk-6u25-oth-JPR 
 		

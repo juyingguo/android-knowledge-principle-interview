@@ -1,0 +1,10 @@
+1.
+	
+2.android模拟器访问本地电脑服务器
+	https://www.csdn.net/tags/NtDaggysMjgxMzMtYmxvZwO0O0OO0O0O.html
+	{	10.0.0.2
+		10.0.2.2
+		不同模拟器可能不同。
+	}
+	
+	
