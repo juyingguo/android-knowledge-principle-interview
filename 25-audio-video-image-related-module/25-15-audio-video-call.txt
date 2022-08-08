@@ -293,6 +293,36 @@
 			
 			https://gitee.com/wisting/WiLearning/blob/master/README.md
 		2.13.2 WebRTC零基础开发者教程(纯净版)
+			{好例子网已下载。已存百度盘}
+		2.13.3 《WebRTC Native 开发实战》
+			a,《WebRTC Native 开发实战》是清华大学出版社出版的一本书，作者是许建林。
+				a1,WebRTC Native 开发实战 PDF下载
+					https://weblogstack.com/19787.html
+				a2,目前只有WebRTC Blueprints一书最后讲了一下Android和iOS平台的编译、运行，但这本书已经是2014年的书了
+				a4，本书所涉及的WebRTC示例代码以及源码分析内容都是基于WebRTC的#30432提交，
+					即通过https://webrtc.googlesource.com/src.git/ /be99ee8f17f93e06c81e3deb4897dfa8253d3211/提交。OWT Server的代码都是基于4.3.x分支的。
+					本书所有源码开源在 GitHub 上（https://github.com/HackWebRTC/webrtc）
+					{如果你在下载过程中遇到问题，可发送邮件至booksaga@126.com获得帮助，邮件标题为“WebRTC Native开发实战”。
+					另外，欢迎读者加入本书专属社群：Hack WebRTC星球。
+					对本书的任何疑问或者想法，以及WebRTC Native开发相关的话题，都可以在星球里提问、讨论，详情请访问：
+					https://blog.piasy.com/webrtc/index.html}
+			b，webrtc Native 开发实践
+				https://blog.csdn.net/abc1231987/article/details/120758875
+				{
+				 源码地址：​​
+				https://github.com/hackwebrtc/webrtc
+					{About A reference gradle project that let you explore WebRTC Android in Android Studio.}
+
+				WEBRTC Native App 使用最多的SDK就是Google WebRTC，现在也有一些其他的开源版本：源码地址：​​
+
+				https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-c
+
+				纯Go 语言实现的：
+
+				GitHub - pion/webrtc: Pure Go implementation of the WebRTC API
+				————————————————
+				}
+			
 	2.14 webrtc_android-webrtc安卓端多人视频会议的实现.zip
 		https://download.csdn.net/download/weixin_38743506/11805719?
 		
