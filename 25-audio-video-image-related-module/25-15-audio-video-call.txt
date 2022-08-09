@@ -98,9 +98,12 @@
 			
 			
 2. Android | WebRTC
-	2.0 WebRTC协议介绍
+	2.0 WebRTC
 		2.0.1 WebRTC协议介绍
 			https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API/Protocols
+			
+			Google:What's next for WebRTC?
+			https://www.bilibili.com/video/av12577851/
 		2.0.2 WebRTC 标准官方文档
 						
 			官方文档:
@@ -322,7 +325,16 @@
 				GitHub - pion/webrtc: Pure Go implementation of the WebRTC API
 				————————————————
 				}
+		2.13.3 亚马逊网站搜索参考。
+			https://www.amazon.cn/s?k=webrtc&i=digital-text&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=JFUN96CDWRVC&sprefix=webrtc%2Cdigital-text%2C93&ref=nb_sb_noss_1
 			
+			https://www.jiumodiary.com/
+			
+		2.13.4 
+			《WebRTC权威指南原书第3版》
+			
+			《Learning WebRTC中文版》
+			《WebRTC音视频开发》
 	2.14 webrtc_android-webrtc安卓端多人视频会议的实现.zip
 		https://download.csdn.net/download/weixin_38743506/11805719?
 		
@@ -334,7 +346,40 @@
 				成果展现地址:https://www.tanjun.xyz
 				
 				}
+	2.15 基于WebRTC的多人视频会议
+		https://blog.csdn.net/fireroll/article/details/43889175
+		{
+			WebRTC的多人视频会议系统。
+			目前已经搭建成功，可以在http://jitsi.shengbin.me/试用。
+			以尝试国外一个同样的系统：https://meet.jit.si/
+
+			客户端
+			客户端是一个Web App的形式，包括HTML、CSS、JavaScript代码组成的网页
+			通过WebRTC，客户端从用户摄像头获取图像并传给服务器，来实现视频会议。
 			
+			服务器
+			服务器端包含多个部分。下面分别介绍。
+			Nginx
+			Nginx是一个Web服务器，与著名的Apache同类。它的用途是提供网页访问
+			
+			Prosody是一个XMPP服务器。
+			XMPP的前身是Jabber，一个开源的即时通信协议。Jabber被IETF标准化为XMPP。
+			Google Talk用的就是它
+			
+			 Jitsi-Videobridge
+			Jitsi-Videobridge用于处理视频传输，也就是视频流在各参与者之间的转发。
+			如果没有这个组件，各参与者能文字聊天，但无法互相看见。
+			
+			 Restund
+				这是一个STUN/TURN服务器。
+				STUN是一种NAT穿透技术，用于帮助处在内网的主机确定自己的公网IP和端口，
+				从而与别的主机建立直接连接（WebRTC中PeerConnection）。
+				TURN是STUN的增强版，可以在无法穿透NAT进行直连的情况下提供数据的转发。
+				
+			上述整个系统都是开源的，
+			更多信息可参见相关的GitHub代码库(https://github.com/jitsi/jitsi-meet)和
+			Jitsi主页(https://jitsi.org/)。
+		}
 3. linphone
 	3.1 基于Linux开源VOIP系统LinPhone[一]
 		https://blog.csdn.net/wavemcu/article/details/8544185
