@@ -136,8 +136,7 @@
 		https://xiaopiu.com/prd/5ef15313d564a944962d402d
 	4.4 手机app，家庭版，新ui:
 		https://www.xiaopiu.com/h5/byId?type=project&id=5c933748deb42e757f28b4c6
-		
-		https://js.design/f/buC2U8?p=B9jqI2BpKT		
+			
 		小i书童app视觉稿地址：https://js.design/f/buC2U8?p=B9jqI2BpKT
 		
 5.前端-电脑端

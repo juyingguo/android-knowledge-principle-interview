@@ -332,9 +332,13 @@
 			
 		2.13.4 
 			《WebRTC权威指南原书第3版》
-			
+				{脚本之家下载：https://www.jb51.net/books/591592.html}
+				{.[打开微信]->[扫描左侧二维码:即'编程家园']->[关注IT服务圈儿]输入"591592" 获取提取码}
+				{好例子网可以下载}
+				{天猫上，有各个版本的对比说明}
 			《Learning WebRTC中文版》
 			《WebRTC音视频开发》
+			《Counting from Zero》
 	2.14 webrtc_android-webrtc安卓端多人视频会议的实现.zip
 		https://download.csdn.net/download/weixin_38743506/11805719?
 		
@@ -406,6 +410,9 @@
 		
 		Linphone安卓端移植和开发（2）服务器端的搭建
 			https://blog.csdn.net/u011077027/article/details/84620440
+	3.8 音视频通话：​Linphone基于SIP协议的语音视频电话软件 
+		https://www.haolizi.net/example/view_295628.html
+		[好例子网下载]
 4. CsipSimple
 	4.1 二次开发封装CsipSimple(附Demo)真的是福利
 		https://blog.csdn.net/xu404741377/article/details/78982803
