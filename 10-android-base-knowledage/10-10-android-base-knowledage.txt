@@ -129,6 +129,9 @@
 		
 	2.Android中dp和px之间进行转换
 		https://blog.csdn.net/arui319/article/details/6777133 
+		
+	3. android系统api
+		TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
 八、transient 
 	8.1、 Java transient关键字使用小记
 		https://www.cnblogs.com/lanxuezaipiao/p/3369962.html
