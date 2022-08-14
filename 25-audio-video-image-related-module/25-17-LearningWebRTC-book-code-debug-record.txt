@@ -1,0 +1,46 @@
+1. LearningWebRTC-book-code-28817\Chapter02
+	html运行在服务中时，摄像头点亮了，但图像没有加载成功。chrome浏览器报告信息如下：
+	1.1 Audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform
+		A page or script is accessing at least one of navigator.userAgent, navigator.appVersion, and navigator.platform. Starting in Chrome 101, the amount of information available in the User Agent string will be reduced.
+		
+		To fix this issue, replace the usage of navigator.userAgent, navigator.appVersion, and navigator.platform with feature detection, progressive enhancement, or migrate to navigator.userAgentData.
+		Note that for performance reasons, only the first access to one of the properties is shown.
+		
+		1 source
+		main.js:1
+		Learn more: User-Agent String Reduction
+	
+	1.2 验证方法1：升级chrome浏览器从v94到v104,依然提示上面异常信息。
+		验证方法2：node node-static 静态服务器，同样提示异常信息。
+		验证方法3：node live-server 动态态服务器，同样提示异常信息。
+		验证方法4：使用nginx服务器，同样提示异常信息。
+	1.3 验证方法5：使用fireFox,有其它错误。
+			{
+			navigator.mozGetUserMedia 已被 navigator.mediaDevices.getUserMedia 取代
+			Uncaught TypeError: URL.createObjectURL: Argument 1 is not valid for any of the 1-argument overloads.
+			}
+			{BUG:webrtc(skyrtc-demo)视频流无法显示（已解决）
+				https://blog.csdn.net/ouyang_linux/article/details/118613420
+				
+				查找官方文档
+				https://developer.mozilla.org/zh-CN/docs/Web/API/URL/createObjectURL
+				
+				document.getElementById('my_video').srcObject = stream;//ok，在chrome上也正常了。
+				//document.getElementById('my_video').src = window.URL.createObjectURL(stream);
+			
+			}
+	1.4 综合验证分析结论：[1.1]中的提示没关系。
+			
+	1.5 Chapter02\multiple-sources.js
+		MediaStreamTrack.getSources
+		[Uncaught TypeError: MediaStreamTrack.getSources is not a function]
+		
+		参考：https://www.it1352.com/761946.html
+		以及参考firefox文档:{https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/enumerateDevices}
+		
+	1.6 Chapter03
+		a,HTTP 载入失败，状态码 404。媒体资源 http://127.0.0.1:8088/Chapter03/[object%20MediaStream] 载入失败。
+		通过添加日志，逐行排查定位到下面这行会触发上面异常。
+		yourVideo.src = stream;#异常程序
+		yourVideo.srcObject = stream;#正确程序
+		b，此时，yours视频有了。theirs视频没有。

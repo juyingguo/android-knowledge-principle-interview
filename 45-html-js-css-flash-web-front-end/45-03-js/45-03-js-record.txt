@@ -166,4 +166,16 @@
 	https://www.jb51.net/article/52105.htm 
 4. javascript多行注释中换行
 	查看js其它框架源码。如phaser,直接空一行就行。
+5. Javascript中!!(两个感叹号，双感叹号)的含义
+	https://blog.csdn.net/qq_41547882/article/details/117918305
+	{？Javascript中，!表示运算符“非”，如果变量不是布尔类型，会将变量自动转化为布尔类型，再取非，那么用两个!!就可以将变量转化为对应布尔值。}
+	{一、应用场景：判断一个对象是否存在}
+	{二、通过!或!!把各种类型转换成bool类型的惯例
+		1.对null的"非"返回true
+		2.对undefined的"非"返回true
+		3.对空字符串的"非"返回true
+		4.对非零整型的"非"返回false
+		...
+		等等
+	}
 	

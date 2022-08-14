@@ -10,7 +10,10 @@
 		J-IM，喧喧，MobileIMSDK，基于mina或netty框架下的推送系统 CIM，跨平台、
 		全开源的即时通讯解决方案 野火IM，
 		即时通讯的聊天系统 oim-fx，等等
-		
+	0.1.4 视频通话软件
+		Skype
+		Google Hangouts
+		LinkedIn
 一、开发一套视频通话，需要哪些知识？
 	1.1、 Android 实现视频通话
 		https://ask.csdn.net/questions/185847 

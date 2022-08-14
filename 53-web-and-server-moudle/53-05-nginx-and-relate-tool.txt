@@ -7,21 +7,32 @@
 		rtmp：https://github.com/arut/nginx-rtmp-module
 	1.3 download
 		https://nginx.org/en/download.html
+	1.4 
+		Nginx高性能Web服务器详解.pdf[一般编程问题] #好例子网
 2. Windows下启动,关闭Nginx命令
+	https://blog.csdn.net/zhouzhiwengang/article/details/51165874?
 	启动
 	直接点击Nginx目录下的nginx.exe    或者    cmd运行start nginx
 
 	https://www.cnblogs.com/xb1223/p/10205645.html 
 	
 	nginx -s stop    或者    nginx -s quit
+		stop表示立即停止nginx,不保存相关信息
 
-	stop表示立即停止nginx,不保存相关信息
+		quit表示正常退出nginx,并保存相关信息 重启(因为改变了配置,需要重启)
 
-	quit表示正常退出nginx,并保存相关信息
-
-	重启(因为改变了配置,需要重启)
-
-	nginx -s reload
+	nginx -s reload #当修改配置信息conf文件夹中的nginx.conf文件信息时，需要重新载入这些配置时使用此命令
+	nginx -s reopen #重新打开日志文件
+	
+	如果执行命令后，修改的网页内容并没有变化。kill掉nginx进程后，再启动。
+	netstat -an|findstr 8080
+	然后执行taskkill /pid 4 /f关闭这个进程
+	2.2 windows上如何查看nginx是否启动
+		https://www.php.cn/nginx/434125.html
+		任务管理器中可以看到它的进程。
+		查看端口法：
+			运行命令：netstat -an|findstr 8080 ，查看是否查找到记录
+		
 3. nginx启动失败
 	./nginx: error while loading shared libraries: libpcre.so.1: cannot open shared object file: No such 
 	https://blog.csdn.net/weixin_44297303/article/details/89505398  

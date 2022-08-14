@@ -27,6 +27,8 @@
 	
 	2.2 MySQL数据库-进阶教程-在线学习-牛客网
 		https://www.nowcoder.com/exam/oj?
+	2.3 书籍
+		高性能MySQL ##好例子网
 3. MySQL 安装
 	3.0 
 		Mysql8 和mysql 5.7 的区别

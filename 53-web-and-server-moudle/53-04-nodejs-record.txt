@@ -1,5 +1,7 @@
 1.	nodejs
 	https://nodejs.org/en/download/
+	npm 
+	https://www.npmjs.org/
 	
 	1.1 nodejs教程
 		https://www.runoob.com/nodejs/nodejs-npm.html
@@ -55,13 +57,32 @@
 		node --version
 6. 不同工程生成node_modules能不能共用
 
-7.
+7.nodejs配置静态服务器
+	7.1 live-server
+		https://blog.csdn.net/m0_47901007/article/details/125229427
 		
+		搭建静态服务器_nodejs本地服务器_测试html/js
+		https://blog.csdn.net/ydk001001/article/details/122619965
+		
+			npm执行npm install -g live-server安装live-server模块
+	7.2 node-static
+		https://www.likecs.com/show-203677985.html
+		
+		npm install -g node-static --registry=https://registry.npmmirror.com
+		
+		启动node-static：
+			{进入到项目目录下,运行static命令 打开地址}
+		
+		
+	7.3 node.js 静态服务器html等静态资源放置位置
+		参考【7.2】
+	
 2.# 安装依赖
 	npm install
 
 	# 强烈建议不要用直接使用 cnpm 安装，会有各种诡异的 bug，可以通过重新指定 registry 来解决 npm 安装速度慢的问题。
 	npm install --registry=https://registry.npmmirror.com
+	
 	
 	
 	

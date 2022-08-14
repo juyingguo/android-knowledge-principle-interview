@@ -47,10 +47,17 @@
 	3.1、献给新手，如何阅读Linux源码(转) 
 		https://blog.csdn.net/qq_37468954/article/details/77483013?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
 		
-4.	
+4.书籍、资料、源码
 	Linux内核源代码情景分析
- 4.1 Linux内核源代码情景分析
-	https://blog.csdn.net/jltxgcy/category_2907797.html
+	4.1 Linux内核源代码情景分析
+		https://blog.csdn.net/jltxgcy/category_2907797.html
+	4.2 
+		Linux高性能服务器编程高清PDF(带书签)+源码 #好例子网
+			--作者活跃于Chinaunix等专业技术社区，发表了大量关于Linux网络编程的文章
+			--源码：https://gitee.com/makerbob/LinuxServerCodes
+		《高性能Linux服务器构建实战：系统安全、故障排查、自动化运维与集群架构》-高清版.pdf  #好例子网
+			Linux性能优化大师 - 赵永刚.pdf[一般编程问题]  #好例子网
+		
 5. 《嵌入式Linux应用程序开发详解》随书源代码下载
 	https://www.haolizi.net/example/view_12099.html
 	
