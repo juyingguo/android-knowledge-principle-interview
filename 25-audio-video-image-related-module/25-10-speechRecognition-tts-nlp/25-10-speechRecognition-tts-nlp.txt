@@ -2,7 +2,24 @@
 2.speech recognize
 
 3. tts
+	3.1 开源语音合成
+		https://blog.csdn.net/c9yv2cf9i06k2a9e/article/details/122097800
+		GitHub 3.1K，业界首个流式语音合成系统开源！
+		https://blog.csdn.net/cqcre/article/details/124976727
+		GitHub 地址：
 
+		https://github.com/PaddlePaddle/PaddleSpeech
+		
+		源于产业实践的开源深度学习平台
+		https://www.paddlepaddle.org.cn/
+		
+		https://github.com/PaddlePaddle
+		
+		
+		百度“飞桨”是怎么成为世界第三的？
+		https://baijiahao.baidu.com/s?id=1727987357636527939&wfr=spider&for=pc
+			{曾几何时几乎全部做人工智能开发的程序员、工程师和算法分析师，用的深度学习框架都来自美国。
+			TensorFlow、PyTorch虽然是开源项目，但都在美国公司掌控之下，不确定性如影随形 。}
 4. nlp 
 	4.1 薄言豆豆
 		http://api.doudoubot.cn/rsvpbot/general/chat?appid=rsvpupR18lm6q8i0&token=HD8Mn045gGzZ8foc&userid=123456&question=%E6%B7%B1%E5%9C%B3%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F%E3%80%82
@@ -49,4 +66,26 @@
 	电视果5s PLUS 蓝牙智能语音遥控棒
 	
 	爱奇艺电视果5SPlus人工智能机顶盒4K无线投屏器电视盒子语音遥控
+	
+12. 语音识别厂商对比
+	12.1 科大讯飞
+		云知声
+		图灵
+		依图
+		思必驰
+		薄言豆豆
+		百度语音
+		出门问问
+	12.2 2022年中国智能语音公司排名TOP10 国内十大智能语音企业排名2022
+		http://www.southmoney.com/paihangbang/202203/25144062.html
+	12.3 对比科大讯飞，云知声等国内语音识别团队的实力表现如何？
+		https://www.zhihu.com/question/21919213/answer/2459737891
+		
+		http://www.360doc.com/content/20/0323/20/32700803_901228719.shtml
+		
+		{还有国际上的，Google（Google Now）、微软（小冰、小娜Cortana）、苹果（Siri）。}
+		{nuance}
+	12.4 
+		
+		
 		

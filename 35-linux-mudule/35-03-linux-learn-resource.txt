@@ -57,7 +57,17 @@
 			--源码：https://gitee.com/makerbob/LinuxServerCodes
 		《高性能Linux服务器构建实战：系统安全、故障排查、自动化运维与集群架构》-高清版.pdf  #好例子网
 			Linux性能优化大师 - 赵永刚.pdf[一般编程问题]  #好例子网
+	4.3 book
+		《深入分析GCC》这本书怎么样？
+		刚出的《深入分析GCC 》怎么样？和《编译系统透视：图解编译原理 》的相比有什么异同？
+		https://www.zhihu.com/question/56518730
 		
+		3、Linux+Kernel+Development中文版.pdf 
+
+		4. 《嵌入式Linux应用开发》
+	4.4 
+		《TCP-IP详解卷一：协议》
+		linux-embedded-driver-video\5-kernel启动过程和kernel核心结构\code-and-books\linux-stu-ebook
 5. 《嵌入式Linux应用程序开发详解》随书源代码下载
 	https://www.haolizi.net/example/view_12099.html
 	
@@ -118,14 +128,7 @@
 		Linux系统移植
 		Linux内核及驱动开发
 		Android移植开发
-11. book
-	《深入分析GCC》这本书怎么样？
-	刚出的《深入分析GCC 》怎么样？和《编译系统透视：图解编译原理 》的相比有什么异同？
-	https://www.zhihu.com/question/56518730
-	
-	3、Linux+Kernel+Development中文版.pdf 
-
-	4. 《嵌入式Linux应用开发》
+11. 
  
 12 麦可网张凌华Sundy Android嵌入式底层视频课程 
 	最新Tiny210光盘资料

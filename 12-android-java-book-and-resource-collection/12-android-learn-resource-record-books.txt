@@ -1,10 +1,13 @@
 01	文档资源
 	01.1 https://developer.android.google.cn/?hl=zh_cn
 		api:
+			中文
 			http://www.android-doc.com/guide/topics/media/camera.html
 		api及训练资源	
 			https://developer.android.google.cn/training/camera/videobasics?hl=zh-cn
-		
+		sdk离线文档
+			sdk/docs/index.html	#内容完整
+			sdk/docs/offline.html #离线文档，打开有时没内容。
 	01.2 官网资料
 		android mk
 		https://developer.android.google.cn/ndk/guides/android_mk
