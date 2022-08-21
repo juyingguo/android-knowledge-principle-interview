@@ -1,0 +1,20 @@
+1.日期选择器、时间选择器、单项选择器、城市地址选择器等
+	https://www.jianshu.com/p/6f0916bd0ed2
+	
+	
+	implementation('cn.qqtheme.framework:WheelPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+    implementation('cn.qqtheme.framework:FilePicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+    implementation('cn.qqtheme.framework:ColorPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+	
+	安卓选择器类库
+		https://blog.csdn.net/z957250254/article/details/52264340
+	
+	https://github.com/gzu-liyujiang/AndroidPicker
+		1.x Support 版本封存分支:也就是上面的[cn.qqtheme.framework:WheelPicker:1.5.5]
+		{https://github.com/gzu-liyujiang/AndroidPicker/tree/1.x-support}

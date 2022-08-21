@@ -50,6 +50,16 @@
 		https://blog.csdn.net/u011031422/article/details/74280293 
 		持续测试程序：com.sp.spmultipleapp.application.AppLifecycle 
 	
+	5.6 Fragment
+	
+		setUserVisibleHint,type:0,isVisibleToUser:false #可能先于onCreate调用。
+		setUserVisibleHint,type:0,isVisibleToUser:true
+		onCreate
+		onCreateView
+		
+		onResume 与 setUserVisibleHint顺序关系。
+			{初步验证发现:二者没有关系}
+			{onResume回调时，setUserVisibleHint会}
 六、activity启动模式与Intent Flag
 
 	6.1、FLAG_ACTIVITY_CLEAR_TASK 
