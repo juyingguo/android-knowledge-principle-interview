@@ -1,51 +1,60 @@
-һ����������һƪ�͹������㿪���ƶ���IM
+一、新手入门一篇就够：从零开发移动端IM
 
-	1.1����������һƪ�͹������㿪���ƶ���IM 
+	1.1、新手入门一篇就够：从零开发移动端IM 
 	 	http://www.52im.net/thread-464-1-1.html 
-	1.2 Ŀǰȫ��ļ�ʱͨѶ������ȫ 
+	1.2 目前全球的即时通讯软件大全 
 		http://www.360doc.com/content/10/0714/17/1332348_38989245.shtml 
-	1.3 ��ʱͨѶ����Ƶ������ʮ�ˣ��������Ƶ������ԭ�����ݽ���Ӧ��ѡ��
+	1.3 即时通讯音视频开发（十八）：详解音频编解码的原理、演进和应用选型
 		http://www.52im.net/forum.php?mod=viewthread&tid=2230#lastpost 
-2. ����QQʹ��Э����ǵ���
+2. 关于QQ使用协议的那点事
 	https://blog.csdn.net/qq_41321905/article/details/105670258  
 	
-	2.1 qqʹ�õ�����Э�� 
+	2.1 qq使用的网络协议 
 		https://blog.csdn.net/jiajianhui/article/details/5430306 
-3.IM��ʱͨѶ�鼮�����ϡ�Դ��
+3.IM即时通讯书籍、资料、源码
 	
-	Java ��ʱͨѶimԴ��(�����ݿ�����ĵ�)#��������
-	android IM��ʱͨѶdemo(bmob)Դ������ #��������
-	Netty ������ʵս����д΢�� IM ��ʱͨѶϵͳ.zip  #��������
-	Ұ��IMԴ��   #��������
-	Android��ʱͨѶ--��QQ��ʱ����Դ�루����������   #��������
-	VC++ IM ��ʱͨ��ϵͳԴ�루��QQ��ҵ��ƣ�   #��������
-	xmpp����ʵ�ּ�ʱͨѶ androidԴ������(��QQ)[Androidƽ̨����]   #��������
-	.Net�ɸ봫���������ʱͨѶϵͳ���°�����Դ��[C#���Ի���]  #��������
-	P2P��ʱͨѶʾ������[C#������]  #��������
-	SSM���ʵ��WebSocket��ʱͨѶ[һ��������] #��������
-	��׿���ɼ���IMʵʱ����[Androidƽ̨����] #��������
-	java websocket ����IM(��ʱ��Ϣ)ʵ��Դ������[Androidƽ̨����] #��������
-	java ��ʱͨѶԴ��(�������������ݽű��Լ�Դ��)[Androidƽ̨����] #��������
-	androidӦ�ü������߿ͷ�����(��IMʵʱ����) ����Դ������[Androidƽ̨����] #��������
-	MyQQԴ��(�����+�ͻ���+���ݿ�)[C#���Ի���] #��������
-	mqttԴ�뼰�ĵ�[һ��������] #��������
+	Java 即时通讯im源码(含数据库设计文档)#好例子网
+	android IM即时通讯demo(bmob)源码下载 #好例子网
+	Netty 入门与实战：仿写微信 IM 即时通讯系统.zip  #好例子网
+	野火IM源码   #好例子网
+	Android即时通讯--仿QQ即时聊天源码（含服务器）   #好例子网
+	VC++ IM 即时通信系统源码（仿QQ毕业设计）   #好例子网
+	xmpp用于实现即时通讯 android源码下载(仿QQ)[Android平台开发]   #好例子网
+	.Net飞鸽传书局域网即时通讯系统最新版完整源码[C#语言基础]  #好例子网
+	P2P即时通讯示例程序[C#网络编程]  #好例子网
+	SSM框架实现WebSocket即时通讯[一般编程问题] #好例子网
+	安卓集成极光IM实时聊天[Android平台开发] #好例子网
+	java websocket 聊天IM(即时消息)实例源码下载[Android平台开发] #好例子网
+	java 即时通讯源码(含服务器端数据脚本以及源码)[Android平台开发] #好例子网
+	android应用集成在线客服功能(可IM实时聊天) 例子源码下载[Android平台开发] #好例子网
+	MyQQ源码(服务端+客户端+数据库)[C#语言基础] #好例子网
+	mqtt源码及文档[一般编程问题] #好例子网
 	
-4. ���ڿ�ԴIM��ʱͨѶ���MobileIMSDK��RainbowChat v8.2���ѷ���
+4. 基于开源IM即时通讯框架MobileIMSDK：RainbowChat v8.2版已发布
 	https://gitee.com/jackjiang/MobileIMSDK
-5. Nettyϵ��֮Netty�������ͷ������Ҫ�� 
+5. Netty系列之Netty百万级推送服务设计要点 
 	https://www.cnblogs.com/ruixueyan/p/6382770.html
-	ԭ�� https://www.infoq.cn/article/netty-million-level-push-service-design-points/
+	原文 https://www.infoq.cn/article/netty-million-level-push-service-design-points/
 6. myqq
 	https://github.com/Gonghaoran7719/myqq
-	{����OpenCV+FFmpeg+SDL��ɵ�ʵʱ�����ͨ������������QT��̽��пͻ��˵�UI����ƣ�ȫ����ʹ����IMtoolBOX�ĳ����࣬��UserItem��ʵ���˺����б����������ڣ� ������ʹ��Threadpoll+epollģ��ʵ�����ݽ�����ҵ����������������ɴＸʮ��
+	{基于OpenCV+FFmpeg+SDL完成的实时会议的通信软件，采用QT编程进行客户端的UI的设计，全工程使用了IMtoolBOX的抽屉类，和UserItem类实现了好友列表和视屏窗口； 服务器使用Threadpoll+epoll模型实现数据交互、业务处理，最大连接数可达几十万
 	}
 	
 	https://github.com/wuxiaohanDUT/MyQQChat
 		{
 		Instant-Message-Application}
 		{
-		����Ŀ���ڼ�ʱͨѶapp,����QQ��ع��ܿ�����,����java��������,����socket��swingʵ����Ŀ�. ��Ŀ����,commons����ģ��,�����¼ssoģ��, server��̨ģ��, ��Ϣ��ת������,�ͻ��˵�ģ�����}
+		本项目属于即时通讯app,仿造QQ相关功能开发的,采用java开发语言,利用socket和swing实现项目搭建. 项目共有,commons公共模块,单点登录sso模块, server后台模块, 消息中转服务器,客户端等模块组成}
 		
 	https://github.com/r32875094/myqq_serverd
 		{myqq_serverd
-			�ҵ�һ��linux�ϵ�c++���Ա�д�ĸ����ܸ߲���ͨ�ŷ���������Ŀ}
+			我的一个linux上的c++语言编写的高性能高并发通信服务器的项目}
+	https://github.com/sxei/myqq
+		{Java版SWing“高”仿QQ即时通聊天系统
+
+			原贴地址：http://tieba.baidu.com/p/1933997044}
+			{一阶段老师让做的项目，现在完整项目打包上传上来，Java版高仿QQ即时通聊天软件,包括客户端和服务端，
+			特别是登录窗体,几乎与腾讯QQ2011没有区别,包含创建数据库的SQL命令,主要功能包括私聊、表情发送、图片发送、文件传输、
+			截图、群聊天室、系统公告、桌面弹窗、声音提醒、离线消息发送与接收等}
+7. Netty入门与实战:仿写微信IM即时通讯系统
+	转到netty

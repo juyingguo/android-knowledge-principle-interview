@@ -1,0 +1,16 @@
+1.
+	https://socket.io/
+	
+2.
+	https://github.com/socketio/socket.io-client-java
+	
+	http://socket.io/blog/native-socket-io-and-android/
+	
+	socket.io-android-chat
+		https://github.com/nkzawa/socket.io-android-chat
+		
+	Netty-socketio Overview
+		{This project is an open-source Java implementation of Socket.IO server. Based on Netty server framework.
+
+			Checkout Demo project}
+			{https://github.com/mrniko/netty-socketio-demo}

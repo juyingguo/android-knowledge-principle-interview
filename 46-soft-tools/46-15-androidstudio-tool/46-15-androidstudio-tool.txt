@@ -1,6 +1,8 @@
 0 资源
 	0.1 androidstudio官网下载。
 		https://developer.android.com/studio/archive 
+		androidstudio中文网站下载
+		https://developer.android.google.cn/studio#downloads
 		
 		http://www.android-studio.org/
 		
