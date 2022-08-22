@@ -245,3 +245,21 @@
 		3: chromeium代码: external/chromium_org/
 9. 使用VsCode调试Android Framework C/C++源代码
 	https://www.jianshu.com/p/d84a2ec948be
+10. Android Framework单独编译调试
+	https://www.jianshu.com/p/55dbe31efccc
+	{1.device目录下对应产品的BoardConfig.mk添加
+
+		WITH_DEXPREOPT := false
+
+		2.整个工程make clean清除，不clean的话导入后依然有问题，系统启动崩溃。
+
+		3.make -j32全编译，将所有镜像打入系统。
+
+		4.之后可以任意修改framework，单独导入调试。如修改frameworks/base目录，在此目录下mm -B
+
+		生成framework.jar ，push到system/framework后，reboot生效。
+
+		作者：sunny2005
+		链接：https://www.jianshu.com/p/55dbe31efccc
+		来源：简书
+		著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。}
