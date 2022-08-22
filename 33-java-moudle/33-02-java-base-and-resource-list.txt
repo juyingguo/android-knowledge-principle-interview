@@ -212,3 +212,24 @@
 	
 	commons的beanutils
 	commons-beanutils-1.8.0
+23. 命令行运行jar包的常见方式
+	https://blog.csdn.net/First_____/article/details/121563870
+	
+	{java 命令行运行jar包的两种方式:
+		第一种方式: 如果没有指定主函数的话,需要使用这种方式进行运行
+
+		java -classpath xxxxx.jar 主函数全类名 <args>
+
+		第二种方式:如果使用带有 主函数的打包方式,可以使用这种,较为简便,但还是推荐上面那一种方式
+
+		java -jar xxxxx.jar <args>
+
+		hadoop 命令行运行jar包的方式:
+		hadoop jar xxxxx.jar 主函数全类名 <args>
+
+		flink 命令函运行jar包的方式:
+		flink run -c 全类名 -p 并行度的数量 xxxxx.jar <args>
+		————————————————
+		版权声明：本文为CSDN博主「First_____」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/First_____/article/details/121563870
+	}

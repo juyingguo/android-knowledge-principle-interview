@@ -35,3 +35,17 @@
 5. Netty系列之Netty百万级推送服务设计要点 
 	https://www.cnblogs.com/ruixueyan/p/6382770.html
 	原文 https://www.infoq.cn/article/netty-million-level-push-service-design-points/
+6. myqq
+	https://github.com/Gonghaoran7719/myqq
+	{基于OpenCV+FFmpeg+SDL完成的实时会议的通信软件，采用QT编程进行客户端的UI的设计，全工程使用了IMtoolBOX的抽屉类，和UserItem类实现了好友列表和视屏窗口； 服务器使用Threadpoll+epoll模型实现数据交互、业务处理，最大连接数可达几十万
+	}
+	
+	https://github.com/wuxiaohanDUT/MyQQChat
+		{
+		Instant-Message-Application}
+		{
+		本项目属于即时通讯app,仿造QQ相关功能开发的,采用java开发语言,利用socket和swing实现项目搭建. 项目共有,commons公共模块,单点登录sso模块, server后台模块, 消息中转服务器,客户端等模块组成}
+		
+	https://github.com/r32875094/myqq_serverd
+		{myqq_serverd
+			我的一个linux上的c++语言编写的高性能高并发通信服务器的项目}
