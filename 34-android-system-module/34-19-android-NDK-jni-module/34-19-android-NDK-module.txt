@@ -13,7 +13,10 @@
 	01.4 NDK Samples
 		01.4.1 GoogleSamples - NDK Samples
 			https://www.jianshu.com/p/05515962006c/ 
-			
+	01.5 
+		https://github.com/yangkun19921001/NDK_AV_SAMPLE
+		{Android NDK 音视频 FFmpeg OpenGL OpenCV rtmp 直播 学习记录! 
+		想要更全面的学习音视频可以点击point_right(适合零基础入门音视频专栏)}
 1.NDK接口参照：
 
 	https://developer.android.google.cn/ndk/reference/group/audio

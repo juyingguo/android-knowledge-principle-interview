@@ -31,6 +31,23 @@
 		Winform网盘(全格式音视频在线预览)[C#多媒体编程]
 		Visual C++音视频编解码技术及实践（全）
 		基于SIP和webrtc的音视频通话软件（含在线状态）.rar
+		
+	2.5 推荐几个堪称教科书级别的 Android 音视频入门项目
+		https://juejin.cn/post/6844904149369225223
+		{GPUImage：
+			OpenGL 之 GPUImage 源码分析
+			https://link.juejin.cn/?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FXc0r6PsxrT-dJ_W4-K7V0Q
+		AudioVideoRecordingSample：
+		Grafika：
+			此项目是 Google 提供的一个非官方的项目，它的侧重点在于将 OpenGL 与 Android 音视频 API 综合运用。
+			}
+	2.6 18个实时音视频开发中会用到开源项目
+		https://juejin.cn/post/6844903606559195149
+	2.7 谈谈对Android音视频开发的探究
+		https://juejin.cn/post/7080043506223448072
+		
+		-->同：《Android开发高手课》中的第38讲 #网盘
+		
 三、为android系统添加USB　AUDIO设备的放音和录音功能 
 	3.1 为android系统添加USB　AUDIO设备的放音和录音功能 
 		https://blog.csdn.net/adits/article/details/8242146

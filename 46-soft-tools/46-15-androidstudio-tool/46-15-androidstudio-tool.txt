@@ -403,9 +403,12 @@
 		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
 	18 查看native进程。
 	
-18 androidstudio 安装apk到手机失败
+18 androidstudio编译apk,安装apk到手机失败
 	Installation did not succeed. The application could not be installed: INSTALL_FAILED_USER_RESTRICTED
 	https://blog.csdn.net/qq_43598138/article/details/104091976 
+	
+	18.2 安装apk时出现错误Failure [INSTALL_FAILED_DEXOPT]问题解决的方法
+		https://www.codeprj.com/blog/45c2871.html
 19 avd
 	19.1 android avd设置graphic automatic hardware software gles
 		当设置为automatic启动模拟器失败。
@@ -618,4 +621,3 @@
 	}
 41,运行旧工程遇到 提示不能下载gradle3.5.5.jar ....No cached version available for offline mode 报错
 	https://blog.csdn.net/loveseal518/article/details/125652708
-	

@@ -1,0 +1,85 @@
+1.
+2.Android中默认系统的声音大小修改和配置详解
+		https://wenku.baidu.com/view/d2ec6a39856fb84ae45c3b3567ec102de2bddf99.html
+		android调节系统音量之修改默认音量、最大音量和最小音量
+		https://blog.csdn.net/jppipai/article/details/121162963?
+		
+	2.1 本文是基于Android5.1的代码
+		直接修改系统层默认的声音大小
+
+		android\frameworks\base\media\java\android\media\AudioService.java
+		
+		private static int[] DEFAULT_STREAM_VOLUME = new int[] {
+		/*
+			4,  // STREAM_VOICE_CALL
+			7,  // STREAM_SYSTEM
+			5,  // STREAM_RING
+			11, // STREAM_MUSIC
+			6,  // STREAM_ALARM
+			5,  // STREAM_NOTIFICATION
+			7,  // STREAM_BLUETOOTH_SCO
+			7,  // STREAM_SYSTEM_ENFORCED
+			11, // STREAM_DTMF
+			11  // STREAM_TTS
+		*/    
+		};
+		
+		#15是最大值。//初步判断
+		
+		#全部修改为5，普通闹钟的铃声和音乐的铃声音量(设备的默认音乐音量调小乐)不一致。
+		-->MediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);#播放闹铃音乐前设置音频流类型
+		-->MediaPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);#播放闹铃音乐前设置音频流类型
+	2.2 修改数据库中的通知声音值
+		媒体声音这些数据在数据库中都会默认的存放数据，我们知道大多数的数据都是系统初次启动的时候在SettingProvider应用中
+		加载初始化的值，当然通知的声音也在里面。
+		
+		android\frameworks\base\packages\SettingsProvider\src\com\android\providers\settings\DatabaseHelper.java
+		->loadVolumeLevels(db)此方法则是加载所有默认声音大小的地方
+	
+3. systemui 如何调整音量的
+4. Android Manager之AudioManager(音频管理器)
+	https://blog.csdn.net/weixin_37730482/article/details/80567141?
+	{附：AudioManager官方链接
+
+		http://androiddoc.qiniudn.com/reference/android/media/AudioManager.html
+	}
+	{3.1.
+
+		方法：adjustVolume(int direction, int flags) 
+
+		作用：控制手机音量,调大或者调小一个单位,根据第一个参数进行判断 。
+
+		参数：AudioManager.ADJUST_LOWER,可调小一个单位; AudioManager.ADJUST_RAISE,可调大一个单位
+		————————————————}
+	{3.2.
+
+		方法：adjustStreamVolume(int streamType, int direction, int flags)： 
+
+		作用：同上,不过可以选择调节的声音类型 
+
+		参数1：streamType参数,指定声音类型,有下述几种声音类型: 
+
+		STREAM_ALARM：手机闹铃 STREAM_MUSIC：手机音乐 
+
+		STREAM_RING：电话铃声 STREAM_SYSTEAM：手机系统 
+
+		STREAM_DTMF：音调 STREAM_NOTIFICATION：系统提示 
+
+		STREAM_VOICE_CALL:语音电话 
+
+		参数2：上面那个一样,调大或调小音量的。
+
+		参数3：可选的标志位,比如AudioManager.FLAG_SHOW_UI,显示进度条,AudioManager.PLAY_SOUND:播放声音。
+		————————————————}
+	{双音多频 DTMF（Dual Tone Multi Frequency）
+		https://baike.baidu.com/item/DTMF/3106215?fr=aladdin}
+5.应用调节音量举例
+	public static void setVolumeUp(Context context) {
+		AudioManager audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
+
+		audioManager.adjustStreamVolume(
+				AudioManager.STREAM_MUSIC,
+				AudioManager.ADJUST_RAISE,
+				AudioManager.FLAG_PLAY_SOUND | AudioManager.FLAG_SHOW_UI);
+	}
+	
