@@ -17,5 +17,15 @@
 2. ImageViewZoom 
 	2.1 https://github.com/sephiroth74/ImageViewZoom
 		
-		
+3. universal-image-loader
+	compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+	
+	ibotnlauncher:ShowImageActivity.
+	第一次会报错：
+	ShowImageActivity: initData>>imageUrl:http://cdn9002.iflyos.cn/shutu/resourceImg/66371fc0315b497b8ea7d720e52ddbc9.jpg,imageResId:0
+	
+	警告：
+		ImageLoader: memoryCache() and memoryCacheSize() calls overlap each other.
+	
+	ShowImageActivity: onLoadingFailed>>s:http://cdn9002.iflyos.cn/shutu/resourceImg/66371fc0315b497b8ea7d720e52ddbc9.jpg
 		

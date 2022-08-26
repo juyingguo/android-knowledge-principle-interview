@@ -1,0 +1,14 @@
+1.
+2.	
+	https://192.168.1.30:8443/svn/iBotn/APP/ibotnFileManage
+	
+	在【4】项目上二次开发的。
+3. 
+	https://github.com/MiCode/FileExplorer
+
+4.
+	https://github.com/cwjfeifei/AndroidFileManage
+
+5.
+	https://github.com/yangsmith/FileExplorer
+	

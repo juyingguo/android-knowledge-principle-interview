@@ -621,3 +621,15 @@
 	}
 41,运行旧工程遇到 提示不能下载gradle3.5.5.jar ....No cached version available for offline mode 报错
 	https://blog.csdn.net/loveseal518/article/details/125652708
+42,Android studio创建类时设置作者、日期等统一注释模板的方法
+	https://blog.csdn.net/ambitionLlll/article/details/104086390
+	{打开Andorid studio，点击File—>Settings->点击Editor选项—>File and Code Templates—>点击右侧的Includes—>选中File Header}
+	/**
+	 * @date ${DATE},${TIME}
+	 * @author jy
+	 * @description:
+	 */
+	/**
+	 * create by author on ${DATE},${TIME} <br/>
+	 * description:
+	 */

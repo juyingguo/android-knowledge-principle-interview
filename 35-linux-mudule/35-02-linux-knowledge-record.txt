@@ -1,5 +1,8 @@
 0. 资源
-	0.1 
+	0.1 参见 Linux 手册
+		http://linux.die.net/man/
+		
+		{如：参见 Linux 手册页中的 epoll(4)： http://linux.die.net/man/4/epoll}
 	0.2	ubuntu与centos对比
 			https://www.linuxprobe.com/ubuntu-comparison-centos.html 
 		0.2.2 CentOS与Ubuntu命令中的不同之处 
