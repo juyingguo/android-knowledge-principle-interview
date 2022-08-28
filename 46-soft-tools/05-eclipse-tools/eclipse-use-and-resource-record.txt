@@ -15,6 +15,9 @@
 		https://blog.csdn.net/weixin_42286276/article/details/82860502?
 		现在java开发工具 用Eclipse多还是MyEclipse多，还是Idea多？
 		https://www.zhihu.com/question/66307137
+	0.4 eclipse快捷键
+		help->Show Active Keybindings
+		
 1. eclipse 4.5.0；安装 adt-23.0.7插件异常。
 	No repository found at jar:file:/D:/juying/tools/ADT/ADT-23.0.7.zip!/.
 2. eclipse 与adt插件版本对应关系？

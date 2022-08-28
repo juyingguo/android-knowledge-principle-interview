@@ -58,11 +58,19 @@
 		
 7. 回声消除
 	7.1 echo cancellation
+		声学回声消除（AEC）
+		https://blog.csdn.net/qq_42455031/article/details/115917484
+		
+		Acoustic Echo Canceler (AEC)
+		回声消除器是一个基于软件的信号处理元件，能实时的去除mic采集到的回声。
 	7.2 麦克风采用硬件回声消除
 	7.3 麦克风采用软件回声消除
+	
 8. 模态降噪
 	8.1 抗干扰。
-
+	8.2 
+		Noise Reduction (NR)
+		噪声抑制也是一个基于软件的信号处理元件，用于消除与相关VoIP的某些类型的背景噪声（嘶嘶声，风扇噪音等等… …）
 9. 语音增强技术
 10. 声源定位
 

@@ -1,11 +1,34 @@
 一、新手入门一篇就够：从零开发移动端IM
 
 	1.1、新手入门一篇就够：从零开发移动端IM 
+		含全系列多模块系列文章
 	 	http://www.52im.net/thread-464-1-1.html 
+		
+		四、网络编程理论准备
+			《TCP/IP详解 卷1：协议》
+			《计算机网络通讯协议关系图（中文珍藏版）》
 	1.2 目前全球的即时通讯软件大全 
 		http://www.360doc.com/content/10/0714/17/1332348_38989245.shtml 
-	1.3 即时通讯音视频开发（十八）：详解音频编解码的原理、演进和应用选型
-		http://www.52im.net/forum.php?mod=viewthread&tid=2230#lastpost 
+	1.3 即时通讯音视频开发
+			http://www.52im.net/thread-228-1-1.html
+			即时通讯音视频开发（一）->(十八)
+			即时通讯音视频开发（十八）：详解音频编解码的原理、演进和应用选型
+			http://www.52im.net/forum.php?mod=viewthread&tid=2230#lastpost 
+			
+		1.3.2 
+			RainbowChat产品级移动端IM系统（有偿开源） ↘
+			RainbowChat是一套基于MobileIMSDK的产品级移动端IM系统。
+		
+		1.3.3 [附录：更多实时音视频技术文章]
+
+		 [1] 开源实时音视频技术WebRTC的文章：
+			http://www.52im.net/thread-510-1-1.html
+		 
+		 [2] 实时音视频开发的其它精华资料：
+			http://www.52im.net/thread-510-1-1.html
+	1.4 跟着源码学IM
+		系列文章
+		http://www.52im.net/thread-2671-1-1.html
 2. 关于QQ使用协议的那点事
 	https://blog.csdn.net/qq_41321905/article/details/105670258  
 	
@@ -50,11 +73,44 @@
 		{myqq_serverd
 			我的一个linux上的c++语言编写的高性能高并发通信服务器的项目}
 	https://github.com/sxei/myqq
-		{Java版SWing“高”仿QQ即时通聊天系统
-
-			原贴地址：http://tieba.baidu.com/p/1933997044}
-			{一阶段老师让做的项目，现在完整项目打包上传上来，Java版高仿QQ即时通聊天软件,包括客户端和服务端，
-			特别是登录窗体,几乎与腾讯QQ2011没有区别,包含创建数据库的SQL命令,主要功能包括私聊、表情发送、图片发送、文件传输、
-			截图、群聊天室、系统公告、桌面弹窗、声音提醒、离线消息发送与接收等}
-7. Netty入门与实战:仿写微信IM即时通讯系统
-	转到netty
+		my fork:https://github.com/juyingguo/myqq_one
+		{用的是Oracle数据库（为方便安装，后来改为MySQL），Swing作界面。界面上高仿腾讯QQ的（特别是登录窗体,几乎与腾讯QQ2011没有区别 ），包括客户端和服务端，包含创建数据库的SQL命令，目前主要实现的功能包括私聊、表情发送、图片发送、文件传输、截图、群聊天室、系统公告、桌面弹窗、声音提醒、离线消息发送与接收等……}
+		
+		a,登录时发送登录信息中端口为5000，不同客户端如何递增的呢？不在一个应用程序中。
+			同一计算机，同一端口创建ServerSocket是失败的，此时自动增加端口号值，然后继续创建ServerSocket
+			com.socket.TCPServer.startServerTCP():
+			TCPServer startServerTCP error(ignore,increate serverPort and retry) :java.net.BindException: Address already in use: JVM_Bind
+7. 基于XMPP协议的开源IM服务端Openfire发布4.0.2正式版
+	http://www.52im.net/portal.php?mod=view&aid=118
+	{
+	官方链接：https://igniterealtime.org/builds/openfire/docs/latest/changelog.html
+	下载地址
+		http://www.igniterealtime.org/downloads/}
+		
+8.支持XMPP协议的im应用
+	不少IM应用系统如：Google公司的Google Talk以及Jive    Messenger等开源应用，都是遵循XMPP协议集而设计实现的，这些应用具有很好的互通性。
+	{PC端肯定要推荐一些比较经典的啦 ,诸如Pidgin、Empathy、I
+		Kopete、Miranda IM(只支持
+		Windows)或Adium(只支持Mac OS X)这样的都可以很好的兼容XMPP/Jabber协议,不过呢
+	}
+	{手机移动端。Android和iOSs都可以用ChatSecure , -款知名的支持ORXMP/abber的
+		手机软件,很是方便。 但如果希望支持PGP ,则推荐使用Conversations , Android用户可以
+		用过F-Droid非常容易的安装(这款APP在Google Play竟然是收费的! )。
+	}
+9. XMPP
+		https://baike.baidu.com/item/XMPP/3430617?fr=aladdin
+	XMPP的前身是Jabber
+	
+	9.1 XMPP的即时通讯扩展应用部分是根据IETF在这之前对即时通讯的一个抽象定义的，与其他业已得到广泛使用的即时通讯协议，诸如AIM，QQ等有功能完整，完善等先进性。
+	9.2 XMPP的扩展协议Jingle使得其支持语音和视频。
+	9.3 XMPP的官方文档是RFC 3920.
+	9.4 传输的是与即时通讯相关的指令。在以前这些命令要么用2进制的形式发送（比如QQ），要么用纯文本指令加空格加参数加换行符的方式发送（比如MSN）。而XMPP传输的即时通讯指令的逻辑与以往相仿，只是协议的形式变成了XML格式的纯文本。
+	
+	9.5 弃用QQ和微信!全面转向基于XMPP(Jabber)的即时聊天
+		http://www.360doc.com/content/16/0705/05/16915_573317279.shtml
+	9.6 XMPP 与QQ协议
+		https://blog.csdn.net/u014308194/article/details/22071293
+		{https://github.com/nareoivy/lumaQQ
+			使用nio}
+	9.7 QQ协议 - 百度文库
+		https://wenku.baidu.com/view/72ac92c482c758f5f61fb7360b4c2e3f572725f9.html

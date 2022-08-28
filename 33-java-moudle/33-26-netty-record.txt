@@ -27,4 +27,12 @@
 	
 4. 《跟闪电侠学Netty》
 	https://www.jianshu.com/p/a4e03835921a
+5. 《NIO框架入门》
+	《NIO框架入门(一)：服务端基于Netty4的UDP双向通信Demo演示 [附件下载]》
+	http://www.52im.net/thread-265-1-1.html
 	
+	http://www.52im.net/thread-2671-1-1.html
+	
+	更多Java NIO异步网络编程文章
+	含java nio ,netty,mina ...
+	http://www.52im.net/thread-2663-1-1.html

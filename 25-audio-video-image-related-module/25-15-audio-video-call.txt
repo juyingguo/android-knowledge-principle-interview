@@ -229,7 +229,10 @@
 	2.4 Android WebRTC简介
 		项目配置。及博主参考一些列WebRTC文章。
 			https://blog.csdn.net/Charon_Chui/article/details/80510945
-			
+		
+		2.4.2 WebRTC实时音视频技术的整体架构介绍
+			http://www.52im.net/thread-284-1-1.html
+			-->52im系列webRTC文章资料。
 	2.5 webrtc入门与实战视频教程
 		https://edu.csdn.net/course/detail/6029
 		
@@ -298,8 +301,11 @@
 			程序：https://gitee.com/supergame/dove-into-webrtc
 			
 			https://gitee.com/wisting/WiLearning/blob/master/README.md
-		2.13.2 WebRTC零基础开发者教程(纯净版)
-			{好例子网已下载。已存百度盘}
+		2.13.2 《WebRTC零基础开发者教程》(纯净版)
+			{2014年出版的。好例子网已下载。已存百度盘}
+			
+			2020年出版的：52im网可以下载
+			WebRTC零基础开发者教程(52im.net)_2020
 		2.13.3 《WebRTC Native 开发实战》
 			a,《WebRTC Native 开发实战》是清华大学出版社出版的一本书，作者是许建林。
 				a1,WebRTC Native 开发实战 PDF下载
@@ -340,6 +346,7 @@
 				{好例子网可以下载}
 				{天猫上，有各个版本的对比说明}
 			《Learning WebRTC中文版》
+				已下载
 			《WebRTC音视频开发》
 			《Counting from Zero》
 	2.14 webrtc_android-webrtc安卓端多人视频会议的实现.zip

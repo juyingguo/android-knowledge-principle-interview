@@ -77,7 +77,7 @@
 		cloud版： http://47.112.198.102:10078/zellen/ibotn-cloud.git
 		
 		front ui ：
-			http://47.112.198.102:10078/zhonhai/kinderGardenAdmin
+			http://47.112.198.102:10078/zhonhai/kinderGardenAdmin.git
 
 	2.19 redis数据库
 		47.112.198.102
