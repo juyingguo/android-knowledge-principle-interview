@@ -1,0 +1,4 @@
+1.
+	http://mina.apache.org/mina-project/road-map.html
+2. 开源NIO框架八卦——到底是先有MINA还是先有Netty?
+	http://www.52im.net/thread-153-1-1.html
