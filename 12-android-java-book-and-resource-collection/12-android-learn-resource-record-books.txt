@@ -118,6 +118,8 @@
 		10.1 音视频开发进阶指南：基于Android与iOS平台的实践.pdf
 			http://www.music-video.cn/ 
 			https://github.com/zhanxiaokai 		
+	11 android开发电子书集合
+		https://www.zhihu.com/search?type=content&q=android开发电子书集合
 	
 5. 新技术
 	5.1 未来，不会JetPack的Android开发连面试机会都没有

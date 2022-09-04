@@ -39,6 +39,8 @@
 		http://www.52im.net/thread-2671-1-1.html
 	1.5 im技术相关书籍、资料、源码
 		《即时消息技术剖析与实战》
+	1.6 MobileIMSDK
+		to->[10]
 2. 关于QQ使用协议的那点事
 	https://blog.csdn.net/qq_41321905/article/details/105670258  
 	
@@ -124,3 +126,14 @@
 			使用nio}
 	9.7 QQ协议 - 百度文库
 		https://wenku.baidu.com/view/72ac92c482c758f5f61fb7360b4c2e3f572725f9.html
+10，MobileIMSDK
+	即时通讯框架MobileIMSDK：快速入门
+	http://www.52im.net/thread-52-1-1.html
+	
+	java 服务端demo启动：
+		基于MobileIMSDK的TCP服务绑定端口8901成功
+	java client:启动，登录超时。
+		是端口问题吗？
+		测试环境：windows8.1,server，client都是本地电脑上。
+	
+	idea,运行源码java client，可以登录。【站长编译的可能有问题】

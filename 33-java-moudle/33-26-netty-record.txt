@@ -1,4 +1,6 @@
 1.
+	https://netty.io/index.html
+	
 	netty 视频，源码讲解，闪电侠netty
 2.	
 	Netty-socketio Overview
@@ -19,6 +21,7 @@
 		--《跟闪电侠学Netty》 #好例子网
 	Netty权威指南.pdf #好例子网
 	Netty实战.pdf[Java网络编程] #好例子网
+		--详情见【6】
 	netty-api-4.1 中文版 #好例子网
 	rtmp netty 流服务器[Android平台开发] #好例子网
 	springboot-netty心跳机制[Android平台开发] #好例子网
@@ -36,3 +39,7 @@
 	更多Java NIO异步网络编程文章
 	含java nio ,netty,mina ...
 	http://www.52im.net/thread-2663-1-1.html
+6. Netty实战.pdf
+	6.1 
+		本书的源代码可以从出版商的网站www.manning.com/books/netty-in-action以及GitHub的项目地址
+		https://github.com/normanmaurer/netty-in-action

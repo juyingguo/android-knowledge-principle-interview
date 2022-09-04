@@ -75,14 +75,35 @@
 	0.12 项目源码下载
 		淘源码：
 		http://www.taoydm.com/#/CodeIndex/
-一、吃透java ,csdn博客。
+一、java书籍、资料、吃透java ,csdn博客。
+	1.0 Java电子书集合(200多本，史上最全，包含下载地址)
+		https://zhuanlan.zhihu.com/p/474433404
+		{地址：https://pan.baidu.com/s/1CbG0xZx7k7yG_PfbbIuOQQ
+
+		提取码：m4yn}
 	1.1、吃透Java基础八：Throwable异常 
 		https://blog.csdn.net/u013277209/article/details/102834719
 		
 		1.1.2 javaeye,iteye
 	1.2 java专业书籍，
-		java专业书籍，《java 并发编程的艺术》，《Effective Java》，《Java并发编程实践》,《Java Puzzlers》
-		
+		java专业书籍，
+		《java 并发编程的艺术》
+			--求百度网盘云资源
+			--《Java并发编程的艺术》epub下载在线阅读，求百度网盘云资源
+				https://zhidao.baidu.com/question/761484877862324164.html
+				：https://pan.baidu.com/s/1WUZl6mu4QtMdtaO0Et17gA
+				提取码: 37t6
+			
+		，《Effective Java》
+		，《Java并发编程实践》
+		,《Java Puzzlers》
+		Java TCP_IP Socket编程(原书第2版)[Android平台开发]
+			
+	1.3 java nio书籍
+		java nio书籍_《Java NIO》这本书
+		-->https://blog.csdn.net/weixin_39914868/article/details/114037710
+		--》Ron Hitchens著的 《Java NIO》
+	
 二、从ReentrantLock的实现看AQS的原理及应用 
 	https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html
 	

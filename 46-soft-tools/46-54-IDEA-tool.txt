@@ -105,6 +105,8 @@
 	
 9. IDEA修改背景颜色大全（护眼绿等）
 	https://blog.csdn.net/happydecai/article/details/114097560?
+	idea,修改编辑区背景颜色
+	https://jingyan.baidu.com/article/b0b63dbfcdda830b483070e9.html
 10.idea中关联本地源码与取消
 	https://blog.csdn.net/SKNXPython/article/details/121410497
 	
@@ -167,6 +169,9 @@
 12 IDEA项目发布中，Web Application:Exploded和Web Application:Archive的详细解释
 	【含应用部署到tomcat】
 	https://blog.csdn.net/ejiao1233/article/details/80444845
+	
+	12.2 idea，java工程导出jar
+		https://blog.csdn.net/qq_43028656/article/details/124249460
 13 解决IDEA不能编译XML文件
 	https://blog.csdn.net/weixin_43942304/article/details/107432191
 	
@@ -197,3 +202,9 @@
 	https://blog.csdn.net/qq_37552993/article/details/102545780/
 	
 	Error: To use 'FlightRecorder', first unlock using -XX:+UnlockCommercialFeatures.
+15 解决idea在程序运行时出现错误“java: 非法字符: ‘\ufeff‘”
+	https://blog.csdn.net/weixin_49675807/article/details/117930100?
+	{
+		BOM（Byte Order  Mark），字节顺序标记，出现在文本文件头部，Unicode编码标准中用于标识文件是采用哪种格式的编码。
+		原因：在源文件中使用utf-8带BOM格式的编码方式。
+		解决方法：在idea界面右下方修改文件编码时去除BOM。}

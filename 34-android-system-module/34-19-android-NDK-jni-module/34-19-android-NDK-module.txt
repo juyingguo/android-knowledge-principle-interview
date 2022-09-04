@@ -145,6 +145,7 @@
 	5.1 ANDROID_NDK_ROOT environment variable
 	5.2 Define location with ndk.dir in the local.properties file
 		Define location with ndk.dir in the local.properties file or with an ANDROID_NDK_ROOT environment variable
+	5.3 ANDROID_NDK_HOME
 		
 6. Android开发中libs和jinLibs文件夹的作用详解
 		https://www.jb51.net/article/123417.htm

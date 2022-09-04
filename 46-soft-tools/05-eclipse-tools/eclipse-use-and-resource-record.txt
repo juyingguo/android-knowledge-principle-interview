@@ -81,19 +81,32 @@
 10 Eclipse 打包运行 Java 工程
 	https://blog.csdn.net/qq_40395874/article/details/114240384
 11 eclipse设置查看jar包源码及查看xml显示namespace
-	http://t.zoukankan.com/G-yong-p-9243757.html
-	{（1）下载jadclipse插件：
+	11.1 http://t.zoukankan.com/G-yong-p-9243757.html
+		a,{	（1）下载jadclipse插件：
 
-		下载地址：https://sourceforge.net/projects/jadclipse/
+				下载地址：https://sourceforge.net/projects/jadclipse/
+						--》将下载好的jadclipse插件放到eclipse安装路径下的plugins文件夹下
+				（2）下载jad.exe
 
-		（2）下载jad.exe
+				文件地址：https://files.cnblogs.com/files/yaoxiaoxing/jad.rar}
+			{可以在window=》preferences=》java下多出一个插件，然后如上图提示配置好，之后再打开window=》preferences=》general=》editors=》file associations选择*.class without source文件
 
-		文件地址：https://files.cnblogs.com/files/yaoxiaoxing/jad.rar}
-	{可以在window=》preferences=》java下多出一个插件，然后如上图提示配置好，之后再打开window=》preferences=》general=》editors=》file associations选择*.class without source文件
-
-		设置默认打开方式为jadClipse}
-		
-	或者直接在eclipse插件市场下载安装：搜搜jad。eclipse低版本的不能安装，可以升级eclipse。
+				设置默认打开方式为jadClipse}
+			
+			-->已存阿里盘
+		b，eclipse打开class（LocalDataSender）文件，反编译信息
+			{/*jadclipse*/// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+				// Jad home page: http://www.kpdus.com/jad.html
+				// Decompiler options: packimports(3) radix(10) lradix(10) 
+				// Source File Name:   LocalDataSender.java}
+				
+			对比idea反编译class信息：
+			{//
+				// Source code recreated from a .class file by IntelliJ IDEA
+				// (powered by FernFlower decompiler)
+				//}
+	11.2 或者直接在eclipse插件市场下载安装：搜搜jad。eclipse低版本的不能安装，可以升级eclipse。
+		-->安装上面的方法【11.1】配置
 12 Eclipse 版本升级：如何不卸载旧版本 Eclipse 实现在线升级到最新版本？
 	https://juejin.cn/post/7062739576556617759
 	{参考文中的：3.1、添加新版本存储库
