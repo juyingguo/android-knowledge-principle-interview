@@ -403,6 +403,8 @@
 			更多信息可参见相关的GitHub代码库(https://github.com/jitsi/jitsi-meet)和
 			Jitsi主页(https://jitsi.org/)。
 		}
+	2.16 webrtc 快速搭建 视频通话 视频会议 （亲测半个小时搭建成功）
+		https://blog.csdn.net/u011077027/article/details/86225524
 3. linphone
 	3.0 
 		https://github.com/BelledonneCommunications/linphone-android
