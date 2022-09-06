@@ -7,4 +7,16 @@
 		不同模拟器可能不同。
 	}
 	
+3. 
+	最好用的Android安卓模拟器推荐
+	https://zhuanlan.zhihu.com/p/528817294
+	https://baijiahao.baidu.com/s?id=1714832438105456136&wfr=spider&for=pc
 	
+	3.2 NoxPlayer (夜神模拟器)
+		-->abi,
+		download:
+			https://downloadnox.onl/
+			--更新日志中，含历史版本
+				https://support.yeshen.com/zh-CN/win-release
+		Homepage:
+			https://support.bignox.com/en/
