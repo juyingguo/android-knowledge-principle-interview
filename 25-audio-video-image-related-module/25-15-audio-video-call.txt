@@ -410,9 +410,9 @@
 			https://github.com/BelledonneCommunications/linphone-android
 				-->contain link:wiki
 				-->当前20220904，使用kotlin,无demo。注意：【在tutorials中有单独的demo工程】
-				-->4.3.1 on 25 Sep 2020  b85ce16  zip ->有demo，
+				-->4.3.1 on 25 Sep 2020  b85ce16  zip ->项目可以编译成功，
 				--->androidstdio可以成功编译.#根据提示需要配置ndk(ndk.dir=/ndk-path)
-			
+				--->项目中的demo是独立项目,编译失败，需要参考外层项目maven仓库地址配置。以及linphone-sdk-android版本号。
 			android Linphone-SDK :from our Maven repository.
 				https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
 			tutorials and api
