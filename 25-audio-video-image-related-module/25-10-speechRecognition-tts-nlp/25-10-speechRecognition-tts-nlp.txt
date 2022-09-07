@@ -65,6 +65,9 @@
 			对这些我们不太了解，帮忙给我们参考下吧，谢谢。
 		a2，msc + 软参数配置nlp3.0使用aiui语义技能。
 			如果此时接入麦克风阵列，需要做哪些改动呢？
+		a3,科大麦克风阵列-
+			芯片性能参考：https://www.yuque.com/iflyaiui/zzoolv/onq68e
+				-->含科大aiui全套文档
 
 7. 回声消除
 	7.1 echo cancellation

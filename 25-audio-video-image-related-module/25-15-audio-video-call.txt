@@ -407,21 +407,44 @@
 		https://blog.csdn.net/u011077027/article/details/86225524
 3. linphone
 	3.0 
-		https://github.com/BelledonneCommunications/linphone-android
-			-->contain link:wiki
-			-->当前20220904，使用kotlin,无demo
-			-->4.3.1 on 25 Sep 2020  b85ce16  zip ->有demo，
-			--->androidstdio可以成功编译.#根据提示需要配置ndk(ndk.dir=/ndk-path)
-		
-		android Linphone-SDK :from our Maven repository.
-			https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
-		tutorials
-			https://gitlab.linphone.org/BC/public/tutorials
-		linphone-sdk/：
-			https://gitlab.linphone.org/BC/public/linphone-sdk/
+			https://github.com/BelledonneCommunications/linphone-android
+				-->contain link:wiki
+				-->当前20220904，使用kotlin,无demo。注意：【在tutorials中有单独的demo工程】
+				-->4.3.1 on 25 Sep 2020  b85ce16  zip ->有demo，
+				--->androidstdio可以成功编译.#根据提示需要配置ndk(ndk.dir=/ndk-path)
+			
+			android Linphone-SDK :from our Maven repository.
+				https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
+			tutorials and api
+				https://gitlab.linphone.org/BC/public/tutorials
+				-->demo作为了独立工程
+			linphone-sdk/：
+				https://gitlab.linphone.org/BC/public/linphone-sdk/
+				
+				-->gradle引入sdk具体版本
+				-版本号也可以通过tag查看，提示找不到。
+				--通过下载链接处查看
+					https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
+					#如：4.2-41-g26f71b5/
+			technical_corner：
+				-->Source code:
+				https://www.linphone.org/technical-corner/linphone?qt-technical_corner=2#qt-technical_corner
+			developer wiki:
+				https://wiki.linphone.org/xwiki/wiki/public/view/Linphone/
+			Flexisip:
+			
+			Liblinphone:
+			
+			linphone free SIP service:
+				-->https://subscribe.linphone.org/
+				-->[create an account]
+			
+			
 		3.0.2 可以编译通过
 			https://github.com/zhanggx/linphone-android
-		
+		3.0.3 云呼叫中心
+			接入了sip，linphone配置流程
+			https://help.aliyun.com/document_detail/408200.htm
 	3.1 基于Linux开源VOIP系统LinPhone[一]
 		https://blog.csdn.net/wavemcu/article/details/8544185
 	
@@ -450,6 +473,12 @@
 	3.8 音视频通话：​Linphone基于SIP协议的语音视频电话软件 
 		https://www.haolizi.net/example/view_295628.html
 		[好例子网下载]
+	3.9 Sip服务器搭建全过程
+		https://www.likecs.com/show-203985216.html
+		
+		linphone free SIP service
+	3.10 Linphone软电话APP怎么使用的说明书
+		http://www.jian-jie.com/a/jszc/faq/2021/0326/Linphone-app-android-ios.html
 4. CsipSimple
 	4.1 二次开发封装CsipSimple(附Demo)真的是福利
 		https://blog.csdn.net/xu404741377/article/details/78982803
