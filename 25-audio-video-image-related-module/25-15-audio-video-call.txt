@@ -418,21 +418,30 @@
 			tutorials and api
 				https://gitlab.linphone.org/BC/public/tutorials
 				-->demo作为了独立工程
+				--》https://gitlab.linphone.org/BC/public/tutorials/-/tree/master/android/kotlin/5-BasicChat
+					file transfer：you can get it's source code and deploy your own
+					link:[https://gitlab.linphone.org/BC/public/flexisip-http-file-transfer-server]
 			linphone-sdk/：
 				https://gitlab.linphone.org/BC/public/linphone-sdk/
 				
 				-->gradle引入sdk具体版本
-				-版本号也可以通过tag查看，提示找不到。
+				-版本号也可以通过tag查看，提示找不到。【通过tag是不准确的，可能仓库中的和这个tag版本不一致】
 				--通过下载链接处查看
 					https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
 					#如：4.2-41-g26f71b5/
+					
+					#低版本4.4之前没有source.jar,下载linphone-sdk-android-4.2-131-g45180ef.aar，重命名为jar后解压得到的class.jar非源码 //aar非源码
+					#可以在github仓库下载相近版本的tag。【待进一步验证】
+					#可以试试在发布的maven仓库下载相近版本的源码库。【可行】
 			technical_corner：
 				-->Source code:
 				https://www.linphone.org/technical-corner/linphone?qt-technical_corner=2#qt-technical_corner
 			developer wiki:
 				https://wiki.linphone.org/xwiki/wiki/public/view/Linphone/
 			Flexisip:
-			
+				--》https://wiki.linphone.org/xwiki/wiki/public/view/Flexisip/1.%20Installation/
+				#Flexisip's underlying SIP stack is a forked version of sofia-sip
+				#sofia-sip：{http://sofia-sip.sourceforge.net/}
 			Liblinphone:
 			
 			linphone free SIP service:

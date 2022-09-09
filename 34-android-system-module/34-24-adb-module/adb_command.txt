@@ -146,8 +146,13 @@
 		adb root 
 		adb remount
 		adb shell 
-		cd /system/app/ 
-		rm -rf IbotnLauncher 
+			cd /system/app/ 
+			rm -rf IbotnLauncher 
+			
+			rm -rf  [需要删除应用的文件夹]
+				-->exit
+		adb reboot 	#卸载系统的apk后。执行：adb reboot .才可以安装apk
+		
 	2.11 操作数据库
 		/data/data/com.android.providers.settings/databases
 		qlite3  settings.db 

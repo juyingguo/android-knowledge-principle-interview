@@ -8,6 +8,9 @@
 一、音频格式。
 	1.1、MP3和WAV文件有什么区别？
 		https://zhidao.baidu.com/question/510351.html
+	1.2 pcm
+		原始音频数据。
+		-->可以使用[cool edit pro]播放。
 二、Android音视频开发
 	2.1、Android音视频开发详解
 		https://blog.csdn.net/ywl5320/article/details/80335290

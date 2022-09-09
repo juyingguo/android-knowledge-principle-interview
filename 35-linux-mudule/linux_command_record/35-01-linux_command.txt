@@ -270,6 +270,15 @@
 		9 (KILL)：杀死一个进程。
 		15 (TERM)：正常停止一个进程。
 	7.4 reboot
+		$ reboot
+			reboot: Need to be root
+			->没有真正执行
+		$ sudo reboot
+			[sudo] password for bui 1der :
+			Broadcast message from user-x@build-x
+			(/dev/pts/8) at 9:18
+			The_ system is going down for reboot NOW!
+
 	7.5  free命令。
 		free指令会显示内存的使用情况，包括实体内存，虚拟的交换文件内存，共享内存区段，以及系统核心使用的缓冲区等。
 		free [-bkmotV][-s <间隔秒数>]

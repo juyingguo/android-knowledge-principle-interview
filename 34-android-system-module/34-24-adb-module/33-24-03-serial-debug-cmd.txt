@@ -1,0 +1,11 @@
+echo 1 > /sys/monitor/usb_port/config/idpin_debug
+echo 1 > /sys/monitor/usb_port/config/vbus_debug
+
+echo 1 > /sys/monitor/usb_port/config/idpin_debug
+echo 1 > /sys/monitor/usb_port/config/vbus_debug
+
+
+echo 1 > /sys/monitor/usb_port/config/idpin_debug
+echo 1 > /sys/monitor/usb_port/config/vbus_debug
+
+
