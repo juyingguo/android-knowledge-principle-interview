@@ -41,6 +41,13 @@
 		《即时消息技术剖析与实战》
 	1.6 MobileIMSDK
 		to->[10]
+	1.7 开源授权的即时通讯
+		
+		酷信即时通讯：授权源代码
+		52IM，授权源代码
+	1.8 Messenger
+		https://github.com/relatedcode/Messenger
+		https://github.com/signalapp/Signal-Android
 2. 关于QQ使用协议的那点事
 	https://blog.csdn.net/qq_41321905/article/details/105670258  
 	

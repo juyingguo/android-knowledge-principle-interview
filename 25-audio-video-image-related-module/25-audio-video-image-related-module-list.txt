@@ -45,7 +45,19 @@
 			此项目是 Google 提供的一个非官方的项目，它的侧重点在于将 OpenGL 与 Android 音视频 API 综合运用。
 			}
 	2.6 18个实时音视频开发中会用到开源项目
-		https://juejin.cn/post/6844903606559195149
+			https://juejin.cn/post/6844903606559195149
+		
+		18个实时音视频开发中会用到开源项目
+			https://blog.csdn.net/liuweihui521/article/details/95476484
+			
+		Livekit-开源实时音视频基础设施介绍
+			https://zhuanlan.zhihu.com/p/474130496
+		36款开源的经典音视频项目
+			https://blog.csdn.net/fanyun_01/article/details/121631221
+			
+		有哪些比较好开源音视频软件可以使用？
+			https://www.zhihu.com/question/264739562/answer/2630134231
+			https://www.zhihu.com/question/264739562?utm_id=0
 	2.7 谈谈对Android音视频开发的探究
 		https://juejin.cn/post/7080043506223448072
 		

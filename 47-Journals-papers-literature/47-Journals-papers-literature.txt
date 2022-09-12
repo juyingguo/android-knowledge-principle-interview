@@ -65,7 +65,44 @@
 			进行搜索，如url,doi。
 			如提示chrome浏览器搜索时，安装插件sci-hub，可以直接搜索文本，添加插件后就可直接输入文本搜索了。给力！！
 			
-	
+	4.2 中国科技云通行证
+		技巧1：利用中国科技云通行证登录IEEE Xplore下载论文
+		https://www.likecs.com/show-204488631.html
+		#https://passport.escience.cn/login
+		
+		{发现已通过中科院账号登录IEEE Xplore，可以愉快地“嗑盐”了。}
+		
+		支持应用：
+		{
+		Web of Science
+		ScienceDirect
+		IEEE Xplore
+			-->技术资料多
+		'Digital Library
+		loPscience
+		ProQuest
+		CAMBRIDGE . UNIVERSITY PRESS
+		SpringerLink
+			-->技术资料多
+		CnKi中国知网
+			www.cnki.net
+		BioOne CAREER CENTER
+		Taylors Francis Online
+		Wiley Online Library
+		Scopus
+		REAXYS
+		OSA Publishing CHINA
+		ACS Publications			
+			Most Trusted. Most Cited. Most Read.
+		AR
+		fBritannica' ACADEMIC
+		jove 
+		}
+		新增应用接入：
+			如ieeexplore：
+			https://ieeexplore.ieee.org
+			回调地址
+			https://ieeexplore.ieee.org/callback
 5 论文的DOI号是什么意思
 	http://blog.sciencenet.cn/home.php?mod=space&uid=1339458&do=blog&id=1090718 
 	doi的全称是“digital object identifier”，数字对象唯一标识，被喻为“互联网上的条形码”、“科技论文的身份证”，通过它可以方便、可靠地链接到论文全文。doi代码具有唯一性，这种特性保证了在网络环境下对数字化对象的准确提取，有效地避免重复。

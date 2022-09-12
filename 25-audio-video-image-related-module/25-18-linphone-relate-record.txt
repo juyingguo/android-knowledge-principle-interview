@@ -1,0 +1,126 @@
+1.linphone
+	所有工程位于gitlab,其余都是克隆的镜像，比如github
+2.
+3.
+	3.0 
+		https://github.com/BelledonneCommunications/linphone-android
+			-->contain link:wiki
+			-->当前20220904，使用kotlin,无demo。注意：【在tutorials中有单独的demo工程】
+			-->4.3.1 on 25 Sep 2020  b85ce16  zip ->项目可以编译成功，
+			--->androidstdio可以成功编译.#根据提示需要配置ndk(ndk.dir=/ndk-path)
+			--->项目中的demo是独立项目,编译失败，需要参考外层项目maven仓库地址配置。以及linphone-sdk-android版本号。
+		android Linphone-SDK :from our Maven repository.
+			https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
+		tutorials and api
+			https://gitlab.linphone.org/BC/public/tutorials
+			-->demo作为了独立工程
+			--》https://gitlab.linphone.org/BC/public/tutorials/-/tree/master/android/kotlin/5-BasicChat
+				file transfer：you can get it's source code and deploy your own
+				link:[https://gitlab.linphone.org/BC/public/flexisip-http-file-transfer-server]
+		linphone-sdk/：
+			https://gitlab.linphone.org/BC/public/linphone-sdk/
+			
+			-->gradle引入sdk具体版本
+			-版本号也可以通过tag查看，提示找不到。【通过tag是不准确的，可能仓库中的和这个tag版本不一致】
+			--通过下载链接处查看
+				https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
+				#如：4.2-41-g26f71b5/
+				
+				#低版本4.4之前没有source.jar,下载linphone-sdk-android-4.2-131-g45180ef.aar，重命名为jar后解压得到的class.jar非源码 //aar非源码
+				#可以在github仓库下载相近版本的tag。【待进一步验证】
+				#可以试试在发布的maven仓库下载相近版本的源码库。【可行】
+		technical_corner：
+			-->Source code:
+			https://www.linphone.org/technical-corner/linphone?qt-technical_corner=2#qt-technical_corner
+		developer wiki:
+			https://wiki.linphone.org/xwiki/wiki/public/view/Linphone/
+		Flexisip:
+			--》https://wiki.linphone.org/xwiki/wiki/public/view/Flexisip/1.%20Installation/
+			#Flexisip's underlying SIP stack is a forked version of sofia-sip
+			#sofia-sip：{http://sofia-sip.sourceforge.net/}
+		Liblinphone:
+		
+		linphone free SIP service:
+			-->https://subscribe.linphone.org/
+			-->[create an account]
+			
+			
+		3.0.2 可以编译通过
+			https://github.com/zhanggx/linphone-android
+		3.0.3 云呼叫中心
+			接入了sip，linphone配置流程
+			https://help.aliyun.com/document_detail/408200.htm
+	3.1 基于Linux开源VOIP系统LinPhone[一]
+		https://blog.csdn.net/wavemcu/article/details/8544185
+	
+	3.2 linphone-android二次开发
+		https://blog.csdn.net/xiao_nian/article/details/85623259
+		
+	3.3 基于linphone android sdk 的voip语音、视频通话 教程一、注册
+		https://blog.csdn.net/Java_lilin/article/details/80539116?utm_source=blogxgwz7
+		
+	3.4 Android上试用Linphone(Free SIP VOIP Client)
+		https://blog.csdn.net/iteye_3854/article/details/82005212
+		
+	3.5 ubuntu下linphone-android编译过程
+		https://blog.csdn.net/ddddffffggggg/article/details/79724458
+	
+	3.6 安卓Linphone探究
+		https://blog.csdn.net/u012812482/category_9266190.html
+		
+	3.7 Linphone安卓端移植和开发（1）
+		https://blog.csdn.net/u011077027/article/details/80379763
+		
+		如需要详细语音通话和视频通话，请入群：601332720
+		
+		Linphone安卓端移植和开发（2）服务器端的搭建
+			https://blog.csdn.net/u011077027/article/details/84620440
+	3.8 音视频通话：​Linphone基于SIP协议的语音视频电话软件 
+		https://www.haolizi.net/example/view_295628.html
+		[好例子网下载]
+	3.9 Sip服务器搭建全过程
+		https://www.likecs.com/show-203985216.html
+		
+		linphone free SIP service
+	3.10 Linphone软电话APP怎么使用的说明书
+		http://www.jian-jie.com/a/jszc/faq/2021/0326/Linphone-app-android-ios.html
+4. linphone-android-4.3.1
+	demo,linlibphone-sdk：4.4.36+
+	org.linphone.core.FactoryImpl实例中加载so文件
+	
+	从gitlab，clone下来,含有子模块，需要加上--recursive；
+	git clone  https://gitlab.linphone.org/BC/public/linphone-sdk.git --recursive
+	更新或切换分支后需要：
+	git submodule update --init --recursive
+	切换分支，更新后，整个代码压缩,.git文件夹不压缩。
+	tar -zcvf linphone-sdk-release-4.5.tar.gz --exclude=.git ./
+	
+	linphone\libs\gitlab\ziJiYaSuo\linphone-sdk-release-4.5\liblinphone\coreapi\help\examples
+	
+5. linphone代码分析
+	https://blog.csdn.net/disikj/article/details/80548327
+	
+	Linphone探索：1 . Linphone官方源码探究
+		https://blog.csdn.net/u012812482/article/details/51491226?
+	linphone开源代码开发总结
+		https://blog.csdn.net/liu_xiao_cheng/article/details/43017383?
+	搜索关键字：
+	Linphone - SDK source code analysis	
+	Linphone architecture analysis
+		linphone源码分析----初始化部分
+		https://blog.csdn.net/A493203176/article/details/78974016
+		
+	修改linphone-sdk-android-第一篇
+	修改linphone-sdk-android-第二篇
+	修改linphone-sdk-android-第三篇
+	https://www.jianshu.com/p/173c0b0469a2
+	Linphone Architecture and functional Analysis _linphone
+		https://topic.alibabacloud.com/a/linphone-architecture-and-functional-analysis-_linphone_8_8_20291184.html
+	Linphone architecture analysis and research
+		https://blog.fearcat.in/a?ID=00450-8896d238-d742-4439-8f09-e6062fe55d9f
+		
+		#含系统运行框图
+	Design and Implementation of a VoIP Broadcasting Service over Embedded Systems in a Heterogeneous Network Environment
+		https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4181783/
+		
+		#[Section 2],to [Section 6]

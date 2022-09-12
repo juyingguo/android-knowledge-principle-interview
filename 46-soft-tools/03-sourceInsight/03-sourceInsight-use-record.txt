@@ -44,7 +44,12 @@
 			http://www.cqyy.net/360/2022/0316/106114.html
 			
 			含禁止联网设置。{可以对比下。}
-		}		
+		}
+		01.3.6
+			20220911,以上方法无效了。
+		01.3.7 sourceInsight4 完美破解
+			source insight4.0破解版下载及使用方法
+			https://blog.csdn.net/ych9527/article/details/114324451
 			
 1. source insight 有些格式的文件被过滤掉了 
 	1.1 、Source Insight中的文件过滤器
