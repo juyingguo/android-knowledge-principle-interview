@@ -104,7 +104,8 @@
 				{宏之博软件/宏之博HZB教务系统-教培行业ERP:
 				 是一套纯springboot+mysql+vue+uniapp微服务项目}
 				{季圣华 / 华夏ERP:https://gitee.com/jishenghua/JSH_ERP}
-			
+				{Odoo}免费开源
+					--》https://github.com/odoo/odoo
 			MarkdownEditors-master.zip
 			2021/5/2114:42
 			

@@ -430,7 +430,19 @@
 5. Sip服务器搭建全过程(Linphone拨号)
 	https://blog.csdn.net/qq_38631503/article/details/80005454
 	
-6.我使用的服务器是Freeswitch
+	5.2 Kamailio - 开源 SIP 服务器
+		Kamailio中文站
+		http://www.kamailio.org.cn/
+		
+		{Kamailio是一个开源的SIP服务器，主要用作SIP代理服务器、注册服务器等。以GPLv2发布。
+		它可以支持每秒钟成千上万的呼叫建立和释放（高CAPS，Call Attempt Per Second），
+		可用于构建大型的VoIP实时通信服务——音视频通信、状态呈现（Presence）、WebRTC、实时消息等；
+		也可以构建易扩容的SIP-to-PSTN网关、IP-PBX系统以及连接Asterisk™、FreeSWITCH™、SEMS等。}
+	5.3 Opensips
+		
+		Kamailio/OpenSIPS学习笔记-九大核心模块和进程配置
+		http://www.ctiforum.com/news/guonei/528844.html
+6.
 
 7. OpenMeetings是一个开源的视频会议软件。
 	https://blog.csdn.net/yufeng1108/article/details/8892215
@@ -468,11 +480,31 @@
 		主要借鉴于开源项目 https://github.com/liuqm/Android-VideoChat-master 学习的相关知识，很是感谢大神的贡献，因此本人从开源社区学习，也回馈开源社区日志
 	}
 10.freeswitch
-	freeSWITCH 视频通话
-	https://blog.51cto.com/990487026/1940685
-	{本实验基于CentOS 6 源码编译安装FreeSWITCH}
-	-->视频通话1：两个安装了linphone的安卓手机
-	---->两者视频通话。
-	-->视频通话2：两台启动了eyeBeam 的win7 带摄像头的物理机
-	---->两者视频通话。
-	
+	10.0 
+		FreeSWITCH中文站
+		http://www.freeswitch.org.cn/
+		
+		官方网站是：https://www.freeswitch.com
+		
+		什么是FreeSWITCH？
+		http://www.freeswitch.org.cn/blog/2009/11/what-is-FreeSWITCH/
+	10.1 freeSWITCH 视频通话
+		https://blog.51cto.com/990487026/1940685
+		{本实验基于CentOS 6 源码编译安装FreeSWITCH}
+		-->视频通话1：两个安装了linphone的安卓手机
+		---->两者视频通话。
+		-->视频通话2：两台启动了eyeBeam 的win7 带摄像头的物理机
+		---->两者视频通话。
+	10.2 好例子网_FreeSWITCH简要使用教程V1.1
+		[已下载]
+	10.3 
+		《FreeSWITCH 权威指南》
+		《FreeSWITCH VoIP实战》
+		《FreeSWITCH文集》
+		《FreeSWITCH互联互通》
+		《FreeSWITCH Wireshark》
+		《FreeSWITCH实例解析》
+		《FreeSWITCH源代码分析》
+	10.4 Kamailio+Freeswitch二次环境搭建及验证
+		http://it3q.com/article/148
+		

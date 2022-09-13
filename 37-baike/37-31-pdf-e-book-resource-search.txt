@@ -14,7 +14,7 @@
 		a1,亚马逊
 			https://www.amazon.cn/s?k=webrtc&i=digital-text&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=JFUN96CDWRVC&sprefix=webrtc%2Cdigital-text%2C93&ref=nb_sb_noss_1
 		a2. 搬书匠
-			http://www.banshujiang.cn/e_books/search/page/1?searchWords=web
+			http://www.banshujiang.cn/
 		a3. 鸠摩搜书
 			https://www.jiumodiary.com/
 			

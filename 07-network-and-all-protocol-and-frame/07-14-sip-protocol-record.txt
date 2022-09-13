@@ -1,0 +1,28 @@
+1.
+	官方指导文档参考：https://datatracker.ietf.org/doc/html/rfc3428
+	
+2.会话初始协议---SIP协议【详解】
+	https://blog.csdn.net/Chiang2018/article/details/122752294
+	{一、SIP协议简介
+		会话发起协议（SIP，Session Initiation Protocol）是在VoIP技术中使用的最常见的协议之一，用于控制发起、修改、终结交互式多媒体会话的信令协议。它是一种应用层协议，与其他应用层协议协同工作，以控制Internet上的多媒体通信会话。
+
+		官方指导文档参考：https://datatracker.ietf.org/doc/html/rfc3428
+		————————————————}
+	https://blog.csdn.net/huangyifei_1111/article/details/122865544?
+3. sip书籍，期刊等
+	3.1 SIP會談初始化協議操典- 賈文康- Google Books
+		在google上才可以搜索到。
+		
+		《sip 會談初始化協議操典。》- 《sip会谈初始化协议操典》
+		
+	
+	3.2 VOIP技术构架（第二版）.pdf 
+	
+	3.3 SIP协议RF3261中文文档
+		sip协议详解中文版
+	3.4 中国国家图书馆，有sip相关的期刊论文。
+		a1,SIP协议在VoIP网关中的应用
+			
+4.sip项目
+	基于SIP协议的聊天室完整源程序（客户端+服务器）#好例子网
+		
