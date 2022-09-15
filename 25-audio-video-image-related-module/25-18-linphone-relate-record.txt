@@ -124,3 +124,11 @@
 		https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4181783/
 		
 		#[Section 2],to [Section 6]
+6. 官方项目调试分析
+	linphone-android-4.3.1
+	包名：org.linphone
+	生成的debug版的apk的包名为：如何更改的包名？
+	org.linphone.debug/org.linphone.assistant.MenuAssistantActivity}
+	
+	提示用户设置白名单：
+		提示app使用push notification 以便在后台允许时能接收电话呼叫和消息

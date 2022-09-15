@@ -43,3 +43,20 @@
 	6.1 
 		本书的源代码可以从出版商的网站www.manning.com/books/netty-in-action以及GitHub的项目地址
 		https://github.com/normanmaurer/netty-in-action
+	10.4
+		10.4.1 抽象类 ByteToMessageCodec
+			#基于 Netty 的 SMTP/LMTP 客户端项目中（https://github.com/normanmaurer/niosmtp）
+	11.1 通过 SSL/TLS 保护 Netty 应用程序
+		#传输层安全（TLS）协议， 1.2 版： http://tools.ietf.org/html/rfc5246。
+		#为了支持 SSL/TLS， Java 提供了 javax.net.ssl 包，它的 SSLContext 和 SSLEngine
+			类使得实现解密和加密相当简单直接。 
+		#Netty 还提供了使用 OpenSSL 工具包（www.openssl.org）的 SSLEngine 实现
+		#有关配置 OpenSSL 支持的详细说明，参见 Netty 文档：
+			http://netty.io/wiki/forked-tomcat-native.html#wikih2-1
+	11.2.5 WebSocket
+		① Comet 就是一个例子： http://en.wikipedia.org/wiki/Comet_%28programming%29。
+		② RFC 6455， WebSocket 协议， http://tools.ietf.org/html/rfc6455。
+			新地址：https://www.rfc-editor.org/rfc/rfc6455
+		
+		① 关于 WebSocket的客户端示例，请参考 Netty源代码中所包含的例子：https://github.com/netty/netty/tree/4.1/
+			example/src/main/java/io/netty/example/http/websocketx/client。

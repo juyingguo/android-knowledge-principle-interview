@@ -1,4 +1,41 @@
 1.
+	1.2 资料
+		200G技术视频、电子书资料
+		链接：https://pan.baidu.com/s/1H56dMWGZJJR5Cs4488kXcQ 
+		提取码：2dug
+
+		Redis核心知识整理：
+		https://www.processon.com/view/link/624d3b9a5653bb5d058aad1a
+		Kafka核心知识整理：
+		https://www.processon.com/view/link/624d3c2bf346fb57dbebfd1b
+		RocketMQ核心知识原理整理（vs RabbitMQ vs Kafka）：
+		https://www.processon.com/view/link/62036c821efad479c084b4e4
+		并发编程：
+		https://www.processon.com/view/link/61d5061e07912973ef0b3755
+		订单中心业务知识点整理：
+		https://www.processon.com/view/link/624d39d91efad40756e58623
+		计算机网络核心知识整理：
+		https://www.processon.com/view/link/624d39fa637689075c5d20da
+		接口性能优化思路：
+		https://www.processon.com/view/link/624d3a3fe401fd070dda4a3f
+		Dubbo核心知识整理：
+		https://www.processon.com/view/link/624d3a791e08533f071808d7
+		ElasticSearch核心知识整理：
+		https://www.processon.com/view/link/624d3a95079129641e41248e
+		IO：
+		https://www.processon.com/view/link/624d3ab61efad40756e58c53
+		JVM调优和垃圾回收核心知识整理：
+		https://www.processon.com/view/link/61ea7c29f346fb06e1462d58
+		MongoDB核心知识整理：
+		https://www.processon.com/view/link/624d3ae9079129641e4126ad
+		Mybatis核心知识整理：
+		https://www.processon.com/view/link/624d3b06f346fb57dbebf613
+		Netty核心知识整理：
+		https://www.processon.com/view/link/622ea4e81efad407e98f6543
+		Spring核心知识整理：
+		https://www.processon.com/view/link/624d3b48f346fb57dbebf798
+		Zookeeper核心知识整理：
+		https://www.processon.com/view/link/624d3b577d9c0807247cf380
 2.Spring Boot
 	to see {33-18-springboot-record.txt}
 		

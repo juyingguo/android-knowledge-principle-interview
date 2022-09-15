@@ -22,6 +22,8 @@
 		
 		Google Talk
 		Linphone
+	0.1.5 IP电话
+		https://upimg.baike.so.com/doc/1885485-1994851.html
 		
 一、开发一套视频通话，需要哪些知识？
 	1.1、 Android 实现视频通话
@@ -488,6 +490,10 @@
 		
 		什么是FreeSWITCH？
 		http://www.freeswitch.org.cn/blog/2009/11/what-is-FreeSWITCH/
+		
+		FreeSwitch基础知识
+			https://blog.csdn.net/znb769525443/article/details/121320216
+			【功能概况简介】
 	10.1 freeSWITCH 视频通话
 		https://blog.51cto.com/990487026/1940685
 		{本实验基于CentOS 6 源码编译安装FreeSWITCH}

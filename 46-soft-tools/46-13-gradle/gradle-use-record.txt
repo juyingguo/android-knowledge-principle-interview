@@ -55,3 +55,12 @@
 		2.1.1 
 			C:\Users\Administrator\.gradle\daemon\2.4
 			下的日志文件daemon-3976.out.log
+6. Gradle 提示与诀窍 | Android 开发者 | Android Developers
+	https://developer.android.google.cn/studio/build/gradle-tips
+	
+	6.2 配置 Build
+		https://developer.android.google.cn/studio/build
+	
+	编写gradle没有代码提示
+	androidstudio安装插件：（搜索：gradle）
+	Gradle Dependencies Helper

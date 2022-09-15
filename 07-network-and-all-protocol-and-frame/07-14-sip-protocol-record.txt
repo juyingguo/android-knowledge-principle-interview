@@ -22,7 +22,21 @@
 		sip协议详解中文版
 	3.4 中国国家图书馆，有sip相关的期刊论文。
 		a1,SIP协议在VoIP网关中的应用
-			
+	3.5 sip协议相关书籍推荐
+		《SIP协议及其应用》(张智江 等编著)
+		《sip揭秘,SIP经典书籍(中文版)》
+			https://download.csdn.net/download/xuwening/2859039?
+			[已下载]
+		学习SIP的几本书
+			https://blog.csdn.net/voip3261/article/details/10270825
+			{学习SIP的几本书
+
+			1. RFC 3261
+
+			2. Understanding.the.Session.Initiation.Protocol.Third.Edition
+
+			3.The+IMS+IP+Multimedia+Concepts+and+Services+3rd+Edition
+			————————————————}
 4.sip项目
 	基于SIP协议的聊天室完整源程序（客户端+服务器）#好例子网
 		

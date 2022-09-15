@@ -1,20 +1,24 @@
-1. RTP/UDP/IP ´«ÊäÁ÷³Ì
+0. 
+	ietf ref:
+	https://www.rfc-editor.org/rfc/rfc3261
+	
+1. RTP/UDP/IP ä¼ è¾“æµç¨‹
 	https://www.cnblogs.com/welen/articles/5033675.html
 	
-	RTPÊÇ»ùÓÚ UDPÐ­ÒéµÄ£¬ UDP²»ÓÃ½¨Á¢Á¬½Ó£¬Ð§ÂÊ¸ü¸ß£»µ«ÔÊÐí¶ª°ü£¬ Õâ¾ÍÒªÇóÔÚÖØÐÂ×é×°Ã½ÌåµÄÊ±ºò¶à×öÐ©¹¤×÷
+	RTPæ˜¯åŸºäºŽ UDPåè®®çš„ï¼Œ UDPä¸ç”¨å»ºç«‹è¿žæŽ¥ï¼Œæ•ˆçŽ‡æ›´é«˜ï¼›ä½†å…è®¸ä¸¢åŒ…ï¼Œ è¿™å°±è¦æ±‚åœ¨é‡æ–°ç»„è£…åª’ä½“çš„æ—¶å€™å¤šåšäº›å·¥ä½œ
 
-	RTPÖ»ÊÇ°ü¹üÄÚÈÝÐÅÏ¢£¬¶øRTCPÊÇ½»»»¿ØÖÆÐÅÏ¢µÄ£¬QosÊÇÍ¨¹ýRTCPÊµÏÖµÄ
+	RTPåªæ˜¯åŒ…è£¹å†…å®¹ä¿¡æ¯ï¼Œè€ŒRTCPæ˜¯äº¤æ¢æŽ§åˆ¶ä¿¡æ¯çš„ï¼ŒQosæ˜¯é€šè¿‡RTCPå®žçŽ°çš„
 
-	RTPÖÐÒ»¸öÖØÒªµÄ¸ÅÄîÊÇ session, ¶ÔÓÚÒ»¸ö audio stream ¿ÉÒÔÊÇÒ»¸ösession µ«¿ÉÒÔÓÐ¶à¸ö contributor, Ò²¿ÉÒÔÓÐ¶à¸ö¼àÌýÕß, ±ÈÈçÍøÂçµç»°
+	RTPä¸­ä¸€ä¸ªé‡è¦çš„æ¦‚å¿µæ˜¯ session, å¯¹äºŽä¸€ä¸ª audio stream å¯ä»¥æ˜¯ä¸€ä¸ªsession ä½†å¯ä»¥æœ‰å¤šä¸ª contributor, ä¹Ÿå¯ä»¥æœ‰å¤šä¸ªç›‘å¬è€…, æ¯”å¦‚ç½‘ç»œç”µè¯
 
 
-	×öÊµÊ±ÊÓÆµÁ÷£¬ÏÈÓÃ²É¼¯Éè±¸£¬Ö±½Ó°ÑÊÓÆµ×ö³É H.264 µÄ NALu,¶øºóÍ¨¹ý RTP´ò°ü£¬´«Êä¸ø¿Í»§¶Ë
+	åšå®žæ—¶è§†é¢‘æµï¼Œå…ˆç”¨é‡‡é›†è®¾å¤‡ï¼Œç›´æŽ¥æŠŠè§†é¢‘åšæˆ H.264 çš„ NALu,è€ŒåŽé€šè¿‡ RTPæ‰“åŒ…ï¼Œä¼ è¾“ç»™å®¢æˆ·ç«¯
 
-	ÓÐÒ»ÆªÎÄ¾ÍÊÇ½éÉÜÈçºÎ°Ñ NALu ÓÃRTP´ò°üµÄ
+	æœ‰ä¸€ç¯‡æ–‡å°±æ˜¯ä»‹ç»å¦‚ä½•æŠŠ NALu ç”¨RTPæ‰“åŒ…çš„
 
 	http://www.rosoo.net/a/201108/14896.html
 	
-2. UDP/IP´«ÊäÐ­Òé
+2. UDP/IPä¼ è¾“åè®®
 	https://blog.csdn.net/weixin_40877615/article/details/94206693 
 3. ssh
 	https://baike.baidu.com/item/ssh/10407?fr=aladdin
