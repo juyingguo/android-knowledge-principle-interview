@@ -337,6 +337,11 @@
 				maven { url 'https://jitpack.io' }
 			}
 		}
+		
+		maven仓库，阿里云镜像地址：
+			maven { url 'https://maven.aliyun.com/repository/google' }
+			maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+			maven { url 'https://jitpack.io' }
 	14.2 指定名称生成apk.
 		ERROR: Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated
 		https://www.cnblogs.com/tangZH/p/10764568.html 

@@ -120,6 +120,21 @@
 		a4,接入麦克风阵列。
 			msc + 软参数配置nlp3.0使用aiui语义技能。
 			如何获取声音角度？
+			
+		a5，需要购买硬件支持才可以吗？
+			IVW_CHANNEL_NUM
+			libaimic.so
+			libaimic.so 与硬件的密钥一致方可正常使用
+			
+			 AUDIO_SOURCE
+				在使用 AIMIC 方式( -3 )下（仅唤醒下有效），SDK通过麦克风硬件录音。需要购买硬件支持。
+				此时SDK需要使用 alsa 的 so 文件（一般命名为 libalsa-jni.so）， 
+				且当 Msc.jar 不包含 alsa 的类时（默认不包含）， 应用工程中，还需要包含 alsa 的 jar 文件（一般命名为 alsarecorder.jar）；
+				否则 msc.jar 将因无法使用 alsa 录音而报错。 
+				另参考IVW_ALSA_CARD, IVW_ALSA_RATE 关于录音设备参数说明。
+			IVW_ALSA_CARD
+			IVW_ALSA_RATE
+			
 11，电视语音遥控棒
 	电视果5s PLUS 蓝牙智能语音遥控棒
 	
@@ -152,6 +167,10 @@
 	http://bbs.xfyun.cn/thread/38517
 	https://aiui.xfyun.cn/doc/aiui/7_faq/
 	
+	
+	AIUI文档中心（官方）：【https://aiui.xfyun.cn/doc/aiui/】
+	AIUI项目对接文档（专门对接人提供）：【https://www.yuque.com/iflyaiui/zzoolv/roc0sr】
+
 15,讯飞开放平台
 	1.我们当前在线项目（msc sdk）软件参数配置nlp，正常使用aiui平台技能。
 	1.2 这个项目如果放在对接科大"麦克风阵列"模组中的系统版上，应该能正常使用语音功能吧？【】
