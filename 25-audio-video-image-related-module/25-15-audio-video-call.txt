@@ -13,7 +13,7 @@
 		J-IM，喧喧，MobileIMSDK，基于mina或netty框架下的推送系统 CIM，跨平台、
 		全开源的即时通讯解决方案 野火IM，
 		即时通讯的聊天系统 oim-fx，等等
-	0.1.4 视频通话软件
+	0.1.4 视频通话软件（基本都含有及时通讯功能）
 		Skype
 			Skype Android版
 			https://skype.gmw.cn/down/skype-for-android.html
@@ -22,6 +22,11 @@
 		
 		Google Talk
 		Linphone
+		
+		ICQ
+		
+		网易泡泡
+		yahoo
 	0.1.5 IP电话
 		https://upimg.baike.so.com/doc/1885485-1994851.html
 		
@@ -262,6 +267,10 @@
 	2.5 webrtc入门与实战视频教程
 		https://edu.csdn.net/course/detail/6029
 		
+		2.5.1 WebRTC 服务端实践
+			https://time.geekbang.org/qconplus/detail/100091332
+			【极客时间】
+		
 	2.6 WebRTC入门教程-声网Agora专栏。
 		2.6.1 WebRTC 入门教程（一）| 搭建WebRTC信令服务器
 			https://juejin.cn/post/6844903840173522958
@@ -422,6 +431,11 @@
 		}
 	2.16 webrtc 快速搭建 视频通话 视频会议 （亲测半个小时搭建成功）
 		https://blog.csdn.net/u011077027/article/details/86225524
+	2.17 从 0 打造音视频直播系统（webrtc）
+		https://time.geekbang.org/column/intro/100031801
+		[极客时间]视频教程
+
+		
 3. linphone
 	单独记录在[25-18-linphone-relate-record.txt]
 4. CsipSimple

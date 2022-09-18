@@ -1,28 +1,43 @@
 1.
-2.	好用的PDF书籍下载网站 个个书籍资源丰富
-	https://zhuanlan.zhihu.com/p/513317158
+2.	好用的PDF及epub等格式书籍下载网站 个个书籍资源丰富
+	2.1 https://zhuanlan.zhihu.com/p/513317158
 	
-	世界最全的计算机所有书籍pdf下载
-	https://www.docin.com/p-937603078.html
+	2.2 世界最全的计算机所有书籍pdf下载
+		https://www.docin.com/p-937603078.html
+	2.3 
+		计算机书籍免费下载（高清带目录完整PDF版）
+		https://www.iamshuaidi.com/753.html
 	
-	计算机书籍免费下载（高清带目录完整PDF版）
-	https://www.iamshuaidi.com/753.html
-	
-	16个高质量网站，让你直接“拥有”世界上几乎所有的书籍！
-	https://zhuanlan.zhihu.com/p/376502491?utm_medium=social&utm_oi=554954120092495872
-	{
-		a1,亚马逊
-			https://www.amazon.cn/s?k=webrtc&i=digital-text&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=JFUN96CDWRVC&sprefix=webrtc%2Cdigital-text%2C93&ref=nb_sb_noss_1
-		a2. 搬书匠
-			http://www.banshujiang.cn/
-		a3. 鸠摩搜书
-			https://www.jiumodiary.com/
-			
-		a4,中国国家图书馆
-			http://www.nlc.cn/
-		a5,书单网
-			https://www.shudan.vip/search.php?keyword=webrtc
-		a6,好例子网
-			https://www.haolizi.net/example/view_224134.html
-	}
+	2.4 16个高质量网站，让你直接“拥有”世界上几乎所有的书籍！
+		https://zhuanlan.zhihu.com/p/376502491?utm_medium=social&utm_oi=554954120092495872
+		
+		[很全]
+		
+	2.5 从以上整理的部分下载网站
+		{
+			a1,亚马逊
+				https://www.amazon.cn/s?k=webrtc&i=digital-text&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=JFUN96CDWRVC&sprefix=webrtc%2Cdigital-text%2C93&ref=nb_sb_noss_1
+				
+				[用于查看书信息即可]
+			a2. 搬书匠
+				http://www.banshujiang.cn/
+			a3. 鸠摩搜书
+				https://www.jiumodiary.com/
+				
+			a4,中国国家图书馆
+				http://www.nlc.cn/
+			a5,书单网
+				https://www.shudan.vip/search.php?keyword=webrtc
+			a6,好例子网
+				https://www.haolizi.net/example/view_224134.html
+				[计算机类，程序]
+			a7,SoBooks——图书宝藏：
+				https://sobooks.cc/
+			a8，书格：
+				https://new.shuge.org/
+				【书格是一个自由开放的在线古籍图书馆】
+			a9,苦瓜书盘：
+				http://www.kgbook.com/
+		}
+	2.6 搜书技巧，这个网站没有，就去另一个搜搜。每个网站书类别不同，侧重点同。
 	
