@@ -48,6 +48,9 @@
 	1.8 Messenger
 		https://github.com/relatedcode/Messenger
 		https://github.com/signalapp/Signal-Android
+		
+	1.9 及时通讯软件产品
+		参考：[25-15-audio-video-call.txt] [0.1.4 视频通话软件（基本都含有及时通讯功能）].
 2. 关于QQ使用协议的那点事
 	https://blog.csdn.net/qq_41321905/article/details/105670258  
 	
