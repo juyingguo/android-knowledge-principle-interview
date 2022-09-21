@@ -142,12 +142,19 @@
 	
 		在build.gradle文件的defaultConfig中添加一下就可以了..
 
+		android节点下defaultConfig节点下添加：
 		jackOptions {
 			enabled true
 		}
 		
 		-source 1.7 中不支持 lambda 表达式
-		
+	
+	3.2 指定sourceCompatibility中java版本
+		子module下build.gradle中android节点下配置
+			compileOptions {
+				sourceCompatibility JavaVersion.VERSION_1_7
+				targetCompatibility JavaVersion.VERSION_1_7
+			}
 4. Android Studio的TODO，FIXME 
 	4.1 Android Studio的TODO，FIXME 
 		https://blog.csdn.net/kaoshibuguaa/article/details/51536992 
@@ -295,7 +302,8 @@
 	3.6 之后同样的位置已找不到Offline的设置选项了。
 	View > Tool Windows > Gradle 
 	
-14 androidstudio 使用gradle构建失败
+14 androidstudio 使用gradle中仓库地址配置。
+	
 	14.1 下载https://maven.google.com/**/support-annotations-25.4.0.jar  
 		提示Connection timed out。
 		
@@ -338,52 +346,25 @@
 			}
 		}
 		
-		maven仓库，阿里云镜像地址：
+		maven仓库，阿里云镜像地址1：
 			maven { url 'https://maven.aliyun.com/repository/google' }
 			maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
 			maven { url 'https://jitpack.io' }
-	14.2 指定名称生成apk.
-		ERROR: Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated
-		https://www.cnblogs.com/tangZH/p/10764568.html 
-		转载请标明出处：https://www.cnblogs.com/tangZH/p/10764568.html
-		
-		Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=debug, filters=[]}} of type com.android.build.gradle.internal.api.ApkVariantOutputImpl.
-		这个在低版本的gradle是行得通的，但是高版本就不行。
-		
-		buildTypes {
-			release {
-				minifyEnabled false
-				proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-				outFileFormat(defaultConfig,"release")
-			}
-		}
-		def releaseTime() {
-			return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
-		}
-		def outFileFormat(defaultConfig, str) {
-			// 自定义APK安装包名
-			android.applicationVariants.all { variant ->
-				variant.outputs.all { output ->
-					def outputFile = output.outputFile
-					if (outputFile != null && outputFile.name.endsWith('.apk')) {
-						def path = "../" + str + "/";
-						def fileName = "IbotnCamera2_${str}_V${defaultConfig.versionName}_${releaseTime()}.apk";
-						outputFileName = new File(path, fileName)
-					}
-				}
-			}
-		}
-15 Project needs to be converted to androidx.* dependencies 	
-	
+			
+			镜像地址2：
+			maven {url "https://maven.aliyun.com/repository/public"}
+			maven {url "https://maven.aliyun.com/repository/google"}
+			google()
+15 Project needs to be converted to androidx.* dependencies 
 	15.1 Android解决Project needs to be converted to androidx.* dependencies问题
 		https://blog.csdn.net/weixin_40420578/article/details/100582094 
 		https://blog.csdn.net/mqdxiaoxiao/article/details/108264547
 		
 		方法一：把整个项目升级到AndroidX,可参考我的另外一篇博客：https://blog.csdn.net/weixin_40420578/article/details/100132061
-	
+
 		android.useAndroidX=true
 		android.enableJetifier=true
-		
+	
 
 16 使用Androidstudio编译AIDL
 
@@ -414,6 +395,62 @@
 	
 	18.2 安装apk时出现错误Failure [INSTALL_FAILED_DEXOPT]问题解决的方法
 		https://www.codeprj.com/blog/45c2871.html
+		
+	18.3 指定名称生成apk.
+		a,ERROR: Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated
+			https://www.cnblogs.com/tangZH/p/10764568.html 
+			转载请标明出处：https://www.cnblogs.com/tangZH/p/10764568.html
+			
+			Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=debug, filters=[]}} of type com.android.build.gradle.internal.api.ApkVariantOutputImpl.
+			这个在低版本的gradle是行得通的，但是高版本就不行。
+			
+			buildTypes {
+				release {
+					minifyEnabled false
+					proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+					outFileFormat(defaultConfig,"release")
+				}
+			}
+			def releaseTime() {
+				return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+			}
+			def outFileFormat(defaultConfig, str) {
+				// 自定义APK安装包名
+				android.applicationVariants.all { variant ->
+					variant.outputs.all { output ->
+						def outputFile = output.outputFile
+						if (outputFile != null && outputFile.name.endsWith('.apk')) {
+							def path = "../" + str + "/";
+							def fileName = "IbotnCamera2_${str}_V${defaultConfig.versionName}_${releaseTime()}.apk";
+							outputFileName = new File(path, fileName)
+						}
+					}
+				}
+			}
+		
+		a2.
+			WARNING: API 'variantOutput.getPackageApplication()' is obsolete and has been replaced with 'variant.getPackageApplicationProvider()'.
+			It will be removed at the end of 2019.
+			For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+			To determine what is calling variantOutput.getPackageApplication(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+	
+			参考：
+			https://www.jianshu.com/p/70ce6017f5f7
+			https://blog.csdn.net/beita08/article/details/95768251
+			
+			/**
+			 * gradle高版本用，如：5.4.1及以上
+			 */
+			def outFileFormat(defaultConfig, str) {
+				// 自定义APK安装包名
+				android.applicationVariants.all { variant ->
+					variant.outputs.all { output ->
+						outputFileName = "ibotnLauncher_${variant.buildType.name}_V${defaultConfig.versionName}_${releaseTime()}.apk"
+					}
+				}
+			}
+
+
 19 avd
 	19.1 android avd设置graphic automatic hardware software gles
 		当设置为automatic启动模拟器失败。
@@ -638,3 +675,75 @@
 	 * create by author on ${DATE},${TIME} <br/>
 	 * description:
 	 */
+43 transformJackWithJackForDebug -D jack.android.min-api-level=21 -D jack.annotation-processor.source.output=
+
+	Execution failed for task ':IbotnLauncher:transformJackWithJackForDebug'.
+	> com.android.build.api.transform.TransformException: com.android.ide.common.process.ProcessException:
+	 Error while executing java process with main class com.android.jack.Main with arguments 
+	{-D jack.dex.optimize=true -D jack.reporter=sdk -D jack.dex.debug.vars=true --classpath
+	
+	
+	jack.import.type.policy=keep-first -D jack.import.resource.policy=keep-first 
+	--multi-dex native -D jack.java.source.version=1.8 --incremental-folder
+
+
+	preJackPackagedLibraries\release\jars\8000\1f\xxx-062c6aaddb2ab67b1bb1f372717f317c2dd1fb1e.jar --import 
+	
+	43.2 科大msc升级，msc-1135-to 1140，原项目IbotnLauncher编译报错：
+		{plugin for gradle:2.3.3,gradle-4.4-all.zip}
+	
+		AGPBI: {"kind":"error","text":"Error converting bytecode to dex:\n
+		Cause: Dex cannot parse version 52 byte code.\n
+		This is caused by library dependencies that have been compiled using Java 8 or above.\n
+		If you are using the \u0027java\u0027 gradle plugin in a library submodule 
+		add \ntargetCompatibility \u003d \u00271.7\u0027\nsourceCompatibility \u003d \u00271.7\u0027\nto that submodule\u0027s build.gradle file.\n...
+		while parsing com/iflytek/cloud/DataDownloader.class","sources":[{}],"original":"PARSE ERROR:\nunsupported class file version 52.0\n...
+		while parsing com/iflytek/cloud/DataDownloader.class\n","tool":"Dex"}
+		
+		AGPBI: {"kind":"error","text":"1 error; aborting","sources":[{}]}
+		
+		* What went wrong:
+		Execution failed for task ':IbotnLauncher:transformClassesWithDexForRelease'.
+		> com.android.build.api.transform.TransformException: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: 
+		java.util.concurrent.ExecutionException: com.android.ide.common.process.ProcessException:
+		Error while executing java process with main class com.android.dx.command.Main with arguments {--dex --num-threads=4 --multi-dex 
+		--output D:\juying\as1_5project\ibotnsvn\IbotnLauncher_AS_NEWUI\IbotnLauncher\build\intermediates\transforms\dex\release\folders\1000\2\Msc_d25bc84c75a3441e039ea21d2ed4e46f7bf60cfc 
+		D:\juying\as1_5project\ibotnsvn\IbotnLauncher_AS_NEWUI\IbotnLauncher\libs\Msc.jar}
+		
+		#：AGPBI: {"kind":"error","text"...
+			##https://blog.csdn.net/AliEnCheng/article/details/103522116
+		
+		#:以上一堆问题。各种尝试解决，都无效。
+			##升级：{plugin for gradle:3.5.2,gradle-5.4.1-all.zip}
+	43.3 
+		q1:compileReleaseAidl
+		aidl.exe  aidl.cpp refusing to generate code from aidl file defining parcelable
+		
+		#参考：
+		https://blog.csdn.net/qq_35501560/article/details/104928761
+			->替换aidl.exe后，q2还存在。
+		
+		
+		q2:com\ibotn\ibotnphone\IContactAidlInterface.java:59: 错误: 解析时已到达文件结尾
+			private static class Proxy implements com.ibotn.ibotnpho
+			->根据aidl文件编译出的java 文件不完整。
+			
+			参考：
+			https://blog.csdn.net/dkbnull/article/details/103414016
+			
+			#去掉aidl中的中文。解决
+			#因为Gradle 5.x版本，编译时后台内存堆大小从1GB降为了512M，可能导致aidl编译后无足够的内存缓存，进而导致所生成的java文件都不完整，解决办法如下：
+
+				gradle.properties文件修改如下配置。#该方式目前实验不能解决问题。
+
+				修改org.gradle.jvmargs的值
+				gradle.properties文件修改如下配置
+				org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+
+44 Could not determine artifacts for com.android.support:support-v4:25.4.0
+	Could not get resource 'https://dl.google.com/dl/android/maven2/com/android/support/support-v4/25.4.0/support-v4-25.4.0.aar'.
+	
+	更换maven仓库地址，依然报错。可能源头仓库就没了。
+	-采用高版本的，如:28.0.0。
+	-如需更高的，google已经不再提供，可以使用androidx库。
+	-参考IbotnNewApp_family配置就可以了。

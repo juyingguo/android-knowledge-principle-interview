@@ -60,3 +60,6 @@
 		
 		① 关于 WebSocket的客户端示例，请参考 Netty源代码中所包含的例子：https://github.com/netty/netty/tree/4.1/
 			example/src/main/java/io/netty/example/http/websocketx/client。
+	14.1.4 技术栈
+		如同本书之前所解释过的一样，你应该永远不要在 Netty 的 I/O 线程上执行任何非 CPU 限定
+		的代码——你将会从 Netty 偷取宝贵的资源，并因此影响到服务器的吞吐量。
