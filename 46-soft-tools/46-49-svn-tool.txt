@@ -10,7 +10,29 @@
 		download from：
 		https://tortoisesvn.net/downloads.html
 		
+		
+		#{可以选择语言}
 		安装目录下也有，是英文版本的。
+		
+		2.3.2  TortoiseSVN help 客户端自带手册。
+		
+		2.3.4 
+			This product indludes software from ApacheTH Subversion@ (htt://subversion.apache.org)
+			This product indudes software developed by the OpenSSL Project for use in the OpenSSL Toolkit
+			http://www.openssl.org/)
+	2.4 svn教程
+		https://www.runoob.com/svn/svn-tutorial.html
+		
+	2.5 
+	2.6 svn windows命令行工具
+		https://www.visualsvn.com/downloads/
+			#{VisualSVN Server}
+			#VisualSVN plugin for Visual Studio 
+		svn Reference—Subversion Command-Line Client
+			#svn命令使用
+			https://www.visualsvn.com/support/svnbook/ref/svn/	
+		
+ 
 2.SVN常用命令或操作
 	https://blog.csdn.net/ithomer/article/details/6187464 
 	
@@ -19,3 +41,42 @@
 	
 3. svn客户端操作。经常漏提交新增的文件。
 	应先add,再提交。
+4. SVN创建分支、合并
+	4.1 https://blog.csdn.net/xiaona0523/article/details/125538595
+	4.2 
+	
+	4.3 Switch Branch
+		Switch Depth
+		Working copy
+		Fully recursive
+		Immediate children, induding folders
+		Only file children
+		Only this item
+		Exdude
+		
+		选项含义：
+		https://blog.csdn.net/albertsh/article/details/72809177
+5. 在Windows下使用svn命令行教程及svn命令行的解释
+	http://t.zoukankan.com/LiuYanYGZ-p-11812509.html
+	
+	1、Windows下命令行工具：
+	发现原来安装的tortoisesvn已经集成到shell中，不能在命令行下使用。于是找到这个http://www.visualsvn.com/downloads/
+	下载Apache Subversion command line tools，这是一个可以在cmd下使用的命令行工具，
+	解压后把里面bin目录这个路径添加到环境变量的path，这样在cmd下就可以使用了，和linux下使用svn的习惯一样了。
+	
+	目录约定：
+	/trunck：开发主线
+	/branches：支线副本
+	/tags：标签副本（一旦创建，不允许修改）
+	
+	#下图为struts2的SVN仓库目录：
+	#、常用命令
+	#4、关于merge
+	5、关于解决冲突
+	6、高级教程 很棒！！
+	https://i18n-zh.googlecode.com/svn/www/svnbook-1.4/index.html
+	 
+	7、Git和SVN的区别
+	http://blog.csdn.net/bruce_6/article/details/38299677
+		
+	
