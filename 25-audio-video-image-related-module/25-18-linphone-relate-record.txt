@@ -13,6 +13,7 @@
 			https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
 		tutorials and api
 			https://gitlab.linphone.org/BC/public/tutorials
+			https://download.linphone.org/snapshots/docs/liblinphone/5.2/c/
 			-->demo作为了独立工程
 			--》https://gitlab.linphone.org/BC/public/tutorials/-/tree/master/android/kotlin/5-BasicChat
 				file transfer：you can get it's source code and deploy your own

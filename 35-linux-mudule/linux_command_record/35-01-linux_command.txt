@@ -162,8 +162,8 @@
 			tar -xzvf test.tar.gz //解压文件
 			tar -czvf test.tar.gz a.c   //压缩 a.c文件为test.tar.gz
 		9.1.2 将当前目录压缩成backup.tar.gz  	其中当前目录下的img文件夹(后面不要带有路径符号/)和upload.txt文件不压缩 
-			tar -zcvf backup.tar.gz --exclude=img  --exclude=upload.txt  ./
-			
+			tar -zcvf backup.tar.gz --exclude=img  --exclude=upload.txt  --exclude=backup.tar.gz  ./
+			#注意将生产的压缩文件也忽略掉。防止一并压缩
 			img整个文件夹都会忽略。如果带了/,如img/则该目录下的所有文件及子文件夹或文件都不会忽略。
 			或者img/*也可以忽略掉该文件夹内部的所有文件及文件夹。但img文件夹不会被忽略。
 		9.1.3 linux下tar命令解压到指定的目录  

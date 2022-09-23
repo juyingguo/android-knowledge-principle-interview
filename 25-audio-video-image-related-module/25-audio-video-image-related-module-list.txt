@@ -236,3 +236,5 @@
 15 YUV420转RGB
 	15.1 YUV420转RGB 
 		https://blog.csdn.net/xiaole0313/article/details/80334211/ 
+16 音频处理——常用音频算法名词简称解释(AEC、AGC、NS、HPF、BSS、BF、DOA、DER)
+	https://blog.csdn.net/qq_28258885/article/details/120175673
