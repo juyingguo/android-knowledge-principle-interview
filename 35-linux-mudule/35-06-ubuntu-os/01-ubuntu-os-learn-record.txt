@@ -1,24 +1,28 @@
 01 ubuntu
-	01.1  ubuntu ÏÂÔØ¡£¡¾ÏÂÔØÂı¡¿
+	01.1  ubuntu ä¸‹è½½ã€‚ã€ä¸‹è½½æ…¢ã€‘
 		http://old-releases.ubuntu.com/releases/ 
 		
-		01.1.2 Ubuntu¶à°æ±¾ÏÂÔØ(ËÙ¶È³¬¿ì)
+		01.1.2 Ubuntuå¤šç‰ˆæœ¬ä¸‹è½½(é€Ÿåº¦è¶…å¿«)
 			https://www.pianshen.com/article/3680773095/ 
+			ã€å«å®‰è£…æ•™ç¨‹ã€‘
 			
 			http://mirrors.163.com/ubuntu-releases/
+			
+			ä¸­ç§‘å¤§é•œåƒ
+			http://mirrors.ustc.edu.cn/
 
-	01.2 LinuxÏµÁĞ | Ubuntu ¸÷°æ±¾ºÅºÍÃû³Æ¶ÔÕÕ¡¾×ª¡¿
+	01.2 Linuxç³»åˆ— | Ubuntu å„ç‰ˆæœ¬å·å’Œåç§°å¯¹ç…§ã€è½¬ã€‘
 		https://www.cnblogs.com/tinywan/p/10961376.html
 		
-	01.3 ubuntuÏµÍ³¸ùÄ¿Â¼ÏÂ¸÷¸öÄ¿Â¼ÓÃÍ¾Ëµ¡­
+	01.3 ubuntuç³»ç»Ÿæ ¹ç›®å½•ä¸‹å„ä¸ªç›®å½•ç”¨é€”è¯´â€¦
 		https://blog.csdn.net/marc07/article/details/62885874
-		1¡¢/ ¸ùÄ¿Â¼--------- ËùÓĞÄ¿Â¼¹ÒÔÚÆäÏÂ
+		1ã€/ æ ¹ç›®å½•--------- æ‰€æœ‰ç›®å½•æŒ‚åœ¨å…¶ä¸‹
 
-		2¡¢/boot--------- ´æ·ÅUbuntuÄÚºËºÍÏµÍ³Æô¶¯ÎÄ¼ş¡£ÏµÍ³Æô¶¯Ê±ÕâĞ©ÎÄ¼şÏÈ±»×°ÔØ¡£
+		2ã€/boot--------- å­˜æ”¾Ubuntuå†…æ ¸å’Œç³»ç»Ÿå¯åŠ¨æ–‡ä»¶ã€‚ç³»ç»Ÿå¯åŠ¨æ—¶è¿™äº›æ–‡ä»¶å…ˆè¢«è£…è½½ã€‚
 
-		3¡¢/etc--------- ÏµÍ³µÄÅäÖÃÎÄ¼şÄ¿Â¼¡£ÃÜÂëÎÄ¼ş¡¢ÉèÖÃÍø¿¨ĞÅÏ¢¡¢»·¾³±äÁ¿µÄÉèÖÃµÈ¶¼ÔÚ´ËÄ¿Â¼ÖĞ£¬Ğí¶àÍøÂçÅäÖÃÎÄ¼şÒ²ÔÚÆäÖĞ¡£¾ßÌå ²Î¼û ¡£
+		3ã€/etc--------- ç³»ç»Ÿçš„é…ç½®æ–‡ä»¶ç›®å½•ã€‚å¯†ç æ–‡ä»¶ã€è®¾ç½®ç½‘å¡ä¿¡æ¯ã€ç¯å¢ƒå˜é‡çš„è®¾ç½®ç­‰éƒ½åœ¨æ­¤ç›®å½•ä¸­ï¼Œè®¸å¤šç½‘ç»œé…ç½®æ–‡ä»¶ä¹Ÿåœ¨å…¶ä¸­ã€‚å…·ä½“ å‚è§ ã€‚
 		
-		µÈµÈ£¬¼ûÍøÒ³¡£
+		ç­‰ç­‰ï¼Œè§ç½‘é¡µã€‚
 	01.4
 		Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-142-generic x86_64)
 
@@ -26,162 +30,162 @@
 		 * Management:     https://landscape.canonical.com
 		 * Support:        https://ubuntu.com/advantage	
 	
-1. ½â¾öUbuntu16.04ÖĞvim±à¼­Æ÷Ê¹ÓÃÉÏÏÂ¼ü»òÊó±êÊ±³öÏÖ[A][B][C][D]ÎÊÌâ 
-	1.1¡¢½â¾öUbuntu16.04ÖĞvim±à¼­Æ÷Ê¹ÓÃÉÏÏÂ¼ü»òÊó±êÊ±³öÏÖ[A][B][C][D]ÎÊÌâ 
+1. è§£å†³Ubuntu16.04ä¸­vimç¼–è¾‘å™¨ä½¿ç”¨ä¸Šä¸‹é”®æˆ–é¼ æ ‡æ—¶å‡ºç°[A][B][C][D]é—®é¢˜ 
+	1.1ã€è§£å†³Ubuntu16.04ä¸­vimç¼–è¾‘å™¨ä½¿ç”¨ä¸Šä¸‹é”®æˆ–é¼ æ ‡æ—¶å‡ºç°[A][B][C][D]é—®é¢˜ 
 		https://blog.csdn.net/qq_40402685/article/details/89917477
 		
 		sudo apt-get update
 		sudo apt-get install vim-gtk
 	
-	1.2¡¢ÔÚvi/vimÖĞÊäÈë·½Ïò¼üÈ´±»±»×ª»¯ÎªA B C D, Õ¦°ì£¿ 
+	1.2ã€åœ¨vi/vimä¸­è¾“å…¥æ–¹å‘é”®å´è¢«è¢«è½¬åŒ–ä¸ºA B C D, å’‹åŠï¼Ÿ 
 		https://blog.csdn.net/stpeace/article/details/49407857
 		
-		 1. echo "set nocp" >> ~/.vimrc    £¨Ç§ÍòÒª×¢Òâ£¬ÊÇ>>, ¶ø²»ÊÇ>, ·ñÔò°Ñ.vimrcÇå¿ÕÁË£¬ ¶ªÊ§ÁËÖ®Ç°µÄÄÚÈİ£©
+		 1. echo "set nocp" >> ~/.vimrc    ï¼ˆåƒä¸‡è¦æ³¨æ„ï¼Œæ˜¯>>, è€Œä¸æ˜¯>, å¦åˆ™æŠŠ.vimrcæ¸…ç©ºäº†ï¼Œ ä¸¢å¤±äº†ä¹‹å‰çš„å†…å®¹ï¼‰
 
 		2. source ~/.vimrc
 		
 		
-2.ubuntu16.04ÖØĞÂ±àÒëlinuxÄÚºË		
+2.ubuntu16.04é‡æ–°ç¼–è¯‘linuxå†…æ ¸		
 
-	2.0 ²é¿´ubuntuÊÊºÏÏÂÔØ°²×°µÄÄÚºË°æ±¾¡£
+	2.0 æŸ¥çœ‹ubuntué€‚åˆä¸‹è½½å®‰è£…çš„å†…æ ¸ç‰ˆæœ¬ã€‚
 		
 		
-		2.0.2 uname -a ²é¿´ËùÓĞ°æ±¾ĞÅÏ¢¡£Èç£º16.04.1-Ubuntu¶ÔÓ¦µÄĞÅÏ¢¡£
+		2.0.2 uname -a æŸ¥çœ‹æ‰€æœ‰ç‰ˆæœ¬ä¿¡æ¯ã€‚å¦‚ï¼š16.04.1-Ubuntuå¯¹åº”çš„ä¿¡æ¯ã€‚
 			Linux eink-virtual-machine 4.15.0-122-generic #124~16.04.1-Ubuntu SMP Thu Oct 15 16:08:36 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
-			ubuntu16.04×Ô´øÄÚºË°æ±¾£º4.15.0-122-generic
+			ubuntu16.04è‡ªå¸¦å†…æ ¸ç‰ˆæœ¬ï¼š4.15.0-122-generic
 		
-		ubuntu16.04 ÏÂÔØÄÚºË´úÂë
-	2.1 ubuntu16.04ÖØĞÂ±àÒëlinuxÄÚºË
+		ubuntu16.04 ä¸‹è½½å†…æ ¸ä»£ç 
+	2.1 ubuntu16.04é‡æ–°ç¼–è¯‘linuxå†…æ ¸
 		https://blog.csdn.net/soviet1941/article/details/104630810
 		
-		±àÒëÄÚºË£º
+		ç¼–è¯‘å†…æ ¸ï¼š
 		sudo make mrproper
 		sudo make clean
 		sudo make menuconfig
 		
-		make mrproper¼°mrproperµÄº¬Òå£ºhttps://blog.csdn.net/uffgfbft/article/details/84001941
-		 LinuxÏÂÃæÈ¥±àÒëÏîÄ¿Ö®Ç°£¬Ò»°ã³£»áÓÃmake mrproperÈ¥ÏÈÉ¾³ıÖ®Ç°±àÒëËùÉú³ÉµÄÎÄ¼şºÍÅäÖÃÎÄ¼ş£¬±¸·İÎÄ¼şµÈ£¬ÆäÖĞ£¬mrproperºÍdistclean£¬cleanÖ®¼äµÄÇø±ğ£¬LinuxÄÚºËÔ´Âë¸ùÄ¿Â¼ÏÂÃæµÄmakefileÖĞ£¬ÓĞºÜÇåÎúµÄ½âÊÍ£º
+		make mrproperåŠmrproperçš„å«ä¹‰ï¼šhttps://blog.csdn.net/uffgfbft/article/details/84001941
+		 Linuxä¸‹é¢å»ç¼–è¯‘é¡¹ç›®ä¹‹å‰ï¼Œä¸€èˆ¬å¸¸ä¼šç”¨make mrproperå»å…ˆåˆ é™¤ä¹‹å‰ç¼–è¯‘æ‰€ç”Ÿæˆçš„æ–‡ä»¶å’Œé…ç½®æ–‡ä»¶ï¼Œå¤‡ä»½æ–‡ä»¶ç­‰ï¼Œå…¶ä¸­ï¼Œmrproperå’Œdistcleanï¼Œcleanä¹‹é—´çš„åŒºåˆ«ï¼ŒLinuxå†…æ ¸æºç æ ¹ç›®å½•ä¸‹é¢çš„makefileä¸­ï¼Œæœ‰å¾ˆæ¸…æ™°çš„è§£é‡Šï¼š
 		 
-		 2.1.2 UbuntuÏÂµÄÄÚºË±àÒë£¨´òÔì×î¾«È·µÄ±àÒë²½Öè£©
+		 2.1.2 Ubuntuä¸‹çš„å†…æ ¸ç¼–è¯‘ï¼ˆæ‰“é€ æœ€ç²¾ç¡®çš„ç¼–è¯‘æ­¥éª¤ï¼‰
 			https://blog.csdn.net/xumin330774233/article/details/40371603
 			
-			a£ºapt-cache search linux-source //£¨Ö´ĞĞÓÃÕâÌõÃüÁîÏµÍ³»áÌáÊ¾Äã°²×°ÊÊºÏÄãÄÚºË°æ±¾µÄÄÚºËÔ´Âë£©»òÕßÔÚhttp://www.kernel.org/ÏÂÔØÄÚºËÔ´Âë
+			aï¼šapt-cache search linux-source //ï¼ˆæ‰§è¡Œç”¨è¿™æ¡å‘½ä»¤ç³»ç»Ÿä¼šæç¤ºä½ å®‰è£…é€‚åˆä½ å†…æ ¸ç‰ˆæœ¬çš„å†…æ ¸æºç ï¼‰æˆ–è€…åœ¨http://www.kernel.org/ä¸‹è½½å†…æ ¸æºç 
 			
-			b:apt-get install linux-source-2.6.35 £¨Ö´ĞĞÕâÌõÃüÁî¾Í»á×Ô¶¯ÏÂÔØ²¢°²×°ÊÊºÏÎÒ(Ô­²©Ö÷)ÏµÍ³ÄÚºËµÄLinux-source-2.6.35Õâ¸öÄÚºËÔ´Âë£©
+			b:apt-get install linux-source-2.6.35 ï¼ˆæ‰§è¡Œè¿™æ¡å‘½ä»¤å°±ä¼šè‡ªåŠ¨ä¸‹è½½å¹¶å®‰è£…é€‚åˆæˆ‘(åŸåšä¸»)ç³»ç»Ÿå†…æ ¸çš„Linux-source-2.6.35è¿™ä¸ªå†…æ ¸æºç ï¼‰
 			
-	2.2 ÎÒÔÚubuntu16.04ÖØĞÂ±àÒëlinuxÄÚºËµÄ¼ÇÂ¼¡£
-		2.2.1 sudo make Ê±Óöµ½´íÎó¡£Èç£º¡¤gcc: unrecognized option '-no-pie'
+	2.2 æˆ‘åœ¨ubuntu16.04é‡æ–°ç¼–è¯‘linuxå†…æ ¸çš„è®°å½•ã€‚
+		2.2.1 sudo make æ—¶é‡åˆ°é”™è¯¯ã€‚å¦‚ï¼šÂ·gcc: unrecognized option '-no-pie'
 			cc1: error: unrecognized command line option "-fstack-protector-strong"
 			make[1]: *** [kernel/bounds.s] Error 1
 			
-			½â¾ö²Î¿¼£º
+			è§£å†³å‚è€ƒï¼š
 			https://blog.csdn.net/weixin_30551947/article/details/99397331
-			ÏµÍ³£ºubuntu16.04.1
-			Èí¼ş£ºVirtualbox-5.1
-			±àÒëÆ÷£ºGCC 4.7.4
+			ç³»ç»Ÿï¼šubuntu16.04.1
+			è½¯ä»¶ï¼šVirtualbox-5.1
+			ç¼–è¯‘å™¨ï¼šGCC 4.7.4
 			
-			ÓÉÓÚÎÒÊ¹ÓÃubuntu16.04±àÒëandroid5.0ËùÒÔ°²×°ÁËgcc4.7°æ±¾£¬¶ø²»ÊÇ16.04×Ô´øµÄgcc5.4°æ±¾
-			(¡®-fstack-protector-strong¡¯ Ñ¡ÏîÊÇgcc4.9ÒÔºóµÄ°æ±¾²Å¼ÓÈëµÄ£¬Ò²¾ÍÊÇËµĞèÒª°²×°gcc4.9ÒÔºóµÄ°æ±¾²Å¿ÉÒÔ±àÒëÍ¨¹ı)
+			ç”±äºæˆ‘ä½¿ç”¨ubuntu16.04ç¼–è¯‘android5.0æ‰€ä»¥å®‰è£…äº†gcc4.7ç‰ˆæœ¬ï¼Œè€Œä¸æ˜¯16.04è‡ªå¸¦çš„gcc5.4ç‰ˆæœ¬
+			(â€˜-fstack-protector-strongâ€™ é€‰é¡¹æ˜¯gcc4.9ä»¥åçš„ç‰ˆæœ¬æ‰åŠ å…¥çš„ï¼Œä¹Ÿå°±æ˜¯è¯´éœ€è¦å®‰è£…gcc4.9ä»¥åçš„ç‰ˆæœ¬æ‰å¯ä»¥ç¼–è¯‘é€šè¿‡)
 			
-			Ê¹ÓÃ  sudo update-alternatives --config gcc Ñ¡Ôñ¸ß°æ±¾µÄgcc¼´¿É¡£
-			Èç¹ûÃ»ÓĞ°²×°£¬¿ÉÒÔÊ¹ÓÃÏÂÃæÃüÁî°²×°¸ß°æ±¾µÄgcc ,g++
+			ä½¿ç”¨  sudo update-alternatives --config gcc é€‰æ‹©é«˜ç‰ˆæœ¬çš„gccå³å¯ã€‚
+			å¦‚æœæ²¡æœ‰å®‰è£…ï¼Œå¯ä»¥ä½¿ç”¨ä¸‹é¢å‘½ä»¤å®‰è£…é«˜ç‰ˆæœ¬çš„gcc ,g++
 			1  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
 			2  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.7 50
 			3  sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
 			4  sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.7 50
 			
 		2.2.2
-			fs/overlayfs/super.c: In function ¡®ovl_init¡¯:
-			fs/overlayfs/super.c:1331:30: error: ¡®ovl_v1_fs_type¡¯ undeclared (first use in this function)
+			fs/overlayfs/super.c: In function â€˜ovl_initâ€™:
+			fs/overlayfs/super.c:1331:30: error: â€˜ovl_v1_fs_typeâ€™ undeclared (first use in this function)
 			   ret = register_filesystem(&ovl_v1_fs_type);
 
-			make menuconfig Ñ¡ÔñÎÄ¼şÏµÍ³ÀïÑ¡Ïî" File systems " µÄ×ÓÑ¡Ïî"Overlayfs filesystem (V1) format support " ÕâÒ»Ïî¾Í¿ÉÒÔÁË
+			make menuconfig é€‰æ‹©æ–‡ä»¶ç³»ç»Ÿé‡Œé€‰é¡¹" File systems " çš„å­é€‰é¡¹"Overlayfs filesystem (V1) format support " è¿™ä¸€é¡¹å°±å¯ä»¥äº†
 		2.2.3 
 			scripts/sign-file.c:23:30: fatal error: openssl/opensslv.h: No such file or directory
 			compilation terminated.
 			make[1]: *** [scripts/sign-file] Error 1
 
 		
-3¡¢LinuxÏÂ vi vim vim-gnome vim-tiny vim-gtk vim-noxµÄÇø±ğ 
-	3.1¡¢LinuxÏÂ vi vim vim-gnome vim-tiny vim-gtk vim-noxµÄÇø±ğ 
+3ã€Linuxä¸‹ vi vim vim-gnome vim-tiny vim-gtk vim-noxçš„åŒºåˆ« 
+	3.1ã€Linuxä¸‹ vi vim vim-gnome vim-tiny vim-gtk vim-noxçš„åŒºåˆ« 
 		http://www.mamicode.com/info-detail-224890.html
 		
-4. Ubuntu ĞŞ¸Ähosts - [ubuntu]
+4. Ubuntu ä¿®æ”¹hosts - [ubuntu]
 	https://blog.csdn.net/weixin_33979203/article/details/85462898
-	ĞŞ¸Ä/etc/hostsÎÄ¼ş£¬ÖØÆôÍøÂç¡£
-	¹ı³ÌÈçÏÂ£º
-	1¡¢ĞŞ¸Ähosts
+	ä¿®æ”¹/etc/hostsæ–‡ä»¶ï¼Œé‡å¯ç½‘ç»œã€‚
+	è¿‡ç¨‹å¦‚ä¸‹ï¼š
+	1ã€ä¿®æ”¹hosts
 	sudo gedit /etc/hosts
-	2¡¢Ìí¼Ó½âÎö¼ÇÂ¼£¨ . £©
-	ÍêÕû°¸Àı£º127.0.0.1 localhost.localdomain localhost
-	¼ò½à¼ÇÂ¼£º127.0.0.1 localhost
-	3¡¢±£´æºóÖØÆôÍøÂç
+	2ã€æ·»åŠ è§£æè®°å½•ï¼ˆ . ï¼‰
+	å®Œæ•´æ¡ˆä¾‹ï¼š127.0.0.1 localhost.localdomain localhost
+	ç®€æ´è®°å½•ï¼š127.0.0.1 localhost
+	3ã€ä¿å­˜åé‡å¯ç½‘ç»œ
 	sudo /etc/init.d/networking restart
 		
 5.
 
-6. ubuntu 16.04 ÔËĞĞshell³ÌĞòÎÄ¼ş£¬±¨´í¡£
+6. ubuntu 16.04 è¿è¡Œshellç¨‹åºæ–‡ä»¶ï¼ŒæŠ¥é”™ã€‚
 	
 	
-	6.1 ÔËĞĞshell½Å±¾£¬´íÎó£º-bash: ./xxx.sh: /bin/bash^M: bad interpreter: No such file or directory 
+	6.1 è¿è¡Œshellè„šæœ¬ï¼Œé”™è¯¯ï¼š-bash: ./xxx.sh: /bin/bash^M: bad interpreter: No such file or directory 
 		https://blog.csdn.net/sunjiaminaini/article/details/77563637
 		
-		Ëû±¨´íÕÒ²»µ½¸ÃÎÄ¼ş»òÕßÄ¿Â¼£¬·¢ÏÖÃ÷Ã÷¾ÍÓĞµÄ°¡.Ö÷ÒªÔ­ÒòÊÇ ÎÒÔÚwindowsÏÂ±à¼­È»ºóÉÏ´«µ½LinuxÏµÍ³ÀïÖ´ĞĞµÄ¡£.shÎÄ¼şµÄ¸ñÊ½Îªdos¸ñÊ½¡£¶ølinuxÖ»ÄÜÖ´ĞĞ¸ñÊ½Îªunix¸ñÊ½µÄ½Å±¾¡£
+		ä»–æŠ¥é”™æ‰¾ä¸åˆ°è¯¥æ–‡ä»¶æˆ–è€…ç›®å½•ï¼Œå‘ç°æ˜æ˜å°±æœ‰çš„å•Š.ä¸»è¦åŸå› æ˜¯ æˆ‘åœ¨windowsä¸‹ç¼–è¾‘ç„¶åä¸Šä¼ åˆ°Linuxç³»ç»Ÿé‡Œæ‰§è¡Œçš„ã€‚.shæ–‡ä»¶çš„æ ¼å¼ä¸ºdosæ ¼å¼ã€‚è€Œlinuxåªèƒ½æ‰§è¡Œæ ¼å¼ä¸ºunixæ ¼å¼çš„è„šæœ¬ã€‚
 
-		1.Ê×ÏÈÓÃviÃüÁî´ò¿ªÎÄ¼ş
+		1.é¦–å…ˆç”¨viå‘½ä»¤æ‰“å¼€æ–‡ä»¶
 
-		2.ÔÚviÃüÁîÄ£Ê½ÖĞÊ¹ÓÃ :set ff ÃüÁî¡£
+		2.åœ¨viå‘½ä»¤æ¨¡å¼ä¸­ä½¿ç”¨ :set ff å‘½ä»¤ã€‚
 			fileformat=dos
 			
-		´ÓÕâÀï¿ÉÒÔ¿´³öÎÄ¼ş¸ñÊ½ÊÇdos 
-		3.ĞŞ¸ÄÎÄ¼şformatÎªunix
+		ä»è¿™é‡Œå¯ä»¥çœ‹å‡ºæ–‡ä»¶æ ¼å¼æ˜¯dos 
+		3.ä¿®æ”¹æ–‡ä»¶formatä¸ºunix
 
 
-		·½·¨Ò»£ºÊ¹ÓÃviĞŞ¸ÄÎÄ¼şformat
+		æ–¹æ³•ä¸€ï¼šä½¿ç”¨viä¿®æ”¹æ–‡ä»¶format
 
-		ÃüÁî£ºset ff=unix
+		å‘½ä»¤ï¼šset ff=unix
 		
-		ĞŞ¸ÄÍê³Éºó¾Í¿ÉÒÔÖ´ĞĞ½Å±¾ÁË¡£
+		ä¿®æ”¹å®Œæˆåå°±å¯ä»¥æ‰§è¡Œè„šæœ¬äº†ã€‚
 
-		ÕâÊÇÒòÎªÎÒÕâ±ßÊÇÔÚwindowsÏÂĞÂ½¨µÄÎÄ¼şÉÏ´«µ½LinuxÉÏµÄ
+		è¿™æ˜¯å› ä¸ºæˆ‘è¿™è¾¹æ˜¯åœ¨windowsä¸‹æ–°å»ºçš„æ–‡ä»¶ä¸Šä¼ åˆ°Linuxä¸Šçš„
 		
-	6.2 ubuntu 16 shell ÔËĞĞ½á¹û.sh: 4: [: 10: unexpected operator  
-		6.2.1 ubuntu 16 shell ÔËĞĞ½á¹û.sh: 4: [: 10: unexpected operator 
+	6.2 ubuntu 16 shell è¿è¡Œç»“æœ.sh: 4: [: 10: unexpected operator  
+		6.2.1 ubuntu 16 shell è¿è¡Œç»“æœ.sh: 4: [: 10: unexpected operator 
 			https://blog.csdn.net/frank_ldw/article/details/83990948
 			
 			
-			Ô­Òò£ºlinuxÏÂÄÜÕı³£Ö´ĞĞµÄ½Å±¾£¬ÔÚubuntuÏµÍ³ÖĞ¶¼»á±àÒë±¨´í£¬ÒòÎª¶şÕßÊ¹ÓÃµÄ½âÊÍÆ÷²»Ò»Í¬µ¼ÖÂ
+			åŸå› ï¼šlinuxä¸‹èƒ½æ­£å¸¸æ‰§è¡Œçš„è„šæœ¬ï¼Œåœ¨ubuntuç³»ç»Ÿä¸­éƒ½ä¼šç¼–è¯‘æŠ¥é”™ï¼Œå› ä¸ºäºŒè€…ä½¿ç”¨çš„è§£é‡Šå™¨ä¸ä¸€åŒå¯¼è‡´
 
-			Linux£º.sh
+			Linuxï¼š.sh
 
 			ubuntu:.dash
 
-			ÒòÎªubuntuÄ¬ÈÏµÄshÊÇÁ¬½Óµ½dashµÄ,ÓÖÒòÎªdash¸úbashµÄ²»¼æÈİËùÒÔ³ö´íÁË.Ö´ĞĞÊ±¿ÉÒÔ°Ñsh»»³ÉbashÎÄ¼şÃû.shÀ´Ö´ĞĞ.³É¹¦.dashÊÇÊ²Ã´¶«Î÷,²éÁËÒ»ÏÂ,Ó¦¸ÃÒ²ÊÇÒ»ÖÖshell,Ã²ËÆÓÃ»§¶ÔËüµÄÚ¸²¡ÆÄ¶à
+			å› ä¸ºubuntué»˜è®¤çš„shæ˜¯è¿æ¥åˆ°dashçš„,åˆå› ä¸ºdashè·Ÿbashçš„ä¸å…¼å®¹æ‰€ä»¥å‡ºé”™äº†.æ‰§è¡Œæ—¶å¯ä»¥æŠŠshæ¢æˆbashæ–‡ä»¶å.shæ¥æ‰§è¡Œ.æˆåŠŸ.dashæ˜¯ä»€ä¹ˆä¸œè¥¿,æŸ¥äº†ä¸€ä¸‹,åº”è¯¥ä¹Ÿæ˜¯ä¸€ç§shell,è²Œä¼¼ç”¨æˆ·å¯¹å®ƒçš„è¯Ÿç—…é¢‡å¤š
 
-			½â¾ö°ì·¨£º½«Ubuntu½âÊÍÆ÷ĞŞ¸ÄÄ¬ÈÏÁ¬½Óµ½bash
+			è§£å†³åŠæ³•ï¼šå°†Ubuntuè§£é‡Šå™¨ä¿®æ”¹é»˜è®¤è¿æ¥åˆ°bash
 
 			sudo dpkg-reconfigure dash
 			
-7.	Ubuntu´ÅÅÌ¼°·ÖÇøÄ£¿é¡£
-	7.1 sda, sdb, sdc, sda1, sda2ÔÚLinuxÖĞ¶¼´ú±íÊ²Ã´ 
+7.	Ubuntuç£ç›˜åŠåˆ†åŒºæ¨¡å—ã€‚
+	7.1 sda, sdb, sdc, sda1, sda2åœ¨Linuxä¸­éƒ½ä»£è¡¨ä»€ä¹ˆ 
 		https://blog.csdn.net/weixin_34258838/article/details/85981795
 		
-		ÒâÒåÈçÏÂ£º
+		æ„ä¹‰å¦‚ä¸‹ï¼š
 
-		µÚÒ»¸öÈíÇı /dev/fd0.
+		ç¬¬ä¸€ä¸ªè½¯é©± /dev/fd0.
 
-		µÚ¶ş¸öÈíÇı /dev/fd1.
+		ç¬¬äºŒä¸ªè½¯é©± /dev/fd1.
 
-		µÚÒ»¿éÓ²ÅÌ /dev/sda.
+		ç¬¬ä¸€å—ç¡¬ç›˜ /dev/sda.
 
-		µÚ¶ş¿éÓ²ÅÌ /dev/sdb, ÒÔ´ËÀàÍÆ.
+		ç¬¬äºŒå—ç¡¬ç›˜ /dev/sdb, ä»¥æ­¤ç±»æ¨.
 
-		µÚÒ»¸öSCSI CD-ROM /dev/scd0, ¿ÉÒÔÓÃ/dev/sr0.
+		ç¬¬ä¸€ä¸ªSCSI CD-ROM /dev/scd0, å¯ä»¥ç”¨/dev/sr0.
 
-		sda1, sda2ÊÇsdaÕâ¿éÓ²ÅÌÉÏµÄÁ½¸ö·ÖÇø¡£
+		sda1, sda2æ˜¯sdaè¿™å—ç¡¬ç›˜ä¸Šçš„ä¸¤ä¸ªåˆ†åŒºã€‚
 		
 		 
-		À´Ô´
+		æ¥æº
 
 		===============
 
@@ -189,209 +193,209 @@
 
 		https://help.ubuntu.com/lts/installation-guide/armhf/apcs04.html
 		
-	7.2 extendÀ©Õ¹·ÖÇø£¬Âß¼­·ÖÇøº¬Òå¼°×÷ÓÃ¡£
+	7.2 extendæ‰©å±•åˆ†åŒºï¼Œé€»è¾‘åˆ†åŒºå«ä¹‰åŠä½œç”¨ã€‚
 		
-	7.3 VMwareĞéÄâ»ú LinuxÏµÍ³ Ubuntu 16.04 Ó²ÅÌ/´ÅÅÌÀ©Èİ£¨³¬ÏêÏ¸Í¼ÎÄÏê½â£¡Ç×²âÓĞĞ§£¡£©
+	7.3 VMwareè™šæ‹Ÿæœº Linuxç³»ç»Ÿ Ubuntu 16.04 ç¡¬ç›˜/ç£ç›˜æ‰©å®¹ï¼ˆè¶…è¯¦ç»†å›¾æ–‡è¯¦è§£ï¼äº²æµ‹æœ‰æ•ˆï¼ï¼‰
 		https://blog.csdn.net/m0_43403238/article/details/85480314? 
 		
-	7.4 Ubuntu Ôö¼Óswap¿Õ¼ä´óĞ¡
-		a,¼Ó´ó½»»»·ÖÇø£¬²½ÖèÈçÏÂ£º
+	7.4 Ubuntu å¢åŠ swapç©ºé—´å¤§å°
+		a,åŠ å¤§äº¤æ¢åˆ†åŒºï¼Œæ­¥éª¤å¦‚ä¸‹ï¼š
 
 			sudo fallocate -l 4G /swapfile
 			sudo chmod 600 /swapfile
 			sudo mkswap /swapfile
 			sudo swapon /swapfile
-			¿ª»ú×Ô¶¯¹ÒÔØswap£º
-			Ê¹ÓÃ vi »ò nano ÔÚ /etc/fstab ÎÄ¼şµ×²¿Ìí¼ÓÈçÏÂÄÚÈİ£º
+			å¼€æœºè‡ªåŠ¨æŒ‚è½½swapï¼š
+			ä½¿ç”¨ vi æˆ– nano åœ¨ /etc/fstab æ–‡ä»¶åº•éƒ¨æ·»åŠ å¦‚ä¸‹å†…å®¹ï¼š
 			/swapfile none swap sw 0 0
-			¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+			â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 				
-		b,Ubuntu Ôö¼Óswap¿Õ¼ä´óĞ¡
+		b,Ubuntu å¢åŠ swapç©ºé—´å¤§å°
 			
 			https://www.cnblogs.com/magicpig666/articles/9772003.html 
 			
 			1. create a 1G file for the swap.
-			¡¡¡¡sudo fallocate -l 1G /swapfile
-			¡¡¡¡we can verify that the correct amount of space was reserved by typing:
-			¡¡¡¡ls -lh /swapfile
+			ã€€ã€€sudo fallocate -l 1G /swapfile
+			ã€€ã€€we can verify that the correct amount of space was reserved by typing:
+			ã€€ã€€ls -lh /swapfile
 			2. Enabling the Swap File.
-			¡¡¡¡1.Make the file only accessible by typing:
-			¡¡¡¡¡¡¡¡sudo chmod 600 /swapfile.
+			ã€€ã€€1.Make the file only accessible by typing:
+			ã€€ã€€ã€€ã€€sudo chmod 600 /swapfile.
 				   2.Make the file as swap space by typing:
-			¡¡¡¡¡¡¡¡sudo mkswap /swapfile
-			¡¡¡¡3.Enabling the swap file and allow our system to start utilizing it .
-			¡¡¡¡¡¡¡¡sudo swapon /swapfile.
-			¡¡¡¡4.Now you can find that the swap space was added by typing:
-			¡¡¡¡¡¡¡¡free -h / (sudo swapon --show)
+			ã€€ã€€ã€€ã€€sudo mkswap /swapfile
+			ã€€ã€€3.Enabling the swap file and allow our system to start utilizing it .
+			ã€€ã€€ã€€ã€€sudo swapon /swapfile.
+			ã€€ã€€4.Now you can find that the swap space was added by typing:
+			ã€€ã€€ã€€ã€€free -h / (sudo swapon --show)
 			3. Delete the Swap File.
-			¡¡¡¡1.Disabling the swap file
-			¡¡¡¡¡¡¡¡sudo swapoff /swapfile
-			¡¡¡¡2.Remove the swap file
-			¡¡¡¡¡¡¡¡sudo rm -rf  /swapfile
-		c£¬¡¾Ubuntu16.04 À©´óÄÚ´æ¿Õ¼ä ÉèÖÃĞéÄâÄÚ´æ Ê·ÉÏ×îÏêÏ¸ ¡¿
+			ã€€ã€€1.Disabling the swap file
+			ã€€ã€€ã€€ã€€sudo swapoff /swapfile
+			ã€€ã€€2.Remove the swap file
+			ã€€ã€€ã€€ã€€sudo rm -rf  /swapfile
+		cï¼Œã€Ubuntu16.04 æ‰©å¤§å†…å­˜ç©ºé—´ è®¾ç½®è™šæ‹Ÿå†…å­˜ å²ä¸Šæœ€è¯¦ç»† ã€‘
 			http://www.xiaoheidiannao.com/220015.html
-	7.5 Linux swap·ÖÇø¼°×÷ÓÃÏê½â
+	7.5 Linux swapåˆ†åŒºåŠä½œç”¨è¯¦è§£
 		http://c.biancheng.net/view/907.html
-8. ubuntu½âÑ¹¼°Ñ¹ËõÎÄ¼ş·½·¨
-	8.1 ubuntuÏÂ7zÎÄ¼şµÄ½âÑ¹·½·¨ 
+8. ubuntuè§£å‹åŠå‹ç¼©æ–‡ä»¶æ–¹æ³•
+	8.1 ubuntuä¸‹7zæ–‡ä»¶çš„è§£å‹æ–¹æ³• 
 		8.1.1	https://blog.csdn.net/xiaoming_zhong/article/details/52325226
 			
-			°²×°£ºapt-get install p7zip-full
+			å®‰è£…ï¼šapt-get install p7zip-full
 
-			½âÑ¹7z£ºÊ¹ÓÃ·½·¨£º7z x file fileÊÇÄãÒª½âÑ¹µÄÎÄ¼şÃû¡£ 
+			è§£å‹7zï¼šä½¿ç”¨æ–¹æ³•ï¼š7z x file fileæ˜¯ä½ è¦è§£å‹çš„æ–‡ä»¶åã€‚ 
 
-			½âÑ¹tar.bz2: sudo tar -jxvf file.tar.bz2¡£
+			è§£å‹tar.bz2: sudo tar -jxvf file.tar.bz2ã€‚
 
-			½âÑ¹tar: sudo tar -zxvf file.tar¡£
+			è§£å‹tar: sudo tar -zxvf file.tarã€‚
 
-		8.1.2??Ubuntu Linux °²×° .7z ½âÑ¹ºÍÑ¹ËõÎÄ¼ş
+		8.1.2??Ubuntu Linux å®‰è£… .7z è§£å‹å’Œå‹ç¼©æ–‡ä»¶
 			? https://blog.csdn.net/zqlovlg/article/details/8033456
 			sudo apt-get install p7zip
 		
-			½âÑ¹ÎÄ¼ş£º
+			è§£å‹æ–‡ä»¶ï¼š
 			??? 7z x manager.7z -r -o /home/xx
-			½âÊÍÈçÏÂ£º
-			x ´ú±í½âÑ¹ËõÎÄ¼ş£¬²¢ÇÒÊÇ°´Ô­Ê¼Ä¿Â¼½âÑ¹£¨»¹ÓĞ¸ö²ÎÊı e Ò²ÊÇ½âÑ¹ËõÎÄ¼ş£¬µ«Æä»á½«ËùÓĞÎÄ¼ş¶¼½âÑ¹µ½¸ùÏÂ£¬¶ø²»ÊÇ×Ô¼ºÔ­ÓĞµÄÎÄ¼ş¼ĞÏÂ£©manager.7z ÊÇÑ¹ËõÎÄ¼ş£¬ÕâÀï´ó¼ÒÒª»»³É×Ô¼ºµÄ¡£Èç¹û²»ÔÚµ±Ç°Ä¿Â¼ÏÂÒª´øÉÏÍêÕûµÄÄ¿Â¼
-			-r ±íÊ¾µİ¹éËùÓĞµÄ×ÓÎÄ¼ş¼Ğ
-			-o ÊÇÖ¸¶¨½âÑ¹µ½µÄÄ¿Â¼£¬ÕâÀï´ó¼ÒÒª×¢Òâ-oºóÊÇÃ»ÓĞ¿Õ¸ñµÄÖ±½Ó½ÓÄ¿Â¼
+			è§£é‡Šå¦‚ä¸‹ï¼š
+			x ä»£è¡¨è§£å‹ç¼©æ–‡ä»¶ï¼Œå¹¶ä¸”æ˜¯æŒ‰åŸå§‹ç›®å½•è§£å‹ï¼ˆè¿˜æœ‰ä¸ªå‚æ•° e ä¹Ÿæ˜¯è§£å‹ç¼©æ–‡ä»¶ï¼Œä½†å…¶ä¼šå°†æ‰€æœ‰æ–‡ä»¶éƒ½è§£å‹åˆ°æ ¹ä¸‹ï¼Œè€Œä¸æ˜¯è‡ªå·±åŸæœ‰çš„æ–‡ä»¶å¤¹ä¸‹ï¼‰manager.7z æ˜¯å‹ç¼©æ–‡ä»¶ï¼Œè¿™é‡Œå¤§å®¶è¦æ¢æˆè‡ªå·±çš„ã€‚å¦‚æœä¸åœ¨å½“å‰ç›®å½•ä¸‹è¦å¸¦ä¸Šå®Œæ•´çš„ç›®å½•
+			-r è¡¨ç¤ºé€’å½’æ‰€æœ‰çš„å­æ–‡ä»¶å¤¹
+			-o æ˜¯æŒ‡å®šè§£å‹åˆ°çš„ç›®å½•ï¼Œè¿™é‡Œå¤§å®¶è¦æ³¨æ„-oåæ˜¯æ²¡æœ‰ç©ºæ ¼çš„ç›´æ¥æ¥ç›®å½•
 
-			Ñ¹ËõÎÄ¼ş£º
+			å‹ç¼©æ–‡ä»¶ï¼š
 
 			??? 7z a -t7z -r manager.7z /home/manager/*
-			½âÊÍÈçÏÂ£º
-			a ´ú±íÌí¼ÓÎÄ¼ş£¯ÎÄ¼ş¼Ğµ½Ñ¹Ëõ°ü
-			-t ÊÇÖ¸¶¨Ñ¹ËõÀàĞÍ Ò»°ãÎÒÃÇ¶¨Îª7z
-			-r ±íÊ¾µİ¹éËùÓĞµÄ×ÓÎÄ¼ş¼Ğ£¬manager.7z ÊÇÑ¹ËõºÃºóµÄÑ¹Ëõ°üÃû£¬/home/manager/* ÊÇÒªÑ¹ËõµÄÄ¿Â¼£¬£ªÊÇ±íÊ¾¸ÃÄ¿Â¼ÏÂËùÓĞµÄÎÄ¼ş¡£
-			¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-			°æÈ¨ÉùÃ÷£º±¾ÎÄÎªCSDN²©Ö÷¡¸zqlovlg¡¹µÄÔ­´´ÎÄÕÂ£¬×ñÑ­ CC 4.0 BY-SA °æÈ¨Ğ­Òé£¬×ªÔØÇë¸½ÉÏÔ­ÎÄ³ö´¦Á´½Ó¼°±¾ÉùÃ÷¡£
-			Ô­ÎÄÁ´½Ó£ºhttps://blog.csdn.net/zqlovlg/article/details/8033456
+			è§£é‡Šå¦‚ä¸‹ï¼š
+			a ä»£è¡¨æ·»åŠ æ–‡ä»¶ï¼æ–‡ä»¶å¤¹åˆ°å‹ç¼©åŒ…
+			-t æ˜¯æŒ‡å®šå‹ç¼©ç±»å‹ ä¸€èˆ¬æˆ‘ä»¬å®šä¸º7z
+			-r è¡¨ç¤ºé€’å½’æ‰€æœ‰çš„å­æ–‡ä»¶å¤¹ï¼Œmanager.7z æ˜¯å‹ç¼©å¥½åçš„å‹ç¼©åŒ…åï¼Œ/home/manager/* æ˜¯è¦å‹ç¼©çš„ç›®å½•ï¼Œï¼Šæ˜¯è¡¨ç¤ºè¯¥ç›®å½•ä¸‹æ‰€æœ‰çš„æ–‡ä»¶ã€‚
+			â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+			ç‰ˆæƒå£°æ˜ï¼šæœ¬æ–‡ä¸ºCSDNåšä¸»ã€Œzqlovlgã€çš„åŸåˆ›æ–‡ç« ï¼Œéµå¾ª CC 4.0 BY-SA ç‰ˆæƒåè®®ï¼Œè½¬è½½è¯·é™„ä¸ŠåŸæ–‡å‡ºå¤„é“¾æ¥åŠæœ¬å£°æ˜ã€‚
+			åŸæ–‡é“¾æ¥ï¼šhttps://blog.csdn.net/zqlovlg/article/details/8033456
 			
-9. vim ±à¼­Ê±¡£linuxÏÂFound a swap file by the name½â¾ö
-	9.1 linuxÏÂFound a swap file by the name½â¾ö 
+9. vim ç¼–è¾‘æ—¶ã€‚linuxä¸‹Found a swap file by the nameè§£å†³
+	9.1 linuxä¸‹Found a swap file by the nameè§£å†³ 
 		https://blog.csdn.net/kenhins/article/details/50781071
-10. ctrl + alt + f1µ½f6×Ö·ûÖÕ¶Ë¡£
+10. ctrl + alt + f1åˆ°f6å­—ç¬¦ç»ˆç«¯ã€‚
 
-11. . ºÍ source ĞŞ¸ÄµÄ»·¾³±äÁ¿»á´«µİ¸ø¸¸½ø³Ì¡£ 
+11. . å’Œ source ä¿®æ”¹çš„ç¯å¢ƒå˜é‡ä¼šä¼ é€’ç»™çˆ¶è¿›ç¨‹ã€‚ 
 
-12 ubuntuÏµÁĞ´ò¿ªÖÕ¶Ë·½·¨
-	12.1 ubuntu12ÏµÁĞ´ò¿ªÖÕ¶Ë·½·¨ 
+12 ubuntuç³»åˆ—æ‰“å¼€ç»ˆç«¯æ–¹æ³•
+	12.1 ubuntu12ç³»åˆ—æ‰“å¼€ç»ˆç«¯æ–¹æ³• 
 		http://blog.chinaunix.net/uid-25498312-id-3612935.html
 		
-		A:Ê¹ÓÃctrl+alt+t£¨»ù±¾ÉÏÓÃÕâ¸ö£¬±ğµÄ¶¼²»ÓÃµÄ£©
-		B:ashÀïËÑË÷¡£´ò¿ªDash,ÔÚÀïÃæËÑË÷¡°gnome-terminal¡±,¾Í¿ÉÒÔÕÒµ½ÖÕ¶ËÓ¦ÓÃĞò¡£ 
+		A:ä½¿ç”¨ctrl+alt+tï¼ˆåŸºæœ¬ä¸Šç”¨è¿™ä¸ªï¼Œåˆ«çš„éƒ½ä¸ç”¨çš„ï¼‰
+		B:ashé‡Œæœç´¢ã€‚æ‰“å¼€Dash,åœ¨é‡Œé¢æœç´¢â€œgnome-terminalâ€,å°±å¯ä»¥æ‰¾åˆ°ç»ˆç«¯åº”ç”¨åºã€‚ 
 		
-13 vmware ÖĞubuntuÉÏÍøÅäÖÃ
-	13.1 vmware ÖĞubuntuÉÏÍøÅäÖÃ
-		¡¾Ç×²âÎŞĞ§¡£¡¿
+13 vmware ä¸­ubuntuä¸Šç½‘é…ç½®
+	13.1 vmware ä¸­ubuntuä¸Šç½‘é…ç½®
+		ã€äº²æµ‹æ— æ•ˆã€‚ã€‘
 		https://jingyan.baidu.com/article/39810a2342f222b637fda648.html
 	13.2 
-		ÈçºÎÈÃVMwareĞéÄâ»úµÄUbuntu16.04ÏµÍ³ä¯ÀÀÍøÂç£¿
+		å¦‚ä½•è®©VMwareè™šæ‹Ÿæœºçš„Ubuntu16.04ç³»ç»Ÿæµè§ˆç½‘ç»œï¼Ÿ
 		https://blog.csdn.net/thisway_diy/article/details/79207234
 		
-		ĞéÄâ»úÖĞµÄUbuntuÓĞ¼¸ÖÖÉÏÍø·½Ê½£¿
-		Í¨³£ÓĞ2ÖÖ£¬NAT¡¢ÇÅ½Ó
+		è™šæ‹Ÿæœºä¸­çš„Ubuntuæœ‰å‡ ç§ä¸Šç½‘æ–¹å¼ï¼Ÿ
+		é€šå¸¸æœ‰2ç§ï¼ŒNATã€æ¡¥æ¥
 		
-		Èç¹ûµ¥´¿µÄÏëÈÃĞéÄâ»úÄÚµÄUbuntuÉÏÍø£¬¾ÍÊ¹ÓÃNAT·½Ê½¡£
-		Èç¹ûÒªÈÃĞéÄâ»úÄÚµÄUbuntuÉÏÍøµÄÍ¬Ê±£¬»¹Òª¸ú¿ª·¢°å½øĞĞÍ¨ĞÅ£¬ÄÇÃ´¾ÍÊ¹ÓÃÇÅ½Ó·½Ê½¡£
+		å¦‚æœå•çº¯çš„æƒ³è®©è™šæ‹Ÿæœºå†…çš„Ubuntuä¸Šç½‘ï¼Œå°±ä½¿ç”¨NATæ–¹å¼ã€‚
+		å¦‚æœè¦è®©è™šæ‹Ÿæœºå†…çš„Ubuntuä¸Šç½‘çš„åŒæ—¶ï¼Œè¿˜è¦è·Ÿå¼€å‘æ¿è¿›è¡Œé€šä¿¡ï¼Œé‚£ä¹ˆå°±ä½¿ç”¨æ¡¥æ¥æ–¹å¼ã€‚
 		
-	13.3 VMwareĞéÄâ»úÏÂUbuntuÍøÂçÅäÖÃ£¨NETÄ£Ê½£©
+	13.3 VMwareè™šæ‹Ÿæœºä¸‹Ubuntuç½‘ç»œé…ç½®ï¼ˆNETæ¨¡å¼ï¼‰
 		https://blog.csdn.net/ninioq/article/details/94392025
-		1. ÉèÖÃIPµØÖ·£ºsudo vi /etc/network/interfaces
-			»òÕß£ºsudo gedit /etc/network/interfaces
+		1. è®¾ç½®IPåœ°å€ï¼šsudo vi /etc/network/interfaces
+			æˆ–è€…ï¼šsudo gedit /etc/network/interfaces
 			auto ens33			
 			iface ens33 inet static
             address 192.168.211.135
             netmask 255.255.255.0
             gateway 192.168.211.2
-			»òÕß£º
+			æˆ–è€…ï¼š
 			auto ens33
 			iface ens33 inet static
 			address 192.168.137.155
 			netmask 255.255.255.0
 			gateway 192.168.137.1
-			¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-			1.1 ÔÚlinuxÏÂ°ÑÍø¿¨IPÅäÖÃ³ÉºÍVMnet8Ò»¸öÍø¶ÎµÄIP£º192.168.X.Z/255.255.255.0£¨ÎÒµÄÅäÖÃÊÇ192.168.137.200/255.255.255.0£©¡£
-				Íø¹ØÅäÖÃ³É¸Õ²Å²é¿´µÄVMnet8ÄÇ¸öIP192.168.X.2£¨ÎÒµÄÊÇ192.168.137.2£©¡£
-				ÔÚlinuxÏÂDNSºÍwindowsÖ÷»úµÄÏàÍ¬¡£
-		2.ÉèÖÃDNSÎÄ¼ş£ºsudo vi /etc/resolv.conf
-			nameserver 192.168.1.1£¨ÁÙÊ±µÄ£¬Ã¿´Î¿ª»ú´ËÎÄ¼ş±»ÇåÁã£¬ÒªÏë½â¾ö´ËÎÊÌâ£¬ĞèÒªĞŞ¸Ä¿ª»ú×ÔÆô¶¯½Å±¾£¬ÉèÖÃ·½·¨¼ûºóÃæ¡°×¢Òâ¡±ÄÚÈİ£©
-		3. ÖØÆôÅäÖÃÎÄ¼ş£ºsudo /etc/init.d/networking restart
-		4. ×¢Òâ£ºÒªÏëÓÀ¾ÃĞÔĞŞ¸ÄDNS£¬ÄÇÃ´¾ÍĞŞ¸ÄÆô¶¯½Å±¾ÎÄ¼ş£ºsudo vi /etc/rc.local 
-			ÈçÏÂÍ¼£¬¼ÓÈëÒ»ĞĞ£ºecho  "nameserver 192.168.1.1"  >> /etc/resolv.conf
-			»ò
-			ÈçÏÂÍ¼£¬¼ÓÈëÒ»ĞĞ£ºecho  "nameserver 114.114.114.114"  >> /etc/resolv.conf
+			â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+			1.1 åœ¨linuxä¸‹æŠŠç½‘å¡IPé…ç½®æˆå’ŒVMnet8ä¸€ä¸ªç½‘æ®µçš„IPï¼š192.168.X.Z/255.255.255.0ï¼ˆæˆ‘çš„é…ç½®æ˜¯192.168.137.200/255.255.255.0ï¼‰ã€‚
+				ç½‘å…³é…ç½®æˆåˆšæ‰æŸ¥çœ‹çš„VMnet8é‚£ä¸ªIP192.168.X.2ï¼ˆæˆ‘çš„æ˜¯192.168.137.2ï¼‰ã€‚
+				åœ¨linuxä¸‹DNSå’Œwindowsä¸»æœºçš„ç›¸åŒã€‚
+		2.è®¾ç½®DNSæ–‡ä»¶ï¼šsudo vi /etc/resolv.conf
+			nameserver 192.168.1.1ï¼ˆä¸´æ—¶çš„ï¼Œæ¯æ¬¡å¼€æœºæ­¤æ–‡ä»¶è¢«æ¸…é›¶ï¼Œè¦æƒ³è§£å†³æ­¤é—®é¢˜ï¼Œéœ€è¦ä¿®æ”¹å¼€æœºè‡ªå¯åŠ¨è„šæœ¬ï¼Œè®¾ç½®æ–¹æ³•è§åé¢â€œæ³¨æ„â€å†…å®¹ï¼‰
+		3. é‡å¯é…ç½®æ–‡ä»¶ï¼šsudo /etc/init.d/networking restart
+		4. æ³¨æ„ï¼šè¦æƒ³æ°¸ä¹…æ€§ä¿®æ”¹DNSï¼Œé‚£ä¹ˆå°±ä¿®æ”¹å¯åŠ¨è„šæœ¬æ–‡ä»¶ï¼šsudo vi /etc/rc.local 
+			å¦‚ä¸‹å›¾ï¼ŒåŠ å…¥ä¸€è¡Œï¼šecho  "nameserver 192.168.1.1"  >> /etc/resolv.conf
+			æˆ–
+			å¦‚ä¸‹å›¾ï¼ŒåŠ å…¥ä¸€è¡Œï¼šecho  "nameserver 114.114.114.114"  >> /etc/resolv.conf
 			
-			»òÕßÅäÖÃ×Ô¼ºµçÄÔµÄdns
-			ÔÚÃüÁîÔËĞĞ´°¿ÚÖĞ£¬ÊäÈë ipconfig/all?£¬È»ºó°´¼üÅÌÉÏµÄ¡°»Ø³µ¼ü¡±¡£²é¿´dns
+			æˆ–è€…é…ç½®è‡ªå·±ç”µè„‘çš„dns
+			åœ¨å‘½ä»¤è¿è¡Œçª—å£ä¸­ï¼Œè¾“å…¥ ipconfig/all?ï¼Œç„¶åæŒ‰é”®ç›˜ä¸Šçš„â€œå›è½¦é”®â€ã€‚æŸ¥çœ‹dns
 			
-			8.8.8.8ÊÇ¹È¸èµÄDNS£¬
-			114.114.114.114   ¹úÄÚÒÆ¶¯£¬µçĞÅ£¬ÁªÍ¨Í¨ÓÃDNS
-			223.5.5.5    °¢Àï
-			223.6.6.6    °¢Àï
-			180.76.76.76 °Ù¶È
+			8.8.8.8æ˜¯è°·æ­Œçš„DNSï¼Œ
+			114.114.114.114   å›½å†…ç§»åŠ¨ï¼Œç”µä¿¡ï¼Œè”é€šé€šç”¨DNS
+			223.5.5.5    é˜¿é‡Œ
+			223.6.6.6    é˜¿é‡Œ
+			180.76.76.76 ç™¾åº¦
 			
-		5.¸Ã·½Ê½ÅäÖÃÑéÖ¤OK¡£
-			ĞèÒª×¢Òâ¡¾1¡¿ÖĞgateway 192.168.43.1ÒªÅäÖÃÎª¡£ÅäÖÃÎªÎŞÏß¾ÖÓòÍøÊÊÅäÆ÷ WLAN ÏÂµÄÄ¬ÈÏÍø¹Ø£¨192.168.43.1£©£¨¸ù¾İµ±Ç°Êµ¼ÊÄÜÉÏÍøµÄÍø¿¨¶ø¶¨¡£±ÈÈçµ±Ç°Ê¹ÓÃµÄÊÇWLANÉÏÍø£©¡£			
-							±ÈÈçµ±Ç°ÅäÖÃµÄ192.168.211.2¡£¡¾13.3ÖĞ1.1¡¿
-			ÖØÆôubuntuÉúĞ§¡£
+		5.è¯¥æ–¹å¼é…ç½®éªŒè¯OKã€‚
+			éœ€è¦æ³¨æ„ã€1ã€‘ä¸­gateway 192.168.43.1è¦é…ç½®ä¸ºã€‚é…ç½®ä¸ºæ— çº¿å±€åŸŸç½‘é€‚é…å™¨ WLAN ä¸‹çš„é»˜è®¤ç½‘å…³ï¼ˆ192.168.43.1ï¼‰ï¼ˆæ ¹æ®å½“å‰å®é™…èƒ½ä¸Šç½‘çš„ç½‘å¡è€Œå®šã€‚æ¯”å¦‚å½“å‰ä½¿ç”¨çš„æ˜¯WLANä¸Šç½‘ï¼‰ã€‚			
+							æ¯”å¦‚å½“å‰é…ç½®çš„192.168.211.2ã€‚ã€13.3ä¸­1.1ã€‘
+			é‡å¯ubuntuç”Ÿæ•ˆã€‚
 	13.4 
-		ÎªVMwareĞéÄâ»úÄÚ°²×°µÄUbuntu 16.04ÉèÖÃ¾²Ì¬IPµØÖ·		
+		ä¸ºVMwareè™šæ‹Ÿæœºå†…å®‰è£…çš„Ubuntu 16.04è®¾ç½®é™æ€IPåœ°å€		
 		https://www.jianshu.com/p/625de9911bfb 
 		
-	13.5 VMware ĞéÄâ»ú °²×°ubuntu16.04ÅäÖÃÍøÂçNET
+	13.5 VMware è™šæ‹Ÿæœº å®‰è£…ubuntu16.04é…ç½®ç½‘ç»œNET
 		https://blog.csdn.net/ykf173/article/details/83019736 
 		https://blog.csdn.net/ykf173/article/details/83019736 		
 		
-			±¾²©¿Í²Î¿¼ÅäÖÃ³É¹¦¡£
-			ÖØÆôubuntuÉúĞ§¡£
-			±¾²©¿Í²Î¿¼£º
+			æœ¬åšå®¢å‚è€ƒé…ç½®æˆåŠŸã€‚
+			é‡å¯ubuntuç”Ÿæ•ˆã€‚
+			æœ¬åšå®¢å‚è€ƒï¼š
 			https://www.linuxidc.com/Linux/2017-02/140135.htm 
 		
-		13.5.4 ²é¿´ÄãµÄÍø¿¨Ãû×Ö(ip a ÃüÁî)£¬±¾ÈËµÄÊÇens33
+		13.5.4 æŸ¥çœ‹ä½ çš„ç½‘å¡åå­—(ip a å‘½ä»¤)ï¼Œæœ¬äººçš„æ˜¯ens33
 			auto ens33
-			iface ens33 inet static #ÅäÖÃÎª¾²Ì¬ÍøÖ·
-			address 192.168.137.155#ÔÚÖ®Ç°²é¿´µÄÍø¶ÎÄÚ
-			netmask 255.255.255.0#×ÓÍøÑÚÂë
-			gateway 192.168.137.1#Íø¹Ø£¬ÊÇ±¾»úÎªVMnaet8·ÖÅäµÄµØÖ·
+			iface ens33 inet static #é…ç½®ä¸ºé™æ€ç½‘å€
+			address 192.168.137.155#åœ¨ä¹‹å‰æŸ¥çœ‹çš„ç½‘æ®µå†…
+			netmask 255.255.255.0#å­ç½‘æ©ç 
+			gateway 192.168.137.1#ç½‘å…³ï¼Œæ˜¯æœ¬æœºä¸ºVMnaet8åˆ†é…çš„åœ°å€
 		13.5.5
-			ÉèÖÃDNS(ÓòÃû½âÎö)
+			è®¾ç½®DNS(åŸŸåè§£æ)
 
-			Ê¹ÓÃ¹ÜÀíÔ±rootµÇÂ¼root#: vi /etc/resolvconf/resolv.conf.d/head 
+			ä½¿ç”¨ç®¡ç†å‘˜rootç™»å½•root#: vi /etc/resolvconf/resolv.conf.d/head 
 
-			ÆÕÍ¨ÓÃ»§$: sudo vi /etc/resolvconf/resolv.conf.d/head 
+			æ™®é€šç”¨æˆ·$: sudo vi /etc/resolvconf/resolv.conf.d/head 
 
-			Ò»°ãÇé¿öÌí¼ÓDNS·şÎñÆ÷
+			ä¸€èˆ¬æƒ…å†µæ·»åŠ DNSæœåŠ¡å™¨
 
 			nameserver 8.8.8.8
 
-			ÌØÊâÇé¿öµÄÌîĞ´×Ô¼ºµçÄÔµÄDNS£¨Í¨¹ıÃüÁîipconfig/all ÃüÁî²é¿´¡££©
+			ç‰¹æ®Šæƒ…å†µçš„å¡«å†™è‡ªå·±ç”µè„‘çš„DNSï¼ˆé€šè¿‡å‘½ä»¤ipconfig/all å‘½ä»¤æŸ¥çœ‹ã€‚ï¼‰
 
-			ĞŞ¸ÄºÃ±£´æ£¬È»ºóÖ´ĞĞ
+			ä¿®æ”¹å¥½ä¿å­˜ï¼Œç„¶åæ‰§è¡Œ
 
 			resolvconf -u
 
-			/etc/resolv.conf»á×Ô¶¯Ìí¼ÓÄãÌí¼ÓµÄnameserver
+			/etc/resolv.confä¼šè‡ªåŠ¨æ·»åŠ ä½ æ·»åŠ çš„nameserver
 		
-		13.5.6¡¢×îºóÒ»²½£¬ÖØÆôÍøÂç·şÎñ
+		13.5.6ã€æœ€åä¸€æ­¥ï¼Œé‡å¯ç½‘ç»œæœåŠ¡
 
 			root@#: /etc/init.d/networking restart 
 			
-			a,[¿ÉÄÜ¶¼ÅäÖÃÕıÈ·£¬µ«»¹ÊÇÎŞ·¨Ê¹ÓÃ¡£±ÈÈçÍ¨¹ıifconfig ²é¿´µ½µÄipÊÇ192.168.211.135,¶øÊµ¼ÊÅäÖÃµÄÎª192.168.137.155¡£ÖØÆôubuntu¼´¿É¡£]
-			b,¶ÏÍøºóÔÙÁªÍø£¬ipÓÖ±ä³É192.168.211.135¡£
-				¾­¹ıÅÅ²é·¢ÏÖ£ºÉèÖÃ-network-Options-IPv4 Settings-AddressÖĞÌí¼ÓÁË¸Ãip.
-				ÔÚ´Ë´¦Ìí¼Ó¡¾192.168.137.155¡¿£¬ÓëÍ¨¹ı¡¾ /etc/network/interfaces¡¿ÅäÖÃµÄipÒ»Ñù¾Í²»»áÔÙ±ä»¯ÁË
-	13.6 Ubuntu 16.04 VMwareĞéÄâ»ú NATÄ£Ê½ ÅäÖÃ¾²Ì¬ip 
-		[¿É²¿·Ö²Î¿¼]
+			a,[å¯èƒ½éƒ½é…ç½®æ­£ç¡®ï¼Œä½†è¿˜æ˜¯æ— æ³•ä½¿ç”¨ã€‚æ¯”å¦‚é€šè¿‡ifconfig æŸ¥çœ‹åˆ°çš„ipæ˜¯192.168.211.135,è€Œå®é™…é…ç½®çš„ä¸º192.168.137.155ã€‚é‡å¯ubuntuå³å¯ã€‚]
+			b,æ–­ç½‘åå†è”ç½‘ï¼Œipåˆå˜æˆ192.168.211.135ã€‚
+				ç»è¿‡æ’æŸ¥å‘ç°ï¼šè®¾ç½®-network-Options-IPv4 Settings-Addressä¸­æ·»åŠ äº†è¯¥ip.
+				åœ¨æ­¤å¤„æ·»åŠ ã€192.168.137.155ã€‘ï¼Œä¸é€šè¿‡ã€ /etc/network/interfacesã€‘é…ç½®çš„ipä¸€æ ·å°±ä¸ä¼šå†å˜åŒ–äº†
+	13.6 Ubuntu 16.04 VMwareè™šæ‹Ÿæœº NATæ¨¡å¼ é…ç½®é™æ€ip 
+		[å¯éƒ¨åˆ†å‚è€ƒ]
 		https://www.linuxidc.com/Linux/2017-02/140135.htm 
 	
-	13.7 windows ping ubuntuµÄip²»Í¨¡£
-		²Î¿¼¡¾13.3¡¿-¡¾5¡¿¼´¿É½â¾ö
-14 xshellÁ¬½Óubuntu 		
+	13.7 windows ping ubuntuçš„ipä¸é€šã€‚
+		å‚è€ƒã€13.3ã€‘-ã€5ã€‘å³å¯è§£å†³
+14 xshellè¿æ¥ubuntu 		
 
-15 ld.goldÊ¹ÓÃÖ¸ÄÏ
+15 ld.goldä½¿ç”¨æŒ‡å—
 	https://blog.csdn.net/ayu_ag/article/details/78552801 
-16 ubuntuÏÂ¸´ÖÆÕ³Ìù
-	¶¼ÓÃÊó±ê¹ö¶¯¼ü¡£
-17 ctagsÊ¹ÓÃËµÃ÷Ïê½â
+16 ubuntuä¸‹å¤åˆ¶ç²˜è´´
+	éƒ½ç”¨é¼ æ ‡æ»šåŠ¨é”®ã€‚
+17 ctagsä½¿ç”¨è¯´æ˜è¯¦è§£
 	https://blog.csdn.net/l2563898960/article/details/89044480 
 	https://blog.csdn.net/foreverling/article/details/80329586? 

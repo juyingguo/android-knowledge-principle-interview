@@ -691,6 +691,9 @@
 	
 	11.2 [总结]FFMPEG视音频编解码零基础学习方法
 		https://blog.csdn.net/leixiaohua1020/article/details/15811977 
+		
+	11.3 最简单的视频网站（JavaEE+FFmpeg）
+		https://blog.csdn.net/leixiaohua1020/article/details/43870599
 last 技术点知识点
 	last01 FFMPEG之AVRational TimeBase成员理解 
 		https://blog.csdn.net/xiaojun111111/article/details/79701314 

@@ -526,7 +526,7 @@
 			该方式不可取。参考b就行。
 		d,在ndkbuild完成后把生成的so文件复制到jniLibs
 			https://blog.csdn.net/qwer492915298/article/details/88424922 
-			
+	24.2 
 25 android studio 打包多个so库(Android.mk 和Application.mk)
 	https://blog.csdn.net/qwer492915298/article/details/88424922 
 
@@ -617,12 +617,17 @@
 	Please use 'annotationProcessor' configuration instead.
 	
 	https://blog.csdn.net/pkandroid/article/details/78391096
-35. 
-	INFO: The following project options are deprecated and have been removed: 
-	android.useDeprecatedNdk
-	NdkCompile is no longer supported
-	
-	警告:gradle.properties中useDeprecatedNdk标志启用的不推荐的NDK集成将很快从Android Gradle插件中删除.
+35. ndk
+	35.1 INFO: The following project options are deprecated and have been removed: 
+		android.useDeprecatedNdk
+		NdkCompile is no longer supported
+		
+		警告:gradle.properties中useDeprecatedNdk标志启用的不推荐的NDK集成将很快从Android Gradle插件中删除.
+	35.2 ndk.dir property 过时了，使用android.ndkPath in build.gradle
+		NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please use android.ndkVersion or android.ndkPath in build.gradle to specify the NDK to use. https://developer.android.com/r/studio-ui/ndk-dir
+		
+		https://stackoverflow.com/questions/66854763/how-can-i-specify-custom-ndk-path-in-android-studio-4-1-3-gradle-6-8-3
+		
 36. Android Studio添加aar依赖的两种方式
 	http://t.zoukankan.com/tc310-p-10024441.html
 37. ERROR: Project module: Only Jar-type local dependencies are supported.

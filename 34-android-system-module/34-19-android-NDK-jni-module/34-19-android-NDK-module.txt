@@ -6,13 +6,18 @@
 		原说明文档：https://github.com/googlesamples/android-ndk/blob/master/README.md
 	01.2 ndk下载
 		https://developer.android.google.cn/ndk/downloads/
-		网站含有修订说明。
+		[网站含有：个版本修订说明。]
+		[含新旧版本。下载速度很快]
 	01.3 如需详细了解如何使用 JNI 框架，请参阅 Android JNI 提示。
 		https://developer.android.com/training/articles/perf-jni
 		
 	01.4 NDK Samples
 		01.4.1 GoogleSamples - NDK Samples
 			https://www.jianshu.com/p/05515962006c/ 
+			{项目地址：https://github.com/googlesamples/android-ndk
+			说明文档：https://github.com/googlesamples/android-ndk/blob/master/README.md}
+			{https://github.com/android/ndk-samples/tree/main
+				含相关资源及说明}
 	01.5 
 		https://github.com/yangkun19921001/NDK_AV_SAMPLE
 		{Android NDK 音视频 FFmpeg OpenGL OpenCV rtmp 直播 学习记录! 
@@ -196,7 +201,7 @@
 	9.1 ndk/21.3.6528147 GCC is no longer supported
 		https://android.googlesource.com/platform/ndk/+/master/docs/ClangMigration.md 
 		ndk-r18及以后的版本不支持GCC
-
+	参考：[01.2]
 10. NDK生成的so动态库调试
 	10.1 NDK生成的so动态库怎么调试
 		https://blog.csdn.net/jiuaiwo1314/article/details/105121257/ 

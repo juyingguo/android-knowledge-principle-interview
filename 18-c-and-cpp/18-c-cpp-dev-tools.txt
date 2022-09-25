@@ -196,8 +196,12 @@
 		https://blog.csdn.net/m0_37477061/article/details/83447773
 	4.2 	visual studio 2013下载及安装使用教程(内附vs2013产品密... 
 		https://www.itkaoshi.net/3906.html 
-	4.3 4.0 vs2013占用多大C盘空间 
-		VS2013总共12G左右，会占C盘大约8G左右的空间，占其他盘（安装位置）4G左右，如果觉得太大，建议可以安装精简版” VS 2013 Express for Windows Desktop。 
+	4.3 vs2013教程
+		4.3.1 vs2013占用多大C盘空间 
+			VS2013总共12G左右，会占C盘大约8G左右的空间，占其他盘（安装位置）4G左右，如果觉得太大，建议可以安装精简版” VS 2013 Express for Windows Desktop。
+		
+		4.3.2 C/C++新手入门教程：傻瓜都会的VS2013使用教程，成为程序员的第一步
+			https://blog.csdn.net/yx5666/article/details/123832148
 	4.4 Visual Studio 的项目迁移和升级参考 
 		https://docs.microsoft.com/zh-cn/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2019 
 		
@@ -302,6 +306,16 @@
 		第二:查看那个文件或者那个文件所在的文件夹是否打开或者改名字等等操作占用着这个文件.
 		第三:重新清理并生成解决方案
 		第二条可能性最大.
+	4.20 simplest_ x264_ encoder.exe -系统错误
+		x
+		无法启动此程序,因为计算机中丢失pthreadGC2.dll.尝试重新安装
+		该程序以解决此问题。
+		
+		解决办法：
+			https://zhidao.baidu.com/question/1499770038331442979.html
+
+			1#腾讯电脑管家--电脑诊所--软件问题--丢失.Dll 文件--一键修复--完成
+			2#下载或复制这个文件
 5. Visual Studio 各个版本之间的功能比较
 	https://blog.csdn.net/helloexp/article/details/84371799 
 	5.2 VS express和VS community有什么区别？ 

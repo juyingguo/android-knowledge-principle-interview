@@ -184,7 +184,8 @@
 		或者原文地址：
 		https://www.cnblogs.com/renhui/p/7452572.html
 		
-		
+	11.2 企业级Android音视频开发学习路线+项目实战（附源码）
+		http://px.sxjnk.cn/enjoy/advertorial/article_15
 12 【原理+实战+视频+源码】抖音，快手大热背后——Android 贴心的音视频学习指南来咯！
 	https://blog.csdn.net/Android725/article/details/109135668
 	

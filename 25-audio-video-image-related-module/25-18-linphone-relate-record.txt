@@ -9,6 +9,9 @@
 			-->4.3.1 on 25 Sep 2020  b85ce16  zip ->项目可以编译成功，
 			--->androidstdio可以成功编译.#根据提示需要配置ndk(ndk.dir=/ndk-path)
 			--->项目中的demo是独立项目,编译失败，需要参考外层项目maven仓库地址配置。以及linphone-sdk-android版本号。
+			
+			---CHANGELOG：
+				https://github.com/BelledonneCommunications/linphone-android/blob/master/CHANGELOG.md
 		android Linphone-SDK :from our Maven repository.
 			https://download.linphone.org/maven_repository/org/linphone/linphone-sdk-android/
 		tutorials and api
@@ -125,6 +128,10 @@
 		https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4181783/
 		
 		#[Section 2],to [Section 6]
+	5.6 Linphone - SDK 编译
+		编译linphone-sdk-android
+		https://www.jianshu.com/p/ccea179c6cc8
+		
 6. 官方项目调试分析
 	linphone-android-4.3.1
 	包名：org.linphone
