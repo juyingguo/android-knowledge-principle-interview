@@ -27,8 +27,18 @@
  
 		https://www.jianshu.com/p/c5d972ab0309 
 	6.2
-		https://github.com/CarGuo/GSYVideoPlayer
+		GSYVideoPlayer:
+			https://github.com/CarGuo/GSYVideoPlayer
+			blog:
+			https://juejin.cn/post/6940079274674094117
 		
 		https://github.com/lipangit/JiaoZiVideoPlayer
 		
 		https://github.com/Jzvd/JZVideo
+		
+		ExoPlayer
+
+			项目地址：https://github.com/google/ExoPlayer
+		JieCaoVideoPlayer
+
+			项目地址：https://github.com/lipangit/JieCaoVideoPlayer
