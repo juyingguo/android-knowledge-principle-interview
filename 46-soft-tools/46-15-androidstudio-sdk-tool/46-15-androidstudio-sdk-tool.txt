@@ -1,12 +1,61 @@
 0 资源
 	0.1 androidstudio官网下载。
-		https://developer.android.com/studio/archive 
+		最新版下载
+		https://developer.android.google.cn/studio#downloads
+		存档历史版本下载
+		https://developer.android.google.cn/studio/archive?hl=zh-cn
 		androidstudio中文网站下载
 		https://developer.android.google.cn/studio#downloads
 		
+		https://developer.android.google.cn/
+		
 		http://www.android-studio.org/
 		
-	0.2  http://tools.android-studio.org/ 
+		0.1.4 android sdk
+			
+			a,存档文件下载：
+				【只有很旧的几个版本】
+				在[https://developer.android.google.cn/]搜索：sdk
+				得到：https://developer.android.google.cn/sdk/older_releases?hl=en
+				
+			b，使用[Android Studio's SDK Manager.]下载
+				这种方式下载的只是android sdk中的platforms部分。
+				This is not the Android SDK itself. It's part of the Android SDK: Platform
+			c,http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
+				参考d中版本号参考无法使用类似的链接下载其它版本
+			d，download-an-older-version-of-the-android-sdk
+				https://stackoverflow.com/questions/27043522/where-can-i-download-an-older-version-of-the-android-sdk
+				
+				First check #{this link}# to find out what revision number you need. Then use one of these links:
+				#{this link}#：https://developer.android.com/studio/releases/sdk-tools
+				http://dl-ssl.google.com/android/repository/tools_r[rev]-windows.zip
+				http://dl-ssl.google.com/android/repository/tools_r[rev]-linux.zip
+				http://dl-ssl.google.com/android/repository/tools_r[rev]-macosx.zip
+
+				Example for v21.1 for Windows:
+				
+				http://dl-ssl.google.com/android/repository/tools_r21.1-windows.zip
+				#tools也就是基础android sdk包
+				
+				sdk使用：
+				http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
+				http://dl-ssl.google.com/android/repository/tools_r24.4.1-linux.zip
+
+				You need to use the exact revision number as listed in the link above. Examples: 22, 22.0.1, etc...
+				
+				d2，SDL Readme :
+					The Android SDK archive initially contains only the basic SDK tools. 
+					提供基础功能，开发应用，仍需要通过[Android Studio's SDK Manager.]下载platform sdk
+		0.1.5 Command line tools
+			https://www.mianshigee.com/tutorial/AndroidStudio/27802e2c788c4747.md
+	0.2  as，sdk其它好用网站地址
+	
+		http://tools.android-studio.org/ 
+	
+		https://www.androiddevtools.cn/
+		
+		【以及很多好的资源】
+		
 	0.3 Android Gradle 插件版本说明
 		https://developer.android.google.cn/studio/releases/gradle-plugin 
 		

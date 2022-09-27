@@ -23,9 +23,15 @@
 		【分析】：估计是音视频同步处理问题。处理策略不同。【windows media player】更优，【腾讯视频】很差。
 5. Android 音视频播放SDK
 	https://github.com/wanliyang1990/wlmedia 
-6. Android 超好用的播放器——ijkplayer
- 
+6. Android 超好用的播放器
+	6.1 
+		Android 超好用的播放器——ijkplayer
 		https://www.jianshu.com/p/c5d972ab0309 
+		
+		ijkplayer-android编译与使用说明
+			https://blog.csdn.net/liuzhi0724/article/details/81394498
+			#查看官方issue得知最高版本不能高于r14。后来使用android-ndk-r10e-linux-x86_64.zip成功通过编译了。
+			#这里需要注意的是，上面的ndk解压时，不能用sudo,否则在执行compile-ffmpeg.sh时，会提示ndk版本太低。
 	6.2
 		GSYVideoPlayer:
 			https://github.com/CarGuo/GSYVideoPlayer

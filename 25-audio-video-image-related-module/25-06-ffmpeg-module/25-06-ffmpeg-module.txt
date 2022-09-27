@@ -192,8 +192,9 @@
 			fftools/ffserver.o:ffserver.c:function main: error: undefined reference to 'stdout'
 			collect2: error: ld returned 1 exit status
 			make: *** [ffserver_g] Error 1
-		4.0.10 
-			
+		4.0.10  编译脚本
+			[ijkplayer]引用项目含ffmpeg编译参考：
+			https://github.com/yixia/FFmpeg-Android
 	4.1 Ubuntu 16.04编译FFmpeg
 		4.1.1 Ubuntu 16.04编译FFmpeg 4.1
 			https://blog.csdn.net/xucongyoushan/article/details/85132671
