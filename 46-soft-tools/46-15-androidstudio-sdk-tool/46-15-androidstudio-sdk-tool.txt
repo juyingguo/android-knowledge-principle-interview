@@ -715,6 +715,8 @@
 		一般host文件保存在C:\Windows\System32\drivers\etc这个路径下
 		203.208.40.36 dl.google.com 然后保存就可以
 	}
+	参考2：
+		https://blog.csdn.net/qq_38350635/article/details/115750876
 41,运行旧工程遇到 提示不能下载gradle3.5.5.jar ....No cached version available for offline mode 报错
 	https://blog.csdn.net/loveseal518/article/details/125652708
 42,Android studio创建类时设置作者、日期等统一注释模板的方法

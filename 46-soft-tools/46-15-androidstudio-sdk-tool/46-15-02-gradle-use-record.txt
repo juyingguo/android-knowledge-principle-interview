@@ -1,3 +1,10 @@
+0.
+	https://docs.gradle.org/7.4/userguide/userguide.html
+	Gradle 的官网： http://gradle.org/
+	文档位置： https://docs.gradle.org/current/release-notes。 其中的 User Guide 和 DSL
+	Reference 很关键。 User Guide 就是介绍 Gradle 的一本书， 而 DSL Reference 是 Gradle API
+	的说明。
+	
 1. 构建apk指定名称即版本号等信息。
 	Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=debug, filters=[]}} of type     com.android.build.gradle.internal.api.ApkVariantOutputImpl. 
 	
@@ -64,3 +71,5 @@
 	编写gradle没有代码提示
 	androidstudio安装插件：（搜索：gradle）
 	Gradle Dependencies Helper
+7.why_is_there_more_than_one_daemon_process_on_my_machine
+	https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:why_is_there_more_than_one_daemon_process_on_my_machine

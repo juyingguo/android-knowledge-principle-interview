@@ -48,3 +48,6 @@
 		JieCaoVideoPlayer
 
 			项目地址：https://github.com/lipangit/JieCaoVideoPlayer
+7. GSYVideoPlayer详细记录
+	com.example.gsyvideoplayer.simple.SimplePlayer
+	需要优化：播放滑动，滑到最开始，会先跳到后面在到最开始。
