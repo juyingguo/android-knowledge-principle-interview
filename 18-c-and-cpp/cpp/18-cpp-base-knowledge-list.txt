@@ -1,6 +1,12 @@
 0，资源
 	0.1 c++函数库查看网址
 		C++有cplusplus.com和cppreference.com这两个标准参考网站。
+		http://www.cplusplus.com/
+		https://cplusplus.com/reference/cstring/strcmp/
+		
+		https://en.cppreference.com/w/
+		https://zh.cppreference.com/w/
+		
 		也可以查看c标准函数库
 	0.2 cpp教程
 		https://www.runoob.com/cplusplus/cpp-tutorial.html 
