@@ -46,6 +46,11 @@
 				d2，SDL Readme :
 					The Android SDK archive initially contains only the basic SDK tools. 
 					提供基础功能，开发应用，仍需要通过[Android Studio's SDK Manager.]下载platform sdk
+			e，ubuntu下配置sdk,ndk
+				export ANDROID_HOME=/mnt/hgfs/vmshare/soft_tool/android-sdk-r24.4.1-linux
+				export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/tools/bin:$PATH
+				export NDK_HOME=/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b
+				export PATH=$NDK_HOME:$PATH
 		0.1.5 Command line tools
 			https://www.mianshigee.com/tutorial/AndroidStudio/27802e2c788c4747.md
 	0.2  as，sdk其它好用网站地址

@@ -5,7 +5,8 @@
 		配置环境变量后，如果没有生效。需要重启电脑生效。
 	1.3 Windows下CMake安装教程 msi文件方式
 		https://blog.csdn.net/u011231598/article/details/80338941
-	
+	1.4 make 与cmake的区别和联系
+		https://zhuanlan.zhihu.com/p/446210728
 2. android studio 使用CMAKE 
 	2.1 android studio 使用CMAKE 
 		https://blog.csdn.net/qq_25817651/article/details/53135685
@@ -43,3 +44,28 @@
 		b:或者环境变量PATH加入cmake目录 
 3. CMakeLists.txt 语法介绍与实例演练 
 	https://blog.csdn.net/afei__/article/details/81201039  
+4. Ubuntu18.04安装Cmake(最新最详细亲测)
+	https://blog.csdn.net/KIK9973/article/details/118796510?
+	
+	一、下载Binary版(下载即用)
+		重点：将cmake3.20加入环境变量
+
+		方法一(不推荐)
+				sudo gedit ~/.bashrc
+			输入export PATH=$PATH:'/home/hyj/下载/cmake-3.20.5-linux-x86_64/bin' 注解：改为自己的路径
+			
+			source ~/.bashrc 使环境变量更改生效
+		方法二(软链接)(推荐)
+
+			终端输入以下命令回车：ln -sf /home/hyj/下载/cmake-3.20.5-linux-x86_64/bin/* /usr/local/bin/
+			注：/home/hyj/下载/cmake-3.20.5-linux-x86_64/bin/* 的前半部分改成你自己将cmake安放的位置。
+		————————
+	二、下载Source版(需要编译)
+		参考：ubuntu安装cmake
+			https://blog.csdn.net/yuanzhoulvpi/article/details/122938078
+	三、检查Cmake安装情况
+		cmake -version
+		cmake-gui -version
+		ccmake -version
+		cpack -version
+		ctest -version

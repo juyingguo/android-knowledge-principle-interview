@@ -1,7 +1,9 @@
 01 ubuntu
 	01.1  ubuntu 下载。【下载慢】
 		http://old-releases.ubuntu.com/releases/ 
-		
+			【含有md5，sha1，sha256等校验】
+			[下载慢，链接地址使用迅雷下载，超快]
+			【含源码】
 		01.1.2 Ubuntu多版本下载(速度超快)
 			https://www.pianshen.com/article/3680773095/ 
 			【含安装教程】
@@ -10,10 +12,24 @@
 			
 			中科大镜像
 			http://mirrors.ustc.edu.cn/
+				【含有md5，sha1，sha256等校验】
+			
+			清华大学开源网站镜像站网址：https://mirrors.tuna.tsinghua.edu.cn/
 
 	01.2 Linux系列 | Ubuntu 各版本号和名称对照【转】
 		https://www.cnblogs.com/tinywan/p/10961376.html
 		
+		ubuntu哪一个版本稳定,ubuntu版本和内核版本的区别
+		https://www.zhangshilong.cn/work/332468.html
+		
+		【Ubuntu】Ubuntu Desktop与Ubuntu Server：有什么不同？
+			https://blog.csdn.net/weixin_47274607/article/details/124437407
+			https://askubuntu.com/questions/31081/whats-the-difference-between-the-server-version-and-the-desktop-version
+		
+		其他-Ubuntu Server和Ubuntu Server Live有什么区别？
+			https://www.nuomiphp.com/serverfault/zh/60482cf721e753126c33bae8.html
+			https://askubuntu.com/questions/1048679/what-are-the-different-between-live-server-and-ubuntu-server-also-ubuntu-desktop			
+			https://askubuntu.com/questions/1028580/what-is-the-difference-between-ubuntu-18-04-server-and-ubuntu-18-04-live-server
 	01.3 ubuntu系统根目录下各个目录用途说…
 		https://blog.csdn.net/marc07/article/details/62885874
 		1、/ 根目录--------- 所有目录挂在其下
@@ -29,7 +45,9 @@
 		 * Documentation:  https://help.ubuntu.com
 		 * Management:     https://landscape.canonical.com
 		 * Support:        https://ubuntu.com/advantage	
-	
+	01.5 官方论坛相关
+		https://askubuntu.com/
+		https://help.ubuntu.com/
 1. 解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
 	1.1、解决Ubuntu16.04中vim编辑器使用上下键或鼠标时出现[A][B][C][D]问题 
 		https://blog.csdn.net/qq_40402685/article/details/89917477
@@ -122,8 +140,174 @@
 	3、保存后重启网络
 	sudo /etc/init.d/networking restart
 		
-5.
+5. ubuntu循环登录无法进入桌面怎么办
+	5.0 当前虚拟机系统版本：ubuntu-20.04.5-desktop-amd64.iso
+		[经验证：ubuntu-20,ubuntu-18,ubuntu-16都出现这个问题]
+		使用ubuntu20.04一个月后的感受
+		https://blog.csdn.net/qq_39367862/article/details/110933633?
+		[博主，及网友很多都遇到过ubuntu20.04,grub等各种问题。]
+	5.1 ubuntu20循环登录无法进入桌面怎么办。
+		通过xhell是可以登录并可以进行操作。
+		https://blog.csdn.net/moonlightttt/article/details/124293844
 
+		The command could not be located because'/usr/bin' is not included in the PATH environment variable
+		
+			https://blog.csdn.net/wyyang2/article/details/105285329
+			
+			将提示的命令路径都添加到PATH下：
+			export PATH=/usr/bin:$PATH
+			2：
+				vi ~/.bashrc
+				export PATH=/usr/bin:$PATH
+				source ~/.bashrc				
+			在Linux中，修改/etc/profile里的内容，相当于系统环境变量，一般我们只需更改自己用户的环境变量配置文件（~/.bashrc）即可，这样可以保证多个用户的独立性
+		Ubuntu添加用户
+			https://blog.csdn.net/qq_36396869/article/details/121465653
+			https://www.cnblogs.com/guochaoxxl/p/15673884.html
+				a、sudo useradd -r -m -s /bin/bash userName     -r：建立系统账号；-m：自动建立用户的登入目录；-s：指定用户的默认使用shell
+
+				b、sudo passwd userName         //根据提示输入新用户的密码即可
+
+				c、ls /home 出现新用户的目录说明创建成功
+			
+			sudo adduser username
+			输入密码：
+			.添加用户管理员权限：
+
+			sudo vim /etc/sudoers
+			
+			添加用户权限同root用户的权限后。再添加新的用户提示异常：
+			
+			sudo: /etc/sudoers is world writable
+			sudo: no valid sudoers sources found, quitting
+			sudo: unable to initialize policy plugin
+			
+			参考：https://blog.csdn.net/u011046452/article/details/90140936
+				$ su root     #切换到root权限
+				$ 输入你的密码
+				# chmod 440 /etc/sudoers        #将当前文件权限修改为原来的权限
+			
+	5.2 [5.1]尝试的办法无法解决
+		ubuntu20循环登录无法进入桌面怎么办
+		https://www.muzhuangnet.com/show/80624.html
+		
+		问题：
+
+		由于显卡驱动问题导致系统提示登录，无法进入桌面。
+
+		解决方法：
+
+		我们只需要重装驱动就可以了。
+		具体步骤：
+
+			1、在登录界面按 ctrl+alt+f1 快捷键进入tty控制台，输入用户名与密码，回车登录；
+
+			2、依次执行如下命令
+
+				sudo apt-get update
+
+				sudo apt-get upgrade
+
+			3、执行完成上述命令后就可以安装显卡驱动了，等待显卡驱动安装完成就可以进入桌面了。
+			
+		实验：还是不行。
+		
+		5.2.2 https://www.cnblogs.com/booturbo/archive/2020/11/12/13967033.html
+			也不行
+		5.2.3 
+			error1:SMBus Host Controller not enabled!
+			error2:[failed] Failed to start Load Kernel Modules.
+			error3:ERROR: Failed to insert module 'vmwgfx': Invalid argument
+			a，【Ubuntu】SMBus Host controller not enabled（虚拟机进入不了图形界面）
+				https://blog.csdn.net/Cappuccino_jay/article/details/125477612?
+				[参考博主方法，可以解决该问题]
+				{vi /etc/modprobe.d/blacklist.conf
+
+					blacklist i2c_piix4 }
+					
+				{验证：修改后，提示消失，但还是循环登录。}
+				{在ubuntu-18.04.5-desktop,同ubuntu-20.04.5-desktop}
+				{在ubuntu-16.04.6-desktop，同样有该提示，但不影响正常登录进入系统。}
+			b，[FAILED] Failed to start Load Kernel Modules错误处理。
+			
+				#通过xhell登录ubuntu下操作。
+				#ubuntu系统前的命令窗口输入经常卡顿或等待太久才能继续输入。
+				
+				##查看出错进程命令：
+					systemctl status systemd-modules-load.service
+					
+				##查看进程Log命令：
+					sudo journalctl -b _PID=66
+				● systemd-modules-load.service - Load Kernel Modules
+					 Loaded: loaded (/lib/systemd/system/systemd-modules-load.service; static; vendor preset: enabled)
+					 Active: failed (Result: exit-code) since Sun 2022-10-02 18:09:50 PDT; 5min ago
+					   Docs: man:systemd-modules-load.service(8)
+							 man:modules-load.d(5)
+					Process: 513 ExecStart=/lib/systemd/systemd-modules-load (code=exited, status=1/FAILURE)
+				   Main PID: 513 (code=exited, status=1/FAILURE)
+
+				Oct 02 18:09:50 ubuntu systemd[1]: Starting Load Kernel Modules...
+				Oct 02 18:09:50 ubuntu systemd-modules-load[513]: Module 'fuse' is built in
+				Oct 02 18:09:50 ubuntu systemd-modules-load[513]: Failed to insert module 'vmwgfx': Invalid argument
+				Oct 02 18:09:50 ubuntu systemd[1]: systemd-modules-load.service: Main process exited, code=exited, status=1/FAILURE
+				Oct 02 18:09:50 ubuntu systemd[1]: systemd-modules-load.service: Failed with result 'exit-code'.
+				Oct 02 18:09:50 ubuntu systemd[1]: Failed to start Load Kernel Modules.
+			b2，参考：Ubuntu 16.04 开机启动失败 Failed to start Load Kernel Modules:
+				https://blog.csdn.net/u010784887/article/details/79114411?
+				
+				dpkg-reconfigure linux-image-$(uname -r)
+				
+				验证结论：还不行
+			b3,无法启动加载内核模块后该怎么办
+				https://ubuntuqa.com/article/7262.html
+				
+				ubuntu18 开机无法自动加载modules问题解决
+				https://blog.csdn.net/weixin_43863487/article/details/115553501
+					{博主的问题原因是黑名单加载问题 blacklist}，具有类比参考性。
+				搜索命令：
+				grep -r blacklist /
+				grep -r vmwgfx /
+				
+				grep -irn "vmwgfx" /
+				关键是搜索路径/
+				
+				搜索结果:
+					/usr/lib/systemd/system/open-vm-tools.service.d/desktop.conf:ExecStartPre=-/sbin/modprobe vmwgfx
+					/usr/lib/modules-load.d/open-vm-tools-desktop.conf:2:vmwgfx
+				验证结果：临时关闭配置，不报错，但还是循环登录不进去。
+			b4,[FAILED] Failed to start Load Kernel Modules错误处理
+				https://blog.csdn.net/yuxipro/article/details/109102059
+				{博主的方法也有参考性}。结合上面b3，搜索查找"vmwgfx"使用位置
+			b5,open-vm-tools modprobe ERROR: could not insert 'vmgfx'
+				https://askubuntu.com/questions/1154825/open-vm-tools-modprobe-error-could-not-insert-vmgfx
+	5.3 [94]ubuntu16-04开机循环输入密码无法进入桌面的解决办法
+		https://zhuanlan.zhihu.com/p/339567920
+		{sudo vi /ect/profile
+			修改profile文件，将自己添加的都给删了}
+		{有效}
+		sudo vi /ect/environment下修改还原就可以了。
+		sudo vi ~/.profile下配置环境变量，一切正常了。
+		
+		
+		目前我所遇到的循环登录问题，主要是由两个原因造成的：一、由于安装NVIDIA显卡驱动时，安装不当造成的；二、由于修改系统环境变量PATH时造成的。
+			https://www.likecs.com/show-204817303.html
+			{博主也提到环境变量问题。}
+		
+	5.4 原因：NVIDIA 驱动所致，之前安装方式nvidia驱动出问题。
+		https://www.codeprj.com/blog/b168631.html
+		{无效，我在ubuntu中单独安装显卡驱动}
+		
+		Ubuntu虚拟机反复在登录界面循环问题
+			https://blog.csdn.net/szxhcljyjsjdff/article/details/126609011
+			{登录界面，按ctrl+alt+f1,进入命令行，运行apt-get clean，释放部分空间，即可正常登录}
+			{我的无效，应为新建系统，空间50G}
+		UBUNTU登录不进去，输入密码登陆后又跳回到登录界面 - Xauthority问题
+		
+		https://lxhua.blog.csdn.net/article/details/78331277?
+			{$ cd ~
+				$ sudo chown username:username .Xauthority}
+			{我的验证，无效。}
+		
 6. ubuntu 16.04 运行shell程序文件，报错。
 	
 	
@@ -395,7 +579,37 @@
 15 ld.gold使用指南
 	https://blog.csdn.net/ayu_ag/article/details/78552801 
 16 ubuntu下复制粘贴
-	都用鼠标滚动键。
+	16.1 都用鼠标滚动键。
+	16.2 实现Ubuntu与Windows之间的复制粘贴
+		ubuntu-16.04.6，默认支持不支持
+		ubuntu-18.04.5，默认支持
+		ubuntu-20.04.5，默认支持
+		
+		#部分参考：{wmwaretools-install-record.txt，【一】}
+		
+		播客:https://blog.csdn.net/weixin_43654123/article/details/120843880
+			{sudo apt-get autoremove open-vm-tools	//卸载已有的工具
+				sudo apt-get install open-vm-tools		//安装工具open-vm-tools
+				sudo apt-get install open-vm-tools-desktop  //安装open-vm-tools-desktop
+				reboot       //重启Ubuntu系统
+			}
+			{初步验证：无效}
+		播客：https://hrx1992.blog.csdn.net/article/details/70196617?
+			使用vmware自带工具 “安装VMware Tools”
+			命令使用sudo,初步验证，还是无效。
+		
+	
 17 ctags使用说明详解
 	https://blog.csdn.net/l2563898960/article/details/89044480 
 	https://blog.csdn.net/foreverling/article/details/80329586? 
+18 ubuntu如何看到隐藏文件夹
+	https://blog.csdn.net/qq_41764621/article/details/125504744
+	
+	1. 首先啥是隐藏文件夹：
+
+	ubuntu环境下，凡是以 .  (点)开头命名的文件夹都是隐藏文件夹，是看不到的。
+
+	2. 想要修改或者查看他们：可以选择使用快捷键 “ ctrl+h " 就可以将隐藏文件夹显示出来
+	3.如果不想看到隐藏文件夹，那么只需要再次按下快捷键： “ ctrl+h " 即可隐藏
+
+	4. 如果想一直能看到隐藏文件夹，那么就可以如下图在文件夹处设置一下，将选项"Show Hidden Files"勾选上

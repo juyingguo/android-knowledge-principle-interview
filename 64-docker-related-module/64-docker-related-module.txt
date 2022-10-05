@@ -3,8 +3,45 @@
 	Docker 官网：https://www.docker.com
 
 	Github Docker 源码：https://github.com/docker/docker-ce
+	
+	Share images, automate workflows, and more with a free Docker ID:
+		 https://hub.docker.com/
+
+	For more examples and ideas, visit:
+	 https://docs.docker.com/get-started/
+	
+	Docker 命令大全	
+			https://www.runoob.com/docker/docker-command-manual.html
+		Docker run 命令
+			https://www.runoob.com/docker/docker-run-command.html
 2. Docker 教程
-	https://www.runoob.com/docker/docker-tutorial.html
+	2.1 https://www.runoob.com/docker/docker-tutorial.html
+	
+	2.2 Ubuntu Docker 安装
+		https://www.runoob.com/docker/ubuntu-docker-install.html
+		
+	2.2.2 ubuntu下使用docker
+		普通用户user下使用docker命令提示权限异常
+		Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+		
+		参考解决办法：
+			解决Docker运行命令时提示“Got permission denied while trying to connect to the Docker daemon socket“类情况,提示如下
+			https://blog.csdn.net/weixin_42447403/article/details/123796067
+		
+			解决方法1
+
+				使用sudo获取管理员权限，运行docker命令。
+
+			解决方法2
+				docker守护进程启动的时候，会默认赋予名字为docker的用户组读写Unix socket的权限，因此只要创建docker用户组，
+
+				并将当前用户加入到docker用户组中，那么当前用户就有权限访问Unix socket了，进而也就可以执行docker相关命令。
+
+				sudo groupadd docker     #添加docker用户组
+				sudo gpasswd -a $USER docker     #将登陆用户加入到docker用户组中
+				newgrp docker     #更新用户组
+				docker ps    #测试docker命令是否可以使用sudo正常使用
+			———
 3. 使用Java操作Docker
 	https://blog.csdn.net/yorickjun/article/details/119511272
 	
@@ -15,3 +52,20 @@
 	https://blog.csdn.net/weixin_50594210/article/details/121733878?
 	JAVA —— Docker (附加篇)
 	https://blog.csdn.net/weixin_50594210/article/details/121734193
+4. 知识点
+	4.1 Docker login/logout 命令
+		https://www.runoob.com/docker/docker-login-command.html
+		
+		登陆到Docker Hub
+
+		docker login -u 用户名 -p 密码
+	4.2 
+		Docker学习笔记（6）——Docker Volume
+		Docker Volume原理及使用
+			https://blog.csdn.net/lijingjingchn/article/details/118154601
+		
+		Docker数据卷挂载命令volume(-v)与mount的使用总结
+			https://www.jb51.net/article/259807.htm
+			
+		21-跟我一起学Docker——Volume
+			https://www.cnblogs.com/robinunix/p/12794111.html

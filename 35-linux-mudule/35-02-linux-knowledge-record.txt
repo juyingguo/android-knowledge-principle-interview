@@ -247,7 +247,30 @@
 		
 		b,将linux编译过程中的日志输出到文件
 		https://blog.csdn.net/qq_25623355/article/details/89760962
+		https://www.linuxprobe.com/linux-output-file.html
 		
+		
+		>标准输出
+		2>错误输出
+		<标准输入
+		
+		使用>标准输出符号将输出信息导入time.txt文件，例如：
+
+			# date > time.txt
+		使用<标准输入符号将文件输入到命令汇中，例如：
+
+			# cat < /etc/passwd
+		使用>会覆盖文件，使用>>会文件内容后面追加内容。例如：
+
+			[root@localhost ~]# echo '------------' >> time.txt 
+		例如，将错误信息输出到err.log，正确的结果输出的info.txt里面，可以这样做：
+
+			[bpang@localhost ~]$ find / -iname "*.conf" 2> err.log > info.txt
+		例如，将错误信息和正确的结果放在同一个文件里面，可以这样做：
+
+			[bpang@localhost ~]$ find / -iname "*.conf" &> info.txt 
+			# 或者
+			[bpang@localhost ~]$ find / -iname "*.conf" > info.txt 2>&1
 	24.2 Ubuntu查看和写入系统日志
 		https://www.cnblogs.com/EasonJim/p/7189491.html
 		

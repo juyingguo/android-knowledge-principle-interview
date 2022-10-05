@@ -2,8 +2,30 @@
 	2.1、sudo apt-get install vim 
 		sudo apt-get install vim-gtk
 		
-3、
+3、安装jdk
+	部分参考：【android.2.3.5_build-record.txt】
 		
+	OpenJDK8U-jdk_x64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz
+	解压异常：
+		tar: jdk8u292-b10/man/ja: Cannot create symlink to ‘ja_JP.UTF-8’: Operation not supported
+		tar: Exiting with failure status due to previous errors
+		
+		需要使用专用的工具从windows传输到linux ubuntu上，并设定binary及utf-8编码格式传输。
+		
+		参考：man/ja: Cannot create symlink to ‘ja_JP.UTF-8’: File exists ( FineBI在linux下安装时报错 )
+		https://blog.csdn.net/qq_40795214/article/details/82291605
+		
+		验证发现：使用xftp上传到ubuntu上的文件夹（对应windows共享出的文件夹/mnt/hgfs/vmshare/下）中还是同样问题。
+			使用xftp上传到ubuntu上的其它文件夹中，再在ubuntu下通过命令拷贝到共享文件夹/mnt/hgfs/vmshare/下，解压还是同样问题。
+			使用xftp上传到ubuntu上的其它文件夹中，解压正常。
+			
+	参考：
+		Ubuntu配置JDK环境变量
+		https://www.likecs.com/show-205136301.html
+		[含Windows下面的环境变量的配置]
+		
+		Ubuntu配置jdk环境变量
+		https://www.cnblogs.com/rxy622061/p/15886478.html
 4. Ubuntu16.04环境下git安装与使用 
 	4.1 Ubuntu16.04环境下git安装与使用
 		https://blog.csdn.net/vslyu/article/details/80337675

@@ -6,7 +6,13 @@
 		https://blog.csdn.net/unirrrrr/article/details/81748104
 		https://www.cnblogs.com/huangjianxin/p/6343881.html
 		
+		还是不行，ubuntu复制到windows可以，反过来还是不行。
+		可以了，要用 sudo ./vmware-install.pl 最后要用 sudo reboot
 		
+		VMware虚拟机Ubuntu共享文件夹
+			https://blog.csdn.net/qq_16763983/article/details/121086240
+		vmware ubuntu /mnt/hgfs 没有权限查看 找不到共享文件夹无法显示 open-vm-tools
+			https://blog.csdn.net/qq_43780850/article/details/122315003
 	1.2、在安装之前先解决这篇文章的问题，安装 VMware Tools 时报 客户机操作系统已将 CD-ROM 门锁定，并且可能正在使用CD-ROM 见 	http://www.linuxidc.com/Linux/2016-04/130806.htm
 	
 	

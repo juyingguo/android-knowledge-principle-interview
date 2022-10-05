@@ -106,3 +106,5 @@
 			暂时不理解。
 12 32位和64位哪个好 区别的对比分析
 	https://www.csdn.net/tags/NtzaEgxsNzYwOTMtYmxvZwO0O0OO0O0O.html
+13 SCSI是什么意思？
+	https://baijiahao.baidu.com/s?id=1739029443354206413&wfr=spider&for=pc

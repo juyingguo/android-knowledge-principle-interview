@@ -3,3 +3,57 @@
 	https://zhuanlan.zhihu.com/p/113752448 
 	
 	xftp
+	Xftp（跨系统文件传输）
+		https://zhuanlan.zhihu.com/p/477484199
+		
+		官网：https://www.xshell.com/zh/xftp/
+			【xhell】[xftp]
+		
+		工具一：Xftp
+			下载安装
+
+			下载可以直接到官网上下载正版xftp官网。
+
+			点击下图"免费授权页面"，输入姓名，邮箱就可获得免费权限。
+		工具二：MobaXterm_Personal_21.2
+
+3. 使用Xftp进行远程文件传输
+	https://blog.csdn.net/a1446018093/article/details/126243997
+	
+	1.打开 Xftp
+	2.文件 -> 新建 -> 虚拟机IP地址
+	3.端口号22
+	4.协议SFTP
+	5.选项 -> 编码 -> UTF-8
+		传输-迁移类型-binary
+		
+	3.3 Xshell、Xftp连接虚拟机
+		https://blog.csdn.net/qq_52720527/article/details/125896786
+		
+		第一次连接会出现问题，一直连接不上很正常，虚拟机虚拟机中为配置ssh服务
+		
+		Xshell或Xftp连接虚拟机，都需要虚拟机提前配置启动ssh服务。
+		
+		连接配置：
+			服务器类型：SSH2, OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+		第一次连接会出现问题，一直连接不上很正常，虚拟机虚拟机中为配置ssh服务，在终端输入一下命令：
+
+		ps -e | grep ssh
+		1
+		查看反馈是否有sshd，下面这种就是未启动ssh的情况
+
+		查看是否有安装了ssh，
+
+		sudo service sshd start
+		1
+		如果出现，下面这句话就是未安装
+
+		Failed to start sshd.service: Unit sshd.service not found.
+		1
+		下面我们用指令安装ssh，在终端输入以下指令。
+
+		sudo apt install openssh-server
+		———
+		
+	【推荐五款ssh连接工具】
+	https://blog.csdn.net/qq_52839196/article/details/122788251

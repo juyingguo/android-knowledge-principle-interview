@@ -218,26 +218,28 @@
 
 				我的jdk版本是那个文件夹的名字：   jdk1.6.0_45　　
 
-				我的设置为：
-
+				我的设置为：（仿造在windows下配置jdk环境变量）
+				安装路径在/home/soft_tools/下（安装目录任意）
 				JAVAHOME=/home/soft_tools/java/jdk1.6.0_45
-				JRE_HOME=/home/soft_tools/java/jdk1.6.0_45/jre
-				CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
-				PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
-				
+				JRE_HOME=${JAVA_HOME}/jre
+				CLASSPATH=.:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar:${JRE_HOME}/lib:$CLASSPATH 
+				PATH=$PATH:${JAVA_HOME}/bin:$JRE_HOME/bin:$PATH				
 				
 				******
+				安装路径在/usr/lib/soft_install下（安装目录任意）
 				/usr/lib/soft_install/jdk1.6.0_45
 				
 				JAVAHOME=/usr/lib/soft_install/jdk1.6.0_45
-				JRE_HOME=/usr/lib/soft_install/jdk1.6.0_45/jre
-				CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
-				PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin 
+				JRE_HOME=${JAVA_HOME}/jre
+				CLASSPATH=.:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar:${JRE_HOME}/lib:$CLASSPATH 
+				PATH=$PATH:${JAVA_HOME}/bin:$JRE_HOME/bin:$PATH
 				
-				————————————————
-				版权声明：本文为CSDN博主「杯中倒影__」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-				原文链接：https://blog.csdn.net/mp295345033/article/details/78960697
-				
+				———————
+				##这种方式配置，初步验证javac -version，提示javac不可用。
+					按照一下修改后正常：：
+					CLASSPATH下添加:$CLASSPATH 
+					PATH下添加:$PATH
+				##采用下面带有export方式配置jdk路径
 				
 
 				6、执行命令，使配置生效。source /etc/environment　( source /home/username/.bashrc )
@@ -262,14 +264,14 @@
 				#config java jdk1.7  envirment   安装目录为：/usr/local/tools/java
 				#export JAVA_HOME=/usr/local/tools/java/jdk1.7.0_79  
 				#export JRE_HOME=${JAVA_HOME}/jre  
-				#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
-				#export PATH=${JAVA_HOME}/bin:$PATH 
+				#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH 
+				#export PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin:$PATH 
 				
 				#config java jdk1.6  envirment   install root dir：/usr/lib/java/jdk1.6.0_45
 				#export JAVA_HOME=/usr/lib/java/jdk1.6.0_45
-				#export JRE_HOME=${JAVA_HOME}/jre  
-				#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
-				#export PATH=${JAVA_HOME}/bin:$PATH 
+				#export JRE_HOME=${JAVA_HOME}/jre
+				#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH
+				#export PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin:$PATH
 				
 				修改之前 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 				

@@ -1,0 +1,35 @@
+1.
+2.MD5 、SHA1、SHA256 校验工具
+	https://zhuanlan.zhihu.com/p/388383489?ivk_sa=1025883i
+	
+	文件校验工具.exe
+		
+	
+	WinMD5 Free 
+		仅适用于 Windows 平台。
+	
+	7-Zip
+
+		7-Zip 是一款免费的解压缩软件，但也可用于 SHA1、SHA256 校验。
+		
+		在资源管理器中，选中需要验证的文件，然后右键单击，在弹出的快捷菜单上，选择“CRC SHA”--“SHA-1”或“SHA-256”，7-Zip 就会计算该文件的 SHA1 或 SHA256 值。
+	Windows 命令行或 Powershell 生成 Hash
+		用法：
+
+		CertUtil -hashfile FileName [HashAlgorithm]
+
+		第一部分 CerUtil 和第二部分 -hashfile 直接原样输入命令行。不区分大小写。
+
+		第三部分改为你要校验的文件。如果该文件不在当前工作目录，需要输入完整的文件路径。（对于 Powershell，文件路径中如果有空格，还需要用引号把路径括起来，并在最前面插入一个&。）
+
+		第四部分是 Hash 算法，可选项包括：MD2、MD4、MD5、 SHA1、SHA256、SHA384、SHA512。
+
+		certutil 是命令行的外部命令，certutil.exe 位于 C:\Windows\System32 文件夹中。
+
+		-hashfile 是 certutil 众多参数中的一个。
+
+		更多帮助信息可以在命令行或 Powershell 中输入CertUtil -hashfile /? 获取。
+2. ubuntu下查看文件md5
+	http://t.zoukankan.com/exmyth-p-3793424.html
+	
+	终端输入md5sum --help

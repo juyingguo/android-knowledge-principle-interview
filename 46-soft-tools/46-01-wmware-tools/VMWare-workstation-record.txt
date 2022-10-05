@@ -1,41 +1,53 @@
-1. VMware Workstation 14�����ƽ������(����Կ)���ʼǣ� 
-	1.1 VMware Workstation 14�����ƽ������(����Կ)���ʼǣ� 
+1. VMware Workstation 14中文破解版下载(附密钥)（笔记） 
+	1.1 VMware Workstation 14中文破解版下载(附密钥)（笔记） 
 		https://blog.csdn.net/zjy900507/article/details/96507185
 		
-2. VMware����ubuntu 16.4�汾�����ʧ�ܡ�	
-	�޷���� VMCI ��������İ汾: �����Ч��
+	1.2 虚拟机VMware下载与安装教程（详细）
+		https://blog.csdn.net/weixin_45912291/article/details/108894737?
+		VMware Workstation 16.
+		
+		VMware安装ubuntu教程（ubuntu-20.04.1-desktop-amd64.iso）
+		https://blog.csdn.net/weixin_45912291/article/details/108901106
+		
+		官网安装说明：
+		https://docs.vmware.com/cn/VMware-Workstation-Pro/14.0/com.vmware.ws.using.doc/GUID-3F6B9D0E-6CFC-4627-B80B-9A68A5960F60.html
+2. VMware启动ubuntu 16.4版本虚拟机失败。	
+	无法获得 VMCI 驱动程序的版本: 句柄无效。
 
-	��������vmci.sys���İ汾����ȷ���볢�����°�װ VMware Workstation��
+	驱动程序“vmci.sys”的版本不正确。请尝试重新安装 VMware Workstation。
 
-	ģ�顰DevicePowerOn������ʧ�ܡ�
+	模块“DevicePowerOn”启动失败。
 
-	δ�������������
+	未能启动虚拟机。
 	
-	2.1 �����vmware��һ��С���⡪��֮������������"vmci.sys"�İ汾����ȷ 
+	2.1 虚拟机vmware的一个小问题——之——驱动程序"vmci.sys"的版本不正确 
 		https://blog.csdn.net/weixin_38298363/article/details/82851118
 	2.2 PXE-E53:No boot filename received 
 		PXE-MOF:Exiting Intel PXE ROM.
 		Operating System not found.
 			
-3. VMCI���� 
+3. VMCI概述 
 	https://blog.51cto.com/javavwv/1743468
 	
-	����������ӿ�VMCI(The Virtual Machine Communication Interface)��һ����һ�������������������֮���ṩ���ٸ�Ч�����Ļ������(infrastructure)��VMCI SDK�ٽ���ʹ��VMCI��������������ķ�չ��
-4. VM����VMware Authorization Service��ǰδ���� 
+	虚拟机交流接口VMCI(The Virtual Machine Communication Interface)是一个在一个或多个虚拟机与宿主机之间提供高速高效交流的基本组件(infrastructure)，VMCI SDK促进了使用VMCI基本组件的软件的发展。
+4. VM错误：VMware Authorization Service当前未运行 
 	https://blog.csdn.net/weixin_43795761/article/details/106811094 
 	
-	�ҷ���ÿ���Ҽ��ù���Ա��ʽ�򿪾ͺ��ˡ�����������ô���� 
+	我发现每次右键用管理员方式打开就好了。。。就是这么神奇 
 	
-5. ���VMware������������޷�����MKS���׽������ӳ��Դ���̫�࣬���ڷ��� 
+5. 解决VMware虚拟机报错“无法连接MKS：套接字连接尝试次数太多，正在放弃 
 	https://blog.csdn.net/qq_31638535/article/details/90384521 
 	
-	���ҵĵ��ԡ�->��������->�������Ӧ�ó���->������
+	“我的电脑”->“管理”->“服务和应用程序”->“服务”
 
 		VMware Authorization Service
 		VMware DHCP Service
 		VMware NAT Service
 		VMware USB Arbitration Service
 		VMware Workstation Server
-		�⼸�������������ˣ�������������һ����Щ����Ϳ����ˡ�����ҿ��ܶ಩�Ͷ�û��д�����ڴ�����һ�¡�
+		这几个都正常启动了，后来发现重启一下这些服务就可以了。这个我看很多博客都没有写到，在此添加一下。
 
-		������������
+		以上问题解决！
+6. VMware虚拟机如何共享文件夹？
+	VMware虚拟机共享window系统文件夹，这样安装的ubuntu系统直接使用这个文件夹，不用把文件拷贝到ubuntu系统中了。
+	https://www.xitongzhijia.net/xtjc/20220105/237320.html

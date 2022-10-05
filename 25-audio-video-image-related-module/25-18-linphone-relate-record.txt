@@ -21,7 +21,7 @@
 			--》https://gitlab.linphone.org/BC/public/tutorials/-/tree/master/android/kotlin/5-BasicChat
 				file transfer：you can get it's source code and deploy your own
 				link:[https://gitlab.linphone.org/BC/public/flexisip-http-file-transfer-server]
-		linphone-sdk/：
+		linphone-sdk官方文档：
 			https://gitlab.linphone.org/BC/public/linphone-sdk/
 			
 			-->gradle引入sdk具体版本
@@ -128,10 +128,7 @@
 		https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4181783/
 		
 		#[Section 2],to [Section 6]
-	5.6 Linphone - SDK 编译
-		编译linphone-sdk-android
-		https://www.jianshu.com/p/ccea179c6cc8
-		
+			
 6. 官方项目调试分析
 	linphone-android-4.3.1
 	包名：org.linphone
@@ -140,3 +137,494 @@
 	
 	提示用户设置白名单：
 		提示app使用push notification 以便在后台允许时能接收电话呼叫和消息
+7. Linphone - SDK 编译
+		编译linphone-sdk-android
+		https://www.jianshu.com/p/ccea179c6cc8
+			[详细记录见7.2]
+		
+		LinPhone Android SDK 编译过程
+			[LInPhone SDk Release 4.4.6]
+			https://www.jianshu.com/p/942f989eaac7
+		编译linphone-sdk-android
+			[LInPhone SDk Release 4.5]
+			https://blog.csdn.net/guodongAndroid/article/details/124424931
+		Linphone SDK 源码编译
+			[LInPhone SDk Release 5.0]
+			https://blog.csdn.net/ying_521125/article/details/126829691
+	7.2 编译linphone-sdk-android
+		https://www.jianshu.com/p/ccea179c6cc8
+		
+		{作者的参考文档：
+			官方文档：linphone-sdk
+
+			LinPhone Android SDK 编译过程
+				https://www.jianshu.com/p/942f989eaac7
+			编译linphone Android
+				https://www.codenong.com/cs106423576/
+		}
+		
+		编译linphone-sdk-android
+		编译环境
+		系统 Ubuntu 20.04.4 LTS 2核4G 50G存储 i5-8250U 1.60Ghz
+
+		Android SDK r24.4.1
+
+		Android NDK r18b
+
+		Linphone SDK Release 4.5
+
+		CMake 3.16.3
+
+		Python 3.8.10
+
+		Git 2.15.1
+
+		Java 1.8.0_312
+		
+		Android环境准备
+		安装 Android SDK NDK cmdline-tools
+
+		NDK：https://developer.android.google.cn/ndk/downloads?hl=en
+
+		SDK：https://links.jianshu.com/go?to=http%3A%2F%2Fdl.google.com%2Fandroid%2Fandroid-sdk_r24.4.1-linux.tgz
+
+		Cmdline：https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
+
+		三个压缩包下载之后，将NDK和SDK解压，commandlinetools-linux-6200805_latest.zip 解压后将解压出来的tools文件夹放在sdk根目录的cmdline-tools文件夹里边，如果没有cmdline-tools文件夹，就手动创建一个。放好文件之后需要配置环境变量,在~/ .profile文件下末尾添加一下内容，路径换成你自己的文件路径
+		
+		Ubuntu环境准备
+		安装cmake
+			$ sudo apt-get install cmake
+			[先通过下载的压缩包安装和配置环境变量]
+			[参考cmakem模块文档]
+		安装git
+			$ sudo apt-get install git
+		安装java
+			$ sudo apt-get install openjdk-8-jdk
+			[先通过下载的压缩包安装和配置环境变量]
+			[参考ubuntu安装软件模块文档，配置环境变量]
+		安装yasm
+			$ sudo apt-get install yasm
+		安装nasm
+			$ sudo apt-get install nasm
+		安装doxygen
+			$ sudo apt-get install doxygen
+		安装clang
+			$ sudo apt-get install clang
+			[我自己猜测，ndk版本>=r18b自带了clang并默认使用clang编译。此时单独安装clang会不会有冲突，导致问题？]
+		安装g++-multilib
+			$ sudo apt-get install g++-multilib
+		安装pip
+			$ sudo apt-get install python3-pip
+		配置pip源
+			编辑~/.pip/pip.conf，若没有此文件自行创建，填写以下内容：
+
+			[global]
+			index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+			[install]
+			trusted-host = https://pypi.tuna.tsinghua.edu.cn
+		安装pystache
+			pip3 install pystache
+		安装six
+			pip3 install six
+		Android SDK 协议授予
+			yes | sdkmanager --licenses && sdkmanager --update
+		编译Linphone SDK
+			下载源码
+
+			$ git clone -b release/4.5 https://gitlab.linphone.org/BC/public/linphone-sdk.git --recursive
+			#clone时指定分支名称(分支名称，官网仓库查看)。此时本地也会创建该分支
+			#clone需要加--recursive，因为linphone-sdk使用git submodule功能搭建，引用了十几个module，--recursive会在clone的时候把引用的module也下载下来
+		理下文件可执行权限：
+			$ chmod u+x linphone-sdk/cmake/Android/gradlew
+			$ chmod u+x linphone-sdk/external/libvpx/configure
+			$ chmod u+x linphone-sdk/cmake/dummy.sh
+			$ chmod u+x linphone-sdk/external/libvpx/build/make/*
+		开始编译
+			到这里一切准备就绪，可以开始编译了，创建build文件夹，编译过程产物都在build文件夹里
+
+			$ cd linphone-sdk
+			$ mkdir build && cd build
+			$ cmake -DCMAKE_VERBOSE_MAKEFILE=ON -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS=arm64,armv7,x86,x86_64 -DENABLE_G729=YES ..
+			$ cmake --build . --parallel 8
+			##
+			创建一个编译脚本build.sh，把上面的编译命令复制到文件里保存，
+			每次编译时执行编译脚本即可./build.sh
+				#! /bin/bash
+
+				cmake -DCMAKE_VERBOSE_MAKEFILE=ON -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS=arm64,armv7,x86,x86_64 -DENABLE_G729=YES ..
+				cmake --build . --parallel 8
+			#目前是指定编译目标平台是Android，编译目标CPU架构是arm64/armv7,x86,x86_64，并开启G729音频编解码，开启8个线程编译，在目前编译环境下，整编一次耗时大约一个半小时，后续增量编译会快不少
+
+			#不需要x86,x86_64架构的，可以删除。
+		编译完成后的产物在以下目录：
+
+			.so：build/libs/
+			aar：build/linphone-sdk/bin/outputs/aar/
+			maven：build/maven_repository
+			
+	7.x 编译过程中问题记录
+		q1:cmake -DCMAKE_VERBOSE_MAKEFILE=ON -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS=arm64,armv7,x86,x86_64 -DENABLE_G729=YES ..
+			CMake Error at bctoolbox/cmake/BcToolboxCMakeUtils.cmake:146 (message):
+			  invalid git describe version: ''
+			Call Stack (most recent call first):
+			  CMakeLists.txt:35 (bc_compute_full_version)
+			bctoolbox\cmake\BcToolboxCMakeUtils.cmake 146行
+				NOT (GIT_DESCRIBE_VERSION MATCHES )...
+			
+			引出问题：linphone-sdk-android版本号生成解析
+				https://www.jb51.net/article/262934.htm
+				【作者系列文章】
+				【更多相关信息：查看8】
+
+
+		q2,fatal: detected dubious ownership in repository at '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk'
+		To add an exception for this directory, call:
+
+			git config --global --add safe.directory /mnt/hgfs/vmshare/linphone-sdk/linphone-sdk
+		【ubuntu】fatal: detected dubious ownership in repository at ...
+		https://blog.csdn.net/qq_40690815/article/details/126604030
+			谷歌在一篇博客中得到解决方法：	https://networkcult.com/fix-fatal-detected-dubious-ownership-in-repository-at-error-3337/
+			
+			方法1：修改文件的所有者
+				chown -R root /home/xxx
+				PS: 可以用who, users查看当前登录用户，用grep bash /etc/passwd查看所有用户。
+			方法2：手动禁用安全目录
+				git config --global --add safe.directory '*'
+
+		q3,	/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/cmake/Android/GradleClean.cmake
+			Exception in thread "main" java.lang.RuntimeException: Could not create parent directory for lock file /home/eink/.gradle/wrapper/dists/gradle-6.1.1-all/cfmwm155h49vnt3hynmlrsdst/gradle-6.1.1-all.zip.lck
+				at org.gradle.wrapper.ExclusiveFileAccessManager.access(ExclusiveFileAccessManager.java:43)
+				at org.gradle.wrapper.Install.createDist(Install.java:48)
+				at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:107)
+				at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+			CMake Error at /mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/cmake/Android/GradleClean.cmake:34 (message):
+			  Gradle clean failed
+
+		q4,问题：
+			FAILURE: Build failed with an exception.
+
+			* What went wrong:
+			A problem occurred configuring root project 'build'.
+			> Could not resolve all artifacts for configuration ':classpath'.
+			   > Could not download jdom2-2.0.6.jar (org.jdom:jdom2:2.0.6)
+				  > Could not get resource 'https://jcenter.bintray.com/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar'.
+					 > Could not GET 'https://jcenter.bintray.com/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar'.
+						> Connection reset
+						
+			BUILD FAILED in 10m 47s
+			CMake Error at /mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/cmake/Android/GradleClean.cmake:34 (message):
+			  Gradle clean failed
+
+
+			CMakeFiles/gradle-clean.dir/build.make:60: recipe for target 'CMakeFiles/gradle-clean' failed
+			make[2]: *** [CMakeFiles/gradle-clean] Error 1
+			make[2]: Leaving directory '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build'
+			CMakeFiles/Makefile2:147: recipe for target 'CMakeFiles/gradle-clean.dir/all' failed
+			make[1]: *** [CMakeFiles/gradle-clean.dir/all] Error 2
+			make[1]: Leaving directory '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build'
+			Makefile:86: recipe for target 'all' failed
+			make: *** [all] Error 2
+
+			分析：jcenter地址下载不了dom2-2.0.6.jar。
+				linphone-sdk下新建的build文件夹下有build.gradle，就相当于普通用gradle构建的android工程。
+				直接修改jcenter仓库依赖地址。如添加：maven { url 'https://jitpack.io' }
+				重新编译还会因重新生成而被覆盖。
+				追踪报错信息：{linphone-sdk/cmake/Android/GradleClean.cmake:34 (message):
+								Gradle clean failed}
+				此Android目录下就是android项目，修改Android/gradle下
+				build.gradle.cmake
+				upload.gradle.cmake
+				这连个文件，添加maven { url 'https://jitpack.io' }
+				[完美解决]
+		q5,
+			android-armv7架构输出，其它架构一样错误。
+			
+			Determining if the C compiler works failed with the following output:
+			Change Dir: /mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/android-armv7/CMakeFiles/CMakeTmp
+
+			Run Build Command(s):/usr/bin/make cmTC_ca8d7/fast && make[3]: Entering directory '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/android-armv7/CMakeFiles/CMakeTmp'
+			make[3]: Warning: File 'Makefile' has modification time 1.5 s in the future
+			/usr/bin/make -f CMakeFiles/cmTC_ca8d7.dir/build.make CMakeFiles/cmTC_ca8d7.dir/build
+			make[4]: Entering directory '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/android-armv7/CMakeFiles/CMakeTmp'
+			make[4]: Warning: File 'CMakeFiles/cmTC_ca8d7.dir/flags.make' has modification time 1.4 s in the future
+			Building C object CMakeFiles/cmTC_ca8d7.dir/testCCompiler.c.o
+			/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi17 --gcc-toolchain=/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/sysroot   -isystem /mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_ca8d7.dir/testCCompiler.c.o   -c /mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/android-armv7/CMakeFiles/CMakeTmp/testCCompiler.c
+			Linking C executable cmTC_ca8d7
+			/mnt/hgfs/vmshare/soft_tool/cmake-3.16.3-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca8d7.dir/link.txt --verbose=1
+			/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi17 --gcc-toolchain=/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/sysroot -isystem /mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security    -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot /mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/platforms/android-17/arch-arm -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--fix-cortex-a8 -Wl,--exclude-libs,libunwind.a -L/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -Wl,--gc-sections -Wl,-z,nocopyreloc -pie -fpie   CMakeFiles/cmTC_ca8d7.dir/testCCompiler.c.o  -o cmTC_ca8d7  -latomic -lm 
+			/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: fatal error: cmTC_ca8d7: Input/output error
+			clang: error: linker command failed with exit code 1 (use -v to see invocation)
+			CMakeFiles/cmTC_ca8d7.dir/build.make:86: recipe for target 'cmTC_ca8d7' failed
+			make[4]: *** [cmTC_ca8d7] Error 1
+			make[4]: Leaving directory '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/android-armv7/CMakeFiles/CMakeTmp'
+			Makefile:121: recipe for target 'cmTC_ca8d7/fast' failed
+			make[3]: *** [cmTC_ca8d7/fast] Error 2
+			make[3]: Leaving directory '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/android-armv7/CMakeFiles/CMakeTmp'
+			
+			参考官方问题库：
+			Building Native Linphone-SDK for android giving Error while building SDK #987
+			https://github.com/BelledonneCommunications/linphone-android/issues/987
+			
+			sdk for android building successful when ANDROID_ARCHS=arm64 , but failed with "armv7" #241
+				https://github.com/BelledonneCommunications/linphone-sdk/issues/241
+			
+			尝试更换nkd-r17c,ndk-r18b,ndk-r20,ndk-r22b,都报同样的错误。
+			cmTC_ca8d7是编译某个文件生成的，上面的复制出的错误信息太少。重新观察复制完整的。
+			
+			参考：搜索关键字： CMakeFiles/cmTC_. target 'cmTC_' failed
+				#c语言编译器无法编译,gcc – CMake：C编译器无法编译简单的测试程序
+				https://blog.csdn.net/weixin_35975197/article/details/117088523
+					[受到启发]
+				安装opencv4.5中出现的一些问题
+				https://www.cnblogs.com/miaorn/p/14218418.html
+				{作者中异常时明显是库问题}
+			
+			CMakeTestCCompiler.cmake错误解决
+				https://blog.csdn.net/zhangjg_blog/article/details/114656065
+				[受到启发，初步验证还是无效]
+				
+				CMakeTestCCompiler.cmake错误解决
+				https://blog.csdn.net/zhangjg_blog/article/details/114656065?
+					[受到部分启发]
+			CMake: The C Compiler is not able to compile a simple test program
+				https://stackoverflow.com/questions/53633705/cmake-the-c-compiler-is-not-able-to-compile-a-simple-test-program/61997975#61997975
+				[受到启发，初步验证还是无效]
+			sdk for android building successful when ANDROID_ARCHS=arm64 , but failed with "armv7" #241
+				https://github.com/BelledonneCommunications/linphone-sdk/issues/241
+				
+				{作者使用docker android编译，同样问题。好在作者arm64架构编译成功。}
+				
+		q6,maven仓库地址用jitpack后报错：
+			FAILURE: Build failed with an exception.
+
+			* Where:
+			Build file '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/build.gradle' line: 183
+
+			* What went wrong:
+			A problem occurred configuring root project 'build'.
+			> Could not resolve all files for configuration ':debugCompileClasspath'.
+			   > Could not resolve com.google.firebase:firebase-iid:[19.0.1].
+				 Required by:
+					 project : > com.google.firebase:firebase-messaging:19.0.1
+				  > Failed to list versions for com.google.firebase:firebase-iid.
+					 > Unable to load Maven meta-data from https://jitpack.io/com/google/firebase/firebase-iid/maven-metadata.xml.
+						> Could not get resource 'https://jitpack.io/com/google/firebase/firebase-iid/maven-metadata.xml'.
+						   > Could not GET 'https://jitpack.io/com/google/firebase/firebase-iid/maven-metadata.xml'.
+							  > Read timed out
+
+			* Try:
+			Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+			* Get more help at https://help.gradle.org
+
+			BUILD FAILED in 3m 11s
+			CMake Error at /mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/cmake/Android/GradleClean.cmake:34 (message):
+			  Gradle clean failed
+			 
+			参考：Could not resolve com.google.firebase:firebase-messaging:[10.2.1, 12.1.0)
+				https://stackoverflow.com/questions/60741887/could-not-resolve-com-google-firebasefirebase-messaging10-2-1-12-1-0
+				
+				楼主成功。有多个maven仓库地址。
+				repositories {
+					google()
+					mavenLocal()
+					jcenter()
+					flatDir {
+						dirs 'libs'
+					}
+					maven { url 'https://maven.fabric.io/public' }
+					maven { url 'http://repo.admost.com:8081/artifactory/admost' }
+					maven { url 'https://vungle.bintray.com/vungle-android-beta' }
+					maven { url "http://dl.appnext.com/" }
+					maven { url 'https://jitpack.io' }
+					maven { url 'https://dl.bintray.com/pubnative/maven' }
+				}
+				配置后，还是下载不了依赖：com.google.firebase:firebase-messaging:19.0.1
+				参考：linphone-android-4.5.0可以编译并下载\linphone-android-4.5.0\app。
+				此时可以先不下载。
+				static def firebaseEnabled() {
+					File googleFile = new File('build/google-services.json')
+					return googleFile.exists()
+				}
+				if (firebaseEnabled()) {
+					compileOnly 'com.google.firebase:firebase-messaging:19.0.1'
+				}
+				依赖包问题解决了。
+			
+			使用docker后，其它库下载问题：
+			commons-compress库下载问题：
+				 Could not resolve org.apache.commons:commons-compress:1.16.1.
+				 > Could not get resource 'http://jcenter.bintray.com/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom'.
+					> Could not HEAD 'http://jcenter.bintray.com/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom'.
+					   > jcenter.bintray.com:80 failed to respond
+				换成：dl.bintray.com，还是下载失败。
+				Could not get resource 'https://dl.bintray.com/pubnative/maven/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom
+				
+				关掉https://dl.bintray.com/pubnative/maven
+				
+			
+			还有：FAILURE: Build failed with an exception.
+
+				* Where:
+				Build file '/home/bc/linphone-sdk/build-arm64/build.gradle' line: 191
+
+				* What went wrong:
+				A problem occurred configuring root project 'build-arm64'.
+				> Could not resolve all files for configuration ':debugCompileClasspath'.
+				   > Could not resolve org.apache.commons:commons-compress:1.16.1.
+					 Required by:
+						 project :
+					  > Skipped due to earlier error
+
+			尝试更换仓库地址，还是报一样的错。
+				allprojects {
+					repositories {
+						google()
+						maven {
+							url "https://plugins.gradle.org/m2/"
+						}
+						//maven { url 'https://maven.fabric.io/public' }
+						//maven { url 'http://repo.admost.com:8081/artifactory/admost' }
+						//maven { url 'https://vungle.bintray.com/vungle-android-beta' }
+						//maven { url "http://dl.appnext.com/" }
+						maven { url 'https://jitpack.io' }
+						//maven { url 'https://dl.bintray.com/pubnative/maven' }
+						//maven {url "https://maven.aliyun.com/repository/public"}
+						//maven {url "https://maven.aliyun.com/repository/google"}
+					}
+				}
+				##只保留一个jitpack就可以下载了。大胆尝试。【成功】。
+				##maven配置多个仓库地址的话执行最后一个吗？
+				##手动下载jar，本地配置加载引入jar，太笨拙。暂无试验。
+		q7,pystache安装异常。ubuntu-16-04-06
+			~$ pip3 install pystache
+			Collecting pystache
+			  Using cached https://files.pythonhosted.org/packages/3f/e7/8750ba6c6101d6aa5ceeb20c013adf2c6f3554a12c71d75654b468404bfa/pystache-0.6.0.tar.gz
+				Complete output from command python setup.py egg_info:
+				Traceback (most recent call last):
+				  File "<string>", line 1, in <module>
+				  File "/tmp/pip-build-mgsjby4h/pystache/setup.py", line 183
+					command = f"pandoc -f markdown-smart --write=rst --output={rst_temp_path} {md_path}"
+																									   ^
+				SyntaxError: invalid syntax
+				
+				----------------------------------------
+			Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-mgsjby4h/pystache/
+			You are using pip version 8.1.1, however version 22.2.2 is available.
+			You should consider upgrading via the 'pip install --upgrade pip' command.
+
+			
+			 pip3 install --upgrade pip
+			 
+			 pip3 install pystache
+			Traceback (most recent call last):
+			  File "/usr/bin/pip3", line 11, in <module>
+				sys.exit(main())
+			  File "/home/eink/.local/lib/python3.5/site-packages/pip/__init__.py", line 11, in main
+				from pip._internal.utils.entrypoints import _wrapper
+			  File "/home/eink/.local/lib/python3.5/site-packages/pip/_internal/utils/entrypoints.py", line 12
+				f"pip{sys.version_info.major}",
+											 ^
+			SyntaxError: invalid syntax
+
+			解决ubuntu16.04安装pytorch时pip3报错的问题
+				{在Ubuntu-18，ubuntu-20没有这个问题。}
+				在Ubuntu16.04环境下安装pytorch时，提示pip版本过低，需要升级pip。但是升级后使用pip3指令却报错
+				https://blog.csdn.net/weixin_47987343/article/details/125692731
+				https://edu.csdn.net/skill/python?utm_source=AI_act_python
+				
+				{
+					.首先将pip3卸载（在终端输入  sudo apt-get remove python3-pip）
+					{https://bootstrap.pypa.io/。  下载  pip/3.5/get-pip.py文件（我的Python版本是3.5的）}
+					在文件的下载路径打开终端，执行代码：python get-pip.py。然后会修复pip3。
+					修复完成之后就可以再次安装python3-pip了。
+				}
+				{获得启发:
+					python3 get-pip.py}
+					使用python3命令执行get-pip.py 方可修复，需要对应的版本号。
+					
+			Python3.5.2填坑笔记
+				https://blog.csdn.net/SPESEG/article/details/122369658
+				{初步验证，还未看懂}
+			解决ubuntu18.04中python兼容以及pip兼容问题
+				https://blog.csdn.net/xiaobumi123/article/details/111029077
+				
+			Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-*解决办法
+				pip3 install --upgrade pip
+				然后再执行pip3 install paramiko，然没有报错安装成功了 。
+				{初步验证，还是不行}
+			安装软件时出现Command “python setup.py egg_info“ failed with error code 1 in /tmp的解决方案
+				https://blog.csdn.net/weixin_43997319/article/details/123750890
+				{初步验证，还是不行}
+		q8,只编译arm64-DLINPHONESDK_ANDROID_ARCHS=arm64
+			/mnt/hgfs/vmshare/soft_tool/cmake-3.16.3-Linux-x86_64/bin/cmake -S/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/external/sqlite3 -B/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/WORK/android-arm64/Build/sqlite3 --check-build-system CMakeFiles/Makefile.cmake 0
+			Re-run cmake no build system arguments
+			CMake Error: The source directory "/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/external/libxml2" does not appear to contain CMakeLists.txt.
+			Specify --help for usage, or press the help button on the CMake GUI.
+			Re-run cmake no build system arguments
+			CMake Error: The source directory "/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/external/gsm" does not appear to contain CMakeLists.txt.
+			Specify --help for usage, or press the help button on the CMake GUI.
+			CMakeFiles/EP_gsm.dir/build.make:110: recipe for target '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/WORK/android-arm64/Stamp/EP_gsm/EP_gsm-configure' failed
+			make[5]: *** [/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/WORK/android-arm64/Stamp/EP_gsm/EP_gsm-configure] Error 1
+			CMakeFiles/EP_xml2.dir/build.make:110: recipe for target '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/WORK/android-arm64/Stamp/EP_xml2/EP_xml2-configure' failed
+			make[5]: *** [/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/WORK/android-arm64/Stamp/EP_xml2/EP_xml2-configure] Error 1
+			make[5]: Leaving directory '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/android-arm64'
+			CMakeFiles/Makefile2:597: recipe for target 'CMakeFiles/EP_gsm.dir/all' failed
+			make[4]: *** [CMakeFiles/EP_gsm.dir/all] Error 2
+			make[4]: *** Waiting for unfinished jobs....
+			make[5]: Leaving directory '/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/android-arm64'
+			CMakeFiles/Makefile2:352: recipe for target 'CMakeFiles/EP_xml2.dir/all' failed
+			make[4]: *** [CMakeFiles/EP_xml2.dir/all] Error 2
+			/mnt/hgfs/vmshare/soft_tool/cmake-3.16.3-Linux-x86_64/bin/cmake -E cmake_progress_start /mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/WORK/android-arm64/Build/sqlite3/CMakeFiles /mnt/hgfs/vmshare/linphone-sdk/linphone-sdk/build/WORK/android-arm64/Build/sqlite3/CMakeFiles/progress.marks
+		q9,使用docker编译
+			
+			CMake Error: The source directory "/home/bc/linphone-sdk/external/libxml2" does not appear to contain CMakeLists.txt.
+			Specify --help for usage, or press the help button on the CMake GUI.
+			[  6%] Forcing build for 'EP_speex'
+			[  6%] Forcing build for 'EP_opus'
+			[  6%] Performing build step for 'EP_vpx'
+			[  6%] Performing build step for 'EP_mbedtls'
+			CMakeFiles/EP_xml2.dir/build.make:94: recipe for target '/home/bc/linphone-sdk/build-arm64/WORK/android-arm64/Stamp/EP_xml2/EP_xml2-configure' failed
+			make[5]: *** [/home/bc/linphone-sdk/build-arm64/WORK/android-arm64/Stamp/EP_xml2/EP_xml2-configure] Error 1
+			[  6%] Forcing build for 'EP_decaf'
+			[  6%] Performing build step for 'EP_matroska2'
+			CMakeFiles/Makefile2:317: recipe for target 'CMakeFiles/EP_xml2.dir/all' failed
+			make[4]: *** [CMakeFiles/EP_xml2.dir/all] Error 2
+			make[4]: *** Waiting for unfinished jobs....
+			make[6]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+			
+			##关键字：libxml2，EP_xml2
+			##配置关于libxml2的打印：
+				
+				-- Enabled features:
+				 * Arch suffix, Append the android abi to shared libraries
+				 * Xml2, Enable bc version of libxml2
+			##尝试反使能libxml2，编译试试。
+				build目录下有enabled_features.txt，如何产生的，找到产生的地方，禁用需要的配置即可。
+				
+				#find -iname "enabled_features.txt*"
+					[no]
+				#find -iname "enabled_features.txt.cmake"
+					[no]
+				#eink@ubuntu:/mnt/hgfs/vmshare/linphone-sdk/linphone-sdk$ find -iname "enabled_features**"
+					[no]
+				#find -iname "*xml2*"
+					result:
+					./bzrtp/cmake/FindXML2.cmake
+					./cmake-builder/builders/xml2.cmake
+					./cmake-builder/cmake/FindXML2.cmake
+					./cmake-builder/configs/desktop/linphone_package/sdk_content/xml2.list.in
+					./external/libxml2
+					
+					查看：./external/libxml2，竟然是空文件夹。多次更新代码及子模块更新，还是没更新完整。
+					git status .查看结果为：
+					modified:   external/libxml2 (modified content)
+					
+8. linphone-sdk-android版本号生成解析
+	https://www.jb51.net/article/262934.htm
+	【作者系列文章】
+	
+	a1,linphone-sdk 目录下搜索 upload.gradle ：find . -name '*upload.gradle*'
+	a2,在 linphone-sdk 目录下搜索包含 LINPHONESDK_VERSION 字样的文件：find . -type f | xargs grep 'LINPHONESDK_VERSION'
+		锁定了最后一行结果：./CMakeLists.txt:bc_compute_full_version(LINPHONESDK_VERSION)。

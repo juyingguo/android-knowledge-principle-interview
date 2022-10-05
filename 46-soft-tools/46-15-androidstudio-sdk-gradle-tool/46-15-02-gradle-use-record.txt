@@ -54,7 +54,7 @@
 				}
 			}
 		}
-2. .gradle 目录详解
+2. .gradle 目录详解及下载的压缩包位置
 
 	2.1 Gradle 缓存目录结构 缓存策略
 		https://www.jianshu.com/p/acf579d8cb56
@@ -62,6 +62,48 @@
 		2.1.1 
 			C:\Users\Administrator\.gradle\daemon\2.4
 			下的日志文件daemon-3976.out.log
+	2.2 .gradle\wrapper\dists 某一个版本下的文件夹字符串生成规则
+		gradle下载时 dists中的目录如何生成的?
+		https://blog.csdn.net/who7708/article/details/112713532
+		
+		import java.security.MessageDigest;
+		import java.math.BigInteger;
+		public class HelloWorld {
+			public static void main(String []args) {
+			   System.out.println("Hello World");
+				String str = "https://services.gradle.org/distributions/gradle-5.6.4-all.zip";
+				
+				 System.out.println(getHash(str));
+			}
+			private static String getHash(String string) {
+				try {
+					MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+					byte[] bytes = string.getBytes();
+					messageDigest.update(bytes);
+					return new BigInteger(1, messageDigest.digest()).toString(36);
+				} catch (Exception e) {
+					throw new RuntimeException("Could not hash input string.", e);
+				}
+			}
+		}
+
+	2.3 android项目中的gradle\wrapper\gradle-wrapper.jar
+		gradle-wrapper.properties
+		与下载.gradle\wrapper\dists\hashxxx\gradle-versionxxx\lib\gradle-wrapper-versionxxx.jar不一样
+	2.4 Ubuntu中的.gradle目录在哪里
+		https://m.656463.com/wenda/Ubuntuzhongdegradlemuluzainali_389
+		原文：https://stackoverflow.com/questions/37944998
+		 它应该位于$HOME/.gradle （ ~/.gradle ）和/或（特定于项目） <PROJECT_DIR>/.gradle 。 
+
+		It should be located under $HOME/.gradle (~/.gradle) and/or (project specific) <PROJECT_DIR>/.gradle.
+		
+		2.4.2 ubuntu 中使用docker 映射volume后.gradle位置
+			现象：ubuntu已经下载了gradle-6.1.1-all.zip。
+			再次使用docker编译linphone-sdk时执行命令后
+			#docker run -it --volume=$PWD:/home/bc/linphone-sdk gitlab.linphone.org:4567/bc/public/linphone-sdk/bc-dev-android-r20:20210914_update_java11 /bin/bash -i
+			后续编译时又重下载同版本的gradle
+			观察下载位置为：/home/bc/.gradle/wrapper/dists/gradle-6.1.1-all/cfmwm155h49vnt3hynmlrsdst/gradle-6.1.1-all.zip
+
 6. Gradle 提示与诀窍 | Android 开发者 | Android Developers
 	https://developer.android.google.cn/studio/build/gradle-tips
 	
