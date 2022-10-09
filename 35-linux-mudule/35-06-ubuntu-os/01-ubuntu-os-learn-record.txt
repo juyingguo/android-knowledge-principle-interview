@@ -161,31 +161,7 @@
 				export PATH=/usr/bin:$PATH
 				source ~/.bashrc				
 			在Linux中，修改/etc/profile里的内容，相当于系统环境变量，一般我们只需更改自己用户的环境变量配置文件（~/.bashrc）即可，这样可以保证多个用户的独立性
-		Ubuntu添加用户
-			https://blog.csdn.net/qq_36396869/article/details/121465653
-			https://www.cnblogs.com/guochaoxxl/p/15673884.html
-				a、sudo useradd -r -m -s /bin/bash userName     -r：建立系统账号；-m：自动建立用户的登入目录；-s：指定用户的默认使用shell
-
-				b、sudo passwd userName         //根据提示输入新用户的密码即可
-
-				c、ls /home 出现新用户的目录说明创建成功
-			
-			sudo adduser username
-			输入密码：
-			.添加用户管理员权限：
-
-			sudo vim /etc/sudoers
-			
-			添加用户权限同root用户的权限后。再添加新的用户提示异常：
-			
-			sudo: /etc/sudoers is world writable
-			sudo: no valid sudoers sources found, quitting
-			sudo: unable to initialize policy plugin
-			
-			参考：https://blog.csdn.net/u011046452/article/details/90140936
-				$ su root     #切换到root权限
-				$ 输入你的密码
-				# chmod 440 /etc/sudoers        #将当前文件权限修改为原来的权限
+		
 			
 	5.2 [5.1]尝试的办法无法解决
 		ubuntu20循环登录无法进入桌面怎么办
@@ -613,3 +589,75 @@
 	3.如果不想看到隐藏文件夹，那么只需要再次按下快捷键： “ ctrl+h " 即可隐藏
 
 	4. 如果想一直能看到隐藏文件夹，那么就可以如下图在文件夹处设置一下，将选项"Show Hidden Files"勾选上
+	
+19 ubuntu下复制文件提示File name too long
+	参考：
+		https://askubuntu.com/questions/1049410/rsync-giving-file-name-too-long-errors-with-ecryptfs?r=SearchResults&s=4%7C97.9034
+		
+		https://askubuntu.com/questions/915041/how-to-rename-extract-files-with-long-names-in-zip-archive
+		
+		https://stackoverflow.com/questions/31430742/cant-copy-files-because-file-names-are-too-long
+			作者使用是windows对应问题
+			
+		https://github.com/owncloud/client/issues/4928
+		
+		Copy files with long names [closed]
+			[Unix & Linux]
+			https://unix.stackexchange.com/questions/359369/copy-files-with-long-names
+	19.2 Ubuntu中文件路径的最大长度是多少？
+		https://qastack.cn/ubuntu/859945/what-is-the-maximum-length-of-a-file-path-in-ubuntu
+		
+		linux系统文件路径长度限制
+		https://www.csdn.net/tags/MtzaEg2sOTgyMTgtYmxvZwO0O0OO0O0O.html
+		
+		[根据文件系统类型及操作系统类型，说法不一，以及linux不同版本的内核文件中的定义]
+	19.3
+		a, 新建文件夹总长200加上上级路径总长68=268失败；如下
+			eink@ubuntu:/mnt/hgfs/vmshare/test-temp-12345adcde12345abcde12345abcde12345abcd$ mkdir -p test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adc			de12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345abcde12345abcd/
+			mkdir: cannot create directory ‘test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345abcde12345abcd/’: File name too long
+		b， 新建文件夹总长180+5+2加上上级路径总长68=255，因为在加上最后的/共256，失败；如下
+			eink@ubuntu:/mnt/hgfs/vmshare/test-temp-12345adcde12345abcde12345abcde12345abcd$ mkdir -p test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adc	de12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345ab
+			mkdir: cannot create directory ‘test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345abcde12345abcd/test-temp-12345adcde12345abcde12345ab’: File name too long
+20.ubuntu 系统修改打开文件数限制
+	https://www.iteye.com/blog/rocken-953988
+
+21.Ubuntu添加用户并配置管理员权限
+			https://blog.csdn.net/qq_36396869/article/details/121465653
+			https://www.cnblogs.com/guochaoxxl/p/15673884.html
+				a、sudo useradd -r -m -s /bin/bash userName     -r：建立系统账号；-m：自动建立用户的登入目录；-s：指定用户的默认使用shell
+
+				b、sudo passwd userName         //根据提示输入新用户的密码即可
+
+				c、ls /home 出现新用户的目录说明创建成功
+			
+			sudo adduser username
+			输入密码：
+			.添加用户管理员权限：
+
+			sudo vim /etc/sudoers
+			
+			添加用户权限同root用户的权限后。再添加新的用户提示异常：
+			
+			sudo: /etc/sudoers is world writable
+			sudo: no valid sudoers sources found, quitting
+			sudo: unable to initialize policy plugin
+			
+			参考：https://blog.csdn.net/u011046452/article/details/90140936
+				$ su root     #切换到root权限
+				$ 输入你的密码
+				# chmod 440 /etc/sudoers        #将当前文件权限修改为原来的权限
+22.Ubuntu用户名修改方法-亲测好用
+	https://blog.csdn.net/tianbisifang/article/details/125065515
+	
+	https://blog.csdn.net/weixin_45283799/article/details/126992500
+	
+	！！！！[不是特别需要，不要这样操作]！！！！
+23. linux ubuntu 基本知识
+	23.1 apt
+		https://baike.baidu.com/item/apt/20109246?fr=aladdin
+	
+	23.2 ubuntu 安裝deb_.deb文件如何安装，Ubuntu下deb安装方法图文详解
+		https://blog.csdn.net/weixin_36189723/article/details/111950455
+24 wget 
+	Ubuntu系统中的wget命令
+	https://blog.csdn.net/weixin_43786241/article/details/105559712

@@ -132,6 +132,17 @@
 			ls -ahl //显示所有文件及目录,
 				-a 显示所有文件及目录 (ls内定将文件名或目录名称开头为"."的视为隐藏档，不会列出)
 				-l 除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出
+		4.7 ubuntu查看磁盘分区使用情况命令df	
+			https://blog.csdn.net/yueni_zhao/article/details/126366828
+			ubuntu遇到不懂的就找man手册，这里man df
+			df -h
+				-h就是humen， linux中的shell命令凡是和容量相关的，都有这个选项，它会显示可读性很好的大小。否则将会按照字节显示
+			显示每个磁盘的文件系统类型df -T
+				-T, --print-type
+							  输出每个文件系统的类型
+			显示指定文件系统类型的磁盘df -t xxx
+				-t, --type=TYPE
+		
 	(5)	、ubuntu 安装 vmwaretools 
 		yum -y install perl gcc make kernel-headers kernel-devel
 		yum repolist all //查看拥有的仓库

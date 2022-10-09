@@ -52,7 +52,11 @@
 	https://blog.csdn.net/weixin_50594210/article/details/121733878?
 	JAVA —— Docker (附加篇)
 	https://blog.csdn.net/weixin_50594210/article/details/121734193
-4. 知识点
+4. 知识点及命令
+	4.0 可以通过命令 docker command --help 更深入的了解指定的 Docker 命令使用方法。
+		例如我们要查看 docker stats 指令的具体使用方法：
+
+		runoob@runoob:~# docker stats --help
 	4.1 Docker login/logout 命令
 		https://www.runoob.com/docker/docker-login-command.html
 		
@@ -69,3 +73,46 @@
 			
 		21-跟我一起学Docker——Volume
 			https://www.cnblogs.com/robinunix/p/12794111.html
+	4.3 重命名容器
+		docker ps //查看容器
+		docker rename 最初容器名称或ID 新名称
+		docker ps //查看修改后是否成功
+	4.4 查看容器	
+		docker ps //查看正在运行的容器
+		docker ps -a //查看所有的容器
+	4.5 容器生命周期管理
+		4.5.1 使用 docker start 启动一个已停止的容器：
+
+			$ docker start b750bbbcfd88 
+		4.5.2 后台运行
+			在大部分的场景下，我们希望 docker 的服务是在后台运行的，我们可以过 -d 指定容器的运行模式。
+
+			$ docker run -itd --name ubuntu-test ubuntu /bin/bash
+		4.5.3 停止容器的命令如下：
+			$ docker stop <容器 ID>
+		4.5.4 停止的容器可以通过 docker restart 重启：
+
+			$ docker restart <容器 ID>
+	4.6 容器操作
+	4.7 容器rootfs命令
+	4.8 镜像仓库
+		4.8.1 如果我们本地没有 ubuntu 镜像，我们可以使用 docker pull 命令来载入 ubuntu 镜像：
+
+			$ docker pull ubuntu
+		4.8.2 启动容器
+			以下命令使用 ubuntu 镜像启动一个容器，参数为以命令行模式进入该容器：
+
+			$ docker run -it ubuntu /bin/bash
+			##参数说明：
+
+			-i: 交互式操作。
+			-t: 终端。
+			ubuntu: ubuntu 镜像。
+			/bin/bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash。
+			要退出终端，直接输入 exit:
+
+			root@ed09e4490c57:/# exit
+	4.8 本地镜像管理
+	4.9 info|version
+		
+		

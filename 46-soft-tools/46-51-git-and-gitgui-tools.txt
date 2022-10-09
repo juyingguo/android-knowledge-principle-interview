@@ -432,3 +432,8 @@
 	warning: | TLS certificate verification has been disabled! |
 	warning: ---------------------------------------------------
 	warning: HTTPS connections may not be secure. See https://aka.ms/gcmcore-tlsverify for more information.
+13.Git出现“file name too long”错误处理
+	https://blog.csdn.net/weixin_38304160/article/details/125371820
+	
+	git config --system core.longpaths true
+	

@@ -115,3 +115,5 @@
 	Gradle Dependencies Helper
 7.why_is_there_more_than_one_daemon_process_on_my_machine
 	https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:why_is_there_more_than_one_daemon_process_on_my_machine
+8. gradle - 在插件发布期间排除文件和文件夹
+	https://www.lmlphp.com/user/154890/article/item/3422560/

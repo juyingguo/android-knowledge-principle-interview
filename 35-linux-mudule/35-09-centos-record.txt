@@ -8,6 +8,95 @@
 			{centos旧版}
 			https://wiki.centos.org/Download
 			
+			官网下载教程：
+			1.点击链接下载https://vault.centos.org/
+			
+			教程
+			https://www.runoob.com/linux/linux-yum.html
 3.超详细VMware安装CentOs图文教程
 	https://blog.csdn.net/weixin_44175418/article/details/123592684
+	3.1 
+		CentOS 的安装——超详细教程
+			https://blog.csdn.net/weixin_46703995/article/details/121191113
+			{作者安装选择中文，可以参考}
+			#我全是用英文。
+			#虚拟机VMware的下载与安装——详细教程
+			  --https://blog.csdn.net/weixin_46703995/article/details/120054089
+			
+		#这里说一下这些文件
+
+			DVD.iso 可以用安装程序安装的所有安装包，推荐镜像。
+			NetInstall.iso 从网络安装或者救援系统
+			Everything.iso 包含centos7的一套完整的软件包，可以用来安装系统或者填充本地镜像
+			GnomeLive.iso Gnome桌面光盘
+			KdeLive.iso ked桌面光盘
+			我们只需要选择DVD.iso。
+			———
+		#
+			在CentOS下载页面中，选择 	CentOS-7-x86_64-DVD-1708.torrent进行下载（直接下载.ios文件需要的时间太长了）
+			“CentOS-7-x86_64-DVD-1708.torrent”只是一个BT种子文件，而且非常小，这就需要我们使用迅雷等工具来对源镜像进行下载了
+			——————
+	3.2 如何在Windows和centOS系统之间实现复制粘贴？只需简单几步即可！
+		https://blog.csdn.net/m0_46669450/article/details/124647557
+		
+		http://t.zoukankan.com/biehongli-p-8862638.html
+		
+		https://www.likecs.com/show-204988570.html
+		
+4. 输入yum命令报错：Loaded plugins: fastestmirror You need to be root to perform this command.
+	解决方法：
+	是提示要获取root权限
+	输入su 回车输入密码即可
+5.
+	linux vi 拷贝多行,vi 整行 多行 复制与粘贴
+	https://blog.csdn.net/weixin_32836671/article/details/116883036
 	
+	Linux使用技巧(一)：vim中选中多行、复制和粘贴
+
+	一.选中多行: 使用命令vim打开文件,移动光标至所选行的开头,按v进入视图,键盘上按向下键,选中所需行即可. 二.复制与粘贴 三种方法: 1)在上文第一部分的基础上,按y,然后移动光标至所需粘贴处, ...
+	5.2 sudo tip:
+		We trust you have received the usual lecture from the local System
+		Administrator. It usually boils down to these three things:
+
+			#1) Respect the privacy of others.
+			#2) Think before you type.
+			#3) With great power comes great responsibility.
+		
+		yum -y install 时会默认
+		Loading mirror speeds from cached hostfile
+		 * base: mirrors.aliyun.com
+		 * extras: mirrors.aliyun.com
+		 * updates: mirrors.aliyun.com
+		Resolving Dependencies
+		--> Running transaction check
+		---> Package epel-release.noarch 0:7-11 will be installed
+		--> Finished Dependency Resolution
+6. Linux yum 命令
+	https://www.runoob.com/linux/linux-yum.html
+	
+		yum（ Yellow dog Updater, Modified）是一个在 Fedora 和 RedHat 以及 SUSE 中的 Shell 前端软件包管理器。
+
+		基于 RPM 包管理，能够从指定的服务器自动下载 RPM 包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软件包，无须繁琐地一次次下载、安装。
+
+		yum 提供了查找、安装、删除某一个、一组甚至全部软件包的命令，而且命令简洁而又好记。
+
+	6.3 国内 yum 源
+7. centos查看正在运行的服务_Linux系统如何查看服务的运行状态
+	https://blog.csdn.net/weixin_39781550/article/details/109864870
+	
+	列出系统上所有已加载的服务，查看它们活动状态，是否正在运行、是否关闭、是否启动失败。
+
+	systemctl list-units --type=service
+	或者
+
+	systemctl --type=service
+	
+	要列出所有已加载但已经设置开机自启动的服务
+
+	systemctl list-units --type=service --state=active
+	systemctl --type=service --state=active
+	
+	查看所有正在运行的服务：
+
+	systemctl list-units --type=service --state=running
+	systemctl --type=service --state=running

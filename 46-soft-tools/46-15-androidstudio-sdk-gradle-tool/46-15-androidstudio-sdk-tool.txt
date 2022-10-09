@@ -409,6 +409,36 @@
 			maven {url "https://maven.aliyun.com/repository/public"}
 			maven {url "https://maven.aliyun.com/repository/google"}
 			google()
+	14.2 JitPack的使用
+		https://blog.csdn.net/ABestRookie/article/details/118926021
+		#参考资料:
+
+			https://blog.csdn.net/user11223344abc/article/details/78403537
+
+			https://www.jianshu.com/p/1599a2d363d5
+		#JitPack官网
+			https://www.jitpack.io/
+		#官网文档
+			https://jitpack.io/docs/
+			
+		注意：输入仓库地址（可以现在github等上先找到地址。）
+	14.3 JCenter 服务更新
+	
+		https://jfrog.com/
+		
+		
+		https://developer.android.google.cn/studio/build/jcenter-migration
+		
+		公告：
+		https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/
+		
+		
+		在 JCenter 上发布工件的开发者应该将其软件包迁移到新的托管服务，如 Maven Central
+			https://maven.apache.org/repository/index.html
+			
+		Jcenter服务即将关闭，改用mavenCentral
+			https://zhuanlan.zhihu.com/p/363156372
+			{原有的变为只读，可以下载。}
 15 Project needs to be converted to androidx.* dependencies 
 	15.1 Android解决Project needs to be converted to androidx.* dependencies问题
 		https://blog.csdn.net/weixin_40420578/article/details/100582094 

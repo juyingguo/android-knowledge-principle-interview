@@ -1,0 +1,20 @@
+0.前言：
+	1.1 JDK 1.4 是由 Java 社区进程（Java Community Process）主导发行的首个主要发行版
+		JCP（http://jcp.org/）为此提
+		供了手段。本书的主题——Java New I/O（NIO） ——就是这样一项提议的产物。 Java 规范请求#51
+		（JSR 51, http://jcp.org/jsr/detail/51.jsp）包含了对高速、可伸缩 I/O 特性的详尽描述，
+	1.2 如果您对 Java 平台上的 I/O 软件包尚处于摸索阶段，也许您应该先读一读 Elliote Rusty Harold
+		所著《Java I/O》（O'Reilly）（http://www.oreilly.com/catalog/javaio/）。那是一本关于 java.io 软
+		件包的很好的入门教材
+		
+	1.3 您可通过访问 Sun 公司网站 http://java.sun.com/j2se/1.4/获得 Java SDK。
+	
+	1.4 本 书 包 含 众 多 实 例 ， 向 您 示 范 如 何 使 用 API 。 所 有 代 码 举 例 及 相 关 信 息 都 可 从
+		http://www.javanio.info/下载，更多实例和测试代码也可从该网站取得。 NIO 执行小组提供的额外代
+		码示例可从 http://java.sun.com/j2se/1.4/docs/guide/nio/example/取得
+		
+	1.5 通过邮箱 ron@javanio.info，或者登陆 http://www.javanio.info/，都可与我取得联系
+	
+	1.6 本书采用 O'Reilly 标准字体约定，这并非完全出于个人选择。本书手稿直接以 XML 格式创
+		作，使用纯 Java GUI 编辑器（XXE， http://www.xmlmind.com/）。该软件强制使用 DTD I 及
+		O'Reilly 的 DocBook 子集，
