@@ -155,3 +155,11 @@
 		测试环境：windows8.1,server，client都是本地电脑上。
 	
 	idea,运行源码java client，可以登录。【站长编译的可能有问题】
+11 跟着源码学IM(五)：正确理解IM长连接、心跳及重连机制，并动手实现
+	http://www.52im.net/thread-2799-1-1.html
+	本文正好借着在CIM系统中有这样两个需求（CIM是本文作者从零开发的一个学习性质的IM系统，详见《拿起键盘就是干：跟我一起徒手开发一套分布式IM系统》），正好来聊一聊我是如何理解IM长连接的心跳及重连机制，以及又是怎么踩坑已及填坑的。
+
+	本文配套的CIM源码地址：
+
+	主要镜像：https://github.com/crossoverJie/cim
+	备用镜像：https://github.com/52im/cim

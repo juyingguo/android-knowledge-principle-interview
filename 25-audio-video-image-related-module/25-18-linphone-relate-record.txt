@@ -93,6 +93,7 @@
 	从gitlab，clone下来,含有子模块，需要加上--recursive；
 	git clone  https://gitlab.linphone.org/BC/public/linphone-sdk.git --recursive
 	更新或切换分支后需要：
+	git submodule sync
 	git submodule update --init --recursive
 	切换分支，更新后，整个代码压缩,.git文件夹不压缩。
 	tar -zcvf linphone-sdk-release-4.5.tar.gz --exclude=.git ./
@@ -154,12 +155,14 @@
 		
 		{作者的参考文档：
 			官方文档：linphone-sdk
+				编译文档，使用docker管理编译。。
 
 			LinPhone Android SDK 编译过程
 				https://www.jianshu.com/p/942f989eaac7
 			编译linphone Android
 				https://www.codenong.com/cs106423576/
-		}
+				#作者编译配置，及编译问题记录。
+		}	
 		
 		编译linphone-sdk-android
 		编译环境

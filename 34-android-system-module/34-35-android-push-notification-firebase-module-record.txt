@@ -1,0 +1,8 @@
+1.
+	官方文档：https://firebase.google.com/docs/cloud-messaging/android/client
+2.firebase推送
+	Android Firebase接入（序）--Firebase简介以及Firebase官方Demo的使用
+		https://blog.csdn.net/AlpinistWang/article/details/87365873
+	Android Firebase接入（五）-- Firebase推送通知（Cloud Message）
+		https://blog.csdn.net/AlpinistWang/article/details/87447724?
+	

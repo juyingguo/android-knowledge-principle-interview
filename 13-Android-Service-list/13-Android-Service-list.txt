@@ -1,89 +1,92 @@
-һ��service�������
+一、service保活方法？
 	
-	1.1��Android Service������ܽ� 
+	1.1、Android Service保活方法总结 
 		https://blog.csdn.net/ozhuimeng123/article/details/82056278
 		
-	1.2��Android 8.0 Ӧ�ñ���ʵ�� 
+	1.2、Android 8.0 应用保活实践 
 		https://blog.csdn.net/sinat_21118695/article/details/84727781
 		
-	1.3����������JobScheduler��JobService��ʹ�� 
+	1.3、深入理解JobScheduler与JobService的使用 
 		https://www.jianshu.com/p/1f2103d3d2a2
 		
-	1.4��Android ���� App��������ֲ��ű�������8.0 �������ã� 
+	1.4、Android 自用 App保活——音乐播放保活适配8.0 （贼好用） 
 		https://blog.csdn.net/xiangshiweiyu_hd/article/details/83058516
 		
-	1.5��ȫ���̵㵱ǰAndroid��̨���������ʵ����Ч������ֹ2019��ǰ�� 
+	1.5、全面盘点当前Android后台保活方案的真实运行效果（截止2019年前） 
 		https://blog.csdn.net/hellojackjiang2011/article/details/85283746
 		
 		
 		
-	1.6��Ӧ�ñ����ռ��ܽ�(һ)��Android6.0���µ�˫�����ػ�����ʵ�� 
+	1.6、应用保活终极总结(一)：Android6.0以下的双进程守护保活实践 
 		http://www.52im.net/thread-1135-1-1.html
-	1.7 ʷ����ǿAndroid����˼·������������ѶTIM�Ľ�����������
+	1.7 史上最强Android保活思路：深入剖析腾讯TIM的进程永生技术
 		http://www.52im.net/thread-2893-1-1.html 
 		https://site.douban.com/277207/widget/notes/191796627/note/749018107/
-		������һЩ���㱣�����¼�¼��
+		【含有一些优秀保活文章记录】
 
-	1.8 AndroidӦ�ý��̷�ɱָ��1-������·
+	1.8 Android应用进程防杀指南1-常用套路
 		https://blog.csdn.net/mynameishuangshuai/article/details/52757594 
-		1,2,3ƪ����.
+		1,2,3篇文章.
 	1.9 gyf-dev/Cactus 
 		https://github.com/gyf-dev/Cactus
-	1.10 Ӧ�ñ����ռ��ܽ�(һ)��Android6.0���µ�˫�����ػ�����ʵ��
+	1.10 应用保活终极总结(一)：Android6.0以下的双进程守护保活实践
 		a,http://www.52im.net/thread-1135-1-1.html 
-			ԭ�����ӣ�̽��һ�����͵�˫�����ػ�Ӧ�ñ���
+			原文链接：探讨一种新型的双进程守护应用保活
 				https://blog.csdn.net/andrexpert/article/details/53485360 
-			��Ŀ���̣�*\android-keepalive-app\KeepAliveOneLuChiBaoApp
-			���Լ�¼��
+			项目工程：*\android-keepalive-app\KeepAliveOneLuChiBaoApp
+			调试记录：
 			a1,Permission Denial: Accessing service ComponentInfo{com.demo.keepaliveoneassistanta/com.demo.keepaliveoneassistanta.AssistantAService} from pid=13906, uid=10133 that is not exported from uid 10134
-				����취��
-				���ǿ�����AndroidManifest.xml��<manifest ../>��ǩ������android:sharedUserId��ֻҪ��֤ÿ������������android:sharedUserId��ֵ��һ�µģ�Ȼ��ʹ��ͬһ����Կ����ǩ���������衰����������Ȩ�ޡ�
-			a2,ǿ��ֹͣ����android5.1�ϣ�service��onDestroy��ǰ����־��û�п�����
-				ǿ��ֹͣӦ�ã��󶨷���ķ��𷽣����յ�onServiceDisconnected��onUnbind�ص���
-			a3,android5.1 ��֤��
-				���ڵ���Ӧ���ڶ�����ػ�������-Ӧ�ù���-������-ѡ��Ӧ��-ǿ��ֹͣ��ɱ���ˡ�
-				����-Ӧ�ù���-������-ѡ��Ӧ��-ǿ��ֹͣ��ɱ���ˡ�(qq,Ӧ�ñ�����ͬ����kill)
-				����-Ӧ�ù���-��������-ѡ��Ӧ��-ֹͣ��kill���ˡ�
+				解决办法：
+				我们可以在AndroidManifest.xml的<manifest ../>标签内添加android:sharedUserId，只要保证每个关联启动的android:sharedUserId的值是一致的，然后都使用同一个密钥进行签名即可无需“关联启动”权限。
+			a2,强制停止，在android5.1上，service的onDestroy当前在日志中没有看到。
+				强制停止应用，绑定服务的发起方，会收到onServiceDisconnected，onUnbind回调。
+			a3,android5.1 验证：
+				对于单个应用内多进程守护。设置-应用管理-已下载-选择应用-强制停止，杀掉了。
+				设置-应用管理-已下载-选择应用-强制停止，杀掉了。(qq,应用宝，等同样被kill)
+				设置-应用管理-正在运行-选择应用-停止，kill不了。
 			
-				���ڵ���Ӧ���ڶ�����ػ���һ�����٣�ɱ���ˡ�
-					�������̵ķ�����߽������ȼ���
-����ʵ����֤��
-	2.1��START_STICKY 
-		android 5.1ɱ���̺󣬻��Զ�������
-		onStartCommand��intent:null��
+				对于单个应用内多进程守护。一键加速，杀掉了。
+					独立进程的服务，提高进程优先级。
+二、实践验证。
+	2.1、START_STICKY 
+		android 5.1杀进程后，会自动重启。
+		onStartCommand，intent:null。
 		
-		android 9�÷�ʽ��ȫ��Ч��
+		android 9该方式完全无效。
 		
-	2.2 android 9���������̣�Service����OnDestroy.
+	2.2 android 9，清理进程，Service不走OnDestroy.
 		
-	2.3 �����������
-		2020���ˣ�Android��̨�����Ϸ�𣿿���������ŵ�ʵ�֣� 
+	2.3 加入白名单。
+		2020年了，Android后台保活还有戏吗？看我如何优雅的实现！ 
 		http://www.52im.net/thread-2881-1-1.html 
-		����Ӧ�ü����˺�̨���а���������Ȼ���ܻᱻ�����Լ��ĺ�̨�����ɵ���
+			#系列文章
+			#悦跑圈APP
 		
-		a,ϵͳ��������
-		��ϵͳ����һ����̨���а����������������Ӧ�ý������ܵ�Ӱ�죬��ԭ��ϵͳ�£�ͨ���������á� - ����ء� - ������Ż��� - ��δ�Ż�Ӧ�á������Կ��������������
-		����������Ż������Բ鿴����Ŀ����λ��
-		��Ӧ�ù�����Ӧ��-ʡ�����-���ģ�
+		就算应用加入了后台运行白名单，仍然可能会被厂商自己的后台管理干掉。
 		
-		b�������Լ��ĺ�̨������ʵ���Ͼ�����������
-		�ܰ�Ӧ�ü��볧��ϵͳ�ĺ�̨���������������Խ�һ�����ͽ��̱�ɱ�ĸ��ʡ�ʵ���Ͼ��Ǽ�����������
+		a,系统白名单：
+		但系统会有一个后台运行白名单，白名单里的应用将不会受到影响，在原生系统下，通过：「设置」 - 「电池」 - 「电池优化」 - 「未优化应用」，可以看到这个白名单。
+		或：搜索电池优化，可以查看该项目的逐级位置
+		或，应用管理，应用-省电策略-更改，
 		
-		c,����a,b���������˲ſ��ԡ���֤qq,�������ġ�
-3. Android �󶨷��� bindService 
+		b，厂商自己的后台管理：实际上就是自启动。
+		能把应用加入厂商系统的后台管理白名单，可以进一步降低进程被杀的概率。实际上就是加入自启动。
+		
+		c,必须a,b，都满足了才可以。验证qq,是这样的。
+3. Android 绑定服务 bindService 
 	3.1 
 		https://blog.csdn.net/yp_nothing/article/details/80572589
-4. Service �������� 
-	4.1 Service �������� 
+4. Service 生命周期 
+	4.1 Service 生命周期 
 		https://www.cnblogs.com/huihuizhang/p/7623760.html
-5 ANDROID ʹ�� AIDL
-	5.1 ANDROID STUDIO ʹ�� AIDL������Ȩ����֤
+5 ANDROID 使用 AIDL
+	5.1 ANDROID STUDIO 使用 AIDL（三）权限验证
 		https://www.cnblogs.com/androidxiaoyang/p/5919372.html  
 		
-		manifest�µĽڵ�permission
+		manifest下的节点permission
 		
-		service��������permission
+		service属性配置permission
 		
-		������onBind�����ڣ��н���Ȩ���жϡ������ַ�ʽĿǰû�е�ͨ��һֱ��Ч����
+		服务中onBind函数内，中进行权限判断。（这种方式目前没有调通，一直无效。）
 		
-		����aidl�ӿ�ʵ���� *.Stub�̳�onTransact�н���Ȩ���жϡ�
+		服务aidl接口实现类 *.Stub继承onTransact中进行权限判断。
