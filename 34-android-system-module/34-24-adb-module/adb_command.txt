@@ -81,6 +81,9 @@
 				Hardware        : gs705a
 				Revision        : 0000
 				Serial          : 0c0b461950030c32
+			##processor后面为处理器的编号。
+		查看系统架构
+			$ getprop ro.product.cpu.abi
 	(2.5) 截屏 及录屏
 		1. /system/bin/screencap -p /sdcard/screenshot.png 截屏 
 		2. adb 截屏和录屏命令
@@ -124,7 +127,9 @@
 	2.7、
 		df 查看磁盘空间使用情况
 	2.8、查看进程
+		#参考linux ps命令，android下是简化版
 		ps
+		ps | grep name #指定名称查找
 	2.9、du ：查询档案或目录的磁盘使用空间
 		du  [-H] [-L] [-P] [-a] [-d depth] [-s] [-cghikmnrx] [file...]
 		b：大小用bytes来表示 (默认值为k bytes) （仅为linux命令，非android）

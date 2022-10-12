@@ -23,7 +23,19 @@
 		http://www.52im.net/thread-2893-1-1.html 
 		https://site.douban.com/277207/widget/notes/191796627/note/749018107/
 		【含有一些优秀保活文章记录】
-
+		
+		a1,执行命令adb shell ps | grep tencent.tim，可见TIM共有4个进程， 其父进程都是Zygote
+		
+			真机-华为，adb shell下执行ps,只能看到用户shell对应的进程进程:
+				{
+				HWBND-H:/ $ ps
+					USER           PID  PPID     VSZ    RSS WCHAN            ADDR S NAME
+					shell        14710 14692    8828   1828 sigsuspend 7286e439c8 S sh
+					shell        14714 14710   10244   2036 0          7d1b0f9328 R ps
+				}
+			#真机被厂商屏蔽了很多。
+		a2,Force-stop是系统提供的杀进程最为彻底的方式，详见文章《Android进程绝杀技–forceStop》
+			http://gityuan.com/2016/10/22/force-stop/
 	1.8 Android应用进程防杀指南1-常用套路
 		https://blog.csdn.net/mynameishuangshuai/article/details/52757594 
 		1,2,3篇文章.

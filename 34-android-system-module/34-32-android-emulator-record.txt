@@ -20,3 +20,87 @@
 				https://support.yeshen.com/zh-CN/win-release
 		Homepage:
 			https://support.bignox.com/en/
+			
+		nox
+	3.3 BlueStacks
+		#
+			https://baike.baidu.com/item/BlueStacks/8021142?fr=aladdin
+			#可以让针对ARM处理器开发的安卓应用运行在基于x86处理器的PC或者平板上，而且可以调用PC的显卡，能提供比Alpha版本更加平滑的体验。
+		官网：
+		https://wp-s.bluestacks.com/download.html		
+		
+		https://www.bluestacks.cn/
+		
+		https://www.bluestacks.com/
+		
+		3.3 使用adb连接蓝叠模拟器（中国版）
+			http://t.zoukankan.com/rogunt-p-13047394.html
+			
+			1.打开蓝叠模拟器adb调试
+
+		　　模拟器右上有一个倒三角▼-->设置-->引擎设置-->勾选“允许ADB连接”
+
+		　　可能需要重启模拟器
+			2.找到打开的端口
+
+		　　1）打开注册表
+
+		　　　　win+R 打开运行
+
+		　　　　输入regedit后回车
+
+		　　2）定位到如下位置
+
+			计算机HKEY_LOCAL_MACHINESOFTWARE BlueStacks_china_gmgr - Guests -Android_5 -Network 0
+		　　　　需要注意，不同计算机的路径可能不一样，需要因地制宜。
+			3. adb connect 127.0.0.1:5555
+			
+			4. 如果上述内容无法找到端口，请尝试以下方法
+
+			　　1）打开任务管理器
+
+			　　2）找到模拟器（当前多开）的PID
+						　注意，当你只开一个多开时，蓝叠会有三个进程，只用名为BlueStacks Android Host的进程才是要找到，如果多开的话，会有很多同名进程。
+
+			　　3）打开cmd（PowerShell）
+
+			　　　　输入
+					netstat -ano|findstr "19768"
+					
+			　　　　引号内容是需要连接的模拟器的PID
+
+			　　４）找到LISTENING状态的端口
+
+				　　第一个（端口最小的）就是要找的端口
+			5.开发人员选项
+
+		　　　　博客园下载链接：
+
+		　　　　https://files.cnblogs.com/files/rogunt/kaifarenyuanxuanxiang_11.apk
+
+		　　　　度盘链接
+
+		　　　　链接：https://pan.baidu.com/s/1zr6aMV_JcGzf2Gx8b6qxWw
+		　　　　提取码：vvjj
+		3.3 实验：
+			adb devices：不会显示设备，即使模拟器打开adb连接。
+			需要参考[3.2]配置
+		
+4. 让x86的android模拟器能模拟arm架构系统
+	http://t.zoukankan.com/welhzh-p-4645186.html
+	
+	#1、最近发现了一个能在linux下模拟arm的模拟器： xdroid，网址： https://www.linzhuotech.com/index.php/home/index/down.html
+	#2、http://www.shashlik.io/，          这个也不错。  如何使用： https://www.howtoforge.com/tutorial/how-to-install-and-run-android-apk-on-linux-with-shashlik/  
+	
+	#　3、‌Anbox，  也不错。
+		网上介绍共计三种模拟器比较常用，分别是bluestacks、andy和Genymotion，前者支持ARM架构，中者支持远程控制，后者启动速度快，各有优缺点。
+		
+	#houdini 是intel 研发的ARM binary translator
+		在玩Android x86 系统的时候，很多童鞋们都发现没有什么应用可以用，连中文输入法都找不到。然而4.0 rc2 系统发布时，也同时有了传说中的arm Translator，从此Android x86可以运行各种各样的arm应用了！
+		向arm Translator的原作者致敬。本人是在如下这个链接学到的http://www.charlesmaggs.com/home/vocation/links/linux-resources-current/embedded-linux/android
+		arm Translator的安装很简单，只要下载两个文件和一个文件夹复制到安卓x86系统的/system/lib下就好了。安装需求：Android x86 4.0
+		文件1：http://www.buildroid.org/Download/libhoudini.so
+		文件2：http://www.buildroid.org/Download/libdvm_houdini.so
+		文件夹：http://www.buildroid.org/Download/houdini_armlibs.tgz
+	将最后一个链接的文件下载下来后，解压缩得到一大堆文件，新建个文件夹叫做arm把这些文件放进去，然后把前两个文件，和这个名叫arm的文件夹一起复制到Android x86 4.0的 /system/lib目录下，修改好权限，即可享用各种arm应用啦。
+	注意！最后一个链接下载得到的文件如果用winrar解压，只能得到一个文件。请把这个文件的扩展名手工改成.tar，再解压一次，即可得到45个小文件，这样才是我们要的。

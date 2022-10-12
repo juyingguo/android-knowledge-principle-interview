@@ -5,5 +5,16 @@
 2. /arch 下各CPU架构简介
 	2.1
 		https://lp007819.wordpress.com/2012/02/27/arch-%E4%B8%8B%E5%90%84cpu%E6%9E%B6%E6%9E%84%E7%AE%80%E4%BB%8B/
+	2.2 
+		常见CPU架构
+		CPU架构	描述
+		armeabi	第5代 ARM V5TE,使用软件浮点运算,兼容所有ARM设备，通用性强，速度慢
+		armeabi-v7a	第7代ARM V7，使用硬件浮点运算，具有高级扩展功能
+		arm64-v8a	第8代，64位，包含AArch32、AArch64两个执行状态对应32位、64位
+		x86	intel 32位，一般用于平板
+		x86-64	intel 64位，一般用于平板
+		————————————————
+		版权声明：本文为CSDN博主「小龙在山东」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/lilongsy/article/details/120043158
 3. cpu主频和最大睿频都是什么意思？
 	https://zhidao.baidu.com/question/525166174866684685.html 
