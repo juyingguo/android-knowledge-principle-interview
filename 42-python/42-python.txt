@@ -1,12 +1,103 @@
-1.
-2.windows10��ν�python2��python3���ӵ����������� 
+1.	
+	1.1 官网：
+		https://www.python.org/
+		
+		官网下载：
+		https://www.python.org/downloads/
+		https://www.python.org/downloads/source/
+	
+	1.2 教程
+		https://www.runoob.com/python3/python3-tutorial.html
+2.windows10如何将python2和python3添加到环境变量中 
 	https://www.jianshu.com/p/0a3f580dceee
 
-  2.1���ο�Ĭ�ϰ�װ�����ӵ��û�����·����
-	C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;//���ݰ�װ·������
-	�ٴ����ӵ�ϵͳ����������.
-	������Ч��
-	����������Ч��
+  2.1、参看默认安装后，添加的用户变量路径。
+	C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;//根据安装路径而定
+	再次添加到系统环境变量中.
+	测试无效。
+	重启机器生效。
 	
-  2.2 window python�л���װ�Ĳ�ͬ�汾
-	�ֶ����û����������û�path,ϵͳpath,��ָ����Ҫ�汾��python������
+  2.2 window python切换安装的不同版本
+	手动配置环境变量，用户path,系统path,中指定需要版本的python变量。
+	
+3. ubuntu-16.04安装python3.6+
+	3.1 直接通过ubuntu-16安装包命令安装
+		Ubuntu16.04安装Python3.6
+		https://blog.csdn.net/xinfeismile123/article/details/120730513
+		ubuntu16.04 安装python3.6踩坑
+		https://blog.csdn.net/qq_42693848/article/details/88900553
+		
+		Ubuntu16.04怎样安装Python3.6
+		https://www.cnblogs.com/xiaouisme/p/11503911.html
+		https://blog.csdn.net/ksp416/article/details/119927238
+		https://www.gxlcms.com/python-362786.html
+		
+		
+	$ sudo apt install python3.6
+	Reading package lists... Done
+	Building dependency tree       
+	Reading state information... Done
+	E: Unable to locate package python3.6
+	E: Couldn't find any package by glob 'python3.6'
+	E: Couldn't find any package by regex 'python3.6'
+	
+	
+	~$ sudo add-apt-repository ppa:jonathonf/python-3.6
+		Cannot add PPA: 'ppa:~jonathonf/ubuntu/python-3.6'.
+		The user named '~jonathonf' has no PPA named 'ubuntu/python-3.6'
+		Please choose from the following available PPAs:
+		 * 'ansible':  Ansible
+		 * 'atslang':  ATS2 programming language
+		 ***
+		 * 'debhelper-12':  debhelper 12
+		 * 'debhelper-trusty':  debhelper for trusty
+
+		##sudo add-apt-repository ppa:ansible/python-3.6
+		
+		~$ sudo add-apt-repository ppa:ansible/python-3.6
+		Cannot add PPA: 'ppa:~ansible/ubuntu/python-3.6'.
+		The team named '~ansible' has no PPA named 'ubuntu/python-3.6'
+		Please choose from the following available PPAs:
+		 * 'ansible':  ansible
+		 ***
+		 * 'ansible-1.9':  ansible-1.9
+		 * 'testing-ansible-6':  testing-ansible-6
+		 #sudo add-apt-repository ppa:ansible-5/python-3.6
+
+		 
+		 ~$ sudo add-apt-repository ppa:ansible-5/python-3.6
+		Cannot add PPA: 'ppa:~ansible-5/ubuntu/python-3.6'.
+		ERROR: '~ansible-5' user or team does not exist.
+		
+	#尝试很多方法都提示没有资源安装。
+	3.3 使用python源码下载安装
+		Ubuntu16.04用源码安装python3.6.4过程及问题
+		https://www.codenong.com/cs105661380/
+		!!!!!!!!!
+		Ubuntu16.04自带python2.7和python3.5，且其源内最高支持版本为python3.5，所以不能直接通过apt-get安装。切记！！！千万不能卸载系统自带的python，Ubuntu系统的默认桌面及很多软件都是基于python或依赖python的，盲目卸载将会造成灾难！！！
+		!!!!!!!!!
+		
+		#从官网下载安装包，可以直接在windows下打开链接下载
+		wget http://www.python.org/ftp/python/3.6.4/Python-3.6.4.tgz
+		tar -xvzf Python-3.6.4.tgz
+		cd Python-3.6.4
+		./configure --with-ssl
+		sudo make
+		sudo make install
+		#创建软链接
+		which python3    # /usr/local/bin/python3
+		sudo  ln -s /usr/local/bin/python3 python
+		
+		!!!!!!!!!
+		
+		如果安装的时候（sudo make install）报错
+		zipimport.ZipImportError: can't decompress data; zlib not available
+		Makefile:1079: recipe for target 'install' failed
+		make: *** [install] Error 1
+		
+		只需执行下面指令安装zlib1g，然后重新编译即可
+
+		sudo apt-get install zlib1g-dev
+		
+		详解Ubuntu16.04安装Python3.7
+		https://blog.csdn.net/qq_19168521/article/details/115482819
