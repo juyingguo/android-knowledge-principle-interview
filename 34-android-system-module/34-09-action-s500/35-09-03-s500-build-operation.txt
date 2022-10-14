@@ -1,0 +1,57 @@
+1.代码下载(此步骤只需运行一次)
+新建android目录 ，cd android
+repo init -u gitolite@192.168.1.21:manifests.git -b master
+repo sync
+
+repo start master --all 
+
+
+
+
+2.编译
+ (1) cd android/device ，打上boardConfig.patch 补丁
+
+（2）cp build/autobuild.sh ./
+
+（3）运行一次 ./autobuild.sh 
+最终rom生成地址
+owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
+
+
+3.单独模块编译
+（1）cd android/android下
+
+（2） source build/envsetup.sh  
+
+（3）lunch 8
+
+（4）cd 到相关目录 运行mm（例如IbotnLauncher目录是在这里）cd device/actions/common/packages/IbotnLauncher/
+
+5.建议
+
+如果习惯使用as的同事可以在as上修改完代码，使用对比工具，将代码对比到我源码里去 ，例如（device/actions/common/packages/IbotnLauncher/）
+然后mm 记得要先（source lunch）
+
+6.git相关操作可以看下 常用操作git文档,也可以网上查看相关教程。
+
+7.重中之重：到提交前务必先拉取最新代码 提交前务必先拉取最新代码 提交前务必先拉取最新代码 cd device/actions/common/packages/IbotnLauncher/  git pull origin master 
+
+8.模块编译launcher apk后生成的目录，\\192.168.1.21\bin_yi\user_android\android\out\target\product\bubble_gum\system
+
+建议大家早上第一件事
+cd 到android根目录
+repo sync
+务必将代码保持在最新状态，避免其他同事改了其他的bug你没有同步到，或者别的同事也改了相同文件导致你后期提交不了
+
+
+若repo init没用就修改下面的配置
+修改/etc/ssh/ssh_config文件的配置，以后则不会再出现此问题
+
+最后面添加：
+
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
+
+若samb没有写权限
+查看下使用什么账户映射的磁盘
+control userpasswords2

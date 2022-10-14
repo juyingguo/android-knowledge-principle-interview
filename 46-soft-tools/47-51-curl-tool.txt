@@ -1,0 +1,5 @@
+1.
+	http://curl.haxx.se/docs/sslcerts.html
+2. 
+	ubuntu-16.04适用curl下载repo异常：参考【aosp_download_build_module_doc.txt，5.1】
+	

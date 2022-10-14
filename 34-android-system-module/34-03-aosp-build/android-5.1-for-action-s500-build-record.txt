@@ -1,3 +1,6 @@
+0.
+	i10,s500下载代码，编译等文档，在云盘上,android目录下。
+	以及在:\34-android-system-module\34-09-action-s500
 1.预制xxsH5Player apk失败。
 	1.1 
 		[out/target/product/bubble_gum/obj/APPS/xxxH5Player_intermediates/arm/package.odex] Aborted (core dumped)
@@ -14,3 +17,5 @@
 	2.1 actions s500 的cpu类型为armeabi-v7a
 		而当时给smartalarm.apk 系统编译配置lib时使用armeabi文件下的libmp3lame.so
 		libmp3lame.so是通过mp3框架库，androidstudio module生成的。apk变后缀为zip解压得到。
+		
+3.

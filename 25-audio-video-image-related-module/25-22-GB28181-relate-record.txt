@@ -1,0 +1,11 @@
+﻿1.
+	1.0 
+		标准号：GB/T 28181-2016
+		中文标准名称：公共安全视频监控联网系统信息传输、交换、控制技术要求
+		[在线预览]
+		https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=469659DC56B9B8187671FF08748CEC89
+	1.1 GB28181的协议详解
+		https://blog.csdn.net/fanyun_01/article/details/120536834
+2. 资源
+	好例子网。
+	鸠摩搜书

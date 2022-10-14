@@ -8,6 +8,11 @@
 	
 	http://aospxref.com/
 	
+	在线搜索及浏览 AOSP 源码:
+		可访问# https://cs.android.com 
+		或# https://github.com/aosp-mirror 。					
+		# https://source.android.com/
+	
 	Android 源码，在线阅读更方便！！！
 	https://blog.csdn.net/plokmju88/article/details/103355021 
 	AndroidXRef 提供了 Android 源码的交叉索引，可以快速的搜索符合特定条件的 Android 源码，后台是基于 OpenGrok 引擎，OpenGrok 是一个快速的，便于使用的源码搜索引擎对对照引擎，它能够帮助我们快速的搜索、定位以及对照代码树。
@@ -41,7 +46,11 @@
 		https://android.googlesource.com/platform/packages/
 	AOSP 项目之frameworks:
 		https://android.googlesource.com/platform/frameworks/support/
-	
+		
+	AOSP 项目之Settings:	
+		https://android.googlesource.com/platform/packages/apps/Settings.git
+		[能看到完整修改提交记录，其它模块也是一样的]		
+		
 	01.2 麦可网张凌华Sundy Android嵌入式底层视频课程 
 		最新Tiny210光盘资料		
 		磐实编程网:下载
