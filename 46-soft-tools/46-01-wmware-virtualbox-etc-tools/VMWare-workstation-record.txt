@@ -51,3 +51,16 @@
 6. VMware虚拟机如何共享文件夹？
 	VMware虚拟机共享window系统文件夹，这样安装的ubuntu系统直接使用这个文件夹，不用把文件拷贝到ubuntu系统中了。
 	https://www.xitongzhijia.net/xtjc/20220105/237320.html
+7. linux（虚拟机中）与windows共享文件两种方法
+	https://blog.51cto.com/u_8081755/3354127
+	{#Ubuntu下 Samba 的安装和配置。
+	 #Windows 7 下将步骤一的共享目录映射为网络驱动器}
+	 
+	{第二种办法使用vmware自带的共享文件夹功能}
+	
+	2.2 VMware下的Linux系统中Windows的共享目录，不支持创建软连接
+		https://www.cnblogs.com/hshy/p/8069074.html
+		{还得通过samba}
+8. vmware与windows下共享文件夹，复制android aosp .repo 或者使用curl 下载清华repo镜像异常：
+	Cannot create symlink/symbolic to `xxx': Operation not supported
+	

@@ -112,7 +112,8 @@
 	#参考::https://blog.csdn.net/Hepburn_li/article/details/90178519?
 		git config --global http.sslverify false
 		--验证：对于curl无效。
-
+	#验证访问网站：
+		curl -v https://www.linux.com
 	$ repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest -b android-5.1.1_r38
 		repo: warning: Python 2 is no longer supported; Please upgrade to Python 3.6+.
 		Downloading Repo source from https://gerrit.googlesource.com/git-repo
@@ -193,9 +194,165 @@
 
 			wget -c https://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/aosp-latest.tar # 下载初始化包
 			tar xf aosp-latest.tar
+				##解压到window共享目录下报错： Cannot create symlink to ... Operation not supported
+				##在ubuntu中的目录中解压，没有异常。
+					
 			cd AOSP   # 解压得到的 AOSP 工程目录
 			# 这时 ls 的话什么也看不到，因为只有一个隐藏的 .repo 目录
 			repo sync # 正常同步一遍即可得到完整目录
 			# 或 repo sync -l 仅checkout代码
 			此后，每次只需运行 repo sync 即可保持同步。 我们强烈建议您保持每天同步，并尽量选择凌晨等低峰时间
+				repo sync 异常键[6.4]
+					
 		-传统初始化方法
+		
+	6.3 问题记录
+		$ repo init -u https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/platform/manifest -b android-5.1.1_r38
+		Downloading Repo source from https://mirrors.tuna.tsinghua.edu.cn/git/git-repo
+		fatal: unable to access 'https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+		repo: error: "git" failed with exit status 128
+		  cwd: /mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo.tmp
+		  cmd: ['git', 'fetch', '--quiet', '--progress', 'origin', '+refs/heads/*:refs/remotes/origin/*', '+refs/tags/*:refs/tags/*']
+		fatal: double check your --repo-rev setting.
+		fatal: cloning the git-repo repository failed, will remove '.repo/repo' 
+
+		尝试解决办法：
+		$ git config --global http.sslverify false
+		
+		再次运行repo init ... 
+		eink@eink-virtual-machine:/mnt/hgfs/v/android/android-5.1.1_r38$ repo init -u https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/platform/manifest -b android-5.1.1_r38
+		Downloading Repo source from https://mirrors.tuna.tsinghua.edu.cn/git/git-repo
+		remote: Enumerating objects: 7571, done.
+		remote: Counting objects: 100% (7571/7571), done.
+		remote: Compressing objects: 100% (4071/4071), done.
+		remote: Total 7571 (delta 4892), reused 5681 (delta 3426)
+		Receiving objects: 100% (7571/7571), 3.40 MiB | 761.00 KiB/s, done.
+		Resolving deltas: 100% (4892/4892), done.
+		repo: Updating release signing keys to keyset ver 2.3
+		Traceback (most recent call last):
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/main.py", line 42, in <module>
+			from git_config import RepoConfig
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/git_config.py", line 774
+			self._Set(f'superproject.{key}', value)
+										  ^
+		SyntaxError: invalid syntax
+		
+		##参考：repo init失败报错：main.py“, line 42, in ＜module＞ from git_config import RepoConfig
+			https://blog.csdn.net/hannibaychty/article/details/124879023
+			安装python-3.7见python部分。
+		#安装python-3.7以后。再次运行还有异常：
+		
+		$ repo init -u https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/platform/manifest -b android-5.1.1_r38
+		Traceback (most recent call last):
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/main.py", line 689, in <module>
+			_Main(sys.argv[1:])
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/main.py", line 665, in _Main
+			result = run()
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/main.py", line 658, in <lambda>
+			run = lambda: repo._Run(name, gopts, argv) or 0
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/main.py", line 299, in _Run
+			result = cmd.Execute(copts, cargs)
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/subcmds/init.py", line 314, in Execute
+			self._SyncManifest(opt)
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/subcmds/init.py", line 135, in _SyncManifest
+			manifest_name=opt.manifest_name):
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/project.py", line 3681, in Sync
+			self._InitGitDir(mirror_git=mirrored_manifest_git)
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/project.py", line 2529, in _InitGitDir
+			self._UpdateHooks(quiet=quiet)
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/project.py", line 2606, in _UpdateHooks
+			self._InitHooks(quiet=quiet)
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/project.py", line 2646, in _InitHooks
+			os.path.relpath(stock_hook, os.path.dirname(dst)), dst)
+		  File "/mnt/hgfs/v/android/android-5.1.1_r38/.repo/repo/platform_utils.py", line 46, in symlink
+			return os.symlink(source, link_name)
+		OSError: [Errno 95] Operation not supported: '../../repo/hooks/commit-msg' -> '/mnt/hgfs/v/android/android-5.1.1_r38/.repo/manifests.git/hooks/commit-msg'
+
+		
+		#os.symlink 是os级别错误，难道是windows下共享文件夹文件系统等不兼容。
+			参考：在Ubuntu的外部驱动器上尝试repo init时出错
+				https://cloud.tencent.com/developer/ask/sof/388323
+				{$ repo init -u git://github.com/AOSiP/platform_manifest.git -b pie
+					当在系统驱动器上运行时，它可以工作，但我没有足够的空间。
+					驱动器具有exFAT文件系统，错误在ext4上消失。
+				}
+			验证在ubuntu-16.04内部的文件系统上是可以的。
+				#将ubuntu中下载的.repo在复制到共享文件中，看看是否可行。
+				--经验证拷贝失败，提示如下：
+				$ cp -r .repo/ /mnt/hgfs/v/android/android-5.1.1_r38/
+				cp: cannot create symbolic link '/mnt/hgfs/v/android/android-5.1.1_r38/.repo/manifests.git/hooks/commit-msg': Operation not supported
+				cp: cannot create symbolic link '/mnt/hgfs/v/android/android-5.1.1_r38/.repo/manifests.git/hooks/pre-auto-gc': Operation not supported
+				cp: cannot create symbolic link '/mnt/hgfs/v/android/android-5.1.1_r38/.repo/manifests/.git': Operation not supported
+			参考文章：
+				Cannot create symlink to `xxx': Operation not supported 无法创建对应符号链接
+				https://blog.csdn.net/qq_41115702/article/details/104654325?
+				{其主要原因就是Windows的共享文件夹是FAT32分区格式的，这个格式是不支持Linux符号链接的。
+					将压缩包拷贝到虚拟机内部其他位置进行解压即可}
+					
+			解决 Virtualbox 共享文件夹 cannot create symlink error 问题
+			https://blog.csdn.net/ganshuyu/article/details/44565157?
+				{Virtualbox与windows做映射可以解决}
+				
+			Cannot create symlink/symbolic to `xxx': Operation not supported
+				https://blog.csdn.net/SweeNeil/article/details/88655995
+				{在linux文件系统中将这个文件压缩为zip格式在拷贝到共享目录下，这样在共享文件中也好解压。
+					zip -r xx.zip xx}
+				##验证可行。但是当真正同步代码时，还是有相应提示。
+					 return os.symlink(source, link_name)
+					OSError: [Errno 95] Operation not supported:
+				通过ln -s 建立window共享目录到linux中的目录映射，使用时还是同样问题。
+	6.4 eink@eink-virtual-machine:/mnt/hgfs/v/android/aosp$ repo sync platform/packages/apps/Settings
+		Traceback (most recent call last):
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/main.py", line 689, in <module>
+			_Main(sys.argv[1:])
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/main.py", line 665, in _Main
+			result = run()
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/main.py", line 658, in <lambda>
+			run = lambda: repo._Run(name, gopts, argv) or 0
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/main.py", line 266, in _Run
+			copts, cargs = cmd.OptionParser.parse_args(argv)
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/command.py", line 117, in OptionParser
+			self._CommonOptions(self._optparse)
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/subcmds/sync.py", line 176, in _CommonOptions
+			self.PARALLEL_JOBS = self.outer_client.manifest.default.sync_j
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/manifest_xml.py", line 867, in default
+			self._Load()
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/manifest_xml.py", line 1061, in _Load
+			b = m.GetBranch(m.CurrentBranch).merge
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/project.py", line 628, in CurrentBranch
+			b = self.work_git.GetHead()
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/project.py", line 3082, in GetHead
+			path = self.GetDotgitPath(subpath=HEAD)
+		  File "/mnt/hgfs/v/android/aosp/.repo/repo/project.py", line 3074, in GetDotgitPath
+			assert setting.startswith('gitdir:')
+		AssertionError
+		
+		#代码在window下的共享文件下，会出现该问题
+		#在aosp代码在ubuntu中的文件夹下，编译同步代码正常。
+			eink@eink-virtual-machine:
+			~/testproject/android/android-latest-20221004/aosp$ repo sync platform/packages/apps/Settings
+			remote: Enumerating objects: 467, done.
+			remote: Counting objects: 100% (467/467), done.
+			remote: Compressing objects: 100% (410/410), done.
+			remote: Total 467 (delta 222), reused 0 (delta 0)
+			Receiving objects: 100% (467/467), 442.27 KiB | 35.00 KiB/s, done.
+			Resolving deltas: 100% (222/222), done.
+			project .repo/manifests/
+			Updating ab80f86..6f81d50
+			Fast-forward
+
+			Fetching: 100% (2/2), done in 2m10.164s
+			Garbage collecting: 100% (2/2), done in 0.019s
+			Checking out files: 100% (5977/5977), done.
+			Checking out: 100% (1/1), done in 3.166s
+			repo sync has finished successfully.
+		#没网的时候，也可以同步，代码时同步是从.repo中checkout出了，但也会提示联网异常：
+			fatal: unable to access 'http://aosp.tuna.tsinghua.edu.cn/platform/packages/apps/Gallery/': Could not resolve host: aosp.tuna.tsinghua.edu.cn
+			error: Cannot fetch platform/packages/apps/Gallery from http://aosp.tuna.tsinghua.edu.cn/platform/packages/apps/Gallery
+			Fetching: 100% (1/1), done in 44.171s
+			Garbage collecting: 100% (1/1), done in 0.022s
+
+			error: Unable to fully sync the tree.
+			error: Downloading network changes failed.
+
+			##估计是同步一些信息，会消耗少量流量。

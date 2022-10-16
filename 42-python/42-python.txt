@@ -101,3 +101,19 @@
 		
 		详解Ubuntu16.04安装Python3.7
 		https://blog.csdn.net/qq_19168521/article/details/115482819
+		
+		
+		make install 时异常：
+		Creating directory /usr/local/python3/bin
+		/usr/bin/install: cannot change permissions of ‘/usr/local/python3/bin’: No such file or directory
+		Creating directory /usr/local/python3/lib
+		/usr/bin/install: cannot change permissions of ‘/usr/local/python3/lib’: No such file or directory
+		make: *** [altbininstall] Error 1
+		
+		#根据提示，是权限问题，使用ls -l /usr/local/python3/ 显示是root用户权限，其它用户没有写权限。而执行make install是当前普通用户权限。
+		chmod 777 /usr/local/python3/即可解决。
+		
+		
+		ubuntu 16（bit 64） python 3.5升级到3.7_汉尼拔勇闯天涯的博客-CSDN博客
+			https://blog.csdn.net/hannibaychty/article/details/124868480?
+

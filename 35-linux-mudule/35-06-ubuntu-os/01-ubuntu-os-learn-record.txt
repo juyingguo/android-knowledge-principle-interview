@@ -658,6 +658,11 @@
 	
 	23.2 ubuntu 安裝deb_.deb文件如何安装，Ubuntu下deb安装方法图文详解
 		https://blog.csdn.net/weixin_36189723/article/details/111950455
+	23.3 ubuntu如何打开软件 ubuntu怎么打开已安装程序
+		http://www.51sjk.com/b1b101639/
+		
+		#问题起源：aparted分区软件，点击[Search your computer]，搜索不到该软件。
+		#在ubuntu系统中按Alt+F2快捷键打开命令输入框，再搜索，可以搜索到。
 24 wget 
 	Ubuntu系统中的wget命令
 	https://blog.csdn.net/weixin_43786241/article/details/105559712

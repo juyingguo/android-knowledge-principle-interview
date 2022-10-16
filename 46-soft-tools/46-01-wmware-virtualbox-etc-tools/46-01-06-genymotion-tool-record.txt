@@ -1,0 +1,17 @@
+1.
+	官网：
+		https://www.genymotion.com/
+		
+		https://docs.genymotion.com/desktop/
+	登录：
+		https://www-v1.genymotion.com/account/login/
+	
+2.
+	genymotion个人版下载及注册
+	https://blog.csdn.net/weixin_42258032/article/details/109612674
+	
+	Genymotion+VirtualBox详解—目录结构，路径更改，重新加载已存在的模拟器
+		https://blog.csdn.net/lxh19930428/article/details/53726515/
+		
+	Android模拟器之Genymotion VirtualBox 安装 使用教程
+		https://blog.csdn.net/zhouxbr/article/details/102999154?

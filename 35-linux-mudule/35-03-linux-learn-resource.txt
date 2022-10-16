@@ -1,7 +1,9 @@
 
 1、资源
 	1.1 http://linux.linuxidc.com/
-	
+		
+		https://www.linux.com/
+		
 	1.2 man-pages
 	
 		http://www.kernel.org/doc/man-pages/

@@ -159,6 +159,7 @@
 		9.1.1 tar
 			https://www.runoob.com/linux/linux-comm-tar.html
 			
+			tar -xf test.tar -C xx-dir//解开备份tar文件（非解压）,到指定的目录下
 			tar -xzvf test.tar.gz //解压文件
 			tar -czvf test.tar.gz a.c   //压缩 a.c文件为test.tar.gz
 		9.1.2 将当前目录压缩成backup.tar.gz  	其中当前目录下的img文件夹(后面不要带有路径符号/)和upload.txt文件不压缩 
@@ -182,7 +183,7 @@
 				-d<目录> 指定文件解压缩后所要存储的目录。
 				
 			b,zip -r mydata.zip mydata #压缩mydata目录
-				#zip文件解压到制定目录
+				#zip文件解压到制定目录用-d，-n 解压缩时不要覆盖原有的文件
 				unzip -n nerdtree.zip -d nerdtree  
 			b,linux unzip 解压后文件名乱码
 				https://www.cnblogs.com/10087622blog/p/7763070.html 
