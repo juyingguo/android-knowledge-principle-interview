@@ -163,3 +163,10 @@
 
 	主要镜像：https://github.com/crossoverJie/cim
 	备用镜像：https://github.com/52im/cim
+x,交流群
+	即时通讯技术交流③群：52im：：185926912
+	
+	libp2p 这个好像借助的IFPS.
+	appstore 搜 “狸猫IM” 可以下载.
+	有点像telegram.
+	

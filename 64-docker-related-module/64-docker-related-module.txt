@@ -12,8 +12,7 @@
 	
 	Docker 命令大全	
 			https://www.runoob.com/docker/docker-command-manual.html
-		Docker run 命令
-			https://www.runoob.com/docker/docker-run-command.html
+	
 2. Docker 教程
 	2.1 https://www.runoob.com/docker/docker-tutorial.html
 	
@@ -93,6 +92,23 @@
 		4.5.4 停止的容器可以通过 docker restart 重启：
 
 			$ docker restart <容器 ID>
+			
+		4.5.5 docker run
+			# docker --env 传递环境变量
+				https://blog.csdn.net/zhaojikun521521/article/details/115109126
+				使用场景：根据不同的 MODE 在docker容器中调用不同的接口
+
+				docker  run -d 8000:8000 --env MODE=DEV flask:latest
+				1
+				def get():
+					   if os.getenv("MODE") == "DEV":
+						   print("进入开发环境")
+					   elif os.getenv("MPDE")=="TEST":
+						   print("进入测试环境")
+				———————
+				
+				DOCKER ENV 设置环境变量
+				https://blog.csdn.net/wsb8878/article/details/89765238?
 	4.6 容器操作
 	4.7 容器rootfs命令
 	4.8 镜像仓库
@@ -114,5 +130,6 @@
 			root@ed09e4490c57:/# exit
 	4.8 本地镜像管理
 	4.9 info|version
+	
 		
 		
