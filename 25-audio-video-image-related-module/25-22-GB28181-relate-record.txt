@@ -10,9 +10,10 @@
 	好例子网。
 	鸠摩搜书
 	github
-3. 
+3. GB28181相关项目、资源参考
 	https://github.com/ZLMediaKit/ZLMediaKit
 		https://gitee.com/xia-chu/ZLMediaKit
+		qq群号: 690854210
 	
 	https://github.com/648540858/wvp-GB28181-pro
 	
@@ -29,6 +30,8 @@
 	gb28181 开源服务器:
 		
 		https://www.csdn.net/tags/MtTakgysODA0NzctYmxvZwO0O0OO0O0O.html
+		
+		#部分可以参考，不完整。
 	java：wvp-GB28181-pro:
 	
 		https://huaweicloud.csdn.net/6331189ed3efff3090b51e39.html?
@@ -36,3 +39,25 @@
 		
 4. RTP报文头中 SSRC和CSRC区别
 	https://blog.csdn.net/huangdenan/article/details/117751982
+	
+5.编译，测试，验证
+	ZLMediaKit推流测试：
+	https://github.com/ZLMediaKit/ZLMediaKit/wiki/ZLMediaKit推流测试
+	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
+	异常提示：
+	The encoder 'aac' is experimental but experimental codecs are not enabled, add '-strict -2' if you want to use it.
+		参考博客：
+		https://blog.csdn.net/Trance95/article/details/117407864
+		我当前使用ffmpeg版本2.8，
+		使用-strict -2就不提示了错误了。但运行效果收到的感觉推流不完全对？？
+		
+	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -strict -2 -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
+	
+	换成：ffmpeg version 3.4.8 
+		Cannot load libcuda.so.1
+		Error initializing output stream 0:0 -- Error while opening encoder for output stream #0:0 - maybe incorrect parameters such as bit_rate, rate, width or height
+		
+	FFmpeg转码错误Cannot load libcuda.so.1
+	https://blog.csdn.net/yzhang6_10/article/details/81349532
+	详情记录见【25-06-ffmpeg-module.txt，6.2.2】
+

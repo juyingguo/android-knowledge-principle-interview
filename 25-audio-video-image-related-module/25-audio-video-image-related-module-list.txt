@@ -239,3 +239,6 @@
 		https://blog.csdn.net/xiaole0313/article/details/80334211/ 
 16 音频处理——常用音频算法名词简称解释(AEC、AGC、NS、HPF、BSS、BF、DOA、DER)
 	https://blog.csdn.net/qq_28258885/article/details/120175673
+17 SDL
+	https://baike.baidu.com/item/SDL/224181?fr=aladdin
+	SDL（Simple DirectMedia Layer）是一套开放源代码的跨平台多媒体开发库，使用C语言写成。SDL提供了数种控制图像、声音、输出入的函数，让开发者只要用相同或是相似的代码就可以开发出跨多个平台（Linux、Windows、Mac OS X等）的应用软件。现SDL多用于开发游戏、模拟器、媒体播放器等多媒体应用领域。

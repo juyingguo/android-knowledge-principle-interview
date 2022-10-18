@@ -108,3 +108,13 @@
 	https://www.csdn.net/tags/NtzaEgxsNzYwOTMtYmxvZwO0O0OO0O0O.html
 13 SCSI是什么意思？
 	https://baijiahao.baidu.com/s?id=1739029443354206413&wfr=spider&for=pc
+14 云服务器主机内网 ip 和外网 ip 的区别
+	https://blog.csdn.net/hewusheng10/article/details/117028056
+	https://baijiahao.baidu.com/s?id=1743842723486288695&wfr=spider&for=pc
+	
+	windows：
+		"ipconfig"
+		
+		如何区分内网和外网就要看第二行右面那四组用"."隔开的数字.如果是由192.168.*. *或10.*. *. *或127.0.*. *组成的那么说明用户使用的是内网；如果是由上述三组数据字外开头的数字组成的(如202.96.64.*)那么说明用户是外网用户。
+	linux:【查看linux命令文档】
+		

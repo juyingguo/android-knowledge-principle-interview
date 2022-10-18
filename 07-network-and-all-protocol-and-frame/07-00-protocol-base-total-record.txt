@@ -23,3 +23,6 @@
 3. ssh
 	https://baike.baidu.com/item/ssh/10407?fr=aladdin
 	
+4. HLS
+	https://baike.baidu.com/item/HLS/8328931?fr=aladdin
+	

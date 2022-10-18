@@ -80,7 +80,7 @@
 		https://blog.csdn.net/axdc_qa_team/article/details/4204358 
 		
 		https://ffmpeg.org/ffmpeg-all.html 
-		
+	
 2. FFmpeg从入门到精通读书笔记（1）
 	2.1 FFmpeg从入门到精通读书笔记（1） 
 		https://blog.csdn.net/hanxiucaolss/article/details/100007475
@@ -341,6 +341,91 @@
 			
 		6.1.2 使用过程记录见 [7]
 	6.2 ffmpeg linux下的安装及使用过程解析
+		
+		6.2.1 
+			安装参考：
+			ubuntu18安装最新版ffmpeg4.3以上版本详细流程
+			https://blog.csdn.net/my_name_is_learn/article/details/107408551?
+			#如果你在ubuntu中直接使用apt-get来安装ffmpeg的话，版本比较老，根据ubuntu版本而有所差别
+			
+			依次运行以下命令：
+			
+			举例：
+
+			1、对资源包进行解压
+			tar jxvf ffmpeg-4.3.1.tar.bz2
+			2、进入资源包文件夹目录
+			cd ffmpeg-4.3.1/
+			3、建立文件夹build
+			mkdir build
+			4、进入build文件夹
+			cd ./build
+			5、安装yasm
+			sudo apt-get install yasm
+			6、运行配置文件
+			../configure
+			7、编译(这个过程耗时比较久，耐心等待一下)
+			make
+			8、安装
+			sudo make install
+			9、运行下面语句出现这个界面说明安装成功(如果没有出现，重启电脑试试)
+			ffmpeg -version
+			———
+		6.2.2 安装x264
+			【主题缘由】
+			FFmpeg转码错误Cannot load libcuda.so.1
+			https://blog.csdn.net/yzhang6_10/article/details/81349532
+			
+			解决办法，安装x264
+
+			Linux下安装x264库
+
+			1）下载x264
+
+			git clone http://git.videolan.org/git/x264.git
+
+			2）安装
+
+			cd x264
+
+			sudo ./configure --enable-shared --disable-asm
+
+			sudo make && make install
+
+			3）添加环境变量
+
+			export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+
+			echo $PKG_CONFIG_PATH
+
+			注意：解决警告(WARNING: using libx264 without pkg-config)
+
+			4）重新编译ffmpeg
+
+			sudo ./configure --disable-yasm --enable-libx264 --enable-swscale --enable-avresample --enable-gpl --enable-shared \ 
+			sudo make && make install
+			—————————
+			
+			编译出问题:
+				/usr/bin/ld: libavcodec/mqc.o: relocation R_X86_64_32 against `.rodata' can not be used when making a shared object; recompile with -fPIC
+				libavcodec/mqc.o: error adding symbols: Bad value
+				collect2: error: ld returned 1 exit status
+				make: *** [libavcodec/libavcodec.so.57] Error 1
+				make: *** Waiting for unfinished jobs....
+			
+			参考：
+				ffmpeg启用lib264编译错误relocation R_X86_64_32 against .rodata‘ can not be used when making a shared obj
+
+				————————————————
+				版权声明：本文为CSDN博主「一根烂笔头」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+				原文链接：https://blog.csdn.net/cwcmcw/article/details/121689411
+				解决方法
+				配置时指定fPIC
+
+				./configure --extra-cxxflags='-fPIC' #其他选项
+				
+				关于 gcc/g++编译选项: -fPIC 功能的解释；
+					https://blog.csdn.net/foxriver_gjg1989/article/details/104432575
 7. ffmpeg使用过程记录见 [7]	
 	7.0 详细的使用说明（英文）：
 		http://ffmpeg.org/ffplay.html
@@ -413,6 +498,16 @@
 			 -f s16le : 音频的格式s16le存储方式
 	7.3 ffmpeg命令高级进阶 
 		https://blog.csdn.net/bsmmaoshenbo/article/details/94401931 
+		
+	7.4 了解ffmpeg re参数
+		https://qa.1r1g.com/sf/ask/3393539901/
+		
+		ffmpeg命令分析-re
+		https://blog.csdn.net/u012117034/article/details/123430700
+		
+		-re (input)
+		以本机帧速率读取输入。
+		
 8. FFmpeg在基于Android上有哪些应用。
 	8.1 FFmpeg在基于Android的楼宇可视对讲程序中的应用 
 		http://www.fx361.com/page/2017/0729/2117898.shtml

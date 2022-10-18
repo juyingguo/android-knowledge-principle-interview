@@ -59,3 +59,31 @@
 
 6. 在ubuntu上搭建ftp服务器并在windows上进行访问
 	https://blog.csdn.net/wardenjohn/article/details/87271844 
+7.Ubuntu16.04 安装 gcc 4.8	
+	部分参考:[android.2.3.5_build-record.txt]中安装gcc,g++。
+	
+	https://blog.csdn.net/sinat_35496345/article/details/80478622
+	https://www.linuxidc.com/Linux/2017-03/142299.htm
+	
+	详细步骤:
+		check the gcc version use command 
+
+		gcc --version
+
+
+
+
+		the first step:
+
+		sudo apt-get install gcc-4.8
+		then:
+
+		ls /usr/bin/gcc*
+		sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 100
+		sudo update-alternatives --config gcc
+		check the gcc version again:
+
+		gcc --version
+		———————
+		
+		install g++ in the same way as gcc

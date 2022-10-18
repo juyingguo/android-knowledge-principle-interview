@@ -213,10 +213,60 @@
 
 				这会卸载相应的软件，同时也会卸载依赖的部分，没办法指定不卸载依赖的。但是软件的配置文件还是会留在系统中。
 		6.1.5 *完全卸载软件包括删除配置：
-
+				#--purge是可选项，写上这个属性是将软件及其配置文件一并删除，如不需要删除配置文件，可执行sudo apt-get remove 包名
 				#apt-get --purge remove packagename
 
 				这样配置文件也会被删除。
+				
+	6.2 
+		Ubuntu 中卸载软件的几种命令
+		http://t.zoukankan.com/gispathfinder-p-10536672.html
+		https://www.cnblogs.com/it-Ren/p/15566594.html
+		
+		#打开一个终端，输入dpkg --list ,按下Enter键，终端输出以下内容，显示的是你电脑上安装的所有软件
+		
+		1、在终端里 apt-get安装的软件：
+			默认安装在/usr/bin下
+				
+			安装软件sudo  apt-get install softname1 softname2 softname3……
+			卸载软件 sudo apt-get remove softname1 softname2 softname3……
+			卸载并清除配置sudo  apt-get remove --purge softname1
+			更新软件信息数据库 sudo apt-get update
+			进行系统升级sudo  apt-get upgrade, sudo apt-get distupgrade
+			搜索软件包 sudo apt-cache search softname1 softname2 softname3……
+
+
+		2、安装的deb包要用此方法：
+			安装deb软件包 dpkg -i xxx.deb
+			删除软件包 dpkg -r xxx.deb
+			连同配置文件一起删除 dpkg -r --purge xxx.deb
+			查看软件包信息 dpkg -info xxx.deb
+			查看文件拷贝详情 dpkg -L xxx.deb
+			查看系统中已安装软件包信息 dpkg -l
+			重新配置软件包 dpkg-reconfigure xxx
+
+
+		4、在“synaptic pakagemanager”里:
+		点搜索，输入软件名
+		在需要安装或卸载的软件上右击－点标记－最后点应用
+
+
+		5、现在还可以在 software center里面,直接卸载。
+
+
+		6、卸载源代码编译的的软件：
+			默认安装在/usr/local/bin下
+		cd 源代码目录
+		make clean
+		./configure
+		（make）
+		make uninstall
+		rm -rf 目录
+		清理系统：
+		sudo apt-get autoclean
+		sudo apt-get clean
+		sudo apt-get autoremove
+		（或使用ubuntu-tweak清理）
 7. add-apt-repository 
 	7.1 【linux清障】add-apt-repository是什么意思？
 		https://blog.csdn.net/qq_25863199/article/details/102799070

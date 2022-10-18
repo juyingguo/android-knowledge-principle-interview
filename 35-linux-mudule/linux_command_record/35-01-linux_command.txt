@@ -407,5 +407,8 @@
 	iconv -l 
 17 其它命令
 	17.1 Linux下查看可执行文件、动态库的ELF头等信息
+	Linux ip 命令
+		查看服务器的内网及外网IP
+		ip address，可以看到，eth0所对应的是内网IP（10.90.100.88），而eth1所对应的IP为外网IP（192.168.58.66）
 18 ubuntu16.04 查看系统可用内存
 	https://blog.csdn.net/weixin_30826095/article/details/99188548
