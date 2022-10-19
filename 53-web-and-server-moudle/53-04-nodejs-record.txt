@@ -56,7 +56,7 @@
 	5.1 查看版本
 		node --version
 6. 不同工程生成node_modules能不能共用
-
+	6.2 npm 全局安装与局部安装的区别。
 7.nodejs配置静态服务器
 	7.1 live-server
 		https://blog.csdn.net/m0_47901007/article/details/125229427
@@ -77,11 +77,16 @@
 	7.3 node.js 静态服务器html等静态资源放置位置
 		参考【7.2】
 	
-2.# 安装依赖
+8.# 安装依赖
 	npm install
 
 	# 强烈建议不要用直接使用 cnpm 安装，会有各种诡异的 bug，可以通过重新指定 registry 来解决 npm 安装速度慢的问题。
 	npm install --registry=https://registry.npmmirror.com
+	
+9. npm install  后提示漏洞修复：
+	found 116 vulnerabilities (2 low, 82 moderate, 23 high, 9 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
 	
 	
 	

@@ -60,4 +60,31 @@
 	FFmpeg转码错误Cannot load libcuda.so.1
 	https://blog.csdn.net/yzhang6_10/article/details/81349532
 	详情记录见【25-06-ffmpeg-module.txt，6.2.2】
-
+	
+	wvp-GB28181-pro项目编译：
+		参考：
+			https://huaweicloud.csdn.net/6331189ed3efff3090b51e39.html?
+			https://doc.wvp-pro.cn/#/_content/introduction/compile
+		异常：
+			cd wvp-GB28181-pro/web_src/
+			npm --registry=https://registry.npm.taobao.org install
+			
+			npm WARN ajv-keywords@3.5.2 requires a peer of ajv@^6.9.1 but none is installed.
+		 You must install peer dependencies yourself.
+		 
+		 参考：
+		 https://blog.csdn.net/m0_46270930/article/details/118738185
+			
+			解决办法：
+				npm install ajv@^6.9.1
+		
+			/ building for production...Browserslist: caniuse-lite is outdated. Please run:
+			npx browserslist@latest --update-db
+		npm run build后提示：
+			Why you should do it regularly:
+			https://github.com/browserslist/browserslist#browsers-data-updating
+			Browserslist: caniuse-lite is outdated. Please run:
+			npx browserslist@latest --update-db
+			
+			#暂不升级试试。
+			
