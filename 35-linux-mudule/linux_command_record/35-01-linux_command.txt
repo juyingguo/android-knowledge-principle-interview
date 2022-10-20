@@ -265,11 +265,35 @@
 		uname [-amnrsv][--help][--version]
 		
 		-r或--release 　显示操作系统的发行编号。//即为内核版本。
-	7.3 kill
+	7.3 ubuntu终止进程的方法
+		http://wjhsh.net/wowchky-p-2729224.html
+		
+		终止一个进程或终止一个正在运行的程序，一般是通过 kill 、killall、pkill、xkill 等进行。
+		
+		kill
 		kill [-s <信息名称或编号>][程序]　或　kill [-l <信息编号>] 
 		1 (HUP)：重新加载进程。
 		9 (KILL)：杀死一个进程。
 		15 (TERM)：正常停止一个进程。
+		
+		kill [信号代码] <进程PID>                 
+
+		根据PID向进程发送信号，常用来结束进程，默认信号为 -9
+		信号代码，可取值如下：
+		-l [信号数字] 显示、翻译信号代码
+		-9 , -KILL 发送 kill 信号退出
+		-6 , -ABRT 发送 abort 信号退出
+		-15 , -TERM 发送 Termination 信号
+		-1 , -HUP 挂起
+		-2 , -INT 从键盘中断，相当于 Ctrl+c
+		-3 , -QUIT 从键盘退出，相当于 Ctrl+d
+		-4 , -ILL 非法指令
+		-11 , -SEGV 内存错误
+		-13 , -PIPE 破坏管道
+		-14 , -ALRM
+		-STOP 停止进程，但不结束
+		-CONT 继续运行已停止的进程
+		-9 -1 结束当前用户的所有进程
 	7.4 reboot
 		$ reboot
 			reboot: Need to be root
@@ -283,6 +307,10 @@
 	7.5  free命令。
 		free指令会显示内存的使用情况，包括实体内存，虚拟的交换文件内存，共享内存区段，以及系统核心使用的缓冲区等。
 		free [-bkmotV][-s <间隔秒数>]
+	7.6 ps命令查看进程。
+		查看进程的命令 有ps、pstree、pgrep等：  
+		http://wjhsh.net/wowchky-p-2729224.html
+		
 (8) 系统设置 
 	8.1 insmod 
 		rmmod(选项)(参数)

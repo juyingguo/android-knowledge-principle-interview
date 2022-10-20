@@ -242,3 +242,10 @@
 17 SDL
 	https://baike.baidu.com/item/SDL/224181?fr=aladdin
 	SDL（Simple DirectMedia Layer）是一套开放源代码的跨平台多媒体开发库，使用C语言写成。SDL提供了数种控制图像、声音、输出入的函数，让开发者只要用相同或是相似的代码就可以开发出跨多个平台（Linux、Windows、Mac OS X等）的应用软件。现SDL多用于开发游戏、模拟器、媒体播放器等多媒体应用领域。
+18 音视频 TS格式解析
+	https://blog.csdn.net/u014099894/article/details/119712251
+	PS 流 (Program Stream)：节目流，PS 流由 PS 包组成，而一个 PS 包又由若干个 PES 包组成。一个 PS 包由具有同一时间基准的一个或多个 PES 包复合合成。
+
+	TS 流 (Transport Stream)：传输流，TS 流由固定长度（188 字节）的 TS 包组成，TS 包是对 PES 包的另一种封装方式，同样由具有同一时间基准的一个或多个 PES 包复合合成。PS 包是不固定长度，而 TS 包为固定长度。
+	————————————————
+	##作者有详细举例解析过程。

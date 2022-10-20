@@ -16,7 +16,7 @@
 		qq群号: 690854210
 	
 	https://github.com/648540858/wvp-GB28181-pro
-	
+		https://gitee.com/pan648540858/wvp-GB28181-pro
 		部署文档:
 		https://doc.wvp-pro.cn/#/
 		
@@ -36,30 +36,13 @@
 	
 		https://huaweicloud.csdn.net/6331189ed3efff3090b51e39.html?
 		
+		源码方式编译运行：
+			源码方式的话，要先启动ZLM服务，才能运行，可以参考这里{https://blog.csdn.net/zhizhengguan/article/details/124682425}
 		
 4. RTP报文头中 SSRC和CSRC区别
 	https://blog.csdn.net/huangdenan/article/details/117751982
 	
-5.编译，测试，验证
-	ZLMediaKit推流测试：
-	https://github.com/ZLMediaKit/ZLMediaKit/wiki/ZLMediaKit推流测试
-	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
-	异常提示：
-	The encoder 'aac' is experimental but experimental codecs are not enabled, add '-strict -2' if you want to use it.
-		参考博客：
-		https://blog.csdn.net/Trance95/article/details/117407864
-		我当前使用ffmpeg版本2.8，
-		使用-strict -2就不提示了错误了。但运行效果收到的感觉推流不完全对？？
-		
-	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -strict -2 -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
-	
-	换成：ffmpeg version 3.4.8 
-		Cannot load libcuda.so.1
-		Error initializing output stream 0:0 -- Error while opening encoder for output stream #0:0 - maybe incorrect parameters such as bit_rate, rate, width or height
-		
-	FFmpeg转码错误Cannot load libcuda.so.1
-	https://blog.csdn.net/yzhang6_10/article/details/81349532
-	详情记录见【25-06-ffmpeg-module.txt，6.2.2】
+5.wvp-GB28181-pro编译，测试，验证
 	
 	wvp-GB28181-pro项目编译：
 		参考：
@@ -88,3 +71,85 @@
 			
 			#暂不升级试试。
 			
+		运行提示[未注册的zlm] :
+			2022-10-20 14:00:35.506 [main] INFO  com.genersoft.iot.vmp.media.zlm.ZLMRunner:79 - [zlm] 等待默认zlm中...
+			2022-10-20 14:00:35.514 [main] INFO  c.g.iot.vmp.service.impl.MediaServerServiceImpl:98 - [zlm] 缓存初始化
+			2022-10-20 14:00:37.243 [main] WARN  c.g.iot.vmp.service.impl.MediaServerServiceImpl:359 - [未注册的zlm] 拒接接入：your_server_id来自192.168.133.10：80
+			2022-10-20 14:00:37.247 [main] WARN  c.g.iot.vmp.service.impl.MediaServerServiceImpl:360 - 请检查ZLM的<general.mediaServerId>配置是否与WVP的<media.id>一致
+			2022-10-20 14:00:37.301 [main] INFO  c.g.iot.vmp.storager.impl.RedisCatchStorageImpl:769 - [redis通知]获取所有推流设备的状态
+6. 基于EasyIPCamera实现的数字网络摄像机IPCamera的模拟器IPC RTSP Simulator
+	http://t.zoukankan.com/babosa-p-9217843.html
+	
+7.ZLMediaKit编译，测试，验证
+	启动方式
+		./MediaServer 
+		./MediaServer  -d
+		./MediaServer  -d &	//在终端能看到日志
+		nohup ./MediaServer -d &	//在终端不能看到日志
+		
+		注意：
+		如果你启动MediaServer后需要关闭shell，用第三种方式,否则关闭shell会导致MediaServer一起被关闭。
+		如果你会使用到FFmpeg相关功能，你应该这样启动程序nohup ./MediaServer -d &，否则在fork FFmpeg进程时会导致MediaServer进程挂起。
+	配置文件的热加载
+
+		修改并保存配置文件后，在shell里面输入killall -1 MediaServer就能使ZLMediaKit热加载配置文件
+	关闭服务器
+
+		如果你是后台启动方式，请在shell中输入killall -2 MediaServer以便优雅关闭服务器(程序收到SIGINT信号后会自动释放资源并退出)。
+		否则你可以同时按下Ctr + C退出程序。
+	ZLMediaKit推流测试：
+	https://github.com/ZLMediaKit/ZLMediaKit/wiki/ZLMediaKit推流测试
+	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
+	异常提示：
+	The encoder 'aac' is experimental but experimental codecs are not enabled, add '-strict -2' if you want to use it.
+		参考博客：
+		https://blog.csdn.net/Trance95/article/details/117407864
+		我当前使用ffmpeg版本2.8，
+		使用-strict -2就不提示了错误了。但运行效果收到的感觉推流不完全对？？
+		
+	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -strict -2 -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
+	
+	换成：ffmpeg version 3.4.8 
+		Cannot load libcuda.so.1
+		Error initializing output stream 0:0 -- Error while opening encoder for output stream #0:0 - maybe incorrect parameters such as bit_rate, rate, width or height
+		
+	FFmpeg转码错误Cannot load libcuda.so.1
+	https://blog.csdn.net/yzhang6_10/article/details/81349532
+	详情记录见【25-06-ffmpeg-module.txt，6.2.2】
+	
+	
+	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
+	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
+
+
+	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h265 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test
+
+	ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -f flv rtmp://127.0.0.1/live/test
+
+	trmp:
+		ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -strict -2 -f flv rtmp://127.0.0.1/live/test
+
+	rtp:
+		ffmpeg -re -i "/home/eink/test-file/paiDuiGe.mp4" -vcodec h264 -acodec aac -strict -2 -f rtp_mpegts rtp://127.0.0.1:10000
+
+	Cannot load libcuda.so.1
+			Error initializing output stream 0:0 -- #0:0 - maybe incorrect parameters such as bit_rate, rate, width or height
+			
+			rtsp://192.168.133.10:554/live/test
+			
+			
+			rtmp://192.168.133.10/live/test
+			
+			http://192.168.133.10:554/live/test/hls.m3u8
+			http://192.168.0.59/live/test/hls.m3u8
+			
+			rtp:需要重新拼接：
+				rtmp://192.168.133.10/rtp/962FD891
+				
+	点播:
+		要在 ZLMediaKit 中实现点播，只需要将 mp4 文件放到 www/record 下，默认情况下，应用名是 record，可以在config.ini中修改
+		点播 URL 就是
+
+		rtsp://192.168.0.59/record/test.mp4
+		rtmp://192.168.0.59/record/test.mp4
+		http://192.168.133.10/record/paiDuiGe.mp4 (通用http点播，推荐)

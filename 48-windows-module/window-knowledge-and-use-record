@@ -165,4 +165,13 @@
 	
 16 电脑ghost是什么意思
 	https://www.php.cn/faq/472416.html
+17 win7系统cmd中文乱码解决步骤
+	https://baijiahao.baidu.com/s?id=1725697887367225327&wfr=spider&for=pc
+	
+	按win+r打开运行窗口，输入cmd
+	在命令提示符界面中，输入chcp 936按回车
+	
+	也可以鼠标右键命令提示框，选择默认值
+	
+	#以上都可以尝试。
 	

@@ -226,6 +226,13 @@
 		{zip方式安装，博主只是针对电脑上只安装当前一个mysql的情况}
 		{不同版本的mysql同时存在安装参考{3.5}}
 	3.8 官网下载慢。复制链接地址使用迅雷下载。下载后校验md5。
+	
+	3.9 查看mysql服务名称并启动服务
+		windows：
+			计算机-管理-服务与应用程序-服务：找到要启动的服务名称如：MYSQL8028
+			启动服务：>net start MYSQL8028
+		linux下：
+			
 4.mysql int(10)和int(11)区别
 	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j
 5.MySQL中主键是否需要设置为自增？
