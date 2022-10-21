@@ -48,6 +48,14 @@
 		参考：
 			https://huaweicloud.csdn.net/6331189ed3efff3090b51e39.html?
 			https://doc.wvp-pro.cn/#/_content/introduction/compile
+			
+			作者参考：
+				参考：
+					https://notemi.cn/wvp---zlmedia-kit---mediaserverui-to-realize-streaming-playback-and-recording-of-camera-gb28181.html/comment-page-1
+				gb28181 在线文档
+					
+				参考：
+					https://blog.csdn.net/qq_33418407/article/details/121958607
 		异常：
 			cd wvp-GB28181-pro/web_src/
 			npm --registry=https://registry.npm.taobao.org install
@@ -77,10 +85,15 @@
 			2022-10-20 14:00:37.243 [main] WARN  c.g.iot.vmp.service.impl.MediaServerServiceImpl:359 - [未注册的zlm] 拒接接入：your_server_id来自192.168.133.10：80
 			2022-10-20 14:00:37.247 [main] WARN  c.g.iot.vmp.service.impl.MediaServerServiceImpl:360 - 请检查ZLM的<general.mediaServerId>配置是否与WVP的<media.id>一致
 			2022-10-20 14:00:37.301 [main] INFO  c.g.iot.vmp.storager.impl.RedisCatchStorageImpl:769 - [redis通知]获取所有推流设备的状态
+			
+			##解决办法：检查ZLM的<general.mediaServerId>配置是否与WVP的<media.id>一致，配置一致即可。
 6. 基于EasyIPCamera实现的数字网络摄像机IPCamera的模拟器IPC RTSP Simulator
 	http://t.zoukankan.com/babosa-p-9217843.html
 	
 7.ZLMediaKit编译，测试，验证
+
+	##参考：https://blog.csdn.net/zhizhengguan/article/details/124682425
+	
 	启动方式
 		./MediaServer 
 		./MediaServer  -d
@@ -90,6 +103,14 @@
 		注意：
 		如果你启动MediaServer后需要关闭shell，用第三种方式,否则关闭shell会导致MediaServer一起被关闭。
 		如果你会使用到FFmpeg相关功能，你应该这样启动程序nohup ./MediaServer -d &，否则在fork FFmpeg进程时会导致MediaServer进程挂起。
+		
+		启动异常:先使用./MediaServer 看看是否能成功
+			2022-10-21 17:13:13.030 W MediaServer[4818-MediaServer] sockutil.cpp:396 bind_sock6 | 绑定套接字失败:permission denied
+			2022-10-21 17:13:13.038 W MediaServer[4818-MediaServer] main.cpp:345 start_main | 端口占用或无权限:listen on :::554 failed:permission denied
+			2022-10-21 17:13:13.039 E MediaServer[4818-MediaServer] main.cpp:346 start_main | 程序启动失败，请修改配置文件中端口号后重试!
+			
+			使用sudo ./MediaServer正常。
+
 	配置文件的热加载
 
 		修改并保存配置文件后，在shell里面输入killall -1 MediaServer就能使ZLMediaKit热加载配置文件
@@ -153,3 +174,40 @@
 		rtsp://192.168.0.59/record/test.mp4
 		rtmp://192.168.0.59/record/test.mp4
 		http://192.168.133.10/record/paiDuiGe.mp4 (通用http点播，推荐)
+	HTTP API
+		/index/api/getApiList：
+			本地使用：直接在浏览器中输入http://127.0.0.1/index/api/getApiList即可		
+			如果是在其它主机上操作的话，接口会返回错误：
+			secret 在配置文件 config.ini 中有定义，直接拷贝出来，跟在 /index/api/getApiList 后面.
+			http://192.168.133.10/index/api/getApiList?secret=035c73f7-bb6b-4889-a715-d9eb2d1925cc
+		
+		/index/api/addFFmpegSource
+			{{ZLMediaKit_URL}}/index/api/addFFmpegSource?secret={{ZLMediaKit_secret}}&src_url=http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4&dst_url=rtmp://127.0.0.1/live/hks2&timeout_ms=10000&enable_hls=0&enable_mp4=0
+			
+			http://192.168.133.10/index/api/addFFmpegSource?secret=035c73f7-bb6b-4889-a715-d9eb2d1925cc&src_url=http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4&dst_url=rtmp://127.0.0.1/live/hks2&timeout_ms=10000&enable_hls=0&enable_mp4=0
+						
+			rtmp://127.0.0.1/live/hks2
+			
+			服务端日志：
+				{可以看到ffmpeg推流命令}
+				
+				MediaServer[99344-event poller 1] FFmpegSource.cpp:97 play | /usr/bin/ffmpeg -re -i http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4 -c:a aac -strict -2 -ar 44100 -ab 48k -c:v libx264 -f flv rtmp://192.168.133.10/live/hks2
+			#如果要取消拉流的话，可以使用 /index/api/delFFmpegSource 接口进行关闭
+				http://192.168.133.10/index/api/delFFmpegSource?secret=035c73f7-bb6b-4889-a715-d9eb2d1925cc&key=5f748d2ef9712e4b2f6f970c1d44d93a
+		/index/api/addStreamProxy
+			http://192.168.133.10/index/api/addStreamProxy?vhost=192.168.133.10&app=live&stream=test1&url=rtsp://admin:123456@192.168.31.66/media/video2&rtp_type=0
+			
+			配置rtsp地址，将我们摄像机的rtsp拉流地址配置到服务器，由服务器向IPC拉流。
+			
+			拉流地址：	
+			url=rtsp://admin:123456@192.168.31.66/media/video2
+			
+			使用在线地址模拟摄像头。
+			
+			http://192.168.133.10/index/api/addStreamProxy?secret=035c73f7-bb6b-4889-a715-d9eb2d1925cc&vhost=192.168.133.10&app=live&stream=test1&url=http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4&rtp_type=0
+			
+				{
+					"code": -400,
+					"msg": "not supported play schema:http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+				}
+			

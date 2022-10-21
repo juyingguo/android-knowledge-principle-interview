@@ -389,3 +389,10 @@
 
 		(结果大于0, 说明支持64bit计算. lm指long mode, 支持lm则是64bit)
 	}
+29 进程
+	如何杀死defunct进程
+	http://t.zoukankan.com/porkerface-p-11395167.html
+	
+	1）重启你的计算机
+	2）通过命令：ps -ef 得到 。
+		若要杀死该进程，应该对其父进程PPID下手，即kill -9 +PPID，
