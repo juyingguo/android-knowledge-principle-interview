@@ -169,7 +169,7 @@
 				[搜索关键字：warehouseManager]
 				[https://gitee.com/yangshare/warehouseManager
 					springmvc ...
-					{学习记录见：}
+					{学习记录见：33-24-java-project-warehouseManager.txt}
 				]
 				[https://github.com/qiuqingyun/warehouseManager
 				 gradle，springboot

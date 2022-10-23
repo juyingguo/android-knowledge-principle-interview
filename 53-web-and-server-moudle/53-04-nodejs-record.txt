@@ -1,8 +1,10 @@
 1.	nodejs
-	https://nodejs.org/en/download/
-	npm 
-	https://www.npmjs.org/
-	
+		https://nodejs.org/en/download/
+	npm:
+		https://www.npmjs.org/
+		https://www.npmjs.com/
+		中文网站：
+		https://www.npmjs.cn/all/
 	1.1 nodejs教程
 		https://www.runoob.com/nodejs/nodejs-npm.html
 		
@@ -52,6 +54,32 @@
 	4.2 输入npm install 之后都干了啥
 		https://blog.csdn.net/Alive_tree/article/details/101014999
 		https://blog.csdn.net/dengNDSC/article/details/90643172
+		
+	4.3 npm本地安装和全局安装的区别
+		https://blog.csdn.net/super1223/article/details/118555537
+
+		npm(你怕吗) 全局安装与本地安装、开发依赖和生产依赖
+			https://blog.csdn.net/weixin_33859231/article/details/88667087?
+		
+		命令查看node、npm的安装目录和全局包的安装目录
+			which node   // 查看node的安装目录
+			which npm   // 查看npm的安装目录
+			npm root -g // 查看全局包的安装目录
+			npm list -g --depth 0 //查看全局安装过的包
+			
+	4.4 设置npm registry的几种方法
+		https://blog.csdn.net/weixin_43833570/article/details/99405469
+			1.临时使用
+			npm --registry https://registry.npm.taobao.org install express
+
+			2.持久使用
+			npm config set registry https://registry.npm.taobao.org
+			配置后可通过下面方式来验证是否成功
+			npm config get registry 或 npm info express
+
+			3.通过cnpm使用
+			npm install -g cnpm --registry=https://registry.npm.taobao.org
+			———
 5. node使用
 	5.1 查看版本
 		node --version

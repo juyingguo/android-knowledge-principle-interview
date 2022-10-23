@@ -69,3 +69,11 @@
 		ccmake -version
 		cpack -version
 		ctest -version
+5. cmake ..是什么意思
+	https://blog.csdn.net/u013288190/article/details/121101706
+	
+	cmake .. 使用 ../CMakeLists.txt 文件作为起始点在当前目录中生成makefile . 
+
+	make 命令，在此之后执行，使用生成的makefile作为输入构建程序 .
+
+	这样可以方便地保存源代码并在不同的文件夹中构建结果 .

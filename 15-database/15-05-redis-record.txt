@@ -28,27 +28,27 @@
 
 		二、配置
 		2.1 启动
-		src 目录下 redis-server启动
+			src 目录下 redis-server启动
 
-		./redis-server
-		1
-		连接redis
+			./redis-server				
+			
+			连接redis
 
-		./redis-cli
-		1
+			./redis-cli
+		
 		2.2 redis配置文件（redis.conf)
-		redis.conf文件在redis的根目录下。
+			redis.conf文件在redis的根目录下。
 
-		vim redis.conf
-		1
-		daemonize yes     #是否后台运行，默认no
+			vim redis.conf
+		 
+			daemonize yes     #是否后台运行，默认no
 
-		1
-		2
-		更新完配置文件后，要重启redis服务，并执行配置文件，此时redis服务可在后台运行
+			
+			更新完配置文件后，要重启redis服务，并执行配置文件，此时redis服务可在后台运行
 
-		src/redis-server ./redis.conf
-		————
+			src/redis-server ./redis.conf
+			#如果不指定配置文件，修改的配置不生效
+			————
 		
 		2.3 设置密码
 			修改配置文件中：requirepass
@@ -56,6 +56,9 @@
 		2.4 允许远程连接
 			参考[4]
 		
+		
+		 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+
 3. window下redis操作
 	3.0 cmd 控制台，打字容易黑屏。
 		在文件夹下，鼠标右键在此处打开命令行，输入命令会有提示。

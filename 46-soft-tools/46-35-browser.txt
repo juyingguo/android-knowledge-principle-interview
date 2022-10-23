@@ -1,30 +1,33 @@
-1.Firefox×Ô¶¯Ìø×ªhttps½â¾ö·½·¨
+1.Firefoxè‡ªåŠ¨è·³è½¬httpsè§£å†³æ–¹æ³•
 	1.1 https://blog.csdn.net/qq_22200671/article/details/109223214 
-		1¡¢ÔÚµØbaiÖ·À¸¼üÈë"about:config" µã»÷¡°ÎÒÁË½âdu´Ë·çÏÕ¡±£»
-	3¡¢ÊäÈëÊ×Ñ¡ÏîÃû³ÆÎª¡°security.enterprise_roots.enabled¡±²¢°ÑÖµÉèÖÃÎª true£¬Çå³şä¯ÀÀÆ÷»º´æ²¢ÖØÆôä¯ÀÀÆ÷¼´¿É
-2. »ğºüä¯ÀÀÆ÷ÈçºÎÇå³ı»º´æ¼ÇÂ¼ 
+		1ã€åœ¨åœ°baiå€æ é”®å…¥"about:config" ç‚¹å‡»â€œæˆ‘äº†è§£duæ­¤é£é™©â€ï¼›
+	3ã€è¾“å…¥é¦–é€‰é¡¹åç§°ä¸ºâ€œsecurity.enterprise_roots.enabledâ€å¹¶æŠŠå€¼è®¾ç½®ä¸º trueï¼Œæ¸…æ¥šæµè§ˆå™¨ç¼“å­˜å¹¶é‡å¯æµè§ˆå™¨å³å¯
+2. ç«ç‹æµè§ˆå™¨å¦‚ä½•æ¸…é™¤ç¼“å­˜è®°å½• 
 	https://jingyan.baidu.com/article/4ae03de3cc923b3eff9e6b38.html 
 	
-3. chromeä¯ÀÀÆ÷
+3. chromeæµè§ˆå™¨
 	3.0 
-		googleÉÌµê£º
+		googleå•†åº—ï¼š
 		https://chrome.google.com/webstore 
-	3.1 ä¯ÀÀÆ÷È«ÆÁ·½·¨
-		·½·¨/²½Öè
-		1.Ê×ÏÈ,´ò¿ªÈÎÒâÒ»¸öÍøÒ³,½øÈë½çÃæ¡£
-		2.È»ºó,°´ÏÂ¼üÅÌÉÏµÄ¡±F11¡°¼ü¡£
-		3.¼´¿É³öÏÖÈ«ÆÁä¯ÀÀµÄÍøÒ³Ğ§¹û,ä¯ÀÀÆ÷½øÈëÁËÈ«ÆÁÄ£Ê½¡£
-		4.ÔÙ´Îµã»÷F11,¼´¿ÉÍË³öä¯ÀÀÆ÷È«ÆÁÄ£Ê½ÁË¡£
-	3.2 ÍÆ¼öÁ½¸ö³¬ºÃÓÃµÄ Chrome ÍøÒ³ÊÓÆµĞáÌ½ÏÂÔØ²å¼ş
+	3.1 æµè§ˆå™¨å…¨å±æ–¹æ³•
+		æ–¹æ³•/æ­¥éª¤
+		1.é¦–å…ˆ,æ‰“å¼€ä»»æ„ä¸€ä¸ªç½‘é¡µ,è¿›å…¥ç•Œé¢ã€‚
+		2.ç„¶å,æŒ‰ä¸‹é”®ç›˜ä¸Šçš„â€F11â€œé”®ã€‚
+		3.å³å¯å‡ºç°å…¨å±æµè§ˆçš„ç½‘é¡µæ•ˆæœ,æµè§ˆå™¨è¿›å…¥äº†å…¨å±æ¨¡å¼ã€‚
+		4.å†æ¬¡ç‚¹å‡»F11,å³å¯é€€å‡ºæµè§ˆå™¨å…¨å±æ¨¡å¼äº†ã€‚
+	3.2 æ¨èä¸¤ä¸ªè¶…å¥½ç”¨çš„ Chrome ç½‘é¡µè§†é¢‘å—…æ¢ä¸‹è½½æ’ä»¶
 		https://www.cnblogs.com/zhangxuetao/p/13825976.html 
-		Stream Video Downloader ºÍ Flash Video Downloader¡£ 
+		Stream Video Downloader å’Œ Flash Video Downloaderã€‚ 
 		
 		Video Downloader 
-	3.3 chrome android °æ¸÷¸öÀúÊ·°æ±¾ÏÂÔØ
+	3.3 chrome android ç‰ˆå„ä¸ªå†å²ç‰ˆæœ¬ä¸‹è½½
 	
 		http://www.oldversion.cn/android/com-android-chrome/ 
-4. ÓÃChrome¿ª·¢Õß¹¤¾ß²é¿´HTTPÇëÇóÓëÏìÓ¦
-	4.1 ÓÃChrome¿ª·¢Õß¹¤¾ß²é¿´HTTPÇëÇóÓëÏìÓ¦
+4. ç”¨Chromeå¼€å‘è€…å·¥å…·æŸ¥çœ‹HTTPè¯·æ±‚ä¸å“åº”
+	4.1 ç”¨Chromeå¼€å‘è€…å·¥å…·æŸ¥çœ‹HTTPè¯·æ±‚ä¸å“åº”
 		https://blog.csdn.net/didi1663478999/article/details/119063993
 		
-	4.2 ÓÃChrome¿ª·¢Õß¹¤¾ßHTTP×¥°ü
+	4.2 ç”¨Chromeå¼€å‘è€…å·¥å…·HTTPæŠ“åŒ…
+	
+	4.3 è°·æ­Œæµè§ˆå™¨è°ƒè¯•æ˜¾ç¤ºæ¥å£Urlå…¨è·¯å¾„
+		https://blog.csdn.net/weixin_43918355/article/details/115333796

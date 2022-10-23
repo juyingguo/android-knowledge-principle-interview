@@ -94,6 +94,31 @@
 
 	##参考：https://blog.csdn.net/zhizhengguan/article/details/124682425
 	
+	cmake .. 时报错：
+		CMake Error at 3rdpart/CMakeLists.txt:69 (add_library):
+		  No SOURCES given to target: flv
+
+		CMake Error at 3rdpart/CMakeLists.txt:91 (add_library):
+		  No SOURCES given to target: mpeg
+
+		CMake Error at 3rdpart/CMakeLists.txt:53 (add_library):
+		  No SOURCES given to target: mov
+
+		CMake Error at 3rdpart/CMakeLists.txt:188 (add_library):
+		  No SOURCES given to target: zltoolkit
+
+		CMake Error at 3rdpart/CMakeLists.txt:28 (add_library):
+		  No SOURCES given to target: jsoncpp
+
+		CMake Generate step failed.  Build files cannot be regenerated correctly.
+
+		已经执行过：git submodule update --init
+		
+		直接先编译试试？make -j 2 提示失败。
+		查看3rdpart/zltoolkit子模块源码没有下载下来。
+		
+		在ubuntu下的文件系统内的目录重新下载。一切都ok
+		
 	启动方式
 		./MediaServer 
 		./MediaServer  -d

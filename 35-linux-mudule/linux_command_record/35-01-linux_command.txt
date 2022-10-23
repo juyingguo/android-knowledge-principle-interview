@@ -201,12 +201,24 @@
 			https://www.cnblogs.com/wo316885741/p/12161657.html
 			
 			a,ubuntu下7z文件的解压方法
-			安装：apt-get install p7zip-full
+				安装：apt-get install p7zip-full
 
-			解压7z：使用方法：7z x file.7z 
+				解压7z：使用方法：7z x file.7z 
 
-			解压出来就是文件夹.
+				解压出来就是文件夹.
 			
+				a1，7z压缩时排除指定文件或目录
+					https://segmentfault.com/a/1190000041613583?sort=votes
+					#作者写了详细案例对比说明。
+					
+					7z排除/忽略指定目录和文件的命令示范：
+						7z a -t7z  tmp.7z ./tmp  '-xr!aaa/' '-xr!ccc.txt'	
+						tmp.7z 是压缩包的文件名
+						./tmp 是想要压缩的目录
+						​
+						a 代表添加文件／文件夹到压缩包
+						-t 是指定压缩类型 一般我们定为7z,不指定也行，默认就是7z
+						-xr! 是排除文件夹和文件，*注意：'!'感叹号在Linux中是系统特殊事件符号，在Shell命令中使用时需加''单引号转义成普通字符串。
 			b,centos
 		4.4.8 linux xz压缩解压
 			a,解压 xz 格式文件

@@ -666,3 +666,61 @@
 24 wget 
 	Ubuntu系统中的wget命令
 	https://blog.csdn.net/weixin_43786241/article/details/105559712
+25 开机报错，能进入系统，但网络无法使用。
+	[FAILED] Failed to start Snap Daemon.
+	See' systemct1 status snapd.service for details .
+	
+	[FAILED] Failed to start Snap Daemon.
+	See systemctl status snapd.service for details.
+	
+	
+	#systemctl status snapd.service 执行后显示：
+		snapd.service - Snap Daemon
+		   Loaded: loaded (/lib/systemd/system/snapd.service; enabled; vendor preset: enabled)
+		   Active: failed (Result: exit-code) since Sat 2022-10-22 20:37:09 CST; 2min 23s ago
+		  Process: 1141 ExecStart=/usr/lib/snapd/snapd (code=exited, status=1/FAILURE)
+		 Main PID: 1141 (code=exited, status=1/FAILURE)
+
+		Oct 22 20:37:09 ubuntu systemd[1]: Failed to start Snap Daemon.
+		Oct 22 20:37:09 ubuntu systemd[1]: snapd.service: Service hold-off time over, scheduling restart.
+		Oct 22 20:37:09 ubuntu systemd[1]: snapd.service: Scheduled restart job, restart counter is at 5.
+		Oct 22 20:37:09 ubuntu systemd[1]: Stopped Snap Daemon.
+		Oct 22 20:37:09 ubuntu systemd[1]: snapd.service: Start request repeated too quickly.
+		Oct 22 20:37:09 ubuntu systemd[1]: snapd.service: Failed with result 'exit-code'.
+		Oct 22 20:37:09 ubuntu systemd[1]: Failed to start Snap Daemon.
+		Oct 22 20:37:09 ubuntu systemd[1]: snapd.service: Triggering OnFailure= dependencies.
+	
+		参考：	
+			https://forum.snapcraft.io/t/snap-d-error-cannot-communicate-with-server-connection-refused/6093
+			https://forum.ubuntu.org.cn/viewtopic.php?t=486210
+				
+				$ sudo apt autoremove --purge snapd
+
+				$ sudo apt install snapd
+				
+				[ok]
+26 ubuntu18.04如何进入grub引导界面
+	https://m.yisu.com/zixun/420044.html
+	
+	在终端输入sudo gedit /etc/default/grub 打开配置文件。
+	把grub_timeout_style=hidden给删除或者注释掉，把grub_cmdline_linux_default修改为text。
+	修改完成后我们 sudo update-grub重新更新grub配置。
+	现在我们再重启ubuntu系统就可以进入grub引导界面了。
+27 在Ubuntu上使用恢复模式及Recovery Mode各选项的使用方法
+	https://blog.csdn.net/qq_36786467/article/details/108156413
+	
+28 ubuntu系统还原的详细步骤教程
+	http://www.xiaobaixitong.com/help/40352.html
+29 ifconfig 没有ip
+	$ ifconfig
+	lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 642  bytes 46271 (46.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 642  bytes 46271 (46.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+	#验证网络也上不了：
+	Ubuntu18.04中settings里Network界面中的Wired选项不见了。
+	https://blog.csdn.net/kk_so_good/article/details/106025279
