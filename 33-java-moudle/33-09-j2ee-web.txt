@@ -107,6 +107,8 @@
 			{
 				如果请求方式不一样是可以多个的，但是每种请求方法也只能有一个不写value值。
 			}
+		5.2.9 Spring @Configuration详解
+			https://blog.csdn.net/zsj777/article/details/88345257
 6. GitHub上最火的7个spring cloud开源项目，对新手太友好了
 	6.1 https://baijiahao.baidu.com/s?id=1704064741065726929&wfr=spider&for=pc
 		【含优秀的多个spring cloud,spring boot项目】【参考作者搜集，每一个项目自己可以搜集】

@@ -33,4 +33,11 @@
 		
 5. SpringBoot 系列教程 MybatisPlus 整合篇
 	https://my.oschina.net/u/566591/blog/3154198
+6. 基础知识
+	6.1 mybatis中#和$的区别（通俗简单易解版）
+		https://blog.csdn.net/qq_58772217/article/details/122099893
+		
+		#传入的参数在SQL中显示为字符串，$传入的参数在SqL中直接显示为传入的值.
+
+		#方式能够很大程度防止sql注入，$方式无法防止Sql注入；
 		

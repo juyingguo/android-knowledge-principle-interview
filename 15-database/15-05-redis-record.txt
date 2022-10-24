@@ -30,7 +30,7 @@
 		2.1 启动
 			src 目录下 redis-server启动
 
-			./redis-server				
+			./redis-server	../redis.conf			
 			
 			连接redis
 
@@ -125,4 +125,12 @@
 		3. /sbin/iptables -I INPUT -p tcp --dport 6379 -j ACCEPT
 
 　　　　redis默认端口号6379是不允许进行远程连接的，所以在防火墙中设置6379开启远程服务；
+	分析及参考2：
+		a,
+			验证在开启{bind 127.0.0.1}时，项目中配置redis地址：127.0.0.1是可以连接的。如果配置192.168.133.176（即为本地ip地址）是连接不上的(可能会被认为是外网访问。)
+		b,当前使用本地测试。项目中配置redis地址： 192.168.133.176（即为本地ip地址）。此时需要在配置文件中关闭 bind 127.0.0.1
+		
+		c,参考：redis由于目标计算机积极拒绝，无法连接。
+			https://blog.csdn.net/zhezhebie/article/details/104061835?
+			
 		

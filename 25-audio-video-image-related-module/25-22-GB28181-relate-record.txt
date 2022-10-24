@@ -87,6 +87,21 @@
 			2022-10-20 14:00:37.301 [main] INFO  c.g.iot.vmp.storager.impl.RedisCatchStorageImpl:769 - [redis通知]获取所有推流设备的状态
 			
 			##解决办法：检查ZLM的<general.mediaServerId>配置是否与WVP的<media.id>一致，配置一致即可。
+	5.5 使用idea运行调试项目；
+		5.5.1 16 
+			Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'proxyServletConfig': Unsatisfied dependency expressed through field 'mediaServerService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mediaServerServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'server.port' in value "${server.port}"
+			2022-10-24 16:21:08.089  INFO 10244 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+			2022-10-24 16:21:08.127  WARN 10244 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+
+			org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+			
+			分析1：springboot,maven项目，jdk没有配置对（运行项目时打印使用java-11版本，而电脑暂无安装该版本的jdk）。
+				File->ProjectStructure->Project-Settings ->Project->Project-SDK:
+			分析2：【上面分析1】配置好后。
+				在项目中将application.yml				
+					active: local 使用dev即可。
+				
+		
 6. 基于EasyIPCamera实现的数字网络摄像机IPCamera的模拟器IPC RTSP Simulator
 	http://t.zoukankan.com/babosa-p-9217843.html
 	
