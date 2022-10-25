@@ -29,6 +29,8 @@
 		https://www.nowcoder.com/exam/oj?
 	2.3 书籍
 		高性能MySQL ##好例子网
+		
+		MySQL5.7从入门到精通.pdf
 3. MySQL 安装
 	3.0 
 		Mysql8 和mysql 5.7 的区别

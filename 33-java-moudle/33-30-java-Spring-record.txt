@@ -1,0 +1,111 @@
+1.
+2.
+3.
+4.
+5. Spring
+	详情查看：[33-30-java-Spring-record.txt]
+	5.0
+		https://spring.io/
+		
+		源码官方下载
+		https://repo.spring.io/ui/native/release/org/springframework/spring/
+		
+		Spring框架教程（非常详细）
+		http://c.biancheng.net/spring/		
+		https://www.w3cschool.cn/wkspring/
+		https://www.nhooo.com/spring/spring-tutorial.html
+		http://www.manongjc.com/spring/spring_hello_world_example.html
+		
+		Spring基础知识汇总 Java开发必看
+		https://www.runoob.com/w3cnote/basic-knowledge-summary-of-spring.html
+		
+		5.0.3 Spring、SpringFramework、SpringBoot、SpringCloud的区别
+			https://wenku.baidu.com/view/610dd076f31dc281e53a580216fc700abb6852aa.html
+			含[相关文档集]
+			
+		《spring从入门到精通》郭锋:
+			源码：
+			https://download.csdn.net/download/hollysyshs/4456861?
+			不全，还需要其它章节单独下载。
+			如：
+			Spring从入门到精通_源代码.part04.rar
+			
+		spring从入门到精通的实例代码.rar	
+		https://download.csdn.net/download/weixin_47872288/25536529?
+	5.1 Spring常用注解——@Repository
+		https://blog.csdn.net/m0_67393593/article/details/124444064
+		
+		Spring注解@Component、@Repository、@Service、@Controller区别
+		https://blog.csdn.net/zhang854429783/article/details/6785574
+	5.2 Spring常用注解
+		https://www.cnblogs.com/xdp-gacl/p/3495887.html
+		
+		5.2.3 @Scope
+			spring 默认scope 是单例模式(scope="singleton")，这样只会创建一个Action对象，每次访问都是同一Action对象，数据不安全，
+			struts2 是要求每次次访问都对应不同的Action，scope="prototype" 可以保证当有请求的时候都创建一个Action对象
+			
+		5.2.4 @RestController 和 @Controller 的区别
+			https://blog.csdn.net/nimoyaoww/article/details/82999057
+			https://blog.csdn.net/gg12365gg/article/details/51345601?
+				@RestController注解，相当于@Controller+@ResponseBody两个注解的结合，返回json数据不需要在方法前面加@ResponseBody注解了，但使用@RestController这个注解，就不能返回jsp,html页面，视图解析器无法解析jsp,html页面
+		5.2.5 @PathVariable是什么？详情及用法解析
+			https://blog.csdn.net/ckc_666/article/details/79239974
+			
+			含【REST】讲解
+			含【使得支持 GET、POST、PUT 与DELETE 请求】讲解
+		5.2.6 Spring中Bean及@Bean的理解
+			https://blog.csdn.net/u010142437/article/details/80395739
+			@Bean是放在方法的注释上了，因为它很明确地告诉被注释的方法，你给我产生一个Bean，然后交给Spring容器
+		5.2.7 @Autowired与@Resource区别
+			https://blog.csdn.net/JokerLJG/article/details/123971153?
+		5.2.8 @GetMapping,@PostMapping,@PutMapping注解无value值时的情况
+			https://blog.csdn.net/dalei9243/article/details/108817787
+			https://blog.csdn.net/yijianqingyu/article/details/88994774
+			
+			{
+				如果请求方式不一样是可以多个的，但是每种请求方法也只能有一个不写value值。
+			}
+		5.2.9 Spring @Configuration详解
+			https://blog.csdn.net/zsj777/article/details/88345257
+6. 《spring从入门到精通》详情记录
+	1
+		1.3 
+			Spring的感性认识。例如Spring 网站提供了一个关于Spring MVC的示例，网址为
+			http://www.springframeworkorg/docs/MVC-step-by-step/Spring-MVC-step-by-step.html
+
+			推荐看看Martin Fowler写的文章一-控 制反转和依赖注入模式。
+			网址是http://www .martinfowler.com/articles/injection.html.
+
+		1.4 网络.上的资源
+			(1)学习Spring最重要的网站:
+			http://www.springframework.org,有关Spring的最新信息都会在该网站列出。
+			(2)笔者学习Spring时看到的第-一个中文指南:
+			http://www.xiaxin.net/Spring_Dev_Guide.rar
+			(3)笔者学习Spring MVC时看到的第一一个培训教材，指导开发人员- -步-步地实现
+			Spring的MVC:
+			http://www.springframework.org/docs/MVC-step-by-step/Spring-MVC-step-by-step.html
+			(4) Spring 开发手册中文版: :
+			http://www.jactiongroup.netreference/html/index.html
+			(5) Spring 中文论坛:
+			http://spring.jactiongroup.net/index.php
+			(6) martinfowler 写的“控制反转和依赖注入模式”: 
+			http://www.martinfowlercom/articles/injection.html
+			(7) Java 视线论坛:
+			http://www.hibernate.org.cn/
+			(8)一一个我国台湾省高手写的Spring教程:
+			http://www.javaworld.com.tw/confluence/displayopensrc/Spring
+			
+			(9)通过AppFuse源代码来学习Spring:
+			htp://aibledesigns.com/wiki/Wiki.jsp?page=AppFuse
+			(10) - 一个学习Java的好地方，里面也有很多Spring 的教程:
+			http://www.javafan.net
+			(11)里面的文章对学习任何技术都很有帮助:
+			http://www.csdn.net
+			(12) IBM developerworks中国网站:
+			http://www-128.ibm.com/developerworks/cn/java/
+			(13) Spring框架完全进阶专题中国It实验室:
+			htp://www.chinaitlab.com/www/techspecial/spring/
+
+			
+
+		
