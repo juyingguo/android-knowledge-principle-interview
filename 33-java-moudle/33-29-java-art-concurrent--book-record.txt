@@ -5,6 +5,17 @@
 	2.1 volatile的应用
 		在X86处理器下通过工具获取JIT编译器生成的 汇编指令来查看对volatile进行写操作.
 		通过查IA-32架构软件开发者手册.
+3.
+	3.5 
+		3.5.3 锁内存语义的实现
+			public final native boolean compareAndSwapInt(Object o, long offset,
+			in
+			in
+			可以看到，这是一个本地方法调用。这个本地方法在openjdk中依次调用的c++代码为：
+			unsafe.cpp，atomic.cpp和atomic_windows_x86.inline.hpp。这个本地方法的最终实现在openjdk的
+			如下位置：openjdk-7-fcs-src-b147-
+			27_jun_2011\openjdk\hotspot\src\os_cpu\windows_x86\vm\atomic_windows_x86.inline.hpp（对应于
+			Windows操作系统，X86处理器）。
 9
 	9.2.4 合理地配置线程池
 		IO密集型与CPU密集型的区别

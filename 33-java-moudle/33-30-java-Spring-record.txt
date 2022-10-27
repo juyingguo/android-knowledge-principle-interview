@@ -27,7 +27,7 @@
 			源码：
 			https://download.csdn.net/download/hollysyshs/4456861?
 			不全，还需要其它章节单独下载。
-			如：
+			验证：实际是全的，比如第二章的代码，同时包含3,4,5等章，都是小demo作者就没分开
 			Spring从入门到精通_源代码.part04.rar
 			
 		spring从入门到精通的实例代码.rar	
@@ -115,4 +115,8 @@
 		Create an application context
 		https://www.jetbrains.com/help/idea/2021.1/spring-support.html#spring-file-set
 
+8. aop
+	8.1 aspectj
+		https://www.eclipse.org/aspectj/downloads.php
+		
 		
