@@ -507,7 +507,40 @@
 		
 		-re (input)
 		以本机帧速率读取输入。
-		
+	7.5 ffplay
+		7.5.1 【FFmpeg】ffplay 播放视频命令 ( 播放 | 暂停 | 停止 | 音量控制 | 进度控制 | 音频流 / 视频流 / 字幕流 / 节目切换 )
+			https://blog.csdn.net/shulianghan/article/details/117899437
+			使用 ffplay 播放视频的基本命令 :ffplay 视频路径 
+				test-file\mp4>ffplay paiDuiGe.mp4
+				声音失败：
+				SDL_OpenAudio (2 channels, 44100 Hz): WASAPI can't initialize audio client: 尚未调用 CoInitialize。
+				
+				参考解决博客1：ffplay播放没有声音SDL_OpenAudio (2 channels, 44100 Hz): WASAPI can't initialize audio client
+					https://blog.csdn.net/A694543965/article/details/78786230
+					
+					在SO上找到解决方法：resolve：{
+						https://stackoverflow.com/questions/46835811/ffplay-wasapi-cant-initialize-audio-client-ffmpeg-3-4-binaries
+						}
+					
+					只要设置环境一个变量SDL_AUDIODRIVER=directsound或者winmm即可，那么就可以播放了。原因不清楚，可能跟sdl库有关吧
+
+					写一个start.bat加入下面代码:
+
+					set SDL_AUDIODRIVER=directsound
+					ffplay  myVideo.mp4
+					————
+				参考解决博客2：
+					https://blog.csdn.net/weixin_43674806/article/details/87914328
+					
+					含：ffmpeg官网解决方案：
+						@转载 http://trac.ffmpeg.org/ticket/6891
+						
+						a1,Set SDL_AUDIODRIVER environment variable value to the
+							driver you want to use. Under windows 7, directsound
+							and winmm both solved my issue.
+						a2,
+							 So,add code to call CoInitialize, ffplay can work. 
+							 详情看博客。
 8. FFmpeg在基于Android上有哪些应用。
 	8.1 FFmpeg在基于Android的楼宇可视对讲程序中的应用 
 		http://www.fx361.com/page/2017/0729/2117898.shtml
