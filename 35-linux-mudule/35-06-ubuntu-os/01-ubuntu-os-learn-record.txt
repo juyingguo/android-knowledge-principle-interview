@@ -550,6 +550,11 @@
 	
 	13.7 windows ping ubuntu的ip不通。
 		参考【13.3】-【5】即可解决
+	13.8 以上配置后正常上网，一段时间后，忽然上不了网。（电脑本身是可以上网的）
+		[System Settings]-][Network]中设置项少，且基本不能修改。
+		右上角[edit connections]-[选择连接名称]
+			[Ipv4 Settings]-[Address]-[Netmask is 24 之前设置的255.255.255.0被改变了，但改过来后还无效]
+			尝试修改[Methond]中的选择[Automatic(DHCP)address only]就可以上网了。
 14 xshell连接ubuntu 		
 
 15 ld.gold使用指南

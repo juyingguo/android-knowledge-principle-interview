@@ -20,6 +20,10 @@
 		https://blog.csdn.net/qq_20411471/article/details/111352095
 	
 	2.6 springboot中使用jwt
+	
+	2.7 
+		深入实践 Spring Boot -- source code（book）
+			https://github.com/fantasticLx/SpringBoot-Book
 7. 12个优秀开源的 Spring Boot 学习项目，建议收藏
 	https://zhuanlan.zhihu.com/p/454001666
 	
@@ -194,3 +198,50 @@
 			如果关闭该进程失败，解决可以参考：nginx: [emerg] bind() to 0.0.0.0:80 failed;[https://blog.csdn.net/cnds123321/article/details/113309358?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162359643716780271531330%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=162359643716780271531330&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v2~rank_v29-4-113309358.pc_v2_rank_blog_default&utm_term=%E6%97%A0%E6%B3%95%E7%BB%88%E6%AD%A2+PID+%E4%B8%BA+4+%E7%9A%84%E8%BF%9B%E7%A8%8B%E3%80%82%E3%80%81&spm=1018.2226.3001.4450]
 			
 			然后执行taskkill /pid 4 /f关闭这个进程，其中4就是上面的进程ID
+12,编程帮学习记录
+	在该项目中执行以下 mvn 命令查看器依赖树。
+	mvn dependency:tree
+13 Spring Boot实战 ,丁雪丰 (译者) .pdf
+
+	作者先后参与了Spring官方文档、《Spring专业开发指南》和《Spring攻略》的翻译。
+	Manning那本著名的《Spring实战》的作者再度接受挑。《Spring实战（第4版）》。
+	
+	Spring Boot的Actuator让你能一窥应用程序运行时的内部工作细节，看看Spring应用程序上下
+	文里都有哪些Bean， Spring MVC控制器是怎么与路径映射的，应用程序都能取到哪些配置属性，
+	诸如此类。
+	
+	你可以在Manning出版社的网站上下载书中应用程序的完整代码，地址是www.manning.com/
+	books/spring-boot-in-action。
+	
+	3.1.3　掀开自动配置的神秘面纱
+		 想要深入了解Spring Security，可以参考《Spring实战（第4版）》中的第9章和第14章。
+		application.properties和application.yml文件能放在以下四个位置。
+		
+	3.2.1 自动配置微调	
+			，让服务器监听不同的端口，你所要做的就是设置server.port属性。
+			要是只改一次，可以用命令行参数：
+			$ java -jar readinglist-0.0.1-SNAPSHOT.jar --server.port=8000
+
+			但如果希望端口变更时间更长一点，可以在其他支持的配置位置上设置server.port。例
+			如，把它放在应用程序Classpath根目录的application.yml文件里：
+			server:
+			  port: 8000
+			  
+			在application.yml中，它们可能是这样的：
+				server:
+					port: 8443
+				  ssl:
+					key-store: file:///path/to/mykeys.jks
+				
+				  key-store-password: letmein
+				  key-password: letmein
+			
+			除了服务器的端口，你还可能希望服务器提供HTTPS服务。为此，第一步就是用JDK的
+			keytool工具来创建一个密钥存储（keystore）：
+			$ keytool -keystore mykeys.jks -genkey -alias tomcat -keyalg RSA
+		
+		
+		3. 配置日志
+			默认情况下， Spring Boot会用Logback（http://logback.qos.ch）来记录日志，
+	4.3.2 使用 Selenium 测试 HTML 页面
+		对于HTML应用程序测试，有一个更好的选择——Selenium（www.seleniumhq.org）

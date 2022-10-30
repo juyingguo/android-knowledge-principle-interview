@@ -55,6 +55,8 @@
 		
 	4.3 nacos-server-1.4.1使用
 		4.3.1 https://baijiahao.baidu.com/s?id=1703155613536850849&wfr=spider&for=pc	
+	4.4 《Spring Cloud与Docker微服务架构实战 第二版》1-11章配套代码
+		https://gitee.com/itmuch/spring-cloud-docker-microservice-book-code?
 		
 5. Spring
 	详情查看：[33-30-java-Spring-record.txt]

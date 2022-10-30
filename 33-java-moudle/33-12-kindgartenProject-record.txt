@@ -7,6 +7,9 @@
 		git 私服公司账号。
 		私服地址浏览器打不开，使用firfox浏览器，network.security.ports.banned.override。
 			firfox 在地址栏输入,about:config 回车输入。
+			【选择字符串类型，填写使用的端口号】
+			参考：
+			https://www.liqucn.com/article/1210741.shtml
 		谷歌浏览器：属性-目标-添加：--explicitly-allowed-ports=10080。
 		
 	2.9 测试服放开下8897端口
@@ -223,3 +226,5 @@
 			idea在代码警告区域生成的注释块为： /* */  。该方式在sql内部，会有异常。
 			idea在代码正常区域生成的注释块为： <!-- -->。该方式在sql内部，一切正常
 		}
+10,注册登录模块
+	10.1 验证码，1111，测试模式下模拟使用，修改对应代码即可。

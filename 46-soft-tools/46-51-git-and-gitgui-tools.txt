@@ -10,7 +10,7 @@
 
 	1.4 GitHub:
 		https://github.com/
-2. 几款Git GUI客户端工具 
+2. 几款Git GUI客户端，服务器工具 
 	2.0.0
 		关于客户端需要具备以下重要特性
 		a1:自动转换CRLF
@@ -82,6 +82,8 @@
 		https://blog.csdn.net/wordwarwordwar/article/details/87281338 	
 	2.5 https://gitforwindows.org/
 		
+	2.6 一款极易搭建的自助 Git 服务
+		Gogs
 3. git（Gui的使用、Ssh key 介绍及使用、Idea配置使用并使用git）
 	https://blog.csdn.net/weixin_45174537/article/details/102941957 
 	
