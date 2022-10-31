@@ -5,6 +5,9 @@
 	https://blog.csdn.net/weixin_43356538/article/details/113354202?
 	注：Apache网页改动，Tomcat下载链接更新为：https://downloads.apache.org/tomcat/
 	
+	镜像下载：
+	http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.zip
+		
 2. tomcat上部署CGI
 	2.1 https://blog.csdn.net/sunshoupo211/article/details/34432503 
 	
@@ -18,4 +21,29 @@
 5. eclipse启动tomcat
 	5.1 当启动tomcat时出现tomcat setting should be set in tomcat preference page
 		https://blog.csdn.net/withyou_wy/article/details/53081800
+	
+6. Tomcat下载安装
+	http://t.zoukankan.com/huangxincheng-p-7441221.html
+	 
+	<2> centos平台下，因为项目需要部署在linux上，wget url，解压，最后执行startup.sh
+	 
+	 从上面可以看到，tomcat已经启动了，对了，汤姆猫的默认端口是8080，可以通过netstat -tln 验证一下，最后检查一下是否启动正常。
+	netstat -tln
+7. 
+	netstat -ano | findstr 8080
+	taskkill /F /PID 2222
+8. Tomcat启动后，被删除了的项目还报错。
+	Caused by: java.lang.IllegalArgumentException: 指定的主资源集 [已经删除的项目] 无效
+		
+		解决方法：
+
+		在电脑上找到这个路径:D:\Tomcat6.0\conf\Catalina,将localhost目录直接删除掉,再一运行,就没事了!
+
+		因为配置文件中配置了启动程序，而webapps文件夹下却没有此应用程序，所以出现了上述错误。
+	
+	参考：
+	https://www.likecs.com/show-203745796.html
+		常常在开发时,多个项目挂在一个Tomcat下,但是后续想把个别项目从Tomcat移除的时候发现,Tomcat执行报错.
+		在D:\Tomcat6.0\conf\server.xml中找到这些你已经删除的项目,有多少删多少,再重新启动Tomcat就不会报错了
+		
 	

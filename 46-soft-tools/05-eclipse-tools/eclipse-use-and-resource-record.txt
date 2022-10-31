@@ -76,6 +76,17 @@
 		完成以后重启一下Eclipse就可以了
 	8.3 改造继续之eclipse集成tomcat开发spring mvc项目配置一览
 		http://t.zoukankan.com/huangxincheng-p-7441221.html
+		
+	8.4 eclipse运行java web,tomcat项目没有Run As -> Run As Server
+		参考：https://blog.csdn.net/qq_43987149/article/details/111409587
+		
+		1.1 右键项目名找到底部的properties
+		1.2 找到project facets 里面有很多，现在找到dynamic web module，如果没有勾上就勾上，这个就是一个原因，如果已经勾上了，我就不知道原因了
+		
+		1.3 点击下面链接：Further configuration avilble..
+			可以设置动态工程的需要配置的位置路径。
+			Content directory:需要设置当前web.xml所在的目录。
+
 9.Eclipse乱码问题最全解决方案
 	https://blog.csdn.net/weixin_49698247/article/details/118730169 
 10 Eclipse 打包运行 Java 工程
@@ -111,4 +122,9 @@
 	https://juejin.cn/post/7062739576556617759
 	{参考文中的：3.1、添加新版本存储库
 		当前从eclipse-2018版到2022-03版失败}
+13 关于eclipse导入Java Web项目jsp出现红叉的解决办法
+	https://blog.csdn.net/weixin_44660003/article/details/117375693
+	
+	jdk版本，tomcat,配置不正确;
+	jsp有叉:servlet-api.jar,jsp-api.jar没导入。
 		

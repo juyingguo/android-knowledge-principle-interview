@@ -107,7 +107,14 @@
 			http://www-128.ibm.com/developerworks/cn/java/
 			(13) Spring框架完全进阶专题中国It实验室:
 			htp://www.chinaitlab.com/www/techspecial/spring/
-
+	10
+		mySS项目运行：
+			http://localhost:8080/mySS/input.do
+			会报404.
+			分析，作者项目和一般web项目目录结构不同。作者的项目是发布到服务器如tomcat后的项目结构。
+			此时直接将项目，放在tomcat的webapps目录下，启动tomcat后，再访问该地址。正常了。
+			
+		
 7.spring 在idea中的使用
 	7.1 Spring configuration check
 		Unmapped Spring configuration files found.  Please configure Spring facet.
@@ -119,4 +126,10 @@
 	8.1 aspectj
 		https://www.eclipse.org/aspectj/downloads.php
 		
+9.spring与struts整合
+	基于Struts2+Hibernate4+Spring4+EasyUI+MySQL的网上商城项目实战源码
+		https://github.com/eson15/E_shop
+		
+		#整合Struts2、Hibernate4.3和Spring4.2
+		#基本增删查改、Service和Action的抽取以及使用注解替换xml
 		
