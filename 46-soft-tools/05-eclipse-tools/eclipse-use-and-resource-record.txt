@@ -91,6 +91,20 @@
 	https://blog.csdn.net/weixin_49698247/article/details/118730169 
 10 Eclipse 打包运行 Java 工程
 	https://blog.csdn.net/qq_40395874/article/details/114240384
+	
+11 eclipse 中各项设置作用中
+	11.1 eclipse 中Java build path
+		#project-properties查看Java build path；通过window-preferences是没有这个项的。
+		
+		Build class path order and exported entries:
+		(Exported entries are contributed to dependent projects)
+
+		Eclipse Java Build Path详解
+		https://blog.csdn.net/qq_31493831/article/details/78585865?
+	
+	11.2 
+		Eclipse中的Project Facets的用途
+		https://blog.csdn.net/zp8126/article/details/77977748?
 11 eclipse设置查看jar包源码及查看xml显示namespace
 	11.1 http://t.zoukankan.com/G-yong-p-9243757.html
 		a,{	（1）下载jadclipse插件：

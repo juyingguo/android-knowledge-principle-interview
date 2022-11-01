@@ -3,6 +3,13 @@
 	9.1
 	9.2 Spring MVC框架入门教程
 		http://c.biancheng.net/spring_mvc/
+		
+		http://www.noobyard.com/article/p-krllsous-oe.html
+		
+		https://www.nhooo.com/spring/spring-mvc-tutorial.html
+		
+		http://springmvc.javaboy.org/
+		
 10 OA管理系统
 	10.0 参考【33-18-springboot-record.txt，7.4 的oa系统】
 	10.1 https://github.com/pandafa/OASystem
@@ -105,3 +112,5 @@
 		slf4j-api、slf4j-log4j12以及log4j三者之间是什么关系？
 		https://blog.csdn.net/flqljh/article/details/49834731
 		https://blog.csdn.net/weixin_38004638/article/details/98658569
+12 itcast springmvc
+	查看项目运行日志，就可以知道很多。

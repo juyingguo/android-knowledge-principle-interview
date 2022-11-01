@@ -400,4 +400,25 @@
 		Vue3全家桶JavaScript框架，Element+作为前端UI框架，另外支持C++开源服务框架集成。}
 		{Java后端核心技术栈
 			版本匹配参考：https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E}
+17 servlet
+	servlet-api.jar,jsp-api,jstl及源码：
+	https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/
+	https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0
+	
+	https://repo1.maven.org/maven2/javax/servlet/
+	
+18 jsp
+	
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	提示报错：
+	Can not find the tag library descriptor for "http://java.sun.com/jsp/jstl/core"
+	
+	运行时异常：
+		org.apache.jasper.JasperException: 无法在web.xml或使用此应用程序部署的jar文件中解析绝对uri：[http://java.sun.com/jsp/jstl/core]
+		
+	解决办法参考：https://blog.csdn.net/Nan__Cheng/article/details/115189591
+		1.在WEB-INF中新建lib文件夹,添加jstl和standard的架包,并且add as Libary ,问题可以解决
+		2.在tomcat的lib文件夹中将jstl和standard的架包添加进去,问题也可以解决
+		
+		只用jstl就行，作者说的standard就只指servlet-api.jar吧，有问题再说。
 	
