@@ -46,6 +46,9 @@
 4. RTP报文头中 SSRC和CSRC区别
 	https://blog.csdn.net/huangdenan/article/details/117751982
 	
+	RTP中SSRC
+	https://blog.csdn.net/sunxiaopengsun/article/details/70172090
+	
 5.wvp-GB28181-pro编译，测试，验证
 	
 	wvp-GB28181-pro项目编译：

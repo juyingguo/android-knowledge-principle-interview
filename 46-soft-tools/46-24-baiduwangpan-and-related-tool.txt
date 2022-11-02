@@ -18,6 +18,9 @@
 	https://www.runningcheese.com/baiduyun 
 	
 	Chrome 定制浏览器：https://runningcheese.lanzous.com/b0ufru1i（已更新）
+	
+	3.2 使用最新版的客户端。
+		如果以上方法偶尔速度慢，下载界面-先暂停-再继续下载，有时就可以提速了。
 4.推荐安装IDM下载  链接：https://pan.lanzous.com/iNjhjjq357a
 	提示无权下载。是因为同时使用了浏览器下载。停掉浏览器下载任务。idm就正常下载了。
 5. 阿里云盘

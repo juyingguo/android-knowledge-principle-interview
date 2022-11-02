@@ -26,3 +26,13 @@
 4. HLS
 	https://baike.baidu.com/item/HLS/8328931?fr=aladdin
 	
+5.RTC
+	字节跳动《实时音视频通讯技术》学习笔记之 RTC 概述及技术简介
+	https://xie.infoq.cn/article/f59d5db8623588574b66d3ea8
+	
+	经过几个月的攻关，成功实现了RTC的直播推流与播放技术
+	https://blog.csdn.net/xiejiashu/article/details/112759817
+		EasyDSS
+	RTC 推流优势
+	https://www.tencentcloud.com/zh/document/product/1071/45256
+	

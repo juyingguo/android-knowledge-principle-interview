@@ -249,3 +249,6 @@
 	TS 流 (Transport Stream)：传输流，TS 流由固定长度（188 字节）的 TS 包组成，TS 包是对 PES 包的另一种封装方式，同样由具有同一时间基准的一个或多个 PES 包复合合成。PS 包是不固定长度，而 TS 包为固定长度。
 	————————————————
 	##作者有详细举例解析过程。
+19 track
+	https://baike.baidu.com/item/TRACK/3489917?fr=aladdin
+	https://www.zhihu.com/question/272492331/answer/369894143
