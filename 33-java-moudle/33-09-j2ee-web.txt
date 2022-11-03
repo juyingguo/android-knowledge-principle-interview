@@ -407,6 +407,9 @@
 	
 	https://repo1.maven.org/maven2/javax/servlet/
 	
+	servlet-api.jar在tomcat/lib/下也有
+	servlet-api.jar在tomcat/lib/下也有
+	
 18 jsp
 	
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

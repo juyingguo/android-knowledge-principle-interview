@@ -1,49 +1,58 @@
 1.
 	https://tomcat.apache.org/
 	
-	TomcatÏÂÔØ°²×°
+	Tomcatä¸‹è½½å®‰è£…
 	https://blog.csdn.net/weixin_43356538/article/details/113354202?
-	×¢£ºApacheÍøÒ³¸Ä¶¯£¬TomcatÏÂÔØÁ´½Ó¸üĞÂÎª£ºhttps://downloads.apache.org/tomcat/
+	æ³¨ï¼šApacheç½‘é¡µæ”¹åŠ¨ï¼ŒTomcatä¸‹è½½é“¾æ¥æ›´æ–°ä¸ºï¼š
+	éƒ¨åˆ†ä¸»è¦ç‰ˆæœ¬ï¼š
+	https://downloads.apache.org/tomcat/
+	å«æ‰€æœ‰çš„ç‰ˆæœ¬ï¼š
+	https://archive.apache.org/dist/tomcat/
 	
-	¾µÏñÏÂÔØ£º
+	é•œåƒä¸‹è½½ï¼š
 	http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.zip
-		
-2. tomcatÉÏ²¿ÊğCGI
+	
+	Apache Tomcat 9 ç”¨æˆ·æŒ‡å—
+		ä¸­æ–‡ç¿»è¯‘:
+		https://blog.csdn.net/Aria_Miazzy/article/details/86424795
+		å®˜æ–¹åŸæ–‡ï¼š
+		https://tomcat.apache.org/tomcat-9.0-doc/index.html
+2. tomcatä¸Šéƒ¨ç½²CGI
 	2.1 https://blog.csdn.net/sunshoupo211/article/details/34432503 
 	
 		<Context reloadable="true" privileged="true"> 
-3.Apache Tomcat¸÷¸ö°æ±¾Çø±ğ
+3.Apache Tomcatå„ä¸ªç‰ˆæœ¬åŒºåˆ«
 	https://www.csdn.net/tags/MtTaEgzsMTgwMzgwLWJsb2cO0O0O.html
-4. tomcat °²×°tomcatÊ± ÔËĞĞ startup.batÊ±¿ØÖÆÌ¨ÉÏÃæÎªÂÒÂë
+4. tomcat å®‰è£…tomcatæ—¶ è¿è¡Œ startup.batæ—¶æ§åˆ¶å°ä¸Šé¢ä¸ºä¹±ç 
 	https://blog.csdn.net/m0_52221033/article/details/123298737
-	{ÎÒÃÇÔÚwindowsµÚÒ»´Î°²×°tomcatÊÇÔËĞĞstartup.batÊ±·¢ÏÖ¿ØÖÆÌ¨ÉÏÃæÎªÂÒÂë}
-	{ÕâÊÇÒòÎªcmdÊ¶±ğµÄ×Ö·û¼¯ÊÇgbk ,¶øtomcatÄ¬ÈÏµÄÊÇUTF-8 ¸ñÊ½¡£½øÈëtomcatµÄ°²×°Ä¿Â¼ÏÂ£¬ÔÚconfÄ¿Â¼ÖĞÕÒµ½logging.propertiesÎÄ¼ş¡£}
-5. eclipseÆô¶¯tomcat
-	5.1 µ±Æô¶¯tomcatÊ±³öÏÖtomcat setting should be set in tomcat preference page
+	{æˆ‘ä»¬åœ¨windowsç¬¬ä¸€æ¬¡å®‰è£…tomcatæ˜¯è¿è¡Œstartup.batæ—¶å‘ç°æ§åˆ¶å°ä¸Šé¢ä¸ºä¹±ç }
+	{è¿™æ˜¯å› ä¸ºcmdè¯†åˆ«çš„å­—ç¬¦é›†æ˜¯gbk ,è€Œtomcaté»˜è®¤çš„æ˜¯UTF-8 æ ¼å¼ã€‚è¿›å…¥tomcatçš„å®‰è£…ç›®å½•ä¸‹ï¼Œåœ¨confç›®å½•ä¸­æ‰¾åˆ°logging.propertiesæ–‡ä»¶ã€‚}
+5. eclipseå¯åŠ¨tomcat
+	5.1 å½“å¯åŠ¨tomcatæ—¶å‡ºç°tomcat setting should be set in tomcat preference page
 		https://blog.csdn.net/withyou_wy/article/details/53081800
 	
-6. TomcatÏÂÔØ°²×°
+6. Tomcatä¸‹è½½å®‰è£…
 	http://t.zoukankan.com/huangxincheng-p-7441221.html
 	 
-	<2> centosÆ½Ì¨ÏÂ£¬ÒòÎªÏîÄ¿ĞèÒª²¿ÊğÔÚlinuxÉÏ£¬wget url£¬½âÑ¹£¬×îºóÖ´ĞĞstartup.sh
+	<2> centoså¹³å°ä¸‹ï¼Œå› ä¸ºé¡¹ç›®éœ€è¦éƒ¨ç½²åœ¨linuxä¸Šï¼Œwget urlï¼Œè§£å‹ï¼Œæœ€åæ‰§è¡Œstartup.sh
 	 
-	 ´ÓÉÏÃæ¿ÉÒÔ¿´µ½£¬tomcatÒÑ¾­Æô¶¯ÁË£¬¶ÔÁË£¬ÌÀÄ·Ã¨µÄÄ¬ÈÏ¶Ë¿ÚÊÇ8080£¬¿ÉÒÔÍ¨¹ınetstat -tln ÑéÖ¤Ò»ÏÂ£¬×îºó¼ì²éÒ»ÏÂÊÇ·ñÆô¶¯Õı³£¡£
+	 ä»ä¸Šé¢å¯ä»¥çœ‹åˆ°ï¼Œtomcatå·²ç»å¯åŠ¨äº†ï¼Œå¯¹äº†ï¼Œæ±¤å§†çŒ«çš„é»˜è®¤ç«¯å£æ˜¯8080ï¼Œå¯ä»¥é€šè¿‡netstat -tln éªŒè¯ä¸€ä¸‹ï¼Œæœ€åæ£€æŸ¥ä¸€ä¸‹æ˜¯å¦å¯åŠ¨æ­£å¸¸ã€‚
 	netstat -tln
 7. 
 	netstat -ano | findstr 8080
 	taskkill /F /PID 2222
-8. TomcatÆô¶¯ºó£¬±»É¾³ıÁËµÄÏîÄ¿»¹±¨´í¡£
-	Caused by: java.lang.IllegalArgumentException: Ö¸¶¨µÄÖ÷×ÊÔ´¼¯ [ÒÑ¾­É¾³ıµÄÏîÄ¿] ÎŞĞ§
+8. Tomcatå¯åŠ¨åï¼Œè¢«åˆ é™¤äº†çš„é¡¹ç›®è¿˜æŠ¥é”™ã€‚
+	Caused by: java.lang.IllegalArgumentException: æŒ‡å®šçš„ä¸»èµ„æºé›† [å·²ç»åˆ é™¤çš„é¡¹ç›®] æ— æ•ˆ
 		
-		½â¾ö·½·¨£º
+		è§£å†³æ–¹æ³•ï¼š
 
-		ÔÚµçÄÔÉÏÕÒµ½Õâ¸öÂ·¾¶:D:\Tomcat6.0\conf\Catalina,½«localhostÄ¿Â¼Ö±½ÓÉ¾³ıµô,ÔÙÒ»ÔËĞĞ,¾ÍÃ»ÊÂÁË!
+		åœ¨ç”µè„‘ä¸Šæ‰¾åˆ°è¿™ä¸ªè·¯å¾„:D:\Tomcat6.0\conf\Catalina,å°†localhostç›®å½•ç›´æ¥åˆ é™¤æ‰,å†ä¸€è¿è¡Œ,å°±æ²¡äº‹äº†!
 
-		ÒòÎªÅäÖÃÎÄ¼şÖĞÅäÖÃÁËÆô¶¯³ÌĞò£¬¶øwebappsÎÄ¼ş¼ĞÏÂÈ´Ã»ÓĞ´ËÓ¦ÓÃ³ÌĞò£¬ËùÒÔ³öÏÖÁËÉÏÊö´íÎó¡£
+		å› ä¸ºé…ç½®æ–‡ä»¶ä¸­é…ç½®äº†å¯åŠ¨ç¨‹åºï¼Œè€Œwebappsæ–‡ä»¶å¤¹ä¸‹å´æ²¡æœ‰æ­¤åº”ç”¨ç¨‹åºï¼Œæ‰€ä»¥å‡ºç°äº†ä¸Šè¿°é”™è¯¯ã€‚
 	
-	²Î¿¼£º
+	å‚è€ƒï¼š
 	https://www.likecs.com/show-203745796.html
-		³£³£ÔÚ¿ª·¢Ê±,¶à¸öÏîÄ¿¹ÒÔÚÒ»¸öTomcatÏÂ,µ«ÊÇºóĞøÏë°Ñ¸ö±ğÏîÄ¿´ÓTomcatÒÆ³ıµÄÊ±ºò·¢ÏÖ,TomcatÖ´ĞĞ±¨´í.
-		ÔÚD:\Tomcat6.0\conf\server.xmlÖĞÕÒµ½ÕâĞ©ÄãÒÑ¾­É¾³ıµÄÏîÄ¿,ÓĞ¶àÉÙÉ¾¶àÉÙ,ÔÙÖØĞÂÆô¶¯Tomcat¾Í²»»á±¨´íÁË
+		å¸¸å¸¸åœ¨å¼€å‘æ—¶,å¤šä¸ªé¡¹ç›®æŒ‚åœ¨ä¸€ä¸ªTomcatä¸‹,ä½†æ˜¯åç»­æƒ³æŠŠä¸ªåˆ«é¡¹ç›®ä»Tomcatç§»é™¤çš„æ—¶å€™å‘ç°,Tomcatæ‰§è¡ŒæŠ¥é”™.
+		åœ¨D:\Tomcat6.0\conf\server.xmlä¸­æ‰¾åˆ°è¿™äº›ä½ å·²ç»åˆ é™¤çš„é¡¹ç›®,æœ‰å¤šå°‘åˆ å¤šå°‘,å†é‡æ–°å¯åŠ¨Tomcatå°±ä¸ä¼šæŠ¥é”™äº†
 		
 	

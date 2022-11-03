@@ -85,8 +85,19 @@
 		
 		1.3 点击下面链接：Further configuration avilble..
 			可以设置动态工程的需要配置的位置路径。
-			Content directory:需要设置当前web.xml所在的目录。
-
+			Content directory:需要设置当前web.xml所在的目录。默认eclipse会使用WebContent，修改为项目实际的目录WebRoot/WEB-INF
+			
+			Default output folder将默认的build/classes改为：WebRoot/WEB-INF/classes
+			
+			
+	8.5 eclipse4.5中更换tomact安装路径，运行java web,提示"tomcat 路径中找不到bootstrap.jar"
+		Run Configurations-Apache Tomcat->Classpath有tomcat安装目录/bin/bootstrap.jar
+		此界面下可以进行更换。
+	8.6 
+		Run As -> Run As Server 
+		第一运行，手动选择服务器。
+		Run On Server->Manually define a new server。
+		选择Apache对应的版本tomcat server后，Server name 没有内容。
 9.Eclipse乱码问题最全解决方案
 	https://blog.csdn.net/weixin_49698247/article/details/118730169 
 10 Eclipse 打包运行 Java 工程
@@ -141,4 +152,18 @@
 	
 	jdk版本，tomcat,配置不正确;
 	jsp有叉:servlet-api.jar,jsp-api.jar没导入。
-		
+	
+	13.2 java web项目jsp报错：
+			The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path
+			
+	按需添加：
+		Web工程，在Properties面板中的Java Build Path.
+	单独导入或将tomcat/bin或tomcat/lib 这几个jar添加到claspath下。
+	
+	或者全部添加：
+	这是因为你的web工程还没有感知到jsp容器tomcat，这个时候你需要在 右击Web工程，在Properties面板中的Java Build Path添加tomcat的library。
+14 Eclipse JDT-简介
+	https://blog.csdn.net/weixin_30840253/article/details/94944744
+15 eclipse的 wst
+	https://zhidao.baidu.com/question/34402904.html
+	https://www.lmlphp.com/user/85734/article/item/2640495/
