@@ -33,3 +33,10 @@
 	http://t.zoukankan.com/exmyth-p-3793424.html
 	
 	终端输入md5sum --help
+3. gpg
+
+	3.1	GPGTools - https://gpgtools.org
+	
+	3.2 gpg、sha512sum或md5sum验证包完整性
+		https://blog.csdn.net/qq_39666838/article/details/88386081
+	
