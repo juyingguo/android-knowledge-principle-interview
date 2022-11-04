@@ -74,6 +74,11 @@
 		打开Eclipse,找到Help--->install new software
 		点击add,然后在点击local选择刚才解压的文件夹
 		完成以后重启一下Eclipse就可以了
+		
+		8.2.2 通过help-Eclipse marketplace -搜索tomcat plugin进行安装。
+			对应的网址连接失败
+		8.2.3 eclipse tomcat plugin插件历史版本
+			https://sourceforge.net/projects/tomcatplugin/files/archive/
 	8.3 改造继续之eclipse集成tomcat开发spring mvc项目配置一览
 		http://t.zoukankan.com/huangxincheng-p-7441221.html
 		
@@ -83,7 +88,7 @@
 		1.1 右键项目名找到底部的properties
 		1.2 找到project facets 里面有很多，现在找到dynamic web module，如果没有勾上就勾上，这个就是一个原因，如果已经勾上了，我就不知道原因了
 		
-		1.3 点击下面链接：Further configuration avilble..
+		1.3 点击下面链接：Further configuration avilable..
 			可以设置动态工程的需要配置的位置路径。
 			Content directory:需要设置当前web.xml所在的目录。默认eclipse会使用WebContent，修改为项目实际的目录WebRoot/WEB-INF
 			
@@ -93,11 +98,33 @@
 	8.5 eclipse4.5中更换tomact安装路径，运行java web,提示"tomcat 路径中找不到bootstrap.jar"
 		Run Configurations-Apache Tomcat->Classpath有tomcat安装目录/bin/bootstrap.jar
 		此界面下可以进行更换。
-	8.6 
+	8.6 eclipse-2022.03
 		Run As -> Run As Server 
 		第一运行，手动选择服务器。
 		Run On Server->Manually define a new server。
 		选择Apache对应的版本tomcat server后，Server name 没有内容。
+		
+		在另一台电脑上eclipse-2022.03。插件：net.sf.eclipse.tomcat.updatesite-2022-06-08.zip
+			选择Tomcat v6.0 Server及以下版本时，Server name是没有内容的。
+			可能是与tomcat插件版本支持的tomcat版本有关。
+			当选择支持的版本，且tomcat已经配置过了。此时会出现选项：[Server runtime environment]
+		此时的Run Configurations-Apache Tomcat会对应出现launch configuration.
+		{
+			如：Tomcat v8.5 Server at localhost:
+			Arguments:
+			Program arguments:
+				start
+			VM arguments:
+				-Dcatalina.base="D:\juying\eclipse-workspace2022-03\.metadata\.plugins\org.eclipse.wst.server.core\tmp0" -Dcatalina.home="D:\juying\java2\apache-tomcat-8.5.78" -Dwtp.deploy="D:\juying\eclipse-workspace2022-03\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps" -Djava.endorsed.dirs="D:\juying\java2\apache-tomcat-8.5.78\endorsed"
+			
+			部署位置和eclipse-4.7版本的不同。
+			
+		}
+		
+	8.7 Preferences->tomcat->Context declaration mode 
+		参考：eclipse 中tomcat配置注意事项
+			https://blog.csdn.net/maqianmaqian/article/details/83441992
+	
 9.Eclipse乱码问题最全解决方案
 	https://blog.csdn.net/weixin_49698247/article/details/118730169 
 10 Eclipse 打包运行 Java 工程

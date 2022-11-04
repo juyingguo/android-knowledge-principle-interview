@@ -282,4 +282,6 @@
 			
 			rtmp://192.168.133.10/rtp/test
 			
-			
+8. 海康威视
+	8.1 官网获取资料。
+		https://www.hikvision.com/
