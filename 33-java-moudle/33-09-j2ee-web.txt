@@ -36,6 +36,10 @@
 		https://www.processon.com/view/link/624d3b48f346fb57dbebf798
 		Zookeeper核心知识整理：
 		https://www.processon.com/view/link/624d3b577d9c0807247cf380
+	1.2 
+		13 个最火的 Java 开源项目推荐！总有一个适合你！
+		https://www.j4ml.com/t/55338
+		
 2.Spring Boot
 	to see {33-18-springboot-record.txt}
 		

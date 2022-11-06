@@ -79,6 +79,7 @@
 			对应的网址连接失败
 		8.2.3 eclipse tomcat plugin插件历史版本
 			https://sourceforge.net/projects/tomcatplugin/files/archive/
+		8.2.4 通过help-Eclipse marketplace 安装java web支持插件。直接搜索java web找到相似的。
 	8.3 改造继续之eclipse集成tomcat开发spring mvc项目配置一览
 		http://t.zoukankan.com/huangxincheng-p-7441221.html
 		
@@ -90,11 +91,17 @@
 		
 		1.3 点击下面链接：Further configuration avilable..
 			可以设置动态工程的需要配置的位置路径。
-			Content directory:需要设置当前web.xml所在的目录。默认eclipse会使用WebContent，修改为项目实际的目录WebRoot/WEB-INF
+			Content directory:。默认eclipse会使用WebContent，修改为项目实际的目录WebRoot
 			
 			Default output folder将默认的build/classes改为：WebRoot/WEB-INF/classes
 			
+		8.4.2 Run As -> Run As Server
+			The selection cannot be run on any server
+			同[8.1]-[1.3]：WebRoot/WEB-INF/classes错写为：WebRoot/WEB-INF/class
 			
+			参考或启发：关于向ecplise中导入javaweb项目运行时出现"The selection cannot be run on any
+			server"的解决方案
+				https://blog.csdn.net/guozuofeng/article/details/88524587?
 	8.5 eclipse4.5中更换tomact安装路径，运行java web,提示"tomcat 路径中找不到bootstrap.jar"
 		Run Configurations-Apache Tomcat->Classpath有tomcat安装目录/bin/bootstrap.jar
 		此界面下可以进行更换。
@@ -121,10 +128,89 @@
 			
 		}
 		
+		验证：这种方式不行。eclipse重装。重装还是不行。删除当前工作空间试试？验证也不行。
+		
+		猜测可能eclipse对tomcat支持的版本不同吧。
 	8.7 Preferences->tomcat->Context declaration mode 
 		参考：eclipse 中tomcat配置注意事项
 			https://blog.csdn.net/maqianmaqian/article/details/83441992
-	
+	8.8 通过eclipse启动tomcat-9加载tcnative-1.dll失败
+		1月 05, 2022 9:36:14 上午 org.apache.catalina.core.AprLifecycleListener init
+		警告: 基于APR的本地库加载失败.错误报告为[D:\java2\tomcat\apache-tomcat-9.0.68\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+		java.lang.UnsatisfiedLinkError: D:\java2\tomcat\apache-tomcat-9.0.68\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+			at java.base/jdk.internal.loader.NativeLibraries.load(Native Method)
+			at java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(NativeLibraries.java:388)
+			at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:232)
+			at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:174)
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2389)
+			at java.base/java.lang.Runtime.load0(Runtime.java:755)
+			at java.base/java.lang.System.load(System.java:1953)
+			at org.apache.tomcat.jni.Library.<init>(Library.java:41)
+			at org.apache.tomcat.jni.Library.initialize(Library.java:234)
+			at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:201)
+			at org.apache.catalina.core.AprLifecycleListener.lifecycleEvent(AprLifecycleListener.java:138)
+			at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+			at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+			at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:135)
+			at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+			at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+			at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+			at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+			at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+			at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+			
+		参考：https://www.freesion.com/article/2101669679/
+			还是不能解决。
+			
+		参考：https://www.cnblogs.com/laitongxue/p/12302132.html
+			
+		分析原始日志：apache-tomcat-9.0.68是32位的。
+			apache-tomcat-9.0.68-windows-x86.zip
+			
+			下载：apache-tomcat-9.0.68-windows-x64.zip即可
+			
+		
+	8.9 使用单独安装的jdk-1.8时：
+		Unrecognized option: --add-opens=java.base/java.lang=ALL-UNNAMED
+		这个配置当时是使用添加server environment时选择了eclipse自带的openjdk jre后，运行项目配置tomcat实例时自动添加的，导致高版本的JDK信息写入到了tomcat启动文件中。
+		
+		参考：	
+			eclipse2021中Tomcat启动报错：Unrecognized option: 	--add-opens=java.base/java.lang=ALL-UNNAMED 解决方法
+			https://www.onekbit.com/ViewBlog/blog/BID20220527101140
+		
+		删除启动配置，重新添加启动配置。
+	8.10 运行项目后无法访问。
+		网页提示如下：
+			http://localhost:8080/springmvc/
+			HTTP状态 404 - 未找到
+			类型 状态报告
+
+			消息 请求的资源[/springmvc/]不可用
+
+			描述 源服务器未能找到目标资源的表示或者是不愿公开一个已经存在的资源表示。
+
+			Apache Tomcat/9.0.68
+		查看部署的信息如下
+			D:\eclipse-workspace\eclipse4.23_2\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\springmvc
+			下面lib及class都没内容。猜测是没有添加build path（添加后还是不行）。
+			打开工程，点击web.xml，报错，说明项目本身的问题。
+		参考：
+			eclipse中tomcat启动成功，但http://localhost:8080无法访问解决方案
+			https://www.pianshen.com/article/59091174780/
+	8.11 
+		eclipse部署的web项目没有添加到Tomcat的webapps目录下解决方法
+		eclipse没有像myeclipse那样，添加web项目时会自动部署到Tomcat的webapps目录下。而是部署到了eclipse的.metadata\.plugins\org.eclipse.wst.server.core\tmp0或.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps下。
+
+		我们就是的思路就是改变web项目部署的地址：
+		
+		https://www.codeprj.com/blog/8f15171.html		
+		https://www.cnblogs.com/xiaostudy/p/9377047.html		
+		https://www.pianshen.com/article/59091174780/
+		
+		选择：[User Tomcat installation ]
+			Delploy path:webapps(此时选相对路径)
 9.Eclipse乱码问题最全解决方案
 	https://blog.csdn.net/weixin_49698247/article/details/118730169 
 10 Eclipse 打包运行 Java 工程
@@ -194,3 +280,23 @@
 15 eclipse的 wst
 	https://zhidao.baidu.com/question/34402904.html
 	https://www.lmlphp.com/user/85734/article/item/2640495/
+16 eclipse的工程的忽略文件
+	16.1 javaWeb项目需要忽略提交哪些工程文件
+		参考：eclipse提交项目时忽略某些不必要文件的基础步骤讲解
+			https://www.onlinedown.net/article/10023211.htm
+			
+		### eclipse ###
+		.classpath
+		.project
+		.settings
+		work
+		WEB-INF/classes
+		//根据自身情况提交war文件，如果需要提交，可单独放在存档文件夹中
+		*.war
+		***********说明************
+		.classpath #含有项目依赖库的使用本项目的相对路径，该文件是可以提交的，如关联的本地源码，使用者再修改。
+		
+		.project .settings这两个是工程配置，不用提交。但第一打开项目时，就不能作为eclipse项目打开
+		如果本身是java web项目，同样也是不能作为java web打开，此时可以先从其它项目下拷贝这连个文件或文件夹到该项目下（建议使用这种方式，保证工程配置完整，可以根据当前项目做微调）。
+		如果不拷贝这两个，在import项目时选择General-Projects from Folder or Archive,此时需要重新配置项目，比如[8.4]中类似情况:{Content directory:。默认eclipse会使用WebContent}等都需要修改。
+		

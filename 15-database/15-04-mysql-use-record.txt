@@ -323,4 +323,6 @@
 		导入到5.7.37报错（5.7.38 中数据库使用了不兼容5.7.37的语法）。
 21 SQL JOIN 中 on 与 where 的区别
 	https://www.runoob.com/w3cnote/sql-join-the-different-of-on-and-where.html
+22 MySQL外键设置中的的 Cascade、NO ACTION、Restrict、SET NULL
+	https://blog.csdn.net/tolcf/article/details/39034169?
 		
