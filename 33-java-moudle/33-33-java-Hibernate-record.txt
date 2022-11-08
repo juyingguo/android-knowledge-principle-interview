@@ -14,7 +14,16 @@
 	  到eclipse里面  新建Catalog,
 
 	  步骤：eclipse->Window->Preferences->XML->XML Catalog->Add ->Location里找到dtd文件的地址路径，Key Type里选URI，Key里填写上面获取的链接
-3.
+3.Hibernate inverse 详解
+	https://blog.csdn.net/zs20082012/article/details/79303588
+	 如果一方的映射文件中设置为true，说明在映射关系(一对多，多对多等)中让对方来维护关系。如果为false，就自己来维护关系
+	 
+	 
+	 总结：
+
+		对于设置了cascade就可以维护双方关系，为什么还要设置inverse呢，这是由于
+
+		Inverse：负责控制关系，默认为false，也就是关系的两端都能控制，但这样会造成一些问题，更新的时候会因为两端都控制关系，于是重复更新。一般来说有一端要设为true
 4.
 5. 
 		
