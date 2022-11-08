@@ -1,0 +1,21 @@
+1.
+	
+
+2.
+	解决ECLIPSE中HIBERNATE的XML配置文件标签不提示的问题
+	https://www.freesion.com/article/7450171992/
+	
+	 把hibernate jar包解压，进入到org->hibernate->找到hibernate-mapping-3.0.dtd文件，用记事本打开，copy其中的链接语句eg: http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd  
+	或者在源码中：
+	hibernate-distribution-3.5.6-Final\project\core\src\main\resources\org\hibernate
+	
+	
+	、配置DTD文件到ECLIPSE中
+	  到eclipse里面  新建Catalog,
+
+	  步骤：eclipse->Window->Preferences->XML->XML Catalog->Add ->Location里找到dtd文件的地址路径，Key Type里选URI，Key里填写上面获取的链接
+3.
+4.
+5. 
+		
+		

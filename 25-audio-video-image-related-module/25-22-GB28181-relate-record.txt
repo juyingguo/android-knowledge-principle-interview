@@ -6,6 +6,9 @@
 		https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=469659DC56B9B8187671FF08748CEC89
 	1.1 GB28181的协议详解
 		https://blog.csdn.net/fanyun_01/article/details/120536834
+		
+	1.2 GB28181/RTSP/Onvif/HikSDK/Ehome协议视频共享平台EasyCVR人脸识别系统助力打造智慧安检系统
+		https://blog.csdn.net/TsingSee/article/details/110947326
 2. 资源
 	好例子网。
 	鸠摩搜书
@@ -316,13 +319,26 @@
 					国标gb28128 EHOME  79/88系列 都支持
 					gb28128 EHOME 78系列除了78-F （78-R 78-K 都支持国标gb28128 EHOME ）
 					71系列 全系列 不支持
+			
+			海康录像机（支持gb281,不带硬盘）
+			https://item.jd.com/10023408955166.html	
+			硬盘
+			https://item.jd.com/10020519643736.html
+			
 	8.3 摄像机
 		8.3.0 
 			a，DS-IPC-T12V3-I。
+				不能单独使用，需要配合摄像机nvr一起才能使用。
 				官网有写支持接口协议：
 					接口协议( API ):开放型网络视频接口, ISAPI . SDK. G828181 ( 2016 )
+					
+				
+				这款是支持 电源供电 内存卡存储 支持网线连接路由器供网 也可以使用内置4G卡供网哦 第一次安装需要电脑激活哦
+				能单独使用的摄像头，产品型号很少，这款可以：：https://item.jd.com/100035687058.html
+					接口协议( API )开放型网络视频接口（onvif） , ISAPI , SDK , GB28181 , Ehome ( 2.0/4.0)
+					
 			q1，海康威视ipc需要连接nvr吗
-			
+				
 			q2,海康威视nvr要和ipc连接在一起使用吗
 				NVR与IPC的连接操作说明
 				https://wenku.baidu.com/view/cb7d851ff21dc281e53a580216fc700abb6852a3.html?_wkts_=1667802387997
