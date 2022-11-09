@@ -21,9 +21,13 @@
 	
 	2.6 springboot中使用jwt
 	
-	2.7 
+	2.7 书籍
 		深入实践 Spring Boot -- source code（book）
 			https://github.com/fantasticLx/SpringBoot-Book
+			
+		《一步一步学Spring Boot 2微服务项目实战》
+			详细记录见：【14】
+			
 7. 12个优秀开源的 Spring Boot 学习项目，建议收藏
 	https://zhuanlan.zhihu.com/p/454001666
 	
@@ -245,3 +249,12 @@
 			默认情况下， Spring Boot会用Logback（http://logback.qos.ch）来记录日志，
 	4.3.2 使用 Selenium 测试 HTML 页面
 		对于HTML应用程序测试，有一个更好的选择——Selenium（www.seleniumhq.org）
+14 《一步一步学Spring Boot 2微服务项目实战》
+	前言：
+		GitHub 源代码下载地址： git@github.com:huangwenyi10/stepbysteplean-springboot.git
+		教学视频下载地址： https://pan.baidu.com/s/1ASxjEcvESA2T6ISbmAmkYQ
+	第3章集成Spring Data JPA
+		比如可以使用自findBy 、 Like 、 in 等关键字，
+		其中 findBy 可以用 read 、 readBy 、 query 、 que叩By 、 get、 getBy 来代替。关于查询关
+		键字的更多内容 ， 大家可以到官方网站（ https://docs.spring. io/spring-data/data-jpa/docs/
+		current/reference/html/ ） 查看
