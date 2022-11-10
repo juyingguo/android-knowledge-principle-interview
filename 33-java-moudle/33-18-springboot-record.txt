@@ -27,7 +27,8 @@
 			
 		《一步一步学Spring Boot 2微服务项目实战》
 			详细记录见：【14】
-			
+	2.8 
+		https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/html/configuration-metadata.html#configuration-metadata-annotation-processor
 7. 12个优秀开源的 Spring Boot 学习项目，建议收藏
 	https://zhuanlan.zhihu.com/p/454001666
 	
@@ -253,6 +254,19 @@
 	前言：
 		GitHub 源代码下载地址： git@github.com:huangwenyi10/stepbysteplean-springboot.git
 		教学视频下载地址： https://pan.baidu.com/s/1ASxjEcvESA2T6ISbmAmkYQ
+	1.
+		[17:40:40:020] [ERROR] - org.springframework.boot.SpringApplication.reportFailure(SpringApplication.java:833) - Application run failed
+		org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+			at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+			at com.example.demo.MySpringBootApplication.main(MySpringBootApplication.java:18) [classes/:?]
+		Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+			at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:118) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+			... 8 more
+		Caused by: java.lang.IllegalArgumentException: Servlet must not be null
+			at org.springframework.util.Assert.notNull(Assert.java:193) ~[spring-core-5.0.3.RELEASE.jar:5.0.3.RELEASE]
+			at org.springframework.boot.web.servlet.ServletRegistrationBean.getDescription(ServletRegistrationBean.java:176) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+			at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_121]
+
 	第3章集成Spring Data JPA
 		比如可以使用自findBy 、 Like 、 in 等关键字，
 		其中 findBy 可以用 read 、 readBy 、 query 、 que叩By 、 get、 getBy 来代替。关于查询关
