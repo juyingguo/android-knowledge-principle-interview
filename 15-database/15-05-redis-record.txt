@@ -1,12 +1,29 @@
 1.
 	相关资源
 	Redis 官网：https://redis.io/
+		Redis 官网（中文版）：http://www.redis.cn/
 	官网下载地址：https://redis.io/download/
 	源码地址：https://github.com/redis/redis
 
 	Redis 在线测试：http://try.redis.io/
 
 	Redis 命令参考：http://doc.redisfans.com/
+	
+	1.2 redisclient
+		1.2.1
+			https://redis.io/docs/reference/clients/
+			
+			https://github.com/caoxinyu/RedisClient/tree/windows/release
+			
+			redis官网地址：https://redis.io/clients
+			Windows 系统中Redis客户端可视化工具 redis client
+			https://www.codenong.com/cs105341569/
+			
+			
+			Redis-GUI客户端工具Another Redis Desktop Manager介绍
+				https://copyfuture.com/blogs-details/20210731155213946c
+		1.2.2 Redis Client List 命令
+			https://www.runoob.com/redis/server-client-list.html
 2.Redis 文档教程
 	https://www.runoob.com/redis/redis-lists.html
 	

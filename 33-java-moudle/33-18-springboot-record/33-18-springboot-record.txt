@@ -255,18 +255,53 @@
 		GitHub 源代码下载地址： git@github.com:huangwenyi10/stepbysteplean-springboot.git
 		教学视频下载地址： https://pan.baidu.com/s/1ASxjEcvESA2T6ISbmAmkYQ
 	1.
-		[17:40:40:020] [ERROR] - org.springframework.boot.SpringApplication.reportFailure(SpringApplication.java:833) - Application run failed
-		org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-			at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
-			at com.example.demo.MySpringBootApplication.main(MySpringBootApplication.java:18) [classes/:?]
-		Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-			at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:118) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
-			... 8 more
-		Caused by: java.lang.IllegalArgumentException: Servlet must not be null
-			at org.springframework.util.Assert.notNull(Assert.java:193) ~[spring-core-5.0.3.RELEASE.jar:5.0.3.RELEASE]
-			at org.springframework.boot.web.servlet.ServletRegistrationBean.getDescription(ServletRegistrationBean.java:176) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
-			at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_121]
+		Servlet must not be null-Unable to start embedded Tomcat
+		详情见：【./Servlet must not be null-Unable to start embedded Tomcat.txt】
 
+		参考分析：SprintBoot项目一直报“Servlet must not be null”
+			https://bbs.csdn.net/topics/397800545?list=15028695
+			
+		分析a：打印和ServletWebServerApplicationContext相关。
+		分析b：通过排查，关闭可疑或代码，本身都是小demo，可能还不完整；排查到@ServletComponentScan注解使用，tomcat无法启动。
+			com.example.demo.MySpringBootApplication
+		
+			b1:spring-mvc.xml
+				<bean id="druidStatFilter" class="org.springframework.boot.web.servlet.ServletRegistrationBean">
+				</bean>
+			b1：参考【第6章使用过滤器和监听器】后，这个问题排查解决了。
+				@ServletComponentScan
+					
+				@WebFilter
+					
+				@WebListener
+					com.example.demo.listener.AyUserListener
+					添加redis代码修复后就可以了。
+	第2章集成MySQL数据库 
+		q1：Springboot配置druid数据源出现“localhost 将您重定向的次数过多”解决方案
+			访问地址：：http://127.0.0.1:8080/druid/login.html
+		
+			https://blog.csdn.net/weixin_55418082/article/details/124517111
+			
+			
+			发现：com.example.demo.filter.DruidConfiguration#druidStatViewServlt单词不完整，修改如下：
+				com.example.demo.filter.DruidConfiguration#druidStatViewServlet
+				访问正常。
+		2.1 SpringBoot整合Druid配置监控页，非常详细
+			https://blog.csdn.net/qq_45926912/article/details/122655701
+		2.3 踩坑！！！ Druid登录页点击无效
+			https://blog.csdn.net/zcwdsada/article/details/120057583
+			
+			《Druid输入用户名和密码登录不进去》
+				https://blog.csdn.net/yxf15732625262/article/details/84978798?
+			参考：
+				Spring boot、Spring Security和Druid集成后，因csrf校验开启，不能登录http://localhost:8086/druid/login.html的解决办法
+				https://blog.csdn.net/QUDIHUAI/article/details/84878582
+				
+				查看注解位置：@EnableWebSecurity
+				添加：http.csrf().ignoringAntMatchers("/druid/*")
+			分析查看日志：
+				Invalid CSRF token found for http://localhost:8080/druid/submitLogin
+				
 	第3章集成Spring Data JPA
 		比如可以使用自findBy 、 Like 、 in 等关键字，
 		其中 findBy 可以用 read 、 readBy 、 query 、 que叩By 、 get、 getBy 来代替。关于查询关
