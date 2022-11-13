@@ -301,9 +301,20 @@
 				添加：http.csrf().ignoringAntMatchers("/druid/*")
 			分析查看日志：
 				Invalid CSRF token found for http://localhost:8080/druid/submitLogin
-				
+		2.5 DruidDataSource-mysql-CommunicationsException
+			详情见：【2022-11-12-DruidDataSource-mysql-CommunicationsException.txt】
+			确认数据库及驱动没问题。是java版问题，使用默认的idea-2021.2.3自带的jre时报错。缓存本地jdk-1.8后正常。
+			
 	第3章集成Spring Data JPA
 		比如可以使用自findBy 、 Like 、 in 等关键字，
 		其中 findBy 可以用 read 、 readBy 、 query 、 que叩By 、 get、 getBy 来代替。关于查询关
 		键字的更多内容 ， 大家可以到官方网站（ https://docs.spring. io/spring-data/data-jpa/docs/
 		current/reference/html/ ） 查看
+		
+		项目在idea-2021-2.3中打开时jpa提示：
+		JPA Buddy Trial
+		Early access version of the JPA Buddy has been expired.
+		Please visit https://jpa-buddy.com/extended-trial-expired
+		page
+		for new information or update the plugin from the official
+		plugins repository.
