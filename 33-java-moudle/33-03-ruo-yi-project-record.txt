@@ -8,3 +8,26 @@
 3. 角色管理
 	3.1 删除角色
 		当前是直接删除。是否需要判断当有用户使用该角色时，禁止删除
+		
+4.RouYi单体项目
+	4.1 
+		权限：var editFlag = [[${@permission.hasPermi('system:user:edit')}]];
+		@permission指的是啥？
+		分析过程：
+			@Service("permission")
+			com.ruoyi.framework.web.service.PermissionService
+				com.ruoyi.framework.web.service.PermissionService#hasPermi
+					SecurityUtils.getSubject().isPermitted(permission)
+		
+		权限验证：
+		com.ruoyi.framework.shiro.realm.UserRealm#doGetAuthorizationInfo
+		@permission指的是@Service("permission")指定的实例，并直接可以调用实例方法
+		
+		参考官网文档：thymeleaf[4.15 Preprocessing]
+			不完全一样。
+		新增：
+			var removeFlag = [[${@com.ruoyi.common.utils.StringUtils.hasPermi2('system:user:remove')}]];
+			会有异常：
+				Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'com' available
+			可以判断出：@后第一个即为bean,因为没有com的bean就报错了。
+	

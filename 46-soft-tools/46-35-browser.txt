@@ -31,3 +31,5 @@
 	
 	4.3 谷歌浏览器调试显示接口Url全路径
 		https://blog.csdn.net/weixin_43918355/article/details/115333796
+	4.4 XHR 和 Fetch 的使用详解和区别总结
+		https://blog.csdn.net/weixin_41275295/article/details/100699978

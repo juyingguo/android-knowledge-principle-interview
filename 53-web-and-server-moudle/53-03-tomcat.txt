@@ -38,6 +38,12 @@
 	 
 	 从上面可以看到，tomcat已经启动了，对了，汤姆猫的默认端口是8080，可以通过netstat -tln 验证一下，最后检查一下是否启动正常。
 	netstat -tln
+	
+	
+	6.2 windows下载
+		6.2.1 zip安装
+			通过windows管理tomcat
+			D:\java2\apache-tomcat-8.5.78\bin>service.bat install
 7. 
 	netstat -ano | findstr 8080
 	taskkill /F /PID 2222

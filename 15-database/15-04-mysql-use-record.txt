@@ -332,3 +332,6 @@
 22 MySQL外键设置中的的 Cascade、NO ACTION、Restrict、SET NULL
 	https://blog.csdn.net/tolcf/article/details/39034169?
 		
+23 函数：
+	23.1 group_concat
+		https://www.cnblogs.com/wenxinphp/p/5841430.html

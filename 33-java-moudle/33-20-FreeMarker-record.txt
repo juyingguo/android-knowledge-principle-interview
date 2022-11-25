@@ -1,2 +1,23 @@
 1.
 2. http://www.freemarker.net/
+3. Thymeleaf
+	3.1 
+		https://www.thymeleaf.org/
+		
+	
+	3.2 当下说jsp过时，那使用springboot开发学些thymeleaf还是学习vue，求指教?
+		https://www.zhihu.com/question/338769291
+	3.3 Thymeleaf 教程
+		http://www.voidme.com/thymeleaf
+	
+		https://www.aisoutu.com/a/79809
+		
+		https://www.codenong.com/cs106670469/
+		
+		https://zhuanlan.zhihu.com/p/183831446
+	3.4 
+		thymeleaf 中[[${@]]含义？
+			https://www.cnblogs.com/juyss/p/14176068.html
+			
+			[[…]]会被转义，[(…)]不会。
+		

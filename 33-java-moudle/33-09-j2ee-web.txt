@@ -470,3 +470,38 @@
 	FEBS-Shiro ：Spring Boot 2.1.3，Shiro1.4.0 & Layui 2.5.4 权限管理系统。
 	eladmin : 项目基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue 的前后端分离的后台管理系统，项目采用分模块开发方式， 权限控制采用 RBAC，支持数据字典与数据权限管理，支持一键生成前后端代码，支持动态路由。
 	
+
+	19.2 
+		spring+springMVC+mybatis房屋出租项目源码(含数据库脚本)
+		https://www.haolizi.net/example/view_33651.html
+20 FEBS-Shiro
+	https://github.com/febsteam/FEBS-Shiro
+	
+	登录，前端传输密码没有加密，后端存储时加密了。【前端也应该加密】
+	
+	cc.mrbird.febs.system.controller.LoginController#login
+	cc.mrbird.febs.common.authentication.ShiroRealm#doGetAuthenticationInfo
+	
+	验证：密码特意输入错误。异常如何处理。
+	如下：
+		cc.mrbird.febs.common.handler.GlobalExceptionHandler#handleAuthenticationException
+	登录成功：
+		cc.mrbird.febs.system.controller.LoginController#login
+			return new FebsResponse().success().data(properties.getShiro().getSuccessUrl());
+				url:/index
+				
+				febs.yml 
+					success-url: /index
+				application.yml
+					config:
+					  import: classpath:febs.yml
+	
+	对于管理员，admin账号，系统管理-账户管理-更新账户，权限取消，操作流程验证。
+	
+	cc.mrbird.febs.common.authentication.ShiroEarlyBeanRegistrar
+		org.apache.shiro.spring.web.ShiroFilterFactoryBean#unauthorizedUrl
+	user.html：编辑按钮
+		<a lay-event="edit" shiro:hasPermission="user:update"><i
+            class="layui-icon febs-edit-area febs-blue">&#xe7a4;</i></a>
+	
+	

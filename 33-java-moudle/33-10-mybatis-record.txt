@@ -3,7 +3,8 @@
 	
 	doc
 		https://mybatis.org/mybatis-3/
-		
+		[含中文，英文在线文档]
+		官方zip包，如mybatis-3.2.2含依赖包，及英文文档。
 	1.3 MyBatis-Plus
 		https://baomidou.com/
 		
@@ -11,7 +12,9 @@
 			mybatis-plus 实践及架构原理.pdf
 			{https://gitee.com/baomidou/mybatis-plus/attach_files
 			}
-		
+	1.4 MyBatis分页插件pagehelper
+		MyBatis分页插件pagehelper的使用以及其原理源码
+		https://blog.csdn.net/qq_44750696/article/details/124075059
 2. Mybatis使用useGeneratedKeys获取自增主键的方法
 	https://www.jb51.net/article/169560.htm
 	
@@ -40,4 +43,34 @@
 		#传入的参数在SQL中显示为字符串，$传入的参数在SqL中直接显示为传入的值.
 
 		#方式能够很大程度防止sql注入，$方式无法防止Sql注入；
+	6.2 配置mybatis xml提示
+		idea配置mybatisxml提示
+		https://blog.csdn.net/web15285868498/article/details/123633372
 		
+		配置：File->Settings->Langulages&FrameWorks->Schemas and DTDs 
+			http://mybatis.org/dtd/mybatis-3-config.dtd
+		
+7. 《MyBatis从入门到精通.pdf》刘增辉著
+	4.0
+		本书资源
+		扫码或输入地址 http://mybatis.tk 进入 MyBatis 技术网站。网站中提供了大量 MyBatis 的相
+		关内容，同时可下载本书相关资源。
+	第1章 MyBatis入门
+		1.1 MyBatis简介
+			MyBatis 官方 GitHub 地址为 https ://github .com/mybati s 。 在官方 GitHub 中可以看到 MyBatis
+			的多个子项目 。在本书 中，我们将学习以下内容 。
+			mybatis-3 ( https://github.com/mybatis/mybatis-3 ): MyBatis 源码，也是本书中主要讲解
+			和使用的内容 。
+			generator ( https ://github.com/mybatis/generator ） ： 代码生成器，可以生成一些常见的基本
+			方法，提高工作效率。
+			ehcache-cache( https://github.com/mybatis/ehcache-cache ）：默认集成 Ehcache 的缓存实现 。
+			redis-cache ( htφs ://github.com/mybatis/redis-cache ） ： 默认集成 Redi s 的缓存实现 
+			spring (https://github.com/mybatis/spring ） ： 方便和 Spring 集成的工具类 。
+			mybatis-spring-boot ( https://github .com/mybatis/mybatis-spring-boot ）：方便和 Spring Boot
+			集成的工具类。
+		1.2 创建Maven项目
+			可以通过 http://search.maven.org/或 http://mvnrepository.com/来查找依赖坐标。
+		1.3 
+			simple 项目下载地址 ： http://mybatis.tk/book/simple-start.zip 
+			可以免费下载：
+				
