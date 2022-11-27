@@ -208,3 +208,5 @@
 		BOM（Byte Order  Mark），字节顺序标记，出现在文本文件头部，Unicode编码标准中用于标识文件是采用哪种格式的编码。
 		原因：在源文件中使用utf-8带BOM格式的编码方式。
 		解决方法：在idea界面右下方修改文件编码时去除BOM。}
+16，Idea maven 
+	idea maven Lifecycle

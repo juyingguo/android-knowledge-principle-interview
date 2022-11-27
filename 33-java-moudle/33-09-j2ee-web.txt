@@ -353,6 +353,14 @@
 		
 		Springcloud 多数库 多数据源整合,查询动态切换数据库
 			https://blog.csdn.net/hekf2010/article/details/81155778/
+	12 
+		《疯狂Spring Cloud微服务架构实战.pdf》
+		下载资源：本书如提供示例代码及资源文件，均可在下载资源处下载 
+			http://www.broadview.com.cn/33109
+			http://www.broadview.com.cn/book/5370
+		读者也可发邮件与笔者联系 ，邮箱地址为 yangenxiong@l63.com；也可以直接访问笔
+		者博客直接交流， http://my.oschina.netJavaLaw/log
+		
 11，j2ee前后端分离，前端代码和后端代码分别运行、部署在服务器上的方法。
 	11.1 参考[9.2] Spring Boot定制Spring MVC
 		

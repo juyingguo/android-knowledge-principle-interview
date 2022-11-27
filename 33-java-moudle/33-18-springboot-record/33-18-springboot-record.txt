@@ -318,3 +318,8 @@
 		page
 		for new information or update the plugin from the official
 		plugins repository.
+	第14章集成Spring Security 	
+		q1，java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+		
+			https://blog.csdn.net/deniro_li/article/details/116322581
+			https://blog.csdn.net/weixin_44231805/article/details/121696107?
