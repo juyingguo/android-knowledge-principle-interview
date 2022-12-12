@@ -18,7 +18,7 @@
 	2.2 在win7 上nodejs10.23.0可以正常安装使用。
 		在win7 上nodejs14.15.1安装提示需要win8及以上版本。
 	
-3. 问题记录
+3. 问题或是知识点记录
 	3.1 npm install 
 		 - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
 		 需要升级
@@ -40,7 +40,18 @@
 		1.首先我们在cmd中输入npm config get registry命令查看npm的默认下载地址
 		2.之后我们看到的下载地址是https://registry.npmjs.org/
 		3.再使用npm config set registry https://registry.npm.taobao.org命令将默认下载地址改成淘宝镜像就可以了。
-
+	3.4 
+		package.json和package-lock.json的区别
+		https://blog.csdn.net/weixin_51670675/article/details/120819061
+		
+		https://blog.csdn.net/weixin_45626517/article/details/122820735
+			package-lock.json是在运行“npm install”时生成的一个文件
+					
+			 npm5以后
+			 
+			 有了package-lock.json文件锁定版本号，所以当你执行npm install的时候，node不会自动更新package.json文件中的模块，必须用npm install packagename@x.x.x（指定版本号）来进行安装才会更新
+	3.5 node-sass是什么？
+		https://blog.csdn.net/inthat/article/details/122763285
 4. NPM 使用介绍
 	https://www.runoob.com/nodejs/nodejs-npm.html	
 	4.1 
@@ -80,6 +91,29 @@
 			3.通过cnpm使用
 			npm install -g cnpm --registry=https://registry.npm.taobao.org
 			———
+	4.5 
+		cnpm报错：“Error：Cannot find module ‘fs/promises” 解决方案
+		https://blog.csdn.net/kk2442687723/article/details/126248887
+		{
+			问题分析：
+				根据分析，原因是Node.js版本太低导致的（也可以说是cnpm版本太高），由于低版本的Node.js对于promises的引入方式与高版本的是不一样，而cnpm版本太高的话，Node是不支持’fs/promises’引入方式的。
+
+			解决方案：
+			1、升级Node.js版本：
+
+			清理npm缓存：npm cache clean -f
+			安装版本管理工具：npm install -g n
+			升级到最新的版本：n latest（最新版本）n stable（最新稳定版本）
+
+			2、降低cnpm的版本：
+
+			删除已安装的cnpm版本：npm uninstall -g cnpm
+			安装低版本cnpm：npm install cnpm@7.1.0 -g --registry=https://registry.npm.taobao.org
+
+			亲测可用！！！
+			————————}
+	4.6 npm i和npm install的区别
+		https://blog.csdn.net/chern1992/article/details/79193211
 5. node使用
 	5.1 查看版本
 		node --version

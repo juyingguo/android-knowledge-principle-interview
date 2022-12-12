@@ -2,6 +2,12 @@
 	https://netty.io/index.html
 	
 	netty 视频，源码讲解，闪电侠netty
+	
+	1.3 书籍
+		Netty源码剖析与应用
+			http://www.broadview.com.cn/book/6416
+			源码可以下载
+			Netty源码剖析与应用-随书配套源码.zip
 2.	
 	Netty-socketio Overview
 		{This project is an open-source Java implementation of Socket.IO server. Based on Netty server framework.

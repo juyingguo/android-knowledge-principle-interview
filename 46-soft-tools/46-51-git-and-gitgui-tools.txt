@@ -52,6 +52,8 @@
 			https://tortoisegit.org/download/
 			捐赠：
 			https://tortoisegit.org/donate/
+			
+			https://tortoisegit.org/support/
 		}
 		{ Authentication
 			ssh,or http/https
@@ -75,6 +77,10 @@
 		2.3.3 初体验和发现：{在与git scm ,bash 共同使用的时候，会影响.gitignore文件的忽略配置。
 				
 				比如使用TortoiseGit clone项目。}
+		2.3.4 依赖：
+			gitforwindows
+			see:[2.5]
+			TortoiseGit require git.ext for its operations
 	2.4 Git and gitgui
 		https://git-scm.com/downloads 
 		

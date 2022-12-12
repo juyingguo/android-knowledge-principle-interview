@@ -99,7 +99,8 @@
 7. idea
 	7.1 Idea导入Eclipse的Maven项目
 		https://blog.csdn.net/dwh19992018/article/details/123572624	
-		
+	7.2 java文件普通目录，多个子目录下有同名的java文件,使用。file-open打开文件夹后，有键-Make directory as
+		-》Excluded即可不包含某些文件。
 8. IDEA设置项目编码
 	https://blog.csdn.net/weixin_53107227/article/details/122215687
 	

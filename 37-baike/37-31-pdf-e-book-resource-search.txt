@@ -1,7 +1,7 @@
 1.
 2.	好用的PDF及epub等格式书籍下载网站 个个书籍资源丰富
 	2.1 https://zhuanlan.zhihu.com/p/513317158
-	
+		
 	2.2 世界最全的计算机所有书籍pdf下载
 		https://www.docin.com/p-937603078.html
 	2.3 
@@ -12,7 +12,8 @@
 		https://zhuanlan.zhihu.com/p/376502491?utm_medium=social&utm_oi=554954120092495872
 		
 		[很全]
-		
+		有那种PDF书籍资源比较丰富的网站吗？
+		https://www.zhihu.com/question/19832241/answer/2760151769
 	2.5 从以上整理的部分下载网站
 		{
 			a1,亚马逊
@@ -38,6 +39,22 @@
 				【书格是一个自由开放的在线古籍图书馆】
 			a9,苦瓜书盘：
 				http://www.kgbook.com/
+				
+			a10,绿色资源网
+				http://s.downcc.com/m/
+				如搜索：计算机编程书籍：：vue.js权威指南。能把其它的权威指南也搜索到。
+			a11,
+				大白菜博客可以下载：
+				https://cmsblogs.cn/3998.html
+					重要提示！一旦取消关注公众号后将无法再启用回复功能，不支持解封！
+					
+					搜索技巧，需要在百度搜索中关键字+大白菜播客才能搜多，网站本身没有搜索功能
+			a12,博文视点
+				http://www.broadview.com.cn/book/5097
+				有些书可以直接下载电子版，或者可以购买电子版书籍，及配套源码
+			a13,
+				https://github.com/justjavac/free-programming-books-zh_CN
+			
 		}
 	2.6 搜书技巧，这个网站没有，就去另一个搜搜。每个网站书类别不同，侧重点同。
 	

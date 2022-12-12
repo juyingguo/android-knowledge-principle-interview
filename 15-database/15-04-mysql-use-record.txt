@@ -335,3 +335,19 @@
 23 函数：
 	23.1 group_concat
 		https://www.cnblogs.com/wenxinphp/p/5841430.html
+24 
+		Wed Dec 07 10:56:14 CST 2022 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+		
+		上面的警告，不影响，可以后面解决。
+		
+		2022-12-07 10:56:14.765 ERROR 13460 --- [eate-1996664412] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3307/chapter05, errorCode 0, state 08S01
+
+		com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure	
+	
+		javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+		
+		参考：https://www.cnblogs.com/wwjj4811/p/15058365.html
+			我使用的idea，更换工程idea自带jdk为本地jdk默认可以访问。
+			
+			或者安装作者：：修改jdk/jre/lib/security/java.security文件，按照如下方式修改：删除掉SSLv3, TLSv1, TLSv1.1这三个
+			

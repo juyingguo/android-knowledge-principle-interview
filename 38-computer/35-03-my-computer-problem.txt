@@ -1,6 +1,26 @@
-һ����˶�ʼǱ�k555lj��1-2����û����ô�����������ٴ�ʹ����s,0,3,7,delete������ʹ�ˡ�
-	1.1��ż�����ã�ż���в����á�
-	1.2��������������������һ����
-	1.3��ʹ�������̣���е���������������һ��ʹ�á�
-	1.4��һֱ���s,7,3,����һ������Ρ����м��ֶ�������ʹ���ˡ�
+一、华硕笔记本k555lj因1-2个月没有怎么开机，导致再次使用是s,0,3,7,delete键不好使了。
+	1.1、偶尔能用，偶尔有不能用。
+	1.2、更换键盘驱动，还是一样。
+	1.3、使用软件盘，机械键盘配合软键盘能一起使用。
+	1.4、一直轻击s,7,3,任意一个键多次。所有键又都能正常使用了。
+2. 华硕
+	2.1 	
+		https://www.asus.com.cn/support/
+	2.2 
+		华硕笔记本电池管理软件???
+		https://ask.zol.com.cn/x/3374073.html
+			去官方网站下载 电池管理软件 Power4 Gear
+		
+		华硕笔记本在power4gear软件中打开高性能模式必须要windown8系统吗
+			https://zhidao.baidu.com/question/368126954655074524.html
+			
+			 P4G这个软件在win7和win8下面都是可以一样使用的。以前甚至在XP下面都有这个软件，可以调节工作模式。
+
+			一般如果您安装的是win8系统的话，用下面这个链接里面版本的P4G软件即可			http://dlsvr04.asus.com/pub/ASUS/nb/Apps_for_Win8/Power4GearHybrid/Power4GearHybrid_Win8_64_Z204.zip
+		华硕笔记本电池管理软件下载地址 - ASUS Battery Health Charging
+		https://www.microsoft.com/zh-cn/p/asus-battery-health-charging/9nkcln5x4rr9?rtc=1
+			注意看：系统要求
+			
+	2.3 华硕管家 MyASUS
+		华硕管家 MyASUS 提供简易方法登入ASUS APP，令您随时维护系统、更新软件、优化电脑性能，并轻松获取ASUS售后技术支持
 	   

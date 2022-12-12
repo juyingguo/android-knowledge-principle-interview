@@ -1,4 +1,4 @@
-邮编库搜索
+﻿邮编库搜索
 https://www.youbianku.com/SearchResults?
 爱码网
 Opensource.com
@@ -15,4 +15,22 @@ https://www.h3c.com/cn/Service/Document_Software/Document_Center
 https://time.geekbang.org/column/intro/100031801
 	【下载app，新人专享5天免费】。【超级会员-3k/年，资源都可以学】
 码农教程
+
+https://fkjava.org/
+
+大白菜博客
+	可以下载书籍、：
+	https://cmsblogs.cn/3998.html
+		重要提示！一旦取消关注公众号后将无法再启用回复功能，不支持解封！
+		
+		搜索技巧，需要在百度搜索中关键字+大白菜播客才能搜多，网站本身没有搜索功能
+	 首页
+		开发工具。
+	 大白菜文库
+
+	 优质专栏
+		java，数据库，java面试题，等开发教程。
+	 架构师必看
+
+	 Linux命令查询
 	

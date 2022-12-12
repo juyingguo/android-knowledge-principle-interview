@@ -1,6 +1,8 @@
 1.js资源
-	1.1 https://www.runoob.com/js/js-function-definition.html
-	
+	1.1 教程
+		https://www.runoob.com/js/js-function-definition.html
+		
+		https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import
 	1.2 
 2. 一些基本知识点
 	2.1 javascript中加var和不加var的区别
@@ -161,6 +163,33 @@
 		</script>
 	2.17 javascript中的&& ||
 		https://www.cnblogs.com/alsf/p/7726344.html 
+	2.18 JS语法之：require
+		https://blog.csdn.net/liminwang0311/article/details/84329392
+			
+			JS中，一个模块加载另一个模块有两套规范：CommonJS(同步加载)规范和AMD(异步加载)规范。
+			
+			与{module.exports}一起分析
+			
+			require规范：
+			http://javascript.ruanyifeng.com/nodejs/module.html
+
+			require源码：
+			http://www.ruanyifeng.com/blog/2015/05/require.html
+			
+
+		JS中import怎么用？
+			https://huaweicloud.csdn.net/638edf71dacf622b8df8d17c.html?
+			
+			参考引用
+			https://learn-anything.cn/js-import?login=from_csdn
+			参考引用：
+			https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import
+				【含js教程】，参考【export】一起分析
+		js使用require 和 import 引入依赖的区别？
+			https://blog.csdn.net/liya_nan/article/details/81141244?
+			
+			https://blog.csdn.net/m0_66194642/article/details/127085347?
+			
 3. javascript 休眠几秒
 	https://www.cnblogs.com/linliu/p/13042391.html
 	https://www.jb51.net/article/52105.htm 

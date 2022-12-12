@@ -27,6 +27,12 @@
 			
 		《一步一步学Spring Boot 2微服务项目实战》
 			详细记录见：【14】
+			
+		《Spring Boot + Vue 全栈开发实战》
+			《Spring Boot + Vue 全栈开发实战》官方案例
+			https://gitee.com/lenve/spring-boot-vue-samples
+			
+			详细记录见：【15】
 	2.8 
 		https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/html/configuration-metadata.html#configuration-metadata-annotation-processor
 7. 12个优秀开源的 Spring Boot 学习项目，建议收藏
@@ -69,7 +75,39 @@
 				前端采用freemarker模板引擎，Bootstrap作为前端UI框架，集成了jpa、mybatis等框架。】
 				
 				添加用户薪水是空字符串报错，[salary=, imgPath=null]
-			
+				
+				
+				账号：admin 密码：123456
+				账号：soli 密码：123456
+				
+				cn.gson.oasys.services.daymanage.DaymanageServices#aboutmeschedule
+					两个函数参数数据一样，但结果却不同。
+					List<ScheduleList> myschedule = daydao.findByUser(user);
+					List<ScheduleList> otherschedule = daydao.findByUsers(users);
+				bug：
+					系统管理-类型管理-新增时（新增，aoa_test,测试），结果把第一条记录系统管理给修改了。
+					调试代码：cn.gson.oasys.controller.system.TypeSysController#testMess和session保存的值有关。
+					
+					分析：原因应该是：先点击编辑第一个条目，但没保存，而是点击取消，此时后端的的session并没有删除typeid。
+				系统管理-菜单管理	
+					cn.gson.oasys.controller.system.MenuSysController#testsysmenu
+						systemcontrol/menumanage
+						systemcontrol/menumanage.ftl
+					刷新：href=""，链接地址为空，但实际地址为：http://localhost/testsysmenu，如何做到的呢？
+					
+					cn.gson.oasys.controller.system.MenuSysController#changeSortId
+						@SessionAttribute("userId")//取session中的属性作为参数
+						
+						关联：
+						cn.gson.oasys.controller.login.LoginsController#loginCheck
+						session.setAttribute("userId", user.getUserId());
+					菜单修改，对于一级菜单的修改，父id修改是错误的：原本父id为0的，点击修改，不动内容，提交后父id变了。
+				用户管理-职位管理
+					添加职位成功后，提示框
+					../common/modalTip.ftl
+					src/main/resources/static/js/modalTip.js
+					
+					$("#thismodal").modal("toggle");//含义
 			7.4.5.2 
 				https://gitee.com/aaluoxiang/oa_system
 			
@@ -323,3 +361,53 @@
 		
 			https://blog.csdn.net/deniro_li/article/details/116322581
 			https://blog.csdn.net/weixin_44231805/article/details/121696107?
+15 《Spring Boot + Vue 全栈开发实战》
+	1. 
+		chapter01-2
+			可以直接使用 mvn 命令启动项目
+			mvn spring-boot:run
+			
+			mvn package
+				java -jar target/java_bottom_level_learning-1.0-SNAPSHOT.jar
+				
+				java jar 没有主清单属性_Spring Boot jar中没有主清单属性的解决方法
+					https://javaforall.cn/197108.html
+					
+				打包记录：
+					 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 58, column 21
+					[WARNING] 
+					[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+					[WARNING] 
+					[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+					
+					
+					##没有配置版本号。
+					#使用如下方式配置，自动下载对应版本的插件。
+						<parent>
+							<groupId>org.springframework.boot</groupId>
+							<artifactId>spring-boot-starter-parent</artifactId>
+							<version>2.0.3.RELEASE</version><!-- lookup parent from repository -->
+						</parent>
+	2.	
+			keytool -genkey -alias tomcathttps -keyalg RSA -keysize 2048 -keystore sang-2.p12 -validity 365
+			chapter01-2
+				需要配置tls https 后才能访问
+		2.5 Properties 配置
+			如果开发者不想使用 application.properties 作为配置文件名， 也可以自己定义。例如，在 resources 目录下创
+			建一个配置文件 app.properties ， 然后将项目 打成 jar 包，打包成功后 ，使用如下命令运行 ：
+			java -jar chapter02-2-0.0.1- SNAPSHOT . jar --spring.config.name=app
+			在运行时再指定配置文件的名字。使用 spring.config.location 可以指定配置文件所在目录（注
+			意需要以／结束〉 ，代码如下：
+			java -jar chapter02-2-0.0.1- SNAPSHOT . jar --spring.config.name=app
+			--spring.config.location=classpath:/
+		2.8 Profile
+			Spring Boot 中约定的不同环境下配置文件名称规则为
+				application-{profile}.properties, profile 占位符表示当前环境的名称
+				首先在 resources 目录下创建两个配置文件 ： application-dev.properties 和 application-prod.prope此时。
+				2 . 配置 application . prope叫es
+				然后在 application.properties 中进行配置 ：spring.profiles.active=dev
+				4.项目启动时配置
+					java - jar chapterOl-3-00.1-SNAPSHOT.jar --spring.profiles.active=prod
+	5. 
+		 连接数据库异常：
+		 详情见：【15-04-mysql-use-record.txt，24】

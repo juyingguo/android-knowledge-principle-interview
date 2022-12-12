@@ -1,3 +1,22 @@
+0.
+	0.1 
+	0.2 书籍，资源
+		疯狂HTML5CSS3JavaScript+讲义+源码.rar
+		疯狂前端开发讲义：jQuery+AngularJS+Bootstrap前端开发实战
+		
+		《JavaScript 语言精粹》 
+		《 JavaScript 高级程序设计》 
+		
+		《疯狂Ajax讲义(第3版)》.(李刚).[PDF]@ckook.pdf
+	0.3 jquery:	
+		jQuery基础教程（中文版）
+		JQUERY权威指南.pdf
+		[jQuery实战第二版].jQuery.in.Action.2nd.Edition.pdf
+		jQuery、jQuery UI及jQuery Mobile技巧与示例.pdf
+	0.4 axios
+		Axios 中文文档 | Axios 中文网 | Axios 是一个基于 promi...
+			https://www.axios-http.cn/
+	
 1. 取代Flash的HTML5技术（ H5 编写游戏的优点）
 	https://blog.csdn.net/xiaokunzhang/article/details/80713744
 2. 如何在HTML中播放flash

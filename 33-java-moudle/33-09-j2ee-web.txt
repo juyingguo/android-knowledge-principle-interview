@@ -274,6 +274,10 @@
 10 Spring Cloud
 	10.1
 		http://spring.io/projects/spring-cloud
+		
+		springcloud中文网
+		https://www.springcloud.cc/
+		
 	10.2 Spring Cloud教程（非常详细）
 		http://c.biancheng.net/springcloud/
 		
@@ -449,8 +453,9 @@
 		
 		只用jstl就行，作者说的standard就只指servlet-api.jar吧，有问题再说。
 19 13 个最火的 Java 开源项目推荐！总有一个适合你！
-		https://www.j4ml.com/t/55338
-		
+		https://www.j4ml.com/t/55338 //无法访问了
+		https://www.likecs.com/show-204131571.html
+		https://www.zhihu.com/question/26415445/answer/2538191425
 	更多开源项目推荐：https://github.com/Snailclimb/awesome-java
 
 	Guide 哥注：下面这些推荐的项目几乎都和 Spring Boot 有关，毕竟这年头没有理由再搞 SSM/SSH 这些东西了。
@@ -465,9 +470,12 @@
 	博客/论团/其他
 	Guide 哥注：下面这几个项目都是非常适合 Spring Boot 初学者学习的，下面的大部分项目的总体代码架构我都看过，个人觉得还算不错，不会误导没有实际做过项目的老哥，特别是前两个项目 vhr 和 favorites-web 。
 
-	vhr ：微人事是一个前后端分离的人力资源管理系统，项目采用 SpringBoot+Vue 开发。
+	vhr ：微人事是一个前后端分离的人力资源管理系统，项目采用 SpringBoot+Vue 开发。 
+		 详细记录见：【21】
 	favorites-web :云收藏 Spring Boot 2.X 开源项目。云收藏是一个使用 Spring Boot 构建的开源网站，可以让用户在线随时随地收藏的一个网站，在网站上分类整理收藏的网站或者文章。
 	VBlog ：V 部落，Vue+SpringBoot 实现的多用户博客管理平台!
+		https://gitee.com/lenve/VBlog
+		详细见：【22】
 	My-Blog ： My Blog 是由 SpringBoot + Mybatis + Thymeleaf 等技术实现的 Java 博客系统，页面美观、功能齐全、部署简单及完善的代码，一定会给使用者无与伦比的体验。
 	community ：开源论坛、问答系统，现有功能提问、回复、通知、最新、最热、消除零回复功能。功能持续更新中…… 技术栈 Spring、Spring Boot、MyBatis、MySQL/H2、Bootstrap。
 	权限管理系统
@@ -512,4 +520,84 @@
 		<a lay-event="edit" shiro:hasPermission="user:update"><i
             class="layui-icon febs-edit-area febs-blue">&#xe7a4;</i></a>
 	
+21
+	vhr ：微人事是一个前后端分离的人力资源管理系统，项目采用 SpringBoot+Vue 开发。   https://gitee.com/lenve/vhr
 	
+22 VBlog
+	https://gitee.com/lenve/VBlog
+	
+	作者仓库资源首页：https://github.com/lenve
+	
+	后端技术栈
+		后端主要采用了：
+
+		1.SpringBoot
+		2.SpringSecurity
+		3.MyBatis
+		4.部分接口遵循Restful风格
+		5.MySQL
+	前端技术栈
+		1.Vue
+		2.axios
+		3.ElementUI
+		4.vue-echarts
+		5.mavon-editor
+		6.vue-router
+		
+	VBlog项目代码理解之前端
+		https://blog.csdn.net/McEason/article/details/108022287
+	VBlog项目代码理解之后端
+		https://blog.csdn.net/mceason/article/details/108022407
+	VBlog项目代码理解之前后端交互
+		https://blog.csdn.net/McEason/article/details/108022197
+	Spring Security基础内容
+		https://blog.csdn.net/McEason/article/details/108022197
+	vueblog：
+		npm install 提示异常：
+			node-sass::
+			Cannot download "https://github.com/sass/node-sass/releases/download/v4.7.2/win32-x64-64_binding.node":
+						
+			查看官网：v4.7.2最大支持到node-9
+			下载v4.9.0
+			https://github.com/sass/node-sass/releases/download/v4.9.0/win32-x64-46_binding.node
+			
+			修改package.json
+				"node-sass": "^4.9.0"
+				删除package-lock.json
+			执行npm install会重新生成package-lock.json
+				此时该文件中生成的node-sass不是v4.9.0版本：
+				而是如下：					
+				https://github.com/sass/node-sass/releases/download/v4.14.1/win32-x64-64_binding.node
+				
+				暂时npm install 执行正常。
+				
+				后续在研究。因为package.json只能锁定模块的大版本号（版本号的第一位），不能锁定后面的小版本。所以你每次重新npm install时候拉取的都是该大版本下面最新的版本
+				如：v4.14.1 //2022.12.08
+	22.5 blogserver:后端
+		22.5.1
+			org.sang.config.WebSecurityConfig#configure
+			org.springframework.security.config.annotation.web.builders.WebSecurity#ignoring
+				源码注释：在匹配的HttpServletRequest请求是不可用
+				Web Security provided by Spring Security (including the SecurityContext) will not be available on HttpServletRequest that match.
+				
+		22.5.2		org.sang.mapper.UserMapper#getUserByNickname
+				关联查询可以优化。
+		22.5.3 用户模块
+			注册：
+				注册作者实现在哪里？后端有，前端没有
+				先使用http client操作。
+				###登录
+				POST http://localhost:8080/login
+				Content-Type: application/x-www-form-urlencoded
+
+				username=sang&password=123
+
+				###注册
+				POST http://localhost:8080/reg
+				Content-Type: application/x-www-form-urlencoded
+
+				username=shiyilang&password=123
+			22.修改角色，清空所有角色，保存失败，sql异常
+				org.sang.service.UserService#updateUserRoles及对应的sql
+				
+				打印sql:### SQL: INSERT INTO roles_user(rid,uid) VALUES

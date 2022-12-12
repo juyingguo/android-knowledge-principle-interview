@@ -70,6 +70,9 @@
 	四、android系列书籍。
 		4.1 《第一行代码 Android》、
 		4.2 《疯狂Android》
+			《疯狂Android讲义》
+			疯狂Android讲义（第4版）
+				安卓经典之作基于Android9全新升级，
 		4.3《Android开发艺术探索》、
 		4.4《Android群英传》
 		4.5 《Android 源码设计模式解析与实战》、

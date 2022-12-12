@@ -1,0 +1,50 @@
+1.
+	
+2.全球各个导航系统对比。
+	2.1 北斗全球组网！北斗、GPS、伽利略、格洛纳斯卫星数对比
+		https://net.blogchina.com/blog/article/721449094?
+	
+	2.2 关闭俄罗斯GPS，会有什么影响？GLONASS、GPS和北斗，谁更强？
+		https://baijiahao.baidu.com/s?id=1726570628535269802&wfr=spider&for=pc
+	2.3 bds和gps的区别
+		https://www.yxmspx.com/C13/163771.html
+3.客车班车校车车辆定位管理系统APP功能开发
+	https://zhuanlan.zhihu.com/p/336398461	
+	
+	{高稳定性 专业工程师为您对接车载GPS通讯协议-808协议、809协议、车载通讯协议}
+4.GPS定位系统源码可快速开发智慧校车系统
+	https://www.sohu.com/a/247529684_356972
+	
+	{GPSBD 通用系统 包含GPS行业核心技术能力，可快速开发出各类GPS行业应用系统！
+
+		并且提供丰富的接口，底层数据转发服务，方便快速的接入到现有的业务系统中！}
+	
+	4.2 GPSBD
+		http://www.gpsbd.com/
+		GPSBD卫星定位系统Simple版，部署教程
+			https://zhuanlan.zhihu.com/p/423149036
+			
+		https://gitee.com/gpsbd/web?_from=gitee_search
+		
+		https://base.gpsbd.com/
+		GPSBD卫星定位监控系统
+			https://market.aliyun.com/products/57002002/cmjj030561.html
+			
+		docker一键部署GPS定位系统，免费GPS定位系统搭建，GPSBD
+			https://baijiahao.baidu.com/s?id=1733062304631832266&wfr=spider&for=pc
+		https://github.com/zxcwhale/android_hal_gpsbds
+		
+	（完整源码）GPS源码，GPSBDpro版车辆，人员定位
+		https://zhuanlan.zhihu.com/p/515572382
+	GPS定位系统源码，GPSBDpro远程语音对讲+实时定位
+		https://blog.csdn.net/weixin_42956850/article/details/124931041
+	https://github.com/traccar/traccar
+		开源GPS定位系统traccar的搭建教程
+		https://blog.csdn.net/weixin_43598634/article/details/125213996
+		
+5 	校车GPS定位视频监控系统介绍
+	幼儿园校车GPS定位系统
+	基于物联网的幼儿园校车智能系统.pdf
+	基于安卓的校车实时定位系统的设计与实现.pdf
+	基于安卓的GPS移动定位及运行轨迹管理系统 
+	基于Android手机的校车监控系统.pdf 版权申诉

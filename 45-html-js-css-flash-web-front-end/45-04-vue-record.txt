@@ -1,23 +1,96 @@
 1.
-	Webpack 入门教程：http://www.runoob.com/w3cnote/webpack-tutorial.html
-
+	webpack 
+		宫方网站（ htttp://webpack.js.org/
+		Webpack 入门教程：http://www.runoob.com/w3cnote/webpack-tutorial.html
+	
 	官方文档：http://vuejs.org/v2/guide/syntax.html
 
 	中文文档: https://cn.vuejs.org/v2/guide/syntax.html
+		https://v2.cn.vuejs.org/v2/guide
+	Vue 桌面端组件库非常多，比较流行的有 Element 、 Vux 、 iView 、 mint-ui 、 muse-ui 等
+		Element
+		 http://element-cn.eleme.io/#/zh-CN/component 
+	前端框架 VUE 学习书籍或者网上教程推荐
+		https://zhuanlan.zhihu.com/p/376994298
+		https://www.zhihu.com/question/330345256/answer/2462159012
+		
+		《Vue.js实战-梁灏著》
+			书上代码：
+			https://github.com/icarusion/vue-book
+			git@github.com:icarusion/vue-book.git
+		《Vue.js 权威指南》
+		《循序渐进Vue.js 3前端开发实战》
+		《Vue.js设计与实现》
+		《Vue2 实践揭秘》
 2.	从零开始搭建Vue开发环境（windows）
 	https://blog.csdn.net/m0_46309087/article/details/108685832?
 3. 写vuejs用什么ide工具
 	https://www.php.cn/website-design-ask-482598.html
-4. vue做前后端分离两种方式实现数据交互，路径如何跳转的？
-5. vue前后端分离的主界面
 	
+	3.2 vue开发工具有哪些
+		https://www.php.cn/vuejs/483469.html
+		
+		Web前端：面向Web开发人员的顶级JavaScript开发工具和IDE
+		https://zhuanlan.zhihu.com/p/556801542
+4. vue做前后端分离两种方式实现数据交互，路径如何跳转的？
+5.vue插件、库等
+	5.1 vue-echarts基本使用
+		https://blog.csdn.net/qq_40323256/article/details/104946396
+		
+		vue-echarts介绍：https://github.com/ecomfe/vue-echarts/blob/HEAD/README.zh-Hans.md
+		
+		https://github.com/ecomfe/vue-echarts
+	5.2 ElementUI
+		https://element.eleme.cn/#/zh-CN
+		
+		Element-UI详解
+		https://blog.csdn.net/qq_42426159/article/details/102928417
+	5.3 mavon-editor
+	
+		https://github.com/hinesboy/mavonEditor/blob/master/README.md
+		
+		富文本：mavon-editor
+		https://blog.csdn.net/scarlett1017/article/details/123687729
 6. 查看项目中vue版本
 	https://www.csdn.net/tags/OtTagg1sNDM2NDgtYmxvZwO0O0OO0O0O.html
-	
+		
 	npm list vue   或者进入项目中package.json文件直接查看
 	查看Vue-cli版本
 
 	vue -V   或者 vue  --version
 7. 启动服务
 	npm run server
+8. 《Vue.js实战-梁灏著》
+	demo:
+		npm install 提示：
+			
+			Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+			The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+			> https://opencollective.com/core-js
+			> https://www.patreon.com/zloirock
+
+			Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+9. 
+	https://github.com/DotNetAge/vue-in-action
 	
+10. vue知识点记录
+	10.1 vue操作数组
+		10.1.1 vue filter( ) 过滤数组方法
+			https://blog.csdn.net/weixin_41796631/article/details/82924451
+	10.2 console.log
+		# 解决：Vue 代码中 console.log() 无法输出问题
+		https://blog.csdn.net/m0_49772478/article/details/121034837
+		
+		默认Filter有内容，如不能匹配打印的日志，会造成日志被过滤了。
+		
+	10.3 浏览器调试模式下提示。
+		Download the Vue Devtools extension for a better development experience:
+		https://github.com/vuejs/vue-devtools
+		main.js:18784 You are running Vue in development mode.
+		Make sure to turn on production mode when deploying for production.
+		See more tips at https://vuejs.org/guide/deployment.html
+	10.4  vue前后端分离的主界面
+	
+	10.5 第一个工程 my-project中，修改使用vue2-base-demo-debug\vue2-v-model.html中对应的内容时有异常。
+		Property or method "message" is not defined on the instance but referenced during render. Make sure that this property is reactive, either in the data option, or for class-based components, by initializing the property. See: https://v2.vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.

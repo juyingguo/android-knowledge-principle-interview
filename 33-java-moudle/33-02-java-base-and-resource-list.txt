@@ -115,7 +115,12 @@
 		，《Java并发编程实践》
 		,《Java Puzzlers》
 		Java TCP_IP Socket编程(原书第2版)[Android平台开发]
-			
+		疯狂JAVA讲义（第2版）--带书签版.pdf
+			https://fkjava.org/
+			第五版
+			鸠摩搜书：
+				疯狂JAVA讲义
+				疯狂JAVA讲义-源码
 	1.3 java nio书籍
 		java nio书籍_《Java NIO》这本书
 		-->https://blog.csdn.net/weixin_39914868/article/details/114037710
@@ -271,3 +276,11 @@
 		版权声明：本文为CSDN博主「First_____」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 		原文链接：https://blog.csdn.net/First_____/article/details/121563870
 	}
+24 file 
+	Java获取当前路径
+	https://blog.51cto.com/u_15061944/3573146
+	
+		File directory = new File("..");
+		directory.getCanonicalPath(); //得到的是C:\
+		directory.getAbsolutePath();    //得到的是C:\test\..
+		direcotry.getPath();                    //得到的是..

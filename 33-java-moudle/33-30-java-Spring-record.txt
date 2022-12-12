@@ -1,7 +1,15 @@
 1.
 2.
-3.
-4.
+	
+	
+3.Spring Tool Suite (STS)
+	https://spring.io/tools/
+4.spring-data-jpa
+	https://spring.io/projects/spring-data-jpa#overview
+	https://spring.io/projects/spring-data-jpa#samples
+	
+	Spring-data-jpa详解
+	https://blog.csdn.net/heijunwei/article/details/113815282
 5. Spring
 	详情查看：[33-30-java-Spring-record.txt]
 	5.0
@@ -67,6 +75,16 @@
 			}
 		5.2.9 Spring @Configuration详解
 			https://blog.csdn.net/zsj777/article/details/88345257
+		5.2.10 
+			java中qualifier注解怎么写_Spring实战之Qualifier注解用法示例
+				https://blog.csdn.net/weixin_28685483/article/details/114810731
+		5.2.11 @ResponseBody
+			自动将实体book转化为json返回。Book不管是否重写toString函数
+			com.blurooo.chapter1_2.controller.Hello
+			
+			如重写toString()
+			控制台打印：book print::Book{name='三国演义123', author='罗贯中'}
+			请求/book返回：{"name":"三国演义123","author":"罗贯中"}	
 	5.3 spring查看版本号：
 		org.springframework.core.SpringVersion#getVersion
 6. 《spring从入门到精通》详情记录
@@ -132,4 +150,106 @@
 		
 		#整合Struts2、Hibernate4.3和Spring4.2
 		#基本增删查改、Service和Action的抽取以及使用注解替换xml
+		
+10 Spring-orm
+	Hibernate+Spring-orm的基本方法总结
+	https://blog.csdn.net/weixin_34357436/article/details/90220705
+	
+	Hibernate的本质是对纯java JDBC的封装，Spring-orm是对Hibernate的封装。
+11 spring-security
+	11.1 
+		springsecurity 官方文档
+				https://spring.io/projects/spring-security
+			
+			网页最早版本文档为：5.2.15.RELEASE
+				https://docs.spring.io/spring-security/site/docs/5.2.15.RELEASE/reference/html5/
+			
+			对于更早版本，通过类比修改网页中的spring-security版本号进行访问。验证可行
+				https://docs.spring.io/spring-security/site/docs/5.1.6.RELEASE/reference/html5/
+				
+				或者访问如下地址，含所有版本：
+				https://docs.spring.io/spring-security/site/docs/
+			Securing a Web Application
+				https://spring.io/guides/gs/securing-web/
+				
+				详细记录见：[11.4]
+		Spring Security’s source code can be found on GitHub at：
+			https://github.com/spring-projects/spring-security/	
+		Spring Security中文文档
+			[5.1.2.RELEASE]
+			https://www.springcloud.cc/spring-security.html
+			
+	Spring Security实战 - 陈木鑫.pdf
+		博文视点，下载源码
+		http://www.broadview.com.cn/book/5152
+			{源码便只提供了“单点登录与CAS”和“Spring Security OAuth”两章}
+		
+		评论中：作者又提交了源码在这里（补充了章节源码）：
+				https://github.com/blurooo/spring-security-demo
+	
+	https://www.jiumodiary.com/
+		含优秀书籍购买网站，可以参考。
+		
+		spring security
+		Spring Security in Action.pdf
+		Spring Security 3 中文.pdf
+		Spring Security Essentials.pdf 英文原版
+		Virtual Pair Programmers - Spring Security Module 1 - Core Concepts
+			#1G size
+			
+		
+		深入浅出Spring Security 新书¥90
+			https://www.jiumodiary.com/
+			
+			大白菜博客可以下载：
+			https://cmsblogs.cn/3998.html
+				重要提示！一旦取消关注公众号后将无法再启用回复功能，不支持解封！
+				
+				搜索技巧，需要在百度搜索中关键字+大白菜播客才能搜多，网站本身没有搜索功能
+			java1234可以下载
+			http://www.java1234.com/a/javabook/javabase/2022/0510/22332.html
+			
+			
+			[202101][深入浅出 Spring Security][王松][著]
+
+			GitHub - lenve/spring-security-book-samples: 《深入浅出Spring Security》一书配套源码。
+			https://github.com/lenve/spring-security-book-samples
+		Spring Security安全框架实战教程
+			https://www.jiumodiary.com/
+			实际没有这本书
+		Spring Security实战 试读¥23.99
+	11.3 Spring Security实战 - 陈木鑫.pdf 详细记录
+		com.blurooo.chapter2_1.config.SecurityConfig#configure
+		
+		.loginPage("/myLogin.html")
+        .loginProcessingUrl("/login")
+		
+		理解：loginProcessingUrl("/login")中的/login应该为响应/myLogin.html中的表单中的post请求地址/login
+		如果是自定义登录界面就需要这样配置。如果使用spring security默认登录界面，不需要配置loginProcessingUrl
+		
+	11.4 Securing a Web Application
+	
+		git clone https://github.com/spring-guides/gs-securing-web.git
+		git clone git@github.com:spring-guides/gs-securing-web.git
+		
+		Gradle, run：
+			./gradlew bootRun
+		build the JAR：
+			./gradlew build 
+		run the JAR:
+
+			java -jar build/libs/gs-securing-web-0.1.0.jar
+		Maven, 
+		run the application
+			./mvnw spring-boot:run. 
+		build the JAR file with 
+			./mvnw clean package 
+		run the JAR file:
+			java -jar target/gs-securing-web-0.1.0.jar
+			
+		登录成功跳转规则：
+			When a user successfully logs in, they are redirected to the previously requested page that required authentication.
+			如果访问的上一个界面没有安全保护，登录后，会默认跳转到localhost主页。
+			如果访问的上一个界面有安全保护，登录后，会默认跳转到这个安全保护界面。
+			
 		

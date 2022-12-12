@@ -1,0 +1,6 @@
+1.
+	https://github.com/rabbitmq
+	
+2.RabbitMQ教程
+	2.1 RabbitMQ（一）：RabbitMQ快速入门
+		https://www.cnblogs.com/sgh1023/p/11217017.html
