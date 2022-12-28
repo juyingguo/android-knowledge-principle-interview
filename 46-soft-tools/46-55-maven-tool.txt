@@ -1,3 +1,21 @@
 1.
 	Maven 
 	https://baike.baidu.com/item/Maven/6094909?fr=aladdin 
+	
+2. idea配置maven项目（超详细）
+	https://blog.csdn.net/m0_67391270/article/details/123939104
+	
+	maven安装及配置（详细版）
+	https://blog.csdn.net/m0_67391270/article/details/123658356
+	
+		【配置本地仓库】【 配置私服】
+		
+	配置MAVEN_HOME
+		maven 的使用是在jdk的基础上，所以电脑必须有jdk
+		第一步：新增环境变量：MAVEN_HOME
+		在path环境变量中添加：%MAVEN_HOME%\bin
+		
+		测试：按住win+R 输入cmd，进入黑窗口控制台。输入命令： mvn -v
+	
+	配置本地仓库:
+		本地仓库的位置是通过maven的核心配置文件（settings.xml）来配置的。settings.xml文件位于maven安装目录：…apache-maven-3.6.1\conf\settings.xml 。

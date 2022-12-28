@@ -49,7 +49,15 @@
 		
 		配置：File->Settings->Langulages&FrameWorks->Schemas and DTDs 
 			http://mybatis.org/dtd/mybatis-3-config.dtd
-		
+	6.3 Mybatis注解方式@Insert
+		https://blog.csdn.net/m0_67394230/article/details/124318975
+			返回自增主键
+
+			@Insert({"insert into user(name, create_time) values(#{name}, #{createTime, jdbcType=TIMESTAMP})" })
+			@Options(useGeneratedKeys = true, keyProperty = "id")
+			int add2(Useruser);
+			—————
+			注解多了一个@Options, 注解设置了useGeneratedKeys 和 keyProperty ，用法同xml中的配置。
 7. 《MyBatis从入门到精通.pdf》刘增辉著
 	4.0
 		本书资源

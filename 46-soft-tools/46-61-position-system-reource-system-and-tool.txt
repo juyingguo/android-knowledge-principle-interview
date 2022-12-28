@@ -12,14 +12,20 @@
 	https://zhuanlan.zhihu.com/p/336398461	
 	
 	{高稳定性 专业工程师为您对接车载GPS通讯协议-808协议、809协议、车载通讯协议}
-4.GPS定位系统源码可快速开发智慧校车系统
-	https://www.sohu.com/a/247529684_356972
+4.GPS
+	4.0 
+		《GPS应用程序设计》
 	
-	{GPSBD 通用系统 包含GPS行业核心技术能力，可快速开发出各类GPS行业应用系统！
+	4.1 GPS定位系统源码可快速开发智慧校车系统
+		https://www.sohu.com/a/247529684_356972
+		
+		{GPSBD 通用系统 包含GPS行业核心技术能力，可快速开发出各类GPS行业应用系统！
 
-		并且提供丰富的接口，底层数据转发服务，方便快速的接入到现有的业务系统中！}
+			并且提供丰富的接口，底层数据转发服务，方便快速的接入到现有的业务系统中！}
 	
 	4.2 GPSBD
+		GPSBD --GPSBigData(GPS大数据)
+		
 		http://www.gpsbd.com/
 		GPSBD卫星定位系统Simple版，部署教程
 			https://zhuanlan.zhihu.com/p/423149036
@@ -34,14 +40,48 @@
 			https://baijiahao.baidu.com/s?id=1733062304631832266&wfr=spider&for=pc
 		https://github.com/zxcwhale/android_hal_gpsbds
 		
-	（完整源码）GPS源码，GPSBDpro版车辆，人员定位
-		https://zhuanlan.zhihu.com/p/515572382
-	GPS定位系统源码，GPSBDpro远程语音对讲+实时定位
+		（完整源码）GPS源码，GPSBDpro版车辆，人员定位
+			https://zhuanlan.zhihu.com/p/515572382
+		GPS定位系统源码，GPSBDpro远程语音对讲+实时定位
 		https://blog.csdn.net/weixin_42956850/article/details/124931041
-	https://github.com/traccar/traccar
+	4.3 traccar
+		https://github.com/traccar/traccar
 		开源GPS定位系统traccar的搭建教程
 		https://blog.csdn.net/weixin_43598634/article/details/125213996
 		
+		build doc
+			https://www.traccar.org/build/
+		
+			git clone --recursive https://github.com/traccar/traccar.git
+			
+			https://github.com/traccar/traccar-web
+	4.4 
+		https://gitee.com/mr-xiaoyu/gt06-gps-java?_from=gitee_search
+		
+		https://gitee.com/wibim
+			官网：https://www.ccwcar.com/
+			https://gitee.com/wibim/gps180-vue?_from=gitee_search
+			https://gitee.com/wibim/gps180
+			https://gitee.com/wibim/luat-jt808
+		
+		https://github.com/mendhak/gpslogger
+		https://github.com/barbeau/gpstest
+		https://github.com/osqzss/gps-sdr-sim
+	4.x 
+		4.x.1 服务端
+			q1,
+				D:\workspace-java\GPS-pro\traccar>gradlew assemble
+
+				> Configure project :
+				[project-enforcer :] Invalid bytecodeVersion for jackson-jaxrs-base-2.13.4.jar (com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.13.4) : META-INF/versions/11/module-in
+				fo.class: expected 55, but was 53
+				55对应java-11,安装java-11
+				
+			q2,Error:java: 无效的源发行版: 11
+				参考：【33-02-java-base-and-resource-list.txt】-【0.2.4】
+				
+				有些项目如：GPS-pro\traccar>gradlew.bat assemble(编译提示如上错误，命令写错了)
+				查看traccar官网，编译命令为gradlewassemble 编译ok	
 5 	校车GPS定位视频监控系统介绍
 	幼儿园校车GPS定位系统
 	基于物联网的幼儿园校车智能系统.pdf

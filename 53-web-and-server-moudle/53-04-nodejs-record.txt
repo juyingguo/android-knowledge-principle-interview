@@ -1,5 +1,10 @@
 1.	nodejs
 		https://nodejs.org/en/download/
+		
+		https://nodejs.org/dist
+			msi，7z包解压安装，配置环境变量。
+		指定版本地址搜索下载
+		https://nodejs.org/dist/v12.14.0/
 	npm:
 		https://www.npmjs.org/
 		https://www.npmjs.com/
@@ -17,6 +22,22 @@
 	
 	2.2 在win7 上nodejs10.23.0可以正常安装使用。
 		在win7 上nodejs14.15.1安装提示需要win8及以上版本。
+	2.3 Windows安装NodeJS(解压版)
+		https://blog.csdn.net/tongxin_tongmeng/article/details/127410047
+		
+	2.4 node与node_modules配置
+	
+	2.5 安装多个版本nodejs
+	
+	2.6 node与npm版本对应关系
+		node与npm版本对应关系以及使用nvm管理node版本
+		https://blog.csdn.net/weixin_43025151/article/details/125513578
+		
+		https://nodejs.org/zh-cn/download/releases/
+		
+	2.7 
+		node-10.23版本使用过程中path下自动添加一下目录：
+			C:\Users\username\AppData\Roaming\npm\node_modules;
 	
 3. 问题或是知识点记录
 	3.1 npm install 

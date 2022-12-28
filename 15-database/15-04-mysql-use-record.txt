@@ -72,14 +72,45 @@
 		{
 			在下载主界面顶部导航栏中中找到{Archives}
 		}
+	3.3 MySQL 5.5系列安装步骤教程(图解版)
+		【与安装mysql5.7，mysql8】不同。
+		https://blog.51cto.com/u_15746412/5558887
+		
+		通过msi安装程序安装方式，产生的my.ini文件。可以参考，还有安装和启动服务说明。
+		
+		mysqld  --console{MySQL 5.5不支持加 --initialize}
+			InnoDB: The error means that another program is using InnoDB's files.
+			重启电脑再试试。
+			
+		mysqld --defaults-file="C:\Program Files\MySQL\MySQL Server X.Y\my.ini"
+			配置完成后可以退出执行其它命令，不主动退出会一直停留在原界面
+		mysqld --install MySQLXY
+			安装服务，不要加 --defaults-file，虽然my.ini写的需要加，加了反而报错。{[ERROR] mysqld: unknown option '--install'}
+		
+		mysqld --initialize-insecure --user=mysql（使用-initialize初始化，用-insecure生成空密码。默认帐号root,后面的-user=mysql不更改。）
+		如果basedir配置错误，不是安装目录。会报错误：
+			221226 14:38:50 [ERROR] Can't find messagefile 'D:\ProgramData\MySQL\MySQLServer
+			5.5\share\errmsg.sys'
+			
+		mysqld --initialize-insecure --user=mysql（使用-initialize初始化，用-insecure生成空密码。默认帐号root,后面的-user=mysql不更改。）
+		
+		mysqld –remove mysqlServerName命令用来删除MySQL（sc delete mysql8）
+		net start mysql
+		停止服务的命令是 net stop mysql
+		
+		
+	3.4 如果是重新安装同一个版本。
+		原先的同一个版本的datadir是可以公用的。这样数据库就不用重新导入了。
+		datadir=D:/ProgramData/MySQL/MySQLServer5.7.37/Data/
 	3.5 在windows上安装不同(两个)版本的Mysql数据库的教程详解
 		https://www.runoob.com/mysql/mysql-install.html
 		https://blog.csdn.net/MissRen920/article/details/120061906
 		https://cloud.tencent.com/developer/article/1867460
 		
-		3.5.2 已有mysql-5.0.27,mysql-5.7.37,再mysql-8.0.28安装
+		3.5.2 已有mysql-5.0.27,mysql-5.7.37,再安装mysql-8.0.28安装
 			{
 				a1，先把已经运行的其它版本的mysql服务关掉。
+					命令行操作，需要在管理员权限下开启命令行。
 				
 				a2,win+R 输入regedit 之后找到路径计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
 					修改ImagePath,把值改成（如下，根据自己电脑路径填写）：
@@ -91,6 +122,7 @@
 					[以上是错误的]。
 					{参考已有的mysql配置（mysql-5.5）：
 						"C:\Program Files\MySQL\MySQL Server 5.5\bin\mysqld" --defaults-file="C:\Program Files\MySQL\MySQL Server 5.5\my.ini" MySQL
+						"D:\softs-install\MySQL Server 5.5\bin\mysqld" --defaults-file="D:\softs-install\MySQL Server 5.5\my.ini" MySQL3306
 						
 						{配置mysql-5.7,mysql-8.0.28多了mysqld，--defaults-file后面的配置没有加双引号。参考msi方式安装产生的msi}
 						{正确如下：
@@ -101,46 +133,14 @@
 							路径/或\，路径值是否带""，只有能正常访问，都没关系。根本原因还是配置参数问题，如多了[mysqld],多了[ --initialize --console]，少了服务名MYSQL7。
 						}
 					}
-				a3, 登录mysql（命令行输入mysql -uroot -P3307 -p +刚生成的那个root的初始密码登录，-P后面是端口）
 					
-					a3.2 mysql如何修改root用户的密码
-						https://blog.csdn.net/m0_67402026/article/details/123786803
-						{
-							a3.2.1多种方法：
-							f1:set password for root@localhost = password('root');#mysql5.7可以使用，mysql8.0.28使用这个方法报错：
-							
-							a3.2.2 用UPDATE直接编辑user表
-							use mysql提示：
-							ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.
-							
-							{解决办法：> alter user 'root'@'localhost' identified by '123456';}修改成功.
-							{参考播客：https://blog.csdn.net/weixin_41783910/article/details/119569995}
-						}
-						{
-							密码修改成功后。
-							Navicat 连接 mysql，连接时出现问题：
-							1251-Client does not support authentication protocol requested by server;consider upgrading MySQL client;
-							{参考：【MySql】Navicat 连接数据库出现1251 - Client does not support authentication protocol ...... 问题的解决方法
-								https://blog.csdn.net/piupiu78/article/details/122468163
-								{
-									把下面的两条指令逐条复制粘贴到控制台就可以了 ( 'password’为你的数据库登录密码 )。
-
-									alter user 'root'@'localhost' identified with mysql_native_password by 'password';
-									
-									flush privileges;
-									
-									{更换密码验证插件为mysql_native_password后可以访问了}
-								}
-								{
-									plugin说明：
-									caching_sha2_password
-									mysql_native_password
-								}
-							}
-						}
-						
+					a2.3 如果注册表中没有，就不用修改。
+				a3,
 				a4,执行：
 					mysqld --defaults-file=D:\juying\java2\mysql-8.0.28-winx64\my-mysql-8.0.28.ini  --initialize --console
+					mysqld --defaults-file=\softs-install\database\mysql-5.7.37-winx64\my-mysql-5.7.37.ini  --initialize --console
+					
+					如果不指定文件，默认加载的是安装根目录下的my.ini文件。(需要自己创建)
 					
 					{a4-error1:
 						{
@@ -176,14 +176,15 @@
 					
 					}
 				
-				a5，确保a4正确执行后再创建服务
+				a5，安装服务。
+					#确保a4正确执行后再创建服务
 					mysqld --install MYSQL8028 #服务名称
 					再根据a2修改
 				a6，彻底删除mysql服务的方法
 					https://www.yisu.com/zixun/171261.html
 					https://blog.csdn.net/piupiu78/article/details/122482377
 				a7, 启动服务
-					>net start MYSQL8028
+					>net start MYSQL8028 {　(net stop mysql8 是停止服务,sc delete mysql8是删除服务)}
 					The service is not responding to the control function.
 					More help is available by typing NET HELPMSG 2186.
 					
@@ -200,6 +201,45 @@
 						mysql7提示这个错误。
 						参考[3.5.2,a2]是配置错误引起的提示。并不是缺少vcruntime140_1.dll引起的。
 					}
+				a8, 登录mysql（命令行输入mysql -uroot -P3307 -p +刚生成的那个root的初始密码登录，-P后面是端口,根据配置而定）
+					a8.1 如果是系统重装，数据库data还在。可能重新配置后，密码还是之前修改后的密码。如：mysql5.5。
+						mysql5.7,mysql8都会有新的初始密码。
+					a3.2 mysql如何修改root用户的密码
+						https://blog.csdn.net/m0_67402026/article/details/123786803
+						{
+							a3.2.1多种方法：
+							f1:set password for root@localhost = password('root');#mysql5.7可以使用，mysql8.0.28使用这个方法报错：
+							
+							a3.2.2 用UPDATE直接编辑user表。（不同版本会不同，5.7或者8以上用这个方法）
+							use mysql提示：
+							ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.
+							
+							{解决办法：> alter user 'root'@'localhost' identified by '123456';}修改成功.
+							{参考播客：https://blog.csdn.net/weixin_41783910/article/details/119569995}
+						}
+						{
+							密码修改成功后。
+							Navicat 连接 mysql，连接时出现问题：
+							1251-Client does not support authentication protocol requested by server;consider upgrading MySQL client;
+							{参考：【MySql】Navicat 连接数据库出现1251 - Client does not support authentication protocol ...... 问题的解决方法
+								https://blog.csdn.net/piupiu78/article/details/122468163
+								{
+									把下面的两条指令逐条复制粘贴到控制台就可以了 ( 'password’为你的数据库登录密码 )。
+
+									alter user 'root'@'localhost' identified with mysql_native_password by 'password';
+									
+									flush privileges;
+									
+									{更换密码验证插件为mysql_native_password后可以访问了}
+								}
+								{
+									plugin说明：
+									caching_sha2_password
+									mysql_native_password
+								}
+							}
+						}
+						
 			}
 		3.5.3 win7 上安装mysql-8.0.28
 			{
@@ -225,6 +265,17 @@
 					}
 					
 			}
+			7tuEEE%sIq2k
+		3.5.4 
+			mysql 无法启动 0xc000007b,windows安装mysql5.7教程 （MSVCR120.dll丢失。应用程序无法正常启动0xc000007b）
+			https://blog.csdn.net/weixin_34512894/article/details/115884245
+			
+			MSVCR120.dll丢失
+			搜索电脑。
+			C:\Windows.old\Users\username\AppData\Roaming\youku\upgrade\8.0.8.12173\download\nplayer64下有
+			MSVCP120.dll丢失
+				上面文件夹下也有。
+			
 	3.6 MySQL.官网5.7的MSI文件只提供32位版本
 		如果32位软件可以在64位系统上使用，本地就可以使用32位软件，节省资源。{云端实际环境，可以使用64位软件，可以使用更多资源和内存}
 	3.7 MySQL详细安装教程，关于msi版和zip版详解
@@ -240,7 +291,20 @@
 			计算机-管理-服务与应用程序-服务：找到要启动的服务名称如：MYSQL8028
 			启动服务：>net start MYSQL8028
 		linux下：
-			
+	3.10 mysql驱动及配置连接
+		com.mysql.cj.jdbc.Driver
+		
+		Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+		
+		<entry key='database.driver'>com.mysql.jdbc.Driver</entry> //过时了。
+		
+		<entry key='database.driver'>com.mysql.cj.jdbc.Driver</entry>
+		<entry key='database.url'>jdbc:mysql://localhost:3307/traccar?allowMultiQueries=true&amp;autoReconnect=true&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;sessionVariables=sql_mode=''</entry>
+		<entry key='database.user'>root</entry>
+		<entry key='database.password'>root</entry>
+		
+		
+		
 4.mysql int(10)和int(11)区别
 	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j
 5.MySQL中主键是否需要设置为自增？

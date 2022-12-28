@@ -241,6 +241,14 @@
 			如果关闭该进程失败，解决可以参考：nginx: [emerg] bind() to 0.0.0.0:80 failed;[https://blog.csdn.net/cnds123321/article/details/113309358?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162359643716780271531330%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=162359643716780271531330&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v2~rank_v29-4-113309358.pc_v2_rank_blog_default&utm_term=%E6%97%A0%E6%B3%95%E7%BB%88%E6%AD%A2+PID+%E4%B8%BA+4+%E7%9A%84%E8%BF%9B%E7%A8%8B%E3%80%82%E3%80%81&spm=1018.2226.3001.4450]
 			
 			然后执行taskkill /pid 4 /f关闭这个进程，其中4就是上面的进程ID
+	11.2 类文件具有错误的版本 61.0,应为52.0
+		mybatis-spring-3.0.1类文件具有错误的版本 61.0,应为52.0
+		https://blog.csdn.net/qq_42460564/article/details/128257188
+		
+		博文内关联：Springbot启动报错-类文件具有错误的版本 61.0, 应为 52.0
+			{SpringBoot使用了3.0或者3.0以上，
+			因为Spring官方发布从Spring6以及SprinBoot3.0开始最低支持JDK17，所以仅需将SpringBoot版本降低为3.0以下即可。}
+	
 12,编程帮学习记录
 	在该项目中执行以下 mvn 命令查看器依赖树。
 	mvn dependency:tree

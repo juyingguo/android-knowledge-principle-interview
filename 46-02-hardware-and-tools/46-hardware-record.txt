@@ -125,4 +125,9 @@
 	(使)融合，熔接，结合;(使)熔化;(使保险丝熔断而)停止工作
 20 阻抗
 	20.1 https://baike.baidu.com/item/%E9%98%BB%E6%8A%97/332224
+21 usb-hdd含义
+		https://baike.baidu.com/item/USB-HDD/4965836?fr=aladdin
+		USB-HDD （即 USB Hard Drives 的缩写，硬盘模式），是一种硬盘仿真模式。此模式兼容性很高，但对于一些只支持USB-ZIP模式的电脑则无法启动。
 		
+22 格式盘文件FAT32、NTFS、exFAT有什么区别？
+	https://baijiahao.baidu.com/s?id=1648153887868486667&wfr=spider&for=pc		

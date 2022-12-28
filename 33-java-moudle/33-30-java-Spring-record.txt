@@ -219,14 +219,25 @@
 			实际没有这本书
 		Spring Security实战 试读¥23.99
 	11.3 Spring Security实战 - 陈木鑫.pdf 详细记录
-		com.blurooo.chapter2_1.config.SecurityConfig#configure
+		chapter2_1
+			com.blurooo.chapter2_1.config.SecurityConfig#configure
+			
+			.loginPage("/myLogin.html")
+			.loginProcessingUrl("/login")
+			
+			理解：loginProcessingUrl("/login")中的/login应该为响应/myLogin.html中的表单中的post请求地址/login
+			如果是自定义登录界面就需要这样配置。如果使用spring security默认登录界面，不需要配置loginProcessingUrl
 		
-		.loginPage("/myLogin.html")
-        .loginProcessingUrl("/login")
-		
-		理解：loginProcessingUrl("/login")中的/login应该为响应/myLogin.html中的表单中的post请求地址/login
-		如果是自定义登录界面就需要这样配置。如果使用spring security默认登录界面，不需要配置loginProcessingUrl
-		
+		chapter6_2 
+			配置session会话过期，不生效。
+			参考及配置事件销毁订阅：com.blurooo.chapter6_4.config.HttpSessionEventPublisher。
+			以及：为自定义的用户类覆写hashCode和equals两个方法即可
+		chapter6_4 	
+			在hashMap中， 以对象为
+			key必须覆写hashCode和equals两个方法（具体原因可以查阅hashMap的设计） 
+		chapter10		
+			10.3 搭建CAS Server
+				CAS Server的搭建基于GitHub项目： https://github.com/apereo/cas-overlay-template。 
 	11.4 Securing a Web Application
 	
 		git clone https://github.com/spring-guides/gs-securing-web.git

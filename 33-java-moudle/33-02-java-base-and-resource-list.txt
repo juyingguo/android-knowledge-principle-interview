@@ -24,6 +24,9 @@
 			原文 ：https://blog.csdn.net/weixin_44977185/article/details/97820773
 		}
 	0.2 jdk download:
+		
+		https://www.oracle.com/java/technologies/downloads/
+	
 		jdk1.6 download address
 		https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.html#jdk-6u25-oth-JPR 
 		jdk7：
@@ -32,7 +35,49 @@
 		0.2.3 java jdk 目录_深入浅出 Java JDK 安装目录及其子目录含义 10分钟详解 - 精简归纳...
 			https://blog.csdn.net/weixin_30531707/article/details/114429262
 			https://blog.51cto.com/u_15127607/3268280
-		
+		0.2.4 Error:java: 无效的源发行版: 11
+			Execution failed for task ':compileJava'
+			Error:java: 无效的源发行版: 11
+			https://blog.csdn.net/qq_41160301/article/details/124070846
+			https://blog.csdn.net/My_Sunshine_appear/article/details/125014684
+			
+			使用idea集成工具总的改动是4个地方：
+
+			1.File->Project Structure->Project，修改下图的两个地方
+			2.File->Project Structure->Modules，修改Sources和Dependencies
+			3. IntelliJ IDEA->Preferences->搜索Java找到Java Compiler，修改下图所示配置
+			4.由于是Maven项目，也可直接修改pom.xml文件里的jdk版本配置
+			以上都配置正确。使用其它简单项目，编译ok。
+		0.2.5 win10安装jdk11
+			https://blog.csdn.net/crazyBS/article/details/126898997
+			
+			jdk11安装包去掉了jre。只需要在系统环境变量中配置如下：
+				变量名：JAVA_HOME
+				变量值：D:\myjdk\jdkVersionManager\jdk11
+				编辑Path，添加新的路径：
+				%JAVA_HOME%\bin
+			
+			切换jdk版本
+				多个java jdk版本切换，新安装的jdk11配置后发现无效。
+				C盘中java.exe、javaw.exe、javaws.exe这三个文件，将其删除即可
+				我的windows8.1,在C:\Windows\System32目录
+		0.2.6 
+			Windows 8.1及Windows8 JDK环境变量配置
+			https://www.bbsmax.com/A/mo5kq1wQzw/
+			
+			系统变量名：JAVA_HOME
+
+			变量值：C:\Program Files\Java\jdk1.7.0_15 /*此路经为你安装Jave的路径*/
+			系统变量
+
+			变量名：CLASSPATH
+
+			变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+			
+			双击系统变量Path，在最后面添加： ;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin
+		0.2.7 window 下 win10 jdk8安装与环境变量的配置（超级详细）
+				https://blog.csdn.net/weixin_43731532/article/details/112461151
+			
 	0.3 android官方文档
 		https://developer.android.google.cn/training/camera/photobasics?hl=zh-cn
 	0.4 java教程
@@ -132,7 +177,19 @@
 3. JDK、JRE、JVM三者间的关系 
 	3.1 JDK、JRE、JVM三者间的关系 
 		https://www.cnblogs.com/iskandar/p/8933340.html
-		
+		https://www.cnblogs.com/dawn-sky/p/10683608.html
+	3.2 JAVA版本对应
+		49 = Java 5
+		50 = Java 6
+		51 = Java 7
+		52 = Java 8
+		53 = Java 9
+		54 = Java 10
+		55 = Java 11
+		56 = Java 12
+		57 = Java 13
+		58 = Java 14
+		***
 4. 对象与字符串互转。
 	4.1 对象与字符串互转 异常。
 		List<RemoteTtsBean> mList;
@@ -177,8 +234,17 @@
 		
 		https://blog.csdn.net/weixin_37766087/article/details/94999833 
 		
-		10.1.1 Java-Function接口函数使用
-			https://blog.csdn.net/qq_37465368/article/details/83862469 
+		10.1.1 java8中Function函数
+			Java8-Function接口函数使用
+				https://blog.csdn.net/qq_37465368/article/details/83862469 
+				https://blog.csdn.net/libaowen609/article/details/124518976?
+				
+				https://blog.csdn.net/CSDN_KONGlX/article/details/125670274
+			
+			verify code:	com.java8test.TestFunction
+			
+	10.2 Consumer
+		
 11. java 泛型
 	11.1 https://www.runoob.com/java/java-generics.html 
 
@@ -192,6 +258,9 @@
 		 N - Number（数值类型）
 		？ -  表示不确定的java类型 
 		：：这几个本质上没什么区别，只不过是一个约定好的代码，也就是说 使用大写字母A,B,C,D......X,Y,Z定义的，就都是泛型，把T换成A也一样，这里T只是名字上的意义而已
+	
+	11.3 Java 泛型 <? super T> 中 super 怎么 理解？与 extends 有何不同？
+		https://www.zhihu.com/question/20400700
 12 java注解-最通俗易懂的讲解
 	https://blog.csdn.net/qq1404510094/article/details/80577555 
 	原文：https://www.cnblogs.com/Tanyboye/p/9138412.html 

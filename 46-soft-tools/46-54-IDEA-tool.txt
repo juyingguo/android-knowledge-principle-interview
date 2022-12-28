@@ -2,9 +2,12 @@
 	https://www.jetbrains.com/idea/download/#section=windows
 	
 	官网地址：https://www.jetbrains.com/idea/
-
+		终极版和社区版对比。
+		 IntelliJ IDEA has a free and open source community edition
+		社区版安装插件，springboot等就可以啦
 	历史版本下载：https://www.jetbrains.com/idea/download/other.html
 	
+	关于IDEA的安装与使用请参考：https://github.com/judasn/IntelliJ-IDEA-Tutorial
 	1.3 从2021.2.3版本之后IDEA需要登录账号才能进入试用
 	
 2. idea 试用30天“无限续费”（亲测有效）idea破解 
@@ -211,3 +214,13 @@
 		解决方法：在idea界面右下方修改文件编码时去除BOM。}
 16，Idea maven 
 	idea maven Lifecycle
+17,电脑系统还原后，idea打不开，提示“api-ms-win-crt-stdio-l1-1-0.dll”丢失
+	https://blog.csdn.net/LLLLLLZZZZZ/article/details/126840338
+	
+	https://zhidao.baidu.com/question/589946539976628965.html
+	
+	A、去下个XX.dll，下好后打开系统盘，找到windows文件夹，打开后找到system32打开，把XX.dlll放进去
+	B,有些软件是自身文件夹内会有此文件，可以从网上下载再试或者重新安装客户端。
+	
+	搜索到很多软件都有这个文件。
+	如：D:\java2\sts-4.16.1\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257\jre\bin

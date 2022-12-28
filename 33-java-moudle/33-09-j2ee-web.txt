@@ -456,6 +456,8 @@
 		https://www.j4ml.com/t/55338 //无法访问了
 		https://www.likecs.com/show-204131571.html
 		https://www.zhihu.com/question/26415445/answer/2538191425
+		原文：
+		https://javaguide.cn/open-source-project/practical-project.html
 	更多开源项目推荐：https://github.com/Snailclimb/awesome-java
 
 	Guide 哥注：下面这些推荐的项目几乎都和 Spring Boot 有关，毕竟这年头没有理由再搞 SSM/SSH 这些东西了。
@@ -464,6 +466,7 @@
 	Guide 哥注：下面的商城系统大多比较复杂比如 mall ,如果没有 Java 基础和 Spring Boot 都还没有摸熟的话不推荐过度研究下面几个项目或者使用这些项目当作毕业设计。
 
 	mall ：mall 项目是一套电商系统，包括前台商城系统及后台管理系统，基于 SpringBoot+MyBatis 实现。
+		详情见：【23】
 	mall-swarm : mall-swarm 是一套微服务商城系统，采用了 Spring Cloud Greenwich、Spring Boot 2、MyBatis、Docker、Elasticsearch 等核心技术，同时提供了基于 Vue 的管理后台方便快速搭建系统。
 	onemall ：mall 商城，基于微服务的思想，构建在 B2C 电商场景下的项目实战。核心技术栈，是 Spring Boot + Dubbo 。未来，会重构成 Spring Cloud Alibaba 。
 	litemall ： 又一个小商城。litemall = Spring Boot 后端 + Vue 管理员前端 + 微信小程序用户前端 + Vue 用户移动端。
@@ -601,3 +604,37 @@
 				org.sang.service.UserService#updateUserRoles及对应的sql
 				
 				打印sql:### SQL: INSERT INTO roles_user(rid,uid) VALUES
+23, mall
+	23.2 mall前端项目
+		23.2.1 mall前端项目的安装与部署
+			Windows下的安装及部署
+			nodejs最好使用v12.14.0版本。 版本不对会导致npm install出错
+			https://nodejs.org/dist/v12.14.0/node-v12.14.0-win-x64.7z
+			
+			下载mall-admin-web的代码；
+
+			Github：https://github.com/macrozheng/mall-admin-web
+			Gitee：https://gitee.com/macrozheng/mall-admin-web
+			
+			切换至淘宝镜像源加速访问；
+
+			# 设置为淘宝的镜像源
+			npm config set registry https://registry.npm.taobao.org
+			# 设置为官方镜像源
+			npm config set registry https://registry.npmjs.org
+			
+			打开控制台输入命令安装相关依赖
+			npm install
+			
+			node-sass无法下载导致构建失败时可使用如下命令下载。
+
+			# linux
+			SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass
+			# window
+			set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass&& npm install node-sass
+		23.2.2 github上的mall电商项目admin账号默认密码是什么
+			https://tieba.baidu.com/p/7762460973
+			
+			自己改数据库啊，用passwordEncoder加密后存进去.
+			参考注册账户
+	23.3 mall后端项目

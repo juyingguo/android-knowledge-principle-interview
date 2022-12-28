@@ -10,6 +10,9 @@
 
 	1.4 GitHub:
 		https://github.com/
+	1.5 gitee
+		帮助中心，学习git相关技术
+		https://gitee.com/help#article-header0
 2. 几款Git GUI客户端，服务器工具 
 	2.0.0
 		关于客户端需要具备以下重要特性
@@ -59,6 +62,13 @@
 			ssh,or http/https
 			查看程序中手册：2.1.5. Authentication
 		}
+		2.3.1 【TortoiseGit】TortoiseGit安装和配置详细说明
+			https://blog.csdn.net/weixin_44299027/article/details/121178817
+			秘钥配置
+			PuTTY Key Generator
+			配置SSH，与【3】中生成的有细微差别。
+			
+			#说明：使用TortoiseGit进行和远端输出项目时，Pageant必须启动且添加了对应的私钥。
 		2.3.2{小乌龟(TortoiseGit)配置SSH
 			https://blog.csdn.net/weixin_44480167/article/details/119178116
 			https://blog.csdn.net/yjianlu/article/details/123541833
@@ -67,10 +77,16 @@
 			a2:公钥配置在github时提示错误
 				a2.1 Key is invalid. You must supply a key in OpenSSH public key format
 					https://blog.csdn.net/u012643122/article/details/98951147
-					配置个数如下：
+					配置内容如下：
 					{
 						ssh-rsa 公钥文件有效内容						
 					}
+					直接使用PuTTY Key Generator界面中添加好的格式；{
+						ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAA.... rsa-key-20221227
+						}
+						即为：已经添加了开头ssh-rsa 公钥 
+							结尾rsa-key-20221227就是注释（查看私钥文件可知）写不写都没关系。
+					
 				a2.2 https://blog.csdn.net/weixin_46566957/article/details/109319324
 					{博主使用在linux上用xsel查看；查看结果带有ssh-rsa 加上内容。因此只需加上ssh-rsa即可}
 		}
@@ -84,18 +100,43 @@
 	2.4 Git and gitgui
 		https://git-scm.com/downloads 
 		
+		Git-scm windows下的安装步骤
+			超详细Git 安装教程(Windows)[通俗易懂]
+			https://cloud.tencent.com/developer/article/2099150
+		
 		Git Gui的使用 
 		https://blog.csdn.net/wordwarwordwar/article/details/87281338 	
 	2.5 https://gitforwindows.org/
 		
-	2.6 一款极易搭建的自助 Git 服务
-		Gogs
+	2.6 有哪些好用的git服务器
+
+		链接：https://www.waimaiguai.com/technology/article/3592697
+			https://blog.csdn.net/weixin_34799243/article/details/123933703?
+	
+		2.6.1 一款极易搭建的自助 Git 服务
+			Gogs
+			
+			服务端搭建Git很简单，有更多需求不妨试试Gogs和Gitlab
+			
+			使用Gogs轻松搭建可能比GitLab更好用的Git服务平台；
+				https://wsgzao.github.io/post/gogs/
+				
+				https://blog.csdn.net/yyz_1987/article/details/87169052
+				
+				扩展阅读
+					Gogs - https://gogs.io/
+					GitLab - https://about.gitlab.com/
+					Bitnami GitLab Stack - https://bitnami.com/stack/gitlab
+			
+			【git私有服务器-gogs搭建】		
+			https://blog.csdn.net/weixin_34799243/article/details/123933703?
 3. git（Gui的使用、Ssh key 介绍及使用、Idea配置使用并使用git）
 	https://blog.csdn.net/weixin_45174537/article/details/102941957 
 	
 	第一步：本地电脑配置
 	   右键空白处，选择Git Bash Here打开相关命令窗口   
 	   1.配置用户名和邮箱（如果已经配置，就跳过）
+		 
 		 git config --global user.name "username"
 		 git config --global user.email "email"
 		 之后就会在C:\Users\Administrator下创建一个.gitconfig文件，内容为
@@ -104,8 +145,8 @@
 		 email = xxx@xxx.com
 		 
 		 注1：username和email即github的登陆帐号和注册邮箱
-		 注2：git config命令的–global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置
-
+		 注2：git config命令的–global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置		
+		 
 	   2.检查下自己之前有没有已经生成ssh
 		 cd ~/.ssh
 		 ls
@@ -401,6 +442,8 @@
 			如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 --global 选项重新配置即可，新的设定保存在当前项目的 .git/config 文件里。
 		b，全局配置文件如：
 			C:\Users\Administrator\.gitconfig
+			
+		 #此时配置的用户名和邮箱，会作为提交身份信息的一部分。并不同于注册的账号、用户名、邮箱，当然也可以相同。
 			
 11 clone 仓库报错
 	解决github unable to access 'https://github.com/...: Failed to connect to github.com port 443.

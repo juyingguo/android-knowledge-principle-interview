@@ -1,3 +1,11 @@
+0. 
+	
+	http://www.nndssk.com/
+	
+	系统吧
+	http://www.caeworld.cn/
+	
+
 1. window 创建txt,默认编码类型为ansi。设置默认生成为utf-8格式的txt
 
 	1.1 将电脑新建文本文档txt的默认编码从ANSI改为utf-8 
@@ -45,19 +53,50 @@
 	 https://jingyan.baidu.com/article/6c67b1d6a83d922787bb1eec.html 
 9. windows动态链接库[DLL]与Linux共享库[SO]技术浅析 
 	https://www.cnblogs.com/darling131499/p/4609097.html 
-10. 教你怎么用WIN7系统自带工具调整硬盘分区
+10.硬盘分区
 	
-	10.1 https://jingyan.baidu.com/article/fd8044fae86fb55031137ae5.html 
+	10.1 教你怎么用WIN7系统自带工具调整硬盘分区
+		https://jingyan.baidu.com/article/fd8044fae86fb55031137ae5.html 
 		
-	10.2 win7系统下如何把未分配的空间转给其他盘 
-		https://jingyan.baidu.com/article/fd8044fa2667fb5031137aed.html 
-	10.3 分区软件
-		a,分区助手。
-			https://www.disktool.cn/download.html 
-			分区教程：https://www.disktool.cn/jiaocheng/index.html?paproinst
-		b,键盘按下组合键WIN+R，输入“diskmgmt.msc”
-			单击 Win+R 并在运行框中键入“diskpart” 
-			https://www.disktool.cn/jiaocheng/extend-c-drive.html
+		10.1.2 win7系统下如何把未分配的空间转给其他盘 
+			https://jingyan.baidu.com/article/fd8044fa2667fb5031137aed.html 
+		10.1.3 分区软件
+			a,分区助手。
+				https://www.disktool.cn/download.html 
+				分区教程：https://www.disktool.cn/jiaocheng/index.html?paproinst
+			b,键盘按下组合键WIN+R，输入“diskmgmt.msc”
+				单击 Win+R 并在运行框中键入“diskpart” 
+				https://www.disktool.cn/jiaocheng/extend-c-drive.html
+	10.2 windows8系统自带的磁盘管理工具实现简单无损分区
+		http://www.nndssk.com/xtwt/91025ChJwcQ.html
+			
+		10.2.1  
+			WIN8.1 自带分区,c盘调整不了压缩卷.[默认调整不了]
+			https://ask.zol.com.cn/x/2559139.html
+			{最好用的分区软件是ADDS（Acronis Disk Director Suite ），无损分区。不要用以前的PQ、PM，那些的兼容性差。比系统自带的压缩卷强多了。}
+	10.3 硬盘分区管理工具推荐
+		https://zhuanlan.zhihu.com/p/551730189		
+		https://huifu.wondershare.cn/partition-editor-top-5-management.html
+		
+		
+		10.3.2 windows8,比较好用的分区软件
+			分区助手
+			https://www.disktool.cn/compare-edition.html
+			
+			https://www.diskgenius.cn/download.php
+				Windows把C盘容量分配到D盘或者把D盘容量分配到C盘
+				https://blog.csdn.net/weixin_44072535/article/details/103933616?
+				
+				diskgenius,空闲分区和要合并的分区要相邻才能合并吗？
+				
+			
+			q1,win8.1 华硕笔记本电脑
+				$Bitmap中有已使用的未用蔟， 簇号：9679497
+								
+					https://jingyan.baidu.com/article/22a299b51f8ed79e19376aa1.html
+					在命令行中输入“chkdsk /f /x c:”,最后的c:替换为需要检查的盘符
+				
+				$MFT位图中有标记为已使用的未用文件记录。文件：126682.
 11 win8.1中文版安装gpedit.msc
 	11.1 家庭版之类的，好象是没有，除非升级到专业版，或更高的企业版之类的试试。
 	11.2 在其他win8 电脑 上复制 组策略文件 在你电脑上 就好
@@ -87,6 +126,16 @@
 	13.0 
 		a1,下载【带有制作好的激活工具】，方便不用再找激活工具。
 		a2,带有md5，sha1等校验码。
+		a3,win10官网下载的系统需要激活吗
+			http://smart.163987.com/news/win10/47755.html
+		a4,window系统原版
+			https://msdn.itellyou.cn/
+			
+			{
+				1.HelloWindows  2.MSDN 山己几子木  3.MSDN 系统库  备选：NEXT, ITELLYOU  
+			}
+		a5,3款Win10 KMS激活工具，激活任何版本的Windows或Microsoft Office
+			https://zhuanlan.zhihu.com/p/538631160
 	13.1 win7
 		系统之家下载win7。
 		【已经带有制作好的激活工具。】
@@ -99,8 +148,18 @@
 			https://www.win7zhijia.cn/
 			{含win7,win10,...}
 		}
+		{
+			番茄花园 Ghost Win7 64位 免激活旗舰版 V2022.06 
+			https://www.xitongzhijia.net/win7/201908/161134.html
+		}
+	13.2 
+		{Windows8.1 64位 免费激活镜像文件 V2022.07 
+			https://www.xitongzhijia.net/windows8/223654.html
+			
+			G_Win8.1_X64_V2022.07.iso
+		}
 	
-	13.2 win10专业版和旗舰版的区别哪个更好_系统堂	
+	13.3 win10专业版和旗舰版的区别哪个更好_系统堂	
 		13.2.1 win10装机版和纯净版哪个好
 			https://www.win7zhijia.cn/win10jc/win10_44280.html
 			
@@ -143,8 +202,21 @@
 						MD5：294EB318CB27A0F2380568675B86FF8C
 						SHA1：5F9A8FAF68F4C56E705646287622461057A5CF55
 					}
-				}			
-				
+					[已下载]
+				}		
+				Win10 64位永久激活专业版 V2022.12 
+				https://www.xitongzhijia.net/win10/202212/267596.html
+				{
+					文件包名称：G_WIN10_X64_19045.2311.iso
+					文件大小：6296076288 字节
+					系统格式：NTFS
+					系统类型：64位
+					CRC32：7161BE20
+					MD5：B91FF58E9C49374EB642EC209520FE06
+					SHA1：EFBF66FB8091EA2B92A39CFD431BA113BB8B0BCD
+				}
+				#已下载。
+
 			}
 		}
 		http://www.win10.biz/
@@ -158,7 +230,18 @@
 		}
 		
 14 大白菜制作u盘装机工具
-	http://dbc.vhwkcl.cn/udisk.html
+
+	14.1 bigbaicai 和 dabaicai 哪个是大白菜官网
+		https://zhidao.baidu.com/question/1756711346986180948.html
+		①winbaicai
+		②dabaicai
+		这两个是真的.
+		
+		http://www.winbaicai.com/down.html
+		http://www.winbaicai.com/help.html
+		
+		http://dbc.vhwkcl.cn/udisk.html
+	
 15 操作系统和各类编辑器的豆沙绿设置
 	修改windows所有编辑器的颜色
 	https://blog.csdn.net/u012060033/article/details/107561706

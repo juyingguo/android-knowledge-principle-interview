@@ -1,6 +1,9 @@
 1.
 	https://github.com/rabbitmq
 	
+	下载Erlang的OPT 25，下载地址：https://erlang.org/download/otp_versions_tree.html
+	
+	下载RabbitMQ的3.10.5版本，下载地址：https://github.com/rabbitmq/rabbitmq-server/releases
 2.RabbitMQ教程
 	2.1 RabbitMQ（一）：RabbitMQ快速入门
 		https://www.cnblogs.com/sgh1023/p/11217017.html

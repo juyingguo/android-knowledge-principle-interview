@@ -1,0 +1,68 @@
+1.
+	1.1 
+		下载地址：https://www.mongodb.com/download-center/community
+		
+	1.2
+		MongoDB Compass 是一个图形界面管理工具，我们可以在后面自己到官网下载安装，下载地址：https://www.mongodb.com/download-center/compass。
+	1.3 教程
+		https://www.runoob.com/mongodb/mongodb-tutorial.html
+	
+2.安装 MongoDB
+	2.1 Windows 平台安装 MongoDB
+		2.1.1 安装MongDB教程（zip版本）
+			https://blog.csdn.net/mghoumin/article/details/126899183
+			
+			（1）解压后的文件中新建data 和 logs两个目录，data目录下再新建一个db文件夹，目录 logs 下新建一个 mongodb.log 文件，外层解压跟bin 同级别新建mongo.config 配置文件。
+			（2） 在mongo.config 新建的配置文件中添加如下配置信息，
+
+				具体内容如下：
+				dbpath=D:\ruanjian\mongodb\data\db #数据库路径（根据解压实际地址）
+
+				logpath=D:\ruanjian\mongodb\logs\mongodb.log #日志输出文件路径
+
+				#logappend=true #错误日志采用追加模式
+
+				#journal=true #启用日志文件，默认启用
+
+				#quiet=true #这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false
+
+				port=27017 #端口号默认为27017
+				————
+			（3）
+					使用管理员身份打开cmd 控制台进入解压包的 	bin（本机是D:\mongodb\bin）目录下输入如下命令
+
+					 mongod --dbpath D:\ruanjian\mongodb\data\db --logpath D:\ruanjian\mongodb\logs\mongodb.log --logappend
+					————
+					运行命令后不要关闭窗口，打开http://localhost:27017
+					
+					q：无法定位程序输入点BcryptHash于动态链接库mongod.exe.
+						环境：win8.1,mongodb-5.0.14
+						
+						#Win8系统打开程序提示“无法定位程序输入点于动态链接库
+							https://www.win7zhijia.cn/win8jc/win8_17101.html
+							**************该方法，导致电脑蓝屏************
+							解决方法：
+						　　1、进入C盘Windows文件夹→ system32文件夹→找到dwmapi.dll文件；
+						　　2、将此文件重命名为dwmapi.dll.bak文件即可。
+							**************该方法，导致电脑蓝屏************
+			4）添加环境变量
+				添加mongodb下的bin文件夹所在位置
+				
+				添加完环境变量之后打开cmd输入 mongo即可进入mongodb服务
+			（5）注册service服务 以便于以后好启动 ，使用管理员身份打开cmd 控制台，输入以下命令注册服务：-----> 便于今后使用
+
+				 mongod --dbpath D:\ruanjian\mongodb\data\db --logpath D:\ruanjian\mongodb\logs\mongodb.log --logappend --install --serviceName "MongoDB"
+				———
+		2.1.2,,
+		2.1.3,【mongodb】msi模式安装
+			https://www.runoob.com/mongodb/mongodb-window-install.html
+			
+			https://blog.csdn.net/J_wb49/article/details/103055017?
+			对比安装参考：
+			https://www.macrozheng.com/mall/deploy/mall_deploy_windows.html#mongodb
+				
+				#取消MongoDB Compass的安装选项（不取消安装极慢），需要可自行安装；
+				
+				#如果需要移除MongoDB服务，只需使用管理员权限运行cmd工具，并输入如下命令。
+
+					sc.exe delete MongoDB

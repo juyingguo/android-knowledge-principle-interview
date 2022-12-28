@@ -5,6 +5,31 @@
 	Reference 很关键。 User Guide 就是介绍 Gradle 的一本书， 而 DSL Reference 是 Gradle API
 	的说明。
 	
+	0.2 Gradle的安装与配置
+		https://www.cnblogs.com/NyanKoSenSei/p/11458953.html
+		
+		IDEA Gradle配置与使用
+		http://t.zoukankan.com/expiator-p-11774552.html
+		
+		IDEA如何配置 Gradle 及 Gradle 安装过程（详细版）
+		https://blog.csdn.net/GoodburghCottage/article/details/128169907
+	0.3 Gradle下载的依赖包位置
+		https://blog.csdn.net/m0_58433476/article/details/123529051
+		
+		Gradle下载依赖jar包位置修改
+			http://t.zoukankan.com/Jimc-p-10082458.html
+			
+			1、配置环境变量
+				添加变量GRADLE_USER_HOME，值为gradle依赖下载存放路径
+			在IDEA下手动配置依赖下载路径
+				对于IDEA来说没有用（当然上面的环境变量还是要添加的），在IDEA中使用gradle需要修改下面的路径
+	0.4 被误导的gradle使用本地maven仓库--gradle可以使用maven仓库中存在的依赖包但不能复用仓库。
+		https://betheme.net/news/txtlist_i77231v.html?action=onClick
+		
+		gradle下载来的存放jar目录，会有包含md5值的目录：如下：
+			C:\Users\username\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.4\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar
+			
+			而maven下载存放jar的目录没有md5值
 1. 构建apk指定名称即版本号等信息。
 	Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=debug, filters=[]}} of type     com.android.build.gradle.internal.api.ApkVariantOutputImpl. 
 	
