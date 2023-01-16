@@ -1,0 +1,1063 @@
+
+腾讯课堂-享学课堂安卓架构VIP第一期无密180G(视频+课件+源码)，阿里云盘+百度云盘
+ 2021年7月4日  298条评论  19,902次阅读, 欢迎大家给文章或资源打分，提高总体用户体验
+1 星2 星3 星4 星5 星 (13 人参与投票, 平均: 3.85总分 5)
+文章目录
+资源简介
+近几年，Android 开发的套路日趋成熟，越来越多的 Android 工程师获得了「高级」的称号，也有不少人在参与公司的 App 从无到有再到火爆的整个开发过程中，顺理成章地拿到了 Leader 职位。但对于自己的水平，多数人却并不满意，甚至有不少人觉得自己的水平被同事和老板「高估」了。市场真正需要的所谓「高级架构师」到底需要具备什么条件？在此和大家探讨一下 Android 工程师在当下这个时代该如何真正的成为高级架构师。
+
+PS:所有的架构师，都不是光靠学习就可以建立起来的，毕竟架构师需要的知识储备非常多，同时对实战项目的经验及BUG避坑等等都要有很多经验，这个号称对标阿里P7岗的职业技能课程应该有很多实例可以帮助小伙伴成长。
+
+前几天分享了享学课堂安卓架构课程的第二期，很多人都在等，由于资源获取途径的特殊性导致了暂时不能公开。今天整理文件的时候，竟然发现了第一期的课程，放出来给大家共享，课程有点大，所以我打包上传了。到时候失效也可以用秒传链接来轻松补链。
+
+《腾讯课堂-享学课堂安卓架构VIP第一期无密180G(视频+课件+源码)，阿里云盘+百度云盘》
+
+资源目录
+\009-享学课堂安卓架构第一期
+├01 flutter
+│  ├Dart异步编程(1)-.mp4
+│  ├Dart异步编程(2)-.mp4
+│  ├dart类与异步(1)-.mp4
+│  ├dart类与异步(2)-.mp4
+│  ├Dart语法-操作符、方法与异常(1)-.mp4
+│  ├Dart语法-操作符、方法与异常(2)-.mp4
+│  ├flutter介绍与环境安装(1)-.mp4
+│  ├测试课程（不需要观看）(1)-.mp4
+│  ├测试课程（不需要观看）(2)-.mp4
+│  ├测试课程（不需要观看）(3)-.mp4
+│  ├登录与注册(1)-.mp4
+│  ├登录与注册(2)-.mp4
+│  ├第一个Flutter界面(1)-.mp4
+│  ├第一个Flutter界面(2)-.mp4
+│  ├路由与导航(1)-.mp4
+│  ├路由与导航(2)-.mp4
+├02 flutterjava语言进阶
+│  ├flutter_plugin(1)-.mp4
+│  ├flutter_plugin(2)-.mp4
+│  ├Flutter动画与打包(1)-.mp4
+│  ├Flutter动画与打包(2)-.mp4
+│  ├Flutter进阶必学--app状态管理(1)-.mp4
+│  ├Flutter进阶必学--app状态管理(2)-.mp4
+│  ├反射及动态代理模式(1)-.mp4
+│  ├反射及动态代理模式(2)-.mp4
+│  ├多线程与Android线程性能优化(1)-.mp4
+│  ├多线程与Android线程性能优化(2)-.mp4
+│  ├收藏文章与网站(1)-.mp4
+│  ├收藏文章与网站(2)-.mp4
+│  ├无限轮播Banner实现(1)-.mp4
+│  ├无限轮播Banner实现(2)-.mp4
+│  ├深入学习Java中的泛型(1)-.mp4
+│  ├深入学习Java中的泛型(2)-.mp4
+│  ├线程池原理与AsyncTask(1)-.mp4
+│  ├线程池原理与AsyncTask(2)-.mp4
+├03 Java语言进阶
+│  ├Android序列化-JSON深入理解(1)-.mp4
+│  ├Android序列化-JSON深入理解(2)-.mp4
+│  ├dagger2(1)-.mp4
+│  ├dagger2(2)-.mp4
+│  ├java8 lambda表达式与注解基础(1)-.mp4
+│  ├java8 lambda表达式与注解基础(2)-.mp4
+│  ├Rxjava(1)-.mp4
+│  ├Rxjava(2)-.mp4
+│  ├RxJava(3)-.mp4
+│  ├RxJava(4)-.mp4
+│  ├内存分配与回收策略~深入理解垃圾回收器(1)-.mp4
+│  ├内存分配与回收策略~深入理解垃圾回收器(2)-.mp4
+│  ├序列化(1)-.mp4
+│  ├序列化(2)-.mp4
+│  ├热修复核心原理——ClassLoader类加载(1)-.mp4
+│  ├热修复核心原理——ClassLoader类加载(2)-.mp4
+│  ├虚拟机的前世今生，深入理解JVM内存区域(1)-.mp4
+│  ├虚拟机的前世今生，深入理解JVM内存区域(2)-.mp4
+├03 Java语言进阶.zip
+├04 java语言进阶FrameWork层源码解析
+│  ├Android AMS 浅析(1)-.mp4
+│  ├Android AMS 浅析(2)-.mp4
+│  ├Android WMS面试要点(1)-.mp4
+│  ├Android WMS面试要点(2)-.mp4
+│  ├Android 年薪百万的进阶攻略 - PKMS(1)-.mp4
+│  ├Android 年薪百万的进阶攻略 - PKMS(2)-.mp4
+│  ├Java IO 实战——AES加密让你的APK牢不可破(1)-.mp4
+│  ├Java IO 实战——AES加密让你的APK牢不可破(2)-.mp4
+│  ├Java IO在Android中应用“基础”篇(1)-.mp4
+│  ├Java IO在Android中应用“基础”篇(2)-.mp4
+│  ├从四个视角理解Activity的启动模式(1)-.mp4
+│  ├从四个视角理解Activity的启动模式(2)-.mp4
+│  ├从架构师的角度分析Android Handler源码(1)-.mp4
+│  ├从架构师的角度分析Android Handler源码(2)-.mp4
+│  ├寻找滑动冲突的事件根源(1)-.mp4
+│  ├寻找滑动冲突的事件根源(2)-.mp4
+│  ├手写Activity插件化(1)-.mp4
+│  ├手写Activity插件化(2)-.mp4
+│  ├进程间最基本的通信原理你了解多少(1)-.mp4
+│  ├进程间最基本的通信原理你了解多少(2)-.mp4
+├04 java语言进阶FrameWork层源码解析.zip
+├05-06 高级UI
+│  ├Android Webview独立进程架构实战（上）(1)-.mp4
+│  ├Android 自定义系列七(1)-.mp4
+│  ├Android 自定义系列七(2)-.mp4
+│  ├Android 自定义系列九(1)-.mp4
+│  ├Android 自定义系列九(2)-.mp4
+│  ├Android 自定义系列八(1)-.mp4
+│  ├Android 自定义系列八(2)-.mp4
+│  ├Android自定义系列一(1)-.mp4
+│  ├Android自定义系列一(2)-.mp4
+│  ├Android自定义系列三(1)-.mp4
+│  ├Android自定义系列三(2)-.mp4
+│  ├Android自定义系列二(1)-.mp4
+│  ├Android自定义系列二(2)-.mp4
+│  ├Android自定义系列五(1)-.mp4
+│  ├Android自定义系列五(2)-.mp4
+│  ├Android自定义系列六(1)-.mp4
+│  ├Android自定义系列六(2)-.mp4
+│  ├Android自定义系列四(1)-.mp4
+│  ├Android自定义系列四(2)-.mp4
+│  ├CardView+RecyclerView实现UI炫酷界面(1)-.mp4
+│  ├CardView+RecyclerView实现UI炫酷界面(2)-.mp4
+│  ├ViewPager 源码解析与性能优化(1)-.mp4
+│  ├ViewPager 源码解析与性能优化(2)-.mp4
+│  ├深度解析RecyclerView性能缓存机制(1)-.mp4
+│  ├深度解析RecyclerView性能缓存机制(2)-.mp4
+│  ├独立使用Git命令完成代码管理(1)-.mp4
+│  ├独立使用Git命令完成代码管理(2)-.mp4
+├07 高级UI网络架构
+│  ├Android Webview独立进程架构实战（下）(1)-.mp4
+│  ├Android Webview独立进程架构实战（下）(2)-.mp4
+│  ├Android 网络编程基础一(1)-.mp4
+│  ├Android 网络编程基础一(2)-.mp4
+│  ├Android应用进程的管理以及保活拉活(1)-.mp4
+│  ├Android应用进程的管理以及保活拉活(2)-.mp4
+│  ├hook源码实现换肤(1)-.mp4
+│  ├hook源码实现换肤(2)-.mp4
+│  ├从零开始MVVM新闻客户端架构实战（1）(1)-.mp4
+│  ├从零开始MVVM新闻客户端架构实战（1）(2)-.mp4
+│  ├从零开始MVVM新闻客户端架构实战（2）(1)-.mp4
+│  ├从零开始MVVM新闻客户端架构实战（2）(2)-.mp4
+│  ├从零开始MVVM新闻客户端架构实战（3）(1)-.mp4
+│  ├从零开始MVVM新闻客户端架构实战（3）(2)-.mp4
+│  ├从零开始MVVM新闻客户端架构实战（4）(1)-.mp4
+│  ├从零开始MVVM新闻客户端架构实战（4）(2)-.mp4
+│  ├告别繁琐的AIDL，IPC通信框架设计与实现(1)-.mp4
+│  ├告别繁琐的AIDL，IPC通信框架设计与实现(2)-.mp4
+├08 网络架构性能优化
+│  ├Android 网络编程基础三(1)-.mp4
+│  ├Android 网络编程基础三(2)-.mp4
+│  ├Android 网络编程基础二(1)-.mp4
+│  ├Android 网络编程基础二(2)-.mp4
+│  ├Android 网络编程基础四(1)-.mp4
+│  ├Android 网络编程基础四(2)-.mp4
+│  ├OkHttp源码解析，五大拦截器分析(1)-.mp4
+│  ├OkHttp源码解析，五大拦截器分析(2)-.mp4
+│  ├OkHttp源码解析，请求流程：分发器与拦截器(1)-.mp4
+│  ├OkHttp源码解析，请求流程：分发器与拦截器(2)-.mp4
+│  ├性能优化之数据结构优化(1)-.mp4
+│  ├性能优化之数据结构优化(2)-.mp4
+├09 性能优化NDK
+│  ├Android NDK概要与C语言简介(1)-.mp4
+│  ├Android NDK概要与C语言简介(2)-.mp4
+│  ├Android 存储优化(1)-.mp4
+│  ├Android 存储优化(2)-.mp4
+│  ├Android 性能优化专题一(1)-.mp4
+│  ├Android 性能优化专题一(2)-.mp4
+│  ├Android 性能优化专题二(1)-.mp4
+│  ├Android 性能优化专题二(2)-.mp4
+│  ├Android 电量优化(1)-.mp4
+│  ├Android 电量优化(2)-.mp4
+│  ├Android 适配方案(1)-.mp4
+│  ├Android 适配方案(2)-.mp4
+│  ├apk全方位健身 打造完美身材(1)-.mp4
+│  ├apk全方位健身 打造完美身材(2)-.mp4
+│  ├Bitmap内存管理与长图加载(1)-.mp4
+│  ├Bitmap内存管理与长图加载(2)-.mp4
+│  ├又是抖动又是泄漏，内存你在干嘛？(1)-.mp4
+│  ├又是抖动又是泄漏，内存你在干嘛？(2)-.mp4
+│  ├性能优化之代码结构优化（设计模式）(1)-.mp4
+│  ├性能优化之代码结构优化（设计模式）(2)-.mp4
+├10-12 NDK
+│  ├Android使用giflib实现高效gif动画加载一(1)-.mp4
+│  ├Android使用giflib实现高效gif动画加载二(1)-.mp4
+│  ├C++基础一(1)-.mp4
+│  ├C++基础七(1)-.mp4
+│  ├C++基础三(1)-.mp4
+│  ├C++基础二(1)-.mp4
+│  ├C++基础五(1)-.mp4
+│  ├c++基础八(1)-.mp4
+│  ├C++基础六(1)-.mp4
+│  ├C++基础四(1)-.mp4
+│  ├CMake基础(1)-.mp4
+│  ├C语言三(1)-.mp4
+│  ├C语言三(2)-.mp4
+│  ├C语言二(1)-.mp4
+│  ├C语言二(2)-.mp4
+│  ├C语言五(1)-.mp4
+│  ├C语言五(2)-.mp4
+│  ├C语言六(1)-.mp4
+│  ├C语言六(2)-.mp4
+│  ├C语言四(1)-.mp4
+│  ├C语言四(2)-.mp4
+│  ├FFmpeg视频播放器一ffmpeg介绍与音视频基础(1)-.mp4
+│  ├JNI基础之JNI变量涵义与JNI字符串调用(1)-.mp4
+│  ├JNI开发之JNI编译与运行(1)-.mp4
+│  ├JNI开发之JNI编译与运行(2)-.mp4
+│  ├JNI开发之JNI调用java函数与JNI引用(1)-.mp4
+│  ├MMKV原理与实现三(1)-.mp4
+│  ├MMKV的原理与实现二(1)-.mp4
+│  ├NDK开发实战——身份证识别(1)-.mp4
+│  ├腾讯开源组件MMKV的原理与实现一(1)-.mp4
+├13,15,17, NDK开源框架
+│  ├360插件化1（框架）(1)-.mp4
+│  ├360插件化2（框架）(1)-.mp4
+│  ├360插件化3（框架）(1)-.mp4
+│  ├ffmpeg四，音频解码与OpenSL ES播放(1)-.mp4
+│  ├FFmpeg视频播放器三 本地绘制与音频解码(1)-.mp4
+│  ├FFmpeg视频播放器二 视频解码与本地绘制(1)-.mp4
+│  ├ffmpeg视频播放器五，音视频同步(1)-.mp4
+│  ├Glide手写之缓存机制(1)-.mp4
+│  ├Glide手写实现(1)-.mp4
+│  ├Glide生命周期管理(1)-.mp4
+│  ├JavaPoet与组件化项目搭建的过程详解(1)-.mp4
+│  ├OpenCV人脸定位实践(1)-.mp4
+│  ├OpenCV人脸定位样本训练(1)-.mp4
+│  ├OpenCV车牌识别1(1)-.mp4
+│  ├OpenCV车牌识别2(1)-.mp4
+│  ├OpenCV车牌识别3(1)-.mp4
+│  ├OpenGL视觉效果处理，小黄人大眼萌(1)-.mp4
+│  ├OpenGL视觉效果处理，贴纸与美颜(1)-.mp4
+│  ├OpenGL视觉效果，灵魂出窍特效原理与实现(1)-.mp4
+│  ├RTMP手机录屏直播上(1)-.mp4
+│  ├热修复，兼容与Gradle自动补丁生成（框架）(1)-.mp4
+│  ├热修复，类加载与修复原理（框架）(1)-.mp4
+│  ├组件化之手写路由库进行通信(1)-.mp4
+│  ├组件化之路由管理器编写(1)-.mp4
+│  ├组件化项目详细部署与交互处理（框架）(1)-.mp4
+├14 NDKkotlin
+│  ├kotlin语法补课(1)-.mp4
+│  ├kotlin语法难点知识与项目实战(1)-.mp4
+│  ├kotlin语言基础(1)-.mp4
+│  ├kotlin项目实战一(1)-.mp4
+│  ├kotlin项目实战二(1)-.mp4
+│  ├RTMP手机录屏直播下(1)-.mp4
+│  ├RTMP摄像头播-音频编码与推流(1)-.mp4
+│  ├RTMP摄像头直播-CameraX预览与数据获取(1)-.mp4
+│  ├RTMP摄像头直播-交叉编译x264与faac(1)-.mp4
+│  ├RTMP摄像头直播-视频数据编码与音频采集(1)-.mp4
+├18 开源框架
+│  ├jetpack技术之-Room与ViewModel(1)-.mp4
+│  ├Jetpack技术之-数据绑定与ViewModel(1)-.mp4
+│  ├Jetpack技术之Lifecycle与LiveData(1)-.mp4
+│  ├Jetpack技术之Navigation(1)-.mp4
+├19 开源框架Jetpack项目实战
+│  ├JetPack之Paging的内部源码分析(1)-.mp4
+│  ├JetPack之WorkManager内部源码阅读(1)-.mp4
+│  ├JetPack之WorkManager内部源码阅读(2)-.mp4
+│  ├JetPack实战之基础代码部署与导航管理控制(1)-.mp4
+│  ├JetPack实战之基础代码部署与导航管理控制(2)-.mp4
+│  ├JetPack实战之播放条与菜单细节功能的编写(1)-.mp4
+│  ├JetPack实战之播放条与菜单细节功能的编写(2)-.mp4
+│  ├JetPack实战项目之首页细节功能的编写(1)-.mp4
+│  ├JetPack实战项目之首页细节功能的编写(2)-.mp4
+│  ├JetPack实战项目之首页细节功能的编写(3)-.mp4
+│  ├JetPack实战项目之首页细节功能的编写(4)-.mp4
+├20 Jetpack项目实战
+│  ├JetPack实战之播放条与菜单细节功能的编写(3)-.mp4
+│  ├JetPack实战之播放条与菜单细节功能的编写(4)-.mp4
+│  ├JetPack实战项目之完善后续功能与总结(1)-.mp4
+│  ├JetPack实战项目之完善后续功能与总结(2)-.mp4
+├第一期视频资料
+│  ├19.11.10职业生涯规划公开课视频
+│  │  ├职业生涯规划.mp4
+│  ├Android系统源码
+│  │  ├android-6.0.1_r72.7z
+│  │  ├android-7.1.1_r1.7z
+│  │  ├android-8.0.0_r1.7z
+│  │  ├android9.rar
+│  ├project_v3(gradle公开课).zip
+│  ├typora-setup-x64.exe(看MD文档用的)
+│  ├【01】flutter---lance老师
+│  │  ├（01）2019.02.28 flutter第一节课(lsn_flutter介绍与环境安装）
+│  │  │  ├上课笔记：移动开发新利器-你好,Flutter.md
+│  │  │  ├你好,Flutter.pptx
+│  │  │  ├图片
+│  │  │  │  ├cordova工作机制.png
+│  │  │  │  ├flutter工作机制.png
+│  │  │  │  ├Flutter架构.png
+│  │  │  │  ├rn工作机制.png
+│  │  │  │  ├课程流程.png
+│  │  ├（02）2019.03.03 flutter第二节课（Dart语法-操作符、方法与异常）
+│  │  │  ├Dart语法-操作符、方法与异常.md
+│  │  │  │  ├Dart语法-操作符、方法与异常.md
+│  │  │  ├flutter第二节课作业（2019.03.03）.docx
+│  │  │  ├代码
+│  │  │  │  ├hello.dart
+│  │  │  │  ├内置类型.dart
+│  │  │  │  ├变量.dart
+│  │  │  │  ├操作符.dart
+│  │  │  ├资料
+│  │  │  │  ├Dart基础一.xmind
+│  │  │  │  ├Dart语法-操作符、方法与异常 - 副本.md
+│  │  │  │  ├图片
+│  │  │  │  │  ├const成员(1).png.wydl
+│  │  │  │  │  ├const成员(1).pngv1.wycfg
+│  │  ├（03）2019.03.07 flutter第三节课（dart类与异步）
+│  │  │  ├Dart语法-方法、异常与类.md
+│  │  │  ├Flutter第三节课作业.docx
+│  │  │  ├代码
+│  │  │  │  ├get_set.dart
+│  │  │  │  ├point.dart
+│  │  │  │  ├一等方法对象.dart
+│  │  │  │  ├可选参数.dart
+│  │  │  │  ├异常.dart
+│  │  │  │  ├混合.dart
+│  │  │  │  ├类_构造方法.dart
+│  │  │  ├图片
+│  │  │  │  ├消息机制.png
+│  │  │  ├方法、异常与类.xmind
+│  │  ├（04）2019.03.10 flutter第四节课（Dart异步编程）
+│  │  │  ├flutter第四节课作业.docx
+│  │  │  ├代码.zip
+│  │  │  ├图片.zip
+│  │  │  ├资料.zip
+│  │  ├（05）2019.03.12 flutter第五节课（第一个flutter界面）
+│  │  │  ├代码.zip
+│  │  │  ├资料.zip
+│  │  ├（06）2019.03.14 flutter第六节课（路由与导航）
+│  │  │  ├wanandroid.rar
+│  │  │  ├资料.zip
+│  │  ├（07）2019.03.17 flutter第七节课（登录与注册）
+│  │  │  ├代码
+│  │  │  │  ├wanandroid.rar
+│  │  │  ├资料
+│  │  │  │  ├图片
+│  │  │  │  │  ├cookie1.png
+│  │  │  │  │  ├cookie2.png
+│  │  │  │  │  ├dio-cookie.png
+│  │  │  │  │  ├userdrawerheader.png
+│  │  │  │  │  ├wanandroid.png
+│  │  │  │  │  ├作业.png
+│  │  │  │  │  ├侧滑菜单.png
+│  │  │  │  │  ├效果.gif
+│  │  │  │  │  ├流程.png
+│  │  │  │  ├登录与注册.md
+│  │  ├（08）2019.03.19 flutter第八节课（收藏文章与网站）
+│  │  │  ├代码
+│  │  │  │  ├wanandroid.rar
+│  │  │  ├资料
+│  │  │  │  ├图片
+│  │  │  │  │  ├iconfont搜索.png
+│  │  │  │  │  ├iconfont购物车.png
+│  │  │  │  │  ├收藏网站.png
+│  │  │  │  │  ├收藏网站删除.png
+│  │  │  │  │  ├收藏页效果.png
+│  │  │  │  │  ├文章详情.png
+│  │  │  │  │  ├流程.png
+│  │  │  │  │  ├添加ttf.png
+│  │  │  │  │  ├项目编辑.png
+│  │  │  │  │  ├首页文章API.png
+│  │  │  │  │  ├首页文章响应数据.png
+│  │  │  │  ├收藏文章与网站.md
+│  │  ├（09）2019.03.21 flutter第九节课（flutter_plugin）
+│  │  │  ├flutter_plugin.rar
+│  │  │  ├flutter_插件与混合工程.zip
+│  │  │  ├Flutter第九节课作业.docx
+│  │  ├（10）2019.03.24 flutter第十节课（无限轮播Banner实现）
+│  │  │  ├custom_widget.rar
+│  │  │  ├资料
+│  │  │  │  ├图片
+│  │  │  │  │  ├内容.png
+│  │  │  │  │  ├练习作业.png
+│  │  │  │  ├无限轮播Banner实现.md
+│  │  ├（11）2019.03.26 flutter第十一节课（flutter动画与打包）
+│  │  │  ├animation.rar
+│  │  │  ├动画与打包.md
+│  │  │  ├图片
+│  │  │  │  ├签名文件.png
+│  │  ├（12）2019.03.28 flutter第十二节课（flutter进阶必学--App状态管理）
+│  │  │  ├flutter进阶之状态管理.rar
+│  │  │  ├语文作业
+│  │  │  │  ├第12节课作业.docx
+│  ├【02】Java语言进阶
+│  │  ├ideaIU-2018.1.5.exe
+│  │  ├java语言进阶与Android相关技术核心（课程安排）
+│  │  │  ├java语言进阶与Android相关技术核心（课程安排）.xls
+│  │  ├（01）2019.03.31 深入学习Java中的泛型---mark
+│  │  │  ├Java语言高级特性.pptx
+│  │  │  ├ketang-advancedFeatures(2019.3.31).zip
+│  │  │  ├笔记、Java语言高级特性前言.docx
+│  │  ├（02）2019.04.02 反射及动态代理模式---mark
+│  │  │  ├Java特性作业.docx
+│  │  │  ├Java语言高级特性.pptx
+│  │  │  ├ketang-advancedFeatures(1).zip
+│  │  │  ├笔记、Java语言高级特性前言(1).docx
+│  │  ├（03）2019.04.04 多线程与Android线程性能优化---mark
+│  │  │  ├Java语言高级特性.pptx
+│  │  │  ├ketang-advancedFeatures.zip
+│  │  │  ├笔记、Java语言高级特性前言.docx
+│  │  ├（04）2019.04.09 多线程与Android线程性能优化---mark
+│  │  │  ├Java语言高级特性.pptx
+│  │  │  ├ketang-advancedFeatures(2).zip
+│  │  │  ├笔记、Java语言高级特性前言(2).docx
+│  │  ├（05）2019.04.11 线程池原理与AsyncTask---mark
+│  │  │  ├Java语言高级特性.pptx
+│  │  │  ├ketang-advancedFeatures.zip
+│  │  │  ├笔记、Java语言高级特性前言.docx
+│  │  ├（06）2019.04.14 虚拟机的前世今生，深入理解JVM内存区域---king
+│  │  │  ├1、虚拟机的前世今生，深入理解JVM内存区域.pptx
+│  │  │  ├ch01.rar
+│  │  │  ├笔记，1、虚拟机的前世今生，深入理解JVM内存区域.docx
+│  │  │  ├虚拟机栈的执行过程演示.png
+│  │  ├（07）2019.04.16 内存分配与回收策略-深入理解垃圾回收器---king
+│  │  │  ├第七节课.rar
+│  │  ├（08）2019.04.18 热修复核心原理，ClassLoader类加载---lance
+│  │  │  ├2019.04.18课后作业.docx
+│  │  │  ├Android类加载预习资料.zip
+│  │  │  ├EnjoyFix.zip
+│  │  │  ├关于第一个方案：Applicaition ANR问题.txt
+│  │  │  ├类加载.pptx
+│  │  ├（09）2019.04.21 RxJava---zero
+│  │  │  ├2019.4.21Java语言进阶第九节课作业.docx
+│  │  │  ├publishSubcribe.md
+│  │  │  ├rxjava.md
+│  │  │  ├RxJava.pptx
+│  │  │  ├RxJava.xmind
+│  │  │  ├rxjavademo.rar
+│  │  │  ├rxjava操作符.xmind
+│  │  ├（10）2019.04.23 RxJava---zero
+│  │  │  ├2019.04.23第十节课作业.docx
+│  │  │  ├RxJava(1).pptx
+│  │  │  ├rxjava1demo.rar
+│  │  │  ├rxjavademo(1).rar
+│  │  ├（11）2019.04.25 RxJava---zero
+│  │  │  ├Java语言作业.docx
+│  │  │  ├rxjava应用.rar
+│  │  │  ├rxjava所有源码.rar
+│  │  ├（12）2019.05.07 dagger2---zero
+│  │  │  ├dagger2.zip
+│  │  │  ├Dagger2demo.rar
+│  │  ├（13）2019.05.09 序列化---zero
+│  │  │  ├2019.05.09第十四节课（序列化）作业.docx
+│  │  │  ├XuliehuaDemo.zip
+│  │  │  ├序列化.rar
+│  │  │  ├序列化.zip
+│  │  ├（14）2019.05.12 序列化，JSON深入理解-zero
+│  │  │  ├XuliehuaDemo.zip
+│  │  │  ├序列化.rar
+│  │  │  ├序列化.zip
+│  │  │  ├第十五节课作业.docx
+│  │  ├（15）2019.05.14 Java IO核心原理及应用(StreamFile操作)---mark
+│  │  │  ├JavaIO课后资料.7z
+│  │  │  ├第十六节课作业.docx
+│  │  │  ├预习资料.rar
+│  │  ├（16）2019.05.16 Java IO 实战，AES加密让你的APK牢不可破---alvin
+│  │  │  ├AES加密加固.pptx
+│  │  │  ├加固代码在上节课压缩包中
+│  │  │  │  ├代码路径.png
+│  ├【03】FrameWork层源码解析
+│  │  ├（02）2019.05.21 Binder---leo
+│  │  │  ├1.png
+│  │  │  ├code
+│  │  │  │  ├leo_client.rar
+│  │  │  │  ├leo_service.rar
+│  │  │  ├Leo_Binder_VIP_190521.pptx
+│  │  │  ├笔记.md
+│  │  ├（03）2019.05.23 Android AMS浅析---zero
+│  │  │  ├AMS.rar
+│  │  │  ├AMSHookdemo.zip
+│  │  │  ├AMS文档.zip
+│  │  │  ├binder_source.zip
+│  │  │  ├作业和AndroidP源码.txt
+│  │  ├（05）2019.05.28 AndroidWMS面试要点---zero
+│  │  │  ├dialog不能application的区别.txt
+│  │  │  ├wms.md
+│  │  │  ├wms.pptx
+│  │  │  ├wms.vsdx
+│  │  │  ├作业.txt
+│  │  │  ├最新android 源码.txt
+│  │  │  ├源码.rar
+│  │  ├（06）2019.05.30 Android年薪百万的进阶攻略，PKMS---zero
+│  │  │  ├code.zip
+│  │  │  ├doc.zip
+│  │  ├（07）2019.06.02 Handler手写实现源码---alvin
+│  │  │  ├HandlerVIP.pptx
+│  │  │  ├handler公开课
+│  │  │  │  ├Handler手写实现源码.zip
+│  │  │  │  ├手写一个属于自己的Handler架构师一种什么体验.mp4
+│  │  │  ├Handler手写实现源码.zip
+│  │  ├（08）2019.06.04每次遇到滑动冲突都头大，Leo带你寻找事件冲突的根源---leo
+│  │  │  ├1.png
+│  │  │  ├leo_dispatch.rar
+│  │  │  ├Leo_事件分发机制_190603_VIP.pptx
+│  │  │  ├滑动冲突作业.docx
+│  │  │  ├笔记.md
+│  │  │  ├预习资料.rar
+│  ├【04】高级UI
+│  │  ├00-自定义view1-9代码.zip
+│  │  ├（01）2019.06.11 Android自定义系列一---zero
+│  │  │  ├6.11号作业.docx
+│  │  │  ├view基础（预习资料）.rar
+│  │  ├（02）2019.06.13 Android自定义系列二---zero
+│  │  │  ├MyViewGroup.java
+│  │  │  ├view基础（2019.6.11预习资料）.rar
+│  │  │  ├作业.txt
+│  │  ├（03）2019.06.16 深度解析RecyclerView的缓存机制---leo
+│  │  │  ├code
+│  │  │  │  ├leo_RecyclerView.rar
+│  │  │  │  ├srl_vp_190606_ok.rar
+│  │  │  ├资料
+│  │  │  │  ├Leo_RecyclerView_190616_VIP.pptx
+│  │  │  │  ├RecyclerView_回收机制.pdf
+│  │  │  │  ├RecyclerView_复用机制_8.0.pdf
+│  │  │  │  ├数据结构图.png
+│  │  │  │  ├笔记.md
+│  │  │  ├预习资料.rar
+│  │  ├（04） 2019.06.18 CardView+RecyclerView实现一线名企的UI炫酷界面---leo
+│  │  │  ├Leo_CardView_190618_VIP.pptx
+│  │  │  ├leo_SwipeCardView.rar
+│  │  │  ├笔记.md
+│  │  │  ├预习资料（2019.6.18）.rar
+│  │  ├（05）2019.06.20 Android自定义系列三---zero
+│  │  │  ├attr.xml
+│  │  │  ├FlowLayout.java
+│  │  │  ├view基础（2019.6.20预习资料）.rar
+│  │  ├（06）2019.06.23 Android自定义系列四---zero
+│  │  │  ├activity_main.xml
+│  │  │  ├activity_main1.xml
+│  │  │  ├Android 事件.pptx
+│  │  │  ├FlowLayout.java
+│  │  │  ├MainActivity.java
+│  │  │  ├作业.txt
+│  │  ├（07）2019.06.25 Android自定义系列五---zero
+│  │  │  ├FlowLayout.java
+│  │  │  ├Utils.java
+│  │  │  ├笔记.txt
+│  │  ├（09）2019.06.30 Android自定义系列六---zero
+│  │  │  ├Android动画.md
+│  │  │  ├animationdemo.zip
+│  │  │  ├animationdemo01.zip
+│  │  │  ├assets.rar
+│  │  │  ├FlowLayout.java
+│  │  │  ├FlowLayout1.java
+│  │  │  ├myactionbar.zip
+│  │  │  ├作业.txt
+│  │  ├（10）2019.07.02 Android自定义系列七---zero
+│  │  │  ├Android 自定义绘制.pptx
+│  │  │  ├Android 自定义绘制.pptx（预习资料）
+│  │  │  ├CanvasComposeView.java
+│  │  │  ├CanvasDrawView.java
+│  │  │  ├CanvasStackView.java
+│  │  │  ├CanvasTransformationView.java
+│  │  │  ├TextDrawView.java
+│  │  │  ├Utils.java
+│  │  │  ├作业.txt
+│  │  ├（11）2019.07.04 Android自定义系列八---zero
+│  │  │  ├Android 自定义绘制（7.4号预习资料与7.2号一样）.pptx
+│  │  │  ├BitmapDrawView.java
+│  │  │  ├MatrixsView.java
+│  │  │  ├TextMultiDrawView.java
+│  │  │  ├Utils.java
+│  │  │  ├Xfermodes.java
+│  │  │  ├作业.txt
+│  │  ├（12）2019.07.07 Android自定义系列九---zero
+│  │  │  ├activity_self_drawable.xml
+│  │  │  ├Android 自定义绘制（7.7号预习资料与7.4号一样）.pptx
+│  │  │  ├assets
+│  │  │  │  ├activity.png
+│  │  │  │  ├animation.png
+│  │  │  │  ├animationdrawable.png
+│  │  │  │  ├animator.png
+│  │  │  │  ├color1.png
+│  │  │  │  ├color2.png
+│  │  │  │  ├createCircularReveal.jpg
+│  │  │  │  ├figure3.jpg
+│  │  │  │  ├linear_animation.jpg
+│  │  │  │  ├measureSpec.png
+│  │  │  │  ├measurespec1.png
+│  │  │  │  ├measurespec2.png
+│  │  │  │  ├measurespec3.png
+│  │  │  │  ├NN.png
+│  │  │  │  ├non_linear_animation.jpg
+│  │  │  │  ├propertyAnimationmethod.jpg
+│  │  │  │  ├PropertyBundle.jpg
+│  │  │  │  ├reveal_animation.gif
+│  │  │  │  ├reveal_animation_demo.png
+│  │  │  │  ├ripple_anim.png
+│  │  │  │  ├ripple_effect.gif
+│  │  │  │  ├shijiandispatch.png
+│  │  │  │  ├ViewPropertyAnimator.jpg
+│  │  │  │  ├view_arch.png
+│  │  │  │  ├view_interpolator.png
+│  │  │  │  ├view_invalidate.png
+│  │  │  │  ├view_performlayout.png
+│  │  │  │  ├view_qiyuan.png
+│  │  │  │  ├view_requestlayout.png
+│  │  │  │  ├view_traversals.png
+│  │  │  │  ├zuobiaoxi.png
+│  │  │  │  ├zuobiaoxiweizhi.png
+│  │  │  │  ├zuobiaoxi_qubie.png
+│  │  │  ├bg.png
+│  │  │  ├circle.png
+│  │  │  ├girl.jpgv1.wycfg
+│  │  │  ├view基础.md
+│  │  │  ├代码
+│  │  │  │  ├SelfDrawableActivity.java
+│  │  │  │  ├TaskClearDrawable.java
+│  │  │  ├作业.txt
+│  │  │  ├另外一个复杂实例
+│  │  │  │  ├bird.png
+│  │  │  │  ├CommonImgEffectView.java
+│  │  │  │  ├control.png
+│  │  │  │  ├不要求掌握.txt
+│  │  │  ├自定义drawable笔记.txt
+│  │  ├（13）2019.07.09 ViewPager源码解析与性能优化---alvin
+│  │  │  ├ViewPager课程架构
+│  │  │  │  ├MyLazyLoadingFragment.rar
+│  │  │  │  ├ViewPagerWrap.rar
+│  │  │  │  ├ViewPager优化 .pptx
+│  │  │  │  ├懒加载.gif
+│  │  ├（14）2019.07.11 AndroidWebview独立进程架构实战（上）---allen
+│  │  │  ├Android Webview独立进程架构实战.pptx
+│  │  │  ├xiangxuewebview.zip
+│  │  ├（15）2019.07.14 AndroidWebview独立进程架构实战（下）---allen
+│  │  ├（16）2019.7.16 hook源码实现换肤---zero
+│  │  │  ├skin_source.zip
+│  │  │  ├theme.md
+│  │  │  ├作业.txt
+│  │  │  ├换肤.pptx
+│  │  │  ├换肤.vsdx
+│  │  │  ├换肤笔记.txt
+│  │  ├（17）2019.07.18 Android应用进程的管理，以及保活拉活的那些事儿---leo
+│  │  │  ├code.rar
+│  │  │  ├资料.rar
+│  │  ├（18）2019.07.21 告别繁琐的AIDL，IPC通信框架设计与实现---lance
+│  │  │  ├IPC.zip
+│  │  │  ├IPC进程通信（预习资料）.zip
+│  │  ├（19）2019.07.23 从零开始MVVM新闻客户端架构实战一---allen
+│  │  │  ├artifactory_pro_and_crack.zip
+│  │  │  ├从零开始MVVM新闻客户端架构实战（预习资料）.pptx
+│  │  ├（20）2019.07.25 从零开始MVVM新闻客户端架构实战二---allen
+│  │  │  ├xiangxue_news_2018.07.25.zip
+│  │  │  ├作业.txt
+│  │  ├（21）2019.07.28 从零开始MVVM新闻客户端架构实战三---allen
+│  │  │  ├2019.7.28作业.txt
+│  │  │  ├xiangxue_news_2018.07.28.zip
+│  │  ├（22）2019.07.30 从零开始MVVM新闻客户端架构实战四---allen
+│  │  │  ├project_ok.zip
+│  │  │  ├xiangxuewebview_v3（新资料）.zip
+│  ├【05】网络架构
+│  │  ├网络架构搭建---allen老师
+│  │  │  ├视频
+│  │  │  │  ├视频
+│  │  │  │  │  ├MVVM第二期
+│  │  │  │  │  │  ├MVVM_训练营_01_20191206_200927.mp4.wydl
+│  │  │  │  │  │  ├MVVM_训练营_01_20191206_200927.mp4v1.wycfg
+│  │  │  ├资料
+│  │  │  │  ├2、MVVM资料.zip
+│  │  ├（01）2019.08.01 Android网络编程基础一---zero
+│  │  │  ├assets
+│  │  │  │  ├3ciwoshou.png
+│  │  │  │  ├4cihuishou.png
+│  │  │  │  ├c&s.png
+│  │  │  │  ├ip&port.jpg
+│  │  │  │  ├ip.jpg
+│  │  │  │  ├socket_cs.jpg
+│  │  │  │  ├tcpip.jpg
+│  │  │  ├socket.md
+│  │  │  ├作业.txt
+│  │  │  ├网络基础.pptx
+│  │  │  ├网络（2019.8.1预习资料）.rar
+│  │  ├（02）2019.08.04 Android网络编程基础二---zero
+│  │  │  ├assets.zip
+│  │  │  ├网络基础.pptx
+│  │  ├（03）2019.08.06 Android网络编程基础三---zero
+│  │  │  ├assets
+│  │  │  │  ├3ciwoshou.png
+│  │  │  │  ├4cihuishou.png
+│  │  │  │  ├c&s.png
+│  │  │  │  ├ip&port.jpg
+│  │  │  │  ├ip.jpg
+│  │  │  │  ├socket_cs.jpg
+│  │  │  │  ├tcpip.jpg
+│  │  │  ├http版本区别.md
+│  │  │  ├restful.md
+│  │  │  ├socket.md
+│  │  │  ├代码
+│  │  │  │  ├ChartServer.java
+│  │  │  │  ├InetAddressTest.java
+│  │  │  │  ├SocketClient.java
+│  │  │  │  ├SocketServer.java
+│  │  │  │  ├URLTest.java
+│  │  │  │  ├URLTest01.java
+│  │  │  ├作业.txt
+│  │  │  ├网络基础.pptx
+│  │  │  ├网络相关.vsdx
+│  │  ├（04）2019.08.08 Android网络编程基础四---zero
+│  │  │  ├socketdemo.rar
+│  │  ├（05）2019.08.11 OkHttp源码解析，请求流程：分发器与拦截器---lance
+│  │  │  ├Okhttp1.pptx
+│  │  │  ├OkHttp资料（8.11预习资料）.zip
+│  │  ├（06）2019.08.13 OkHttp源码解析，五大拦截器分析---lance
+│  │  │  ├okhttp.zip
+│  │  │  ├Okhttp2-五大拦截器.pptx
+│  │  │  ├OkHttp拦截器知识点.xmind
+│  │  │  ├新建文件夹
+│  ├【06】性能优化
+│  │  ├（01） 2019.08.15 性能优化之数据结构优化---alvin
+│  │  │  ├数据结构优化2.pptx
+│  │  ├（02）2019.08.18 Android性能优化专题一---zero
+│  │  │  ├App启动速度优化.xmind
+│  │  │  ├Python安装工具.zip
+│  │  │  ├作业.txt
+│  │  ├（03）2019.08.20 Android性能优化专题二---zero
+│  │  │  ├作业.txt
+│  │  │  ├性能优化课程.rar
+│  │  │  ├资料.zip
+│  │  ├（04）2019.08.22 又是抖动又是泄漏，内存你在干嘛？---lance
+│  │  │  ├代码
+│  │  │  │  ├Memory.zip
+│  │  │  ├资料
+│  │  │  │  ├MemoryAnalyzer-1.8.1.20180910-win32.win32.x86_64.zip
+│  │  │  │  ├内存优化.pptx
+│  │  ├（05）2019.08.25 性能优化之代码结构优化（设计模式）---alvin
+│  │  │  ├设计模式(安卓) 预习资料
+│  │  │  │  ├java_pattern
+│  │  │  │  ├java设计模式.zip
+│  │  │  ├设计模式code.rar
+│  │  │  ├设计模式实战重构代码概论.pptx
+│  │  ├（07）2019.08.29 Android电量优化---zero
+│  │  │  ├作业.txt
+│  │  │  ├数据材料
+│  │  │  │  ├batterystats.txt
+│  │  │  │  ├bugreport.zip
+│  │  │  ├文档
+│  │  │  │  ├baimingdan.jpg
+│  │  │  │  ├deviceidle.jpg
+│  │  │  │  ├dianliangyouhua2.jpg
+│  │  │  │  ├dianlianyouhua.jpg
+│  │  │  │  ├doze.md
+│  │  │  │  ├doze.png
+│  │  │  │  ├doze_state_change.png
+│  │  │  │  ├gcm.jpg
+│  │  │  │  ├移动网络优化.md
+│  │  │  ├电量优化.pptx
+│  │  │  ├预习资料.txt
+│  │  ├（08）2019.09.01 Android存储优化---zero
+│  │  │  ├protobuf02.zip
+│  │  │  ├作业说明.txt
+│  │  │  ├存储优化.pptx
+│  │  ├（09）2019.09.03 apk全方位健身，打造完美身材---leo
+│  │  │  ├code
+│  │  │  │  ├AndroidPdfViewer-master.rar
+│  │  │  │  ├leo_apk_shrink.rar
+│  │  │  │  ├ResGuard.rar
+│  │  │  ├svg2vector-cli-1.0.1.jar
+│  │  │  ├资源.rar
+│  │  ├（10） 2019.09.05 Android适配方案---zero
+│  │  │  ├androidadpter.zip
+│  │  │  ├权限.md
+│  │  │  ├适配方案.pptx
+│  ├【07】NDK
+│  │  ├（01）2019.09.08 Android NDK概要与C语言简介---zero
+│  │  │  ├c.md
+│  │  │  ├C基础.pptx
+│  │  │  ├作业.txt
+│  │  │  ├笔记.txt
+│  │  ├（02）2019.09.10 C语言二---zero
+│  │  │  ├c.md
+│  │  │  ├c.vsdx
+│  │  │  ├c基础-指针、函数与预处理器（预习资料）.pdf
+│  │  │  ├C基础.pptx
+│  │  │  ├作业.txt
+│  │  │  ├笔记.txt
+│  │  ├（03）2019.09.17 C语言三---zero
+│  │  │  ├CMakeLists.txt
+│  │  │  ├vip_day_3_1
+│  │  │  │  ├src
+│  │  │  │  │  ├CMakeLists.txt
+│  │  │  │  │  ├zhizhen.c
+│  │  │  ├作业.txt
+│  │  ├（04）2019.09.19 C语言四---zero
+│  │  │  ├c.pdf
+│  │  │  ├C基础.pptx
+│  │  │  ├作业.txt
+│  │  ├（05）2019.09.21 C语言五---zero
+│  │  │  ├作业.txt
+│  │  ├（06）2019.09.23 C语言六---zero
+│  │  │  ├c.pdf
+│  │  │  ├c.vsdx
+│  │  │  ├code.zip
+│  │  │  ├C基础.pptx
+│  │  │  ├作业.txt
+│  │  │  ├笔记.txt
+│  │  ├（07）2019.09.26 JNI开发之JNI编译与运行---alvin
+│  │  │  ├JavaJNI.rar
+│  │  │  ├JNI_V2.pdf
+│  │  │  ├JNI编程指南.pdf
+│  │  │  ├register.rar
+│  │  │  ├笔记.txt
+│  │  ├（08）2019.09.29 JNI基础之JNI变量涵义与JNI字符串调用---alvin
+│  │  │  ├JniTest.c
+│  │  │  ├JniTest.h
+│  │  ├（09）2019.10.08 JNI开发之JNI调用java函数与JNI引用---alvin
+│  │  │  ├10.8号作业.txt
+│  │  │  ├JniTest.c
+│  │  │  ├JniTest.h
+│  │  │  ├JNI_V3.pdf
+│  │  ├（10）2019.10.10 C++基础一---zero
+│  │  │  ├资料.zip
+│  │  ├（11） 2019.10.13 C++基础二---zero
+│  │  │  ├资料.zip
+│  │  ├（12） 2019.10.15 C++基础三---zero
+│  │  │  ├资料.zip
+│  │  ├（13） 2019.10.17 C++基础四---zero
+│  │  │  ├vip_day_3.rar
+│  │  │  ├vip_day_4.rar
+│  │  ├（14） 2019.10.20 C++基础五---zero
+│  │  │  ├vip_day_5.zip
+│  │  ├（15） 2019.10.22 C++基础六---zero
+│  │  │  ├vip_day_6.zip
+│  │  ├（16） 2019.10.24 C++基础七---zero
+│  │  │  ├vip_day_7.zip
+│  │  ├（17） 2019.10.27 C++基础八---zero
+│  │  │  ├c++.md
+│  │  │  ├vip_day_8.zip
+│  │  ├（18） 2019.10.29 NDK开发实战，身份证识别---alvin
+│  │  │  ├code.zip
+│  │  │  ├学习文档.zip
+│  │  ├（19） 2019.10.31 Linux基本操作---zero
+│  │  │  ├资料.zip
+│  │  ├（20）2019.11.03 CMake基础---zero
+│  │  │  ├作业.txt
+│  │  │  ├资料
+│  │  │  │  ├AndrodStudio_NDK开发.pdf
+│  │  │  │  ├ffmpeg.pdf
+│  │  │  │  ├linux环境变量配置区别.pdf
+│  │  ├（21） 2019.11.05 腾讯开源组件MMKV的原理与实现一---lance
+│  │  │  ├源码
+│  │  │  │  ├MMKV.rar
+│  │  │  │  ├MMKVTest.rar
+│  │  │  ├资料
+│  │  │  │  ├MMKV.pptx
+│  │  │  │  ├作业.txt
+│  │  ├（22）2019.11.07 MMKV的原理与实现二---lance
+│  │  │  ├源码
+│  │  │  │  ├code-EnjoyMMKV.rar
+│  │  │  ├资料
+│  │  │  │  ├作业.txt
+│  │  │  │  ├课件-MMKV的原理与实现二.pptx
+│  │  ├（23）2019.11.12 MMKV原理与实现三---lance
+│  │  │  ├MMKV线程与文件锁（预习资料）.pdf
+│  │  │  ├源码
+│  │  │  │  ├EnjoyMMKV.rar
+│  │  │  ├资料
+│  │  │  │  ├MMKV线程与文件锁.pdf
+│  │  │  │  ├【20191105(周二)MMKV第一节课作业】武汉-☆-A19092402.pdf
+│  │  │  │  ├【20191107(周四)MMKV第二节课作业】武汉-☆-A19092402.pdf
+│  │  ├（24）2019.11.14 Android使用giflib实现高效gif动画加载一---zero
+│  │  │  ├源码.rar
+│  │  │  ├课件
+│  │  │  │  ├gitflib应用.pdf
+│  │  ├（25）2019.11.17 Android使用giflib实现高效gif动画加载二---zero
+│  │  │  ├code.zip
+│  │  │  ├doc
+│  │  │  │  ├gif.png
+│  │  │  │  ├gitflib应用.pdf
+│  │  │  ├作业.txt
+│  │  ├（26）2019.11.19 FFmpeg视频播放器—，ffmpeg介绍与音视频基础---lance
+│  │  │  ├代码
+│  │  │  │  ├Code-EnjoyPlayer.rar
+│  │  │  ├资料
+│  │  │  │  ├FFmpeg视频播放器一.pdf
+│  │  ├（27）2019.11.21 FFmpeg视频播放器二，视频解码与本地绘制---lance
+│  │  │  ├代码
+│  │  │  │  ├EnjoyPlayer.rar
+│  │  │  ├本地绘制.pdf预习资料
+│  │  │  ├资料
+│  │  │  │  ├【20191119(周二)FFmpeg第一节课非作业-FFmpeg基础】武汉-☆-A19092402.pdf
+│  │  │  │  ├本地绘制.pdf
+│  │  ├（28）2019.11.24 FFmpeg视频播放器三，本地绘制与音频解码---lance
+│  │  │  ├代码
+│  │  │  │  ├EnjoyPlayer.rar
+│  │  │  ├资料
+│  │  │  │  ├本地绘制.pdf
+│  │  ├（29）2019.11.26 ffmpeg视频播放器四，音频解码与OpenSL ES播放---lance
+│  │  │  ├源码资料.zip
+│  │  ├（30）2019.11.28 ffmpeg视频播放器五，音视频同步---lance
+│  │  │  ├资料.zip
+│  │  ├（31）2019.12.05 RTMP录屏直播，手机屏幕数据获取与MediaCodec编码---lance
+│  │  │  ├资料.zip
+│  │  ├（32）2019.12.08 RTMP录屏直播，音频数据编码与推送---lance
+│  │  │  ├代码
+│  │  │  │  ├GameLive.rar
+│  │  │  │  ├ScreenLive.rar
+│  │  │  ├资料
+│  │  │  │  ├adobe_video_file_format_spec_v10.pdf
+│  │  │  │  ├flvAnalyser+v0.0.1.002.7z
+│  │  │  │  ├RTMP录屏直播-音频数据编码与推送.pptx
+│  │  │  │  ├预习资料
+│  │  │  │  │  ├Nginx-RTMP服务器搭建.pdfv1.wycfg
+│  │  │  │  │  ├RTMP预习资料.pdfv1.wycfg
+│  │  ├（33）2019.12.24 RTMP摄像头直播1，x264faac交叉编译与CameraX预览---lance
+│  │  ├（34）2019.12.26 RTMP摄像头直播2，摄像头数据处理---lance
+│  │  │  ├code&资料-2019.12.26.zip
+│  │  ├（35）2019.12.29 RTMP摄像头直播3，视频数据编码与推流---lance
+│  │  │  ├2019.12.29-code&资料.zip
+│  │  ├（36）2019.12.31 RTMP摄像头直播4，音频采集编码与推流---lance
+│  │  │  ├code.zip
+│  │  ├（37）2020.01.02 OpenCV人脸定位1，人脸定位模型训练---lance
+│  │  │  ├code&资料.rar
+│  │  │  ├配套文件-OpenCV.rar
+│  │  │  ├预习资料
+│  │  │  │  ├OpenCV人脸定位.pdf
+│  │  ├（38）2020.01.05 OpenCV人脸定位2，人脸跟踪---lance
+│  │  │  ├20.01.05-code&资料.zip
+│  │  ├（39）2020.01.14 OpenCV车牌识别1，图像预处理与车牌定位---lance
+│  │  │  ├2020.1.14&视频.rar
+│  │  │  ├2020.1.14-资料&代码.zip
+│  │  │  ├resource.rar
+│  │  │  ├预习资料.zip
+│  │  ├（40）2020.01.16 OpenCV车牌识别2，SVM训练与hsv定位---lance
+│  │  │  ├2020.1.16&资料.zip
+│  │  ├（41）2020.01.19 OpenCV车牌识别，字符分割与识别---lance
+│  │  │  ├20.1.19-代码1-3.zip
+│  │  │  ├20.1.19-作业.txt
+│  │  │  ├OpenCV车牌识别—字符分割与识别.pdf
+│  │  ├（42）2020.02.11-opengl抖音视频处理，opengl显示摄像头图像---lance
+│  │  │  ├2020.2.11-作业.docx.zip
+│  │  │  ├2020.2.11-资料&代码.zip
+│  │  │  ├2020.2.11-预习资料.zip
+│  │  ├（43）2020.02.13与14-opengl抖音视频处理，opengl录制视频---lance
+│  │  │  ├资料&代码.zip
+│  │  │  ├预习资料.zip
+│  │  ├（44）2020.03.03OpenGL视觉效果处理—小黄人大眼萌
+│  │  │  ├code&作业&资料.zip
+│  │  │  ├预习资料8-20美颜大眼.mp4
+│  │  ├（45）2020.03.05 OpenGL视觉效果处理，贴纸与磨皮---lance
+│  │  │  ├20.3.5-资料&code&作业.zip
+│  │  ├（46）2020.03.08 OpenGL视觉效果处理，灵魂出窍与分屏分析与实现（NDK专题）
+│  │  │  ├code&资料.zip
+│  ├【08】kotlin
+│  │  ├（01）2019.12.12 kotlin基础上---zero
+│  │  │  ├资料.zip
+│  │  ├（02）2019.12.15 kotlin基础下---zero
+│  │  │  ├资料.zip
+│  │  ├（03）2019.12.17 kotlin实战上---zero
+│  │  │  ├19.12.17-code.rar
+│  │  │  ├2019.12.17作业.zip
+│  │  ├（04）2019.12.19 kotlin实战下---zero
+│  │  │  ├code&资料-2019.12.19.zip
+│  │  │  ├code（2）-2019.12.17.rar
+│  │  ├（05）2019.12.22 kotlin常用语法解析---zero
+│  │  │  ├code&课件.zip
+│  ├【09】开源框架
+│  │  ├插件化1-3预习资料（请勿删除）
+│  │  │  ├插件化(1).pdf
+│  │  ├（01）2019.12.01 热修复一，类加载与修复原理---lance
+│  │  │  ├资料.zip
+│  │  ├（02）2019.12.03 热修复二，兼容与Gradle自动补丁生成---lance
+│  │  │  ├资料.zip
+│  │  ├（03）2020.01.07 360插件化1---leo
+│  │  │  ├20.01.07-code&资料.zip
+│  │  ├（04）2020.01.09 360插件化2---leo
+│  │  │  ├20.01.09-code&资料.rar
+│  │  ├（05）2020.01.13 360插件化3---leo
+│  │  │  ├20.1.13-代码&资料.zip
+│  │  ├（06）2020.02.20 IOC注入技术之运行时注入---jett
+│  │  │  ├资料&代码.zip
+│  │  ├（07）2020.02.23 IOC注入技术之源码时注入技术，Android Studio插件开发---jett
+│  │  │  ├20.2.23-资料&代码.zip
+│  │  ├（08）2020.2.25 IOC注入技术之编译时注入---jett
+│  │  │  ├20.2.25-资料&代码.zip
+│  │  ├（09）2020.3.10 组件化项目详细部署与交互处理---jderry
+│  │  │  ├20.3.10-代码&笔记.zip
+│  │  ├（10）2020.03.12 组件化之JavaPoet与组件化项目搭建的过程详解 ---derry
+│  │  │  ├20.3.12-资料&代码.zip
+│  │  ├（11）2020.03.15 组件化之手写路由库进行通信 ---derry
+│  │  │  ├20.3.15-资料.zip
+│  │  ├（12）2020.3.17 组件化之路由管理器编写 derry
+│  │  │  ├20.3.17资料.zip
+│  │  ├（13）2020.3.19 Glide手写之缓存机制---derry
+│  │  │  ├20.3.19代码&资料.zip
+│  │  ├（14）2020.3.22 Glide生命周期管理---derry
+│  │  │  ├20.3.22code&资料.zip
+│  │  ├（15）2020.3.24 Glide手写实现之图片加载与之前知识点进行合成---derry
+│  │  │  ├20.3.24 代码&资料.zip
+│  │  ├（16）2020.3.26 Jetpack技术之Lifecycle与LiveData ---jett
+│  │  │  ├20.3.26 代码&资料.zip
+│  │  ├（17）2020.3.29 Jetpack技术之-数据绑定与ViewModel---jett
+│  │  │  ├20.3.29 资料&代码.zip
+│  │  ├（18）2020.3.31 jetpack技术之-Room与ViewModel ---jett
+│  │  │  ├2020.3.31代码.zip
+│  │  │  ├2020.3.31资料&笔记.zip
+│  │  ├（19）2020.4.2 Jetpack技术之Navigation ---jett
+│  │  │  ├2020.4.2代码.zip
+│  │  │  ├2020.4.2资料&笔记.zip
+│  │  ├（20）2020.4.7 JetPack之Paging的内部源码分析 ---derry
+│  │  │  ├20.4.7 视频
+│  │  │  ├Jetpack 之 Paging.zip
+│  │  │  ├给同学们的源码.zip
+│  │  ├（21）2020.4.9 JetPack之WorkManager内部源码阅读 ---derry
+│  │  │  ├20.4.9 代码&笔记.zip
+│  │  │  ├20.4.9 视频
+│  │  │  ├20.4.9预习资料.txt
+│  ├【10】fragment
+│  │  ├fragment预习资料.zip
+│  │  ├（01）2020.02.16 fragment的应用以及存在的bug---zero
+│  │  │  ├20.2.16-资料&代码.zip
+│  │  ├（02）2020.02.18 fragment流程分析---zero
+│  │  │  ├20.2.18 资料&代码&作业.zip
+│  │  │  ├看源码的工具.zip
+│  ├【12】 jetpack 项目实战
+│  │  ├（01）2020.4.12 JetPack实战项目之基础代码部署与导航管理控制---derry
+│  │  │  ├20.4.12 资料&代码.zip
+│  │  ├（02）2020.4.14 JetPack实战项目之首页细节功能的编写---derry
+│  │  │  ├20.4.14资料&代码.zip
+│  │  ├（03）2020.4.16 JetPack实战项目之播放条与菜单细节功能的编写 --derry
+│  │  │  ├20.4.16资料&代码.zip
+│  │  ├（04）2020.4.19 JetPack实战项目之完善后续功能与总结---derry
+│  │  │  ├20.4.19资料&源码.zip
+│  ├【13】小程序
+│  │  ├（01）Lsn1_了解小程序---leo
+│  │  │  ├Lsn1_了解小程序.zip
+│  │  │  ├Lsn1_资料&代码.zip
+│  │  ├（02）Lsn2_小程序框架介绍---leo
+│  │  │  ├Lsn2_资料&代码.zip
+│  │  ├（03）Lsn3_App和页面的注册以及生命周期---leo
+│  │  │  ├Lsn3_App和页面的注册以及生命周期.zip
+│  │  │  ├Lsn3_资料&代码.zip
+│  │  ├（04）Lsn4_开始项目，实现tabBar---leo
+│  │  │  ├Lsn4_资料&代码.zip
+│  │  ├（05）Lsn5_封装网络请求---leo
+│  │  │  ├Lsn5_封装网络请求 资料&代码.zip
+│  │  ├（06）Lsn6_实现自定义导航栏---leo
+│  │  │  ├Lsn6_实现自定义导航栏 代码&资料.zip
+│  │  ├（07）Lsn7_WXML的模板和引用---leo
+│  │  │  ├（07）Lsn7_WXML的模板和引用 资料￥代码.zip
+│  │  ├（08）Lsn8_自定义组件---leo
+│  │  │  ├（08）Lsn8_自定义组件 资料&代码.zip
+│  │  ├（09）Lsn9_实现玩安卓首页---leo
+│  │  │  ├（09）Lsn9_实现玩安卓首页 资料&代码.zip
+│  │  ├（10）Lsn10_实现导航界面---leo
+│  │  │  ├（10）Lsn10_实现导航界面 资料&代码.zip
+│  │  ├（11）Lsn11_实现搜索界面---leo
+│  │  │  ├（11）Lsn11_实现搜索界面 资料&代码.zip
+│  │  ├（12）Lsn12_实现项目界面---leo
+│  │  │  ├（12）Lsn12_实现项目界面 资料&代码.zip
+│  │  ├（13）Lsn13_实现我的界面---leo
+│  │  │  ├（13）Lsn13_实现我的界面 资料&代码.zip
+│  ├享学VIP简历模板.doc
+│  ├课程大纲、课表
+│  │  ├V2.0享学课程移动架构师大纲V2.1.xmind
+│  │  ├安卓课程大纲图.png
+│  │  ├安卓课表（含内容梗概）-20.2.28更新.xls
+资源下载
+上传完毕，新增了阿里网盘的链接，前几天有人和我说已经在吾爱转载出去了，这样下去，只能加密付费了。共享资源就别外传了，不然会极大程度的影响其他用户体验。注册用户直接回复即可，切勿拍！！二期课程：传送门
+
+抱歉，只有登录并在本文发表评论才能阅读隐藏内容，切记不要恶意刷评论白嫖资源，评论前切记阅读用户规则，一旦进入黑名单，不可能再放出来。同时注意，暂停在线支付，请联系客服QQ267286513。
+资源下载价格30元立即支付  或  升级VIP后免费升级VIP
+如果遇到购买问题，请联系加2441105221游客请勿更换IP，也不要挂VPN，联系不上可以直接邮件shikey@qq.com。不是24小时在线的，请耐心等待。
+相关文章
+享学课堂Android移动互联网架构开发（VIP班二期带NDK，共212GB）|价值1万多的课程
+腾讯课堂-动脑学院安卓互联网架构2019期
+Logic AFNetworking特训班特训班（阿里云盘+百度云盘）
+ ANDROID 享学课堂 安卓 架构师 移动 腾讯课堂
+知识共享许可协议
+本作品采用 知识共享署名-相同方式共享 4.0 国际许可协议 进行许可

@@ -1,0 +1,162 @@
+PS D:\softs-install\elasticsearch\elasticsearch-7.17.3\bin> .\elasticsearch.bat
+"warning: usage of JAVA_HOME is deprecated, use ES_JAVA_HOME"
+Future versions of Elasticsearch will require Java 11; your Java version from [D:\java2\jdk\jdk1.8.0_51\jre] does not meet this requirement. Consider switching to a distribution of Elasticsearch with a bundled JDK. If you are already using a distribution with a bundled JDK, ensure the JAVA_HOME environment variable is not set.
+Future versions of Elasticsearch will require Java 11; your Java version from [D:\java2\jdk\jdk1.8.0_51\jre] does not meet this requirement. Consider switching to a distribution of Elasticsearch with a bundled JDK. If you are already using a distribution with a bundled JDK, ensure the JAVA_HOME environment variable is not set.
+Warning: with JDK 8 on Windows, Elasticsearch may be unable to derive correct
+  ergonomic settings due to a JDK issue (JDK-8074459). Please use a newer
+  version of Java.
+Warning: MaxDirectMemorySize may have been miscalculated due to JDK-8074459.
+  Please use a newer version of Java or set MaxDirectMemorySize explicitly.
+[2023-01-09T09:38:49,487][INFO ][o.e.n.Node               ] [EINK-MYPC] version[7.17.3], pid[7828], build[default/zip/5ad023604c8d7416c9eb6c0eadb62b14e766caff/2022-04-19T08:11:19.070913226Z], OS[Windows 8.1/6.3/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_51/25.51-b03]
+[2023-01-09T09:38:49,490][INFO ][o.e.n.Node               ] [EINK-MYPC] JVM home [D:\java2\jdk\jdk1.8.0_51\jre], using bundled JDK [false]
+[2023-01-09T09:38:49,491][INFO ][o.e.n.Node               ] [EINK-MYPC] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,JRE, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Xms1024m, -Xmx1024m, -XX:MaxDirectMemorySize=536870912, -Delasticsearch, -Des.path.home=D:\softs-install\elasticsearch\elasticsearch-7.17.3, -Des.path.conf=D:\softs-install\elasticsearch\elasticsearch-7.17.3\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=true]
+[2023-01-09T09:38:55,845][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [aggs-matrix-stats]
+[2023-01-09T09:38:55,848][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [analysis-common]
+[2023-01-09T09:38:55,849][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [constant-keyword]
+[2023-01-09T09:38:55,850][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [frozen-indices]
+[2023-01-09T09:38:55,850][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [ingest-common]
+[2023-01-09T09:38:55,851][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [ingest-geoip]
+[2023-01-09T09:38:55,852][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [ingest-user-agent]
+[2023-01-09T09:38:55,852][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [kibana]
+[2023-01-09T09:38:55,853][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [lang-expression]
+[2023-01-09T09:38:55,853][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [lang-mustache]
+[2023-01-09T09:38:55,854][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [lang-painless]
+[2023-01-09T09:38:55,854][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [legacy-geo]
+[2023-01-09T09:38:55,855][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [mapper-extras]
+[2023-01-09T09:38:55,856][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [mapper-version]
+[2023-01-09T09:38:55,856][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [parent-join]
+[2023-01-09T09:38:55,857][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [percolator]
+[2023-01-09T09:38:55,857][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [rank-eval]
+[2023-01-09T09:38:55,858][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [reindex]
+[2023-01-09T09:38:55,858][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [repositories-metering-api]
+[2023-01-09T09:38:55,859][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [repository-encrypted]
+[2023-01-09T09:38:55,859][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [repository-url]
+[2023-01-09T09:38:55,860][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [runtime-fields-common]
+[2023-01-09T09:38:55,862][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [search-business-rules]
+[2023-01-09T09:38:55,868][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [searchable-snapshots]
+[2023-01-09T09:38:55,869][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [snapshot-repo-test-kit]
+[2023-01-09T09:38:55,870][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [spatial]
+[2023-01-09T09:38:55,872][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [transform]
+[2023-01-09T09:38:55,873][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [transport-netty4]
+[2023-01-09T09:38:55,875][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [unsigned-long]
+[2023-01-09T09:38:55,877][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [vector-tile]
+[2023-01-09T09:38:55,881][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [vectors]
+[2023-01-09T09:38:55,882][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [wildcard]
+[2023-01-09T09:38:55,884][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-aggregate-metric]
+[2023-01-09T09:38:55,886][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-analytics]
+[2023-01-09T09:38:55,887][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-async]
+[2023-01-09T09:38:55,888][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-async-search]
+[2023-01-09T09:38:55,889][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-autoscaling]
+[2023-01-09T09:38:55,890][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-ccr]
+[2023-01-09T09:38:55,891][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-core]
+[2023-01-09T09:38:55,892][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-data-streams]
+[2023-01-09T09:38:55,896][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-deprecation]
+[2023-01-09T09:38:55,898][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-enrich]
+[2023-01-09T09:38:55,899][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-eql]
+[2023-01-09T09:38:55,900][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-fleet]
+[2023-01-09T09:38:55,901][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-graph]
+[2023-01-09T09:38:55,902][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-identity-provider]
+[2023-01-09T09:38:55,903][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-ilm]
+[2023-01-09T09:38:55,904][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-logstash]
+[2023-01-09T09:38:55,905][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-ml]
+[2023-01-09T09:38:55,906][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-monitoring]
+[2023-01-09T09:38:55,907][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-ql]
+[2023-01-09T09:38:55,908][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-rollup]
+[2023-01-09T09:38:55,909][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-security]
+[2023-01-09T09:38:55,914][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-shutdown]
+[2023-01-09T09:38:55,915][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-sql]
+[2023-01-09T09:38:55,916][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-stack]
+[2023-01-09T09:38:55,918][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-text-structure]
+[2023-01-09T09:38:55,919][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-voting-only-node]
+[2023-01-09T09:38:55,920][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded module [x-pack-watcher]
+[2023-01-09T09:38:55,921][INFO ][o.e.p.PluginsService     ] [EINK-MYPC] loaded plugin [analysis-ik]
+[2023-01-09T09:38:55,972][INFO ][o.e.e.NodeEnvironment    ] [EINK-MYPC] using [1] data paths, mounts [[Data (D:)]], net usable_space [67.5gb], net total_space [333.3gb], types [NTFS]
+[2023-01-09T09:38:55,973][INFO ][o.e.e.NodeEnvironment    ] [EINK-MYPC] heap size [990.7mb], compressed ordinary object pointers [true]
+[2023-01-09T09:38:56,298][INFO ][o.e.n.Node               ] [EINK-MYPC] node name [EINK-MYPC], node ID [Eu1HBSKKSraMvJ4EgWZ_2Q], cluster name [elasticsearch], roles [transform, data_frozen, master, remote_cluster_client, data, data_content, data_hot, data_warm, data_cold, ingest]
+[2023-01-09T09:39:06,627][INFO ][o.e.x.s.a.s.FileRolesStore] [EINK-MYPC] parsed [0] roles from file [D:\softs-install\elasticsearch\elasticsearch-7.17.3\config\roles.yml]
+[2023-01-09T09:39:08,274][INFO ][o.e.i.g.ConfigDatabases  ] [EINK-MYPC] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [D:\softs-install\elasticsearch\elasticsearch-7.17.3\config\ingest-geoip] for changes
+[2023-01-09T09:39:08,278][INFO ][o.e.i.g.DatabaseNodeService] [EINK-MYPC] initialized database registry, using geoip-databases directory [C:\Users\ADMINI~1\AppData\Local\Temp\elasticsearch\geoip-databases\Eu1HBSKKSraMvJ4EgWZ_2Q]
+[2023-01-09T09:39:09,252][INFO ][o.e.t.NettyAllocator     ] [EINK-MYPC] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=990.7mb}]
+[2023-01-09T09:39:09,300][INFO ][o.e.i.r.RecoverySettings ] [EINK-MYPC] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2023-01-09T09:39:09,363][INFO ][o.e.d.DiscoveryModule    ] [EINK-MYPC] using discovery type [zen] and seed hosts providers [settings]
+[2023-01-09T09:39:10,116][INFO ][o.e.g.DanglingIndicesState] [EINK-MYPC] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2023-01-09T09:39:10,997][INFO ][o.e.n.Node               ] [EINK-MYPC] initialized
+[2023-01-09T09:39:10,998][INFO ][o.e.n.Node               ] [EINK-MYPC] starting ...
+[2023-01-09T09:39:11,148][INFO ][o.e.x.s.c.f.PersistentCache] [EINK-MYPC] persistent cache index loaded
+[2023-01-09T09:39:11,152][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [EINK-MYPC] deprecation component started
+[2023-01-09T09:39:12,745][INFO ][o.e.t.TransportService   ] [EINK-MYPC] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2023-01-09T09:39:13,747][WARN ][o.e.b.BootstrapChecks    ] [EINK-MYPC] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2023-01-09T09:39:13,751][INFO ][o.e.c.c.Coordinator      ] [EINK-MYPC] cluster UUID [-25h_mEKQ4SCvDEu9snCMw]
+[2023-01-09T09:39:13,770][INFO ][o.e.c.c.ClusterBootstrapService] [EINK-MYPC] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2023-01-09T09:39:14,072][INFO ][o.e.c.s.MasterService    ] [EINK-MYPC] elected-as-master ([1] nodes joined)[{EINK-MYPC}{Eu1HBSKKSraMvJ4EgWZ_2Q}{QSFUrmk-S6ug5jrrqkzZwQ}{127.0.0.1}{127.0.0.1:9300}{cdfhimrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 9, version: 161, delta: master node changed {previous [], current [{EINK-MYPC}{Eu1HBSKKSraMvJ4EgWZ_2Q}{QSFUrmk-S6ug5jrrqkzZwQ}{127.0.0.1}{127.0.0.1:9300}{cdfhimrstw}]}
+[2023-01-09T09:39:14,353][INFO ][o.e.c.s.ClusterApplierService] [EINK-MYPC] master node changed {previous [], current [{EINK-MYPC}{Eu1HBSKKSraMvJ4EgWZ_2Q}{QSFUrmk-S6ug5jrrqkzZwQ}{127.0.0.1}{127.0.0.1:9300}{cdfhimrstw}]}, term: 9, version: 161, reason: Publication{term=9, version=161}
+[2023-01-09T09:39:15,462][INFO ][o.e.l.LicenseService     ] [EINK-MYPC] license [b91faa38-60bb-4d92-8f90-152bed8f0eda] mode [basic] - valid
+[2023-01-09T09:39:15,467][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [EINK-MYPC] Active license is now [BASIC]; Security is disabled
+[2023-01-09T09:39:15,469][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [EINK-MYPC] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+[2023-01-09T09:39:15,488][INFO ][o.e.g.GatewayService     ] [EINK-MYPC] recovered [13] indices into cluster_state
+[2023-01-09T09:39:15,652][INFO ][o.e.h.AbstractHttpServerTransport] [EINK-MYPC] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2023-01-09T09:39:15,658][INFO ][o.e.n.Node               ] [EINK-MYPC] started
+[2023-01-09T09:39:15,902][INFO ][o.w.a.d.Dictionary       ] [EINK-MYPC] try load config from D:\softs-install\elasticsearch\elasticsearch-7.17.3\config\analysis-ik\IKAnalyzer.cfg.xml
+[2023-01-09T09:39:15,908][INFO ][o.w.a.d.Dictionary       ] [EINK-MYPC] try load config from D:\softs-install\elasticsearch\elasticsearch-7.17.3\plugins\analysis-ik\config\IKAnalyzer.cfg.xml
+[2023-01-09T09:39:18,050][INFO ][o.e.i.g.GeoIpDownloader  ] [EINK-MYPC] updating geoip databases
+[2023-01-09T09:39:18,078][INFO ][o.e.i.g.GeoIpDownloader  ] [EINK-MYPC] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2023-01-09T09:39:18,844][ERROR][o.e.i.g.GeoIpDownloader  ] [EINK-MYPC] exception during geoip databases update
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+        at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[?:?]
+        at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949) ~[?:?]
+        at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302) ~[?:?]
+        at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296) ~[?:?]
+        at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1497) ~[?:?]
+        at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212) ~[?:?]
+        at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979) ~[?:?]
+        at sun.security.ssl.Handshaker.process_record(Handshaker.java:914) ~[?:?]
+        at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062) ~[?:?]
+        at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375) ~[?:?]
+        at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403) ~[?:?]
+        at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387) ~[?:?]
+        at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[?:?]
+        at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[?:?]
+        at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[?:?]
+        at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440) ~[?:?]
+        at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[?:1.8.0_51]
+        at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338) ~[?:?]
+        at org.elasticsearch.ingest.geoip.HttpClient.lambda$get$0(HttpClient.java:55) ~[ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.ingest.geoip.HttpClient$$Lambda$5831/2100344306.get(Unknown Source) ~[?:?]
+        at org.elasticsearch.ingest.geoip.HttpClient$$Lambda$5832/1485482001.run(Unknown Source) ~[?:?]
+        at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_51]
+        at org.elasticsearch.ingest.geoip.HttpClient.doPrivileged(HttpClient.java:97) ~[ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.ingest.geoip.HttpClient.get(HttpClient.java:49) ~[ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.ingest.geoip.HttpClient.getBytes(HttpClient.java:40) ~[ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.ingest.geoip.GeoIpDownloader.fetchDatabasesOverview(GeoIpDownloader.java:141) ~[ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.ingest.geoip.GeoIpDownloader.updateDatabases(GeoIpDownloader.java:129) ~[ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.ingest.geoip.GeoIpDownloader.runDownloader(GeoIpDownloader.java:266) [ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:100) [ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:46) [ingest-geoip-7.17.3.jar:7.17.3]
+        at org.elasticsearch.persistent.NodePersistentTasksExecutor$1.doRun(NodePersistentTasksExecutor.java:42) [elasticsearch-7.17.3.jar:7.17.3]
+        at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) [elasticsearch-7.17.3.jar:7.17.3]
+        at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) [elasticsearch-7.17.3.jar:7.17.3]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_51]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_51]
+        at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51]
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+        at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387) ~[?:?]
+        at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292) ~[?:?]
+        at sun.security.validator.Validator.validate(Validator.java:260) ~[?:?]
+        at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[?:?]
+        at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229) ~[?:?]
+        at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124) ~[?:?]
+        at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1479) ~[?:?]
+        ... 31 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+        at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145) ~[?:?]
+        at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131) ~[?:?]
+        at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280) ~[?:1.8.0_51]
+        at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382) ~[?:?]
+        at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292) ~[?:?]
+        at sun.security.validator.Validator.validate(Validator.java:260) ~[?:?]
+        at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324) ~[?:?]
+        at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229) ~[?:?]
+        at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124) ~[?:?]
+        at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1479) ~[?:?]
+        ... 31 more
+[2023-01-09T09:39:22,221][INFO ][o.e.c.r.a.AllocationService] [EINK-MYPC] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2022.12.31-000001][0]]]).

@@ -129,3 +129,18 @@
 			https://blog.csdn.net/kingmax54212008/article/details/89003076 
 		b,Junit External Resource @Rule Order 
 			https://stackoverflow.com/questions/19175356/junit-external-resource-rule-order 
+12，android test
+	12.1 android项目测试类Log.d(),java.lang.RuntimeException: Method d in android.util.Log not mocked.
+		See http://g.co/androidstudio/not-mocked for details.
+		
+		参考：【Android-UnitTest】Android单元测试问题汇总
+			https://blog.csdn.net/dandelionela/article/details/106542895?
+			https://blog.csdn.net/qq_38910403/article/details/102639487
+			
+			module下的gradle添加	
+				android {
+					...
+					testOptions {
+						unitTests.returnDefaultValues = true
+					}
+			（这主要是由于单元测试主要测试代码而非依赖，用于运行单元测试的android.jar不包含任何实际的代码）

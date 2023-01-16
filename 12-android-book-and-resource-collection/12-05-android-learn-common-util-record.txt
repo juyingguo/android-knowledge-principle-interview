@@ -1,0 +1,4 @@
+1.封装通用工具类
+	常用工具类之 GsonUtil
+	https://www.cnblogs.com/liuyishi/p/16875660.html
+	*\AndroidJavaDemoTestForAS\app\src\main\java\com\utils\GsonUtil.java

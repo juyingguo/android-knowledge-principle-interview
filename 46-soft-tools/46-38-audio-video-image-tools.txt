@@ -9,6 +9,11 @@
 		这种方式，非常清晰，没有任何错乱。
 		
 		这种方式特别适合自己自己电脑。有pdf工具即可。外面打印机店，可能有些比如信阳师院设置打印前先通过软件缴费，就不好使。其它的应该都能正常转换。
+	1.4 格式工厂
+		http://www.pcgeshi.com/download.html
+		
+		手机端：
+			转换【西瓜视频缓存视频文件】，收费。
 2. 如何将mht格式的网页转换为HTML格式
 	https://jingyan.baidu.com/article/020278113091661bcc9ce537.html 
 	首先，这里有一个mht格式的网页。
@@ -18,7 +23,8 @@
 3. 不同视频格式，文件大小对比
 	3.1 flv,2M/min
 		avi，13M/min
-		
+	3.2 视频文件格式AVI,MP4,3GP同样的文件哪个占用内存小?
+		https://zhidao.baidu.com/question/1675531257387655267.html
 4.PC端有哪些比较好的录屏软件？
 	https://www.zhihu.com/question/376919735?sort=created  
 	
@@ -29,4 +35,15 @@
 
 			最重要是的基础功能免费。
 	4.3 obs录制屏幕视频 
-		
+5. 学到了！西瓜视频转换成mp4格式的方法
+	https://www.easeus.com.cn/zhishi/shipin-2022111411333.html
+	
+	易我视频转换器
+	格式工厂
+	VLC 媒体播放器
+	
+	
+	手机西瓜缓存视频转不成正常视频?
+	https://wen.baidu.com/question/1741500896471237347.html
+	
+	西瓜视频缓存的视频在“/sdcard/Android/data/com.ss.android.article.video/files/ttvideo_offline“文件夹中。

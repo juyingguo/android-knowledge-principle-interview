@@ -439,6 +439,17 @@
 		Jcenter服务即将关闭，改用mavenCentral
 			https://zhuanlan.zhihu.com/p/363156372
 			{原有的变为只读，可以下载。}
+	14.4 Android Studio Gradle 缓存目录设置
+		https://www.shuzhiduo.com/A/QW5YBp63dm/
+		
+		Android-Studio 缓存文件夹配置
+		
+			https://blog.csdn.net/qiujuer/article/details/44160127
+		
+			maven设置：
+				Path Variables中添加：
+				MAVEN_REPOSITORY
+				D:\cache-data\.m2\repository
 15 Project needs to be converted to androidx.* dependencies 
 	15.1 Android解决Project needs to be converted to androidx.* dependencies问题
 		https://blog.csdn.net/weixin_40420578/article/details/100582094 
@@ -556,6 +567,50 @@
 			模拟器wifi状态为[connected no internet]。
 			重启后，变为[connected]。可以正常上网了。
 		e,配置dns用的ip为192.168.1.1，能否电脑的其它地址。
+	19.3 avd config：intel HAXM documentation:
+		
+		https://software.intel.com/android/articles/intel-hardware-accelerated-execution-manager
+		
+		start emulator tip:
+			{
+			
+			we have detected that your system can run the Android emulator in an accelerated performance mode.
+			Set the maximum amount of RAM available for the ntel@ Hardware Accelerated Execution Manager(HAXM to use for all x86 emulator instaces.
+			You can change these setings at any time by running the lntel R HAXM installer.
+			Refer to the lntelR HAXM Documentation for more information.
+
+			}
+			
+			install HAXM:
+			Note: The memory reservation setting can be changed byrunning this installer again.
+				reservation
+				英 [ˌrezəˈveɪʃn]   美 [ˌrezərˈveɪʃn]  
+				n.
+				预订;预约;保留意见;
+		2023.01.11，手动安装intelhaxm-android.exe(v1.1.5)，启动avd时提示过时
+		再次通过androidstuido-avd安装haxm时异常:
+		Running Intel® HAXM installer
+			Unable to run Intel HAXM installer: Cannot start process, the working directory 
+			'D:\java2\android\sdk\extras\intel\Hardware_Accelerated_Execution_Manager' does not exist
+			Done
+			
+			参考：https://stackoverflow.com/questions/61759710/unable-to-run-intel-haxm-installer-cannot-start-process-the-working-directory/65102664
+			
+			Instead of trying to install inside AVD Manager install from SDK Manager.
+
+			Android Studio -> Tools -> SDK Manager -> SDK Tools ->
+			Check Intel x86 Emulator Accelerator(HAXM Installer) and Click Apply,
+			 it will start download and install.(ok)
+			 
+			download and install automatically:
+			Downloading https://dl.google.com/android/repository/extras/intel/haxm-windows_v7_6_5.zip
+			"Install Intel x86 Emulator Accelerator (HAXM installer) (revision: 7.6.5)" ready.
+			Installing Intel x86 Emulator Accelerator (HAXM installer) in D:\java2\android\sdk\extras\intel\Hardware_Accelerated_Execution_Manager
+	19.4 avd ，AndroidStudio 如果通过DeviceExplorer查看文件存放位置，此时会在电脑端产生一份文件：
+		如sdcar/test.txt
+		C:\Users\Administrator\Documents\AndroidStudio\DeviceExplorer\3.7_WVGA_Nexus_One_API_22 [emulator-5554]\storage\sdcard\test.txt
+	
+		
 20 android studio启动时默认加载的工程设置
 	20.1 【Android Studio】修改默认打开上个项目的设置 
 		https://www.jianshu.com/p/44288b0be8c3 
@@ -665,6 +720,59 @@
 	b,设置环境变量
 	如果你还没下载过AVD，那么设置环境变量ANDROID_SDK_HOME，这样AndroidStudio就会把AVD下载到环境变量ANDROID_SDK_HOME对应的目录了，而不会默认下到C盘中。
 	
+	将android studio的C盘安装内容移动到其他盘的有效方法
+		https://blog.csdn.net/LINicall/article/details/127569457
+		
+		--> 移动.android
+			步骤一：把.android/avd/目录下的模拟器“xxx.avd”文件夹移动到D盘对应位置，
+				我的是D:\linjie_application\Android，“xxx.ini”文件不要移动，
+				注意我只移动了“xxx.avd”文件夹，.android目录下的其他文件都没有移动
+				#都可以移动，备份，如系统还原了可以使用。
+			步骤二：修改原C盘C:\Users\Administrator\.android\avd目录下的配置文件“xxx.ini”中的路径地址
+				修改为移动后的绝对路径
+			骤三：打开Android Studio试一下模拟器avd是否能正常启动和使用
+		移动.gradle
+			步骤一 把.gradle移动到D盘对应位置
+			步骤二 然后找到Android Studio安装目录下的\bin\idea.properties文件，
+				打开并查找“idea.config.path=${user.home}/.AndroidStudio/config”和
+				“idea.system.path=${user.home}/.AndroidStudio/system”，将这两行代码前面的#号去掉，
+				再把${user.home}换成你D盘对应的位置，android studio运行后会在对应位置生成.AndroidStudio文件夹和
+				其下的config和system两个文件夹 
+			步骤三：在上面打开的idea.properties文件最底部加上Gradle的路径配置
+				gradle.user.home=D:/cache-data/.gradle
+			步骤四：打开Android Studio的设置界面，在左边找到Gradle，并检查Gradle路径是否已经修改过来
+			步骤五：编译运行项目，看看Gradle运行是否正常
+			
+			验证通过androidstudio使用gradle正常。
+			但通过命令.\gradlew clean build
+				就会重新下载gradle，还需要配置。
+				
+				***项目中gradle-wrapper.properties的GRADLE_USER_HOME指向需要修改。没继续验证。验证无效。**
+				
+				参考【46-15-02-gradle-use-record.txt】【1.3】
+					参照修改项目下的gradlew，gradlew.bat
+					
+					DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+					GRADLE_OPTS=-Dgradle.user.home=D:\cache-data\.gradle
+					
+					set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
+					set GRADLE_OPTS=-Dgradle.user.home=D:\cache-data\.gradle
+					
+				##如果配置gradle的用户目录对应的环境变量：GRADLE_USER_HOME，值为：D:\cache-data\.gradle，就不用在gradlew和gradlew.bat中修改了。
+				
+		
+		同步工程发现，有的库还会重新下载。
+			如：AndroidJavaDemoTestForAS	
+			如：gson-2.6.2
+			之前的位置：
+				D:\cache-data\.gradle\caches\transforms-1\files-1.1\gson-2.6.2.jar
+			20230110
+			新下载位置：
+				D:\cache-data\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar
+			
+			分析：.gradle\caches下transforms-1直接存放jar
+					modules-2 按包名存放jar
+				
 32. androidstudio gradle github上的依赖，下载失败
 	
 	compile 'com.github.smart-fun:XmlToJson:1.3.5'
@@ -838,3 +946,18 @@
 	-采用高版本的，如:28.0.0。
 	-如需更高的，google已经不再提供，可以使用androidx库。
 	-参考IbotnNewApp_family配置就可以了。
+45 android studio adb.exe已停止工作,adb.exe已停止工作应该怎么办？
+	https://blog.csdn.net/weixin_30037665/article/details/117494538
+	
+	我们可以检查一下adb.exe程序使用的5037端口是否被占用了
+	
+	netstat -aon|findstr 5037
+	
+	tasklist /fi "PID eq 6720"，然后就能看到下面提示我们的是什么程序
+	
+		我的结果还是adb.exe程序。
+	
+	通过D:\java2\android\sdk\platform-tools目录下执行 adb.exe也会提示程序异常停止。
+	
+	猜测，这个文件夹下的adb.exe出问题了，androidstudio使用的也是这个文件。
+	尝试将其它能正常使用的adb.exe，覆盖platform-tools下的adb.exe。问题解决。

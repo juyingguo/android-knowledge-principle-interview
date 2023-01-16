@@ -1,0 +1,10 @@
+1. vagaa搜索没反应怎么办 vagaa搜索不到任何东西 
+	https://www.cr173.com/html/73654_1.html
+	
+	先退出vagaa，然后在vagga下载目录里打开data文件夹——用记事本打开AWF文件——删除里边所有东东——保存——然后查看AWF的属性——改为只读——然后用WORD打开——这时记得““千万””
+	不要关闭WORD!!!!!!----------打开VAGAA，等搜到网络后就随便搜索吧！
+	
+2. 有没有类似vagaa一样的软件
+	类似的vagaae就有电驴，点点通
+	
+	http://www.easymule.com/zh-cn/

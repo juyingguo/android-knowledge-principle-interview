@@ -2,7 +2,11 @@
 	lombok的官方地址：
 		https://projectlombok.org/
 		https://projectlombok.org/features/constructor
-	lombok的Github地址：https://github.com/rzwitserloot/lombok
+		
+	官方文档：
+		https://projectlombok.org/features/all
+	lombok的Github地址：
+		https://github.com/rzwitserloot/lombok
 2. Lombok全面详细讲解
 		https://baijiahao.baidu.com/s?id=1663718812859963066&wfr=spider&for=pc
 		
@@ -11,6 +15,8 @@
 		Lombok plugin: Preferences —> Plugins —> 搜索 Lombok plugin — > Install
 
 		同时设置 Preferences -> Compiler -> Annotation Processors -> Enable annotation processing勾选。
+	2.3 Lombok有啥牛皮的？SpringBoot和IDEA官方都要支持它！
+		https://www.macrozheng.com/mall/reference/lombok_start.html#lombok简介
 3. lombok 基础注解之 @AllArgsConstructor
 	https://blog.csdn.net/qq_39249094/article/details/120860162
 	

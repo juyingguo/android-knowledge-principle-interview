@@ -1,0 +1,94 @@
+1. 数据库
+	OceanBase
+	
+
+一、表student，字段classid为所属班级，写SQL语句查询每个班级学生个数？
+	
+	1.1、怎样用SQL语句表示:查询每个班级的学生人数
+		SELECT classname, COUNT(classid) FROM student GROUP BY classid;
+		https://zhidao.baidu.com/question/253158303.html
+二、sql教程 
+	
+	2.1 、 SQL 教程 W3School
+		https://www.w3school.com.cn/sql/sql_func_count.aspx
+3. ODBC 
+	3.1 ODBC 
+		https://baike.baidu.com/item/%E5%BC%80%E6%94%BE%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%92%E8%BF%9E/10418782?fromtitle=ODBC&fromid=759553&fr=aladdin 
+		开放数据库连接（Open Database Connectivity，ODBC）是为解决异构数据库间的数据共享而产生的，现已成为WOSA(The Windows Open System Architecture(Windows开放系统体系结构))的主要部分和基于Windows环境的一种数据库访问接口标准ODBC 为异构数据库访问提供统一接口，允许应用程序以SQL 为数据存取标准，存取不同DBMS管理的数据；使应用程序直接操纵DB中的数据，免除随DB的改变而改变。用ODBC 可以访问各类计算机上的DB文件，甚至访问如Excel 表和ASCI I数据文件这类非数据库对象。 
+4. Java 通过JDBC连接并操作Mysql数据库
+	4.1 Java连接MySQL数据库——含步骤和代码
+		https://blog.csdn.net/xiaoxinshuaiga/article/details/90735043
+		
+		//声明Connection对象
+		package sqldemo;
+		 2 
+		 3 import java.sql.Connection;
+		 4 import java.sql.DriverManager;
+		 5 import java.sql.ResultSet;
+		 6 import java.sql.SQLException;
+		 7 import java.sql.Statement;
+		 8 
+		 9 public class main {
+		10 
+		11     public static void main(String[] args) {
+		12         //声明Connection对象
+		13         Connection con;
+		14         //驱动程序名
+		15         String driver = "com.mysql.jdbc.Driver";
+		16         //URL指向要访问的数据库名mydata
+		17         String url = "jdbc:mysql://localhost:3306/sqltestdb";
+		18         //MySQL配置时的用户名
+		19         String user = "root";
+		20         //MySQL配置时的密码
+		21         String password = "123456";
+		22         //遍历查询结果集
+		23         try {
+		24             //加载驱动程序
+		25             Class.forName(driver);
+		26             //1.getConnection()方法，连接MySQL数据库！！
+		27             con = DriverManager.getConnection(url,user,password);
+		28             if(!con.isClosed())
+		29                 System.out.println("Succeeded connecting to the Database!");
+		30             //2.创建statement类对象，用来执行SQL语句！！
+		31             Statement statement = con.createStatement();
+		32             //要执行的SQL语句
+		33             String sql = "select * from emp";
+		34             //3.ResultSet类，用来存放获取的结果集！！
+		35             ResultSet rs = statement.executeQuery(sql);
+		36             System.out.println("-----------------");
+		37             System.out.println("执行结果如下所示:");  
+		38             System.out.println("-----------------");  
+		39             System.out.println("姓名" + "\t" + "职称");  
+		40             System.out.println("-----------------");  
+		41              
+		42             String job = null;
+		43             String id = null;
+		44             while(rs.next()){
+		45                 //获取stuname这列数据
+		46                 job = rs.getString("job");
+		47                 //获取stuid这列数据
+		48                 id = rs.getString("ename");
+		49 
+		50                 //输出结果
+		51                 System.out.println(id + "\t" + job);
+		52             }
+		53             rs.close();
+		54             con.close();
+		55         } catch(ClassNotFoundException e) {   
+		56             //数据库驱动类异常处理
+		57             System.out.println("Sorry,can`t find the Driver!");   
+		58             e.printStackTrace();   
+		59             } catch(SQLException e) {
+		60             //数据库连接失败异常处理
+		61             e.printStackTrace();  
+		62             }catch (Exception e) {
+		63             // TODO: handle exception
+		64             e.printStackTrace();
+		65         }finally{
+		66             System.out.println("数据库数据成功获取！！");
+		67         }
+		68     }
+		69 
+		70 }	
+5. hsqldb
+	

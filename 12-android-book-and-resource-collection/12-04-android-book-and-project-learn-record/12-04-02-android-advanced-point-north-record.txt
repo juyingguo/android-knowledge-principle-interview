@@ -1,0 +1,8 @@
+0.
+8.
+	zipalign
+		如果是对 APK 正式签名，那么还需要使用自 zipalign 工具对 APK 进行对齐操作 ，
+		这样应用运行时会减少内存的开销.
+		
+	gradle wrapper --gradle-version 5.4.1 --distribution-type all
+	

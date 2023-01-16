@@ -18,6 +18,8 @@
 	01.2 Google官方示例的Git-Hub地址：Google官方示例地址
 		https://github.com/android/architecture-samples
 		
+		谷歌官方的 MVP 实例： 
+			https://github.com/googlesamples/android-architecture/tree/todo-mvp/。
 	01.3 mvp,退出界面，取消尚未执行的任务。
 		同时需要在任务完成后，需要通过接口判断view是否已经销毁。
 	01.4 Android设计模式之浅谈MVP

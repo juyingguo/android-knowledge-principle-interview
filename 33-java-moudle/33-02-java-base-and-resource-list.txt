@@ -65,18 +65,25 @@
 			Windows 8.1及Windows8 JDK环境变量配置
 			https://www.bbsmax.com/A/mo5kq1wQzw/
 			
-			系统变量名：JAVA_HOME
+				系统变量名：JAVA_HOME
 
-			变量值：C:\Program Files\Java\jdk1.7.0_15 /*此路经为你安装Jave的路径*/
-			系统变量
+				变量值：C:\Program Files\Java\jdk1.7.0_15 /*此路经为你安装Jave的路径*/
+				系统变量
 
-			变量名：CLASSPATH
+				变量名：CLASSPATH
 
-			变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
-			
-			双击系统变量Path，在最后面添加： ;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin
+				变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+				
+				双击系统变量Path，在最后面添加： ;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+				
 		0.2.7 window 下 win10 jdk8安装与环境变量的配置（超级详细）
 				https://blog.csdn.net/weixin_43731532/article/details/112461151
+				
+				win10安装配置JDK8
+				
+				#同【0.2.6】
+				在配置Path时有些差别，需要将;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;拆开为%JAVA_HOME%\bin和%JAVA_HOME%\jre\bin
+				后，分别添加进Path中即可。
 			
 	0.3 android官方文档
 		https://developer.android.google.cn/training/camera/photobasics?hl=zh-cn
@@ -244,6 +251,17 @@
 			verify code:	com.java8test.TestFunction
 			
 	10.2 Consumer
+	
+	10.3 List集合的stream()
+	10.4 【Java 8】Predicate详解
+		10.4.1 Predicate详解
+			https://www.cnblogs.com/satire/p/14323994.html
+				测试：com.java8test.Java8PredicateTester2
+					com.java8test.Java8StreamTester1
+			https://blog.csdn.net/qq_27416233/article/details/83418791?
+		
+		10.4.2 java predicate原理_java8学习之Predicate深入剖析与函数式编程本质
+			https://blog.csdn.net/weixin_28849929/article/details/114732671
 		
 11. java 泛型
 	11.1 https://www.runoob.com/java/java-generics.html 
@@ -353,3 +371,24 @@
 		directory.getCanonicalPath(); //得到的是C:\
 		directory.getAbsolutePath();    //得到的是C:\test\..
 		direcotry.getPath();                    //得到的是..
+		
+25, JDK keytool 查询 添加 删除 证书
+
+	https://blog.csdn.net/dling8/article/details/101872939
+	
+	使用JDK中的 keytool【创建证书】・【查看】・【使用】
+		https://blog.csdn.net/sxzlc/article/details/117166107
+	
+		keytool help
+		keytool 某一项 help
+		
+		// 这个命令的意思是显示文件cacerts中已经添加的证书的列表，注意此时我们的路径是：D:\soft\jdk\jdk1.8.0_191\jre\lib\security>
+		keytool -list -keystore cacerts
+		 
+		keytool -list -keystore cacerts|findstr aliyun    // 查询名称包含aliyun的证书
+		——
+	从证书库中删除证书：
+		
+		keytool -delete -alias aliyun20200216 -keystore cacerts
+	查看证书详细信息
+		keytool -list -v -keystore keystore | findstr aliyun -storepass 123456

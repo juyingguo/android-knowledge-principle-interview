@@ -34,14 +34,68 @@
 	https://youkmi.blog.csdn.net/article/details/113790101 
 	含面试，及技术。
 12,okhtttp相关技术及面试题见【07-09-okhttp-and-related.txt】
-13 https://www.cnblogs.com/Android-Alvin/tag/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/
-	各种面试总结
 	
+13,享学课堂面试题及资料
+	https://www.cnblogs.com/Android-Alvin/tag/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/
+	https://www.cnblogs.com/Android-Alvin/tag/今日头条/
+	各种面试总结
+	【也是享学课堂，alvin老师发的】
 	13.2 
 		上述资源在开源项目：https://github.com/Android-Alvin/Android-LearningNotes 中已提供下载方式，里面包含不同方向的自学编程路线、面试题集合/面经、及系列技术文章等，资源持续更新中…
+	
+	2021年！最全Android大厂面试真题合集（附答案）	
+		http://it.ruhseg.cn/enjoy/advertorial/article_3
 		
+		#扫码加微信免费获取完整版《[2020 Android BAT面试题及参考答案]
+		还是享学课堂。可乐老师。
+		之前过，没这个全。可以参考没有的，单独再找再下载。
+	备战2023，Android中高级面试必知必会
+		https://www.xiangxueketang.cn/enjoy/removal/article_7
+		【享学课堂】
+		
+	2021年度大厂Android高级开发面试题以及完整答案整理
+		http://www.java1234.com/a/javaziliao/bishi/2021/1119/21447.html
+		链接：https://pan.baidu.com/s/1sbJWmMJyZmXH739Xp1UNbA 
+		提取码：x8qk 
+		保存到android-享学课堂
 14 面试题
 	https://blog.csdn.net/alexlee1986/category_9765276.html
 			
 15 吊打面试官：Android中高级面试题 -- 终局之战
 	https://blog.csdn.net/AndroidAlvin/article/details/105703056? 
+16 Android开发6年了，2021年大厂程序员进阶宝典，已拿offer附真题解析
+	https://www.cnblogs.com/moonxuejava/p/15174718.html
+	
+	本文在开源项目：Gitee中已收录：https://gitee.com/hu-laopi/android-development-guide
+		#https://gitee.com/hu-laopi/android-development-guide/blob/master/Android开发还不会这些？如何面试拿高薪！.md
+		添加qq群获取资料。
+			android架构师预备营：793544421.。
+			
+		github上的目录资料和面试可以参考。
+		
+		Android已死？如何才能通过一线互联网公司面试？完整版开放免费下载！
+			https://www.cnblogs.com/moonxuejava/p/15174708.html
+			
+			{本文将从以下方面为大家详解热修复技术：
+
+				什么是热修复？
+				热修复的优势和不足？
+				热修复框架分类
+				技术原理及特点
+				实际案例解析
+				热修复技术选择}
+				##等新技术。。
+		同上。
+		【加群后，也是】【享学课堂】
+		享学课堂群android资料解压密码:资料和之前保存在云盘上的一样
+		
+	最全的BAT大厂面试题整理，看看这篇文章吧！
+		https://blog.csdn.net/CHAMPION8888/article/details/115323056
+		https://github.com/a120464/Android-P7
+		
+	2021上半年Android岗，大厂面试真题全收录+解析
+		https://zhuanlan.zhihu.com/p/376615077
+		
+	
+	
+	

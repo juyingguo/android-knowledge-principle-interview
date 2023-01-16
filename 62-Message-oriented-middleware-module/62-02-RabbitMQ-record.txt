@@ -1,9 +1,60 @@
 1.
 	https://github.com/rabbitmq
 	
-	下载Erlang的OPT 25，下载地址：https://erlang.org/download/otp_versions_tree.html
-	
-	下载RabbitMQ的3.10.5版本，下载地址：https://github.com/rabbitmq/rabbitmq-server/releases
+	Windows下的安装
+			https://www.macrozheng.com/mall/reference/rabbitmq_start.html#windows下的安装
+			下载Erlang的OPT 25，下载地址：https://erlang.org/download/otp_versions_tree.html
+			
+			下载RabbitMQ的3.10.5版本，下载地址：https://github.com/rabbitmq/rabbitmq-server/releases
+			
+			安装配置
+				配置ERLANG_HOME环境变量。
+				进入RabbitMQ的sbin目录下安装插件：		
+				rabbitmq-plugins enable rabbitmq_management
+				访问地址查看是否安装成功：http://localhost:15672/
+				
+				输入账号密码并登录guest:guest
+
+				创建帐号并设置其角色为管理员mall:mall
+		Windows环境下RabbitMQ的下载，启动和停止命令
+			https://www.codenong.com/cs106633308/
+			
+			如何实现本文片头的可视化界面，则需要输入以下命令启动：
+
+			运行命令行窗口cmd
+			输入命令rabbitmq-plugins enable rabbitmq_management，这样就可以添加可视化插件了。
+			rabblitMq启动方式：
+
+			1.rabbitmq-server -detached 后台启动
+
+			2.rabbitmq-server 直接启动，如果你关闭窗口或者需要在改窗口使用其他命令时应用就会停止
+			
+			或者用cmd命令先进入安装rabbit的sbin文件下：
+			先rabbitmq-service start（若启动时提示服务器无效，则启动前先点一下reinstall）
+			
+				##执行rabbitmq-server start /stop时提示异常
+					ERROR: could not bind to distribution port 25672, it is in use by another node: rabbit@eink-mypc
+					之前用rabbitmq-plugins enable rabbitmq_management启动过。
+	#Linux下的安装
+		https://www.macrozheng.com/mall/reference/rabbitmq_start.html#linux下的安装
+		
+		下载rabbitmq 3.7.15的Docker镜像；
+
+			docker pull rabbitmq:3.7.15
+		使用Docker命令启动服务；
+			docker run -p 5672:5672 -p 15672:15672 --name rabbitmq \
+			-d rabbitmq:3.7.15
+		
+		进入容器并开启管理功能；
+			docker exec -it rabbitmq /bin/bash
+			rabbitmq-plugins enable rabbitmq_management
+		开启防火墙便于外网访问。
+
+			firewall-cmd --zone=public --add-port=15672/tcp --permanent
+			firewall-cmd --zone=public --add-port=5672/tcp --permanent
+			firewall-cmd --reload		
+		访问及配置
+		访问RabbitMQ管理页面地址，查看是否安装成功（Linux下使用服务器IP访问即可）：http://localhost:15672/
 2.RabbitMQ教程
 	2.1 RabbitMQ（一）：RabbitMQ快速入门
 		https://www.cnblogs.com/sgh1023/p/11217017.html

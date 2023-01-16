@@ -1,4 +1,27 @@
 1.
+	1.1 免费常用IP归属地查询API
+		https://blog.csdn.net/weixin_29053561/article/details/111996442
+		
+		#其实这些IP归属地的查询，实现起来也不难，主要是要有一个IP库文件就能实现
+		
+		1. ip-api.com ,可切换显示语言
+			http://ip-api.com/json/117.136.12.79?lang=zh-CN
+			
+			post时：lang=zh-CN无效。后端设计可能如此。
+			
+		2. 百度
+			http://opendata.baidu.com/api.php?query=117.136.12.79&co=&resource_id=6006&oe=utf8
+			验证发现：该接口支持get,post请求。
+			
+		3. https://ip.useragentinfo.com/api
+		直接调用即可【没有频率限制】：https://ip.useragentinfo.com/json?ip=117.136.12.79
+		
+			验证发现：该接口支持GET请求，不支持post请求
+		4. https://api.vore.top/api/IPdata
+			直接调用即可【没有频率限制，自动区分IPv4和IPv6】，请求示例：https://api.vore.top/api/IPdata?ip=117.136.12.79
+			
+			验证发现：该接口支持get,post请求。
+			
 2.接口说明 - 淘宝IP地址库 
 	https://ip.taobao.com/instructions
 	
@@ -7,3 +30,6 @@
 	/outGetIpInfo?ip=[ip地址字串]&accessKey=[访问密匙]
 	
 	举例：https://ip.taobao.com/outGetIpInfo?ip=39.155.184.147
+	2. http://ip.taobao.com/service/getIpInfo.php?ip=39.155.184.147
+		
+	

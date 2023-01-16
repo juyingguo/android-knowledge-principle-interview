@@ -366,10 +366,13 @@
 		者博客直接交流， http://my.oschina.netJavaLaw/log
 		
 11，j2ee前后端分离，前端代码和后端代码分别运行、部署在服务器上的方法。
-	11.1 参考[9.2] Spring Boot定制Spring MVC
+	11.1
+		参考[9.2] Spring Boot定制Spring MVC
 		
 		 创建一个名为 spring-boot-adminex 的 Spring Boot 项目，并将后台管理系统 AdminEx 中的 css、fonts、images 和 js 目录及其中的静态资源，移动到该项目的 src/main/resources/static
-		
+	11.2 1.4 部署Java项目
+		部署Java项目到阿里云服务器（Ubuntu16.04 64位）
+		https://www.shuzhiduo.com/A/Vx5MZnpLdN/
 12， xml 中的xsi 是什么意思？	
 	https://zhidao.baidu.com/question/174984537.html
 	
@@ -634,7 +637,27 @@
 			set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass&& npm install node-sass
 		23.2.2 github上的mall电商项目admin账号默认密码是什么
 			https://tieba.baidu.com/p/7762460973
+			密码：：macro123
 			
 			自己改数据库啊，用passwordEncoder加密后存进去.
 			参考注册账户
 	23.3 mall后端项目
+	
+		项目文档
+		文档地址：https://www.macrozheng.com
+		备用地址：https://macrozheng.github.io/mall-learning
+24.mall-tiny
+	mall-tiny-02
+		mybatis-generator生成报错The specified target project directory xxx does not exist及源码分析
+		https://www.cnblogs.com/leoalasiga/p/14804043.html
+		
+		【Mybatis】逆向工程配置文件错误
+			https://www.jianshu.com/p/f7a65b86506c
+			
+			#windows下，【generatorConfig.xml】
+				写成targetProject="mall-tiny-02\src\main\java"提示找不到
+				写成targetProject="src\main\java"即去掉项目包后运行正常。
+	mall-tiny-04	
+		com.macro.mall.tiny.controller.UmsAdminController#getPermissionList
+		登录，注册正常。
+		但获取权限，调试不执行。

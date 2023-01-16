@@ -1,0 +1,139 @@
+1.
+	MySQL常用图形化管理工具
+	http://c.biancheng.net/view/7131.html
+	
+	7种常用MySQL图形化管理工具
+	http://www.bjpowernode.com/hot/869.html
+	
+	sqlyog vs navicat
+	https://blog.csdn.net/weixin_43965055/article/details/120624179
+	
+	推荐几款最好用的MySQL开源客户端，建议收藏！
+		https://baijiahao.baidu.com/s?id=1740761792919454235&wfr=spider&for=pc
+		#一，收费好用软件：Navicat、SQLyog、DataGrip 等等
+		#二，免费的客户端
+			MySQL Workbench #分为社区版和商业版
+			phpMyAdmin 
+			HeidiSQL
+			Sequel Pro # 目前仅支持 macos 平台
+			DBeaver # 基于 Java 开发，支持目前几乎所有的主流数据库。DBeaver 也分为社区版和专业版，社区版免费
+					#专业版除了支持关系型数据库外，还支持非关系型数据库，比如 MongoDB、redis
+					#Windows、macOS、Linux 等主流操作系统上
+			命令行工具 #mysql自带
+	Github Star 过万！用这款免费工具代替收费的Navicat，我看行	
+		https://zhuanlan.zhihu.com/p/527831531
+		Beekeeper Studio # 终极版和社区版。
+	不用破解版的 Navicat 了，几款免费且好用的 SQL 客户端送给你
+		http://t.zoukankan.com/fengzheng-p-13264931.html
+2. 中文报错
+	Mysql 5.7 报错：1366 Incorrect string value:如何解决？
+	https://blog.csdn.net/qq_44915145/article/details/124180903?
+		
+	2.1 【问题原因】
+		安装MySQL 5.7时没配置utf-8编码导致的，
+		打开 cmd 输入：mysql -uroot -p输入密码
+		输入：SHOW VARIABLES LIKE ‘character%’;
+		来显示mysql当前使用的编码
+		character_set_database 和 character_set_server 的字符集使用了 latin1 编码方式，latin1编码是不支持中文的，所以存储中文时会报错
+		
+		ProgramData\MySQL\MySQL Server 5.5 找到 my.ini
+		修改或添加以下参数编码为utf8
+		default-character-set=utf8
+		character-set-server=utf8
+		collation-server=utf8_general_ci
+		
+		返回 cmd 输入：net stop mysql 关闭数据库
+		输入：net start mysql 重启数据库
+		重新连接MySQL查看当前字符集 输入：SHOW VARIABLES LIKE ‘character%’;
+		
+	2.2 如果操作【2.1】后还不能解决乱码
+		https://blog.csdn.net/gf771115/article/details/85176537?
+		
+		因为是在修改编码前先创建数据字段，该数据字段在修改数据库编码后还是之前的编码格式。
+		
+		库和表的默认字符集和排序规则为： 
+		utf8 & utf8_general_ci 
+		但是SqlYog中 我不能插入中文 就算插入也会有警告 报错为 
+		SQL Error: 1366: Incorrect string value:
+		
+		数据库此字段的字符集与整理字符集是否与SQL语句传递数据的字符集相同；不相同则会引发MySQL1366错误。 
+		解决办法如下： 
+		show full columns from table_name; 
+		发现我的uname字段不是UTF-8 
+		然后我在修改后的库中 将该表种这个字段重新创建了，然后中文可以正常插入并且显示
+3. sqlyog
+
+	https://webyog.com/product/sqlyog/
+	
+	sqlyog使用教程
+	https://wenku.baidu.com/view/9b61895b1411cc7931b765ce05087632311274c8.html 
+	
+	
+	sqlyog
+		1.1
+		1.2 The backup of Session Savepoint is created at
+			C\Users\AdministratorVAppData\Roaming\SQLyogkconnrestore_backup.ysav
+4. dbeaver
+	PRO version web site
+		https://dbeaver.com/
+	
+	DBeaver Community Download
+		https://dbeaver.io/
+
+		连接mysql-5737下载驱动及默认位置：
+		0	C:\Users\Administrator\AppData\Roaming\DBeaverData\drivers\maven\maven-central\mysql\mysql-connector-java-8.0.29.jar
+		修改位置到d盘
+		see:解压或安装目录下的readme文件。
+	Source code: https://github.com/dbeaver/dbeaver
+	
+	
+5. navicat
+	5.1 
+		
+		https://www.navicat.com/en/products
+		中文网站
+		http://www.navicatcn.com/products.html#navicat
+		
+		
+		Navicat免费版本
+			https://www.helloworld.net/p/0475337923
+			https://dl.pconline.com.cn/download/791660.html
+
+			免费版本支持MySQL/PostgreSQL/Oracle/SQLite/SQL Server等多种数据库，我试用了一下，发现不能使用备份等高级功能，
+			基础的DDL操作和数据管理是可以的。应该能满足开发者的需求了！
+			
+		Navicat for MySQL  15.0.26.0 官方版
+			https://www.onlinedown.net/soft/87702.htm
+			【参考介绍，翻译】
+		Navicat 提供商业版 Navicat Premium 和 免费的版本 Navicat Lite 
+		
+		#######正式使用不要使用破解版##########
+			Navicat Premium 12
+			快速激活Navicat Premium 12
+			https://www.shuzhiduo.com/A/gVdn00oQJW/
+			
+			快速激活Navicat Premium 12
+			https://baijiahao.baidu.com/s?id=1644169351506023288&wfr=spider&for=pc
+		###########
+		
+			
+	5.2 跨数据表整行复制
+			{选中行，普通复制、粘贴即可}
+		跨数据库表复制
+			{选中表，普通复制、粘贴即可}
+6. heidisql
+	https://www.heidisql.com/
+	开源。
+	
+	HeidiSQL is free software, and has the aim to be easy to learn. "Heidi" lets you see and edit data and 
+	structures from computers running one of the database systems MariaDB, MySQL, Microsoft SQL, PostgreSQL and 
+	SQLite. Invented in 2002 by Ansgar, HeidiSQL belongs to the most popular tools for MariaDB and MySQL worldwide.
+7. Beekeeper Studio # 终极版和社区版。
+	官网地址：https://www.beekeeperstudio.io/
+	
+	github:
+	https://github.com/beekeeper-studio/beekeeper-studio
+	
+		#Beekeeper Studio Community Edition:
+		
+			

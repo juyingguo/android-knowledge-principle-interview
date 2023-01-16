@@ -8,8 +8,17 @@
 	历史版本下载：https://www.jetbrains.com/idea/download/other.html
 	
 	关于IDEA的安装与使用请参考：https://github.com/judasn/IntelliJ-IDEA-Tutorial
-	1.3 从2021.2.3版本之后IDEA需要登录账号才能进入试用
 	
+	idea官网插件
+	https://plugins.jetbrains.com/
+	
+	1.3 从2021.2.3版本之后IDEA需要登录账号才能进入试用
+	1.4 注意：
+		************************
+		************************		
+		正式项目不使用破解版。
+		************************
+		************************
 2. idea 试用30天“无限续费”（亲测有效）idea破解 
 	https://www.bilibili.com/read/cv12523396 
 	
@@ -224,3 +233,8 @@
 	
 	搜索到很多软件都有这个文件。
 	如：D:\java2\sts-4.16.1\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257\jre\bin
+18 日志
+	18.1 Idea插件之日志管理神器(Grep Console)
+		https://blog.csdn.net/fox9916/article/details/128568466
+		
+		https://plugins.jetbrains.com/

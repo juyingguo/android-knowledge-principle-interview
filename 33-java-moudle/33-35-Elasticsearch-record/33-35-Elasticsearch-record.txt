@@ -1,0 +1,189 @@
+1.
+	https://www.elastic.co/cn/elasticsearch/
+	elasticsearch
+		详情见【5】
+	安装中文分词器，注意下载与Elasticsearch对应的版本，下载地址：https://github.com/medcl/elasticsearch-analysis-ik/releases
+	Kibana
+		详情见【4】
+	elasticsearch及关联资源工具都可以在下面地址下载
+		https://www.elastic.co/cn/downloads/past-releases
+		
+2. Elasticsearch: 权威指南
+	《Elasticsearch: 权威指南》
+		https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html
+		https://www.elastic.co/cn/elasticsearch/
+	《Elasticsearch 技术解析与实战》
+3. Elasticsearch许可证过期导致ES用不了的问题
+	https://blog.csdn.net/qq_38774221/article/details/88128768?
+	
+	ElasticSearch License 过期解决办法
+	https://blog.csdn.net/dam454450872/article/details/103938633?
+	
+4，Kibana，
+	作为访问Elasticsearch的客户端，下载地址：https://www.elastic.co/cn/downloads/past-releases/kibana-7-17-3
+	下载完成后解压到Elasticsearch的plugins目录下
+	plugin-descriptor.properties有说明，要与Elasticsearch版本一致
+	
+	Kibana安装与配置--windows版
+		https://blog.csdn.net/qq_44316726/article/details/126992334
+		配置Kibana
+		进入config目录并用notepad++或者其它文本编辑器打开kibana.yml
+		##查看注释说明
+		
+		server.port: 5601
+		
+		#本地访问配置localhost
+		server.host: "localhost" 
+		
+		server.name: "kibana"
+		
+		elasticsearch.hosts: ["http://localhost:9200"]
+		
+		i18n.locale: "zh-CN"
+		
+		运行后提示：
+		{
+			D:\softs-install\kibana\kibana-8.5.2\bin>kibana.bat
+			[2022-12-19T15:51:47.697+08:00][INFO ][node] Kibana process configured with roles: [background_tasks, ui]
+			[2022-12-19T15:57:49.907+08:00][INFO ][plugins-service] Plugin "cloudExperiments" is disabled.
+			[2022-12-19T15:57:49.928+08:00][INFO ][plugins-service] Plugin "profiling" is disabled.
+			[2022-12-19T15:57:50.104+08:00][INFO ][http.server.Preboot] http server running at http://localhost:5601
+			[2022-12-19T15:57:50.724+08:00][INFO ][plugins-system.preboot] Setting up [1] plugins: [interactiveSetup]
+			[2022-12-19T15:57:50.729+08:00][INFO ][preboot] "interactiveSetup" plugin is holding setup: Validating Elasticsearch connection configuration
+			[2022-12-19T15:57:50.784+08:00][INFO ][root] Holding setup until preboot stage is completed.
+
+
+			i Kibana has not been configured.
+
+			Go to http://localhost:5601/?code=442849 to get started.
+			
+			}
+			经过分析：
+				elasticsearch还没验证,见【5.3,q】
+				
+				上面的[INFO]不影响，
+				{i Kibana has not been configured.}
+	Kibana安装与配置--linux版	
+		https://blog.csdn.net/feizuiku0116/article/details/125572714
+	异常：	
+	[error][ml][plugins] Error Initializing jobs {"name":"ResponseError","meta":{"body":{"error":"Incorrect HTTP method for uri [/_ml/anomaly_detectors] and method [GET], allowed: [POST]","status":405},"statusCode":405,"headers":{"allow":"POST","x-elastic-product":"Elasticsearch","content-type":"application/json; charset=UTF-8","content-length":"113"},"meta":{"context":null,"request":{"params":{"method":"GET","path":"/_ml/anomaly_detectors","body":null,"querystring":"","headers":{"user-agent":"elasticsearch-js/7.16.0-canary.7 (win32 10.0.19044-x64; Node.js v16.14.2)","x-elastic-product-origin":"kibana","x-elastic-client-meta":"es=7.16.0p,js=16.14.2,t=7.16.0p,hc=16.14.2"},"timeout":30000},"options":{},"id":24},"name":"elasticsearch-js","connection":{"url":"http://localhost:9200/","id":"http://localhost:9200/","headers":{},"deadCount":0,"resurrectTimeout":0,"_openRequests":29,"status":"alive","roles":{"master":true,"data":true,"ingest":true,"ml":false}},"attempts":0,"aborted":false}}}
+5. elasticsearch
+	5.1 
+		elasticsearch与jvm版本对应关系。
+		https://www.elastic.co/cn/support/matrix#matrix_jvm
+		
+		虽然ES依赖JDK，但是ES安装文件内置了JDK，因为纯净的系统上无需安装再次安装JDK
+	
+	5.2 windows环境下elasticsearch安装超详细步骤
+		https://blog.csdn.net/lilian129/article/details/124477099?
+		
+		Elasticsearch8系列【2】Windows环境安装ES8
+		https://blog.csdn.net/qq_43437874/article/details/128300862
+		https://www.cnblogs.com/Code-Rain/p/16918513.html
+		
+		elasticsearch 在windows下的安装
+				https://zhuanlan.zhihu.com/p/436688653
+	5.3 
+		q1,Elasticsearch启动后访问不了9200的解决方案
+			https://blog.csdn.net/weixin_45481821/article/details/127558036
+			
+			{ 原因是是因为开启了 ssl 认证。
+				在 ES/config/elasticsearch.yml 文件中把xpack.security.http.ssl:enabled设置成false即可
+				}
+			
+		q2：
+			{
+				[2022-12-19T16:54:23,660][ERROR][o.e.i.g.GeoIpDownloader  ] [MYPC] exception during geoip databases updateorg.elasticsearch.ElasticsearchExcept all primary shards of [.geoip_databases] index are active
+						at org.elasticsearch.ingest.geoip@8.5.2/org.elasticsearch.ingest.geoip.GeoIpDownloader.updateDatabases(GeoIpDownloader.java:134)
+						at org.elasticsearch.ingest.geoip@8.5.2/org.elasticsearch.ingest.geoip.GeoIpDownloader.runDownloader(GeoIpDownloader.java:274)
+						at org.elasticsearch.ingest.geoip@8.5.2/org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskEx
+				ava:102)
+						at org.elasticsearch.ingest.geoip@8.5.2/org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskEx
+				ava:48)
+						at org.elasticsearch.server@8.5.2/org.elasticsearch.persistent.NodePersistentTasksExecutor$1.doRun(NodePersistentTasksExecutor.java:42
+
+				See logs for more details.
+			}
+			参考：Elasticsearch-8.4.0-windows安装
+				https://blog.csdn.net/inexaustible/article/details/126539960
+				##修改config/elasticsearch.yml配置文件：
+
+					启动时会去更新地图的一些数据库，这里直接禁掉即可，用到时再说。添加配置：
+
+					ingest.geoip.downloader.enabled: false
+				##本地测试不想用用户密码和SSL：修改为false
+					如enabled结尾的配置都可以尝试修改为false
+		q3: Elasticsearch-log-start-with-jdk-warning-and-ssl-error.txt:
+			【elasticsearch-7.17.3】
+			[ERROR][o.e.i.g.GeoIpDownloader  ] [EINK-MYPC] exception during geoip databases update
+			javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException:
+			PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: 
+			unable to find valid certification path to requested target
+			at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[?:?]
+			详情见【Elasticsearch-log-start-with-jdk-warning-and-ssl-error.txt】
+			
+			#根据提示，不设置JAVA_HOME环境变量，会自动加载绑定的jre。一切ok。
+			
+			参考：elasticsearch 在windows下的安装
+				https://zhuanlan.zhihu.com/p/436688653
+			
+	5.4 elasticsearch默认用户名和密码
+		https://www.exyb.cn/news/show-38170.html?action=onClick
+			user: elastic 
+			password: changeme 
+	5.3 Elasticsearch 设置用户名密码认证（亲测）
+		https://www.javaclub.cn/server/44243.html
+	elasticsearch-8.5.2\bin>elasticsearch-create-enrollment-token.bat --scope kibana
+	warning: ignoring JAVA_HOME=D:\java2\jdk\jdk1.8.0_51; using bundled JDK
+
+	ERROR: Failed to determine the health of the cluster.
+	
+	
+	D:\softs-install\elasticsearch\elasticsearch-8.5.2\bin>elasticsearch.bat
+		warning: ignoring JAVA_HOME=D:\java2\jdk\jdk1.8.0_51; using bundled JDK
+	5.5 elasticsearch指定jdk
+		linux下elasticsearch指定jdk
+		https://blog.csdn.net/web13618542420/article/details/126660709
+		
+		elasticSearch 6在windows下指定jdk运行环境
+			https://blog.csdn.net/qq_15088653/article/details/120448909
+	5.6 安装运行异常记录。
+		q1,windows8,运行elasticsearch.bat controller.exe已停止运行
+			Caused by: org.elasticsearch.ElasticsearchException: Failure running machine learning native code. 
+			This could be due to running on an unsupported OS or distribution, missing OS libraries, or a problem with the temp directory. 
+			To bypass this problem by running Elasticsearch without machine 
+			learning functionality set [xpack.ml.enabled: false].
+			
+			参考：https://blog.csdn.net/qq_37306041/article/details/108406698
+			按照原提示：
+				解决办法：
+				进入config目录下在elasticsearch.yml添加一条配置：
+				xpack.ml.enabled: false
+		q2,Elasticsearch-7.17.3 Caused by: sun.security.provider.certpath.SunCertPathBuilderException: 
+			unable to find valid certification path to requested target
+	5.7 
+		https://www.macrozheng.com/mall/reference/elasticsearch_start.html#简介
+		操作教程。
+6.Logstash
+	
+	安装配置：
+	https://www.macrozheng.com/mall/deploy/mall_deploy_windows.html#logstash
+	
+	附带jdk
+		文件JDK_VERSION中有说明版本。
+	
+	将Logstash的配置文件logstash.conf拷贝到安装目录的bin目录下，配置文件地址：https://github.com/macrozheng/mall/blob/master/document/elk/logstash.conf
+	
+	
+	注意该版本logstash-7-17-3最低要求JDK 11，需要自行安装，然后在环境变量中进行如下配置；
+	LS_JAVA_HOME=D:\developer\env\Java\jdk-11.0.14.1
+	
+	Logstash需要安装json_lines插件；
+
+	logstash-plugin install logstash-codec-json_lines
+		运行后打印：
+			Using LS_JAVA_HOME defined java: D:\java2\jdk\jdk-11.0.17
+			WARNING: Using LS_JAVA_HOME while Logstash distribution comes with a bundled JDK.
+	运行bin目录下的logstash.bat，启动Logstash服务，启动命令如下。
+
+	logstash -f logstash.conf

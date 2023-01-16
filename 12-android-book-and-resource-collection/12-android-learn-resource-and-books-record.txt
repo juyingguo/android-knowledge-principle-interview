@@ -1,0 +1,633 @@
+01	文档资源
+	01.1 https://developer.android.google.cn/?hl=zh_cn
+		api:
+			中文
+			http://www.android-doc.com/guide/topics/media/camera.html
+		api及训练资源	
+			https://developer.android.google.cn/training/camera/videobasics?hl=zh-cn
+		sdk离线文档
+			sdk/docs/index.html	#内容完整
+			sdk/docs/offline.html #离线文档，打开有时没内容。
+	01.2 官网资料
+		android mk
+		https://developer.android.google.cn/ndk/guides/android_mk
+		
+	01.3 android一系列资源。
+		https://www.androiddevtools.cn/ 
+	0.13 github搜android
+		[很多资源]
+		https://github.com/search?q=android&type=Repositories
+		
+		Android 开源大全
+		https://github.com/ColorfulCat/AndroidLibs
+		
+		https://github.com/feelschaotic/AndroidKnowledgeSystem
+			feelschaotic/AndroidKnowledgeSystem
+			The most complete Android advanced route knowledge map ⭐️你想要的最全 Android 进阶路线知识图谱+干货资料收集
+		https://github.com/crazyqiang/AndroidStudy
+			 Android学习知识点总结 Jetpack、MVVM、MVI、Kotlin、ViewPager2、JUC多线程等		
+		https://github.com/leavesCZY/AndroidGuide
+			这是一份给 Android Developer 的进阶学习笔记，公众号：字节数组 		
+		Extensive Open-Source Guides for Android Developers
+			https://github.com/codepath/android_guides
+		https://github.com/chiclaim/AndroidAll
+			Android 程序员需要掌握的技术栈
+		https://github.com/mixi-inc/AndroidTraining
+			Training course repository for android app development
+		https://github.com/kesenhoo/android-training-course-in-chinese
+			Android官方培训课程中文版
+			
+		https://github.com/pcqpcq/open-source-android-apps
+		
+		mvp:
+			https://github.com/TommyLemon/Android-ZBLibrary
+				Android MVP 快速开发框架， Android 开源 UI 框架
+				
+			https://github.com/WuXiaolong/AndroidMVPSample
+				Android MVP + Retrofit + RxJava2 实例
+			https://github.com/janishar/android-mvp-architecture
+				This repository contains a detailed sample app that implements MVP architecture using Dagger2, GreenDao, RxJava2, Fas…
+			
+			https://github.com/janishar/android-mvp-architecture
+				This repository contains a detailed sample app that implements MVP architecture using Dagger2, GreenDao, RxJava, 
+				FastAndroidNetworking, PlaceHolderView and AndroidDebugDatabase
+				
+			https://github.com/antoniolg/androidmvp
+			
+			https://github.com/janishar/android-kotlin-mvp-architecture
+				This repository contains a detailed sample app that implements MVP architecture in Kotlin using Dagger2, Room, RxJava…
+			https://github.com/RuffianZhong/Rx-Mvp
+				RxJava2+Retrofit2+RxLifecycle2+OkHttp3 封装RHttp 使用MVP模式构建项目
+		mvvm:
+			github搜hilt
+			
+			https://github.com/ahmedeltaher/MVVM-Kotlin-Android-Architecture
+				MVVM + Kotlin + Retrofit2 + Hilt + Coroutines + Kotlin Flow + mockK + Espresso + Junit5
+			https://github.com/mitchtabian/MVVMRecipeApp
+				Kotlin, MVVM, Navigation Component, Hilt, Jetpack Compose, Retrofit2
+		时光轴效果
+			项目地址
+			https://github.com/ljtyzhr/TimeLine
+			
+		自定义view、动画
+			https://github.com/lygttpod/AndroidCustomView
+				带你在实战中学习自定义view，通过几个完整的例子带你走进自定义View的美妙世界
+			https://github.com/wasabeef/richeditor-android
+				RichEditor for Android is a beautiful Rich Text WYSIWYG Editor for Android
+			https://github.com/koral--/android-gif-drawable
+				Views and Drawable for displaying animated GIFs on Android
+			https://github.com/openaphid/android-flip
+				A component for flip animation on Android, which is similar to the effect in Flipboard iPhone/Android
+				
+			https://github.com/REBOOTERS/AndroidAnimationExercise
+				Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享
+		按字母排序库：
+			https://github.com/wasabeef/awesome-android-libraries
+				This is an alphabetical list of libraries for Android development, the majority being actively maintained.
+		
+		https://github.com/H07000223/FlycoTabLayout
+			An Android TabLayout Lib
+		
+		各类选择:时间、日期、城市等：
+			https://github.com/gzu-liyujiang/AndroidPicker
+				https://github.com/Bigkoo/Android-PickerView
+			https://github.com/bmelnychuk/AndroidTreeView
+			
+			https://github.com/square/android-times-square	
+		
+		滚轮：
+			https://github.com/weidongjian/androidWheelView
+				仿照iOS的滚轮控件，从请吃饭apk反编译出来的
+		加载进度：
+			https://github.com/JorgeCastilloPrz/AndroidFillableLoaders
+				Android fillable progress view working with SVG paths. This is a nice option too if you want to create an interesting…
+		
+		面试：
+			The top Internet companies android interview questions and answers
+				https://github.com/JackyAndroid/AndroidInterview-Q-A
+					下载地址：git@github.com:JackyAndroid/AndroidInterview-Q-A.git
+			https://github.com/amitshekhariitbhu/android-interview-questions	
+				Your Cheat Sheet For Android Interview - Android Interview Questions
+		综合学习资源汇总：
+			收集整理Android开发所需的Android SDK、开发中用到的工具、Android开发教程、Android设计规范，免费的设计素材等。
+				https://github.com/inferjay/AndroidDevTools
+				官网地址：www.androiddevtools.cn
+				
+			https://github.com/aritraroy/UltimateAndroidReference
+				Ultimate Android Reference - Your Road to Become a Better Android Developer
+		
+			收集Android方方面面的经典知识, 最新技术.
+				https://github.com/itheima1/Android
+			
+			https://github.com/Kotlin/anko
+				Pleasant Android application development
+			
+			【作者的其他开源项目】https://github.com/getActivity/EasyHttp
+				关联详情【07-09-okhttp-and-related.txt】【8.3】
+				
+		安卓学习笔记		
+			安卓学习笔记
+				https://github.com/GcsSloop/AndroidNote
+			
+			https://github.com/ZhaoKaiQiang/AndroidDifficultAnalysis
+				安卓开发中遇到的重难点解析，也包括平常的读书笔记和知识点整理
+		屏幕适配
+			A low-cost Android screen adaptation solution (今日头条屏幕适配方案终极版，一个极低成本的 Android 屏幕适配方案).
+				https://github.com/JessYanCoding/AndroidAutoSize
+			
+		A categorized collection of Android Open Source Projects, More powerful web version
+			https://github.com/Trinea/android-open-project
+		A curated list of awesome Android UI/UX libraries
+			https://github.com/wasabeef/awesome-android-ui
+		https://github.com/snowdream/awesome-android
+			https://github.com/snowdream/awesome-android
+		
+		ender After Effects animations natively on Android and iOS, Web, and React Native	
+			https://github.com/airbnb/lottie-android
+		Android view for displaying PDFs rendered with PdfiumAndroid	
+			https://github.com/barteksc/AndroidPdfViewer
+		Android 技术中台，但愿人长久，搬砖不再有
+			https://github.com/getActivity/AndroidProject
+		android sdk 源码解析——旨在帮助Android开发者更好的学习Android！
+			https://github.com/LittleFriendsGroup/AndroidSdkSourceAnalysis
+		
+		An amazing and convenient Android image slider.
+			https://github.com/daimajia/AndroidImageSlider
+		A private messenger for Android.
+			https://github.com/signalapp/Signal-Android
+			
+		Firebase Quickstart Samples for Android
+			https://github.com/firebase/quickstart-android
+		https://github.com/romannurik/AndroidAssetStudio
+			
+		https://github.com/androidannotations/androidannotations
+		
+		Android NDK samples with Android Studio
+			https://github.com/android/ndk-samples
+		Android Demo
+			https://github.com/ttdevs/android
+			https://github.com/Blankj/AndroidStandardDevelop
+		
+		https://github.com/danikula/AndroidVideoCache
+		
+		https://github.com/markzhai/AndroidPerformanceMonitor
+		
+		https://github.com/aporter/coursera-android
+		
+		AndroidFire，一款新闻阅读 App框架，基于 Material Design + MVP + RxJava + Retrofit + Glide，基本涵盖了当前 Android 端开发最常用的主流框架，基于此框架可以快速开发…
+			https://github.com/jaydenxiao2016/AndroidFire
+		
+		
+		提高 Android UI 开发效率的 UI 库
+			https://github.com/Tencent/QMUI_Android
+		https://github.com/JZ-Darkal/AndroidHttpCapture
+		
+		recyclerview
+			https://github.com/h6ah4i/android-advancedrecyclerview
+		
+		https://github.com/DrKLO/Telegram
+		
+		
+		
+		https://github.com/futurice/android-best-practices
+		
+		camera:
+			https://github.com/aserbao/AndroidCamera
+			https://github.com/jiangdongguo/AndroidUSBCamera
+			https://github.com/bingoogolapple/BGAQRCode-Android
+				QRCode 扫描二维码、扫描条形码、相册获取图片后识别、生成带 Logo 二维码、支持微博微信 QQ 二维码扫描样式
+			https://github.com/CameraKit/camerakit-android				
+				Library for Android Camera 1 and 2 APIs. Massively increase stability and reliability of photo and video capture on all
+		image:
+			https://github.com/jdamcd/android-crop
+				Android library project for cropping images
+				
+			https://github.com/ArthurHub/Android-Image-Cropper
+				Image Cropping Library for Android, optimized for Camera / Gallery.
+		https://github.com/cats-oss/android-gpuimage
+		
+		https://github.com/wenmingvs/AndroidProcess
+		
+		https://github.com/android10/Android-CleanArchitecture
+			This is a sample app that is part of a series of blog posts I have written about how to architect an android applicat…
+		
+		AndroidUtils
+			https://github.com/Blizzard-liu/AndroidUtils
+			
+			https://github.com/Trinea/android-common
+				Android common lib, include ImageCache, HttpCache, DropDownListView, DownloadManager, Utils and so on
+			https://github.com/litesuits/android-common
+			android Common Utils or Helper. Such as Log, Averager, Base64, Check, FlashLight, KeyguardLock, LogReader, Network	
+		
+		https://github.com/Freelander/Android_Data
+			Some Android learning materials, hoping to help you learn Android development.
+		https://github.com/r0ysue/AndroidSecurityStudy
+			安卓应用安全学习
+		https://github.com/hehonghui/android-tech-frontier
+			【停止维护】一个定期翻译国外Android优质的技术、开源库、软件架构设计、测试等文章的开源项目
+		https://github.com/pchab/AndroidRTC
+		
+		https://github.com/googlemaps/android-samples
+			googlemaps/android-samples
+			Samples demonstrating how to use Maps SDK for Android
+		https://github.com/Tencent/Shadow
+			零反射全动态Android插件框架
+			
+		零反射全动态Android插件框架
+			http://wjhsh.net/jackrex-p-3001214.html
+		Android 开源项目和文章集合（更新：2022.03.21）
+			https://blog.csdn.net/z979451341/article/details/78864907
+			
+		GitHub上最受欢迎的Android开源项目TOP20
+			http://t.zoukankan.com/mengfanrong-p-5178194.html
+			https://www.bbsmax.com/A/x9J2DYBNd6/
+			
+		framework:
+			https://github.com/yipianfengye/androidSource
+				https://github.com/yipianfengye/androidSource
+		源码架构分析：
+			https://github.com/simple-android-framework/android_design_patterns_analysis
+				Android源码设计模式分析项目
+				
+		控制：
+			https://github.com/Genymobile/scrcpy
+				Display and control your Android device
+		database:
+			https://github.com/pardom-zz/ActiveAndroid
+				Active record style SQLite persistence for Android
+		
+		字节码：
+			https://github.com/google/android-classyshark
+		音视频：
+			https://github.com/xufuji456/FFmpegAndroid
+			FFmpeg实现音频拼接、混音、均衡器音效；视频裁剪、水印、转码、编解码、转Gif动图；FFmpeg本地推流、H264与RTMP实时推流直播；OpenGL滤镜特效，视频拍摄。音视频学习路线，音视频知识总结、流媒体协议
+			
+			https://github.com/HotBitmapGG/bilibili-android-client
+				An unofficial bilibili client for android http://www.jianshu.com/p/f69a55b94c05 -- 该项目已停止维护！
+		
+		instant message:
+			https://github.com/wildfirechat/android-chat
+			
+			https://github.com/OpenIMSDK/Open-IM-Server
+			
+			https://github.com/yuanrw/IM
+				yuanrw/IM Public archive
+				IM server based on netty. Provides a client jar. Integrate with your own login system.基于netty实现的IM服务端,提供客户端jar包,可集成自己…
+			https://github.com/GoBelieveIO/im_service
+			
+			https://github.com/qinshixiao/IM
+				qinshixiao/IM
+				linux下开发的一个即时通讯程序，使用mysql数据库和阿里云服务器搭建服务端程序，采用多线程实现高并发。客户端界面用qt框架绘制
+			https://github.com/fluttercandies/wechat_flutter
+				wechat_flutter Flutter版本微信，一个优秀的Flutter即时通讯IM开源库！
+			https://github.com/netease-kit/nim-uikit-ios
+				云信 IM UIKit 是基于 NIM SDK（网易云信 IM SDK）开发的一款即时通讯 UI 组件库
+			https://github.com/esl/MongooseIM
+				esl/MongooseIM
+				MongooseIM is Erlang Solutions' robust, scalable and efficient XMPP server, aimed at large installations
+			https://github.com/jpush/aurora-imui
+				eneral IM UI components. Android/iOS/RectNative ready. 通用 IM 聊天 UI 组件，已经同时支持 Android/iOS/RN。
+			https://github.com/2881099/FreeIM
+				.NETCore websocket 实现简易、高性能、集群即时通讯组件，支持点对点通讯、群聊通讯、上线下线事件消息等众多实用性功能.
+			https://github.com/beardlessCat/im
+				（1）基于netty集群开发Im，通过zookeeper作为注册中心。（2）服务集群连接支持多种负载均衡策略（3）集群间消息转发提供多种解决方案
+			https://github.com/KangLin/RabbitIm
+				玉兔即时通讯。开源的跨平台的的即时通信系统。包括文本、音视频、白板、远程控制
+			https://github.com/jkxqj/KingIM
+				KingIM是基于layim的websocket即时通讯系统,底层使用netty。
+		消息推送：
+			https://github.com/mpusher/mpush
+				MPush开源实时消息推送系统
+		Google I/O conference
+			https://github.com/google/iosched
+		RxJava-Android
+			https://github.com/kaushikgopal/RxJava-Android-Samples
+				Learning RxJava for Android by example
+		androidstudio:
+			https://github.com/aqi00/android2
+				《Android Studio开发实战：从零基础到App上线》随书源码（全面添加注释版）
+		android-security	
+			https://github.com/ashishb/android-security-awesome
+				A collection of android security related resources
+				
+		项目 参考学习
+		
+			###github搜dagger2搜到的项目：
+		
+			https://github.com/codeestX/GeekNews
+				A pure reading App based on Material Design + MVP + RxJava2 + Retrofit + Dagger2 + Realm + Glide
+			
+			https://github.com/yangxiufeng666/owspace
+				高仿单读APP：owspace是基于MVP+Dagger2+Retrofit2.0+Rxjava的APP
+			https://github.com/Will-Ls/WeiYue
+				一款新闻客户端, MVP + RxJava + Retrofit + Dagger2
+			https://github.com/Ye-Miao/Education
+				RxJava+OkHttp+Retrofit+Dagger2+MVP框架(kotlin版本)
+			https://github.com/yydcdut/PhotoNoter	
+				Material Design风格的开源照片笔记。(MVP+Dagger2+RxJava+AspectJ+Dex处理)
+			https://github.com/BaronZ88/MinimalistWeather
+				Android 平台开源天气 App，采用 MVP、RxJava、Retrofit2、OKHttp3、Dagger2、RetroLambda 等开源库来实现。
+			https://github.com/guofudong/KotlinAndroid
+				组件化 + MVP + Retrofit + RxKotlin + Dagger2实现的一款用Kotlin语言编写的多媒体类应用。
+			仿京东app 全新组件化架构升级
+				https://github.com/liu-xiao-dong/JD-Test
+			使用data binding , dagger2 , retrofit2和rxjava实现的，基于MVVM的知乎日报APP。
+				https://github.com/liuguangqiang/Idaily
+				
+			Minimalistic audiobook player
+				https://github.com/PaulWoitaschek/Voice
+			一款 kotlin 新闻客户端, MVP + RxJava + Retrofit + Dagger2
+				https://github.com/Will-Ls/WeiYueKotlin
+			https://github.com/simplezhli/Dagger2Example
+				[停止维护]Dagger2简单使用，推荐使用Jetpack Hilt。
+				
+			Android online music player use okhttp&gson&material design
+				https://github.com/wangchenyan/ponymusic
+			
+			基于RxJava+Retrofit+OkHttp实现的纯净知乎日报客户端
+				https://github.com/laucherish/PureZhihuD
+				
+			Android 开发一定要看的15个实战项目
+				https://www.likecs.com/show-243688.html
+		现代实时新技术		
+			https://github.com/skydoves/Pokedex
+				Pokedex demonstrates modern Android development with Hilt, Material Motion, Coroutines, Flow, Jetpack (Room, ViewM
+			
+			https://github.com/zhujiang521/PlayAndroid
+				 Kotlin + MVVM + LCE版玩安卓，暗黑模式、横竖屏、无网、弱网、无数据、加载失败等等各种情况，协程、Room、Hilt、
+				 DataStore、LiveData、Retrofit、屏幕适配、本地缓存
+			
+			【Android开源框架整合】
+				【当今的Android移动开发，不会热修复、插件化、组件化，80%以上的面试都过不了】
+				https://www.xiangxueketang.cn/enjoy/removal/article_16?sdclkid=AL2615jz15qz152lb_&bd_vid=8654715391210931939
+				
+				【享学课堂学习及面试资料】
+				【很多可以参考】
+		Android平台组件化	
+			 Rubik是一套解决Android平台组件化的综合框架
+				https://www.zhihu.com/question/40869250/answer/2593640053?utm_id=0
+		中国 Android 个人技术开源影响力排行榜（不定时更新）
+			https://github.com/getActivity/AndroidGithubBoss
+			【在某一天，我突发奇想，Android 做开源的大佬很多，但是大多数人无法知道都有哪些人，于是乎我开源了一个项目，
+			用于将 Android 行业中的开源大佬聚齐起来，
+			大家不仅可以认识到这些开源大佬，还能知道他们有哪些优秀的开源作品，可以供我们学习和参考。
+			】
+一、android frameworks 方面的书籍。
+	1.1、《Android应用框架原理与程序设计36技》
+		《深入理解Android》
+		《Android名师讲堂》
+		
+	1.2、<深入理解android>邓凡平 
+	
+	1.3、老罗的那本 就OK  百度搜 罗生阳 
+	
+	1.4、 
+		framework
+		https://blog.csdn.net/huaxun66/category_7203839.html
+		
+	1.5、Android FrameWork底层开发视频全套 
+		https://blog.csdn.net/dingzhou2008good/article/details/53448263?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+		
+		AndroidFrameWork底层开发视频全套
+
+		1.
+
+		如题，下面是百度云盘链接：
+
+		链接: https://pan.baidu.com/s/1JWmAp30xIBtMUnDxf3jCeQ 密码: ggjp
+
+		免费（无解压密码），好东西要分享出来！
+		
+		另一个链接：
+
+		探索Android FrameWork底层开发视频全套
+
+		链接: https://pan.baidu.com/s/1jGQp8bGWqPIcDaVz-8r2XQ 密码: cjbk
+
+		解压密码：www.mukedaba.com_fw
+		
+		1.5.2 详细记录见：34-12-android-system-moudule-record.txt 
+		
+	1.6 1《android框架揭秘》
+2. resource 
+	2.1 大学四年自学走来，这些私藏的实用工具/学习网站我贡献出来了 
+		https://blog.csdn.net/m0_37907797/article/details/102781027?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40
+	
+	https://github.com/qiujuer/Genius-Android
+	
+	2.2 android依赖注入框架推荐
+		Dagger Hilt - Android官方推荐的依赖注入框架
+		
+			https://developer.aliyun.com/article/938646
+			
+			https://developer.android.com/training/dependency-injection/hilt-android
+			https://github.com/vitaviva/DaggerHiltSample
+		Android注解三大框架Dagger、Hilt 和 Koin 有何不同？
+		
+			https://blog.csdn.net/bugyinyin/article/details/125620216
+		
+		Android | 依赖注入与 Dagger2 框架
+			https://www.jianshu.com/p/f16f1b2fe51e
+	2.3 
+		hongyang android learn:
+		https://blog.csdn.net/lmj623565791?type=blog
+	
+3. 技术网站，技术课堂
+	3.1 [享学课堂-腾讯课堂]
+		Android安卓移动互联网架构开发/音视频/Kotlin/Jetpack/Flutter		
+		https://ke.qq.com/course/341933?flowToken=1038555&taid=12886877573298093
+		
+		https://www.xiangxueketang.cn/enjoy/removal/article_18	
+			2022全网最新Android面试宝典（享学课堂—腾讯薪选认证）
+			【记录网站，可以看其它资源】
+			
+		腾讯课堂-享学课堂安卓架构
+			求享学课堂安卓无密视频教程
+			https://www.52pojie.cn/thread-1475085-1-1.html
+			
+		享学课堂Android安卓二期
+			https://www.jianshu.com/p/d75eb1b5f618
+			
+		Android安卓移动互联网架构开发/音视频/Kotlin/Jetpack/Flutter
+			https://ke.qq.com/course/341933#term_id=100406336
+			
+		腾讯课堂-享学课堂安卓架构VIP第一期无密180G(视频+课件+源码)，阿里云盘+百度云盘
+			https://shikey.com/2021/07/04/enjoy-classroom-android-architecture-vip-phase-1.html/comment-page-5
+			含【资源目录】【12-06-xiangxueketang-android-one-term-catalog.txt】
+			项目：【从零开始MVVM新闻客户端架构实战】
+			
+			#享学课堂Android移动互联网架构开发（VIP班二期带NDK，共212GB）|价值1万多的课程
+				https://shikey.com/2021/06/23/android-mobile-internet-architecture-development.html
+				含【资源目录】【12-06-02-xiangxueketang-android-two-term-catalog.txt】
+	3.腾讯课堂-动脑学院
+		腾讯课堂-动脑学院安卓互联网架构2019期
+		https://shikey.com/2021/11/26/brainstorming-academy-android-internet-architecture.html
+		【资源下载】
+	4. 腾讯课堂，有android培训课程。
+	5. 像腾讯课堂一样的学习平台有哪些
+		https://www.521u.com/read/1306853946057983659.html
+		腾讯有腾讯课堂，百度有百度传课
+		网络云课堂、果壳MOOK学院比较正规
+	
+	为什么现在大多数IT培训班都主要培训java而不是c++？
+		https://www.zhihu.com/question/507324760
+		
+	现在应该没有安卓开发的培训班了吧
+		https://www.nuomiphp.com/t/62ac3f8ea9cfe409620c240a.html
+		
+		题主发文，及讨论可共参考。
+		
+	
+4. 书籍
+	一、
+	二、设计模式书籍：原来秦小波的《设计模式之禅》貌似挺火的，还有chjavach的《研磨设计模式》
+	三、深入理解Android系列书籍资源分享更新
+		https://blog.csdn.net/Innost/article/details/43342087
+		
+	四、android系列书籍。
+		4.1 《第一行代码 Android》、
+		4.2 《疯狂Android》
+			《疯狂Android讲义》
+			疯狂Android讲义（第4版）
+				安卓经典之作基于Android9全新升级，
+		4.3《Android开发艺术探索》、
+		4.4《Android群英传》
+		4.5 《Android 源码设计模式解析与实战》、
+		4.6 《Android内核剖析》 
+			《Android应用程序设计》 柯元旦著作
+		4.7 《Android内核开发：开发板选购》
+			1. https://blog.51cto.com/ticktick/category11.html
+		4.8 android系统源代码情景分析-罗升阳。
+			4.8.1. 老罗的Android之旅
+					爱生活，爱Android
+
+				https://blog.csdn.net/luoshengyang
+		4.9 <Android多媒体应用实战开发实战详解> 王石磊
+		
+		4.10 深入解析Android 5.0系统(刘超 著)中文pdf
+			链接：https://pan.baidu.com/s/1fhsAJ0IzN1nCfZcIyEsveA 密码：filu 
+	五、《Android开发艺术探索》对应的网站
+		5.1、csdn博客 
+			https://blog.csdn.net/singwhatiwanna
+		5.2、github 
+			https://github.com/singwhatiwanna
+			源码地址：https://github.com/singwhatiwanna/android-art-res
+		5.3、qq:481798332
+			
+			
+	六. Android.mk编写参考手册或书籍
+	
+	七、《Android进阶之光》
+		7.0 
+			独立博客： http： //liuwangshu.cn
+			CSDN博客： http： //blog.csdn.net/itachi85
+			GitHub:https://github.com/henrymorgen
+			微信公众号： 刘望舒
+			QQ交流群： 499174415
+			源码下载
+			https://github.com/henrymorgen/android-advanced-light
+			http://www.broadview.com.cn/31530
+		7.1
+			第二部《Android进阶解密》
+			书中源码：
+			https://github.com/henrymorgen
+			今年2020年又出版了
+			第三部《Android进阶指北》
+		7.2 详细记录见：
+			【12-04-01-android-advanced-light-record.txt】
+		7.3 
+			Android最强原创知识体系	
+			https://github.com/henrymorgen/android-knowledge-system
+				
+	8. [深入理解Android卷一]
+		8.1 书及博客全文
+			[深入理解Android卷一全文-第八章]深入理解Surface系统
+			https://blog.csdn.net/innost/article/details/47208337
+	9. 在EDBurnette所写的《Hello, Android》里，
+			
+	10,音视频类书籍
+		10.1 音视频开发进阶指南：基于Android与iOS平台的实践.pdf
+			http://www.music-video.cn/ 
+			https://github.com/zhanxiaokai 		
+	11 android开发电子书集合
+		https://www.zhihu.com/search?type=content&q=android开发电子书集合
+	12 进阶书：
+		android高手进阶教程.pd
+5. android技术未来、新技术
+	5.1 未来，不会JetPack的Android开发连面试机会都没有
+		https://blog.csdn.net/weixin_44339238/article/details/113394946 
+			
+	5.2 android就业前景动态，探讨。
+		Android开发者进退两难的出路；转行还是进阶？转行转什么最好
+		https://blog.csdn.net/V_itshare678/article/details/123699429
+			{大家都知道著名的移动应用程序 FaceApp，该应用程序一夜成名，因为它出色地利用了人工智能（AI）。它将滤镜添加到用户的
+			照片中，以显示他们的年轻和年老时的样子。截至 2019 年 10 月，该应用的总收入为 100 万美元。}
+		原生app和h5写的app的区别 编程小白，如何区分HTML5开发和前端开发？
+		https://www.zhilian.host/zhidao/4dlj5jore.html
+		
+		
+		移动研发痛点分析及解决方案。
+			
+		移动开发之混合开发模式优劣势综述-移动端混合开发。
+		
+		2023年您需要了解的5大移动应用程序开发趋势。
+		农民工看完都学会了！2021年Android 工作或更难找，建议收藏。
+		别再问Android开发前景了，现状分析给你看了，难道还要让我教你怎么做？
+		『BATcoder』寒冬已至,,视频聊聊四面楚歌的Android工程师该何去何从？
+			http://liuwangshu.cn/batcoder/android_future.html
+			【BATcoder - 刘望舒】
+		行业大拿聊android移动开发未来
+		
+		下一个十年，Android 开发的未来趋势！
+			https://blog.51cto.com/u_15375308/5215109
+			[音视频]
+			Webrtc：
+			【目前市面上所有的即时通信软件都是基于Webrtc开发的，如微信、QQ、 Facebook，就连第三方网易云音视频通话sdk，都是Webrtc的二次封装。】
+		
+		2022 Android移动开发是否还有前景？
+			https://www.xiaohongshu.com/discovery/item/63ac3ca7000000001f00cb0d
+			享学安卓移动互联网架构开发(VIP班)一二期
+		快2023了，Android开发的发展方向是什么？8年老司机现身说法！
+			https://zhuanlan.zhihu.com/p/561570739
+			
+			#性能优化专家：具备深度性能优化与体系化APM建设的能力。
+			#架构师：具有丰富的应用架构设计经验与心得，对Android Framework层与热门三方库的实现原理与架构设计了如指掌。
+			#音视频/图像处理专家：毫无疑问，掌握NDK，深入音视频与图像处理领域能让我们在未来几年大放异彩
+			#大前端专家：深入掌握Flutter及其设计原理与思想，可以让我们具有快速学习前端知识的能力。
+			#车载系统开发：移动端卷的飞起，加上现在车企造车风波的火热，很多Android人都对此跃跃欲试。
+			*****
+			*****
+			#1.Android开发必备底层技术（涉及序列化、注解、泛型、反射、虚拟机、并发、Java IO、编译时技术、动态代理、高级数据结构与算法等内容）
+			#2.Kotlin从入门到协程原理到实战（涉及变量&语句&表达式，函数&Lambda，内置函数，集合框架，对象类型，高级语言特性，作用域，协程，DSL等）
+			#3.Framework源码解析（涉及系统启动流程、AMS、PMS、WMS、Zygote、Init、Handler、Binder等内容）
+			#4.Android常用组件解析（涉及Activty、Fragment、service等内容）
+			#5.高级UI源码剖析（涉及UI绘制原理、事件分发机制原理、插件换肤、属性动画、RecycleView、高阶贝塞尔曲线等内容）
+			#6.Jetpack compose从入门到实战
+			#7.Jetpack全家桶手册（涉及Lifecycle、ViewModel、LiveData、Navigation、Room、WorkManager内核、Pagging原理、DataBinding等内容）
+			#8.大厂APP性能分析与优化实战方案（涉及启动优化、UI渲染优化、崩溃优化、内存优化、卡顿优化、存储优化、网络优化、耗电优化、多线程并发优化、安装包优化等内容）			#
+			#9.高级音视频技术（涉及C/C++、H.265/H.265、MediaCodec、音视频剪辑、音视频直播、OpenGL与音视频解码、OpenGL特效、FFmpeg万能播放器、Webrtc音视频通话等内容）
+			#10.Android第三方主流框架解析（涉及RxJava、Glide、Hilt、Dagger2、Okhttp、插件化，组件化等）
+			#11.Gradle高级实战手册（涉及Groovy语法、Gradle Android插件配置等内容）
+			#12.Flutter3.0开发实战手册
+		ios和android哪个有前途,Android和iOS
+			http://www.yunnanlong.com/c/0RG4091412022.html
+		iOS、Android 开发的前景真的那么差吗？
+			http://t.zoukankan.com/itlaobingge-p-12671345.html
+		现在客户端开发的前景如何，是Android好还是iOS好?
+			https://www.zhihu.com/question/323051311
+		谈谈移动端（Android，ios）开发者的现状、前景与机遇
+			https://www.uoften.com/article/221447.html
+		四年android转前端开发有感而发
+			https://www.jianshu.com/p/ff030fac6a34
+	5.3 Android 集成 React Native实现混合开发
+		https://www.jianshu.com/p/ae7ec439aa90
+		
+	5.4 技术疑问
+		抖音-做任务-领金币等，是android原生开发还是混合开发的
+		类的很多应用，如淘宝领金币等。		
+	
+6.java books
+	《码出高效》
+			
+			
+7.封装通用工具类

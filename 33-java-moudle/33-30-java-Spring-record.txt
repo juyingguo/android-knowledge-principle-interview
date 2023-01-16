@@ -238,6 +238,70 @@
 		chapter10		
 			10.3 搭建CAS Server
 				CAS Server的搭建基于GitHub项目： https://github.com/apereo/cas-overlay-template。 
+				
+				制作本地密钥库
+					keytool -genkey -alias casserver -keyalg RSA -keystore D:\keystore
+					
+					 在“您的名字与姓氏是什么？ ”一项， 应当填写CAS Server的域名， 否则在后续的单点登录
+					过程中会遇到问题
+					cas.chenmuxin.cn
+				使用export子命令导出证书
+					keytool -export -trustcacerts -alias casserver -file D:\cas.cer -keystore D:\keystore
+				使用import子命令导入证书
+					keytool -import -trustcacerts -alias casserver -file D:\cas.cer -keystore "D:\java2\jdk\jdk1.8.0_51\jre\lib\security\cacerts"
+					jdk证书库路径，jdk9及以上么有jre了
+					密钥库口令为cacerts的默认口令： changeit。
+				
+				运行服务
+					mvn spring-boot:run
+					
+					或者
+					build.cmd run
+				
+				
+			10.3.2 执行gradlew.bat clean build
+				 Incompatible because this component declares a component compatible with Java 17 and the consumer needed a component compatible with Java 8
+					
+				https://blog.csdn.net/oTianKongLan123/article/details/107198122
+				
+					配置JDK11环境变量。在Termimal下执行。
+					set JAVA_HOME=%JDK11%
+					set JRE_HOME=%JDK11%
+					
+					执行命令还是同样错误。
+					
+					更换JAVA_HOME环境变量指向%JDK11%。在Termimal下执行还是同样问题。
+						（新开Termimal同样问题）{说明：Termimal下环境变量并没有监听到变化，还是使用的旧的。}
+						在项目目录下，新启动cmd，再次执行，正常。
+			10.3.3 
+				CAS学习笔记（二）—— cas server端的login-webflow详细流程 
+				https://www.cnblogs.com/hujie-developer/p/5753909.html
+				
+				
+				一、CAS Server 本地搭建
+				https://blog.csdn.net/uziuzi669/article/details/119541603
+				
+				cas-server服务端搭建
+				https://blog.csdn.net/bigdata_dog/article/details/123896404
+					{
+						1、下载cas服务代码，https://github.com/apereo/cas-overlay-template/tree/5.3
+
+						2、使用idea工具打开cas-overlay-template-5.3包，使用maven工具加载pom里的jar包
+
+						3、使用maven打包工具，package命令生成运行包target,然后再项目中建立自己本地项目src/main/java和src/main/resources目录
+
+						4、将target包中/cas/WEB-INF/classes/services和application.properties和log4j2.xml和/cas/WEB-INF/classes/META-INF复制到resources目录，如图所示
+						——————
+						5、将resources目录下的services中HTTPSandIMAPS-10000001.json内容修改如下，改为支持http访问
+					}
+				共同参考这几个播客。各取所需。
+				
+			10.3.4 异常	
+				Error: Invalid locale cookie 'org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE'
+				with value [zh-CN]: Locale part "zh-CN" contains invalid characters
+				
+				chrome浏览器报错。{32位。}
+				ie正常访问。
 	11.4 Securing a Web Application
 	
 		git clone https://github.com/spring-guides/gs-securing-web.git

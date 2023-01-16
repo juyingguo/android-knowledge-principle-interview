@@ -9,8 +9,66 @@
 			https://book.flutterchina.club/#缘起
 			
 			笔者在大学时读过候捷（真名侯俊杰）写的一些C++相关书籍，在他的《深入浅出MFC》一书中，有一句话我印象像非常深 “唯有深入，方能浅出”。我非常认同这句话，对于一门技术，只有了解的深入，才能用最浅显、通俗的话语描述出。
+		https://github.com/flutterchina/flutter-in-action
+		
 	2.2 Flutter开发第一步-Dart编程语言入门 
 		https://www.imooc.com/learn/1035
+		
+	Flutter的菜鸟教程
+		https://blog.csdn.net/sinat_17775997/article/details/90144258
+	
+	
+	Flutter documentation web site
+		https://github.com/flutter/website
+	FlutterExample 教程，library ：
+		github 搜：flutter
+		[Example APPS] Basic Flutter apps, for flutter devs.
+			https://github.com/iampawan/FlutterExampleApps
+			
+		A collection of Flutter examples and demos
+			https://github.com/flutter/samples
+			
+		Flutter Samples
+			https://github.com/diegoveloper/flutter-samples
+		An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more	
+			https://github.com/Solido/awesome-flutter
+		
+		https://github.com/AweiLoveAndroid/Flutter-learning
+			Flutter all you want.Flutter install,flutter samples,Flutter projects,Flutter plugin,Flutter problems,Dar…
+			
+		https://github.com/londonappbrewery/Flutter-Course-Resources	
+			Learn to Code While Building Apps - The Complete Flutter Development Bootcamp
+		
+		
+		https://github.com/firebase/flutterfire
+			 A collection of Firebase plugins for Flutter apps.
+			 
+		https://github.com/toly1994328/FlutterUnit
+			【Flutter 集录指南 App】The unity of flutter, The unity of coder.
+			
+		https://github.com/flutter/engine
+			The Flutter engine
+			
+		https://github.com/alibaba/flutter-go
+			flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档
+		https://github.com/mitesh77/Best-Flutter-UI-Templates
+			completely free for everyone. Its build-in Flutter Dart
+			
+		https://github.com/brianegan/flutter_architecture_samples
+			TodoMVC for Flutter
+			
+		https://github.com/flutterchina/flukit
+			A Flutter UI Kit（一个 Flutter UI组件库），包含 ScaleView, Swiper, PullRefresh, WaterMark,
+			GradientCircularProgressIndicator
+	参考学习项目：	
+	https://github.com/kaina404/FlutterDouBan
+		lutter豆瓣客户端,Awesome Flutter Project,全网最100%还原豆瓣客户端。首页、书影音、小组、市集及个人中心
+		
+	Flutter 超完整的开源项目，功能丰富，适合学习和日常使用。GSYGithubApp系列的优势：我们目前已经拥有Flutter、Weex、
+		ReactNative、kotlin 四个版本。 功能齐全，项目框架内技术涉及面广，完成度高
+			https://github.com/CarGuo/gsy_github_app_flutter
+	A simple Flutter app to Read and Download eBooks.
+		https://github.com/JideGuru/FlutterEbookApp
 3. flutter开发环境配置
 	3.1 起步:安装Flutter
 		https://flutterchina.club/get-started/install/ 

@@ -215,7 +215,7 @@
 10 Springboot+JPA打印SQL日志
 	https://blog.csdn.net/tiantang_1986/article/details/124627785
 
-11 运行启动SpringBoot项目报错：
+11 运行启动SpringBoot项目：
 	11.1 运行启动SpringBoot项目报错端口被占用
 		Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
 		2022-07-13 08:30:40.468 ERROR 13900 --- [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
@@ -249,6 +249,20 @@
 			{SpringBoot使用了3.0或者3.0以上，
 			因为Spring官方发布从Spring6以及SprinBoot3.0开始最低支持JDK17，所以仅需将SpringBoot版本降低为3.0以下即可。}
 	
+	11.3 SpringBoot - 如何使用mvn spring-boot:run命令启动项目？
+		https://blog.csdn.net/goodjava2007/article/details/126604232
+		
+		mvn spring-boot:run 是一个命令，是一个插件的执行命令。
+		
+		启动方式
+			基于SpringBoot框架开发的项目，常见的有四种项目启动的方式：
+			A. 直接使用IDEA运行启动类中的MAIN()方法;
+			B. 使用mvn spring-boot:run 命令，通过执行spring-boot插件的run目标，来启动项目；
+			C. 项目打成JAR包后通过 java -jar 命令启动项目；
+			D. 项目打成WAR包后通过WEB容器启动。
+			————
+
+			
 12,编程帮学习记录
 	在该项目中执行以下 mvn 命令查看器依赖树。
 	mvn dependency:tree

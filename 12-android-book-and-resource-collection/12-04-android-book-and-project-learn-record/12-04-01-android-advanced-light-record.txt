@@ -1,0 +1,43 @@
+0
+1.
+8. 第8章 函数响应式编程
+	请查阅官方文档：
+		http： //reactivex.io/RxJava/javadoc/。
+	8.3.3 过滤操作符
+
+		com.example.liuwangshu.moonrxjava.FilterActivity#throttleFirst
+		0 1-100，2-200，3-300，4-400，5-500
+		0，200，400，600，800，1000，
+			每隔100ms发射一个数据。 throttleFirst操作符设定的时间为200ms， 因此， 它会发射每个200ms内的第一个数据
+		
+		com.example.liuwangshu.moonrxjava.FilterActivity#throttleWithTimeOut
+		0  1-300，2-400，3-500，4-800，5-900，6-1000，7-1300
+
+		0，200，400，600，800，1000，
+			这里设定的过滤时间是200ms， 也就是说发射间隔小于200ms的数据会被过滤掉
+		
+9. 			
+	9.1.3 注解处理器
+		gradle Console中查看注解打印：make project:
+		gradle Console位于BUILD(toggle view):
+		验证同gradle - build :build ,打印窗口：(run )
+	9.3.3 解析Dagger2
+			 在这里我们提到@Inject
+		有了两种注入方式， 分别是成员变量注入和构造方法注入。
+		还有一种注入方式叫作方法注入， 当我们需要
+			传类实例来注入到依赖时， 会使用到它， 方法注入会在构造方法调用后立即调用。 在这里， 我们先知道有
+			这么一个概念， 在第10章我们将用到方法注入。
+10,
+	root gradle:
+	dependencies:
+	//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+	
+	module gradle:
+	//apply plugin: 'com.neenbedankt.android-apt'
+	
+	//    apt 'com.google.dagger:dagger-compiler:2.7'
+	
+	新方式只需要添加annotationProcessor,插件不需要添加了：
+	 annotationProcessor 'com.google.dagger:dagger-compiler:2.7'
+	 
+	 execute,onError:retrofit2.adapter.rxjava.HttpException: HTTP 405 METHOD NOT ALLOWED

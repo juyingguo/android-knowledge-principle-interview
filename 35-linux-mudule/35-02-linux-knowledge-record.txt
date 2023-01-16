@@ -7,7 +7,14 @@
 			https://www.linuxprobe.com/ubuntu-comparison-centos.html 
 		0.2.2 CentOS与Ubuntu命令中的不同之处 
 			https://blog.csdn.net/kwame211/article/details/78533170 
-					
+		CentOS 与 Ubuntu：哪个更适合做服务器？
+			https://blog.csdn.net/weixin_34284188/article/details/90562217?
+			https://chenyuan.blog.csdn.net/article/details/78271920?
+			http://www.fjfnjd.cn/baike/6741.html#
+			https://blog.csdn.net/u011342882/article/details/91507436?
+			https://blog.csdn.net/weixin_39796149/article/details/114389391
+			https://zouaw.com/46413.html
+			http://www.ddszw.com/jzrc/999.html
 1、linux内核的熵池 
 	1.1、linux内核的熵池 
 		https://www.cnblogs.com/yinheyi/p/5973584.html

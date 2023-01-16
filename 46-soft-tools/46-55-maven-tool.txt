@@ -19,3 +19,17 @@
 	
 	配置本地仓库:
 		本地仓库的位置是通过maven的核心配置文件（settings.xml）来配置的。settings.xml文件位于maven安装目录：…apache-maven-3.6.1\conf\settings.xml 。
+		
+	如idea中也需要配置：
+		缓存目录改为d盘：D:\cache-data\.m2
+		Setting-Build,Execution,Deployment->Build Tools->Maven
+		Maven home path 需要配置本地安装路径:D:/java2/maven/apache-maven-3.5.4
+		User settings file （可以将安装目录下的settings.xml拷贝到指定的缓存目录下如）：D:\cache-data\.m2\settings.xml
+		Local repository:D:\cache-data\.m2\repository
+3. IDEA2021.3设置全局maven
+	https://blog.csdn.net/qq_42401662/article/details/124632285
+	
+	[每次打开项目发现配置的maven有变化了。]
+	
+		1.打开IDEA，点击File--> Close Project
+		2.关闭项目后出现如下界面，点击 Customize -->All settings

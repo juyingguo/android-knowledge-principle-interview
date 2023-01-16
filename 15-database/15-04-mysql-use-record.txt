@@ -141,7 +141,7 @@
 					mysqld --defaults-file=\softs-install\database\mysql-5.7.37-winx64\my-mysql-5.7.37.ini  --initialize --console
 					
 					如果不指定文件，默认加载的是安装根目录下的my.ini文件。(需要自己创建)
-					
+					{ !,ladGyfg9c6}
 					{a4-error1:
 						{
 							[ERROR] [MY-010338] [Server] Can't find error-message file 'D:\juying\java2\mysql-8.0.28-win64\share\errmsg.sys'.
@@ -303,8 +303,42 @@
 		<entry key='database.user'>root</entry>
 		<entry key='database.password'>root</entry>
 		
+	3.11 mysql连接相关
+		3.11.1 
+			Wed Dec 07 10:56:14 CST 2022 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 		
+			上面的警告，不影响，可以后面解决。
+			
+			2022-12-07 10:56:14.765 ERROR 13460 --- [eate-1996664412] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3307/chapter05, errorCode 0, state 08S01
+
+			com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure	
 		
+			javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
+			
+			参考：https://www.cnblogs.com/wwjj4811/p/15058365.html
+				我使用的idea，更换工程idea自带jdk为本地jdk默认可以访问。
+				
+				*******************
+				或者安装作者：：修改jdk/jre/lib/security/java.security文件，按照如下方式修改：删除掉SSLv3, TLSv1, TLSv1.1这三个
+				##最好别这样操作。
+				******************
+			参考：
+				https://blog.csdn.net/ayunnuo/article/details/120269377
+				
+				解决方案：
+				在URL中添加在数据库后面添加?createDatabaseIfNotExist=true&useSSL=false
+			参考类似问题：javax.net.ssl.SSLHandshakeException: No appropriate protocol报错解决
+				https://lanyuan.blog.csdn.net/article/details/121656330?
+				
+				
+				https://stackoverflow.com/questions/38205947/sslhandshakeexception-no-appropriate-protocol#
+			参考：Java调用ssl异常，javax.net.ssl.SSLHandshakeException: No appropriate protocol
+				https://jiannan.blog.csdn.net/article/details/80577688?
+			参考：阿里数据库连接池Druid 连接MySQL失败：javax.net.ssl.SSLHandshakeException: No appropriate protocol
+				https://blog.csdn.net/Wing_kin666/article/details/116449722
+				
+			参考：Stack Overflow上还有一个解决办法，是指定使用的Protocol
+					jdbc:mysql://localhost:3306/database_name?enabledTLSProtocols=TLSv1.2
 4.mysql int(10)和int(11)区别
 	https://blog.51cto.com/thinklili/2469531?ivk_sa=1025883j
 5.MySQL中主键是否需要设置为自增？
@@ -400,18 +434,3 @@
 	23.1 group_concat
 		https://www.cnblogs.com/wenxinphp/p/5841430.html
 24 
-		Wed Dec 07 10:56:14 CST 2022 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-		
-		上面的警告，不影响，可以后面解决。
-		
-		2022-12-07 10:56:14.765 ERROR 13460 --- [eate-1996664412] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:mysql://127.0.0.1:3307/chapter05, errorCode 0, state 08S01
-
-		com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure	
-	
-		javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)
-		
-		参考：https://www.cnblogs.com/wwjj4811/p/15058365.html
-			我使用的idea，更换工程idea自带jdk为本地jdk默认可以访问。
-			
-			或者安装作者：：修改jdk/jre/lib/security/java.security文件，按照如下方式修改：删除掉SSLv3, TLSv1, TLSv1.1这三个
-			

@@ -195,6 +195,11 @@
 		https://blog.csdn.net/u013129944/article/details/70226019/
 		
 		使用的时候不要使用ordinal()，而要使用定义赋值的value
+		
+	16.2 
+		枚举类继承接口：
+		参考dagger生成类：
+		com.example.liuwangshu.moondagger2.model.Watch_Factory
 17. android 加载网络 本地 Uri assets drawable 文件的路径是 
 	17.1  android 加载网络 本地 Uri assets drawable 文件的路径是  
 		https://blog.csdn.net/a2241076850/article/details/78044310

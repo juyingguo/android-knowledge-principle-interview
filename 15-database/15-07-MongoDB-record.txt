@@ -2,13 +2,18 @@
 	1.1 
 		下载地址：https://www.mongodb.com/download-center/community
 		
-	1.2
-		MongoDB Compass 是一个图形界面管理工具，我们可以在后面自己到官网下载安装，下载地址：https://www.mongodb.com/download-center/compass。
+	1.2 mongodb图形界面管理工具		
+		详情见【3】
 	1.3 教程
 		https://www.runoob.com/mongodb/mongodb-tutorial.html
-	
+		
+		MongoDB快速入门，掌握这些刚刚好！
+			https://www.macrozheng.com/mall/reference/mongodb_start.html#简介
+			含【windows/linux安装】【使用】
+			【使用教程见：【4】】
 2.安装 MongoDB
 	2.1 Windows 平台安装 MongoDB
+		
 		2.1.1 安装MongDB教程（zip版本）
 			https://blog.csdn.net/mghoumin/article/details/126899183
 			
@@ -32,29 +37,44 @@
 					使用管理员身份打开cmd 控制台进入解压包的 	bin（本机是D:\mongodb\bin）目录下输入如下命令
 
 					 mongod --dbpath D:\ruanjian\mongodb\data\db --logpath D:\ruanjian\mongodb\logs\mongodb.log --logappend
+					 mongod --dbpath D:\softs-install\database\mongodb-5.0.14\data\db --logpath D:\softs-install\database\mongodb-5.0.14\logs\mongodb.log --logappend
 					————
 					运行命令后不要关闭窗口，打开http://localhost:27017
 					
 					q：无法定位程序输入点BcryptHash于动态链接库mongod.exe.
 						环境：win8.1,mongodb-5.0.14
 						
+						https://www.zhihu.com/question/435872973
+						
 						#Win8系统打开程序提示“无法定位程序输入点于动态链接库
 							https://www.win7zhijia.cn/win8jc/win8_17101.html
+							
+							**********************************************
+							**********************************************
 							**************该方法，导致电脑蓝屏************
-							解决方法：
-						　　1、进入C盘Windows文件夹→ system32文件夹→找到dwmapi.dll文件；
-						　　2、将此文件重命名为dwmapi.dll.bak文件即可。
+								解决方法：
+							　　1、进入C盘Windows文件夹→ system32文件夹→找到dwmapi.dll文件；
+							　　2、将此文件重命名为dwmapi.dll.bak文件即可。
 							**************该方法，导致电脑蓝屏************
+							**********************************************
+							**********************************************
 			4）添加环境变量
 				添加mongodb下的bin文件夹所在位置
 				
 				添加完环境变量之后打开cmd输入 mongo即可进入mongodb服务
 			（5）注册service服务 以便于以后好启动 ，使用管理员身份打开cmd 控制台，输入以下命令注册服务：-----> 便于今后使用
 
-				 mongod --dbpath D:\ruanjian\mongodb\data\db --logpath D:\ruanjian\mongodb\logs\mongodb.log --logappend --install --serviceName "MongoDB"
+				 mongod --dbpath D:\softs-install\database\mongodb-5.0.14\data\db --logpath D:\softs-install\database\mongodb-5.0.14\logs\mongodb.log --logappend --install --serviceName "MongoDB"
 				———
+				
+				如果提示文件打开失败：
+					{"attr":{"error":{"code":38,"codeName":"FileNotOpen","errmsg":"Can't initialize rotatable log file :: 
+					caused by :: Failed to open D:\\softs-install\\database\\mongodb-5.0.14\\logs\\mongodb.log}
+				#检查文件没有问题。 关闭其他cmd窗口后再试试，ok。
 		2.1.2,,
 		2.1.3,【mongodb】msi模式安装
+			[msi方式安装，5，4版会提示不支持window8]
+			
 			https://www.runoob.com/mongodb/mongodb-window-install.html
 			
 			https://blog.csdn.net/J_wb49/article/details/103055017?
@@ -66,3 +86,167 @@
 				#如果需要移除MongoDB服务，只需使用管理员权限运行cmd工具，并输入如下命令。
 
 					sc.exe delete MongoDB
+					
+			MongoDB安装过程中的坑（最后一步卡住）
+				https://www.javaclub.cn/database/59402.html
+	2.2 mongoDB数据库设置用户名及密码-windows
+		https://www.javaclub.cn/database/80724.html
+		
+		MongoDB的默认用户名和密码是什么？
+		https://www.coder.work/article/3934
+		
+		q1,mongodb admin数据库 用户名和密码
+			
+3. MongoDB可视化管理工具
+	MongoDB Compass
+		https://blog.csdn.net/GyaoG/article/details/123468294
+		MongoDB Compass 是一个图形界面管理工具，我们可以在后面自己到官网下载安装，
+		下载地址：https://www.mongodb.com/download-center/compass。
+	
+	免费的客户端工具Robo 3T（以前叫Robomongo）。
+		首先下载客户端工具，下载地址：https://robomongo.org/download
+		
+	Robo 3T 使用教程
+		https://blog.csdn.net/qq_40814565/article/details/119669308
+		Robo 3T和Studio 3T区别：（我们选择免费开源的Robo 3T，它已经足够我们使用了）
+
+		Robo 3T是免费和开源的，被3T收购前被称为Robomongo，它是适用于Windows、MacOS和Linux的跨平台MongoDB GUI管理工具，而Studio 3T是付费版，与Robot 3T相比具有更多功能并提供企业支持
+		—————
+	Studio 3T
+		Studio 3T无限试用的问题及解决方法
+		https://www.jb51.net/article/259396.htm
+		
+		Robo 3T is no longer being developed by Studio 3T. Studio 3T recommends users looking for a MongoDB GUI client try Studio 3T Free, a free-forever edition of the Studio 3T tools.
+		
+			目前，Robo3T官网首页显示：“Robo 3T is now Studio 3T Free”
+			即，目前Robo3T是Studio 3T Free版，并且可以一直使用。
+			官方给出的安装包是Studio 3T Free版
+		privacy-policy
+			https://studio3t.com/privacy-policy
+			
+		Ubuntu安装Robo3T(Studio3T Free)
+			https://blog.csdn.net/Cynthialearn/article/details/124860301
+	Robo 3T:
+	https://github.com/Studio3T/robomongo
+		[Robo 3T download links:]
+		{含全面Robo 3和Studio 3T Free資料}
+		
+		安裝：
+			Share your email address with us and we'll keep you up-to-date with updates from us and new features as they come out.
+			
+4,MongoDB快速入门，掌握这些刚刚好！
+	https://www.macrozheng.com/mall/reference/mongodb_start.html#简介			
+	
+	使用collection对象的find()方法可以获取文档，例如获取所有的article文档；
+			db.article.find({})
+		robo 3t客户端中的语法：
+			db.getCollection('article').find({}) 
+	除了update()方法以外，save()方法可以用来替换已有文档，语法如下；
+
+			db.collection.save(document)
+		这次我们将ObjectId为5e9943661379a112845e4056的文档的title改为MongoDB 教程
+			db.article.save({
+				"_id" : ObjectId("5e9943661379a112845e4056"),
+				...
+			})
+	删除文档
+		MongoDB通过collection对象的remove()方法来删除集合中的文档，语法如下；
+		db.collection.remove(
+		   <query>,
+		   {
+			 justOne: <boolean>
+		   }
+		)
+		# query：删除的查询条件，类似于SQL中的WHERE部分
+		# justOne：设置为true只删除一条记录，默认为false删除所有记录
+		
+		删除title为MongoDB 教程的所有文档；
+
+			db.article.remove({'title':'MongoDB 教程'},{justOne:true})
+	查询文档
+		MongoDB通过collection对象的find()方法来查询文档，语法如下；
+
+			db.collection.find(query, projection)
+			# query：查询条件，类似于SQL中的WHERE部分
+			# projection：可选，使用投影操作符指定返回的键
+		查询article集合中的所有文档；
+
+			db.article.find()
+		
+		MongoDB中的条件操作符，通过与SQL语句的对比来了解下；
+			操作			格式						SQL中的类似语句
+			等于		{<key>:<value>}				where title = 'MongoDB 教程'
+			小于		{<key>:{$lt:<value>}}		where likes < 50
+			小于或等于	{<key>:{$lte:<value>}}		where likes <= 50
+			大于		{<key>:{$gt:<value>}}		where likes > 50
+			大于或等于	{<key>:{$gte:<value>}}		where likes >= 50
+			不等于		{<key>:{$ne:<value>}}		where likes != 50
+		条件查询，查询title为MongoDB 教程的所有文档；
+
+			db.article.find({'title':'MongoDB 教程'})
+		条件查询，查询likes大于50的所有文档；
+
+			db.article.find({'likes':{$gt:50}})
+		AND条件可以通过在find()方法传入多个键，以逗号隔开来实现，例如查询title为MongoDB 教程并且by为Andy的所有文档；
+
+			db.article.find({'title':'MongoDB 教程','by':'Andy'})
+		OR条件可以通过使用$or操作符实现，例如查询title为Redis 教程或MongoDB 教程的所有文档；
+
+			db.article.find({$or:[{"title":"Redis 教程"},{"title": "MongoDB 教程"}]})
+		AND 和 OR条件的联合使用，例如查询likes大于50，并且title为Redis 教程或者"MongoDB 教程的所有文档。
+
+			db.article.find({"likes": {$gt:50}, $or: [{"title": "Redis 教程"},{"title": "MongoDB 教程"}]})
+	其他操作
+	#Limit与Skip操作
+	读取指定数量的文档，可以使用limit()方法，语法如下；
+
+		db.collection.find().limit(NUMBER)
+		只查询article集合中的2条数据；
+
+		db.article.find().limit(2)
+	跳过指定数量的文档来读取，可以使用skip()方法，语法如下；
+
+		db.collection.find().limit(NUMBER).skip(NUMBER)
+		从第二条开始，查询article集合中的2条数据；
+
+		db.article.find().limit(2).skip(1)
+	#排序
+		在MongoDB中使用sort()方法对数据进行排序，sort()方法通过参数来指定排序的字段，并使用1和-1来指定排序方式，1为升序，-1为降序；
+
+			db.collection.find().sort({KEY:1})
+		按article集合中文档的likes字段降序排列；
+
+			db.article.find().sort({likes:-1})
+	#索引
+		索引通常能够极大的提高查询的效率，如果没有索引，MongoDB在读取数据时必须扫描集合中的每个文件并选取那些符合查询条件的记录。
+
+		MongoDB使用createIndex()方法来创建索引，语法如下；
+			db.collection.createIndex(keys, options)
+			# background：建索引过程会阻塞其它数据库操作，设置为true表示后台创建，默认为false
+			# unique：设置为true表示创建唯一索引
+			# name：指定索引名称，如果没有指定会自动生成
+		给title和description字段创建索引，1表示升序索引，-1表示降序索引，指定以后台方式创建；
+
+			db.article.createIndex({"title":1,"description":-1}, {background: true})
+		查看article集合中已经创建的索引；
+				
+			db.article.getIndexes()
+	#聚合
+		MongoDB中的聚合使用aggregate()方法，类似于SQL中的group by语句，语法如下；
+
+			db.collection.aggregate(AGGREGATE_OPERATION)
+		聚合中常用操作符如下；
+			操作符	描述
+			$sum	计算总和
+			$avg	计算平均值
+			$min	计算最小值
+			$max	计算最大值
+		根据by字段聚合文档并计算文档数量，类似与SQL中的count()函数；
+
+			db.article.aggregate([{$group : {_id : "$by", sum_count : {$sum : 1}}}])
+			
+			#其中_id是文档自动生成的，固定写法，对应值可以为文档的任意字段包括_id。
+			#其中{$sum : 1}，1以正数显示，-1以负数显示
+		根据by字段聚合文档并计算likes字段的平局值，类似与SQL中的avg()语句；
+
+			db.article.aggregate([{$group : {_id : "$by", avg_likes : {$avg : "$likes"}}}])

@@ -58,6 +58,21 @@
 			int add2(Useruser);
 			—————
 			注解多了一个@Options, 注解设置了useGeneratedKeys 和 keyProperty ，用法同xml中的配置。
+	6.4 mybatis中_parameter使用和常用sql
+		https://www.cnblogs.com/straybirds/p/9085414.html
+		
+		#在用自动生成工具生成的mybatis代码中。
+		#如果只有一个参数，那么_parameter 就代表该参数，如果有多个参数，那么_parameter 可以get(0)得到第一个参数。
+	6.5 
+		Mybatis批量插入数据的两种方式
+		https://blog.csdn.net/ylforever/article/details/126592028
+	6.6 mybatis中prefix,suffix,prefixOverrides,suffixOverrides用法解释
+		https://blog.csdn.net/liuchang19950703/article/details/108601499
+		https://blog.csdn.net/haochaoguo1988/article/details/81318091?
+		
+	6.7 mybatis foreach标签详解，逗号，and还有or，留一个
+		http://quanzhan.applemei.com/webStack/TXpjMU5nPT0=
+		
 7. 《MyBatis从入门到精通.pdf》刘增辉著
 	4.0
 		本书资源

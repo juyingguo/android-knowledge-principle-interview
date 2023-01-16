@@ -1,4 +1,7 @@
 0	
+	Just Code ! 针对面试训练算法题， 目前包括字节跳动面试题、 LeetCode 和剑指 offer 
+	https://github.com/henrymorgen/Just-Code
+	
 0.1 Enjoy LeetCode
 	https://blog.csdn.net/foreverling/category_9264622.html 
 	
@@ -230,20 +233,22 @@
 	5.1、Iterator是工作在一个独立的线程中，并且拥有一个 mutex 锁。
 	
 	
-六、LinkedList
+六、List
+	6.1 LinkedList
 
-	https://blog.csdn.net/gongchuangsu/article/details/51527042	?
+		https://blog.csdn.net/gongchuangsu/article/details/51527042	?
 
-	LinkedList 是一个继承于AbstractSequentialList的双向链表。它也可以被当作堆栈、队列或双端队列进行操作。
-	LinkedList 实现 List 接口，能进行队列操作。
-	LinkedList 实现 Deque 接口，即能将LinkedList当作双端队列使用。
-	ArrayList底层是由数组支持，而LinkedList 是由双向链表实现的，其中的每个对象包含数据的同时还包含指向链表中前一个与后一个元素的引用。
+		LinkedList 是一个继承于AbstractSequentialList的双向链表。它也可以被当作堆栈、队列或双端队列进行操作。
+		LinkedList 实现 List 接口，能进行队列操作。
+		LinkedList 实现 Deque 接口，即能将LinkedList当作双端队列使用。
+		ArrayList底层是由数组支持，而LinkedList 是由双向链表实现的，其中的每个对象包含数据的同时还包含指向链表中前一个与后一个元素的引用。
 
-	--------------------- 
-	作者：键盘舞者113 
-	来源：CSDN 
-	原文：https://blog.csdn.net/z979451341/article/details/79380704 
-	版权声明：本文为博主原创文章，转载请附上博文链接！
+		--------------------- 
+		作者：键盘舞者113 
+		来源：CSDN 
+		原文：https://blog.csdn.net/z979451341/article/details/79380704 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+	6.2 list直接遍历时删除集合中的数据失败。而Iterator是可以的。
 七、HashTable
 	https://blog.csdn.net/jinhuoxingkong/article/details/52022999
 

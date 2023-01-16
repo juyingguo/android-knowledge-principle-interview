@@ -5,14 +5,7 @@
 	Reference 很关键。 User Guide 就是介绍 Gradle 的一本书， 而 DSL Reference 是 Gradle API
 	的说明。
 	
-	0.2 Gradle的安装与配置
-		https://www.cnblogs.com/NyanKoSenSei/p/11458953.html
-		
-		IDEA Gradle配置与使用
-		http://t.zoukankan.com/expiator-p-11774552.html
-		
-		IDEA如何配置 Gradle 及 Gradle 安装过程（详细版）
-		https://blog.csdn.net/GoodburghCottage/article/details/128169907
+	0.2 
 	0.3 Gradle下载的依赖包位置
 		https://blog.csdn.net/m0_58433476/article/details/123529051
 		
@@ -30,7 +23,110 @@
 			C:\Users\username\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.4\b1b6ea3b7e4aa4f492509a4952029cd8e48019ad\commons-io-2.4.jar
 			
 			而maven下载存放jar的目录没有md5值
-1. 构建apk指定名称即版本号等信息。
+1.  Gradle的安装与配置
+	https://www.cnblogs.com/NyanKoSenSei/p/11458953.html
+	
+	IDEA Gradle配置与使用
+	http://t.zoukankan.com/expiator-p-11774552.html
+	
+	IDEA如何配置 Gradle 及 Gradle 安装过程（详细版）
+	https://blog.csdn.net/GoodburghCottage/article/details/128169907
+	
+	1.3 gradle环境配置
+		https://www.jianshu.com/p/42b70e297705
+		{
+			1.Gradle 安装
+				官网下载gradle，解压后放到D:\programs\gradle
+
+			2.环境变量设置
+				GRADLE_HOME=D:\programs\gradle
+				添加到PATH中，%GRADLE_HOME%\bin
+
+			3.cache设置
+			方式1：设置环境变量
+				GRADLE_USER_HOME=D:\data\gradle（注意：这是新建的缓存目录）
+			方式2：修改bin目录下的gradle配置文件
+				文件gradle :在DEFAULT_JVM_OPTS这行下面添加GRADLE_OPTS=-Dgradle.user.home=D:\data\gradle
+				文件gradle.bat:在DEFAULT_JVM_OPTS这行下面添加set GRADLE_OPTS=-Dgradle.user.home=D:\data\gradle
+			说明：修改gradle文件是为了windows下可使用gitbash操作gradle
+		}	
+	1.4 Gradle 构建环境变量配置
+		https://blog.csdn.net/yingaizhu/article/details/126267361
+		
+		浅析IDEA如何正确配置Gradle? GRADLE_USER_HOME 和 Gradle user home的区别
+		https://www.eolink.com/news/post/47367.html
+		
+		【Android Gradle 插件】Gradle 基础配置 ⑤ ( gradle-wrapper.properties 配置分析 | GRADLE_USER_HOME 目录 )
+		https://blog.csdn.net/shulianghan/article/details/127547890
+		
+	1.5 gradle gradlew,gradle.bat gradlew.bat
+2. .gradle 目录详解及下载的压缩包位置
+
+	2.1 Gradle 缓存目录结构 缓存策略
+		https://www.jianshu.com/p/acf579d8cb56
+		
+		2.1.1 
+			C:\Users\Administrator\.gradle\daemon\2.4
+			下的日志文件daemon-3976.out.log
+		Gradle 缓存目录结构 缓存策略
+			https://www.dandelioncloud.cn/article/details/1469673647463047170
+	2.2 .gradle\wrapper\dists 某一个版本下的文件夹字符串生成规则
+		gradle下载时 dists中的目录如何生成的?
+		https://blog.csdn.net/who7708/article/details/112713532
+		
+		import java.security.MessageDigest;
+		import java.math.BigInteger;
+		public class HelloWorld {
+			public static void main(String []args) {
+			   System.out.println("Hello World");
+				String str = "https://services.gradle.org/distributions/gradle-5.6.4-all.zip";
+				
+				 System.out.println(getHash(str));
+			}
+			private static String getHash(String string) {
+				try {
+					MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+					byte[] bytes = string.getBytes();
+					messageDigest.update(bytes);
+					return new BigInteger(1, messageDigest.digest()).toString(36);
+				} catch (Exception e) {
+					throw new RuntimeException("Could not hash input string.", e);
+				}
+			}
+		}
+
+	2.3 android项目中的gradle\wrapper\gradle-wrapper.jar
+		gradle-wrapper.properties
+		与下载.gradle\wrapper\dists\hashxxx\gradle-versionxxx\lib\gradle-wrapper-versionxxx.jar不一样
+	2.4 Ubuntu中的.gradle目录在哪里
+		https://m.656463.com/wenda/Ubuntuzhongdegradlemuluzainali_389
+		原文：https://stackoverflow.com/questions/37944998
+		 它应该位于$HOME/.gradle （ ~/.gradle ）和/或（特定于项目） <PROJECT_DIR>/.gradle 。 
+
+		It should be located under $HOME/.gradle (~/.gradle) and/or (project specific) <PROJECT_DIR>/.gradle.
+		
+		2.4.2 ubuntu 中使用docker 映射volume后.gradle位置
+			现象：ubuntu已经下载了gradle-6.1.1-all.zip。
+			再次使用docker编译linphone-sdk时执行命令后
+			#docker run -it --volume=$PWD:/home/bc/linphone-sdk gitlab.linphone.org:4567/bc/public/linphone-sdk/bc-dev-android-r20:20210914_update_java11 /bin/bash -i
+			后续编译时又重下载同版本的gradle
+			观察下载位置为：/home/bc/.gradle/wrapper/dists/gradle-6.1.1-all/cfmwm155h49vnt3hynmlrsdst/gradle-6.1.1-all.zip
+3. androidstudio中使用gradle
+	见【46-15-androidstudio-sdk-tool.txt 【14.4】】
+6. Gradle 提示与诀窍 | Android 开发者 | Android Developers
+	https://developer.android.google.cn/studio/build/gradle-tips
+	
+	6.2 配置 Build
+		https://developer.android.google.cn/studio/build
+	
+	编写gradle没有代码提示
+	androidstudio安装插件：（搜索：gradle）
+	Gradle Dependencies Helper
+7.why_is_there_more_than_one_daemon_process_on_my_machine
+	https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:why_is_there_more_than_one_daemon_process_on_my_machine
+8. gradle - 在插件发布期间排除文件和文件夹
+	https://www.lmlphp.com/user/154890/article/item/3422560/
+9. 构建apk指定名称即版本号等信息。
 	Cannot set the value of read-only property 'outputFile' for ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=debug, filters=[]}} of type     com.android.build.gradle.internal.api.ApkVariantOutputImpl. 
 	
 	1.1 
@@ -78,67 +174,4 @@
 					outputFileName = "ibotnface_I10HD_${str}_V${defaultConfig.versionName}_${releaseTime()}.apk";
 				}
 			}
-		}
-2. .gradle 目录详解及下载的压缩包位置
-
-	2.1 Gradle 缓存目录结构 缓存策略
-		https://www.jianshu.com/p/acf579d8cb56
-		
-		2.1.1 
-			C:\Users\Administrator\.gradle\daemon\2.4
-			下的日志文件daemon-3976.out.log
-	2.2 .gradle\wrapper\dists 某一个版本下的文件夹字符串生成规则
-		gradle下载时 dists中的目录如何生成的?
-		https://blog.csdn.net/who7708/article/details/112713532
-		
-		import java.security.MessageDigest;
-		import java.math.BigInteger;
-		public class HelloWorld {
-			public static void main(String []args) {
-			   System.out.println("Hello World");
-				String str = "https://services.gradle.org/distributions/gradle-5.6.4-all.zip";
-				
-				 System.out.println(getHash(str));
-			}
-			private static String getHash(String string) {
-				try {
-					MessageDigest messageDigest = MessageDigest.getInstance("MD5");
-					byte[] bytes = string.getBytes();
-					messageDigest.update(bytes);
-					return new BigInteger(1, messageDigest.digest()).toString(36);
-				} catch (Exception e) {
-					throw new RuntimeException("Could not hash input string.", e);
-				}
-			}
-		}
-
-	2.3 android项目中的gradle\wrapper\gradle-wrapper.jar
-		gradle-wrapper.properties
-		与下载.gradle\wrapper\dists\hashxxx\gradle-versionxxx\lib\gradle-wrapper-versionxxx.jar不一样
-	2.4 Ubuntu中的.gradle目录在哪里
-		https://m.656463.com/wenda/Ubuntuzhongdegradlemuluzainali_389
-		原文：https://stackoverflow.com/questions/37944998
-		 它应该位于$HOME/.gradle （ ~/.gradle ）和/或（特定于项目） <PROJECT_DIR>/.gradle 。 
-
-		It should be located under $HOME/.gradle (~/.gradle) and/or (project specific) <PROJECT_DIR>/.gradle.
-		
-		2.4.2 ubuntu 中使用docker 映射volume后.gradle位置
-			现象：ubuntu已经下载了gradle-6.1.1-all.zip。
-			再次使用docker编译linphone-sdk时执行命令后
-			#docker run -it --volume=$PWD:/home/bc/linphone-sdk gitlab.linphone.org:4567/bc/public/linphone-sdk/bc-dev-android-r20:20210914_update_java11 /bin/bash -i
-			后续编译时又重下载同版本的gradle
-			观察下载位置为：/home/bc/.gradle/wrapper/dists/gradle-6.1.1-all/cfmwm155h49vnt3hynmlrsdst/gradle-6.1.1-all.zip
-
-6. Gradle 提示与诀窍 | Android 开发者 | Android Developers
-	https://developer.android.google.cn/studio/build/gradle-tips
-	
-	6.2 配置 Build
-		https://developer.android.google.cn/studio/build
-	
-	编写gradle没有代码提示
-	androidstudio安装插件：（搜索：gradle）
-	Gradle Dependencies Helper
-7.why_is_there_more_than_one_daemon_process_on_my_machine
-	https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:why_is_there_more_than_one_daemon_process_on_my_machine
-8. gradle - 在插件发布期间排除文件和文件夹
-	https://www.lmlphp.com/user/154890/article/item/3422560/
+		}	

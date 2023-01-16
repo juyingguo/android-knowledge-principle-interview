@@ -1,5 +1,17 @@
 1.
-	
+	1.1
+	1.2 根据json生成 javabean 类
+		https://github.com/giantray/text-to-javabean
+			generate javabean(pojo) by json
+		https://github.com/wuzhenlin135/generateJsonToJavaBean
+			根据接口自动生成javabean
+			
+		IDEA 工具从Json自动生成JavaBean
+			先安装GsonFormat插件:File-->Setting-->Plugins-->GsonFormat-->OK 
+			2.new 一个新的Class空文件,然后 Alt+Insert组合快捷键,
+			会弹出一个对话框如下.在对话框里面写Json对象.单击OK. 
+			3.再单击OK. 
+			4.好啦,生成啦. https://blog.csdn.net/qq_41855053/article/details/79592249
 2. fastjson
 	2.1 
 	2.2 fastJson中的@JsonProperty(value = "")与@JSONField(name = "")注解
