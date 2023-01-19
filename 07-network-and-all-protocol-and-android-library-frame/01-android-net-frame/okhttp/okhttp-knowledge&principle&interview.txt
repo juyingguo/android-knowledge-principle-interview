@@ -1,0 +1,56 @@
+一、Okhttp3 总结研究 （可以用于研究及面试）
+	1.Okhttp3记录总结比较好的
+		https://blog.csdn.net/u012881042/article/details/79759203
+	2.OkHttp同样支持网络缓存，OkHttp的缓存基于DiskLruCache
+	3.《Android中高级工程师面试指南 — 网络协议和网络框架面试讲解 — OKHttp》
+		https://blog.csdn.net/jiangguangchao/article/details/78478326
+	4、  OkHttp 3.7源码分析（一）——整体架构 ，到多路复用。
+		https://yq.aliyun.com/articles/78105?spm=5176.100239.blogcont78104.10.FlPFWr
+		
+二、一些知识记录
+	2.TLS，使用TLS。
+		2.1、百科简介。https://baike.baidu.com/item/TLS/2979545?fr=aladdin
+		2.2、传输层安全性协议（英语：Transport Layer Security，缩写作TLS），及其前身安全套接层（Secure Sockets Layer，缩写作SSL）是一种安全协议，目的是为互联网通信提供安全及数据完整性保障
+	3、assert
+		理解和正确使用Java中的断言(assert)
+		https://blog.csdn.net/u010142437/article/details/51388082
+		https://blog.csdn.net/qq_29405933/article/details/83114116
+三、OkHttp使用的设计模式。
+3.1、
+	单例模式：（建议用单例模式创建okHttpClient）OkHttpClient， 可以通过 new OkHttpClient() 或 new OkHttpClient.Builder() 来创建对象， 但是---特别注意， OkHttpClient() 对象最好是共享的， 建议使用单例模式创建。 因为每个 OkHttpClient 对象都管理自己独有的线程池和连接池。 这一点很多同学，甚至在我经历的团队中就有人踩过坑， 每一个请求都创建一个 OkHttpClient 导致内存爆掉
+3.2、
+	外观模式 : OKHttpClient 里面组合了很多的类对象。其实是将OKHttp的很多功能模块，全部包装进这个类中，让这个类单独提供对外的API，这种设计叫做外观模式（外观模式：隐藏系统的复杂性，并向客户端提供了一个客户端可以访问系统的接口）
+3.3、
+	Builder模式 : OkHttpClient 比较复杂， 太多属性， 而且客户的组合需求多样化， 所以OKhttp使用建造者模式（Build模式：使用多个简单的对象一步一步构建成一个复杂的对象，一个 Builder 类会一步一步构造最终的对象）
+3.4、
+	工厂方法模式：Call接口提供了内部接口Factory(用于将对象的创建延迟到该工厂类的子类中进行，从而实现动态的
+	配置，工厂方法模式。（工厂方法模式：这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。在工厂模式中，我们在创建对象时不会对客户端暴露创建逻辑，并且是通过使用一个共同的接口来指向新创建的对象。）
+3.5、
+	享元模式：在Dispatcher的线程池中，所用到了享元模式，一个不限容量的线程池 ， 线程空闲时存活时间为 60 秒。线程池实现了对象复用，降低线程创建开销，从设计模式上来讲，使用了享元模式。（享元模式：尝试重用现有的同类对象，如果未找到匹配的对象，则创建新对象，主要用于减少创建对象的数量，以减少内存占用和提高性能）
+3.6、
+	责任链模式：很明显，在okhttp中的拦截器模块，执行过程用到。OkHttp3 的拦截器链中， 内置了5个默认的拦截器，分别用于重试、请求对象转换、缓存、链接、网络读写（责任链模式：为请求创建了一个接收者对象的链。这种模式给予请求的类型，对请求的发送者和接收者进行解耦。这种类型的设计模式属于行为型模式。在这种模式中，通常每个接收者都包含对另一个接收者的引用。如果一个对象不能处理该请求，那么它会把相同的请求传给下一个接收者，依此类推。）
+3.7、
+	策略模式 ：CacheInterceptor 实现了数据的选择策略， 来自网络还是来自本地？ 这个场景也是比较契合策略模式场景， CacheInterceptor 需要一个策略提供者提供它一个策略（锦囊）， CacheInterceptor 根据这个策略去选择走网络数据还是本地缓存。
+	缓存的策略过程：
+	1、 请求头包含 "If-Modified-Since" 或 "If-None-Match" 暂时不走缓存
+	2、 客户端通过 cacheControl 指定了无缓存，不走缓存
+	3、客户端通过 cacheControl 指定了缓存，则看缓存过期时间，符合要求走缓存。
+
+	4、 如果走了网络请求，响应状态码为 304（只有客户端请求头包含 "If-Modified-Since" 或 "If-None-Match" ，服务器数据没变化的话会返回304状态码，不会返回响应内容）， 表示客户端继续用缓存。
+
+	（策略模式：一个类的行为或其算法可以在运行时更改。这种类型的设计模式属于行为型模式。策略模式中，我们创建表示各种策略的对象和一个行为随着策略对象改变而改变的 context 对象。策略对象改变 context 对象的执行算法。）
+	--------------------- 
+	作者：茶卡y 
+	来源：CSDN 
+	原文：https://blog.csdn.net/u012881042/article/details/79759203 
+	版权声明：本文为博主原创文章，转载请附上博文链接！
+
+三、OkHttp3使用到的ConnectionPool
+	3.1、ConnectionPool原理。
+四、基本使用——OkHttp3详细使用教程
+4.1、基本使用——OkHttp3详细使用教程
+	https://blog.csdn.net/xx326664162/article/details/77714126
+
+五、ConnectInterceptor 拦截器。
+	
+	5.1、tunnel链接与socket链接区别,高级课程。

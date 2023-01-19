@@ -1,0 +1,7 @@
+一、EventBus使用。
+
+	1.1、EventBus的使用及原理解析
+		
+		https://www.jianshu.com/p/56540e07416a
+
+二、
