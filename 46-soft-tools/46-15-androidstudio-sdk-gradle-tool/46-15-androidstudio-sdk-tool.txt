@@ -4,8 +4,10 @@
 		https://developer.android.google.cn/studio#downloads
 		存档历史版本下载
 		https://developer.android.google.cn/studio/archive?hl=zh-cn
+		
 		androidstudio中文网站下载
 		https://developer.android.google.cn/studio#downloads
+			包含各类相关工具下载。
 		
 		https://developer.android.google.cn/
 		
@@ -53,6 +55,9 @@
 				export PATH=$NDK_HOME:$PATH
 		0.1.5 Command line tools
 			https://www.mianshigee.com/tutorial/AndroidStudio/27802e2c788c4747.md
+		0.1.5 For Android Emulator downloads, see the Emulator download archives.
+			https://developer.android.google.cn/studio/emulator_archive
+			#如何手动安装指定版本的模拟器# 详细说明
 	0.2  as，sdk其它好用网站地址
 	
 		http://tools.android-studio.org/ 
@@ -61,10 +66,7 @@
 		
 		【以及很多好的资源】
 		
-	0.3 Android Gradle 插件版本说明
-		https://developer.android.google.cn/studio/releases/gradle-plugin 
-		
-		包含项：【各个 Android Gradle 插件版本所需的 Gradle 版本】
+	0.3
 	0.4 使用Android Studio来阅读Android源码
 		mmm development/tools/idegen/
 		mv ./out/target/product/tiny4412/obj/GYP/shared_intermediates/res.java ./out/target/product/tiny4412/obj/GYP/shared_intermediates/res.j
@@ -186,29 +188,44 @@
 		点击右边的Gradle侧边栏：makeJar ,或者exportJar
 	1.3 ANDROID STUDIO 生成AAR和引用AAR 
 		https://www.cnblogs.com/androidxiaoyang/p/5473916.html  
-2. Android Studio：unsupported class file version 52.0报错
-	2.1 Android Studio：unsupported class file version 52.0报错
-		https://blog.csdn.net/u011435933/article/details/80923285?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
-3. 	ERROR: Jack is required to support java 8 language features. Either enable Jack or remove sourceCompatibility JavaVersion.VERSION_1_8.
-	Affected Modules:
-	
-	https://blog.csdn.net/u011781521/article/details/52702482
-	
-		在build.gradle文件的defaultConfig中添加一下就可以了..
+2. Android studio 中gradle版本关系。
+	2.1 Android Gradle 插件版本说明
+		https://developer.android.google.cn/studio/releases/gradle-plugin 
+		包含项：
+		 #【各个 Android Gradle 插件版本所需的 Gradle 版本】
+			
+		 #Android Gradle 插件和 Android Studio 兼容性
+			对于项目中Android Gradle 插件 agp一般不用修改，可以修改对应的gradle版本，gradle文件比较大，选择满足范围内的一个即可。
+		Android studio 和 gradle插件版本对应关系（最新 2022年）
+			https://blog.csdn.net/dongxin214/article/details/100726807
 
-		android节点下defaultConfig节点下添加：
-		jackOptions {
-			enabled true
-		}
+3. 异常记录：
+	3.1 ERROR: Jack is required to support java 8 language features. Either enable Jack or remove sourceCompatibility JavaVersion.VERSION_1_8.
+		Affected Modules:
 		
-		-source 1.7 中不支持 lambda 表达式
-	
-	3.2 指定sourceCompatibility中java版本
-		子module下build.gradle中android节点下配置
-			compileOptions {
-				sourceCompatibility JavaVersion.VERSION_1_7
-				targetCompatibility JavaVersion.VERSION_1_7
+		https://blog.csdn.net/u011781521/article/details/52702482
+		
+			在build.gradle文件的defaultConfig中添加一下就可以了..
+
+			android节点下defaultConfig节点下添加：
+			jackOptions {
+				enabled true
 			}
+			
+			-source 1.7 中不支持 lambda 表达式
+	
+		3.1.2 指定sourceCompatibility中java版本
+			子module下build.gradle中android节点下配置
+				compileOptions {
+					sourceCompatibility JavaVersion.VERSION_1_7
+					targetCompatibility JavaVersion.VERSION_1_7
+				}
+	3.2 
+		Android Studio：unsupported class file version 52.0报错
+		Android Studio：unsupported class file version 52.0报错
+			https://blog.csdn.net/u011435933/article/details/80923285?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+	
+		
 4. Android Studio的TODO，FIXME 
 	4.1 Android Studio的TODO，FIXME 
 		https://blog.csdn.net/kaoshibuguaa/article/details/51536992 
@@ -616,6 +633,11 @@
 		https://www.jianshu.com/p/44288b0be8c3 
 		
 		Preference-> Appearance & Behavior -> System Settings 里面
+		
+	20.2 解决AndroidStudio 控制台编译输出中文乱码
+		https://blog.csdn.net/qq_36512159/article/details/117773430
+		修改安装目录下的：\bin\studio64.exe.vmoptions
+		添加 -Dfile.encoding=UTF-8
 21 内存设置
 	21.1 RAM set:such as the core IDE or Gradle daemon
 		File | Settings | Appearance & Behavior | System Settings | Memory Settings

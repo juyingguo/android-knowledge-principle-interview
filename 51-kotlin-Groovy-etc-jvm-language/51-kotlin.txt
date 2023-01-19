@@ -1,129 +1,138 @@
-1.×ÊÔ´
+1.èµ„æº
 	1.1 
-		¹Ù·½ÍøÕ¾
+		å®˜æ–¹ç½‘ç«™
 			https://www.kotlincn.net/ 
-		¹Ù·½Ê¾Àı
+			
+			ä¸‹è½½sdk
+			ä¸‹è½½è¿æ¥2ï¼šhttps://github.com/JetBrains/kotlin/releases 
+		å®˜æ–¹ç¤ºä¾‹
 			https://try.kotlinlang.org/
-		¹Ù·½ÍøÕ¾ - ÖĞÎÄ·­Òë
+		å®˜æ–¹ç½‘ç«™ - ä¸­æ–‡ç¿»è¯‘
 			https://www.kotlincn.net/
-		Kotlin ¹Ù·½ÔÚÏß¹¤¾ß
+		Kotlin å®˜æ–¹åœ¨çº¿å·¥å…·
 			https://play.kotlinlang.org/
 			
 			JetBrains may use cookies and my IP address to collect individual statistics and to provide me with personalized offers and ads subject to the Privacy Policy and the Terms of Use. JetBrains may use third-party services for this purpose. I can revoke my consent at any time by visiting the Opt-Out page.
-		Kotlin ÔÚÏß¹¤¾ß
+		Kotlin åœ¨çº¿å·¥å…·
 		
-		kotlin ¹Ù·½ÎÄµµ·­Òë 
-			½Ì³Ì¼°api
+		kotlin å®˜æ–¹æ–‡æ¡£ç¿»è¯‘ 
+			æ•™ç¨‹åŠapi
 		https://github.com/huanglizhuo/kotlin-in-chinese  
 		
-		¹Ù·½ÂÛÌ³£º
+		å®˜æ–¹è®ºå›ï¼š
 		https://discuss.kotlinlang.org/ 
-	1.2 kotlin½Ì³Ì¡£
+		
+		
+	1.2 kotlinæ•™ç¨‹ã€‚
 		https://www.runoob.com/kotlin/kotlin-tutorial.html 
 
 		https://github.com/huanglizhuo/kotlin-in-chinese  		
 		
 		https://blog.csdn.net/u013064109/article/details/89199478 
-			ÖªÊ¶µãÁ´½Ó¡£
+			çŸ¥è¯†ç‚¹é“¾æ¥ã€‚
 		
-		kotlincn.net/docs/reference/object-declarations.html#°éÉú¶ÔÏó 
+		kotlincn.net/docs/reference/object-declarations.html#ä¼´ç”Ÿå¯¹è±¡ 
 		
-		1.2.3 kotlin google½Ì³Ì
-			¡¾º¬»·¾³ÅäÖÃ¡¢½Ì³Ì¡¢°¸Àı¡¢ÎÄµµ¡¿
+		1.2.3 kotlin googleæ•™ç¨‹
+			ã€å«ç¯å¢ƒé…ç½®ã€æ•™ç¨‹ã€æ¡ˆä¾‹ã€æ–‡æ¡£ã€‘
 			https://developer.android.google.cn/kotlin
-		1.2.4 ¡¶KotlinÊµÕ½¡·
+		1.2.4 ã€ŠKotlinå®æˆ˜ã€‹
 		
-		1.2.5 KotlinÑ§Ï°ÏµÁĞÎÄÕÂOverview
+		1.2.5 Kotlinå­¦ä¹ ç³»åˆ—æ–‡ç« Overview
 			https://juejin.cn/post/6844903917428424712 
-	1.3 kotlinÌ½ÌÖ
-		1.3.1 KotlinÓïÑÔÏÖÔÚÔõÃ´²»»ğÁË?
+	1.3 kotlinæ¢è®¨
+		1.3.1 Kotlinè¯­è¨€ç°åœ¨æ€ä¹ˆä¸ç«äº†?
 			https://www.zhihu.com/question/461471019 
-		1.3.2 Android µÄ Kotlin ÓÅÏÈ·½·¨ 
+		1.3.2 Android çš„ Kotlin ä¼˜å…ˆæ–¹æ³• 
 			https://developer.android.google.cn/kotlin/first 
-2. android studio ÖĞÅäÖÃkotlin 
+2. android studio ä¸­é…ç½®kotlin 
 	2.1 The current Gradle version 4.4 is not compatible with the Kotlin Gradle plugin. Please use Gradle 5.3 or newer, or the previous version of the Kotlin plugin.
 		Open File
 		
+	2.2 Kotlinï¼ˆä¸€ï¼‰--ï¼Android Studioé…ç½®Kotlinå¼€å‘ç¯å¢ƒ
+		https://blog.csdn.net/m0_72431373/article/details/126412700
 		
-3. kotlin¿â¹¤³Ì,ÀàËÆÓÚjava library module.
-	3.1 ÔËĞĞÒì³££ºJava.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics
+		Kotlinå…¥é—¨å®æˆ˜ï¼š3ã€AndroidStudioæµ‹è¯•KotlinåŸºç¡€ä»£ç ã€sdkä¸‹è½½
+			https://blog.csdn.net/YuDBL/article/details/102986723
+3. kotlinåº“å·¥ç¨‹,ç±»ä¼¼äºjava library module.
+	3.1 è¿è¡Œå¼‚å¸¸ï¼šJava.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics
 		
 		https://blog.csdn.net/zhendless/article/details/76152420 
 		https://stackoverflow.com/questions/60059357/java-lang-noclassdeffounderror-kotlin-jvm-internal-intrinsics-in-spring-boot-ap
 		
-		Ê¹ÓÃ¿âÎÄ¼ş£ºgithub¼ÓËÙµØÖ·¡£
+		ä½¿ç”¨åº“æ–‡ä»¶ï¼šgithubåŠ é€Ÿåœ°å€ã€‚
 		https://codechina.csdn.net/mirrors/mapzen/on-the-road_android?utm_source=csdn_github_accelerator
-		Ìí¼ÓÒÀÀµ£º
+		æ·»åŠ ä¾èµ–ï¼š
 		'com.mapzen:on-the-road:1.3.1'
 		
-		Ìí¼Óºó¡£ÔËĞĞ³É¹¦¡£ÔÙÉ¾³ı¸Ã¿âÒ²Ã»ÓĞÈÎºÎÓ°Ïì¡£
-		·ÖÎö£º¿ÉÄÜ²»ÊÇÕâ¸öÔ­Òò¡£
+		æ·»åŠ åã€‚è¿è¡ŒæˆåŠŸã€‚å†åˆ é™¤è¯¥åº“ä¹Ÿæ²¡æœ‰ä»»ä½•å½±å“ã€‚
+		åˆ†æï¼šå¯èƒ½ä¸æ˜¯è¿™ä¸ªåŸå› ã€‚
 		
-		·¢ÏÖÒÀÀµ¿âkotlin-stdlibÓĞ¾¯¸æÌáÊ¾£º
+		å‘ç°ä¾èµ–åº“kotlin-stdlibæœ‰è­¦å‘Šæç¤ºï¼š
 		implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-			ÌáÊ¾Îª£ºPlugin version (1.3.50) is not the same as library version (idk8-1.3.50) less...(Ctrl+F1)
-			ÓĞ¾¯¸æÒ²²»Ó°Ïì¡£
-			ĞŞ¸ÄÎªÒÔÏÂÅäÖÃ¾ÍÃ»ÓĞ¾¯¸æÁË£ºimplementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+			æç¤ºä¸ºï¼šPlugin version (1.3.50) is not the same as library version (idk8-1.3.50) less...(Ctrl+F1)
+			æœ‰è­¦å‘Šä¹Ÿä¸å½±å“ã€‚
+			ä¿®æ”¹ä¸ºä»¥ä¸‹é…ç½®å°±æ²¡æœ‰è­¦å‘Šäº†ï¼šimplementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 		Kotlin not configured
-		·ÖÎöÔ­ÒòÎª£ºÃ»ÓĞÅäÖÃkotlin-stdlibÒÀÀµ¿â¡£
+		åˆ†æåŸå› ä¸ºï¼šæ²¡æœ‰é…ç½®kotlin-stdlibä¾èµ–åº“ã€‚
 			https://blog.csdn.net/qq_33143459/article/details/103989807
 			https://jingyan.baidu.com/article/48206aeae9891e606ad6b395.html
-4. KotlinÊµÕ½¼°ÏîÄ¿¼°Àı×Ó
-	4.1 KotlinÊµÕ½Ö¸ÄÏÊ®¶ş£ºdata class
+4. Kotlinå®æˆ˜åŠé¡¹ç›®åŠä¾‹å­
+	4.1 Kotlinå®æˆ˜æŒ‡å—åäºŒï¼šdata class
 		https://blog.csdn.net/zhaoyanjun6/article/details/94649274 
 	4.2 git-xuhao/KotlinMvp
 		https://github.com/search?q=kotlin 
-		[»ùÓÚKotlin+MVP+Retrofit+RxJava+Glide µÈ¼Ü¹¹ÊµÏÖ¶ÌÊÓÆµÀàĞ¡ÏîÄ¿£¬¼òÔ¼·ç¸ñ¼°ÏêÏ¸×¢ÊÍ]
+		[åŸºäºKotlin+MVP+Retrofit+RxJava+Glide ç­‰æ¶æ„å®ç°çŸ­è§†é¢‘ç±»å°é¡¹ç›®ï¼Œç®€çº¦é£æ ¼åŠè¯¦ç»†æ³¨é‡Š]
 	4.3 kotlin-examples
 		https://github.com/Kotlin/kotlin-examples 
 		
-		º¬kotlinµÄandroid viewsÏà¹ØµÄÏîÄ¿ÒÔ¼°¶ÔÓ¦javaÏÂµÄÏîÄ¿
+		å«kotlinçš„android viewsç›¸å…³çš„é¡¹ç›®ä»¥åŠå¯¹åº”javaä¸‹çš„é¡¹ç›®
 		https://github.com/android/views-widgets-samples 
 		
 	4.4 https://developer.android.com/samples
 		
-5. [Òë] KotlinÖĞ¹ØÓÚCompanion ObjectµÄÄÇĞ©ÊÂ
+5. [è¯‘] Kotlinä¸­å…³äºCompanion Objectçš„é‚£äº›äº‹
 	https://blog.csdn.net/u013064109/article/details/89199478 
 	
-	KotlinÖĞµÄobject Óëcompanion objectµÄÇø±ğ 
+	Kotlinä¸­çš„object ä¸companion objectçš„åŒºåˆ« 
 	https://www.jianshu.com/p/14db81e1576a? 
-	KotlinÖĞ³£Á¿ºÍ¾²Ì¬·½·¨ 
+	Kotlinä¸­å¸¸é‡å’Œé™æ€æ–¹æ³• 
 	https://www.jianshu.com/p/e8752c880088  
-6. KotlinÏÂµÄÉè¼ÆÄ£Ê½Ä£Ê½
-	6.1 KotlinÏÂµÄ5ÖÖµ¥ÀıÄ£Ê½
+6. Kotlinä¸‹çš„è®¾è®¡æ¨¡å¼æ¨¡å¼
+	6.1 Kotlinä¸‹çš„5ç§å•ä¾‹æ¨¡å¼
 		https://www.jianshu.com/p/5797b3d0ebd0 
 		
-		µ±KotlinÍêÃÀåâåËÉè¼ÆÄ£Ê½Ö®µ¥ÀıÄ£Ê½(Ò»)
+		å½“Kotlinå®Œç¾é‚‚é€…è®¾è®¡æ¨¡å¼ä¹‹å•ä¾‹æ¨¡å¼(ä¸€)
 			https://zhuanlan.zhihu.com/p/61667789 
 			
-7.KotlinÊı¾İ½á¹¹
-	7.1 KotlinÊı×é£¨Array£©
+7.Kotlinæ•°æ®ç»“æ„
+	7.1 Kotlinæ•°ç»„ï¼ˆArrayï¼‰
 		https://www.runoob.com/kotlin/kotlin-basic-syntax.html 
-8. KotlinÏµÁĞÖ®let¡¢with¡¢run¡¢apply¡¢alsoº¯ÊıµÄÊ¹ÓÃ
+8. Kotlinç³»åˆ—ä¹‹letã€withã€runã€applyã€alsoå‡½æ•°çš„ä½¿ç”¨
 	https://youkmi.blog.csdn.net/article/details/78786646? 
 	
 	8.2 ?.let vs if not null 
 		https://discuss.kotlinlang.org/t/let-vs-if-not-null/3542 
-9. KotlinµÄinline noinline crossinline±Ê¼Ç
+9. Kotlinçš„inline noinline crossinlineç¬”è®°
 	https://www.jianshu.com/p/1d7374349a00 
-10. KotlinÏµÁĞÖ®Lambda±í´ïÊ½ÍêÈ«½âÎö 
+10. Kotlinç³»åˆ—ä¹‹Lambdaè¡¨è¾¾å¼å®Œå…¨è§£æ 
 	https://blog.csdn.net/u013064109/article/details/80088158 
-11 Kotlin»ù´¡Ö®lateinit¹Ø¼ü×Ö£¨Îå£©
+11 KotlinåŸºç¡€ä¹‹lateinitå…³é”®å­—ï¼ˆäº”ï¼‰
 	https://www.jianshu.com/p/fab1799314df 
-	lateinitµÄ×÷ÓÃ£ºÑÓ³Ù³õÊ¼»¯
-	¾ßÌåÀ´½²£¬Õâ¸ö¹Ø¼ü×Ö¸æËß±àÒëÆ÷£¬ÎÒÎŞ·¨ÉùÃ÷µÄÊ±ºò¾Í³õÊ¼»¯£¬µ«ÊÇÎÒ±£Ö¤ÎÒÔÚÊ¹ÓÃÇ°Ò»¶¨»á³õÊ¼»¯£¬Äã¾Í±ğ¸øÎÒ¼ì²éÁË¡£
-12 ¹ØÓÚKotlinÖĞSAM×ª»»µÄÄÇĞ©ÊÂ 
+	lateinitçš„ä½œç”¨ï¼šå»¶è¿Ÿåˆå§‹åŒ–
+	å…·ä½“æ¥è®²ï¼Œè¿™ä¸ªå…³é”®å­—å‘Šè¯‰ç¼–è¯‘å™¨ï¼Œæˆ‘æ— æ³•å£°æ˜çš„æ—¶å€™å°±åˆå§‹åŒ–ï¼Œä½†æ˜¯æˆ‘ä¿è¯æˆ‘åœ¨ä½¿ç”¨å‰ä¸€å®šä¼šåˆå§‹åŒ–ï¼Œä½ å°±åˆ«ç»™æˆ‘æ£€æŸ¥äº†ã€‚
+12 å…³äºKotlinä¸­SAMè½¬æ¢çš„é‚£äº›äº‹ 
 	https://www.jb51.net/article/195649.htm 
-13 Kotlin±Ê¼Ç36¡ª¡ªopen¡¢finalºÍabstractĞŞÊÎ·û
+13 Kotlinç¬”è®°36â€”â€”openã€finalå’Œabstractä¿®é¥°ç¬¦
 	https://blog.csdn.net/chengxu_kuangrexintu/article/details/100702819 
-14 kotlinÔÚandroidÖĞµÄÊ¹ÓÃ
+14 kotlinåœ¨androidä¸­çš„ä½¿ç”¨
 	14.1 
-		kotlinx.android.synthetic.** ¿Óµã
+		kotlinx.android.synthetic.** å‘ç‚¹
 		https://blog.csdn.net/chf1142152101/article/details/78284950 
 		
-		kotlin-androidÎª»ù±¾Ö§³Öandroid ¿ª·¢²å¼ş,kotlin-android-extensions¾ÍÊÇÊ¡È¥ÎÒÃÇÆµ·±ÕÒidµÄ²å¼şÁË
-	14.2 ¡¾Òë¡¿Ç¨ÒÆ±»·ÏÆúµÄKotlin Android Extensions²å¼ş 
+		kotlin-androidä¸ºåŸºæœ¬æ”¯æŒandroid å¼€å‘æ’ä»¶,kotlin-android-extensionså°±æ˜¯çœå»æˆ‘ä»¬é¢‘ç¹æ‰¾idçš„æ’ä»¶äº†
+	14.2 ã€è¯‘ã€‘è¿ç§»è¢«åºŸå¼ƒçš„Kotlin Android Extensionsæ’ä»¶ 
 		https://weilu.blog.csdn.net/article/details/109557820 
 		
-		°üº¬Ô­ÎÄ£ºMigrating the deprecated Kotlin Android Extensions compiler plugin
+		åŒ…å«åŸæ–‡ï¼šMigrating the deprecated Kotlin Android Extensions compiler plugin
 	

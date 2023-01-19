@@ -1,0 +1,55 @@
+1.
+	
+2.
+	gradle及gradle android plugin 使用原项目中的。
+	
+	编译失败：
+		ERROR: Failed to resolve: com.github.chrisbanes:PhotoView:2.1.2
+		调整为：2.1.3
+		编译ok
+		
+	
+	com.will.weiyue.net.RetrofitConfig#sRewriteCacheControlInterceptor
+		.removeHeader("Pragma") 含义？
+		
+	.addInterceptor(RetrofitConfig.sRewriteCacheControlInterceptor)
+                .addNetworkInterceptor(RetrofitConfig.sRewriteCacheControlInterceptor)
+				两个方式添加同一个拦截器，为何？
+	MainActivity			
+		com.will.weiyue.MainActivity#bindView
+		//获取栈内的fragment对象
+		com.will.weiyue.ui.base.SupportActivity#findFragment
+		
+	database helper:
+		org.litepal.crud.DataSupport
+		
+	频道选择：
+	com.will.weiyue.widget.ChannelDialogFragment
+	
+	com.will.weiyue.widget.MultiStateView
+		SparseArray
+		
+	com.will.weiyue.ui.base.BaseFragment#onLazyInitView
+	
+	
+	rxlifecycle2
+	com.trello.rxlifecycle2.LifecycleProvider
+	
+	com.will.weiyue.net.RxSchedulers
+	
+	新闻-娱乐：视频点击播放提示如下：
+
+			TYPE_PHVIDEO
+			
+			at::com.will.weiyue.ui.news.DetailFragment#bannerToRead
+			
+			weburl：
+				https://ishare.ifeng.com/c/s/v004P0WNz5H21JPdOShtla7yYFoo0kZ1inKzo3KG4sZxWWGyd2kS9EQA2Gi00yV5FOudiX-_mOx0sS--LN81afOj4HxA____?spss=np
+			
+	ohttp 封装分析，retrofit封装分析。
+		
+	
+	
+
+		
+		

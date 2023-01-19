@@ -122,4 +122,12 @@
 	
 	有源以太网(Power Over Ethernet)
 	
-		
+16.NTFS, FAT32和exFAT文件系统有什么区别
+	https://blog.csdn.net/cmyperson/article/details/121224288
+	
+	部分记录：
+	Fat32文件格式是一种通用格式，任何USB存储设备都会预装该文件系统，可以在任何操作系统平台上使用。最主要的缺陷是只支持
+	最大单文件大小容量为4GB
+	exFAT文件是微软自家创建的用来取代FAT32文件格式的新型文件格式，它最大可以支持1EB的文件大小.
+	exFAT格式是最适合U盘的.
+	NTFS是微软为硬盘或固态硬盘（SSD）创建的默认新型文件系统，NTFS的含义是 New Technology File System

@@ -48,8 +48,7 @@
 		
 		野火im
 			https://gitee.com/wfchat/android-chat
-			{及其服务端，客户端，推送，实时音视频}
-			
+			{及其服务端，客户端，推送，实时音视频}			
 			https://docs.wildfirechat.cn/
 	1.8 Messenger
 		https://github.com/relatedcode/Messenger

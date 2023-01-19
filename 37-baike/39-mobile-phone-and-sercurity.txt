@@ -1,0 +1,120 @@
+1. 
+	手机SIM卡的PIN码是什么
+	https://baijiahao.baidu.com/s?id=1618918421398671742&wfr=spider&for=pc
+	1.2 手机IMEI码真伪查询
+		https://www.netded.com/xiao_1.php?url=http://pan.baidu.com/s/1c7OwCQ
+2.小米红米手机
+	2.1 红米手机更新时下载固件包在哪里 
+		https://zhidao.baidu.com/question/694000462191479324.html 
+		
+		红米手机系统安装包在手机内部储存【downloaded-rom】文件夹
+		
+3. 解决Android SystemUI的简单解决方案
+	https://huifu.wondershare.cn/drfone/10087219.html
+	
+	万兴手机管家 - 修复（Android）
+	我的手机中兴Blade A1（C880U)出现这个问题。
+		中兴手机提示：Android SystemUI异常停止，一直弹框。	
+4.中兴
+	4.1 Blade A1（C880U)Blade A1（C880U)信息：
+		型号：zte c880u
+			版本号：C880UV1.0.0B04
+			处理器：MT6735
+			andoroid版本5.1
+			内核版本：3.10.65+
+			硬件版本：MBV1.0
+			
+	
+	4.2
+		中兴Blade A1（C880U)刷机教程 官方卡刷教程
+		https://m.romzhijia.net/romnews/11553.html
+		
+		中兴手机官方论坛
+			http://www.myzte.cn/forum.php（打不开了。）
+			
+			https://www.zte.com.cn/china/
+			
+			https://www.ztedevices.com/cn/supports/c880a/
+		中兴 Blade A1 (C880U/移动4G)线刷包_官方包_刷机包_中兴C880U_5.1_C880UV1.0.0B04
+			http://www.shuajizhijia.net/1007647.html
+			用客户端-选择-型号-开通会员，刷机。
+			
+		中兴A1_C880U 移动版ROM，移动联通双4G包更新
+			https://tieba.baidu.com/p/4307032843
+			******
+			****6、本ROM仅供测试，可能存在缺陷****
+			*******
+			# 下载链接：http://pan.baidu.com/s/1o6Q9dCA 密码：swyb 文件名：C880U_双4G_V1.3_HY0117.zip
+			#详细说明：
+		【官方线刷包】救砖必备·C880U和C880A
+			https://tieba.baidu.com/p/4429743868
+		中兴手机c880u进入recovery
+			中兴Blade A1 C880U双清教程_怎么进recovery清理缓存和恢...
+				https://www.netded.com/a/jingpinshouji/2019/0413/41065.html
+	4.3 线刷包和卡刷包有区别吗
+		https://www.knowbaike.com/it/15079.html
+		
+		卡刷更安全，更可靠。。
+		
+		卡刷，需要单独使用sd卡吗，放在手机自带内存卡中可以吗？
+	4.4 
+		4.4.2 中兴（ZTE） Blade A1(C880A)是全网通。
+			中兴（ZTE） Blade A1(C880A)-官方固件-卡刷包-Blade_A1_C880A_SD卡升级包(全网通版)314620B1335C880AV1.0	
+			https://onfix.cn/rom/361112
+			
+			选择型号，下载卡刷包：https://onfix.cn/rom?bid=806
+			
+			https://onfix.cn/rom?bid=806&mid=25938
+			
+			15_ZTE_C880U_MT6735.zip 精简版是，线刷包。
+			
+			中兴（ZTE） Blade A1(C880U)-官方固件-卡刷包-ZTE_C880U_SD卡升级包(移动版)314620B1816C880UV1.0
+				支付一元就可以下载了。
+			同一个系列的版本：
+			C880UV1.0.0B04
+			C880UV1.0.0B05
+			C880UV1.0.0B06	
+		中兴C880U官方固件刷机教程_线刷|救砖教程图解
+			【刷机帮】
+			http://www.shuajibang.net/
+				[可搜索不同搜集型号。]
+			http://www.shuajibang.net/course/detail/8044/			
+				[中兴 C880U刷机救砖教程详解]
+				[这个是线刷，卡刷可以参考其它手机或型号] 参考【4.5】
+				
+		中兴Blade A1 C880U手机官方固件ROM刷机包V1.0.0B04线刷包下载
+			【刷机天堂】
+			http://shuajitt.com/firmwarelist/zte-c880/1544.html
+			【固件大小：963.7 MB】
+								
+		中兴Blade A1官方固件rom包_中兴C880A C880U原厂刷机包_升...
+			【迷你手机网】
+			https://www.netded.com/a/jishuyingyong/2016/0625/31748.html
+			
+			搜索：c880u结果：
+			https://www.netded.com/a/jishuyingyong/2016/0625/31748.html
+			[卡刷包]
+			【百度网盘连接】【不收费】
+		中兴（ZTE） Blade A1 C880U手机SD卡刷，正常升级和强制升级两种方式操作教程
+			https://onfix.cn/course/517?bid=806&mid=25938
+			
+	5. 华为nova3i卡刷ROM包_卡刷教程详解
+		http://www.shuajibang.net/course/detail/20725
+	6. recovery：
+		https://www.netded.com/a/jingpinshouji/2016/0627/31754.html
+		
+5. 刷机之家
+	http://www.shuajizhijia.net/phonelist_6
+	
+	刷机天堂
+	http://shuajitt.com/
+	
+	刷机帮
+	
+	【迷你手机网】
+	
+	线刷宝：
+	http://xsb.yunhuigo.net/
+		【速解决修复】
+	
+	

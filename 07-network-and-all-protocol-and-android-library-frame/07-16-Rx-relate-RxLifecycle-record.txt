@@ -1,0 +1,35 @@
+1.
+	1.1
+		https://github.com/trello/RxLifecycle
+	1.2 作者推荐更优秀的库：AutoDispose
+	
+	1.3 Demo of RxJava, RxAndroid, RxLifecycle, and RxBinding
+		https://github.com/adamldavis/RxAndroidTest
+		
+		https://github.com/CORDEA/RxLifecycleDemo
+			kotlin
+			
+		https://github.com/wkxjc/RxJava2Demo
+			RxJava2 RxAndroid RxLifecycle基本使用（使用Kotlin语言）
+			:https://blog.csdn.net/AlpinistWang/article/details/83107659
+		
+		RxJava-Retrofit-MVP-Rxlifecycle
+			https://github.com/wangwenhaoandroid/RxDemo
+			[详情]：【3】
+			
+2.
+	为什么不使用 RxLifecycle?
+		https://www.jianshu.com/p/6627e97eba8d
+		
+		原文：https://blog.danlew.net/2017/08/02/why-not-rxlifecycle/
+		
+		如果想使用类似的库，我建议使用AutoDispose，因为我觉得它的框架比RxLifecycle更优秀。
+	2.2 史上超详细的RxJava2使用和RxLifecycle生命周期管理
+		https://www.jianshu.com/p/99cddc8c338c
+		
+		RxLifecycle详细解析
+		https://www.jianshu.com/p/e75d320a668c
+			
+3. 
+	com.demo.wang.rxdemo.v.ViewPagerIndicator
+	

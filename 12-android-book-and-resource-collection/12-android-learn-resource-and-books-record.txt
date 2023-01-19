@@ -19,23 +19,33 @@
 		https://github.com/search?q=android&type=Repositories
 		
 		Android 开源大全
-		https://github.com/ColorfulCat/AndroidLibs
+			https://github.com/ColorfulCat/AndroidLibs
 		
 		https://github.com/feelschaotic/AndroidKnowledgeSystem
 			feelschaotic/AndroidKnowledgeSystem
 			The most complete Android advanced route knowledge map ⭐️你想要的最全 Android 进阶路线知识图谱+干货资料收集
-		https://github.com/crazyqiang/AndroidStudy
-			 Android学习知识点总结 Jetpack、MVVM、MVI、Kotlin、ViewPager2、JUC多线程等		
-		https://github.com/leavesCZY/AndroidGuide
-			这是一份给 Android Developer 的进阶学习笔记，公众号：字节数组 		
+		Android学习知识点总结 Jetpack、MVVM、MVI、Kotlin、ViewPager2、JUC多线程等		
+			https://github.com/crazyqiang/AndroidStudy
+			
+		这是一份给 Android Developer 的进阶学习笔记，公众号：字节数组 	
+			https://github.com/leavesCZY/AndroidGuide
+				
 		Extensive Open-Source Guides for Android Developers
 			https://github.com/codepath/android_guides
-		https://github.com/chiclaim/AndroidAll
-			Android 程序员需要掌握的技术栈
-		https://github.com/mixi-inc/AndroidTraining
-			Training course repository for android app development
-		https://github.com/kesenhoo/android-training-course-in-chinese
-			Android官方培训课程中文版
+		Android 程序员需要掌握的技术栈
+			https://github.com/chiclaim/AndroidAll
+			
+		Training course repository for android app development
+			https://github.com/mixi-inc/AndroidTraining
+			
+		Android官方培训课程中文版
+			https://github.com/kesenhoo/android-training-course-in-chinese
+			
+		Advanced Android Development training course
+			https://github.com/google-developer-training/android-advanced
+			
+		[Examples] Simple basic isolated apps, for budding android devs.
+			https://github.com/nisrulz/android-examples
 			
 		https://github.com/pcqpcq/open-source-android-apps
 		
@@ -58,6 +68,8 @@
 				This repository contains a detailed sample app that implements MVP architecture in Kotlin using Dagger2, Room, RxJava…
 			https://github.com/RuffianZhong/Rx-Mvp
 				RxJava2+Retrofit2+RxLifecycle2+OkHttp3 封装RHttp 使用MVP模式构建项目
+			android模块化demo，从零到一搭建属于自己的模块化安卓工程（MVP+Retrofit+Rxjava+Rxlifecycle+Glide+Eventbus+ARouter）
+				https://github.com/senonwx/ModularApp
 		mvvm:
 			github搜hilt
 			
@@ -65,6 +77,45 @@
 				MVVM + Kotlin + Retrofit2 + Hilt + Coroutines + Kotlin Flow + mockK + Espresso + Junit5
 			https://github.com/mitchtabian/MVVMRecipeApp
 				Kotlin, MVVM, Navigation Component, Hilt, Jetpack Compose, Retrofit2
+				
+			基于谷歌最新AAC架构，MVVM设计模式的一套快速开发库，整合Okhttp+RxJava+Retrofit+Glide等主流模块，满足日常开发需求。
+			使用该框架可以快速开发一个高质量、易维护的Android应用。
+			https://github.com/goldze/MVVMHabit
+			
+			难得一见 Jetpack MVVM 最佳实践！在 "以简驭繁" 代码中，对 "视图控制器" 乃至 "标准化开发模式" 形成正确、深入理解！
+				https://github.com/KunMinX/Jetpack-MVVM-Best-Practice
+			基于MVVMHabit框架，结合阿里ARouter打造的一套Android MVVM组件化开发方案
+				https://github.com/goldze/MVVMHabitComponent
+			This repository contains a detailed sample app that implements MVVM architecture using Dagger2, Room, RxJava2
+				https://github.com/janishar/android-mvvm-architecture
+			 FlyTour是Android MVVM+MVP+Dagger2+Retrofit+RxJava+组件化+插件组成的双编码架构+双工程架构+双语言Android应用开发框架，
+			 通过不断的升级迭代该框架已经有了十个不同的版本
+				https://github.com/mxdldev/android-mvp-mvvm-flytour
+			The practice of MVVM + Jetpack architecture in Android.
+				https://github.com/qingmei2/MVVM-Architecture
+			Android MVVM框架
+				https://github.com/AriaLyy/MVVM
+			Sample created to practice MVVM and DataBinding in Android Applications.
+				https://github.com/erikjhordan-rey/People-MVVM
+			
+			《安卓-深入浅出MVVM教程》 附带的案例。本系列已废弃，如对MVVM有需求，可看我的新开源项目 relight
+				https://github.com/ittianyu/MVVM
+				
+				新项目：https://github.com/ittianyu/relight
+				
+				
+			使用Jetpack全家桶+Kotlin实现的Android社区App加音乐播放器。不写晦涩难懂的代码，尽量标清每一行注释，严格遵守六大基本
+			原则，大量运用设计模式，此项目可快速帮你入手Kotlin、Jetpack。
+				https://github.com/zskingking/Jetpack-Mvvm
+			
+			MVVMNewsApp
+				https://github.com/codinginflow/MVVMNewsApp
+			Kotlin+MVVM+Retrofit+协程+ViewBinding+EventBus，准备入门kotlin和mvvm的完全可以以本项目为基础，强大、简单、易用！
+				https://github.com/baiyuliang/MVVM
+			MVVM, ViewModel and LiveData Sample App
+				https://github.com/hazems/mvvm-sample-app
+				
+				
 		时光轴效果
 			项目地址
 			https://github.com/ljtyzhr/TimeLine
@@ -81,6 +132,13 @@
 				
 			https://github.com/REBOOTERS/AndroidAnimationExercise
 				Android 动画各种实现，包括帧动画、补间动画和属性动画的总结分享
+			
+			闪烁效果：
+				An easy, flexible way to add a shimmering effect to any view in an Android app.
+					https://github.com/facebook/shimmer-android
+			A util for setting status bar style on Android App.
+				https://github.com/laobie/StatusBarUtil
+				
 		按字母排序库：
 			https://github.com/wasabeef/awesome-android-libraries
 				This is an alphabetical list of libraries for Android development, the majority being actively maintained.
@@ -98,6 +156,9 @@
 		滚轮：
 			https://github.com/weidongjian/androidWheelView
 				仿照iOS的滚轮控件，从请吃饭apk反编译出来的
+		日历，星期：
+			Android Week View is an android library to display calendars (week view or day view) within the app.
+				https://github.com/alamkanak/Android-Week-View
 		加载进度：
 			https://github.com/JorgeCastilloPrz/AndroidFillableLoaders
 				Android fillable progress view working with SVG paths. This is a nice option too if you want to create an interesting…
@@ -174,8 +235,6 @@
 		
 		https://github.com/aporter/coursera-android
 		
-		AndroidFire，一款新闻阅读 App框架，基于 Material Design + MVP + RxJava + Retrofit + Glide，基本涵盖了当前 Android 端开发最常用的主流框架，基于此框架可以快速开发…
-			https://github.com/jaydenxiao2016/AndroidFire
 		
 		
 		提高 Android UI 开发效率的 UI 库
@@ -198,12 +257,22 @@
 				QRCode 扫描二维码、扫描条形码、相册获取图片后识别、生成带 Logo 二维码、支持微博微信 QQ 二维码扫描样式
 			https://github.com/CameraKit/camerakit-android				
 				Library for Android Camera 1 and 2 APIs. Massively increase stability and reliability of photo and video capture on all
-		image:
+				
+			[DEPRECATED] Easily integrate Camera features into your Android app
+				https://github.com/google/cameraview
+		image and recognition:
 			https://github.com/jdamcd/android-crop
 				Android library project for cropping images
 				
 			https://github.com/ArthurHub/Android-Image-Cropper
 				Image Cropping Library for Android, optimized for Camera / Gallery.
+		
+			ocr:Experimental optical character recognition app
+				https://github.com/rmtheis/android-ocr
+				
+			Android OCR App
+				https://github.com/renard314/textfairy
+				
 		https://github.com/cats-oss/android-gpuimage
 		
 		https://github.com/wenmingvs/AndroidProcess
@@ -221,8 +290,11 @@
 		
 		https://github.com/Freelander/Android_Data
 			Some Android learning materials, hoping to help you learn Android development.
-		https://github.com/r0ysue/AndroidSecurityStudy
-			安卓应用安全学习
+		安卓应用安全学习
+			https://github.com/r0ysue/AndroidSecurityStudy
+						
+			安卓应用的安全和破解
+				https://github.com/crifan/android_app_security_crack
 		https://github.com/hehonghui/android-tech-frontier
 			【停止维护】一个定期翻译国外Android优质的技术、开源库、软件架构设计、测试等文章的开源项目
 		https://github.com/pchab/AndroidRTC
@@ -266,8 +338,11 @@
 				An unofficial bilibili client for android http://www.jianshu.com/p/f69a55b94c05 -- 该项目已停止维护！
 		
 		instant message:
-			https://github.com/wildfirechat/android-chat
-			
+			野火IM全系列
+				https://github.com/wildfirechat/android-chat
+				https://docs.wildfirechat.cn/
+				详情及追加资料见：【】
+				
 			https://github.com/OpenIMSDK/Open-IM-Server
 			
 			https://github.com/yuanrw/IM
@@ -295,6 +370,12 @@
 				玉兔即时通讯。开源的跨平台的的即时通信系统。包括文本、音视频、白板、远程控制
 			https://github.com/jkxqj/KingIM
 				KingIM是基于layim的websocket即时通讯系统,底层使用netty。
+			
+			starRTC，即时通讯(IM)系统			
+				https://gitee.com/starRTC/starrtc-android
+				https://github.com/starrtc/starrtc-server
+				#本产品完全免费，并且提供免费的私有部署服务端程序，支持全部功能，并提供第三方拉流、推流功能。
+				
 		消息推送：
 			https://github.com/mpusher/mpush
 				MPush开源实时消息推送系统
@@ -309,10 +390,11 @@
 		android-security	
 			https://github.com/ashishb/android-security-awesome
 				A collection of android security related resources
-				
-		项目 参考学习
+		蓝牙：
+			https://github.com/AltBeacon/android-beacon-library
+		项目app 参考学习
 		
-			###github搜dagger2搜到的项目：
+			###github搜dagger2,android app搜到的项目：
 		
 			https://github.com/codeestX/GeekNews
 				A pure reading App based on Material Design + MVP + RxJava2 + Retrofit + Dagger2 + Realm + Glide
@@ -333,7 +415,13 @@
 				https://github.com/liu-xiao-dong/JD-Test
 			使用data binding , dagger2 , retrofit2和rxjava实现的，基于MVVM的知乎日报APP。
 				https://github.com/liuguangqiang/Idaily
-				
+										
+				软件采用RxJava + Retrofit + OkHttp框架实现，遵循Material Design，界面简单干净，运行速度快，自动离线缓存，
+				节省流量，对于页面加载及错误等都做了处理，可以作为自己以后开发的一个模板。
+					https://github.com/laucherish/PureZhihuD
+					
+					**可以作为自己以后开发的一个模板
+					
 			Minimalistic audiobook player
 				https://github.com/PaulWoitaschek/Voice
 			一款 kotlin 新闻客户端, MVP + RxJava + Retrofit + Dagger2
@@ -344,11 +432,149 @@
 			Android online music player use okhttp&gson&material design
 				https://github.com/wangchenyan/ponymusic
 			
-			基于RxJava+Retrofit+OkHttp实现的纯净知乎日报客户端
-				https://github.com/laucherish/PureZhihuD
 				
 			Android 开发一定要看的15个实战项目
 				https://www.likecs.com/show-243688.html
+			仿IT之家
+				https://github.com/danxinzhicheng/IThouse
+			开源android阅读器 基于fbreader 采用abase框架界面参考ireader	
+				https://gitee.com/jayqqaa12/abase-reader?_from=gitee_search
+			草榴官方客户端，小草客户端，Android
+				https://github.com/yuuwill/1024app-android
+			AndroidFire，一款新闻阅读 App框架，基于 Material Design + MVP + RxJava + Retrofit + Glide，基本涵盖了当前 Android 
+				端开发最常用的主流框架，基于此框架可以快速开发…
+				https://github.com/jaydenxiao2016/AndroidFire
+				
+				***[基于此框架可以快速开发]				
+				
+			email app:
+				Fully featured, open source, privacy friendly email app for Android
+						https://github.com/M66B/FairEmail
+				K-9 Mail – Open Source Email App for Android
+					https://github.com/thundernest/k-9
+					[Kotlin]
+			kotlin app：
+				A curated list of awesome android kotlin apps by open-source contributors.
+					https://github.com/androiddevnotes/awesome-android-kotlin-apps
+				
+			Example of how to implement an Android TODO App using Facebook Flux Architecture
+				https://github.com/lgvalle/android-flux-todo-app
+				
+			淘宝客项目
+					淘宝客项目，支持App，微信小程序，QQ小程序
+					https://github.com/silently9527/coupons
+					
+					前端使用UniApp
+				
+				梁典典的开源, flutter 商城，淘宝客 app
+					https://github.com/mdddj/flutter_simple_shop
+			Flutter淘宝App，支持iOS、Android
+				https://github.com/GanZhiXiong/GZXTaoBaoAppFlutter
+				
+			Android优秀参考APP源码
+				https://blog.csdn.net/sinat_28371057/article/details/113786936
+					https://github.com/aa112901/remusic
+					
+					高仿b站
+					仿全民TV
+						https://github.com/MichaelHuyp/Bilibili_Wuxianda
+						https://github.com/HotBitmapGG/bilibili-android-client
+					简阅客户端
+						https://github.com/chentao0707/SimplifyReader
+					豆芽客户端
+						https://github.com/DreaminginCodeZH/Douya
+						
+					开源的 Material Design 豆瓣客户端（A Material Design app for douban.com）
+						https://github.com/zhanghai/Douya
+					即时通讯：嗨豹
+						https://github.com/sealtalk/sealtalk-android
+					菜鸟新闻
+						https://github.com/yxs666/cniao5-news
+						
+						课程地址：http://www.cniao5.com/clazz/view/10076.html
+						视频下载链接：?百度网盘-链接不存在?密码：3ts1
+					KuaiChuan
+						仿茄子快传的一款文件传输应用
+						https://github.com/mayubao/KuaiChuan
+					Rocket.Chat
+						https://github.com/RocketChat/Rocket.Chat
+					plaid
+						介绍：开源完整的资讯阅读类app，有完整的评论、分享等功能
+						Github地址：https://github.com/nickbutcher/plaid
+					Signal-Android
+						介绍：私密通信类app。
+						Github地址：https://github.com/WhisperSystems/Signal-Android
+					简阅
+						Github地址：https://github.com/chentao0707/SimplifyReader
+					高仿wechat
+						Github地址：https://github.com/motianhuo/wechat
+					Timber
+						Github地址：https://github.com/naman14/Timber
+						介绍：Material风格的开源音乐app。
+					新浪微博第三方Android客户端
+						Github地址：https://github.com/wangdan/AisenWeiBo
+					仿网易云音乐app
+						Github地址：https://github.com/aa112901/remusic
+						介绍：仿网易云音乐 安卓版，netease android，音乐播放器 在线 下载
+					邮件app
+						Github地址：https://github.com/k9mail/k-9
+						开源Android邮件app
+			金融项目, 使用的MVParms框架.MVP+Dagger2+Retrofit2+Rxjava2+Rxlifcycle
+				https://github.com/Everglowzz/P2P
+				金融项目, 使用了MVParms框架.MVP+Dagger2+Retrofit2+Rxjava2+Rxlifcycle，组件化，ocr身份证、银行卡识别。
+		kotlin write android;
+			Android Sample Clean Architecture App written in Kotlin
+				https://github.com/sanogueralorenzo/Android-Kotlin-Clean-Architecture
+		开源优秀android app推荐学习
+			9个完整android开源app项目
+				http://t.zoukankan.com/Free-Thinker-p-6223126.html
+				
+					开源中国 / android-app
+						https://gitee.com/oschina/android-app
+						
+						https://gitee.com/handoop/FlowGeek?_from=gitee_search
+						开源中国Android客户端MVP架构Material Design设计风格版
+						
+						用APICloud做的开源中国APP
+						https://gitee.com/ThinkPHP/oschina-app?_from=gitee_search
+				
+			20 多个国外优秀Android开源 App
+				https://www.ngui.cc/el/1186280.html?action=onClick
+				
+			最新出炉的值得学习和提升你水平的Android开源App和库
+				https://www.pianshen.com/article/9100953845/
+			有哪些优秀的开源android软件可以供学习?
+				https://www.zhihu.com/question/36421752
+			13个最佳安卓系统免费开源软件
+				https://weibo.com/ttarticle/p/show?id=2309404790074460995785&sudaref=www.baidu.com
+			
+			商城类：
+				搜商城：商城
+				ShopAI B2B2C Android
+					基于好商城ShopAI B2B2C的原生Android客户端
+					https://gitee.com/oyo775881/shopai-b2b2c-android?_from=gitee_search
+					 #特别感谢以下开源项目：xUtils,Otto,Banner,Marqueeview,Glide,QRCode-Android,Pulltorefresh,ScrollableLayout,SlideBack
+					 
+				万岳直播商城系统开源Android版
+					https://gitee.com/WanYueKeJi/wanyue_zhibo_android
+					
+				Shopro商城 uniapp前端开源代码，一款落地生产的 基于uni-app的多端商城。目前适配了微信小程序 + 微信公众号 + H5 + App(Android IOS)
+					https://gitee.com/itmonkey-cn/shopro?_from=gitee_search
+					
+				淘宝客项目相关。
+					#上面有记录
+					
+			Android实时投屏软件
+				Android实时投屏软件，此应用程序提供USB(或通过TCP/IP)连接的Android设备的显示和控制。它不需要任何root访问权限
+				https://gitee.com/Barryda/QtScrcpy?_from=gitee_search
+			
+			RuoYi-App
+				应用框架基于uniapp，支持小程序、H5、Android和IOS。
+					https://gitee.com/y_project/RuoYi-App
+					配套后端代码仓库地址RuoYi-Vue 或 RuoYi-Cloud 版本
+			A sample audio app for Android
+				https://github.com/android/uamp
+				【Kotlin】
 		现代实时新技术		
 			https://github.com/skydoves/Pokedex
 				Pokedex demonstrates modern Android development with Hilt, Material Motion, Coroutines, Flow, Jetpack (Room, ViewM
@@ -363,6 +589,80 @@
 				
 				【享学课堂学习及面试资料】
 				【很多可以参考】
+			热修复：
+				AndFix is a library that offer hot-fix for Android App.
+					https://github.com/alibaba/AndFix
+			andoid 插件化：
+				组件化,Retrofit,Rxjava2,dagger2,Mvp ,ReactNative ,Atlas(插件化)
+					https://github.com/chengzichen/Flyabbit
+			Android 组件化
+				
+				A powerful Android Dynamic Component Framework.
+					https://github.com/alibaba/atlas
+				组件化综合案例，组件分层为：基础公共组件，功能组件，业务组件，主工程。每一层组件的建设，很详细的工程案例，很全面的一个组件化实践案例。一个超级综合案例！
+					https://github.com/yangchong211/YCAppTool
+					
+				灵活的组件化路由框架
+					https://github.com/chenenyu/Router
+					
+				业界首个支持渐进式组件化改造的Android组件化开源框架，支持跨进程调用。Componentize your android project gradually.
+					https://github.com/luckybilly/CC
+				
+				A framework for assisting in the renovation of Android componentization (帮助 Android App 进行组件化改造的路由框架)
+					https://github.com/alibaba/ARouter
+				Android 组件化开源app -开眼短视频(OpenEyes)
+				https://github.com/darryrzhong/Android-MvvmComponent-App
+				
+				仿京东app 全新组件化架构升级
+					https://github.com/liu-xiao-dong/JD-Test
+				Android组件化项目框架
+					https://github.com/tome34/frameDemoMo2
+				Android 组件化demo
+					https://github.com/wutongke/ModularizationApp
+				组件化项目实战
+					https://github.com/smileCH/ComponentProject
+				终极组件化框架项目方案	
+					https://github.com/HelloChenJinJun/NewFastFrame
+				基于 Jetpack + Kotlin 的 Android 组件化 MVVM 框架
+					https://github.com/Quyunshuo/AndroidBaseFrameMVVM
+					
+				组件化 + MVVM + Arouter + Jetpack + Rxjava + Retrofit + AOP等框架
+					https://github.com/1170762202/WanAndroid
+				Kotlin+Jetpack+Coroutines+Retrofit+koin 完成的MVVM 组件化客户端 
+					https://github.com/winlee28/Jetpack-WanAndroid
+					
+				组件化+Jetpack+Kotlin+MVVM项目实战，涉及Jetpack相关组件，Kotlin相关技术，协程+Retrofit，Paging3+Room等。
+					https://github.com/fuusy/component-jetpack-mvvm
+				A complete android componentization solution, powered by MVPArms (MVPArms 官方快速组件化方案).
+					https://github.com/JessYanCoding/ArmsComponent
+					
+				A powerful componentized framework.一个强大、100% 兼容、支持 AndroidX、支持 Kotlin并且灵活的组件化框架
+					https://github.com/xiaojinzi123/Component
+			Full featured HTML framework for building iOS & Android apps
+				https://github.com/framework7io/framework7
+		Jetpack
+			LiveData 还有学习的必要吗？—— Jetpack 系列（2）
+				https://www.zhihu.com/topic/21483080/hot
+				《Android Jetpack 应用指南（书籍）》
+				
+			Android Jetpack从入门到精通，全家桶学习资料（含Jetpack Compose指南及实战教程）
+				https://mp.weixin.qq.com/s?__biz=MzkxOTM5MjI1Mg==&mid=2247486817&idx=1&sn=271c9ac44c26fd304c2459cf35ce04cd&chksm=c1a397f2f6d41ee45c0e8b979f1418140410b842df9ca4d95dc982af134de9eba81ebfbc455f&token=232330576&lang=zh_CN&WECHAT_ID=xiangxue155#rd
+				
+			原创|Android Jetpack Compose 最全上手指南
+				·https://juejin.cn/post/6844903999347359751
+				
+		Virtual Engine for Android(Support 12.0 in business version)
+			https://github.com/asLody/VirtualApp
+		判断App位于前台或者后台的6种方法
+			https://github.com/wenmingvs/AndroidProcess
+		Password manager app for Android
+			https://github.com/PhilippC/keepass2android
+			
+		版本更新：
+			https://github.com/WVector/AppUpdate
+			 Android 版本更新 🚀 a library for android version updat
+		Android应用增量更新
+			https://github.com/cundong/SmartAppUpdates
 		Android平台组件化	
 			 Rubik是一套解决Android平台组件化的综合框架
 				https://www.zhihu.com/question/40869250/answer/2593640053?utm_id=0
@@ -372,6 +672,35 @@
 			用于将 Android 行业中的开源大佬聚齐起来，
 			大家不仅可以认识到这些开源大佬，还能知道他们有哪些优秀的开源作品，可以供我们学习和参考。
 			】
+		uni-app
+			
+			https://uniapp.dcloud.net.cn/
+			
+			5+/uni-app客户端引擎（Android）
+				https://gitee.com/dcloud/H5P.Android?_from=gitee_search
+		Cross-platform automation framework for all kinds of your apps built on top of W3C WebDriver protocol		
+			https://github.com/appium/appium
+		Create React Native apps that run on iOS, Android, and web
+			https://github.com/expo/create-react-native-app
+			
+			Pepperoni - React Native App Starter Kit for Android and iOS
+				https://github.com/futurice/pepperoni-app-kit
+		Flutter
+			[Example APPS] Basic Flutter apps, for flutter devs.
+				https://github.com/iampawan/FlutterExampleApps
+				
+			Nice and clean Online Shop app UI by using #Flutter.
+				https://github.com/abuanwar072/E-commerce-App-UI-Flutter
+			Flutter淘宝App，支持iOS、Android
+				https://github.com/GanZhiXiong/GZXTaoBaoAppFlutter
+				
+		C#写移动app:
+			The mobile app vault (iOS and Android).
+			The Bitwarden mobile application is written in C# with Xamarin Android, Xamarin iOS, and Xamarin Forms.
+					https://github.com/bitwarden/mobile
+		定位：
+			c:geo - The powerful Android geocaching app.
+				https://github.com/cgeo/cgeo
 一、android frameworks 方面的书籍。
 	1.1、《Android应用框架原理与程序设计36技》
 		《深入理解Android》
@@ -409,7 +738,7 @@
 		1.5.2 详细记录见：34-12-android-system-moudule-record.txt 
 		
 	1.6 1《android框架揭秘》
-2. resource 
+2. android resource  record
 	2.1 大学四年自学走来，这些私藏的实用工具/学习网站我贡献出来了 
 		https://blog.csdn.net/m0_37907797/article/details/102781027?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40
 	
@@ -431,7 +760,27 @@
 	2.3 
 		hongyang android learn:
 		https://blog.csdn.net/lmj623565791?type=blog
-	
+	2.4 rxjava系列
+		rxandroid
+		RxBinding
+		rxlifecycle
+		rxlifecycle-components
+	2.5 五十款阿里开源软件说明介绍
+		http://t.zoukankan.com/lidabo-p-9087760.html
+	2.6 【Android源码解析】一篇搞定“Retrofit、Okhttp、ButterKnife、Glide....”百大框架源码，Github已标星75.6k！
+		https://zhuanlan.zhihu.com/p/424892115
+		
+		AndroidCommonLibrary
+			https://github.com/yuchuangu85/AndroidCommonLibrary
+			这个项目主要是对于Android常用的库进行源码分析
+		《Android 源码设计模式解析与实战》示例代码
+			https://github.com/hehonghui/android_dp_analysis_code
+		Android源码设计模式解析与实战勘误
+			https://github.com/hehonghui/dp-issues
+			
+		android sdk 源码解析——旨在帮助Android开发者更好的学习Android！我们只是一群普通的程序员，但是，我们热爱分享
+			https://github.com/LittleFriendsGroup/AndroidSdkSourceAnalysis
+			
 3. 技术网站，技术课堂
 	3.1 [享学课堂-腾讯课堂]
 		Android安卓移动互联网架构开发/音视频/Kotlin/Jetpack/Flutter		

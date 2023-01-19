@@ -12,6 +12,9 @@
 		http://client.jijidown.com/ 
 		
 		[好用]
+	2.5 Bilibili_video_download-B站视频下载
+		https://github.com/Henryhaohao/Bilibili_video_download
+		
 3. 如何在PC上下载腾讯课堂视频(真正的方法!!)？
 	https://www.zhihu.com/question/379397682?
 	https://zhuanlan.zhihu.com/p/259826922?
