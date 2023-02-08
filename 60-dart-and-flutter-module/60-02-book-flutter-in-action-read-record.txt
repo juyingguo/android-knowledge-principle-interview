@@ -1,0 +1,24 @@
+1.
+	笔者在Github上开源的dsBridge作为JsBridge来进⾏通信
+	
+	Github： 
+		如果遇到的问题在StackOverflow上也没有找到答案， 可以去github flutter 项⽬下提issue。
+	
+	Gallery源码：
+		Gallery是Flutter官⽅示例APP， ⾥⾯有丰富的示例， 读者可以在⽹上下载安装。 Gallery的源码在
+		Flutter源码“examples”⽬录下。	
+	镜像服务
+			读者可以参考https://flutter.io/community/china 以获得有关镜像服务
+		器的最新动态。
+		export PUB_HOSTED_URL=https://pub.flutter-io.cn
+		export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+	安装flutter:	
+		升级Flutter SDK和依赖包
+		要升级flutter sdk， 只需⼀句命令：
+		flutter upgrade
+		
+		如果你只想更新项⽬依赖包（不包括Flutter SDK） ， 可以使⽤
+			如下命令：
+			flutter packages get 获取项⽬所有的依赖包。
+			flutter packages upgrade 获取项⽬所有依赖包的最新版本。
+2.

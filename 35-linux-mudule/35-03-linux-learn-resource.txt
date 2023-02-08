@@ -70,6 +70,9 @@
 	4.4 
 		《TCP-IP详解卷一：协议》
 		linux-embedded-driver-video\5-kernel启动过程和kernel核心结构\code-and-books\linux-stu-ebook
+		
+	4.5 《Linux驱动开发入门与实战》.pdf
+		
 5. 《嵌入式Linux应用程序开发详解》随书源代码下载
 	https://www.haolizi.net/example/view_12099.html
 	

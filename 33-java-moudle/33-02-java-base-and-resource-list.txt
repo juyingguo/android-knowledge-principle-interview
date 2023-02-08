@@ -99,7 +99,7 @@
 		"Concurrent Programming in Java (Second Edition)" (Addison-Wesley,
 		 2000), or Item 50 in Joshua Bloch's "Effective Java Programming
 		Language Guide" (Addison-Wesley, 2001).
-	0.6 《Java Concurrency in Practice》
+	0.6 
 	0.7 Java Documentation
 			https://docs.oracle.com/en/java/ 
 		a,api doc online:
@@ -165,7 +165,12 @@
 			
 		，《Effective Java》
 		，《Java并发编程实践》
+			《Java Concurrency in Practice》
+				
 		,《Java Puzzlers》
+		《Java程序性能优化  让你的Java程序更快、更稳定》
+			下载源码：
+			http://www.tup.com.cn/index.html
 		Java TCP_IP Socket编程(原书第2版)[Android平台开发]
 		疯狂JAVA讲义（第2版）--带书签版.pdf
 			https://fkjava.org/
@@ -173,6 +178,7 @@
 			鸠摩搜书：
 				疯狂JAVA讲义
 				疯狂JAVA讲义-源码
+		
 	1.3 java nio书籍
 		java nio书籍_《Java NIO》这本书
 		-->https://blog.csdn.net/weixin_39914868/article/details/114037710
@@ -392,3 +398,14 @@
 		keytool -delete -alias aliyun20200216 -keystore cacerts
 	查看证书详细信息
 		keytool -list -v -keystore keystore | findstr aliyun -storepass 123456
+26，类
+	26.2 内部类
+		非静态内部类、非静态匿名内部类会持有外部对象的引用
+			https://blog.csdn.net/moon_nife/article/details/54975983
+			
+			测试：com.referencetest.InnerClassReferenceTest
+			注意：单纯打印this看不出引用关系。还要通过调试展开this对象才可以看出this中的属性引用了外部类.
+	26.3 static的基本使用
+		https://www.cnblogs.com/sl-xuan77/p/16726076.html
+		java内部静态类的生命周期_《Java架构筑基》从Java基础讲起——深入理解Static
+		https://blog.csdn.net/weixin_39874589/article/details/114591595

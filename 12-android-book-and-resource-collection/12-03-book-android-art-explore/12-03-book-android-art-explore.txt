@@ -7,6 +7,13 @@
 		
 3.chapter_3
 	3.4.2 
+	3.5.3 滑动冲突的解决方式
+		为什么父容器不能拦截ACTION_DOWN？
+		ACTION_DOWN不受FLAG_DISALLOW_INTERCEPT控制。所以一旦父容器拦截了ACTION_DOWN，那么事件序列中所有事件都无法传递到子元素，
+		这样内部拦截法就无法启动作用。
+		android-10,android-19中代码原理一样，只是代码结构有些调整。
+		android.view.ViewGroup#dispatchTouchEvent
+		
 9.chapter_9
 	9.2 
 		p326 

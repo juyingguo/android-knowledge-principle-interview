@@ -5,6 +5,7 @@
 	
 	1.3 Demo of RxJava, RxAndroid, RxLifecycle, and RxBinding
 		https://github.com/adamldavis/RxAndroidTest
+			【在该demo上新建立分支。添加RxLifecycle用法。】
 		
 		https://github.com/CORDEA/RxLifecycleDemo
 			kotlin
@@ -26,10 +27,27 @@
 		如果想使用类似的库，我建议使用AutoDispose，因为我觉得它的框架比RxLifecycle更优秀。
 	2.2 史上超详细的RxJava2使用和RxLifecycle生命周期管理
 		https://www.jianshu.com/p/99cddc8c338c
-		
+			含【RxJava2】
+			含【3.0的Rxlifecycle】
+			基于【RxJava2Examples】建立【RxJava2RxLifecycleExamples】项目
 		RxLifecycle详细解析
-		https://www.jianshu.com/p/e75d320a668c
-			
-3. 
+			https://www.jianshu.com/p/e75d320a668c
+				在【RxAndroidTest】上调。
+				#含源码分析
+		
+3. RxJava-Retrofit-MVP-Rxlifecycle
+	https://github.com/wangwenhaoandroid/RxDemo
+	
 	com.demo.wang.rxdemo.v.ViewPagerIndicator
+4.RxAndroidTest
+	bindToLifecycle
+	在某个生命周期进行绑定，在对应的生命周期进行订阅解除
+	
+	Observable.combineLatest
+5. 源码剖析
+
+	BehaviorSubject
+	
+	bindToLifecycle
+		
 	

@@ -227,17 +227,6 @@
 		185.199.108.153 assets-cdn.github.com
 		151.101.64.133 raw.githubusercontent.com
 		151.101.108.133 gist.githubusercontent.com
-		151.101.108.133 cloud.githubusercontent.com
-		151.101.108.133 camo.githubusercontent.com
-		151.101.108.133 avatars0.githubusercontent.com
-		151.101.108.133 avatars1.githubusercontent.com
-		151.101.108.133 avatars2.githubusercontent.com
-		151.101.108.133 avatars3.githubusercontent.com
-		151.101.108.133 avatars4.githubusercontent.com
-		151.101.108.133 avatars5.githubusercontent.com
-		151.101.108.133 avatars6.githubusercontent.com
-		151.101.108.133 avatars7.githubusercontent.com
-		151.101.108.133 avatars8.githubusercontent.com 
 		# GitHub End
 
 		作者：吴尼玛cs
@@ -257,6 +246,24 @@
 		更换协议https to ssh试试。
 		
 		初步验证：ok
+	4.5 国内打不开GitHub网站100%解决办法
+		https://github.com/JsonChao/Awesome-Third-Library-Source-Analysis
+		
+		#打开网站http://tool.chinaz.com/dns/ ，在A类型的查询中输入 github.com，找到最快访问的ip地址，并复制下来
+			记住三个网站：
+
+			github网址查询：https://ipaddress.com/website/github.com
+
+			github域名查询：https://ipaddress.com/website/github.global.ssl.fastly.net
+
+			github静态资源ip：https://ipaddress.com/website/assets-cdn.github.com
+		#修改系统文件的host（C:\Windows\System32\drivers\etc）
+			# GitHub Start
+			140.82.114.4 github.com
+			199.232.69.194 github.global.ssl.fastly.net
+			# GitHub End
+		#在 CMD 命令行中执行下面语句 来刷新 DNS，重启浏览器之后就能进入Github 网址。
+		 ipconfig/flushdns
 5  fotiaoqiang vpn
 	https://github.com/getfotiaoqiang/fotiaoqiang	
 		

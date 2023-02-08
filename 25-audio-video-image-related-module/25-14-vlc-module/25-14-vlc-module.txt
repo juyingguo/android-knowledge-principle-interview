@@ -1,2 +1,11 @@
 1.
 	http://www.videolan.org/
+	
+	https://github.com/videolan/vlc
+	
+	https://github.com/videolan/vlc-android
+	
+	https://github.com/caprica/vlcj
+	
+	https://github.com/solid-software/flutter_vlc_player
+		{flutter}

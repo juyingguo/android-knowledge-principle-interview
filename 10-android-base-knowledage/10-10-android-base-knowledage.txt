@@ -326,13 +326,25 @@
 25，Android学习笔记（四十）：Preference的使用 
 	25.1 Android学习笔记（四十）：Preference的使用 
 		https://blog.csdn.net/flowingflying/article/details/6671548 
-26 到底什么是AndroidX？ 
-	https://blog.csdn.net/guolin_blog/article/details/97142065? 
+26 	AndroidX
 	
-	https://blog.csdn.net/ambor16/article/details/106355537  
-	
-	AndroidX 是对support library 的一次升级：包名 从在android.support.*下面变成androidx.*下面。
-	命名规则不会再包含具体操作系统API的版本号了。
+	26.1	到底什么是AndroidX？ 
+		https://blog.csdn.net/guolin_blog/article/details/97142065? 
+		
+		https://blog.csdn.net/ambor16/article/details/106355537  
+		
+		AndroidX 是对support library 的一次升级：包名 从在android.support.*下面变成androidx.*下面。
+		命名规则不会再包含具体操作系统API的版本号了。
+	26.2 项目中不要混合androidx和com.android.support系列库，编译失败，提示找不到support包。
+		
+		参考：D:/as_project/testprojects/AndroidJavaDemoTestForAS
+		该项目暂时全部使用support,去掉androidx的依赖库和配置后，编译正常。
+		
+	26.3 添加androidx支持
+		gradle.properties
+		#android.useAndroidX=true
+		#android.enableJetifier=true
+		
 	
 27 Android 5.0 如何正确启用isLoggable(一)__使用详解 
 	27.1 Android 5.0 如何正确启用isLoggable(一)__使用详解
@@ -432,8 +444,31 @@
 		BitmapShader的简单应用
 		https://blog.csdn.net/t1623183652/article/details/53008673
 36 布局
-	36.1 约束布局ConstraintLayout看这一篇就够了
+	36.1 ConstraintLayout
+		ConstraintLayout 官方文档
+			https://developer.android.google.cn/training/constraint-layout?hl=zh-cn
+		api:
+				https://developer.android.google.cn/reference/androidx/constraintlayout/classes
+		约束布局ConstraintLayout看这一篇就够了
 		https://www.jianshu.com/p/17ec9bd6ca8a?
+			# implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+			
+			调试工程位置：*/some-android-mydev-demo/BasicActivityConstraintLayout
+		AndroidX学习笔记之---ConstraintLayout扁平布局
+		https://www.jianshu.com/p/69ba8323df1b
+		
+		androidx下布局没有提示？
+			
+			项目：*/some-android-mydev-demo/BasicActivityConstraintLayout
+			
+			Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+			Warning: 意外的元素 (uri:"", local:"extension-level")。所需元素为<{}codename>,<{}layoutlib>,<{}api-level>
+			
+			解决参考：https://blog.csdn.net/piyangbo/article/details/124707079
+				#在app的build.gradle文件把compileSdk 改为29或以下即可.
+				因为目前正式android才到10,sdk为29.
+				#评论网友，升级gradle或也可解决。
+Warning: 意外的元素 (uri:"", local:"base-extension")。所需元素为<{}codename>,<{}layoutlib>,<{}api-level>
 		
 37 android用shape画一条横线
 	https://blog.csdn.net/qq_38373150/article/details/79941019

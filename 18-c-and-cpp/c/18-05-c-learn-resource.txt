@@ -42,6 +42,9 @@
 	1.8 The Development of the C Language*
 		http://csapp.cs.cmu.edu/2e/docs/chistory.html 
 		c语言的发展史介绍。
+	1.9 
+		simple c compile
+		https://github.com/alexfru/SmallerC
 2. c语言项目
 	2.1 最值得学习阅读的10个C语言开源项目代码 
 		2.1.0 

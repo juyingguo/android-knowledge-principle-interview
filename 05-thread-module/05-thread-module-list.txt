@@ -203,6 +203,54 @@
 	23.3、BlockingQueue深入解析－BlockingQueue看这一篇就够了 
 		https://www.cnblogs.com/WangHaiMing/p/8798709.html 
 		
-	
-	
-	
+二十四、ThreadLocal
+	24.1 史上最全ThreadLocal 详解（一）
+		https://blog.csdn.net/u010445301/article/details/111322569
+		
+		硬核剖析ThreadLocal源码，面试官看了直呼内行
+		https://zhuanlan.zhihu.com/p/576975260
+		
+		调试：com.threadtest.threadlocaltest.ThreadLocalDemo
+		含面试题：
+			6.1 ThreadLocal是怎么保证数据安全性的？
+			6.2 ThreadLocal底层为什么使用数组？而不是一个对象？
+			6.3 ThreadLocal是怎么解决哈希冲突的？
+			6.4 ThreadLocal为什么要用线性探测法解决哈希冲突？
+			6.5 ThreadLocalMap的key为什么要设计成弱引用？
+			6.6 ThreadLocal为什么会出现内存泄漏？
+				{因为我们在使用ThreadLocal的时候，总爱把ThreadLocal设置成类的静态变量，直到线程生命周期结束，ThreadLocal对象数据
+				才会被回收。
+				如何理解？
+
+				另一个是数组中Entry对象的value值，也就是泛型对象值。虽然ThreadLocalMap的key被设置成弱引用，会被GC回收，
+				但是value并没有被回收。需要等到下次执行get、set方法遍历数组，遍历到这个位置，才会删除这个无效的value。
+				这也是造成内存泄漏的原因之一。}
+			6.7 怎么实现父子线程共享ThreadLocal数据？
+	24.2 ThreadLocal原理。
+		     0110 0001 1100 1000 1000 0110 0100 0111 # 0x61c88647
+			 1100 0011 1001 0001 0000 1100 1000 1110 # (0x61c88647 * 2) =》n
+		0001 1000 0111 0010 0010 0001 1001 0001 1100 # n*2->n2
+		0010 0100 1010 1011 0011 0010 0101 1010 1010 # n*3->n3
+		0011 0000 1110 0100 0100 0011 0010 0011 1000 # n*4->n4
+		
+		mask
+		16*2=2的5次幂		
+			10 0000
+		16*2 - 1 
+			01 1111 #mask
+			0&mask =        0
+			n&mask =     1110	=14
+			n2&mask = 01 1100	=30
+			n3&mask = 00 1010	=10
+			n4&mask = 01 1000	=24
+	14.3 疑问
+		java.lang.ThreadLocal.ThreadLocalMap#table中每一个线程永远只有一个实体对象
+		Entry，key为ThreadLocal，value为泛型值。
+		设置不同值时，会替换value,因为key只有一个。
+		java.lang.ThreadLocal.ThreadLocalMap#set
+		
+		14.3.2 java.lang.ThreadLocal.ThreadLocalMap#expungeStaleEntry
+			清除算法。
+		
+		
+			

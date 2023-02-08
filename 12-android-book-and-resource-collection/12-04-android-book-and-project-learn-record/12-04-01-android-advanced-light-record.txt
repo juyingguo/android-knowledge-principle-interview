@@ -1,5 +1,13 @@
 0
 1.
+3.
+	3.8.1 继承系统控件的自定义View
+		com.example.liuwangshu.mooncustomview.RectView#onDraw
+			绘制矩形代码正确，书上的代码有误。
+	
+	 //参考：android.view.ViewGroup.getChildMeasureSpec来选择模式
+        //android.view.View.onMeasure
+        //android.view.View.getDefaultSize
 8. 第8章 函数响应式编程
 	请查阅官方文档：
 		http： //reactivex.io/RxJava/javadoc/。

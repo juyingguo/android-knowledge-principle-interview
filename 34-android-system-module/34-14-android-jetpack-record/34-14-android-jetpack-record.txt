@@ -1,0 +1,22 @@
+1.
+2.  jetpack教程：
+
+	是让人耳目一新的 Jetpack MVVM 精讲
+		https://juejin.cn/post/6844903976240939021
+		
+		{github :
+			https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FKunMinX%2FJetpack-MVVM-Best-Practice}
+			
+		作者：资料：《重学安卓》
+			https://xiaozhuanlan.com/kunminx
+		
+	Jetpack系列全解析
+		https://www.jianshu.com/p/66278a9b9ab5
+		
+	jetpack书籍：
+		《Jetpack架构组件从入门到精通.pdf》
+			源码及关联资料
+			https://github.com/mCyp/Hoo
+		《Android Jetpack 应用指南（书籍）》
+
+	

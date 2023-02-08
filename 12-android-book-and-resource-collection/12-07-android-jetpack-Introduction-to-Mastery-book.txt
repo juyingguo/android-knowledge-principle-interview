@@ -1,0 +1,107 @@
+0.
+1.
+	Demo地址：
+	https://github.com/mCyp/Hoo
+	作者专栏：
+		和书中内容一致
+		https://www.jianshu.com/c/59f31a4be221
+2.
+	最好的学习方式仍然是通过官方文档，下面是官方的学习地址： 谷歌官方教程：Navigation Codelab 谷歌官方文
+档：Navigation 官方Demo：Demo地址
+
+3.
+	3.2.2 Data Binding介绍
+		网站阅读地址：https://www.jianshu.com/p/e3b881d80c6d
+		
+		官方文档：Data Binding Library
+			
+		谷歌实验室：官方教程
+		官方Demo地址：https://github.com/googlecodelabs/android-databinding
+4	livedata	
+	https://developer.android.google.cn/topic/libraries/architecture/livedata?hl=zh_cn
+	
+	viewmodel
+	https://developer.android.google.cn/topic/libraries/architecture/viewmodel?hl=zh_cn#java
+		注意：ViewModel 完全支持与主要的 Jetpack 库集成，例如 Hilt、Navigation 和 Compose。
+	code:
+	https://github.com/googlecodelabs/android-lifecycles
+5. 即学即用Android Jetpack - Room
+	GreenDao、DBFlow等优秀的ORM数据库框架
+	官方文档
+		本界面官网搜索：room，会有对应一系列链接资源。
+	https://developer.android.google.cn/topic/libraries/architecture/room?hl=zh_cn
+		关联资源：
+		综合性项目：
+		Sunflower，这是一款园艺应用，展示了使用 Android Jetpack 进行 Android 开发的最佳做法。
+		
+		Room 迁移示例
+		Room 和 RxJava 示例 (Java) (Kotlin)
+		Codelab
+		带 View 的 Android Room (Java) (Kotlin)
+			https://developers.google.cn/codelabs/codelabs/android-room-with-a-view?hl=zh-cn
+			https://github.com/googlecodelabs/android-room-with-a-view
+			master默认java
+			含kotlin分支： remotes/origin/kotlin
+			《应用程序体系结构指南》：
+			https://developer.android.com/topic/libraries/architecture/guide.html
+			
+			type-converters
+			https://developer.android.com/topic/libraries/architecture/room.html#type-converters
+			
+			2. 数据库迁移
+			《Understanding migrations with Room》 谷歌工程师写的。
+				
+			《Android Room 框架学习》
+				https://www.jianshu.com/p/3e358eb9ac43
+				本文涉及到的例子下载地址：https://github.com/tuacy/Room
+		博客：系列博客
+	https://developer.android.google.cn/jetpack/androidx/releases/room?hl=zh_cn
+	
+	
+	
+	Room官方文档：
+		https://developer.android.google.cn/training/data-storage/room?hl=zh-cn
+		https://developer.android.com/training/data-storage/room/
+7. Android Jetpack - Paging
+
+	https://developer.android.google.cn/topic/libraries/architecture/paging/v3-overview?hl=zh_cn
+		
+		本文档含链接：
+		Codelab
+			“Android Paging 基础知识”Codelab
+				https://developer.android.google.cn/codelabs/android-paging-basics?hl=zh-cn#0
+				代码同：android-paging
+			“Android Paging 高级知识”Codelab
+			
+		示例
+			Android 架构组件示例：Paging
+				https://github.com/android/architecture-components-samples/tree/main/PagingSample
+			Android 架构组件示例：将 Paging 与数据库和网络搭配使用
+				https://github.com/android/architecture-components-samples/tree/main/PagingWithNetworkSample
+	https://github.com/googlecodelabs/android-paging
+8. Android Jetpack - WorkManger
+	
+	WorkManager 使用入门
+	https://developer.android.google.cn/topic/libraries/architecture/workmanager/basics?hl=zh_cn
+	
+	https://github.com/googlecodelabs/android-workmanager
+		The Java version of this codelab is available under the Java branch of this repository.
+	
+	除了指南文档之外，还有一些博客、Codelab 和代码示例可帮助您入门。
+
+	官网上有链接：
+	{
+		示例
+			WorkManagerSample，一个简单的图像处理应用。
+			Sunflower，一款演示版应用，演示包括 WorkManager 在内的各种架构组件的最佳做法。
+		Codelab
+			使用 WorkManager (Kotlin) 和 (Java)
+			高级 WorkManager (Kotlin)
+		博客
+			WorkManager 简介
+			WorkManager 基础知识
+			WorkManager 和 Kotlin
+			WorkManager 周期
+			自定义 WorkManager - 基础知识
+			使用 Dagger 自定义 WorkManager	
+	}

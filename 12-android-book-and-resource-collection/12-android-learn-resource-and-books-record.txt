@@ -18,6 +18,7 @@
 		[很多资源]
 		https://github.com/search?q=android&type=Repositories
 		
+	
 		Android 开源大全
 			https://github.com/ColorfulCat/AndroidLibs
 		
@@ -29,11 +30,14 @@
 			
 		这是一份给 Android Developer 的进阶学习笔记，公众号：字节数组 	
 			https://github.com/leavesCZY/AndroidGuide
+		Android学习路线指南
+			https://blog.csdn.net/singwhatiwanna/article/details/49560409
 				
 		Extensive Open-Source Guides for Android Developers
 			https://github.com/codepath/android_guides
 		Android 程序员需要掌握的技术栈
 			https://github.com/chiclaim/AndroidAll
+		
 			
 		Training course repository for android app development
 			https://github.com/mixi-inc/AndroidTraining
@@ -43,6 +47,11 @@
 			
 		Advanced Android Development training course
 			https://github.com/google-developer-training/android-advanced
+		
+		googlesamples ，android-architecture-components		
+			See the BasicSample in the android-architecture-components repository at
+			https://github.com/googlesamples
+		
 			
 		[Examples] Simple basic isolated apps, for budding android devs.
 			https://github.com/nisrulz/android-examples
@@ -115,7 +124,20 @@
 			MVVM, ViewModel and LiveData Sample App
 				https://github.com/hazems/mvvm-sample-app
 				
-				
+				Android Mvvm模式和LiveData的使用以及DataBinding的关系		
+				https://www.jianshu.com/p/7fe5c2f9459a
+			
+			mvvm及jetpack,详细记录在：【34-14-android-jetpack-record.txt】
+		架构、组件：
+			android-architecture-components		
+			See the BasicSample in the android-architecture-components repository at
+			https://github.com/googlesamples
+			
+			architecture /guide
+				https://developer.android.com/topic/libraries/architecture/guide.html
+			A collection of samples using the Architecture Components:
+				https://github.com/android/architecture-components-samples
+				已经fork
 		时光轴效果
 			项目地址
 			https://github.com/ljtyzhr/TimeLine
@@ -302,11 +324,7 @@
 		https://github.com/googlemaps/android-samples
 			googlemaps/android-samples
 			Samples demonstrating how to use Maps SDK for Android
-		https://github.com/Tencent/Shadow
-			零反射全动态Android插件框架
-			
-		零反射全动态Android插件框架
-			http://wjhsh.net/jackrex-p-3001214.html
+		
 		Android 开源项目和文章集合（更新：2022.03.21）
 			https://blog.csdn.net/z979451341/article/details/78864907
 			
@@ -317,9 +335,26 @@
 		framework:
 			https://github.com/yipianfengye/androidSource
 				https://github.com/yipianfengye/androidSource
-		源码架构分析：
+		框架源码及架构源码深度剖析：
 			https://github.com/simple-android-framework/android_design_patterns_analysis
 				Android源码设计模式分析项目
+			【Android源码解析】一篇搞定“Retrofit、Okhttp、ButterKnife、Glide....”百大框架源码，Github已标星75.6k！
+			https://zhuanlan.zhihu.com/p/424892115
+			
+			AndroidCommonLibrary
+				https://github.com/yuchuangu85/AndroidCommonLibrary
+				这个项目主要是对于Android常用的库进行源码分析
+				
+			《Android 源码设计模式解析与实战》示例代码
+				https://github.com/hehonghui/android_dp_analysis_code
+			Android源码设计模式解析与实战勘误
+				https://github.com/hehonghui/dp-issues
+				
+			android sdk 源码解析——旨在帮助Android开发者更好的学习Android！我们只是一群普通的程序员，但是，我们热爱分享
+				https://github.com/LittleFriendsGroup/AndroidSdkSourceAnalysis
+			
+			Awesome-Third-Library-Source-Analysis
+				https://github.com/JsonChao/Awesome-Third-Library-Source-Analysis
 				
 		控制：
 			https://github.com/Genymobile/scrcpy
@@ -336,7 +371,12 @@
 			
 			https://github.com/HotBitmapGG/bilibili-android-client
 				An unofficial bilibili client for android http://www.jianshu.com/p/f69a55b94c05 -- 该项目已停止维护！
-		
+			
+			https://github.com/microshow/RxFFmpeg
+			
+			Material Design Music Player
+			naman14/Timber
+			https://github.com/naman14/Timber
 		instant message:
 			野火IM全系列
 				https://github.com/wildfirechat/android-chat
@@ -381,12 +421,13 @@
 				MPush开源实时消息推送系统
 		Google I/O conference
 			https://github.com/google/iosched
-		RxJava-Android
-			https://github.com/kaushikgopal/RxJava-Android-Samples
-				Learning RxJava for Android by example
+		
 		androidstudio:
 			https://github.com/aqi00/android2
 				《Android Studio开发实战：从零基础到App上线》随书源码（全面添加注释版）
+		Parcelable boilerplate code generation		
+			IntelliJ Plugin for Android Parcelable boilerplate code generation.
+			https://github.com/mcharmas/android-parcelable-intellij-plugin
 		android-security	
 			https://github.com/ashishb/android-security-awesome
 				A collection of android security related resources
@@ -415,6 +456,7 @@
 				https://github.com/liu-xiao-dong/JD-Test
 			使用data binding , dagger2 , retrofit2和rxjava实现的，基于MVVM的知乎日报APP。
 				https://github.com/liuguangqiang/Idaily
+					{butterknife，LoganSquare，glide}
 										
 				软件采用RxJava + Retrofit + OkHttp框架实现，遵循Material Design，界面简单干净，运行速度快，自动离线缓存，
 				节省流量，对于页面加载及错误等都做了处理，可以作为自己以后开发的一个模板。
@@ -432,6 +474,9 @@
 			Android online music player use okhttp&gson&material design
 				https://github.com/wangchenyan/ponymusic
 			
+			Material Design Music Player
+				naman14/Timber
+				https://github.com/naman14/Timber
 				
 			Android 开发一定要看的15个实战项目
 				https://www.likecs.com/show-243688.html
@@ -475,10 +520,19 @@
 				https://blog.csdn.net/sinat_28371057/article/details/113786936
 					https://github.com/aa112901/remusic
 					
-					高仿b站
+					高仿b站bilibili
 					仿全民TV
 						https://github.com/MichaelHuyp/Bilibili_Wuxianda
 						https://github.com/HotBitmapGG/bilibili-android-client
+							An unofficial bilibili client for android http://www.jianshu.com/p/f69a55b94c05
+							
+						https://github.com/yoyiyi/bilisoleil
+							An unofficial bilibili client for android --rxjava2+mvp+okhttp3+retrofit2+dagger2
+						https://github.com/yoyiyi/bilisoleil-kotlin
+							An unofficial bilibili client for android --kotlin+rxjava2+mvp+okhttp3+retrofit2+dagger2
+							【Kotlin】
+						以上详情见【】
+							
 					简阅客户端
 						https://github.com/chentao0707/SimplifyReader
 					豆芽客户端
@@ -519,9 +573,27 @@
 					邮件app
 						Github地址：https://github.com/k9mail/k-9
 						开源Android邮件app
+			GeekNews
+				A pure reading App based on Material Design + MVP + RxJava2 + Retrofit + Dagger2 + Realm + Glide
+				https://github.com/codeestX/GeekNews
+			SeeWeather
+				RxJava+RxBus+Retrofit+Glide+Material Design Weather App
+				https://github.com/xcc3641/SeeWeather
+				
+				
 			金融项目, 使用的MVParms框架.MVP+Dagger2+Retrofit2+Rxjava2+Rxlifcycle
 				https://github.com/Everglowzz/P2P
 				金融项目, 使用了MVParms框架.MVP+Dagger2+Retrofit2+Rxjava2+Rxlifcycle，组件化，ocr身份证、银行卡识别。
+			
+			Flutter Github客户端 、React Native Github客户端 、 Weex Github客户端 、 原生 Kotlin Github客户端
+				https://github.com/CarGuo/GSYVideoPlayer
+				推荐。
+				原生 Kotlin Github客户端
+				项目使用Retrofit2 + RxJava2 + Dagger2 + DataBinding + LiveData + Navigation 等，MVVM 配合 Android JetPack，涉及
+				各种常用控件、 AIDL 、 CMake
+				 : 基于 Java + Retrofit + RxJava + MVP 的开源 github app（本项目的部分数据实体是从 OpenHub 拷贝而来。）
+				 https://github.com/ThirtyDegreesRay/OpenHub
+				
 		kotlin write android;
 			Android Sample Clean Architecture App written in Kotlin
 				https://github.com/sanogueralorenzo/Android-Kotlin-Clean-Architecture
@@ -592,9 +664,51 @@
 			热修复：
 				AndFix is a library that offer hot-fix for Android App.
 					https://github.com/alibaba/AndFix
+					
+					sophix
+						demo:
+						Github: https://github.com/Zachary46/Sophix
+					Dexposed
+					epic
+						Dynamic java method AOP hook for Android(continution of Dexposed on ART), Supporting 5.0~11
+						https://github.com/tiann/epic
+					https://github.com/eleme/Amigo
+						
+				instant run
+				Tinker（https://github.com/Tencent/tinker）
+				
+			增量更新
+				而增量更新的目的是为了减少更新app所需要下载的包体积大小，常见如手机端游戏，apk包体积为几百M，但有时更新只需下载十几M的安装包即可完成更新。
 			andoid 插件化：
 				组件化,Retrofit,Rxjava2,dagger2,Mvp ,ReactNative ,Atlas(插件化)
 					https://github.com/chengzichen/Flyabbit
+					
+				https://github.com/HujiangTechnology/gradle_plugin_android_aspectjx
+				https://github.com/DroidPluginTeam/DroidPlugin
+				https://github.com/wequick/Small
+				https://github.com/Qihoo360/RePlugin
+				https://github.com/limpoxe/Android-Plugin-Framework				
+				https://github.com/singwhatiwanna/dynamic-load-apk
+				https://github.com/iqiyi/Neptune
+				
+				零反射全动态Android插件框架
+					https://github.com/Tencent/Shadow
+			
+				零反射全动态Android插件框架
+					http://wjhsh.net/jackrex-p-3001214.html
+				Android 插件化、热修复、增量更新介绍
+					https://www.jianshu.com/p/f3f402deb51a
+					
+					Android插件化主流框架和实现原理
+					推荐书籍：《Android插件化开发指南》--包建强
+					
+					Android热修复技术原理详解（最新最全版本）
+					Android热修复技术，你会怎么选？
+					Android 增量更新全解
+						https://www.chenwenguan.com/android-apk-delta-updates/
+			android-maven-plugin
+				https://github.com/simpligility/android-maven-plugin
+				
 			Android 组件化
 				
 				A powerful Android Dynamic Component Framework.
@@ -651,8 +765,13 @@
 			原创|Android Jetpack Compose 最全上手指南
 				·https://juejin.cn/post/6844903999347359751
 				
+			《Jetpack架构组件从入门到精通》
+				
+			mvvm及jetpack,详细记录在：【34-14-android-jetpack-record.txt】
+				
 		Virtual Engine for Android(Support 12.0 in business version)
 			https://github.com/asLody/VirtualApp
+			
 		判断App位于前台或者后台的6种方法
 			https://github.com/wenmingvs/AndroidProcess
 		Password manager app for Android
@@ -701,6 +820,10 @@
 		定位：
 			c:geo - The powerful Android geocaching app.
 				https://github.com/cgeo/cgeo
+		database :
+			https://github.com/greenrobot/greenDAO
+			new:https://objectbox.io/
+			https://github.com/objectbox/
 一、android frameworks 方面的书籍。
 	1.1、《Android应用框架原理与程序设计36技》
 		《深入理解Android》
@@ -765,21 +888,14 @@
 		RxBinding
 		rxlifecycle
 		rxlifecycle-components
+		
+		RxJava-Android
+			https://github.com/kaushikgopal/RxJava-Android-Samples
+				Learning RxJava for Android by example
+		详情见：[]
 	2.5 五十款阿里开源软件说明介绍
 		http://t.zoukankan.com/lidabo-p-9087760.html
-	2.6 【Android源码解析】一篇搞定“Retrofit、Okhttp、ButterKnife、Glide....”百大框架源码，Github已标星75.6k！
-		https://zhuanlan.zhihu.com/p/424892115
-		
-		AndroidCommonLibrary
-			https://github.com/yuchuangu85/AndroidCommonLibrary
-			这个项目主要是对于Android常用的库进行源码分析
-		《Android 源码设计模式解析与实战》示例代码
-			https://github.com/hehonghui/android_dp_analysis_code
-		Android源码设计模式解析与实战勘误
-			https://github.com/hehonghui/dp-issues
-			
-		android sdk 源码解析——旨在帮助Android开发者更好的学习Android！我们只是一群普通的程序员，但是，我们热爱分享
-			https://github.com/LittleFriendsGroup/AndroidSdkSourceAnalysis
+	2.6 
 			
 3. 技术网站，技术课堂
 	3.1 [享学课堂-腾讯课堂]
@@ -834,12 +950,14 @@
 		https://blog.csdn.net/Innost/article/details/43342087
 		
 	四、android系列书籍。
+		4.0 
 		4.1 《第一行代码 Android》、
 		4.2 《疯狂Android》
 			《疯狂Android讲义》
 			疯狂Android讲义（第4版）
 				安卓经典之作基于Android9全新升级，
 		4.3《Android开发艺术探索》、
+			详情见4-五
 		4.4《Android群英传》
 		4.5 《Android 源码设计模式解析与实战》、
 		4.6 《Android内核剖析》 
@@ -855,6 +973,215 @@
 		
 		4.10 深入解析Android 5.0系统(刘超 著)中文pdf
 			链接：https://pan.baidu.com/s/1fhsAJ0IzN1nCfZcIyEsveA 密码：filu 
+			
+		4.11 《Android自定义控件开发入门与实战》
+			《Android自定义控件高级进阶与精彩实例》
+			Android自定义组件开发详解.pdf
+		4.12 安卓编程pdf电子书100本.pdf
+			https://zhuanlan.zhihu.com/p/435590462?utm_id=0
+			安卓编程pdf电子书100本.pdf
+			孔子家
+			孔子家
+			2 人赞同了该文章
+			1、Android studio开发实战：从零基础到app上线：第2版_欧阳燊.pdf
+
+			2、Android全埋点解决方案_王灼洲.pdf
+
+			3、Android应用性能优化最佳实践：移动开发_罗彧成.pdf
+
+			4、Android组件化架构：苍王.pdf
+
+			5、Android自定义控件开发入门与实战：启舰.pdf
+
+			6、疯狂Android讲义_14629263.pdf
+
+			7、高性能Android开发技术_张飞.pdf
+
+			8、高级Android开发强化实战_14435308.pdf
+
+			9、Android studio应用开发实战详解：王翠萍页.pdf
+
+			10、Android studio移动开发教程_肖琨.pdf
+
+			11、Android studio高级编程_[美]穆拉特.尤内尔.等.pdf
+
+			12、Android网上班级管理实例：“我的班班”app平台建设_黄勇.pdf
+
+			13、Android模块化项目实战：企业级卓越人才培养解决方案.pdf
+
+			14、Android移动应用基础教程：Android studio：第2版.pdf
+
+			15、Android移动应用设计与开发：基于Android studio开发环境：第2版_胡敏.pdf
+
+			16、Android程序设计实用教程：Android studio版_冯贺.pdf
+
+			17、疯狂Android讲义_14629263.pdf
+
+			18、移动应用开发任务式驱动教程基于Androidstudio_14287729.pdf
+
+			19、深入理解Android5源代码_13946432.pdf
+
+			20、移动操作系统原理与实践基于java语言的Android应用开发_14437579.pdf
+
+			21、Android 3d游戏开发技术详解与典型案例_吴亚峰.pdf
+
+			22、Android游戏开发大全_吴亚峰.pdf
+
+			23、Android应用案例开发大全_吴亚峰.pdf
+
+			24、Android开发关键技术之旅：java程序员快速学习通道_颜建华.pdf
+
+			25、cocos2d-x手机游戏开发：跨ios.Android和phone平台_徐松林.pdf
+
+			26、google Android手机游戏设计达人讲座.pdf
+
+			27、google Android开发入门指南_12395391_盖索.pdf
+
+			28、Android编程权威指南：第3版_[美]比尔.菲利普斯.pdf
+
+			29、Android进阶解密_刘望舒.pdf
+
+			30、21天学通java：第6版.pdf
+
+			31、air.Android应用开发实战_邱彦林.pdf
+
+			32、Android c++高级编程：使用ndk：构建图形丰富与更佳性能的原生应用_[美]辛纳.pdf
+
+			33、Android 4高级编程：第3版_[美]迈耶.著、佘建伟.pdf
+
+			34、Android 5从入门到精通_李波.pdf
+
+			35、Android app开发入门：使用Android studio.2.x开发环境：第2版_施威铭.pdf
+
+			36、Android app开发者必修16堂课_赵令文.pdf
+
+			37、Android gradle权威指南_飞雪无情.pdf
+
+			38、Android opencv应用程序设计_[美]豪斯.pdf
+
+			39、Android sdk程序设计与开发范例：详解Android应用程序开发和20个程序设计实现技巧_陈会安.pdf
+
+			40、Android studio实战快速、高效地构建Android应用_[美]亚当.格伯.pdf
+
+			41、Android studio开发实战：从零基础到app上线_欧阳燊.pdf
+
+			42、Android web.game.app高级编程：使用html5、css3、javascript_[美]杰瑞.pdf
+
+			43、Android实例开发完全手册：涵盖所有和Android应用开发相关的项目实例_陈强.pdf
+
+			44、Android移动性能实战：腾讯sng专项测试团队.pdf
+
+			45、Android系统移植和驱动开发_郑萌.pdf
+
+			46、Android进阶之光_刘望舒.pdf
+
+			47、Android ophone开发完全讲义_李宁.pdf
+
+			48、Android从入门到精通：软件开发视频大讲堂_明日科技.pdf
+
+			49、Android从入门到精通：编程宝典：我的第1本Android开发书.pdf
+
+			50、Android优化技术详解_陈德春.pdf
+
+			51、Android传感器开发与智能设备案例实战_朱元波.pdf
+
+			52、Android传感器高级编程_[美]米内特.pdf
+
+			53、Android内核剖析_柯元.pdf
+
+			54、Android和php开发最佳实践_黄隽实.pdf
+
+			55、Android基础教程：第3版：图灵程序设计丛书：（美）伯内特.著、田俊静.pdf
+
+			56、Android安全技术揭秘与防范：周鸿炜推荐：周圣韬.pdf
+
+			57、Android安全攻防实战：安全技术大系：（南非）麦凯恩.pdf
+
+			58、Android安全攻防权威指南：图灵程序设计丛书：（美）德雷克.pdf
+
+			59、Android实例详解：基础进阶开发：韩迪.pdf
+
+			60、Android嵌入式系统程序开发：基于cortex.a8：第2版_胡文.pdf
+
+			61、Android嵌入式系统程序开发：基于cortex.a8_胡文.pdf
+
+			62、Android应用开发从入门到精通_卢海东.pdf
+
+			63、Android应用开发实战：第2版_李宁.pdf
+
+			64、Android应用开发实践教程_韩冬.pdf
+
+			65、Android应用开发案例教程_吴志祥.pdf
+
+			66、Android应用案例开发大全：第3版：吴亚峰.pdf
+
+			67、Android应用测试与调试实战：移动开发：施懿民.pdf
+
+			68、Android应用程序安全：古纳塞克若.著、王文君.pdf
+
+			69、Android应用程序安全：[美]普拉加蒂.欧加尔.拉伊.pdf
+
+			70、Android应用程序设计_李鲁群.pdf
+
+			71、Android底层开发技术实战详解：内核、和驱动：第2版_王振丽.pdf
+
+			72、Android开发从入门到精通：第2版_明日科技.pdf
+
+			73、Android开发入门教程_[美]墨菲.pdf
+
+			74、Android开发完全讲义 第3版_李宁.pdf
+
+			75、Android开发精要_范怀宇.pdf
+
+			76、Android开发艺术探索_任玉刚.pdf
+
+			77、Android开发落伍代码大全 第2版_[美]斯密斯.pdf
+
+			78、Android开发进阶：从小工到专家_何红辉.pdf
+
+			79、Android恶意代码分析与渗透测试：图灵程序设计丛书_[韩]赵涏元.pdf
+
+			80、Android手机应用开发简明教程 董志鹏.pdf
+
+			81、Android数据库应用编程：为企业开发数据驱动Android应用_[美]梅德尼克斯.pdf
+
+			82、Android智能手机软件开发教程_高凯.pdf
+
+			83、Android智能穿戴设备开发指南_王长青.pdf
+
+			84、Android深度探索卷.第1卷：hal与驱动开发_李宁.pdf
+
+			85、Android深度探索.第2卷：系统应用源代码分析与rom定制_李宁.pdf
+
+			86、Android游戏开发实践指南：华章程序员书库_[美]罗格斯.pdf
+
+			87、Android源码分析实录_李忠良.pdf
+
+			88、Android源码设计模式解析与实战 第2版 何红辉.pdf
+
+			89、Android源码设计模式解析与实战 何红辉.pdf
+
+			90、Android物联网开发从入门到实战：国内第一本Android物联网开发书籍_孙光宇.pdf
+
+			91、Android物联网开发细致入门与最佳实践_李天祥.pdf
+
+			92、Android移动应用开发：基于adobe.air_[美]布罗西耶.pdf
+
+			93、Android移动开发基础案例教程.pdf
+
+			94、Android程序设计与开发：Android studio版.pdf
+
+			95、Google Android SDK开发范例大全 余志龙.pdf
+
+			96、Android程序设计及实践_青岛英谷教育科技股份有限公司.pdf
+
+			97、Android系统服务开发_[韩]金大佑.pdf
+
+			98、Android系统源代码分析_李俊.pdf
+
+			99、Android系统源代码情景分析 第3版 罗升阳.pdf
+
+			100、Android编程实战_[瑞典]赫尔曼.pdf
 	五、《Android开发艺术探索》对应的网站
 		5.1、csdn博客 
 			https://blog.csdn.net/singwhatiwanna

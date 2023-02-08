@@ -1,9 +1,0 @@
-1.
-2. 是让人耳目一新的 Jetpack MVVM 精讲
-	https://juejin.cn/post/6844903976240939021
-	
-	{github :
-		https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FKunMinX%2FJetpack-MVVM-Best-Practice}
-		
-	作者：资料：《重学安卓》
-		https://xiaozhuanlan.com/kunminx

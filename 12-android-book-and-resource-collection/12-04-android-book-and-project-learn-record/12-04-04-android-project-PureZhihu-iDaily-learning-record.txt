@@ -1,0 +1,87 @@
+1.
+2. 
+	软件采用RxJava + Retrofit + OkHttp框架实现，遵循Material Design，界面简单干净，运行速度快，自动离线缓存，
+		节省流量，对于页面加载及错误等都做了处理，可以作为自己以后开发的一个模板。
+			https://github.com/laucherish/PureZhihuD
+			
+			**可以作为自己以后开发的一个模板
+	实现的功能
+		已完成
+
+		日报列表显示
+		日报详情显示
+		错误界面处理
+		下拉加载更多
+		已读内容标记
+		已读内容缓存
+		离线下载
+		滑动返回
+		分享
+		夜间模式
+	三、依赖库
+		RxJava 响应式编程框架
+		Retrofit2.0 REST安卓客户端请求库
+		OkHttp3 网络请求
+		Glide 图片加载
+		ButterKnife 依赖注入
+		
+	四、用到的知识点
+		Retrofit — Getting Started and Create an Android Client
+		https://futurestud.io/blog/retrofit-getting-started-and-android-client
+
+		给 Android 开发者的 RxJava 详解
+		http://gank.io/post/560e15be2dca930e00da1083
+3. 功能记录：
+	作者开发的功能补充：
+	 RecyclerView条目两种类型。
+	 上滑最下面条目含动画方式显示
+	 
+	滑动返回
+	右侧滑动返回，会显示手机屏幕界面。
+	需要优化。
+	
+	主界面下，不响应侧滑，只有跳转到第二层以上界面时才执行相应策划。
+	
+	下拉刷新，有时会闪动一下。概率比较高。
+		看不到进度，网速快，闪动一下。
+	
+	上拉滑动，有的条目，没有执行动画。
+	上拉滑动，有时滑不动，有时能滑动？。
+		是否为因没有数据问题？
+	上拉滑动,没有滑动到最后一条，就自动加载新的数据了。
+		视觉闪动。
+		应该主动上滑时，再加载更多。
+	
+	
+4. ohttp 封装分析，retrofit封装分析。
+5. RecyclerView条目两种类型。第二种类型带日期头。
+
+	缓存数据对象继承android.os.Parcelable。Serializable
+	二者区别？
+	
+6.idaily 同
+	6.1 WebView加载异常。
+		Unable to start activity ComponentInfo{com.liuguangqiang.idaily/com.liuguangqiang.idaily.feature.detail.StoryActivity}: 
+		android.view.InflateException: Binary XML file line #85:Error inflating class android.webkit.WebView
+		
+		参考：https://blog.csdn.net/qq_39574126/article/details/106063823
+			在app文件下的build.gradle里面的appcompat版本如果是1.1.0的话webview会出错误，改成1.0.2就好了
+		参考博主依然不能解决。
+		
+		报错指向：binding = ActivityStoryBinding.inflate(getLayoutInflater());
+		
+		Android WebView 5.x 系统下 Error inflating class android.webkit.WebView
+			https://www.jianshu.com/p/20ad33a1c564
+			
+			#项目在部分Android 5.x系统手机上面使用webView会导致崩溃，其他的android版本未发现此类问题。
+			解决办法一（推荐）
+			如果项目中使用"androidx.appcompat:appcompat:1.1.0" ，1.1.0版本webview在Android5.x上有问题，替换为最新的版本或者是比较旧的版本。
+
+			替换较新版本例如：'androidx.appcompat:appcompat:1.2.0'
+		
+		同样WebView在PureZhihuD上正常。PureZhihuD上使用的是：'com.android.support:appcompat-v7:25.3.1'
+			idaily中使用：'androidx.appcompat:appcompat:1.0.0'
+			对比是依赖库appcompat版本问题。
+			
+
+		

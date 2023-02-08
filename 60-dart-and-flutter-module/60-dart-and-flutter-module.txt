@@ -1,15 +1,38 @@
 1.dart
 	1.1 
-		https://www.dartcn.com/
+		https://www.dart.com/
+
+		dart中文网
+			https://dart.cn/
+			
+			https://www.dartcn.com/
 2.flutter
 	2.1 
-		https://flutterchina.club/ 
 		
-		《Flutter实战》电子书:
-			https://book.flutterchina.club/#缘起
+		官网地址：
+			https://flutter.io/
 			
-			笔者在大学时读过候捷（真名侯俊杰）写的一些C++相关书籍，在他的《深入浅出MFC》一书中，有一句话我印象像非常深 “唯有深入，方能浅出”。我非常认同这句话，对于一门技术，只有了解的深入，才能用最浅显、通俗的话语描述出。
-		https://github.com/flutterchina/flutter-in-action
+			安装包：
+			https://flutter.io/sdk-archive/#windows
+			
+			Flutter github网站下载安装包， 地 址：
+				https://github.com/flutter/flutter/releases
+			官网安装配置及官网教程
+			https://docs.flutter.dev/get-started/install	
+			https://docs.flutter.dev/community/china
+			
+			Windows install
+				https://docs.flutter.dev/get-started/install/windows#update-your-path
+			android-setup
+			See https://flutter.dev/docs/get-started/install/windows#android-setup
+			
+				flutter doctor:
+				Android license status unknown.
+				  Run `flutter doctor --android-licenses` to accept the SDK licenses.
+				  See https://flutter.dev/docs/get-started/install/windows#android-setup for more details.
+			
+		Flutter中文网
+			https://flutterchina.club/ 
 		
 	2.2 Flutter开发第一步-Dart编程语言入门 
 		https://www.imooc.com/learn/1035
@@ -20,6 +43,19 @@
 	
 	Flutter documentation web site
 		https://github.com/flutter/website
+		
+	书籍：
+		《Flutter实战》电子书:
+			https://book.flutterchina.club/#缘起
+			#书是网页形式。也有pdf版。
+			
+			笔者在大学时读过候捷（真名侯俊杰）写的一些C++相关书籍，在他的《深入浅出MFC》一书中，有一句话我印象像非常深 “唯有深入，方能浅出”。我非常认同这句话，对于一门技术，只有了解的深入，才能用最浅显、通俗的话语描述出。
+			https://github.com/flutterchina/flutter-in-action
+
+		《Flutter技术入门与实战（pdf+源码）》
+		《Flutter完整开发实战详解》
+		《闲鱼-Flutter企业级应用开发实战手册》
+		
 	FlutterExample 教程，library ：
 		github 搜：flutter
 		[Example APPS] Basic Flutter apps, for flutter devs.
@@ -142,3 +178,7 @@
 			
 4.【Flutter】Flutter 应用创建运行 ( Android Studio 创建 / 运行 Flutter 应用 | 命令行创建 / 运行 Flutter 应用 )
 	https://blog.csdn.net/shulianghan/article/details/104834482/ 
+	
+	flutter run : 提示adb版本低
+	The ADB at "D:\java2\android\sdk\platform-tools\adb.exe" is too old; please install version 1.0.39 or later.
+	使用sdk平台中的就可以了。之前因sdk中的adb.exe不能运行被替换过。

@@ -1,0 +1,35 @@
+0.
+	material-design-icons
+		https://github.com/google/material-design-icons
+		https://github.com/Templarian/MaterialDesign
+	library
+		https://github.com/navasmdc/MaterialDesignLibrary
+		https://github.com/rey5137/material
+	MaterialViewPager
+		https://github.com/florent37/MaterialViewPager
+	
+	material-components-android
+		https://github.com/material-components/material-components-android
+		Material Components for Android is a drop-in replacement for Android's Design Support Library.
+		
+	https://github.com/Eajy/MaterialDesignDemo
+	https://github.com/chenyangcun/MaterialDesignExample
+	https://github.com/mikepenz/MaterialDrawer	
+		 Kotlin
+	naman14/Timber
+	https://github.com/naman14/Timber
+	Material Design Music Player
+	
+	官方英文文档：
+	http://www.google.com/design/spec/material-design/
+	中文版网站：
+	http://wiki.jikexueyuan.com/project/material-design/
+	中文版 GitHub 仓库：
+	https://github.com/1sters/material_design_zh_2
+	中文版第一版网站（已关停）：
+	http://design.1sters.com
+	中文版第一版 GitHub 仓库：
+	https://github.com/1sters/material_design_zh
+	
+	
+1.

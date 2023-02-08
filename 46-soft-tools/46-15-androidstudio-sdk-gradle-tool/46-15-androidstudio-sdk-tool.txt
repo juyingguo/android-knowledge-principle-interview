@@ -20,6 +20,8 @@
 				在[https://developer.android.google.cn/]搜索：sdk
 				得到：https://developer.android.google.cn/sdk/older_releases?hl=en
 				
+				sdk下载：
+					https://android-sdk.en.softonic.com/
 			b，使用[Android Studio's SDK Manager.]下载
 				这种方式下载的只是android sdk中的platforms部分。
 				This is not the Android SDK itself. It's part of the Android SDK: Platform
@@ -53,6 +55,10 @@
 				export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/tools/bin:$PATH
 				export NDK_HOME=/mnt/hgfs/vmshare/soft_tool/android-ndk-r18b
 				export PATH=$NDK_HOME:$PATH
+			f,android sdk目录结构详细说明
+				https://www.cnblogs.com/tylt6688/p/11312500.html
+				https://blog.csdn.net/weixin_42504805/article/details/127746529
+				
 		0.1.5 Command line tools
 			https://www.mianshigee.com/tutorial/AndroidStudio/27802e2c788c4747.md
 		0.1.5 For Android Emulator downloads, see the Emulator download archives.
@@ -331,6 +337,14 @@
 		（2） 你把你版本的as再安装一次，在一个没用的文件夹中，然后把新安装目录中的文件复制过来替换
 		（3）如果出现得错误列表中存在很多java jdk jre之类得不能更新，那应该是因为你选择的jdk jre目录是android studio内部文件路径得，这时你需要把jdk路径改成你自己环境变量配置中得，如果没配置（应该不会）那你需要去安装并配置，因为更新需要调用jdk工具，内置得会有冲突，不能自己更新自己
 		ok了更新后，用起来真香。
+	10.3 【Android】SDK环境变量配置
+		https://blog.csdn.net/huweiliyi/article/details/105500838
+		
+		在系统变量中新建ANDROID_HOME的变量名，变量值填入第一步找到的sdk路径
+		将下面的值;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;粘贴到Path的变量值后面
+		
+		测试是否配好环境变量
+			打开cmd 输入adb命令
 11 NDK version is UNKNOWN
 	cmake 工程同步失败，编译失败，配置了ndk,但提示未知
 	NDK Resolution Outcome: Project settings: Gradle model version=4.4, NDK version is UNKNOWN
@@ -484,22 +498,57 @@
 		https://blog.csdn.net/ezconn/article/details/87953991 
 		有多种情况。
 		我遇到的其中一个错误：aidl文件中导入其它aidl类的包名不正确
-17 Android Studio中怎么使用DDMS工具
+17 Android Studio中内存分析工具
+	17.0 android分析内存工具,Android Studio内存泄漏分析工具汇总
+		https://blog.csdn.net/weixin_32153867/article/details/117620215
 	17.1 Android Studio中怎么使用DDMS工具  
-		as3.0以下的版本适用：
-		https://www.cnblogs.com/zhichao123/p/11794491.html 
-	17.AndroidStudio 3.0中之后无法打开DDMS [Android Device Monitor] 问题
-		https://www.cnblogs.com/it-tsz/p/10810669.html 
+			as3.0以下的版本适用：
+			https://www.cnblogs.com/zhichao123/p/11794491.html 
+			
+			下载MAT工具并安装
+				https://www.eclipse.org/mat/downloads.php
+		17.2 AndroidStudio 3.0中之后无法打开DDMS [Android Device Monitor] 问题
+			https://www.cnblogs.com/it-tsz/p/10810669.html 
+			https://blog.csdn.net/qq_42495847/article/details/104533789
+			
+			Dos命令
+			其实在上面的批处理文件中真正打开DMMS的是最后一行命令，当然也可以把这行命令在命令窗口执行同样可以打开DDMS；
+
+			（1）打开Window命令窗口 ：Win+R快捷键–>CMD–>Enter；复制命令： 
+			call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
+
+			（2）在AndroidStudio中底部Terminal中输入： 
+			call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
+		17.3 ddms 中device 关掉后如何显示
+			ddms-window- reset perspective 即可解决。
+		17.4 关于DDMS不显示进程的解决方法
+			
+			https://www.cnblogs.com/revercc/p/16157530.html
+			
+			验证发现：{模拟器可以显示进程信息，真机不显示进程信息。}
+		17.5 could not open selected vm debug port 8700
+			https://blog.csdn.net/xiaoxiamimm/article/details/114291316
+			
+			#不处理这个问题，也可以正常使用。
+		17.6 Android性能优化—内存泄漏分析之DDMS和MAT(二)
+			https://www.jianshu.com/p/aa3021dd67df
+			
+			Android性能优化—内存泄漏分析(一)
+				https://www.jianshu.com/p/00edbfb909c6
+			详情：17.x
+	17.x android studio profile内存分析工具
+		Android性能优化—内存泄漏分析(一)
+				https://www.jianshu.com/p/00edbfb909c6
 		
-		Dos命令
-		其实在上面的批处理文件中真正打开DMMS的是最后一行命令，当然也可以把这行命令在命令窗口执行同样可以打开DDMS；
-
-		（1）打开Window命令窗口 ：Win+R快捷键–>CMD–>Enter；复制命令： 
-		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
-
-		（2）在AndroidStudio中底部Terminal中输入： 
-		call D:\*\AndroidSDK\tools\monitor.bat，然后回车执行，坐等1到3秒就会打开DDMS；
-	18 查看native进程。
+		17.x.2 
+			Advanced profiling is unavailable for the selected process Configure this setting in the Run Configuration
+			参考：
+				https://www.codenong.com/45393827/
+				https://www.656463.com/wenda/AndroidStudio30Canary8sxlcwfsygj_456
+			
+				#Run Configuration->profile
+				#启用高级分析(仅API级别<26才需要)
+	19查看native进程。
 	
 18 androidstudio编译apk,安装apk到手机失败
 	Installation did not succeed. The application could not be installed: INSTALL_FAILED_USER_RESTRICTED
@@ -983,3 +1032,33 @@
 	
 	猜测，这个文件夹下的adb.exe出问题了，androidstudio使用的也是这个文件。
 	尝试将其它能正常使用的adb.exe，覆盖platform-tools下的adb.exe。问题解决。
+	
+46 Failed to transform artifact 'support-v4.aar
+	Could not resolve all files for configuration ':app:debugCompileClasspath'.
+	Failed to transform artifact 'support-v4.aar (com.android.support:support-v4:21.0.0)' to match attributes {artifactType=android-classes, org.gradle.usage=java-api}.
+      > Execution failed for AarToClassTransform: D:\cache-data\.gradle\caches\modules-2\files-2.1\com.android.support\support-v4\21.0.0\30415aa4bc4087c8b4e2b59c7310cb146db8e83f\support-v4-21.0.0.aar.
+         > duplicate entry: META-INF/MANIFEST.MF
+		 
+	参考：
+	https://blog.csdn.net/ShiXinXin_Harbour/article/details/110478471
+	{解决方法()
+		在项目目录gradle.properties文件中加入
+
+		# 需要在gradle.properties中添加下面两行代码
+		# 这是因为混合支持库。通过添加这些行选择androidX作为您的支持库
+		 
+		android.useAndroidX=true
+		android.enableJetifier=true
+		——
+		
+	问题来源：D:/as_project/as-some-sample-project-to-github/android-demo-my-itcast-zz/Myday03_06Listview2-as
+	原先是直接使用/lib下的jar.
+	更换为依赖时报错
+		implementation 'com.android.support:support-v4:25.3.1'
+	参考上面，无法解决。
+	参考其它项目，简单更行
+		compileSdkVersion 25
+		buildToolsVersion "25.0.3"
+		minSdkVersion 17
+        targetSdkVersion 25
+		版本根据实际调整即可。

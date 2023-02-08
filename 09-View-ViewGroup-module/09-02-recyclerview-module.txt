@@ -1,5 +1,15 @@
-一、recyclerView 使用
-
+一、recyclerView
+	
+	1.1
+	1.2 库
+		SectionedRecyclerViewAdapter
+			https://github.com/luizgrp/SectionedRecyclerViewAdapter
+			An Adapter that allows a RecyclerView to be split into Sections with headers and/or footers
+		
+		https://github.com/Phanapoch/SectionedExpandableRecyclerView
+			An improvement recyclerview-expandable integrated with SectionedRecyclerViewAdapter
+			[kotlin]
+		
 二、recyclerView 使用原理
 
 三、recyclerView下拉刷新，上拉加载框架

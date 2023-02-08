@@ -85,6 +85,11 @@
 			b,与okhttp3.OkHttpClient#retryOnConnectionFailure相关处有哪些？
 			c,与okhttp3.internal.http.RetryAndFollowUpInterceptor相关处有哪些？
 	3.7
+		okhttp3.internal.connection.RealConnection#isEligible
+			// At this point we don't have a hostname match. But we still be able to carry the request if
+			// our connection coalescing requirements are met. See also:
+			// https://hpbn.co/optimizing-application-delivery/#eliminate-domain-sharding
+			// https://daniel.haxx.se/blog/2016/08/18/http2-connection-coalescing/
 	3.x. 
 		java.net.Proxy.Type 
 		DIRECT,
@@ -119,6 +124,7 @@
 		
 		https://github.com/getActivity/EasyHttp
 			[不同网络请求框架之间的对比 功能或细节	EasyHttp	Retrofit	OkGo]
+			[OkHttp 精讲]
 			【作者的其他开源项目】https://github.com/getActivity/EasyHttp
 		https://github.com/liangjingkanji/Net
 			[OkHttp最佳实践] Android最好的网络请求工具, 比 Retrofit/OkGo 更简单易用

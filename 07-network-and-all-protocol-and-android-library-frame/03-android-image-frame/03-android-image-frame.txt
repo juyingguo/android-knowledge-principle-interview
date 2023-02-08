@@ -28,4 +28,65 @@
 		ImageLoader: memoryCache() and memoryCacheSize() calls overlap each other.
 	
 	ShowImageActivity: onLoadingFailed>>s:http://cdn9002.iflyos.cn/shutu/resourceImg/66371fc0315b497b8ea7d720e52ddbc9.jpg
+4. picasso
+	https://github.com/square/picasso
+	
+	https://github.com/aryarohit07/PicassoFaceDetectionTransformation
+	aryarohit07/PicassoFaceDetectionTransformation
+	A memory efficient Android image transformation library providing cropping above Face Detection (Face Centering)
+	
+	An Android transformation library providing a variety of image transformations for Picasso
+	https://github.com/wasabeef/picasso-transformations
+		
+	A OkHttp 3 downloader implementation for Picasso 2.
+		https://github.com/JakeWharton/picasso2-okhttp3-downloader
+		
+	
+	使用记录：
+		使用如下图片，picasso加载失败，而UIL可以正常加载。
+		https://img-pre.ivsky.com/img/tupian/pre/202012/25/jiebing_zhiwu-001.jpg
+5. Glide
+	5.1		
+		https://github.com/bumptech/glide
+		https://github.com/wasabeef/glide-transformations
+			An Android transformation library providing a variety of image transformations for Glide.
+		
+		https://github.com/BzCoder/EasyGlide
+			基于Glide 4.12.0封装的 一键使用工具类。现已改为kotlin实现。支持HTTPS图片，可下载图片，可监听加载进度。
+			包含常用变换：高斯模糊，圆角矩形，圆形，黑白，描边圆形，描边方形。
+			【kotlin】
+		https://github.com/sunfusheng/GlideImageView
+			基于Glide V4.9.0封装的图片加载库，可以监听加载图片时的进度
+		Glide Image Slider	
+			https://github.com/firdausmaulan/GlideSlider
+		Glide简体中文文档站点托管项目
+			https://github.com/Muyangmin/glide-docs-cn
+	5.2 Android图片处理之Glide使用大全
+		https://zilianliuxue.blog.csdn.net/article/details/50459128?
+		
+		Glide - 开始！
+			https://mrfu.me/2016/02/27/Glide_Getting_Started/
+	5.3 Glide源码解析
+		https://blog.csdn.net/u012346890/article/details/125716091
+		
+		Glide源码剖析系列
+			http://events.jianshu.io/p/2af81c098835
+			
+		Glide3.6.1源码解析
+			https://blog.csdn.net/u013285894/article/details/80651453
+			
+		Glide3.7.0源码解析
+			https://blog.csdn.net/qq_25778369/category_10863798.html
+			
+			com.bumptech.glide.manager.RequestManagerFragment
+			没有界面的fragment
+			com.bumptech.glide.RequestManager
+				控制生命周期的监听。
+	5.4 
+		glide-3.7.0官方存档工程。
+		工程及sample编译不通过。
+		新建glide-3.7.0-sample，导入sample
+		
+		http://api.giphy.com/v1/gifs/trending?limit=10&offset=0&api_key=dc6zaTOxFJmzC
+		http://api.giphy.com/v1/gifs/search??q=test&limit=10&offset=0&api_key=dc6zaTOxFJmzC
 		

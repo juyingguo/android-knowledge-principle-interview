@@ -31,25 +31,34 @@
 		【刘淏卿】
 		https://blog.csdn.net/pinglingying/article/details/52673888
 	
-二、自定义圆形ImageView
-	2.0 test project:
-		com.sp.spmultipleapp.viewtest.defineimageview.CircleImageView
+二、ImageView
+	2.a ImageView
+		ImageView.ScaleType属性
+		https://www.pianshen.com/article/5668815191/
 		
-	2.1、 Android 自定义圆形ImageView——史上最简洁高效的圆形ImageView
-		https://www.jianshu.com/p/6beca370fd50
-	
-	2.2、Android BitmapShader 实战 实现圆形、圆角图片 
-		【鸿洋_】
-		https://blog.csdn.net/lmj623565791/article/details/41967509
+		https://blog.csdn.net/weixin_44563573/article/details/106626320
 		
-	2.3、或者。自定义控件三部曲之绘图篇（十八）——BitmapShader与望远镜效果 
-		https://blog.csdn.net/harvic880925/article/details/52039081 
-	2.4 android-5.1.1_r1\frameworks\support\v4\java\android\support\v4\widget\CircleImageView.java
-	2.5 一个简洁而高效的圆形ImageView 
-		[采用着色器]
-		http://www.jianshu.com/u/f7176d6d53d2 
-		https://blog.csdn.net/weixin_40316053/article/details/103832775 
+		glide-3.7.0-sample工程：*\as-some-sample-project-to-github\some-library-source-dev-test\glide-3.7.0-sample\svg
 		
+	2.b 自定义圆形ImageView
+		2.0 test project:
+			com.sp.spmultipleapp.viewtest.defineimageview.CircleImageView
+			
+		2.1、 Android 自定义圆形ImageView——史上最简洁高效的圆形ImageView
+			https://www.jianshu.com/p/6beca370fd50
+		
+		2.2、Android BitmapShader 实战 实现圆形、圆角图片 
+			【鸿洋_】
+			https://blog.csdn.net/lmj623565791/article/details/41967509
+			
+		2.3、或者。自定义控件三部曲之绘图篇（十八）——BitmapShader与望远镜效果 
+			https://blog.csdn.net/harvic880925/article/details/52039081 
+		2.4 android-5.1.1_r1\frameworks\support\v4\java\android\support\v4\widget\CircleImageView.java
+		2.5 一个简洁而高效的圆形ImageView 
+			[采用着色器]
+			http://www.jianshu.com/u/f7176d6d53d2 
+			https://blog.csdn.net/weixin_40316053/article/details/103832775 
+			
 	
 三、AppCompatImageView与ImageView区别
  

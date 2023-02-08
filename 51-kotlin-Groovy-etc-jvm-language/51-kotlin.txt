@@ -17,14 +17,16 @@
 		
 		kotlin 官方文档翻译 
 			教程及api
-		https://github.com/huanglizhuo/kotlin-in-chinese  
+			kotlin-in-chinese 
+			https://github.com/huanglizhuo/kotlin-in-chinese  
 		
 		官方论坛：
 		https://discuss.kotlinlang.org/ 
 		
 		
-	1.2 kotlin教程。
+	1.2 kotlin教程，书籍。
 		https://www.runoob.com/kotlin/kotlin-tutorial.html 
+			[含安装配置，基础知识学习]
 
 		https://github.com/huanglizhuo/kotlin-in-chinese  		
 		
@@ -37,14 +39,42 @@
 			【含环境配置、教程、案例、文档】
 			https://developer.android.google.cn/kotlin
 		1.2.4 《Kotlin实战》
-		
+			《Kotlin编程实战》
+			《零基础学Kotlin编程.pdf》
+			《深入理解kotlin协程》
+			《揭秘Kotlin编程原理》
+			《Kotlin语言实例精解》
+			《Kotlin零基础入门到Android开发实战》
+				百度文库有目录，但看目录是：书中kotlin和android是分开的。
+			《Android Kotlin高阶强化实战》
+			《Kotlin从零到精通Android开发.pdf》
+			
+			《Kotlin核心编程》
+			《Kotlin从入门到进阶实战》
+				作者另一本书：《Kotlin极简教程》
+				源码下载：http://www.tup.com.cn, 
+					搜索到本书页面，在页面上找到“资源下载”栏目，然后单击“课件下载”
+			全网最全Android Kotlin从入门到进阶全套教程
+				https://www.xiangxueketang.cn/enjoy/removal/article_5?sdclkid=AL2615jz15ql152sbg&bd_vid=8368279039967292022
+				#可以参考
 		1.2.5 Kotlin学习系列文章Overview
 			https://juejin.cn/post/6844903917428424712 
+			
+		1.2.6 developing-android-apps-with-kotlin--ud9012
+			https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012
+			
 	1.3 kotlin探讨
 		1.3.1 Kotlin语言现在怎么不火了?
 			https://www.zhihu.com/question/461471019 
 		1.3.2 Android 的 Kotlin 优先方法 
 			https://developer.android.google.cn/kotlin/first 
+	1.4 
+		Anko是一个Kotlin库，可以更快，更轻松地开发Android应用程序。它使您的代码清晰易读，让您忘记Android SDK for Java的粗糙边缘。
+
+		git地址：GitHub - Kotlin/anko: Pleasant Android application development
+		————————————————
+		版权声明：本文为CSDN博主「chenyiluo94」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/chenyiluo94/article/details/125298159
 2. android studio 中配置kotlin 
 	2.1 The current Gradle version 4.4 is not compatible with the Kotlin Gradle plugin. Please use Gradle 5.3 or newer, or the previous version of the Kotlin plugin.
 		Open File
@@ -54,29 +84,42 @@
 		
 		Kotlin入门实战：3、AndroidStudio测试Kotlin基础代码、sdk下载
 			https://blog.csdn.net/YuDBL/article/details/102986723
-3. kotlin库工程,类似于java library module.
-	3.1 运行异常：Java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics
-		
-		https://blog.csdn.net/zhendless/article/details/76152420 
-		https://stackoverflow.com/questions/60059357/java-lang-noclassdeffounderror-kotlin-jvm-internal-intrinsics-in-spring-boot-ap
-		
-		使用库文件：github加速地址。
-		https://codechina.csdn.net/mirrors/mapzen/on-the-road_android?utm_source=csdn_github_accelerator
-		添加依赖：
-		'com.mapzen:on-the-road:1.3.1'
-		
-		添加后。运行成功。再删除该库也没有任何影响。
-		分析：可能不是这个原因。
-		
-		发现依赖库kotlin-stdlib有警告提示：
-		implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-			提示为：Plugin version (1.3.50) is not the same as library version (idk8-1.3.50) less...(Ctrl+F1)
-			有警告也不影响。
-			修改为以下配置就没有警告了：implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-		Kotlin not configured
-		分析原因为：没有配置kotlin-stdlib依赖库。
-			https://blog.csdn.net/qq_33143459/article/details/103989807
-			https://jingyan.baidu.com/article/48206aeae9891e606ad6b395.html
+	2.3. kotlin库工程,类似于java library module.
+		2.3.0 
+			在Android Studio中创建一个Kotlin库(Create a Kotlin library in Android Studio)
+			https://blog.csdn.net/kururunga/article/details/126745385?
+		2.3.1 运行异常：Java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics
+			
+				https://blog.csdn.net/zhendless/article/details/76152420 
+				https://stackoverflow.com/questions/60059357/java-lang-noclassdeffounderror-kotlin-jvm-internal-intrinsics-in-spring-boot-ap
+				
+				使用库文件：github加速地址。
+				https://codechina.csdn.net/mirrors/mapzen/on-the-road_android?utm_source=csdn_github_accelerator
+				添加依赖：
+				'com.mapzen:on-the-road:1.3.1'
+				
+				添加后。运行成功。再删除该库也没有任何影响。
+				分析：可能不是这个原因。
+				
+				发现依赖库kotlin-stdlib有警告提示：
+				implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+					提示为：Plugin version (1.3.50) is not the same as library version (idk8-1.3.50) less...(Ctrl+F1)
+					有警告也不影响。
+					修改为以下配置就没有警告了：implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+				Kotlin not configured
+				分析原因为：没有配置kotlin-stdlib依赖库。
+					https://blog.csdn.net/qq_33143459/article/details/103989807
+					https://jingyan.baidu.com/article/48206aeae9891e606ad6b395.html
+			3.1.2 实验工程和实验库
+				D:/as_project/as-some-sample-project-to-github/Kotlin-pro/KotlinAndroidTest
+				libkotlintest 库下运行kotlin提示上面的错误。
+				#kotlin放到工程的module下app中的测试包名下，运行正常。
+				#为何在库中就不行呢。
+				#删除.idea,.gradle,build,重新打开工程，运行正常
+				
+
+			https://www.656463.com/wenda/zAndroidStudiozcjygKotlink_199
+		2.3.3 
 4. Kotlin实战及项目及例子
 	4.1 Kotlin实战指南十二：data class
 		https://blog.csdn.net/zhaoyanjun6/article/details/94649274 
@@ -93,7 +136,7 @@
 		
 5. [译] Kotlin中关于Companion Object的那些事
 	https://blog.csdn.net/u013064109/article/details/89199478 
-	
+		【博主，系列kotlin文章及翻译文章。】
 	Kotlin中的object 与companion object的区别 
 	https://www.jianshu.com/p/14db81e1576a? 
 	Kotlin中常量和静态方法 
@@ -117,10 +160,20 @@
 	https://www.jianshu.com/p/1d7374349a00 
 10. Kotlin系列之Lambda表达式完全解析 
 	https://blog.csdn.net/u013064109/article/details/80088158 
-11 Kotlin基础之lateinit关键字（五）
-	https://www.jianshu.com/p/fab1799314df 
-	lateinit的作用：延迟初始化
-	具体来讲，这个关键字告诉编译器，我无法声明的时候就初始化，但是我保证我在使用前一定会初始化，你就别给我检查了。
+11 Kotlin基本知识
+	11.1 Kotlin基础之lateinit关键字（五）
+		https://www.jianshu.com/p/fab1799314df 
+		lateinit的作用：延迟初始化
+		具体来讲，这个关键字告诉编译器，我无法声明的时候就初始化，但是我保证我在使用前一定会初始化，你就别给我检查了。
+	
+	11.2 Kotlin -by 详解
+		https://blog.csdn.net/wzgiceman/article/details/82689135
+		https://www.runoob.com/kotlin/kotlin-delegated.html
+	11.3 kotlin - data class使用详解
+		https://blog.csdn.net/u012950099/article/details/122684686
+		
+	11.4 Kotlin class、data class、object、companion object
+		https://blog.csdn.net/HDFQQ188816190/article/details/103976516
 12 关于Kotlin中SAM转换的那些事 
 	https://www.jb51.net/article/195649.htm 
 13 Kotlin笔记36——open、final和abstract修饰符
@@ -135,4 +188,21 @@
 		https://weilu.blog.csdn.net/article/details/109557820 
 		
 		包含原文：Migrating the deprecated Kotlin Android Extensions compiler plugin
+15 深入浅出Kotlin协程
+	https://cloud.tencent.com/developer/news/578237
 	
+	Kotlin协程
+		https://www.jianshu.com/p/56a9d3c2445e
+	Kotlin 协程 看这一篇就够了
+		https://blog.51cto.com/u_12127193/5753600
+		
+		在项目中使用Jetpack 对kotlin的扩展,可以更加便捷的创建和使用协程:
+		lifecycleScope.launch { 
+
+			}
+
+			或
+
+			viewModelScope.launch {
+
+			}

@@ -1,0 +1,94 @@
+1.
+	1.1 
+		https://github.com/ReactiveX/RxJava
+		
+			https://reactivex.io/
+			官方教程：
+				操作符：
+				https://reactivex.io/documentation/operators.html
+			
+		https://github.com/ReactiveX/RxAndroid
+	1.2 Rxjava1
+	1.2 rxjava2
+		RxJava2 Examples——它可能是从RxJava1跳到RxJava2（学习RxJava2）最好的例子Demo
+		https://github.com/juyingguo/RxJava2Examples
+			RxJava 1.x 到 RxJava 2.x 的无缝对接
+			无需学习 RxJava 1.x, 直接学习 RxJava 2.x
+			完备齐全的操作符示例
+			支持与 Retrofit 交互处理示例
+			Activity 基类封装处理
+			
+			该例子借鉴了以下项目：
+				https://github.com/amitshekhariitbhu/RxJava2-Android-Samples
+				RxJava 2 Android Examples - How to use RxJava 2 in Android
+			含教程：
+				这可能是最好的 RxJava 2.x 入门教程（完结版）
+					https://www.jianshu.com/p/0cd258eecf60
+					官方对于背压的讲解:https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FReactiveX%2FRxJava%2Fwiki%2FBackpressure
+				这可能是最好的 RxJava 2.x 入门教程（一）
+				这可能是最好的 RxJava 2.x 入门教程（二）
+				这可能是最好的 RxJava 2.x 入门教程（三）
+				这可能是最好的 RxJava 2.x 入门教程（四）
+				这可能是最好的 RxJava 2.x 入门教程（五）
+			详细记录见【2】
+		Learning RxJava for Android by example
+			https://github.com/kaushikgopal/RxJava-Android-Samples
+			
+		抛物线-rxjava
+			《RxJava基础.pdf》
+			评论区网友推荐：https://github.com/leeowenowen/rxjava-examples
+			本书是篇博文：
+			【转】给 Android 开发者的 RxJava 详解
+				https://www.jianshu.com/p/706ab1932070
+		优秀资源
+			https://github.com/lzyzsd/Awesome-RxJava
+				含有rxjava系列资源,案例，app,结合使用的优秀库
+2.RxJava2Examples
+	本项目以fork.
+	observeOn多次调用指定线程，第一个才有效，其余无效。
+		com.nanchen.rxjava2examples.module.rxjava2.usecases.okHttp.RxNetSingleActivity#doSomethingMockTest
+	对比observeOn每次都有效，影响最近的下一个观察者。
+	
+	RxJava 1.x 如何平滑升级到 RxJava 2.x？
+	
+	由于 RxJava 2.x 变化较大无法直接升级，幸运的是，官方为我们提供了 RxJava2Interrop 这个库，可以方便地把 RxJava 1.x 升级到 
+	RxJava 2.x，或者将 RxJava 2.x 转回到 RxJava 1.x。
+
+3. rxBinding
+	3.1 
+		
+	3.2 RxBinding使用和源码解析
+		https://www.jianshu.com/p/b9e83d6ff010?utm_source=oschina-app
+	3.3 RxAndroidTest 中rxBing使用
+		 RxView.clicks(button)
+                .debounce(500, TimeUnit.MILLISECONDS)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(event -> {
+            // do something with the event
+            attemptLogin();
+        });
+		consumer操作ui需要调用Observable.observeOn(AndroidSchedulers.mainThread())切换到主线程。
+	
+4. RxJava1
+	
+5. RxJava2
+	
+	RxJava（十二）combineLatest操作符的高级使用
+	https://blog.csdn.net/suyimin2010/article/details/92405598
+	
+	博主rxjava系列文章
+	https://blog.csdn.net/suyimin2010/category_7635740.html
+	
+	RxJava2源码分析：
+		https://blog.csdn.net/xiaopangcame/article/details/123021176
+		[博主rxjava2系列源码分析]
+		
+		rxjava2源码解析（一）基本流程分析
+			hook含义？
+			io.reactivex.Observable#create
+			io.reactivex.plugins.RxJavaPlugins#onAssembly(io.reactivex.Observable<T>)
+		
+		rxjava-2.1.0
+		io.reactivex.internal.operators.observable.ObservableObserveOn.ObserveOnObserver#onSubscribe
+		参数传递进来为null,为何？
+			

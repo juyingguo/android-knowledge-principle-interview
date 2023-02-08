@@ -249,6 +249,37 @@
 		原文：https://blog.csdn.net/z979451341/article/details/79380704 
 		版权声明：本文为博主原创文章，转载请附上博文链接！
 	6.2 list直接遍历时删除集合中的数据失败。而Iterator是可以的。
+		https://blog.csdn.net/qq_40776361/article/details/124711872
+		
+		ArrayList 普通for循环遍历时删除方法
+			for(int i=0;i<list.size();i++)
+			{
+				//删除时漏掉元素；
+			}
+			参考：okhttp3.ConnectionPool#pruneAndGetAllocationCount
+				for(int i=0;i<list.size();)
+				{
+					//删除时就不漏掉元素；
+					//非删除元素的循环时，再i++;
+				}
+						
+		iterator调用remove()方法为什么要先调用next()方法?
+		
+		实验：com.collection.listtest.ArrayListTest
+			在for 循环中删除操作，ide有提示及建议方法。
+		
+		增强型for循环（foreach）遇到的问题
+			com.collection.listtest.ArrayListTest#testListRemoveUseForeach
+			删除的时候，使用ArrayList函数，没有使用java.util.ArrayList.Itr#remove
+				java.util.ArrayList#remove(int)
+					modCount++;//修改了modCount
+			而：java.util.ArrayList.Itr#next
+				java.util.ArrayList.Itr#checkForComodification
+					if (modCount != expectedModCount)
+						throw new ConcurrentModificationException();
+			全部集合操作都使用java.util.ArrayList.Itr，
+			
+			
 七、HashTable
 	https://blog.csdn.net/jinhuoxingkong/article/details/52022999
 

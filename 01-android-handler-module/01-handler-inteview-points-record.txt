@@ -1,0 +1,134 @@
+一、消息分发机制
+
+	这个考得非常常见。一定要看源码，代码不多。带着几个问题去看：
+
+	1.为什么一个线程只有一个Looper、只有一个MessageQueue？
+		android.os.Looper#prepare(boolean)
+		thread.threadLocals = new ThreadLocalMap(this, firstValue);//this是ThreadLocal，value是new Looper(quitAllowed)
+		本事是Thread.threadLocals是否为空。
+		
+		只有一个MessageQueue？是因为其在Looper构造时唯一创建的。
+	2.如何获取当前线程的Looper？是怎么实现的？（理解ThreadLocal）
+
+	3.是不是任何线程都可以实例化Handler？有没有什么约束条件？
+
+	4.Looper.loop是一个死循环，拿不到需要处理的Message就会阻塞，那在UI线程中为什么不会导致ANR？
+
+	5.Handler.sendMessageDelayed()怎么实现延迟的？结合Looper.loop()循环中，Message=messageQueue.next()和MessageQueue.enqueueMessage()分析。
+	--------------------- 
+	作者：huison_ma 
+	来源：CSDN 
+	原文：https://blog.csdn.net/qq_27053103/article/details/79564062 
+	版权声明：本文为博主原创文章，转载请附上博文链接！
+	
+	**********************************************************************
+	关于【第二类问题解答】,注意目前理解，有局限性，后续深入分析，继续完善。
+	a1.1、
+	
+二、我的疑问记录
+
+	2.1、ActivityThread main运行在哪个线程中。
+	2.2、ActivityThread main与普通的java类的main区别？
+	2.3、普通的java类，就是主线程了，可以执行耗时操作，已验证线程休眠多久都没问题。
+	2.4、为啥子线程handler可以执行耗时操作？
+	2.5、主线程到底能不能执行长期耗时操作，还是安卓故意这样做，故意限制时长ANR
+	2.6、Android主线程到底是什么（一）
+		https://blog.csdn.net/u011631275/article/details/47337385
+	2.7、anr,根据anr找到源码提示位置。
+		（ANR：Application Not Responding）对话框
+	2.8、messageQueue存储结构是真正的队列吗？
+		还是单链表结构存储？
+		messageQueue源码深度剖析？
+		2.8.2，引出问题，单链表是什么？
+	2.9、ThreadLocal原理。
+		2.9.1 在Looper如何使用ThreadLocal的？
+		2.9.2、ThreadLocal使用的算法？
+		详解见：
+**********************************************************************
+关于【第二类问题解答】,注意目前理解，有局限性，后续深入分析，继续完善。
+a2.1、
+
+三、handler使用。高级用法。
+	3.1、Handler的正确使用,使用静态内部类+弱引用,解决内存泄漏，举例说明在使用ProgressBar时的Handler类的静态内部类实现。
+			https://blog.csdn.net/qingxixiansheng/article/details/81381376
+			
+			非静态内部类、非静态匿名内部类会持有外部对象的引用
+				详情见：[33-02-java-base-and-resource-list.txt [26]]
+		3.1.2 关于安卓Handler内存泄漏及解决方案
+			https://blog.csdn.net/taoyuxin1314/article/details/126083540
+		
+			验证：com.sp.spmultipleapp.handler.StaticHandlerTestActivity
+				com.sp.spmultipleapp.handler.StaticHandlerProgressTestActivity
+				通过WeakReference来引用Activity,Activity销毁，但还能获取到该Activity并更新进度.				
+				
+				依然需要移除消息。
+				mHandler.removeCallbacksAndMessages(null);
+			
+			非静态匿名handler，非静态内部类都会造成内存泄露。
+				如发消息，handler引用activity,message持有handler的引用，message位于消息队列中。
+			单靠弱引用，不能即使回收。依然需要移除消息。
+				mHandler.removeCallbacksAndMessages(null);
+	3.3 如果handler是在子线程中创建的，还能使用软引用，弱引用吗？又怎么解决handler的内存泄漏？
+
+四、MessageQueue
+	4.1 final 修饰的MessageQueue mQueue，如何赋值？
+		只有第一次初始化时才能赋值。
+	4.2 MessageQueue不是真正的队列，而是单链表，在插入和删除上比较有优势？
+		真正的队列是后进先出，先插入的数据一定在最后。
+		而MessageQueue插入是根据message是when值大小可能插入链表的任位置。
+		
+		#android.os.MessageQueue#enqueueMessage
+	4.3 android.os.MessageQueue#mBlocked
+		阻塞含义？
+	4.4 android.os.MessageQueue#mMessages含义？
+		
+		mMessages在next()函数中，可以看出执行当前取出的消息的下一个消息。
+		即：mMessages = msg.next;
+		查看：android.os.MessageQueue#enqueueMessage
+			第一次添加消息的时候，mMessages指向第一个元素
+5. Handler原理—Android最高频被面内容源码
+	https://ke.qq.com/course/341933?taid=9303882710988717
+	
+	5.2 IdleHandler 的原理分析和妙用
+		https://blog.csdn.net/augfun/article/details/124534116
+		
+		5.2.2 Android性能优化系列-IdleHandler
+			https://blog.csdn.net/brycegao321/article/details/99755684?
+6.享学课堂	
+	
+	Handler面试那些事
+	
+	6.1 :一个线程有几个 Handler?
+	
+	6.2 :一个线程有几个Looper?如何保证?
+	
+	6.3: Handler内存泄漏原因?为什么其他的内部类没有说过有这个问题?
+		
+	6.4:为何主线程可以new Handler?如果想要在子线程中new Handler 要做些什么准备?
+	
+	6.5:子线程中维护的Looper，消息队列无消息的时候的处理方案是什么?有什么用?
+		quit
+	6.6:既然可以存在多个 Handler往 MessageQueue中添加数据(发消息时各个Handler可能处于不同线程)，那它内部是如何确保线程安全的?
+	6.7∶我们使用Message时应该如何创建它?
+		
+	6.8:使用Handler的postDelay后消息队列会有什么变化?
+	
+	9: Looper死循环为什么不会导致应用卡死
+		a,睡眠，正常休眠。
+		
+		b，卡死是anr,是另外一个问题。
+		
+	6.x synchronized:安全性
+		handler delay 的消失,时间准确吗? 【基本准确，考察同步锁知识。】
+		
+		
+		synchronized:方法，静态方法，代码块 （object)代码块(this)
+
+		aba :
+	6.2 Message使用方式。
+		链表。
+		享元设计模式。
+
+
+
+

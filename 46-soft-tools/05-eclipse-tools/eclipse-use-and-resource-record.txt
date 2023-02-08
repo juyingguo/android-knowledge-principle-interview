@@ -27,6 +27,10 @@
 		https://projectlombok.org/download
 		SpringToolSuit 保姆级安装教程
 		https://blog.csdn.net/weixin_43344151/article/details/122354885
+	0.7 mat
+		下载MAT工具并安装
+			https://www.eclipse.org/mat/downloads.php
+				
 1. eclipse 4.5.0；安装 adt-23.0.7插件异常。
 	No repository found at jar:file:/D:/juying/tools/ADT/ADT-23.0.7.zip!/.
 2. eclipse 与adt插件版本对应关系？
