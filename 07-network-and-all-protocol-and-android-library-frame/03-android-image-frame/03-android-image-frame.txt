@@ -66,6 +66,11 @@
 		
 		Glide - 开始！
 			https://mrfu.me/2016/02/27/Glide_Getting_Started/
+			
+			
+		一文搞懂Glide，不懂来打我
+			https://zhuanlan.zhihu.com/p/450544419
+			基于{glide:4.12.0}
 	5.3 Glide源码解析
 		https://blog.csdn.net/u012346890/article/details/125716091
 		
@@ -82,6 +87,22 @@
 			没有界面的fragment
 			com.bumptech.glide.RequestManager
 				控制生命周期的监听。
+		Glide最全解析
+			https://blog.csdn.net/guolin_blog/category_9268670.html
+			
+			com.bumptech.glide.RequestManager#loadGeneric
+				You must provide a Model of a type for which there is a registered ModelLoader
+				如何理解这句话？
+				
+			com.bumptech.glide.request.target.ImageViewTargetFactory#buildTarget(ImageView view, Class<Z> clazz) 
+			clazz来源在哪？
+			
+			com.bumptech.glide.load.model.stream.StreamStringLoader
+				
+				
+			http://url.com/image.jpg?token=d9caa6e02c990b0a
+			http://url.com/image.jpg?name=aim&token=d9caa6e02c990b0a&type=test
+			
 	5.4 
 		glide-3.7.0官方存档工程。
 		工程及sample编译不通过。

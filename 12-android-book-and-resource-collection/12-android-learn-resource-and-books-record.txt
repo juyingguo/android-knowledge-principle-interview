@@ -58,6 +58,7 @@
 			
 		https://github.com/pcqpcq/open-source-android-apps
 		
+		
 		mvp:
 			https://github.com/TommyLemon/Android-ZBLibrary
 				Android MVP 快速开发框架， Android 开源 UI 框架
@@ -824,6 +825,11 @@
 			https://github.com/greenrobot/greenDAO
 			new:https://objectbox.io/
 			https://github.com/objectbox/
+			
+		android知识进阶应用
+			Awesome-WanAndroid
+			https://github.com/JsonChao/Awesome-WanAndroid			
+			https://github.com/malonecoder/Awesome-Kotlin-WanAndroid
 一、android frameworks 方面的书籍。
 	1.1、《Android应用框架原理与程序设计36技》
 		《深入理解Android》

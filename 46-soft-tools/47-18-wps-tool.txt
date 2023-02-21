@@ -1,41 +1,51 @@
-1.WPS�����������ͼ
-	https://www.wps.cn/learning/course/detail/id/594.html
-	
-	
-2.WPS��ν�������ͳ��
-	2.1 WPS��ν�������ͳ�� 
+1.
+	1.2 wps文字制作加密word文档
+		https://jingyan.baidu.com/article/95c9d20d45b339ec4f75615b.html
+	1.2 wps,转pdf并设置加密
+		文件-文件加密
+	1.3 在word中如何设置双面打印？
+		https://jingyan.baidu.com/article/a948d6510ceff64b2ccd2e76.html
+		点击下拉菜单中的【文件】，找到【打印】
+		勾选【双面打印】
+		
+2. 	WPS
+	2.1 WPS如何进行字数统计 
 		https://zhidao.baidu.com/question/420657528.html
-		
-3. word���壬����С�ĺ� ���� �� ���� С�ĺ� �Ӻڣ�
+	2.2 
+		WPS如何制作流程图
+		https://www.wps.cn/learning/course/detail/id/594.html
+	2.3 插入WPS文档中的图片怎么布满整个页面
+		https://jingyan.baidu.com/article/6d704a133b185869db51cab2.html
+3. word字体，宋体小四号 黑体 是 宋体 小四号 加黑？
 	3.1 https://zhidao.baidu.com/question/270048967192848405.html
-		����ͺ������������壬�����ڼ����������Ǻ�������á�Ӧ��������С�ĺżӴ�֮��
+		宋体和黑体是两种字体，不存在既是宋体又是黑体的设置。应该是宋体小四号加粗之误。
 		
-	3.2 ����������С�ļӺ�ʲô�⣿ 
+	3.2 论文中宋体小四加黑什么意？ 
 		https://iask.sina.com.cn/b/1H038Gr9Ex35.html
 		
-		һ����ժҪ������Ҫ�������壬С�ĺţ�Ȼ��Ӵ֡�
+		一般是摘要的字体要求，用宋体，小四号，然后加粗。
 		
-4. WPS��ʽ��WORD��ʽ��ʲô���� 
+4. WPS格式和WORD格式有什么区别？ 
 	https://zhidao.baidu.com/question/623963236005669244.html?sort=11&rn=5&pn=0#wgt-answers
 	
-	һ��֧����չ����baiͬ
+	一、支持扩展名不bai同
 
-	1��WPS��ʽ��WPS��ʽ֧��.doc��.docx��.dot��.dotx��.wpt��չ����
+	1、WPS格式：WPS格式支持.doc、.docx、.dot、.dotx、.wpt扩展名。
 
-	2��WORD��ʽ��WORD��ʽ֧��.doc��.docx��չ����
+	2、WORD格式：WORD格式支持.doc、.docx扩展名。
 
-	����ת����ͬ
+	二、转换不同
 
-	1��WPS��ʽ��WPS��ʽ�ܽ���������ת���ɷ������ġ�
+	1、WPS格式：WPS格式能将简体中文转换成繁体中文。
 
-	2��WORD��ʽ��WORD��ʽû�м�������ת���ɷ������Ĺ��ܡ�
-5. WPS/WordĿ¼����������ʡ�Ժ�
+	2、WORD格式：WORD格式没有简体中文转换成繁体中文功能。
+5. WPS/Word目录制作中输入省略号
 	https://jingyan.baidu.com/article/363872ec98ab9d2e4aa16f30.html
 	
 	5.1 
-		wpsĿ¼�����ʡ�Ժ�û��ռ������ҳ����ȡ���ʱ�����Ʊ�λΪ23
-		��Ҫ�Ʊ�λ43.15�����ˣ�
+		wps目录后面的省略号没有占满整个页面宽度。当时设置制表位为23
+		需要制表位43.15就行了，
 		
-	5.2 �еĸ�ʽ��Ų�һ�£��ֶ����Ƽ��ɡ�
-6. wps��ô�Զ�����ҳ���Լ�����ҳ��ӵڼ�ҳ��ʼ
+	5.2 有的格式点号不一致，手动复制即可。
+6. wps怎么自动生成页码以及设置页码从第几页开始
 	https://jingyan.baidu.com/article/5553fa82eee2c265a2393408.html
