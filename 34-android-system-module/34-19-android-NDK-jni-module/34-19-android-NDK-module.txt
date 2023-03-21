@@ -22,6 +22,10 @@
 		https://github.com/yangkun19921001/NDK_AV_SAMPLE
 		{Android NDK 音视频 FFmpeg OpenGL OpenCV rtmp 直播 学习记录! 
 		想要更全面的学习音视频可以点击point_right(适合零基础入门音视频专栏)}
+		
+		*已经下载到本地*
+	01.6 JNI和NDK的详解（上）
+		https://blog.csdn.net/chen_md/article/details/81123213
 1.NDK接口参照：
 
 	https://developer.android.google.cn/ndk/reference/group/audio

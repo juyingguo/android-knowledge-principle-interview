@@ -1,0 +1,12 @@
+1.
+	1.1 
+		https://github.com/youth5201314/banner
+		
+		https://github.com/zhpanvip/BannerViewPager
+		
+		https://github.com/saiwu-bigkoo/Android-ConvenientBanner
+		
+		https://github.com/ren93/RecyclerBanner
+		
+		
+		https://github.com/bingoogolapple/BGABanner-Android

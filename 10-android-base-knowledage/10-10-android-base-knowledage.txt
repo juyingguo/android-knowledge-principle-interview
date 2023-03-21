@@ -126,14 +126,27 @@
 		
 六、abstract与interface区别？
 
-七、dp与px的转换 
-	1.https://blog.csdn.net/baidu_24743861/article/details/82977655
+七、屏幕适配
+	7.1 dp与px的转换 
+		1.https://blog.csdn.net/baidu_24743861/article/details/82977655
+			
+		2.Android中dp和px之间进行转换
+			https://blog.csdn.net/arui319/article/details/6777133 
+			
+		3. android系统api
+			TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+	7.2 屏幕适配之value-sw＜N＞dp
+		https://blog.csdn.net/u010026497/article/details/122577543
 		
-	2.Android中dp和px之间进行转换
-		https://blog.csdn.net/arui319/article/details/6777133 
+		values-sw432dp的文件夹了，最小宽度为432dp
+	7.3 适配方式之dimens
+		Android 屏幕适配之dimens适配
+		https://blog.csdn.net/m0_67598977/article/details/124438626
 		
-	3. android系统api
-		TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+		[DimensEx]
+		
+	7.4 高级UI——Android屏幕适配全方位解析
+		https://zhuanlan.zhihu.com/p/585350737
 八、transient 
 	8.1、 Java transient关键字使用小记
 		https://www.cnblogs.com/lanxuezaipiao/p/3369962.html
@@ -493,3 +506,5 @@ Warning: 意外的元素 (uri:"", local:"base-extension")。所需元素为<{}co
     <item name="android:windowFullscreen">true</item>
     <item name="windowNoTitle">true</item>
     </style>}
+39 Android AAPT 详解（上篇）
+	https://sq.sf.163.com/blog/article/172788280990601216

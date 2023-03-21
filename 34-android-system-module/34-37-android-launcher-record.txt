@@ -1,0 +1,91 @@
+1.
+	Android之Launcher分析和修改5——HotSeat分析
+	https://blog.51cto.com/u_12468355/5096055
+	原文：https://www.cnblogs.com/mythou/p/3172409.html
+		博主之系列文章。
+		
+		Launcher分析系列文章：
+		博文基于[android 4.4]
+
+		Android Launcher分析和修改1——Launcher默认界面配置（default_workspace）
+		Android Launcher分析和修改2——Icon修改、界面布局调整、壁纸设置
+		Android Launcher分析和修改3——Launcher启动和初始化
+		Android Launcher分析和修改4——初始化加载数据
+		Android Launcher分析和修改5——HotSeat分析
+		Android Launcher分析和修改6——页面滑动(PagedView)
+		
+	1.2 android10 launcher修改简单记录
+		http://events.jianshu.io/p/ddc4d4a0bad9
+		
+		本文含博主参考链接
+		
+		本博主有系统修改记录文章。
+		以及settings，SystemUI
+		
+	1.3 		
+		
+		AOSP源码Gallery2和Launcher3导入Android Studio
+		https://blog.csdn.net/nerv2013/article/details/83111423?
+		博主用的aosp-8.1
+		
+		android12.0(S) Launcher3 导入 AndroidStudio 调试编译
+		https://cczheng.blog.csdn.net/article/details/128772883?
+		
+		Launcher3导入Android Studio
+		https://www.jianshu.com/p/28b1d205b4e6
+		aosp8.0,8.1
+		
+		Android10_Launcher3在AndroidStudio中的编译
+		https://www.jianshu.com/p/28b1d205b4e6
+		
+		基于android 7.0 launcher3 可以在android studio编译
+		https://github.com/yangzaiCN/launcher3
+		
+		原始Launcher3,需要的可以借鉴学习
+		android6.0
+		https://gitee.com/ZhuiBuHuiDeLiuNian/AnZhuo6.0-MTKLauncher3YuanMa?_from=gitee_search
+		
+		
+		https://github.com/Snser/Launcher3-511r14
+		
+		【Android】Android Studio导入原生Launcher编译成功
+		https://blog.csdn.net/bandaotilan/article/details/76201025?
+		android5.1
+		
+		https://github.com/c-h-/standalone-android-launcher3
+		android-5.0.0_r7
+		
+		https://github.com/haohz1987/Launcher3_android_4_4
+		android_4_4_系统桌面launcher3修改
+		
+2. 我导入android5.1,lancher3记录
+	2.1 
+		AGPBI: {"kind":"error","text":"Can't determine type for tag '<add-resource name=\"default_folder_name\" type=\"string\"/>'","sources":[{"file":"D:\\as_project\\android-launcher\\Launcher3\\app\\src\\main\\res\\values\\strings.xml"}],"tool":"Resource and asset merger"}
+		
+		FAILURE: Build failed with an exception.
+
+		* What went wrong:
+		Execution failed for task ':app:mergeDebugResources'.
+		> D:\as_project\android-launcher\Launcher3\app\src\main\res\values\strings.xml: Error: Can't determine type for tag '<add-resource name="default_folder_name" type="string"/>'
+		
+		参考：{【Android】Android Studio导入原生Launcher编译成功
+				https://blog.csdn.net/bandaotilan/article/details/76201025?
+				}
+	2.2 
+		AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"D:\\as_project\\android-launcher\\Launcher3\\app\\src\\main\\AndroidManifest.xml",
+		"position":{"startLine":141,"startColumn":8,"endLine":153,"endColumn":19}}],"original":"D:\\as_project\\android-launcher\\Launcher3\\app\\src\\main\\AndroidManifest.xml:
+		142:9-154:20: AAPT: error: resource style/Theme.WallpaperCropper (aka com.android.launcher3:style/Theme.WallpaperCropper) not found.\n    ","tool":"AAPT"}
+		
+		查看AndroidManifest.xml报红。
+			android:name="com.android.launcher3.WallpaperCropActivity"
+            android:theme="@style/Theme.WallpaperCropper"
+            android:label="@string/crop_wallpaper"
+            android:icon="@mipmap/ic_launcher_wallpaper"
+			
+		需要把wallpaperPicker作为module导入。
+		
+	2.3 
+		wallpaperPicker\src\main\java\com\android\gallery3d\glrenderer\GLPaint.java:19: 错误: 程序包junit.framework不存在
+		import junit.framework.Assert;
+		
+		

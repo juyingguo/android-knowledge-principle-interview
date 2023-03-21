@@ -106,6 +106,15 @@
 			Please specify a different SDK name
 		0.4.3 Windows下使用android_studio查看android源码	
 			https://www.jianshu.com/p/1ec01aedd5f7? 
+			执行下面的命令即可生成android.ipr等文件：
+
+			cd ～/aosp //具体的源码根目录
+			source build/envsetup.sh //用于初始化环境变量
+			mmm development/tools/idegen/  //生成文件out/host/linux-x86/framework/idegen.jar
+			./development/tools/idegen/idegen.sh//源码根目录生成文件android.ipr(工程相关设置), android.iml(模块相关配置)
+			
+			*还有一些记录见博文
+
 		0.4.4 导入系统源码两种方式:Source Insight和Android Studio
 			https://blog.csdn.net/haoxuhong/article/details/89351195? 
 			
@@ -1000,6 +1009,7 @@
 			
 			参考：
 			https://blog.csdn.net/dkbnull/article/details/103414016
+			https://www.likecs.com/show-203368861.html
 			
 			#去掉aidl中的中文。解决
 			#因为Gradle 5.x版本，编译时后台内存堆大小从1GB降为了512M，可能导致aidl编译后无足够的内存缓存，进而导致所生成的java文件都不完整，解决办法如下：
@@ -1062,3 +1072,12 @@
 		minSdkVersion 17
         targetSdkVersion 25
 		版本根据实际调整即可。
+		
+17 单元测试 
+	17.1 单元测试 ArrayMap throws Method put in android.util.ArrayMap not mocked的处理方法
+		https://www.it1352.com/2457856.html
+		
+		module下的 gradle下的android节点下添加：
+			testOptions{
+				unitTests.returnDefaultValues=true
+			}

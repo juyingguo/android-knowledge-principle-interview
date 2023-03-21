@@ -199,23 +199,55 @@
 				return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
 			}
 三、HashMap和Hashtable区别？
+    3.1 
+		这个一定要去看源码！看源码！看源码！实在看不下去的可以上网看别人的分析。简单总结有几点：
 
-	这个一定要去看源码！看源码！看源码！实在看不下去的可以上网看别人的分析。简单总结有几点：
+		1.HashMap支持null Key和null Value；Hashtable不允许。这是因为HashMap对null进行了特殊处理，将null的hashCode值定为了0，从而将其存放在哈希表的第0个bucket。
 
-	1.HashMap支持null Key和null Value；Hashtable不允许。这是因为HashMap对null进行了特殊处理，将null的hashCode值定为了0，从而将其存放在哈希表的第0个bucket。
+		2.HashMap是非线程安全，HashMap实现线程安全方法为Map map = Collections.synchronziedMap(new HashMap())；Hashtable是线程安全
 
-	2.HashMap是非线程安全，HashMap实现线程安全方法为Map map = Collections.synchronziedMap(new HashMap())；Hashtable是线程安全
+		3.HashMap默认长度是16，扩容是原先的2倍；Hashtable默认长度是11，扩容是原先的2n+1
 
-	3.HashMap默认长度是16，扩容是原先的2倍；Hashtable默认长度是11，扩容是原先的2n+1
+		4.HashMap继承AbstractMap；Hashtable继承了Dictionary?
 
-	4.HashMap继承AbstractMap；Hashtable继承了Dictionary?
-
-	扩展，HashMap 对比 ConcurrentHashMap ，HashMap 对比 SparseArray，LinkedArray对比ArrayList，ArrayList对比Vector
-	--------------------- 
-	作者：huison_ma 
-	来源：CSDN 
-	原文：https://blog.csdn.net/qq_27053103/article/details/79564062 
-	版权声明：本文为博主原创文章，转载请附上博文链接！
+		扩展，HashMap 对比 ConcurrentHashMap ，HashMap 对比 SparseArray，LinkedArray对比ArrayList，ArrayList对比Vector
+		--------------------- 
+		作者：huison_ma 
+		来源：CSDN 
+		原文：https://blog.csdn.net/qq_27053103/article/details/79564062 
+		版权声明：本文为博主原创文章，转载请附上博文链接！
+	3.2 为什么推荐用SparseArray 代替 HashMap ?
+			性能更好，幻 rnteljer it不会轻为integeY节名内存姚k用以组
+			实用数组
+			
+			为什么要用SparseArray来替换HashMap？
+			https://www.jianshu.com/p/ea859258fa4d?
+			
+			HashMap和SparseArray性能对比
+				https://blog.csdn.net/incredible_wei/article/details/109117847
+				
+			字节一面：SparseArray 和 HashMap区别？展开说说
+				https://blog.csdn.net/DevolperFront/article/details/118165420
+		3.2.2 SparseArray分析
+			SparseArray原理和使用
+			https://blog.csdn.net/u010198148/article/details/128906442
+			
+			SparseArray基本使用及源码分析
+				https://blog.csdn.net/sinat_35241409/article/details/88668367?
+				
+			测试程序：com.datastructtest.SparseArrayTest
+			编译器提示：
+				unchecked call to put(int,E) as a member of raw type 'android.util.SparseArray'
+					lnspection info: Signals places where an unchecked warning is issued by the compiler, for example:
+					void f(HashMap map){
+					map.put ("key "， "value");
+					Hint: Pass -Xlint:unchecked to javac to get more details.
+				参考：https://blog.csdn.net/hzw2017/article/details/80291816
+				在此方法上面或者那个强制类型转换的上面加上如下一句话。
+				@SuppressWarnings(“unchecked”)
+			
+			*但添加数据依然为空。在activity中验证
+			测试程序：com.sp.spmultipleapp.datastruct.SparseArrayActivityTest
 四、List集合。
 	4.1、至于为什么通过迭代器自身的remove或add方法就不会出现这个问题，可以参考我之前的文章List比较好玩的操作中第三个和第四个示例
 			https://blog.csdn.net/ghsau/article/details/9347357

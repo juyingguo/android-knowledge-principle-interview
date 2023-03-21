@@ -1,0 +1,6 @@
+0.
+1.
+	6.2.2 AMS的setSystemProcess分析
+		p-200.
+		
+		基于以上知识，你能快速得出，IApplicationThread的 Binder服务端在应用进程中还是在AMS中，这个问题的答案吗?

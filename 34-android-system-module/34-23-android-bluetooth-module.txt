@@ -1,6 +1,29 @@
 1.资源
-	
+	1.1
+	1.2
+	1.3 Android BLE蓝牙4.0开发详解
+		https://blog.csdn.net/chenliqiang12345678/article/details/50504406/
+		
+		https://github.com/leach-chen/Android-BLE.git
+		
 2. android上蓝牙使用
 	2.1 当前发现，目前手机上，蓝牙互连时，同一个时间点，只能有一个设备能发送文件。
 		只能当文件发送完成后，作为接受者，才可以接受其它蓝牙设备的连接请求。
 		接受者正在接收文件时，其它设备连接时会超时。
+3. 通俗易通讲解Android蓝牙键值适配
+	https://www.jb51.net/article/230993.htm
+	https://blog.csdn.net/qq3965470/article/details/121651538
+	
+	
+	android中遥控器键值的添加和修改
+	http://blog.csdn.net/shift_wwx/article/details/11479705
+	
+	
+	Android-普通按键和蓝牙耳机按键处理流程详解
+	https://wenku.baidu.com/view/79f0b4e05bf5f61fb7360b4c2e3f5727a5e92410.html?_wkts_=1677589212299&bdQuery=%E8%93%9D%E7%89%99%E6%8C%89%E9%94%AE%E6%B5%81%E7%A8%8B
+	
+	Android 智能TV电视系统遥控器键值添加
+	https://blog.csdn.net/wolfboy2/article/details/51673378?
+	
+	[笔记分享] [遥控器]Android红外及蓝牙遥控器适配流程
+		https://blog.csdn.net/shmily_jing/article/details/100881886?

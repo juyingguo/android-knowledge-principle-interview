@@ -1,7 +1,8 @@
 一、
 	https://www.sqlite.org/index.html
 		
-		
+	1.2 开源sqlite操作软件
+		DB Broswer for sqlite
 二、SQLite教程,基础知识。
 	
 	2.1、

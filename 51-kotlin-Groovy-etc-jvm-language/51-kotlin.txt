@@ -39,6 +39,8 @@
 			【含环境配置、教程、案例、文档】
 			https://developer.android.google.cn/kotlin
 		1.2.4 《Kotlin实战》
+				https://www.xz577.com/e/193.html#xz
+				saved to yun pan
 			《Kotlin编程实战》
 			《零基础学Kotlin编程.pdf》
 			《深入理解kotlin协程》
@@ -57,6 +59,8 @@
 			全网最全Android Kotlin从入门到进阶全套教程
 				https://www.xiangxueketang.cn/enjoy/removal/article_5?sdclkid=AL2615jz15ql152sbg&bd_vid=8368279039967292022
 				#可以参考
+			阿里架构师开源《Kotlin入门教程指南》+《高级Kotlin强化实战》
+				https://blog.csdn.net/YoungOne2333/article/details/127614552
 		1.2.5 Kotlin学习系列文章Overview
 			https://juejin.cn/post/6844903917428424712 
 			

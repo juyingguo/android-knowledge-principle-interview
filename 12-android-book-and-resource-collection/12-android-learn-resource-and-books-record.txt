@@ -38,6 +38,8 @@
 		Android 程序员需要掌握的技术栈
 			https://github.com/chiclaim/AndroidAll
 		
+		进阶资料
+		https://github.com/733gh/Android-T3
 			
 		Training course repository for android app development
 			https://github.com/mixi-inc/AndroidTraining
@@ -80,6 +82,11 @@
 				RxJava2+Retrofit2+RxLifecycle2+OkHttp3 封装RHttp 使用MVP模式构建项目
 			android模块化demo，从零到一搭建属于自己的模块化安卓工程（MVP+Retrofit+Rxjava+Rxlifecycle+Glide+Eventbus+ARouter）
 				https://github.com/senonwx/ModularApp
+				
+			mvp内存泄露及解决办法？
+				[android进阶篇]MVP模式优化，防止内存泄漏和空指针问题
+				https://www.ngui.cc/el/1723539.html?action=onClick
+				https://blog.csdn.net/qq137722697/article/details/78275882
 		mvvm:
 			github搜hilt
 			
@@ -94,6 +101,10 @@
 			
 			难得一见 Jetpack MVVM 最佳实践！在 "以简驭繁" 代码中，对 "视图控制器" 乃至 "标准化开发模式" 形成正确、深入理解！
 				https://github.com/KunMinX/Jetpack-MVVM-Best-Practice
+				《Jetpack MVVM 精讲》，
+				https://juejin.im/post/5dafc49b6fb9a04e17209922
+				是让人耳目一新的 Jetpack MVVM 精讲
+				https://juejin.cn/post/6844903976240939021
 			基于MVVMHabit框架，结合阿里ARouter打造的一套Android MVVM组件化开发方案
 				https://github.com/goldze/MVVMHabitComponent
 			This repository contains a detailed sample app that implements MVVM architecture using Dagger2, Room, RxJava2
@@ -139,6 +150,8 @@
 			A collection of samples using the Architecture Components:
 				https://github.com/android/architecture-components-samples
 				已经fork
+		模块化
+			https://github.com/BaronZ88/ModularizationProject
 		时光轴效果
 			项目地址
 			https://github.com/ljtyzhr/TimeLine
@@ -445,12 +458,28 @@
 				高仿单读APP：owspace是基于MVP+Dagger2+Retrofit2.0+Rxjava的APP
 			https://github.com/Will-Ls/WeiYue
 				一款新闻客户端, MVP + RxJava + Retrofit + Dagger2
+				
+				一款 kotlin 新闻客户端, MVP + RxJava + Retrofit + Dagger2
+				https://github.com/Will-Ls/WeiYueKotlin
+				
 			https://github.com/Ye-Miao/Education
 				RxJava+OkHttp+Retrofit+Dagger2+MVP框架(kotlin版本)
+				
 			https://github.com/yydcdut/PhotoNoter	
 				Material Design风格的开源照片笔记。(MVP+Dagger2+RxJava+AspectJ+Dex处理)
 			https://github.com/BaronZ88/MinimalistWeather
 				Android 平台开源天气 App，采用 MVP、RxJava、Retrofit2、OKHttp3、Dagger2、RetroLambda 等开源库来实现。
+				安居客 Android 项目架构演进
+				https://zhuanlan.zhihu.com/p/25420181
+				[Keynote]画图
+			MVP“美”图+新闻+天气预报+Material+RxJava3+Retrofit2+Glide4+AndroidX+Leakcanary+Butterknife
+				https://github.com/liuyanggithub/SuperMvp
+				
+				SuperMvp的kotlin语言版本
+				https://github.com/liuyanggithub/SuperMvp-Kotlin
+				
+				Kotlin+MVVM+LiveData+Coroutine协程
+				https://github.com/liuyanggithub/KotlinSuperMvvm
 			https://github.com/guofudong/KotlinAndroid
 				组件化 + MVP + Retrofit + RxKotlin + Dagger2实现的一款用Kotlin语言编写的多媒体类应用。
 			仿京东app 全新组件化架构升级
@@ -467,8 +496,7 @@
 					
 			Minimalistic audiobook player
 				https://github.com/PaulWoitaschek/Voice
-			一款 kotlin 新闻客户端, MVP + RxJava + Retrofit + Dagger2
-				https://github.com/Will-Ls/WeiYueKotlin
+			
 			https://github.com/simplezhli/Dagger2Example
 				[停止维护]Dagger2简单使用，推荐使用Jetpack Hilt。
 				
@@ -813,6 +841,10 @@
 				https://github.com/abuanwar072/E-commerce-App-UI-Flutter
 			Flutter淘宝App，支持iOS、Android
 				https://github.com/GanZhiXiong/GZXTaoBaoAppFlutter
+			
+			使用Flutter 编写一个同时运行在Android和iOS上的股票APP	
+				https://github.com/zhibuyu/Flutter_Stocks
+				blog：https://blog.csdn.net/u010123643/article/details/83583263
 				
 		C#写移动app:
 			The mobile app vault (iOS and Android).
@@ -830,7 +862,18 @@
 			Awesome-WanAndroid
 			https://github.com/JsonChao/Awesome-WanAndroid			
 			https://github.com/malonecoder/Awesome-Kotlin-WanAndroid
-一、android frameworks 方面的书籍。
+			
+		android性能优化：
+			《Android 性能优化学习手册》
+			移动开发者必备这份《Android 性能优化学习手册》；带你疯狂进阶
+			https://blog.csdn.net/m0_70748845/article/details/127778078?
+			
+			淦！字节跳动-Android性能优化学习手册进阶笔记，实战理论满满！（下班后学什么？系列篇-性能优化）
+			https://blog.csdn.net/wzh19950826/article/details/110006896?
+			
+			书籍：《Android应用性能优化》
+			
+一、android frameworks 方面的书籍和资源。
 	1.1、《Android应用框架原理与程序设计36技》
 		《深入理解Android》
 		《Android名师讲堂》
@@ -867,6 +910,20 @@
 		1.5.2 详细记录见：34-12-android-system-moudule-record.txt 
 		
 	1.6 1《android框架揭秘》
+	
+	1.7 Android Framework到底做啥的
+		https://maimai.cn/article/detail?fid=1761782375&efid=GiXN9bPsW10wEqdXVrQtVw
+		
+		android framework系统开发总结
+		https://blog.csdn.net/luoqingyan/article/details/128219156
+		
+		想拿高薪？看完Android framework开发揭秘就不是梦！
+		https://blog.csdn.net/yihanss/article/details/128445925
+		
+		Android Framework(android framework开发 做什么)
+			https://2uyx.com/110232.html
+		经验总结之Android framework开发
+			cnblogs.com/hackerkevin/p/5616913.html
 2. android resource  record
 	2.1 大学四年自学走来，这些私藏的实用工具/学习网站我贡献出来了 
 		https://blog.csdn.net/m0_37907797/article/details/102781027?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendHotData-40
@@ -1004,6 +1061,8 @@
 			7、高性能Android开发技术_张飞.pdf
 
 			8、高级Android开发强化实战_14435308.pdf
+				https://www.xz577.com/e/1040.html#xz
+				[已存网盘]
 
 			9、Android studio应用开发实战详解：王翠萍页.pdf
 
@@ -1225,6 +1284,9 @@
 		8.1 书及博客全文
 			[深入理解Android卷一全文-第八章]深入理解Surface系统
 			https://blog.csdn.net/innost/article/details/47208337
+			《[深入理解Android卷一]》
+			《[深入理解Android卷二]》
+			《[深入理解Android卷三]》
 	9. 在EDBurnette所写的《Hello, Android》里，
 			
 	10,音视频类书籍
@@ -1234,7 +1296,33 @@
 	11 android开发电子书集合
 		https://www.zhihu.com/search?type=content&q=android开发电子书集合
 	12 进阶书：
-		android高手进阶教程.pd
+		android高手进阶教程.pdf
+	13 
+		《Android Launcher应用开发》是2016年7月人民邮电出版社出版的图书，作者是张泳、葛丽娜。
+		
+		《AndroidLauncher应用开发》
+			https://mtoou.info/5yuan/474491.html
+			付费29元下载
+			https://download.csdn.net/download/saicheng/10785459
+			需要积分下载，已下载。
+			
+			book code:
+	
+	14 Android Settings应用开发
+		
+	15 Android SystemUi应用开发
+		《深入理解Android 卷III》第七章 深入理解SystemUI
+			书及博客：https://blog.51cto.com/u_5185736/3293520
+	16 《Android系统级深入开发—移植与调试].韩超.梁泉.pdf》
+	
+	17 Android系统服务开发
+		
+		深入理解Android内核设计思想 PDF
+		https://pan.baidu.com/s/13BuOl#list/path=%2F
+		
+		含：Wireshark网络分析就这么简单 PDF电子书下载 带书签目录 完整版_.zip
+			Android应用测试与调试实战 PDF电子书下载 带目录书签 完整版_
+			大话移动APP测试 Android与iOS应用测试指南 PDF电子书下载 带目录书签 完整版_
 5. android技术未来、新技术
 	5.1 未来，不会JetPack的Android开发连面试机会都没有
 		https://blog.csdn.net/weixin_44339238/article/details/113394946 

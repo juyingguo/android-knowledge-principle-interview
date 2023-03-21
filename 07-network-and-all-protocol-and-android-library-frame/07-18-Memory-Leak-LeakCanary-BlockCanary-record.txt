@@ -1,0 +1,74 @@
+1.
+	1.1 开发者干货 | Android内存泄漏分析 
+		https://www.sohu.com/a/165294497_617676
+		Memory Monitor
+			针对hprof文件的分析可以参考Google官网描述：HPROF Analyzer
+			针对alloc文件的分析可以参考Google官网描述：Allocation Tracke
+	1.2 LeakCanary
+		详情见[2]
+		
+	1.2 BlockCanary简介
+		https://blog.csdn.net/xingchenxuanfeng/article/details/77374376
+		详情见【3】
+		
+	1.3 Android 内存泄漏分析定位（profiler+MAT）
+		https://www.jianshu.com/p/823588feb2e7
+		
+		添加本地高版本的jdk路径
+		-vm
+	
+	1.4 android native 内存泄漏检测方法、工具
+		Android Native 内存泄漏检测工具 LeakTracer
+			https://www.jianshu.com/p/928dbd486108
+		
+		Android C++ Native 内存泄露检查工具Raphael使用介绍
+			https://blog.csdn.net/shui123546yi/article/details/126889329
+		
+		https://github.com/fredericgermain/LeakTracer
+			Android NDK JNI练习小demo；使用leaktracer分析native内存泄漏			
+				https://github.com/ouyangpeng/NDKDemo
+				
+		Android C++层内存泄漏检测
+			https://dandelioncloud.cn/article/details/1555953601900400642
+			demo:https://github.com/leilu000/LeakTracerForAndroid
+2.
+	2.1，LeakCanary原理及使用
+		https://blog.csdn.net/noblef/article/details/108975861
+		LeakCanary 详解
+		https://blog.csdn.net/a820703048/article/details/112849983
+		
+		LeakCanary 报 never GCed but no leak found
+
+		但有生成  hprof 
+
+		写着 leakCanary could not find a vaild path to GC roots. Download the heap dump and investigate with MAT or YourKit
+			https://www.oschina.net/question/4000302_2313507?sort=default
+			
+			https://stackoverflow.com/questions/64896082/leakcanary-is-not-able-to-find-the-paths-to-retained-ojects
+		
+			对比LeakCanary 2：使用LeakCanary 1出现了该问题。
+				LeakCanary 2在同样条件下，没出现该问题。
+			对比，在模拟器上LeakCanary 1不会出现该问题。
+				在真机上LeakCanary 1会出现该问题。
+		The demo for leakcanary：		
+		https://github.com/liaohuqiu/leakcanary-demo
+		
+		LeakCanary2使用
+		1. 和 LeakCanary1 相比，LeakCanary2 有以下改动
+		完全使用 Kotlin 重写。
+		使用新的Heap分析工具Shark，替换到之前的haha，按官方的说法，内存占用减少了10倍。
+		泄露类型分组。
+		LeakCanary2集成
+			只需要增加以下依赖即可：
+
+			debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
+		内存分析工具之LeakCanary2.4使用整理
+			https://www.codenong.com/cs106973416/
+			
+			参考：
+
+				https://blog.csdn.net/baidu_31093133/article/details/81779711
+
+				https://square.github.io/leakcanary/fundamentals-how-leakcanary-works/
+3. BlockCanary简介
+		https://blog.csdn.net/xingchenxuanfeng/article/details/77374376

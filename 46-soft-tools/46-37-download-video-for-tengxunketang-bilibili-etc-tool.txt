@@ -18,6 +18,7 @@
 3. 如何在PC上下载腾讯课堂视频(真正的方法!!)？
 	https://www.zhihu.com/question/379397682?
 	https://zhuanlan.zhihu.com/p/259826922?
+	https://blog.csdn.net/qq_58372242/article/details/123769885
 	3.1. chrome 网上应用店:
 		M3U8 finder and HLS player
 		M3U8 Downloader
@@ -33,3 +34,4 @@
 		密码:3ny5
 		使用方法：
 		复制地址，设置下载目录，勾选合并后删除分片点go即可下载
+		

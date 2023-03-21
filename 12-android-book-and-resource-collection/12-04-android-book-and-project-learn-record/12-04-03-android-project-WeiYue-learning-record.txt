@@ -47,9 +47,14 @@
 				https://ishare.ifeng.com/c/s/v004P0WNz5H21JPdOShtla7yYFoo0kZ1inKzo3KG4sZxWWGyd2kS9EQA2Gi00yV5FOudiX-_mOx0sS--LN81afOj4HxA____?spss=np
 			
 	ohttp 封装分析，retrofit封装分析。
-		
+3. 
+	app: 'androidProcessor' dependencies won't be recognized as kapt annotation processors. Please change the configuration name to 'kapt'
 	
+	参考：https://www.likecs.com/ask-819161.html
 	
+		androidProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.1.0"
+		修改为：
+		kapt "com.github.hotchemi:permissionsdispatcher-processor:3.1.0"
 
 		
 		

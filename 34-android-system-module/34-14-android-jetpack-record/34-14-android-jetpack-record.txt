@@ -1,4 +1,6 @@
 1.
+	This project is based on MVVM and Repository Design pattern.
+		https://github.com/vaibhavchugh09/MVVMGithubSample
 2.  jetpack教程：
 
 	是让人耳目一新的 Jetpack MVVM 精讲
@@ -13,10 +15,38 @@
 	Jetpack系列全解析
 		https://www.jianshu.com/p/66278a9b9ab5
 		
-	jetpack书籍：
+	jetpack书籍及资源：
 		《Jetpack架构组件从入门到精通.pdf》
 			源码及关联资料
 			https://github.com/mCyp/Hoo
 		《Android Jetpack 应用指南（书籍）》
-
+			下载：https://cmsblogs.cn/3531.html
+			【已存网盘】
+			详细记录【3】
+			作者另一本书：《Android高性能编程》
+		《Jetpack Compose应用开发指南第二版.PDF》
+		试读¥55.30
+		《深入浅出Android Jetpack》
+			http://www.coder100.com/index/index/content/id/1769019
+		《Android Jetpack开发:原理解析与应用实战》已出版
+			https://www.xz577.com/e/337022.html#xz
+		《Jetpack应用原理与实战》
+		《Jetpack Compose入门到精通》
+			http://www.coder100.com/index/index/content/id/1890660
+			需要3分；
+			https://download.csdn.net/download/a1989214/87413381?
+			需要5分；已下载过。
+			即为：《Jetpack Compose从菜鸟到精通》
+				同：原创|Android Jetpack Compose 最全上手指南
+					https://juejin.cn/post/6844903999347359751
+		
+		Android Jetpack从入门到精通！（附高级Jetpack强化实战）
+		https://zhuanlan.zhihu.com/p/546717327
+3，《Android Jetpack 应用指南（书籍）》详细记录：
+	3.10 chapter10：
+		网友上传代码：https://github.com/Alpha2Mao/MvvmGithub
+		kotlin版本：https://github.com/DiogoMalfatti/MVVMgithub
+		
+		
+	
 	

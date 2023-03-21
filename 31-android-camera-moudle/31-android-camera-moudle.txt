@@ -103,7 +103,20 @@
 		arch/arm/mach-owl/Kconfig:141:config ACTIONS_SOC_CAMERA
 		arch/arm/configs/actduino_bubble_gum_card_burn_defconfig:311:CONFIG_ACTIONS_SOC_CAMERA=y
 		arch/arm/configs/actduino_bubble_gum_defconfig:311:CONFIG_ACTIONS_SOC_CAMERA=y
+	7.7 android mipi camera,usb camera驱动配置切换
+		全志H3-android 4.4下进行USB Camera的配置和使用总结
+		https://blog.csdn.net/zhaoqi2617/article/details/76532877?
 		
+		
+		高通Camera驱动--调试技术大全（看完悟了）
+		https://zhuanlan.zhihu.com/p/486698775
+		
+		Android Camera MIPI接口知识总结
+			https://blog.csdn.net/zoosenpin/article/details/73558584
+			
+		camera的mipi-csi接口简单理解
+			https://www.jianshu.com/p/b3d2af716ef6
+			firefly官网:https://www.t-firefly.com/
 8. SOC_CAMERA 
 	8.1 soc camera 子系统简介
 		[linux]

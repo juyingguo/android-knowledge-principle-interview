@@ -4,7 +4,9 @@
 		
 		具体记录见[2]
 		
-		
+		JNI 中创建对象
+		https://blog.csdn.net/furzoom/article/details/121434202
+		【以及jni系列文章】
 		
 	01.2 jni官方文档
 		https://docs.oracle.com/javase/10/docs/specs/jni/index.html
@@ -21,7 +23,7 @@
 	1.1、[Android]-图片JNI（C++\Java）高斯模糊的实现与比较
 		https://blog.csdn.net/qiujuer/article/details/24282047
 2. 记录 【01.1】详情。
-	2.1 调试验证工程 my github project :MyJni
+	2.1 调试验证工程 my github project :as-some-sample-project-to-github\ndk-android-project\MyJni
 	2.2 环境配置:安装 AS + NDK + CMake + LLDB
 		AS: Android 开发工具。
 		NDK：这套工具集允许为 Android 使用 C 和 C++ 代码。
@@ -40,3 +42,9 @@
 		*MyJni\app\src\main\cpp\native-lib.cpp 
 4. JNI中C调用Java方法 
 	https://blog.csdn.net/chengkaizone/article/details/52512813 
+5. 面试题
+	5.1 java层通过jni 传递对象，string数组，byte 数组。怎么使用？
+		*MyJni-》com.example.myjni.MainActivity#test1
+	5.2 jni中创建大对象。
+		【01.1】
+		
