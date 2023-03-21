@@ -92,6 +92,7 @@
 	Android10/11 原生Launcher3动态显示Widget
 	https://blog.csdn.net/CGTAIHYQ/article/details/123839164
 	
+	AOSP源码Gallery2和Launcher3导入Android Studio
 	博主
 	https://blog.csdn.net/nerv2013/article/details/83111423?
 	

@@ -1,3 +1,6 @@
+0.
+	0.1 VMware Workstation PRO 17永久许可激活安装教程(附秘钥)
+		https://www.jb51.net/softjc/863613.html
 1. VMware Workstation 14中文破解版下载(附密钥)（笔记） 
 	1.1 VMware Workstation 14中文破解版下载(附密钥)（笔记） 
 		https://blog.csdn.net/zjy900507/article/details/96507185
@@ -63,4 +66,8 @@
 		{还得通过samba}
 8. vmware与windows下共享文件夹，复制android aosp .repo 或者使用curl 下载清华repo镜像异常：
 	Cannot create symlink/symbolic to `xxx': Operation not supported
+	
+9. win10,vm14，此应用会导致Windows上出现安全性或性能问题，因此无法运行。
+	忽略提示，也能运行，经常卡着。
+	https://www.zhihu.com/question/516880308?ssr_src=heifetz
 	

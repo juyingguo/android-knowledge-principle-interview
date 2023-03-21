@@ -44,6 +44,8 @@
 		原始Launcher3,需要的可以借鉴学习
 		android6.0
 		https://gitee.com/ZhuiBuHuiDeLiuNian/AnZhuo6.0-MTKLauncher3YuanMa?_from=gitee_search
+		https://github.com/Youngfellows/Launcher3-Android6.0
+		
 		
 		
 		https://github.com/Snser/Launcher3-511r14
